@@ -103,30 +103,6 @@ export default [
     "rpm": 2400
   },
   {
-    "id": 101387,
-    "c": "CaseFan",
-    "n": "NZXT F360 RGB Core - 360mm Single-Frame Fan Unit with 3 x 120mm RGB Fans - Speed & Lighting Control - High Static Pressure & Airflow - Fluid Dynamic Bearings - 8 aRGB LEDs Per Fan - Black",
-    "b": "MSI",
-    "pr": 49.99,
-    "msrp": 49.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/41IYLbduRXL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D1RKBS7J",
-        "url": "https://www.amazon.com/dp/B0D1RKBS7J?tag=tiereduptech-20",
-        "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.991Z",
-    "source": "amazon-discovery",
-    "bench": 36,
-    "airflow": 75.12,
-    "noise": 30,
-    "rpm": 2400
-  },
-  {
     "id": 85000,
     "n": "Noctua NF-A12x25 PWM",
     "img": "https://m.media-amazon.com/images/I/91mh5IBa9OL._AC_SL300_.jpg",

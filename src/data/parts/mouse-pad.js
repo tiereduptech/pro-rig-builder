@@ -946,86 +946,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101334,
-    "c": "MousePad",
-    "n": "Corsair MM350 PRO Extended XL Premium Spill-Proof Cloth Gaming Mouse Pad – 36.6” Width x 15.7” Height Surface – Black",
-    "b": "Corsair",
-    "pr": 39.99,
-    "msrp": 29.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/31akZhXgwHL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08JH8C5T5",
-        "url": "https://www.amazon.com/dp/B08JH8C5T5?tag=tiereduptech-20",
-        "price": 29.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.975Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101335,
-    "c": "MousePad",
-    "n": "ASUS ROG Sheath Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Pixel-Precise Tracking, Anti-Fray Stitched Edges, Non-Slip Base - Black/Red",
-    "b": "ASUS",
-    "pr": 23.99,
-    "msrp": 23.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/61UopGzilOL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B01G5ATZAE",
-        "url": "https://www.amazon.com/dp/B01G5ATZAE?tag=tiereduptech-20",
-        "price": 29.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.975Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101336,
-    "c": "MousePad",
-    "n": "ASUS ROG Hone Ace XXL Gaming Mouse Pad – 35.4” x 15.7\", (XXL Size), Extra-Cushioning, Table-Sized for Wide, Smooth Glide and Control, Water/Oil/Dust-Resistant, Extra-Soft Non-Slip Rubber Base - Black",
-    "b": "ASUS",
-    "pr": 50.99,
-    "msrp": 50.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/81DmnNmcKiL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CQPG6QC8",
-        "url": "https://www.amazon.com/dp/B0CQPG6QC8?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.977Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101337,
-    "c": "MousePad",
-    "n": "RGB Gaming Mouse Pad with 11 RGB Light up Modes,LED Gaming Pad,Non-Slip Rubber Based Computer Mice mat Medium Size(13.7” x 10.3”)",
-    "b": "MSI",
-    "pr": 12.99,
-    "msrp": 12.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/512OErc2wOL._AC_UL640_QL65_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07R6KMTFN",
-        "url": "https://www.amazon.com/dp/B07R6KMTFN?tag=tiereduptech-20",
-        "price": 12.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.977Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101338,
     "c": "MousePad",
     "n": "Corsair MM700 RGB Extended Cloth Gaming Mouse Pad - 36.6\" x 15.8\" - 360° RGB Lighting - Two USB Port Hub - Thick Rubber - Black (Renewed)",
@@ -1042,66 +962,6 @@ export default [
     "condition": "refurbished"
   },
   {
-    "id": 101339,
-    "c": "MousePad",
-    "n": "ASUS ROG Moonstone Ace L Glass Gaming Mouse Pad – 19.7” x 15.7”, Ultra-Smooth Matte Tempered Glass for Quiet Ultrafast Glides, Impact/Scratch Resistant, Easy to Clean, Anti-Slip Silicone Base - Black",
-    "b": "ASUS",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/61yzzcb5-dL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CLHLLQ6P",
-        "url": "https://www.amazon.com/dp/B0CLHLLQ6P?tag=tiereduptech-20",
-        "price": 99.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.980Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101340,
-    "c": "MousePad",
-    "n": "ASUS ROG Scabbard II Arctic Gray XXL Gaming Mouse Pad – 35.4” x 15.7” (Extended/XXL Size), Soft Cloth Surface, Water/Oil/Dust-Resistant, Anti-Fray Edges, Non-Slip Base - Gray",
-    "b": "ASUS",
-    "pr": 37.99,
-    "msrp": 37.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/81HsBMM2hFL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FJS6CGGQ",
-        "url": "https://www.amazon.com/dp/B0FJS6CGGQ?tag=tiereduptech-20",
-        "price": 36.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.981Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101341,
-    "c": "MousePad",
-    "n": "ASUS ROG Sheath BLK Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Ultra-Smooth for Precise Mouse Control, Anti-Fray Stitched Edges, Non-Slip Base - Black/Gray",
-    "b": "ASUS",
-    "pr": 24.99,
-    "msrp": 23.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/81e0Ok1ireL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08NCC1GCN",
-        "url": "https://www.amazon.com/dp/B08NCC1GCN?tag=tiereduptech-20",
-        "price": 36.63,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.981Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101844,
     "c": "MousePad",
     "n": "Logitech G840 XL Cloth Gaming Mouse Pad - 0.12 in Thin, Stable Rubber Base, Performance-Tuned Surface - Black",
@@ -1115,26 +975,6 @@ export default [
         "asin": "B0BHMN52LY",
         "url": "https://www.amazon.com/dp/B0BHMN52LY?tag=tiereduptech-20",
         "price": 37.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.656Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101845,
-    "c": "MousePad",
-    "n": "Corsair MM350 PRO Extended XL Premium Spill-Proof Cloth Gaming Mouse Pad – 36.6” Width x 15.7” Height Surface – Black",
-    "b": "Corsair",
-    "pr": 39.99,
-    "msrp": 29.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/31akZhXgwHL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08JH8C5T5",
-        "url": "https://www.amazon.com/dp/B08JH8C5T5?tag=tiereduptech-20",
-        "price": 29.99,
         "inStock": true
       }
     },
@@ -1220,26 +1060,6 @@ export default [
         "asin": "B0CVN5MQ6P",
         "url": "https://www.amazon.com/dp/B0CVN5MQ6P?tag=tiereduptech-20",
         "price": 41.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.658Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101850,
-    "c": "MousePad",
-    "n": "ASUS ROG Hone Ace XXL Gaming Mouse Pad – 35.4” x 15.7\", (XXL Size), Extra-Cushioning, Table-Sized for Wide, Smooth Glide and Control, Water/Oil/Dust-Resistant, Extra-Soft Non-Slip Rubber Base - Black",
-    "b": "ASUS",
-    "pr": 50.99,
-    "msrp": 50.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/81DmnNmcKiL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CQPG6QC8",
-        "url": "https://www.amazon.com/dp/B0CQPG6QC8?tag=tiereduptech-20",
-        "price": 59.99,
         "inStock": true
       }
     },
@@ -1428,9 +1248,9 @@ export default [
     "img": "https://m.media-amazon.com/images/I/81Dhb7s+10L._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "asin": "B0BG86HBDL",
-        "url": "https://www.amazon.com/dp/B0BG86HBDL?tag=tiereduptech-20",
-        "price": 24.35,
+        "asin": "B0FKLVHJS4",
+        "url": "https://www.amazon.com/dp/B0FKLVHJS4?tag=tiereduptech-20",
+        "price": 15.99,
         "inStock": true
       }
     },
@@ -1451,26 +1271,6 @@ export default [
         "asin": "B0FMK4JQVB",
         "url": "https://www.amazon.com/dp/B0FMK4JQVB?tag=tiereduptech-20",
         "price": 79,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.659Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101862,
-    "c": "MousePad",
-    "n": "Professional Glass Gaming Mouse Pad for Logitech G502/G PRO/G703, Large Non Slip Mousepad for Avid Gamer-Special Glass Surface with Improved Precision and Speed for Smooth Mouse Control",
-    "b": "Logitech",
-    "pr": 15.99,
-    "msrp": 15.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71LIsM9NcBL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FKLVHJS4",
-        "url": "https://www.amazon.com/dp/B0FKLVHJS4?tag=tiereduptech-20",
-        "price": 15.99,
         "inStock": true
       }
     },
@@ -1618,26 +1418,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101870,
-    "c": "MousePad",
-    "n": "ASUS ROG Moonstone Ace L Glass Gaming Mouse Pad – 19.7” x 15.7”, Ultra-Smooth Matte Tempered Glass for Quiet Ultrafast Glides, Impact/Scratch Resistant, Easy to Clean, Anti-Slip Silicone Base - Black",
-    "b": "ASUS",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/61yzzcb5-dL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CLHLLQ6P",
-        "url": "https://www.amazon.com/dp/B0CLHLLQ6P?tag=tiereduptech-20",
-        "price": 99.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.661Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101871,
     "c": "MousePad",
     "n": "Glorious Elements Mousepad - XL Mouse Pad - Glass Infused Flexible Cloth Computer Desk Pad for Speed Gaming 15\"x17\" (ICE)",
@@ -1678,26 +1458,6 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-07-13"
-  },
-  {
-    "id": 101873,
-    "c": "MousePad",
-    "n": "ASUS ROG Sheath BLK Gaming Mouse Pad – 35.4” x 17.3\", Extra-Large Surface, Ultra-Smooth for Precise Mouse Control, Anti-Fray Stitched Edges, Non-Slip Base - Black/Gray",
-    "b": "ASUS",
-    "pr": 24.99,
-    "msrp": 23.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/81e0Ok1ireL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08NCC1GCN",
-        "url": "https://www.amazon.com/dp/B08NCC1GCN?tag=tiereduptech-20",
-        "price": 36.63,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.662Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101874,

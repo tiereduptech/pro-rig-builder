@@ -939,66 +939,6 @@ export default [
     ]
   },
   {
-    "id": 101329,
-    "c": "Microphone",
-    "n": "COMICA XLR Microphone CVM-V02O 2 Pack 14.76 fts Phantom Power Omni-Directional Lavalier Lapel Microphone for Canon Sony Panasonic Camcorders Zoom H4n H5 H6 Tascam DR-40 DR-60D DR-70D DR-100 Recorders",
-    "b": "AMD",
-    "pr": 62.69,
-    "msrp": 62.69,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71nc17-ER7L._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B078K8S12H",
-        "url": "https://www.amazon.com/dp/B078K8S12H?tag=tiereduptech-20",
-        "price": 62.29,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.969Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101330,
-    "c": "Microphone",
-    "n": "Wireless Lavalier Microphone for iPhone/Android with Lightning, USB C Mini Lapel Microphone Wireless, Noise Cancellation, 35H Battery for Video Recording, Streaming - Sapphire Blue",
-    "b": "Sapphire",
-    "pr": 45.99,
-    "msrp": 45.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71sRZ2zTWlL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DFCN8N3R",
-        "url": "https://www.amazon.com/dp/B0DFCN8N3R?tag=tiereduptech-20",
-        "price": 45.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.969Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101331,
-    "c": "Microphone",
-    "n": "Elgato Wave XLR MK.2 – USB Audio Interface and DSP Mixer for XLR Microphones, 80dB Gain, Onboard Effects, LED Feedback, Touch Mute, Works with Stream Deck, PC & Mac",
-    "b": "Elgato",
-    "pr": 169.99,
-    "msrp": 169.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/51Id1KNebzL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GGYXY67H",
-        "url": "https://www.amazon.com/dp/B0GGYXY67H?tag=tiereduptech-20",
-        "price": 169.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.970Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101719,
     "c": "Microphone",
     "n": "Logitech Creators Blue Yeti USB Microphone for PC, Mac, Gaming, Streaming, Podcasting, Studio and Computer Condenser Mic with Blue VO!CE Effects, 4 Pickup Patterns, Plug and Play - Midnight Blue",
@@ -2681,26 +2621,6 @@ export default [
         "asin": "B07NWYQ6CF",
         "url": "https://www.amazon.com/dp/B07NWYQ6CF?tag=tiereduptech-20",
         "price": 36.85,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.650Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101821,
-    "c": "Microphone",
-    "n": "Wireless Lavalier Microphone for iPhone/Android with Lightning, USB C Mini Lapel Microphone Wireless, Noise Cancellation, 35H Battery for Video Recording, Streaming - Sapphire Blue",
-    "b": "Sapphire",
-    "pr": 45.99,
-    "msrp": 45.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71sRZ2zTWlL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DFCN8N3R",
-        "url": "https://www.amazon.com/dp/B0DFCN8N3R?tag=tiereduptech-20",
-        "price": 45.99,
         "inStock": true
       }
     },

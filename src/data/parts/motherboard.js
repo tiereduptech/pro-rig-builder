@@ -2699,7 +2699,8 @@ export default [
     "ff": "ATX",
     "memType": "DDR5",
     "value": 17,
-    "bench": 62
+    "bench": 62,
+    "bundle": true
   },
   {
     "id": 20066,
@@ -19418,7 +19419,8 @@ export default [
     "sata": 4,
     "ff": "Micro ATX",
     "bench": 77,
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bundle": true
   },
   {
     "id": 20493,

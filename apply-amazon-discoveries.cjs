@@ -14,6 +14,7 @@
 
 const fs = require('fs');
 const { isRenewedTitle } = require('./condition.cjs');
+const CC = require('./catalog-classify.cjs');
 const APPLY = process.argv.includes('--apply');
 
 // Better brand detection with priority
@@ -197,7 +198,7 @@ function isBundle(title) {
       const excluded = isExcluded(d.title);
       if (excluded) { skipped[excluded] = (skipped[excluded] || 0) + 1; continue; }
       // Skip bundles
-      if (isBundle(d.title)) { skipped.bundle++; continue; }
+      if (isBundle(d.title) || CC.bundleReason(d.title)) { skipped.bundle++; continue; }
       // CONDITION GATE: a renewed/refurbished/used listing is a different-condition
       // SKU — never attach it to a New-product catalog row (see condition.cjs). This
       // is the gate the Newegg feed already has (conditionMismatch) and the Amazon

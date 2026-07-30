@@ -169,6 +169,7 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
         if (acc) { stat.rej.accessory++; accessoryReasons[acc] = (accessoryReasons[acc] || 0) + 1; return; }
         // 5. prebuilt/bundle
         if (PREBUILT_RE.test(name)) { stat.rej.prebuilt++; return; }
+        if (CC.bundleReason(name)) { stat.rej.bundle = (stat.rej.bundle || 0) + 1; return; }   // multi-component combo
         // 6. condition
         if (detectCondition(name) !== 'new') { stat.rej.condition++; return; }
 

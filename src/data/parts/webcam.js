@@ -789,46 +789,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101332,
-    "c": "Webcam",
-    "n": "Insta360 Link 2 Pro – 4K PTZ Webcam for PC/Mac, 1/1.3” Sensor, Low-Light, AI Tracking, HDR, Directional Noise-Canceling Mics, Supports Stream Deck, Zoom, Teams, Twitch for Streaming or Meetings",
-    "b": "Insta360",
-    "pr": 249.99,
-    "msrp": 229.99,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/61BmGGgAcuL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3T1QKWL",
-        "url": "https://www.amazon.com/dp/B0G3T1QKWL?tag=tiereduptech-20",
-        "price": 249.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.973Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101333,
-    "c": "Webcam",
-    "n": "Insta360 Link 2C Pro – 4K Webcam for PC/Mac, 1/1.3” Sensor, Low-Light, Auto Framing, HDR, Directional Noise-Canceling Mics, Supports Stream Deck, Zoom, Teams, Twitch for Streaming or Meetings",
-    "b": "Insta360",
-    "pr": 199.99,
-    "msrp": 189.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/51TZdllIO-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3SSQMJQ",
-        "url": "https://www.amazon.com/dp/B0G3SSQMJQ?tag=tiereduptech-20",
-        "price": 199.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.973Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101837,
     "c": "Webcam",
     "n": "Logitech 960001580 Brio 100 1080p Full HD Webcam (Graphite) (Renewed)",

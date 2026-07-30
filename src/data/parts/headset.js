@@ -353,30 +353,6 @@ export default [
     ]
   },
   {
-    "id": 97013,
-    "n": "beyerdynamic DT 900 Pro X",
-    "img": "https://m.media-amazon.com/images/I/61SD6YLakkL._AC_SL300_.jpg",
-    "c": "Headset",
-    "b": "Beyerdynamic",
-    "pr": 249,
-    "msrp": 299,
-    "r": 4.8,
-    "driver": 45,
-    "connectivity": "Wired",
-    "mic": false,
-    "anc": false,
-    "deals": {
-      "amazon": {
-        "price": 199.99,
-        "url": "https://www.amazon.com/dp/B0011UB9CQ?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
-    "value": 48,
-    "hsType": "Wired",
-    "bench": 64
-  },
-  {
     "id": 100029,
     "n": "ATH-M50X Professional Studio Monitor Headphones, Black, Professional Grade, Critically Acclaimed, with Detachable Cable",
     "img": "https://m.media-amazon.com/images/I/71G5OkSr2zL._AC_UY218_.jpg",
@@ -2175,26 +2151,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101319,
-    "c": "Headset",
-    "n": "Corsair HS60 Haptic Stereo Gaming Headset with Haptic Bass, Memory Foam Earcups, Removable Microphone, Windows Sonic Compatible, Discord-Certified for PC - Arctic Camo",
-    "b": "Arctic",
-    "pr": 123.99,
-    "msrp": 123.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/8169YUwXtdL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08JFYW4CK",
-        "url": "https://www.amazon.com/dp/B08JFYW4CK?tag=tiereduptech-20",
-        "price": 123.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.947Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101321,
     "c": "Headset",
     "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
@@ -2209,106 +2165,6 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "condition": "refurbished"
-  },
-  {
-    "id": 101323,
-    "c": "Headset",
-    "n": "ASUS ROG Kithara Gaming/Audiophile Open-Back Wired Headphones with Mic – ROG-Tuned HIFIMAN Planar Magnetic Drivers, Adjustable Headband, Extra Ear Pads, Compatible with DACs, Amps, PC, Console, Mobile",
-    "b": "ASUS",
-    "pr": 299.99,
-    "msrp": 299.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71B5EMO2G7L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GG53SPJC",
-        "url": "https://www.amazon.com/dp/B0GG53SPJC?tag=tiereduptech-20",
-        "price": 259.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.948Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101324,
-    "c": "Headset",
-    "n": "RIG 600 PRO HS Dual Wireless Multiplatform Gaming Headset with 2.4GHz/Bluetooth for PlayStation PS4, PS5, Nintendo Switch, Switch 2, PC, USB, Steam Deck, Android, iPhone - Acid Camo",
-    "b": "AMD",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.8,
-    "img": "https://m.media-amazon.com/images/I/81VrQmtc9sL._AC_UL320_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G5BMRV63",
-        "url": "https://www.amazon.com/dp/B0G5BMRV63?tag=tiereduptech-20",
-        "price": 96.61,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.949Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101325,
-    "c": "Headset",
-    "n": "Corsair HS35 Surround v2 Multiplatform Wired Gaming Headset – Dolby 7.1 – Flexible Omni-Directional Microphone – Universal 3.5mm Connection – PC, Mac, PS5, PS4, Xbox, Nintendo Switch, Mobile – Carbon",
-    "b": "Corsair",
-    "pr": 59.99,
-    "msrp": 49.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/71lhlzNqWKL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CY5VSLL3",
-        "url": "https://www.amazon.com/dp/B0CY5VSLL3?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.949Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101326,
-    "c": "Headset",
-    "n": "Corsair Virtuoso PRO Wired Open Back Gaming Headset - Detachable Uni-Directional Microphone - 50mm Graphene Drivers - 20Hz-40 kHz Frequency Response - Carbon",
-    "b": "Corsair",
-    "pr": 178.99,
-    "msrp": 139.99,
-    "r": 3.2,
-    "img": "https://m.media-amazon.com/images/I/71oH9wRQtaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CGXTF225",
-        "url": "https://www.amazon.com/dp/B0CGXTF225?tag=tiereduptech-20",
-        "price": 149.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.950Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101327,
-    "c": "Headset",
-    "n": "RIG 600 PRO HX Dual Wireless Universal Gaming Headset with 2.4GHz/Bluetooth for Xbox Series X|S, Xbox One, PlayStation PS4, PS5, Nintendo Switch, Switch 2, PC, Steam Deck, Android, iPhone – Urban Camo",
-    "b": "AMD",
-    "pr": 89.99,
-    "msrp": 89.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/61iWiptrXEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0DVN9CXLF",
-        "url": "https://www.amazon.com/dp/B0DVN9CXLF?tag=tiereduptech-20",
-        "price": 79.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.952Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101623,
@@ -3183,26 +3039,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101672,
-    "c": "Headset",
-    "n": "Corsair HS60 Haptic Stereo Gaming Headset with Haptic Bass, Memory Foam Earcups, Removable Microphone, Windows Sonic Compatible, Discord-Certified for PC - Arctic Camo",
-    "b": "Arctic",
-    "pr": 123.99,
-    "msrp": 123.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/8169YUwXtdL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08JFYW4CK",
-        "url": "https://www.amazon.com/dp/B08JFYW4CK?tag=tiereduptech-20",
-        "price": 123.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.630Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101674,
     "c": "Headset",
     "n": "Corsair HS55 Stereo Wired Gaming Headset — Carbon (Renewed)",
@@ -3217,26 +3053,6 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-06-28",
     "condition": "refurbished"
-  },
-  {
-    "id": 101676,
-    "c": "Headset",
-    "n": "ASUS ROG Kithara Gaming/Audiophile Open-Back Wired Headphones with Mic – ROG-Tuned HIFIMAN Planar Magnetic Drivers, Adjustable Headband, Extra Ear Pads, Compatible with DACs, Amps, PC, Console, Mobile",
-    "b": "ASUS",
-    "pr": 299.99,
-    "msrp": 299.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/71B5EMO2G7L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GG53SPJC",
-        "url": "https://www.amazon.com/dp/B0GG53SPJC?tag=tiereduptech-20",
-        "price": 259.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.631Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101677,
@@ -3361,26 +3177,6 @@ export default [
     ]
   },
   {
-    "id": 101683,
-    "c": "Headset",
-    "n": "Corsair HS35 Surround v2 Multiplatform Wired Gaming Headset – Dolby 7.1 – Flexible Omni-Directional Microphone – Universal 3.5mm Connection – PC, Mac, PS5, PS4, Xbox, Nintendo Switch, Mobile – Carbon",
-    "b": "Corsair",
-    "pr": 59.99,
-    "msrp": 49.99,
-    "r": 4.1,
-    "img": "https://m.media-amazon.com/images/I/71lhlzNqWKL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CY5VSLL3",
-        "url": "https://www.amazon.com/dp/B0CY5VSLL3?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.632Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101684,
     "c": "Headset",
     "n": "EPOS H6Pro Open Acoustic Gaming with Mic – Immersive Sound, Lightweight Comfort, and Durable Design – Works with Xbox, PS4/PS5 & PC/Windows – Green",
@@ -3394,26 +3190,6 @@ export default [
         "asin": "B09FPFN78X",
         "url": "https://www.amazon.com/dp/B09FPFN78X?tag=tiereduptech-20",
         "price": 89.78,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101685,
-    "c": "Headset",
-    "n": "Corsair Virtuoso PRO Wired Open Back Gaming Headset - Detachable Uni-Directional Microphone - 50mm Graphene Drivers - 20Hz-40 kHz Frequency Response - Carbon",
-    "b": "Corsair",
-    "pr": 178.99,
-    "msrp": 139.99,
-    "r": 3.2,
-    "img": "https://m.media-amazon.com/images/I/71oH9wRQtaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CGXTF225",
-        "url": "https://www.amazon.com/dp/B0CGXTF225?tag=tiereduptech-20",
-        "price": 149.99,
         "inStock": true
       }
     },

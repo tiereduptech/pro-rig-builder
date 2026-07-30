@@ -388,11 +388,19 @@ function saveProgress(p) {
   fs.writeFileSync(PROGRESS_PATH, JSON.stringify(p, null, 2));
 }
 
-(async () => {
+// Initialise the shared matcher (newegg-match.js) exactly once. Exported so
+// external callers (e.g. the scoped bucket-A relink driver) can reuse
+// findNeweggMatch/getToken without triggering this file's own ingest run.
+async function initNEG() {
+  if (!NEG) NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
+  return NEG;
+}
+
+async function main() {
   console.log('\n  Newegg Catalog Match via Rakuten Product Search');
   console.log('  ═══════════════════════════════════════════════');
 
-  NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
+  await initNEG();
 
   // Fail before spending a single API call if this run could not write anyway.
 
@@ -622,4 +630,10 @@ function saveProgress(p) {
   console.log(`  No match:   ${noMatch}`);
   console.log(`  Errors:     ${errors}`);
   console.log(`  Backup:     ${backup}\n`);
-})();
+}
+
+// Run the full ingest only when invoked directly. When require()'d as a module
+// (scoped relink driver), export the reusable primitives and run nothing.
+if (require.main === module) main();
+
+module.exports = { findNeweggMatch, getToken, initNEG, CAT_FILTER };

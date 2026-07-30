@@ -2027,86 +2027,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101305,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II X Wired USB Mechanical Gaming Keyboard – 100% Full-Size, Hot Swappable Pre-lubed ROG NX Snow V2 Linear Switches, PBT Keycaps, RGB, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71iyRkaBAEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FGGZK4X7",
-        "url": "https://www.amazon.com/dp/B0FGGZK4X7?tag=tiereduptech-20",
-        "price": 94.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.922Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101306,
-    "c": "Keyboard",
-    "n": "Corsair Galleon 100 SD RGB Mechanical Wired Gaming Keyboard – QWERTY US, Stream Deck-Integrated, Pre-Lubed MLX Pulse Thocky Hotswappable PBT Double-Shot Switches, FlashTap SOCD, 8,000Hz – Black",
-    "b": "Corsair",
-    "pr": 349.99,
-    "msrp": 349.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/71+tkqze3FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3PN1VS4",
-        "url": "https://www.amazon.com/dp/B0G3PN1VS4?tag=tiereduptech-20",
-        "price": 299.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.923Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101307,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II 96 Wireless Mechanical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Hot Swappable Pre-lubed ROG NX Snow Linear Switches, PBT Keycaps, RGB, PC/Mac Support-Black",
-    "b": "ASUS",
-    "pr": 132,
-    "msrp": 132,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/91YxKZjwOPL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C7KFZ5TL",
-        "url": "https://www.amazon.com/dp/B0C7KFZ5TL?tag=tiereduptech-20",
-        "price": 132,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.924Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101308,
-    "c": "Keyboard",
-    "n": "Corsair K55 CORE TKL RGB Gaming Keyboard – Tenkeyless, 8-Zone RGB, Quiet Membrane Keys, Spill Resistant, Media Keys, 1000Hz Polling – NA Layout – Black",
-    "b": "Corsair",
-    "pr": 34.99,
-    "msrp": 34.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/717RHdRIhiL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FG8DKV2N",
-        "url": "https://www.amazon.com/dp/B0FG8DKV2N?tag=tiereduptech-20",
-        "price": 34.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.925Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101309,
     "c": "Keyboard",
     "n": "Corsair K100 RGB Optical-Mechanical Wired Gaming Keyboard - QWERTY US Layout, OPX Switches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - Black",
@@ -2186,106 +2106,6 @@ export default [
     "condition": "refurbished"
   },
   {
-    "id": 101314,
-    "c": "Keyboard",
-    "n": "Corsair Vanguard 96 Wired Mechanical Gaming Keyboard – 96% Layout, MLX Plasma Linear Switches, 8000Hz Polling, LCD Display, Virtual Stream Deck, G-Keys, SOCD Flashtap, QWERTY US – Black",
-    "b": "Corsair",
-    "pr": 149.99,
-    "msrp": 149.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71fjsPsNCdL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FKJBZHTW",
-        "url": "https://www.amazon.com/dp/B0FKJBZHTW?tag=tiereduptech-20",
-        "price": 179,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.931Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101315,
-    "c": "Keyboard",
-    "n": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
-    "b": "Corsair",
-    "pr": 324.99,
-    "msrp": 289.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61FgJppIOOL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08HR68MQZ",
-        "url": "https://www.amazon.com/dp/B08HR68MQZ?tag=tiereduptech-20",
-        "price": 299.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.931Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101316,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II Gaming Keyboard, pre-lubed ROG RX Red Linear Optical switches, Sound-dampening Foam, PBT doubleshot keycaps, Streaming hotkeys, Multi-Function Controls, Wrist Rest",
-    "b": "ASUS",
-    "pr": 109.99,
-    "msrp": 109.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/81Gd2c8ljmL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CLHLLFBP",
-        "url": "https://www.amazon.com/dp/B0CLHLLFBP?tag=tiereduptech-20",
-        "price": 109.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.936Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101317,
-    "c": "Keyboard",
-    "n": "ASUS TUF Gaming K3 Gen II Wired USB Gaming Keyboard – 97-Key Compact Layout, Optical-Mechanical Red (Linear) Switches, PBT Keycaps, Detachable Top Plate, IP57 Waterproofing, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 81.16,
-    "msrp": 62.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/812ucBlULmL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D9Y83J89",
-        "url": "https://www.amazon.com/dp/B0D9Y83J89?tag=tiereduptech-20",
-        "price": 75.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.936Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101318,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II 96 RX Wireless Optical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Pre-lubed ROG RX Red Linear Switches PBT Keycaps, RGB, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 119.99,
-    "msrp": 119.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/713d-a7JglL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GMZ5Z9G4",
-        "url": "https://www.amazon.com/dp/B0GMZ5Z9G4?tag=tiereduptech-20",
-        "price": 179.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.936Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101493,
     "c": "Keyboard",
     "n": "Redragon Mechanical Gaming Keyboard Wired, 11 Programmable Backlit Modes, Hot-Swappable Red Switch, Anti-Ghosting, Double-Shot PBT Keycaps, Light Up Keyboard for PC Mac",
@@ -2319,26 +2139,6 @@ export default [
         "asin": "B07ZGDD6B1",
         "url": "https://www.amazon.com/dp/B07ZGDD6B1?tag=tiereduptech-20",
         "price": 98.97,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.616Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101495,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II X Wired USB Mechanical Gaming Keyboard – 100% Full-Size, Hot Swappable Pre-lubed ROG NX Snow V2 Linear Switches, PBT Keycaps, RGB, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 99.99,
-    "msrp": 99.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71iyRkaBAEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FGGZK4X7",
-        "url": "https://www.amazon.com/dp/B0FGGZK4X7?tag=tiereduptech-20",
-        "price": 94.99,
         "inStock": true
       }
     },
@@ -2486,26 +2286,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101503,
-    "c": "Keyboard",
-    "n": "Corsair Galleon 100 SD RGB Mechanical Wired Gaming Keyboard – QWERTY US, Stream Deck-Integrated, Pre-Lubed MLX Pulse Thocky Hotswappable PBT Double-Shot Switches, FlashTap SOCD, 8,000Hz – Black",
-    "b": "Corsair",
-    "pr": 349.99,
-    "msrp": 349.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/71+tkqze3FL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G3PN1VS4",
-        "url": "https://www.amazon.com/dp/B0G3PN1VS4?tag=tiereduptech-20",
-        "price": 299.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.616Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101504,
     "c": "Keyboard",
     "n": "Keychron K2 75% Layout Bluetooth Wireless Mechanical Keyboard Super Switch/White LED Backlit/USB C/Anti Ghosting/N-Key Rollover, 84 Keys Gaming Keyboard for Mac Windows-Version 2",
@@ -2599,26 +2379,6 @@ export default [
         "asin": "B0F1MKZJMH",
         "url": "https://www.amazon.com/dp/B0F1MKZJMH?tag=tiereduptech-20",
         "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.617Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101509,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II 96 Wireless Mechanical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Hot Swappable Pre-lubed ROG NX Snow Linear Switches, PBT Keycaps, RGB, PC/Mac Support-Black",
-    "b": "ASUS",
-    "pr": 132.99,
-    "msrp": 132,
-    "r": 4.6,
-    "img": "https://m.media-amazon.com/images/I/91YxKZjwOPL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0C7KFZ5TL",
-        "url": "https://www.amazon.com/dp/B0C7KFZ5TL?tag=tiereduptech-20",
-        "price": 132.99,
         "inStock": true
       }
     },
@@ -2904,26 +2664,6 @@ export default [
         "asin": "B0D5B2LRB5",
         "url": "https://www.amazon.com/dp/B0D5B2LRB5?tag=tiereduptech-20",
         "price": 54.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.617Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101524,
-    "c": "Keyboard",
-    "n": "Corsair K55 CORE TKL RGB Gaming Keyboard – Tenkeyless, 8-Zone RGB, Quiet Membrane Keys, Spill Resistant, Media Keys, 1000Hz Polling – NA Layout – Black",
-    "b": "Corsair",
-    "pr": 34.99,
-    "msrp": 34.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/717RHdRIhiL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FG8DKV2N",
-        "url": "https://www.amazon.com/dp/B0FG8DKV2N?tag=tiereduptech-20",
-        "price": 34.99,
         "inStock": true
       }
     },
@@ -3899,26 +3639,6 @@ export default [
     "condition": "refurbished"
   },
   {
-    "id": 101576,
-    "c": "Keyboard",
-    "n": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
-    "b": "Elgato",
-    "pr": 324.99,
-    "msrp": 289.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/61FgJppIOOL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B08HR68MQZ",
-        "url": "https://www.amazon.com/dp/B08HR68MQZ?tag=tiereduptech-20",
-        "price": 299.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.622Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101577,
     "c": "Keyboard",
     "n": "Redragon K719 Wireless Gasket Gaming Keyboard w/Hype Screen & Knob, 95 Keys Mechanical Keyboard, Easy-Control 1.14’’ TFT Info Display, 5-Layer Noise Dampening, Custom Linear Switch, Jade Cloud Color",
@@ -4530,26 +4250,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101609,
-    "c": "Keyboard",
-    "n": "NuPhy Node100 Wireless Mechanical Keyboard, Hot Swappable Custom Low Profile Keyboard, 103 Keys Computer Gaming Keyboards, Supports Touch Gestures, PBT Keycaps, RGB Backlit, Bluetooth/2.4GHz/USB-C",
-    "b": "NuPhy",
-    "pr": 109.95,
-    "msrp": 109.95,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/61H3HP8+wBL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GFTJW96W",
-        "url": "https://www.amazon.com/dp/B0GFTJW96W?tag=tiereduptech-20",
-        "price": 109.95,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101610,
     "c": "Keyboard",
     "n": "Keychron K3 Max SE QMK Wireless (2.4 GHz & Bluetooth) Custom Mechanical Keyboard with Ultra-Slim Body Launcher Support Hot-swappable Low-Profile Switch PBT Keycaps Compatible with Mac Windows Linux",
@@ -4671,26 +4371,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101616,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II Gaming Keyboard, pre-lubed ROG RX Red Linear Optical switches, Sound-dampening Foam, PBT doubleshot keycaps, Streaming hotkeys, Multi-Function Controls, Wrist Rest",
-    "b": "ASUS",
-    "pr": 109.99,
-    "msrp": 109.99,
-    "r": 4.5,
-    "img": "https://m.media-amazon.com/images/I/81Gd2c8ljmL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CLHLLFBP",
-        "url": "https://www.amazon.com/dp/B0CLHLLFBP?tag=tiereduptech-20",
-        "price": 109.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.625Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101617,
     "c": "Keyboard",
     "n": "Pcs Purple Optical Switches Hot Swap Switch for Razer Huntsman Gaming Mechanical Keyboard",
@@ -4731,26 +4411,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101619,
-    "c": "Keyboard",
-    "n": "ASUS TUF Gaming K3 Gen II Wired USB Gaming Keyboard – 97-Key Compact Layout, Optical-Mechanical Red (Linear) Switches, PBT Keycaps, Detachable Top Plate, IP57 Waterproofing, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 81.16,
-    "msrp": 62.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/812ucBlULmL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0D9Y83J89",
-        "url": "https://www.amazon.com/dp/B0D9Y83J89?tag=tiereduptech-20",
-        "price": 75.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.626Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101620,
     "c": "Keyboard",
     "n": "Razer Huntsman Mini 60% Gaming Keyboard: Linear Optical Switches - Rapid Trigger Mode - Chroma RGB Lighting - PBT Keycaps - Onboard Memory - Snap Tap - White",
@@ -4784,26 +4444,6 @@ export default [
         "asin": "B09GG2YXX3",
         "url": "https://www.amazon.com/dp/B09GG2YXX3?tag=tiereduptech-20",
         "price": 83.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.626Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101622,
-    "c": "Keyboard",
-    "n": "ASUS ROG Strix Scope II 96 RX Wireless Optical Gaming Keyboard – 96% Full-Size, Tri-Mode Connectivity, Pre-lubed ROG RX Red Linear Switches PBT Keycaps, RGB, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 119.99,
-    "msrp": 119.99,
-    "r": 5,
-    "img": "https://m.media-amazon.com/images/I/713d-a7JglL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0GMZ5Z9G4",
-        "url": "https://www.amazon.com/dp/B0GMZ5Z9G4?tag=tiereduptech-20",
-        "price": 179.99,
         "inStock": true
       }
     },

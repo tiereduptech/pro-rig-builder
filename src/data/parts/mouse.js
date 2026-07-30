@@ -2336,147 +2336,6 @@ export default [
     "source": "amazon-discovery"
   },
   {
-    "id": 101293,
-    "c": "Mouse",
-    "n": "Corsair IRONCLAW Wireless SE Gaming Mouse – 26,000 DPI, Ergonomic Design for Larger Hands, 10 Programmable Buttons, for MOBA, FPS, MMO – Black",
-    "b": "Corsair",
-    "pr": 89.99,
-    "msrp": 89.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61Ng6pt8dGL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G1CPTN1F",
-        "url": "https://www.amazon.com/dp/B0G1CPTN1F?tag=tiereduptech-20",
-        "price": 89,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.908Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101294,
-    "c": "Mouse",
-    "n": "ASUS ROG Harpe Ace Aim Lab Wireless Esports Gaming Mouse – Aim Lab Settings Optimizer, Pro-Tested, Right-Handed, 54g Lightweight, Tri-Mode Connectivity, 36K DPI, 90Hr Battery, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71ufA6nd5cL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BSKX9V7C",
-        "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
-        "price": 87.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.913Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101295,
-    "c": "Mouse",
-    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal",
-    "b": "Corsair",
-    "pr": 99.99,
-    "msrp": 91.93,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0F6NGCDFN",
-        "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
-        "price": 79.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.915Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101296,
-    "c": "Mouse",
-    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – White",
-    "b": "Corsair",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/61-n5nHpSrL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0F6NJYMWF",
-        "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
-        "price": 79.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.915Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101297,
-    "c": "Mouse",
-    "n": "ASUS ROG Spatha X Wireless Gaming Mouse – MMO/MOBA Design, 12 Programmable Buttons, Right-Handed, 168g, Dual-Mode (Wired/2.4GHz), 19K DPI, up to 67Hr Battery, Magnetic Charging Dock, PC/Mac Support",
-    "b": "ASUS",
-    "pr": 126.99,
-    "msrp": 126.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71WaCVjJ8zL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09726KT4R",
-        "url": "https://www.amazon.com/dp/B09726KT4R?tag=tiereduptech-20",
-        "price": 133.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.915Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101298,
-    "c": "Mouse",
-    "n": "ASUS ROG Gladius III Core Wired Gaming Mouse – Right-Handed Ergonomic, 72g, 12K DPI, ROG Paracord, Push-Fit Switch Sockets/Hot-Swappable Switches, Gear Link Web-Based Configuration, PC/Mac Support",
-    "b": "ASUS",
-    "pr": 49.99,
-    "msrp": 39.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/41aqQBaATaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FLH3LP3W",
-        "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
-        "price": 49.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.916Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101299,
-    "c": "Mouse",
-    "n": "Corsair Scimitar RGB Elite, MOBA/MMO Gaming Mouse, Black, Backlit RGB LED, 18000 DPI, Optical (Renewed)",
-    "b": "Corsair",
-    "pr": 42,
-    "msrp": 42,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/614J0VriTRL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0949M4PJR",
-        "url": "https://www.amazon.com/dp/B0949M4PJR?tag=tiereduptech-20",
-        "price": 42,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.916Z",
-    "source": "amazon-discovery",
-    "condition": "refurbished"
-  },
-  {
     "id": 101300,
     "c": "Mouse",
     "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal(Renewed) (Renewed)",
@@ -2501,86 +2360,6 @@ export default [
       "relink:no-price"
     ],
     "condition": "refurbished"
-  },
-  {
-    "id": 101301,
-    "c": "Mouse",
-    "n": "CORSAIR SCIMITAR ELITE RGB WIRELESS MMO Gaming Mouse - 26,000 DPI - 16 Programmable Buttons - Up to 150hrs Battery - iCUE Compatible - Black (Renewed)",
-    "b": "Corsair",
-    "pr": 64.95,
-    "msrp": 64.95,
-    "r": 3.5,
-    "img": "https://m.media-amazon.com/images/I/712zoUOXUoL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FJJY5CVN",
-        "url": "https://www.amazon.com/dp/B0FJJY5CVN?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.916Z",
-    "source": "amazon-discovery",
-    "condition": "refurbished"
-  },
-  {
-    "id": 101302,
-    "c": "Mouse",
-    "n": "Corsair Sabre v2 PRO Ultralight FPS Wireless Gaming Mouse – 33,000 DPI, 36g Weight, 8,000Hz Hyper-Polling, Mechanical Switches, Up to 70-Hour Wireless Battery Life, Web Hub – Black",
-    "b": "Corsair",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61EoVK01-gL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FKJ2J2R8",
-        "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
-        "price": 69.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.917Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101303,
-    "c": "Mouse",
-    "n": "Logitech Signature M650 Wireless Mouse - for Small to Medium Sized Hands, 2-Year Battery, Silent Clicks, Customizable Side Buttons, Bluetooth, for PC/Mac/Multi-Device/Chromebook - Rose",
-    "b": "MSI",
-    "pr": 29.99,
-    "msrp": 29.99,
-    "r": 4.7,
-    "img": "https://m.media-amazon.com/images/I/71+UaxBYWpL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 29.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6491145&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flogitech-signature-m650-wireless-optical-mouse-with-silent-clicks-wireless-rose%2FJ7H7ZY3W3K&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.918Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101304,
-    "c": "Mouse",
-    "n": "Corsair M75 Wireless RGB Lightweight FPS Gaming Mouse – 26,000 DPI – Swappable Side Buttons – iCUE Compatible – PC – Black",
-    "b": "Corsair",
-    "pr": 46.99,
-    "msrp": 46.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CTN26P3Z",
-        "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
-        "price": 36.75,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T16:39:25.921Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101441,
@@ -2671,26 +2450,6 @@ export default [
     "reviewFlags": [
       "relink:mismatch"
     ]
-  },
-  {
-    "id": 101445,
-    "c": "Mouse",
-    "n": "Corsair IRONCLAW Wireless SE Gaming Mouse – 26,000 DPI, Ergonomic Design for Larger Hands, 10 Programmable Buttons, for MOBA, FPS, MMO – Black",
-    "b": "Corsair",
-    "pr": 89.99,
-    "msrp": 89.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61Ng6pt8dGL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0G1CPTN1F",
-        "url": "https://www.amazon.com/dp/B0G1CPTN1F?tag=tiereduptech-20",
-        "price": 89,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.603Z",
-    "source": "amazon-discovery"
   },
   {
     "id": 101446,
@@ -2928,26 +2687,6 @@ export default [
     "quarantinedAt": "2026-06-28"
   },
   {
-    "id": 101460,
-    "c": "Mouse",
-    "n": "ASUS ROG Harpe Ace Aim Lab Wireless Esports Gaming Mouse – Aim Lab Settings Optimizer, Pro-Tested, Right-Handed, 54g Lightweight, Tri-Mode Connectivity, 36K DPI, 90Hr Battery, PC/Mac Support - Black",
-    "b": "ASUS",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/71ufA6nd5cL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0BSKX9V7C",
-        "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
-        "price": 87.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.609Z",
-    "source": "amazon-discovery"
-  },
-  {
     "id": 101461,
     "c": "Mouse",
     "n": "SteelSeries Aerox 3 Wireless - Super Light Gaming Mouse - 18,000 CPI TrueMove Air Optical Sensor - Ultra-Lightweight 68g Water Resistant Design - 200 Hour Battery Life – Onyx (Renewed)",
@@ -3074,107 +2813,6 @@ export default [
     "condition": "refurbished"
   },
   {
-    "id": 101468,
-    "c": "Mouse",
-    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal",
-    "b": "Elgato",
-    "pr": 99.99,
-    "msrp": 91.93,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/61UHfqT0pHL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0F6NGCDFN",
-        "url": "https://www.amazon.com/dp/B0F6NGCDFN?tag=tiereduptech-20",
-        "price": 79.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101469,
-    "c": "Mouse",
-    "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, 16 Programmable Buttons, Key Slider, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – White",
-    "b": "Elgato",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 3.9,
-    "img": "https://m.media-amazon.com/images/I/61-n5nHpSrL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0F6NJYMWF",
-        "url": "https://www.amazon.com/dp/B0F6NJYMWF?tag=tiereduptech-20",
-        "price": 79.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101470,
-    "c": "Mouse",
-    "n": "ASUS ROG Spatha X Wireless Gaming Mouse – MMO/MOBA Design, 12 Programmable Buttons, Right-Handed, 168g, Dual-Mode (Wired/2.4GHz), 19K DPI, up to 67Hr Battery, Magnetic Charging Dock, PC/Mac Support",
-    "b": "ASUS",
-    "pr": 126.99,
-    "msrp": 126.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/71WaCVjJ8zL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B09726KT4R",
-        "url": "https://www.amazon.com/dp/B09726KT4R?tag=tiereduptech-20",
-        "price": 133.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101471,
-    "c": "Mouse",
-    "n": "ASUS ROG Gladius III Core Wired Gaming Mouse – Right-Handed Ergonomic, 72g, 12K DPI, ROG Paracord, Push-Fit Switch Sockets/Hot-Swappable Switches, Gear Link Web-Based Configuration, PC/Mac Support",
-    "b": "ASUS",
-    "pr": 49.99,
-    "msrp": 39.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/41aqQBaATaL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FLH3LP3W",
-        "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
-        "price": 49.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101472,
-    "c": "Mouse",
-    "n": "Corsair Scimitar RGB Elite, MOBA/MMO Gaming Mouse, Black, Backlit RGB LED, 18000 DPI, Optical (Renewed)",
-    "b": "Corsair",
-    "pr": 42,
-    "msrp": 42,
-    "r": 4.3,
-    "img": "https://m.media-amazon.com/images/I/614J0VriTRL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0949M4PJR",
-        "url": "https://www.amazon.com/dp/B0949M4PJR?tag=tiereduptech-20",
-        "price": 42,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery",
-    "condition": "refurbished"
-  },
-  {
     "id": 101473,
     "c": "Mouse",
     "n": "Corsair Scimitar Elite Wireless SE MMO PC Gaming Mouse – 33,000 DPI, Elgato Virtual Stream Deck, 1,000Hz Polling, Up to 150-Hour Battery – Gunmetal(Renewed) (Renewed)",
@@ -3201,27 +2839,6 @@ export default [
     "condition": "refurbished"
   },
   {
-    "id": 101474,
-    "c": "Mouse",
-    "n": "CORSAIR SCIMITAR ELITE RGB WIRELESS MMO Gaming Mouse - 26,000 DPI - 16 Programmable Buttons - Up to 150hrs Battery - iCUE Compatible - Black (Renewed)",
-    "b": "Corsair",
-    "pr": 64.95,
-    "msrp": 64.95,
-    "r": 3.5,
-    "img": "https://m.media-amazon.com/images/I/712zoUOXUoL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FJJY5CVN",
-        "url": "https://www.amazon.com/dp/B0FJJY5CVN?tag=tiereduptech-20",
-        "price": 59.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.611Z",
-    "source": "amazon-discovery",
-    "condition": "refurbished"
-  },
-  {
     "id": 101475,
     "c": "Mouse",
     "n": "Razer Pro Click V2 Vertical Wireless Mouse: 6 Button Ergonomic Design - One Click AI Prompt - Supports Windows & Mac - Multi Device Connectivity via 2.4GHz, Bluetooth, or USB C Wired Mode - Chroma RGB",
@@ -3235,26 +2852,6 @@ export default [
         "asin": "B0DVD5RTZ5",
         "url": "https://www.amazon.com/dp/B0DVD5RTZ5?tag=tiereduptech-20",
         "price": 113.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.612Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101476,
-    "c": "Mouse",
-    "n": "Logitech MX Vertical Wireless Mouse – Ergonomic Design Reduces Muscle Strain, Move Content Between 3 Windows and Apple Computers, Rechargeable, Graphite",
-    "b": "Logitech",
-    "pr": 74.99,
-    "msrp": 74.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61iiZ-gDYEL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B07FNJB8TT",
-        "url": "https://www.amazon.com/dp/B07FNJB8TT?tag=tiereduptech-20",
-        "price": 75.9,
         "inStock": true
       }
     },
@@ -3295,26 +2892,6 @@ export default [
         "asin": "B0BBPFCXSZ",
         "url": "https://www.amazon.com/dp/B0BBPFCXSZ?tag=tiereduptech-20",
         "price": 39.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.612Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101479,
-    "c": "Mouse",
-    "n": "Corsair Sabre v2 PRO Ultralight FPS Wireless Gaming Mouse – 33,000 DPI, 36g Weight, 8,000Hz Hyper-Polling, Mechanical Switches, Up to 70-Hour Wireless Battery Life, Web Hub – Black",
-    "b": "Corsair",
-    "pr": 79.99,
-    "msrp": 79.99,
-    "r": 4.4,
-    "img": "https://m.media-amazon.com/images/I/61EoVK01-gL._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0FKJ2J2R8",
-        "url": "https://www.amazon.com/dp/B0FKJ2J2R8?tag=tiereduptech-20",
-        "price": 69.99,
         "inStock": true
       }
     },
@@ -3456,26 +3033,6 @@ export default [
         "asin": "B0GFSKMY5T",
         "url": "https://www.amazon.com/dp/B0GFSKMY5T?tag=tiereduptech-20",
         "price": 43.99,
-        "inStock": true
-      }
-    },
-    "addedAt": "2026-05-15T17:05:43.615Z",
-    "source": "amazon-discovery"
-  },
-  {
-    "id": 101487,
-    "c": "Mouse",
-    "n": "Corsair M75 Wireless RGB Lightweight FPS Gaming Mouse – 26,000 DPI – Swappable Side Buttons – iCUE Compatible – PC – Black",
-    "b": "Corsair",
-    "pr": 46.99,
-    "msrp": 46.99,
-    "r": 4.2,
-    "img": "https://m.media-amazon.com/images/I/61UG3YVcW-L._AC_UY218_.jpg",
-    "deals": {
-      "amazon": {
-        "asin": "B0CTN26P3Z",
-        "url": "https://www.amazon.com/dp/B0CTN26P3Z?tag=tiereduptech-20",
-        "price": 36.75,
         "inStock": true
       }
     },

@@ -433,6 +433,47 @@ function prebuiltSystemReason(name) {
   return null;
 }
 
+// Multi-component BUNDLE detector — two distinct buildable components sold in ONE
+// listing (a "Ryzen 9 7900X + B650 Motherboard" combo). Left in a component
+// category it MISPRICES the builder (a CPU+mobo combo shows as a bare CPU at the
+// combined price) and, sharing no key with either single part, sits alongside them
+// in browse. Category-agnostic: the same title test finds a combo whether it is
+// filed as CPU or Motherboard.
+//
+// Signal: >=2 DISTINCT component types named as PRODUCTS, joined by an explicit
+// combining token ("+", the word "bundle"/"combo", or "<processor> with <mobo>").
+// Guards (each verified against a live-catalog false positive):
+//   • VRM "N+M power stages" / "12+2+1" — stripped before the "+" test, so a plain
+//     board ("ROG Strix B650-A ... 12 + 2 power stages, DDR5") is NOT a combo.
+//   • Compatibility text ("supports/for/compatible/works with Ryzen") — carries no
+//     combining token, so it never clears the >=2-types-with-join bar.
+//   • Multipacks / accessory kits — a "Triple Fan Kit with Hub", an "SSD Upgrade
+//     Kit with Transfer Cable", a "4TB SSD Bundle with 2 YR Protection Pack" name
+//     only ONE buildable component (fans / storage), so present.length < 2 (and the
+//     warranty guard drops the "Protection Pack" bundle word).
+function bundleReason(name) {
+  const raw = String(name || '');
+  const t = raw
+    .replace(/\b\d{1,2}\s*(?:\+\s*\d{1,2}\s*){1,3}(?:power\s*)?(?:stages?|phases?)/ig, ' ')
+    .replace(/\b\d{1,2}\+\d{1,2}(?:\+\d{1,2}){0,2}\b/g, ' ');
+  const TYPE = {
+    cpu:    /\b(?:core\s+(?:i[3579]|ultra)\s*\d?|i[3579][-\s]\d{4,5}[a-z]{0,2}|ryzen\s+[3579]\s+\d{3,4}[a-z0-9]*|threadripper\s+(?:pro\s+)?\d{3,4})\b/i,
+    mobo:   /\b(?:motherboard|mobo)\b/i,
+    gpu:    /\b(?:(?:rtx|gtx)\s*\d{3,4}|rx\s*\d{3,4}|arc\s+[ab]\d{3})\b|\bgraphics\s+card\b/i,
+    psu:    /\b(?:power\s+supply|psu)\b/i,
+    ram:    /\b\d{1,3}\s?gb\b[^.|]{0,12}\bddr[45]\b/i,
+    cooler: /\b(?:cpu|aio|air|liquid)\s+cooler\b/i,
+  };
+  const present = Object.keys(TYPE).filter((k) => TYPE[k].test(t));
+  if (present.length < 2) return null;
+  const warranty = /\b(?:warranty|protection|cps|care|coverage|plan)\b/i.test(t);
+  const hasWord = /\b(?:combo|bundle)\b/i.test(t) && !warranty;
+  const hasPlus = /[a-z0-9)™]\s*\+\s*[a-z0-9(]/i.test(t);
+  const procWith = /\b(?:processor|cpu|gpu|graphics\s+card)\b[^.|]{0,50}\bwith\b[^.|]{0,60}\b(?:motherboard|mobo|power\s+supply|psu|cooler)\b/i.test(t);
+  if (!(hasWord || hasPlus || procWith)) return null;   // no combining token → compatibility text, not a bundle
+  return present.sort().join('+');
+}
+
 function cpuRejectReason(product) {
   const p = product || {};
   const sock = String(p.socket || '').toUpperCase().replace(/\s+/g, '');
@@ -503,6 +544,7 @@ module.exports = {
   cpuRejectReason,
   psuRejectReason,
   prebuiltSystemReason,
+  bundleReason,
   cleanManufacturer,
   resolveDiscoveryBrand,
 };

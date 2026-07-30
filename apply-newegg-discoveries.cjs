@@ -191,7 +191,7 @@ function buildRow(rec, id, NEG) {
   }
 
   const catReject = CATEGORY_REJECT[CATEGORY] || (() => null);
-  const stat = { leaf: 0, deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0, categoryReject: 0,
+  const stat = { leaf: 0, deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, bundle: 0, condition: 0, categoryReject: 0,
     dedupeCatalog: { upc: 0, mpn: 0, name: 0 }, dedupeBatch: { upc: 0, mpn: 0 }, specBar: 0, survivors: 0 };
   const seenUpc = new Set(), seenMpn = new Set();
   // Collect ALL passing records (whole feed, no early stop), then sample ACROSS
@@ -228,6 +228,7 @@ function buildRow(rec, id, NEG) {
         if (NEG.sellerClass(rec.newegg_item_number || rec.sku) !== 'official') { stat.marketplace++; return; }
         if (CC.notBuildableReason(name)) { stat.accessory++; return; }
         if (PREBUILT_RE.test(name)) { stat.prebuilt++; return; }
+        if (CC.bundleReason(name)) { stat.bundle = (stat.bundle || 0) + 1; return; }   // CPU+mobo combos etc.
         if (detectCondition(name) !== 'new') { stat.condition++; return; }
         if (catReject(name)) { stat.categoryReject++; return; }   // server/enterprise class
 
@@ -353,7 +354,7 @@ function buildRow(rec, id, NEG) {
   fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
-  log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | cond ${stat.condition} | serverEcc ${stat.categoryReject} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
+  log(`\nFunnel: leaf ${stat.leaf} | mkt ${stat.marketplace} | acc ${stat.accessory} | prebuilt ${stat.prebuilt} | bundle ${stat.bundle} | cond ${stat.condition} | serverEcc ${stat.categoryReject} | dedupCat ${stat.dedupeCatalog.upc + stat.dedupeCatalog.mpn + stat.dedupeCatalog.name} | dedupBatch ${stat.dedupeBatch.upc + stat.dedupeBatch.mpn} | specBar ${stat.specBar}`);
   log(`Distinct survivors: ${stat.survivors}`);
   if (ceilInfo.applied) log(`Price gate (absolute table, calibrated ${ceilInfo.calibratedAt}): quarantined ${ceilInfo.quarantined} (needsReview, held), failureRate ${(ceilInfo.failureRate * 100).toFixed(1)}%`);
   for (const w of ceilInfo.warnings || []) log(`  !! ${w}`);

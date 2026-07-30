@@ -3709,7 +3709,8 @@ export default [
     "bench": 73,
     "boostClock": 5600,
     "memType": "DDR5",
-    "igpu": true
+    "igpu": true,
+    "bundle": true
   },
   {
     "id": 10142,
