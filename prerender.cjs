@@ -33,6 +33,7 @@ const fs = require("fs");
 const path = require("path");
 const { spawn } = require("child_process");
 const { productPath, isIndexable, loadParts, categoryBrowsePath, browsePageCount, BROWSE_PAGE_SIZE, CAT_SLUG } = require('./scripts/url-slugs.cjs');
+const { dedupeHeadTags } = require('./scripts/dedupe-head.cjs');
 // BROWSE_ROUTES_ENUMERATION_INSERTED
 async function enumerateBrowseRoutes() {
   const parts = (await loadParts()).filter(isIndexable);
@@ -199,7 +200,9 @@ async function renderRoute(browser, route) {
 
     await new Promise(r => setTimeout(r, 100));
 
-    const html = await page.content();
+    // Strip the shell's default head tags that Helmet has already replaced,
+    // so each social/SEO head tag appears exactly once. See scripts/dedupe-head.cjs.
+    const html = dedupeHeadTags(await page.content());
     const bodyChars = await page.evaluate(() => document.body.innerText.length);
     if (bodyChars < 100) throw new Error(`body only ${bodyChars} chars`);
 
