@@ -26651,12 +26651,16 @@ export default [
         "matchScore": 1
       }
     },
-    "needsReview": false,
+    "needsReview": true,
     "upc": "00619659231941",
     "mpn": "SDSP81800TAN-000E0",
     "source": "newegg-discovery",
     "discoveredAt": "2026-07-30",
-    "batchId": "newegg-storage-2026-07-30"
+    "batchId": "newegg-storage-2026-07-30",
+    "quarantinedAt": "2026-07-30",
+    "reviewFlags": [
+      "wrong-asin:capacity-mismatch"
+    ]
   },
   {
     "id": 102485,
