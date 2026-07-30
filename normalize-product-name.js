@@ -243,6 +243,15 @@ export function isPricePlausibleForCapacity(price, capGB, { isHDD = false } = {}
 // so naive scrapes grab the WRONG number (a $469 Team T-Force / $739 GPU bleeding
 // into the buy box). The NEXT recalibration MUST verify against NeweggBusiness.
 export const PRICE_TABLE_CALIBRATED_AT = '2026-07-27';
+// Per-category last-reviewed stamp (the global CALIBRATED_AT drives the age
+// warning; this records WHEN each category's bounds were last checked against
+// live NeweggBusiness retail, since categories are re-verified independently).
+export const CEILINGS_LAST_REVIEWED = {
+  RAM:     '2026-07-27',   // DRAM shortage recalibration (47-SKU live audit)
+  CPU:     '2026-07-28',   // absolute TOTAL band added
+  Storage: '2026-07-30',   // NeweggBusiness re-verify amid 2026 NAND shortage — bounds confirmed, unchanged
+  PSU:     '2026-07-27',   // pending re-verify in this PSU discovery pass
+};
 export const PRICE_TABLE = {
   RAM: {
     'DDR5':     { floor: 2.0, ceiling: 40 },   // consumer UDIMM; real max ~36/GB (2026-07-27 shortage, NeweggBusiness-verified)
@@ -252,8 +261,15 @@ export const PRICE_TABLE = {
     'DDR3':     { floor: 0.5, ceiling: 18 },   // real max 14.25
   },
   Storage: {
-    'SSD': { floor: 0.012, ceiling: 1.0 },     // real p99 0.48; 0% loss at 1.0
-    'HDD': { floor: 0.006, ceiling: 0.35 },    // real p99 0.29; old 0.1 killed 17.8%
+    // Re-verified 2026-07-30 on NeweggBusiness first-party FinalPrice amid the
+    // active 2026 NAND-flash shortage (SSD contract +55-60% QoQ, AI-datacenter
+    // driven — TrendForce/GamersNexus). Anchors: WD Blue 1TB SATA $279.99 =
+    // 0.28/GB, 870 EVO 1TB 0.345/GB, WD_BLACK SN850X 2TB NVMe 0.175/GB, Crucial
+    // T705 4TB Gen5 $689.99 = 0.172/GB. Observed high ~0.345/GB (small drives
+    // spike higher). Ceiling 1.0 keeps ~2.9x headroom over the shortage high —
+    // deliberately generous: a too-LOW ceiling is the RAM-disaster failure mode.
+    'SSD': { floor: 0.012, ceiling: 1.0 },     // real high ~0.345/GB (2026-07-30 shortage); 2.9x headroom
+    'HDD': { floor: 0.006, ceiling: 0.35 },    // IronWolf 8TB $299.99=0.0375/GB, Red Plus 8TB ~0.044/GB; generous
   },
   PSU: {
     'W': { floor: 0.008, ceiling: 0.8 },       // real p99 0.59

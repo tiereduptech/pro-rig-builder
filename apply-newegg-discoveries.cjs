@@ -109,6 +109,12 @@ const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gamin
 const CATEGORY_REJECT = {
   RAM: (name) => CC.ramRejectReason(name),
   PSU: (name) => CC.psuRejectReason(name),   // UPS / battery-backup is not a PSU
+  // Storage: enterprise SAS / U.2-U.3-EDSFF / hot-swap + external USB drives +
+  // whole NAS appliances. storageRejectReason computes interface/formFactor from
+  // the title (feed carries no structured field) and gates on the COMPUTED value,
+  // name backstop only — validated against 300 real feed titles (123/300 rejected,
+  // 0 false positives). See catalog-classify.storageAttributes.
+  Storage: (name) => CC.storageRejectReason(name),
 };
 const detectCondition = (n) => {
   const N = (n || '').toUpperCase();

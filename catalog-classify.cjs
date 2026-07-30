@@ -369,17 +369,50 @@ function ramRejectReason(name) {
 // Out of scope ALSO: a whole NAS APPLIANCE (a networked storage SYSTEM with its
 // own CPU / OS / enclosure — Synology DiskStation, QNAP, UGREEN NASync) rides into
 // Storage on the word "NAS" but is a complete machine, not a drive a build selects.
+// Derived Storage attributes (interface / form factor) read from the TITLE, the
+// same way ramAttributes() derives DIMM formFactor. The discovery feed carries no
+// structured interface field (attr_1..10 are opaque IDs), so on that path the
+// storage scope gate has nothing to key on unless we compute it here. A catalog
+// row that already carries a real p.interface/p.formFactor still wins — these are
+// only the fallback when the structured field is absent.
+//   • external transport wins over the inner bus: a "PCIe NVMe Portable External"
+//     enclosure is an EXTERNAL drive regardless of the NVMe inside, so it must not
+//     land in INTERNAL storage. That is why external is tested before SAS/NVMe/SATA.
+function storageAttributes(title) {
+  const t = String(title || '');
+  let iface = null;
+  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t) || /\busb\b/i.test(t)) iface = 'USB';
+  else if (/\bsas\b/i.test(t)) iface = 'SAS';
+  else if (/\bnvme\b/i.test(t) || /\bpci[\s-]?e(xpress)?\b/i.test(t)) iface = 'NVMe';  // "PCIe" / "PCI Express" / "PCI-Express"
+  else if (/\bsata\b/i.test(t)) iface = 'SATA';
+  let formFactor = null;
+  if (/\bu\.2\b/i.test(t)) formFactor = 'U.2';
+  else if (/\bu\.3\b/i.test(t)) formFactor = 'U.3';
+  else if (/\bedsff\b/i.test(t)) formFactor = 'EDSFF';
+  else if (/\bm\.2\b/i.test(t)) formFactor = 'M.2';
+  const hotSwap = /\bhot[\s-]?swap\b/i.test(t);
+  return { interface: iface, formFactor, hotSwap };
+}
+
 function storageRejectReason(product) {
-  const p = product || {};
-  const ff = `${p.ff || ''} ${p.form || ''} ${p.formFactor || ''}`;
-  const iface = String(p.interface || '').toUpperCase().trim();
+  // Accept a bare title string (discovery path) OR a catalog product object
+  // (nightly / one-shot passes). A real structured field on the object wins;
+  // otherwise fall back to what storageAttributes() reads from the title.
+  const p = (product && typeof product === 'object') ? product : { n: product };
+  const title = p.n || p.name || '';
+  const a = storageAttributes(title);
+  const ff = `${p.ff || ''} ${p.form || ''} ${p.formFactor || ''} ${a.formFactor || ''}`;
+  const iface = String(p.interface || a.interface || '').toUpperCase().trim();
   // A — computed interface / form factor (PRIMARY)
   if (iface === 'SAS') return 'enterprise_sas';
   if (/\bU\.2\b|\bU\.3\b|\bEDSFF\b/i.test(ff)) return 'enterprise_form';
+  if (p.hotSwap === true || a.hotSwap) return 'enterprise_hotswap';   // server/rackmount hot-swap carrier
   if (iface === 'USB') return 'external_usb';
   // B — raw-name backstop (only for rows whose fields didn't carry the signal)
-  const t = p.n || '';
+  const t = title;
   if (/\b(sas|u\.2|u\.3|edsff)\b/i.test(t)) return 'enterprise_sas';
+  if (/\bhot[\s-]?swap\b/i.test(t)) return 'enterprise_hotswap';
+  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t)) return 'external_usb';
   // C — whole NAS APPLIANCE, not a drive. Signal: a drive-BAY count on a NAS /
   //     NASync / DiskStation / Network-Attached-Storage unit. NAS-rated internal
   //     drives say "NAS Internal Hard Drive / NAS SSD" and never carry an "N-Bay"
@@ -547,6 +580,7 @@ module.exports = {
   ramAttributes,
   ramRejectReason,
   storageRejectReason,
+  storageAttributes,
   cpuRejectReason,
   psuRejectReason,
   prebuiltSystemReason,

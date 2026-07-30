@@ -81,6 +81,18 @@ const SPEC_BAR = {
 };
 
 const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i;
+
+// Per-category scope reject — "wrong class for a consumer/gaming desktop build".
+// The SAME single-source gates the apply path uses (catalog-classify.cjs), so the
+// dry-run funnel matches what apply will actually admit. Storage: enterprise SAS /
+// U.2-U.3-EDSFF / hot-swap and external USB drives, plus whole NAS appliances.
+// PSU: UPS / battery-backup / redundant server supplies. RAM: laptop/server/ECC.
+const CATEGORY_REJECT = {
+  RAM: (name) => CC.ramRejectReason(name),
+  PSU: (name) => CC.psuRejectReason(name),
+  Storage: (name) => CC.storageRejectReason(name),
+};
+
 function detectCondition(name) {
   const N = (name || '').toUpperCase();
   if (/\bOPEN[\s-]?BOX\b/.test(N)) return 'openbox';
@@ -124,7 +136,8 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
 
   const stat = {
     feedRecords: 0, leafMatched: 0,
-    rej: { deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0, specBar: 0 },
+    rej: { deletedOOS: 0, marketplace: 0, accessory: 0, prebuilt: 0, condition: 0, scope: 0, specBar: 0 },
+    scopeReasons: {},
     dedupe: { upc: 0, mpn: 0, name: 0 },
     survivors: 0,
   };
@@ -172,6 +185,12 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
         if (CC.bundleReason(name)) { stat.rej.bundle = (stat.rej.bundle || 0) + 1; return; }   // multi-component combo
         // 6. condition
         if (detectCondition(name) !== 'new') { stat.rej.condition++; return; }
+        // 6b. category scope (enterprise/external/server out of scope for a build)
+        const scopeReject = CATEGORY_REJECT[CATEGORY];
+        if (scopeReject) {
+          const why = scopeReject(name);
+          if (why) { stat.rej.scope = (stat.rej.scope || 0) + 1; (stat.scopeReasons || (stat.scopeReasons = {}))[why] = (stat.scopeReasons[why] || 0) + 1; return; }
+        }
 
         // 7. dedupe vs catalog
         const u = normUPC(rec.upc), m = normMPN(rec.mpn);
@@ -223,6 +242,7 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
     feedRecords: stat.feedRecords,
     leafMatched: stat.leafMatched,
     rejections: stat.rej,
+    scopeReasons: stat.scopeReasons,
     dedupeHits: stat.dedupe,
     survivorsDistinct: stat.survivors,
     trueGap: stat.survivors,
@@ -244,6 +264,7 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
   log(`  ✗ accessory:       ${r.accessory}`);
   log(`  ✗ prebuilt/bundle: ${r.prebuilt}`);
   log(`  ✗ open-box/used:   ${r.condition}`);
+  log(`  ✗ out-of-scope:    ${r.scope || 0}  ${JSON.stringify(stat.scopeReasons)}`);
   log(`  = dedupe (have):   ${d.upc + d.mpn + d.name}  (upc ${d.upc} / mpn ${d.mpn} / name ${d.name})`);
   log(`  ✗ below spec bar:  ${r.specBar}`);
   log(`  ✓ SURVIVORS:       ${stat.survivors}  (distinct)`);
