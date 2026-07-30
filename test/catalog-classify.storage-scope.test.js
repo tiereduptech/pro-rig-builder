@@ -40,6 +40,10 @@ test('rejects enterprise SAS / U.2-U.3-EDSFF / hot-swap drives', () => {
   assert.equal(storageRejectReason('Samsung PM9A3 3.84TB PCIe Gen4 x4 NVMe U.2 Enterprise SSD'), 'enterprise_form');
   assert.equal(storageRejectReason('Lenovo ThinkSystem - Hard drive - 2.4 TB - hot-swap - 2.5\' - SAS 12Gb/s'), 'enterprise_sas'); // SAS wins first
   assert.equal(storageRejectReason('HPE 800GB hot-swap SFF Mixed Use SSD'), 'enterprise_hotswap');
+  // real feed edge cases surfaced by the dry run: "Hot Swappable" suffix + E3.S EDSFF ruler
+  assert.equal(storageRejectReason("Lenovo 1 TB Hard Drive 3.5' Internal SATA SATA/600 - Hot Swappable 4XB"), 'enterprise_hotswap');
+  assert.equal(storageRejectReason('Solidigm Solid State Drive D7-PS1010 Series (3.84TB, E3.S 7.5mm PCIe 5.0)'), 'enterprise_form');
+  assert.equal(storageRejectReason('Solidigm D7-PS1030 Series (6.4TB, E3.S 7.5mm PCIe 5.0)'), 'enterprise_form');
 });
 
 test('keeps legitimate internal SATA / NVMe desktop drives (real feed rows)', () => {

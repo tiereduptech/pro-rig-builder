@@ -388,9 +388,9 @@ function storageAttributes(title) {
   let formFactor = null;
   if (/\bu\.2\b/i.test(t)) formFactor = 'U.2';
   else if (/\bu\.3\b/i.test(t)) formFactor = 'U.3';
-  else if (/\bedsff\b/i.test(t)) formFactor = 'EDSFF';
+  else if (/\bedsff\b/i.test(t) || /\bE[13]\.[SL]\b/i.test(t)) formFactor = 'EDSFF';  // EDSFF ruler drives: E1.S/E1.L/E3.S/E3.L
   else if (/\bm\.2\b/i.test(t)) formFactor = 'M.2';
-  const hotSwap = /\bhot[\s-]?swap\b/i.test(t);
+  const hotSwap = /\bhot[\s-]?swap(pable)?\b/i.test(t);   // "hot-swap" AND "hot swappable"
   return { interface: iface, formFactor, hotSwap };
 }
 
@@ -410,8 +410,8 @@ function storageRejectReason(product) {
   if (iface === 'USB') return 'external_usb';
   // B — raw-name backstop (only for rows whose fields didn't carry the signal)
   const t = title;
-  if (/\b(sas|u\.2|u\.3|edsff)\b/i.test(t)) return 'enterprise_sas';
-  if (/\bhot[\s-]?swap\b/i.test(t)) return 'enterprise_hotswap';
+  if (/\b(sas|u\.2|u\.3|edsff)\b/i.test(t) || /\bE[13]\.[SL]\b/i.test(t)) return 'enterprise_sas';
+  if (/\bhot[\s-]?swap(pable)?\b/i.test(t)) return 'enterprise_hotswap';
   if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t)) return 'external_usb';
   // C — whole NAS APPLIANCE, not a drive. Signal: a drive-BAY count on a NAS /
   //     NASync / DiskStation / Network-Attached-Storage unit. NAS-rated internal
