@@ -84,12 +84,26 @@ function browsePageCount(count) {
   return Math.max(1, Math.ceil((count || 0) / BROWSE_PAGE_SIZE));
 }
 
+// A live, buyable deal = a retailer entry with both a price and a click-through URL.
+function hasBuyableDeal(product) {
+  const d = product && product.deals;
+  if (!d || typeof d !== 'object') return false;
+  return Object.keys(d).some((k) => {
+    const o = d[k];
+    return o && typeof o === 'object' && o.price != null && (o.url || o.linkurl);
+  });
+}
+
 function isIndexable(product) {
   if (!product) return false;
   if (product.needsReview) return false;
-  if (product.bundle) return false;
   if (!product.id || !product.n || !product.c) return false;
   if (!CAT_SLUG[product.c]) return false;
+  // Bundles ARE indexable — a "Ryzen + Motherboard" combo page ranks. `p.bundle`
+  // means "not a discrete component, exclude from the builder picker" (enforced
+  // separately in App.jsx via !p.bundle), NOT "hide from the index". But only when
+  // there's something to buy: an indexable page with no live deal is a thin page.
+  if (product.bundle && !hasBuyableDeal(product)) return false;
   return true;
 }
 

@@ -23,6 +23,7 @@
 
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { bundleH1, bundleTitle, bundleLdName } from "./bundle-name.js";
 
 const SITE = "https://prorigbuilder.com";
 const BRAND = "Pro Rig Builder";
@@ -506,11 +507,18 @@ function buildProductMeta(p) {
     ? `/parts/${cSlug}/${nSlug}-${p.id || p._id}`
     : `/search?cat=${encodeURIComponent(cat)}&id=${p.id || p._id}`;
 
-  const displayName = brand && !name.toLowerCase().includes(brand.toLowerCase())
-    ? `${brand} ${name}` : name;
+  // Bundles: description + title lead with the FULL combo so both components
+  // ("Ryzen 9 7900X + B650 … Motherboard") are in the meta, and the title keeps
+  // both + "Bundle" inside 60 chars by dropping the "Price, Specs & Reviews"
+  // boilerplate. og/twitter title uses the full-combo H1 form. Scoped to p.bundle.
+  const isBundle = p.bundle === true;
+  const displayName = isBundle
+    ? bundleH1(p)
+    : (brand && !name.toLowerCase().includes(brand.toLowerCase()) ? `${brand} ${name}` : name);
 
   return {
-    title: buildProductTitle(displayName),
+    title: isBundle ? bundleTitle(p) : buildProductTitle(displayName),
+    ogTitle: isBundle ? bundleH1(p) : undefined,
     desc: buildProductDesc(displayName, p),
     path: canonicalPath,
   };
@@ -577,7 +585,7 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
     const ld = {
       "@context": "https://schema.org",
       "@type": "Product",
-      name: product.n || product.name,
+      name: product.bundle ? bundleLdName(product) : (product.n || product.name),
       ...(image ? { image } : {}),
       ...(desc ? { description: desc } : {}),
       ...(product.b || product.brand ? { brand: { "@type": "Brand", name: product.b || product.brand } } : {}),
@@ -673,7 +681,7 @@ export default function PageMeta({ page, category, product, parts }) {
 
       {/* Open Graph */}
       <meta property="og:site_name" content={BRAND} />
-      <meta property="og:title" content={meta.title} />
+      <meta property="og:title" content={meta.ogTitle || meta.title} />
       <meta property="og:description" content={meta.desc} />
       <meta property="og:url" content={url} />
       <meta property="og:type" content={ogType} />
@@ -681,7 +689,7 @@ export default function PageMeta({ page, category, product, parts }) {
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:title" content={meta.ogTitle || meta.title} />
       <meta name="twitter:description" content={meta.desc} />
       <meta name="twitter:image" content={ogImage} />
 

@@ -3,6 +3,7 @@ import { Box, Cpu, Snowflake, CircuitBoard, MemoryStick, Square, HardDrive, Plug
 import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import ProductPage from "./ProductPage.jsx";
+import { bundleH1, bundleLdName } from "./bundle-name.js";
 // PARTS comes from parts-frontend.js, which dynamic-imports per-category
 // modules so Vite can ship them as separate chunks. The array starts empty
 // and is mutated in place as categories load — main.jsx awaits an initial
@@ -225,6 +226,11 @@ function ProductReviews({ product }){
 
 function cleanProductName(p){
   if(!p || !p.n) return '';
+  // ── Bundle combo name ─────────────────────────────────────────
+  // A combo (CPU + motherboard) must keep BOTH components + "Bundle" so its H1 and
+  // browse row read as the combo people search for — the CPU/GPU cleaners below
+  // would strip the second component. Scoped to p.bundle; normal path untouched.
+  if(p.bundle) return bundleH1(p);
   // ── CPU name cleaner ──────────────────────────────────────────
   if(p.c === 'CPU'){
     const cn = p.n.replace(/[\u2122\u00AE\u00A9]/g,' ');
@@ -2314,7 +2320,7 @@ function ProductSchema({p}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": p.n,
+    "name": p.bundle ? bundleLdName(p) : p.n,
     "brand": {"@type": "Brand", "name": p.b || "Unknown"},
     "category": p.c,
     ...(p.img ? {"image": p.img} : {}),

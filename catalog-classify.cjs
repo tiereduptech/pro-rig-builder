@@ -419,6 +419,12 @@ function prebuiltSystemReason(name) {
   const hasRAM = /\b\d{1,3}\s?gb\b[^.|]{0,30}\b(ddr[45]|ram)\b/i.test(t) || /\bddr[45]\b[^.|]{0,20}\b\d{1,3}\s?gb\s*(ram)?\b/i.test(t);
   const hasStorage = /\b\d{2,4}\s?(gb|tb)\b[^.|]{0,30}\b(ssd|nvme|hdd|hard\s+drive|emmc|ufs)\b/i.test(t);
   if (hasCPU && (hasOSEdition || (hasRAM && hasStorage))) return 'prebuilt_system';
+  // (1b) "Gaming PC/Desktop" that names BOTH a CPU model AND a GPU model is a whole
+  //      machine ("Azure 3 Gaming PC, Ryzen 7 9700X, NVIDIA RTX 5060"). Bare "Gaming
+  //      PC" stays allowed (it rides in case titles); the CPU+GPU pair is the gate —
+  //      a case / CPU / GPU listing never names both a CPU model and a GPU model.
+  const hasGPU = /\b(rtx|gtx)\s?\d{3,4}\b|\brx\s?\d{3,4}\b|\bgeforce\b|\bradeon\b/i.test(t);
+  if (hasCPU && hasGPU && /\bgaming\s+(pc|desktop|computer|rig)\b/i.test(t)) return 'prebuilt_gaming';
   // (2) explicit prebuilt brand model lines — unambiguously whole machines even without
   //     a full spec list.
   if (/\b(prodesk|elitedesk|optiplex|thinkcentre|thinkstation|ideacentre|inspiron\s+desktop|pavilion\s+desktop|aspire\s+(tc|xc|c\d)|legion\s+tower|predator\s+orion|alienware\s+aurora|omen\s+\d+\s+desktop)\b/i.test(t)) return 'prebuilt_brand';

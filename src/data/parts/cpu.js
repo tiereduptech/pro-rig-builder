@@ -3714,7 +3714,6 @@ export default [
   },
   {
     "id": 10142,
-    "bundle": true,
     "n": "Azure 3 Gaming PC, AMD Ryzen 7 9700X 3.8GHz, NVIDIA RTX 5060",
     "img": "https://m.media-amazon.com/images/I/71XMin+emqL._AC_SL1200_.jpg",
     "c": "CPU",
@@ -3750,7 +3749,8 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
-      "detector:wrong-asin"
+      "detector:wrong-asin",
+      "prebuilt-system"
     ]
   },
   {
@@ -5452,7 +5452,6 @@ export default [
     "baseClock": 2100,
     "memType": "DDR4",
     "igpu": true,
-    "bundle": true,
     "needsReview": true,
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
