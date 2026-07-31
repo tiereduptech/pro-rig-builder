@@ -25100,7 +25100,7 @@ export default [
     "img": "https://c1.neweggimages.com/ProductImageCompressAll640/AD7H_1_20180521383477945.jpg",
     "r": null,
     "cap": 960,
-    "storageType": "HDD",
+    "storageType": "SSD",
     "deals": {
       "newegg": {
         "sku": "445838653021783249316268",
@@ -26124,7 +26124,7 @@ export default [
     "img": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-862-03.jpg",
     "r": null,
     "cap": 1000,
-    "storageType": "HDD",
+    "storageType": "NVMe",
     "deals": {
       "newegg": {
         "sku": "445839617917312581354742",

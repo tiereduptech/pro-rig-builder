@@ -8,7 +8,20 @@
 //   node --test
 import test from 'node:test';
 import assert from 'node:assert';
-import { storageRejectReason, storageAttributes } from '../catalog-classify.cjs';
+import { storageRejectReason, storageAttributes, extractSpecs } from '../catalog-classify.cjs';
+
+test('extractSpecs storageType: a solid-state signal wins over "HDD Replacement" / "hard drive" marketing text', () => {
+  // real feed rows previously mislabeled HDD because "HDD" was tested before "SSD"
+  assert.equal(extractSpecs("Kingston A400 960GB SATA 3 2.5' Internal SSD SA400S37/960G - HDD Replacement for Increase Performance", 'Storage').storageType, 'SSD');
+  assert.equal(extractSpecs('SAMSUNG 990 PRO w/ Heatsink SSD 1TB PCIe 4.0 M.2 Internal Solid State Drive', 'Storage').storageType, 'SSD'); // "SSD"/"solid state", no literal "NVMe" -> SSD (was HDD)
+  assert.equal(extractSpecs('Crucial MX500 1TB 3D NAND SATA 2.5 inch Solid State Drive', 'Storage').storageType, 'SSD'); // "solid state", no "SSD" abbrev
+  // a genuine HDD (no solid-state signal) still classifies HDD
+  assert.equal(extractSpecs("WD Blue 4TB 3.5' SATA Internal Hard Drive HDD 5400 RPM", 'Storage').storageType, 'HDD');
+  assert.equal(extractSpecs('Seagate BarraCuda 2TB Internal Hard Drive 3.5 Inch SATA', 'Storage').storageType, 'HDD');
+  // INVERSE spam: a real 7200 RPM WD Purple HDD keyword-stuffed with "Solid State
+  // Drive" (+ bundled cable) must stay HDD — RPM tie-breaks (no "SSD" token).
+  assert.equal(extractSpecs('Western Digital WD 8TB Purple Surveillance Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 3.5", WD82PURZ - HDMI Cable, Solid State Drive', 'Storage').storageType, 'HDD');
+});
 
 test('storageAttributes reads interface + form factor from real titles', () => {
   assert.equal(storageAttributes('SanDisk Pro-Blade 1TB PCIe NVMe 3.0 Portable External SSD').interface, 'USB'); // external wins over NVMe

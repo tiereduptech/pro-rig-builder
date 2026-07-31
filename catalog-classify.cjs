@@ -286,9 +286,17 @@ function extractSpecs(title, category) {
       const size = parseInt(cap[1]);
       specs.cap = cap[2].toLowerCase() === 'tb' ? size * 1000 : size;
     }
+    // Order matters. A solid-state signal (NVMe / SSD / "solid state") WINS over
+    // an HDD signal, because "HDD Replacement" / "hard drive" is marketing text on
+    // SSD listings ("...2.5\" Internal SSD ... HDD Replacement for..."), NOT the
+    // product type. RPM is the tie-breaker for the INVERSE spam case: only a
+    // spinning disk has a rotational speed, so a real HDD keyword-stuffed with
+    // "Solid State Drive" (e.g. a WD Purple 7200 RPM drive bundled with a cable)
+    // still classifies HDD unless it actually carries the "SSD" token.
     if (/\bnvme\b/i.test(t)) specs.storageType = 'NVMe';
+    else if (/\brpm\b/i.test(t) && !/\bssd\b/i.test(t)) specs.storageType = 'HDD';
+    else if (/\bssd\b|solid[\s-]?state/i.test(t)) specs.storageType = 'SSD';
     else if (/\bhdd\b|hard drive|hard disk/i.test(t)) specs.storageType = 'HDD';
-    else if (/\bssd\b/i.test(t)) specs.storageType = 'SSD';
   }
   return specs;
 }
