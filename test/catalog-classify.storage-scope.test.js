@@ -21,6 +21,8 @@ test('extractSpecs storageType: a solid-state signal wins over "HDD Replacement"
   // INVERSE spam: a real 7200 RPM WD Purple HDD keyword-stuffed with "Solid State
   // Drive" (+ bundled cable) must stay HDD — RPM tie-breaks (no "SSD" token).
   assert.equal(extractSpecs('Western Digital WD 8TB Purple Surveillance Internal Hard Drive - 7200 RPM Class, SATA 6 Gb/s, 3.5", WD82PURZ - HDMI Cable, Solid State Drive', 'Storage').storageType, 'HDD');
+  // glued "NVMeSSD" (no space) must still classify NVMe (WD_Black SN770M)
+  assert.equal(extractSpecs('WD_Black SN770M 1TB M.2 2230 NVMeSSD - PCIe Gen 4.0, Speeds up to 5150 MB/s', 'Storage').storageType, 'NVMe');
 });
 
 test('storageAttributes reads interface + form factor from real titles', () => {

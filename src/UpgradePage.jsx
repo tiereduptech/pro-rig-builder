@@ -509,14 +509,16 @@ function candidateStorages(wantGB, wantType, maxPrice, moboGen = 3) {
   const isSSD = wantType === "SSD";
   const isAny = wantType === "ANY" || wantType === "";
 
-  // Raw NVMe gen detected from the product name (0 = HDD, 2 = SATA SSD).
+  // Effective PCIe gen for the mobo-gen cap. TYPE comes from the computed
+  // storageType flag (HDD=0, SATA SSD=2); the gen NUMBER for NVMe still comes from
+  // the name (the flag doesn't carry Gen3/4/5).
   const nvmeGenOf = (p) => {
-    const n = p.n.toUpperCase();
-    if (/\bHDD\b|hard drive/i.test(p.n)) return 0;
+    if (p.storageType === "HDD") return 0;
+    const n = (p.n || "").toUpperCase();
     if (/\bGEN\s*5\b|PCIE\s*5\.?0/.test(n)) return 5;
     if (/\bGEN\s*4\b|PCIE\s*4\.?0/.test(n)) return 4;
-    if (/\bGEN\s*3\b|PCIE\s*3\.?0|NVMe/.test(n)) return 3;
-    if (/\bSSD\b/.test(n)) return 2;
+    if (/\bGEN\s*3\b|PCIE\s*3\.?0/.test(n) || p.storageType === "NVMe") return 3;
+    if (p.storageType === "SSD") return 2; // SATA SSD
     return 1;
   };
 
@@ -525,8 +527,11 @@ function candidateStorages(wantGB, wantType, maxPrice, moboGen = 3) {
     if (p.cap == null || p.cap < wantGB) return false;
     const price = bestPrice(p);
     if (price <= 0 || price > maxPrice) return false;
-    const isHddProduct = /\bHDD\b|hard drive/i.test(p.n);
-    const isSsdProduct = /\bSSD\b|NVMe/i.test(p.n);
+    // Type from the COMPUTED storageType flag, not the product name. A title's
+    // "HDD Replacement" / "Solid State Hard Drive" marketing text is not the type
+    // (that name-parsing bug wrongly offered SSDs for HDD upgrade requests).
+    const isHddProduct = p.storageType === "HDD";
+    const isSsdProduct = p.storageType === "SSD" || p.storageType === "NVMe";
     if (isHDD && !isHddProduct) return false;
     if (isSSD && !isSsdProduct) return false;
     if (isAny && !isHddProduct && !isSsdProduct) return false;

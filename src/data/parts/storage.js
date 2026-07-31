@@ -24589,7 +24589,8 @@ export default [
     "pcie": 4,
     "read": 5150,
     "pcieGen": 4,
-    "formFactor": "M.2 2230"
+    "formFactor": "M.2 2230",
+    "storageType": "NVMe"
   },
   {
     "id": 101278,

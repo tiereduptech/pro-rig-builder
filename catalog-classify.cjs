@@ -293,7 +293,7 @@ function extractSpecs(title, category) {
     // spinning disk has a rotational speed, so a real HDD keyword-stuffed with
     // "Solid State Drive" (e.g. a WD Purple 7200 RPM drive bundled with a cable)
     // still classifies HDD unless it actually carries the "SSD" token.
-    if (/\bnvme\b/i.test(t)) specs.storageType = 'NVMe';
+    if (/\bnvme/i.test(t)) specs.storageType = 'NVMe';   // trailing \b dropped so glued "NVMeSSD" (no space) still matches
     else if (/\brpm\b/i.test(t) && !/\bssd\b/i.test(t)) specs.storageType = 'HDD';
     else if (/\bssd\b|solid[\s-]?state/i.test(t)) specs.storageType = 'SSD';
     else if (/\bhdd\b|hard drive|hard disk/i.test(t)) specs.storageType = 'HDD';
