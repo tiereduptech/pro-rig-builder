@@ -118,7 +118,9 @@ export default [
         "url": "https://www.amazon.com/dp/B08D72GSMS?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-03"
   },
   {
     "id": 96015,
@@ -156,7 +158,7 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 21.73,
+        "price": 25.96,
         "url": "https://www.amazon.com/dp/B07V4R3QHW?tag=tiereduptech-20",
         "inStock": true
       }
@@ -202,7 +204,9 @@ export default [
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-03"
   },
   {
     "id": 96019,

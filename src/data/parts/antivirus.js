@@ -203,7 +203,7 @@ export default [
     "term": "1 Year",
     "deals": {
       "amazon": {
-        "price": 34.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B07BFRVMMN?tag=tiereduptech-20",
         "inStock": true
       }

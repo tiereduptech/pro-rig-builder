@@ -57,7 +57,7 @@ export default [
     "vlan": false,
     "pxe": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-03",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -90,7 +90,7 @@ export default [
     "pxe": true,
     "connector": "RJ45",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-03",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -123,7 +123,7 @@ export default [
     "vlan": true,
     "pxe": true,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-03",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -238,7 +238,7 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 62.99,
+        "price": 69.99,
         "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
         "inStock": true
       }
@@ -282,7 +282,7 @@ export default [
     "connector": "SFP+",
     "deals": {
       "amazon": {
-        "price": 70.01,
+        "price": 62.99,
         "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
         "inStock": true
       }
@@ -374,7 +374,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0D7B2WX2T?tag=tiereduptech-20",
         "inStock": true
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-03"
   },
   {
     "id": 96110,

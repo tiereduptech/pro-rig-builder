@@ -88,7 +88,7 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-08-03"
   },
   {
     "id": 99702,
