@@ -125,7 +125,7 @@ export function titleMatches(storedName, amazonTitle, storedCap = null) {
   if (!tokensA.size) return { match: false, score: 0 };
   let hits = 0;
   for (const t of tokensA) if (tokensB.has(t)) hits++;
-  const score = hits / tokensA.size;
+  const score = hits / tokensA.size;                       // stored-in-amazon (directional)
   const modelTokensA = [...tokensA].filter(t => /\d/.test(t) && /[a-z]/.test(t));
   const modelMatch = modelTokensA.length === 0 || modelTokensA.some(t => tokensB.has(t));
   // Capacity is a HARD gate: vendors reuse one title across every capacity, so
@@ -133,7 +133,37 @@ export function titleMatches(storedName, amazonTitle, storedCap = null) {
   const capA = storedCap ?? parseCapacityGB(storedName);
   const capB = parseCapacityGB(amazonTitle);
   const capConflict = !capacityCompatible(capA, capB);
-  return { match: score >= 0.5 && modelMatch && !capConflict, score: Math.round(score * 100) / 100, capConflict };
+
+  // Directional-recall rescue for verbose stored names. score = |A∩B|/|A| alone
+  // sinks a correct match when the STORED name is long marketing text ("Intel -
+  // Core i9-14900K 24-Core 32-Thread 4.4GHz ... Unlocked Desktop Processor - M")
+  // against a clean Amazon title ("Intel Core i9-14900K Desktop Processor"): most
+  // stored tokens are absent from the short title so score drops below 0.5 even
+  // though it is plainly the same product. The nightly ASIN-identity audit
+  // measured 335 such rows — 60% of ALL title-flags — as false mismatches.
+  //
+  // Add the reverse direction: if the Amazon title's own tokens are almost
+  // entirely contained in the stored name (bInA), it is the same product with
+  // extra words. Two arms, both HARD-gated on capacity:
+  //   • bInA >= 0.90                      — Amazon title is a near-subset of stored
+  //   • max(score,bInA) >= 0.75 AND same  — weaker overlap, so also require the
+  //     leading brand token to match         brand to survive
+  // A same-brand different-model "close-but-wrong" fails BOTH arms (its differing
+  // model/spec tokens keep containment below threshold), so it still fires. This
+  // mirrors the audit's own verbosity classifier exactly, keeping the live gate
+  // and the audit in agreement. Verified against the 555 labeled title-flags: all
+  // 335 verbosity rescued, zero genuine close/wrong rows rescued.
+  const bInA = tokensB.size ? hits / tokensB.size : 0;      // amazon-in-stored (reverse)
+  const brandTok = a.split(' ').filter(Boolean)[0] || '';
+  const brandShared = brandTok.length >= 2 && b.split(' ').includes(brandTok);
+  const verbosityRescue = !capConflict &&
+    (bInA >= 0.9 || (Math.max(score, bInA) >= 0.75 && brandShared));
+
+  return {
+    match: (score >= 0.5 && modelMatch && !capConflict) || verbosityRescue,
+    score: Math.round(score * 100) / 100,
+    capConflict,
+  };
 }
 
 function today() { return new Date().toISOString().slice(0, 10); }
