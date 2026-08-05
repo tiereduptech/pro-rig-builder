@@ -31,6 +31,9 @@ import { STORAGE_CATS, titleMatches, analyzeResult,
          driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES,
          linkVerificationCurrent, lastDealChangedAt, stampDealChange } from './drift-gate.js';
 import { isRenewedTitle } from './condition.cjs';
+// Spend guards (dollar ceiling + scoped exact-count + full-tier band) live in ONE
+// pure, unit-tested module — never re-declared here. See verify-spend-guard.js.
+import { evaluateSpendGuard, COST_PER_SELLERS_TASK } from './verify-spend-guard.js';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -61,10 +64,8 @@ const TASK_POLL_INTERVAL_MS = 10000;
 const MAX_POLL_WAIT_MS = 1800000;
 const GET_CONCURRENCY = 8;
 const ASIN_FIX_MIN_SCORE = 0.8;
-// Empirical DataForSEO cost per /merchant/amazon/sellers advanced task. MEASURED
-// from the 604-row re-verify's live task_post `cost`: $0.906 / 604 = $0.00150/call.
-// The old 0.001 undershot every estimate by 33% (a $8.60 job read as $5.75).
-const COST_PER_SELLERS_TASK = 0.0015;
+// COST_PER_SELLERS_TASK is imported from verify-spend-guard.js (single source of
+// truth for spend math, shared with the ceiling projection). MEASURED $0.00150/call.
 
 // ═══ STRATEGY 2: Known-good ASIN overrides table ═══
 let ASIN_OVERRIDES = {};
@@ -175,6 +176,13 @@ async function loadCatalog() {
 function saveCatalog(parts) {
   writeFileSync('./src/data/parts.js',
     `// Auto-merged catalog. Edit with care.\nexport const PARTS = ${JSON.stringify(parts, null, 2)};\n\nexport default PARTS;\n`);
+}
+// The tier's CURRENT catalog population — all rows in the tier's categories, before
+// the ASIN/exclude/link-verified filters. The full-tier spend band derives from THIS
+// every run, so it tracks the catalog as it grows and needs no hand-set constant.
+function tierCategoryCount(parts, tier) {
+  const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
+  return parts.filter(p => cats.includes(p.c)).length;
 }
 function selectProducts(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
@@ -396,26 +404,31 @@ function writeReports(allIssues, asinRepairs, meta) {
   console.log(`  Last 5 ids:  ${ids.slice(-5).join(', ')}`);
   console.log(`  Mode: ${flags.dryRun ? 'DRY RUN' : flags.autoFix ? 'AUTO-FIX' : 'REPORT-ONLY'}${flags.fixAsins ? ' + ASIN repair' : ''}`);
 
-  // Scope assertion (applies to EVERY mode, dry-run included): if the resolved count
-  // is not exactly what the caller expected, the scope filter did not apply. Abort —
-  // never silently fall back to a wider tier. This is the check the 2,782-row overbill
-  // needed and did not have.
-  if (flags.expectCount != null && products.length !== flags.expectCount) {
-    console.error(`\nSCOPE MISMATCH: resolved ${products.length} rows, expected ${flags.expectCount}. ` +
-      `The scope filter did not apply as intended. Aborting — no fallback to a wider tier, no spend.`);
+  // ── Spend guards (see verify-spend-guard.js) ────────────────────────────────
+  // One decision replaces the old flat POST_HARD_CAP=200, which could not tell a
+  // broken scope from a legit 2114-row full-tier nightly and blacked out the whole
+  // paid pipeline for a week. Runs in EVERY mode, dry-run included, so a dry-run
+  // proves the scope AND the projected spend before anyone bills a single task.
+  const guard = evaluateSpendGuard(products.length, {
+    scoped: !!ONLY_IDS,
+    onlyIdsSize: ONLY_IDS ? ONLY_IDS.size : null,
+    expectCount: flags.expectCount,
+    tier: flags.tier,
+    tierBaseline: tierCategoryCount(parts, flags.tier),   // CURRENT tier population
+    fixAsins: flags.fixAsins,
+    todayISO: new Date().toISOString().slice(0, 10),
+  });
+  guard.warnings.forEach(w => console.warn(`⚠ ${w}`));
+  console.log(`  Projected worst-case spend: $${guard.projected.total.toFixed(2)} ` +
+    `(sellers $${guard.projected.sellers.toFixed(2)}` +
+    `${flags.fixAsins ? ` + ASIN-search worst case $${guard.projected.asinSearches.toFixed(2)}` : ''})` +
+    ` vs ceiling $${guard.ceiling.toFixed(2)}`);
+  if (guard.abort) {
+    console.error(`\n${guard.reason}`);
     process.exit(1);
   }
 
   if (flags.dryRun) { console.log(`\nDry run complete — ZERO tasks posted, $0 spent.`); return; }
-
-  // Hard cap in CODE, not a flag anyone has to remember: a run that resolves more
-  // than this many rows is treated as a broken scope, not intent. Refuse to post.
-  const POST_HARD_CAP = 200;
-  if (products.length > POST_HARD_CAP) {
-    console.error(`\nHARD CAP: resolved ${products.length} rows > ${POST_HARD_CAP}. ` +
-      `Refusing to post tasks — scope looks wrong. Aborting, no spend.`);
-    process.exit(1);
-  }
 
   const tasks = await postTasks(products);
   const results = await fetchAllResults(tasks);
