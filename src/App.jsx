@@ -1222,6 +1222,24 @@ function SBar({v,mx=100}){const c=v>=90?"var(--accent)":v>=70?"var(--sky)":"var(
 function Tag({children,color="var(--accent)"}){return <span style={{padding:"2px 8px",borderRadius:6,fontSize:9,fontFamily:"var(--mono)",fontWeight:600,background:`color-mix(in srgb, ${color} 9%, transparent)`,color,border:`1px solid color-mix(in srgb, ${color} 19%, transparent)`}}>{children}</span>}
 function Btn({children,primary,sm,color="var(--mint)",onClick,style={}}){return <button onClick={onClick} style={{padding:sm?"4px 10px":"9px 20px",borderRadius:7,fontSize:sm?10:12,fontFamily:"var(--ff)",fontWeight:600,cursor:"pointer",background:primary?color:"transparent",color:primary?"var(--bg)":color,border:`1.5px solid ${primary?color:color+"55"}`,transition:"all .12s",...style}}>{children}</button>}
 
+// 3P DISCLOSURE. Amazon's featured Buy Box is frequently a third-party
+// marketplace seller, not Amazon itself — as of the 2026 shortage ~70% of our
+// confirmed Amazon prices are 3P. When `deals.amazon.priceSource==='3p'` we say
+// so plainly next to the price, because a 3P listing does not carry the Amazon-
+// 1P guarantees (fulfillment/returns/authenticity) a shopper assumes. Factual,
+// small, neutral colour — disclosure, not a warning. Renders null on 1P/absent,
+// so it is safe to drop unconditionally into any badge cluster. `priceSeller` is
+// populated by the verifier; we fall back to a generic phrasing if it is blank.
+function ThirdPartyBadge({deal}){
+  if(deal?.priceSource!=="3p")return null;
+  const raw=(deal.priceSeller||"").trim();
+  const seller=raw&&raw.toLowerCase()!=="amazon.com"?raw:null;
+  const label=seller?`Sold by ${seller} via Amazon`:"Sold by a third-party seller via Amazon";
+  return <span data-price-source="3p"
+    title="This price is from a third-party marketplace seller on Amazon, not from Amazon directly. Returns, warranty and support are handled by that seller."
+    style={{display:"inline-flex",alignItems:"center",padding:"2px 8px",borderRadius:6,fontSize:9,fontFamily:"var(--mono)",fontWeight:600,whiteSpace:"nowrap",background:"color-mix(in srgb, var(--dim) 10%, transparent)",color:"var(--dim)",border:"1px solid color-mix(in srgb, var(--dim) 20%, transparent)"}}>{label}</span>;
+}
+
 /* ═══ FILTER COMPONENTS ═══ */
 function FG({label,children,open:defaultOpen=false}){
   const [isOpen,setIsOpen]=useState(defaultOpen);
@@ -3658,6 +3676,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                 {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                 {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                <ThirdPartyBadge deal={p.deals?.amazon}/>
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
                 <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>
@@ -3679,6 +3698,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
+                    {r.name==="amazon"&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.amazon}/></div>}
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:8,flexShrink:0}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
@@ -3942,7 +3962,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
   if(!cat && !singleProductId) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
-    {singleProductId&&(()=>{const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?<ProductLinks sp={sp}/>:null;})()}
+    {singleProductId&&(()=>{const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?<><span data-product-ready={String(sp.id)} style={{display:"none"}}/><ProductLinks sp={sp}/></>:null;})()}
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
     <CategoryGuide cat={cat}/>
     <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>
@@ -4055,6 +4075,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                   {(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}
                   {p.condition==="refurbished"&&<Tag color="var(--sky)">REFURB</Tag>}
                   {p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}
+                  <ThirdPartyBadge deal={p.deals?.amazon}/>
                 </div>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",marginTop:"auto",paddingTop:6}}>
                   <div>
@@ -4073,7 +4094,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
           return <div key={p.id}>
             {isExp && !singleProductId && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
-              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}</div></div></div>
+              <div style={{display:"flex",alignItems:"center",gap:10,minWidth:0}}><ChevronRight size={16} strokeWidth={2} style={{flexShrink:0,color:"var(--dim)",transition:"transform .2s",transform:isExp?"rotate(90deg)":"rotate(0deg)"}}/>{p.img?<img loading="lazy" decoding="async" src={p.img} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{width:100,height:100,objectFit:"contain",borderRadius:6,background:"var(--bg4)"}}/>:<span style={{fontSize:56,width:100,textAlign:"center"}}>{ic(p)}</span>}<div style={{minWidth:0}}><div style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--txt)",display:"-webkit-box",WebkitLineClamp:3,WebkitBoxOrient:"vertical",overflow:"hidden",lineHeight:1.3}}>{cleanProductName(p)}</div><div style={{display:"flex",alignItems:"center",gap:4,marginTop:2,flexWrap:"wrap"}}><span style={{fontSize:13,color:"var(--dim)",fontFamily:"var(--ff)"}}>{p.b}</span><Stars r={p.r} s={10}/>{isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:10,fontWeight:800,padding:"2px 8px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)",whiteSpace:"nowrap",flexShrink:0}}>🔥 DEAL -${dealSavings(p)}</span>}{(p.used===true||p.condition==="used")&&<Tag color="#F59E0B">USED</Tag>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}<ThirdPartyBadge deal={p.deals?.amazon}/></div></div></div>
               {cols.map(col=>{const v=p[col];const fmtVal=fmt(col,v,p);return <div key={col} style={{textAlign:"center"}}>{col==="bench"&&v!=null?<SBar v={v}/>:typeof fmtVal==="string"&&fmtVal.includes("\n")?<div><div style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal.split("\n")[0]}</div><div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{fmtVal.split("\n")[1]}</div></div>:<span style={{fontFamily:"var(--ff)",fontSize:13,color:v!=null?"var(--txt)":"var(--mute)",fontWeight:500}}>{fmtVal}</span>}</div>})}
               {(()=>{if(p.bench==null)return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--mute)"}}>—</span></div>;const ratio=Math.round(valueRatio(p)*10)/10;const grade=ratio>=28?"S":ratio>=20?"A":ratio>=14?"B":ratio>=8?"C":"D";const gc=ratio>=28?"var(--mint)":ratio>=20?"var(--sky)":ratio>=14?"var(--amber)":ratio>=8?"var(--dim)":"var(--rose)";return <div style={{textAlign:"center"}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:800,color:gc}}>{grade}</span></div>;})()}
               <div style={{textAlign:"right"}}>{isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}<div style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--mint)"}}>${fmtPrice($(p))}</div>{rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:9,color:"var(--dim)"}}>{rr.length} stores</div>}</div>
@@ -4107,6 +4128,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                         <div style={{flex:1}}>
                           <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
+                          {r.name==="amazon"&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.amazon}/></div>}
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
                           <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
@@ -4587,7 +4609,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
                   <div style={{display:"flex",alignItems:"center",gap:4,marginTop:1}}>
                     <span style={{fontSize:10,color:"var(--dim)"}}>{p.b}</span>
                     <Stars r={p.r} s={9}/>
-                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                    {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}{p.condition==="refurbished"&&<Tag color="var(--sky)">REFURBISHED</Tag>}{p.condition==="open-box"&&<Tag color="var(--violet)">OPEN BOX</Tag>}{p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}<ThirdPartyBadge deal={p.deals?.amazon}/>
                   </div>
                 </div>
               </div>
@@ -4718,6 +4740,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
                 {p.r&&<Stars r={p.r} s={10}/>}
                 {isDeal(p)&&<span style={{display:"inline-flex",alignItems:"center",gap:3,background:"linear-gradient(90deg,#FF6B35,#F5A623)",color:"#fff",fontSize:13,fontWeight:800,padding:"3px 10px",borderRadius:4,fontFamily:"var(--mono)",letterSpacing:0.5,textShadow:"0 1px 2px rgba(0,0,0,0.2)"}}>🔥 DEAL -${dealSavings(p)}</span>}
                 {p.bundle&&<Tag color="var(--amber)">BUNDLE</Tag>}
+                <ThirdPartyBadge deal={p.deals?.amazon}/>
               </div>
               <div style={{display:"flex",alignItems:"baseline",gap:8,marginTop:2}}>
                 <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span>

@@ -153,6 +153,23 @@ function BuyButton({ retailer, deal }) {
   );
 }
 
+// 3P disclosure for the fallback product page — kept in sync with App.jsx's
+// ThirdPartyBadge. Rendered only for an Amazon 3P Buy Box; carries the same
+// data-price-source="3p" prerender/SEO sentinel. See [[amazon-3p-buybox-systemic]].
+function ThirdPartyNote({ deal }) {
+  if (deal?.priceSource !== "3p") return null;
+  const raw = (deal.priceSeller || "").trim();
+  const seller = raw && raw.toLowerCase() !== "amazon.com" ? raw : null;
+  const label = seller ? `Sold by ${seller} via Amazon` : "Sold by a third-party seller via Amazon";
+  return (
+    <div data-price-source="3p"
+      title="This price is from a third-party marketplace seller on Amazon, not from Amazon directly. Returns, warranty and support are handled by that seller."
+      style={{ marginTop: 6, fontFamily: "var(--mono)", fontSize: 11, fontWeight: 600, color: "var(--dim)" }}>
+      {label}
+    </div>
+  );
+}
+
 // --- Category URL slug map (must match generate-sitemap.cjs) ---------------
 const CAT_SLUG = {
   CPU: "cpu", GPU: "gpu", Motherboard: "motherboard", RAM: "ram",
@@ -331,6 +348,7 @@ export default function ProductPage({ productId, parts, go, navTo }) {
           {/* Buy buttons */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8, marginTop: 20, maxWidth: 360 }}>
             <BuyButton retailer="amazon"  deal={p?.deals?.amazon} />
+            <ThirdPartyNote deal={p?.deals?.amazon} />
             <BuyButton retailer="bestbuy" deal={p?.deals?.bestbuy} />
             <BuyButton retailer="newegg"  deal={p?.deals?.newegg} />
             <BuyButton retailer="msi"     deal={p?.deals?.msi} />
