@@ -30,7 +30,8 @@
  */
 
 import { parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
-import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './amazon-price.js';
+import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity,
+         classifyBuyBox, BUYBOX_STATE } from './amazon-price.js';
 
 // Categories where a stated capacity is a hard identity gate.
 export const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
@@ -161,17 +162,57 @@ export function analyzeResult(product, amazonData) {
   }
 
   // Pick the NEW-condition Buy Box price. Never a used/3rd-party-condition offer.
-  const offer = selectNewOffer(amazonData);
+  //
+  // Three-way verdict — ambiguous is NOT wrong. Nulling every unconfirmable Buy
+  // Box would have blanked ~655 tier-1 rows (measured), the bulk of them good
+  // rows the DataForSEO feed simply cannot confirm because it has no
+  // isBuyBoxWinner field and often returns a blank condition on the featured
+  // offer. Those keep their existing price and get tagged for separate action.
+  const verdict = classifyBuyBox(amazonData);
   const storedPrice = product.deals?.amazon?.price;
-  if (!offer) {
+
+  if (verdict.state === BUYBOX_STATE.BAD) {
     issues.push({ type: 'no_new_offer', severity: 'high',
-      msg: `No New-condition offer on listing (lowest any-condition $${lowestAnyConditionPrice(amazonData) ?? '?'}); refusing to write a price`,
+      msg: `No New-condition offer on listing (${verdict.reason}; lowest any-condition $${lowestAnyConditionPrice(amazonData) ?? '?'}); refusing to write a price`,
       stored: storedPrice ?? null, amazon: null });
     fixes.needsReview = true;
     fixes.quarantinedAt = today();
     return { issues, fixes };
   }
+
+  if (verdict.state === BUYBOX_STATE.UNCONFIRMED) {
+    // KEEP the existing price. No write, no quarantine — just a tag, so the
+    // population is visible and can be acted on separately (e.g. re-resolved via
+    // PA API, which does expose isBuyBoxWinner).
+    issues.push({ type: 'price_unconfirmed', severity: 'low',
+      msg: `Buy Box not confirmable (${verdict.reason}) — keeping stored price $${storedPrice ?? '?'}, not quarantining`,
+      stored: storedPrice ?? null, amazon: null });
+    fixes.priceConfidence = 'unconfirmed';
+    fixes.priceUnconfirmedReason = verdict.reason;
+    return { issues, fixes };
+  }
+
+  const offer = verdict.offer;
   const azPrice = offer.price;
+
+  // 3P Buy Box HARD GATE. A marketplace-won Buy Box (even New, even in stock) is
+  // never trusted on its own — a 3P seller can gouge in a shortage, listing well
+  // above the real market (e.g. an RTX 5090 above the 1P max). It must clear the
+  // cross-retailer sanity gate UNCONDITIONALLY — not only on a > RISE_TRIGGER spike —
+  // before it can be written, on top of the ceiling + drift checks below. A 1P
+  // (Amazon.com-sold) price skips this and uses the looser drift-only path.
+  if (offer.source === '3p' && azPrice != null) {
+    const s3 = amazonPriceSanity(product, azPrice);
+    if (!s3.pass) {
+      issues.push({ type: 'price_3p_flagged', severity: 'high',
+        msg: `3P Buy Box $${azPrice} (${offer.seller || '?'}) FLAGGED (cls=${s3.cls}` +
+             `${s3.dispConflict ? `, spread=${s3.spread?.toFixed(2)}x` : ''}) — a 3P price must clear cross-retailer sanity; not auto-written`,
+        stored: storedPrice ?? null, amazon: azPrice });
+      fixes.needsReview = true;
+      fixes.quarantinedAt = today();
+      return { issues, fixes };
+    }
+  }
 
   if (azPrice != null && storedPrice != null) {
     const signed = (azPrice - storedPrice) / Math.max(storedPrice, 1);  // + rise, − drop
@@ -233,6 +274,18 @@ export function analyzeResult(product, amazonData) {
       fixes.needsReview = true;
       fixes.quarantinedAt = today();
     }
+  }
+
+  // Tag the provenance of any price we actually wrote. A 3P Buy Box price renders
+  // identically to a 1P one today, so this is what lets the frontend disclose it and
+  // lets a later audit distinguish the two. Set only on a real write, never on a
+  // quarantine.
+  if (fixes.amazonPrice != null) {
+    fixes.priceSource = offer.source;            // '1p' | '3p'
+    fixes.priceSeller = offer.seller || null;
+    // A confirmed write clears any stale 'unconfirmed' tag from an earlier run.
+    fixes.priceConfidence = 'confirmed';
+    fixes.priceUnconfirmedReason = null;
   }
 
   // Stock: a live New offer implies in-stock. (No New offer handled above.)

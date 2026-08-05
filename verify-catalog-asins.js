@@ -323,7 +323,29 @@ function applyFixes(parts, perProductFixes) {
     if (!fix) continue;
     let productChanged = false;
     if (fix.amazonPrice != null && p.deals?.amazon) {
-      p.deals.amazon.price = fix.amazonPrice; productChanged = true;
+      p.deals.amazon.price = fix.amazonPrice;
+      // Provenance tag: '1p' (Amazon-sold) vs '3p' (marketplace Buy Box). A 3P price
+      // has already cleared the harder cross-retailer gate; the tag is retained for
+      // buyer disclosure + audit. Absence = legacy row written before tagging.
+      if (fix.priceSource) {
+        p.deals.amazon.priceSource = fix.priceSource;
+        p.deals.amazon.priceSeller = fix.priceSeller ?? null;
+      }
+      productChanged = true;
+    }
+    // Buy Box could not be confirmed New: the stored price is KEPT as-is and only
+    // tagged, so an ambiguous listing never blanks a good row. Tag-only — this
+    // branch deliberately writes no price and sets no needsReview.
+    if (fix.priceConfidence && p.deals?.amazon) {
+      if (p.deals.amazon.priceConfidence !== fix.priceConfidence) productChanged = true;
+      p.deals.amazon.priceConfidence = fix.priceConfidence;
+      if (fix.priceConfidence === 'unconfirmed') {
+        p.deals.amazon.priceUnconfirmedReason = fix.priceUnconfirmedReason ?? null;
+        p.deals.amazon.priceUnconfirmedAt = new Date().toISOString().slice(0, 10);
+      } else {
+        delete p.deals.amazon.priceUnconfirmedReason;
+        delete p.deals.amazon.priceUnconfirmedAt;
+      }
     }
     if (fix.amazonInStock != null && p.deals?.amazon) {
       p.deals.amazon.inStock = fix.amazonInStock; productChanged = true;
