@@ -34,6 +34,11 @@ import { isRenewedTitle } from './condition.cjs';
 // Spend guards (dollar ceiling + scoped exact-count + full-tier band) live in ONE
 // pure, unit-tested module — never re-declared here. See verify-spend-guard.js.
 import { evaluateSpendGuard, COST_PER_SELLERS_TASK } from './verify-spend-guard.js';
+// PA API is a free second opinion on rows DataForSEO cannot confirm. Its client
+// never throws: missing creds, a 401, or AssociateNotEligible all degrade to an
+// empty result plus an alert, so the run continues on DataForSEO alone.
+import { resolveItems, onPaapiAlert, paapiStatus, BATCH_MAX as PAAPI_BATCH } from './amazon-paapi.js';
+let PAAPI_RUN_SUMMARY = null;
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -333,6 +338,18 @@ function applyFixes(parts, perProductFixes) {
       }
       productChanged = true;
     }
+    // Provenance + staleness clock on a confirmed observation, whether or not the
+    // price itself moved. Written outside the amazonPrice branch on purpose: a
+    // stable price is still a confirmed price.
+    if (fix.priceConfirmedAt && p.deals?.amazon) {
+      if (p.deals.amazon.priceConfirmedAt !== fix.priceConfirmedAt) productChanged = true;
+      p.deals.amazon.priceConfirmedAt = fix.priceConfirmedAt;
+      if (fix.priceSource) {
+        p.deals.amazon.priceSource = fix.priceSource;
+        p.deals.amazon.priceSeller = fix.priceSeller ?? null;
+      }
+      if (fix.priceResolvedVia) p.deals.amazon.priceResolvedVia = fix.priceResolvedVia;
+    }
     // Buy Box could not be confirmed New: the stored price is KEPT as-is and only
     // tagged, so an ambiguous listing never blanks a good row. Tag-only — this
     // branch deliberately writes no price and sets no needsReview.
@@ -457,14 +474,47 @@ function writeReports(allIssues, asinRepairs, meta) {
   console.log(`\nGot ${results.length} results`);
 
   const byProduct = new Map(parts.map(p => [p.id, p]));
-  const allIssues = [];
-  const perProductFixes = {};
+
+  // ── PASS 1: DataForSEO only ─────────────────────────────────────────────
+  const pass1 = [];
   for (const r of results) {
     const product = byProduct.get(r.productId);
     if (!product) continue;
-    const { issues, fixes } = analyzeResult(product, r.data);
-    allIssues.push({ productId: r.productId, asin: r.asin, name: product.n, category: product.c, issues });
-    if (Object.keys(fixes).length) perProductFixes[r.productId] = fixes;
+    pass1.push({ r, product, out: analyzeResult(product, r.data) });
+  }
+
+  // ── PASS 2: PA API second opinion on the unconfirmed rows ───────────────
+  // DataForSEO cannot see buy-box ownership; PA API can. Measured, it resolves
+  // 93% of the `unlabeled_buybox` class to a clean New buy box. PA API is free,
+  // batches 10 ASINs per call, and — critically — degrades to an empty result
+  // rather than throwing, so a revoked credential silently costs us nothing but
+  // the resolution itself. See amazon-paapi.js for the circuit breaker.
+  const unconfirmed = pass1.filter(x => x.out.fixes?.priceConfidence === 'unconfirmed');
+  if (unconfirmed.length) {
+    const asins = unconfirmed.map(x => extractASIN(x.product.deals?.amazon?.url)).filter(Boolean);
+    console.log(`\nPA API second opinion on ${unconfirmed.length} unconfirmed rows (${Math.ceil(asins.length / PAAPI_BATCH)} free calls)...`);
+    onPaapiAlert(a => console.log(`  !! PA API DEGRADED (${a.reason}): ${a.detail}\n     Falling back to keep-price for all remaining rows — run continues.`));
+    const items = await resolveItems(asins);
+    let upgraded = 0;
+    for (const x of unconfirmed) {
+      const asin = extractASIN(x.product.deals?.amazon?.url);
+      const item = asin ? items.get(asin) : null;
+      if (!item) continue;
+      const redo = analyzeResult(x.product, x.r.data, item);
+      if (redo.fixes?.priceConfidence === 'confirmed') { x.out = redo; upgraded++; }
+    }
+    const st = paapiStatus();
+    console.log(`  resolved ${upgraded}/${unconfirmed.length} via PA API` +
+                `${st.available ? '' : ` (PA API disabled: ${st.disabledReason})`}` +
+                `  [calls=${st.stats.calls} throttled=${st.stats.throttled} errors=${st.stats.batchErrors}]`);
+    PAAPI_RUN_SUMMARY = { attempted: unconfirmed.length, upgraded, ...st };
+  }
+
+  const allIssues = [];
+  const perProductFixes = {};
+  for (const { r, product, out } of pass1) {
+    allIssues.push({ productId: r.productId, asin: r.asin, name: product.n, category: product.c, issues: out.issues });
+    if (Object.keys(out.fixes).length) perProductFixes[r.productId] = out.fixes;
   }
 
   // Drift-gate staleness: if a whole category drift-quarantines an implausible

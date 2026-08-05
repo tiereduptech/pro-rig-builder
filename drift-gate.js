@@ -138,7 +138,7 @@ export function titleMatches(storedName, amazonTitle, storedCap = null) {
 
 function today() { return new Date().toISOString().slice(0, 10); }
 
-export function analyzeResult(product, amazonData) {
+export function analyzeResult(product, amazonData, paapiItem = null) {
   const issues = [];
   const fixes = {};
   if (!amazonData) {
@@ -168,8 +168,27 @@ export function analyzeResult(product, amazonData) {
   // rows the DataForSEO feed simply cannot confirm because it has no
   // isBuyBoxWinner field and often returns a blank condition on the featured
   // offer. Those keep their existing price and get tagged for separate action.
-  const verdict = classifyBuyBox(amazonData);
+  let verdict = classifyBuyBox(amazonData);
   const storedPrice = product.deals?.amazon?.price;
+  let resolvedVia = 'dataforseo';
+
+  // PA API SECOND OPINION. DataForSEO cannot see buy-box ownership (no
+  // isBuyBoxWinner field) and often returns a blank condition on the featured
+  // offer; PA API states both explicitly. Measured on the DFS-unconfirmed
+  // population, PA API resolves 93% of the `unlabeled_buybox` class to a clean
+  // New buy box — so try it BEFORE settling for keep-price.
+  //
+  // Only an upgrade to CONFIRMED is honoured. A PA API "bad" is NOT trusted here:
+  // its offersV2.listings caps at buy box + one alternate, so "no New offer" from
+  // PA API can simply mean the New offer was truncated out of the response. DFS
+  // sees the full offer table and stays the authority on that question.
+  if (verdict.state === BUYBOX_STATE.UNCONFIRMED && paapiItem) {
+    const pa = classifyBuyBox(paapiItem);
+    if (pa.state === BUYBOX_STATE.CONFIRMED) {
+      verdict = pa;
+      resolvedVia = 'paapi';
+    }
+  }
 
   if (verdict.state === BUYBOX_STATE.BAD) {
     issues.push({ type: 'no_new_offer', severity: 'high',
@@ -280,12 +299,24 @@ export function analyzeResult(product, amazonData) {
   // identically to a 1P one today, so this is what lets the frontend disclose it and
   // lets a later audit distinguish the two. Set only on a real write, never on a
   // quarantine.
-  if (fixes.amazonPrice != null) {
+  // Tag provenance + stamp the staleness clock for ANY confirmed, gate-passing
+  // Buy Box — not only one whose price actually moved.
+  //
+  // Stamping only on a write would leave the commonest case unstamped: branch (4)
+  // above deliberately writes nothing when the price is stable within epsilon, so
+  // a row confirmed every single night at an unchanged price would look never-
+  // confirmed forever. Confirmation and change are different facts.
+  //
+  // Guarded on needsReview because the flagged branches above set it WITHOUT
+  // returning early — a quarantined row must not be stamped as confirmed.
+  if (!fixes.needsReview) {
     fixes.priceSource = offer.source;            // '1p' | '3p'
     fixes.priceSeller = offer.seller || null;
-    // A confirmed write clears any stale 'unconfirmed' tag from an earlier run.
+    fixes.priceResolvedVia = resolvedVia;        // 'dataforseo' | 'paapi'
+    // A confirmed observation clears any stale 'unconfirmed' tag from an earlier run.
     fixes.priceConfidence = 'confirmed';
     fixes.priceUnconfirmedReason = null;
+    fixes.priceConfirmedAt = today();
   }
 
   // Stock: a live New offer implies in-stock. (No New offer handled above.)
