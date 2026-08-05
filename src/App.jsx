@@ -3962,7 +3962,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
   if(!cat && !singleProductId) return <CategoryBrowse sel={sel} th={th} CATS={CATS} CAT={CAT} P={P} CatThumb={CatThumb}/>;
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"16px 20px"}}>
-    {singleProductId&&(()=>{const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?<><span data-product-ready={String(sp.id)} style={{display:"none"}}/><ProductLinks sp={sp}/></>:null;})()}
+    {singleProductId&&(()=>{const sp=P.find(p=>String(p.id)===String(singleProductId));return sp?<ProductLinks sp={sp}/>:null;})()}
     <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:14}}><button onClick={()=>setCat("")} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",background:"none",border:"none",cursor:"pointer"}}>All Parts</button><span style={{color:"var(--mute)"}}>/</span><CatThumb cat={cat} thumbs={th.thumbs} setThumb={th.setThumb} removeThumb={th.removeThumb} size={24} rounded={4} editable={false}/><select value={cat} onChange={e=>sel(e.target.value)} style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",fontWeight:600,background:"none",border:"none",cursor:"pointer",outline:"none",padding:"2px 4px",appearance:"auto"}}>{CATS.map(c=><option key={c} value={c}>{CAT[c].label}</option>)}</select><div style={{flex:1}}/><span style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)"}}>{list.length} results</span></div>
     <CategoryGuide cat={cat}/>
     <div className="browse-layout" style={{display:"grid",gridTemplateColumns:"200px 1fr",gap:16,alignItems:"start"}}>

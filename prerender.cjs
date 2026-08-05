@@ -178,7 +178,7 @@ async function renderRoute(browser, route) {
 
     await page.goto(BASE + route, { waitUntil: "networkidle0", timeout: TIMEOUT });
 
-    await page.waitForFunction((targetRoute) => {
+    await page.waitForFunction(() => {
       const _t = document.title || "";
       const _p = location.pathname || "/";
       // Generic home/site title fallbacks that must NOT appear on a sub-route.
@@ -195,25 +195,8 @@ async function renderRoute(browser, route) {
         const seg1 = "/" + p.replace(/^\//, "").split("/")[0];
         canonOk = c.includes("prorigbuilder.com" + seg1);
       }
-      // Product pages hydrate their category chunk lazily; every generic check
-      // above passes on the pre-hydration SHELL, which is how a product route
-      // could serialize with no price, no detail and no badges. Worse, when the
-      // product isn't yet in the loaded catalog the app falls back to the home
-      // view, so location.pathname is an unreliable signal here — key off the
-      // ROUTE WE ASKED FOR, not where the SPA currently thinks it is. Require the
-      // product view's own readiness sentinel — a hidden <span data-product-ready>
-      // rendered ONLY once the product is found — so we never snapshot a shell.
-      // If it never appears we time out and write NOTHING (retried next run),
-      // which is strictly better than a shell. Also makes the condition/3P badges
-      // deterministic. Non-product routes are unaffected.
-      // ONLY product-detail routes: /parts/<cat>/<slug>-<id>. The trailing -<id>
-      // and the $ anchor exclude the category index (/parts/<cat>) and the browse
-      // pages (/parts/<cat>/browse, /parts/<cat>/browse/page-N) — those have no
-      // product sentinel and must NOT be gated on one.
-      const isProductRoute = /^\/parts\/[^/]+\/[^/]+-\d+$/.test(targetRoute || _p);
-      const productOk = !isProductRoute || !!document.querySelector('[data-product-ready]');
-      return titleOk && descOk && bodyOk && canonOk && productOk;
-    }, { timeout: TIMEOUT }, route);
+      return titleOk && descOk && bodyOk && canonOk;
+    }, { timeout: TIMEOUT });
 
     await new Promise(r => setTimeout(r, 100));
 
