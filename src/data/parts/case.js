@@ -1733,7 +1733,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 80
+    "bench": 80,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70037,
@@ -2159,7 +2161,9 @@ export default [
     "rads": [
       120
     ],
-    "bench": 42
+    "bench": 42,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70044,
@@ -2937,7 +2941,9 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 38
+    "bench": 38,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70057,
@@ -3110,7 +3116,9 @@ export default [
     ],
     "color": "Black",
     "bench": 77,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70060,
@@ -5580,7 +5588,9 @@ export default [
     ],
     "color": "Black",
     "bench": 63,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70106,
@@ -5867,7 +5877,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 61
+    "bench": 61,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70111,
@@ -6171,7 +6183,9 @@ export default [
       280,
       240
     ],
-    "bench": 62
+    "bench": 62,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70117,
@@ -6630,7 +6644,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 58
+    "bench": 58,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70126,
@@ -6871,7 +6887,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70130,
@@ -7049,7 +7067,9 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 58
+    "bench": 58,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70133,
@@ -7195,7 +7215,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 61
+    "bench": 61,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70136,
@@ -7305,7 +7327,9 @@ export default [
     "drive25": 2,
     "fans_inc": 3,
     "color": "Black",
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70138,
@@ -7629,7 +7653,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 64
+    "bench": 64,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70144,
@@ -7680,7 +7706,9 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 37
+    "bench": 37,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70145,
@@ -9039,7 +9067,9 @@ export default [
       280,
       240
     ],
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70171,
@@ -9289,7 +9319,9 @@ export default [
       280,
       240
     ],
-    "bench": 85
+    "bench": 85,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70175,
@@ -9886,7 +9918,9 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 26
+    "bench": 26,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70188,
@@ -10403,7 +10437,9 @@ export default [
     "rads": [
       120
     ],
-    "bench": 29
+    "bench": 29,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70198,
@@ -10974,7 +11010,9 @@ export default [
       240
     ],
     "bench": 58,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70209,
@@ -11430,7 +11468,9 @@ export default [
     "rads": [
       120
     ],
-    "bench": 34
+    "bench": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70218,
@@ -12132,7 +12172,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 54
+    "bench": 54,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70232,
@@ -12290,7 +12332,9 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 34
+    "bench": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70235,
@@ -12447,7 +12491,9 @@ export default [
       280,
       240
     ],
-    "bench": 57
+    "bench": 57,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70238,
@@ -13284,7 +13330,9 @@ export default [
       120
     ],
     "color": "Black",
-    "bench": 20
+    "bench": 20,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 70254,
@@ -17959,7 +18007,9 @@ export default [
       "mITX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100878,
@@ -18437,7 +18487,9 @@ export default [
     "source": "amazon-discovery",
     "mobo": [
       "ATX"
-    ]
+    ],
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100898,

@@ -491,7 +491,9 @@ export default [
     "color": "Black",
     "value": 33,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60016,
@@ -663,7 +665,9 @@ export default [
     "color": "Black",
     "value": 22,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60021,
@@ -3003,7 +3007,9 @@ export default [
     "atx3": false,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60077,
@@ -3052,7 +3058,9 @@ export default [
     "atx3": true,
     "fanSize": 92,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60078,
@@ -3088,7 +3096,9 @@ export default [
     "atx3": false,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60079,
@@ -3666,7 +3676,9 @@ export default [
     "atx3": false,
     "fanSize": 120,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60093,
@@ -3701,7 +3713,9 @@ export default [
     "modular": "Non",
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60094,
@@ -3829,7 +3843,9 @@ export default [
     "fanSize": 92,
     "depth": 130,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 60097,
@@ -7587,7 +7603,9 @@ export default [
     "atx3": true,
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
-    "ff": "ATX"
+    "ff": "ATX",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100468,
@@ -7842,7 +7860,9 @@ export default [
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
     "ff": "ATX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100478,
@@ -8349,7 +8369,9 @@ export default [
     "watts": 500,
     "modular": "None",
     "ff": "Flex ATX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100547,
@@ -8496,7 +8518,9 @@ export default [
     "addedAt": "2026-05-15T14:34:31.763Z",
     "source": "amazon-discovery",
     "watts": 550,
-    "ff": "ATX"
+    "ff": "ATX",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100552,
@@ -9244,7 +9268,9 @@ export default [
     "watts": 750,
     "modular": "Full",
     "atx3": true,
-    "ff": "SFX"
+    "ff": "SFX",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100583,
@@ -9329,7 +9355,9 @@ export default [
     "watts": 850,
     "modular": "Full",
     "atx3": true,
-    "ff": "SFX"
+    "ff": "SFX",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101194,

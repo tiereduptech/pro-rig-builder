@@ -1091,7 +1091,9 @@ export default [
     "bench": 64,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90030,
@@ -1200,7 +1202,9 @@ export default [
     "panel": "IPS",
     "response": "1 Milliseconds",
     "bench": 47,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90033,
@@ -1616,7 +1620,9 @@ export default [
     "bench": 81,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90044,
@@ -1798,7 +1804,9 @@ export default [
     "bench": 88,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90049,
@@ -1869,7 +1877,9 @@ export default [
     "response": "5 Milliseconds",
     "bench": 60,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90051,
@@ -2051,7 +2061,9 @@ export default [
     "response": "1 Milliseconds",
     "bench": 70,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90056,
@@ -2689,7 +2701,9 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 90072,
@@ -12497,7 +12511,9 @@ export default [
     "screenSize": 27,
     "resolution": "4K",
     "refresh": 180,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100994,
@@ -12590,7 +12606,9 @@ export default [
     "screenSize": 27,
     "resolution": "4K",
     "refresh": 240,
-    "panel": "OLED"
+    "panel": "OLED",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100998,
@@ -13298,7 +13316,9 @@ export default [
     "resolution": "1440p",
     "refresh": 165,
     "curved": true,
-    "screenSize": 32
+    "screenSize": 32,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101028,
@@ -13466,7 +13486,9 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1080p",
     "refresh": 240,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101035,
@@ -13585,7 +13607,9 @@ export default [
     "resolution": "1080p",
     "refresh": 240,
     "panel": "IPS",
-    "screenSize": 25
+    "screenSize": 25,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101040,
@@ -13724,7 +13748,9 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 320,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101046,
@@ -14002,7 +14028,9 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101058,
@@ -14551,7 +14579,9 @@ export default [
     "resolution": "1440p",
     "refresh": 240,
     "panel": "OLED",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101081,
@@ -14825,7 +14855,9 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 280,
-    "panel": "OLED"
+    "panel": "OLED",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101092,
@@ -14859,7 +14891,9 @@ export default [
     "source": "amazon-discovery",
     "resolution": "4K",
     "refresh": 165,
-    "panel": "OLED"
+    "panel": "OLED",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101093,
@@ -15172,7 +15206,9 @@ export default [
     "screenSize": 32,
     "resolution": "1440p",
     "refresh": 180,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101106,
@@ -15264,7 +15300,9 @@ export default [
     "source": "amazon-discovery",
     "screenSize": 32,
     "resolution": "1080p",
-    "refresh": 180
+    "refresh": 180,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101110,

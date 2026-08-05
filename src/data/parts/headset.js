@@ -2128,7 +2128,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T16:31:54.627Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101179,
@@ -3088,7 +3090,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.631Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101679,
@@ -3194,7 +3198,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101686,
@@ -3214,7 +3220,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.633Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101687,

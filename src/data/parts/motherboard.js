@@ -420,7 +420,9 @@ export default [
     "value": 76,
     "bench": 88,
     "upc": "00824142301050",
-    "mpn": "PRO B650-P WIFI"
+    "mpn": "PRO B650-P WIFI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20010,
@@ -588,7 +590,9 @@ export default [
     "value": 51,
     "bench": 76,
     "upc": "00824142217627",
-    "mpn": "MAG B550 TOMAHAWK"
+    "mpn": "MAG B550 TOMAHAWK",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20014,
@@ -990,7 +994,9 @@ export default [
     "value": 37,
     "bench": 100,
     "upc": "00824142305690",
-    "mpn": "MAG Z790 TOMAHAWK WIFI"
+    "mpn": "MAG Z790 TOMAHAWK WIFI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20024,
@@ -1036,7 +1042,9 @@ export default [
     "value": 40,
     "bench": 100,
     "upc": "00889523034101",
-    "mpn": "Z790 AORUS ELITE AX DDR4"
+    "mpn": "Z790 AORUS ELITE AX DDR4",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20025,
@@ -1193,7 +1201,9 @@ export default [
       }
     },
     "value": 83,
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20030,
@@ -1635,7 +1645,9 @@ export default [
       }
     },
     "value": 40,
-    "bench": 96
+    "bench": 96,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20042,
@@ -1883,7 +1895,9 @@ export default [
     "value": 74,
     "bench": 72,
     "upc": "00824142218600",
-    "mpn": "MPG B550 GAMING PLUS"
+    "mpn": "MPG B550 GAMING PLUS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20048,
@@ -3920,7 +3934,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 80,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20092,
@@ -4403,7 +4419,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "None",
     "value": 78,
-    "bench": 52
+    "bench": 52,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20101,
@@ -4615,7 +4633,9 @@ export default [
     "wifi": "WiFi",
     "value": 61,
     "bench": 73,
-    "bestbuyRemovedComp": "2026-06-28"
+    "bestbuyRemovedComp": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20106,
@@ -4781,7 +4801,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi",
     "value": 42,
-    "bench": 62
+    "bench": 62,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20110,
@@ -5171,7 +5193,9 @@ export default [
     "wifi": "WiFi 6E",
     "value": 33,
     "bench": 67,
-    "upc": "04711581490130"
+    "upc": "04711581490130",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20118,
@@ -5868,7 +5892,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 86,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20133,
@@ -6555,7 +6581,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 47,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20148,
@@ -6857,7 +6885,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 16,
-    "bench": 88
+    "bench": 88,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20154,
@@ -7540,7 +7570,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 38,
-    "bench": 84
+    "bench": 84,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20170,
@@ -7623,7 +7655,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 46,
-    "bench": 74
+    "bench": 74,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20172,
@@ -7751,7 +7785,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 63,
-    "bench": 63
+    "bench": 63,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20175,
@@ -7884,7 +7920,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 38,
-    "bench": 73
+    "bench": 73,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20178,
@@ -8159,7 +8197,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 32,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20185,
@@ -10247,7 +10287,9 @@ export default [
     "wifi": "WiFi 7",
     "value": 31,
     "bench": 85,
-    "upc": "04710483949340"
+    "upc": "04710483949340",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20239,
@@ -10468,7 +10510,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 54,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20245,
@@ -11073,7 +11117,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi",
     "value": 38,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20259,
@@ -11166,7 +11212,9 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 31,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20261,
@@ -11356,7 +11404,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi 6E",
     "value": 36,
-    "bench": 73
+    "bench": 73,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20266,
@@ -11932,7 +11982,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 78,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20280,
@@ -12047,7 +12099,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 19,
-    "bench": 97
+    "bench": 97,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20283,
@@ -12222,7 +12276,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 11,
-    "bench": 91
+    "bench": 91,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20287,
@@ -12407,7 +12463,9 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi 6E",
     "value": 48,
-    "bench": 81
+    "bench": 81,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20291,
@@ -12490,7 +12548,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 46,
-    "bench": 77
+    "bench": 77,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20293,
@@ -12615,7 +12675,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 7",
     "value": 36,
-    "bench": 85
+    "bench": 85,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20296,
@@ -13116,7 +13178,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 8,
-    "bench": 70
+    "bench": 70,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20307,
@@ -13393,7 +13457,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi",
     "value": 20,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20314,
@@ -13595,7 +13661,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 53,
-    "bench": 77
+    "bench": 77,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20318,
@@ -13791,7 +13859,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 15,
-    "bench": 90
+    "bench": 90,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20322,
@@ -13885,7 +13955,9 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 92,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20324,
@@ -14706,7 +14778,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 40,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20344,
@@ -15246,7 +15320,9 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 30,
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20359,
@@ -15338,7 +15414,9 @@ export default [
     "wifi": "None",
     "value": 71,
     "bench": 79,
-    "upc": "04711581490222"
+    "upc": "04711581490222",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20361,
@@ -15808,7 +15886,9 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi 7",
     "value": 25,
-    "bench": 84
+    "bench": 84,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20372,
@@ -17232,7 +17312,9 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "WiFi",
     "value": 7,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20405,
@@ -17313,7 +17395,9 @@ export default [
     "wifi": "None",
     "value": 100,
     "bench": 60,
-    "upc": "04711581490642"
+    "upc": "04711581490642",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20407,
@@ -19218,7 +19302,9 @@ export default [
     "sata": 4,
     "ff": "ATX",
     "bench": 77,
-    "wifi": "None"
+    "wifi": "None",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 20463,
@@ -20117,7 +20203,9 @@ export default [
     "chipset": "B850",
     "ff": "mITX",
     "memType": "DDR5",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100390,
@@ -20590,7 +20678,9 @@ export default [
     "source": "amazon-discovery",
     "ff": "mATX",
     "memType": "DDR5",
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100740,

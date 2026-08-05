@@ -646,7 +646,9 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 87,
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50019,
@@ -675,7 +677,9 @@ export default [
     "pcie": 4,
     "nand": "TLC",
     "value": 100,
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50020,
@@ -1093,7 +1097,9 @@ export default [
       }
     },
     "value": 1,
-    "bench": 20
+    "bench": 20,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50036,
@@ -2086,7 +2092,9 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50058,
@@ -3646,7 +3654,9 @@ export default [
     "dram": false,
     "value": 37,
     "pcieGen": 4,
-    "formFactor": "M.2 2230"
+    "formFactor": "M.2 2230",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50095,
@@ -5025,7 +5035,9 @@ export default [
     "bench": 37,
     "read": 2050,
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50129,
@@ -6407,7 +6419,9 @@ export default [
     "dram": false,
     "value": 20,
     "bench": 45,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50161,
@@ -6760,7 +6774,9 @@ export default [
     "dram": true,
     "value": 100,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50170,
@@ -6890,7 +6906,9 @@ export default [
     "value": 57,
     "bench": 37,
     "pcieGen": 3,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50173,
@@ -6938,7 +6956,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50174,
@@ -7252,7 +7272,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 45
+    "bench": 45,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50181,
@@ -7452,7 +7474,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50186,
@@ -8622,7 +8646,9 @@ export default [
     "rpm": 7200,
     "value": 41,
     "bench": 13,
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50213,
@@ -9286,7 +9312,9 @@ export default [
     "dram": false,
     "value": 49,
     "bench": 62,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50229,
@@ -9417,7 +9445,9 @@ export default [
     "value": 38,
     "bench": 37,
     "pcieGen": 3,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50232,
@@ -9495,7 +9525,9 @@ export default [
     "seq_w_inferred": true,
     "value": 8,
     "bench": 45,
-    "upc": "00781002219569"
+    "upc": "00781002219569",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50234,
@@ -11595,7 +11627,9 @@ export default [
     "rpm": 7200,
     "value": 52,
     "bench": 13,
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50289,
@@ -13387,7 +13421,9 @@ export default [
     "rpm": 7200,
     "value": 52,
     "bench": 13,
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50330,
@@ -13887,7 +13923,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 2,
-    "bench": 30
+    "bench": 30,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50341,
@@ -14269,7 +14307,9 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 58,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50351,
@@ -14993,7 +15033,9 @@ export default [
     "storageType": "HDD",
     "rpm": 7200,
     "value": 54,
-    "bench": 10
+    "bench": 10,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50370,
@@ -15229,7 +15271,9 @@ export default [
     "bench": 57,
     "read": 3500,
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50377,
@@ -16705,7 +16749,9 @@ export default [
     "rpm": 7200,
     "value": 35,
     "bench": 10,
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50413,
@@ -22525,7 +22571,9 @@ export default [
     "ff": "3.5\"",
     "formFactor": "3.5\"",
     "rpm": 7200,
-    "bestbuyRemovedComp": "2026-06-28"
+    "bestbuyRemovedComp": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100530,
@@ -23508,7 +23556,9 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "3.5\"",
-    "rpm": 7200
+    "rpm": 7200,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100833,
@@ -23643,7 +23693,9 @@ export default [
     "cap": 4000,
     "storageType": "HDD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100840,
@@ -24362,7 +24414,9 @@ export default [
     "cap": 120,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101264,
@@ -24652,7 +24706,9 @@ export default [
     "interface": "NVMe",
     "read": 5200,
     "pcieGen": 4,
-    "formFactor": "M.2 2230"
+    "formFactor": "M.2 2230",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101290,
@@ -24819,7 +24875,9 @@ export default [
     "pcie": 4,
     "read": 4850,
     "pcieGen": 4,
-    "formFactor": "M.2 2230"
+    "formFactor": "M.2 2230",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101421,

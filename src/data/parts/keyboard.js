@@ -2303,7 +2303,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.616Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101505,
@@ -2863,7 +2865,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.617Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101535,
@@ -2903,7 +2907,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.618Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101537,
@@ -3023,7 +3029,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.618Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101543,
@@ -3158,7 +3166,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.619Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101550,
@@ -3178,7 +3188,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.619Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101551,
@@ -3283,7 +3295,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.619Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101556,
@@ -3323,7 +3337,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.619Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101558,
@@ -4127,7 +4143,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101603,
@@ -4147,7 +4165,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101604,
@@ -4167,7 +4187,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101605,
@@ -4187,7 +4209,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101606,
@@ -4207,7 +4231,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101607,
@@ -4227,7 +4253,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101608,
@@ -4267,7 +4295,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101611,
@@ -4287,7 +4317,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.624Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101612,

@@ -5613,7 +5613,9 @@ export default [
     "tdp": 125,
     "bench": 28,
     "memType": "DDR4",
-    "igpu": true
+    "igpu": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 10193,
@@ -6532,7 +6534,9 @@ export default [
     "source": "amazon-discovery",
     "boostClock": 4.7,
     "igpu": true,
-    "bench": 19
+    "bench": 19,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100329,

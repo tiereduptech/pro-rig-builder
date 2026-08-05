@@ -27,7 +27,9 @@ export default [
       "AM5",
       "LGA1851",
       "LGA1700"
-    ]
+    ],
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100879,
@@ -345,7 +347,9 @@ export default [
     "cfm": 33,
     "upc": "00841501121388",
     "mpn": "NM-AM5-L9aL9i",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80005,
@@ -1203,7 +1207,9 @@ export default [
     "bench": 57,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "fanSize": 120,
-    "cfm": 110
+    "cfm": 110,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80028,
@@ -3162,7 +3168,9 @@ export default [
     "cfm": 120,
     "mpn": "CW-9060088-WW",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80069,
@@ -3528,7 +3536,9 @@ export default [
     "height": 52,
     "cfm": 240,
     "radiator": 420,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80077,
@@ -3588,7 +3598,9 @@ export default [
     "cfm": 142,
     "mpn": "RL-KN24E-B2",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80078,
@@ -3876,7 +3888,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80084,
@@ -4393,7 +4407,9 @@ export default [
     "value": 53,
     "bench": 62,
     "radSize": "120",
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80095,
@@ -4561,7 +4577,9 @@ export default [
     "rgb": false,
     "value": 11,
     "bench": 36,
-    "cfm": 35
+    "cfm": 35,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80099,
@@ -4611,7 +4629,9 @@ export default [
     "bench": 52,
     "radSize": "120",
     "fanSize": 120,
-    "cfm": 60
+    "cfm": 60,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80100,
@@ -5094,7 +5114,9 @@ export default [
     "value": 80,
     "bench": 50,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80110,
@@ -5194,7 +5216,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80112,
@@ -5294,7 +5318,9 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80114,
@@ -6031,7 +6057,9 @@ export default [
     "bench": 58,
     "radSize": "120",
     "fanSize": 120,
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80131,
@@ -6118,7 +6146,9 @@ export default [
     "fanSize": 140,
     "cfm": 132,
     "radiator": 120,
-    "fanCount": 1
+    "fanCount": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80133,
@@ -6205,7 +6235,9 @@ export default [
     "bench": 60,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75
+    "cfm": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80135,
@@ -6690,7 +6722,9 @@ export default [
     "cfm": 180,
     "mpn": "ACFRE00106A",
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80145,
@@ -6748,7 +6782,9 @@ export default [
     "cfm": 130,
     "mpn": "ACFRE00182A",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80146,
@@ -6801,7 +6837,9 @@ export default [
     "cfm": 130,
     "mpn": "ACFRE00186A",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80147,
@@ -6943,7 +6981,9 @@ export default [
     "cfm": 180,
     "mpn": "ACFRE00183A",
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80150,
@@ -7041,7 +7081,9 @@ export default [
     "cfm": 180,
     "mpn": "GA2ALCD36INB.US",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80152,
@@ -7177,7 +7219,9 @@ export default [
     "cfm": 130,
     "mpn": "ACFRE00178A",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80155,
@@ -7296,7 +7340,9 @@ export default [
     "value": 100,
     "bench": 52,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80158,
@@ -7596,7 +7642,9 @@ export default [
     "rgb": true,
     "value": 30,
     "bench": 35,
-    "cfm": 65
+    "cfm": 65,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80165,
@@ -7727,7 +7775,9 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80168,
@@ -7769,7 +7819,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80169,
@@ -8169,7 +8221,9 @@ export default [
     "cfm": 120,
     "mpn": "GA2L24PB",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80177,
@@ -8343,7 +8397,9 @@ export default [
     "bench": 65,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80181,
@@ -10727,7 +10783,9 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80237,
@@ -10768,7 +10826,9 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80238,
@@ -11678,7 +11738,9 @@ export default [
     "cfm": 150,
     "mpn": "GA2ALCD28TLB",
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80259,
@@ -11771,7 +11833,9 @@ export default [
     "mpn": "GA2P36W",
     "radiator": 360,
     "fanCount": 3,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 80261,
@@ -14232,7 +14296,9 @@ export default [
     "coolerType": "Air",
     "airflow": 35.5,
     "noise": 24.8,
-    "rpm": 1700
+    "rpm": 1700,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100370,
@@ -15125,7 +15191,9 @@ export default [
     "radiator": 420,
     "fanCount": 3,
     "noise": 34.3,
-    "rpm": 3500
+    "rpm": 3500,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100923,
@@ -15382,7 +15450,9 @@ export default [
     ],
     "airflow": 72,
     "noise": 31,
-    "rpm": 2200
+    "rpm": 2200,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100932,
@@ -15411,7 +15481,9 @@ export default [
     ],
     "airflow": 42.58,
     "noise": 22.4,
-    "rpm": 2700
+    "rpm": 2700,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100933,
@@ -15652,7 +15724,9 @@ export default [
       "AM5"
     ],
     "noise": 23.6,
-    "rpm": 2500
+    "rpm": 2500,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100941,
@@ -16282,7 +16356,9 @@ export default [
     ],
     "airflow": 67.58,
     "noise": 28,
-    "rpm": 1800
+    "rpm": 1800,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100965,
@@ -16337,7 +16413,9 @@ export default [
     ],
     "airflow": 65.2,
     "noise": 33.9,
-    "rpm": 1850
+    "rpm": 1850,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100968,
@@ -16670,7 +16748,9 @@ export default [
     ],
     "airflow": 190,
     "noise": 38.5,
-    "rpm": 2500
+    "rpm": 2500,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 100982,
@@ -17174,7 +17254,9 @@ export default [
     ],
     "airflow": 69,
     "noise": 27,
-    "rpm": 2150
+    "rpm": 2150,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101230,
@@ -17909,7 +17991,9 @@ export default [
     "tdp_rating": 95,
     "airflow": 37,
     "noise": 28,
-    "rpm": 1800
+    "rpm": 1800,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101257,
@@ -17939,7 +18023,9 @@ export default [
     ],
     "airflow": 47.5,
     "noise": 33.2,
-    "rpm": 3000
+    "rpm": 3000,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101258,
@@ -18060,7 +18146,9 @@ export default [
     ],
     "airflow": 42.58,
     "noise": 22.4,
-    "rpm": 2700
+    "rpm": 2700,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101263,

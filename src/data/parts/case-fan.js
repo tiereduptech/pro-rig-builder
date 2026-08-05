@@ -213,7 +213,9 @@ export default [
     "pwm": true,
     "bench": 71,
     "fans_inc": 5,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85004,
@@ -241,7 +243,9 @@ export default [
     "rpm": 1700,
     "pwm": true,
     "bench": 80,
-    "fans_inc": 5
+    "fans_inc": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85005,
@@ -562,7 +566,9 @@ export default [
     "rpm": 2200,
     "noise": 33,
     "fans_inc": 3,
-    "bench": 59
+    "bench": 59,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85015,
@@ -1281,7 +1287,9 @@ export default [
     "pack": 1,
     "bench": 58,
     "mpn": "ACFAN00309A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85032,
@@ -1539,7 +1547,9 @@ export default [
     "rpm": 1500,
     "rgb": false,
     "pack": 2,
-    "bench": 86
+    "bench": 86,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85038,
@@ -2009,7 +2019,9 @@ export default [
     "rpm": 2500,
     "rgb": false,
     "pack": 1,
-    "bench": 58
+    "bench": 58,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85049,
@@ -2043,7 +2055,9 @@ export default [
     "rpm": 1850,
     "rgb": false,
     "pack": 1,
-    "bench": 69
+    "bench": 69,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85050,
@@ -2175,7 +2189,9 @@ export default [
     "pack": 3,
     "bench": 68,
     "mpn": "TL-M12Q",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85053,
@@ -2425,7 +2441,9 @@ export default [
     "pack": 1,
     "bench": 59,
     "mpn": "CO-9050196-WW",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85059,
@@ -2506,7 +2524,9 @@ export default [
     "pack": 1,
     "bench": 63,
     "mpn": "ACFAN00313A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85061,
@@ -2552,7 +2572,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 74,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85062,
@@ -2675,7 +2697,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 65,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85065,
@@ -2996,7 +3020,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 91,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85073,
@@ -3291,7 +3317,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 66,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85081,
@@ -3540,7 +3568,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 69,
-    "mpn": "12RTLLCD1W1B"
+    "mpn": "12RTLLCD1W1B",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85087,
@@ -3580,7 +3610,9 @@ export default [
     "pack": 3,
     "bench": 72,
     "mpn": "ACFAN00320A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85088,
@@ -3669,7 +3701,9 @@ export default [
     "pack": 1,
     "bench": 56,
     "mpn": "ACFAN00311A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85090,
@@ -3852,7 +3886,9 @@ export default [
     "pack": 3,
     "bench": 81,
     "mpn": "ACFAN00326A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85094,
@@ -3968,7 +4004,9 @@ export default [
     "pack": 3,
     "bench": 90,
     "mpn": "ACFAN00327A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85097,
@@ -4434,7 +4472,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 58,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85109,
@@ -4471,7 +4511,9 @@ export default [
     "pack": 1,
     "bench": 72,
     "mpn": "ACFAN00123A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85110,
@@ -4508,7 +4550,9 @@ export default [
     "rgb": false,
     "pack": 5,
     "bench": 81,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85111,
@@ -4718,7 +4762,9 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 78,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85116,
@@ -4865,7 +4911,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 59,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85120,
@@ -5052,7 +5100,9 @@ export default [
     "pack": 1,
     "bench": 80,
     "mpn": "ACFAN00322A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85125,
@@ -5168,7 +5218,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 67,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85128,
@@ -5370,7 +5422,9 @@ export default [
     "bench": 82,
     "mpn": "ACFAN00330A",
     "fanSize": 140,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85133,
@@ -5407,7 +5461,9 @@ export default [
     "pack": 1,
     "bench": 78,
     "mpn": "ACFAN00331A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85134,
@@ -5630,7 +5686,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "mpn": "ACFAN00187A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85140,
@@ -5680,7 +5738,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 77,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85141,
@@ -5878,7 +5938,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "mpn": "ACFAN00197A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85146,
@@ -6039,7 +6101,9 @@ export default [
     "pack": 1,
     "bench": 71,
     "mpn": "RF-R14SF-B1",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85150,
@@ -6074,7 +6138,9 @@ export default [
     "rpm": 1200,
     "rgb": false,
     "pack": 1,
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85151,
@@ -6110,7 +6176,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 70,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85152,
@@ -6340,7 +6408,9 @@ export default [
     "pack": 1,
     "bench": 74,
     "mpn": "NF-A15 PWM",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85158,
@@ -6538,7 +6608,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "pwm": false,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85163,
@@ -6585,7 +6657,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "mpn": "MBVB09SLPRYYZ",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85164,
@@ -6774,7 +6848,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 65,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85169,
@@ -6957,7 +7033,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 41,
-    "mpn": "CL-F167-PL12SW-A"
+    "mpn": "CL-F167-PL12SW-A",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85173,
@@ -7169,7 +7247,9 @@ export default [
     "bench": 65,
     "rgb": false,
     "pack": 1,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85178,
@@ -7618,7 +7698,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 63,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85189,
@@ -7698,7 +7780,9 @@ export default [
     "color": "Black",
     "bench": 56,
     "rgb": false,
-    "pack": 1
+    "pack": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85191,
@@ -7805,7 +7889,9 @@ export default [
     "pack": 1,
     "bench": 43,
     "fanSize": 140,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85194,
@@ -8002,7 +8088,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 47,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85199,
@@ -8034,7 +8122,9 @@ export default [
     "bench": 42,
     "rgb": false,
     "pack": 1,
-    "pwm": false
+    "pwm": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85200,
@@ -8128,7 +8218,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 43,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85202,
@@ -8223,7 +8315,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 46,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85204,
@@ -9140,7 +9234,9 @@ export default [
     "pack": 1,
     "bench": 58,
     "mpn": "ACFAN00316A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85227,
@@ -9267,7 +9363,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 43,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85230,
@@ -9339,7 +9437,9 @@ export default [
     "pwm": true,
     "rgbType": "ARGB",
     "pack": 1,
-    "bench": 53
+    "bench": 53,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85232,
@@ -9483,7 +9583,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 57,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85236,
@@ -9678,7 +9780,9 @@ export default [
     "pack": 1,
     "bench": 82,
     "mpn": "ACFAN00324A",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85241,
@@ -9783,7 +9887,9 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 57,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85244,
@@ -9966,7 +10072,9 @@ export default [
     "bench": 62,
     "rgb": true,
     "pack": 1,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85249,
@@ -10002,7 +10110,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 44,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 85250,
@@ -12469,7 +12579,9 @@ export default [
     "addedAt": "2026-05-15T14:34:31.807Z",
     "source": "amazon-discovery",
     "fanSize": 140,
-    "pwm": true
+    "pwm": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101125,
@@ -12781,7 +12893,9 @@ export default [
     "source": "amazon-discovery",
     "fanSize": 140,
     "pwm": true,
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 101140,
