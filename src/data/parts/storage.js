@@ -23,7 +23,12 @@ export default [
       "amazon": {
         "price": 379.99,
         "url": "https://www.amazon.com/dp/B0C3K2WRPV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "STOCKYFY",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBZW0KWR4572",
@@ -65,7 +70,12 @@ export default [
       "amazon": {
         "price": 275.99,
         "url": "https://www.amazon.com/dp/B0F9XN4DCC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Meyra Wholesale",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 279.99,
@@ -110,7 +120,12 @@ export default [
       "amazon": {
         "price": 363.49,
         "url": "https://www.amazon.com/dp/B0DHLCRF91?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBP4YM1T2164",
@@ -150,7 +165,12 @@ export default [
       "amazon": {
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B0DHLFWBQ1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Ironleaf Partners",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBP4YM1T2155",
@@ -224,7 +244,12 @@ export default [
       "amazon": {
         "price": 360.12,
         "url": "https://www.amazon.com/dp/B0B7CMZ3QH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "New Sun Mart (S/N Recorded）",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -254,7 +279,12 @@ export default [
       "amazon": {
         "price": 389.99,
         "url": "https://www.amazon.com/dp/B0BHJJ9Y77?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBP4YM1U4268",
@@ -294,7 +324,12 @@ export default [
       "amazon": {
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B0DHLFWBQ1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Ironleaf Partners",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -325,7 +360,12 @@ export default [
       "amazon": {
         "price": 229.99,
         "url": "https://www.amazon.com/dp/B0B7CKVCCV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Ironleaf Partners",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -355,7 +395,12 @@ export default [
       "amazon": {
         "price": 218.95,
         "url": "https://www.amazon.com/dp/B08PBFP4NV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Big Rocket Man USA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -428,7 +473,12 @@ export default [
       "amazon": {
         "price": 188.57,
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -460,7 +510,12 @@ export default [
       "amazon": {
         "price": 371,
         "url": "https://www.amazon.com/dp/B0CK2TC9XQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA12KK7E7445",
@@ -500,7 +555,12 @@ export default [
       "amazon": {
         "price": 275.5,
         "url": "https://www.amazon.com/dp/B0CK39YR9V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBFJRK7E7586",
@@ -540,7 +600,12 @@ export default [
       "amazon": {
         "price": 188.57,
         "url": "https://www.amazon.com/dp/B0DN7CYYSD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBTK0KUW0404",
@@ -581,7 +646,12 @@ export default [
       "amazon": {
         "price": 179.98,
         "url": "https://www.amazon.com/dp/B0DC8VPSHV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -611,7 +681,12 @@ export default [
       "amazon": {
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B0CJRTVLJ2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -703,7 +778,12 @@ export default [
       "amazon": {
         "price": 137.99,
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DATOTEK",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "nand": "TLC",
@@ -733,7 +813,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B08QB93S6R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820147794",
@@ -775,7 +860,12 @@ export default [
       "amazon": {
         "price": 137.99,
         "url": "https://www.amazon.com/dp/B0DF2DC3R4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DATOTEK",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "nand": "TLC",
@@ -802,7 +892,12 @@ export default [
       "amazon": {
         "price": 244,
         "url": "https://www.amazon.com/dp/B07YD5F561?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "nand": "TLC",
@@ -830,7 +925,12 @@ export default [
       "amazon": {
         "price": 104,
         "url": "https://www.amazon.com/dp/B01N0TQPQB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "nand": "TLC",
@@ -857,7 +957,12 @@ export default [
       "amazon": {
         "price": 147.99,
         "url": "https://www.amazon.com/dp/B07H2RR55Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "J-Tech Digital, Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAG98K406683",
@@ -895,7 +1000,12 @@ export default [
       "amazon": {
         "price": 203,
         "url": "https://www.amazon.com/dp/B07D9C7SQH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Giz-Promo",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "value": 0,
@@ -921,7 +1031,12 @@ export default [
       "amazon": {
         "price": 259,
         "url": "https://www.amazon.com/dp/B09P2JY17H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Tech Original",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "value": 0,
@@ -947,7 +1062,12 @@ export default [
       "amazon": {
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0088PUEPK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Dealforless",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "value": 1,
@@ -1008,7 +1128,9 @@ export default [
       }
     },
     "value": 0,
-    "bench": 20
+    "bench": 20,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50033,
@@ -1030,7 +1152,10 @@ export default [
       "amazon": {
         "price": 248.98,
         "url": "https://www.amazon.com/dp/B0BDXSK2K7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "value": 0,
@@ -1056,7 +1181,12 @@ export default [
       "amazon": {
         "price": 354.99,
         "url": "https://www.amazon.com/dp/B0CMQ6SK7W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XHM1F2419",
@@ -1091,9 +1221,14 @@ export default [
     "rpm": 5400,
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 269.99,
         "url": "https://www.amazon.com/dp/B07H289S79?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "HDD - HardDiskDrives",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "value": 1,
@@ -1165,7 +1300,10 @@ export default [
       "amazon": {
         "price": 490.69,
         "url": "https://www.amazon.com/dp/B074LK3XHJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "value": 0,
@@ -1192,7 +1330,12 @@ export default [
       "amazon": {
         "price": 1475,
         "url": "https://www.amazon.com/dp/B0B6RMVJ52?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "pcie": 4,
@@ -1314,7 +1457,12 @@ export default [
       "amazon": {
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B08QBJ2YMG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 519.99,
@@ -1359,7 +1507,12 @@ export default [
       "amazon": {
         "price": 389.99,
         "url": "https://www.amazon.com/dp/B0BHJJ9Y77?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 429.99,
@@ -1405,7 +1558,12 @@ export default [
       "amazon": {
         "price": 164.99,
         "url": "https://www.amazon.com/dp/B0DBR3DZWG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "electrolert",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 196.54,
@@ -1463,7 +1621,12 @@ export default [
       "amazon": {
         "price": 284.9,
         "url": "https://www.amazon.com/dp/B0DC8RVRBZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 297.99,
@@ -1519,7 +1682,12 @@ export default [
       "amazon": {
         "price": 50,
         "url": "https://www.amazon.com/dp/B07G3YNLJB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Bannister Hillshire",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA2W0KF18489",
@@ -1569,7 +1737,12 @@ export default [
       "amazon": {
         "price": 179.98,
         "url": "https://www.amazon.com/dp/B0DC8VPSHV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 188.99,
@@ -1626,7 +1799,10 @@ export default [
       "amazon": {
         "price": 112,
         "url": "https://www.amazon.com/dp/B0DBR9RZLV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 114.99,
@@ -1690,7 +1866,12 @@ export default [
       "amazon": {
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0DX2G349M?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 249.99,
@@ -1782,7 +1963,9 @@ export default [
     "dram": true,
     "value": 73,
     "pcieGen": 5,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50051,
@@ -1800,7 +1983,12 @@ export default [
       "amazon": {
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FGP7W3NJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SIX Memory",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -1841,7 +2029,12 @@ export default [
       "amazon": {
         "price": 104,
         "url": "https://www.amazon.com/dp/B01N0TQPQB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 121.34,
@@ -1895,7 +2088,12 @@ export default [
       "amazon": {
         "price": 174.99,
         "url": "https://www.amazon.com/dp/B07YD579WM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Micom Pro",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 174.99,
@@ -1949,7 +2147,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B08QB93S6R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 679.99,
@@ -1996,7 +2199,12 @@ export default [
       "amazon": {
         "price": 799.99,
         "url": "https://www.amazon.com/dp/B0CHGT1KFJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 929,
@@ -2053,7 +2261,12 @@ export default [
       "amazon": {
         "price": 178,
         "url": "https://www.amazon.com/dp/B09ZYQ84CM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Woot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 199.99,
@@ -2112,7 +2325,12 @@ export default [
       "amazon": {
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B0C48B3RGL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Woot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 284.99,
@@ -2169,7 +2387,10 @@ export default [
       "amazon": {
         "price": 408.23,
         "url": "https://www.amazon.com/dp/B0DK74LG91?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "discount": 60,
@@ -2210,7 +2431,12 @@ export default [
       "amazon": {
         "price": 404.99,
         "url": "https://www.amazon.com/dp/B0F4R3YCL6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 421.08,
@@ -2250,7 +2476,12 @@ export default [
       "amazon": {
         "price": 132,
         "url": "https://www.amazon.com/dp/B0DC8K6KQD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBFJRKUC8690",
@@ -2302,7 +2533,12 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B09WMP5B5N?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Giz-Promo",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 145.99,
@@ -2346,7 +2582,12 @@ export default [
       "amazon": {
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0B55SWRCY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2388,7 +2629,12 @@ export default [
       "amazon": {
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B087K9L3R5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAMB8JGP8619",
@@ -2438,7 +2684,12 @@ export default [
       "amazon": {
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0DN6ZQ3PD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 349.99,
@@ -2485,7 +2736,12 @@ export default [
       "amazon": {
         "price": 587.07,
         "url": "https://www.amazon.com/dp/B0DHLBDSP7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820147901",
@@ -2538,7 +2794,12 @@ export default [
       "amazon": {
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B09F5W62N8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XKM1G7180",
@@ -2592,7 +2853,12 @@ export default [
       "amazon": {
         "price": 79.97,
         "url": "https://www.amazon.com/dp/B0BJZLF2FW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KingSpec Storage",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2629,7 +2895,12 @@ export default [
       "amazon": {
         "price": 86.99,
         "url": "https://www.amazon.com/dp/B0D1R5VQRG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KingSpec Storage",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2709,7 +2980,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0DX2DPJZ5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 459.99,
@@ -2765,7 +3041,12 @@ export default [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0B1JPYH2Z?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2802,7 +3083,12 @@ export default [
       "amazon": {
         "price": 729,
         "url": "https://www.amazon.com/dp/B0F9XP15XL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Micom Pro",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2842,7 +3128,12 @@ export default [
       "amazon": {
         "price": 184.99,
         "url": "https://www.amazon.com/dp/B0C3ZJ8T6F?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2884,7 +3175,12 @@ export default [
       "amazon": {
         "price": 74.99,
         "url": "https://www.amazon.com/dp/B01N5IB20Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 80.5,
@@ -2938,7 +3234,12 @@ export default [
       "amazon": {
         "price": 57.97,
         "url": "https://www.amazon.com/dp/B07ZGK3K4V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -2980,7 +3281,12 @@ export default [
       "amazon": {
         "price": 54.99,
         "url": "https://www.amazon.com/dp/B082BWY2C2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 60.99,
@@ -3036,7 +3342,12 @@ export default [
       "amazon": {
         "price": 158.97,
         "url": "https://www.amazon.com/dp/B07ZGJVTZK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -3107,7 +3418,12 @@ export default [
       "amazon": {
         "price": 1041.5,
         "url": "https://www.amazon.com/dp/B0DX2GJ1YR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "kooldeal68",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 999.99,
@@ -3154,7 +3470,12 @@ export default [
       "amazon": {
         "price": 169.97,
         "url": "https://www.amazon.com/dp/B0B217LZBG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -3195,7 +3516,12 @@ export default [
       "amazon": {
         "price": 155.99,
         "url": "https://www.amazon.com/dp/B0CM8RVVG1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -3235,7 +3561,12 @@ export default [
       "amazon": {
         "price": 85.99,
         "url": "https://www.amazon.com/dp/B0CNSV1M47?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBSAYK655817",
@@ -3285,7 +3616,12 @@ export default [
       "amazon": {
         "price": 74.99,
         "url": "https://www.amazon.com/dp/B0BG5FSPHS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Joiot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 12,
@@ -3322,7 +3658,12 @@ export default [
       "amazon": {
         "price": 109.99,
         "url": "https://www.amazon.com/dp/B0FGPJ2BRF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SIX Memory",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -3364,7 +3705,12 @@ export default [
       "amazon": {
         "price": 629.99,
         "url": "https://www.amazon.com/dp/B0B7CQ2CHH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 659,
@@ -3421,7 +3767,12 @@ export default [
       "amazon": {
         "price": 379.99,
         "url": "https://www.amazon.com/dp/B0D1V1SNDX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 409.99,
@@ -3462,7 +3813,10 @@ export default [
       "amazon": {
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B082BJ4679?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 91.99,
@@ -3551,7 +3905,7 @@ export default [
     "pcieGen": 4,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50093,
@@ -3568,7 +3922,10 @@ export default [
       "amazon": {
         "price": 115.44,
         "url": "https://www.amazon.com/dp/B0CN3PBS2Z?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -3615,7 +3972,12 @@ export default [
       "amazon": {
         "price": 329.8,
         "url": "https://www.amazon.com/dp/B0D61SDZD2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Sales For You",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 314.99,
@@ -3673,7 +4035,10 @@ export default [
       "amazon": {
         "price": 1019.99,
         "url": "https://www.amazon.com/dp/B0FFBPK8T7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 1019.99,
@@ -3725,7 +4090,12 @@ export default [
       "amazon": {
         "price": 85.99,
         "url": "https://www.amazon.com/dp/B0CP9BZLZ5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KingSpec Storage",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -3767,7 +4137,12 @@ export default [
       "amazon": {
         "price": 339.99,
         "url": "https://www.amazon.com/dp/B0DZ5XQNLM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820156428",
@@ -3818,7 +4193,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0F3BD1W6R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 459.99,
@@ -3922,7 +4302,12 @@ export default [
       "amazon": {
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0F43FF7PK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4002,7 +4387,12 @@ export default [
       "amazon": {
         "price": 129.97,
         "url": "https://www.amazon.com/dp/B0G42FGS7V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBDGPKHF5579",
@@ -4050,7 +4440,12 @@ export default [
       "amazon": {
         "price": 160.98,
         "url": "https://www.amazon.com/dp/B0F3XL469M?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZW2915",
@@ -4102,7 +4497,10 @@ export default [
       "amazon": {
         "price": 399.95,
         "url": "https://www.amazon.com/dp/B0B7CKZGN6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 499.95,
@@ -4159,7 +4557,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B07XZLN9KM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 109.99,
@@ -4202,7 +4605,12 @@ export default [
       "amazon": {
         "price": 104.97,
         "url": "https://www.amazon.com/dp/B07ZGJYLNL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4243,7 +4651,10 @@ export default [
       "amazon": {
         "price": 299.89,
         "url": "https://www.amazon.com/dp/B0C14TF467?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "9SIAADFKS71069",
@@ -4293,7 +4704,12 @@ export default [
       "amazon": {
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B07D99KFPK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TechnoDealsUSA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4329,7 +4745,12 @@ export default [
       "amazon": {
         "price": 220,
         "url": "https://www.amazon.com/dp/B01M0AADIX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Argus Dataworks TX",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAPBJGVS8178",
@@ -4377,7 +4798,12 @@ export default [
       "amazon": {
         "price": 93.99,
         "url": "https://www.amazon.com/dp/B07XJ2P1LK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 102.74,
@@ -4424,7 +4850,12 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0C66DBB1H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "prime bay",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4460,7 +4891,12 @@ export default [
       "amazon": {
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DN7JK8T4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Electronics Club",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 203.46,
@@ -4517,7 +4953,12 @@ export default [
       "amazon": {
         "price": 230.03,
         "url": "https://www.amazon.com/dp/B0CCN9QWKT?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Germany",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820156232",
@@ -4567,7 +5008,12 @@ export default [
       "amazon": {
         "price": 70.99,
         "url": "https://www.amazon.com/dp/B08GJCZG39?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Timetec International Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA56XBCP7776",
@@ -4617,7 +5063,12 @@ export default [
       "amazon": {
         "price": 269.97,
         "url": "https://www.amazon.com/dp/B0B996CJ64?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4657,7 +5108,12 @@ export default [
       "amazon": {
         "price": 199,
         "url": "https://www.amazon.com/dp/B0D7MLHCQ7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "HIMALAYAS.LLC (SN recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 239.99,
@@ -4716,7 +5172,12 @@ export default [
       "amazon": {
         "price": 224,
         "url": "https://www.amazon.com/dp/B0D61Z8R1W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEKTURN®",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 259.99,
@@ -4805,7 +5266,12 @@ export default [
       "amazon": {
         "price": 183.9,
         "url": "https://www.amazon.com/dp/B0DQ9K7S1Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4845,7 +5311,12 @@ export default [
       "amazon": {
         "price": 51.29,
         "url": "https://www.amazon.com/dp/B0B1HJV9VZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4885,7 +5356,12 @@ export default [
       "amazon": {
         "price": 35.99,
         "url": "https://www.amazon.com/dp/B0GDWMGZFN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4923,7 +5399,12 @@ export default [
       "amazon": {
         "price": 317.95,
         "url": "https://www.amazon.com/dp/B07H28M89D?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Actiview CCTV",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XHM1S5920",
@@ -4971,7 +5452,12 @@ export default [
       "amazon": {
         "price": 189.99,
         "url": "https://www.amazon.com/dp/B0DXDRZ2QN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5011,7 +5497,10 @@ export default [
       "amazon": {
         "price": 83.99,
         "url": "https://www.amazon.com/dp/B0FLJHHNLN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -5054,7 +5543,12 @@ export default [
       "amazon": {
         "price": 425.69,
         "url": "https://www.amazon.com/dp/B0F9XN6MZW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Germany",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5095,7 +5589,12 @@ export default [
       "amazon": {
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0DMHS9HQ4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Woot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 114.99,
@@ -5150,7 +5649,12 @@ export default [
       "amazon": {
         "price": 119.26,
         "url": "https://www.amazon.com/dp/B0F481WGTZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZN2042",
@@ -5199,7 +5703,12 @@ export default [
       "amazon": {
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B0F7MJV2X8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16822234591",
@@ -5241,7 +5750,12 @@ export default [
       "amazon": {
         "price": 279,
         "url": "https://www.amazon.com/dp/B08PC43D78?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 8,
@@ -5277,7 +5791,12 @@ export default [
       "amazon": {
         "price": 303.96,
         "url": "https://www.amazon.com/dp/B0B25ML2FH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SalesPeak",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBZW0KVP1094",
@@ -5371,7 +5890,12 @@ export default [
       "amazon": {
         "price": 70.19,
         "url": "https://www.amazon.com/dp/B09XDJPPMB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5409,7 +5933,12 @@ export default [
       "amazon": {
         "price": 229.97,
         "url": "https://www.amazon.com/dp/B07ZQ97H3W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5451,7 +5980,12 @@ export default [
       "amazon": {
         "price": 269.99,
         "url": "https://www.amazon.com/dp/B0DBR6TRZQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 359.74,
@@ -5509,7 +6043,12 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B08CKFDPJ3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5549,7 +6088,12 @@ export default [
       "amazon": {
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B0C3M1YN5T?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5587,7 +6131,12 @@ export default [
       "amazon": {
         "price": 116.84,
         "url": "https://www.amazon.com/dp/B0B9BL9T4H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "PC Parts Sales",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBFJRJZA0945",
@@ -5636,7 +6185,12 @@ export default [
       "amazon": {
         "price": 95.99,
         "url": "https://www.amazon.com/dp/B0B55R7PYB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5677,7 +6231,12 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0CM8QWND1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5715,7 +6274,12 @@ export default [
       "amazon": {
         "price": 161.09,
         "url": "https://www.amazon.com/dp/B0BNQ1NXC3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5755,7 +6319,12 @@ export default [
       "amazon": {
         "price": 124.99,
         "url": "https://www.amazon.com/dp/B08GJCS69D?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Timetec International Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA56XBCP7783",
@@ -5840,7 +6409,12 @@ export default [
       "amazon": {
         "price": 94.99,
         "url": "https://www.amazon.com/dp/B0D4YY39D2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5881,7 +6455,12 @@ export default [
       "amazon": {
         "price": 148.34,
         "url": "https://www.amazon.com/dp/B0B7VWFN4B?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Japan",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 30,
@@ -5959,7 +6538,12 @@ export default [
       "amazon": {
         "price": 66.59,
         "url": "https://www.amazon.com/dp/B0CX91BJWG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5997,7 +6581,12 @@ export default [
       "amazon": {
         "price": 149.97,
         "url": "https://www.amazon.com/dp/B0CP9CXCXG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KingSpec Storage",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6038,7 +6627,12 @@ export default [
       "amazon": {
         "price": 95.99,
         "url": "https://www.amazon.com/dp/B0CM8Q9X5W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6080,7 +6674,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0D4RCRNHG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 89.99,
@@ -6136,7 +6735,12 @@ export default [
       "amazon": {
         "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CGKPPZY9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 8,
@@ -6179,7 +6783,12 @@ export default [
       "amazon": {
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0C9D8FHHF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6252,7 +6861,12 @@ export default [
       "amazon": {
         "price": 269.99,
         "url": "https://www.amazon.com/dp/B0F3BMBQ75?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 269.99,
@@ -6301,7 +6915,12 @@ export default [
       "amazon": {
         "price": 164.98,
         "url": "https://www.amazon.com/dp/B0DQSJYD12?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 168.99,
@@ -6358,7 +6977,12 @@ export default [
       "amazon": {
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0DM23JKXC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6399,7 +7023,10 @@ export default [
       "amazon": {
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B0GHN3NM5Z?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -6438,7 +7065,12 @@ export default [
       "amazon": {
         "price": 42.45,
         "url": "https://www.amazon.com/dp/B0CF5B2K5Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "RAOYI",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6474,7 +7106,12 @@ export default [
       "amazon": {
         "price": 83.99,
         "url": "https://www.amazon.com/dp/B0D9YBH157?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6514,7 +7151,12 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0BTDP6P7Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "3C6-00HW-000N0",
@@ -6565,7 +7207,12 @@ export default [
       "amazon": {
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B01LZMUNGR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ITTradingPost",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 239.99,
@@ -6604,7 +7251,10 @@ export default [
       "amazon": {
         "price": 285,
         "url": "https://www.amazon.com/dp/B01CG0DD1E?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -6637,7 +7287,12 @@ export default [
       "amazon": {
         "price": 94.99,
         "url": "https://www.amazon.com/dp/B0CSFQ24W2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Arsenal PC",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6710,7 +7365,12 @@ export default [
       "amazon": {
         "price": 807.74,
         "url": "https://www.amazon.com/dp/B0F9XN5CB5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6748,9 +7408,14 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 260,
+        "price": 237.09,
         "url": "https://www.amazon.com/dp/B0F9XNN7XF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Amazon Germany",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 6,
@@ -6793,7 +7458,12 @@ export default [
       "amazon": {
         "price": 192.59,
         "url": "https://www.amazon.com/dp/B0F47NQ8HX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZN2044",
@@ -6872,7 +7542,10 @@ export default [
       "amazon": {
         "price": 55.99,
         "url": "https://www.amazon.com/dp/B0FLJ2RYXV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "9SIC7ABKZW2884",
@@ -6925,7 +7598,12 @@ export default [
       "amazon": {
         "price": 209.97,
         "url": "https://www.amazon.com/dp/B0G42YVQRJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBDGPKHF5584",
@@ -6976,7 +7654,12 @@ export default [
       "amazon": {
         "price": 269.95,
         "url": "https://www.amazon.com/dp/B0DKH285B6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DEBOTIX",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 299.99,
@@ -7031,7 +7714,12 @@ export default [
       "amazon": {
         "price": 75.99,
         "url": "https://www.amazon.com/dp/B0GH78MGCP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Colorful Hardware Global Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7072,7 +7760,12 @@ export default [
       "amazon": {
         "price": 499.99,
         "url": "https://www.amazon.com/dp/B08RK2SR23?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Sysmel",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7170,7 +7863,12 @@ export default [
       "amazon": {
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B0BWXK95PY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7207,7 +7905,12 @@ export default [
       "amazon": {
         "price": 1519,
         "url": "https://www.amazon.com/dp/B089C3TZL9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 1885.72,
@@ -7251,7 +7954,12 @@ export default [
       "amazon": {
         "price": 290,
         "url": "https://www.amazon.com/dp/B0GRBXT4VQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "NorthStar Collective",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7323,7 +8031,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B07TQSYBPH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7362,7 +8075,12 @@ export default [
       "amazon": {
         "price": 80.99,
         "url": "https://www.amazon.com/dp/B0B2K3ZCHH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "YANSEN Store",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIB1V8KWJ3341",
@@ -7410,7 +8128,12 @@ export default [
       "amazon": {
         "price": 221.99,
         "url": "https://www.amazon.com/dp/B09WMSVHD4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 257.99,
@@ -7454,7 +8177,10 @@ export default [
       "amazon": {
         "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CM8M8293?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -7493,7 +8219,12 @@ export default [
       "amazon": {
         "price": 339.99,
         "url": "https://www.amazon.com/dp/B0CM8W1S8K?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 449.99,
@@ -7536,7 +8267,12 @@ export default [
       "amazon": {
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0CCN9NHTC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "electrolert",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820156231",
@@ -7585,7 +8321,12 @@ export default [
       "amazon": {
         "price": 156.99,
         "url": "https://www.amazon.com/dp/B07XHMBQK3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7626,7 +8367,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0BNQBD46W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7667,7 +8413,12 @@ export default [
       "amazon": {
         "price": 479.97,
         "url": "https://www.amazon.com/dp/B0BYN8NHXS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7706,9 +8457,14 @@ export default [
     "reviews": 3328,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 319.99,
         "url": "https://www.amazon.com/dp/B0B4SQB1HY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Bow's Outlet (S/N Recorded)",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 249,
@@ -7753,7 +8509,12 @@ export default [
       "amazon": {
         "price": 299.9,
         "url": "https://www.amazon.com/dp/B07H28SY39?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nationwide Tech Biz",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7790,7 +8551,12 @@ export default [
       "amazon": {
         "price": 489.98,
         "url": "https://www.amazon.com/dp/B0D4YDX9LQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -7830,7 +8596,12 @@ export default [
       "amazon": {
         "price": 290.31,
         "url": "https://www.amazon.com/dp/B0D7MKYNLX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "AMAZING WAREHOUSE DEAL(Record SN)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 378.06,
@@ -8006,7 +8777,12 @@ export default [
       "amazon": {
         "price": 177.99,
         "url": "https://www.amazon.com/dp/B09ZRD38D8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Woot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 219.99,
@@ -8065,7 +8841,12 @@ export default [
       "amazon": {
         "price": 275.97,
         "url": "https://www.amazon.com/dp/B0CM941D89?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBSAYK658919",
@@ -8122,7 +8903,12 @@ export default [
       "amazon": {
         "price": 559.61,
         "url": "https://www.amazon.com/dp/B0CTSSMTZK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Provantage LLC",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 729.99,
@@ -8178,7 +8964,12 @@ export default [
       "amazon": {
         "price": 269.99,
         "url": "https://www.amazon.com/dp/B0CTRV9CVP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA12KKG55997",
@@ -8230,7 +9021,12 @@ export default [
       "amazon": {
         "price": 177.03,
         "url": "https://www.amazon.com/dp/B0DZ5ZK225?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Germany",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820156429",
@@ -8317,7 +9113,12 @@ export default [
       "amazon": {
         "price": 163.99,
         "url": "https://www.amazon.com/dp/B0CBSSC21F?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KLEVV",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -8393,7 +9194,12 @@ export default [
       "amazon": {
         "price": 95.99,
         "url": "https://www.amazon.com/dp/B0D5M7C19X?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBSAYKAA8934",
@@ -8446,7 +9252,12 @@ export default [
       "amazon": {
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0F3B6MZM9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "AsanteEnterprise",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 999.99,
@@ -8493,7 +9304,12 @@ export default [
       "amazon": {
         "price": 332.29,
         "url": "https://www.amazon.com/dp/B0BYSHKSJY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 349.99,
@@ -8576,7 +9392,12 @@ export default [
       "amazon": {
         "price": 189.99,
         "url": "https://www.amazon.com/dp/B0C9HGVJ11?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nutrend Automotive Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "0D9-003W-000M3",
@@ -8627,7 +9448,12 @@ export default [
       "amazon": {
         "price": 439.99,
         "url": "https://www.amazon.com/dp/B085ZB51HW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "WEDNET LLC",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -8665,7 +9491,12 @@ export default [
       "amazon": {
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DM1R7KHZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -8706,7 +9537,10 @@ export default [
       "amazon": {
         "price": 232,
         "url": "https://www.amazon.com/dp/B0BS1WWDQB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 149.99,
@@ -8753,7 +9587,12 @@ export default [
       "amazon": {
         "price": 178.99,
         "url": "https://www.amazon.com/dp/B0B9Y3DB2K?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 178.99,
@@ -8799,7 +9638,12 @@ export default [
       "amazon": {
         "price": 639.99,
         "url": "https://www.amazon.com/dp/B0CN5LNQSC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 639.99,
@@ -8844,7 +9688,10 @@ export default [
       "amazon": {
         "price": 392.9,
         "url": "https://www.amazon.com/dp/B0814GPG92?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -8882,7 +9729,12 @@ export default [
       "amazon": {
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0FD2NQKQ8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ASunshine Market",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -8922,7 +9774,12 @@ export default [
       "amazon": {
         "price": 329.99,
         "url": "https://www.amazon.com/dp/B0F5WDRNX3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -8963,7 +9820,12 @@ export default [
       "amazon": {
         "price": 243.99,
         "url": "https://www.amazon.com/dp/B0FLJ7SSC2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9036,7 +9898,12 @@ export default [
       "amazon": {
         "price": 70.19,
         "url": "https://www.amazon.com/dp/B0F47GT89V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZN2043",
@@ -9085,7 +9952,12 @@ export default [
       "amazon": {
         "price": 27.99,
         "url": "https://www.amazon.com/dp/B0G92L5RRP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZM4967",
@@ -9134,7 +10006,12 @@ export default [
       "amazon": {
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B0BR3TXGMW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Gigastone  America",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 10,
@@ -9205,7 +10082,12 @@ export default [
       "amazon": {
         "price": 184.55,
         "url": "https://www.amazon.com/dp/B0F25F243C?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9244,7 +10126,12 @@ export default [
       "amazon": {
         "price": 284.99,
         "url": "https://www.amazon.com/dp/B0F43F9ZKP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9284,7 +10171,12 @@ export default [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0DMHKPC6J?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "prime bay",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 193.34,
@@ -9331,7 +10223,12 @@ export default [
       "amazon": {
         "price": 111.99,
         "url": "https://www.amazon.com/dp/B084RHYLG8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Centon Electronics",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9369,7 +10266,12 @@ export default [
       "amazon": {
         "price": 205,
         "url": "https://www.amazon.com/dp/B00B3N18MW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CorteseInc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA6CCHXS4807",
@@ -9411,7 +10313,12 @@ export default [
       "amazon": {
         "price": 90.99,
         "url": "https://www.amazon.com/dp/B0F43PS4YR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZW2889",
@@ -9465,7 +10372,12 @@ export default [
       "amazon": {
         "price": 137.99,
         "url": "https://www.amazon.com/dp/B09YRY5MDC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9505,7 +10417,10 @@ export default [
       "amazon": {
         "price": 68.58,
         "url": "https://www.amazon.com/dp/B0G3PHPXHR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -9544,7 +10459,12 @@ export default [
       "amazon": {
         "price": 275.99,
         "url": "https://www.amazon.com/dp/B0F18WJSX8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Vansuny",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9585,7 +10505,12 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0FLB5YXLD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nutrend Automotive Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820225360",
@@ -9637,7 +10562,12 @@ export default [
       "amazon": {
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FYFGN783?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9675,7 +10605,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0GFHS1DHY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9714,7 +10649,12 @@ export default [
       "amazon": {
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B097C98J7H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "WEDNET LLC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAAEEJJM2189",
@@ -9797,7 +10737,12 @@ export default [
       "amazon": {
         "price": 399,
         "url": "https://www.amazon.com/dp/B078DPCY3T?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Sab Computer",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -9874,7 +10819,12 @@ export default [
       "amazon": {
         "price": 429.95,
         "url": "https://www.amazon.com/dp/B07BN217QG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nationwide Tech Biz",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAADFFH34383",
@@ -9924,7 +10874,10 @@ export default [
       "amazon": {
         "price": 289.5,
         "url": "https://www.amazon.com/dp/B07YD58MX9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -9963,7 +10916,10 @@ export default [
       "amazon": {
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B09QV692XY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 259.99,
@@ -10009,7 +10965,12 @@ export default [
       "amazon": {
         "price": 324.45,
         "url": "https://www.amazon.com/dp/B089QXQ1TV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10045,7 +11006,12 @@ export default [
       "amazon": {
         "price": 245,
         "url": "https://www.amazon.com/dp/B008JJLZ7G?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Neural Net USA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "1Z4-0002-002R5",
@@ -10091,7 +11057,12 @@ export default [
       "amazon": {
         "price": 122.39,
         "url": "https://www.amazon.com/dp/B09XDJ673F?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10129,7 +11100,10 @@ export default [
       "amazon": {
         "price": 429.99,
         "url": "https://www.amazon.com/dp/B077SF8KMG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -10166,7 +11140,12 @@ export default [
       "amazon": {
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B01LNJBA2I?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TechnoDealsUSA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10237,7 +11216,9 @@ export default [
     "value": 12,
     "upc": "08806094947205",
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50252,
@@ -10254,7 +11235,12 @@ export default [
       "amazon": {
         "price": 269.9,
         "url": "https://www.amazon.com/dp/B083XVD1FP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nationwide Tech Biz",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10290,7 +11276,12 @@ export default [
       "amazon": {
         "price": 519.98,
         "url": "https://www.amazon.com/dp/B0DJ1QC42R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 549.99,
@@ -10386,7 +11377,12 @@ export default [
       "amazon": {
         "price": 529,
         "url": "https://www.amazon.com/dp/B0F3WLFCPL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10427,7 +11423,12 @@ export default [
       "amazon": {
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B08PHSVW7K?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Memory-Warehouse",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA2W0JEE2778",
@@ -10477,7 +11478,10 @@ export default [
       "amazon": {
         "price": 370,
         "url": "https://www.amazon.com/dp/B087QTVCHH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -10513,7 +11517,12 @@ export default [
       "amazon": {
         "price": 326.03,
         "url": "https://www.amazon.com/dp/B0C8WPRM9T?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 368.02,
@@ -10559,7 +11568,10 @@ export default [
       "amazon": {
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B087K9L7S7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "9SIAMB8JGG7033",
@@ -10609,7 +11621,12 @@ export default [
       "amazon": {
         "price": 377.13,
         "url": "https://www.amazon.com/dp/B08T1SMTF9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Tech on Time (SN RECORDED)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10645,7 +11662,10 @@ export default [
       "amazon": {
         "price": 383.99,
         "url": "https://www.amazon.com/dp/B01IEKG402?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -10681,7 +11701,12 @@ export default [
       "amazon": {
         "price": 199,
         "url": "https://www.amazon.com/dp/B07H2549QS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CorteseInc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10719,7 +11744,10 @@ export default [
       "amazon": {
         "price": 229.99,
         "url": "https://www.amazon.com/dp/B09NQJMW28?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "discount": 31,
@@ -10759,7 +11787,12 @@ export default [
       "amazon": {
         "price": 260,
         "url": "https://www.amazon.com/dp/B0CK2R8YLY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Bannister Hillshire",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10798,7 +11831,12 @@ export default [
       "amazon": {
         "price": 199,
         "url": "https://www.amazon.com/dp/B01M1NHCZT?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Super Prime Shop",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10837,7 +11875,10 @@ export default [
       "amazon": {
         "price": 122.51,
         "url": "https://www.amazon.com/dp/B01LYFKX41?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "upc": "887276185309",
@@ -10871,7 +11912,12 @@ export default [
       "amazon": {
         "price": 590,
         "url": "https://www.amazon.com/dp/B07B1HX5KN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ALL4COMPUTERS ----- SIGNATURE REQUIRED -----",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10942,7 +11988,12 @@ export default [
       "amazon": {
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0C36YQCX8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -10981,7 +12032,12 @@ export default [
       "amazon": {
         "price": 109.97,
         "url": "https://www.amazon.com/dp/B0B218CQVD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11059,7 +12115,12 @@ export default [
       "amazon": {
         "price": 217,
         "url": "https://www.amazon.com/dp/B0718XQQJ9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Dealforless",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11094,7 +12155,12 @@ export default [
       "amazon": {
         "price": 539.75,
         "url": "https://www.amazon.com/dp/B084ZV1DN8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Brute Networks Corporation",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XHM1T0991",
@@ -11141,7 +12207,12 @@ export default [
       "amazon": {
         "price": 75.99,
         "url": "https://www.amazon.com/dp/B0BF97YK1L?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11179,7 +12250,12 @@ export default [
       "amazon": {
         "price": 429.99,
         "url": "https://www.amazon.com/dp/B0CK2RKPBL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11219,7 +12295,12 @@ export default [
       "amazon": {
         "price": 224.95,
         "url": "https://www.amazon.com/dp/B0CK2S298S?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 249.99,
@@ -11263,7 +12344,10 @@ export default [
       "amazon": {
         "price": 489,
         "url": "https://www.amazon.com/dp/B0CVMSV5J6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "discount": 29,
@@ -11300,7 +12384,12 @@ export default [
       "amazon": {
         "price": 449.9,
         "url": "https://www.amazon.com/dp/B0DGHB9V34?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "All About Office",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "mpn": "MZ-V9S2T0BW",
@@ -11334,7 +12423,12 @@ export default [
       "amazon": {
         "price": 189.99,
         "url": "https://www.amazon.com/dp/B0D7MKQKXZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Wazno Electronics",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 152.99,
@@ -11382,7 +12476,12 @@ export default [
       "amazon": {
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B0D7MLB76V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 519,
@@ -11440,7 +12539,12 @@ export default [
       "amazon": {
         "price": 148,
         "url": "https://www.amazon.com/dp/B01LWRTRZU?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CorteseInc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11477,7 +12581,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0BZMLG2CJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 513.91,
@@ -11530,7 +12639,12 @@ export default [
       "amazon": {
         "price": 208.99,
         "url": "https://www.amazon.com/dp/B0CXJ1W6F9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11567,7 +12681,12 @@ export default [
       "amazon": {
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0GRCH7ZKG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11608,7 +12727,12 @@ export default [
       "amazon": {
         "price": 455.99,
         "url": "https://www.amazon.com/dp/B0B94KSFTH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11647,7 +12771,12 @@ export default [
       "amazon": {
         "price": 720,
         "url": "https://www.amazon.com/dp/B0DGH3HBHJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11692,7 +12821,12 @@ export default [
       "amazon": {
         "price": 184.99,
         "url": "https://www.amazon.com/dp/B08LB5LQ65?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Vaya Electronics",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIAKXTKDW1940",
@@ -11741,7 +12875,12 @@ export default [
       "amazon": {
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0CG1RN6QV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ORICO Direct US Store",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11782,7 +12921,12 @@ export default [
       "amazon": {
         "price": 434.99,
         "url": "https://www.amazon.com/dp/B08W1KDM9K?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "PENNPC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA8TKJS36957",
@@ -11834,7 +12978,12 @@ export default [
       "amazon": {
         "price": 469.99,
         "url": "https://www.amazon.com/dp/B0CPPSJ6SY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11874,7 +13023,12 @@ export default [
       "amazon": {
         "price": 144.99,
         "url": "https://www.amazon.com/dp/B0DBX6BKJP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 139.99,
@@ -11931,7 +13085,12 @@ export default [
       "amazon": {
         "price": 217.7,
         "url": "https://www.amazon.com/dp/B08T1TWQS9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -11975,7 +13134,12 @@ export default [
       "amazon": {
         "price": 509.99,
         "url": "https://www.amazon.com/dp/B0CGKY9K2Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12017,7 +13181,12 @@ export default [
       "amazon": {
         "price": 319.99,
         "url": "https://www.amazon.com/dp/B0CGKHGMW5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 6,
@@ -12060,7 +13229,12 @@ export default [
       "amazon": {
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0C58FVB9V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "YANSEN Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12101,7 +13275,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0CTRVZKG7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "The Superior Mart",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 419.99,
@@ -12156,7 +13335,12 @@ export default [
       "amazon": {
         "price": 280.73,
         "url": "https://www.amazon.com/dp/B01LNJBA50?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Memory-Warehouse",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12191,7 +13375,12 @@ export default [
       "amazon": {
         "price": 509.99,
         "url": "https://www.amazon.com/dp/B0C9DPZKZ8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12233,7 +13422,12 @@ export default [
       "amazon": {
         "price": 217.95,
         "url": "https://www.amazon.com/dp/B0DZ5YFRN5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SalesPeak",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 206.99,
@@ -12289,7 +13483,12 @@ export default [
       "amazon": {
         "price": 339,
         "url": "https://www.amazon.com/dp/B0DZ5TXBJT?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Stavvy Sales",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA12KKJJ6459",
@@ -12340,7 +13539,12 @@ export default [
       "amazon": {
         "price": 299,
         "url": "https://www.amazon.com/dp/B08SVN8MVP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DiscTech (USA)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12374,7 +13578,12 @@ export default [
       "amazon": {
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B078MJHLCM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "HOSALESHOP",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12454,7 +13663,12 @@ export default [
       "amazon": {
         "price": 539.99,
         "url": "https://www.amazon.com/dp/B0CB814KHD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KingSpec Storage",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12495,7 +13709,10 @@ export default [
       "amazon": {
         "price": 227.97,
         "url": "https://www.amazon.com/dp/B0CB7YDP9J?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -12536,7 +13753,12 @@ export default [
       "amazon": {
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0C3QW9CQR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Micro Center",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12575,7 +13797,12 @@ export default [
       "amazon": {
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0C7Z56JJ6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12615,7 +13842,12 @@ export default [
       "amazon": {
         "price": 456,
         "url": "https://www.amazon.com/dp/B01M1BUBSO?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Northeast Legacy Distribution",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XHM1S6008",
@@ -12660,7 +13892,12 @@ export default [
       "amazon": {
         "price": 101.99,
         "url": "https://www.amazon.com/dp/B0CBSQTY68?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KLEVV",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12700,7 +13937,12 @@ export default [
       "amazon": {
         "price": 499.99,
         "url": "https://www.amazon.com/dp/B0DFCHRQWH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KLEVV",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "0D9-00AV-00025",
@@ -12752,7 +13994,12 @@ export default [
       "amazon": {
         "price": 287.99,
         "url": "https://www.amazon.com/dp/B0D3HDJDNM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "KLEVV",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "0D9-00AV-00024",
@@ -12839,7 +14086,12 @@ export default [
       "amazon": {
         "price": 176.97,
         "url": "https://www.amazon.com/dp/B0CCD6T788?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 41,
@@ -12879,7 +14131,12 @@ export default [
       "amazon": {
         "price": 1398.95,
         "url": "https://www.amazon.com/dp/B089RD13TX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "HardDrivesForSale",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12918,7 +14175,12 @@ export default [
       "amazon": {
         "price": 807.54,
         "url": "https://www.amazon.com/dp/B09H1D7Y93?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "STAY GOLD MPLS",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBTK0KSV1147",
@@ -13004,7 +14266,12 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0CNSVG1QB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBSAYK655820",
@@ -13055,7 +14322,12 @@ export default [
       "amazon": {
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B0DP6Q5ZMX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13095,7 +14367,12 @@ export default [
       "amazon": {
         "price": 841.45,
         "url": "https://www.amazon.com/dp/B08L3HNDVS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Brute Networks Corporation",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13129,7 +14406,12 @@ export default [
       "amazon": {
         "price": 165.99,
         "url": "https://www.amazon.com/dp/B0C5DCSPPF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13171,7 +14453,12 @@ export default [
       "amazon": {
         "price": 255,
         "url": "https://www.amazon.com/dp/B0DQSJZTZ5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "electrolert",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 269.99,
@@ -13228,7 +14515,12 @@ export default [
       "amazon": {
         "price": 289.99,
         "url": "https://www.amazon.com/dp/B0C69R19Y3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MOVE SPEED Direct",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13269,7 +14561,10 @@ export default [
       "amazon": {
         "price": 687,
         "url": "https://www.amazon.com/dp/B0CBQ5CVN6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "9SIAMB8K247934",
@@ -13320,7 +14615,10 @@ export default [
       "amazon": {
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B0B94L4K2J?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -13356,7 +14654,12 @@ export default [
       "amazon": {
         "price": 861.3,
         "url": "https://www.amazon.com/dp/B0B94NFYWX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Triplenet Pricing INC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 579.99,
@@ -13397,7 +14700,12 @@ export default [
       "amazon": {
         "price": 665.01,
         "url": "https://www.amazon.com/dp/B0B94LJWKY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Galaxy Tech Shop (S/N Recorded)✅",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 459.99,
@@ -13440,7 +14748,12 @@ export default [
       "amazon": {
         "price": 289.97,
         "url": "https://www.amazon.com/dp/B0CF1H9SYQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13514,7 +14827,7 @@ export default [
     "rpm": 5400,
     "value": 26,
     "bench": 13,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-05",
     "needsReview": true
   },
   {
@@ -13533,7 +14846,12 @@ export default [
       "amazon": {
         "price": 689.95,
         "url": "https://www.amazon.com/dp/B0C3KFGPT8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ARF Tech",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13573,7 +14891,10 @@ export default [
       "amazon": {
         "price": 269.99,
         "url": "https://www.amazon.com/dp/B0C3K344ZV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -13613,7 +14934,12 @@ export default [
       "amazon": {
         "price": 136.99,
         "url": "https://www.amazon.com/dp/B0FJ8VGNK8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "STOCKYFY",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 139.99,
@@ -13672,7 +14998,12 @@ export default [
       "amazon": {
         "price": 279.89,
         "url": "https://www.amazon.com/dp/B0FJ8QMW4H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 309.99,
@@ -13731,7 +15062,12 @@ export default [
       "amazon": {
         "price": 185.97,
         "url": "https://www.amazon.com/dp/B0FJ8QFWBQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Stavvy Sales",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 219.99,
@@ -13789,7 +15125,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B08SVPWHZH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "GP Thunder ✅✅",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13863,7 +15204,12 @@ export default [
       "amazon": {
         "price": 392,
         "url": "https://www.amazon.com/dp/B0BPXRY7N2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -13902,7 +15248,10 @@ export default [
       "amazon": {
         "price": 209.94,
         "url": "https://www.amazon.com/dp/B0DY7GHSTZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "discount": 5,
@@ -13942,7 +15291,12 @@ export default [
       "amazon": {
         "price": 89,
         "url": "https://www.amazon.com/dp/B07H28QRKS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DiscTech (USA)",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14001,9 +15355,14 @@ export default [
     "reviews": 488,
     "deals": {
       "amazon": {
-        "price": 128.88,
+        "price": 149.29,
         "url": "https://www.amazon.com/dp/B00EHBES1U?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ITTradingPost",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 14,
@@ -14034,7 +15393,12 @@ export default [
       "amazon": {
         "price": 436.99,
         "url": "https://www.amazon.com/dp/B0FR4X2P8X?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14074,7 +15438,12 @@ export default [
       "amazon": {
         "price": 705.99,
         "url": "https://www.amazon.com/dp/B07YXG3X27?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Transcend Information, Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14115,7 +15484,12 @@ export default [
       "amazon": {
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0CWH9BX2P?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14156,7 +15530,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0CM42DVBR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14196,7 +15575,12 @@ export default [
       "amazon": {
         "price": 226.99,
         "url": "https://www.amazon.com/dp/B0DTY5TN8L?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "RongShu",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14269,7 +15653,12 @@ export default [
       "amazon": {
         "price": 389.99,
         "url": "https://www.amazon.com/dp/B0CTS93WML?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 399,
@@ -14326,7 +15715,12 @@ export default [
       "amazon": {
         "price": 208.99,
         "url": "https://www.amazon.com/dp/B0DM96M41F?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "RAOYI",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14362,7 +15756,12 @@ export default [
       "amazon": {
         "price": 229.99,
         "url": "https://www.amazon.com/dp/B0F4Y12GGN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14401,7 +15800,12 @@ export default [
       "amazon": {
         "price": 293.86,
         "url": "https://www.amazon.com/dp/B0DKP1WH7Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Vadget",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14442,7 +15846,12 @@ export default [
       "amazon": {
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B0DKNY3HRV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14483,7 +15892,12 @@ export default [
       "amazon": {
         "price": 972.99,
         "url": "https://www.amazon.com/dp/B0FV36X6X7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 11,
@@ -14523,7 +15937,12 @@ export default [
       "amazon": {
         "price": 298.99,
         "url": "https://www.amazon.com/dp/B0B9Y48V73?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 304.99,
@@ -14602,7 +16021,12 @@ export default [
       "amazon": {
         "price": 299.44,
         "url": "https://www.amazon.com/dp/B0CFV6H217?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "addlink Technology LLC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 10,
@@ -14643,7 +16067,12 @@ export default [
       "amazon": {
         "price": 509.99,
         "url": "https://www.amazon.com/dp/B0CHJG3ZSF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14716,7 +16145,12 @@ export default [
       "amazon": {
         "price": 180,
         "url": "https://www.amazon.com/dp/B00A45JEX0?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ITTradingPost",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14749,7 +16183,12 @@ export default [
       "amazon": {
         "price": 491.45,
         "url": "https://www.amazon.com/dp/B01CHP20MG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Brute Networks Corporation",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14783,7 +16222,12 @@ export default [
       "amazon": {
         "price": 184.94,
         "url": "https://www.amazon.com/dp/B0BW8BMSX5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14824,7 +16268,12 @@ export default [
       "amazon": {
         "price": 315.99,
         "url": "https://www.amazon.com/dp/B0CWQP2VGH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "GeekTown (we record product serial number)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14865,7 +16314,12 @@ export default [
       "amazon": {
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0CZ43QW2P?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Gigastone  America",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 10,
@@ -14945,7 +16399,12 @@ export default [
       "amazon": {
         "price": 384.95,
         "url": "https://www.amazon.com/dp/B08W5TLTL2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14982,7 +16441,12 @@ export default [
       "amazon": {
         "price": 391.45,
         "url": "https://www.amazon.com/dp/B01LZDFMWQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Brute Networks Corporation",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15017,7 +16481,12 @@ export default [
       "amazon": {
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B00A45JFJS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ONLINE USA OUTLET",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15052,7 +16521,12 @@ export default [
       "amazon": {
         "price": 302.99,
         "url": "https://www.amazon.com/dp/B0CZMZQ8MW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 319.99,
@@ -15110,7 +16584,12 @@ export default [
       "amazon": {
         "price": 83.69,
         "url": "https://www.amazon.com/dp/B0BR7QMQHV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Vansuny",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 5,
@@ -15149,7 +16628,12 @@ export default [
       "amazon": {
         "price": 450,
         "url": "https://www.amazon.com/dp/B08SW72NBQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15186,7 +16670,12 @@ export default [
       "amazon": {
         "price": 81,
         "url": "https://www.amazon.com/dp/B01LX4E7FM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DiscTech (USA)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15247,7 +16736,10 @@ export default [
       "amazon": {
         "price": 83,
         "url": "https://www.amazon.com/dp/B0CDWH7W5T?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -15347,7 +16839,12 @@ export default [
       "amazon": {
         "price": 217.43,
         "url": "https://www.amazon.com/dp/B0BPXQ9BDV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Japan",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15420,7 +16917,12 @@ export default [
       "amazon": {
         "price": 684.75,
         "url": "https://www.amazon.com/dp/B072F422FW?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ALL4COMPUTERS ----- SIGNATURE REQUIRED -----",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "1Z4-0002-01PS8",
@@ -15466,7 +16968,12 @@ export default [
       "amazon": {
         "price": 348.65,
         "url": "https://www.amazon.com/dp/B0CKSS5VCF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Japan",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15533,7 +17040,12 @@ export default [
       "amazon": {
         "price": 639.99,
         "url": "https://www.amazon.com/dp/B0D7VRQH21?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15573,7 +17085,12 @@ export default [
       "amazon": {
         "price": 954.75,
         "url": "https://www.amazon.com/dp/B08L6MM1TM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Brute Networks Corporation",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15643,7 +17160,12 @@ export default [
       "amazon": {
         "price": 474.99,
         "url": "https://www.amazon.com/dp/B0F25CX4LB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 739.99,
@@ -15689,7 +17211,12 @@ export default [
       "amazon": {
         "price": 529.99,
         "url": "https://www.amazon.com/dp/B0F43HHLTC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15804,7 +17331,12 @@ export default [
       "amazon": {
         "price": 113.99,
         "url": "https://www.amazon.com/dp/B0DYJRC9HX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DATOTEK",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15844,7 +17376,12 @@ export default [
       "amazon": {
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0FPPGZYSJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OSCOO STORE",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15881,7 +17418,12 @@ export default [
       "amazon": {
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0F43VP4XF?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7ABKZW2890",
@@ -15932,7 +17474,12 @@ export default [
       "amazon": {
         "price": 479.99,
         "url": "https://www.amazon.com/dp/B0D9GQ951G?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -15973,7 +17520,12 @@ export default [
       "amazon": {
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B0FPPTX9W5?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OSCOO STORE",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16043,7 +17595,12 @@ export default [
       "amazon": {
         "price": 179.99,
         "url": "https://www.amazon.com/dp/B0DM9341L3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 189.99,
@@ -16099,7 +17656,12 @@ export default [
       "amazon": {
         "price": 229.99,
         "url": "https://www.amazon.com/dp/B0DW52LDPD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "AceTechnologies",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16138,7 +17700,12 @@ export default [
       "amazon": {
         "price": 699.99,
         "url": "https://www.amazon.com/dp/B0F25CTQN1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA4P0KMG7624",
@@ -16190,7 +17757,12 @@ export default [
       "amazon": {
         "price": 359.99,
         "url": "https://www.amazon.com/dp/B0F25B9JJ3?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA4P0KKY0216",
@@ -16275,7 +17847,9 @@ export default [
     "dram": true,
     "storageType": "NVMe",
     "value": 22,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-05"
   },
   {
     "id": 50402,
@@ -16293,7 +17867,12 @@ export default [
       "amazon": {
         "price": 240.32,
         "url": "https://www.amazon.com/dp/B0F25F4LLY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA4P0KKY0219",
@@ -16386,7 +17965,12 @@ export default [
       "amazon": {
         "price": 194.99,
         "url": "https://www.amazon.com/dp/B0F9NBM769?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "BIWIN Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16429,7 +18013,12 @@ export default [
       "amazon": {
         "price": 599.99,
         "url": "https://www.amazon.com/dp/B0BWNRPN59?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16469,7 +18058,12 @@ export default [
       "amazon": {
         "price": 482.99,
         "url": "https://www.amazon.com/dp/B0CZLDKDKH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820985176",
@@ -16567,7 +18161,12 @@ export default [
       "amazon": {
         "price": 659.99,
         "url": "https://www.amazon.com/dp/B0FGPDXP1Z?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SIX Memory",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16606,7 +18205,12 @@ export default [
       "amazon": {
         "price": 209.99,
         "url": "https://www.amazon.com/dp/B0FGQ6WD1Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SIX Memory",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16646,7 +18250,12 @@ export default [
       "amazon": {
         "price": 349.99,
         "url": "https://www.amazon.com/dp/B0FGQ19H9B?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SIX Memory",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16685,7 +18294,12 @@ export default [
       "amazon": {
         "price": 870.9,
         "url": "https://www.amazon.com/dp/B0CHRSJ4LR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16795,7 +18409,12 @@ export default [
       "amazon": {
         "price": 484.99,
         "url": "https://www.amazon.com/dp/B0D8778W1Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820250266",
@@ -16844,7 +18463,12 @@ export default [
       "amazon": {
         "price": 180.99,
         "url": "https://www.amazon.com/dp/B0GJ2T4RRD?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16884,7 +18508,12 @@ export default [
       "amazon": {
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0F43H8WH7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16924,7 +18553,12 @@ export default [
       "amazon": {
         "price": 549.93,
         "url": "https://www.amazon.com/dp/B0GJ3JMHJR?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "flashnoble",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17007,9 +18641,14 @@ export default [
     "reviews": 42,
     "deals": {
       "amazon": {
-        "price": 140,
+        "price": 130,
         "url": "https://www.amazon.com/dp/B009YQOL9C?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Dealforless",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17079,7 +18718,12 @@ export default [
       "amazon": {
         "price": 329.99,
         "url": "https://www.amazon.com/dp/B0F93ZM7PZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17120,7 +18764,12 @@ export default [
       "amazon": {
         "price": 387,
         "url": "https://www.amazon.com/dp/B0DWH185XV?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "trippodoshop",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17188,7 +18837,12 @@ export default [
       "amazon": {
         "price": 729.99,
         "url": "https://www.amazon.com/dp/B0CBQRSG3H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 729.99,
@@ -17247,9 +18901,14 @@ export default [
     "reviews": 34,
     "deals": {
       "amazon": {
-        "price": 214.78,
+        "price": 200.71,
         "url": "https://www.amazon.com/dp/B0DMHYRWG1?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "vCloud Choice",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17290,7 +18949,12 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0BKFXSVHC?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Joiot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 5,
@@ -17328,7 +18992,12 @@ export default [
       "amazon": {
         "price": 599.99,
         "url": "https://www.amazon.com/dp/B0FP5B6R9H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Gigastone  America",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 10,
@@ -17369,7 +19038,12 @@ export default [
       "amazon": {
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0CB89DV1Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Gigastone  America",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 10,
@@ -17459,7 +19133,12 @@ export default [
       "amazon": {
         "price": 344.44,
         "url": "https://www.amazon.com/dp/B0DHGQCYCG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "addlink Technology LLC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17498,7 +19177,12 @@ export default [
       "amazon": {
         "price": 207.44,
         "url": "https://www.amazon.com/dp/B0DHGMCYKQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "addlink Technology LLC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17538,7 +19222,12 @@ export default [
       "amazon": {
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0GL7VZQ3Q?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17607,7 +19296,12 @@ export default [
       "amazon": {
         "price": 459.99,
         "url": "https://www.amazon.com/dp/B0FLY16HRX?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EDILOCA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17691,7 +19385,12 @@ export default [
       "amazon": {
         "price": 599,
         "url": "https://www.amazon.com/dp/B0B94P481H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Galaxy Tech Shop (S/N Recorded)✅",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17727,7 +19426,12 @@ export default [
       "amazon": {
         "price": 349,
         "url": "https://www.amazon.com/dp/B0B3RQDGL7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ALL4COMPUTERS ----- SIGNATURE REQUIRED -----",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 379.99,
@@ -17817,7 +19521,12 @@ export default [
       "amazon": {
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0FWFC7HRG?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Ometra LLC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17856,7 +19565,12 @@ export default [
       "amazon": {
         "price": 659.99,
         "url": "https://www.amazon.com/dp/B0C9TPFTYT?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Moment Semiconductor, Inc.",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17933,7 +19647,12 @@ export default [
       "amazon": {
         "price": 309.99,
         "url": "https://www.amazon.com/dp/B0FH26CFDB?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -17974,7 +19693,12 @@ export default [
       "amazon": {
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0FH26Q8NH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "LDCEMS",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18017,7 +19741,12 @@ export default [
       "amazon": {
         "price": 332,
         "url": "https://www.amazon.com/dp/B0FP9KL662?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 339.99,
@@ -18073,7 +19802,12 @@ export default [
       "amazon": {
         "price": 940.49,
         "url": "https://www.amazon.com/dp/B0CBYZ249R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18113,7 +19847,12 @@ export default [
       "amazon": {
         "price": 154.99,
         "url": "https://www.amazon.com/dp/B0FBMB9374?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "DATOTEK",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 11,
@@ -18152,7 +19891,10 @@ export default [
       "amazon": {
         "price": 162.77,
         "url": "https://www.amazon.com/dp/B0FQF63G12?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -18192,7 +19934,12 @@ export default [
       "amazon": {
         "price": 499.99,
         "url": "https://www.amazon.com/dp/B0CB896CL6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Gigastone  America",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18234,7 +19981,12 @@ export default [
       "amazon": {
         "price": 307.99,
         "url": "https://www.amazon.com/dp/B0FLB43X3V?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820225361",
@@ -18319,7 +20071,12 @@ export default [
       "amazon": {
         "price": 319.95,
         "url": "https://www.amazon.com/dp/B0B3RPJXDZ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "My Secret Style",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18360,7 +20117,10 @@ export default [
       "amazon": {
         "price": 226.29,
         "url": "https://www.amazon.com/dp/B07GYZH8HY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 158.99,
@@ -18402,7 +20162,12 @@ export default [
       "amazon": {
         "price": 779.99,
         "url": "https://www.amazon.com/dp/B09XXBQMKN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18439,7 +20204,12 @@ export default [
       "amazon": {
         "price": 92.99,
         "url": "https://www.amazon.com/dp/B0FYF5PLND?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18477,7 +20247,12 @@ export default [
       "amazon": {
         "price": 439.99,
         "url": "https://www.amazon.com/dp/B0FYF4HDXY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18581,7 +20356,12 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0GVMMR61L?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "X5 Data Pro Electronics",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -18654,7 +20434,12 @@ export default [
       "amazon": {
         "price": 299,
         "url": "https://www.amazon.com/dp/B0FGDG1NP9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 5,
@@ -18695,7 +20480,10 @@ export default [
       "amazon": {
         "price": 629.99,
         "url": "https://www.amazon.com/dp/B0CY2SZ62P?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "additionalImages": [
@@ -18735,7 +20523,12 @@ export default [
       "amazon": {
         "price": 449.99,
         "url": "https://www.amazon.com/dp/B0FYDV1GL8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Fikwot",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -19116,7 +20909,12 @@ export default [
       "amazon": {
         "price": 236.13,
         "url": "https://www.amazon.com/dp/B08QBMD6P4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Big Rocket Man USA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820147792",
@@ -22180,7 +23978,12 @@ export default [
         "asin": "B0GV1RCHX2",
         "url": "https://www.amazon.com/dp/B0GV1RCHX2?tag=tiereduptech-20",
         "price": 249.98,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "CODeal",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 2000,
@@ -22207,7 +24010,12 @@ export default [
         "asin": "B0DZK9C789",
         "url": "https://www.amazon.com/dp/B0DZK9C789?tag=tiereduptech-20",
         "price": 578,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TELeasy",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 4000,
@@ -22232,7 +24040,12 @@ export default [
         "asin": "B0BD5LWM89",
         "url": "https://www.amazon.com/dp/B0BD5LWM89?tag=tiereduptech-20",
         "price": 625,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Neobits_",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 4000,
@@ -22260,7 +24073,12 @@ export default [
         "asin": "B07GCL6BR4",
         "url": "https://www.amazon.com/dp/B07GCL6BR4?tag=tiereduptech-20",
         "price": 149,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "AI Servers",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC7XKM1K4008",
@@ -22301,7 +24119,10 @@ export default [
         "asin": "B073SBRHH6",
         "url": "https://www.amazon.com/dp/B073SBRHH6?tag=tiereduptech-20",
         "price": 419,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "cap": 2000,
@@ -22325,7 +24146,12 @@ export default [
         "asin": "B0BYSKXGJV",
         "url": "https://www.amazon.com/dp/B0BYSKXGJV?tag=tiereduptech-20",
         "price": 216.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 2000,
@@ -22380,7 +24206,12 @@ export default [
         "asin": "B0D1V2K4LJ",
         "url": "https://www.amazon.com/dp/B0D1V2K4LJ?tag=tiereduptech-20",
         "price": 379.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Nutrend Automotive Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "1Z4-0002-01PE5",
@@ -22416,7 +24247,12 @@ export default [
         "asin": "B07H289S7C",
         "url": "https://www.amazon.com/dp/B07H289S7C?tag=tiereduptech-20",
         "price": 249.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 8000,
@@ -22441,7 +24277,12 @@ export default [
         "asin": "B0DWX6STX9",
         "url": "https://www.amazon.com/dp/B0DWX6STX9?tag=tiereduptech-20",
         "price": 269.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "goHardDrive",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 8000,
@@ -22471,7 +24312,12 @@ export default [
         "asin": "B0CMQ8XBBR",
         "url": "https://www.amazon.com/dp/B0CMQ8XBBR?tag=tiereduptech-20",
         "price": 324.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 8000,
@@ -22524,7 +24370,12 @@ export default [
         "asin": "B08KTM4SNY",
         "url": "https://www.amazon.com/dp/B08KTM4SNY?tag=tiereduptech-20",
         "price": 329.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 8000,
@@ -22549,7 +24400,10 @@ export default [
         "asin": "B084ZTSMWF",
         "url": "https://www.amazon.com/dp/B084ZTSMWF?tag=tiereduptech-20",
         "price": 429.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "1JW-001N-00027",
@@ -22589,7 +24443,12 @@ export default [
         "asin": "B07D3MWMNZ",
         "url": "https://www.amazon.com/dp/B07D3MWMNZ?tag=tiereduptech-20",
         "price": 469,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "EverythingExpressUS",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "cap": 8000,
@@ -22662,7 +24521,12 @@ export default [
         "asin": "B07Y5VDNT9",
         "url": "https://www.amazon.com/dp/B07Y5VDNT9?tag=tiereduptech-20",
         "price": 159.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820177078",
@@ -22697,7 +24561,12 @@ export default [
         "asin": "B087KBL5KS",
         "url": "https://www.amazon.com/dp/B087KBL5KS?tag=tiereduptech-20",
         "price": 149.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -22721,7 +24590,12 @@ export default [
         "asin": "B0B7VM4SRX",
         "url": "https://www.amazon.com/dp/B0B7VM4SRX?tag=tiereduptech-20",
         "price": 283.5,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIA12KJEC3257",
@@ -22757,7 +24631,12 @@ export default [
         "asin": "B0B6ZC5MS3",
         "url": "https://www.amazon.com/dp/B0B6ZC5MS3?tag=tiereduptech-20",
         "price": 75.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -22782,7 +24661,12 @@ export default [
         "asin": "B0FNCMY16K",
         "url": "https://www.amazon.com/dp/B0FNCMY16K?tag=tiereduptech-20",
         "price": 104.64,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "prime bay",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -22829,7 +24713,10 @@ export default [
         "asin": "B087K9MCLM",
         "url": "https://www.amazon.com/dp/B087K9MCLM?tag=tiereduptech-20",
         "price": 70.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -22853,7 +24740,12 @@ export default [
         "asin": "B09ZYPTXS4",
         "url": "https://www.amazon.com/dp/B09ZYPTXS4?tag=tiereduptech-20",
         "price": 147.8,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -22877,7 +24769,12 @@ export default [
         "asin": "B07XZLW68F",
         "url": "https://www.amazon.com/dp/B07XZLW68F?tag=tiereduptech-20",
         "price": 54,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Stavvy Sales",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "0D9-002E-000F1",
@@ -22912,7 +24809,12 @@ export default [
         "asin": "B08QBL36GF",
         "url": "https://www.amazon.com/dp/B08QBL36GF?tag=tiereduptech-20",
         "price": 1199,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ARF Tech",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -22937,7 +24839,12 @@ export default [
         "asin": "B0CY7638WZ",
         "url": "https://www.amazon.com/dp/B0CY7638WZ?tag=tiereduptech-20",
         "price": 479,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820156405",
@@ -22971,7 +24878,12 @@ export default [
         "asin": "B0CVN88YVG",
         "url": "https://www.amazon.com/dp/B0CVN88YVG?tag=tiereduptech-20",
         "price": 849.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 752.8,
@@ -23011,7 +24923,12 @@ export default [
         "asin": "B0C14QXKJW",
         "url": "https://www.amazon.com/dp/B0C14QXKJW?tag=tiereduptech-20",
         "price": 456.85,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Kaiser T",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23036,7 +24953,12 @@ export default [
         "asin": "B0BXVVYCRN",
         "url": "https://www.amazon.com/dp/B0BXVVYCRN?tag=tiereduptech-20",
         "price": 97.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "prime bay",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23061,7 +24983,12 @@ export default [
         "asin": "B0BYLG5NCZ",
         "url": "https://www.amazon.com/dp/B0BYLG5NCZ?tag=tiereduptech-20",
         "price": 109.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23086,7 +25013,12 @@ export default [
         "asin": "B07BN4NJ2J",
         "url": "https://www.amazon.com/dp/B07BN4NJ2J?tag=tiereduptech-20",
         "price": 248,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Sab Computer",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23111,7 +25043,12 @@ export default [
         "asin": "B0D9WT512W",
         "url": "https://www.amazon.com/dp/B0D9WT512W?tag=tiereduptech-20",
         "price": 1499.95,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "electrolert",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16820250270",
@@ -23148,7 +25085,12 @@ export default [
         "asin": "B0DY2TB1TD",
         "url": "https://www.amazon.com/dp/B0DY2TB1TD?tag=tiereduptech-20",
         "price": 2299.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Stavvy Sales",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23176,7 +25118,12 @@ export default [
         "asin": "B0D9WTM2TH",
         "url": "https://www.amazon.com/dp/B0D9WTM2TH?tag=tiereduptech-20",
         "price": 1429.3,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OneDealOutlet Online",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23202,7 +25149,10 @@ export default [
         "asin": "B0DBQP4F3Z",
         "url": "https://www.amazon.com/dp/B0DBQP4F3Z?tag=tiereduptech-20",
         "price": 1699.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23227,7 +25177,12 @@ export default [
         "asin": "B0DG6Q25M2",
         "url": "https://www.amazon.com/dp/B0DG6Q25M2?tag=tiereduptech-20",
         "price": 1399.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "0D9-003V-000B6",
@@ -23266,8 +25221,13 @@ export default [
       "amazon": {
         "asin": "B0FTMB3X3J",
         "url": "https://www.amazon.com/dp/B0FTMB3X3J?tag=tiereduptech-20",
-        "price": 1799.99,
-        "inStock": true
+        "price": 1699.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "vCloudTech",
+        "priceConfirmedAt": "2026-08-05",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23295,7 +25255,12 @@ export default [
         "asin": "B0DY2NWFJV",
         "url": "https://www.amazon.com/dp/B0DY2NWFJV?tag=tiereduptech-20",
         "price": 1841.25,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23323,7 +25288,12 @@ export default [
         "asin": "B0F3GGX4SK",
         "url": "https://www.amazon.com/dp/B0F3GGX4SK?tag=tiereduptech-20",
         "price": 239.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -23350,7 +25320,12 @@ export default [
         "asin": "B09ZYNHPW2",
         "url": "https://www.amazon.com/dp/B09ZYNHPW2?tag=tiereduptech-20",
         "price": 179.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 107.6,
@@ -23383,7 +25358,12 @@ export default [
         "asin": "B071F9MLJJ",
         "url": "https://www.amazon.com/dp/B071F9MLJJ?tag=tiereduptech-20",
         "price": 93,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "eNovativeGear",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 134.99,
@@ -23425,7 +25405,12 @@ export default [
         "asin": "B0FD2LGBZF",
         "url": "https://www.amazon.com/dp/B0FD2LGBZF?tag=tiereduptech-20",
         "price": 233.44,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBFJRKU10491",
@@ -23462,7 +25447,12 @@ export default [
         "asin": "B0BDQ4TXSG",
         "url": "https://www.amazon.com/dp/B0BDQ4TXSG?tag=tiereduptech-20",
         "price": 104.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.781Z",
@@ -23490,7 +25480,12 @@ export default [
         "asin": "B0C4KRMKFW",
         "url": "https://www.amazon.com/dp/B0C4KRMKFW?tag=tiereduptech-20",
         "price": 186.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 146.99,
@@ -23522,7 +25517,12 @@ export default [
         "asin": "B0CYFSR463",
         "url": "https://www.amazon.com/dp/B0CYFSR463?tag=tiereduptech-20",
         "price": 131.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23547,7 +25547,12 @@ export default [
         "asin": "B093T8P7VZ",
         "url": "https://www.amazon.com/dp/B093T8P7VZ?tag=tiereduptech-20",
         "price": 443.65,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TeleDirect",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23574,7 +25579,12 @@ export default [
         "asin": "B09NHV3CK9",
         "url": "https://www.amazon.com/dp/B09NHV3CK9?tag=tiereduptech-20",
         "price": 189.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23600,7 +25610,12 @@ export default [
         "asin": "B0GJ7CVHR6",
         "url": "https://www.amazon.com/dp/B0GJ7CVHR6?tag=tiereduptech-20",
         "price": 179.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23625,7 +25640,12 @@ export default [
         "asin": "B0G5YDXKS7",
         "url": "https://www.amazon.com/dp/B0G5YDXKS7?tag=tiereduptech-20",
         "price": 194.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23650,7 +25670,12 @@ export default [
         "asin": "B0G6BSNYZ8",
         "url": "https://www.amazon.com/dp/B0G6BSNYZ8?tag=tiereduptech-20",
         "price": 194.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23674,7 +25699,12 @@ export default [
         "asin": "B01LXCE9W9",
         "url": "https://www.amazon.com/dp/B01LXCE9W9?tag=tiereduptech-20",
         "price": 188,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Argus Dataworks TX",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIC2ARKVZ3075",
@@ -23753,7 +25783,12 @@ export default [
         "asin": "B0D1TZ4Z34",
         "url": "https://www.amazon.com/dp/B0D1TZ4Z34?tag=tiereduptech-20",
         "price": 244.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "ALL4COMPUTERS-TX ----- SIGNATURE REQUIRED ----",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23802,7 +25837,10 @@ export default [
         "asin": "B0DG3JB7G5",
         "url": "https://www.amazon.com/dp/B0DG3JB7G5?tag=tiereduptech-20",
         "price": 659.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23827,7 +25865,12 @@ export default [
         "asin": "B08K3VVKSW",
         "url": "https://www.amazon.com/dp/B08K3VVKSW?tag=tiereduptech-20",
         "price": 704.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23852,7 +25895,12 @@ export default [
         "asin": "B0B94PNF7P",
         "url": "https://www.amazon.com/dp/B0B94PNF7P?tag=tiereduptech-20",
         "price": 539.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23900,7 +25948,12 @@ export default [
         "asin": "B07XBTS8S1",
         "url": "https://www.amazon.com/dp/B07XBTS8S1?tag=tiereduptech-20",
         "price": 691.45,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "TechnoDealsUSA",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23925,7 +25978,10 @@ export default [
         "asin": "B08K3TFM92",
         "url": "https://www.amazon.com/dp/B08K3TFM92?tag=tiereduptech-20",
         "price": 749.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       },
       "newegg": {
         "sku": "N82E16822234430",
@@ -23961,7 +26017,12 @@ export default [
         "asin": "B0B94MF4LP",
         "url": "https://www.amazon.com/dp/B0B94MF4LP?tag=tiereduptech-20",
         "price": 719.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -23988,7 +26049,12 @@ export default [
         "asin": "B0F3J9CB1J",
         "url": "https://www.amazon.com/dp/B0F3J9CB1J?tag=tiereduptech-20",
         "price": 619.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "goHardDrive",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -24015,7 +26081,12 @@ export default [
         "asin": "B0CSPCFKR9",
         "url": "https://www.amazon.com/dp/B0CSPCFKR9?tag=tiereduptech-20",
         "price": 859.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16822185104",
@@ -24127,7 +26198,12 @@ export default [
         "asin": "B0D9PGXB3P",
         "url": "https://www.amazon.com/dp/B0D9PGXB3P?tag=tiereduptech-20",
         "price": 719.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -24272,7 +26348,10 @@ export default [
         "asin": "B0BW9PJBHL",
         "url": "https://www.amazon.com/dp/B0BW9PJBHL?tag=tiereduptech-20",
         "price": 1810.5,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -24299,7 +26378,12 @@ export default [
         "asin": "B0F4R6SNJG",
         "url": "https://www.amazon.com/dp/B0F4R6SNJG?tag=tiereduptech-20",
         "price": 459.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -24324,7 +26408,12 @@ export default [
         "asin": "B0G1C1YNN8",
         "url": "https://www.amazon.com/dp/B0G1C1YNN8?tag=tiereduptech-20",
         "price": 719.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "UGREEN GROUP LIMITED",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -24375,7 +26464,12 @@ export default [
         "asin": "B0D22HGH4N",
         "url": "https://www.amazon.com/dp/B0D22HGH4N?tag=tiereduptech-20",
         "price": 1369.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "UGREEN GROUP LIMITED",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -24406,7 +26500,12 @@ export default [
         "asin": "B08LKMQ9T4",
         "url": "https://www.amazon.com/dp/B08LKMQ9T4?tag=tiereduptech-20",
         "price": 25.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.784Z",
@@ -24463,7 +26562,12 @@ export default [
         "asin": "B09WZK8YMY",
         "url": "https://www.amazon.com/dp/B09WZK8YMY?tag=tiereduptech-20",
         "price": 3199.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "AsanteEnterprise",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -24516,7 +26620,12 @@ export default [
         "asin": "B0FSC839RG",
         "url": "https://www.amazon.com/dp/B0FSC839RG?tag=tiereduptech-20",
         "price": 499.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.670Z",
@@ -24542,7 +26651,10 @@ export default [
         "asin": "B0DZX34SZN",
         "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
         "price": 129.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24571,7 +26683,12 @@ export default [
         "asin": "B0FNP68QYR",
         "url": "https://www.amazon.com/dp/B0FNP68QYR?tag=tiereduptech-20",
         "price": 62.95,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OEMGENUINE",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24601,7 +26718,12 @@ export default [
         "asin": "B0CCDBKKZY",
         "url": "https://www.amazon.com/dp/B0CCDBKKZY?tag=tiereduptech-20",
         "price": 199.97,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24629,7 +26751,12 @@ export default [
         "asin": "B0CHJXHVZM",
         "url": "https://www.amazon.com/dp/B0CHJXHVZM?tag=tiereduptech-20",
         "price": 199.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBTK0M1B8316",
@@ -24666,7 +26793,12 @@ export default [
         "asin": "B0DZ7PJBMX",
         "url": "https://www.amazon.com/dp/B0DZ7PJBMX?tag=tiereduptech-20",
         "price": 61.25,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OEMGENUINE",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24696,7 +26828,10 @@ export default [
         "asin": "B0FH4P66MZ",
         "url": "https://www.amazon.com/dp/B0FH4P66MZ?tag=tiereduptech-20",
         "price": 139.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24724,7 +26859,12 @@ export default [
         "asin": "B0FJ1GGGR7",
         "url": "https://www.amazon.com/dp/B0FJ1GGGR7?tag=tiereduptech-20",
         "price": 199.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Micro Center",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24750,7 +26890,12 @@ export default [
         "asin": "B0CDP24LW9",
         "url": "https://www.amazon.com/dp/B0CDP24LW9?tag=tiereduptech-20",
         "price": 249,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "FamilyTech deals",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24778,7 +26923,10 @@ export default [
         "asin": "B0CGFD2GVZ",
         "url": "https://www.amazon.com/dp/B0CGFD2GVZ?tag=tiereduptech-20",
         "price": 399.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -24864,7 +27012,10 @@ export default [
         "asin": "B0DZX34SZN",
         "url": "https://www.amazon.com/dp/B0DZX34SZN?tag=tiereduptech-20",
         "price": 129.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-05"
       }
     },
     "addedAt": "2026-05-15T16:39:25.994Z",
@@ -24893,7 +27044,12 @@ export default [
         "asin": "B0FNP68QYR",
         "url": "https://www.amazon.com/dp/B0FNP68QYR?tag=tiereduptech-20",
         "price": 62.95,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OEMGENUINE",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:39:25.994Z",
@@ -24923,7 +27079,12 @@ export default [
         "asin": "B0CCDBKKZY",
         "url": "https://www.amazon.com/dp/B0CCDBKKZY?tag=tiereduptech-20",
         "price": 199.97,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "Silicon Power USA Inc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:39:25.994Z",
@@ -24951,7 +27112,12 @@ export default [
         "asin": "B0DZ7PJBMX",
         "url": "https://www.amazon.com/dp/B0DZ7PJBMX?tag=tiereduptech-20",
         "price": 61.25,
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-05",
+        "priceSource": "3p",
+        "priceSeller": "OEMGENUINE",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:39:25.994Z",
