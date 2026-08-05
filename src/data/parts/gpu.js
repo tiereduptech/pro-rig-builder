@@ -3747,9 +3747,14 @@ export default [
     "reviews": 68,
     "deals": {
       "amazon": {
-        "price": 1399,
+        "price": 1799.99,
         "url": "https://www.amazon.com/dp/B0DSXJ5QF4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-05"
       },
       "bestbuy": {
         "price": 1364.99,
