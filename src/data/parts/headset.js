@@ -753,7 +753,12 @@ export default [
       "amazon": {
         "url": "https://www.amazon.com/Sennheiser-HD-599-SE-Headphone/dp/B07RFNZYJZ/ref=sr_1_40?crid=0EJ114Y2XYJW&dib=eyJ2IjoiMSJ9.-LGc1vqFEO4JA4ZWxUxh0uO04Se51BakSANSsNwaz8jz8_LhNoWFIsJfZ0TotbHXrNMGbcS2d2XF_TA_CtwkGbQ8jgvIkFlLr6nf1dlgepSOmAusT5MvcjRYR5CjtiwLK_bOGDxvuO3vuQ65ttP11BGbbMY3BfEFdgUVITrBHq-YEUXegCAm4Vahz-OtIThXlYDitz_oyH9hwdWL5XVCHiO1ldKdBszyBsbMkfYXwRrwOiRij-e_3IpsnC2HyNnXiRM5MiYlHg4TfRcdFOOuexU9oC33wl3WjUuiFmiqo1A.l_EHhYOXS9wTcG_nnyba4jB1gLOmWiUJyvxP2ig9AGM&dib_tag=se&keywords=Beyerdynamic+DT+770&qid=1777130638&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Beyerdynamic%2BDT%2B770%2Caps%2C168&sr=8-40&tag=tiereduptech-20",
         "price": 159.95,
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "hsType": "Wired",
@@ -761,8 +766,6 @@ export default [
     "mic": false,
     "anc": false,
     "bench": 52,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -3144,13 +3147,16 @@ export default [
         "asin": "B09CLWQ45V",
         "url": "https://www.amazon.com/dp/B09CLWQ45V?tag=tiereduptech-20",
         "price": 39.99,
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.632Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:mismatch"
     ]

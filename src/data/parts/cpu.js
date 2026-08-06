@@ -4915,9 +4915,14 @@ export default [
         "inStock": true
       },
       "amazon": {
-        "price": 420,
+        "price": 462.02,
         "url": "https://www.amazon.com/dp/B0CGJDKLB8?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "cores": 24,
@@ -4932,9 +4937,7 @@ export default [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 83,
-    "quarantinedAt": "2026-08-05",
-    "needsReview": true
+    "bench": 83
   },
   {
     "id": 10163,
@@ -9266,12 +9269,12 @@ export default [
       "amazon": {
         "asin": "B0CK2ZQJZ6",
         "url": "https://www.amazon.com/dp/B0CK2ZQJZ6?tag=tiereduptech-20",
-        "price": 9587.99,
+        "price": 9887.75,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
-        "priceSource": "3p",
-        "priceSeller": "INFINITY SALES CORPORATION",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-06",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9291,8 +9294,6 @@ export default [
     "cores": 96,
     "threads": 192,
     "tdp": 350,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_name",
       "cpu_price:above_ceiling(9587.99$)"
@@ -9386,12 +9387,12 @@ export default [
       "amazon": {
         "asin": "B0CK2VGBSQ",
         "url": "https://www.amazon.com/dp/B0CK2VGBSQ?tag=tiereduptech-20",
-        "price": 1171,
+        "price": 1119.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9400,8 +9401,6 @@ export default [
     "cores": 24,
     "threads": 48,
     "tdp": 350,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_name"
     ]
@@ -9421,10 +9420,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CK2TZWZX?tag=tiereduptech-20",
         "price": 3799.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9444,8 +9443,6 @@ export default [
     "cores": 32,
     "threads": 64,
     "tdp": 350,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_name",
       "cpu_price:above_ceiling(3799.99$)"
@@ -9498,12 +9495,12 @@ export default [
       "amazon": {
         "asin": "B0BFVVC89M",
         "url": "https://www.amazon.com/dp/B0BFVVC89M?tag=tiereduptech-20",
-        "price": 799.99,
+        "price": 779,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9513,8 +9510,6 @@ export default [
     "threads": 32,
     "socket": "SWRX8",
     "tdp": 280,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "cpu_ff:server_hedt_socket"
     ]
@@ -9534,10 +9529,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CK2T1HSS?tag=tiereduptech-20",
         "price": 2649,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9557,8 +9552,6 @@ export default [
     "cores": 24,
     "threads": 48,
     "tdp": 350,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "cpu_ff:server_hedt_name",
       "cpu_price:above_ceiling(2701.33$)"

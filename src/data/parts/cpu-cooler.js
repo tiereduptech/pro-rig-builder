@@ -2370,9 +2370,14 @@ export default [
     "reviews": 417,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B09464Z8G9?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 49.99,
@@ -2403,9 +2408,7 @@ export default [
     "cfm": 120,
     "mpn": "ELW-D24M-A21DA-RW",
     "radiator": 240,
-    "fanCount": 2,
-    "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "fanCount": 2
   },
   {
     "id": 80053,
@@ -3356,7 +3359,12 @@ export default [
       "amazon": {
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0DCFNKXKY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 149.99,
@@ -3388,9 +3396,7 @@ export default [
     "cfm": 142,
     "mpn": "RL-KR24E-W2",
     "radiator": 240,
-    "fanCount": 2,
-    "quarantinedAt": "2026-07-28",
-    "needsReview": true
+    "fanCount": 2
   },
   {
     "id": 80074,
@@ -4786,9 +4792,14 @@ export default [
     "reviews": 1463,
     "deals": {
       "amazon": {
-        "price": 40.5,
+        "price": 32.47,
         "url": "https://www.amazon.com/dp/B0BRBWL38D?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 29.99,
@@ -4816,9 +4827,7 @@ export default [
     "bench": 45,
     "radSize": "120",
     "fanSize": 120,
-    "cfm": 56,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "cfm": 56
   },
   {
     "id": 80104,
@@ -6074,9 +6083,14 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 26.25,
+        "price": 26.99,
         "url": "https://www.amazon.com/dp/B0FXJZG91W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 26.99,
@@ -6104,9 +6118,7 @@ export default [
     "radSize": "120",
     "fanSize": 120,
     "cfm": 56,
-    "mpn": "MAY-T2HP-217PK-R1",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "mpn": "MAY-T2HP-217PK-R1"
   },
   {
     "id": 80132,
@@ -8542,9 +8554,14 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 111.33,
+        "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 99.99,
@@ -8575,9 +8592,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "fanCount": 3
   },
   {
     "id": 80185,
@@ -11260,9 +11275,14 @@ export default [
     "reviews": 17,
     "deals": {
       "amazon": {
-        "price": 201.84,
+        "price": 241.99,
         "url": "https://www.amazon.com/dp/B0FPBPK5LY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 182.99,
@@ -11294,9 +11314,7 @@ export default [
     "cfm": 180,
     "mpn": "MLX-D36M-A25SZ-L1",
     "radiator": 360,
-    "fanCount": 3,
-    "quarantinedAt": "2026-07-10",
-    "needsReview": true
+    "fanCount": 3
   },
   {
     "id": 80249,
@@ -13883,8 +13901,13 @@ export default [
       "amazon": {
         "asin": "B0D9GWQPDM",
         "url": "https://www.amazon.com/dp/B0D9GWQPDM?tag=tiereduptech-20",
-        "price": 249.99,
-        "inStock": true
+        "price": 259.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -13901,8 +13924,6 @@ export default [
     "airflow": 78.86,
     "noise": 33.88,
     "rpm": 2800,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -17334,8 +17355,13 @@ export default [
       "amazon": {
         "asin": "B0FKYJV3YN",
         "url": "https://www.amazon.com/dp/B0FKYJV3YN?tag=tiereduptech-20",
-        "price": 45.83,
-        "inStock": true
+        "price": 45.64,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -17349,9 +17375,7 @@ export default [
     ],
     "airflow": 66,
     "noise": 25.6,
-    "rpm": 1500,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-10"
+    "rpm": 1500
   },
   {
     "id": 101233,

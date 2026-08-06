@@ -9351,9 +9351,9 @@ export default [
       "amazon": {
         "asin": "B09HRSZ3HK",
         "url": "https://www.amazon.com/dp/B09HRSZ3HK?tag=tiereduptech-20",
-        "price": 229.99,
+        "price": 219.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -9368,8 +9368,6 @@ export default [
     "addedAt": "2026-05-15T13:17:14.419Z",
     "source": "amazon-discovery",
     "formFactor": "DIMM",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-29",
     "reviewFlags": [
       "relink:no-price"
     ]

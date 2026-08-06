@@ -1642,7 +1642,12 @@ export default [
       "amazon": {
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DWF95QP7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "newegg": {
         "sku": "1YF-005G-000M9",
@@ -1690,9 +1695,7 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 74,
-    "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "bench": 74
   },
   {
     "id": 70034,
@@ -3026,7 +3029,7 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0FJ2ZBK8J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -3079,9 +3082,7 @@ export default [
     ],
     "color": "Black",
     "bench": 77,
-    "bundle": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-23"
+    "bundle": false
   },
   {
     "id": 70056,
@@ -3911,10 +3912,10 @@ export default [
     "reviews": 403,
     "deals": {
       "amazon": {
-        "price": 80,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0CB26ZFKV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -3966,9 +3967,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 90,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "bench": 90
   },
   {
     "id": 70071,
@@ -4660,10 +4659,10 @@ export default [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0DQPRPW38?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -4701,9 +4700,7 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 95,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 95
   },
   {
     "id": 70083,
@@ -4991,9 +4988,11 @@ export default [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0F2T74ZBX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-05"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 59.99,
@@ -5030,9 +5029,7 @@ export default [
     ],
     "color": "Black",
     "bench": 79,
-    "bundle": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "bundle": false
   },
   {
     "id": 70089,

@@ -892,8 +892,13 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Razer-Orochi-Mobile-Wireless-Gaming/dp/B0916N2LPZ/ref=sr_1_21?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-21&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
-        "price": 41.8,
-        "inStock": true
+        "price": 34.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460407.p%3FskuId%3D6460407",
@@ -905,9 +910,7 @@ export default [
     "mouseType": "Wireless",
     "weight": 60,
     "dpi": 18000,
-    "bench": 76,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 76
   },
   {
     "id": 99995,
@@ -2443,14 +2446,17 @@ export default [
       "amazon": {
         "asin": "B086PJKVVT",
         "url": "https://www.amazon.com/dp/B086PJKVVT?tag=tiereduptech-20",
-        "price": 34.99,
-        "inStock": true
+        "price": 29.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.603Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -3145,14 +3151,17 @@ export default [
       "amazon": {
         "asin": "B086PDW7BB",
         "url": "https://www.amazon.com/dp/B086PDW7BB?tag=tiereduptech-20",
-        "price": 34.99,
-        "inStock": true
+        "price": 29.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.616Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:mismatch"
     ]

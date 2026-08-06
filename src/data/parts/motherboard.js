@@ -1370,13 +1370,13 @@ export default [
     "audio": "Realtek ALC897",
     "deals": {
       "amazon": {
-        "price": 125.66,
+        "price": 129.99,
         "url": "https://www.amazon.com/dp/B0CH92B3S2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -1389,9 +1389,7 @@ export default [
     "bench": 67,
     "upc": "00889523034231",
     "mpn": "B650M DS3H",
-    "neweggRemovedOutlier": "2026-06-28",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "neweggRemovedOutlier": "2026-06-28"
   },
   {
     "id": 20034,
@@ -1952,10 +1950,10 @@ export default [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B0BTTZFQTP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -1967,9 +1965,7 @@ export default [
     "value": 100,
     "bench": 54,
     "upc": "00889523036006",
-    "mpn": "B550M K",
-    "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "mpn": "B550M K"
   },
   {
     "id": 20046,
@@ -4149,10 +4145,10 @@ export default [
         "price": 509.99,
         "url": "https://www.amazon.com/dp/B0DF123GCV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -4178,9 +4174,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 2,
-    "bench": 82,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "bench": 82
   },
   {
     "id": 20090,
@@ -6850,13 +6844,13 @@ export default [
     "reviews": 157,
     "deals": {
       "amazon": {
-        "price": 209.99,
+        "price": 229.95,
         "url": "https://www.amazon.com/dp/B0DG3SSGLF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
-        "priceSource": "3p",
-        "priceSeller": "Prime Merchant LLC (SN Recorded)",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-06",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -6887,9 +6881,7 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 39,
-    "bench": 82,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "bench": 82
   },
   {
     "id": 20142,

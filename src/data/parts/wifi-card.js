@@ -114,13 +114,16 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 16.99,
+        "price": 16.98,
         "url": "https://www.amazon.com/dp/B08D72GSMS?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
-    },
-    "needsReview": true,
-    "quarantinedAt": "2026-08-03"
+    }
   },
   {
     "id": 96015,

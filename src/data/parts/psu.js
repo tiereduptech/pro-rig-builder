@@ -2142,10 +2142,10 @@ export default [
         "price": 59.87,
         "url": "https://www.amazon.com/dp/B0CQMSTN94?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2173,9 +2173,7 @@ export default [
     "depth": 150,
     "atx3": false,
     "rgb": false,
-    "fans": 1,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "fans": 1
   },
   {
     "id": 60054,
@@ -7920,10 +7918,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
         "price": 84.98,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -7949,9 +7947,7 @@ export default [
     "atx3": true,
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
-    "ff": "ATX",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "ff": "ATX"
   },
   {
     "id": 100462,
@@ -8376,7 +8372,12 @@ export default [
         "asin": "B0DKVCTZBJ",
         "url": "https://www.amazon.com/dp/B0DKVCTZBJ?tag=tiereduptech-20",
         "price": 229,
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "watts": 1200,
@@ -8386,8 +8387,6 @@ export default [
     "source": "amazon-discovery",
     "ff": "ATX",
     "eff": "80+ Platinum",
-    "needsReview": true,
-    "quarantinedAt": "2026-08-05",
     "reviewFlags": [
       "relink:mismatch"
     ]

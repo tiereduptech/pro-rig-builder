@@ -994,14 +994,17 @@ export default [
       "amazon": {
         "asin": "B01G5ATZAE",
         "url": "https://www.amazon.com/dp/B01G5ATZAE?tag=tiereduptech-20",
-        "price": 31.35,
-        "inStock": true
+        "price": 14.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.656Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-20",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -1452,14 +1455,17 @@ export default [
       "amazon": {
         "asin": "B0FJS6CGGQ",
         "url": "https://www.amazon.com/dp/B0FJS6CGGQ?tag=tiereduptech-20",
-        "price": 36.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
-    "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-13"
+    "source": "amazon-discovery"
   },
   {
     "id": 101874,

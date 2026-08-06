@@ -173,13 +173,16 @@ export default [
       "amazon": {
         "url": "https://www.amazon.com/StarTech-8-Inch-Power-Extension-ATX24POWEXT/dp/B000FL60AI/ref=sr_1_3?crid=NPQVP2EL3P65&dib=eyJ2IjoiMSJ9.w76yfHXa3XpGXM18mBYMUoL-XUe_NpH0FHHBh_4cq0nmZbIHkymPccWsvi1KT92bRfBn_p-fP8Dw3hQIddC1kF4RGj_rotTqPJyb4gDKzLJlwyRT0kBfBnKrf1rp9emgCrljXpwO7lCJRg25pa2Uf5_HSz4zHPf6WfyJsykCG6eUZYnIHjTZSqgeEH7nhoOM93inTNKR7wA9MpU064H45G4HWmm7PbVxPabQYhf9Rzs.qsZqnBsTqX2WtQ-jZZdfdVSP64tt4bToRfBF7Jt-t7E&dib_tag=se&keywords=24-pin+ATX+extension+cable&qid=1777131320&sprefix=24pin%2BATX%2Bextension%2Bcable%2Caps%2C140&sr=8-3&tag=tiereduptech-20",
         "price": 6.25,
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "cableType": "24-pin ATX",
-    "cableLength": "8in",
-    "needsReview": true,
-    "quarantinedAt": "2026-08-03"
+    "cableLength": "8in"
   },
   {
     "id": 100115,

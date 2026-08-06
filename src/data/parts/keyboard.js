@@ -379,8 +379,13 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/SteelSeries-Apex-Gaming-Keyboard-Anti-Ghosting/dp/B09FTNMT84/ref=sr_1_1?crid=OPT91HLYF34O&dib=eyJ2IjoiMSJ9.1PNtdznOJW6bwyOq65lPJlvrchECPTbSsv6I-W8wv88EWHmlDetmNdackOc7GNjICDZMWkv41KvsxBmYhteTXuDDmQNuPHzJP43Jhe3I3fqMo6WTpU_AQhj6cIkFtvHTxLaiu4KP3z-VVuGEU1DnDp3DkGkP9uZ3qIZ__jM44SoeR2E4xWKKpy6Hrnj6Uqhq6We_3oUAXxSMmEw-XIKhLe2byh-hExxl0qEHV9OCpOc.KQGxx5voJ2YZLEhgSPIphxpzgX1G93MEWfMtxMU0ook&dib_tag=se&keywords=TKL+gaming+keyboard&qid=1777130537&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=TKL%2Bgaming%2Bkeyboard%2Caps%2C114&sr=8-1&tag=tiereduptech-20",
-        "price": 46.99,
-        "inStock": true
+        "price": 49.97,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396205.p%3FskuId%3D6396205",
@@ -392,9 +397,7 @@ export default [
     "rgb": true,
     "wireless": false,
     "switches": "Membrane",
-    "bench": 40,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 40
   },
   {
     "id": 100008,
@@ -613,8 +616,13 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Full-Size-Mechanical-Anti-Ghosting-Keys-White/dp/B08Z6X4NK3/ref=sr_1_33?crid=NWATW8520JZY&dib=eyJ2IjoiMSJ9.Z4E9CupUwJYFSbQ7zH3ab0A0okhAI_nkR9cE9cvthVXjyHfQdNG2jzrbzLdps46j3K030ciBtBYvdtoWiKS0vDRQbpYRnoMhKGju7W5jPHLoJSZSLsK7vxX0IGSNuX_c19OFdLPZB9IG7GX-7vJu82pQJUuzhgOv1PN10tuJn1Bsp0M_DuOqYwn7hkeKnxR8GAUugtyczQTZCZTN8KAxzQyDtLDMsN8tTwpWk1dXrxY.3uo0c2DRIVyRdgfFCAKBpMyKkoiIMEG4j_oUcRBAo9A&dib_tag=se&keywords=Razer+BlackWidow&qid=1777130538&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BBlackWidow%2Caps%2C198&sr=8-33&xpid=4GrddsFPi_Po6&tag=tiereduptech-20",
-        "price": 79.95,
-        "inStock": true
+        "price": 84.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6493152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6493152.p%3FskuId%3D6493152",
@@ -626,9 +634,7 @@ export default [
     "layout": "Full-Size",
     "rgb": true,
     "wireless": false,
-    "bench": 62,
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "bench": 62
   },
   {
     "id": 100018,
@@ -4000,14 +4006,17 @@ export default [
       "amazon": {
         "asin": "B0DCHKYNWF",
         "url": "https://www.amazon.com/dp/B0DCHKYNWF?tag=tiereduptech-20",
-        "price": 153.82,
-        "inStock": true
+        "price": 151.38,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfidence": "confirmed",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       }
     },
     "addedAt": "2026-05-15T17:05:43.623Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27",
     "reviewFlags": [
       "relink:no-price"
     ]

@@ -1797,12 +1797,14 @@ export default [
     "reviews": 11907,
     "deals": {
       "amazon": {
-        "price": 112,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0DBR9RZLV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-05"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-06"
       },
       "bestbuy": {
         "price": 114.99,
@@ -1844,8 +1846,6 @@ export default [
     "read": 5000,
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "detector:wrong-asin"
     ]
@@ -2148,10 +2148,10 @@ export default [
         "price": 399.99,
         "url": "https://www.amazon.com/dp/B08QB93S6R?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2179,9 +2179,7 @@ export default [
     "dram": true,
     "value": 0,
     "bench": 50,
-    "formFactor": "2.5\"",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "formFactor": "2.5\""
   },
   {
     "id": 50055,
@@ -17158,13 +17156,13 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 474.99,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B0F25CX4LB?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -17192,9 +17190,7 @@ export default [
     "value": 17,
     "read": 6000,
     "pcieGen": 4,
-    "formFactor": "M.2 2280",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "formFactor": "M.2 2280"
   },
   {
     "id": 50388,
@@ -25448,10 +25444,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BDQ4TXSG?tag=tiereduptech-20",
         "price": 104.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-05",
+        "priceConfirmedAt": "2026-08-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -25459,8 +25455,6 @@ export default [
     "source": "amazon-discovery",
     "cap": 16,
     "interface": "USB",
-    "needsReview": true,
-    "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "storage_ff:external_usb",
       "storage_price:above_ceiling(6.562$/GB)"
