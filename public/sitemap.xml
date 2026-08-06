@@ -811,6 +811,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/cpu/intel-core-i914900k-14th-gen-24core-32thread-44ghz-60ghz-turbo-socket-lga-1700-u-10162</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/cpu/intel-core-i714700k-14th-gen-20core-28thread-43ghz-56ghz-turbo-socket-lga-1700-u-10163</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1315,6 +1321,36 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-pro-7995wx-96core-192thread-processor-100641</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-7960x-24core-48thread-processor-100644</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-pro-7975wx-32core-64thread-processor-100645</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-pro-5955wx-16core-32thread-desktop-processor-100647</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu/amd-ryzen-threadripper-pro-7965wx-24core-48thread-processor-100648</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/motherboard/asus-rog-crosshair-x870e-hero-20000</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1435,6 +1471,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/motherboard/gigabyte-b650m-ds3h-20033</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/motherboard/msi-mag-b850-tomahawk-wifi-20034</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -1472,6 +1514,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/motherboard/gigabyte-b660m-ds3h-ddr4-20043</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/motherboard/gigabyte-b550m-k-20045</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1670,6 +1718,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/motherboard/x870-aorus-elite-wifi7-amd-am5-lga-1718-motherboard-atx-ddr5-20088</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/motherboard/proart-x870ecreator-wifi-amd-am5-x870e-atx-motherboard-pcie-50-x16-slots-with-fu-20089</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -1892,6 +1946,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/motherboard/prime-h610iplus-d4-lga-1700intel-12th-genintel-vpromini-itx-motherboardpcie-40dd-20140</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/motherboard/pro-x870p-wifi-proseries-motherboard-amd-ryzen-900080007000-series-processors-am-20141</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3385,6 +3445,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-5070-ti-30004</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-5070-30005</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -3787,6 +3853,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-5080-epicx-argb-oc-triple-fan-graphics-card-16gb-gddr7-256bit-30113</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/gpu/dual-geforce-rtx-5060-ti-8gb-gddr7-oc-edition-graphics-card-nvidia-desktop-pcie-30116</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -3818,6 +3890,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/prime-radeon-rx-9070-xt-white-oc-edition-graphics-card-amd-pcie-50-hdmidp-21-30121</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/gpu/gaming-rtx-5080-16g-suprim-soc-graphics-card-16gb-gddr7-256bit-extreme-performan-30122</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3932,6 +4010,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/gpu/dual-geforce-rtx-4060-ti-oc-edition-8gb-gddr6-gaming-graphics-card-black-nvidia-30147</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/gpu/nvidia-geforce-rtx-5060-epicx-argb-oc-triple-fan-graphics-card-8gb-gddr7-128bit-30150</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4999,6 +5083,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/gpu/pny-nvidia-geforce-rtx-5060-oc-dual-fan-graphics-card-8gb-gddr7-128bit-sffready-100412</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/gpu/asus-dual-geforce-rtx-5060-8gb-gddr7-white-oc-edition-graphics-card-nvidia-deskt-100413</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5557,6 +5647,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/case/lancool-217-genuine-walnut-wood-computer-case-midtower-atx-pc-case-with-5-preins-70033</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/case/atx-pc-case-preinstall-6-pwm-argb-fans-polygonal-mesh-computer-gaming-case-openi-70034</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5653,6 +5749,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/case/3500x-rs-reverse-fan-argb-midtower-pc-case-3x-preinstalled-fans-panoramic-glass-70055</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/case/7000d-airflow-fulltower-atx-pc-case-highairflow-front-panel-spacious-interior-ea-70057</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5702,6 +5804,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case/prime-ap201-micro-atx-pc-case-33liter-compact-design-preinstalled-fans-70069</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/case/air-903-max-eatx-mid-tower-case-high-airflow-70070</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -5767,6 +5875,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/case/h9-flow-rgb-2025-large-dualchamber-atx-midtower-airflow-pc-case-includes-1-x-420-70082</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/case/pc-case-6-pwm-argb-fans-preinstalled-midtower-gaming-pc-case-panoramic-tempered-70083</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -5786,6 +5900,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case/pc-case-atx-7-pwm-argb-fans-preinstalled-typec-mid-tower-computer-case-with-full-70087</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/case/v100-atx-midtower-pc-case-led-rgb-strip-display-platform-design-with-tempered-gl-70088</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -8192,6 +8312,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/ram/teamgroup-tforce-vulcan-z-ddr4-32gb-kit-2x16gb-3200mhz-pc425600-cl16-desktop-mem-100507</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/ram/pny-xlr8-gaming-32gb-2x16gb-ddr4-dram-3600mhz-pc428800-cl18-135v-low-profile-dua-100508</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -11029,6 +11155,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/storage/nv3-500gb-m2-2280-nvme-ssd-pcie-40-gen-4x4-up-to-5000-mbs-snv3s500g-50048</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/storage/ssd-9100-pro-1tb-pcie-50x4-m2-2280-seq-read-speeds-up-to-14-50049</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -11048,6 +11180,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/bx500-1tb-3d-nand-sata-25inch-internal-ssd-up-to-540mbs-ct1000bx500ssd1-solid-st-50053</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/storage/electronics-870-evo-2tb-25-inch-sata-iii-internal-ssd-mz77e2t0bam-50054</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -12493,6 +12631,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/storage/4tb-nq780-ssd-pcie-gen4-nvme-m2-2280-internal-solid-state-drive-up-to-70006000-m-50387</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/storage/512gb-m2-ssd-m2-2280-ssd-pcie-gen3x4-internal-solid-state-drive-50391</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -13514,6 +13658,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/storage/kingston-nv3-1tb-m2-2230-nvme-ssd-up-to-6000mbs-snv3sm31t0-100826</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/storage/kingston-ironkey-keypad-200-16gb-encrypted-usb-alphanumeric-keypad-multipin-acce-100827</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -15127,6 +15277,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/psu/cx650-80-plus-bronze-non-modular-lownoise-atx-650-watt-power-supply-na-black-60053</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/psu/rm1000x-shift-fully-modular-atx-power-supply-modular-side-interface-atx-31-pcie-60054</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -15829,6 +15985,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/psu/cooler-master-mwe-gold-750-v3-fully-modular-power-supply-750w-80-gold-certified-100461</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/psu/msi-mag-a850gl-pcie5-white-fully-modular-compact-gaming-850w-power-supply-80-gol-100462</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -15890,6 +16052,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/psu/cooler-master-x-silent-max-platinum-1300-fully-modular-power-supply-80-platinum-100474</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/psu/montech-titan-pla-1200w-highend-atx-gaming-power-supply-80-plus-platinum-cybenet-100475</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17503,6 +17671,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/elite-liquid-240-cpu-aio-cooler-240mm-radiator-2x-argb-pwm-fans-dualchamber-pump-80052</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/tryx-panorama-se-360-argb-360mm-aio-rotatable-667-amoled-curved-screen-3d-anamor-80053</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -17600,6 +17774,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/frozen-notte-240-black-argb-v2-water-cooling-cpu-cooler240black-cpu-cooler-speci-80072</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/kraken-elite-240-rgb-2024-aio-cpu-liquid-cooler-240mm-radiator-2-x-f120p-fans-cu-80073</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17720,6 +17900,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/nhd9l-premium-cpu-cooler-with-nfa9-92mm-fan-brown-80102</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/hyper-212-halo-argb-cpu-air-cooler-120mm-high-performance-pwm-fan-4-copper-heat-80103</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -17858,6 +18044,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/aqua-elite-240-argb-v4-liquid-cpu-cooler-240-cooling-row-size-2-x-120mm-pwm-fans-80129</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/hyper-212-3dhp-cpu-air-cooler-patented-3d-heat-pipe-technology-120mm-pwm-high-ai-80131</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -18014,6 +18206,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/mag-coreliquid-a13-240-aio-argb-cpu-liquid-cooler-240mm-radiator-lga-17001851-am-80183</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/360-core-ii-liquid-cpu-aio-cooler-360mm-radiator-3x-argb-pwm-fans-infinity-mirro-80184</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -18344,6 +18542,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/prime-lc-360-argb-white-edition-allinone-cpu-liquid-cooler-with-special-cpu-cont-80247</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/atmos-ii-360-lcd-aio-cpu-liquid-cooler-360mm-radiator-customizable-lcd-display-3-80248</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -18680,6 +18884,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/nzxt-kraken-plus-360-rgb-aio-cpu-liquid-cooler-360mm-radiator-f360-rgb-core-sing-100355</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/nzxt-kraken-elite-360-rgb-2024-aio-cpu-liquid-cooler-360mm-radiator-f360-rgb-cor-100356</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -19225,6 +19435,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/cpu-cooler/thermalright-phantom-spirit-120se-cpu-air-cooler-7-heat-pipes-cpu-coolerdual-120-101232</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/cpu-cooler/thermalright-assassin-spirit-120-evo-dark-cpu-coolertle12b-v2-pwm-quiet-fan-with-101233</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -19598,6 +19814,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case-fan/tlc12cws-x3-cpu-fan-120mm-white-argb-case-cooler-fan-up-to-1550rpm-cooling-fan-85047</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/case-fan/rs120-120mm-pwm-fan-daisychain-connection-lownoise-magnetic-dome-bearing-single-85050</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -20077,6 +20299,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/case-fan/rog-strix-xf120-whisperquiet-4pin-pwm-fan-for-pc-cases-radiators-or-cpu-cooling-85170</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/case-fan/120mm-rgb-series-case-fanquiet-edition-high-airflow-led-case-fan-for-pc-cases5-p-85171</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -20336,6 +20564,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/case-fan/v8-prism-120mm-argb-pwm-computer-case-fan-3pack-mirror-design-highperformance-co-85236</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/case-fan/hp140mm-pwm-argb-fan-high-airflow-quiet-rifle-bearing-1600rpm-85237</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -20935,6 +21169,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/headset/hd-599-se-openback-headphones-premium-design-natural-balanced-audio-comfortable-100046</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/headset/logitech-g432-wired-gaming-headset-71-surround-sound-dts-headphonex-20-fliptomut-100049</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -21415,6 +21655,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/headset/razer-blackshark-v2-x-gaming-headset-71-surround-sound-50mm-drivers-memory-foam-101681</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/headset/audiotechnica-athr50x-openback-headphones-101687</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -21655,6 +21901,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/monitor/aw2723df-gaming-monitor-27inch-2560-x-1440-240hz-display-dp-14-1ms-response-time-90024</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/monitor/portable-monitor-185-120hz-1ms-gaming-monitor-125-srgb-freesync-hdr-350nits-usbc-90025</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -21764,6 +22016,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/monitor/27-oled-2k-qhd-2560-x-1440p-500hz-gaming-monitor-gaming-console-ready-vrr-90057</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/monitor/rog-swift-27-oled-gaming-monitor-pg27aqwpw-trueblack-glossy-tandem-oled-dualmode-90058</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -23587,6 +23845,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/monitor/dell-27-plus-4k-monitor-s2725qs-27inch-4k-3840-x-2160-120hz-169-display-ips-pane-100989</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/monitor/philips-27e1n1800a-27-ips-4k-uhd-3840-x-2160-monitor-builtin-speakers-hdr-10-amd-100991</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -23786,6 +24050,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/monitor/asus-tuf-gaming-315-1440p-curved-hdr-gaming-monitor-vg32wq3b-qhd-2560-x-1440-180-101030</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/monitor/samsung-32inch-s3-s39gd-fhd-100hz-curved-monitor-game-mode-eye-saver-mode-multip-101031</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -24145,6 +24415,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/monitor/samsung-49inch-odyssey-g9-g91f-dqhd-144hz-curved-gaming-monitor-ultrawide-329-sc-101101</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/monitor/samsung-57-odyssey-neo-g9-g95nc-series-dual-4k-uhd-1000r-curved-gaming-monitor-2-101102</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -24265,6 +24541,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/keyboard/steelseries-apex-3-tkl-rgb-gaming-keyboard-tenkeyless-compact-form-factor-8zone-100007</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/keyboard/apex-3-rgb-gaming-keyboard-10zone-rgb-illumination-ip32-water-resistant-premium-100008</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -24308,6 +24590,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/keyboard/kisnt-kn85-wireless-mechanical-gaming-keyboard-75-layout-with-rgb-backlit-custom-100016</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/keyboard/logitech-g413-se-fullsize-mechanical-gaming-keyboard-backlit-keyboard-with-tacti-100017</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -25033,6 +25321,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/keyboard/glorious-gaming-gmmk-3-custom-mechanical-gaming-keyboard-with-knob-100-keyboard-101595</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/keyboard/redragon-k719-pro-wireless-gasket-gaming-keyboard-whype-screen-knob-95-keys-mech-101597</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -25226,6 +25520,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/mouse/tecknet-wireless-mouse-bluetooth-mouse-bt5350-24g-rechargeable-ergonomic-optical-99993</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/mouse/razer-orochi-v2-mobile-wireless-gaming-mouse-ultra-lightweight-2-wireless-modes-99994</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -25603,6 +25903,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/mouse/logitech-g305-lightspeed-wireless-gaming-mouse-hero-sensor-12000-dpi-lightweight-101444</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/mouse/redragon-gaming-mouse-wireless-mouse-gaming-with-8000-dpi-pc-gaming-mice-with-fi-101446</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -25688,6 +25994,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/mouse/razer-rz0101050100r3m1-naga-lefthanded-ergonomic-mmo-gaming-mouse-with-12-progra-101491</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/mouse/logitech-g305-lightspeed-wireless-gaming-mouse-hero-sensor-12000-dpi-lightweight-101492</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -26293,6 +26605,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/microphone/elgato-wave-mic-arm-pro-360-rotatable-low-profile-gas-spring-microphone-arm-work-101824</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/microphone/elgato-wave-mic-arm-pro-white-360-rotatable-low-profile-gas-spring-microphone-ar-101826</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/microphone/for-elgato-wave-3-boom-arm-microphone-stand-professional-mic-boom-arm-mic-stand-101827</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -26803,6 +27127,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/mouse-pad/asus-rog-sheath-gaming-mouse-pad-354-x-173-extralarge-surface-pixelprecise-track-101846</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/mouse-pad/steelseries-qck-xl-performance-speed-gaming-mousepad-extra-density-for-a-smooth-101847</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -26912,6 +27242,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/mouse-pad/glorious-elements-mousepad-xl-mouse-pad-glass-infused-flexible-cloth-computer-de-101871</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/mouse-pad/asus-rog-scabbard-ii-arctic-gray-xxl-gaming-mouse-pad-354-x-157-extendedxxl-size-101872</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -27157,6 +27493,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://prorigbuilder.com/parts/wifi-card/tplink-usb-wifi-adapter-for-desktop-pc-ac1300-usb-30-wireless-dual-band-network-96005</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://prorigbuilder.com/parts/wifi-card/usb-wifi-adapter-ac1300mbps-dual-band-5dbi-high-gain-antenna-24ghz-5ghz-wireless-96015</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -27302,6 +27644,12 @@
   </url>
   <url>
     <loc>https://prorigbuilder.com/parts/extension-cables/corsair-12pin-gpu-power-cable-sleeved-black-99606</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://prorigbuilder.com/parts/extension-cables/startechcom-8in-24-pin-atx-201-power-extension-cable-power-extension-cable-24-pi-100114</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
