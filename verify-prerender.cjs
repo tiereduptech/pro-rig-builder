@@ -115,6 +115,8 @@ async function main() {
   const warnTotal = Object.values(warnCounts).reduce((a, b) => a + b, 0);
 
   console.log("── verify-prerender ─────────────────────────────────────────");
+  console.log(`HARD checks: 1 robots · 2 head-tag-integrity(title/og:title/canonical/robots) · 3 canonical-self-ref · 4 product-body(Product JSON-LD) · 5 no-shell/error-leak`);
+  console.log(`WARN checks: 6 og:url==canonical · 7 description-present · 8 body-size-floor(${BODY_FLOOR})`);
   console.log(`indexable render set: ${set.length} | checked (file present): ${checked} | missing/uncovered: ${missing}`);
   console.log(`shell-detection hits (checks 4|5, ${SHELL_CHECKS_HARD ? "HARD" : "WARN"}): ${shellHits}`);
   console.log(`\nHARD violations: ${hardTotal}`);
