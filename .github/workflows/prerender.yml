@@ -118,13 +118,16 @@ jobs:
           retention-days: 14
 
       # HARD GATE — must pass before we commit. The batched prerender above
-      # tolerates individual batch exit codes (for timeouts), so a robots
+      # tolerates individual batch exit codes (for timeouts), so an output
       # regression would otherwise slip through as a warning. This step is NOT
-      # tolerant: a non-zero exit fails the job and blocks the commit below,
-      # so a de-indexed catalog can never ship silently again. See the
-      # 2026-07-27 GONE_SHELL noindex incident.
-      - name: Verify robots (no product page ships noindex)
-        run: node verify-prerender-robots.cjs
+      # tolerant: a non-zero exit fails the job and blocks the commit below, so
+      # a contaminated dist can never ship silently again. Asserts the OUTPUT
+      # (robots, single head tags, self-referencing canonical, product body,
+      # no shell/error leak) — see the 2026-07-27 GONE_SHELL noindex incident,
+      # which shipped because the 410 input layer was verified but the output
+      # was not.
+      - name: Verify prerender output (robots, head tags, canonical, no shell)
+        run: node verify-prerender.cjs
 
       - name: Commit and push if dist/ changed
         run: |
