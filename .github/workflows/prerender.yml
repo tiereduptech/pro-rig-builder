@@ -117,6 +117,15 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      # HARD GATE — must pass before we commit. The batched prerender above
+      # tolerates individual batch exit codes (for timeouts), so a robots
+      # regression would otherwise slip through as a warning. This step is NOT
+      # tolerant: a non-zero exit fails the job and blocks the commit below,
+      # so a de-indexed catalog can never ship silently again. See the
+      # 2026-07-27 GONE_SHELL noindex incident.
+      - name: Verify robots (no product page ships noindex)
+        run: node verify-prerender-robots.cjs
+
       - name: Commit and push if dist/ changed
         run: |
           git config user.name "github-actions[bot]"

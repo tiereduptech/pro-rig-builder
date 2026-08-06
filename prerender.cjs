@@ -82,6 +82,18 @@ const TIMEOUT = 40000;
 const SITE    = "https://prorigbuilder.com";
 const TODAY   = new Date().toISOString().split("T")[0];
 
+// The shell's canonical INDEXABLE robots directive — the correct default for
+// every page we prerender. Read from the built shell so it stays in sync if the
+// directive is ever changed. See the robots fix in renderRoute() below.
+const SHELL_ROBOTS = (() => {
+  try {
+    const shell = fs.readFileSync(path.join("dist", "index.html"), "utf8");
+    const m = shell.match(/<meta name="robots" content="(index[^"]*)">/i);
+    if (m) return m[1];
+  } catch { /* fall through to the known default */ }
+  return "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+})();
+
 const STATIC_ROUTES = [
   { path: "/",                              priority: "1.0", changefreq: "daily"   },
   { path: "/search",                        priority: "0.9", changefreq: "daily"   },
@@ -202,7 +214,29 @@ async function renderRoute(browser, route) {
 
     // Strip the shell's default head tags that Helmet has already replaced,
     // so each social/SEO head tag appears exactly once. See scripts/dedupe-head.cjs.
-    const html = dedupeHeadTags(await page.content());
+    let html = dedupeHeadTags(await page.content());
+
+    // ── ROBOTS FIX (2026-07-27 noindex incident) ────────────────────────────
+    // We render THROUGH server.cjs, which serves a 410 GONE_SHELL (robots=noindex,
+    // canonical stripped) for any /parts/<cat>/<slug>-<id> whose dist file does not
+    // exist yet — i.e. EVERY product page during its own build, because vite empties
+    // dist/ first. react-helmet does not manage the robots meta, so that injected
+    // noindex survived into the snapshot and de-indexed the whole catalog for ~10
+    // days. Every route we WRITE here is one we intend to be crawlable (the render
+    // set is isIndexable products + real static/category routes), so restore the
+    // shell's canonical indexable directive.
+    html = html.replace(/<meta name="robots" content="noindex">/gi,
+      `<meta name="robots" content="${SHELL_ROBOTS}">`);
+
+    // HARD invariant — break the build, never ship silently. If a page we are about
+    // to write still says noindex, or is missing an index directive, the replace
+    // above failed to match (shell markup drifted) or something new is injecting
+    // noindex. Treat as FATAL, distinct from a tolerable render timeout.
+    if (/content="noindex"/i.test(html) || !/name="robots" content="index/i.test(html)) {
+      return { ok: false, route, fatal: true,
+        error: "robots invariant violated: noindex present or index directive missing" };
+    }
+
     const bodyChars = await page.evaluate(() => document.body.innerText.length);
     if (bodyChars < 100) throw new Error(`body only ${bodyChars} chars`);
 
@@ -391,6 +425,16 @@ async function main() {
   console.log(`  OK ${success} pre-rendered in ${elapsed}s`);
   if (failed > 0) console.log(`  X  ${failed} failed (see failures json)`);
   console.log("============================\n");
+
+  // A robots-invariant violation is NOT a tolerable render hiccup — it means we
+  // were about to ship a de-indexed page. Exit distinctly (2) and loudly so the
+  // build breaks rather than committing a contaminated dist. Timeouts still exit 1.
+  const fatal = failures.filter(f => f.fatal);
+  if (fatal.length) {
+    console.error(`\n██ FATAL: robots invariant violated on ${fatal.length} page(s) — dist BLOCKED ██`);
+    fatal.slice(0, 15).forEach(f => console.error(`   - ${f.route}`));
+    process.exit(2);
+  }
 
   process.exit(failed > 0 ? 1 : 0);
 }
