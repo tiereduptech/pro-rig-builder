@@ -1,0 +1,338 @@
+{
+  "generatedAt": "2026-08-07T22:45:56.550Z",
+  "mode": "APPLY",
+  "branch": "weekend-ingest-2026-08-08",
+  "deferred": {
+    "Newegg": "RAKUTEN_FTP_PASSWORD absent (local + Railway) — auth hard-stop; the only fully-validated path could not run.",
+    "BestBuy": "bestbuy-discover-v2.js writes staging JSON via writeFileSync (NOT writeCatalog); 2-step discover→merge with an unvalidated merge write-path. Violates writeCatalog-only.",
+    "AmazonOtherCats": "No calibrated price ceiling and no per-category query plan beyond RAM/PSU/Storage/Case — running unattended = the stale-ceiling/null-classifier risk."
+  },
+  "categories": {
+    "RAM": {
+      "candidates": 481,
+      "deduped": 88,
+      "accepted": 227,
+      "written": 227,
+      "acceptRate": 0.5776081424936387,
+      "rejects": {
+        "prebuilt:re": {
+          "n": 42,
+          "examples": [
+            "A-Tech 8GB DDR5 4800MHz PC5-38400 CL40 UDIMM 1.1V Non-ECC Unbuffered DIMM 288-Pin Desktop PC/Computer RAM Memory Upgrade Module",
+            "A-Tech 16GB DDR5 4800MHz PC5-38400 CL40 UDIMM 1.1V Non-ECC Unbuffered DIMM 288-Pin Desktop PC/Computer RAM Memory Upgrade Module",
+            "Samsung 16GB DDR5 5600MHz PC5-44800 CL46 UDIMM 1Rx8 Single Rank 1.1V Non-ECC DIMM 288-Pin Desktop PC RAM Memory M323R2GA3DB0-CWM",
+            "GMKtec Gaming PC, K11 AMD Ryzen 9 8945HS(8C/16T, Up to 5.2GHz), 32GB DDR5 RAM 1TB Mini PC Desktop Computer, Oculink, Dual NIC 2.5GbE LAN, HDMI/DisplayPort/USB4*2",
+            "SK Hyn(Hynix) Original 8GB (1x8GB) DDR5 5600MHz (or 4800MHz PC5-38400) High-Performance Gaming RAM PC5-44800 UDIMM Unbuffered Non-ECC 1Rx16 CL46 Desktop PC Memory Upgrade HMCG66AGBUA081N Adamanta"
+          ]
+        },
+        "categoryReject:laptop_sodimm": {
+          "n": 85,
+          "examples": [
+            "Crucial 32GB DDR5 RAM Kit (2x16GB), 5600MHz (or 5200MHz or 4800MHz) Laptop Memory 262-Pin SODIMM, Compatible with Intel Core and AMD Ryzen 7000, Black - CT2K16G56C46S5",
+            "CORSAIR Vengeance SODIMM DDR5 RAM 16GB (1x16GB) Up to 5600MHz CL48 Intel XMP 3.0 Desktop Computer Memory - Black (CMSX16GX5M1A5600C48)",
+            "CORSAIR Vengeance SODIMM DDR5 RAM 32GB (1x32GB) Up to 5600MHz CL48 Intel XMP 3.0 Desktop Computer Memory - Black (CMSX32GX5M1A5600C48)",
+            "A-Tech DDR4 RAM 32GB Kit (2x16GB) 2666MHz PC4-21300 SODIMM Laptop Memory",
+            "Crucial 16GB DDR4 RAM Kit (2x8GB), 3200MHz (PC4-25600), Downclockable to 2933/2666MHz Laptop Memory SODIMM 260-Pin, Compatible with 13th Gen Intel Core and AMD Ryzen 7000 - CT2K8G4SFRA32A"
+          ]
+        },
+        "prebuilt:prebuilt_system": {
+          "n": 18,
+          "examples": [
+            "Dell Pro Tower Plus Desktop, Intel 14-Core Ultra 5 235, 32GB DDR5 RAM, 1TB PCIe SSD, Windows 11 Pro",
+            "HP OmniDesk Desktop Computer PC, AMD Ryzen 7 8700G, 32GB DDR5 Memory, 1TB NVMe SSD, Radeon 780M Graphics, Wi-Fi 6 + Bluetooth 5.4 (Includes Keyboard + Mouse)",
+            "Dell Pro Business Desktop, New OptiPlex Version, Intel I7-12700K(25MB Cache, 12 Core, 20Threads), 32GB DDR5 RAM, 1TB PCIe SSD, Ultra-Quiet Design, Dual 4K Monitor Support, Ethernet, Windows 11Pro",
+            "Dell Pro Slim QCS1250 SFF Desktop, New OptiPlex Version Intel Ultra 5-235 (Beats i7-14700), 32GB DDR5 RAM, 1TB PCIe SSD, Wi-Fi 6, USB-C, HDMI+DP Dual Monitor Support, KB & Mouse, Windows 11 Pro",
+            "Dell Pro Tower Desktop PC 2026, Intel i3-14100, 16GB DDR5 RAM, 1TB SSD"
+          ]
+        },
+        "miscategorized:Storage": {
+          "n": 3,
+          "examples": [
+            "Dell Desktop Computers 32GB DDR5 RAM, 1TB PCIe SSD, 14th Gen Intel CPU",
+            "HP OmniStudio 24\" Full HD All-in-OneDesktop Computer, 16GB DDR5 RAM, Intel Quad-Cores, 128GB SSD, WiFi6, Keyboard & Mouse, Windows 11",
+            "HP Pro 400 G9 Mini PC Desktop Computer, Intel CPU, 16GB DDR5 RAM, 512GB PCIe SSD, Triple 4K Display Support, USB-C, Ultra-Quiet Design, Bluetooth 5.2, WiFi 6, Keyboard and Mouse, Windows 11 Pro"
+          ]
+        },
+        "prebuilt:prebuilt_brand": {
+          "n": 3,
+          "examples": [
+            "Dell Pro Micro Business Desktop (OptiPlex MFF Next-Gen), Intel Core ultra5 235T, up to 5GHz, 16GB DDR5 RAM, 512GB SSD, WiFi 6E, Bluetooth, Windows 11 Pro, HDMI, DisplayPort, Wired KB&Mouse",
+            "Dell Pro Slim Plus QBS1250 SFF AI Desktop (Replaces OptiPlex), Ultra 7 265",
+            "A-Tech 32GB Kit (2x16GB) RAM for Dell OptiPlex 7070, 7060, 5070, 5060, 3070, 3060 Micro Desktops | DDR4 2666 MHz SODIMM PC4-21300 Memory Upgrade"
+          ]
+        },
+        "miscategorized:CPU": {
+          "n": 4,
+          "examples": [
+            "GMKtec M6 Ultra Gaming Mini PC Ryzen 7640HS (Upgraded 6600H/ 6800H), 32GB RAM DDR5 512GB SSD Dual NIC LAN 2.5GbE Desktop Computers Office Home, Triple 4K Display, WiFi 6, USB4, BT 5.2, DP, HDMI 2.0",
+            "Dell Tower Desktop for Business & Home, Intel Core i5-14500 (14-Core)",
+            "Lexar 32GB (2x16GB) THOR DDR4 RAM 3200MT/s CL16 1.35V Desktop Memory with Heatsink, AMD Ryzen & Intel XMP 2.0, Black (LD4U16G32C16LG-RUD)",
+            "Kingston FURY Beast 32GB (2x16GB) 3200MT/s DDR4 CL16 Desktop Memory Kit of 2 | Intel XMP | AMD Ryzen | Plug n Play | RGB Infrared Syncing | KF432C16BB2AK2/32"
+          ]
+        },
+        "unclassified": {
+          "n": 6,
+          "examples": [
+            "Motoeagle16GB Kit (4 X4GB) PC3-10600U DDR3 1333MHz UDIMM RAM, 4GB DDR3 DIMM Memory, CL9 1.5V 240-Pin Desktop 2RX8",
+            "OWC 32GB Memory RAM Kit Compatible with Synology DiskStation DS723+ DS923+",
+            "G.Skill D532GB 6000-30 Flare X5 K2 GSK F5-6000J3038F16GX2-FX5",
+            "G Skill F5-6000J3636F16GX2-RS5K Memor Gskilf5-6000j3636f16gx2-rs5k R",
+            "Netac DDR4 DRAM 32GB Kit16GBx2 C16 3200MHz XMP 2.0 Dual Channel RAM (PC4-25600) 1.35V 288-Pin Upgraded Aluminum Heat Sink Ideal for Gaming Computer Upgrade - Shadow S4"
+          ]
+        },
+        "specBar": {
+          "n": 2,
+          "examples": [
+            "G.SKILL Trident Z5 Neo RGB 64GB [2 x 32GB] DDR5 SDRAM Memory Kit",
+            "TEAMGROUP DDR5 Memory"
+          ]
+        },
+        "categoryReject:ecc_ram": {
+          "n": 1,
+          "examples": [
+            "64GB 2X32GB DDR5 4800MHZ PC5-38400 1.1V 2Rx8 CL40 288-PIN ECC UDIMM KIT Designed for Motherboards utilizing ONLY Intel Series Processor with Intel W680 Chipset - NOT Compatible with AMD CPU"
+          ]
+        },
+        "categoryReject:server_registered_ram": {
+          "n": 2,
+          "examples": [
+            "Kingston FURY Renegade Pro EXPO 64GB 5600MT/s DDR5 ECC Reg CL28 DIMM (Kit of 4) Memory Overclockable ECC Registered DIMM- KF556R28RBEK4-64",
+            "NEMIX RAM 64GB (2X32GB) DDR5 4800MHz PC5-38400 2Rx8 1.1V CL40 288-PIN ECC RDIMM Registered Server Memory KIT"
+          ]
+        }
+      },
+      "ceiling": {
+        "priced": 215,
+        "failed": 0,
+        "failRate": 0,
+        "calibratedAt": "2026-07-27",
+        "warnings": []
+      },
+      "detector": {
+        "checked": 227,
+        "flagged": 0,
+        "rate": 0
+      }
+    },
+    "PSU": {
+      "candidates": 446,
+      "deduped": 135,
+      "accepted": 242,
+      "written": 242,
+      "acceptRate": 0.7781350482315113,
+      "rejects": {
+        "specBar": {
+          "n": 31,
+          "examples": [
+            "Cooler Master MWE Gold 850 V2 Power Supply, Fully Modular",
+            "CORSAIR RMX Series, RM850x, 850 Watt, 80+ Gold Certified, Fully Modular Power Supply",
+            "CORSAIR RM1000x Fully Modular ATX Power Supply - 80 Plus Gold - Low-Noise Fan - Zero RPM - Black",
+            "RAIDMAX RX-AESD Series Power Supply, ATX 3.1 & PCIe Gen 5 Ready, SI OEM Direct Cable Version, 80+ Gold, Brown Box Packaging, Reliable PSU for NVIDIA RTX 50 & AMD RX 90 Series (850, Watts)",
+            "darkFlash PMT Fully Modular Power Supply ATX 3.1& PCIe 5.1 Ready, 2 x 12VHPWR Cable Included, 100% Japanese 105°C Capacitors, 80 Plus Gold Gaming PSU (80+ Gold (ATX 3.1) BK, 750 Watts)"
+          ]
+        },
+        "renewed_condition": {
+          "n": 18,
+          "examples": [
+            "MSI MAG A750GL PCIE 5 & ATX 3.0 80 Plus Gold Gaming Power Supply – Full Modular (Renewed)",
+            "CORSAIR RM850x Shift Fully Modular ATX Power Supply - 80 Plus Gold - ATX 3.1 - PCIe 5.1 - Zero RPM - Modular Side Interface - White (Renewed)",
+            "CORSAIR RM750x Shift Fully Modular ATX Power Supply - 80 Plus Gold - ATX 3.1 - PCIe 5.1 - Zero RPM - Modular Side Interface - Black (Renewed)",
+            "Corsair RM750e (2023) Fully Modular Low-Noise Power Supply - ATX 3.1 & PCIe 5.1 Compliant - 105°C-Rated Capacitors - 80 Plus Gold Efficiency - Modern Standby Support - Black (Renewed)",
+            "CORSAIR RM850x Fully Modular Low-Noise ATX Power Supply – ATX 3.1 Compliant – PCIe 5.1 Support – Cybenetics Gold Efficiency – Native 12V-2x6 Connector – Black (Renewed)"
+          ]
+        },
+        "prebuilt:re": {
+          "n": 5,
+          "examples": [
+            "750W Power Supply, 80 Plus Gold Certified Non-Modular PSU with Active PFC, Quiet 120mm Cooling Fan for Gaming PC",
+            "GAMDIAS ATX 3.1 & PCIe 5.1 850W Bronze PSU, 850W Gaming Power Supply, 80+ Bronze ATX Gold 12V Power Supplies for Gaming PC Desktop Computers and Active PFC",
+            "800W 80+ Bronze Certified ATX Power Supply, Gaming PSU with Active PFC, High Performance Desktop PC Power Supply for Gaming Computers (800W Non-Modular)",
+            "SHARK TECHNOLOGY® ATX-1000-LED Silent 1000W 120mm Blue LED Fan Active PFC Dual PCI-E Gaming PC ATX Power Supply",
+            "SHARK TECHNOLOGY® 1000W Black ATX12V EPS12 Silent 120mm Fan Gaming PC 2X PCI-E Power Supply ATX PSU"
+          ]
+        },
+        "accessory:fan hub/splitter": {
+          "n": 4,
+          "examples": [
+            "Lian Li EDGE850W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-2x6 Cable - L-Shape Design - Without USB/Fan Hub - White (EG0850G.W)",
+            "Lian Li EDGE750W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-2x6 Cable - L-Shape Design - Without USB/Fan Hub - Black (EG0750G.B)",
+            "Lian Li RS1000G 1000W ATX Power Supply w/o USB Fan Hub - Black (RS1000G.B)",
+            "Lian Li RS1000G 1000W ATX Power Supply w/o USB Fan Hub - White (RS1000G.W)"
+          ]
+        },
+        "bundle:gpu+psu": {
+          "n": 1,
+          "examples": [
+            "Apevia Galaxy 850W 80+ Gold ATX 3.1 Fully Modular Gaming PSU, PCIe 5.1 600W 12VHPWR, Japanese Caps, Silent 135mm FDB Fan, Stable +12V Rail, PSU for RTX 5060/5070/5080/40 Series"
+          ]
+        },
+        "miscategorized:Motherboard": {
+          "n": 1,
+          "examples": [
+            "GAMEMAX 850W 80 Plus Gold Power Supply, ATX 3.0 & PCIE 5.0 Ready, 100% Japanese Capacitors, Fully Modular, ARGB SYNC with Motherboard, RGB-850 Pro, White Version"
+          ]
+        },
+        "unclassified": {
+          "n": 2,
+          "examples": [
+            "CORSAIR RM Series",
+            "FSP FSP450-50ASC"
+          ]
+        },
+        "accessory:cable accessory": {
+          "n": 1,
+          "examples": [
+            "Lian Li RB 650W Power Supply, 80 Plus Bronze, ATX 3.1, PCIe 5.1 Ready, 135mm Low-Noise Fan, Built-in Cable Management, 5-Year Warranty, Non-Modular - Black (RB650B)"
+          ]
+        },
+        "prebuilt:prebuilt_brand": {
+          "n": 1,
+          "examples": [
+            "Wisoqu 650W Semi Fanless Modular Power Supply, 80 Plus Bronze Certified for Computers, Compatible with DELL Optiplex 390 790 990 3010 7010, for INSPIRON 537s 540s 545s 546s 560s, Wisoqu8915hs2bti"
+          ]
+        },
+        "prebuilt:prebuilt_gaming": {
+          "n": 1,
+          "examples": [
+            "MLOONG Prebuilt Gaming PC AMD Ryzen 5 5500 GeForce RTX 5060 8GB GDDR6"
+          ]
+        },
+        "accessory:power cable": {
+          "n": 3,
+          "examples": [
+            "ASUS ROG Strix 1000W Platinum White Edition (80 Plus & Cybenetics Platinum, Fully Modular ATX, ATX 3.1, PCIe 5.1, GaN MOSFET, GPU-First IVS, ROG Equalizer 12V-2x6 Power Cable, 10-Year Warranty)",
+            "ASUS ROG Strix 1200W Platinum (80 Plus and Cybenetics Platinum, Fully Modular ATX, ATX 3.1, PCIe 5.1, GaN MOSFET, GPU-First IVS, ROG Equalizer 12V-2x6 GPU Power Cable, 10-Year Warranty)",
+            "ASUS ROG Strix 1000W Platinum (80 Plus and Cybenetics Platinum, Fully Modular ATX, ATX 3.1, PCIe 5.1, GaN MOSFET, GPU-First IVS, ROG Equalizer 12V-2x6 GPU Power Cable, 10-Year Warranty)"
+          ]
+        },
+        "bundle:mobo+psu": {
+          "n": 1,
+          "examples": [
+            "GAMEMAX 1300W Power Supply, ATX 3.0 & PCIE 5.0 Ready, 80+ Platinum Certified, Addressable RGB with 5V Motherboard Sync, 100% Japanese Capacitors, Fully Modular, RGB-1300"
+          ]
+        }
+      },
+      "ceiling": {
+        "priced": 225,
+        "failed": 0,
+        "failRate": 0,
+        "calibratedAt": "2026-07-27",
+        "warnings": []
+      },
+      "detector": {
+        "checked": 242,
+        "flagged": 0,
+        "rate": 0
+      }
+    },
+    "Storage": {
+      "candidates": 472,
+      "deduped": 210,
+      "accepted": 200,
+      "written": 200,
+      "acceptRate": 0.7633587786259542,
+      "rejects": {
+        "prebuilt:re": {
+          "n": 19,
+          "examples": [
+            "KingSpec 2TB M.2 NVMe PCIe Gen4 SSD - Up to 7400MB/s Read, Championship Edition, 3D NAND Flash, Ideal for PS5, Gaming PC & Laptop Upgrade",
+            "KingSpec 1TB M.2 NVMe PCIe Gen4 SSD - Up to 7400MB/s Read, Championship Edition, 3D NAND Flash, Ideal for PS5, Gaming PC & Laptop Upgrade",
+            "Lufasnd 1TB M.2 NVMe SSD 2280, PCIe Gen3 x4 Internal Solid State Drive, Up to 3200MB/s, 3D NAND TLC with SLC Cache, High-Speed Storage Upgrade for Laptop & Desktop PC",
+            "KingSpec 1TB 2.5 SSD SATA III Internal - 550MB/s Read, 520MB/s Write with 3D NAND Flash, for Laptop & Desktop PC Upgrade",
+            "Lufasnd Internal 1TB SATA SSD, 2.5 Inch SSD SATA III 6Gb/s, Solid State Drive, Up to 520MB/s Read Speed, 3D NAND Flash, Compatible with Laptop & Desktop PC"
+          ]
+        },
+        "miscategorized:CPUCooler": {
+          "n": 20,
+          "examples": [
+            "Silicon Power 2TB US75 Nvme PCIe Gen4 M.2 2280 SSD R/W Up to 7,000/6,500 MB/s with Heatsink (SP02KGBP44US7505AC)",
+            "WD_BLACK 2TB SN850P NVMe M.2 SSD Officially Licensed Storage Expansion for PS5 Consoles, up to 7,300MB/s, with heatsink - WDBBYV0020BNC-WRSN",
+            "Crucial P310 2280 2TB PCIe Gen4 NVMe Gaming PS5 SSD with Heatsink, Up to 7,100MB/s, PlayStation5, Laptop & Desktop (PC) Compatible, Solid State Drive - CT2000P310SSD5-01",
+            "Bestoss 2TB PCIe4.0 NVMe M.2 2280 SSD with Heatsink, PS5 Storage, 7350MB/s",
+            "Samsung SSD 9100 PRO w/Heatsink 2TB, PCIe 5.0x4 M.2 2280, Up to 14,700MB/s"
+          ]
+        },
+        "unclassified": {
+          "n": 4,
+          "examples": [
+            "ADATA Legend 860, PCIe Gen4 Solid State Drive, 2TB, 1 Count",
+            "Western Digital WD Green SATA 1TB, Up to 545MB/s, 2.5\"/7mm, 3Y Warranty, Internal Solid State Drive (WDS100T5G0A-00CPT0)",
+            "1TB WD Blue SATA 2.5",
+            "(Old Model) Seagate 1TB Gaming SSHD SATA 8GB NAND SATA 6Gb/s 2.5-Inch Internal Bare Drive (ST1000LM014)"
+          ]
+        },
+        "categoryReject:external_usb": {
+          "n": 4,
+          "examples": [
+            "msi SPATIUM M470 PRO PCIe 4.0 NVMe M.2 2TB Portable SSD, 2TB External Solid State Drive, Speeds Up to 6000MB/s, USB-C, Reliable Storage for Gaming, Students, Professionals, Black",
+            "ORICO 1TB SATA SSD 2.5 Inch Internal Solid State Drive, Read Speed up to 500MB/s, SATA III 6Gbps for Desktop Laptop NAS DIY External Drive - Y20",
+            "SANDISK 4TB Extreme PRO Portable SSD - Up to 2000MB/s - USB-C, USB 3.2 Gen 2x2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE81-4T00-G25,Black",
+            "ORICO 128GB SATA SSD 2.5 Inch Internal Solid State Drive, Read Speed up to 500MB/s, SATA III 6Gbps for Desktop Laptop NAS DIY External Drive - Y20"
+          ]
+        },
+        "renewed_condition": {
+          "n": 6,
+          "examples": [
+            "SanDisk Ultra 3D NAND 1TB Internal SSD - SATA III 6 Gb/s, 2.5 Inch /7 mm, Up to 560 MB/s - ‎SDSSDH3-1T00-G26 (Renewed)",
+            "Seagate 1TB Laptop HDD SATA 6Gb/s 128MB Cache 2.5-Inch Internal Hard Drive (ST1000LM035) (Open Box)",
+            "Western Digital 1TB WD Blue SA510 SATA Internal Solid State Drive SSD - SATA III 6 Gb/s, 2.5\"/7mm, Up to 560 MB/s - WDS100T3B0A (Renewed)",
+            "Seagate Exos 7E8 4TB 512n SATA 128MB Cache 3.5-Inch Enterprise Hard Drive (ST4000NM0035) (Renewed)",
+            "Hitachi 2022 HGST WD Ultrastar HUS726T4TALE6L4 4TB 7200 RPM 512e SATA 6Gb/s 3.5-inch Internal Hard Disk Drive (Renewed)"
+          ]
+        },
+        "accessory:drive enclosure": {
+          "n": 5,
+          "examples": [
+            "SABRENT USB-C NVMe Enclosure & Reader, M.2 PCIe SSD, 10Gbps (EC-PNVO)",
+            "UGREEN SSD Enclosure Tool-Free USB C External 10Gbps M.2 NVMe to USB",
+            "SABRENT 2.5in SATA to USB 3.0 Tool-Free SSD/HDD Enclosure (EC-UASP)",
+            "BENFEI 2.5 Inch SATA to USB Tool Free External Hard Drive Enclosure, USB Type-C/Type-A to Sata Compatible for 2.5 Inch SSD(Optimized for SSD, Support UASP)",
+            "UGREEN USB C Hard Drive Enclosure for 2.5\" SATA SSD HDD,Aluminum"
+          ]
+        },
+        "specBar": {
+          "n": 2,
+          "examples": [
+            "Lexar 256B NS100 Internal SSD 2.5\" SATA III, 520MB/s Read, Gray",
+            "TAIMI 2.5-Inch SATA III Internal Solid State Drive (SSD) - Up to 550MB/s, 3D NAND TLC, High-Speed Storage Upgrade for Laptop, Desktop, PC (128, GB)"
+          ]
+        },
+        "accessory:cooler mount bracket": {
+          "n": 1,
+          "examples": [
+            "ORICO 2.5 SSD SATA to 3.5 Hard Drive Adapter Internal Drive Bay Converter Mounting Bracket Caddy Tray for 7 / 9.5 / 12.5mm 2.5 inch HDD / SSD with SATA III Interface(1125SS)"
+          ]
+        },
+        "accessory:adapter cable": {
+          "n": 1,
+          "examples": [
+            "SABRENT USB 3.0 to 2.5in SATA Adapter Cable for SSD & HDD, UASP (EC-SSHD)"
+          ]
+        }
+      },
+      "ceiling": {
+        "priced": 197,
+        "failed": 8,
+        "failRate": 0.04060913705583756,
+        "calibratedAt": "2026-07-27",
+        "warnings": []
+      },
+      "detector": {
+        "checked": 200,
+        "flagged": 0,
+        "rate": 0
+      }
+    }
+  },
+  "hardStop": null,
+  "totals": {
+    "candidates": 1399,
+    "accepted": 669,
+    "written": 669
+  },
+  "recommendations": [
+    "RAM batch amazon-ram-2026-08-07: 227 rows — looks clean; spot-check a sample then release",
+    "PSU batch amazon-psu-2026-08-07: 242 rows — looks clean; spot-check a sample then release",
+    "Storage batch amazon-storage-2026-08-07: 200 rows — looks clean; spot-check a sample then release"
+  ]
+}
