@@ -20044,5 +20044,1893 @@ export default [
     "source": "amazon-discovery",
     "needsReview": true,
     "quarantinedAt": "2026-06-28"
+  },
+  {
+    "id": 102769,
+    "c": "Case",
+    "n": "Apevia Phenom-BK Micro-ATX Gaming PC Case with 3X 120mm ARGB Fans",
+    "b": "Apevia",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41RbYFRdQrL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJHCFNN2",
+        "url": "https://www.amazon.com/dp/B0CJHCFNN2?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102770,
+    "c": "Case",
+    "n": "Apevia Hydra-BK Hydra Mid Tower Gaming PC Case with 6X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41YkI1bRMaL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB6FL9WR",
+        "url": "https://www.amazon.com/dp/B0DB6FL9WR?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102771,
+    "c": "Case",
+    "n": "Apevia Eclipse-PK Mid Tower Gaming PC Case with 5X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 66.99,
+    "msrp": 66.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41L1YtgaiIL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB6D8TFD",
+        "url": "https://www.amazon.com/dp/B0DB6D8TFD?tag=tiereduptech-20",
+        "price": 66.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102772,
+    "c": "Case",
+    "n": "Apevia Prism-BK Dual Chamber Micro-ATX Case with 5X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41CcDDUWQLL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL7QW5CX",
+        "url": "https://www.amazon.com/dp/B0CL7QW5CX?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102773,
+    "c": "Case",
+    "n": "Apevia Prism-PK Dual Chamber Micro-ATX Case with 7X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 71.99,
+    "msrp": 71.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41aib2XwIEL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL7RSSM3",
+        "url": "https://www.amazon.com/dp/B0CL7RSSM3?tag=tiereduptech-20",
+        "price": 71.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102774,
+    "c": "Case",
+    "n": "Apevia PRODIGY-BK Micro-ATX Gaming PC Case, High Airflow with 3X RGB Fans",
+    "b": "Apevia",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41AOTwrKG9L._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B08DP7RGJQ",
+        "url": "https://www.amazon.com/dp/B08DP7RGJQ?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102775,
+    "c": "Case",
+    "n": "Apevia Prism-Elite-PK Dual Chamber Mid Tower ATX Case with 7X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 102.99,
+    "msrp": 102.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51GPJz3rUQL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGG2RBWN",
+        "url": "https://www.amazon.com/dp/B0CGG2RBWN?tag=tiereduptech-20",
+        "price": 102.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102776,
+    "c": "Case",
+    "n": "Apevia Inspire-PK Mid Tower ATX Gaming PC Case with 4X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51MJJ1mwLXL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0C8853WWZ",
+        "url": "https://www.amazon.com/dp/B0C8853WWZ?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102777,
+    "c": "Case",
+    "n": "Apevia Genesis Pro G-PRO-BK Mid Tower Gaming Case with 6X ARGB Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41VBUgI-k8L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B08GVVGJS8",
+        "url": "https://www.amazon.com/dp/B08GVVGJS8?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102778,
+    "c": "Case",
+    "n": "Apevia Prism-Elite-BK Dual Chamber Mid Tower ATX Case with 7X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/412UT0ccNCL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGFTBVCD",
+        "url": "https://www.amazon.com/dp/B0CGFTBVCD?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102779,
+    "c": "Case",
+    "n": "Apevia Eclipse-WH Mid Tower Gaming PC Case with 5X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41v5am0hKiL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB6DQZZF",
+        "url": "https://www.amazon.com/dp/B0DB6DQZZF?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102780,
+    "c": "Case",
+    "n": "Apevia Hydra-WH Hydra Mid Tower Gaming PC Case with 6X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 66.99,
+    "msrp": 66.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41J6Ly6OLTL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB6KGM43",
+        "url": "https://www.amazon.com/dp/B0DB6KGM43?tag=tiereduptech-20",
+        "price": 66.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102781,
+    "c": "Case",
+    "n": "Apevia Inspire-BK Mid Tower ATX Gaming PC Case with 4X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/514esjWL4bL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0C87ZGZRG",
+        "url": "https://www.amazon.com/dp/B0C87ZGZRG?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102782,
+    "c": "Case",
+    "n": "Raidmax I802 Mesh Air Flow Compact Panoramic ATX Mid Tower Case – 270° View Tempered Glass, 5X Pre-Installed 120mm Static RGB Color Fans, Supports ATX/Micro ATX Motherboards, Max 340mm GPU (Black)",
+    "b": "Raidmax",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/31tmuZtdnyL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DLVZ1BLR",
+        "url": "https://www.amazon.com/dp/B0DLVZ1BLR?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Raidmax Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102783,
+    "c": "Case",
+    "n": "Vetroo Pink AL800 Mid Tower ATX Gaming PC Computer Case",
+    "b": "Vetroo",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41R2TMajLYL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKX8WXRG",
+        "url": "https://www.amazon.com/dp/B0CKX8WXRG?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Vetroo",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102784,
+    "c": "Case",
+    "n": "FOIFKIN F1 PC Case - Pre-Installed 6 PWM ARGB Fan, ATX Mid-Tower Computer case, Gaming PC Case, Type-C, 360mm Radiator Support, FOIFKIN (Black)",
+    "b": "FOIFKIN",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51TG466B4rL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DHVZTFC5",
+        "url": "https://www.amazon.com/dp/B0DHVZTFC5?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "FOIFKIN US",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102785,
+    "c": "Case",
+    "n": "Apevia Phantom-BK Micro-ATX Gaming PC Case with 5X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41bFr+FVHoL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7WXP5GT",
+        "url": "https://www.amazon.com/dp/B0D7WXP5GT?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102786,
+    "c": "Case",
+    "n": "Apevia Phenom-PK Micro-ATX Gaming PC Case with 3X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 64.99,
+    "msrp": 64.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41z5CGopVWL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CJH8HVG8",
+        "url": "https://www.amazon.com/dp/B0CJH8HVG8?tag=tiereduptech-20",
+        "price": 64.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102787,
+    "c": "Case",
+    "n": "Apevia Phantom-MESH-BK Micro-ATX Mesh PC Case with 5X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41aeWGbc+lL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7Y4YS42",
+        "url": "https://www.amazon.com/dp/B0D7Y4YS42?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102788,
+    "c": "Case",
+    "n": "Apevia Eclipse-BK Mid Tower Gaming PC Case with 5X 120mm ARGB Fans",
+    "b": "Apevia",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41dhvYAyQAL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0DB6CW9YD",
+        "url": "https://www.amazon.com/dp/B0DB6CW9YD?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102789,
+    "c": "Case",
+    "n": "Okinos Genuine Walnut Wood PC Case, Pre-Installed 4 x 120mm ARGB & PWM Fans, Type-C Port, Panoramic View Tempered Glass Side Panel, Black, ATX Case, Mid-Tower, Mirage 6",
+    "b": "Okinos",
+    "pr": 455.61,
+    "msrp": 455.61,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51nTsIyHTFL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D59VY5Q3",
+        "url": "https://www.amazon.com/dp/B0D59VY5Q3?tag=tiereduptech-20",
+        "price": 455.61,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102790,
+    "c": "Case",
+    "n": "MUSETEX Y6 PC Case, Pre-Installed 7 Infinity Mirror PWM ARGB Fans, ATX Mid Tower Computer Case, Gaming PC Case with Type-C, 270° Full View Tempered Glass, Black",
+    "b": "MUSETEX",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51q24a6XSJL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0G8Z1CM77",
+        "url": "https://www.amazon.com/dp/B0G8Z1CM77?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "MUSETEX",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102791,
+    "c": "Case",
+    "n": "Lian Li V100-ATX Mid-Tower PC Case-Black-V100RX",
+    "b": "Lian Li",
+    "pr": 74.99,
+    "msrp": 74.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41bQloqIGJL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0F2T66QC9",
+        "url": "https://www.amazon.com/dp/B0F2T66QC9?tag=tiereduptech-20",
+        "price": 74.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102792,
+    "c": "Case",
+    "n": "Bgears b-Voguish Gaming PC Case with Tempered Glass panels, USB3.0, Support E-ATX, ATX, mATX, ITX. (Fans are sold separately)",
+    "b": "Bluegears",
+    "pr": 30.32,
+    "msrp": 30.32,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/31znakopR4L._SL500_.jpg",
+    "ff": "E-ATX",
+    "tower": "Mini",
+    "deals": {
+      "amazon": {
+        "asin": "B07T4W3BMH",
+        "url": "https://www.amazon.com/dp/B07T4W3BMH?tag=tiereduptech-20",
+        "price": 30.32,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Bluegears",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102793,
+    "c": "Case",
+    "n": "Zalman Ravn ATX Mid-Tower Desktop Computer Gaming PC Case",
+    "b": "Zalman",
+    "pr": 44.99,
+    "msrp": 44.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/31htpr+LPgL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0F6QH92NG",
+        "url": "https://www.amazon.com/dp/B0F6QH92NG?tag=tiereduptech-20",
+        "price": 44.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ZalmanUSA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102794,
+    "c": "Case",
+    "n": "MOROVOL PC Case Pre-Install 4 RGB Fans, ATX Gaming Computer Case with Diamond-Shaped Mesh Front & Tempered Glass Side Panel, USB 3.0 Airflow Mid Tower case,621-B",
+    "b": "MOROVOL",
+    "pr": 49.99,
+    "msrp": 49.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/514rkA7mtDL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0G64L4FH7",
+        "url": "https://www.amazon.com/dp/B0G64L4FH7?tag=tiereduptech-20",
+        "price": 49.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "MOROVOL",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102795,
+    "c": "Case",
+    "n": "Zalman T8 ATX Mid-Tower Desktop Computer Gaming PC Case",
+    "b": "Zalman",
+    "pr": 39.99,
+    "msrp": 39.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/31OVa4h29SL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0916R7DPN",
+        "url": "https://www.amazon.com/dp/B0916R7DPN?tag=tiereduptech-20",
+        "price": 39.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ZalmanUSA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102796,
+    "c": "Case",
+    "n": "Vetroo Black AL800 Mid Tower ATX Gaming PC Computer Case",
+    "b": "Vetroo",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41v2qfqs7cL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CKX7V2ST",
+        "url": "https://www.amazon.com/dp/B0CKX7V2ST?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Vetroo",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102797,
+    "c": "Case",
+    "n": "Okinos Genuine Walnut Wood PC Case, Support 360mm Radiator on Top, Pre-Installed 4 x 120mm PWM Fans ATX Case, Type-C Port, Magnetic Tempered Glass Side Panel, Black Computer Case, Cypress 7",
+    "b": "Okinos",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41zGw9CZWzL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7BNK6CB",
+        "url": "https://www.amazon.com/dp/B0D7BNK6CB?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Okinos Express",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102798,
+    "c": "Case",
+    "n": "Rosewill Micro ATX Mini Tower Desktop Computer Case | Pre-Installed 400W Power Supply | 1 x 120mm PWM Fan | 240mm & 280mm AIO Support | 2 x USB 2.0 | 2 x USB 3.0 | Gaming & Office PC - FBM-X5",
+    "b": "Rosewill",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41-TcL+9mBL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mini",
+    "deals": {
+      "amazon": {
+        "asin": "B0FVQNGFBG",
+        "url": "https://www.amazon.com/dp/B0FVQNGFBG?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102799,
+    "c": "Case",
+    "n": "Zalman i3 Neo ATX Mid-Tower RGB Gaming PC Desktop Computer Case, White",
+    "b": "Zalman",
+    "pr": 59.98,
+    "msrp": 59.98,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41u2ZDO50NL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0BZT79SML",
+        "url": "https://www.amazon.com/dp/B0BZT79SML?tag=tiereduptech-20",
+        "price": 59.98,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ZalmanUSA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102800,
+    "c": "Case",
+    "n": "DIYPC ARGB-N3-BK Black USB3.0/ Type C Tempered Glass ATX Gaming Computer Case w/ 3 x Tempered Glass Panel and 4 x ARGB PWM Fans (Pre-Installed). Support BTF Back Plug MB",
+    "b": "DIYPC",
+    "pr": 74.94,
+    "msrp": 74.94,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/311lgbKrkbL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0F8PCK2Y3",
+        "url": "https://www.amazon.com/dp/B0F8PCK2Y3?tag=tiereduptech-20",
+        "price": 74.94,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102801,
+    "c": "Case",
+    "n": "MSI MPG GUNGNIR 111R Mid Tower Gaming PC Case - Black, 4 x 120mm ARGB Fans, USB 3.2 Gen2x2 Type-C, Tempered Glass Panel, Magnetic Dust Filter, Mystic Light RGB, ATX, m-ATX, Mini-ITX",
+    "b": "MSI",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/419Ni9OID3L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0B7S341T8",
+        "url": "https://www.amazon.com/dp/B0B7S341T8?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102802,
+    "c": "Case",
+    "n": "CORSAIR 3200D RS Mid-Tower PC Case – White",
+    "b": "Corsair",
+    "pr": 69,
+    "msrp": 69,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41z09Dr1jFL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0GBY5RGHM",
+        "url": "https://www.amazon.com/dp/B0GBY5RGHM?tag=tiereduptech-20",
+        "price": 69,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102803,
+    "c": "Case",
+    "n": "GAMDIAS White ATX Mid Tower Gaming Computer PC Case with Side Tempered Glass, Preinstalled 4X 120mm ARGB Fans, Support Up to 6X 120mm Fans, 360mm AIO/Radiator, 340mm GPU/VGA, 160mm CPU Air Cooler",
+    "b": "GAMDIAS",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41nPlo67KzL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D92C2F6K",
+        "url": "https://www.amazon.com/dp/B0D92C2F6K?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Hashtag PC Gear",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102804,
+    "c": "Case",
+    "n": "GAMDIAS ATX Mid Tower Computer PC Case with Tempered Glass, 4X 120mm ARGB PWM Fans Gaming Case, Support Up to 6X 120mm Fans, 360mm AIO/Radiator, 260mm GPU/VGA, 160mm CPU Air Cooler",
+    "b": "GAMDIAS",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41-MGGVSsSL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D3L1XY5G",
+        "url": "https://www.amazon.com/dp/B0D3L1XY5G?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Hashtag PC Gear",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102805,
+    "c": "Case",
+    "n": "MUSETEX ATX PC Case,6 PWM ARGB Fans Pre-Installed,360MM RAD Support,Type-C Gaming PC Case,270° Full View Tempered Glass Mid Tower,Black ATX Computer Case,Y6",
+    "b": "MUSETEX",
+    "pr": 66.49,
+    "msrp": 66.49,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51y6nuzltPL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0FDKZXX93",
+        "url": "https://www.amazon.com/dp/B0FDKZXX93?tag=tiereduptech-20",
+        "price": 66.49,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "MUSETEX",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102806,
+    "c": "Case",
+    "n": "RAIDMAX V217 ATX Mid Tower Mesh Gaming PC Case, High Airflow Front Panel Design, 4X 120mm ARGB Fans Pre-Installed, Tempered Glass Side Panel, Supports 305mm GPU / 240mm Radiator (Black)",
+    "b": "Raidmax",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41H344Z2V5L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0FW4NK23S",
+        "url": "https://www.amazon.com/dp/B0FW4NK23S?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Raidmax Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102807,
+    "c": "Case",
+    "n": "Computer Upgrade King Mantis V2 ATX Gaming Case: Superior Cooling with 6 Pre-Installed ARGB PWM Fans (600-2000rpm), Vented Aluminum Front Panel, 403mm GPU & EATX Support.",
+    "b": "Computer Upgrade King",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/412NTBAw4iL._SL500_.jpg",
+    "ff": "E-ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B07GQ4YJB6",
+        "url": "https://www.amazon.com/dp/B07GQ4YJB6?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Empowered PC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102808,
+    "c": "Case",
+    "n": "darkFlash ATX Mid-Tower Gaming PC Case, Pre-Installed 3x120mm Fix RGB Fans, with Removable Large Mesh Front Panel, USB3.0 Ready, Tempered Glass Side Panel Airflow Computer Case, Black(DRX70)",
+    "b": "darkFlash",
+    "pr": 82.83,
+    "msrp": 82.83,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51qQh1Yh9UL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CQJQ6HG1",
+        "url": "https://www.amazon.com/dp/B0CQJQ6HG1?tag=tiereduptech-20",
+        "price": 82.83,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102809,
+    "c": "Case",
+    "n": "Apevia Evolution-WH Mid Tower Gaming PC Case with 6X 120MM PWM ARGB Fans",
+    "b": "Apevia",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41dXK8CGXQL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CMW8PZVK",
+        "url": "https://www.amazon.com/dp/B0CMW8PZVK?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102810,
+    "c": "Case",
+    "n": "HYXN H2 (2026) HYXN ATX PC Case, Pre-installed 8 PWM ARGB Fans (6X140mm,2X120mm), Large Dual-Chamber ATX Mid-Tower Airflow Computer Case, Gaming PC Case, 420mm Radiator Support, Type-C 3.2 (Black RGB)",
+    "b": "HYXN",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51qTiI94aNL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1MSTF2K",
+        "url": "https://www.amazon.com/dp/B0G1MSTF2K?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "HYXN",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102811,
+    "c": "Case",
+    "n": "Zalman M4 SE Micro-ATX MATX RGB Gaming PC Desktop Computer Case",
+    "b": "Zalman",
+    "pr": 54.99,
+    "msrp": 54.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41G-GzdlMWL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0GKC5NK3J",
+        "url": "https://www.amazon.com/dp/B0GKC5NK3J?tag=tiereduptech-20",
+        "price": 54.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ZalmanUSA",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102812,
+    "c": "Case",
+    "n": "RAIDMAX i803 Premium ATX Gaming PC Case, Panoramic Tempered Glass, Built-in LCD Display Panel, Pre-Installed ARGB Fans, Dual Chamber Mid Tower, Supports 400mm GPU / 360mm Radiator (Case Only)",
+    "b": "Raidmax",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41yhWYPPdTL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0FW4RRVTX",
+        "url": "https://www.amazon.com/dp/B0FW4RRVTX?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Raidmax Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102813,
+    "c": "Case",
+    "n": "RAIDMAX X921 Mesh Airflow ATX Mid Tower Gaming PC Case, 6X 120mm Static RGB Color Fans Pre-Installed, Tempered Glass Side Panel, High Airflow Design, Supports 320mm GPU & 240mm Radiator (case only)",
+    "b": "Raidmax",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51fONGyaIPL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0BQ29N7CX",
+        "url": "https://www.amazon.com/dp/B0BQ29N7CX?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Raidmax Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102814,
+    "c": "Case",
+    "n": "Gaming Case Full Tower, with Tempered Glass Side Panel & ARGB LED Mirror, Supports 7x120mm Fans, GAMEMAX Abyss-TR",
+    "b": "GAMEMAX",
+    "pr": 129.99,
+    "msrp": 129.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51fcJC58BqL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Full",
+    "deals": {
+      "amazon": {
+        "asin": "B083WFR2GR",
+        "url": "https://www.amazon.com/dp/B083WFR2GR?tag=tiereduptech-20",
+        "price": 129.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102815,
+    "c": "Case",
+    "n": "MSI MPG GUNGNIR 110R - Premium Mid-Tower Gaming PC Case - Tempered Glass Side Panel - 4 x ARGB 120mm Fans - Liquid Cooling Support up to 360mm Radiator - Two-Tone Design",
+    "b": "MSI",
+    "pr": 146.87,
+    "msrp": 146.87,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/31Nc91YhcwL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0899H96NQ",
+        "url": "https://www.amazon.com/dp/B0899H96NQ?tag=tiereduptech-20",
+        "price": 146.87,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "OneDealOutlet Online",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102816,
+    "c": "Case",
+    "n": "Vetroo CT3 White ATX Gaming Computer PC Case, Panoramic Tempered Glass",
+    "b": "Vetroo",
+    "pr": 109.99,
+    "msrp": 109.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41N5Zj0KAEL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0G1XQMF9K",
+        "url": "https://www.amazon.com/dp/B0G1XQMF9K?tag=tiereduptech-20",
+        "price": 109.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Vetroo",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102817,
+    "c": "Case",
+    "n": "ESGAMING Zero M- ATX PC Case Mini-Tower Airflow Computer Gaming Case | 8° Slanted Base | Panoramic View | Fully Ventilated | Black-No Fan",
+    "b": "ESGAMING",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51VoF4tyHJL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mini",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ4L4GBC",
+        "url": "https://www.amazon.com/dp/B0GJ4L4GBC?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ESGAMING PC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102818,
+    "c": "Case",
+    "n": "GAMDIAS ATX Mid Tower Gaming Case with 3 x 120mm ARGB Computer Fans and Side Tempered Glass Panel Desktop PC Chassis with Swing Door",
+    "b": "Gamdias",
+    "pr": 99.95,
+    "msrp": 99.95,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41uYIHPoVQL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0C6ZMHCQP",
+        "url": "https://www.amazon.com/dp/B0C6ZMHCQP?tag=tiereduptech-20",
+        "price": 99.95,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Joes Tech Shop Inc",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102819,
+    "c": "Case",
+    "n": "MSI Mid-Tower PC Gaming Case – Tempered Glass Side Panel – 1 x 120mm aRGB Fan –1 x 120mm Fan – Liquid Cooling Support up to 240mm Radiator x 1 – MAG Vampiric 100R",
+    "b": "MSI",
+    "pr": 86.56,
+    "msrp": 86.56,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/314zFusbSUL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B08KHK67RP",
+        "url": "https://www.amazon.com/dp/B08KHK67RP?tag=tiereduptech-20",
+        "price": 86.56,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102820,
+    "c": "Case",
+    "n": "SAMA V Mesh Mid Tower PC Case - High Airflow PC Gaming Case Mesh Front Panel & Tempered Glass Side Panel, 3x140mm ARGB PWM Fans Pre-Installed, Supports ATX/M-ATX/ITX - White",
+    "b": "SAMA",
+    "pr": 59.99,
+    "msrp": 59.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41FSRucZ1+L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D8J9Q47Y",
+        "url": "https://www.amazon.com/dp/B0D8J9Q47Y?tag=tiereduptech-20",
+        "price": 59.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "SAMA Offical Store",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102821,
+    "c": "Case",
+    "n": "VEVOR PC Gaming Case, Mid-Tower, Computer Case with High-Airflow Tempered Glass Panel, Dust Filter, 2 x 120 mm Fans, Cable Management, for GPU up to 360 mm in Length, Compatible with ATX/M-ATX/ITX",
+    "b": "VEVOR",
+    "pr": 77.37,
+    "msrp": 77.37,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41B6Caza1CL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0F5PMVRNL",
+        "url": "https://www.amazon.com/dp/B0F5PMVRNL?tag=tiereduptech-20",
+        "price": 77.37,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102822,
+    "c": "Case",
+    "n": "RAIDMAX i620 Tri-Glass Panoramic Dual Chamber ATX Gaming PC Case, Tempered Glass Showcase Design, Pre-Installed 360mm ARGB Fans + 120mm Fan, High Airflow Layout, Supports 400mm GPU & 360mm Radiator",
+    "b": "Raidmax",
+    "pr": 89.99,
+    "msrp": 89.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41qRmZJfriL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0FY2CMY85",
+        "url": "https://www.amazon.com/dp/B0FY2CMY85?tag=tiereduptech-20",
+        "price": 89.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Raidmax Tech",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102823,
+    "c": "Case",
+    "n": "ASUS ROG Strix Helios GX601 White RGB Mid-Tower Gaming Case, Pre-Installed 4x140mm Fans, ATX/EATX, Tempered Glass, Aluminum Frame, GPU Braces, 420mm Radiator Support, Aura Sync, 2 Year Warranty",
+    "b": "ASUS",
+    "pr": 259.99,
+    "msrp": 259.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41T-2v3IuML._SL500_.jpg",
+    "ff": "E-ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0896Y1K7B",
+        "url": "https://www.amazon.com/dp/B0896Y1K7B?tag=tiereduptech-20",
+        "price": 259.99,
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102824,
+    "c": "Case",
+    "n": "ESGAMING ZEROMAX ATX PC Case Mid-Tower Airflow Gaming Computer Case | 8° Slanted Base| Tempered Glass Panoramic View | Fully Ventilated | Black-No Fan",
+    "b": "ESGAMING",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51+dHvPwD2L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0GJ4VLDXL",
+        "url": "https://www.amazon.com/dp/B0GJ4VLDXL?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "ESGAMING PC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102825,
+    "c": "Case",
+    "n": "GAMDIAS White Mid Tower Gaming Computer Case w/Display& App, ATX Tempered Glass PC Case, Built-in 3x120mm ARGB PWM Fans, Up to RTX GPU/VGA 410mm & 360mm AIO/Radiator & 6x120mm Fans & 160mm CPU Cooler",
+    "b": "GAMDIAS",
+    "pr": null,
+    "msrp": null,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41vTXjKv3qL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CXDX69LM",
+        "url": "https://www.amazon.com/dp/B0CXDX69LM?tag=tiereduptech-20",
+        "price": null,
+        "inStock": false,
+        "priceUnconfirmedReason": "no_buybox_no_new_offer",
+        "priceUnconfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": true,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "quarantinedAt": "2026-08-07"
+  },
+  {
+    "id": 102826,
+    "c": "Case",
+    "n": "MUSETEX ATX PC Case with 7 Pre-Installed PWM ARGB Fans Featuring Infinity Mirror Design, Type-C Mid Tower Computer Case with Full-View Dual Tempered Glass, Gaming PC Case, Black(K2)",
+    "b": "MUSETEX",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51v5VKtIyJL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0GDXM372W",
+        "url": "https://www.amazon.com/dp/B0GDXM372W?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "MUSETEX",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102827,
+    "c": "Case",
+    "n": "KEDIERS PC Case C570 ATX Mid Tower Tempered Glass Gaming Computer Open Frame Case with 5 PWM ARGB Fans,White",
+    "b": "KEDIERS",
+    "pr": 119.99,
+    "msrp": 119.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51Oy8lP6UEL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B09GPG5NHM",
+        "url": "https://www.amazon.com/dp/B09GPG5NHM?tag=tiereduptech-20",
+        "price": 119.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "SAIANSHOP",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102828,
+    "c": "Case",
+    "n": "Apevia Prism-WH Dual Chamber Micro-ATX Case with 5X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41eYqOBaKaL._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CL7NXB8R",
+        "url": "https://www.amazon.com/dp/B0CL7NXB8R?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102829,
+    "c": "Case",
+    "n": "Apevia Phantom-MESH-WH Micro-ATX Mesh PC Case with 5X 120MM ARGB Fans",
+    "b": "Apevia",
+    "pr": 69.99,
+    "msrp": 69.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41wViA38o5L._SL500_.jpg",
+    "ff": "mATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0D7YD2QC1",
+        "url": "https://www.amazon.com/dp/B0D7YD2QC1?tag=tiereduptech-20",
+        "price": 69.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102830,
+    "c": "Case",
+    "n": "Apevia Prism-Elite-WH Dual Chamber Mid Tower ATX Case with 7X ARGB PWM Fans",
+    "b": "Apevia",
+    "pr": 99.99,
+    "msrp": 99.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/51VNRjDsR+L._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0CGG83PKR",
+        "url": "https://www.amazon.com/dp/B0CGG83PKR?tag=tiereduptech-20",
+        "price": 99.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
+  },
+  {
+    "id": 102831,
+    "c": "Case",
+    "n": "Apevia Destiny-PRO-WH Mid Tower PC Case with 6X 120mm ARGB Fans",
+    "b": "Apevia",
+    "pr": 79.99,
+    "msrp": 79.99,
+    "r": null,
+    "img": "https://m.media-amazon.com/images/I/41ycdb3liNL._SL500_.jpg",
+    "ff": "ATX",
+    "tower": "Mid",
+    "deals": {
+      "amazon": {
+        "asin": "B0C1HKQ9CV",
+        "url": "https://www.amazon.com/dp/B0C1HKQ9CV?tag=tiereduptech-20",
+        "price": 79.99,
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Apevia",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-07"
+      }
+    },
+    "needsReview": false,
+    "source": "amazon-case-discovery",
+    "batchId": "amazon-case-2026-08-07",
+    "discoveredAt": "2026-08-07",
+    "addedAt": "2026-08-07T16:04:24.713Z"
   }
 ];
