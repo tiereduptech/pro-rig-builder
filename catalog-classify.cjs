@@ -56,7 +56,12 @@ function brandInText(text, brand) {
 
 // Chip giants (AMD/Intel/NVIDIA) are LAST so a component-maker brand wins over a
 // bare chip mention; for a real CPU the chip brand still matches as a fallback.
-const BRANDS = ['ASUS','MSI','Gigabyte','ASRock','Corsair','G.Skill','Kingston','Crucial','Samsung','Western Digital','WD','Seagate','SanDisk','Lexar','TeamGroup','Patriot','EVGA','Seasonic','be quiet!','Cooler Master','NZXT','Lian Li','Fractal Design','Thermaltake','Phanteks','Noctua','Arctic','Thermalright','Scythe','DeepCool','Hyte','Antec','Rosewill','Segotep','MONTECH','GAMEMAX','PCCOOLER','darkFlash','Super Flower','FSP','SAMA','ARESGAME','XPG','ADATA','Sapphire','PowerColor','XFX','Zotac','PNY','Inno3D','Gainward','Palit','AMD','Intel','NVIDIA'];
+// Budget/value case & chassis makers (Apevia, Jonsbo, MUSETEX, Zalman, Cougar,
+// Vetroo, KEDIERS) were absent, so their cases resolved to a null brand and got
+// dropped at the brand gate — a DISCOVERY hole, not a quality one: PCPartPicker
+// lists every one of these. All are distinctive tokens safe for the word-boundary
+// scan. Chip giants stay LAST so a real maker always wins over a bare chip mention.
+const BRANDS = ['ASUS','MSI','Gigabyte','ASRock','Corsair','G.Skill','Kingston','Crucial','Samsung','Western Digital','WD','Seagate','SanDisk','Lexar','TeamGroup','Patriot','EVGA','Seasonic','be quiet!','Cooler Master','NZXT','Lian Li','Fractal Design','Thermaltake','Phanteks','Noctua','Arctic','Thermalright','Scythe','DeepCool','Hyte','Antec','Rosewill','Segotep','MONTECH','GAMEMAX','PCCOOLER','darkFlash','Super Flower','FSP','SAMA','ARESGAME','XPG','ADATA','Sapphire','PowerColor','XFX','Zotac','PNY','Inno3D','Gainward','Palit','Apevia','Jonsbo','MUSETEX','Zalman','Cougar','Vetroo','KEDIERS','AMD','Intel','NVIDIA'];
 
 // Product-series → brand. Catches units whose title leads with a series name
 // (Corsair "RM850x", EVGA "SuperNOVA", ASUS "ROG Strix") and never says the brand.
@@ -99,25 +104,59 @@ function detectBrand(title, url) {
   return null;
 }
 
+// A "carrying case" / "travel case" / "tote bag" for a desktop is a padded BAG for
+// transporting a PC, not a chassis a build goes into. It trips looksCase via
+// "…Carrying Case for ATX Mid-Tower" / "Full Computer Tower", so it must be excluded
+// from the Case classifier AND rejected as non-buildable. Adjacency-safe: a real case
+// with a handle says "carrying handle", never "carrying case".
+const CARRY_BAG_RE = /\b(?:carrying|travel)\s+(?:case|bag)\b|\btote bag\b|\bcarry(?:ing)?\s+tote\b/i;
+
 // Strong, unambiguous per-category signal from a compat-stripped title.
 // Returns a category only when a real product noun is present — a bare model
 // mention ("RTX 5090") is NOT enough (it's usually a compatibility blurb).
 function detectCategory(cleanTitle) {
   const t = cleanTitle.toLowerCase();
+  // Case signal, computed FIRST because a case's own feature text ("supports ATX
+  // motherboard", "SFX power supply support") otherwise trips the Motherboard/PSU
+  // branches below — those two, unlike CPU/GPU/Storage, carry no case guard. Every
+  // looksCase branch requires a case/tower/chassis HEAD noun, so a real motherboard/
+  // PSU/CPU/GPU never trips it (none carries one), while budget SFF brands' phrasing
+  // — "Micro-ATX Gaming Case", "Mini-ITX Cube Case", "SFF Case" — that the old
+  // tower-noun-only rule silently dropped now does. A case FAN ("…120mm Case Fan")
+  // and a COOLER ("…Tower Cooler") also lack the head noun, so no cooler/AIO/radiator
+  // negative is needed (adding one would be the bug — "360mm AIO", "RTX 4090 GPU
+  // clearance", "SFX power supply" are the case's OWN specs). Only accessory-PRODUCT
+  // words that never appear as a real case's feature text are excluded (the prior
+  // rule's proven 0-FP set — NOT "panel"/"dust filter"/"tempered glass", which are features).
+  const looksCase =
+    /\b(pc|computer|gaming|tower|cube|full[\s-]?tower|mid[\s-]?tower|mini[\s-]?tower|micro[\s-]?tower|super[\s-]?tower)\s+(case|tower|chassis)\b/.test(t)
+    || /\b(atx|itx|matx|e[\s-]?atx|m[\s-]?atx|mini[\s-]?itx|micro[\s-]?atx|sff|small\s+form\s+factor)\s+(?:gaming\s+|mid[\s-]?tower\s+|mini[\s-]?tower\s+|full[\s-]?tower\s+)?(case|tower|chassis)\b/.test(t)
+    || /\b(mid|full|mini|micro|super)[\s-]?tower\b/.test(t)
+    || /\bpc case\b|\bcomputer case\b|\bgaming case\b|\bchassis\b/.test(t);
+  // A "(PC) Case Fan" trips looksCase via the "pc case" alternate but is a FAN, not a
+  // case. The discriminator is ADJACENCY: a real case says "Case WITH 6 fans" / "6
+  // ARGB Fans", never "Case Fan" — so an adjacent "case fan(s)" is always the fan
+  // product. (Non-adjacent "…Case with…Fans" is left alone.) Plus the accessory-
+  // PRODUCT words that never appear as a real case's feature text.
+  const caseAccessory =
+    /\bcase fans?\b/.test(t)
+    || CARRY_BAG_RE.test(t)                    // a carrying/travel bag is not a case
+    || /\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t);
+  const isCase = looksCase && !caseAccessory;
+
   if (/\b(ryzen|core\s*i[3579]|core\s*ultra|threadripper|epyc)\b/.test(t)
       && !/\b(cooler|fan|motherboard|case|bundle|combo)\b/.test(t)) return 'CPU';
   // GPU requires an actual graphics-card noun (or GDDR VRAM), not just a model number.
   if (/\b(rtx|gtx|radeon|geforce|arc)\b/.test(t)
       && /\b(graphics card|video card|graphics processing|gddr\d?)\b/.test(t)) return 'GPU';
-  if (/\bmotherboard\b/.test(t)
-      || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t))) return 'Motherboard';
+  if (!isCase && (/\bmotherboard\b/.test(t)
+      || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t)))) return 'Motherboard';
   if ((/\bddr[45]\b/.test(t) && /\b(kit|dimm|sodimm|udimm|memory)\b/.test(t))
       || /\b\d+\s*gb\s*\(\s*\d+\s*x\s*\d+\s*gb\s*\)/.test(t)) return 'RAM';
   if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure|heatsink)\b/.test(t)) return 'Storage';
-  if (/\b(power supply|psu)\b/.test(t)
-      || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t))) return 'PSU';
-  if (/\b(pc case|computer case|mid.?tower|full.?tower|mini.?tower|chassis)\b/.test(t)
-      && !/\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t)) return 'Case';
+  if (!isCase && (/\b(power supply|psu)\b/.test(t)
+      || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t)))) return 'PSU';
+  if (isCase) return 'Case';
   if (/\b(cpu cooler|aio|liquid cooler|air cooler|tower cooler|heatsink|liquid freezer)\b/.test(t)) return 'CPUCooler';
   return null;
 }
@@ -169,6 +208,7 @@ function notBuildableReason(title) {
     // (notBuildableReason takes only the title and is brand-agnostic; apply and
     // verify both call it first, so the product-type verdict always wins.)
     [/\bwiper blade\b/, 'wiper blade (automotive)'],
+    [CARRY_BAG_RE, 'carrying/travel bag'],   // padded bag for transporting a PC, not a chassis
     [/\b(raised|stand|replacement) feet\b/, 'case feet/stand'],
     [/\b(side )?panel guide\b/i, 'case panel guide (accessory)'],
     [/\bmounting kits?\b/, 'cooler mounting kit'],
@@ -572,9 +612,14 @@ function cleanManufacturer(s) {
     .replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '')
     .replace(/\s+/g, ' ').trim();
 }
-function resolveDiscoveryBrand(title, manufacturer, category) {
+// searchBrand — brand-from-search fallback. A brand-scoped query (SearchItems with
+// brand="Apevia") knows the maker even when the title omits it and the feed carries
+// no manufacturer. Used LAST, after the title reading and the manufacturer field,
+// so it only fills a genuine gap; it never overrides a real, plausible title brand.
+function resolveDiscoveryBrand(title, manufacturer, category, searchBrand) {
   let b = detectBrand(title, '');
   if (!b || implausibleBrandForCategory(b, category)) b = cleanManufacturer(manufacturer) || b || null;
+  if (!b && searchBrand) b = String(searchBrand).trim() || null;
   return b;
 }
 
