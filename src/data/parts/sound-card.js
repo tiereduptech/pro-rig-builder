@@ -71,7 +71,12 @@ export default [
       "amazon": {
         "price": 38,
         "url": "https://www.amazon.com/dp/B002LM0U2S?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -111,7 +116,12 @@ export default [
       "amazon": {
         "price": 35.88,
         "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "KART IT",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -132,7 +142,10 @@ export default [
       "amazon": {
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0BFHFSX4C?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   },
@@ -158,7 +171,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-03",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -181,7 +194,12 @@ export default [
       "amazon": {
         "price": 65,
         "url": "https://www.amazon.com/dp/B07TW2JQNN?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "HIFI College",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -202,7 +220,12 @@ export default [
       "amazon": {
         "price": 218.02,
         "url": "https://www.amazon.com/dp/B018JUPY3A?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "iT Hardware",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -222,7 +245,12 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B08ZD59L8H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "Creative Labs, Inc.",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -247,7 +275,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-03",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -269,7 +297,10 @@ export default [
       "amazon": {
         "price": 34,
         "url": "https://www.amazon.com/dp/B00F7120TQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   }

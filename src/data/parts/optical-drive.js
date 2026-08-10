@@ -26,7 +26,7 @@ export default [
     "readSpeed": "16x BD / 16x DVD",
     "writeSpeed": "16x BD-R",
     "needsReview": true,
-    "quarantinedAt": "2026-08-03",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -45,7 +45,10 @@ export default [
       "amazon": {
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0033Z2BAQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     },
     "storageType": "DVD Writer",
@@ -107,7 +110,7 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-03",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -129,7 +132,12 @@ export default [
       "amazon": {
         "price": 43,
         "url": "https://www.amazon.com/dp/B00ERJXTE4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "AmaMax (USA) Since 1993 l iMBAPrice® Authorized Distributor",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -150,7 +158,12 @@ export default [
       "amazon": {
         "price": 49.95,
         "url": "https://www.amazon.com/dp/B00VPK9S7K?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "RunTechMedia",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -171,7 +184,12 @@ export default [
       "amazon": {
         "price": 54.95,
         "url": "https://www.amazon.com/dp/B0167XSHV2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "Vinpower_Digital_Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -192,7 +210,12 @@ export default [
       "amazon": {
         "price": 36.99,
         "url": "https://www.amazon.com/dp/B00IIX2W7U?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "AmaMax (USA) Since 1993 l iMBAPrice® Authorized Distributor",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -213,7 +236,12 @@ export default [
       "amazon": {
         "price": 42,
         "url": "https://www.amazon.com/dp/B01BVWTJ8Y?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "AmaMax (USA) Since 1993 l iMBAPrice® Authorized Distributor",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -234,7 +262,12 @@ export default [
       "amazon": {
         "price": 49.95,
         "url": "https://www.amazon.com/dp/B09G9FRFT7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "Vinpower_Digital_Inc",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -255,7 +288,12 @@ export default [
       "amazon": {
         "price": 39,
         "url": "https://www.amazon.com/dp/B07355C9DP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "RunTechMedia",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -276,7 +314,10 @@ export default [
       "amazon": {
         "price": 28,
         "url": "https://www.amazon.com/dp/B0759T68KM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   },
@@ -297,7 +338,10 @@ export default [
       "amazon": {
         "price": 33.99,
         "url": "https://www.amazon.com/dp/B08D7HPS8Z?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   },
@@ -318,7 +362,12 @@ export default [
       "amazon": {
         "price": 50,
         "url": "https://www.amazon.com/dp/B09GF9R394?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "RunTechMedia",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -339,7 +388,12 @@ export default [
       "amazon": {
         "price": 40,
         "url": "https://www.amazon.com/dp/B07JJN3P5M?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "3p",
+        "priceSeller": "Smartbuy-depot",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
