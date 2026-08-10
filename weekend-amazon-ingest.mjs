@@ -76,16 +76,23 @@ const SPEC_BAR = {
   PSU: (s) => s.watts != null,
   Storage: (s) => s.cap != null && s.storageType != null,
 };
-const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i;
-
+// CATEGORY-FIRST (mirrors the case fix): a positive category classification is
+// TRUSTED over the feature-word accessory rules — a real PSU that lists "w/o USB Fan
+// Hub" or bundled cables, or an SSD "with Heatsink", no longer self-rejects. The
+// accessory gate still runs, but ONLY to attribute a reason to titles that did NOT
+// positively classify (genuine cables/enclosures/hubs return null and are caught
+// there). Prebuilts stay first via prebuiltSystemReason (multi-component: CPU+OS or
+// CPU+RAM+Storage) — the old local PREBUILT_RE was DROPPED because its bare "Desktop
+// PC" token rejected real desktop DIMMs ("…288-Pin Desktop PC") as prebuilts.
 function gateReason(cat, title, mfr) {
   if (isRenewedTitle(title)) return 'renewed_condition';
   const pre = CC.prebuiltSystemReason(title); if (pre) return `prebuilt:${pre}`;
-  if (PREBUILT_RE.test(title)) return 'prebuilt:re';
   const bun = CC.bundleReason(title); if (bun) return `bundle:${bun}`;
-  const acc = CC.notBuildableReason(title); if (acc) return `accessory:${acc}`;
   const signal = CC.detectCategory(CC.stripCompatClauses(title));
-  if (!signal) return 'unclassified';
+  if (!signal) {
+    const acc = CC.notBuildableReason(title);
+    return acc ? `accessory:${acc}` : 'unclassified';
+  }
   if (signal !== cat) return `miscategorized:${signal}`;
   const rej = CATEGORY_REJECT[cat](title); if (rej) return `categoryReject:${rej}`;
   const specs = CC.extractSpecs(title, cat);

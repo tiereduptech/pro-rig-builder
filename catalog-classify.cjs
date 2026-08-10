@@ -144,8 +144,12 @@ function detectCategory(cleanTitle) {
     || /\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t);
   const isCase = looksCase && !caseAccessory;
 
+  // A RAM kit / cooler / mobo that merely names a compatible CPU family ("…DDR4
+  // Desktop Memory with Heatsink, AMD Ryzen / Intel XMP") is NOT a CPU. Memory/DIMM
+  // words in the negative keep that compat text off the CPU branch — a real CPU never
+  // says "memory"/"DIMM" — so the RAM signal below (checked after) wins for it.
   if (/\b(ryzen|core\s*i[3579]|core\s*ultra|threadripper|epyc)\b/.test(t)
-      && !/\b(cooler|fan|motherboard|case|bundle|combo)\b/.test(t)) return 'CPU';
+      && !/\b(cooler|fan|motherboard|case|bundle|combo|memory|dimm|so-?dimm|udimm|rdimm)\b/.test(t)) return 'CPU';
   // GPU requires an actual graphics-card noun (or GDDR VRAM), not just a model number.
   if (/\b(rtx|gtx|radeon|geforce|arc)\b/.test(t)
       && /\b(graphics card|video card|graphics processing|gddr\d?)\b/.test(t)) return 'GPU';
@@ -153,7 +157,12 @@ function detectCategory(cleanTitle) {
       || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t)))) return 'Motherboard';
   if ((/\bddr[45]\b/.test(t) && /\b(kit|dimm|sodimm|udimm|memory)\b/.test(t))
       || /\b\d+\s*gb\s*\(\s*\d+\s*x\s*\d+\s*gb\s*\)/.test(t)) return 'RAM';
-  if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure|heatsink)\b/.test(t)) return 'Storage';
+  // A drive WITH a heatsink is still a drive (Samsung 9100 PRO w/Heatsink, WD SN850P
+  // PS5, Crucial P310 w/Heatsink) — "heatsink" is a FEATURE, not a category, and these
+  // are the PS5/gaming market. A BARE SSD-heatsink accessory carries no capacity and is
+  // dropped downstream by the spec bar; only cooler/case/fan/enclosure (product-type
+  // words a real drive never carries) exclude here.
+  if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure)\b/.test(t)) return 'Storage';
   if (!isCase && (/\b(power supply|psu)\b/.test(t)
       || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t)))) return 'PSU';
   if (isCase) return 'Case';
@@ -273,8 +282,15 @@ function extractSpecs(title, category) {
     const vram = t.match(/(\d+)\s*GB\s*(GDDR|VRAM)/i);
     if (vram) specs.vram = parseInt(vram[1]);
   } else if (category === 'PSU') {
-    const watts = t.match(/\b(\d{3,4})\s*W\b/);
-    if (watts) specs.watts = parseInt(watts[1]);
+    // Wattage in the formats the feed actually uses: "850W" / "850 Watt(s)",
+    // efficiency-adjacent "80+ Gold 850", and model-embedded "RM850x" / "HX1000" /
+    // "SF750". Largest plausible 200–2400W wins. The old /\b\d{3,4}\s*W\b/ read ONLY
+    // "850W" and silently specBar-dropped Corsair RMx, Cooler Master MWE, etc.
+    const W = []; let wm; const pushW = (v) => { v = parseInt(v); if (v >= 200 && v <= 2400) W.push(v); };
+    const reW = /\b(\d{3,4})\s*(?:w|watts?)\b/ig; while ((wm = reW.exec(t))) pushW(wm[1]);
+    if (!W.length) { const reE = /\b(?:80\s*\+?\s*plus\s+)?(?:gold|platinum|bronze|titanium|silver)\s+(\d{3,4})\b/ig; while ((wm = reE.exec(t))) pushW(wm[1]); }
+    if (!W.length) { const reM = /\b(?:RM|HX|CX|TX|GX|AX|SF|GF|GM|GQ|MWE)\s?-?(\d{3,4})[a-z]{0,3}\b/ig; while ((wm = reM.exec(t))) pushW(wm[1]); }
+    if (W.length) specs.watts = Math.max(...W);
     if (/80\+?\s*platinum/i.test(t)) specs.eff = '80+ Platinum';
     else if (/80\+?\s*gold/i.test(t)) specs.eff = '80+ Gold';
     else if (/80\+?\s*bronze/i.test(t)) specs.eff = '80+ Bronze';
@@ -429,7 +445,12 @@ function ramRejectReason(name) {
 function storageAttributes(title) {
   const t = String(title || '');
   let iface = null;
-  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t) || /\busb\b/i.test(t)) iface = 'USB';
+  // External transport = USB iface. A bare "usb" mention alone must NOT make an
+  // INTERNAL drive external (an "ORICO 1TB SATA SSD 2.5\" Internal … USB" is internal):
+  // the external/portable/enclosure/thunderbolt words are the real signal; a lone
+  // "usb" only counts when the title does not also say "internal".
+  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t)) iface = 'USB';
+  else if (/\busb\b/i.test(t) && !/\binternal\b/i.test(t)) iface = 'USB';
   else if (/\bsas\b/i.test(t)) iface = 'SAS';
   else if (/\bnvme\b/i.test(t) || /\bpci[\s-]?e(xpress)?\b/i.test(t)) iface = 'NVMe';  // "PCIe" / "PCI Express" / "PCI-Express"
   else if (/\bsata\b/i.test(t)) iface = 'SATA';
