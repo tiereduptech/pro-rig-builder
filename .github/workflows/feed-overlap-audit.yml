@@ -1,0 +1,47 @@
+name: Newegg Feed Overlap Audit (read-only)
+
+# Answers ONE question: does mp_MKPL.txt.gz carry rows the main mp feed does not?
+# The nightly sftp-ingest spends ~34 of its 60 minutes on that 886MB file and then dies
+# before committing, so MKPL has to move — but whether it can be DROPPED or must be
+# RESCHEDULED depends on this measurement.
+#
+# Read-only by construction: contents: read, no commit step, an assert-nothing-written
+# step, and the script only ever writes a report JSON under catalog-build/.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install dependencies
+        run: npm ci
+      - name: Stream both feeds and compare (read-only)
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
+          RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
+        run: node feed-overlap-audit.cjs
+      - name: Assert nothing written to the catalog
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::catalog was modified by a read-only audit"; git diff --stat -- src/data/; exit 1
+          fi
+          echo "Clean: no catalog writes."
+      - name: Upload overlap report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: feed-overlap-audit
+          path: catalog-build/feed-overlap-audit.json
+          if-no-files-found: error
