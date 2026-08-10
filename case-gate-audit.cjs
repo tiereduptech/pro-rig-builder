@@ -93,6 +93,12 @@ const qualifierConflict = (a, b) => {
 const normUPC = (u) => String(u || '').replace(/\D/g, '').replace(/^0+/, '');
 const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_/]/g, ''); return (c.length < 5 || /^\d+$/.test(c)) ? '' : c; };
 
+// Chassis makers trusted on the Newegg 3P path: every brand already present on a Case row
+// in the live catalog, plus the tier lists. Data-driven so it stays current, and populated
+// from the catalog at startup (see below). Deliberately conservative — a genuinely NEW case
+// brand only enters via first-party or Best Buy, never via a marketplace seller's filing.
+const CASE_BRANDS = new Set([...TIER1, ...TIER2]);
+
 // ── the gate ladder — first reason wins ─────────────────────────────────────
 // Mirrors what the Phase-4 writer will enforce, in the same order, so this table
 // predicts the write exactly.
@@ -105,22 +111,67 @@ function gateLadder(row) {
   // 2. whole-machine / multi-component
   const pre = CC.prebuiltSystemReason(title); if (pre) return `prebuilt:${pre}`;
   const bun = CC.bundleReason(title); if (bun) return `bundle:${bun}`;
-  // 3. category classification (category-first: a positive Case signal is trusted
+  // 3. Case SCOPE, before classification. A rackmount / server chassis is out of scope no
+  //    matter which category its title reads as, and putting scope first stops those rows
+  //    being charged to "miscategorized:Storage" (which is what happens when a 4U chassis
+  //    lists HDD bays) — the reject table should name the real reason.
+  const scope = CC.caseRejectReason(title);
+  if (scope) return `caseReject:${scope}`;
+  // 4. category classification (category-first: a positive Case signal is trusted
   //    over the feature-word accessory rules)
   const signal = CC.detectCategory(CC.stripCompatClauses(title));
   if (signal && signal !== 'Case') return `miscategorized:${signal}`;
   if (!signal) {
-    const acc = CC.notBuildableReason(title);
-    return acc ? `accessory:${acc}` : 'not_a_case';
+    // SOURCE PRIOR — but ONLY from a source whose categorisation is trustworthy.
+    //
+    // Newegg FIRST-PARTY and Best Buy file their own catalogue, so their case category is
+    // strong evidence and beats the title: plenty of real chassis never say "case" at all
+    // ("Antec P10 FLUX, F-LUX Platform, 5 x 120mm Fans…"), and rejecting those was the
+    // single largest gate loss in the audit.
+    //
+    // Newegg MARKETPLACE is the opposite. Third-party sellers file anything under any
+    // leaf: the same case category served Siemens contact blocks, Baldor electric motors,
+    // Bryant locking plugs, Eaton neutral kits, a 3Dconnexion SpaceMouse and an HPE riser
+    // kit — 72 of 817 3P rows carry no case noun whatsoever. So for 3P the prior is not
+    // evidence, and a POSITIVE Case classification is required instead.
+    if (!row.trustPrior) {
+      // For 3P the prior is not evidence, but requiring a positive Case classification
+      // outright threw away 63 tier-1 chassis whose titles are pure feature lists (Antec
+      // C5 ARGB, HYTE Y70 TOUCH, be quiet! PURE BASE 600, Thermaltake View 380 XL, MSI MPG
+      // GUNGNIR 300R). So the 3P fallback needs a discriminator, and the one that actually
+      // separates the two populations is BRAND plus a clean product name:
+      //   • a maker we already carry in Cases (or a known chassis brand) — kills the
+      //     Siemens / Eaton / HPE / 3Dconnexion / Supermicro-blade / AAAwave rows outright
+      //   • no accessory noun in the product-name segment — kills the case-BRAND accessories
+      //     (Lian Li UNI Fan Controller, NZXT Control Hub, Thermaltake TT Sync Controller)
+      const bk = String(CC.resolveDiscoveryBrand(title, row.mfr, 'Case') || '').toLowerCase().trim();
+      if (!bk || !CASE_BRANDS.has(bk)) return 'not_a_case:3p_unknown_brand';
+      const head = title.split(/[,;]/)[0];
+      if (/\b(accessory|controller|hub|kit|bracket|adapter|riser|reader|deck|dock|enclosure|benchtable|cover|panel)\b/i.test(head)) {
+        return 'not_a_case:3p_accessory_name';
+      }
+    }
+    // The accessory rules still run FIRST, so the prior cannot launder a fan controller or
+    // a rail kit into Case.
+    // Product-name segment only — a case's "…Riser Cable Included" / "…Fan Controller" /
+    // "…cable management" feature clauses are not accessory products. See
+    // accessoryProductReason for the position-not-vocabulary rationale.
+    const acc = CC.accessoryProductReason(title);
+    if (acc) return `accessory:${acc}`;
+    // fall through on the prior — treated as Case
   }
-  // 4. brand
+  // 5. brand
   const brand = CC.resolveDiscoveryBrand(title, row.mfr, 'Case');
   if (!brand) return 'no_brand';
-  // 5. price band
+  // 6. price band — QUARANTINE, NOT DROP. A bounds miss is stamped on the row and the row
+  //    is still admitted (needsReview), because a stale ceiling must never silently delete
+  //    good data: that is the DDR5 lesson, where $10/GB rejected 95% of real DDR5 and only
+  //    quarantining made the mistake recoverable. Three of the 13 over-ceiling rows here are
+  //    genuine halo chassis (SilverStone ALTA F2, Lian Li Odyssey X, GIGABYTE AORUS C700).
   const p = row.price;
   if (p == null || !(p > 0)) return 'no_price';
-  if (p > CASE_PRICE.ceiling) return 'price:above_ceiling';
-  if (p < CASE_PRICE.floor) return 'price:below_floor';
+  if (p > CASE_PRICE.ceiling) { row._priceFlag = { reason: 'above_ceiling', price: p, ceiling: CASE_PRICE.ceiling }; return null; }
+  if (p < CASE_PRICE.floor) { row._priceFlag = { reason: 'below_floor', price: p, floor: CASE_PRICE.floor }; return null; }
   return null;   // ACCEPT
 }
 
@@ -160,6 +211,9 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
       if (it) { neItems.add(String(it).toUpperCase()); markHidden(String(it).toUpperCase(), p); }
     }
   }
+  // every brand already on a Case row joins the 3P-trusted set
+  for (const p of ourCases) { const b = String(p.b || '').toLowerCase().trim(); if (b) CASE_BRANDS.add(b); }
+
   // name index over OUR cases only (token overlap needs same-category scope)
   const ourIdx = ourCases.map((p) => ({ p, t: tokens(p.n), m: modelToks(p.n), b: String(p.b || '').toLowerCase() }));
 
@@ -200,17 +254,56 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   };
   load('case-sweep-amazon.json', (r) => ({
     source: 'amazon', asin: r.asin, name: r.title, mfr: r.mfr || r.brandField, price: r.price,
+    // keyword search, not a curated leaf — the title must carry the signal
+    trustPrior: false,
     upc: null, mpn: null, url: `https://www.amazon.com/dp/${r.asin}`, availability: r.availability,
   }), 'Amazon');
   load('case-sweep-newegg.json', (r) => ({
     source: 'newegg', itemNumber: r.itemNumber, name: r.name, mfr: r.brand,
+    // first-party files its own catalogue; a marketplace seller's leaf choice is not evidence
+    trustPrior: r.sellerClass === 'official',
     price: r.sale != null && r.sale > 0 ? r.sale : r.retail,
     upc: r.upc, mpn: r.mpn, url: r.url, sellerClass: r.sellerClass, availability: r.availability,
   }), 'Newegg');
   load('case-sweep-bestbuy.json', (r) => ({
-    source: 'bestbuy', bbSku: r.sku, name: r.name, mfr: r.mfr, price: r.price,
+    source: 'bestbuy', bbSku: r.sku, name: r.name, mfr: r.mfr, price: r.price, trustPrior: true,
     upc: r.upc, mpn: r.mpn, url: r.url, availability: `${r.onlineAvailability}`,
   }), 'Best Buy');
+
+  // ── 3P MARKUP CORROBORATION ───────────────────────────────────────────────
+  // An absolute per-category ceiling cannot catch a marketplace markup: "MSI MPG VELOX
+  // 300R AIRFLOW PZ WHITE" (real ~$120) is listed 3P at $809.99, comfortably under the
+  // $1200 halo-chassis ceiling. The corroboration available is the sweep itself — the same
+  // chassis is usually also listed first-party or by a saner 3P seller — plus the price we
+  // already carry for that product. A 3P row priced far above the cheapest sighting of the
+  // SAME brand+model is an outlier, and outliers are quarantined, never dropped (the
+  // standing price-gate rule) so a genuine price rise is reviewable rather than lost.
+  const MARKUP_MULT = 1.6;
+  const groupKey = (brand, name) => {
+    const mt = [...modelToks(name)].sort().join('-');
+    return `${String(brand || '').toLowerCase()}|${mt}`;
+  };
+  const groupMin = new Map();
+  const noteMin = (brand, name, price) => {
+    if (!(price > 0)) return;
+    const mt = modelToks(name);
+    if (!mt.size) return;                       // no model token → nothing to corroborate against
+    const k = groupKey(brand, name);
+    if (!groupMin.has(k) || price < groupMin.get(k)) groupMin.set(k, price);
+  };
+  for (const s of sources) {
+    for (const row of s.rows) noteMin(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case'), row.name, row.price);
+  }
+  for (const p of ourCases) noteMin(p.b, p.n, p.pr);   // the price we already publish counts too
+  const markupVerdict = (row) => {
+    if (!(row.price > 0)) return null;
+    const mt = modelToks(row.name);
+    if (!mt.size) return null;
+    const lo = groupMin.get(groupKey(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case'), row.name));
+    if (lo == null || !(lo > 0)) return null;
+    const mult = row.price / lo;
+    return mult > MARKUP_MULT ? { lo, mult: Number(mult.toFixed(2)) } : null;
+  };
 
   // ── run ───────────────────────────────────────────────────────────────────
   const all = [];
@@ -218,12 +311,11 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   for (const s of sources) {
     const st = { found: s.rows.length, marketplace: 0, deduped: 0, dedupedHidden: 0, accepted: 0, rejected: 0 };
     for (const row of s.rows) {
-      // Newegg policy gate: first-party only (a 3P Newegg link is not one we publish)
-      if (row.source === 'newegg' && row.sellerClass !== 'official') {
-        st.marketplace++;
-        all.push({ ...row, verdict: 'policy:newegg_marketplace', tier: brandTier(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case') || row.mfr) });
-        continue;
-      }
+      // Newegg 3P is ADMITTED (decision 2026-08-10), tagged priceSource:'3p' + seller so
+      // the disclosure badge renders — mirroring the Amazon 3P policy shipped 2026-08-05.
+      // It runs the IDENTICAL gate ladder as first-party; seller class is a label on the
+      // row, not a gate. Counted separately so the split stays visible.
+      if (row.source === 'newegg' && row.sellerClass !== 'official') st.marketplace++;
       const dupe = dupeReason(row);
       const brand = CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case');
       const tier = brandTier(brand || row.mfr);
@@ -235,7 +327,14 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
       }
       const gate = gateLadder(row);
       if (gate) { st.rejected++; all.push({ ...row, brand, tier, verdict: gate, legacyPrebuilt: LEGACY_PREBUILT_RE.test(row.name) }); }
-      else { st.accepted++; all.push({ ...row, brand, tier, verdict: 'ACCEPT', legacyPrebuilt: LEGACY_PREBUILT_RE.test(row.name) }); }
+      else {
+        st.accepted++;
+        // ACCEPTED, but a marketplace markup is held for review rather than published.
+        const mk = (row.sellerClass && row.sellerClass !== 'official') ? markupVerdict(row) : null;
+        if (mk) st.markupHeld = (st.markupHeld || 0) + 1;
+        if (row._priceFlag) st.priceHeld = (st.priceHeld || 0) + 1;
+        all.push({ ...row, brand, tier, verdict: 'ACCEPT', markup: mk, priceFlag: row._priceFlag || null, legacyPrebuilt: LEGACY_PREBUILT_RE.test(row.name) });
+      }
     }
     perSource[s.label] = st;
   }
@@ -252,9 +351,9 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   console.log(`catalog: ${parts.length} products, ${ourCases.length} Case rows (${ourCases.filter((p) => !p.needsReview).length} live)\n`);
   console.log('PER SOURCE');
   console.log(bar);
-  console.log(`  ${'source'.padEnd(10)} ${'found'.padStart(7)} ${'3P drop'.padStart(8)} ${'already have'.padStart(13)} ${'(of those, hidden)'.padStart(19)} ${'gate-rejected'.padStart(14)} ${'ACCEPT'.padStart(7)}`);
+  console.log(`  ${'source'.padEnd(10)} ${'found'.padStart(7)} ${'3P (kept)'.padStart(9)} ${'already have'.padStart(13)} ${'(of those, hidden)'.padStart(19)} ${'gate-rejected'.padStart(14)} ${'ACCEPT'.padStart(7)}`);
   for (const [k, s] of Object.entries(perSource)) {
-    console.log(`  ${k.padEnd(10)} ${String(s.found).padStart(7)} ${String(s.marketplace).padStart(8)} ${String(s.deduped).padStart(13)} ${String(s.dedupedHidden || 0).padStart(19)} ${String(s.rejected).padStart(14)} ${String(s.accepted).padStart(7)}`);
+    console.log(`  ${k.padEnd(10)} ${String(s.found).padStart(7)} ${String(s.marketplace).padStart(9)} ${String(s.deduped).padStart(13)} ${String(s.dedupedHidden || 0).padStart(19)} ${String(s.rejected).padStart(14)} ${String(s.accepted).padStart(7)}`);
   }
   const tot = Object.values(perSource).reduce((a, s) => ({
     found: a.found + s.found, marketplace: a.marketplace + s.marketplace,
@@ -262,7 +361,17 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
     rejected: a.rejected + s.rejected, accepted: a.accepted + s.accepted,
   }), { found: 0, marketplace: 0, deduped: 0, dedupedHidden: 0, rejected: 0, accepted: 0 });
   console.log(bar);
-  console.log(`  ${'TOTAL'.padEnd(10)} ${String(tot.found).padStart(7)} ${String(tot.marketplace).padStart(8)} ${String(tot.deduped).padStart(13)} ${String(tot.dedupedHidden).padStart(19)} ${String(tot.rejected).padStart(14)} ${String(tot.accepted).padStart(7)}`);
+  console.log(`  ${'TOTAL'.padEnd(10)} ${String(tot.found).padStart(7)} ${String(tot.marketplace).padStart(9)} ${String(tot.deduped).padStart(13)} ${String(tot.dedupedHidden).padStart(19)} ${String(tot.rejected).padStart(14)} ${String(tot.accepted).padStart(7)}`);
+  const accepts = all.filter((r) => r.verdict === 'ACCEPT');
+  const acc3p = accepts.filter((r) => r.sellerClass && r.sellerClass !== 'official').length;
+  const held = accepts.filter((r) => r.markup);
+  console.log(`\n  of the ${tot.accepted} accepted: ${tot.accepted - acc3p} first-party · ${acc3p} Newegg 3P (tagged priceSource:'3p' + seller, disclosure badge required)`);
+  const priceHeld = accepts.filter((r) => r.priceFlag);
+  const anyHeld = accepts.filter((r) => r.markup || r.priceFlag);
+  console.log(`  3P markup corroboration: ${held.length} priced >${MARKUP_MULT}x the cheapest sighting of the same brand+model → QUARANTINE`);
+  console.log(`  price band (floor $${CASE_PRICE.floor} / ceiling $${CASE_PRICE.ceiling}): ${priceHeld.length} out of band → QUARANTINE (never dropped)`);
+  console.log(`  => ${anyHeld.length} of ${tot.accepted} admitted-but-held on price; ${tot.accepted - anyHeld.length} price-clean`);
+  for (const r of held.slice(0, 6)) console.log(`      ${(r.brand || '?').padEnd(14)} $${String(r.price).padStart(8)} vs $${r.markup.lo} (${r.markup.mult}x)  ${r.name.slice(0, 52)}`);
 
   // gate table, ranked by mainstream kills
   const gates = new Map();

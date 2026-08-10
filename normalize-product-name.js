@@ -251,6 +251,7 @@ export const CEILINGS_LAST_REVIEWED = {
   CPU:     '2026-07-28',   // absolute TOTAL band added
   Storage: '2026-07-30',   // NeweggBusiness re-verify amid 2026 NAND shortage — bounds confirmed, unchanged
   PSU:     '2026-07-30',   // NeweggBusiness re-verify: 850 Gold 0.153/W, 1000 Platinum 0.280/W, 550 Bronze 0.175/W; high ~0.28/W, 0.8 ceiling = 2.9x headroom — confirmed, unchanged
+  Case:    '2026-08-10',   // FIRST calibration — Case had no band at all; live-catalog percentiles (n=364), see PRICE_TABLE.Case
 };
 export const PRICE_TABLE = {
   RAM: {
@@ -281,6 +282,18 @@ export const PRICE_TABLE = {
   // part). Added 2026-07-28 — CPU previously had NO absolute bound (audit §2).
   CPU: {
     'TOTAL': { floor: 25, ceiling: 1500 },
+  },
+  // Case, like CPU, has no meaningful per-unit ($/litre is not a thing buyers price on),
+  // so it is gated on TOTAL price. Added 2026-08-10 — Case previously had NO absolute
+  // bound, so the case ingest ran with the price gate silently skipping every row.
+  // Calibrated against the 364 live priced cases: min $30.32, p25 $75, p50 $110, p95
+  // $288, p99 $499, max $984 (Cooler Master HAF 700 EVO). Floor $20 sits under the
+  // cheapest real budget chassis (~$30 Apevia/Raidmax/DIYPC) so a $9 "case" — always an
+  // accessory or a mis-attached link — is caught. Ceiling $1200 clears the observed max
+  // with headroom, deliberately generous per the DDR5 lesson that a TIGHT ceiling is the
+  // disaster mode; it still isolates a prebuilt PC mislabelled as a chassis.
+  Case: {
+    'TOTAL': { floor: 20, ceiling: 1200 },
   },
 };
 // Above this fraction of graded rows hitting a bound, suspect the TABLE is stale
@@ -315,9 +328,9 @@ function resolvePriceKey(category, specs, price) {
     const w = s.watts || s.wattage;
     return { group: 'PSU', key: 'W', ppu: w > 0 ? price / w : null, unit: '$/W' };
   }
-  if (category === 'CPU') {
+  if (category === 'CPU' || category === 'Case') {
     // Gated on TOTAL price (no meaningful per-unit); ppu carries the raw price.
-    return { group: 'CPU', key: 'TOTAL', ppu: price > 0 ? price : null, unit: '$' };
+    return { group: category, key: 'TOTAL', ppu: price > 0 ? price : null, unit: '$' };
   }
   return { group: null, key: null, ppu: null, unit: null };
 }

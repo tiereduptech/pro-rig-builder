@@ -41,6 +41,10 @@ function stripCompatClauses(title) {
     /\bnvidia\s+g-?sync\b|\bg-?sync\s+compatible\b/gi,     // "NVIDIA G-Sync", "G-Sync Compatible"
     /\bamd\s+expo\b|\bexpo\s+(?:ready|profile|technology)\b/gi, // "AMD EXPO", "EXPO Ready"
     /\bintel\s+xmp\b|\bxmp\s+(?:ready|profile|\d(?:\.\d)?)\b/gi, // "Intel XMP", "XMP 3.0"
+    // "for Computer Case" / "for PC Case" — a compat clause on a case ACCESSORY. Without
+    // this, a 5.25" front-panel USB hub "for Computer Case Optical Drives Bay" reads as a
+    // Case off the very clause that says it merely fits one.
+    /\bfor\s+(?:computer|pc|desktop)\s+cases?\b[^|,]*/gi,
   ];
   for (const re of clauses) s = s.replace(re, ' ');
   return s.replace(/\s+/g, ' ').trim();
@@ -99,8 +103,28 @@ function detectBrand(title, url) {
   if (fromUrl) return fromUrl;
   // 2) series → brand map.
   for (const [re, brand] of SERIES_BRAND) if (re.test(clean)) return brand;
-  // 3) bare brand-name scan, word-boundary, chip giants last.
-  for (const b of BRANDS) if (brandInText(clean, b)) return b;
+  // 3) bare brand-name scan, word-boundary. EARLIEST OCCURRENCE IN THE TITLE WINS, not
+  //    earliest in the BRANDS array — array position is arbitrary, title position is
+  //    evidence, because a listing leads with its maker. The old first-in-array scan read
+  //    "Lian Li A3-mATX PC Case - Wood Edition … WD" and "JONSBO TK-4 WD/BK Wood ATX PC
+  //    Case" as **WD** (Western Digital), purely because 'WD' sits ahead of 'Lian Li' in
+  //    the array and the colour code "WD" (Wood) is a standalone token. Wood-finish cases
+  //    are a whole product line now, so this mis-branded 6 real chassis.
+  //
+  //    Chip giants stay LAST regardless of position: they are only consulted when no
+  //    component maker matched at all, so "ASUS ROG … for AMD Ryzen" cannot read as AMD.
+  const CHIP_GIANTS = new Set(['AMD', 'Intel', 'NVIDIA']);
+  const lower = clean.toLowerCase();
+  let best = null, bestAt = Infinity;
+  for (const b of BRANDS) {
+    if (CHIP_GIANTS.has(b)) continue;
+    if (!brandInText(clean, b)) continue;
+    const at = lower.indexOf(b.toLowerCase());
+    if (at !== -1 && at < bestAt) { best = b; bestAt = at; }
+    else if (at === -1 && best === null) { best = b; bestAt = Number.MAX_SAFE_INTEGER; }
+  }
+  if (best) return best;
+  for (const b of BRANDS) if (CHIP_GIANTS.has(b) && brandInText(clean, b)) return b;
   return null;
 }
 
@@ -128,20 +152,44 @@ function detectCategory(cleanTitle) {
   // clearance", "SFX power supply" are the case's OWN specs). Only accessory-PRODUCT
   // words that never appear as a real case's feature text are excluded (the prior
   // rule's proven 0-FP set — NOT "panel"/"dust filter"/"tempered glass", which are features).
+  // PLURAL "cases" is matched everywhere alongside the singular. Newegg's feed titles
+  // carry the retailer's own category suffix — literally "(Computer Cases - ATX Form)"
+  // — and a singular-only `\bcase\b` misses it, so 18 real chassis (Fractal North XL,
+  // be quiet! Pure Base 501, DIYPC ×7, Montech XR Wood, Bgears) classified as nothing.
+  // "desktop" joins the head nouns for the same reason: "InWin BL631 mATX Desktop case
+  // with 300W TFX PSU" had no matching head noun, so isCase was false and the (!isCase)
+  // PSU branch below claimed it off the "300W" — a case filed as a power supply.
   const looksCase =
-    /\b(pc|computer|gaming|tower|cube|full[\s-]?tower|mid[\s-]?tower|mini[\s-]?tower|micro[\s-]?tower|super[\s-]?tower)\s+(case|tower|chassis)\b/.test(t)
-    || /\b(atx|itx|matx|e[\s-]?atx|m[\s-]?atx|mini[\s-]?itx|micro[\s-]?atx|sff|small\s+form\s+factor)\s+(?:gaming\s+|mid[\s-]?tower\s+|mini[\s-]?tower\s+|full[\s-]?tower\s+)?(case|tower|chassis)\b/.test(t)
-    || /\b(mid|full|mini|micro|super)[\s-]?tower\b/.test(t)
-    || /\bpc case\b|\bcomputer case\b|\bgaming case\b|\bchassis\b/.test(t);
+    /\b(pc|computer|gaming|desktop|tower|cube|full[\s-]?tower|mid[\s-]?tower|mini[\s-]?tower|micro[\s-]?tower|super[\s-]?tower)\s+(cases?|towers?|chassis)\b/.test(t)
+    || /\b(atx|itx|matx|e[\s-]?atx|m[\s-]?atx|mini[\s-]?itx|micro[\s-]?atx|sff|small\s+form\s+factor)\s+(?:gaming\s+|mid[\s-]?tower\s+|mini[\s-]?tower\s+|full[\s-]?tower\s+)?(cases?|towers?|chassis)\b/.test(t)
+    || /\b(mid|full|mini|micro|super)[\s-]?towers?\b/.test(t)
+    || /\bpc cases?\b|\bcomputer cases?\b|\bgaming cases?\b|\bchassis\b/.test(t);
   // A "(PC) Case Fan" trips looksCase via the "pc case" alternate but is a FAN, not a
   // case. The discriminator is ADJACENCY: a real case says "Case WITH 6 fans" / "6
   // ARGB Fans", never "Case Fan" — so an adjacent "case fan(s)" is always the fan
   // product. (Non-adjacent "…Case with…Fans" is left alone.) Plus the accessory-
   // PRODUCT words that never appear as a real case's feature text.
+  // A bare "riser" / "vertical gpu" token USED to sit in this veto list, and it cost
+  // real chassis: an ITX case that SHIPS WITH a riser cable says so in its title
+  // ("Fractal Design Ridge … Console PC Case with PCIe 4.0 Riser", "Cooler Master NCORE
+  // 100 MAX … PCIe 4.0 Riser", "HYTE Y40 … Vertical GPU Case … Riser Cable"). The riser
+  // is the case's own included part, not the product. So the veto now needs the
+  // accessory to be the PRODUCT: "vertical GPU <mount|bracket|kit|…>" is a bracket you
+  // buy separately, while "Vertical GPU Case" is a case. Genuine standalone risers carry
+  // no case head noun at all, so they classify as nothing and notBuildableReason's
+  // riser-cable rule catches them in the null-signal branch instead.
   const caseAccessory =
     /\bcase fans?\b/.test(t)
     || CARRY_BAG_RE.test(t)                    // a carrying/travel bag is not a case
-    || /\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t);
+    || /\b(accessory|upgrade kit|replacement|guide|feet|lift stand)\b/i.test(t)
+    // "Vertical GPU MOUNT" is standard case-feature language — the Cooler Master NR200
+    // advertises "Vertical GPU Mount with 330mm GPU Clearance" and was knocked out of Case
+    // (and then claimed by the PSU branch off its "SFX PSU" clearance note). Only the
+    // separately-sold hardware nouns veto; "PC Case Vertical GPU Mount Bracket Kit" still
+    // matches on bracket/kit.
+    // "mount" is optional in the middle, not a trigger on its own: "Vertical GPU MOUNT
+    // BRACKET Kit" is hardware, "Vertical GPU Mount with 330mm GPU Clearance" is a feature.
+    || /\bvertical\s+gpu\s+(?:mount(?:ing)?\s+)?(bracket|kit|holder|stand|adapter)\b/i.test(t);
   const isCase = looksCase && !caseAccessory;
 
   // A RAM kit / cooler / mobo that merely names a compatible CPU family ("…DDR4
@@ -153,7 +201,16 @@ function detectCategory(cleanTitle) {
   // GPU requires an actual graphics-card noun (or GDDR VRAM), not just a model number.
   if (/\b(rtx|gtx|radeon|geforce|arc)\b/.test(t)
       && /\b(graphics card|video card|graphics processing|gddr\d?)\b/.test(t)) return 'GPU';
-  if (!isCase && (/\bmotherboard\b/.test(t)
+  // A bare "motherboard" is only a MOTHERBOARD signal when the title is not merely
+  // stating what board it SUPPORTS. Case titles routinely say "Back Connect Motherboard
+  // Support" / "Supports ATX Motherboard" / "Motherboard Tray", and for the Antec FLUX
+  // Wood and FLUX Rear — whose titles name no case noun at all — that support text was
+  // the whole basis for filing a chassis as a motherboard. A real board never phrases it
+  // that way, and the chipset+socket route below still catches boards that omit the word.
+  const moboIsSupportText =
+    /\b(support|supports|supporting|supported|compatible|compatibility|fits?|for|accepts?|up\s+to)\b[^.,|]{0,24}\bmotherboards?\b/.test(t)
+    || /\bmotherboards?\b[^.,|]{0,14}\b(support|supported|compatible|compatibility|tray|standoffs?|cutout|mounting)\b/.test(t);
+  if (!isCase && ((/\bmotherboard\b/.test(t) && !moboIsSupportText)
       || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t)))) return 'Motherboard';
   if ((/\bddr[45]\b/.test(t) && /\b(kit|dimm|sodimm|udimm|memory)\b/.test(t))
       || /\b\d+\s*gb\s*\(\s*\d+\s*x\s*\d+\s*gb\s*\)/.test(t)) return 'RAM';
@@ -163,10 +220,28 @@ function detectCategory(cleanTitle) {
   // dropped downstream by the spec bar; only cooler/case/fan/enclosure (product-type
   // words a real drive never carries) exclude here.
   if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure)\b/.test(t)) return 'Storage';
-  if (!isCase && (/\b(power supply|psu)\b/.test(t)
+  // Same feature-text guard the Motherboard branch needs, for the same reason: a case
+  // describes its power-supply BAY. "Antec FLUX Rear, … Front PSU Chamber, Back Connect"
+  // names no case noun, so isCase was false and the bare "PSU" filed a chassis as a power
+  // supply. A real PSU listing says "850W 80+ Gold Fully Modular Power Supply" — it never
+  // calls itself a PSU chamber/shroud/bracket/bay, and never states a PSU LENGTH limit.
+  const psuIsSupportText =
+    /\bpsu\s+(chamber|shroud|cover|bracket|bay|cage|mount|tunnel|compartment|position|support|clearance|length)\b/.test(t)
+    || /\b(support|supports|supporting|compatible|fits?|for|up\s+to|accepts?)\b[^.,|]{0,24}\b(psu|power supply)\b/.test(t)
+    || /\b(atx|sfx|sfx-l|tfx|flex)\s*\/?\s*(atx|sfx|sfx-l|tfx|flex)?\s*(psu|power supply)\s*:?\s*(up\s+to\s+)?\d{2,3}\s*mm\b/.test(t);
+  if (!isCase && ((/\b(power supply|psu)\b/.test(t) && !psuIsSupportText)
       || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t)))) return 'PSU';
   if (isCase) return 'Case';
-  if (/\b(cpu cooler|aio|liquid cooler|air cooler|tower cooler|heatsink|liquid freezer)\b/.test(t)) return 'CPUCooler';
+  // A cooler CLEARANCE spec is not a cooler. "COUGAR MG140 AIR RGB Case, Max. 350mm GPU
+  // Length, Max. 280mm Liquid Cooling & Max.160mm CPU Cooler" names no head noun this
+  // classifier recognises ("RGB Case"), so isCase was false and the height limit filed a
+  // chassis as a CPU cooler. Third instance of the same shape as the Motherboard and PSU
+  // guards above: a real cooler states its own height, never a maximum it fits under.
+  const coolerIsClearanceText =
+    /\b(max\.?|maximum|up\s+to|supports?|clearance|height|fits?)\b[^.,|]{0,24}\b(cpu\s+)?cooler\b/.test(t)
+    || /\bcoolers?\b[^.,|]{0,18}\b(clearance|height|up\s+to|max\.?|limit)\b/.test(t);
+  if (!coolerIsClearanceText
+      && /\b(cpu cooler|aio|liquid cooler|air cooler|tower cooler|heatsink|liquid freezer)\b/.test(t)) return 'CPUCooler';
   return null;
 }
 
@@ -201,7 +276,11 @@ function notBuildableReason(title) {
     // <connector>+"cable" pair here), so they don't false-trip this.
     [/\b(pcie|pci-e|sata|eps|atx)\s+cable\b/, 'connector cable'],
     [/\b(rgb |argb )?lighting kit\b/, 'lighting/RGB accessory'],
-    [/\b(fan|pwm) (hub|splitter)\b/, 'fan hub/splitter'],
+    // The hub must be the PRODUCT, not a bundled part. "SAMA V43 ATX Gaming PC Case, 6 x
+    // ARGB Infinity Mirror Fans + PWM Hub Included" is a case; the old bare pattern
+    // rejected it as an accessory on any path that runs this gate before classification
+    // (discover-newegg-dry.cjs did). A standalone hub never says "included"/"with".
+    [/(?<!\b(?:with|w\/|includes?|included|plus|bundled|pre-?installed)\b[^.,|]{0,24})\b(fan|pwm) (hub|splitter)\b(?!\s*(?:included|inside))/, 'fan hub/splitter'],
     [/\b(rgb|argb) controller\b/, 'RGB controller'],
     [/\briser cable\b|\bpcie riser\b|\bgpu riser\b/, 'riser cable'],
     [/\banti.?sag\b|\bgpu (support )?bracket\b|\b(graphics card|gpu) holder\b/, 'GPU support bracket'],
@@ -243,9 +322,41 @@ function notBuildableReason(title) {
     [/\bwind\s?screen\b|\bfurry\b|\bdead\s?cat\b|\bpop (?:filter|guard) (?:for|compatible)\b/, 'mic pop filter/windscreen (accessory)'],
     [/\bear\s?pads?(?:\s+cushions?)?\s+replacement\b|\breplacement\s+(?:ear\s?pads?|ear cushions?)\b/, 'replacement earpads (accessory)'],
     [/\bmic(?:rophone)? replacement\b|\breplacement (?:lapel |boom |detachable )?mic(?:rophone)?\b|\bcable replacement\b/, 'replacement headset mic/cable (accessory)'],
+
+    // ── Hardened after the 2026-08-10 CASE sweep. Each of these rides the Newegg case
+    // leaf but is an accessory, and with the leaf now trusted as a category prior they
+    // would otherwise be laundered into Case. Narrow on purpose: a real case says
+    // "with PWM Fan Hub INCLUDED" (a feature), never "<brand> Fan Controller" as its
+    // own product name, and no case is a "mobile rack" or a "rail kit".
+    [/\b(?:fan|lighting|rgb|argb|pwm)\s+controller\b/, 'fan/lighting controller (accessory)'],
+    [/\bmobile rack\b|\b\d\.\d{1,2}["']?\s*(?:dual\s+)?bay\s+(?:mobile\s+)?rack\b/, 'drive bay mobile rack (accessory)'],
+    [/\brail\s+kit\b/, 'rack rail kit (accessory)'],
+    // A drive-bay front panel (USB hub / card reader / fan-speed panel) fits INTO a case.
+    [/\bcard reader\b/, 'front-panel card reader (accessory)'],
+    [/\bfront panel\b[^,;|]{0,40}\b(hub|reader|controller)\b/, 'front-panel hub (accessory)'],
   ];
   for (const [re, reason] of rules) if (re.test(t)) return reason;
   return null;
+}
+
+// notBuildableReason applied to the PRODUCT-NAME SEGMENT only — the title up to its first
+// comma or semicolon (the whole title when it has neither, so the strict behaviour is the
+// default). Use this instead of notBuildableReason when a row arrives from a category-only
+// SOURCE (a retailer category leaf) and its title did not positively classify.
+//
+// WHY: a chassis lists what it INCLUDES, and those clauses read exactly like accessory
+// products. Real rows the plain gate rejected:
+//   "Thermaltake TR100 Koralie Edition; mITX Support; …; PCIe 4.0 Riser Cable Included"
+//   "Antec AX1000 ARGB, 4 x 140mm ARGB PWM Fans Included, ARGB PWM Fan Controller, …"
+//   "ASUS Prime AP303 - Mesh Panel Case, …, 34mm cable management"
+// An accessory sold on its own names itself in its product name instead — "NZXT Control
+// Hub - Digital RGB Lighting and PWM Fan Speed Controller", "Lian Li 4 Slots Vertical GPU
+// Kit (VG4v4) - … Riser Cable", "EN-Labs 4pin Fan PWM Fan Hub" — all of which still reject
+// because the accessory noun sits in the leading segment. Position, not vocabulary, is
+// what separates "ships with a riser" from "is a riser".
+function accessoryProductReason(title) {
+  const head = String(title || '').split(/[,;]/)[0];
+  return notBuildableReason(head);
 }
 
 // Category-aware brand plausibility. The chip giants make a narrow set of product
@@ -496,6 +607,75 @@ function storageRejectReason(product) {
   return null;
 }
 
+// Case scope gate — "does this chassis belong in a consumer/gaming DESKTOP catalog?".
+// The sibling of ramRejectReason / storageRejectReason / psuRejectReason, and until now
+// the ONE core category with no scope gate at all: a 2026-08-10 sweep of the Newegg case
+// leaf admitted 56 rackmount server chassis (iStarUSA 4U, Rosewill 4U, Silverstone
+// RM44/RM51, Supermicro SuperChassis) straight into a gaming build catalog, because every
+// one of them legitimately classifies as a "case".
+//
+// Out of scope:
+//   • rackmount — a U-height in rack/chassis/server context, "rackmount", "SuperChassis",
+//     or a rack rail kit. A 4U chassis has no desktop build to sit in.
+//   • server chassis / industrial chassis — the maker calling it a server part is the
+//     signal. Guarded against COMPAT text: a test bench whose title reads "Support Server
+//     Chassis" (live row #70198) is describing what it accepts, not what it is.
+//   • SAS — an enterprise backplane, matching the same call storageRejectReason makes.
+//
+// Deliberately IN scope: tower NAS/DIY-storage cases. "Rosewill Helium NAS ATX Mid Tower
+// Computer Case" and the JONSBO N-series (live row #100883, a hot-swap Micro-ATX NAS cube)
+// are real desktop chassis home builders buy, so hot-swap ALONE is not a reject — it only
+// rides along with the rack/server/SAS signals above. Gating on it would have deleted a
+// live consumer case.
+function caseRejectReason(product) {
+  const t = typeof product === 'string' ? product : (product && (product.n || product.name)) || '';
+  if (/\brack[\s-]?mount(able|ed)?\b/i.test(t)) return 'server_rackmount';
+  if (/\bsuperchassis\b/i.test(t)) return 'server_rackmount';
+  if (/\brail\s+kit\b/i.test(t)) return 'rack_rail_kit';
+  if (/\b\d{1,2}U\b/.test(t) && /\b(rack|chassis|server|mount)\b/i.test(t)) return 'server_rackmount';
+  // Punctuation-tolerant: the APC NetShelter row titles itself "… Networking Roof Server
+  // - Chassis", so requiring a single space missed a 750x1200mm data-centre rack.
+  const saysServerChassis = /\bserver\s*[-–]?\s*chassis\b/i.test(t)
+    && !/\b(support|supports|supporting|compatible|for|fits?)\s+server\s*[-–]?\s*chassis\b/i.test(t);
+  if (saysServerChassis) return 'server_chassis';
+  // Network/data-centre rack ENCLOSURE — a cabinet that racks mount into, not a chassis a
+  // build goes in. Keyed on the enclosure vocabulary plus the metric cabinet dimensions
+  // no desktop case carries.
+  if (/\bnetshelter\b|\brack\s+enclosure\b|\bnetworking\s+rack\b|\bserver\s+cabinet\b/i.test(t)) return 'rack_enclosure';
+  if (/\bindustrial\b/i.test(t) && /\b(chassis|server|rack)\b/i.test(t)) return 'server_chassis';
+  if (/\bsas\b/i.test(t)) return 'enterprise_sas';
+  // A PCIe/Thunderbolt EXPANSION chassis is a card cage a machine plugs into, not a
+  // chassis a build goes into ("4 SLOT PCIE EXPANSION CHASSIS", StarTech/Sonnet).
+  if (/\bexpansion\s+chassis\b/i.test(t)) return 'expansion_chassis';
+  return null;
+}
+
+// Derived Case attributes read from the TITLE — the single source for the coarse
+// form-factor fields the browse filter needs (ff = largest supported board in catalog
+// vocabulary, tower = Mid/Mini/Full), plus the three booleans that are unambiguous in a
+// title. Previously a private caseForm() inside apply-amazon-cases.mjs, so no other
+// ingest path could reuse it.
+function caseAttributes(title) {
+  const t = String(title || '').toLowerCase();
+  const tower = /full[\s-]?tower|super[\s-]?tower/.test(t) ? 'Full'
+    : (/(mini[\s-]?tower|mini[\s-]?itx|\bitx\b|\bsff\b|small\s+form|cube)/.test(t) && !/mid[\s-]?tower/.test(t)) ? 'Mini'
+      : 'Mid';
+  // Strip the narrower form factors before testing for a bare "atx", so "Micro-ATX" and
+  // "E-ATX" cannot be read as plain ATX.
+  const strip = t.replace(/micro[\s-]?atx/g, ' ').replace(/\bm-?atx\b/g, ' ').replace(/e-?atx/g, ' ').replace(/mini[\s-]?itx/g, ' ');
+  const ff = /e-?atx/.test(t) ? 'E-ATX'
+    : /\batx\b/.test(strip) ? 'ATX'
+      : /(micro[\s-]?atx|matx|m-atx)/.test(t) ? 'mATX'
+        : /(mini[\s-]?itx|\bitx\b)/.test(t) ? 'Mini-ITX'
+          : 'ATX';
+  return {
+    ff, tower,
+    tg: /tempered\s?glass/.test(t),
+    rgb: /\b(a?rgb)\b/.test(t),
+    usb_c: /\b(usb[\s-]?c|type[\s-]?c|usb\s?3\.[12]\s?gen\s?2)\b/.test(t),
+  };
+}
+
 // CPU scope gate — server/HEDT parts do not belong in a consumer/gaming desktop
 // catalog. PRIMARY test is the COMPUTED socket field; name is the backstop.
 const CPU_SERVER_SOCKETS = new Set([
@@ -575,6 +755,14 @@ function bundleReason(name) {
     psu:    /\b(?:power\s+supply|psu)\b/i,
     ram:    /\b\d{1,3}\s?gb\b[^.|]{0,12}\bddr[45]\b/i,
     cooler: /\b(?:cpu|aio|air|liquid)\s+cooler\b/i,
+    // Case was absent, so a "Zalman PC Case with PSU Combo" / "Iceberg Gaming combo Case …
+    // + 700W" registered only ONE component type and sailed through as a plain case at the
+    // combined price — the exact mispricing this detector exists to stop. (A "Case Cooler
+    // PSU Combo" was caught only because cooler+psu happened to make two.) Requires a case
+    // HEAD noun, so a component that merely mentions case compatibility is unaffected, and
+    // a combining token is still required, so a case listing its own PSU/cooler clearances
+    // is not a bundle.
+    case: /\b(?:pc|computer|gaming|desktop|mid[\s-]?tower|full[\s-]?tower|mini[\s-]?tower|atx|matx|itx)\s+(?:cases?|towers?|chassis)\b|\bpc cases?\b|\bcomputer cases?\b/i,
   };
   const present = Object.keys(TYPE).filter((k) => TYPE[k].test(t));
   if (present.length < 2) return null;
@@ -635,7 +823,12 @@ function psuRejectReason(product) {
 function cleanManufacturer(s) {
   return String(s || '')
     .replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '')
-    .replace(/\s+/g, ' ').trim();
+    .replace(/\s+/g, ' ')
+    // Trailing/leading punctuation left by the feed's own manufacturer field, which
+    // ships values like "iStarUSA ." and "AIC ." — those reached the catalog verbatim
+    // as the brand and rendered with the stray dot.
+    .replace(/^[\s.,;:&/-]+|[\s.,;:&/-]+$/g, '')
+    .trim();
 }
 // searchBrand — brand-from-search fallback. A brand-scoped query (SearchItems with
 // brand="Apevia") knows the maker even when the title omits it and the feed carries
@@ -658,6 +851,7 @@ module.exports = {
   detectCategory,
   categorize,
   notBuildableReason,
+  accessoryProductReason,
   implausibleBrandForCategory,
   extractSpecs,
   ramAttributes,
@@ -666,6 +860,8 @@ module.exports = {
   storageAttributes,
   cpuRejectReason,
   psuRejectReason,
+  caseRejectReason,
+  caseAttributes,
   prebuiltSystemReason,
   bundleReason,
   cleanManufacturer,

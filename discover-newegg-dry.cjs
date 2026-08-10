@@ -78,9 +78,30 @@ const SPEC_BAR = {
                   need: 'cap+speed+memType', got: `cap=${sp.cap} speed=${sp.speed} type=${sp.memType}` }),
   PSU: (sp) => ({ ok: sp.watts != null, need: 'watts', got: `watts=${sp.watts}` }),
   Storage: (sp) => ({ ok: sp.cap != null && sp.storageType != null, need: 'cap+type', got: `cap=${sp.cap} type=${sp.storageType}` }),
+  // Case: caseAttributes() always resolves a form factor and tower class (it falls back
+  // to ATX/Mid), so there is no spec that can be MISSING here and the bar is a pass-
+  // through that records what was parsed. Gating a case on a title-stated form factor
+  // would drop the very rows this sweep exists to find — the Antec/be quiet! titles that
+  // name no form factor at all — which is the opposite of a min-viable-spec bar's job.
+  Case: (sp, name) => { const a = CC.caseAttributes(name); return { ok: true, need: 'ff+tower (always derivable)', got: `ff=${a.ff} tower=${a.tower}` }; },
 };
 
-const PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i;
+// CATEGORY-FIRST prebuilt guard. The old local regex was
+//   /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming PC|Gaming Desktop|Barebone|Bundle|Combo)\b/i
+// and its bare "Gaming PC" / "Workstation" / "Desktop" tokens are ordinary CASE
+// vocabulary: measured against the 2026-08-10 Newegg case sweep it tripped on 34 rows,
+// 29 of which are real chassis (ASUS ROG Strix Helios II, ASUS A32 PLUS, SAMA SV01/SV02/
+// V43, Rosewill FBM-X2). The same over-fire was already removed from the weekend Amazon
+// ingest for rejecting "…288-Pin Desktop PC" DIMMs as prebuilts.
+//
+// Now: a title that positively classifies as its own category is trusted, and the
+// multi-component tests (prebuiltSystemReason = CPU+OS or CPU+RAM+Storage; bundleReason =
+// two distinct buildable components with a joining token) decide the rest. Those are the
+// single-source gates every other ingest path already uses.
+function prebuiltGuard(name, category) {
+  if (CC.detectCategory(CC.stripCompatClauses(name)) === category) return null;
+  return CC.prebuiltSystemReason(name);
+}
 
 // Per-category scope reject — "wrong class for a consumer/gaming desktop build".
 // The SAME single-source gates the apply path uses (catalog-classify.cjs), so the
@@ -91,6 +112,7 @@ const CATEGORY_REJECT = {
   RAM: (name) => CC.ramRejectReason(name),
   PSU: (name) => CC.psuRejectReason(name),
   Storage: (name) => CC.storageRejectReason(name),
+  Case: (name) => CC.caseRejectReason(name),
 };
 
 function detectCondition(name) {
@@ -177,11 +199,16 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
         // 3. first-party only
         const sClass = NEG.sellerClass(rec.newegg_item_number || rec.sku);
         if (sClass !== 'official') { stat.rej.marketplace++; return; }
-        // 4. accessory
-        const acc = CC.notBuildableReason(name);
+        // 4. accessory — CATEGORY-FIRST. A title that positively classifies as this
+        //    category is trusted over the feature-word accessory rules; the gate still runs
+        //    for everything else, so genuine cables/hubs/kits are still caught. Running it
+        //    unconditionally rejected real products for listing a bundled part ("… + PWM
+        //    Hub Included" on a SAMA case) — the same over-fire the Amazon pilot removed.
+        const classified = CC.detectCategory(CC.stripCompatClauses(name)) === CATEGORY;
+        const acc = classified ? null : CC.notBuildableReason(name);
         if (acc) { stat.rej.accessory++; accessoryReasons[acc] = (accessoryReasons[acc] || 0) + 1; return; }
         // 5. prebuilt/bundle
-        if (PREBUILT_RE.test(name)) { stat.rej.prebuilt++; return; }
+        if (prebuiltGuard(name, CATEGORY)) { stat.rej.prebuilt++; return; }
         if (CC.bundleReason(name)) { stat.rej.bundle = (stat.rej.bundle || 0) + 1; return; }   // multi-component combo
         // 6. condition
         if (detectCondition(name) !== 'new') { stat.rej.condition++; return; }
@@ -207,7 +234,7 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
 
         // 8. min-viable-spec bar
         const specs = CC.extractSpecs(name, CATEGORY);
-        const bar = specBar(specs);
+        const bar = specBar(specs, name);
         if (!bar.ok) {
           stat.rej.specBar++;
           // Capture ALL spec-bar rejects (they are few) so the extractor can be
