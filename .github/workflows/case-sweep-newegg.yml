@@ -1,0 +1,42 @@
+name: Newegg Case Sweep (Phase 1, read-only)
+
+# CASES ONLY. Read-only by construction: case-sweep-newegg.cjs streams the Newegg
+# feed and writes ONLY a report JSON under catalog-build/ — never parts.js.
+# contents: read + no commit step + an assert-nothing-written step make it structural.
+# Exists because RAKUTEN_FTP_PASSWORD lives in repo secrets only (not local, not Railway).
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Install dependencies
+        run: npm ci
+      - name: Sweep Newegg case feed (read-only)
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          NODE_OPTIONS: "--max-old-space-size=6144"
+        run: node case-sweep-newegg.cjs
+      - name: Assert nothing written to the catalog
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::catalog was modified by a read-only sweep"; git diff --stat -- src/data/; exit 1
+          fi
+          echo "Clean: no catalog writes."
+      - name: Upload sweep report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: case-sweep-newegg
+          path: catalog-build/case-sweep-newegg.json
+          if-no-files-found: error
