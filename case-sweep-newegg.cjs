@@ -27,6 +27,7 @@ const ROOT = __dirname;
 const FTP_HOST = process.env.RAKUTEN_FTP_HOST || 'aftp.linksynergy.com';
 const FTP_USER = process.env.RAKUTEN_FTP_USER || 'rkp_4681679';
 const FTP_PASS = process.env.RAKUTEN_FTP_PASSWORD;
+const NEWEGG_MID = process.env.RAKUTEN_NEWEGG_MID || '44583';
 const REPORT_PATH = path.join(ROOT, 'catalog-build', 'case-sweep-newegg.json');
 
 const log = (m) => console.log(`[${new Date().toISOString().substring(11, 19)}] ${m}`);
@@ -61,9 +62,30 @@ const CASEISH = (s) => /\bcases?\b/.test(s) && !/~~(cases?, ?(bags|covers)|lapto
   const sftp = new SftpClient();
   try {
     await sftp.connect({ host: FTP_HOST, port: 22, username: FTP_USER, password: FTP_PASS });
-    const root = await sftp.list('/');
-    const target = root.find((e) => e.type === '-' && /^44583_\d+_mp\.txt\.gz$/i.test(e.name));
-    if (!target) throw new Error('Newegg _mp feed not found at SFTP root');
+    log(`Connected to ${FTP_HOST} as ${FTP_USER}`);
+
+    // list('/') on this endpoint fails intermittently ("list: Failure /") even when the
+    // connection is healthy — the nightly ingest tolerates it by catching and moving on.
+    // Retry it, then fall back to stat()ing the known feed path directly: the file name
+    // is deterministic (<MID>_<SID>_mp.txt.gz), so listing is a convenience, not a need.
+    const SID = process.env.RAKUTEN_SID || '4681679';
+    const DIRECT = `/${NEWEGG_MID}_${SID}_mp.txt.gz`;
+    let target = null;
+    for (let attempt = 1; attempt <= 3 && !target; attempt++) {
+      try {
+        const root = await sftp.list('/');
+        target = root.find((e) => e.type === '-' && /^44583_\d+_mp\.txt\.gz$/i.test(e.name)) || null;
+        if (!target) log(`  list('/') returned ${root.length} entries but no _mp feed`);
+      } catch (e) {
+        log(`  list('/') attempt ${attempt} failed: ${e.message}`);
+        if (attempt < 3) await new Promise((r) => setTimeout(r, 4000 * attempt));
+      }
+    }
+    if (!target) {
+      log(`  falling back to direct path ${DIRECT}`);
+      const st = await sftp.stat(DIRECT);      // throws if genuinely absent
+      target = { name: DIRECT.slice(1), size: st.size };
+    }
     log(`Streaming ${target.name} (${(target.size / 1048576).toFixed(0)}MB)…`);
 
     const gunzip = zlib.createGunzip();
