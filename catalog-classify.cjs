@@ -56,7 +56,12 @@ function brandInText(text, brand) {
 
 // Chip giants (AMD/Intel/NVIDIA) are LAST so a component-maker brand wins over a
 // bare chip mention; for a real CPU the chip brand still matches as a fallback.
-const BRANDS = ['ASUS','MSI','Gigabyte','ASRock','Corsair','G.Skill','Kingston','Crucial','Samsung','Western Digital','WD','Seagate','SanDisk','Lexar','TeamGroup','Patriot','EVGA','Seasonic','be quiet!','Cooler Master','NZXT','Lian Li','Fractal Design','Thermaltake','Phanteks','Noctua','Arctic','Thermalright','Scythe','DeepCool','Hyte','Antec','Rosewill','Segotep','MONTECH','GAMEMAX','PCCOOLER','darkFlash','Super Flower','FSP','SAMA','ARESGAME','XPG','ADATA','Sapphire','PowerColor','XFX','Zotac','PNY','Inno3D','Gainward','Palit','AMD','Intel','NVIDIA'];
+// Budget/value case & chassis makers (Apevia, Jonsbo, MUSETEX, Zalman, Cougar,
+// Vetroo, KEDIERS) were absent, so their cases resolved to a null brand and got
+// dropped at the brand gate — a DISCOVERY hole, not a quality one: PCPartPicker
+// lists every one of these. All are distinctive tokens safe for the word-boundary
+// scan. Chip giants stay LAST so a real maker always wins over a bare chip mention.
+const BRANDS = ['ASUS','MSI','Gigabyte','ASRock','Corsair','G.Skill','Kingston','Crucial','Samsung','Western Digital','WD','Seagate','SanDisk','Lexar','TeamGroup','Patriot','EVGA','Seasonic','be quiet!','Cooler Master','NZXT','Lian Li','Fractal Design','Thermaltake','Phanteks','Noctua','Arctic','Thermalright','Scythe','DeepCool','Hyte','Antec','Rosewill','Segotep','MONTECH','GAMEMAX','PCCOOLER','darkFlash','Super Flower','FSP','SAMA','ARESGAME','XPG','ADATA','Sapphire','PowerColor','XFX','Zotac','PNY','Inno3D','Gainward','Palit','Apevia','Jonsbo','MUSETEX','Zalman','Cougar','Vetroo','KEDIERS','AMD','Intel','NVIDIA'];
 
 // Product-series → brand. Catches units whose title leads with a series name
 // (Corsair "RM850x", EVGA "SuperNOVA", ASUS "ROG Strix") and never says the brand.
@@ -99,25 +104,68 @@ function detectBrand(title, url) {
   return null;
 }
 
+// A "carrying case" / "travel case" / "tote bag" for a desktop is a padded BAG for
+// transporting a PC, not a chassis a build goes into. It trips looksCase via
+// "…Carrying Case for ATX Mid-Tower" / "Full Computer Tower", so it must be excluded
+// from the Case classifier AND rejected as non-buildable. Adjacency-safe: a real case
+// with a handle says "carrying handle", never "carrying case".
+const CARRY_BAG_RE = /\b(?:carrying|travel)\s+(?:case|bag)\b|\btote bag\b|\bcarry(?:ing)?\s+tote\b/i;
+
 // Strong, unambiguous per-category signal from a compat-stripped title.
 // Returns a category only when a real product noun is present — a bare model
 // mention ("RTX 5090") is NOT enough (it's usually a compatibility blurb).
 function detectCategory(cleanTitle) {
   const t = cleanTitle.toLowerCase();
+  // Case signal, computed FIRST because a case's own feature text ("supports ATX
+  // motherboard", "SFX power supply support") otherwise trips the Motherboard/PSU
+  // branches below — those two, unlike CPU/GPU/Storage, carry no case guard. Every
+  // looksCase branch requires a case/tower/chassis HEAD noun, so a real motherboard/
+  // PSU/CPU/GPU never trips it (none carries one), while budget SFF brands' phrasing
+  // — "Micro-ATX Gaming Case", "Mini-ITX Cube Case", "SFF Case" — that the old
+  // tower-noun-only rule silently dropped now does. A case FAN ("…120mm Case Fan")
+  // and a COOLER ("…Tower Cooler") also lack the head noun, so no cooler/AIO/radiator
+  // negative is needed (adding one would be the bug — "360mm AIO", "RTX 4090 GPU
+  // clearance", "SFX power supply" are the case's OWN specs). Only accessory-PRODUCT
+  // words that never appear as a real case's feature text are excluded (the prior
+  // rule's proven 0-FP set — NOT "panel"/"dust filter"/"tempered glass", which are features).
+  const looksCase =
+    /\b(pc|computer|gaming|tower|cube|full[\s-]?tower|mid[\s-]?tower|mini[\s-]?tower|micro[\s-]?tower|super[\s-]?tower)\s+(case|tower|chassis)\b/.test(t)
+    || /\b(atx|itx|matx|e[\s-]?atx|m[\s-]?atx|mini[\s-]?itx|micro[\s-]?atx|sff|small\s+form\s+factor)\s+(?:gaming\s+|mid[\s-]?tower\s+|mini[\s-]?tower\s+|full[\s-]?tower\s+)?(case|tower|chassis)\b/.test(t)
+    || /\b(mid|full|mini|micro|super)[\s-]?tower\b/.test(t)
+    || /\bpc case\b|\bcomputer case\b|\bgaming case\b|\bchassis\b/.test(t);
+  // A "(PC) Case Fan" trips looksCase via the "pc case" alternate but is a FAN, not a
+  // case. The discriminator is ADJACENCY: a real case says "Case WITH 6 fans" / "6
+  // ARGB Fans", never "Case Fan" — so an adjacent "case fan(s)" is always the fan
+  // product. (Non-adjacent "…Case with…Fans" is left alone.) Plus the accessory-
+  // PRODUCT words that never appear as a real case's feature text.
+  const caseAccessory =
+    /\bcase fans?\b/.test(t)
+    || CARRY_BAG_RE.test(t)                    // a carrying/travel bag is not a case
+    || /\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t);
+  const isCase = looksCase && !caseAccessory;
+
+  // A RAM kit / cooler / mobo that merely names a compatible CPU family ("…DDR4
+  // Desktop Memory with Heatsink, AMD Ryzen / Intel XMP") is NOT a CPU. Memory/DIMM
+  // words in the negative keep that compat text off the CPU branch — a real CPU never
+  // says "memory"/"DIMM" — so the RAM signal below (checked after) wins for it.
   if (/\b(ryzen|core\s*i[3579]|core\s*ultra|threadripper|epyc)\b/.test(t)
-      && !/\b(cooler|fan|motherboard|case|bundle|combo)\b/.test(t)) return 'CPU';
+      && !/\b(cooler|fan|motherboard|case|bundle|combo|memory|dimm|so-?dimm|udimm|rdimm)\b/.test(t)) return 'CPU';
   // GPU requires an actual graphics-card noun (or GDDR VRAM), not just a model number.
   if (/\b(rtx|gtx|radeon|geforce|arc)\b/.test(t)
       && /\b(graphics card|video card|graphics processing|gddr\d?)\b/.test(t)) return 'GPU';
-  if (/\bmotherboard\b/.test(t)
-      || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t))) return 'Motherboard';
+  if (!isCase && (/\bmotherboard\b/.test(t)
+      || (/\b(x870e?|b850|b650e?|z890|z790|b760|a620|x670e?)\b/.test(t) && /\b(am5|am4|lga\s?\d{4})\b/.test(t)))) return 'Motherboard';
   if ((/\bddr[45]\b/.test(t) && /\b(kit|dimm|sodimm|udimm|memory)\b/.test(t))
       || /\b\d+\s*gb\s*\(\s*\d+\s*x\s*\d+\s*gb\s*\)/.test(t)) return 'RAM';
-  if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure|heatsink)\b/.test(t)) return 'Storage';
-  if (/\b(power supply|psu)\b/.test(t)
-      || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t))) return 'PSU';
-  if (/\b(pc case|computer case|mid.?tower|full.?tower|mini.?tower|chassis)\b/.test(t)
-      && !/\b(accessory|upgrade kit|replacement|guide|feet|lift stand|riser|vertical gpu)\b/i.test(t)) return 'Case';
+  // A drive WITH a heatsink is still a drive (Samsung 9100 PRO w/Heatsink, WD SN850P
+  // PS5, Crucial P310 w/Heatsink) — "heatsink" is a FEATURE, not a category, and these
+  // are the PS5/gaming market. A BARE SSD-heatsink accessory carries no capacity and is
+  // dropped downstream by the spec bar; only cooler/case/fan/enclosure (product-type
+  // words a real drive never carries) exclude here.
+  if (/\b(ssd|nvme|hard drive|hard disk|hdd)\b/.test(t) && !/\b(cooler|case|fan|enclosure)\b/.test(t)) return 'Storage';
+  if (!isCase && (/\b(power supply|psu)\b/.test(t)
+      || (/\b\d{3,4}\s*w(att)?\b/.test(t) && /\b(80\s*\+?\s*plus|80\+|gold|platinum|bronze|titanium|modular|atx\s*3)\b/.test(t)))) return 'PSU';
+  if (isCase) return 'Case';
   if (/\b(cpu cooler|aio|liquid cooler|air cooler|tower cooler|heatsink|liquid freezer)\b/.test(t)) return 'CPUCooler';
   return null;
 }
@@ -169,6 +217,7 @@ function notBuildableReason(title) {
     // (notBuildableReason takes only the title and is brand-agnostic; apply and
     // verify both call it first, so the product-type verdict always wins.)
     [/\bwiper blade\b/, 'wiper blade (automotive)'],
+    [CARRY_BAG_RE, 'carrying/travel bag'],   // padded bag for transporting a PC, not a chassis
     [/\b(raised|stand|replacement) feet\b/, 'case feet/stand'],
     [/\b(side )?panel guide\b/i, 'case panel guide (accessory)'],
     [/\bmounting kits?\b/, 'cooler mounting kit'],
@@ -233,8 +282,15 @@ function extractSpecs(title, category) {
     const vram = t.match(/(\d+)\s*GB\s*(GDDR|VRAM)/i);
     if (vram) specs.vram = parseInt(vram[1]);
   } else if (category === 'PSU') {
-    const watts = t.match(/\b(\d{3,4})\s*W\b/);
-    if (watts) specs.watts = parseInt(watts[1]);
+    // Wattage in the formats the feed actually uses: "850W" / "850 Watt(s)",
+    // efficiency-adjacent "80+ Gold 850", and model-embedded "RM850x" / "HX1000" /
+    // "SF750". Largest plausible 200–2400W wins. The old /\b\d{3,4}\s*W\b/ read ONLY
+    // "850W" and silently specBar-dropped Corsair RMx, Cooler Master MWE, etc.
+    const W = []; let wm; const pushW = (v) => { v = parseInt(v); if (v >= 200 && v <= 2400) W.push(v); };
+    const reW = /\b(\d{3,4})\s*(?:w|watts?)\b/ig; while ((wm = reW.exec(t))) pushW(wm[1]);
+    if (!W.length) { const reE = /\b(?:80\s*\+?\s*plus\s+)?(?:gold|platinum|bronze|titanium|silver)\s+(\d{3,4})\b/ig; while ((wm = reE.exec(t))) pushW(wm[1]); }
+    if (!W.length) { const reM = /\b(?:RM|HX|CX|TX|GX|AX|SF|GF|GM|GQ|MWE)\s?-?(\d{3,4})[a-z]{0,3}\b/ig; while ((wm = reM.exec(t))) pushW(wm[1]); }
+    if (W.length) specs.watts = Math.max(...W);
     if (/80\+?\s*platinum/i.test(t)) specs.eff = '80+ Platinum';
     else if (/80\+?\s*gold/i.test(t)) specs.eff = '80+ Gold';
     else if (/80\+?\s*bronze/i.test(t)) specs.eff = '80+ Bronze';
@@ -281,7 +337,11 @@ function extractSpecs(title, category) {
     const cl = t.match(/\bCL\s?(\d+)/i);
     if (cl) specs.cl = parseInt(cl[1]);
   } else if (category === 'Storage') {
-    const cap = t.match(/(\d+)\s*(TB|GB)/i);
+    // Capacity, NOT the SATA/NVMe speed: the negative lookahead skips "6Gb/s",
+    // "6Gbps", "6Gbit/s" so a "SATA III 6Gb/s … 256GB SSD" reads 256GB, not 6GB.
+    // (The old /(\d+)\s*(TB|GB)/ grabbed "6Gb" and inflated $/GB ~40×, false-flagging
+    // real SATA SSDs at the price ceiling.)
+    const cap = t.match(/(\d+)\s*(TB|GB)(?!\/s|ps|it)/i);
     if (cap) {
       const size = parseInt(cap[1]);
       specs.cap = cap[2].toLowerCase() === 'tb' ? size * 1000 : size;
@@ -389,7 +449,12 @@ function ramRejectReason(name) {
 function storageAttributes(title) {
   const t = String(title || '');
   let iface = null;
-  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t) || /\busb\b/i.test(t)) iface = 'USB';
+  // External transport = USB iface. A bare "usb" mention alone must NOT make an
+  // INTERNAL drive external (an "ORICO 1TB SATA SSD 2.5\" Internal … USB" is internal):
+  // the external/portable/enclosure/thunderbolt words are the real signal; a lone
+  // "usb" only counts when the title does not also say "internal".
+  if (/\b(external|portable|enclosure|thunderbolt)\b/i.test(t)) iface = 'USB';
+  else if (/\busb\b/i.test(t) && !/\binternal\b/i.test(t)) iface = 'USB';
   else if (/\bsas\b/i.test(t)) iface = 'SAS';
   else if (/\bnvme\b/i.test(t) || /\bpci[\s-]?e(xpress)?\b/i.test(t)) iface = 'NVMe';  // "PCIe" / "PCI Express" / "PCI-Express"
   else if (/\bsata\b/i.test(t)) iface = 'SATA';
@@ -572,9 +637,14 @@ function cleanManufacturer(s) {
     .replace(/\b(technology|technologies|corp\.?|corporation|inc\.?|co\.?|ltd\.?|memory)\b/gi, '')
     .replace(/\s+/g, ' ').trim();
 }
-function resolveDiscoveryBrand(title, manufacturer, category) {
+// searchBrand — brand-from-search fallback. A brand-scoped query (SearchItems with
+// brand="Apevia") knows the maker even when the title omits it and the feed carries
+// no manufacturer. Used LAST, after the title reading and the manufacturer field,
+// so it only fills a genuine gap; it never overrides a real, plausible title brand.
+function resolveDiscoveryBrand(title, manufacturer, category, searchBrand) {
   let b = detectBrand(title, '');
   if (!b || implausibleBrandForCategory(b, category)) b = cleanManufacturer(manufacturer) || b || null;
+  if (!b && searchBrand) b = String(searchBrand).trim() || null;
   return b;
 }
 

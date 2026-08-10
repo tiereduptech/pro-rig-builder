@@ -20,6 +20,7 @@ import { readFileSync, existsSync } from 'node:fs';
 
 const TOKEN_URL   = 'https://api.amazon.com/auth/o2/token';
 const GETITEMS    = 'https://creatorsapi.amazon/catalog/v1/getItems';
+const SEARCHITEMS = 'https://creatorsapi.amazon/catalog/v1/searchItems';
 const SCOPE       = 'creatorsapi::default';
 const MARKETPLACE = 'www.amazon.com';
 const PARTNER_TAG = process.env.AMAZON_PARTNER_TAG || 'tiereduptech-20';
@@ -36,6 +37,16 @@ export const DEFAULT_RESOURCES = [
   'offersV2.listings.isBuyBoxWinner',
   'offersV2.listings.availability',
   'offersV2.listings.merchantInfo',
+];
+
+// SearchItems returns catalog rows keyword/brand-scoped rather than by ASIN, so it
+// carries byLineInfo (the authoritative brand/manufacturer) which resolveDiscoveryBrand
+// uses to brand budget/no-name rows the title alone can't.
+export const SEARCH_RESOURCES = [
+  'itemInfo.title',
+  'itemInfo.byLineInfo',
+  'offersV2.listings.price',
+  'offersV2.listings.availability',
 ];
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -129,22 +140,26 @@ async function getToken() {
   return token;
 }
 
-// ---- one batch ----------------------------------------------------------
-async function getItemsBatch(asins, resources) {
+// ---- one POST -----------------------------------------------------------
+// Shared transport for every Creators-API endpoint (getItems, searchItems, …).
+// Owns the ENTIRE failover contract so every caller inherits it identically:
+// token acquisition, 429 backoff+retry, 401/403/eligibility → circuit-open,
+// 5xx / network retry-then-give-up, and the batchError accounting. Returns the
+// parsed JSON object on success, or null on any terminal failure (caller then
+// falls back). NEVER throws.
+async function paapiPost(url, payload) {
   const t = await getToken();
   if (!t) return null;
   for (let attempt = 0; attempt < 4; attempt++) {
     let res, text;
     try {
       stats.calls++;
-      res = await fetch(GETITEMS, {
+      res = await fetch(url, {
         method: 'POST',
         headers: { Authorization: `Bearer ${t}`, 'Content-Type': 'application/json',
                    Accept: 'application/json', 'x-marketplace': MARKETPLACE },
-        body: JSON.stringify({
-          marketplace: MARKETPLACE, partnerTag: PARTNER_TAG, partnerType: 'Associates',
-          itemIds: asins, itemIdType: 'ASIN', resources,
-        }),
+        body: JSON.stringify({ marketplace: MARKETPLACE, partnerTag: PARTNER_TAG,
+                               partnerType: 'Associates', ...payload }),
         signal: AbortSignal.timeout(45000),
       });
       text = await res.text();
@@ -171,10 +186,17 @@ async function getItemsBatch(asins, resources) {
     if (!res.ok) { stats.batchErrors++; return null; }
 
     let json = null; try { json = JSON.parse(text); } catch { stats.batchErrors++; return null; }
-    return json?.itemsResult?.items || json?.items || [];
+    return json;
   }
   stats.batchErrors++;
   return null;
+}
+
+// ---- one batch ----------------------------------------------------------
+async function getItemsBatch(asins, resources) {
+  const json = await paapiPost(GETITEMS, { itemIds: asins, itemIdType: 'ASIN', resources });
+  if (!json) return null;
+  return json.itemsResult?.items || json.items || [];
 }
 
 /**
@@ -194,4 +216,47 @@ export async function resolveItems(asins, { resources = DEFAULT_RESOURCES, pace 
     if (i + BATCH_MAX < unique.length) await sleep(pace);
   }
   return out;
+}
+
+// SearchItems max page size is 10 items; pages 1..10 (100 items max per query).
+export const SEARCH_PAGE_MAX = 10;   // items per page (API cap)
+const SEARCH_PAGE_LIMIT = 10;        // deepest page the API will serve
+
+/**
+ * Keyword/brand-scoped catalog search. NEVER throws.
+ * Fetches `pages` pages (each ≤10 items), deduping ASINs across pages, honoring the
+ * SAME circuit breaker and pacing as resolveItems. Returns
+ *   { items: item[], totalResultCount: number|null, pagesFetched: number }
+ * A degraded client (open circuit, bad creds, eligibility loss) returns an empty
+ * item list so callers fall back cleanly instead of seeing an exception.
+ */
+export async function searchItems(keywords, {
+  brand = null, searchIndex = null, pages = 1, itemCount = SEARCH_PAGE_MAX,
+  resources = SEARCH_RESOURCES, minPrice = null, maxPrice = null, pace = PACE_MS,
+} = {}) {
+  const out = new Map();                 // asin -> item, deduped across pages
+  let totalResultCount = null, pagesFetched = 0;
+  const kw = String(keywords || '').trim();
+  if ((!kw && !brand) || circuitOpen) return { items: [], totalResultCount, pagesFetched };
+
+  const maxPages = Math.min(Math.max(1, pages | 0), SEARCH_PAGE_LIMIT);
+  for (let page = 1; page <= maxPages; page++) {
+    if (circuitOpen) break;              // opened mid-run: stop, do not thrash
+    const payload = { keywords: kw, itemPage: page, itemCount, resources };
+    if (brand) payload.brand = brand;
+    if (searchIndex) payload.searchIndex = searchIndex;
+    if (minPrice != null) payload.minPrice = minPrice;
+    if (maxPrice != null) payload.maxPrice = maxPrice;
+
+    const json = await paapiPost(SEARCHITEMS, payload);
+    if (!json) break;                    // terminal error / circuit — stop paging
+    pagesFetched++;
+    const items = json.searchResult?.items || json.itemsResult?.items || json.items || [];
+    const total = json.searchResult?.totalResultCount ?? json.totalResultCount ?? null;
+    if (total != null) totalResultCount = total;
+    for (const it of items) { const a = it?.asin; if (a && !out.has(a)) { out.set(a, it); stats.items++; } }
+    if (!items.length) break;            // exhausted results — no point paging further
+    if (page < maxPages) await sleep(pace);
+  }
+  return { items: [...out.values()], totalResultCount, pagesFetched };
 }
