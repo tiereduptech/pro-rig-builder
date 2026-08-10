@@ -173,14 +173,17 @@ test('Case has an absolute price band and it brackets the real market', () => {
   assert.ok(PRICE_TABLE.Case, 'Case band missing from PRICE_TABLE');
   const band = PRICE_TABLE.Case.TOTAL;
   assert.equal(band.floor, 20);
-  assert.equal(band.ceiling, 1200);
-  // Real prices from the live catalog pass.
-  for (const p of [30.32, 49.99, 109.99, 288.46, 499, 984.41]) {
+  assert.equal(band.ceiling, 2000);
+  // Real prices from the live catalog AND the real halo tier the sweep found pass.
+  // SilverStone ALTA F2 ($1,690) and MSI MEG MAESTRO 900R ($1,540) are correctly priced
+  // flagships; a ceiling that quarantines those is the stale-ceiling mistake.
+  for (const p of [30.32, 49.99, 109.99, 288.46, 499, 984.41, 1539.99, 1690]) {
     assert.equal(priceValidate('Case', {}, p).status, 'ok', `$${p} should pass`);
   }
   // A $9 "case" is an accessory or a mis-attached link; a $3,500 one is a prebuilt PC.
   assert.equal(priceValidate('Case', {}, 9).reason, 'below_floor');
-  assert.equal(priceValidate('Case', {}, 3500).reason, 'above_ceiling');
+  assert.equal(priceValidate('Case', {}, 3269).reason, 'above_ceiling');   // collector EVA-02 markup
+  assert.equal(priceValidate('Case', {}, 4783).reason, 'above_ceiling');   // Supermicro blade enclosure
   // Missing price is never a block (fail-open, same as every other category).
   assert.equal(priceValidate('Case', {}, null).status, 'skip');
 });

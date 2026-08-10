@@ -286,14 +286,28 @@ export const PRICE_TABLE = {
   // Case, like CPU, has no meaningful per-unit ($/litre is not a thing buyers price on),
   // so it is gated on TOTAL price. Added 2026-08-10 — Case previously had NO absolute
   // bound, so the case ingest ran with the price gate silently skipping every row.
-  // Calibrated against the 364 live priced cases: min $30.32, p25 $75, p50 $110, p95
-  // $288, p99 $499, max $984 (Cooler Master HAF 700 EVO). Floor $20 sits under the
-  // cheapest real budget chassis (~$30 Apevia/Raidmax/DIYPC) so a $9 "case" — always an
-  // accessory or a mis-attached link — is caught. Ceiling $1200 clears the observed max
-  // with headroom, deliberately generous per the DDR5 lesson that a TIGHT ceiling is the
-  // disaster mode; it still isolates a prebuilt PC mislabelled as a chassis.
+  //
+  // FLOOR $20: under the cheapest real budget chassis (~$30 Apevia/Raidmax/DIYPC), so a
+  // $9-$13 "case" — always an accessory or a mis-attached link — is caught. Measured: it
+  // holds 7 rows, all of them fan hubs / fan-speed controllers / an open test-stand tray.
+  //
+  // CEILING $2000, raised from an initial $1200 the same day and BEFORE anything shipped.
+  // $1200 was set from the live catalog's own max ($984, Cooler Master HAF 700 EVO), which
+  // is a survivorship number — the catalog had no super-towers precisely because nothing
+  // had ever ingested them. The sweep then found the real top of the consumer market, and
+  // at least two rows are legitimately priced there: SilverStone ALTA F2 Premium Super
+  // Tower at $1,673-1,690 (its actual retail) and MSI MEG MAESTRO 900R at $1,539. A
+  // ceiling that quarantines a correctly-priced flagship is the DDR5 mistake again, so
+  // $2000 clears the genuine halo tier with headroom while still isolating the absurd
+  // (a $4,783 Supermicro MicroBlade blade enclosure, a $3,269 collector EVA-02 edition).
+  //
+  // The absolute band is NOT the tool for marketplace inflation — a $120 case listed 3P at
+  // $810 sits far under any ceiling wide enough for a real ALTA F2. That is the job of the
+  // per-model markup corroboration in the case ingest (>1.6x the cheapest sighting of the
+  // same brand+model → quarantine), which is what actually holds the marked-up ASUS ROG
+  // GR701 "Custom" variants. Absolute band catches absurd; corroboration catches inflated.
   Case: {
-    'TOTAL': { floor: 20, ceiling: 1200 },
+    'TOTAL': { floor: 20, ceiling: 2000 },
   },
 };
 // Above this fraction of graded rows hitting a bound, suspect the TABLE is stale

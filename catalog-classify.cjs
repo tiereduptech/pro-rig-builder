@@ -328,7 +328,9 @@ function notBuildableReason(title) {
     // would otherwise be laundered into Case. Narrow on purpose: a real case says
     // "with PWM Fan Hub INCLUDED" (a feature), never "<brand> Fan Controller" as its
     // own product name, and no case is a "mobile rack" or a "rail kit".
-    [/\b(?:fan|lighting|rgb|argb|pwm)\s+controller\b/, 'fan/lighting controller (accessory)'],
+    // "…fan speed temperature controller" is the EN-Labs bay-panel product; a real case
+    // only ever mentions a controller as an included part, i.e. after its name segment.
+    [/\b(?:fan|lighting|rgb|argb|pwm|speed|temperature)\s+controller\b/, 'fan/lighting controller (accessory)'],
     [/\bmobile rack\b|\b\d\.\d{1,2}["']?\s*(?:dual\s+)?bay\s+(?:mobile\s+)?rack\b/, 'drive bay mobile rack (accessory)'],
     [/\brail\s+kit\b/, 'rack rail kit (accessory)'],
     // A drive-bay front panel (USB hub / card reader / fan-speed panel) fits INTO a case.

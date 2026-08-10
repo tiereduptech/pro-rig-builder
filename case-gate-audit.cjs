@@ -54,9 +54,9 @@ const brandTier = (b) => {
 // Calibrated 2026-08-10 against the live catalog's 364 priced cases: min $30.32,
 // p50 $110, p95 $288, p99 $499, max $984 (Cooler Master HAF 700 EVO). Floor $20 sits
 // below the cheapest real budget chassis (~$30 Apevia/Raidmax) so a $9 "case" — always
-// an accessory or a mis-attached link — is caught. Ceiling $1200 clears the observed
+// an accessory or a mis-attached link — is caught. Ceiling $2000 clears the genuine halo
 // max with headroom, per the RAM lesson that a TIGHT ceiling is the disaster mode.
-const CASE_PRICE = { floor: 20, ceiling: 1200 };
+const CASE_PRICE = { floor: 20, ceiling: 2000 };   // mirrors PRICE_TABLE.Case.TOTAL
 
 // ── name normalisation / token overlap (dedupe) ──────────────────────────────
 const STOP = new Set(['case', 'cases', 'pc', 'computer', 'gaming', 'tower', 'mid', 'full',
@@ -117,7 +117,14 @@ function gateLadder(row) {
   //    lists HDD bays) — the reject table should name the real reason.
   const scope = CC.caseRejectReason(title);
   if (scope) return `caseReject:${scope}`;
-  // 4. category classification (category-first: a positive Case signal is trusted
+  // 4. accessory named in the PRODUCT NAME — checked even when the row classifies as Case.
+  //    Category-first exists so a LATER feature clause cannot veto a chassis, not so a
+  //    product whose own name is "PC Case PWM 4 Pin Fan Hub" can ride a "PC Case" mention
+  //    into the catalog. Those EN-Labs hubs classified Case off "PC Case" and only the $20
+  //    price floor stopped them. The name segment is the product; clauses after it are specs.
+  const nameAcc = CC.accessoryProductReason(title);
+  if (nameAcc) return `accessory:${nameAcc}`;
+  // 5. category classification (category-first: a positive Case signal is trusted
   //    over the feature-word accessory rules)
   const signal = CC.detectCategory(CC.stripCompatClauses(title));
   if (signal && signal !== 'Case') return `miscategorized:${signal}`;
@@ -153,11 +160,7 @@ function gateLadder(row) {
     }
     // The accessory rules still run FIRST, so the prior cannot launder a fan controller or
     // a rail kit into Case.
-    // Product-name segment only — a case's "…Riser Cable Included" / "…Fan Controller" /
-    // "…cable management" feature clauses are not accessory products. See
-    // accessoryProductReason for the position-not-vocabulary rationale.
-    const acc = CC.accessoryProductReason(title);
-    if (acc) return `accessory:${acc}`;
+    // (the product-name accessory check already ran above, for every row)
     // fall through on the prior — treated as Case
   }
   // 5. brand
@@ -279,17 +282,27 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   // SAME brand+model is an outlier, and outliers are quarantined, never dropped (the
   // standing price-gate rule) so a genuine price rise is reviewable rather than lost.
   const MARKUP_MULT = 1.6;
+  // Group on the DISTINCTIVE model token, not the whole token set. Keying on the full set
+  // is too brittle: "ASUS ROG GR701 Strix Snow Custom … 420mm graphics card" and "ASUS ROG
+  // Hyperion GR701 EVA-02" differ by one spec number, so they landed in different groups and
+  // the $1,449 custom variants were compared against nothing while the $3,269 EVA-02 was
+  // caught. Fan/radiator sizes and unit-suffixed numbers are specs, never model names.
+  const SPEC_NUM = new Set(['80', '90', '92', '120', '140', '200', '240', '280', '360', '420']);
+  const distinctiveToks = (s) => [...modelToks(s)]
+    .filter((t) => !/^\d+(mm|cm|w|watts?|gb|tb|l|liters?|pin|hz|rpm|v|a)$/.test(t) && !SPEC_NUM.has(t))
+    .sort((a, b) => (b.length - a.length) || a.localeCompare(b));
   const groupKey = (brand, name) => {
-    const mt = [...modelToks(name)].sort().join('-');
-    return `${String(brand || '').toLowerCase()}|${mt}`;
+    const best = distinctiveToks(name)[0];
+    return best ? `${String(brand || '').toLowerCase()}|${best}` : null;
   };
   const groupMin = new Map();
+  const groupSeen = new Map();                  // key -> distinct sightings (needs >=2 to judge)
   const noteMin = (brand, name, price) => {
     if (!(price > 0)) return;
-    const mt = modelToks(name);
-    if (!mt.size) return;                       // no model token → nothing to corroborate against
     const k = groupKey(brand, name);
+    if (!k) return;                             // no distinctive model token → nothing to compare against
     if (!groupMin.has(k) || price < groupMin.get(k)) groupMin.set(k, price);
+    groupSeen.set(k, (groupSeen.get(k) || 0) + 1);
   };
   for (const s of sources) {
     for (const row of s.rows) noteMin(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case'), row.name, row.price);
@@ -297,9 +310,9 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   for (const p of ourCases) noteMin(p.b, p.n, p.pr);   // the price we already publish counts too
   const markupVerdict = (row) => {
     if (!(row.price > 0)) return null;
-    const mt = modelToks(row.name);
-    if (!mt.size) return null;
-    const lo = groupMin.get(groupKey(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case'), row.name));
+    const k = groupKey(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case'), row.name);
+    if (!k || (groupSeen.get(k) || 0) < 2) return null;   // one sighting corroborates nothing
+    const lo = groupMin.get(k);
     if (lo == null || !(lo > 0)) return null;
     const mult = row.price / lo;
     return mult > MARKUP_MULT ? { lo, mult: Number(mult.toFixed(2)) } : null;
@@ -437,7 +450,7 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
       }
       return byMethod;
     })(),
-    accepted: accepted.map((r) => ({ source: r.source, brand: r.brand, tier: r.tier, price: r.price, name: r.name, asin: r.asin, bbSku: r.bbSku, itemNumber: r.itemNumber, upc: r.upc, mpn: r.mpn, url: r.url })),
+    accepted: accepted.map((r) => ({ source: r.source, brand: r.brand, tier: r.tier, price: r.price, name: r.name, asin: r.asin, bbSku: r.bbSku, itemNumber: r.itemNumber, upc: r.upc, mpn: r.mpn, url: r.url, sellerClass: r.sellerClass || null, markup: r.markup || null, priceFlag: r.priceFlag || null, image: r.image || null })),
     rejected: rejected.map((r) => ({ source: r.source, brand: r.brand, tier: r.tier, price: r.price, name: r.name, verdict: r.verdict })),
   }, null, 2));
   console.log(`\nReport: ${path.relative(ROOT, OUT)}`);
