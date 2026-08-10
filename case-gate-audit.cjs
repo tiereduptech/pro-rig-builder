@@ -135,35 +135,41 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
 
   // catalog dedupe indexes
   const asins = new Set(), upcs = new Set(), mpns = new Set(), bbSkus = new Set(), neItems = new Set();
+  // key -> is the row we matched HIDDEN (quarantined)? A dedupe hit against a
+  // quarantined row means we "have" the case but nobody can see it — a different
+  // problem from a coverage gap, and one worth counting separately.
+  const hiddenKey = new Map();
+  const markHidden = (k, p) => { if (k) hiddenKey.set(String(k), !!p.needsReview); };
   const reAsin = /\/(?:dp|gp\/product)\/([A-Z0-9]{10})/i;
   for (const p of parts) {
-    if (p.asin) asins.add(String(p.asin).toUpperCase());
-    if (p.deals?.amazon?.asin) asins.add(String(p.deals.amazon.asin).toUpperCase());
+    if (p.asin) { asins.add(String(p.asin).toUpperCase()); markHidden(String(p.asin).toUpperCase(), p); }
+    if (p.deals?.amazon?.asin) { asins.add(String(p.deals.amazon.asin).toUpperCase()); markHidden(String(p.deals.amazon.asin).toUpperCase(), p); }
     const mm = p.deals?.amazon?.url && String(p.deals.amazon.url).match(reAsin);
-    if (mm) asins.add(mm[1].toUpperCase());
-    const u = normUPC(p.upc); if (u) upcs.add(u);
-    const m = normMPN(p.mpn); if (m) mpns.add(m);
+    if (mm) { asins.add(mm[1].toUpperCase()); markHidden(mm[1].toUpperCase(), p); }
+    const u = normUPC(p.upc); if (u) { upcs.add(u); markHidden(u, p); }
+    const m = normMPN(p.mpn); if (m) { mpns.add(m); markHidden(m, p); }
     // Best Buy rows carry NO sku field — the SKU lives in the affiliate URL's
     // prodsku= param (…7tiv.net/c/…?prodsku=6560305&u=…). Reading only deals.bestbuy.sku
     // matched 0 of 106 swept rows and pushed every dedupe decision onto UPC/MPN/name.
-    if (p.deals?.bestbuy?.sku) bbSkus.add(String(p.deals.bestbuy.sku));
+    if (p.deals?.bestbuy?.sku) { bbSkus.add(String(p.deals.bestbuy.sku)); markHidden(String(p.deals.bestbuy.sku), p); }
     const bbu = p.deals?.bestbuy?.url || '';
-    const ps = String(bbu).match(/[?&]prodsku=(\d+)/i); if (ps) bbSkus.add(ps[1]);
-    const sp = String(bbu).match(/skuId=(\d+)/i); if (sp) bbSkus.add(sp[1]);
+    const ps = String(bbu).match(/[?&]prodsku=(\d+)/i); if (ps) { bbSkus.add(ps[1]); markHidden(ps[1], p); }
+    const sp = String(bbu).match(/skuId=(\d+)/i); if (sp) { bbSkus.add(sp[1]); markHidden(sp[1], p); }
     for (const k of ['newegg', 'newegg_openbox']) {
       const it = p.deals?.[k]?.itemNumber || p.deals?.[k]?.sku;
-      if (it) neItems.add(String(it).toUpperCase());
+      if (it) { neItems.add(String(it).toUpperCase()); markHidden(String(it).toUpperCase(), p); }
     }
   }
   // name index over OUR cases only (token overlap needs same-category scope)
   const ourIdx = ourCases.map((p) => ({ p, t: tokens(p.n), m: modelToks(p.n), b: String(p.b || '').toLowerCase() }));
 
   function dupeReason(row) {
-    if (row.asin && asins.has(row.asin.toUpperCase())) return 'have:asin';
-    if (row.bbSku && bbSkus.has(row.bbSku)) return 'have:bestbuy_sku';
-    if (row.itemNumber && neItems.has(String(row.itemNumber).toUpperCase())) return 'have:newegg_item';
-    const u = normUPC(row.upc); if (u && upcs.has(u)) return 'have:upc';
-    const m = normMPN(row.mpn); if (m && mpns.has(m)) return 'have:mpn';
+    const hit = (verdict, key) => { row._dupeHidden = hiddenKey.get(String(key)) === true; return verdict; };
+    if (row.asin && asins.has(row.asin.toUpperCase())) return hit('have:asin', row.asin.toUpperCase());
+    if (row.bbSku && bbSkus.has(row.bbSku)) return hit('have:bestbuy_sku', row.bbSku);
+    if (row.itemNumber && neItems.has(String(row.itemNumber).toUpperCase())) return hit('have:newegg_item', String(row.itemNumber).toUpperCase());
+    const u = normUPC(row.upc); if (u && upcs.has(u)) return hit('have:upc', u);
+    const m = normMPN(row.mpn); if (m && mpns.has(m)) return hit('have:mpn', m);
     const t = tokens(row.name), mt = modelToks(row.name);
     const rb = String(CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case') || row.mfr || '').toLowerCase();
     if (t.size < 2) return null;                 // too little signal to judge on name
@@ -178,6 +184,7 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
       if (qualifierConflict(t, o.t)) continue;   // H6 vs H6 Flow, View 380 vs View 380 XL
       row._dupeAgainst = `#${o.p.id} ${o.p.n}`;
       row._dupeScore = c.toFixed(2);
+      row._dupeHidden = !!o.p.needsReview;
       return 'have:name_overlap';
     }
     return null;
@@ -209,7 +216,7 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   const all = [];
   const perSource = {};
   for (const s of sources) {
-    const st = { found: s.rows.length, marketplace: 0, deduped: 0, accepted: 0, rejected: 0 };
+    const st = { found: s.rows.length, marketplace: 0, deduped: 0, dedupedHidden: 0, accepted: 0, rejected: 0 };
     for (const row of s.rows) {
       // Newegg policy gate: first-party only (a 3P Newegg link is not one we publish)
       if (row.source === 'newegg' && row.sellerClass !== 'official') {
@@ -220,7 +227,12 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
       const dupe = dupeReason(row);
       const brand = CC.resolveDiscoveryBrand(row.name, row.mfr, 'Case');
       const tier = brandTier(brand || row.mfr);
-      if (dupe) { st.deduped++; all.push({ ...row, brand, tier, verdict: dupe, dupeAgainst: row._dupeAgainst, dupeScore: row._dupeScore }); continue; }
+      if (dupe) {
+        st.deduped++;
+        if (row._dupeHidden) st.dedupedHidden = (st.dedupedHidden || 0) + 1;
+        all.push({ ...row, brand, tier, verdict: dupe, dupeAgainst: row._dupeAgainst, dupeScore: row._dupeScore, dupeHidden: !!row._dupeHidden });
+        continue;
+      }
       const gate = gateLadder(row);
       if (gate) { st.rejected++; all.push({ ...row, brand, tier, verdict: gate, legacyPrebuilt: LEGACY_PREBUILT_RE.test(row.name) }); }
       else { st.accepted++; all.push({ ...row, brand, tier, verdict: 'ACCEPT', legacyPrebuilt: LEGACY_PREBUILT_RE.test(row.name) }); }
@@ -240,16 +252,17 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
   console.log(`catalog: ${parts.length} products, ${ourCases.length} Case rows (${ourCases.filter((p) => !p.needsReview).length} live)\n`);
   console.log('PER SOURCE');
   console.log(bar);
-  console.log(`  ${'source'.padEnd(10)} ${'found'.padStart(7)} ${'3P drop'.padStart(8)} ${'already have'.padStart(13)} ${'gate-rejected'.padStart(14)} ${'ACCEPT'.padStart(7)}`);
+  console.log(`  ${'source'.padEnd(10)} ${'found'.padStart(7)} ${'3P drop'.padStart(8)} ${'already have'.padStart(13)} ${'(of those, hidden)'.padStart(19)} ${'gate-rejected'.padStart(14)} ${'ACCEPT'.padStart(7)}`);
   for (const [k, s] of Object.entries(perSource)) {
-    console.log(`  ${k.padEnd(10)} ${String(s.found).padStart(7)} ${String(s.marketplace).padStart(8)} ${String(s.deduped).padStart(13)} ${String(s.rejected).padStart(14)} ${String(s.accepted).padStart(7)}`);
+    console.log(`  ${k.padEnd(10)} ${String(s.found).padStart(7)} ${String(s.marketplace).padStart(8)} ${String(s.deduped).padStart(13)} ${String(s.dedupedHidden || 0).padStart(19)} ${String(s.rejected).padStart(14)} ${String(s.accepted).padStart(7)}`);
   }
   const tot = Object.values(perSource).reduce((a, s) => ({
     found: a.found + s.found, marketplace: a.marketplace + s.marketplace,
-    deduped: a.deduped + s.deduped, rejected: a.rejected + s.rejected, accepted: a.accepted + s.accepted,
-  }), { found: 0, marketplace: 0, deduped: 0, rejected: 0, accepted: 0 });
+    deduped: a.deduped + s.deduped, dedupedHidden: a.dedupedHidden + (s.dedupedHidden || 0),
+    rejected: a.rejected + s.rejected, accepted: a.accepted + s.accepted,
+  }), { found: 0, marketplace: 0, deduped: 0, dedupedHidden: 0, rejected: 0, accepted: 0 });
   console.log(bar);
-  console.log(`  ${'TOTAL'.padEnd(10)} ${String(tot.found).padStart(7)} ${String(tot.marketplace).padStart(8)} ${String(tot.deduped).padStart(13)} ${String(tot.rejected).padStart(14)} ${String(tot.accepted).padStart(7)}`);
+  console.log(`  ${'TOTAL'.padEnd(10)} ${String(tot.found).padStart(7)} ${String(tot.marketplace).padStart(8)} ${String(tot.deduped).padStart(13)} ${String(tot.dedupedHidden).padStart(19)} ${String(tot.rejected).padStart(14)} ${String(tot.accepted).padStart(7)}`);
 
   // gate table, ranked by mainstream kills
   const gates = new Map();
