@@ -21,7 +21,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -46,7 +46,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-27",
+    "quarantinedAt": "2026-08-10",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -85,7 +85,12 @@ export default [
       "amazon": {
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0GFPWZ82H?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -104,7 +109,10 @@ export default [
       "amazon": {
         "price": 239.88,
         "url": "https://www.amazon.com/dp/B07BDFW1Y7?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   },
@@ -121,9 +129,14 @@ export default [
     "asin": "B0DGTBNFRP",
     "deals": {
       "amazon": {
-        "price": 144.49,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DGTBNFRP?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "Holludle",
+        "priceConfirmedAt": "2026-08-10",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -140,9 +153,14 @@ export default [
     "asin": "B0DYNW9SW6",
     "deals": {
       "amazon": {
-        "price": 229.99,
+        "price": 159.94,
         "url": "https://www.amazon.com/dp/B0DYNW9SW6?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-08-10",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -159,9 +177,14 @@ export default [
     "asin": "B0CQD3K8PJ",
     "deals": {
       "amazon": {
-        "price": 107.99,
+        "price": 119.99,
         "url": "https://www.amazon.com/dp/B0CQD3K8PJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "3p",
+        "priceSeller": "TRALT",
+        "priceConfirmedAt": "2026-08-10",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -180,7 +203,12 @@ export default [
       "amazon": {
         "price": 224.09,
         "url": "https://www.amazon.com/dp/B07V5WKJM4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-10",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -199,7 +227,10 @@ export default [
       "amazon": {
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B09D33BXHL?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   },
@@ -216,9 +247,14 @@ export default [
     "asin": "B0BD7Z94ZQ",
     "deals": {
       "amazon": {
-        "price": 177.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0BD7Z94ZQ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-08-10",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -237,7 +273,10 @@ export default [
       "amazon": {
         "price": 170.99,
         "url": "https://www.amazon.com/dp/B07S574Z4R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-10"
       }
     }
   }
