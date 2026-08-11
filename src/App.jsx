@@ -701,6 +701,18 @@ const RETAILER_GROUP_MAP = {
   msi: "msi",
 };
 const marketplaceGroupOf = key => RETAILER_GROUP_MAP[key] || key;
+// A VARIANT retailer key is one that rolls up into a different group: newegg_openbox,
+// newegg_marketplace, newegg_refurb, newegg_used all map to "newegg", while amazon/bestbuy/
+// newegg/msi map to themselves and are PRIMARY. Derived from RETAILER_GROUP_MAP rather than
+// hardcoded, so a future variant suppresses correctly the moment it is registered there.
+//
+// Why it matters: the product page fills in a dashed "Not tracked at this retailer / N/A" row
+// for every known retailer a product lacks. For a primary that reads as real coverage
+// information ("we checked Best Buy, they don't carry it"). For a VARIANT it is pure noise —
+// nobody expects an open-box or marketplace listing to exist — and it was rendering on 3,425
+// pages for Open Box and 1,255 for Marketplace, i.e. thin content on 99.6% of case pages to
+// serve the 37 that actually have such an offer.
+const isVariantRetailer = key => marketplaceGroupOf(key) !== key;
 // Return all raw retailer keys that belong to a given group
 const expandMarketplaceGroup = group => Object.keys(RETAILER_GROUP_MAP).filter(k => RETAILER_GROUP_MAP[k] === group);
 // Condition mapping: deal field name → product condition
@@ -4262,7 +4274,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                         <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
-                    {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)).map(name=>{
+                    {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)&&!isVariantRetailer(name)).map(name=>{
                       const cap=retailerDisplayName(name);
                       return <div key={name} style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,gap:12,background:"var(--bg4)",border:"1px dashed var(--bdr)",opacity:0.55}}>
                         <div style={{flex:1}}>
