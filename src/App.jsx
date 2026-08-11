@@ -465,7 +465,102 @@ const BUILDER_SECTIONS=[
   {id:"peripherals",label:"Peripherals",icon:"peripherals",cats:PERIPH_CATS},
   {id:"accessories",label:"Accessories",icon:"accessories",cats:ACCESSORY_CATS},
 ];
-const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Side Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost (OC)",type:"Type",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM"};
+const SL={cores:"Cores/Threads",socket:"Socket",tdp:"TDP",bench:"Score",vram:"VRAM",cap:"Capacity",speed:"Speed",ff:"Form Factor",wifi:"WiFi",storageType:"Type",watts:"Watts",eff:"Rating",modular:"Modular",panel:"Panel",res:"Resolution",refresh:"Refresh",screenSize:"Screen",switches:"Switches",layout:"Layout",wireless:"Wireless",baseClock:"Base Clock",boostClock:"Boost Clock",threads:"Threads",length:"Length",pwr:"Power",seq_r:"Read",seq_w:"Write",cl:"CAS Latency",ramType:"Type",chipset:"Chipset",coolerType:"Type",noise:"Noise",tdp_rating:"TDP Rating",fans_inc:"Fans Included",maxGPU:"Max GPU Length",maxCooler:"Max Cooler",cfm:"Airflow",size:"Size",sensor:"Sensor",dpi:"DPI",weight:"Weight",driver:"Driver",mic:"Mic",hsType:"Type",mouseType:"Type",segment:"Use Case",arch:"Architecture",pcie:"PCIe",tg:"Side Panel",usb_c:"USB-C",mobo:"Mobo Support",drive25:"2.5in Bays",drive35:"3.5in Bays",memType:"Memory",memSlots:"RAM Slots",maxMem:"Max RAM",m2Slots:"M.2 Slots",lan:"Ethernet",ecc:"ECC",rgb:"RGB",rgbType:"RGB Type",rgbConnector:"RGB Connector",color:"Color",igpu:"iGPU",igpuName:"iGPU Name",vcache:"V-Cache",serverCPU:"Server",pCores:"P-Cores",eCores:"E-Cores",l3:"L3 Cache",nm:"Process",bus:"Bus Width",slots:"Slot Width",interface:"Interface",dram:"DRAM Cache",tlc:"NAND Type",pack:"Pack",atx3:"ATX 3.0",radSize:"Radiator",rads:"AIO Support",height:"Height",fans:"Fans",fanSize:"Fan Size",response:"Response",sync:"Adaptive Sync",hdr:"HDR",curved:"Curved",hotswap:"Hot-Swap",pollingRate:"Polling Rate",shape:"Grip",anc:"ANC",surroundSound:"Surround",openBack:"Open Back",autofocus:"Autofocus",fov:"FOV",pattern:"Pattern",sampleRate:"Sample Rate",bitDepth:"Bit Depth",connection:"Connection",connector:"Fan Connector",channels:"Channels",snr:"SNR",hasAmp:"Headphone Amp",lanSpeed:"Speed",ports:"Ports",wifiStandard:"WiFi",bt:"Bluetooth",driveType:"Drive Type",readSpeed:"Read Speed",writeSpeed:"Write Speed",memSpeed:"Memory Speed*",audio:"Audio",sticks:"Sticks",voltage:"Voltage",cuda:"CUDA Cores",boost:"Boost (OC)",type:"Type",tier:"Suggested Use",sp:"Stream Processors",xeCores:"Xe Cores",maxMemSpeed:"Max RAM Speed",sata:"SATA Ports",pciSlots:"PCIe Slots",impedance:"Max Impedance",formFactor:"Form Factor",digitalOut:"Digital Output",pcieLane:"PCIe Lane",profile:"Profile",wol:"Wake-on-LAN",vlan:"VLAN",pxe:"PXE Boot",maxSpeed:"Max Speed",antennas:"Antennas",band:"Band",heatsink:"Heatsink",dacChip:"DAC Chip",outputPower:"Output Power",upc:"UPC",mpn:"Model #",model:"Model",generation:"Generation",vramType:"VRAM Type",dimensions:"Dimensions",form:"Form",tower:"Tower",series:"Series",compatibility:"Compatibility",contrast:"Contrast",rpm:"RPM",recommendedPSU:"Recommended PSU",nand:"NAND Type",pcieGen:"PCIe Gen",read:"Read Speed",write:"Write Speed",dramCache:"DRAM Cache",depth:"Depth",unlocked:"Unlocked",fans_max:"Max Fans",fan_slots:"Fan Mounts",used:"Condition",vendor:"Vendor",devices:"Devices",term:"Term",duration:"Duration",sockets:"Socket Support",socketsSupported:"Compatible Sockets",fanCount:"Fan Count",radiator:"Radiator",airflow:"Airflow",pwm:"PWM",chairType:"Type",material:"Material",maxWeight:"Max Weight",pciType:"Card Type",cardHeight:"Bracket",cableType:"Cable Type",cableLength:"Length",connectorType:"Connector",capacity:"Capacity",resolution:"Resolution",panelType:"Panel Type",touch:"Touchscreen",kbType:"Type",switchType:"Switch Type",connectivity:"Connectivity",micType:"Type",buttons:"Buttons",padSize:"Size",surface:"Surface",osName:"OS",edition:"Edition",licenseType:"License",mdisc:"M-DISC",iface:"Interface",conductivity:"Conductivity",quantity:"Quantity",va:"VA Rating",runtime:"Runtime",outlets:"Outlets",fps:"Frame Rate",bluetooth:"Bluetooth"};
+
+// ── CUSTOMER-FACING SPEC ALLOWLIST ──────────────────────────────────────────────
+// Internal provenance was rendering in the public spec table (and therefore in the
+// PRERENDERED HTML that Google indexes): source, batchId, discoveredAt, addedAt on case
+// rows, plus value/asin/reviews/needsReview/linkVerified*/recoveredBy/*RemovedOutlier
+// across every category. Audited 2026-08-10: 19 unlabelled fields reached the Case table,
+// 19 for Storage, 16 for PSU, 13 for RAM, 12 for CPU/Motherboard, 10 for GPU.
+//
+// ROOT CAUSE was four independent DENYLISTS — one per render site — that had drifted apart
+// (13 keys at the browse-expanded site vs 45 at the product-page site), so each site leaked
+// a different subset and every new internal field leaked again by default. Nobody can
+// maintain four denylists against a catalog that keeps gaining fields.
+//
+// The fix inverts it, in two layers:
+//   1. HARD RULE — a field renders ONLY if it has a customer-facing label in SL. No label,
+//      no render. This is what closes the CLASS: an internal field added tomorrow cannot
+//      leak, because nobody writes a display label for `batchId`.
+//   2. CURATION — SPEC_ALLOW gives an explicit ORDERED key list for the core categories, so
+//      those tables are deterministic (no more object-key order) and hand-picked. A category
+//      with no entry falls back to layer 1, so the ~23 other categories keep their specs
+//      instead of going blank.
+// SPEC_NEVER covers the few LABELLED fields the spec table must still omit because they are
+// displayed elsewhere on the page (bench as the score, chipset/generation in the header).
+// upc stays RENDERABLE: it carries a customer-facing label, it was already displayed, and
+// pruning it would be a display change beyond stopping the internal-field leak.
+
+// SAME-MEANING FIELD PAIRS. The catalog carries two spellings for several concepts and many
+// rows have BOTH — 258 monitors carry `res` AND `resolution`, 168 coolers carry `radSize` AND
+// `radiator` — so labelling both printed the same fact twice. (The `tlc`/`nand` duplicate was
+// the first instance of this; these are the rest, found by measuring co-occurrence.) Render
+// the FIRST present in allowlist order and suppress the rest of its group, which keeps the
+// rows that carry only the alias.
+const SPEC_ALIASES = [["res","resolution"],["sockets","socketsSupported"],["cfm","airflow"],
+  ["cap","capacity"],["interface","iface"],["bt","bluetooth"],["fans_inc","fanCount"],
+  ["radSize","radiator"],["fanSize","size"],["nand","tlc"],["formFactor","ff","form"],
+  ["dram","dramCache"],["lanSpeed","speed"]];
+const ALIAS_OF = new Map();
+SPEC_ALIASES.forEach((g,i)=>g.forEach(k=>ALIAS_OF.set(k,i)));
+const SPEC_NEVER = new Set(["bench","condition","generation","chipset"]);
+const SPEC_ALLOW = {
+  Case:        ["ff","tower","mobo","maxGPU","maxCooler","rads","drive35","drive25","fans_inc","fans_max","fan_slots","tg","rgb","usb_c","color","dimensions","weight","mpn","upc"],
+  GPU:         ["vram","vramType","memType","bus","baseClock","boostClock","boost","cuda","sp","xeCores","tdp","pwr","recommendedPSU","length","slots","pcie","interface","arch","segment","type","model","color","weight","mpn","upc"],
+  CPU:         ["cores","threads","pCores","eCores","socket","baseClock","boostClock","tdp","l3","igpu","igpuName","vcache","unlocked","memType","maxMem","maxMemSpeed","arch","nm","series","model","weight","mpn","upc"],
+  RAM:         ["memType","ramType","cap","sticks","speed","cl","voltage","formFactor","form","height","rgb","ecc","color","weight","mpn","upc"],
+  // `tlc` is deliberately absent: it is a BOOLEAN sharing `nand`'s "NAND Type" label, so it
+  // rendered a second, meaningless "NAND Type | true" row next to the real "NAND Type | TLC".
+  Storage:     ["storageType","cap","interface","formFactor","form","ff","pcie","pcieGen","seq_r","seq_w","read","write","dram","dramCache","nand","rpm","heatsink","hotswap","weight","mpn","upc"],
+  PSU:         ["watts","eff","modular","atx3","ff","formFactor","fanSize","fans","rgb","depth","color","weight","mpn","upc"],
+  Motherboard: ["socket","ff","formFactor","memType","memSlots","maxMem","memSpeed","maxMemSpeed","m2Slots","sata","pciSlots","pcie","lan","wifi","wifiStandard","bt","usb_c","audio","digitalOut","color","weight","mpn","upc"],
+  Antivirus:       ["vendor","devices","term","duration","mpn","upc"],
+  CPUCooler:       ["coolerType","sockets","socketsSupported","height","radSize","radiator","fanSize","fans_inc","fanCount","fans","rpm","cfm","airflow","noise","pwm","tdp_rating","rgb","compatibility","color","weight","mpn","upc"],
+  CaseFan:         ["size","fanSize","pack","rpm","cfm","airflow","noise","pwm","rgb","rgbType","rgbConnector","connector","fans_inc","color","weight","mpn","upc"],
+  Chair:           ["chairType","material","maxWeight","color","weight","mpn","upc"],
+  Desk:            ["dimensions","material","color","weight","mpn","upc"],
+  EthernetCard:    ["lanSpeed","speed","ports","connector","interface","pcieLane","profile","pciType","cardHeight","wol","vlan","pxe","weight","mpn","upc"],
+  ExtensionCables: ["cableType","cableLength","connectorType","color","rgb","weight","mpn","upc"],
+  ExternalOptical: ["driveType","connection","readSpeed","writeSpeed","weight","mpn","upc"],
+  ExternalStorage: ["storageType","cap","capacity","interface","driveType","formFactor","form","ff","pcie","pcieGen","seq_r","seq_w","read","write","nand","rpm","speed","weight","mpn","upc"],
+  Headset:         ["hsType","driver","mic","anc","surroundSound","openBack","impedance","connection","wireless","weight","mpn","upc"],
+  InternalDisplay: ["size","resolution","panelType","touch","connection","weight","mpn","upc"],
+  Keyboard:        ["kbType","switches","switchType","layout","wireless","connectivity","hotswap","rgb","weight","mpn","upc"],
+  Microphone:      ["micType","pattern","sampleRate","bitDepth","connection","weight","mpn","upc"],
+  Monitor:         ["screenSize","res","resolution","panel","refresh","response","sync","hdr","curved","contrast","ports","weight","mpn","upc"],
+  Mouse:           ["mouseType","sensor","dpi","buttons","wireless","connectivity","shape","pollingRate","rgb","weight","mpn","upc"],
+  MousePad:        ["padSize","surface","material","size","weight","mpn","upc"],
+  OS:              ["osName","edition","licenseType","mpn","upc"],
+  OpticalDrive:    ["driveType","interface","iface","storageType","formFactor","readSpeed","writeSpeed","mdisc","weight","mpn","upc"],
+  SoundCard:       ["interface","channels","snr","bitDepth","sampleRate","dacChip","hasAmp","impedance","digitalOut","outputPower","weight","mpn","upc"],
+  ThermalPaste:    ["type","conductivity","quantity","weight","mpn","upc"],
+  UPS:             ["va","watts","runtime","outlets","ff","weight","mpn","upc"],
+  Webcam:          ["resolution","fps","autofocus","fov","connection","weight","mpn","upc"],
+  WiFiCard:        ["wifiStandard","maxSpeed","band","antennas","interface","pcieLane","pciType","cardHeight","bt","bluetooth","heatsink","weight","mpn","upc"],
+};
+// The ONE place spec rows are built. Every render site calls this, so the sites can never
+// drift apart again. Returns ordered [key, value] pairs.
+function specRows(p){
+  if(!p) return [];
+  const allow = SPEC_ALLOW[p.c];
+  // FAIL CLOSED. A category with no allowlist renders NOTHING rather than falling back to
+  // "anything with a label". A blank spec table is a visible, harmless bug somebody fixes by
+  // adding the list; the open fallback is an invisible leak that reaches Google. All 30
+  // catalog categories are covered above, so this only ever fires for a NEW category.
+  if(!allow) return [];
+  const ok = k => !SPEC_NEVER.has(k) && SL[k] && p[k]!=null && typeof p[k]!=="object"
+    && !(k==="boost" && p.boostClock!=null && p.boost===p.boostClock);
+  const usedGroup = new Set(); const out = [];
+  for(const k of allow){
+    if(!ok(k)) continue;
+    const g = ALIAS_OF.get(k);
+    if(g!=null){ if(usedGroup.has(g)) continue; usedGroup.add(g); }
+    out.push([k,p[k]]);
+  }
+  return out;
+}
+
 const SF={cores:(v,p)=>p&&p.threads?v+"C/"+p.threads+"T":v+"C",sticks:(v,p)=>{if(!v)return v;const total=p&&(p.cap||p.capacity);if(total&&v>0){const per=Math.round(total/v);return v+"x"+per+"GB";}return v+"x";},tdp:v=>v+"W",vram:v=>typeof v==="number"?v+"GB":v,cap:v=>typeof v==="number"?(v>=1000?(Math.round(v/100)/10).toString().replace(/\.0$/,"")+"TB":v+"GB"):v,speed:v=>v+"MHz",watts:v=>v+"W",wifi:v=>v||"None",refresh:v=>v+"Hz",screenSize:v=>v+'"',bench:v=>v+"%",baseClock:v=>v+"MHz",boostClock:v=>v+"MHz",length:v=>v+"mm",seq_r:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",seq_w:v=>v>=1000?(v/1000).toFixed(1)+"GB/s":v+"MB/s",noise:v=>{const n=typeof v==="number"?v:parseFloat(v);if(isNaN(n))return v;const ref=n<=15?"Near silent":n<=20?"Whisper quiet":n<=25?"Library quiet":n<=30?"Quiet room":n<=35?"Light hum":n<=40?"Noticeable":"Loud";return n+"dBA\n"+ref;},tdp_rating:(v,p)=>p&&p.tdp_rating_est?"~"+v+"W":v+"W",maxGPU:v=>v+"mm",maxCooler:v=>v+"mm",cfm:v=>typeof v==="number"?v.toFixed(1)+" CFM":v,dpi:v=>v>=1000?(v/1000)+"K":v,weight:v=>{if(v==null)return"—";if(typeof v==="number")return v+"g";const s=String(v);let m=s.match(/([\d.]+)\s*(kilogram|kg)/i);if(m)return(parseFloat(m[1])*2.20462).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(gram|g)\b/i);if(m)return(parseFloat(m[1])/453.592).toFixed(2)+" lbs";m=s.match(/([\d.]+)\s*(pound|lb|lbs)/i);if(m)return parseFloat(m[1]).toFixed(1)+" lbs";m=s.match(/([\d.]+)\s*(ounce|oz)/i);if(m)return(parseFloat(m[1])/16).toFixed(2)+" lbs";return s;},cl:v=>"CL"+v,driver:v=>v+"mm",height:v=>v+"mm",voltage:v=>v+"V",boost:v=>v+"MHz",tier:v=>typeof v==="string"?v.charAt(0).toUpperCase()+v.slice(1):v,snr:v=>v+"dB",sampleRate:v=>v===0?"Analog":v+"kHz",lanSpeed:v=>v,tg:v=>v?"Yes":"No",usb_c:v=>v?"Yes":"No",ecc:v=>v?"Yes":"No",rgb:v=>v?"Yes":"No",igpu:v=>v?"Yes":"No",vcache:v=>v?"Yes":"No",serverCPU:v=>v?"Yes":"No",atx3:v=>v?"Yes":"No",dram:v=>v?"Yes":"No",wireless:v=>v?"Yes":"No",curved:v=>v?"Yes":"No",hotswap:v=>v?"Yes":"No",anc:v=>v?"Yes":"No",mic:v=>typeof v==="boolean"?(v?"Yes":"No"):v,hasAmp:v=>v?"Yes":"No",autofocus:v=>v?"Yes":"No",wol:v=>v?"Yes":"No",vlan:v=>v?"Yes":"No",pxe:v=>v?"Yes":"No",digitalOut:v=>v?"Yes":"No",heatsink:v=>v?"Yes":"No",pwm:v=>v?"Yes":"No",impedance:v=>v+"Ω",pcie:v=>String(v).startsWith("Gen")?v:"Gen"+v,fanSize:v=>typeof v==="number"?v+"mm":v,fans_inc:v=>v+(v===1?" fan":" fans"),socket:v=>typeof v==="string"?v.toUpperCase():v,chipset:v=>typeof v==="string"?v.toUpperCase():v,memType:v=>typeof v==="string"?v.toUpperCase():v,panel:v=>typeof v==="string"?v.toUpperCase():v,upc:v=>{if(!v)return"—";const list=String(v).split(",").map(x=>x.trim()).filter(Boolean);return list.length>1?list[0]+" (+"+(list.length-1)+")":list[0];},rads:v=>{if(!v)return"None";const sizes=String(v).split(",").map(s=>s.trim());const max=Math.max(...sizes.map(s=>parseInt(s)||0));return max>=360?"Up to 360mm":max>=280?"Up to 280mm":max>=240?"Up to 240mm":max>=120?"120mm only":"None";}};
 const fmt=(k,v,p)=>v==null?"—":(SF[k]?SF[k](v,p):String(v));
 
@@ -4124,7 +4219,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                 <div>
                   <div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--accent)",letterSpacing:1,marginBottom:10,fontWeight:700,textTransform:"uppercase"}}>Specifications</div>
                   <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"0 20px"}}>
-                    {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset"].includes(k)&&!(k==="boost"&&p.boostClock!=null&&p.boost===p.boostClock)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
+                    {specRows(p).map(([k,v])=>
                       <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:"1px solid var(--bdr)"}}>
                         <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>{SL[k]||k}</span>
                         <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",fontWeight:600}}>{fmt(k,v)}</span>
@@ -4641,7 +4736,7 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
             {isExp&&<div style={{background:"var(--bg3)",borderRadius:"0 0 8px 8px",padding:"12px 16px",marginBottom:4,border:"1px solid var(--bdr)",borderTop:"none"}}>
               <div style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--mint)",letterSpacing:1.5,marginBottom:8,fontWeight:600}}>SPECIFICATIONS</div>
               <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:"0 20px"}}>
-                {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","reviews","asin","discount","listPrice","percentageDiscount","fullTitle","description","enrichedAt","additionalImages","amazonCategories","applicableVouchers","boughtPastMonth","isAmazonChoice","isBestSeller","isAvailable","currency","discoveredVia","discoveredAt","sourceFile","imageUrl","amazonUrl","category","brand","name","title","specs"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
+                {specRows(p).map(([k,v])=>
                   <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"3px 0",borderBottom:"1px solid var(--bdr)"}}>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--dim)"}}>{SL[k]||k}</span>
                     <span style={{fontFamily:"var(--mono)",fontSize:9,color:"var(--txt)",fontWeight:500}}>{fmt(k,v)}</span>
@@ -4770,7 +4865,7 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
           {isExp&&<div style={{padding:"0 12px 14px",borderTop:"1px solid var(--bdr)"}}>
             <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",fontWeight:700,letterSpacing:1,margin:"12px 0 8px"}}>SPECIFICATIONS</div>
             <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"4px 12px"}}>
-              {Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","reviews","asin","discount","listPrice","percentageDiscount","fullTitle","description","enrichedAt","additionalImages","amazonCategories","applicableVouchers","boughtPastMonth","isAmazonChoice","isBestSeller","isAvailable","currency","discoveredVia","discoveredAt","sourceFile","imageUrl","amazonUrl","category","brand","name","title","specs","needsReview","bundle"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").map(([k,v])=>
+              {specRows(p).map(([k,v])=>
                 <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"3px 0",borderBottom:"1px solid var(--bdr)",gap:8,minWidth:0}}>
                   <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{SL[k]||k}</span>
                   <span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--txt)",fontWeight:600,textAlign:"right",overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>{fmt(k,v)}</span>
@@ -5062,7 +5157,7 @@ function BuilderPage({th}){
     if(cat==="CPUCooler")return `${p.coolType} · ${p.coolerH||"?"}mm`;
     if(cat==="CaseFan")return `${p.fanSize}mm · ${p.packQty||1}x · ${p.airflow||"?"}CFM`;
     if(cat==="Monitor")return `${p.size}" ${p.panel} ${p.resolution} ${p.refreshRate}Hz`;
-    return Object.entries(p).filter(([k])=>!["id","n","c","b","pr","r","cp","off","deals","msrp","url","img","bench","condition","generation","chipset","uid","upc"].includes(k)&&p[k]!=null&&typeof p[k]!=="object").slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
+    return specRows(p).slice(0,2).map(([k,v])=>`${fmt(k,v)}`).join(" · ");};
 
   // ── Render a builder section ──
   const renderSection=(section)=>{
