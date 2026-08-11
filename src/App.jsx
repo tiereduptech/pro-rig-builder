@@ -713,6 +713,16 @@ const marketplaceGroupOf = key => RETAILER_GROUP_MAP[key] || key;
 // pages for Open Box and 1,255 for Marketplace, i.e. thin content on 99.6% of case pages to
 // serve the 37 that actually have such an offer.
 const isVariantRetailer = key => marketplaceGroupOf(key) !== key;
+// MANUFACTURER STORES only ever sell their own products, so an empty row for one is not
+// coverage information — it is a statement about something that can never be true. "MSI — Not
+// tracked at this retailer" on a Corsair case or an Intel CPU told the customer nothing, and it
+// rendered on 3,488 pages to serve 258 real MSI offers. Same reasoning as the variant keys, so
+// the same treatment: render the row only when there is an actual offer. Kept as its own set
+// rather than folded into RETAILER_GROUP_MAP because MSI IS a primary retailer for its own
+// products — it is a legitimate group, just never a meaningful ABSENCE.
+const MANUFACTURER_STORES = new Set(['msi']);
+// One predicate for "never render this retailer as an empty row".
+const suppressWhenNoOffer = key => isVariantRetailer(key) || MANUFACTURER_STORES.has(key);
 // Return all raw retailer keys that belong to a given group
 const expandMarketplaceGroup = group => Object.keys(RETAILER_GROUP_MAP).filter(k => RETAILER_GROUP_MAP[k] === group);
 // Condition mapping: deal field name → product condition
@@ -4274,7 +4284,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                         <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}><span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</span><div style={{background:"var(--mint)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:"var(--bg)"}}>Buy →</div></div>
                       </a>}
-                    {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)&&!isVariantRetailer(name)).map(name=>{
+                    {rr.length>0&&ALL_RETAILERS.filter(name=>!rr.some(r=>r.name===name)&&!suppressWhenNoOffer(name)).map(name=>{
                       const cap=retailerDisplayName(name);
                       return <div key={name} style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,gap:12,background:"var(--bg4)",border:"1px dashed var(--bdr)",opacity:0.55}}>
                         <div style={{flex:1}}>
