@@ -678,6 +678,10 @@ const RETAILER_DISPLAY_NAMES = {
   bestbuy: "Best Buy",
   newegg: "Newegg",
   newegg_openbox: "Newegg (Open Box)",
+  // A cheaper MARKETPLACE offer preserved alongside the first-party one by the case
+  // dedupe: deals.newegg stays 1P, deals.newegg_marketplace carries the 3P listing, so
+  // neither price is lost when two Newegg listings of the same product are merged.
+  newegg_marketplace: "Newegg (Marketplace)",
   newegg_refurb: "Newegg (Refurbished)",
   newegg_used: "Newegg (Used)",
   msi: "MSI",
@@ -691,6 +695,7 @@ const RETAILER_GROUP_MAP = {
   bestbuy: "bestbuy",
   newegg: "newegg",
   newegg_openbox: "newegg",
+  newegg_marketplace: "newegg",   // groups under the single Newegg marketplace filter
   newegg_refurb: "newegg",
   newegg_used: "newegg",
   msi: "msi",
@@ -806,6 +811,11 @@ function SellerTag({ r }) {
 // Dropped in wherever the Amazon-only badge used to sit, so adding Newegg (2026-08-10) did
 // not mean touching seven call sites again the next time a retailer gains 3P prices.
 function ThirdPartyBadges({p}){
+  // deals.newegg_marketplace is DELIBERATELY absent here. This cluster sits next to the
+  // product name/price, so a badge here reads as "this product is sold 3P". When a row
+  // carries BOTH a 1P newegg deal and a cheaper newegg_marketplace one, the row's primary
+  // price is the 1P one and must not wear a 3P badge — the disclosure belongs on the
+  // marketplace LINE in the price-comparison list, which renders it per-retailer.
   return <>
     <ThirdPartyBadge deal={p?.deals?.amazon} retailer="Amazon"/>
     <ThirdPartyBadge deal={p?.deals?.newegg} retailer="Newegg"/>
@@ -3808,7 +3818,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                       {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
-                    {(r.name==="amazon"||r.name==="newegg")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
+                    {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:8,flexShrink:0}}>
                     <span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
@@ -4238,7 +4248,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                         <div style={{flex:1}}>
                           <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
-                          {(r.name==="amazon"||r.name==="newegg")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
+                          {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
                         </div>
                         <div style={{display:"flex",alignItems:"center",gap:12}}>
                           <span style={{fontFamily:"var(--ff)",fontSize:22,fontWeight:800,color:ri===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>

@@ -69,6 +69,7 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
   const deleteIds = new Set();
   const report = [];
   const conflicts = [];
+  const preserved = [];   // cheaper 3P offers kept as deals.newegg_marketplace
   const enriched = { img: 0, upc: 0, mpn: 0, reviews: 0 };
 
   for (const g of groups) {
@@ -87,9 +88,23 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
         if (inc1p !== ex1p) { keepInc = inc1p; how = '1p-over-3p'; }
         else if (dealTs(inc) !== dealTs(ex)) { keepInc = dealTs(inc) > dealTs(ex); how = 'freshest-ts'; }
         else { keepInc = inc.price < ex.price; how = 'lower-price'; }
+        const kept = keepInc ? inc : ex, dropped = keepInc ? ex : inc;
         if (keepInc) { survivor.deals[rk] = inc; merged.add(rk); }
+        // PRESERVE a cheaper marketplace offer rather than losing it. deals.newegg keeps the
+        // first-party price; the cheaper 3P listing becomes its own retailer key, exactly as
+        // newegg_openbox already does. A more EXPENSIVE 3P offer is still discarded -- that is
+        // the markup case and preserving it helps nobody.
+        if (rk === 'newegg' && kept.priceSource === '1p' && dropped.priceSource === '3p'
+            && dropped.price > 0 && dropped.price < kept.price) {
+          const cur = survivor.deals.newegg_marketplace;
+          if (!cur || !(cur.price > 0) || dropped.price < cur.price) {
+            survivor.deals.newegg_marketplace = { ...dropped, sellerClass: 'marketplace', priceSource: '3p' };
+            preserved.push({ survivorId: survivor.id, oneP: kept.price, threeP: dropped.price,
+              saving: Number((kept.price - dropped.price).toFixed(2)), name: String(survivor.n).slice(0, 42) });
+          }
+        }
         conflicts.push({ retailer: rk, survivorId: survivor.id, fromId: p.id, how,
-          keptPrice: keepInc ? inc.price : ex.price, droppedPrice: keepInc ? ex.price : inc.price,
+          keptPrice: kept.price, droppedPrice: dropped.price,
           name: String(survivor.n).slice(0, 44) });
       }
       // enrich — recovers a missing thumbnail/identifier from the copy being deleted
@@ -99,9 +114,13 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
       if ((survivor.reviews || 0) < (p.reviews || 0)) { survivor.reviews = p.reviews; if (p.r != null) survivor.r = p.r; enriched.reviews++; }
       deleteIds.add(p.id);
     }
-    // the survivor's own price must track the deal we kept
-    const best = retailers(survivor).map((k) => survivor.deals[k].price).filter((v) => v > 0);
-    if (best.length) { const lo = Math.min(...best); if (survivor.pr !== lo) { survivor.msrp = survivor.msrp ?? survivor.pr; survivor.pr = lo; } }
+    // The survivor's headline price tracks its PRIMARY deal, deliberately EXCLUDING
+    // newegg_marketplace: the row's primary price is the first-party one, and pr is what the
+    // badge-free product heading shows. The cheaper marketplace price still surfaces in the
+    // price-comparison list, which sorts every deal by price and marks the cheapest BEST.
+    const primary = retailers(survivor).filter((k) => k !== 'newegg_marketplace')
+      .map((k) => survivor.deals[k].price).filter((v) => v > 0);
+    if (primary.length) { const lo = Math.min(...primary); if (survivor.pr !== lo) { survivor.msrp = survivor.msrp ?? survivor.pr; survivor.pr = lo; } }
     report.push({ key: g.key, survivor: survivor.id, live: isLive(survivor),
       deleted: g.members.filter((p) => p.id !== survivor.id).map((p) => p.id),
       merged: [...merged].sort(), name: String(survivor.n).slice(0, 58) });
@@ -115,6 +134,13 @@ const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_
   }
   console.log(`\n=== same-retailer conflicts resolved: ${conflicts.length} ===`);
   for (const c of conflicts) console.log(`  [${c.retailer}] kept $${c.keptPrice} (${c.how}), dropped $${c.droppedPrice} from #${c.fromId} -> #${c.survivorId}  ${c.name}`);
+  console.log(`\n=== cheaper 3P offers PRESERVED as deals.newegg_marketplace: ${preserved.length} ===`);
+  let saved = 0;
+  for (const q of preserved) {
+    saved += q.saving;
+    console.log(`  #${String(q.survivorId).padEnd(7)} 1P $${String(q.oneP).padStart(8)}  +  marketplace $${String(q.threeP).padStart(8)}  (saves $${String(q.saving).padStart(6)})  ${q.name}`);
+  }
+  console.log(`  shopper saving surfaced instead of discarded: $${saved.toFixed(2)}`);
   console.log(`\nenriched survivors: img +${enriched.img} · upc +${enriched.upc} · mpn +${enriched.mpn} · reviews +${enriched.reviews}`);
 
   const kept = parts.filter((p) => !deleteIds.has(p.id));
