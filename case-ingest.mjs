@@ -47,6 +47,14 @@ const RESTORE_TAG = `cases-ingest-restore-${TODAY}`;
 
 // Newegg affiliate link. The feed's product_url already carries the linksynergy wrapper
 // with our SID; a bare newegg.com link earns nothing, so the feed URL is used verbatim.
+//
+// Best Buy is the opposite: the Developer API's `url` field is a RAW click-tracking URL
+// (https://api.bestbuy.com/click/-/<sku>/pdp) that carries no affiliate attribution, so a
+// click on it earns nothing. Every other Best Buy row in the catalog uses the 7tiv wrapper.
+// Construct it the same way bestbuy-discover-v2.js does rather than trusting the API field.
+const BB_AFFILIATE = { host: 'bestbuycreators.7tiv.net', partner: '7109270', offer: '3337161', campaign: '28102' };
+const bestBuyProductUrl = (sku) => `https://www.bestbuy.com/site/-/${sku}.p?skuId=${sku}`;
+const bestBuyAffiliateUrl = (sku) => `https://${BB_AFFILIATE.host}/c/${BB_AFFILIATE.partner}/${BB_AFFILIATE.offer}/${BB_AFFILIATE.campaign}?prodsku=${sku}&u=${encodeURIComponent(bestBuyProductUrl(sku))}`;
 const bar = '─'.repeat(96);
 const log = (m) => console.log(m);
 
@@ -159,7 +167,7 @@ const log = (m) => console.log(m);
         inStock: true, priceSource: '1p', priceConfidence: 'confirmed', priceConfirmedAt: TODAY,
         matchedAt: TODAY, matchMethod: 'case-ingest-recovery' };
     } else {
-      p.deals.bestbuy = { ...(p.deals.bestbuy || {}), price: c.price, url: c.url, inStock: true,
+      p.deals.bestbuy = { ...(p.deals.bestbuy || {}), price: c.price, url: bestBuyAffiliateUrl(c.key), sku: String(c.key), inStock: true,
         priceSource: '1p', priceConfidence: 'confirmed', priceConfirmedAt: TODAY };
     }
     if (!(p.pr > 0) || p.pr !== c.price) { p.msrp = p.msrp ?? p.pr ?? c.price; p.pr = c.price; }
@@ -239,7 +247,7 @@ const log = (m) => console.log(m);
       };
     } else {
       row.deals.bestbuy = {
-        price: a.price ?? null, url: a.url, inStock, priceSource: '1p',
+        price: a.price ?? null, url: bestBuyAffiliateUrl(a.bbSku), sku: String(a.bbSku), inStock, priceSource: '1p',
         ...(held ? {} : { priceConfidence: 'confirmed', priceConfirmedAt: TODAY }),
       };
     }

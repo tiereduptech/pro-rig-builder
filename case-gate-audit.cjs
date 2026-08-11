@@ -267,10 +267,15 @@ const LEGACY_PREBUILT_RE = /\b(Custom|Workstation|Desktop PC|Pre.?built|Gaming P
     trustPrior: r.sellerClass === 'official',
     price: r.sale != null && r.sale > 0 ? r.sale : r.retail,
     upc: r.upc, mpn: r.mpn, url: r.url, sellerClass: r.sellerClass, availability: r.availability,
+    // image_url is present on 100% of feed rows; omitting it here is what wrote 1,108
+    // rows with a blank thumbnail — accepted[].image was undefined before it ever
+    // reached the ingest, so `img: a.image || null` could only ever be null.
+    image: r.image || null,
   }), 'Newegg');
   load('case-sweep-bestbuy.json', (r) => ({
     source: 'bestbuy', bbSku: r.sku, name: r.name, mfr: r.mfr, price: r.price, trustPrior: true,
     upc: r.upc, mpn: r.mpn, url: r.url, availability: `${r.onlineAvailability}`,
+    image: r.image || null,          // same omission as the Newegg mapper above
   }), 'Best Buy');
 
   // ── 3P MARKUP CORROBORATION ───────────────────────────────────────────────
