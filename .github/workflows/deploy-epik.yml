@@ -49,9 +49,17 @@ jobs:
       - run: npm ci
 
       # dist/ is committed, but regenerate the Epik artifacts so resolver-config.php
-      # / redirects.php / gone.html / .htaccess can never drift from source.
+      # / redirects.php / gone.html / .htaccess can never drift from source. On
+      # staging this also appends the Basic-Auth + noindex guard; on production
+      # build-epik.cjs asserts the artifact is guard-free.
       - name: Regenerate Epik artifacts
-        run: node build-epik.cjs
+        env:
+          EPIK_REMOTE_ROOT: >-
+            ${{ (github.event.inputs.target == 'staging')
+                && secrets.EPIK_REMOTE_ROOT_STAGING
+                || secrets.EPIK_REMOTE_ROOT }}
+          EPIK_STAGING_BASIC_AUTH: ${{ secrets.EPIK_STAGING_BASIC_AUTH }}
+        run: node build-epik.cjs ${{ github.event.inputs.target == 'staging' && '--staging' || '' }}
 
       - name: Upload dist/ over SFTP (safe-to-interrupt, verified)
         env:
@@ -68,6 +76,7 @@ jobs:
                 || secrets.EPIK_REMOTE_ROOT }}
         run: |
           node deploy/sftp-deploy.cjs \
+            ${{ github.event.inputs.target == 'staging' && '--staging' || '' }} \
             ${{ github.event.inputs.full == 'true' && '--full' || '' }} \
             ${{ github.event.inputs.prune == 'true' && '--prune' || '' }}
 
@@ -79,4 +88,8 @@ jobs:
             ${{ (github.event.inputs.target == 'staging')
                 && vars.EPIK_STAGING_URL
                 || 'https://prorigbuilder.com' }}
+          # Staging is behind Basic Auth: send creds so codes compare, and the
+          # harness first asserts an un-authed request 401s. Empty on production,
+          # so a guard that leaked to prod makes the fixture fail loudly (401s).
+          EPIK_BASIC_AUTH: ${{ (github.event.inputs.target == 'staging') && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
         run: node test/verify-epik.cjs epik="$BASE"

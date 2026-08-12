@@ -9,9 +9,15 @@
 //  Usage (Phase 3 — Railway vs staged Epik, side by side):
 //    node test/verify-epik.cjs \
 //      railway=https://prorigbuilder.com \
-//      epik=https://staging.prorigbuilder.com
+//      epik=https://prb-staging.tieroneshipping.com
 //
 //  A base is `name=url`. One base is fine (e.g. post-cutover re-check).
+//
+//  BASIC AUTH: staging sits behind HTTP Basic Auth. Set an env var named
+//  <BASE>_BASIC_AUTH ("user:password") — e.g. EPIK_BASIC_AUTH for the `epik`
+//  base — and this harness (a) confirms auth is ENFORCED (an unauthenticated
+//  request to / returns 401) and (b) sends the credentials on every fixture
+//  request so the status codes compare cleanly against un-authed Railway.
 //  No external dependencies — Node http/https only.
 // =============================================================================
 
@@ -24,7 +30,10 @@ const bases = [];
 for (const arg of process.argv.slice(2)) {
   const i = arg.indexOf('=');
   if (i === -1) { console.error(`  ✗ bad base arg (want name=url): ${arg}`); process.exit(2); }
-  bases.push({ name: arg.slice(0, i), url: arg.slice(i + 1).replace(/\/$/, '') });
+  const name = arg.slice(0, i);
+  // Optional per-base Basic Auth from env <NAME>_BASIC_AUTH ("user:password").
+  const auth = process.env[`${name.toUpperCase()}_BASIC_AUTH`] || null;
+  bases.push({ name, url: arg.slice(i + 1).replace(/\/$/, ''), auth });
 }
 if (!bases.length) {
   console.error('  usage: node test/verify-epik.cjs railway=https://prorigbuilder.com epik=https://staging...');
@@ -34,12 +43,14 @@ if (!bases.length) {
 const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'epik-fixture.json'), 'utf8'));
 const cases = fixture.cases;
 
-function fetchNoRedirect(baseUrl, urlPath) {
+function fetchNoRedirect(baseUrl, urlPath, auth) {
   return new Promise((resolve) => {
     let target;
     try { target = new URL(baseUrl + urlPath); } catch (e) { return resolve({ error: e.message }); }
     const mod = target.protocol === 'https:' ? https : http;
-    const req = mod.request(target, { method: 'GET' }, (res) => {
+    const opts = { method: 'GET' };
+    if (auth) opts.auth = auth; // Node sets the Authorization: Basic header
+    const req = mod.request(target, opts, (res) => {
       // Drain and discard the body — we only need status + headers.
       res.resume();
       res.on('end', () => resolve({ status: res.statusCode, headers: res.headers }));
@@ -71,13 +82,25 @@ function evaluate(c, r) {
 }
 
 (async () => {
-  const rows = [];
   let blockers = 0;
 
+  // ── Basic Auth ENFORCEMENT: for every base with credentials, an UNauthenticated
+  //    request to / must return 401. If it returns 200, the guard is missing —
+  //    on staging that means it's crawlable; on prod it means a guard leaked. Either
+  //    way it's a blocker before we bother comparing status codes.
+  for (const b of bases.filter((x) => x.auth)) {
+    const r = await fetchNoRedirect(b.url, '/', null);
+    const ok = r.status === 401;
+    if (!ok) blockers++;
+    console.log(`  [auth] ${b.name}: GET / without creds -> ${r.error ? 'ERR:' + r.error : r.status} ` +
+      `${ok ? '(enforced ✓)' : 'EXPECTED 401 — BLOCKER'}`);
+  }
+
+  const rows = [];
   for (const c of cases) {
     const perBase = {};
     for (const b of bases) {
-      const r = await fetchNoRedirect(b.url, c.path);
+      const r = await fetchNoRedirect(b.url, c.path, b.auth);
       const ev = evaluate(c, r);
       perBase[b.name] = ev;
       if (!ev.ok) blockers++;

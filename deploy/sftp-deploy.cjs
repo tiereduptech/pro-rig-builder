@@ -57,6 +57,10 @@ if (!KEY && !PASS) die('need EPIK_SFTP_PRIVATE_KEY or EPIK_SFTP_PASSWORD', 2);
 const CONC = Math.max(1, parseInt(process.env.EPIK_UPLOAD_CONCURRENCY || '4', 10));
 const FULL = process.argv.includes('--full');
 const PRUNE = process.argv.includes('--prune');
+// Fail-safe default: unless --staging is passed, this is a PRODUCTION deploy and
+// the artifact must contain no staging guard. Forgetting the flag rejects a
+// guarded artifact (loud, harmless) rather than shipping a guard to prod.
+const STAGING = process.argv.includes('--staging');
 const RUN_ID = process.env.GITHUB_RUN_ID || `local-${process.pid}`;
 
 const connectOpts = {
@@ -88,6 +92,30 @@ for (const rel of files) {
 const isPage = (rel) => rel.endsWith('.html') && rel !== 'gone.html';
 const phaseA = files.filter((f) => !isPage(f)); // assets + infra + gone.html
 const phaseB = files.filter(isPage);            // index.html + product/route pages
+
+// ── Production guard-absence assertion (fail loud BEFORE any bytes move) ──────
+// Scans only the config files where a guard could live (.htaccess / .htpasswd),
+// not the 15k pages. NOTE: resolver.php's per-410 `X-Robots-Tag: noindex` is PHP,
+// not an .htaccess directive, so it is correctly NOT matched here.
+if (!STAGING) {
+  const hits = [];
+  for (const rel of files) {
+    const base = path.posix.basename(rel);
+    if (base === '.htpasswd') { hits.push(`${rel}: .htpasswd present`); continue; }
+    if (base !== '.htaccess') continue;
+    const c = fs.readFileSync(path.join(DIST, rel), 'utf8');
+    if (c.includes('PRB-STAGING-GUARD')) hits.push(`${rel}: staging sentinel`);
+    if (/^\s*(AuthType|AuthName|AuthUserFile|Require\s+valid-user)\b/mi.test(c)) hits.push(`${rel}: Basic Auth directive`);
+    if (/Header\b.*X-Robots-Tag.*noindex/i.test(c)) hits.push(`${rel}: blanket noindex header`);
+  }
+  if (hits.length) {
+    die(`PRODUCTION deploy blocked — staging guard present in the artifact:\n      - ${hits.join('\n      - ')}\n    (run build-epik.cjs without --staging, or pass --staging if this IS staging)`);
+  }
+}
+
+// Always re-ship .htaccess so a clean production config overwrites any guard that
+// a prior staging-to-prod mistake may have left on the server, even if unchanged.
+const FORCE = new Set(files.filter((f) => path.posix.basename(f) === '.htaccess'));
 
 // Concurrency pool across N independent connections (one connection can't do
 // reliable parallel writes; shared cPanel typically allows a handful).
@@ -122,7 +150,7 @@ async function pool(items, clients, worker) {
       try { remote = JSON.parse((await primary.get(R(MANIFEST))).toString()); }
       catch { console.log('  (no remote manifest — treating as full upload)'); }
     }
-    const changed = (rel) => FULL || !remote[rel] || remote[rel].sha !== manifest[rel].sha;
+    const changed = (rel) => FULL || FORCE.has(rel) || !remote[rel] || remote[rel].sha !== manifest[rel].sha;
     const toA = phaseA.filter(changed);
     const toB = phaseB.filter(changed);
     skipped = files.length - toA.length - toB.length;
@@ -175,6 +203,13 @@ async function pool(items, clients, worker) {
 
     // ── COMMIT MARKER: manifest reflects a fully verified deploy only ───────
     await primary.put(Buffer.from(JSON.stringify(manifest)), R(MANIFEST));
+
+    // Scrub a stale staging .htpasswd off production (the guard's auth db must
+    // never persist on the live docroot; the clean .htaccess just re-shipped
+    // above has no AuthUserFile pointing at it, but remove the file too).
+    if (!STAGING) {
+      try { if (await primary.exists(R('.htpasswd'))) { await primary.delete(R('.htpasswd')); console.log('  ✓ removed stale .htpasswd from production docroot'); } } catch {}
+    }
 
     // ── OPT-IN prune of orphaned remote files (kept off by default so the old
     //    assets remain available for an instant HTML-only rollback) ──────────
