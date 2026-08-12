@@ -88,13 +88,45 @@ fi
 BASH_VER="${BASH_VERSION:-unknown}"
 info "bash $BASH_VER"
 
-[ -e "$DOCROOT" ] || die "docroot $DOCROOT does not exist. Set DOCROOT= and re-run."
+# -e follows the link, so a symlink pointing at a pruned or not-yet-created
+# release reports "does not exist" and sends you to set DOCROOT= when the docroot
+# is in fact right there. Test the link itself too.
+if [ ! -e "$DOCROOT" ] && [ ! -L "$DOCROOT" ]; then
+  die "docroot $DOCROOT does not exist. Set DOCROOT= and re-run."
+fi
+
+# ALREADY_FLIPPED decides two things further down, so it is established once here:
+#   - whether an existing .pre-pull is a fault or the expected post-install state
+#   - whether step 5 may use --bootstrap, which is UNSAFE once the docroot is live
+ALREADY_FLIPPED=0
 if [ -L "$DOCROOT" ]; then
-  info "NOTE: $DOCROOT is already a symlink -> $(readlink "$DOCROOT")"
+  LINK_TARGET="$(readlink "$DOCROOT")"
+  if [ "$LINK_TARGET" = "$ROOT/current" ]; then
+    ALREADY_FLIPPED=1
+    info "docroot is ALREADY FLIPPED -> $LINK_TARGET"
+  else
+    info "NOTE: $DOCROOT is a symlink -> $LINK_TARGET (not this install's $ROOT/current)"
+  fi
 else
   info "docroot $DOCROOT is a real directory (expected, pre-flip)"
 fi
-[ -e "$DOCROOT.pre-pull" ] && die "$DOCROOT.pre-pull already exists — a previous run left a backup. Resolve by hand."
+
+# A .pre-pull backup is only a FAULT while a flip is still ahead of us, because the
+# flip renames the docroot ONTO that name and would bury the original tree. Once the
+# docroot is already the symlink, .pre-pull is precisely what a SUCCESSFUL install
+# leaves behind — stopping on it makes the installer non-resumable, which is how this
+# fired on staging with everything installed except the crontab entry.
+if [ -e "$DOCROOT.pre-pull" ]; then
+  if [ "$ALREADY_FLIPPED" = 1 ]; then
+    info "$DOCROOT.pre-pull present — the backup left by the flip that is currently live (expected)"
+    info "RESUMING an existing install: steps 1-4 are idempotent, step 7 is already done"
+  else
+    die "$DOCROOT.pre-pull already exists, but $DOCROOT is NOT this install's symlink.
+   The flip would rename the docroot onto that backup and lose the tree underneath it.
+   Resolve by hand: decide which of the two trees is the one you want, then remove or
+   rename the other before re-running."
+  fi
+fi
 
 # Same exit-code table the puller carries. A preflight that can only say "000"
 # sends you looking at the network when the fault is in the invocation.
@@ -233,12 +265,23 @@ CFG
   info "wrote $ROOT/config (mode 600)"
 fi
 
-# ── 5. first pull, before anything is live ──────────────────────────────────
-# --bootstrap skips the docroot assertion and the healthcheck (nothing is
-# serving the tree yet) but still does the FULL verification: per-file manifest
-# hashes, manifest_sha256, required files, guard present, no .htpasswd.
-say "Bootstrap pull (full verification, nothing goes live)"
-"$ROOT/bin/epik-pull.sh" --bootstrap
+# ── 5. the pull ─────────────────────────────────────────────────────────────
+# Both paths run the FULL verification — per-file manifest hashes, manifest_sha256,
+# required files, guard present, no .htpasswd. What differs is what happens after it.
+if [ "$ALREADY_FLIPPED" = 1 ]; then
+  # The docroot already points at $ROOT/current, so moving `current` IS a live
+  # deploy. --bootstrap exists for the case where nothing serves the tree yet, and
+  # on that premise it skips the docroot assertion, the healthcheck AND the
+  # rollback. Running it here would swap the live site with none of the three.
+  # The routine path asserts the docroot, healthchecks at T+15s and T+45s, and
+  # rolls back on failure — and exits silently if the live sha already matches.
+  say "Pull (routine path — the docroot is live, so this is a real deploy)"
+  info "no-op and silent if the published sha is already what is live"
+  "$ROOT/bin/epik-pull.sh"
+else
+  say "Bootstrap pull (full verification, nothing goes live)"
+  "$ROOT/bin/epik-pull.sh" --bootstrap
+fi
 
 # ── 6. look at what landed ──────────────────────────────────────────────────
 say "What landed"
@@ -258,9 +301,23 @@ info "no .htpasswd inside any release tree"
 say "Docroot flip"
 info "This renames $DOCROOT to $DOCROOT.pre-pull and puts a symlink in its place."
 info "Nothing is deleted. Undo with: bash $0 --uninstall"
-if [ -L "$DOCROOT" ] && [ "$(readlink "$DOCROOT")" = "$ROOT/current" ]; then
-  info "already flipped — skipping"
+if [ "$ALREADY_FLIPPED" = 1 ]; then
+  info "already flipped — skipping the flip"
+  # Do not take the operator's word for it on a resume. Step 5 exits silently when
+  # the published sha is already live, so without this a resumed run would install
+  # the crontab entry having proved nothing about the site it is about to automate.
+  say "Healthcheck of the already-live release"
+  if "$ROOT/bin/epik-pull.sh" --check; then
+    info "healthcheck PASSED — safe to proceed to the crontab step"
+  else
+    die "the already-flipped docroot is UNHEALTHY. Not installing a cron entry that would
+   deploy onto a broken site every 5 minutes. Fix it, or run: bash $0 --uninstall"
+  fi
 elif ask "Flip the STAGING docroot to the pull tree?" FLIP; then
+  # Preflight already refused this combination. Re-checked immediately before the
+  # one irreversible rename in the script, because the cost of being wrong here is
+  # the original docroot buried under a directory of the same name.
+  [ -e "$DOCROOT.pre-pull" ] && die "$DOCROOT.pre-pull appeared after preflight — refusing to rename onto it."
   mv "$DOCROOT" "$DOCROOT.pre-pull"
   ln -s "$ROOT/current" "$DOCROOT"
   info "flipped: $DOCROOT -> $(readlink "$DOCROOT")"
