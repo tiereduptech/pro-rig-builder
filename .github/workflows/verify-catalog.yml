@@ -27,6 +27,11 @@ on:
         required: false
         default: true
         type: boolean
+      force_paapi_unconfigured:
+        description: 'SELF-TEST: pretend PA API creds are missing, to prove the gate fails the job loudly'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   verify:
@@ -70,10 +75,22 @@ jobs:
         env:
           DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          # PA API (Amazon Creators) — the buy-box second opinion (PASS 2). Without
+          # these the verifier's config gate FAILS the job loudly (not_configured =
+          # our bug); a 403 AssociateNotEligible warns and continues on DataForSEO.
+          AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
+          AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
         run: |
           ARGS="--tier ${{ steps.tier.outputs.tier }} --auto-fix"
           if [ "${{ steps.tier.outputs.fix_asins }}" = "true" ]; then
             ARGS="$ARGS --fix-asins"
+          fi
+          # Self-test only: on manual dispatch with force_paapi_unconfigured=true,
+          # blank the creds for THIS step so the fail-loud gate can be proven in the
+          # real CI environment. Never set by the nightly cron.
+          if [ "${{ github.event.inputs.force_paapi_unconfigured }}" = "true" ]; then
+            echo "::notice::force_paapi_unconfigured=true — blanking PA API creds to self-test the fail-loud gate"
+            ARGS="$ARGS --force-unconfigured"
           fi
           echo "Running: node verify-catalog-asins.js $ARGS"
           node verify-catalog-asins.js $ARGS
