@@ -163,6 +163,28 @@ info "required commands present"
 mv --help 2>&1 | grep -q -- '-T' || die "this mv has no -T. Atomic swap is the whole design; stopping."
 info "mv -T available"
 
+# ── node the way CRON sees it, not the way this login shell does ─────────────
+# `command -v node` above passes here because THIS shell has nvm's PATH, while
+# every cron tick runs with PATH=/usr/bin:/bin and no nvm hook — so a bare `node`
+# is not found and the puller dies before it logs a line (empty deploy.log,
+# frozen checked_at). The check that only proved node existed in the login shell
+# is exactly what let that ship. So: resolve node to an ABSOLUTE path, record it
+# in config as NODE=, and PROVE that exact path runs under a cron-like env.
+NODE_BIN="$(command -v node)"
+NODE_BIN="$(readlink -f "$NODE_BIN" 2>/dev/null || printf '%s' "$NODE_BIN")"
+info "detected node: $NODE_BIN"
+if env -i PATH=/usr/bin:/bin sh -c 'command -v node' >/dev/null 2>&1; then
+  info "bare 'node' is also on the cron PATH — belt and suspenders"
+else
+  info "bare 'node' is NOT on the cron PATH (/usr/bin:/bin) — exactly why we record an absolute NODE="
+fi
+if env -i PATH=/usr/bin:/bin "$NODE_BIN" -e 'process.exit(0)'; then
+  info "recorded node runs under a cron-like env (env -i PATH=/usr/bin:/bin)"
+else
+  die "the detected node ($NODE_BIN) does NOT run under 'env -i PATH=/usr/bin:/bin'.
+   Cron would fail the same way. Point NODE_BIN at an absolute interpreter that does and re-run."
+fi
+
 # The first probe recorded "curl present" and stopped there, so a curl too old for
 # --etag-save (7.68+) got discovered by a failing cron tick instead of here. Record
 # the VERSION, and assert the floor every option in both scripts actually needs.
@@ -453,6 +475,22 @@ fi
 say "Writing config"
 if [ -s "$ROOT/config" ]; then
   info "config already exists — keeping it"
+  # An already-installed box (one that predates the node-resolution fix) keeps its
+  # config, so ENSURE NODE= is present and points at a working interpreter — this
+  # is what repairs an existing box on a re-curl without rewriting anything else.
+  EXISTING_NODE="$(sed -n 's/^NODE=//p' "$ROOT/config" | tail -1)"
+  if [ -z "$EXISTING_NODE" ]; then
+    printf 'NODE=%s\n' "$NODE_BIN" >> "$ROOT/config"
+    info "added NODE=$NODE_BIN to existing config"
+  elif [ -x "$EXISTING_NODE" ]; then
+    info "config already records a working NODE=$EXISTING_NODE"
+  else
+    info "config NODE=$EXISTING_NODE is not executable (nvm upgrade?) — updating to $NODE_BIN"
+    grep -v '^NODE=' "$ROOT/config" > "$ROOT/config.tmp"
+    printf 'NODE=%s\n' "$NODE_BIN" >> "$ROOT/config.tmp"
+    chmod 600 "$ROOT/config.tmp"
+    mv -f "$ROOT/config.tmp" "$ROOT/config"
+  fi
 else
   # BASIC_AUTH is written EMPTY on production, not omitted — epik-pull.sh reads
   # `${BASIC_AUTH:-}` and sends no -u for an empty value, and an explicit empty
@@ -467,6 +505,7 @@ EXPECT_GUARD=$EXPECT_GUARD
 ORIGIN_IP=$ORIGIN_IP
 ORIGIN_INSECURE=$ORIGIN_INSECURE
 RETAIN=10
+NODE=$NODE_BIN
 CFG
   chmod 600 "$ROOT/config"
   info "wrote $ROOT/config (mode 600, EXPECT_GUARD=$EXPECT_GUARD)"

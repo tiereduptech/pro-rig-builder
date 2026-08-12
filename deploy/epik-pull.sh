@@ -138,6 +138,55 @@ ts()  { date -u +%Y-%m-%dT%H:%M:%SZ; }
 say() { printf '%s %s\n' "$(ts)" "$*"; }                    # stdout -> deploy.log
 err() { printf '%s ERROR %s\n' "$(ts)" "$*" >&2; }          # stderr -> cron MAIL
 
+# ── node: resolve ONE interpreter, LOUDLY, before anything needs it ──────────
+# The PATH set at the top of this file is /usr/local/bin:/usr/bin:/bin. Under cron
+# that is the WHOLE environment — nvm's shell hook never runs — so the `node` this
+# box actually has, under ~/.nvm, is not on it. Every jget / touch_status /
+# write_status / fixture call then fails, and under `set -e` the script exits at
+# the first one (jget for source_sha) BEFORE any say() reaches deploy.log: an
+# empty log and a frozen checked_at on every tick, with cron the innocent
+# bystander. A missing interpreter must NEVER be a silent exit — that is this block.
+#
+# Order: an explicit NODE= from config (recorded by install-phase-a at install
+# time) wins; then nvm — GLOBBED and version-sorted, never a hardcoded vXX.Y.Z, so
+# an nvm upgrade cannot break us; then the fixed system locations; then, last,
+# whatever is on PATH. If none run, fail with every path tried.
+resolve_node() {
+  local n
+  if [ -n "${NODE:-}" ]; then
+    if [ -x "$NODE" ]; then printf '%s' "$NODE"; return 0; fi
+    err "config sets NODE=$NODE but it is not executable — ignoring it, searching known locations"
+  fi
+  # nvm, newest version first. `ls | sort -Vr` keeps this version-agnostic.
+  for n in $( ls -1 "$HOME"/.nvm/versions/node/*/bin/node 2>/dev/null | sort -Vr || true ); do
+    [ -x "$n" ] && { printf '%s' "$n"; return 0; }
+  done
+  for n in /usr/local/bin/node /usr/bin/node /opt/node/bin/node /opt/*/bin/node; do
+    [ -x "$n" ] && { printf '%s' "$n"; return 0; }
+  done
+  if n="$(command -v node 2>/dev/null)"; then printf '%s' "$n"; return 0; fi
+  return 1
+}
+
+CONFIG_NODE="${NODE:-}"          # what config asked for, before we resolve
+if NODE="$(resolve_node)"; then
+  # Put the resolved interpreter's dir on PATH too, so a `#!/usr/bin/env node`
+  # shebang or any child process the fixture spawns resolves the same node.
+  PATH="$(dirname "$NODE"):$PATH"; export PATH NODE
+else
+  err "FATAL: no usable node interpreter found — refusing to run blind."
+  err "  (A missing interpreter must never be a silent exit; this is that guard.)"
+  err "  Tried, in order:"
+  err "    config NODE=                         -> ${CONFIG_NODE:-<unset>}"
+  err "    $HOME/.nvm/versions/node/*/bin/node  (nvm, newest first)"
+  err "    /usr/local/bin/node  /usr/bin/node  /opt/*/bin/node"
+  err "    command -v node on PATH=$PATH"
+  err "  FIX: record an absolute interpreter in $CONFIG, e.g."
+  err "         echo 'NODE=\$HOME/.nvm/versions/node/vXX.Y.Z/bin/node' >> $CONFIG"
+  err "  install-phase-a.sh detects and writes this automatically; re-run it to repair."
+  exit 3
+fi
+
 # Two arrays, deliberately. BASIC_AUTH is the STAGING site credential; sending it
 # to raw.githubusercontent.com / codeload would hand our password to a third party
 # for no reason. The release branch is public by design (§2) — GitHub gets no -u.
@@ -240,10 +289,11 @@ fetch() {
   return 0
 }
 
-# node is confirmed present on this host (DESIGN §10) and is the only sane way to
-# parse JSON here — jq is not guaranteed.
+# node is the only sane way to parse JSON here — jq is not guaranteed. The
+# interpreter is resolved once, up top, into $NODE (never a bare `node`, which
+# cron cannot find — see resolve_node).
 jget() {
-  node -e '
+  "$NODE" -e '
     const fs=require("fs");
     let o; try { o=JSON.parse(fs.readFileSync(process.argv[1],"utf8")); } catch(e) { process.exit(3); }
     const v=process.argv[2].split(".").reduce((a,k)=>(a==null?a:a[k]),o);
@@ -289,7 +339,7 @@ touch_status() {
   if [ -z "$live_dir" ] || [ ! -d "$live_dir" ]; then return 0; fi
   f="$live_dir/_deploy-status.json"
   [ -f "$f" ] || return 0          # nothing has ever deployed — nothing to stamp
-  node -e '
+  "$NODE" -e '
     const fs=require("fs"), p=process.argv[1];
     let o; try { o=JSON.parse(fs.readFileSync(p,"utf8")); } catch(e) { process.exit(0); }
     o.checked_at = new Date().toISOString();
@@ -307,7 +357,7 @@ write_status() {
   if [ -z "$envjson" ]; then envjson='{}'; fi
   LIVE_SHA="$(read_state live.sha)" PREV_SHA="$(read_state prev.sha)" \
   HEALTH="$health" MSG="$msg" ENVJSON="$envjson" TARGET_BRANCH="$BRANCH" \
-  node -e '
+  "$NODE" -e '
     let env={}; try { env=JSON.parse(process.env.ENVJSON||"{}"); }
     catch(e) { env={parse_error:true, raw:(process.env.ENVJSON||"").slice(0,200)}; }
     // ONE timestamp for both, so a reader never has to wonder whether a few ms
@@ -492,7 +542,7 @@ run_fixture() {
   # follows DNS — which is why unanimous() runs first and is the pinned gate.
   EPIK_BASIC_AUTH="${BASIC_AUTH:-}" \
   EPIK_RESOLVE="${ORIGIN_IP:-}" EPIK_INSECURE="$ORIGIN_INSECURE" \
-  node "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
+  "$NODE" "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
 }
 
 # 0 = healthy, 1 = unhealthy, 3 = could not verify (see hc_verdict).
