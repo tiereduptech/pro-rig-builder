@@ -63,14 +63,23 @@ echo "bash $BASH_VERSION"
 
 # 1. tree
 mkdir -p ~/prb-staging/{bin,releases,state,tmp,log,secrets}
-chmod 700 ~/prb-staging/secrets
+#    711, NOT 700: LiteSpeed reads AuthUserFile as `nobody`, so it needs +x to
+#    traverse in. At 700 every request 401s even with the correct password.
+chmod 711 ~/prb-staging/secrets
 
 # 2. the Basic-Auth credential the artifact deliberately does NOT carry.
 #    Same user:password as the EPIK_STAGING_BASIC_AUTH secret.
-#    {SHA} entry, matching what build-epik.cjs generates:
-printf 'USER:{SHA}%s\n' "$(printf 'PASSWORD' | openssl sha1 -binary | openssl base64)" \
-  > ~/prb-staging/secrets/.htpasswd
-chmod 600 ~/prb-staging/secrets/.htpasswd
+#    APR1 entry, matching what build-epik.cjs generates. NOT {SHA} — LiteSpeed
+#    rejects {SHA} with no error at all, just a 401 on every request that looks
+#    exactly like a wrong password (measured 2026-08-12). There is no htpasswd
+#    binary on this box, so openssl is the tool; -stdin keeps the password out
+#    of `ps` and shell history.
+printf 'PASSWORD\n' | openssl passwd -apr1 -stdin \
+  | sed 's/^/USER:/' > ~/prb-staging/secrets/.htpasswd
+#    644 for the same reason secrets/ is 711 — the server reads this as `nobody`,
+#    so 600 is a guaranteed 401. Verify the format before moving on:
+#      head -c 12 ~/prb-staging/secrets/.htpasswd   # -> USER:$apr1$
+chmod 644 ~/prb-staging/secrets/.htpasswd
 
 # 3. the script
 curl -fsSL https://raw.githubusercontent.com/tiereduptech/pro-rig-builder/main/deploy/epik-pull.sh \

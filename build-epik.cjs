@@ -30,6 +30,63 @@ const DEPLOY = path.join(ROOT, 'deploy');
 const STAGING = process.argv.includes('--staging');
 const GUARD_SENTINEL = 'PRB-STAGING-GUARD';
 
+// ── APR1 (Apache MD5-crypt) htpasswd hashing ────────────────────────────────
+// MEASURED 2026-08-12 on the Epik box: LiteSpeed does NOT accept {SHA} htpasswd
+// entries. It does not warn, does not log a format error — it just answers 401
+// on every request, exactly as if the password were wrong. The credential can be
+// byte-perfect and the modes correct and staging still 401s forever, which sends
+// you chasing permissions instead of the format. openssl proved it on the box:
+//     {SHA}1Owkl1srtSqntLaMo66IZP+by3c=  -> 401
+//     openssl passwd -apr1 <same password> -> 200
+// APR1 is what LiteSpeed and Apache 2.4 both accept, so it is the only format
+// this repo generates. The shell scripts (deploy/install-phase-a.sh,
+// scripts/rotate-staging-auth.sh) use `openssl passwd -apr1` — there is no
+// htpasswd binary on that host. Here it is implemented directly rather than
+// shelling out, so a `node build-epik.cjs --staging` on a dev box with no
+// openssl on PATH still produces a byte-identical entry. Verified against
+// `openssl passwd -apr1 -salt <s>` over 67 cases including the pl-=16 loop
+// boundaries (15/16/17-char passwords) and 1/4/8-char salts.
+const APR1_ITOA64 = './0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+function md5(...bufs) {
+  const h = crypto.createHash('md5');
+  for (const b of bufs) h.update(b);
+  return h.digest();
+}
+function apr1(password, salt) {
+  const pw = Buffer.from(password, 'utf8');
+  const sa = Buffer.from(salt, 'utf8');
+
+  let final = md5(pw, sa, pw);
+  const ctx = [pw, Buffer.from('$apr1$', 'utf8'), sa];
+  for (let pl = pw.length; pl > 0; pl -= 16) ctx.push(final.subarray(0, Math.min(pl, 16)));
+  for (let i = pw.length; i; i >>= 1) ctx.push(i & 1 ? Buffer.from([0]) : pw.subarray(0, 1));
+  final = md5(...ctx);
+
+  // 1000 stretching rounds — the part that makes APR1 worth having over {SHA}.
+  for (let i = 0; i < 1000; i++) {
+    const c = [i & 1 ? pw : final];
+    if (i % 3) c.push(sa);
+    if (i % 7) c.push(pw);
+    c.push(i & 1 ? final : pw);
+    final = md5(...c);
+  }
+
+  let out = '';
+  const enc = (b0, b1, b2, n) => {
+    let v = (b0 << 16) | (b1 << 8) | b2;
+    for (let i = 0; i < n; i++) { out += APR1_ITOA64[v & 0x3f]; v >>= 6; }
+  };
+  enc(final[0], final[6], final[12], 4);
+  enc(final[1], final[7], final[13], 4);
+  enc(final[2], final[8], final[14], 4);
+  enc(final[3], final[9], final[15], 4);
+  enc(final[4], final[10], final[5], 4);
+  enc(0, 0, final[11], 2);
+  return `$apr1$${salt}$${out}`;
+}
+const apr1Salt = () =>
+  Array.from(crypto.randomBytes(8), (b) => APR1_ITOA64[b & 0x3f]).join('');
+
 if (!fs.existsSync(DIST)) {
   console.error(`  ✗ dist/ not found at ${DIST} — run the vite build + prerender first`);
   process.exit(1);
@@ -124,9 +181,9 @@ if (STAGING) {
   const ci = authRaw.indexOf(':');
   const user = authRaw.slice(0, ci);
   const pass = authRaw.slice(ci + 1);
-  // {SHA} htpasswd entry — no external deps, supported by Apache 2.4. Fine for a
-  // single shared staging gate behind HTTPS (not real user credentials).
-  const entry = `${user}:{SHA}${crypto.createHash('sha1').update(pass).digest('base64')}\n`;
+  // APR1 htpasswd entry. NOT {SHA}: LiteSpeed silently 401s on {SHA} — see the
+  // apr1() comment at the top of this file before changing this line.
+  const entry = `${user}:${apr1(pass, apr1Salt())}\n`;
   fs.writeFileSync(htpasswdPath, entry, 'utf8');
   const guard = [
     '',

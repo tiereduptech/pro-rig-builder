@@ -2,3 +2,7 @@
 # is a known Apache hazard (directives/paths can break); the PHP resolver and the
 # Node deploy script also run on Linux. Force LF regardless of any core.autocrlf.
 deploy/** text eol=lf
+# Same reason: scripts/*.sh are curl'd from this repo and executed ON the box.
+# A CRLF shebang there is a "bad interpreter" failure, so do not leave their
+# line endings to whatever core.autocrlf the committing machine happens to have.
+scripts/**.sh text eol=lf

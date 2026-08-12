@@ -233,8 +233,13 @@ else
   AUSER="${EPIK_STAGING_BASIC_AUTH%%:*}"
   APASS="${EPIK_STAGING_BASIC_AUTH#*:}"
   [ -n "$AUSER" ] && [ -n "$APASS" ] || die "credential must be user:password"
-  # {SHA} entry, byte-identical to what build-epik.cjs generates.
-  printf '%s:{SHA}%s\n' "$AUSER" "$(printf '%s' "$APASS" | openssl sha1 -binary | openssl base64)" \
+  # APR1 (MD5-crypt), the same format build-epik.cjs generates. NOT {SHA}.
+  # MEASURED on the box 2026-08-12: LiteSpeed does not accept {SHA} htpasswd
+  # entries and gives no format error — it answers 401 on every request, which is
+  # indistinguishable from a wrong password and costs an hour of chasing modes
+  # and paths. openssl is the tool here; this host has no htpasswd binary.
+  # -stdin keeps the password out of `ps` and out of shell history.
+  printf '%s:%s\n' "$AUSER" "$(printf '%s\n' "$APASS" | openssl passwd -apr1 -stdin)" \
     > "$ROOT/secrets/.htpasswd"
   # 644, matching what the SFTP tree shipped. The server reads this as `nobody`,
   # not as the owner, so 600 is a guaranteed 401. Measured on the box, not assumed.

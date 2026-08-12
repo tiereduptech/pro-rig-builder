@@ -276,12 +276,17 @@ unanimous() {
     if [ -n "$sample" ]; then err "  first non-matching body (300B): $sample"; fi
     if [ -s "$TMP/hc.curl.err" ]; then sed 's/^/  curl: /' "$TMP/hc.curl.err" >&2 || true; fi
     # The trap that cost a green staging install: a 401 while credentials WERE
-    # sent means the server could not READ the auth db, not that the password is
-    # wrong. Point at the modes rather than sending anyone to re-rotate.
+    # sent almost never means the password is wrong. Two causes, both silent, in
+    # the order they actually bit us. Point at them rather than sending anyone to
+    # re-rotate a credential that was correct all along.
     if grep -q '^HTTP 401' "$tally" && [ -n "${BASIC_AUTH:-}" ]; then
-      err "  401 WITH credentials sent means the server could not read the auth db, NOT a bad"
-      err "  password. The server reads it as 'nobody':  ls -ld $ROOT/secrets  (needs 711)"
-      err "                                              ls -l $ROOT/secrets/.htpasswd (needs 644)"
+      err "  401 WITH credentials sent is NOT a bad password. Two silent causes, check in order:"
+      err "  1. HASH FORMAT. LiteSpeed accepts APR1 only and rejects {SHA} with no error at all:"
+      err "       head -c 12 $ROOT/secrets/.htpasswd   # must show  user:\$apr1\$  — NOT  {SHA}"
+      err "       fix: scripts/rotate-staging-auth.sh (rewrites it via openssl passwd -apr1)"
+      err "  2. UNREADABLE auth db. The server reads it as 'nobody', not as the owner:"
+      err "       ls -ld $ROOT/secrets            # needs 711"
+      err "       ls -l  $ROOT/secrets/.htpasswd  # needs 644"
     fi
   }
 

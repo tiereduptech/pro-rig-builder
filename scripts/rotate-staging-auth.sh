@@ -73,28 +73,47 @@ printf '\n== 3. live guard directives (via the docroot, symlink resolved)\n'
 grep -n 'AuthType\|AuthName\|AuthUserFile\|Require' "$DOCROOT/.htaccess" 2>&1 | sed 's/^/   /'
 
 # ── 4. does the stored hash match the credential the healthcheck uses? ───────
-# This is what separates cause 1 (path/permissions) from cause 2 (stale file).
+# Separates cause 0 (wrong hash FORMAT), cause 1 (path/permissions) and cause 2
+# (stale file). APR1 is salted, so this cannot regenerate the entry and compare
+# strings the way the old {SHA} version did — it has to re-hash the config
+# password USING THE SALT ALREADY IN THE FILE and compare that.
 printf '\n== 4. stored hash vs config credential\n'
 CAUSE="undetermined"
 if [ -z "${OLDAUTH:-}" ]; then
   printf '   !! config has no BASIC_AUTH line\n'
   CAUSE="config never written"
+elif [ ! -r "$HTP" ]; then
+  CAUSE="CAUSE 1 — secrets/.htpasswd is MISSING or UNREADABLE"
 else
   OU="${OLDAUTH%%:*}"; OP="${OLDAUTH#*:}"
-  WANT="$OU:{SHA}$(printf '%s' "$OP" | openssl sha1 -binary | openssl base64)"
-  printf '   config user:    %s\n' "$OU"
-  printf '   expected entry: %s\n' "$WANT"
-  if [ -r "$HTP" ]; then
-    HAVE="$(cat "$HTP")"
-    printf '   stored entry:   %s\n' "$HAVE"
-    if [ "$WANT" = "$HAVE" ]; then
-      CAUSE="CAUSE 1 — credential is self-consistent, so the 401 is path/permissions (see 2 and 3)"
-    else
-      CAUSE="CAUSE 2 — stale .htpasswd, almost certainly kept by an earlier run (install-phase-a.sh:175)"
-    fi
-  else
-    CAUSE="CAUSE 1 — secrets/.htpasswd is MISSING or UNREADABLE"
-  fi
+  HAVE="$(cat "$HTP")"
+  STORED="${HAVE#*:}"
+  printf '   config user:  %s\n' "$OU"
+  printf '   stored entry: %s\n' "$HAVE"
+  case "$STORED" in
+    '{SHA}'*)
+      # THE ONE THAT COST AN HOUR. LiteSpeed accepts APR1, not {SHA}; it emits no
+      # format error, just a 401 that is indistinguishable from a bad password.
+      CAUSE="CAUSE 0 — {SHA} hash. LiteSpeed does not accept it and 401s with NO format error. Rotating (step 5) rewrites it as APR1 and fixes this."
+      ;;
+    '$apr1$'*)
+      SALT="$(printf '%s' "$STORED" | cut -d'$' -f3)"
+      if [ -z "$SALT" ]; then
+        CAUSE="CAUSE 2 — malformed APR1 entry (no salt field)"
+      else
+        WANT="$OU:$(printf '%s\n' "$OP" | openssl passwd -apr1 -salt "$SALT" -stdin)"
+        printf '   re-hashed:    %s\n' "$WANT"
+        if [ "$WANT" = "$HAVE" ]; then
+          CAUSE="CAUSE 1 — credential is self-consistent AND the format is right, so the 401 is path/permissions (see 2 and 3)"
+        else
+          CAUSE="CAUSE 2 — stale .htpasswd: the stored hash is not this config's password"
+        fi
+      fi
+      ;;
+    *)
+      CAUSE="CAUSE 0 — unrecognised hash format. LiteSpeed needs APR1 (\$apr1\$...); anything else 401s silently."
+      ;;
+  esac
 fi
 printf '   => %s\n' "$CAUSE"
 
@@ -115,8 +134,18 @@ chmod 711 "$ROOT/secrets"
 [ -f "$HTP" ] && { cp -p "$HTP" "$HTP.bak.$STAMP"; printf '   backed up %s\n' "$HTP.bak.$STAMP"; }
 [ -f "$CFG" ] && { cp -p "$CFG" "$CFG.bak.$STAMP"; printf '   backed up %s\n' "$CFG.bak.$STAMP"; }
 
-# byte-identical to install-phase-a.sh:193 and build-epik.cjs:129
-printf '%s:{SHA}%s\n' "$NEWUSER" "$(printf '%s' "$NEWPASS" | openssl sha1 -binary | openssl base64)" > "$HTP"
+# ── APR1 (MD5-crypt), NOT {SHA}. MEASURED, NOT ASSUMED. ─────────────────────
+# 2026-08-12 on the Epik box, same password, same file, same modes:
+#     user:{SHA}1Owkl1srtSqntLaMo66IZP+by3c=   -> HTTP 401
+#     user:$apr1$...  (openssl passwd -apr1)   -> HTTP 200
+# LiteSpeed does not accept {SHA} htpasswd entries and does not say so — no
+# format error, no log line, just 401 on every request. That is identical to the
+# symptom of a wrong password, so it sends you auditing modes, paths and repo
+# secrets while the credential was correct the whole time.
+# openssl is the tool: this host has no htpasswd binary. -stdin keeps the
+# password out of `ps` and out of shell history. Same format as
+# deploy/install-phase-a.sh and build-epik.cjs — keep all three in step.
+printf '%s:%s\n' "$NEWUSER" "$(printf '%s\n' "$NEWPASS" | openssl passwd -apr1 -stdin)" > "$HTP"
 # ── DO NOT TIGHTEN THIS TO 600. MEASURED, NOT ASSUMED. ──────────────────────
 # 2026-08-12 on the Epik box, hash byte-perfect, directory already 711:
 #     .htpasswd 600 -> HTTP 401 on every request
@@ -125,9 +154,10 @@ printf '%s:{SHA}%s\n' "$NEWUSER" "$(printf '%s' "$NEWPASS" | openssl sha1 -binar
 # load-bearing. 600 fails silently: staging 401s forever with a credential that
 # looks correct everywhere you would think to check it.
 # Accepted trade-off: on a shared host the hash is readable by other local
-# users. Unsalted SHA-1 of a 24-char random credential gating a staging site
-# behind HTTPS, rotatable by re-running this script. If that stops being
-# acceptable, switch to an IP allowlist — do NOT tighten the mode.
+# users. It is a salted APR1 (1000 MD5 rounds) of a 24-char random credential
+# gating a staging site behind HTTPS, rotatable by re-running this script. If
+# that stops being acceptable, switch to an IP allowlist — do NOT tighten the
+# mode: 600 does not gain you security, it just 401s the site.
 # Only this one file is loosened; the log and ROTATED-*.txt stay 600 via umask.
 chmod 644 "$HTP"
 printf '   wrote %s for user %s\n' "$HTP" "$NEWUSER"
