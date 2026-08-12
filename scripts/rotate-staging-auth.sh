@@ -97,12 +97,18 @@ NEWPASS="${NEWPASS:-$(LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | head -c 24)}"
 [ "${#NEWPASS}" -ge 16 ] || { printf '!! generated password too short — aborting\n' >&2; exit 3; }
 
 mkdir -p "$ROOT/secrets"
+# 711 explicitly, because umask 077 above would otherwise make this 700 and the
+# web server could not traverse in to read AuthUserFile. Unlistable on purpose —
+# the backups and ROTATED-*.txt below live in this directory.
+chmod 711 "$ROOT/secrets"
 [ -f "$HTP" ] && { cp -p "$HTP" "$HTP.bak.$STAMP"; printf '   backed up %s\n' "$HTP.bak.$STAMP"; }
 [ -f "$CFG" ] && { cp -p "$CFG" "$CFG.bak.$STAMP"; printf '   backed up %s\n' "$CFG.bak.$STAMP"; }
 
 # byte-identical to install-phase-a.sh:193 and build-epik.cjs:129
 printf '%s:{SHA}%s\n' "$NEWUSER" "$(printf '%s' "$NEWPASS" | openssl sha1 -binary | openssl base64)" > "$HTP"
-chmod 600 "$HTP"
+# 644: the server reads this as `nobody`, so 600 is a guaranteed 401. Only this
+# file is loosened — the log and ROTATED-*.txt stay 600 under the umask.
+chmod 644 "$HTP"
 printf '   wrote %s for user %s\n' "$HTP" "$NEWUSER"
 
 if grep -q '^BASIC_AUTH=' "$CFG" 2>/dev/null; then
