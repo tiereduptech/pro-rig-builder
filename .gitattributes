@@ -6,3 +6,6 @@ deploy/** text eol=lf
 # A CRLF shebang there is a "bad interpreter" failure, so do not leave their
 # line endings to whatever core.autocrlf the committing machine happens to have.
 scripts/**.sh text eol=lf
+# test/*.sh source deploy/*.sh directly, so a CRLF here would make the sourced
+# file's LF-vs-CRLF mismatch the thing under test rather than the logic.
+test/**.sh text eol=lf

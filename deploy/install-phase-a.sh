@@ -1,19 +1,27 @@
 #!/bin/bash
 # =============================================================================
-#  install-phase-a.sh — stand up the pull deploy on STAGING, on the Epik box.
+#  install-phase-a.sh — stand up the pull deploy on the Epik box.
 #  Copyright © 2026 TieredUp Tech, Inc.
 #
-#  Production stays on Railway. DNS does not move. This script never touches
-#  public_html or the production docroot, and it never deletes anything that was
-#  here before it ran — the docroot flip RENAMES the existing tree to
-#  <docroot>.pre-pull so it can be put straight back.
+#  TWO TARGETS, one script (deliberately — a forked prod copy is how a fix lands
+#  in one and misses the other):
 #
-#  It stops and asks before each of the two steps that change live behaviour:
-#  the docroot flip, and installing the crontab entry. Everything before those
-#  is additive and reversible by deleting one directory.
+#    (default)      STAGING. Basic-Auth guard EXPECTED, secrets/.htpasswd written,
+#                   secrets/ 711 so LiteSpeed's `nobody` can traverse to the auth db.
+#    --production   PRODUCTION. EXPECT_GUARD=0: the artifact must carry NO guard,
+#                   NO .htpasswd is written anywhere, secrets/ is 700, and the
+#                   config has no BASIC_AUTH. Nothing on the production path
+#                   reads secrets/, so `nobody` never needs to traverse it.
+#
+#  It never deletes anything that was here before it ran — the docroot flip
+#  RENAMES the existing tree to <docroot>.pre-pull so it can be put straight back.
+#
+#  On --production the flip and the crontab entry are OFF by default (bootstrap
+#  only): the tree is fetched, verified and staged, and the live docroot is not
+#  touched. Add --flip when you actually intend to change what production serves.
 #
 #  Run it as:  curl -fsSL <raw url> -o ~/install-phase-a.sh && bash ~/install-phase-a.sh
-#  Reverse it with:  bash ~/install-phase-a.sh --uninstall
+#  Reverse it with:  bash ~/install-phase-a.sh --uninstall [--production]
 #
 #  Design + the measurements behind the numbers: deploy/DESIGN-pull-deploy.md
 #  Manual equivalent of these steps:            deploy/PHASE-A-INSTALL.md
@@ -21,12 +29,49 @@
 set -euo pipefail
 umask 022
 
+# ── target selection ────────────────────────────────────────────────────────
+TARGET=staging
+DO_FLIP=ask          # ask | never | yes
+DO_CRON=ask
+UNINSTALL=0
+for a in "$@"; do
+  case "$a" in
+    --production|--prod) TARGET=production ;;
+    --staging)           TARGET=staging ;;
+    --flip)              DO_FLIP=ask ; FLIP_REQUESTED=1 ;;
+    --cron)              DO_CRON=ask ; CRON_REQUESTED=1 ;;
+    --uninstall)         UNINSTALL=1 ;;
+    *) printf '!! unknown argument: %s\n' "$a" >&2; exit 2 ;;
+  esac
+done
+
 REPO="${REPO:-tiereduptech/pro-rig-builder}"
 REF="${REF:-main}"
-BRANCH="${BRANCH:-epik-release-staging}"
-SITE_URL="${SITE_URL:-https://staging.prorigbuilder.com}"
-DOCROOT="${DOCROOT:-/home/tier5415/staging.prorigbuilder.com}"
-ROOT="${ROOT:-$HOME/prb-staging}"
+
+if [ "$TARGET" = production ]; then
+  BRANCH="${BRANCH:-epik-release}"
+  SITE_URL="${SITE_URL:-https://prorigbuilder.com}"
+  ROOT="${ROOT:-$HOME/prb}"
+  EXPECT_GUARD=0
+  # NO default. The production docroot is the live site's; guessing it and being
+  # wrong renames the wrong tree. It must be named explicitly and is verified in
+  # preflight — see the probe below, which runs when this is unset.
+  DOCROOT="${DOCROOT:-}"
+  # Production is unauthenticated — the config's BASIC_AUTH is forced empty at
+  # step 4 so epik-pull.sh sends no -u and no credential is stored at all.
+  SECRETS_MODE=700
+  # Bootstrap only unless the operator explicitly asked for the live steps.
+  [ "${FLIP_REQUESTED:-0}" = 1 ] || DO_FLIP=never
+  [ "${CRON_REQUESTED:-0}" = 1 ] || DO_CRON=never
+else
+  BRANCH="${BRANCH:-epik-release-staging}"
+  SITE_URL="${SITE_URL:-https://staging.prorigbuilder.com}"
+  ROOT="${ROOT:-$HOME/prb-staging}"
+  EXPECT_GUARD=1
+  DOCROOT="${DOCROOT:-/home/tier5415/staging.prorigbuilder.com}"
+  SECRETS_MODE=711
+fi
+
 RAW="https://raw.githubusercontent.com/$REPO/$REF/deploy/epik-pull.sh"
 CRON_LINE="*/5 * * * * /usr/bin/flock -n $ROOT/deploy.lock $ROOT/bin/epik-pull.sh >> $ROOT/log/deploy.log"
 
@@ -40,9 +85,44 @@ ask()  { # ask <prompt> <required-word>
   [ "$reply" = "$2" ]
 }
 
+# ── the docroot verdict ─────────────────────────────────────────────────────
+# This is the single most dangerous decision in the script: get it wrong and the
+# flip renames a live tree onto an existing backup and buries it. It is therefore
+# a PURE function of three observable facts, so it can be driven through its whole
+# truth table off-box — see test/install-phase-a.docroot.test.sh. The caller does
+# the probing; this function does no I/O and reads no globals.
+#
+#   docroot_verdict <is_symlink 0|1> <link_target> <expected_target> <backup_exists 0|1>
+#
+# Verdicts:
+#   pre-flip        real directory, no backup — the normal first-run state
+#   resume          already flipped to OUR current; a backup here is the expected
+#                   residue of the flip that is live, not a fault
+#   foreign-link    a symlink somewhere else, no backup — noted, not fatal: the
+#                   flip would rename the LINK (its target is untouched)
+#   refuse-buried   a flip is still ahead AND a backup exists — the rename would
+#                   bury the tree under that name
+#   refuse-foreign  same, and the docroot is someone else's symlink as well
+docroot_verdict() {
+  local is_link="$1" target="$2" expected="$3" backup="$4"
+  if [ "$is_link" = 1 ] && [ "$target" = "$expected" ]; then
+    echo resume; return 0
+  fi
+  if [ "$backup" = 1 ]; then
+    if [ "$is_link" = 1 ]; then echo refuse-foreign; else echo refuse-buried; fi
+    return 0
+  fi
+  if [ "$is_link" = 1 ]; then echo foreign-link; return 0; fi
+  echo pre-flip
+}
+
+# Sourced by the test harness to get the function without running the installer.
+[ -n "${INSTALL_PHASE_A_LIB_ONLY:-}" ] && return 0 2>/dev/null
+
 # ── uninstall ───────────────────────────────────────────────────────────────
-if [ "${1:-}" = "--uninstall" ]; then
-  say "Reversing Phase A"
+if [ "$UNINSTALL" = 1 ]; then
+  say "Reversing the $TARGET install"
+  [ -n "$DOCROOT" ] || die "--uninstall on production needs DOCROOT= so it knows which docroot to restore."
   if crontab -l 2>/dev/null | grep -qF "$ROOT/bin/epik-pull.sh"; then
     crontab -l 2>/dev/null | grep -vF "$ROOT/bin/epik-pull.sh" | crontab -
     info "crontab entry removed"
@@ -57,7 +137,7 @@ if [ "${1:-}" = "--uninstall" ]; then
     info "docroot is not a symlink with a .pre-pull backup — leaving it alone"
   fi
   info "release trees left at $ROOT (delete by hand if you want them gone)"
-  say "Phase A reversed. Staging is back on the SFTP-deployed tree."
+  say "Reversed. $TARGET is back on the SFTP-deployed tree."
   exit 0
 fi
 
@@ -88,6 +168,42 @@ fi
 BASH_VER="${BASH_VERSION:-unknown}"
 info "bash $BASH_VER"
 
+# ── the production docroot is never guessed ─────────────────────────────────
+# ~/public_html is the cPanel convention and what DESIGN §4 assumes, but it is an
+# ASSUMPTION, not a measurement: this same account serves staging from
+# ~/staging.prorigbuilder.com, a docroot that is NOT under public_html. Being
+# wrong here renames the wrong live tree. So: probe, print the evidence, and make
+# the operator name it. Read-only — this branch always exits.
+if [ "$TARGET" = production ] && [ -z "$DOCROOT" ]; then
+  say "Production docroot — candidates on this box (nothing has been changed)"
+  printf '\n   %-46s %8s  %s\n' "PATH" "ENTRIES" "WHAT IS IN IT"
+  printf '   %-46s %8s  %s\n' "----" "-------" "-------------"
+  for c in "$HOME/public_html" "$HOME/www" "$HOME/prorigbuilder.com" "$HOME/public_html/prorigbuilder.com"; do
+    if [ -L "$c" ]; then
+      printf '   %-46s %8s  SYMLINK -> %s\n' "$c" "-" "$(readlink "$c")"
+    elif [ -d "$c" ]; then
+      n="$(find "$c" -maxdepth 1 -mindepth 1 2>/dev/null | wc -l | tr -d ' ')"
+      marks=""
+      [ -f "$c/index.html" ] && marks="$marks index.html"
+      [ -f "$c/.htaccess" ] && marks="$marks .htaccess"
+      [ -f "$c/resolver.php" ] && marks="$marks resolver.php"
+      [ -f "$c/RELEASE.json" ] && marks="$marks RELEASE.json"
+      [ -e "$c.pre-pull" ] && marks="$marks *** .pre-pull EXISTS ***"
+      printf '   %-46s %8s %s\n' "$c" "$n" "${marks:- (none of the marker files)}"
+    else
+      printf '   %-46s %8s  does not exist\n' "$c" "-"
+    fi
+  done
+  echo
+  info "everything directly under \$HOME, for comparison:"
+  ls -ld "$HOME"/*/ 2>/dev/null | sed 's/^/     /' || true
+  echo
+  info "A production docroot deployed by the current SFTP path should show"
+  info "index.html + .htaccess + resolver.php. Pick the one the live site serves."
+  die "DOCROOT is not set, and production must never be guessed. Re-run with, e.g.:
+   DOCROOT=\$HOME/public_html bash $0 --production"
+fi
+
 # -e follows the link, so a symlink pointing at a pruned or not-yet-created
 # release reports "does not exist" and sends you to set DOCROOT= when the docroot
 # is in fact right there. Test the link itself too.
@@ -95,38 +211,57 @@ if [ ! -e "$DOCROOT" ] && [ ! -L "$DOCROOT" ]; then
   die "docroot $DOCROOT does not exist. Set DOCROOT= and re-run."
 fi
 
-# ALREADY_FLIPPED decides two things further down, so it is established once here:
+# A docroot INSIDE the install root would make the flip point a tree at itself.
+case "$DOCROOT" in
+  "$ROOT"|"$ROOT"/*) die "DOCROOT ($DOCROOT) is inside ROOT ($ROOT). That cannot be right; stopping." ;;
+esac
+
+IS_LINK=0; LINK_TARGET=""
+if [ -L "$DOCROOT" ]; then IS_LINK=1; LINK_TARGET="$(readlink "$DOCROOT")"; fi
+BACKUP=0
+[ -e "$DOCROOT.pre-pull" ] && BACKUP=1
+
+VERDICT="$(docroot_verdict "$IS_LINK" "$LINK_TARGET" "$ROOT/current" "$BACKUP")"
+
+# ALREADY_FLIPPED decides two things further down:
 #   - whether an existing .pre-pull is a fault or the expected post-install state
 #   - whether step 5 may use --bootstrap, which is UNSAFE once the docroot is live
 ALREADY_FLIPPED=0
-if [ -L "$DOCROOT" ]; then
-  LINK_TARGET="$(readlink "$DOCROOT")"
-  if [ "$LINK_TARGET" = "$ROOT/current" ]; then
+
+info "docroot state: $([ "$IS_LINK" = 1 ] && echo "symlink -> $LINK_TARGET" || echo "real directory"), .pre-pull $([ "$BACKUP" = 1 ] && echo present || echo absent)  =>  $VERDICT"
+
+case "$VERDICT" in
+  resume)
     ALREADY_FLIPPED=1
     info "docroot is ALREADY FLIPPED -> $LINK_TARGET"
-  else
+    if [ "$BACKUP" = 1 ]; then
+      info "$DOCROOT.pre-pull present — the backup left by the flip that is currently live (expected)"
+      info "RESUMING an existing install: steps 1-4 are idempotent, step 7 is already done"
+    fi
+    ;;
+  pre-flip)
+    info "docroot $DOCROOT is a real directory (expected, pre-flip)"
+    ;;
+  foreign-link)
     info "NOTE: $DOCROOT is a symlink -> $LINK_TARGET (not this install's $ROOT/current)"
-  fi
-else
-  info "docroot $DOCROOT is a real directory (expected, pre-flip)"
-fi
-
-# A .pre-pull backup is only a FAULT while a flip is still ahead of us, because the
-# flip renames the docroot ONTO that name and would bury the original tree. Once the
-# docroot is already the symlink, .pre-pull is precisely what a SUCCESSFUL install
-# leaves behind — stopping on it makes the installer non-resumable, which is how this
-# fired on staging with everything installed except the crontab entry.
-if [ -e "$DOCROOT.pre-pull" ]; then
-  if [ "$ALREADY_FLIPPED" = 1 ]; then
-    info "$DOCROOT.pre-pull present — the backup left by the flip that is currently live (expected)"
-    info "RESUMING an existing install: steps 1-4 are idempotent, step 7 is already done"
-  else
+    ;;
+  refuse-buried)
     die "$DOCROOT.pre-pull already exists, but $DOCROOT is NOT this install's symlink.
    The flip would rename the docroot onto that backup and lose the tree underneath it.
    Resolve by hand: decide which of the two trees is the one you want, then remove or
    rename the other before re-running."
-  fi
-fi
+    ;;
+  refuse-foreign)
+    die "$DOCROOT.pre-pull already exists, and $DOCROOT is a symlink -> $LINK_TARGET,
+   which is NOT this install's $ROOT/current.
+   Two installs, or a half-finished one, are pointing at the same docroot name.
+   Resolve by hand: decide which tree production should serve, then remove or rename
+   the other before re-running."
+    ;;
+  *)
+    die "internal: unknown docroot verdict '$VERDICT'"
+    ;;
+esac
 
 # Same exit-code table the puller carries. A preflight that can only say "000"
 # sends you looking at the network when the fault is in the invocation.
@@ -171,6 +306,13 @@ if [ "$RC" -ne 0 ]; then
   die "aborting on the fetch failure above — this is the invocation or the host, not the branch."
 fi
 if [ "$HTTP" = 404 ]; then
+  if [ "$TARGET" = production ]; then
+    die "branch '$BRANCH' has no RELEASE.json yet (HTTP 404).
+   Run 'Publish Epik release artifact' with target=production AND confirm=false.
+   confirm=false matters: the confirm step polls https://prorigbuilder.com, which
+   still answers from Railway until the edge is repointed, so with confirm on it
+   would poll for ~20 minutes and fail a publish that actually succeeded."
+  fi
   die "branch '$BRANCH' has no RELEASE.json yet (HTTP 404).
    Run the 'Publish Epik release artifact' workflow first (target: staging), then re-run this."
 fi
@@ -205,14 +347,36 @@ mkdir -p "$ROOT"/{bin,releases,state,tmp,log,secrets}
 # a box that scripts/rotate-staging-auth.sh had already set to 711 and turned a
 # green staging install into a total 401. Same measurement, same reason, both
 # scripts: keep this in step with rotate-staging-auth.sh.
-chmod 711 "$ROOT/secrets"
-info "done (secrets/ 711 — server reads the auth db as 'nobody')"
+#
+# PRODUCTION is 700, not 711. The 711 exists for exactly one reason — letting
+# `nobody` traverse INTO secrets/ to read the auth db named by the staging
+# guard's AuthUserFile. A production artifact carries no guard, no AuthUserFile
+# and no .htpasswd (asserted three times: build-epik.cjs, publish-epik.yml, and
+# epik-pull.sh's EXPECT_GUARD=0 branch), so nothing on the production path ever
+# reads this directory and the server has no business traversing it.
+chmod "$SECRETS_MODE" "$ROOT/secrets"
+if [ "$SECRETS_MODE" = 711 ]; then
+  info "done (secrets/ 711 — server reads the auth db as 'nobody')"
+else
+  info "done (secrets/ 700 — nothing on the production path reads it)"
+fi
 
 # ── 2. the credential the artifact deliberately does not carry ──────────────
 # The release branch is PUBLIC — that is what lets the box pull with no
 # credential — so the Basic-Auth hash lives here, never in the artifact.
-say "Staging Basic-Auth credential"
-if [ -s "$ROOT/secrets/.htpasswd" ]; then
+#
+# PRODUCTION writes NO .htpasswd, anywhere. There is no guard to authenticate
+# against, so a credential here would be a secret on disk protecting nothing —
+# and a stray .htpasswd is exactly what the artifact assertions hunt for.
+if [ "$TARGET" = production ]; then
+  say "Basic-Auth credential — skipped (production is unauthenticated)"
+  if [ -s "$ROOT/secrets/.htpasswd" ]; then
+    die "$ROOT/secrets/.htpasswd exists on a PRODUCTION install root.
+   Nothing on the production path reads it, so it is either a copy-paste from the
+   staging install or the wrong ROOT. Remove it (or fix ROOT=) and re-run."
+  fi
+  info "no .htpasswd written; secrets/ stays empty and 700"
+elif [ -s "$ROOT/secrets/.htpasswd" ]; then
   info "secrets/.htpasswd already present — keeping it"
   # Repair the MODE, never the contents — an install re-run must not disturb a
   # rotated credential. 644 for the same reason secrets/ is 711: the server reads
@@ -267,21 +431,31 @@ chmod +x "$ROOT/bin/epik-pull.sh"
 info "installed and parsed clean ($(wc -c < "$ROOT/bin/epik-pull.sh") bytes)"
 
 # ── 4. config — the ONLY difference between the staging and prod installs ────
+# Production is unauthenticated, so the credential is forced empty here no matter
+# what happens to be exported in the calling shell.
+if [ "$TARGET" = production ]; then
+  CFG_BASIC_AUTH=""
+else
+  CFG_BASIC_AUTH="${EPIK_STAGING_BASIC_AUTH:-}"
+fi
 say "Writing config"
 if [ -s "$ROOT/config" ]; then
   info "config already exists — keeping it"
 else
+  # BASIC_AUTH is written EMPTY on production, not omitted — epik-pull.sh reads
+  # `${BASIC_AUTH:-}` and sends no -u for an empty value, and an explicit empty
+  # line documents that the omission is intended rather than lost.
   cat > "$ROOT/config" <<CFG
 REPO=$REPO
 BRANCH=$BRANCH
 SITE_URL=$SITE_URL
 DOCROOT=$DOCROOT
-BASIC_AUTH=$EPIK_STAGING_BASIC_AUTH
-EXPECT_GUARD=1
+BASIC_AUTH=$CFG_BASIC_AUTH
+EXPECT_GUARD=$EXPECT_GUARD
 RETAIN=10
 CFG
   chmod 600 "$ROOT/config"
-  info "wrote $ROOT/config (mode 600)"
+  info "wrote $ROOT/config (mode 600, EXPECT_GUARD=$EXPECT_GUARD)"
 fi
 
 # ── 5. the pull ─────────────────────────────────────────────────────────────
@@ -307,20 +481,42 @@ say "What landed"
 info "current -> $(readlink "$ROOT/current")"
 node -e 'const o=require(process.argv[1]);console.log("   release "+o.source_sha.slice(0,12)+"  files="+o.file_count+"  htaccess_changed="+o.htaccess_changed)' \
   "$ROOT/current/RELEASE.json" 2>/dev/null || info "(RELEASE.json unreadable)"
-if grep -q 'PRB-STAGING-GUARD' "$ROOT/current/.htaccess"; then
-  info "staging Basic-Auth guard present in .htaccess (required)"
+# Asserted in BOTH directions, matching epik-pull.sh's EXPECT_GUARD branch. A
+# staging artifact that lost its guard is publicly crawlable; a production
+# artifact that CARRIES one 401s the live site the moment the docroot flips.
+if [ "$EXPECT_GUARD" = 1 ]; then
+  if grep -q 'PRB-STAGING-GUARD' "$ROOT/current/.htaccess"; then
+    info "staging Basic-Auth guard present in .htaccess (required)"
+  else
+    die "the pulled artifact has NO staging guard — it would be publicly crawlable. Stopping."
+  fi
 else
-  die "the pulled artifact has NO staging guard — it would be publicly crawlable. Stopping."
+  if grep -q 'PRB-STAGING-GUARD' "$ROOT/current/.htaccess"; then
+    die "the pulled artifact CARRIES the staging guard sentinel, on a production install.
+   Flipping this docroot would 401 the live site. Stopping."
+  fi
+  # The sentinel is only a comment marker. Assert on the directives themselves so
+  # a hand-edited or re-generated .htaccess cannot smuggle auth in without it.
+  if grep -Eqi '^[[:space:]]*(AuthType|AuthName|AuthUserFile|Require[[:space:]]+valid-user)\b' "$ROOT/current/.htaccess"; then
+    die "the pulled production artifact contains Basic-Auth directives without the sentinel.
+   Stopping — this would 401 the live site."
+  fi
+  info "production artifact verified guard-free (no sentinel, no Auth* directives)"
 fi
 STRAY="$(find "$ROOT/releases" -name .htpasswd 2>/dev/null | head -1 || true)"
 [ -n "$STRAY" ] && die "a .htpasswd is inside a release tree ($STRAY) — that must never ship. Stopping."
 info "no .htpasswd inside any release tree"
 
-# ── 7. the docroot flip — the one step that changes what staging serves ─────
+# ── 7. the docroot flip — the one step that changes what the site serves ────
 say "Docroot flip"
 info "This renames $DOCROOT to $DOCROOT.pre-pull and puts a symlink in its place."
 info "Nothing is deleted. Undo with: bash $0 --uninstall"
-if [ "$ALREADY_FLIPPED" = 1 ]; then
+if [ "$DO_FLIP" = never ]; then
+  info "NOT FLIPPING — bootstrap only (no --flip given)."
+  info "$DOCROOT is untouched and still serves whatever it served before."
+  info "The verified tree is staged at $ROOT/current, serving nothing."
+  info "When you intend to change what production serves: bash $0 --production --flip"
+elif [ "$ALREADY_FLIPPED" = 1 ]; then
   info "already flipped — skipping the flip"
   # Do not take the operator's word for it on a resume. Step 5 exits silently when
   # the published sha is already live, so without this a resumed run would install
@@ -332,7 +528,7 @@ if [ "$ALREADY_FLIPPED" = 1 ]; then
     die "the already-flipped docroot is UNHEALTHY. Not installing a cron entry that would
    deploy onto a broken site every 5 minutes. Fix it, or run: bash $0 --uninstall"
   fi
-elif ask "Flip the STAGING docroot to the pull tree?" FLIP; then
+elif ask "Flip the $TARGET docroot ($DOCROOT) to the pull tree?" FLIP; then
   # Preflight already refused this combination. Re-checked immediately before the
   # one irreversible rename in the script, because the cost of being wrong here is
   # the original docroot buried under a directory of the same name.
@@ -342,20 +538,20 @@ elif ask "Flip the STAGING docroot to the pull tree?" FLIP; then
   info "flipped: $DOCROOT -> $(readlink "$DOCROOT")"
   info "previous tree preserved at $DOCROOT.pre-pull"
 
-  say "Healthcheck against the live staging site"
+  say "Healthcheck against the live $TARGET site"
   if "$ROOT/bin/epik-pull.sh" --check; then
     info "healthcheck PASSED"
   else
     printf '\n!! Healthcheck FAILED after the flip.\n' >&2
     if ask "Roll the docroot back to the previous tree now?" ROLLBACK; then
       rm -f "$DOCROOT"; mv "$DOCROOT.pre-pull" "$DOCROOT"
-      info "docroot rolled back. Staging is on the SFTP tree again."
+      info "docroot rolled back. $TARGET is on the SFTP tree again."
       die "flip rolled back — investigate before retrying"
     fi
     die "left flipped and unhealthy at your instruction — fix or run --uninstall"
   fi
 else
-  info "skipped. Staging still serves the SFTP tree; the pull tree is staged but not live."
+  info "skipped. $TARGET still serves the SFTP tree; the pull tree is staged but not live."
   info "Re-run this script when ready, or flip by hand (see PHASE-A-INSTALL.md §5)."
 fi
 
@@ -364,7 +560,13 @@ fi
 # ticks and writes to stderr ONLY on failure, so cron mails you exactly when
 # something broke and never otherwise. The absence of 2>&1 is deliberate.
 say "Crontab"
-if crontab -l 2>/dev/null | grep -qF "$ROOT/bin/epik-pull.sh"; then
+if [ "$DO_CRON" = never ]; then
+  # A */5 cron against an UNFLIPPED docroot is not harmless: the routine path
+  # asserts the docroot and fails, so it would mail a failure every five minutes
+  # and train the alarm to be ignored before it ever matters.
+  info "NOT installing a cron entry — bootstrap only (no --cron given)."
+  info "Deploy by hand while bootstrapping: $ROOT/bin/epik-pull.sh"
+elif crontab -l 2>/dev/null | grep -qF "$ROOT/bin/epik-pull.sh"; then
   info "entry already installed"
 elif ask "Install the */5 cron entry (flock-guarded, mails you only on failure)?" YES; then
   { crontab -l 2>/dev/null || true; \
@@ -376,11 +578,30 @@ else
 fi
 
 # ── done ────────────────────────────────────────────────────────────────────
-say "Phase A install complete"
-info "status:    curl -u USER:PASS $SITE_URL/_deploy-status.json"
-info "invariant: curl -u USER:PASS $SITE_URL/_env.php"
-info "ops denied: curl -u USER:PASS -I $SITE_URL/_ops/epik-fixture.json   (expect 403)"
-info "reverse:   bash $0 --uninstall"
-echo
-info "Next: set repo variable EPIK_WATCH_STAGING=true to arm the 30-minute watchdog,"
-info "then publish again with confirm ON to prove the full loop end to end."
+if [ "$TARGET" = production ]; then
+  say "Production bootstrap complete — nothing is serving this tree yet"
+  info "docroot:   $DOCROOT  ($([ -L "$DOCROOT" ] && echo "symlink -> $(readlink "$DOCROOT")" || echo "real directory, UNTOUCHED"))"
+  info "staged:    $ROOT/current -> $(readlink "$ROOT/current" 2>/dev/null || echo '?')"
+  info "config:    EXPECT_GUARD=0, BASIC_AUTH empty, secrets/ $SECRETS_MODE and empty"
+  echo
+  # $SITE_URL still answers from Railway until the edge is repointed, so any curl
+  # against it right now describes Railway, not this box. Saying so beats printing
+  # a check that returns a confusing 200 from the wrong origin.
+  info "NOTE: $SITE_URL still resolves to Railway via Cloudflare. Do not read a 200"
+  info "      there as evidence about this box — it is not serving production traffic."
+  info "      Verify the staged tree on the box instead:"
+  info "        cat $ROOT/current/RELEASE.json"
+  info "        ls -la $DOCROOT"
+  echo
+  info "reverse:   bash $0 --production --uninstall DOCROOT=$DOCROOT"
+  info "Next (a SEPARATE, deliberate step): bash $0 --production --flip"
+else
+  say "Phase A install complete"
+  info "status:    curl -u USER:PASS $SITE_URL/_deploy-status.json"
+  info "invariant: curl -u USER:PASS $SITE_URL/_env.php"
+  info "ops denied: curl -u USER:PASS -I $SITE_URL/_ops/epik-fixture.json   (expect 403)"
+  info "reverse:   bash $0 --uninstall"
+  echo
+  info "Next: set repo variable EPIK_WATCH_STAGING=true to arm the 30-minute watchdog,"
+  info "then publish again with confirm ON to prove the full loop end to end."
+fi
