@@ -1,0 +1,166 @@
+name: Epik deploy watchdog
+
+# =============================================================================
+#  THE PRIMARY ALARM for the pull deploy, and a direct answer to the sftp-ingest
+#  timeout that went unnoticed for a week: a PASSIVE signal that only appears
+#  when someone looks is not an alarm.
+#
+#  This runs on a schedule whether or not anyone deployed. It reads the status
+#  file the box writes into the live tree (the site is the status channel — there
+#  is no inbound path to the host) and FAILS THE WORKFLOW on anything wrong,
+#  which sends a GitHub notification and shows a red run with no human in the
+#  loop. Worst-case detection: 30 minutes.
+#
+#  It fails on:
+#    - status file unreachable, non-200, or unparseable
+#    - checked_at older than STALE_MIN (the cron has stopped running AT ALL —
+#      the exact silent-stall class of failure)
+#    - health != ok, or a rolled_back / verify_failed / docroot failure
+#    - live_sha != the sha currently published on the release branch, once the
+#      publish is old enough that the box has had time to pull it
+#    - env.dir_resolved false — the R1 invariant of DESIGN §3.2 has broken
+#    - opcache enabled with validate_timestamps off — DESIGN §3.3. The 2026-08-12
+#      host could not be probed for this (introspection locked down), so the
+#      design detects the condition instead of assuming it away.
+# =============================================================================
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: epik-watchdog
+  cancel-in-progress: true
+
+jobs:
+  # Which targets to watch is data, not duplicated YAML. During Phase A only
+  # staging is pulled (production is still on Railway), so only staging is
+  # watched. Set EPIK_WATCH_PRODUCTION=true at cutover.
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      targets: ${{ steps.pick.outputs.targets }}
+    steps:
+      - id: pick
+        env:
+          WATCH_STAGING: ${{ vars.EPIK_WATCH_STAGING }}
+          WATCH_PROD: ${{ vars.EPIK_WATCH_PRODUCTION }}
+          STAGING_URL: ${{ vars.EPIK_STAGING_URL }}
+        run: |
+          set -euo pipefail
+          node -e '
+            const t=[];
+            if (process.env.WATCH_STAGING === "true") {
+              t.push({ name:"staging", url:process.env.STAGING_URL, branch:"epik-release-staging", auth:true });
+            }
+            if (process.env.WATCH_PROD === "true") {
+              t.push({ name:"production", url:"https://prorigbuilder.com", branch:"epik-release", auth:false });
+            }
+            if (!t.length) { console.log("::warning::no targets enabled — set repo var EPIK_WATCH_STAGING=true"); }
+            require("fs").appendFileSync(process.env.GITHUB_OUTPUT, "targets=" + JSON.stringify({include:t}) + "\n");
+          '
+
+  watch:
+    needs: setup
+    if: fromJSON(needs.setup.outputs.targets).include[0] != null
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.setup.outputs.targets) }}
+    name: watch (${{ matrix.name }})
+    steps:
+      - name: Assert the box is alive and honest
+        env:
+          SITE: ${{ matrix.url }}
+          BRANCH: ${{ matrix.branch }}
+          AUTH: ${{ matrix.auth && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+          REPO: ${{ github.repository }}
+          STALE_MIN: '20'
+          # How long after a publish the box is still allowed to be behind before
+          # a sha mismatch counts as a failure. Cron is */5 and raw.githubusercontent
+          # can hold RELEASE.json in CDN cache for ~5 min, so ~10 min is the real
+          # worst case; 20 gives it margin. Without this the watchdog would go red
+          # after every single deploy, and an alarm that cries wolf gets muted —
+          # which is the failure mode this workflow exists to prevent.
+          INFLIGHT_MIN: '20'
+        run: |
+          set -uo pipefail
+          ARGS=(-sS --max-time 25 -w '\n%{http_code}')
+          [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
+
+          RAWSTATUS=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}" 2>/dev/null || true)
+          CODE=$(printf '%s' "$RAWSTATUS" | tail -1)
+          BODY=$(printf '%s' "$RAWSTATUS" | sed '$d')
+
+          PUBLISHED=$(curl -sS --max-time 25 \
+            "https://raw.githubusercontent.com/$REPO/$BRANCH/RELEASE.json" 2>/dev/null || true)
+
+          CODE="$CODE" BODY="$BODY" PUBLISHED="$PUBLISHED" node <<'NODE'
+          const fail = [], warn = [];
+          const staleMin = Number(process.env.STALE_MIN);
+          const inflightMin = Number(process.env.INFLIGHT_MIN);
+
+          if (process.env.CODE !== '200') {
+            fail.push(`status file returned HTTP ${process.env.CODE || '(no response)'} — the box is unreachable or not serving`);
+          }
+
+          let s = null;
+          try { s = JSON.parse(process.env.BODY); }
+          catch (e) { if (process.env.CODE === '200') fail.push(`status file is not valid JSON: ${e.message}`); }
+
+          if (s) {
+            const ageMin = (Date.now() - Date.parse(s.checked_at)) / 60000;
+            if (!Number.isFinite(ageMin)) {
+              fail.push(`checked_at unparseable: ${s.checked_at}`);
+            } else if (ageMin > staleMin) {
+              fail.push(`checked_at is ${ageMin.toFixed(0)} min old (> ${staleMin}) — the cron has stopped running`);
+            }
+
+            if (s.health !== 'ok') {
+              fail.push(`health = "${s.health}"${s.message ? ` — ${s.message}` : ''}`);
+            }
+
+            const env = s.env || {};
+            if (env.dir_resolved === false) {
+              fail.push('env.dir_resolved is FALSE — the R1 invariant broke (DESIGN §3.2): __DIR__ is no longer '
+                      + 'the resolved release path, so the resolver can mix releases within one request');
+            }
+            const on = (v) => v !== undefined && v !== null && v !== '' && v !== '0' && String(v).toLowerCase() !== 'off';
+            if (on(env.opcache_enable) && !on(env.opcache_validate_timestamps)) {
+              fail.push('opcache is ENABLED with validate_timestamps OFF (DESIGN §3.3). This combination was never '
+                      + 'testable on the probe host. R1 is now the only thing preventing stale compiled bytes — '
+                      + 'verify per-release path keying before trusting a deploy.');
+            } else if (on(env.opcache_enable)) {
+              warn.push('opcache is now enabled (validate_timestamps on) — it was inert when the design was measured');
+            }
+
+            let pub = null;
+            try { pub = JSON.parse(process.env.PUBLISHED); } catch (e) {}
+            if (!pub) {
+              warn.push('could not read the published RELEASE.json — skipped the sha comparison');
+            } else if (pub.source_sha !== s.live_sha) {
+              const pubAge = (Date.now() - Date.parse(pub.built_at)) / 60000;
+              if (Number.isFinite(pubAge) && pubAge < inflightMin) {
+                warn.push(`live_sha ${String(s.live_sha).slice(0,8)} is behind published ${String(pub.source_sha).slice(0,8)}, `
+                        + `but that release is only ${pubAge.toFixed(0)} min old — in flight, not failed`);
+              } else {
+                fail.push(`live_sha ${s.live_sha} != published ${pub.source_sha} — a deploy never landed, `
+                        + `or landed and rolled back (published ${Number.isFinite(pubAge) ? pubAge.toFixed(0)+' min' : 'age unknown'} ago)`);
+              }
+            }
+          }
+
+          for (const w of warn) console.log(`::warning::${w}`);
+          if (fail.length) {
+            for (const f of fail) console.log(`::error::${f}`);
+            console.log(`\nWATCHDOG FAILED — ${fail.length} problem(s).`);
+            console.log(`status: ${process.env.BODY || '(none)'}`);
+            process.exit(1);
+          }
+          console.log(`ok — live_sha=${s && s.live_sha}, health=${s && s.health}, checked_at=${s && s.checked_at}`);
+          NODE

@@ -83,3 +83,9 @@ dist/resolver-config.php
 dist/redirects.php
 dist/gone.html
 dist/.htpasswd
+dist/_env.php
+# Pull-deploy artifacts, produced by publish-epik.yml into the release branch —
+# never committed to main. _ops/ carries the healthcheck harness into the release.
+dist/RELEASE.json
+dist/MANIFEST.sha256
+dist/_ops/

@@ -1,0 +1,259 @@
+name: Publish Epik release artifact
+
+# =============================================================================
+#  PUBLISH ONLY — this workflow never touches the live site.
+#
+#  The Epik host firewalls INBOUND connections, so CI cannot reach the box. We
+#  invert the direction: this job publishes a single-commit orphan branch that
+#  both sides can reach over outbound 443, and a cron on the box pulls it.
+#  Nothing ever connects in. See deploy/DESIGN-pull-deploy.md §5.
+#
+#  It force-pushes `epik-release` / `epik-release-staging` and NEVER main, so it
+#  cannot join the main-writer race that the nightly prerender, price-history,
+#  verify-catalog and asin-identity-audit workflows already contend in.
+#
+#  The repo is public, which is deliberate: the box needs NO credential to pull.
+#  Nothing to rotate, nothing to leak. Two consequences are enforced below —
+#  the artifact must never contain .htpasswd (step "Guard assertions"), and the
+#  staging Basic-Auth hash therefore lives on the box, not in the artifact.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Which release branch to publish'
+        type: choice
+        options: [staging, production]
+        default: staging
+      confirm:
+        description: 'Poll the site until the box confirms it went live'
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - 'deploy/**'
+      - 'build-epik.cjs'
+      - '.github/workflows/publish-epik.yml'
+
+# Same reasoning as deploy-epik.yml: cancelling mid-publish is the half-artifact
+# we are avoiding, so overlapping runs QUEUE rather than cancel.
+concurrency:
+  group: epik-publish-${{ github.event.inputs.target || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write        # force-push the orphan release branch
+    # Push-triggered PRODUCTION publishing stays off until the repo variable is
+    # set, mirroring EPIK_PROD_AUTO_DEPLOY on deploy-epik.yml. During Phase A
+    # (staging only, production still on Railway) every publish is a manual
+    # workflow_dispatch. Flip the var at cutover.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.EPIK_PULL_AUTO_PUBLISH == 'true'
+
+    env:
+      TARGET: ${{ github.event.inputs.target || 'production' }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # dist/ is committed, but the Epik artifacts are regenerated so
+      # resolver-config.php / redirects.php / gone.html / .htaccess / _env.php
+      # can never drift from source. build-epik.cjs remains the single source of
+      # truth and still refuses to build a guard-contaminated production artifact.
+      #
+      # EPIK_REMOTE_ROOT is used by build-epik.cjs for ONE thing: the AuthUserFile
+      # path in the staging guard. For the pull deploy we point it at the box's
+      # secrets directory rather than the docroot, so the .htaccess references a
+      # .htpasswd that lives OUTSIDE the release tree. That is what lets a staging
+      # artifact be published to a public branch without publishing a credential.
+      - name: Regenerate Epik artifacts
+        env:
+          EPIK_REMOTE_ROOT: ${{ env.TARGET == 'staging' && secrets.EPIK_PULL_SECRETS_DIR || secrets.EPIK_REMOTE_ROOT }}
+          EPIK_STAGING_BASIC_AUTH: ${{ secrets.EPIK_STAGING_BASIC_AUTH }}
+        run: node build-epik.cjs ${{ env.TARGET == 'staging' && '--staging' || '' }}
+
+      # The staging build writes dist/.htpasswd (the hashed credential). It must
+      # NOT be published. The box holds that file, placed once by hand, at the
+      # path the guard's AuthUserFile points to.
+      - name: Drop the staging credential before it can be published
+        if: env.TARGET == 'staging'
+        run: rm -f dist/.htpasswd
+
+      # The box verifies itself with the SAME harness and fixture CI uses, rather
+      # than a bash twin that would drift from it. .htaccess denies /_ops/ so this
+      # is never served. (node is confirmed present on the box — DESIGN §10.)
+      - name: Ship the healthcheck harness inside the artifact
+        run: |
+          mkdir -p dist/_ops
+          cp test/verify-epik.cjs test/epik-fixture.json dist/_ops/
+
+      - name: Manifest
+        working-directory: dist
+        run: |
+          find . -type f \
+            ! -name MANIFEST.sha256 ! -name RELEASE.json \
+            -print0 | sort -z | xargs -0 sha256sum > MANIFEST.sha256
+          echo "files: $(wc -l < MANIFEST.sha256)"
+
+      - name: RELEASE.json
+        id: rel
+        run: |
+          set -euo pipefail
+          HT_SHA=$(sha256sum dist/.htaccess | cut -d' ' -f1)
+          MAN_SHA=$(sha256sum dist/MANIFEST.sha256 | cut -d' ' -f1)
+          COUNT=$(wc -l < dist/MANIFEST.sha256)
+          echo "htaccess_sha256=$HT_SHA" >> "$GITHUB_OUTPUT"
+          echo "manifest_sha256=$MAN_SHA" >> "$GITHUB_OUTPUT"
+          echo "file_count=$COUNT"       >> "$GITHUB_OUTPUT"
+          # htaccess_changed is filled in by the next step; written last so the
+          # file is always complete when the manifest hash above is computed.
+          printf '%s\n' "$HT_SHA" > /tmp/ht.sha
+          printf '%s\n' "$MAN_SHA" > /tmp/man.sha
+          printf '%s\n' "$COUNT" > /tmp/count
+
+      # ── Guard assertions (belt and braces over build-epik.cjs's own) ─────────
+      # A committed .htpasswd on a public repo is a credential leak, so it is a
+      # hard fail on BOTH targets. The staging sentinel is asserted in both
+      # directions: absent on production (it would 401 the live site) and PRESENT
+      # on staging (a staging artifact that lost its guard is crawlable).
+      - name: Guard assertions
+        run: |
+          set -euo pipefail
+          if find dist -name '.htpasswd' | grep -q .; then
+            echo "::error::.htpasswd present in the artifact — the release branch is PUBLIC. Refusing."; exit 1
+          fi
+          if [ "$TARGET" = 'production' ]; then
+            if grep -q 'PRB-STAGING-GUARD' dist/.htaccess; then
+              echo "::error::production artifact carries the staging guard sentinel"; exit 1
+            fi
+          else
+            if ! grep -q 'PRB-STAGING-GUARD' dist/.htaccess; then
+              echo "::error::staging artifact is MISSING its Basic-Auth guard — it would be publicly crawlable"; exit 1
+            fi
+            if grep -qi 'AuthUserFile .*/public_html' dist/.htaccess; then
+              echo "::error::staging AuthUserFile points into a served directory — set EPIK_PULL_SECRETS_DIR"; exit 1
+            fi
+          fi
+          echo "guards ok for target=$TARGET"
+
+      # ── R2: detect an .htaccess change and make it LOUD, without blocking ────
+      # A hard block fires on legitimate edits, and an override flag passed
+      # reflexively is worse than no gate at all. So this warns, and sets
+      # htaccess_changed in the artifact — which is what puts the box on the
+      # slower settle path (§6.7) with nobody having to remember to ask.
+      - name: R2 — .htaccess change detection (warn, never fail)
+        id: r2
+        env:
+          SITE: ${{ env.TARGET == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
+          AUTH: ${{ env.TARGET == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+        run: |
+          set -uo pipefail
+          NEW=$(cat /tmp/ht.sha)
+          ARGS=(-sS --max-time 20)
+          [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
+          LIVE=$(curl "${ARGS[@]}" "$SITE/RELEASE.json" 2>/dev/null \
+                 | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).htaccess_sha256||""))}catch(e){process.stdout.write("")}})' || true)
+          if [ -z "$LIVE" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "no live RELEASE.json to compare against (first publish, or the box has never pulled) — not flagging"
+          elif [ "$LIVE" = "$NEW" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo ".htaccess unchanged ($NEW)"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::.htaccess CHANGED in this release ($LIVE -> $NEW). The box will take the slower settle path (§6.7)."
+            {
+              echo "## .htaccess changed in this release"
+              echo ""
+              echo "| | sha256 |"
+              echo "|---|---|"
+              echo "| live | \`$LIVE\` |"
+              echo "| new  | \`$NEW\` |"
+              echo ""
+              echo "The artifact carries \`htaccess_changed: true\`, so \`epik-pull.sh\` moves its second"
+              echo "healthcheck pass to T+150s and re-asserts the redirect/410 fixture entries rather"
+              echo "than sampling them. No flag to remember; the signal travels with the artifact."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Write RELEASE.json
+        run: |
+          set -euo pipefail
+          node -e '
+            const fs=require("fs");
+            fs.writeFileSync("dist/RELEASE.json", JSON.stringify({
+              source_sha: process.env.GITHUB_SHA,
+              target: process.env.TARGET,
+              built_at: new Date().toISOString(),
+              run_id: process.env.GITHUB_RUN_ID,
+              file_count: Number(fs.readFileSync("/tmp/count","utf8").trim()),
+              manifest_sha256: fs.readFileSync("/tmp/man.sha","utf8").trim(),
+              htaccess_sha256: fs.readFileSync("/tmp/ht.sha","utf8").trim(),
+              htaccess_changed: process.env.HT_CHANGED === "true",
+            }, null, 1) + "\n");
+          '
+          cat dist/RELEASE.json
+        env:
+          HT_CHANGED: ${{ steps.r2.outputs.changed }}
+
+      # A fresh repo per run, so the branch is always exactly one commit and never
+      # accumulates history. Force-push to epik-release*, never to main.
+      - name: Publish orphan release branch
+        env:
+          BRANCH: ${{ env.TARGET == 'staging' && 'epik-release-staging' || 'epik-release' }}
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/rel && cp -a dist /tmp/rel && cd /tmp/rel
+          git init -q && git checkout -qb "$BRANCH"
+          git add -Af
+          git -c user.email=ci@tiereduptech.com -c user.name='prb-ci' \
+              commit -qm "release ${GITHUB_SHA} (${TARGET})"
+          git push --force -q \
+            "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}" "$BRANCH"
+          echo "published $BRANCH @ ${GITHUB_SHA}"
+
+      # ── The site is the status channel ──────────────────────────────────────
+      # With no inbound path, this is the observability answer: the box writes its
+      # outcome into the live tree and CI reads it over HTTPS. A failed or
+      # rolled-back deploy still turns CI red.
+      - name: Confirm the box went live
+        if: github.event.inputs.confirm != 'false'
+        env:
+          SITE: ${{ env.TARGET == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
+          AUTH: ${{ env.TARGET == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+        run: |
+          set -uo pipefail
+          ARGS=(-sS --max-time 20)
+          [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
+          echo "polling $SITE/_deploy-status.json for $GITHUB_SHA (cron is */5, allow ~20 min)"
+          for i in $(seq 1 80); do
+            BODY=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}.$i" 2>/dev/null || true)
+            LIVE=$(printf '%s' "$BODY" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const o=JSON.parse(s);process.stdout.write(`${o.live_sha}|${o.health}|${o.message||""}`)}catch(e){process.stdout.write("|")}})')
+            SHA=${LIVE%%|*}; REST=${LIVE#*|}; HEALTH=${REST%%|*}; MSG=${REST#*|}
+            if [ "$SHA" = "$GITHUB_SHA" ] && [ "$HEALTH" = "ok" ]; then
+              echo "confirmed live after ~$((i*15))s"
+              if [ "${{ steps.r2.outputs.changed }}" = "true" ]; then
+                echo "::warning::reminder — .htaccess changed in this release; it went out on the settle path"
+              fi
+              exit 0
+            fi
+            [ -n "$HEALTH" ] && [ "$HEALTH" != "ok" ] && echo "  box reports health=$HEALTH ${MSG:+($MSG)}"
+            sleep 15
+          done
+          echo "::error::the box never confirmed $GITHUB_SHA within ~20 min. Check cron mail and the watchdog."
+          exit 1

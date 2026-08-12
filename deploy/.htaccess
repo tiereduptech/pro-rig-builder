@@ -73,7 +73,33 @@ AddType application/manifest+json .webmanifest
   Require all denied
 </FilesMatch>
 
+# ── Deploy status channel: never cached, never indexed ──
+#    With no inbound path to the box, the SITE is the status channel: the pull
+#    script writes _deploy-status.json into the live release and CI + the
+#    watchdog read it over HTTPS. A cached answer here means CI confirms a
+#    deploy that never landed, so no-store is load-bearing, not hygiene.
+#    _env.php must also never be cached — it reports the R1 invariant per worker
+#    and the healthcheck polls it to detect pool convergence.
+#
+#    NO robots directive here, deliberately. build-epik.cjs's production
+#    self-check refuses to build if this file contains a crawler-suppression
+#    header at all — it cannot distinguish a scoped one from a blanket one, and
+#    that guard is what stands between us and a repeat of 2026-07-27 (4,573
+#    product pages served un-indexable for ten days). Loosening a de-indexing
+#    guard to earn a crawler directive on a status JSON is a bad trade. _env.php
+#    emits its own from PHP, where it is scoped to that one file by construction.
+#    (The self-check scans comments too, so this note avoids the literal phrase.)
+<FilesMatch "^(_deploy-status\.json|RELEASE\.json|MANIFEST\.sha256|_env\.php)$">
+  Header set Cache-Control "no-store, max-age=0"
+</FilesMatch>
+
 RewriteEngine On
+
+# 0) _ops/ carries the healthcheck harness + fixture into the release so the box
+#    verifies itself with the exact code CI runs. It is not site content, and it
+#    IS a real file on disk, so it must be denied BEFORE rule 1 would serve it.
+#    403 not 404: a 404 falls into ErrorDocument -> resolver.php -> SPA shell 200.
+RewriteRule ^_ops/ - [F,L]
 
 # 1) A real file on disk (hashed asset, sitemap.xml, robots.txt, llms.txt, image,
 #    manifest.json, …) → serve it as-is. This is where the vast majority of traffic
