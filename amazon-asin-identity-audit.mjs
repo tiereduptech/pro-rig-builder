@@ -55,6 +55,48 @@ const HISTORY_KEEP = 30;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const today = () => new Date().toISOString().slice(0, 10);
 
+// Exit with a definite code even when a real fetch just left an idle keep-alive
+// socket pooled — otherwise process.exit() can race that handle and, on Windows,
+// abort with a libuv assertion (wrong exit code). Draining the pool first makes
+// the code exactly what we intend, on every platform.
+async function hardExit(code) {
+  try { const { getGlobalDispatcher } = await import('undici'); await getGlobalDispatcher().close(); } catch { /* best effort */ }
+  process.exit(code);
+}
+
+// Two states, made to look NOTHING alike in the log (red ::error:: + exit 1 vs
+// yellow ::warning:: + graceful exit 0) — so "our secret is missing" is never
+// mistaken for "Amazon is gating us right now".
+async function failNotConfigured(detail) {
+  console.log(`::error title=PA API not configured::${detail}`);
+  console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+  console.error('\x1b[41m\x1b[97m  ✗✗✗  PA API NOT CONFIGURED — THIS IS OUR BUG  ✗✗✗' + ' '.repeat(19) + '\x1b[0m');
+  console.error('\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+  console.error(`\x1b[91m  ${detail}`);
+  console.error('  AMAZON_CREATORS_CLIENT_ID / AMAZON_CREATORS_CLIENT_SECRET are not reaching');
+  console.error('  this job, and there is no readable credentials CSV. This audit is');
+  console.error('  Amazon-only, so it cannot run at all. FAILING so this is fixed, not');
+  console.error('  silently skipped.\x1b[0m');
+  console.error('\x1b[91m' + '━'.repeat(72) + '\x1b[0m');
+  await hardExit(1);
+}
+async function degradeGated(httpStatus) {
+  console.log(`::warning title=PA API gated by Amazon (AssociateNotEligible)::HTTP ${httpStatus} — audit degraded to a clean no-op, nothing quarantined, job stays green`);
+  console.warn('\n\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
+  console.warn(`\x1b[43m\x1b[30m  ⚠  PA API gated by Amazon: AssociateNotEligible (HTTP ${httpStatus})` + ' '.repeat(11) + '\x1b[0m');
+  console.warn('\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
+  console.warn('\x1b[33m  EXPECTED right now — the Associates account is below the qualifying-sales');
+  console.warn('  threshold, so Amazon revoked Creators/PA API access. Amazon\'s gate, NOT our');
+  console.warn('  bug. This audit has no DataForSEO fallback, so it degrades to a clean no-op:');
+  console.warn('  nothing quarantined, nothing written, job stays green. Rechecks next run.\x1b[0m');
+  console.warn('\x1b[33m' + '─'.repeat(72) + '\x1b[0m');
+  if (process.env.GITHUB_OUTPUT) {
+    appendFileSync(process.env.GITHUB_OUTPUT,
+      'degraded=true\ndegraded_reason=associate_not_eligible\nquarantined=0\nqueue=0\nalert=false\n');
+  }
+  await hardExit(0);
+}
+
 // ---- creds --------------------------------------------------------------
 function parseCsv(text) {
   const rows = []; let row = [], field = '', q = false;
@@ -75,18 +117,39 @@ function loadCreds(p) {
   if (process.env.AMAZON_CREATORS_CLIENT_ID && process.env.AMAZON_CREATORS_CLIENT_SECRET) {
     return { id: process.env.AMAZON_CREATORS_CLIENT_ID, secret: process.env.AMAZON_CREATORS_CLIENT_SECRET };
   }
-  const rows = parseCsv(readFileSync(p, 'utf8'));
-  const h = rows[0].map(x => x.trim().toLowerCase()), d = rows[1];
-  const g = n => { const i = h.indexOf(n); return i === -1 ? '' : (d[i] || '').trim(); };
-  return { id: g('credential id'), secret: g('secret') };
+  // No env vars AND no readable CSV (the CI case) is not_configured — return null
+  // and let the caller fail loudly. Never let a missing file ENOENT-crash with a
+  // Windows-path stack trace that buries the real problem (the missing secret).
+  if (!existsSync(p)) return null;
+  try {
+    const rows = parseCsv(readFileSync(p, 'utf8'));
+    if (rows.length < 2) return null;
+    const h = rows[0].map(x => x.trim().toLowerCase()), d = rows[1];
+    const g = n => { const i = h.indexOf(n); return i === -1 ? '' : (d[i] || '').trim(); };
+    const id = g('credential id'), secret = g('secret');
+    return id && secret ? { id, secret } : null;
+  } catch { return null; }
 }
+// A 401/403 or an AssociateNotEligible marker means Amazon is GATING us (expected
+// below the sales threshold) — Amazon's gate, not our bug. Kept separate from a
+// missing secret so the two can never look alike in the log.
+const isEligibilityError = (status, body) =>
+  status === 401 || status === 403 || /associatenoteligible|not eligible/i.test(body || '');
 async function getToken(id, secret) {
   const res = await fetch(TOKEN_URL, {
     method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ grant_type: 'client_credentials', client_id: id, client_secret: secret, scope: SCOPE }).toString(),
   });
-  const j = await res.json();
-  if (!j.access_token) throw new Error('token failed: ' + JSON.stringify(j).slice(0, 300));
+  const body = await res.text();
+  let j = null; try { j = JSON.parse(body); } catch {}
+  if (!res.ok || !j?.access_token) {
+    const err = new Error(`token failed: HTTP ${res.status} ${body.slice(0, 300)}`);
+    err.httpStatus = res.status;
+    // At the TOKEN endpoint a 403 (or explicit marker) is the eligibility gate; a
+    // 401 is a bad/rotated secret (our bug). Don't let 401 masquerade as a gate.
+    err.eligibility = res.status === 403 || /associatenoteligible|not eligible/i.test(body || '');
+    throw err;
+  }
   return j.access_token;
 }
 
@@ -195,8 +258,27 @@ async function loadCatalog() {
   console.log(`est. runtime: ~${Math.round(Math.ceil(uniqueAsins.length / BATCH) * (PAUSE_MS + 250) / 1000 / 60)} min\n`);
 
   const creds = loadCreds(CREDS_PATH);
-  await ensureToken(creds);
-  console.log('token acquired\n');
+  if (!creds || !creds.id || !creds.secret) {
+    await failNotConfigured('no env vars and no readable credentials CSV');   // OUR bug -> exit 1
+  }
+  try {
+    await ensureToken(creds);
+    console.log('token acquired\n');
+  } catch (e) {
+    // 403 / AssociateNotEligible at the token endpoint -> Amazon's gate: warn and
+    // degrade to a no-op (exit 0). A 401 (rejected secret) or any other token
+    // failure is our problem -> fail loudly and cleanly, never with a raw stack.
+    if (e.eligibility) await degradeGated(e.httpStatus || 403);
+    console.log(`::error title=PA API token request failed::${e.message}`);
+    console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+    console.error('\x1b[41m\x1b[97m  ✗✗✗  PA API TOKEN REQUEST FAILED — creds rejected or endpoint down  ✗✗✗\x1b[0m');
+    console.error('\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+    console.error(`\x1b[91m  ${e.message}`);
+    console.error('  A 401 means the client id/secret is wrong or rotated (our bug); any');
+    console.error('  other status means the token endpoint is unreachable. FAILING loudly.\x1b[0m');
+    console.error('\x1b[91m' + '━'.repeat(72) + '\x1b[0m');
+    await hardExit(1);
+  }
 
   // ---- fetch ------------------------------------------------------------
   const fetched = new Map();     // asin -> { title, offer } | null
@@ -211,7 +293,13 @@ async function loadCatalog() {
       resources: ['itemInfo.title', 'offersV2.listings.price',
                   'offersV2.listings.condition', 'offersV2.listings.isBuyBoxWinner'],
     }));
-    if (!r.ok) apiErrors.push({ batch: b, status: r.status, body: (r.raw || '').slice(0, 200) });
+    if (!r.ok) {
+      apiErrors.push({ batch: b, status: r.status, body: (r.raw || '').slice(0, 200) });
+      // Token issued but the data call is gated (eligibility can surface here rather
+      // than at the token endpoint). No point hammering 360 more batches that will
+      // all 403 — degrade to the same clean no-op and stop.
+      if (isEligibilityError(r.status, r.raw)) await degradeGated(r.status);
+    }
     const got = itemsOf(r.json);
     for (const it of got) {
       fetched.set(it.asin, { title: it?.itemInfo?.title?.displayValue || '', offer: newOffer(it) });

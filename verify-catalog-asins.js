@@ -37,15 +37,17 @@ import { evaluateSpendGuard, COST_PER_SELLERS_TASK } from './verify-spend-guard.
 // PA API is a free second opinion on rows DataForSEO cannot confirm. Its client
 // never throws: missing creds, a 401, or AssociateNotEligible all degrade to an
 // empty result plus an alert, so the run continues on DataForSEO alone.
-import { resolveItems, onPaapiAlert, paapiStatus, BATCH_MAX as PAAPI_BATCH } from './amazon-paapi.js';
+import { resolveItems, onPaapiAlert, paapiStatus, preflightPaapi, BATCH_MAX as PAAPI_BATCH } from './amazon-paapi.js';
 let PAAPI_RUN_SUMMARY = null;
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
 // A --dry-run posts ZERO tasks and never calls the API — it exists to PROVE the
-// scope before anyone spends, so it must run without credentials. Only a real
-// (task-posting) run requires them.
-if (!process.argv.includes('--dry-run') && (!LOGIN || !PASSWORD)) {
+// scope before anyone spends, so it must run without credentials. --paapi-preflight
+// only checks the (free) PA API config and posts nothing either. Only a real
+// (task-posting) run requires DataForSEO credentials.
+if (!process.argv.includes('--dry-run') && !process.argv.includes('--paapi-preflight')
+    && (!LOGIN || !PASSWORD)) {
   console.error('ERROR: Missing DATAFORSEO_LOGIN or DATAFORSEO_PASSWORD env vars.');
   process.exit(1);
 }
@@ -117,6 +119,14 @@ const flags = {
   excludeIds: getFlag('--exclude-ids', true),
   onlyIds: getFlag('--only-ids', true),
   expectCount: getFlag('--expect-count', true) != null ? Number(getFlag('--expect-count', true)) : null,
+  // Run ONLY the PA API config gate (one free Amazon call), print its state, exit.
+  // A credential-free config check that needs no DataForSEO spend — used to prove
+  // the fail-loud path and to sanity-check wiring before a real nightly run.
+  paapiPreflight: getFlag('--paapi-preflight'),
+  // Self-test hook: force the gate to see PA API as not_configured regardless of
+  // creds, so the fail-loud path can be exercised even where creds ARE present
+  // (e.g. a CI run proving the gate still fires). Never used by the nightly cron.
+  forceUnconfigured: getFlag('--force-unconfigured'),
 };
 // Optional exclusion set (e.g. the SUSPECT_VS_LIST wrong-baseline cohort, which is
 // a separate bug we must NOT touch in the price sweep). JSON file = array of ids.
@@ -141,8 +151,8 @@ if (flags.onlyIds) {
   } catch (e) { console.error(`Failed to load --only-ids: ${e.message}`); process.exit(1); }
 }
 if (!flags.tier) { console.error('Must specify --tier (1|2|3|4|all)'); process.exit(1); }
-if (!flags.dryRun && !flags.reportOnly && !flags.autoFix) {
-  console.error('Must specify mode: --dry-run, --report-only, or --auto-fix');
+if (!flags.dryRun && !flags.reportOnly && !flags.autoFix && !flags.paapiPreflight) {
+  console.error('Must specify mode: --dry-run, --report-only, --auto-fix, or --paapi-preflight');
   process.exit(1);
 }
 
@@ -430,6 +440,75 @@ function writeReports(allIssues, asinRepairs, meta) {
   console.log(`\nReport: ${mdPath}`);
 }
 
+// Exit with a definite code even when a real fetch just left an idle keep-alive
+// socket in undici's pool — otherwise process.exit() can race that handle and, on
+// Windows, abort with a libuv assertion (wrong exit code). Closing the dispatcher
+// first drains the pool so the code is exactly what we intend, on every platform.
+async function hardExit(code) {
+  try { const { getGlobalDispatcher } = await import('undici'); await getGlobalDispatcher().close(); } catch { /* best effort */ }
+  process.exit(code);
+}
+
+// PA API CONFIG GATE — the same principle as the prerender hard gate: a
+// verification that cannot reach its buy-box source must say so, not commit a
+// green run. The two failure states are deliberately made to look NOTHING alike
+// in the log (red ::error:: box + exit vs yellow ::warning:: box + continue) so
+// "our wiring is broken" is never mistaken for "Amazon is gating us right now":
+//
+//   our_bug (not_configured / bad creds) -> FAIL THE JOB. Runs BEFORE postTasks,
+//     so it fails for $0 without billing a single DataForSEO task.
+//   gated (403 AssociateNotEligible)     -> WARN and continue on DataForSEO. This
+//     is expected until the Associates account clears the sales threshold.
+//
+// `fatal` is false only in --dry-run, where nothing is verified or committed
+// anyway: there it downgrades to an informational warning that names what a real
+// run WOULD do. Returns the preflight result so the caller can log context.
+async function runPaapiGate(probeAsins, { fatal, force }) {
+  const pf = force
+    ? { state: 'our_bug', reason: 'not_configured', detail: '--force-unconfigured (self-test)' }
+    : await preflightPaapi(probeAsins);
+
+  if (pf.state === 'ok') {
+    console.log(`\n✓ PA API preflight OK — credentials valid, Amazon reachable (${pf.detail}).`);
+    return pf;
+  }
+
+  if (pf.state === 'our_bug') {
+    console.log(`::error title=PA API not configured::${pf.reason} — buy-box verification source unreachable (${pf.detail})`);
+    console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+    console.error('\x1b[41m\x1b[97m  ✗✗✗  PA API NOT CONFIGURED — THIS IS OUR BUG  ✗✗✗' + ' '.repeat(19) + '\x1b[0m');
+    console.error('\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+    console.error(`\x1b[91m  reason : ${pf.reason}`);
+    console.error(`  detail : ${pf.detail}`);
+    console.error('  AMAZON_CREATORS_CLIENT_ID / AMAZON_CREATORS_CLIENT_SECRET are not');
+    console.error('  reaching this job. The buy-box confirmation pass has no source.');
+    console.error(fatal
+      ? '  FAILING THE JOB — an unverifiable run must not commit as a success.\x1b[0m'
+      : '  (--dry-run: NOT failing, but a REAL run WOULD fail and exit 1 here.)\x1b[0m');
+    console.error('\x1b[91m' + '━'.repeat(72) + '\x1b[0m');
+    if (fatal) await hardExit(1);
+    return pf;
+  }
+
+  if (pf.state === 'gated') {
+    console.log(`::warning title=PA API gated by Amazon (AssociateNotEligible)::${pf.reason} — continuing on DataForSEO; buy-box confirmation (PASS 2) skipped this run`);
+    console.warn('\n\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
+    console.warn('\x1b[43m\x1b[30m  ⚠  PA API gated by Amazon: AssociateNotEligible (HTTP 403)' + ' '.repeat(13) + '\x1b[0m');
+    console.warn('\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
+    console.warn(`\x1b[33m  This is EXPECTED right now — the Associates account is below the`);
+    console.warn('  qualifying-sales threshold, so Amazon has revoked PA API access.');
+    console.warn('  Amazon\'s gate, NOT our bug. Continuing the run on DataForSEO alone;');
+    console.warn('  buy-box confirmation (PASS 2) is skipped. Rechecks automatically next run.\x1b[0m');
+    console.warn('\x1b[33m' + '─'.repeat(72) + '\x1b[0m');
+    return pf;
+  }
+
+  // degraded — transient token/network/5xx. Not our bug, not a permanent gate.
+  console.log(`::warning title=PA API unreachable (transient)::${pf.reason} — continuing on DataForSEO; buy-box confirmation skipped this run`);
+  console.warn(`\n⚠ PA API unreachable this run (${pf.reason}: ${pf.detail}). Transient — continuing on DataForSEO, buy-box confirmation skipped.`);
+  return pf;
+}
+
 (async () => {
   const parts = await loadCatalog();
   const products = selectProducts(parts, flags.tier);
@@ -465,6 +544,19 @@ function writeReports(allIssues, asinRepairs, meta) {
   if (guard.abort) {
     console.error(`\n${guard.reason}`);
     process.exit(1);
+  }
+
+  // ── PA API config gate (see runPaapiGate) ───────────────────────────────────
+  // Runs BEFORE postTasks so a wiring bug fails for $0. Fatal in every real mode;
+  // informational only in --dry-run (which verifies/commits nothing anyway). The
+  // probe uses a real in-scope ASIN so an eligibility gate is actually observed.
+  const probeAsins = products.map(p => extractASIN(p.deals?.amazon?.url)).filter(Boolean).slice(0, 1);
+  // Fatal in every real mode AND in an explicit --paapi-preflight check; only a
+  // --dry-run downgrades a config bug to an informational warning.
+  await runPaapiGate(probeAsins, { fatal: !flags.dryRun || flags.paapiPreflight, force: flags.forceUnconfigured });
+  if (flags.paapiPreflight) {
+    console.log('\n--paapi-preflight: config gate only, no tasks posted, $0 spent. Exiting 0.');
+    return;
   }
 
   if (flags.dryRun) { console.log(`\nDry run complete — ZERO tasks posted, $0 spent.`); return; }

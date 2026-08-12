@@ -132,7 +132,15 @@ async function getToken() {
   let json = null; try { json = JSON.parse(body); } catch { /* keep raw */ }
   if (!res.ok || !json?.access_token) {
     circuitOpen = true;
-    raise(res.status === 401 || res.status === 403 ? 'credentials_rejected' : 'token_failed',
+    // Eligibility can surface at the TOKEN endpoint, not just on data calls. Split
+    // the two authenticated-but-forbidden cases apart, because they demand opposite
+    // responses: a 403 (or an explicit AssociateNotEligible marker) is Amazon GATING
+    // a valid app -> warn and fall back; a 401 is a bad/rotated secret -> our bug,
+    // fail loudly. Anything else is a transient token failure.
+    const ineligible = res.status === 403 || /associatenoteligible|not eligible/i.test(body || '');
+    raise(ineligible ? 'associate_not_eligible'
+          : res.status === 401 ? 'credentials_rejected'
+          : 'token_failed',
           `HTTP ${res.status} ${body?.slice(0, 200)}`);
     return null;
   }
@@ -259,4 +267,50 @@ export async function searchItems(keywords, {
     if (page < maxPages) await sleep(pace);
   }
   return { items: [...out.values()], totalResultCount, pagesFetched };
+}
+
+// ---- configuration preflight -------------------------------------------
+// A misconfigured second opinion (no creds wired) is OUR bug and must never look
+// like a healthy run; an eligibility gate (403 AssociateNotEligible) is AMAZON's
+// gate and is expected right now. Same log line for both is exactly the failure
+// this module exists to prevent, so the preflight maps every disabledReason onto
+// ONE of four policy states the caller branches on:
+//
+//   'ok'       creds valid, Amazon reachable            -> use PA API
+//   'our_bug'  not_configured | credentials_rejected    -> FAIL the job loudly
+//   'gated'    associate_not_eligible | unauthorized    -> WARN, fall back to DataForSEO
+//   'degraded' token_failed | network | anything else   -> WARN, transient, fall back
+function classifyReason(reason) {
+  if (reason === 'not_configured' || reason === 'credentials_rejected') return 'our_bug';
+  if (reason === 'associate_not_eligible' || reason === 'unauthorized')  return 'gated';
+  return 'degraded';
+}
+
+/**
+ * One-shot config + reachability probe. Makes ONE real getItems call (PA API is
+ * free) so the true state is known even on a run with nothing to resolve — and so
+ * an eligibility gate, which only surfaces on data calls, is actually observed
+ * rather than assumed from a token that issued fine. NEVER throws.
+ *
+ * @param {string[]} probeAsins  up to one real ASIN to resolve; if none given,
+ *   falls back to a token-only check (still catches not_configured / bad creds,
+ *   but cannot observe a data-call eligibility gate).
+ * @returns {Promise<{state:'ok'|'our_bug'|'gated'|'degraded', reason:string|null, detail:string}>}
+ */
+export async function preflightPaapi(probeAsins = []) {
+  resetPaapi();                                  // clean slate: status reflects THIS probe only
+  const asins = [...new Set((probeAsins || []).filter(Boolean))].slice(0, 1);
+  const lastDetail = () => { const st = paapiStatus(); return st.alerts[st.alerts.length - 1]?.detail || ''; };
+
+  if (asins.length) {
+    const items = await resolveItems(asins);
+    const st = paapiStatus();
+    if (st.available) return { state: 'ok', reason: null, detail: `probe ASIN ${asins[0]} → ${items.size} item(s)` };
+    return { state: classifyReason(st.disabledReason), reason: st.disabledReason, detail: lastDetail() };
+  }
+
+  const t = await getToken();
+  const st = paapiStatus();
+  if (t) return { state: 'ok', reason: null, detail: 'token acquired (no probe ASIN available)' };
+  return { state: classifyReason(st.disabledReason), reason: st.disabledReason, detail: lastDetail() };
 }
