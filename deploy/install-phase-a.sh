@@ -71,6 +71,23 @@ info "required commands present"
 mv --help 2>&1 | grep -q -- '-T' || die "this mv has no -T. Atomic swap is the whole design; stopping."
 info "mv -T available"
 
+# The first probe recorded "curl present" and stopped there, so a curl too old for
+# --etag-save (7.68+) got discovered by a failing cron tick instead of here. Record
+# the VERSION, and assert the floor every option in both scripts actually needs.
+# 7.12.3 (2004) is where --retry/--retry-delay landed; everything else is older.
+CURL_VER="$(curl --version 2>/dev/null | head -1 | awk '{print $2}')"
+if [ -z "$CURL_VER" ]; then
+  info "WARNING: could not parse 'curl --version' output — cannot check the version floor"
+else
+  info "curl $CURL_VER"
+  printf '%s\n' "$CURL_VER" | awk -F. '
+    { if (($1+0) > 7 || (($1+0) == 7 && (($2+0) > 12 || (($2+0) == 12 && ($3+0) >= 3)))) exit 0; exit 1 }
+  ' || die "curl $CURL_VER is older than 7.12.3, which is where --retry/--retry-delay appeared.
+   Both scripts use them on every fetch. Stopping before anything is changed."
+fi
+BASH_VER="${BASH_VERSION:-unknown}"
+info "bash $BASH_VER"
+
 [ -e "$DOCROOT" ] || die "docroot $DOCROOT does not exist. Set DOCROOT= and re-run."
 if [ -L "$DOCROOT" ]; then
   info "NOTE: $DOCROOT is already a symlink -> $(readlink "$DOCROOT")"
@@ -84,6 +101,8 @@ fi
 curl_why() {
   case "$1" in
     0)  echo "no error" ;;
+    2)  echo "curl could not parse its command line — almost always an option THIS curl is" \
+             "too old to know (see the flag it names below). Nothing was sent" ;;
     3)  echo "malformed URL" ;;
     6)  echo "could not resolve host (DNS)" ;;
     7)  echo "could not connect — refused, or outbound 443 is firewalled" ;;

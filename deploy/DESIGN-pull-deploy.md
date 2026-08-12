@@ -150,7 +150,7 @@ to remember to ask for it.
   releases/<source-sha>/     extracted artifact (content + resolver + data + .htaccess)
   current -> releases/<source-sha>
   bin/epik-pull.sh
-  state/{live.sha, prev.sha, release.etag}
+  state/{live.sha, prev.sha}
   log/deploy.log
   tmp/
 ~/public_html -> ~/prb/current      created ONCE, by hand, at cutover
@@ -221,10 +221,18 @@ A failed or rolled-back deploy still turns CI red.
    and **exit non-zero without repairing**. Auto-repairing a docroot means moving or
    deleting a live directory, which this design never does. The alarm is §8, not "someone
    notices."
-2. **Cheap poll.** Conditional GET of
+2. **Cheap poll.** Plain GET of
    `https://raw.githubusercontent.com/<repo>/epik-release/RELEASE.json`
-   using `curl --etag-compare/--etag-save`. A 304, or `source_sha == state/live.sha`,
-   exits 0 immediately. ~287 of 288 daily ticks stop here having moved a few bytes.
+   (~380 bytes). `source_sha == state/live.sha` exits 0 immediately. ~287 of 288 daily
+   ticks stop here having moved a few bytes.
+
+   This was a conditional GET using `curl --etag-compare/--etag-save` until 2026-08-12,
+   when the box's curl turned out to predate those options (7.68+, 2020) and exited 2 at
+   argument parsing on every single tick — the poll never ran. The etag was never the
+   deploy decision anyway: `source_sha` vs `state/live.sha` is, and it stays right when a
+   CDN rotates an etag without a byte changing, or when the box has rolled back and the
+   published sha is unchanged. A 304 was only a cheaper route to the same answer, and the
+   thing it would have saved is smaller than the request that asks for it.
 3. **Fetch.** `codeload.github.com/<repo>/tar.gz/refs/heads/epik-release` ->
    extract to `releases/<sha>.tmp` with `--strip-components=1`.
 4. **Verify, before anything is swapped.**
@@ -399,6 +407,12 @@ is painful *and* a shallow fetch demonstrably transferring materially less.
 **Host capability.** All read-only, none touched the docroot:
 
 - `git`, `curl`, `flock`, `tar`, `sha256sum`, `timeout`, `node`, `php` — all present
+  - **present is not capable.** This probe recorded that `curl` exists and stopped
+    there, so a `curl` predating `--etag-save` (7.68, 2020) was not discovered until a
+    cron tick failed with `curl exited 2 — option --etag-save: is unknown` (2026-08-12).
+    `install-phase-a.sh` now prints and floor-checks `curl --version` and prints
+    `$BASH_VERSION` in preflight. Record the VERSION of anything a script depends on a
+    recent feature of — or depend only on features old enough not to ask.
 - disk: ample free space, **910M free inodes**
 - one `dist/` tree = **22,081 inodes** → sets N in §6.10
 - `git clone --depth 1`: 17s, 584M tree + 49M `.git`

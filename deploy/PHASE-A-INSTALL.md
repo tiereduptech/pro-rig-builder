@@ -55,6 +55,12 @@ Nothing below moves or deletes a live directory except step 5, which is the
 docroot flip, and it *renames* the current tree rather than removing it.
 
 ```bash
+# 0. record the versions, not just the presence. A curl that merely EXISTS is not
+#    a curl that supports what you invoke: this box's curl predates --etag-save
+#    (7.68) and exited 2 on every tick until that option was removed. Floor: 7.12.3.
+curl --version | head -1
+echo "bash $BASH_VERSION"
+
 # 1. tree
 mkdir -p ~/prb-staging/{bin,releases,state,tmp,log,secrets}
 chmod 700 ~/prb-staging/secrets

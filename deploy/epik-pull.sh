@@ -32,8 +32,14 @@
 #                 serving the tree yet. The operator flips the docroot after.
 #    --check      healthcheck the current live release and rewrite the status
 #                 file. No fetching, no swapping. Safe to run any time.
-#    --force      ignore the etag/sha short-circuit and redeploy the published
+#    --force      ignore the sha short-circuit and redeploy the published
 #                 release even if it matches what is already live.
+#
+#  CURL FLOOR. The box's curl rejected --etag-save/--etag-compare (7.68+, 2020)
+#  outright: "option --etag-save: is unknown", exit 2, before a packet moved.
+#  Every curl option used below has existed since 7.12.3 (2004): -sS -o -u -L
+#  --fail --connect-timeout --max-time --retry --retry-delay -w '%{http_code}'.
+#  Do not add a newer one without checking `curl --version` ON THE BOX first.
 # =============================================================================
 set -euo pipefail
 umask 022
@@ -92,13 +98,15 @@ site_get() { "${SITE_CURL[@]}" "$SITE_URL$1"; }
 curl_why() {
   case "$1" in
     0)  echo "no error" ;;
+    2)  echo "curl could not parse its command line — almost always an option THIS curl is" \
+             "too old to know. Run 'curl --version' on the box and read the flag it names" \
+             "in the message below; nothing was ever sent" ;;
     3)  echo "malformed URL" ;;
     6)  echo "could not resolve host (DNS)" ;;
     7)  echo "could not connect — refused, or outbound 443 is firewalled" ;;
     22) echo "server returned an HTTP error and --fail was set" ;;
     23) echo "write error — the -o path is not writable" ;;
-    26) echo "read error — curl could not read a local file it was told to use;" \
-             "on curl < 7.76 a MISSING --etag-compare file fails exactly like this" ;;
+    26) echo "read error — curl could not read a local file it was told to use" ;;
     28) echo "timed out (--connect-timeout/--max-time)" ;;
     35) echo "TLS handshake failed" ;;
     56) echo "failure receiving data" ;;
@@ -112,11 +120,18 @@ curl_why() {
 #   stdout: the HTTP status code.  return: 0 if curl itself completed.
 # Extra args come AFTER the base array, so a caller can override a base option
 # (curl takes the last occurrence) — that is how the tarball gets its own timeout.
+# The args are assembled into ONE array rather than expanding "$@" inline: bash
+# 4.3 and older (CentOS 7 ships 4.2) treat "$@" as an unset variable under
+# `set -u` when there are no positional parameters, so the zero-extra-arg caller
+# below would die on the expansion itself.
 fetch() {
   local url="$1" out="$2" label="$3"; shift 3
   local code rc=0 elog="$TMP/curl.$label.err"
+  local args=("${CURL_BASE[@]}")
+  if [ "$#" -gt 0 ]; then args+=("$@"); fi
+  args+=(-w '%{http_code}' -o "$out" "$url")
   : > "$elog"
-  code="$("${CURL_BASE[@]}" "$@" -w '%{http_code}' -o "$out" "$url" 2>"$elog")" || rc=$?
+  code="$("${args[@]}" 2>"$elog")" || rc=$?
   if [ "$rc" -ne 0 ]; then
     err "$label: curl exited $rc — $(curl_why "$rc")"
     err "  url: $url"
@@ -267,23 +282,22 @@ if [ "$MODE" != bootstrap ]; then assert_docroot; fi
 # ── 2. cheap poll — ~287 of 288 daily ticks stop here, silently ─────────────
 RAW="https://raw.githubusercontent.com/$REPO/$BRANCH"
 RJ="$TMP/RELEASE.json"
-ETAG="$STATE/release.etag"
-# --etag-compare against a file that does not exist is a HARD FAILURE (exit 26)
-# on curl older than 7.76 — curl never opens the connection, so you get a bare
-# "HTTP 000" from a URL that fetches fine by hand. That is precisely the state of
-# a first run: state/release.etag cannot exist yet. Only compare once we have
-# something to compare against. This also covers curl < 7.73 saving an EMPTY etag
-# on a 304 — an empty file just means the next tick is an unconditional GET.
-ETAG_ARGS=(--etag-save "$ETAG")
-if [ -s "$ETAG" ]; then ETAG_ARGS=(--etag-compare "$ETAG" "${ETAG_ARGS[@]}"); fi
-
-CODE="$(fetch "$RAW/RELEASE.json" "$RJ" "poll" "${ETAG_ARGS[@]}")" \
+# UNCONDITIONAL GET, deliberately. This used to be a conditional GET with
+# --etag-save/--etag-compare, which the box's curl does not have (7.68+, 2020) —
+# it exited 2 at argument parsing every tick, so the poll never ran at all.
+#
+# Removing it costs nothing worth having. RELEASE.json is ~380 bytes and this
+# runs every 5 minutes: 288 GETs/day of a file smaller than the request headers
+# that ask for it. And the etag was never the decision — `source_sha` vs
+# state/live.sha, ten lines down, is what actually says deploy-or-not, and it
+# stays correct across a re-published identical sha, a rolled-back box, and a
+# GitHub CDN that changes an etag without changing a byte. A 304 was only ever a
+# cheaper way to reach the same answer.
+CODE="$(fetch "$RAW/RELEASE.json" "$RJ" "poll")" \
   || fail "poll_failed" "could not fetch $RAW/RELEASE.json — curl detail above"
-case "$CODE" in
-  304) exit 0 ;;
-  200) : ;;
-  *)   fail "poll_failed" "could not fetch $RAW/RELEASE.json (HTTP $CODE)" ;;
-esac
+if [ "$CODE" != 200 ]; then
+  fail "poll_failed" "could not fetch $RAW/RELEASE.json (HTTP $CODE)"
+fi
 
 SHA="$(jget "$RJ" source_sha)"
 if [ -z "$SHA" ]; then fail "poll_failed" "published RELEASE.json has no source_sha"; fi
