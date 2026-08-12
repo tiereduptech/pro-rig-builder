@@ -79,14 +79,66 @@ else
 fi
 [ -e "$DOCROOT.pre-pull" ] && die "$DOCROOT.pre-pull already exists — a previous run left a backup. Resolve by hand."
 
+# Same exit-code table the puller carries. A preflight that can only say "000"
+# sends you looking at the network when the fault is in the invocation.
+curl_why() {
+  case "$1" in
+    0)  echo "no error" ;;
+    3)  echo "malformed URL" ;;
+    6)  echo "could not resolve host (DNS)" ;;
+    7)  echo "could not connect — refused, or outbound 443 is firewalled" ;;
+    22) echo "server returned an HTTP error and --fail was set" ;;
+    23) echo "write error — the -o path is not writable" ;;
+    26) echo "read error — curl could not read a local file it was told to use" ;;
+    28) echo "timed out (--connect-timeout/--max-time)" ;;
+    35) echo "TLS handshake failed" ;;
+    56) echo "failure receiving data" ;;
+    60) echo "server certificate not trusted" ;;
+    77) echo "CA certificate bundle missing or unreadable" ;;
+    *)  echo "see EXIT CODES in 'man curl'" ;;
+  esac
+}
+
 # The release branch must exist, or --bootstrap has nothing to pull.
-if ! curl -fsSL --max-time 20 "https://raw.githubusercontent.com/$REPO/$BRANCH/RELEASE.json" -o /tmp/prb-rel.$$ 2>/dev/null; then
-  rm -f /tmp/prb-rel.$$
-  die "branch '$BRANCH' has no RELEASE.json yet.
+# Written under $ROOT-to-be's parent rather than a bare /tmp/x.$$ so a hostile or
+# full /tmp is a reported write error (exit 23), not a mystery.
+REL_TMP="$(mktemp "${TMPDIR:-/tmp}/prb-rel.XXXXXX")" || die "cannot create a temp file — is ${TMPDIR:-/tmp} writable and non-full?"
+REL_ERR="$(mktemp "${TMPDIR:-/tmp}/prb-curl.XXXXXX")" || die "cannot create a temp file in ${TMPDIR:-/tmp}"
+REL_URL="https://raw.githubusercontent.com/$REPO/$BRANCH/RELEASE.json"
+trap 'rm -f "$REL_TMP" "$REL_ERR"' EXIT
+
+# No -f here: we want to SEE the status code rather than have --fail collapse
+# every distinguishable outcome into exit 22.
+RC=0
+HTTP="$(curl -sS --connect-timeout 10 --max-time 20 -w '%{http_code}' \
+        -o "$REL_TMP" "$REL_URL" 2>"$REL_ERR")" || RC=$?
+if [ "$RC" -ne 0 ]; then
+  printf '\n!! could not fetch %s\n' "$REL_URL" >&2
+  printf '   curl exit %s — %s\n' "$RC" "$(curl_why "$RC")" >&2
+  printf '   HTTP status: %s\n' "${HTTP:-000 (request never completed)}" >&2
+  if [ -s "$REL_ERR" ]; then sed 's/^/   curl: /' "$REL_ERR" >&2; else printf '   curl wrote nothing to stderr\n' >&2; fi
+  die "aborting on the fetch failure above — this is the invocation or the host, not the branch."
+fi
+if [ "$HTTP" = 404 ]; then
+  die "branch '$BRANCH' has no RELEASE.json yet (HTTP 404).
    Run the 'Publish Epik release artifact' workflow first (target: staging), then re-run this."
 fi
-info "published release: $(node -e 'const o=require("/tmp/prb-rel.'"$$"'");console.log(o.source_sha.slice(0,12)+" built "+o.built_at)' 2>/dev/null || echo '(unparseable)')"
-rm -f /tmp/prb-rel.$$
+[ "$HTTP" = 200 ] || die "$REL_URL returned HTTP $HTTP — expected 200."
+
+# JSON.parse, NOT require(). require() on a path whose extension is not .json
+# loads it with the .js loader, so valid JSON dies as a SyntaxError and the
+# fallback prints "(unparseable)" for a file that parsed fine all along.
+REL_DESC="$(node -e '
+  const fs=require("fs");
+  let o; try { o=JSON.parse(fs.readFileSync(process.argv[1],"utf8")); }
+  catch(e) { console.error("RELEASE.json did not parse: "+e.message); process.exit(3); }
+  if (!o.source_sha) { console.error("RELEASE.json has no source_sha"); process.exit(4); }
+  console.log(o.source_sha.slice(0,12)+" built "+(o.built_at||"?")+"  files="+(o.file_count??"?"));
+' "$REL_TMP" 2>&1)" || die "the published RELEASE.json is not usable:
+   $REL_DESC"
+info "published release: $REL_DESC"
+rm -f "$REL_TMP" "$REL_ERR"
+trap - EXIT
 
 echo
 info "REVERSE ANY TIME:  bash $0 --uninstall"
@@ -127,7 +179,19 @@ fi
 
 # ── 3. the puller ───────────────────────────────────────────────────────────
 say "Fetching epik-pull.sh from $REF"
-curl -fsSL "$RAW" -o "$ROOT/bin/epik-pull.sh" || die "could not fetch $RAW"
+PULL_ERR="$(mktemp "${TMPDIR:-/tmp}/prb-curl.XXXXXX")" || die "cannot create a temp file in ${TMPDIR:-/tmp}"
+RC=0
+curl -fsSL --connect-timeout 10 --max-time 60 "$RAW" -o "$ROOT/bin/epik-pull.sh" 2>"$PULL_ERR" || RC=$?
+if [ "$RC" -ne 0 ]; then
+  printf '\n!! could not fetch %s\n' "$RAW" >&2
+  printf '   curl exit %s — %s\n' "$RC" "$(curl_why "$RC")" >&2
+  [ "$RC" = 22 ] && printf '   (exit 22 with -f usually means 404: is deploy/epik-pull.sh on ref %s?)\n' "$REF" >&2
+  if [ -s "$PULL_ERR" ]; then sed 's/^/   curl: /' "$PULL_ERR" >&2; fi
+  rm -f "$PULL_ERR"
+  die "aborting — nothing has been changed on this host."
+fi
+rm -f "$PULL_ERR"
+[ -s "$ROOT/bin/epik-pull.sh" ] || die "$RAW fetched as an EMPTY file — refusing to install it"
 bash -n "$ROOT/bin/epik-pull.sh" || die "fetched epik-pull.sh does not parse — refusing to install it"
 chmod +x "$ROOT/bin/epik-pull.sh"
 info "installed and parsed clean ($(wc -c < "$ROOT/bin/epik-pull.sh") bytes)"
