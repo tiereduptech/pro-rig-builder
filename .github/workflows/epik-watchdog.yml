@@ -11,10 +11,26 @@ name: Epik deploy watchdog
 #  which sends a GitHub notification and shows a red run with no human in the
 #  loop. Worst-case detection: 30 minutes.
 #
+#  TWO CLAIMS, TWO FIELDS, TWO RULES. The status file separates:
+#    checked_at   the deploy loop RAN (stamped by every cron tick, including the
+#                 ~287 of 288 daily ticks that find nothing to do)
+#    verified_at  a VERDICT about health was reached (moves only with `health`)
+#  Until 2026-08-12 there was only checked_at, and the routine tick wrote
+#  nothing — so with one publish a day it sat untouched for ~23 hours out of 24
+#  while the rule below read it as "the cron has stopped running". The primary
+#  alarm was therefore red almost permanently, which is how an alarm gets muted
+#  and how a real failure arrives as one more red run nobody reads. It also
+#  could not detect what it claimed: a stopped cron and a quiet one looked
+#  identical. Staleness now reads checked_at; health reads verified_at.
+#
 #  It fails on:
 #    - status file unreachable, non-200, or unparseable
 #    - checked_at older than STALE_MIN (the cron has stopped running AT ALL —
 #      the exact silent-stall class of failure)
+#    - verified_at ABSENT — that box is running a pre-heartbeat epik-pull.sh.
+#      bin/epik-pull.sh is a COPY curl'd at install time, so a box silently
+#      keeps old behaviour after the repo is fixed; this makes that visible
+#      instead of letting the watchdog grade a script it did not think it had.
 #    - health != ok, or a rolled_back / verify_failed / docroot failure
 #    - live_sha != the sha currently published on the release branch, once the
 #      publish is old enough that the box has had time to pull it
@@ -80,7 +96,15 @@ jobs:
           BRANCH: ${{ matrix.branch }}
           AUTH: ${{ matrix.auth && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
           REPO: ${{ github.repository }}
+          # checked_at: the cron is */5, so 20 min is four missed ticks.
           STALE_MIN: '20'
+          # verified_at: health is only re-measured when something HAPPENS (a
+          # deploy, a failure, a manual --check). With one publish a day the
+          # normal steady state is up to ~24h old, so this is a WARNING
+          # threshold, not a failure one — set past a full nightly cycle plus
+          # margin. Failing here would recreate the exact cries-wolf problem the
+          # checked_at/verified_at split was made to fix.
+          VERIFY_WARN_MIN: '1560'   # 26h
           # How long after a publish the box is still allowed to be behind before
           # a sha mismatch counts as a failure. Cron is */5 and raw.githubusercontent
           # can hold RELEASE.json in CDN cache for ~5 min, so ~10 min is the real
@@ -104,6 +128,9 @@ jobs:
           const fail = [], warn = [];
           const staleMin = Number(process.env.STALE_MIN);
           const inflightMin = Number(process.env.INFLIGHT_MIN);
+          const verifyWarnMin = Number(process.env.VERIFY_WARN_MIN);
+          const mins = (t) => (Date.now() - Date.parse(t)) / 60000;
+          const ago  = (m) => m < 90 ? `${m.toFixed(0)} min` : `${(m / 60).toFixed(1)} h`;
 
           if (process.env.CODE !== '200') {
             fail.push(`status file returned HTTP ${process.env.CODE || '(no response)'} — the box is unreachable or not serving`);
@@ -114,15 +141,42 @@ jobs:
           catch (e) { if (process.env.CODE === '200') fail.push(`status file is not valid JSON: ${e.message}`); }
 
           if (s) {
-            const ageMin = (Date.now() - Date.parse(s.checked_at)) / 60000;
+            // ── RULE 1: is the loop alive? reads checked_at ──────────────────
+            const ageMin = mins(s.checked_at);
             if (!Number.isFinite(ageMin)) {
               fail.push(`checked_at unparseable: ${s.checked_at}`);
             } else if (ageMin > staleMin) {
-              fail.push(`checked_at is ${ageMin.toFixed(0)} min old (> ${staleMin}) — the cron has stopped running`);
+              fail.push(`checked_at is ${ago(ageMin)} old (> ${staleMin} min) — the cron has stopped running. `
+                      + `Every tick stamps this field, including the quiet ones, so a stale value here is the `
+                      + `loop itself, NOT a lack of deploys.`);
+            }
+
+            // ── RULE 2: how old is the health verdict? reads verified_at ─────
+            // Absent means the box is running a pre-2026-08-12 epik-pull.sh.
+            // Do not silently fall back to checked_at: that would grade a quiet
+            // heartbeat as if it were a fresh health measurement, which is the
+            // conflation this split exists to remove.
+            let verAge = null;
+            if (s.verified_at === undefined) {
+              fail.push('status file has NO verified_at field — this box is running a pre-heartbeat '
+                      + 'epik-pull.sh. bin/epik-pull.sh is a COPY curl\'d at install time, so fixing the repo '
+                      + 'does not fix the box. Re-curl it onto EVERY install root: '
+                      + 'curl -fsSL https://raw.githubusercontent.com/tiereduptech/pro-rig-builder/main/deploy/epik-pull.sh '
+                      + '-o <root>/bin/epik-pull.sh && chmod +x <root>/bin/epik-pull.sh');
+            } else {
+              verAge = mins(s.verified_at);
+              if (!Number.isFinite(verAge)) {
+                fail.push(`verified_at unparseable: ${s.verified_at}`);
+              } else if (verAge > verifyWarnMin) {
+                warn.push(`health "${s.health}" was last MEASURED ${ago(verAge)} ago (> ${verifyWarnMin} min). `
+                        + `The loop is alive (checked_at ${ago(ageMin)} old), but nothing has deployed or been `
+                        + `--check'd in over a nightly cycle, so this verdict is old rather than wrong.`);
+              }
             }
 
             if (s.health !== 'ok') {
-              fail.push(`health = "${s.health}"${s.message ? ` — ${s.message}` : ''}`);
+              fail.push(`health = "${s.health}"${s.message ? ` — ${s.message}` : ''}`
+                      + `${verAge !== null && Number.isFinite(verAge) ? ` (measured ${ago(verAge)} ago)` : ''}`);
             }
 
             const env = s.env || {};
@@ -162,5 +216,7 @@ jobs:
             console.log(`status: ${process.env.BODY || '(none)'}`);
             process.exit(1);
           }
-          console.log(`ok — live_sha=${s && s.live_sha}, health=${s && s.health}, checked_at=${s && s.checked_at}`);
+          console.log(`ok — live_sha=${s && s.live_sha}, health=${s && s.health}`);
+          console.log(`     loop ran ${s ? ago(mins(s.checked_at)) : '?'} ago (checked_at=${s && s.checked_at})`);
+          console.log(`     health measured ${s && s.verified_at ? ago(mins(s.verified_at)) : '?'} ago (verified_at=${s && s.verified_at})`);
           NODE

@@ -257,6 +257,48 @@ read_state() { cat "$STATE/$1" 2>/dev/null || true; }
 # Written into whichever release actually WON, so it stays honest after a
 # rollback. `env` is what turns §3.3's untested opcache assumption into a
 # monitored one — epik-watchdog.yml asserts on it every 30 minutes.
+#
+# TWO CLAIMS, TWO FIELDS. They are not the same claim and conflating them broke
+# the primary alarm:
+#
+#   checked_at   THE LOOP RAN. Stamped by every tick including the quiet one.
+#   verified_at  A VERDICT ABOUT HEALTH WAS REACHED. Moves only with `health`.
+#
+# The routine tick short-circuits at the sha comparison and used to exit 0
+# writing nothing at all, so checked_at only moved on a deploy, a failure, or a
+# manual --check. With one publish a day that left it untouched for ~23 hours
+# out of 24, while the watchdog read it as "the cron has stopped running" — the
+# primary alarm red almost permanently, which is precisely how an alarm gets
+# muted (epik-watchdog.yml's own INFLIGHT_MIN comment says so). Worse, the rule
+# could not detect what it claimed to: a genuinely stopped cron and a quiet one
+# were indistinguishable.
+#
+# Split, a stale verified_at beside a fresh checked_at reads "running fine,
+# nothing deployed lately" — the truth the single field could not express — and
+# a stopped cron shows up within 20 minutes for real.
+
+# The quiet path's heartbeat. Deliberately CHEAP: no site request, no env
+# re-read, no health claim. It rewrites one field of the file already on disk,
+# atomically. Never fails the deploy loop — a heartbeat that can break a deploy
+# is worse than no heartbeat. A corrupt or missing status file simply is not
+# stamped, and the watchdog's staleness rule then fires, which is correct: that
+# IS a problem.
+touch_status() {
+  local live_dir f
+  live_dir="$(readlink -f "$ROOT/current" 2>/dev/null || true)"
+  if [ -z "$live_dir" ] || [ ! -d "$live_dir" ]; then return 0; fi
+  f="$live_dir/_deploy-status.json"
+  [ -f "$f" ] || return 0          # nothing has ever deployed — nothing to stamp
+  node -e '
+    const fs=require("fs"), p=process.argv[1];
+    let o; try { o=JSON.parse(fs.readFileSync(p,"utf8")); } catch(e) { process.exit(0); }
+    o.checked_at = new Date().toISOString();
+    fs.writeFileSync(p+".tmp", JSON.stringify(o,null,1)+"\n");
+    fs.renameSync(p+".tmp", p);
+  ' "$f" 2>/dev/null || true
+  return 0
+}
+
 write_status() {
   local health="$1" msg="$2" live_dir envjson
   live_dir="$(readlink -f "$ROOT/current" 2>/dev/null || true)"
@@ -268,13 +310,17 @@ write_status() {
   node -e '
     let env={}; try { env=JSON.parse(process.env.ENVJSON||"{}"); }
     catch(e) { env={parse_error:true, raw:(process.env.ENVJSON||"").slice(0,200)}; }
+    // ONE timestamp for both, so a reader never has to wonder whether a few ms
+    // of skew between them means something.
+    const now = new Date().toISOString();
     process.stdout.write(JSON.stringify({
-      live_sha:   process.env.LIVE_SHA || null,
-      prev_sha:   process.env.PREV_SHA || null,
-      branch:     process.env.TARGET_BRANCH,
-      health:     process.env.HEALTH,
-      message:    process.env.MSG,
-      checked_at: new Date().toISOString(),
+      live_sha:    process.env.LIVE_SHA || null,
+      prev_sha:    process.env.PREV_SHA || null,
+      branch:      process.env.TARGET_BRANCH,
+      health:      process.env.HEALTH,
+      message:     process.env.MSG,
+      checked_at:  now,   // the loop ran
+      verified_at: now,   // ...and reached this verdict
       env,
     }, null, 1) + "\n");
   ' > "$live_dir/_deploy-status.json.tmp"
@@ -528,7 +574,11 @@ fi
 SHA="$(jget "$RJ" source_sha)"
 if [ -z "$SHA" ]; then fail "poll_failed" "published RELEASE.json has no source_sha"; fi
 LIVE_NOW="$(read_state live.sha)"
-if [ "$SHA" = "$LIVE_NOW" ] && [ "$MODE" != force ]; then exit 0; fi
+# The ~287-of-288 daily ticks that stop here. They stamp checked_at and nothing
+# else — see touch_status(). Stamping AFTER the poll is deliberate: it makes
+# checked_at the stronger claim "the loop ran and reached GitHub", rather than
+# merely "cron fired". Still silent on stdout, so cron still mails nothing.
+if [ "$SHA" = "$LIVE_NOW" ] && [ "$MODE" != force ]; then touch_status; exit 0; fi
 
 HT_CHANGED="$(jget "$RJ" htaccess_changed)"
 say "new release $SHA (live: ${LIVE_NOW:-none}, htaccess_changed=${HT_CHANGED:-false})"

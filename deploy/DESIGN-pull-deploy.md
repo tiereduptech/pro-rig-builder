@@ -278,8 +278,21 @@ A failed or rolled-back deploy still turns CI red.
    write `status=rolled_back`, exit 1. The failed tree is **kept**, not deleted, so it
    can be inspected.
 9. **Status.** Write `_deploy-status.json` into whichever release actually won —
-   `{live_sha, prev_sha, health, checked_at, message, env}`. Always the live tree,
-   so it is honest after a rollback too.
+   `{live_sha, prev_sha, health, checked_at, verified_at, message, env}`. Always the
+   live tree, so it is honest after a rollback too.
+
+   **`checked_at` and `verified_at` are two different claims and must not be one
+   field.** `checked_at` means *the loop ran*: every tick stamps it, including the
+   ~287 of 288 daily ticks that find nothing to do (`touch_status()`, which does no
+   site request and makes no health claim). `verified_at` means *a verdict about
+   health was reached*, and moves only alongside `health` itself.
+
+   The first version had only `checked_at`, and the quiet tick wrote nothing at all.
+   With one publish a day that left it untouched for ~23 hours out of 24 while §8.2
+   read it as "the cron has stopped running" — so the primary alarm was red almost
+   permanently, and a stopped cron was indistinguishable from a quiet one. Split, a
+   stale `verified_at` beside a fresh `checked_at` says "running fine, nothing
+   deployed lately", which is exactly the state the single field could not express.
 
    `env` is what converts §3.3's untested assumption into a monitored one. The
    healthcheck fetches a small `_env.php` from inside the live release and records
@@ -342,9 +355,19 @@ schedule whether or not anyone deployed, fetches `https://prorigbuilder.com/_dep
 plus the published `epik-release` `RELEASE.json`, and **fails the workflow** if any of:
 
   - the status file is unreachable, unparseable, or returns non-200
-  - `checked_at` is older than 20 minutes (the cron has stopped running at all — the exact
-    silent-stall class of failure)
-  - `health != "ok"`, or `status == "rolled_back"` / `"verify_failed"`
+  - `checked_at` is older than 20 minutes — four missed `*/5` ticks. Every tick stamps it
+    (§6.9), so this is the loop itself having stopped, **not** a lack of deploys: the exact
+    silent-stall class of failure, now actually detectable
+  - `verified_at` is **absent** — that box is running a pre-2026-08-12 `epik-pull.sh`.
+    `bin/epik-pull.sh` is a *copy* curl'd at install time, so fixing the repo does not fix
+    the box; without this the watchdog would grade a script it did not think it had
+  - `health != "ok"`, or `status == "rolled_back"` / `"verify_failed"`. The failure names
+    how long ago that verdict was **measured** (`verified_at`), not when the loop last ran
+
+  and **warns**, without failing, if `verified_at` is older than `VERIFY_WARN_MIN` (26h —
+  past a full nightly cycle plus margin). Health is only re-measured when something
+  happens, so a day-old verdict is the normal steady state; failing on it would rebuild
+  the cries-wolf problem the split was made to remove.
   - `live_sha != ` the sha currently published on `epik-release` (a deploy that never
     landed, or landed and rolled back)
   - the docroot assertion flag is set
@@ -476,7 +499,8 @@ Full (Strict) — AutoSSL's DNS validation currently resolves to Railway.
 |---|---|
 | `.htaccess` gains per-release data | R2 warns loudly and flips the artifact onto the settle path automatically |
 | Config release genuinely needed | No flag to remember — `htaccess_changed` in the artifact drives it |
-| Cron stops running entirely | Watchdog fails on a `checked_at` older than 20 min (§8.2) |
+| Cron stops running entirely | Watchdog fails on a `checked_at` older than 20 min — every tick stamps it, so this detects the loop stopping rather than a quiet day (§6.9, §8.2) |
+| A box keeps running an old `epik-pull.sh` after the repo is fixed | `bin/` holds a *copy*; the watchdog fails on a missing `verified_at` and prints the re-curl command (§8.2) |
 | Docroot recreated by cPanel | Refuse-and-alert: cron mail ≤5 min, watchdog ≤30 min |
 | Mixed-release read inside one request | Structurally impossible under R1 — `__DIR__` measured resolved, no cache involved (§3.2) |
 | opcache active on a future host or after a PHP-version change | Untested, so detected rather than assumed: `env` in `_deploy-status.json` + watchdog (§3.3, §6.9, §8) |
