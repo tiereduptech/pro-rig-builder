@@ -43,6 +43,17 @@ DOCROOT="${DOCROOT:-$HOME/staging.prorigbuilder.com}"
 SITE_URL="$(sed -n 's/^SITE_URL=//p' "$CFG" 2>/dev/null | head -1)"
 SITE_URL="${SITE_URL:-https://staging.prorigbuilder.com}"
 
+# Refuse to run against a production root. This script writes a WORLD-READABLE
+# .htpasswd (see the chmod 644 below and why it has to be that), which is the
+# right call for a staging gate and wrong everywhere else. Production carries no
+# Basic-Auth guard at all, so there is nothing here for it to rotate.
+GUARD="$(sed -n 's/^EXPECT_GUARD=//p' "$CFG" 2>/dev/null | head -1)"
+if [ -n "${GUARD:-}" ] && [ "$GUARD" != 1 ]; then
+  printf '!! %s has EXPECT_GUARD=%s — this root has no Basic-Auth guard.\n' "$CFG" "$GUARD" >&2
+  printf '   Refusing to write a world-readable .htpasswd here.\n' >&2
+  exit 4
+fi
+
 # ── 1. did the flip actually take? ───────────────────────────────────────────
 # A 401 cannot answer this: it is emitted before any content is served, and the
 # old SFTP tree carried a byte-identical guard (same AuthName "prb-staging").
@@ -106,8 +117,18 @@ chmod 711 "$ROOT/secrets"
 
 # byte-identical to install-phase-a.sh:193 and build-epik.cjs:129
 printf '%s:{SHA}%s\n' "$NEWUSER" "$(printf '%s' "$NEWPASS" | openssl sha1 -binary | openssl base64)" > "$HTP"
-# 644: the server reads this as `nobody`, so 600 is a guaranteed 401. Only this
-# file is loosened — the log and ROTATED-*.txt stay 600 under the umask.
+# ── DO NOT TIGHTEN THIS TO 600. MEASURED, NOT ASSUMED. ──────────────────────
+# 2026-08-12 on the Epik box, hash byte-perfect, directory already 711:
+#     .htpasswd 600 -> HTTP 401 on every request
+#     .htpasswd 644 -> HTTP 200
+# LiteSpeed reads AuthUserFile as `nobody`, not as the owner, so o+r is
+# load-bearing. 600 fails silently: staging 401s forever with a credential that
+# looks correct everywhere you would think to check it.
+# Accepted trade-off: on a shared host the hash is readable by other local
+# users. Unsalted SHA-1 of a 24-char random credential gating a staging site
+# behind HTTPS, rotatable by re-running this script. If that stops being
+# acceptable, switch to an IP allowlist — do NOT tighten the mode.
+# Only this one file is loosened; the log and ROTATED-*.txt stay 600 via umask.
 chmod 644 "$HTP"
 printf '   wrote %s for user %s\n' "$HTP" "$NEWUSER"
 
