@@ -3,6 +3,11 @@ name: Deploy dist to Epik (SFTP)
 # Runs AFTER dist/ lands on main (the nightly prerender commits it, or a manual
 # edit does). The prerender stays on Actions — shared hosting can't run the
 # 45-minute headless-Chrome job — this workflow only ships the finished dist/.
+#
+# Push-triggered PRODUCTION auto-deploy is gated by the repo var
+# EPIK_PROD_AUTO_DEPLOY (see the job `if:` below): OFF during migration so the
+# branch can merge to main safely; flip it true at cutover. Manual deploys of
+# either target always run via workflow_dispatch.
 on:
   push:
     branches: [main]
@@ -25,6 +30,10 @@ on:
         description: 'Prune orphaned remote files after verify'
         type: boolean
         default: false
+      ref:
+        description: 'Git ref to deploy (default main; use a branch to stage un-merged code)'
+        type: string
+        default: main
 
 # Serialize deploys. cancel-in-progress:false is deliberate — cancelling a run
 # mid-upload is exactly the half-deploy we are avoiding, so we QUEUE instead.
@@ -36,10 +45,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    # Production auto-deploy on push (which includes the initial migration merge
+    # to main) is OFF until explicitly switched on. A workflow_dispatch always
+    # runs — the operator picks the target by hand. A push proceeds ONLY once the
+    # repo variable EPIK_PROD_AUTO_DEPLOY == 'true', so merging this branch to
+    # main cannot ship production mid-migration. Flip the var true at cutover to
+    # restore the nightly auto-ship.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.EPIK_PROD_AUTO_DEPLOY == 'true'
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          # Default main (steady state). A workflow_dispatch may override to a
+          # branch to stage un-merged code; push events always resolve to main.
+          ref: ${{ github.event.inputs.ref || 'main' }}
 
       - uses: actions/setup-node@v4
         with:
