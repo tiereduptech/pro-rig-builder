@@ -194,13 +194,50 @@ printf '%s:%s\n' "$NEWUSER" "$NEWPASS" > "$CREDFILE"
 chmod 600 "$CREDFILE"
 
 # ── 6. proof ─────────────────────────────────────────────────────────────────
+# A SPLIT TALLY RIGHT AFTER ROTATION IS CONVERGENCE, NOT A FAULT.
+# MEASURED, NOT ASSUMED (2026-08-12, a green rotation on a healthy box):
+#     immediate --check -> 7x match / 3x HTTP 401     (looks broken, is not)
+#     retry             -> 10/10 match
+# LiteSpeed workers re-read AuthUserFile as they recycle, at their own pace, so
+# for a few seconds after .htpasswd is rewritten the pool is SPLIT: recycled
+# workers want the new credential, the rest still answer on the old one. A
+# credential rewrite therefore converges exactly like a symlink swap, and
+# epik-pull.sh already sized that: a 3-8s band PER WORKER, first pass at ~2x the
+# top of it (§6.7). unanimous() demands all HC_REQUESTS agree — by design — so an
+# immediate check is not a weak signal, it is a guaranteed-flaky one.
+#
+# This block used to run --check with no wait and print "STILL FAILING — do NOT
+# dismiss the installer prompt" on the split. That is the same class of bug §4
+# had: asserting a fault it had not earned. On a routine rotation of a healthy
+# box it sends you auditing hashes and modes that were correct the whole time.
+# So: sample, wait out the band, and only call it a fault if a SECOND pass fails.
+HC_SETTLE="${HC_SETTLE:-15}"   # seconds; ~2x the top of the measured band, same as epik-pull.sh pass 1
+
 printf '\n== 6. proof\n'
-printf '   HTTP: %s\n' "$(curl -u "$NEWUSER:$NEWPASS" -sI -o /dev/null -w '%{http_code}' "$SITE_URL/" 2>&1)"
+# Informational ONLY, and labelled so it never reads as the verdict: one request
+# samples ONE worker, and before the pool converges that worker is a coin flip.
+printf '   HTTP (pre-convergence sample, not the verdict): %s\n' \
+  "$(curl -u "$NEWUSER:$NEWPASS" -sI -o /dev/null -w '%{http_code}' "$SITE_URL/" 2>&1)"
+
 if [ -x "$ROOT/bin/epik-pull.sh" ]; then
+  printf '   waiting %ss for the worker pool to converge before proving\n' "$HC_SETTLE"
+  sleep "$HC_SETTLE"
   if "$ROOT/bin/epik-pull.sh" --check; then
     printf '   healthcheck PASSED\n'
   else
-    printf '   healthcheck STILL FAILING — do NOT dismiss the installer prompt\n'
+    printf '\n   pass 1 was not unanimous. If its tally above is MIXED (some match, some\n'
+    printf '   401) that is the convergence band, not a broken credential. Retrying once\n'
+    printf '   in %ss — that is the real verdict.\n' "$HC_SETTLE"
+    sleep "$HC_SETTLE"
+    if "$ROOT/bin/epik-pull.sh" --check; then
+      printf '   healthcheck PASSED on retry — pass 1 was mid-convergence. Nothing is wrong.\n'
+    else
+      printf '   healthcheck STILL FAILING after 2 passes %ss apart — do NOT dismiss the installer prompt\n' "$HC_SETTLE"
+      printf '   Two passes that far apart are past the convergence band, so this is a real fault.\n'
+      printf '   Read the tally: ALL 401 = auth (check APR1 format + secrets 711 / .htpasswd 644,\n'
+      printf '   which epik-pull.sh prints for you). STILL MIXED = a worker is wedged, not a\n'
+      printf '   credential fault — re-run "%s/bin/epik-pull.sh --check" by hand before changing anything.\n' "$ROOT"
+    fi
   fi
 else
   printf '   (no bin/epik-pull.sh yet — skipping healthcheck)\n'
