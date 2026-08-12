@@ -78,9 +78,58 @@ ts()  { date -u +%Y-%m-%dT%H:%M:%SZ; }
 say() { printf '%s %s\n' "$(ts)" "$*"; }                    # stdout -> deploy.log
 err() { printf '%s ERROR %s\n' "$(ts)" "$*" >&2; }          # stderr -> cron MAIL
 
-CURL=(curl -sS --max-time 30 --retry 2 --retry-delay 3)
-if [ -n "${BASIC_AUTH:-}" ]; then CURL+=(-u "$BASIC_AUTH"); fi
-site_get() { "${CURL[@]}" "$SITE_URL$1"; }
+# Two arrays, deliberately. BASIC_AUTH is the STAGING site credential; sending it
+# to raw.githubusercontent.com / codeload would hand our password to a third party
+# for no reason. The release branch is public by design (§2) — GitHub gets no -u.
+CURL_BASE=(curl -sS --connect-timeout 10 --max-time 30 --retry 2 --retry-delay 3)
+SITE_CURL=("${CURL_BASE[@]}")
+if [ -n "${BASIC_AUTH:-}" ]; then SITE_CURL+=(-u "$BASIC_AUTH"); fi
+site_get() { "${SITE_CURL[@]}" "$SITE_URL$1"; }
+
+# curl exit codes, spelled out. "HTTP 000" means the request never completed, so
+# the HTTP status is the one thing that CANNOT explain it — the exit code can.
+# A fetch failure that reports nothing actionable is a second bug on top of the first.
+curl_why() {
+  case "$1" in
+    0)  echo "no error" ;;
+    3)  echo "malformed URL" ;;
+    6)  echo "could not resolve host (DNS)" ;;
+    7)  echo "could not connect — refused, or outbound 443 is firewalled" ;;
+    22) echo "server returned an HTTP error and --fail was set" ;;
+    23) echo "write error — the -o path is not writable" ;;
+    26) echo "read error — curl could not read a local file it was told to use;" \
+             "on curl < 7.76 a MISSING --etag-compare file fails exactly like this" ;;
+    28) echo "timed out (--connect-timeout/--max-time)" ;;
+    35) echo "TLS handshake failed" ;;
+    56) echo "failure receiving data" ;;
+    60) echo "server certificate not trusted" ;;
+    77) echo "CA certificate bundle missing or unreadable" ;;
+    *)  echo "see EXIT CODES in 'man curl'" ;;
+  esac
+}
+
+# fetch <url> <outfile> <label> [extra curl args...]
+#   stdout: the HTTP status code.  return: 0 if curl itself completed.
+# Extra args come AFTER the base array, so a caller can override a base option
+# (curl takes the last occurrence) — that is how the tarball gets its own timeout.
+fetch() {
+  local url="$1" out="$2" label="$3"; shift 3
+  local code rc=0 elog="$TMP/curl.$label.err"
+  : > "$elog"
+  code="$("${CURL_BASE[@]}" "$@" -w '%{http_code}' -o "$out" "$url" 2>"$elog")" || rc=$?
+  if [ "$rc" -ne 0 ]; then
+    err "$label: curl exited $rc — $(curl_why "$rc")"
+    err "  url: $url"
+    if [ -s "$elog" ]; then
+      sed 's/^/  curl: /' "$elog" >&2 || true
+    else
+      err "  curl wrote nothing to stderr"
+    fi
+    return 1
+  fi
+  printf '%s' "${code:-000}"
+  return 0
+}
 
 # node is confirmed present on this host (DESIGN §10) and is the only sane way to
 # parse JSON here — jq is not guaranteed.
@@ -219,9 +268,17 @@ if [ "$MODE" != bootstrap ]; then assert_docroot; fi
 RAW="https://raw.githubusercontent.com/$REPO/$BRANCH"
 RJ="$TMP/RELEASE.json"
 ETAG="$STATE/release.etag"
-CODE="$("${CURL[@]}" -w '%{http_code}' \
-        --etag-compare "$ETAG" --etag-save "$ETAG" \
-        -o "$RJ" "$RAW/RELEASE.json" 2>/dev/null || echo 000)"
+# --etag-compare against a file that does not exist is a HARD FAILURE (exit 26)
+# on curl older than 7.76 — curl never opens the connection, so you get a bare
+# "HTTP 000" from a URL that fetches fine by hand. That is precisely the state of
+# a first run: state/release.etag cannot exist yet. Only compare once we have
+# something to compare against. This also covers curl < 7.73 saving an EMPTY etag
+# on a 304 — an empty file just means the next tick is an unconditional GET.
+ETAG_ARGS=(--etag-save "$ETAG")
+if [ -s "$ETAG" ]; then ETAG_ARGS=(--etag-compare "$ETAG" "${ETAG_ARGS[@]}"); fi
+
+CODE="$(fetch "$RAW/RELEASE.json" "$RJ" "poll" "${ETAG_ARGS[@]}")" \
+  || fail "poll_failed" "could not fetch $RAW/RELEASE.json — curl detail above"
 case "$CODE" in
   304) exit 0 ;;
   200) : ;;
@@ -240,8 +297,15 @@ say "new release $SHA (live: ${LIVE_NOW:-none}, htaccess_changed=${HT_CHANGED:-f
 TGZ="$TMP/$SHA.tgz"
 NEW="$RELDIR/$SHA.tmp"
 rm -rf "$NEW"; mkdir -p "$NEW"
-if ! "${CURL[@]}" -L -o "$TGZ" "https://codeload.github.com/$REPO/tar.gz/refs/heads/$BRANCH"; then
-  rm -rf "$NEW" "$TGZ"; fail "fetch_failed" "tarball download failed for $BRANCH"
+# --fail so a 404/500 HTML body is never handed to tar as if it were a tarball,
+# and its own --max-time: the base 30s is sized for a 2KB RELEASE.json, not for
+# a 16k-file archive over a shared host's uplink. Extra args win over the base.
+TARURL="https://codeload.github.com/$REPO/tar.gz/refs/heads/$BRANCH"
+if ! TCODE="$(fetch "$TARURL" "$TGZ" "tarball" -L --fail --max-time 300)"; then
+  rm -rf "$NEW" "$TGZ"; fail "fetch_failed" "tarball download failed for $BRANCH — curl detail above"
+fi
+if [ "$TCODE" != 200 ]; then
+  rm -rf "$NEW" "$TGZ"; fail "fetch_failed" "tarball download for $BRANCH returned HTTP $TCODE"
 fi
 if ! tar -xzf "$TGZ" -C "$NEW" --strip-components=1; then
   rm -rf "$NEW" "$TGZ"; fail "fetch_failed" "tarball extraction failed for $SHA"
