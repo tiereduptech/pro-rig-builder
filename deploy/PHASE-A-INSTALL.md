@@ -7,16 +7,33 @@ Design and the measurements behind every number: `deploy/DESIGN-pull-deploy.md`.
 
 ---
 
+## Fast path
+
+`deploy/install-phase-a.sh` does sections 1 through 6 of this document, with a
+confirmation prompt before each of the two steps that change live behaviour (the
+docroot flip and the crontab entry), and a `--uninstall` that reverses both:
+
+```
+curl -fsSL https://raw.githubusercontent.com/tiereduptech/pro-rig-builder/main/deploy/install-phase-a.sh -o ~/install-phase-a.sh && bash ~/install-phase-a.sh
+```
+
+The rest of this document is the manual equivalent, and the explanation of why
+each step is shaped the way it is.
+
+---
+
 ## 0. What CI needs first
 
-One repo **variable** and one **secret**, both new:
+One repo **variable**, and only after the box is installed:
 
-| kind | name | value |
-|---|---|---|
-| secret | `EPIK_PULL_SECRETS_DIR` | `/home/tier5415/prb-staging/secrets` |
-| variable | `EPIK_WATCH_STAGING` | `true` |
+| kind | name | value | when |
+|---|---|---|---|
+| variable | `EPIK_WATCH_STAGING` | `true` | AFTER the install, or the watchdog goes red every 30 min on a status file that does not exist yet |
 
-`EPIK_PULL_SECRETS_DIR` is the one that matters. **The release branch is public**,
+`EPIK_PULL_SECRETS_DIR` is an optional **secret** that overrides the staging
+`AuthUserFile` directory. It defaults to `/home/tier5415/prb-staging/secrets`, so
+Phase A needs no new secret — the value is a path on the box, not a credential.
+It exists because **the release branch is public**,
 which is the whole reason the box needs no credential to pull — so the staging
 Basic-Auth hash must never be published. `build-epik.cjs` uses `EPIK_REMOTE_ROOT`
 for exactly one thing, the `AuthUserFile` path in the staging guard, so the

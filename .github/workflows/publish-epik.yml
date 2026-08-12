@@ -83,7 +83,10 @@ jobs:
       # artifact be published to a public branch without publishing a credential.
       - name: Regenerate Epik artifacts
         env:
-          EPIK_REMOTE_ROOT: ${{ env.TARGET == 'staging' && secrets.EPIK_PULL_SECRETS_DIR || secrets.EPIK_REMOTE_ROOT }}
+          # The staging value is a directory path on the box, not a credential —
+          # it is in the design doc and the crontab already. It defaults so Phase A
+          # needs no new secret; override only if the install root moves.
+          EPIK_REMOTE_ROOT: ${{ env.TARGET == 'staging' && (secrets.EPIK_PULL_SECRETS_DIR || '/home/tier5415/prb-staging/secrets') || secrets.EPIK_REMOTE_ROOT }}
           EPIK_STAGING_BASIC_AUTH: ${{ secrets.EPIK_STAGING_BASIC_AUTH }}
         run: node build-epik.cjs ${{ env.TARGET == 'staging' && '--staging' || '' }}
 
