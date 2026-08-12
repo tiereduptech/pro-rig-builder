@@ -1,0 +1,75 @@
+# =============================================================================
+#  .htaccess — prorigbuilder.com static hosting (Epik shared cPanel / Apache 2.4)
+#
+#  Replaces server.cjs Layers 3–5:
+#    - Layer 3 (route pre-render)  -> Apache serves <path>/index.html directly
+#    - Layer 4 (static assets)     -> Apache serves files directly + cache headers
+#    - Layer 4.5 (410/301)         -> resolver.php via ErrorDocument 404
+#    - Layer 5 (SPA fallback)      -> resolver.php serves index.html at 200
+#
+#  Layers 1–2 (/search?id= and /search?cat= prerenders) are intentionally DROPPED.
+#  They matched files named dist/search/id-*.html / cat-*.html, of which ZERO exist
+#  in the current build — every /search?...=... request already falls through to the
+#  /search SPA shell, and will continue to here unchanged.
+#
+#  Generated data files (resolver-config.php, redirects.php, gone.html) are emitted
+#  into this same directory by build-epik.cjs. The .htaccess and resolver.php are
+#  copied in verbatim by that build; edit them in deploy/, never in dist/.
+# =============================================================================
+
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+
+# The 5,516 product pages live on disk as <slug-id>/index.html DIRECTORIES, but the
+# canonical + sitemap URLs have NO trailing slash. Default mod_dir would 301
+# /x -> /x/, which Railway never does and which wouldn't match the canonical.
+# Turn it off; rule 2 below serves the directory index at the exact requested URL.
+DirectorySlash Off
+
+# ── MIME: declare the types shared hosts commonly omit ──
+AddType image/webp                .webp
+AddType font/woff2                .woff2
+AddType font/woff                 .woff
+AddType application/manifest+json .webmanifest
+
+# ── Cache: content-hashed assets are immutable for a year ──
+#    Mirrors server.cjs Layer 4 exactly (note: jpg not jpeg, no gif — as in source).
+<FilesMatch "\.(js|css|woff2?|png|jpg|svg|webp|ico)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+
+# ── Cache: prerendered HTML must always revalidate ──
+#    Mirrors the Cache-Control server.cjs set on every pre-rendered page (Layers 1–3).
+<FilesMatch "\.html$">
+  Header set Cache-Control "public, max-age=0, must-revalidate"
+</FilesMatch>
+
+# ── Never serve the resolver's own data files over HTTP ──
+#    (require works regardless — that's a filesystem read, not an HTTP request.)
+<FilesMatch "^(redirects|resolver-config)\.php$">
+  Require all denied
+</FilesMatch>
+
+RewriteEngine On
+
+# 1) A real file on disk (hashed asset, sitemap.xml, robots.txt, llms.txt, image,
+#    manifest.json, …) → serve it as-is. This is where the vast majority of traffic
+#    ends, and it never touches PHP.
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# 2) A pretty URL backed by <path>/index.html (the 5,516 products, /builder,
+#    /search, /parts/<cat>, every prerendered route) → serve that file at the SAME
+#    URL, with NO trailing-slash redirect. Both /x and /x/ resolve to /x/index.html
+#    and return 200, matching server.cjs Layer 3. Root ("/") is handled by
+#    DirectoryIndex above, so the pattern requires at least one path char.
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.+?)/?$ /$1/index.html [L]
+
+# 3) Genuine miss → single PHP front controller. resolver.php re-implements
+#    PRODUCT_RE (copied from server.cjs at build time) and returns:
+#      - 301 to the mapped target for a redirected product,
+#      - 410 + X-Robots-Tag: noindex for any other product-shaped URL
+#        (deleted OR never-existed — both are 410, matching server.cjs),
+#      - the SPA shell at 200 for everything else (Layer 5).
+ErrorDocument 404 /resolver.php

@@ -1,0 +1,85 @@
+{
+  "//": "Parity fixture for the Railway->Epik migration. Every `status` is what server.cjs returns TODAY; Phase 3 runs this SAME list against BOTH the live Railway site and staged Epik, and any deviation from `status` on either stack is a blocker. Redirects are checked WITHOUT following (we assert the 301 code + Location). `note` explains which server.cjs layer each case exercises.",
+  "cases": [
+    {
+      "path": "/parts/cpu/amazoncojp-exclusive-intel-cpu-core-ultra5-225f-processor-20-m-cache-490-ghz-lga-10153",
+      "status": 200,
+      "note": "live product — served from disk (Layer 3 / .htaccess rule 2)"
+    },
+    {
+      "path": "/parts/cpu/amazoncojp-exclusive-intel-cpu-core-ultra5-225f-processor-20-m-cache-490-ghz-lga-10153/",
+      "status": 200,
+      "note": "live product WITH trailing slash — must 200, NOT 301 (no DirectorySlash redirect)"
+    },
+    {
+      "path": "/parts/cpu/AMAZONCOJP-EXCLUSIVE-intel-cpu-core-ultra5-225f-processor-20-m-cache-490-ghz-lga-10153",
+      "status": 410,
+      "expectHeader": { "X-Robots-Tag": "noindex" },
+      "note": "wrong-case slug — product-shaped, case-sensitive file miss -> 410 on both stacks"
+    },
+    {
+      "path": "/parts/ram/corsair-vengeance-ddr5-32gb-2x16gb-5600mhz-cl36-40001",
+      "status": 301,
+      "expectLocation": "/parts/ram/corsair-vengeance-32gb-2-x-16gb-ddr5-5600-pc5-44800-desktop-memory-model-cmk32gx-102343",
+      "note": "deleted product WITH a mapped replacement -> 301 (Layer 4.5 / resolver redirect map)"
+    },
+    {
+      "path": "/parts/gpu/this-graphics-card-was-deleted-with-no-replacement-40099",
+      "status": 410,
+      "expectHeader": { "X-Robots-Tag": "noindex" },
+      "note": "product-shaped, deleted, NOT in map -> 410 + noindex"
+    },
+    {
+      "path": "/parts/cpu/a-product-that-never-existed-in-the-catalog-000000",
+      "status": 410,
+      "expectHeader": { "X-Robots-Tag": "noindex" },
+      "note": "product-shaped but NEVER existed (not deleted) -> still 410, matching server.cjs"
+    },
+    {
+      "path": "/parts/gpu",
+      "status": 200,
+      "note": "category index — SPA route on disk (Layer 3)"
+    },
+    {
+      "path": "/builder",
+      "status": 200,
+      "note": "top-level route (Layer 3)"
+    },
+    {
+      "path": "/search",
+      "status": 200,
+      "note": "search route (Layer 3). Note: /search?id=/?cat= layers were dropped; bare /search is unchanged"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "note": "homepage (DirectoryIndex / Layer 3)"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "note": "static file (Layer 4 / .htaccess rule 1)"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "note": "static file"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "note": "static file (carries a UTF-8 BOM — must be preserved)"
+    },
+    {
+      "path": "/logo.png",
+      "status": 200,
+      "expectHeader": { "Content-Type": "image/png", "Cache-Control": "immutable" },
+      "note": "static asset — correct MIME + year-immutable cache header (Layer 4 / .htaccess FilesMatch)"
+    },
+    {
+      "path": "/this-page-truly-does-not-exist-anywhere",
+      "status": 200,
+      "note": "non-product genuine miss -> SPA shell at 200 (Layer 5). NOT a 404, by design"
+    }
+  ]
+}
