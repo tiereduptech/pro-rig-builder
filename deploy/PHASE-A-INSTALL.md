@@ -50,7 +50,7 @@ printf 'USER:{SHA}%s\n' "$(printf 'PASSWORD' | openssl sha1 -binary | openssl ba
 chmod 600 ~/prb-staging/secrets/.htpasswd
 
 # 3. the script
-curl -fsSL https://raw.githubusercontent.com/tiereduptech/pro-rig-builder/probe/epik-php-dir/deploy/epik-pull.sh \
+curl -fsSL https://raw.githubusercontent.com/tiereduptech/pro-rig-builder/feat/epik-pull-deploy/deploy/epik-pull.sh \
   -o ~/prb-staging/bin/epik-pull.sh
 chmod +x ~/prb-staging/bin/epik-pull.sh
 
