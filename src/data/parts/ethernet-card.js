@@ -18,7 +18,7 @@ export default [
         "price": 97.99,
         "url": "https://www.amazon.com/dp/B072N84DG6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -151,7 +151,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     },
     "lanSpeed": "10GbE",
@@ -183,7 +183,7 @@ export default [
         "price": 22.49,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -212,7 +212,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "BrosTrend",
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -237,7 +237,7 @@ export default [
         "price": 20,
         "url": "https://www.amazon.com/dp/B08V1HG47H?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "3p",
         "priceSeller": "ULANSeN",
         "priceResolvedVia": "dataforseo",
@@ -264,7 +264,7 @@ export default [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "3p",
         "priceSeller": "Tech Provisions",
         "priceResolvedVia": "dataforseo",
@@ -291,7 +291,7 @@ export default [
         "price": 19.99,
         "url": "https://www.amazon.com/dp/B07SNQ2NQ1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -318,7 +318,7 @@ export default [
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -345,7 +345,7 @@ export default [
         "price": 84.99,
         "url": "https://www.amazon.com/dp/B0FMCM78NX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "3p",
         "priceSeller": "Store4PC",
         "priceResolvedVia": "dataforseo",
@@ -369,12 +369,14 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 28.49,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B09D3JL14S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceConfidence": "confirmed",
+        "priceSource": "3p",
+        "priceSeller": "ULANSeN",
+        "priceConfirmedAt": "2026-08-12",
+        "priceResolvedVia": "dataforseo"
       }
     }
   },
@@ -399,7 +401,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     },
     "needsReview": true,
@@ -427,7 +429,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-10"
+    "quarantinedAt": "2026-08-12"
   },
   {
     "id": 96110,
@@ -450,7 +452,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -475,7 +477,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   }

@@ -20,7 +20,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -66,7 +66,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -90,7 +90,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -114,7 +114,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -138,7 +138,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -161,7 +161,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -185,7 +185,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -209,7 +209,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -232,7 +232,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   }

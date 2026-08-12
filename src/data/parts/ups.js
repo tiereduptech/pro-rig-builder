@@ -16,9 +16,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
         "price": 199.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
-        "priceSource": "3p",
-        "priceSeller": "Neutron USA",
+        "priceConfirmedAt": "2026-08-12",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -45,7 +45,7 @@ export default [
         "price": 360,
         "url": "https://www.amazon.com/dp/B0B354X985?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "3p",
         "priceSeller": "BeachAudio",
         "priceResolvedVia": "dataforseo",
@@ -72,7 +72,7 @@ export default [
         "price": 239.95,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "3p",
         "priceSeller": "Adorama",
         "priceResolvedVia": "dataforseo",
@@ -123,7 +123,7 @@ export default [
         "price": 84,
         "url": "https://www.amazon.com/dp/B01FWAZEIU?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -172,7 +172,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-07-20",
+    "quarantinedAt": "2026-08-12",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -197,7 +197,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-10"
+        "priceUnconfirmedAt": "2026-08-12"
       }
     }
   },
@@ -219,7 +219,7 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B06VY6FXMM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -244,7 +244,10 @@ export default [
       "amazon": {
         "price": 200,
         "url": "https://www.amazon.com/dp/B000FBK3QK?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-12"
       }
     },
     "needsReview": true,
@@ -268,7 +271,7 @@ export default [
         "price": 63,
         "url": "https://www.amazon.com/dp/B01HDC236Q?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
+        "priceConfirmedAt": "2026-08-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -294,9 +297,9 @@ export default [
         "price": 120,
         "url": "https://www.amazon.com/dp/B00DBAA696?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-10",
-        "priceSource": "3p",
-        "priceSeller": "Neutron USA",
+        "priceConfirmedAt": "2026-08-12",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
