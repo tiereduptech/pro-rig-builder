@@ -97,6 +97,10 @@ fs.writeFileSync(path.join(DIST, 'gone.html'), goneHtml, 'utf8');
 // ── 4. Copy the static config into dist/ (edit these in deploy/, never in dist/)
 fs.copyFileSync(path.join(DEPLOY, '.htaccess'), path.join(DIST, '.htaccess'));
 fs.copyFileSync(path.join(DEPLOY, 'resolver.php'), path.join(DIST, 'resolver.php'));
+// _env.php reports the R1 invariant + opcache state per worker. It ships in
+// every artifact (both stacks) so the pull healthcheck and the watchdog can
+// assert on it — see DESIGN-pull-deploy.md §3.3 / §6.9.
+fs.copyFileSync(path.join(DEPLOY, '_env.php'), path.join(DIST, '_env.php'));
 
 // ── 5. Staging guard (Basic Auth primary, noindex secondary) OR production
 //      self-check that no guard is present. Basic Auth is deliberately the
@@ -163,4 +167,5 @@ console.log(`  ✓ redirects.php        (${redirectCount} 301 entr${redirectCoun
 console.log(`  ✓ gone.html            (${goneHtml.length} bytes, noindex verified)`);
 console.log('  ✓ .htaccess');
 console.log('  ✓ resolver.php');
+console.log('  ✓ _env.php             (dir_resolved + opcache reporter)');
 console.log(guardNote);
