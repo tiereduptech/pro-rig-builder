@@ -16,6 +16,25 @@ name: Publish Epik release artifact
 #  Nothing to rotate, nothing to leak. Two consequences are enforced below —
 #  the artifact must never contain .htpasswd (step "Guard assertions"), and the
 #  staging Basic-Auth hash therefore lives on the box, not in the artifact.
+#
+#  ── EPIK_ORIGIN_IP: the pre-DNS window ──────────────────────────────────────
+#  Two steps here read the LIVE production site over HTTPS: "R2" compares the
+#  live .htaccess hash, and "Confirm the box went live" polls the status file.
+#  Between the docroot flip (Phase B step 3) and the DNS move (step 8),
+#  prorigbuilder.com still answers from RAILWAY, so both would measure the stack
+#  we are migrating away from. This is the same trap that made a clean staging
+#  flip print "unhealthy", and epik-pull.sh already carries the fix (ORIGIN_IP +
+#  curl --resolve). Both steps below take it too.
+#
+#  Set the repo VARIABLE  EPIK_ORIGIN_IP = <the box's public IP>  before the
+#  Phase B burn-in; CLEAR it once DNS points at the box, so the poll goes back
+#  to measuring what the world actually reaches. It applies to production only —
+#  staging is grey-cloud and its DNS already resolves to the box, so pinning it
+#  would assert something that is already true.
+#
+#  Pinned requests are sent with -k. The origin carries a Cloudflare Origin CA
+#  cert, which no public trust store validates BY DESIGN — only Cloudflare's edge
+#  does. See deploy/PHASE-B-INSTALL.md §6.
 # =============================================================================
 
 on:
@@ -169,21 +188,52 @@ jobs:
       # reflexively is worse than no gate at all. So this warns, and sets
       # htaccess_changed in the artifact — which is what puts the box on the
       # slower settle path (§6.7) with nobody having to remember to ask.
+      #
+      # THIS is the step the origin pin exists for, more than the confirm-poll
+      # below. Unpinned in the pre-DNS window it reads Railway's (nonexistent)
+      # RELEASE.json, takes the "nothing to compare" branch, and ships
+      # htaccess_changed=false for a release that DID change .htaccess — putting
+      # the box on the FAST healthcheck path. No warning, no red run, no trace.
+      # A silent degradation of a safety mechanism is worse than a loud failure,
+      # so when the request is NOT pinned the "nothing to compare" branch says so.
       - name: R2 — .htaccess change detection (warn, never fail)
         id: r2
         env:
           SITE: ${{ env.TARGET == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
           AUTH: ${{ env.TARGET == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+          ORIGIN_IP: ${{ env.TARGET == 'production' && vars.EPIK_ORIGIN_IP || '' }}
         run: |
           set -uo pipefail
           NEW=$(cat /tmp/ht.sha)
+          HOST=${SITE#*://}; HOST=${HOST%%/*}; HOST=${HOST%%:*}
           ARGS=(-sS --max-time 20)
           [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
+          if [ -n "$ORIGIN_IP" ]; then
+            ARGS+=(--resolve "$HOST:443:$ORIGIN_IP" -k)
+            WHERE="pinned: $HOST:443 -> $ORIGIN_IP (cert not validated)"
+          else
+            # Same wording as epik-pull.sh's site_desc(), and neutral on purpose:
+            # following DNS is CORRECT for staging (grey-cloud, resolves to the
+            # box). It is only a problem for production before the DNS move, and
+            # that case is called out where it actually bites, below.
+            WHERE="whatever DNS resolves $HOST to"
+          fi
+          echo "comparing .htaccess against $SITE"
+          echo "  went to: $WHERE"
           LIVE=$(curl "${ARGS[@]}" "$SITE/RELEASE.json" 2>/dev/null \
                  | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{process.stdout.write(String(JSON.parse(s).htaccess_sha256||""))}catch(e){process.stdout.write("")}})' || true)
           if [ -z "$LIVE" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "no live RELEASE.json to compare against (first publish, or the box has never pulled) — not flagging"
+            if [ -n "$ORIGIN_IP" ]; then
+              echo "no live RELEASE.json at the pinned origin (first publish, or the box has never pulled) — not flagging"
+            else
+              echo "::warning::.htaccess comparison was NOT pinned and found no live RELEASE.json — shipping htaccess_changed=false, which puts the box on the FAST healthcheck path. Set the EPIK_ORIGIN_IP repo variable."
+              echo "Two very different situations look identical from here:"
+              echo "  a) this is a first publish / the box has never pulled, or"
+              echo "  b) $HOST still answers from another stack and this request never reached the box."
+              echo "Only (a) makes htaccess_changed=false the right answer. Pin it and the"
+              echo "ambiguity disappears: set the EPIK_ORIGIN_IP repo variable to the origin IP."
+            fi
           elif [ "$LIVE" = "$NEW" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo ".htaccess unchanged ($NEW)"
@@ -244,16 +294,34 @@ jobs:
       # With no inbound path, this is the observability answer: the box writes its
       # outcome into the live tree and CI reads it over HTTPS. A failed or
       # rolled-back deploy still turns CI red.
+      #
+      # NOTE this step runs on a PUSH event too: github.event.inputs.confirm is
+      # '' there, and '' != 'false'. So once EPIK_PULL_AUTO_PUBLISH is on, every
+      # qualifying commit polls. Unpinned in the pre-DNS window that is a
+      # guaranteed ~20-minute red run per publish while the box is in fact green
+      # — a red run that means nothing, arriving during the burn-in that is
+      # supposed to build the confidence to move DNS. That is how an alarm gets
+      # trained to be ignored, which is the same reasoning that defers the cron
+      # entry until after the docroot flip.
       - name: Confirm the box went live
         if: github.event.inputs.confirm != 'false'
         env:
           SITE: ${{ env.TARGET == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
           AUTH: ${{ env.TARGET == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+          ORIGIN_IP: ${{ env.TARGET == 'production' && vars.EPIK_ORIGIN_IP || '' }}
         run: |
           set -uo pipefail
+          HOST=${SITE#*://}; HOST=${HOST%%/*}; HOST=${HOST%%:*}
           ARGS=(-sS --max-time 20)
           [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
+          if [ -n "$ORIGIN_IP" ]; then
+            ARGS+=(--resolve "$HOST:443:$ORIGIN_IP" -k)
+            WHERE="pinned: $HOST:443 -> $ORIGIN_IP (cert not validated)"
+          else
+            WHERE="whatever DNS resolves $HOST to"
+          fi
           echo "polling $SITE/_deploy-status.json for $GITHUB_SHA (cron is */5, allow ~20 min)"
+          echo "  going to: $WHERE"
           for i in $(seq 1 80); do
             BODY=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}.$i" 2>/dev/null || true)
             LIVE=$(printf '%s' "$BODY" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const o=JSON.parse(s);process.stdout.write(`${o.live_sha}|${o.health}|${o.message||""}`)}catch(e){process.stdout.write("|")}})')
@@ -268,5 +336,18 @@ jobs:
             [ -n "$HEALTH" ] && [ "$HEALTH" != "ok" ] && echo "  box reports health=$HEALTH ${MSG:+($MSG)}"
             sleep 15
           done
-          echo "::error::the box never confirmed $GITHUB_SHA within ~20 min. Check cron mail and the watchdog."
+          # Say WHICH failure this is. Pinned, the request reached the box by
+          # construction and the box really did not confirm. Unpinned, the same
+          # evidence fits two readings and picking the alarming one is exactly the
+          # error hc_verdict() exists to prevent (epik-pull.sh, "unverified").
+          if [ -n "$ORIGIN_IP" ]; then
+            echo "::error::the box never confirmed $GITHUB_SHA within ~20 min. The poll was pinned to $ORIGIN_IP, so it did reach this box — this is a real failure to confirm. Check cron mail and the watchdog."
+          else
+            echo "::error::no confirmation of $GITHUB_SHA within ~20 min — and this is NOT yet a verdict on the box."
+            echo "The poll was NOT pinned, so two readings fit the same evidence:"
+            echo "  a) the box never went live (or went live and rolled back), or"
+            echo "  b) $HOST still answers from another stack and this poll never reached the box."
+            echo "Set the EPIK_ORIGIN_IP repo variable to the origin IP and the answer is unambiguous."
+            echo "(Clear it again once DNS points at the box.)"
+          fi
           exit 1

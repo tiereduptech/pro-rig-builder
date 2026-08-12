@@ -13,10 +13,11 @@
 #
 #      curl --resolve prorigbuilder.com:443:<origin ip>
 #
-#  and sent with -k. The origin's AutoSSL cert for this name is validated
-#  against Railway, so it is NOT expected to validate here yet. CP-5 measures
-#  that and NOTES it — it is a Cloudflare Full-Strict blocker for the cutover
-#  step, not a serving fault today, and it does not fail this script.
+#  and sent with -k. The origin now carries a CLOUDFLARE ORIGIN CA cert
+#  (installed 2026-08-12), which no public trust store validates BY DESIGN —
+#  only Cloudflare's edge does. So -k is permanent here, not a migration
+#  shortcut, and CP-5 reads the issuer rather than treating curl's exit 60 as a
+#  verdict. See PHASE-B-INSTALL.md §6.
 #
 #  WHAT EACH CP ASSERTS
 #    CP-1  the origin serves the release the box has staged, on every worker,
@@ -37,8 +38,10 @@
 #  EXIT CODE
 #    Non-zero if CP-1..CP-4 has any failure — those gate DNS moving.
 #    CP-5 is split deliberately:
-#      * the CERT line is expected to fail before cutover. It is NOTED and does
-#        not affect the exit code.
+#      * the CERT lines are NOTED and never affect the exit code. Read them:
+#        "Cloudflare Origin CA + not expired" is the correct steady state and
+#        curl's exit 60 there is permanent, whereas an expired Origin CA cert or
+#        an unrecognised issuer IS a Full (Strict) blocker. The note says which.
 #      * the CACHE-CONTROL lines DO affect it. A cacheable _deploy-status.json
 #        or RELEASE.json means CI's confirm-poll reads a stale answer and
 #        reports a deploy that did not happen — every future deploy
@@ -360,21 +363,84 @@ else
   note "no hashed /assets/*.js reference found on / — skipped the immutable check"
 fi
 
-# The cert, WITHOUT -k. Expected to fail before cutover: AutoSSL's DNS
-# validation for this name currently resolves to Railway. NOTED, never failed.
+# ── the cert Cloudflare will judge ──────────────────────────────────────────
+# THREE outcomes, not two, and the middle one is the point of this block.
+#
+# A CLOUDFLARE ORIGIN CA cert is the CORRECT cert for Full (Strict), and it will
+# NEVER validate against the system trust store: CF's Origin root is in no public
+# bundle, by design — only Cloudflare's edge validates that chain. So curl's exit
+# 60 here is the expected PERMANENT steady state, not a defect. Reporting it as
+# "the Full (Strict) blocker" was true until the cert was installed (2026-08-12)
+# and false afterwards, and a check that keeps asserting a fault after the fault
+# is fixed teaches people to skip reading it. Same rule as hc_verdict() in
+# epik-pull.sh: do not assert a fault the evidence does not support.
+#
+# The inverse trap is just as real. curl exits 60 for an untrusted issuer AND for
+# an EXPIRED cert, so matching the issuer and stopping there would hide an expired
+# Origin CA cert behind "expected and permanent" — Cloudflare's edge does check
+# expiry. Expiry is therefore judged separately, and when it cannot be read this
+# says UNKNOWN rather than folding it into either verdict.
 crc=0
 curl -sS --resolve "$HOST:443:$ORIGIN" --connect-timeout 10 --max-time 30 \
      -o /dev/null "https://$HOST/" >/dev/null 2>&1 || crc=$?
-if [ "$crc" -eq 0 ]; then
-  note "the origin cert VALIDATES for $HOST — Cloudflare Full (Strict) is available at cutover"
-else
-  note "the origin cert does not validate for $HOST (curl exit $crc). EXPECTED before cutover,"
-  note "  and NOT counted as a failure — but it is the Full (Strict) blocker: fix the cert"
-  note "  before choosing the SSL mode at the Cloudflare step, not after."
-fi
+
+# One -k request, kept, so the identity lines below and the verdict above are read
+# from the SAME response rather than two independent handshakes.
+CERTI="$TMP/cert.info"
 curl -sSv --resolve "$HOST:443:$ORIGIN" -k --connect-timeout 10 --max-time 30 \
      "https://$HOST/" -o /dev/null 2>&1 \
-  | grep -E 'subject:|issuer:|expire date' | sed 's/^\** */        /' | head -4
+  | grep -E 'subject:|issuer:|expire date' > "$CERTI" 2>/dev/null || true
+C_ISSUER="$(sed -n 's/.*issuer: *//p'       "$CERTI" | head -1 | tr -d '\r')"
+C_EXPIRE="$(sed -n 's/.*expire date: *//p'  "$CERTI" | head -1 | tr -d '\r')"
+
+CF_ORIGIN=0
+case "$(printf '%s' "$C_ISSUER" | tr 'A-Z' 'a-z')" in
+  *cloudflare*origin*ssl*certificate*authority*) CF_ORIGIN=1 ;;
+esac
+
+# expired | soon | ok | unknown — never inferred from the trust result.
+EXP_STATE=unknown; DAYS=0
+if [ -n "$C_EXPIRE" ] && EXP_TS="$(date -d "$C_EXPIRE" +%s 2>/dev/null)" && [ -n "$EXP_TS" ]; then
+  DAYS=$(( (EXP_TS - $(date +%s)) / 86400 ))
+  if   [ "$DAYS" -lt 0 ]  ; then EXP_STATE=expired
+  elif [ "$DAYS" -lt 30 ] ; then EXP_STATE=soon
+  else                           EXP_STATE=ok
+  fi
+fi
+
+if [ "$crc" -eq 0 ]; then
+  note "the origin cert validates against the SYSTEM trust store for $HOST — Full (Strict) is"
+  note "  available, and the origin would also serve correctly un-proxied (grey-cloud)."
+elif [ "$CF_ORIGIN" = 1 ] && [ "$EXP_STATE" = ok ]; then
+  note "the origin carries a CLOUDFLARE ORIGIN CA cert — CORRECT for Full (Strict). NOT a blocker."
+  note "  curl exit $crc is EXPECTED AND PERMANENT: CF's Origin root is in no public trust store"
+  note "  by design, so only Cloudflare's edge validates this chain. Nothing to fix, ever."
+  note "  expires $C_EXPIRE (~$((DAYS / 365))y out). Keep ORIGIN_INSECURE=1 — PHASE-B-INSTALL §6.7."
+  note "  What this locks in: grey-clouding $HOST would hard-fail in browsers (§6.8)."
+elif [ "$CF_ORIGIN" = 1 ] && [ "$EXP_STATE" = expired ]; then
+  note "the origin carries a Cloudflare Origin CA cert and it has EXPIRED ($C_EXPIRE)."
+  note "  This one IS a Full (Strict) blocker — the edge checks expiry even though no public"
+  note "  trust store is involved. Re-issue it: PHASE-B-INSTALL §6.1."
+elif [ "$CF_ORIGIN" = 1 ] && [ "$EXP_STATE" = soon ]; then
+  note "the origin carries a Cloudflare Origin CA cert expiring in $DAYS days ($C_EXPIRE)."
+  note "  Correct for Full (Strict) today, but re-issue before it lapses: PHASE-B-INSTALL §6.1."
+elif [ "$CF_ORIGIN" = 1 ]; then
+  note "the origin carries a Cloudflare Origin CA cert (correct for Full (Strict)), but its expiry"
+  note "  could not be read from '${C_EXPIRE:-<no expire date line>}', so this is NOT a clean bill:"
+  note "  curl exit $crc cannot tell an untrusted issuer from an expired cert. Check by hand:"
+  note "    openssl s_client -connect $ORIGIN:443 -servername $HOST </dev/null 2>/dev/null | openssl x509 -noout -enddate"
+elif [ -z "$C_ISSUER" ]; then
+  note "the origin cert does not validate for $HOST (curl exit $crc), and its issuer could NOT be"
+  note "  read — so this says nothing about which of the two it is. Do not choose an SSL mode on"
+  note "  this evidence. Check by hand:"
+  note "    openssl s_client -connect $ORIGIN:443 -servername $HOST </dev/null 2>/dev/null | openssl x509 -noout -issuer -enddate"
+else
+  note "the origin cert does not validate for $HOST (curl exit $crc), and was issued by:"
+  note "    $C_ISSUER"
+  note "  That is neither publicly trusted nor a Cloudflare Origin CA cert, so it IS the Full"
+  note "  (Strict) blocker: fix it before choosing the SSL mode, not after (PHASE-B-INSTALL §6)."
+fi
+sed 's/^\** */        /' "$CERTI" | head -4
 
 # ── summary ─────────────────────────────────────────────────────────────────
 printf '\n=============================================================\n'
