@@ -436,15 +436,29 @@ is painful *and* a shallow fetch demonstrably transferring materially less.
     `install-phase-a.sh` now prints and floor-checks `curl --version` and prints
     `$BASH_VERSION` in preflight. Record the VERSION of anything a script depends on a
     recent feature of — or depend only on features old enough not to ask.
+  - **present is not the same as on PATH.** `node` was recorded present here — but that
+    was measured in an INTERACTIVE shell, where nvm's shell hook has already put
+    `~/.nvm/versions/node/*/bin/node` on PATH. Under cron the environment is only
+    `/usr/local/bin:/usr/bin:/bin`, that hook never runs, and a bare `node` is not found.
+    epik-pull.sh's first `node` call (`jget` for `source_sha`) then failed under `set -e`
+    BEFORE any log line reached deploy.log, so the tick exited 0 with an empty log and a
+    frozen `checked_at` — indistinguishable from cron not firing at all (2026-08-12). Same
+    class of error as the curl one above: the probe measured the interactive shell and
+    reported it as "the host". epik-pull.sh now resolves ONE absolute interpreter loudly
+    (`resolve_node()` — nvm globbed newest-first, then a config `NODE=` recorded by
+    install-phase-a, then fixed system paths) and refuses to run blind if none resolves.
 - disk: ample free space, **910M free inodes**
 - one `dist/` tree = **22,081 inodes** → sets N in §6.10
 - `git clone --depth 1`: 17s, 584M tree + 49M `.git`
 - codeload tarball: 13s, 95M → §9
 - `git ls-remote` ×3: 419 / 266 / 417 ms
 
-`node` being present settles the open question in the old version of this section:
+`node` being **installed** settles the open question in the old version of this section:
 the healthcheck **reuses `test/verify-epik.cjs`** driven by the existing fixture,
-rather than needing a bash reimplementation that would drift from it.
+rather than needing a bash reimplementation that would drift from it. What "present" did
+NOT settle — and the sub-bullet above is the scar — is that a bare `node` resolves for
+whatever cron runs. It does not. Anything cron invokes must reach the interpreter by
+absolute path, never by name.
 
 22,081 inodes per release also means a per-file copy deploy is slow, which is an
 independent argument for the symlink swap the design was already built on.

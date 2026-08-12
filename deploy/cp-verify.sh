@@ -70,8 +70,12 @@ save() { "${CURL[@]}" -o "$2" -w '%{http_code}' "https://$HOST$1"; }          # 
 code() { "${CURL[@]}" -o /dev/null -w '%{http_code}' "https://$HOST$1"; }     # status only
 hdrs() { "${CURL[@]}" -o /dev/null -D - "https://$HOST$1"; }                  # headers -> stdout
 
-# node is confirmed present on this host (DESIGN §10) and is the only sane way
-# to read JSON here — jq is not guaranteed.
+# node reads JSON here — jq is not guaranteed. A BARE `node` is deliberate and safe
+# ONLY because this harness is run interactively, where nvm's shell hook has already put
+# ~/.nvm/versions/node/*/bin/node on PATH; the preflight below (command -v node || die)
+# refuses to grade anything if it is not. That is the exact assumption that does NOT hold
+# under cron, where the environment is only /usr/local/bin:/usr/bin:/bin and a bare `node`
+# is not found — see epik-pull.sh's resolve_node() and DESIGN §10 "present ≠ on PATH".
 jget() {
   node -e '
     const fs=require("fs");
