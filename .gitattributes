@@ -1,0 +1,4 @@
+# Server-side config for the Epik/Apache host must stay LF. CRLF in a .htaccess
+# is a known Apache hazard (directives/paths can break); the PHP resolver and the
+# Node deploy script also run on Linux. Force LF regardless of any core.autocrlf.
+deploy/** text eol=lf

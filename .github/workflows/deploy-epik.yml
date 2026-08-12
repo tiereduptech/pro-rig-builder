@@ -1,0 +1,115 @@
+name: Deploy dist to Epik (SFTP)
+
+# Runs AFTER dist/ lands on main (the nightly prerender commits it, or a manual
+# edit does). The prerender stays on Actions — shared hosting can't run the
+# 45-minute headless-Chrome job — this workflow only ships the finished dist/.
+#
+# Push-triggered PRODUCTION auto-deploy is gated by the repo var
+# EPIK_PROD_AUTO_DEPLOY (see the job `if:` below): OFF during migration so the
+# branch can merge to main safely; flip it true at cutover. Manual deploys of
+# either target always run via workflow_dispatch.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dist/**'
+      - 'deploy/**'
+      - '.github/workflows/deploy-epik.yml'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Where to deploy'
+        type: choice
+        options: [staging, production]
+        default: staging
+      full:
+        description: 'Full upload (ignore remote manifest)'
+        type: boolean
+        default: false
+      prune:
+        description: 'Prune orphaned remote files after verify'
+        type: boolean
+        default: false
+      ref:
+        description: 'Git ref to deploy (default main; use a branch to stage un-merged code)'
+        type: string
+        default: main
+
+# Serialize deploys. cancel-in-progress:false is deliberate — cancelling a run
+# mid-upload is exactly the half-deploy we are avoiding, so we QUEUE instead.
+concurrency:
+  group: deploy-epik-${{ github.event.inputs.target || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Production auto-deploy on push (which includes the initial migration merge
+    # to main) is OFF until explicitly switched on. A workflow_dispatch always
+    # runs — the operator picks the target by hand. A push proceeds ONLY once the
+    # repo variable EPIK_PROD_AUTO_DEPLOY == 'true', so merging this branch to
+    # main cannot ship production mid-migration. Flip the var true at cutover to
+    # restore the nightly auto-ship.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.EPIK_PROD_AUTO_DEPLOY == 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Default main (steady state). A workflow_dispatch may override to a
+          # branch to stage un-merged code; push events always resolve to main.
+          ref: ${{ github.event.inputs.ref || 'main' }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # dist/ is committed, but regenerate the Epik artifacts so resolver-config.php
+      # / redirects.php / gone.html / .htaccess can never drift from source. On
+      # staging this also appends the Basic-Auth + noindex guard; on production
+      # build-epik.cjs asserts the artifact is guard-free.
+      - name: Regenerate Epik artifacts
+        env:
+          EPIK_REMOTE_ROOT: >-
+            ${{ (github.event.inputs.target == 'staging')
+                && secrets.EPIK_REMOTE_ROOT_STAGING
+                || secrets.EPIK_REMOTE_ROOT }}
+          EPIK_STAGING_BASIC_AUTH: ${{ secrets.EPIK_STAGING_BASIC_AUTH }}
+        run: node build-epik.cjs ${{ github.event.inputs.target == 'staging' && '--staging' || '' }}
+
+      - name: Upload dist/ over SFTP (safe-to-interrupt, verified)
+        env:
+          EPIK_SFTP_HOST: ${{ secrets.EPIK_SFTP_HOST }}
+          EPIK_SFTP_PORT: ${{ secrets.EPIK_SFTP_PORT }}
+          EPIK_SFTP_USER: ${{ secrets.EPIK_SFTP_USER }}
+          EPIK_SFTP_PRIVATE_KEY: ${{ secrets.EPIK_SFTP_PRIVATE_KEY }}
+          EPIK_SFTP_PASSPHRASE: ${{ secrets.EPIK_SFTP_PASSPHRASE }}
+          # Staging vs production docroot. workflow_dispatch picks; push events
+          # (nightly) go to production.
+          EPIK_REMOTE_ROOT: >-
+            ${{ (github.event.inputs.target == 'staging')
+                && secrets.EPIK_REMOTE_ROOT_STAGING
+                || secrets.EPIK_REMOTE_ROOT }}
+        run: |
+          node deploy/sftp-deploy.cjs \
+            ${{ github.event.inputs.target == 'staging' && '--staging' || '' }} \
+            ${{ github.event.inputs.full == 'true' && '--full' || '' }} \
+            ${{ github.event.inputs.prune == 'true' && '--prune' || '' }}
+
+      # HARD GATE — HTTP-level parity check against the just-deployed site, same
+      # non-tolerant pattern as verify-prerender.cjs. A non-zero exit fails the job.
+      - name: Verify live parity (fixture)
+        env:
+          BASE: >-
+            ${{ (github.event.inputs.target == 'staging')
+                && vars.EPIK_STAGING_URL
+                || 'https://prorigbuilder.com' }}
+          # Staging is behind Basic Auth: send creds so codes compare, and the
+          # harness first asserts an un-authed request 401s. Empty on production,
+          # so a guard that leaked to prod makes the fixture fail loudly (401s).
+          EPIK_BASIC_AUTH: ${{ (github.event.inputs.target == 'staging') && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+        run: node test/verify-epik.cjs epik="$BASE"
