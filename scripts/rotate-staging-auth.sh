@@ -77,8 +77,20 @@ grep -n 'AuthType\|AuthName\|AuthUserFile\|Require' "$DOCROOT/.htaccess" 2>&1 | 
 # (stale file). APR1 is salted, so this cannot regenerate the entry and compare
 # strings the way the old {SHA} version did — it has to re-hash the config
 # password USING THE SALT ALREADY IN THE FILE and compare that.
+#
+# It also PROBES THE SITE FIRST rather than assuming a fault. This script is run
+# to rotate a healthy box as often as to fix a broken one, and a verdict that
+# says "so the 401 is path/permissions" when the site is answering 200 is just
+# wrong — it invents a symptom to explain. Only claim a cause for a 401 that was
+# actually observed.
 printf '\n== 4. stored hash vs config credential\n'
 CAUSE="undetermined"
+PRE_CODE=''
+if [ -n "${OLDAUTH:-}" ]; then
+  PRE_CODE="$(curl -u "$OLDAUTH" -sI -o /dev/null -w '%{http_code}' \
+              --connect-timeout 10 --max-time 30 "$SITE_URL/" 2>/dev/null || true)"
+  printf '   live now:     HTTP %s  (with the CURRENT config credential)\n' "${PRE_CODE:-000}"
+fi
 if [ -z "${OLDAUTH:-}" ]; then
   printf '   !! config has no BASIC_AUTH line\n'
   CAUSE="config never written"
@@ -104,7 +116,14 @@ else
         WANT="$OU:$(printf '%s\n' "$OP" | openssl passwd -apr1 -salt "$SALT" -stdin)"
         printf '   re-hashed:    %s\n' "$WANT"
         if [ "$WANT" = "$HAVE" ]; then
-          CAUSE="CAUSE 1 — credential is self-consistent AND the format is right, so the 401 is path/permissions (see 2 and 3)"
+          # Format right + credential matches. Whether that is a diagnosis or a
+          # clean bill of health depends entirely on what the site just answered.
+          case "${PRE_CODE:-000}" in
+            200) CAUSE="NO FAULT — APR1 format correct, stored hash matches config, site answers 200. Nothing to diagnose; this is a routine rotation." ;;
+            401) CAUSE="CAUSE 1 — format and credential are both right, so the observed 401 is path/permissions (see 2 and 3)" ;;
+            000) CAUSE="format and credential are both right, but the site could not be reached at all — network/DNS/TLS, not auth (see the code above)" ;;
+            *)   CAUSE="format and credential are both right, and the site answered HTTP ${PRE_CODE} — not an auth fault at all; look at the server, not this credential" ;;
+          esac
         else
           CAUSE="CAUSE 2 — stale .htpasswd: the stored hash is not this config's password"
         fi
