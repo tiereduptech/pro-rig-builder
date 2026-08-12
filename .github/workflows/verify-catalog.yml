@@ -33,6 +33,12 @@ on:
         default: false
         type: boolean
 
+# Repo-wide lock shared by every workflow that pushes to main. The four tiers
+# already serialise against each other via this group as a side effect.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
 jobs:
   verify:
     runs-on: ubuntu-latest

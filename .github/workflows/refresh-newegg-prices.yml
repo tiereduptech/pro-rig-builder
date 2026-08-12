@@ -22,6 +22,12 @@ on:
         type: string
         default: "50"
 
+# Repo-wide lock shared by every workflow that pushes to main. Schedule is
+# disabled (see above) but workflow_dispatch still writes parts.js.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest

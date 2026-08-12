@@ -12,10 +12,13 @@ on:
   # Manual trigger from the Actions tab.
   workflow_dispatch:
 
-# Only one prerender at a time. New runs cancel old ones still in progress.
+# SHARED WITH EVERY WORKFLOW THAT PUSHES TO main — seven of them. Before this
+# group, only the cron schedule kept them apart, which is luck, not a guard.
+# test/verify-main-writer-lock.cjs enforces that the set stays complete.
+# cancel-in-progress:false — never kill a prerender midway; make the next one wait.
 concurrency:
-  group: prerender
-  cancel-in-progress: true
+  group: main-writer
+  cancel-in-progress: false
 
 permissions:
   contents: write  # needed to commit dist/ back to main
@@ -149,7 +152,57 @@ jobs:
           Regenerated $CHANGED files via .github/workflows/prerender.yml
           Triggered by: ${{ github.event_name }}"
 
-          # pull latest first - other robots may have pushed while we prerendered
-          git pull --rebase -X ours origin main || (git rebase --abort; git pull -X ours origin main)
-          git push origin main || (git pull --rebase -X ours origin main && git push origin main)
-          echo "Pushed prerender update — Railway will redeploy automatically."
+          # Reconcile with whatever landed while we were prerendering.
+          #
+          # NO `-X ours`. Measured 2026-08-12 on a scratch repo, because the
+          # direction is counter-intuitive and was recorded backwards:
+          #
+          #   In a REBASE, "ours" is the UPSTREAM being replayed onto — so
+          #   `pull --rebase -X ours` silently discarded THIS RUN's version of
+          #   every conflicting file and kept the other writer's. Non-conflicting
+          #   files still took our version. Net result: main got a dist mixed
+          #   from two different source trees, and the job exited 0 with no
+          #   warning. (The `git pull -X ours` fallback on the next line is a
+          #   MERGE, where "ours" means the opposite — the local branch. Same
+          #   flag, inverted meaning, one line apart.)
+          #
+          # A half-and-half dist is worse than either side winning cleanly, and
+          # no automatic rule can pick correctly here. The main-writer
+          # concurrency group now keeps the other workflows out; a conflict that
+          # survives that means a human pushed dist mid-run, and a human is who
+          # should resolve it. So: fail, loudly, with the tally.
+          # Rebase onto FETCH_HEAD, not origin/main: actions/checkout does a
+          # shallow single-branch fetch, so the remote-tracking ref is not
+          # guaranteed to exist. FETCH_HEAD always is. The count is diagnostic
+          # only — never let it fail the job.
+          git fetch origin main
+          BEHIND=$(git rev-list --count HEAD..FETCH_HEAD 2>/dev/null || echo '?')
+          echo "origin/main moved $BEHIND commit(s) since this run checked out."
+
+          PUSHED=0
+          for attempt in 1 2 3; do
+            if ! git rebase FETCH_HEAD; then
+              CONFLICTED=$(git diff --name-only --diff-filter=U)
+              N=$(printf '%s\n' "$CONFLICTED" | grep -c . || true)
+              echo "::error::Prerender rebase hit $N conflicted path(s) against origin/main (which moved $BEHIND commit(s)). Not guessing a winner — resolve by hand."
+              echo "--- conflicted paths (showing up to 40 of $N) ---"
+              printf '%s\n' "$CONFLICTED" | head -40
+              git rebase --abort
+              exit 1
+            fi
+
+            if git push origin main; then
+              PUSHED=1
+              echo "Pushed prerender update on attempt $attempt — Railway will redeploy automatically."
+              break
+            fi
+
+            echo "Push rejected on attempt $attempt — origin/main moved between rebase and push. Refetching."
+            git fetch origin main
+            BEHIND=$(git rev-list --count HEAD..FETCH_HEAD 2>/dev/null || echo '?')
+          done
+
+          if [ "$PUSHED" -ne 1 ]; then
+            echo "::error::Prerender could not push after 3 attempts — origin/main kept moving. Expected the main-writer lock to prevent this; check for a human or an unlocked workflow pushing to main."
+            exit 1
+          fi

@@ -7,6 +7,11 @@ on:
     - cron: '0 7 * * *'
   workflow_dispatch:
 
+# Repo-wide lock shared by every workflow that pushes to main.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest

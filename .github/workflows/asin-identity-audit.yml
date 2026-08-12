@@ -47,7 +47,10 @@ on:
 
 concurrency:
   # Never let two audits — or an audit and its own retry — race on parts.js.
-  group: asin-identity-audit
+  # Widened 2026-08-12 from `asin-identity-audit` to the repo-wide writer lock:
+  # the shared group still covers audit-vs-audit, and additionally covers
+  # audit-vs-prerender / -verify-catalog / -price-history / -sftp-ingest.
+  group: main-writer
   cancel-in-progress: false
 
 jobs:

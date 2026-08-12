@@ -4,6 +4,14 @@ on:
     # Daily at 12:00 UTC (between morning and evening Newegg price refresh)
     - cron: "0 12 * * *"
   workflow_dispatch: {}
+
+# Repo-wide lock shared by every workflow that pushes to main. This job's push
+# is a naked `git push` with no rebase/retry, so the lock is what keeps it from
+# losing a race it cannot recover from.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest

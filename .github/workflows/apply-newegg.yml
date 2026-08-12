@@ -25,6 +25,14 @@ on:
         options: [dry, live]
         default: dry
 
+# Joins the repo-wide writer lock. The push trigger is pinned to the discovery
+# branch, but workflow_dispatch is not pinned to anything — dispatched from main,
+# `HEAD:${{ github.ref_name }}` resolves to main and this becomes a main-writer.
+# It is dispatch-only and rare, so holding the lock costs nothing.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
 jobs:
   apply:
     runs-on: ubuntu-latest
