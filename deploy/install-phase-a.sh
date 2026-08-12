@@ -197,8 +197,16 @@ info "REVERSE ANY TIME:  bash $0 --uninstall"
 # ── 1. tree ─────────────────────────────────────────────────────────────────
 say "Creating $ROOT"
 mkdir -p "$ROOT"/{bin,releases,state,tmp,log,secrets}
-chmod 700 "$ROOT/secrets"
-info "done"
+# 711, NOT 700. LiteSpeed's core reads AuthUserFile as `nobody` — suEXEC governs
+# CGI, not the auth db — so `nobody` needs +x on secrets/ to traverse into it.
+# At 700 every request is a 401 EVEN WITH THE CORRECT PASSWORD.
+#
+# This line runs on EVERY invocation, including a resume, so it silently reverted
+# a box that scripts/rotate-staging-auth.sh had already set to 711 and turned a
+# green staging install into a total 401. Same measurement, same reason, both
+# scripts: keep this in step with rotate-staging-auth.sh.
+chmod 711 "$ROOT/secrets"
+info "done (secrets/ 711 — server reads the auth db as 'nobody')"
 
 # ── 2. the credential the artifact deliberately does not carry ──────────────
 # The release branch is PUBLIC — that is what lets the box pull with no
@@ -206,6 +214,10 @@ info "done"
 say "Staging Basic-Auth credential"
 if [ -s "$ROOT/secrets/.htpasswd" ]; then
   info "secrets/.htpasswd already present — keeping it"
+  # Repair the MODE, never the contents — an install re-run must not disturb a
+  # rotated credential. 644 for the same reason secrets/ is 711: the server reads
+  # this file as `nobody`, so 600 is a guaranteed 401.
+  chmod 644 "$ROOT/secrets/.htpasswd"
   if [ -z "${EPIK_STAGING_BASIC_AUTH:-}" ] && [ ! -s "$ROOT/config" ]; then
     printf '   Enter the SAME user:password again (needed for config): ' >&2
     read -r EPIK_STAGING_BASIC_AUTH < /dev/tty
@@ -224,8 +236,10 @@ else
   # {SHA} entry, byte-identical to what build-epik.cjs generates.
   printf '%s:{SHA}%s\n' "$AUSER" "$(printf '%s' "$APASS" | openssl sha1 -binary | openssl base64)" \
     > "$ROOT/secrets/.htpasswd"
-  chmod 600 "$ROOT/secrets/.htpasswd"
-  info "wrote secrets/.htpasswd for user '$AUSER'"
+  # 644, matching what the SFTP tree shipped. The server reads this as `nobody`,
+  # not as the owner, so 600 is a guaranteed 401. Measured on the box, not assumed.
+  chmod 644 "$ROOT/secrets/.htpasswd"
+  info "wrote secrets/.htpasswd for user '$AUSER' (mode 644)"
 fi
 
 # ── 3. the puller ───────────────────────────────────────────────────────────

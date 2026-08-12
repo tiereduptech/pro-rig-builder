@@ -199,26 +199,102 @@ fail() {   # loud, mailed by cron, status recorded on the live tree
 # _env.php reports the release from ITS OWN __DIR__, so N requests sample N
 # (possibly repeated) workers. Unanimity over HC_REQUESTS is not proof the whole
 # pool flipped — a worker idle during pass 1 is exactly what pass 2 catches.
+
+# Says WHICH credential went out, without ever printing the password. "401 having
+# sent no -u at all" and "401 as user 'prb'" are different faults with different
+# fixes, and the old message could not tell them apart.
+auth_desc() {
+  if [ -n "${BASIC_AUTH:-}" ]; then
+    printf "user '%s' + %s-char password, from %s" \
+      "${BASIC_AUTH%%:*}" \
+      "$(printf '%s' "${BASIC_AUTH#*:}" | wc -c | tr -d ' ')" \
+      "$CONFIG"
+  else
+    printf 'NO -u sent — %s defines no BASIC_AUTH' "$CONFIG"
+  fi
+}
+
+# One sampled request. Body -> $1. Prints the HTTP status; returns curl's exit.
+probe_env() {
+  local out="$1" cb="$2" code rc=0
+  code="$("${SITE_CURL[@]}" -w '%{http_code}' -o "$out" \
+          "$SITE_URL/_env.php?cb=$cb" 2>"$TMP/hc.curl.err")" || rc=$?
+  printf '%s' "${code:-000}"
+  return "$rc"
+}
+
+# Turn one response into a short outcome label. These labels are what get tallied,
+# so they must NOT contain the per-request cache-buster or anything else unique —
+# otherwise every request looks like its own distinct failure.
+classify_env() {  # <curl-rc> <status> <bodyfile> <want-sha>
+  local rc="$1" status="$2" f="$3" want="$4" got
+  if [ "$rc" -ne 0 ]; then printf 'curl exit %s — %s' "$rc" "$(curl_why "$rc")"; return 0; fi
+  if [ "$status" != 200 ]; then printf 'HTTP %s' "$status"; return 0; fi
+  if [ ! -s "$f" ]; then printf 'HTTP 200 with an EMPTY body'; return 0; fi
+  case "$(cat "$f")" in
+    *"\"release\":\"$want\""*) printf 'match'; return 0 ;;
+  esac
+  got="$(jget "$f" release 2>/dev/null || true)"
+  if [ -n "$got" ]; then printf 'release=%s (wanted %s)' "$got" "$want"; return 0; fi
+  case "$(head -c 1 "$f" 2>/dev/null || true)" in
+    '<') printf 'HTML body, not JSON — a server error/login page' ;;
+    *)   printf 'JSON without a release field' ;;
+  esac
+}
+
 unanimous() {
-  local want="$1" i r bad=0 unresolved=0
+  local want="$1" i status rc bad=0 unresolved=0 outcome sample=''
+  local body="$TMP/hc.body" tally="$TMP/hc.outcomes"
+  : > "$tally"
   for i in $(seq 1 "$HC_REQUESTS"); do
-    r="$(site_get "/_env.php?cb=$$.$i" 2>/dev/null || true)"
-    case "$r" in
-      *'"dir_resolved":false'*) unresolved=$((unresolved + 1)) ;;
-    esac
-    case "$r" in
-      *"\"release\":\"$want\""*) ;;
-      *) bad=$((bad + 1)) ;;
-    esac
+    rc=0
+    status="$(probe_env "$body" "$$.$i")" || rc=$?
+    outcome="$(classify_env "$rc" "$status" "$body" "$want")"
+    printf '%s\n' "$outcome" >> "$tally"
+    if [ "$outcome" != match ]; then
+      bad=$((bad + 1))
+      # Keep ONE verbatim body. A tally says what class of thing went wrong; the
+      # body is what tells you why. Newlines flattened so it stays one log line.
+      if [ -z "$sample" ] && [ -s "$body" ]; then
+        sample="$(head -c 300 "$body" | tr -d '\r' | tr '\n' ' ')"
+      fi
+    fi
+    if [ -s "$body" ] && grep -q '"dir_resolved":false' "$body"; then
+      unresolved=$((unresolved + 1))
+    fi
   done
+
+  # Printed by BOTH failure paths below — a healthcheck that says only "did not
+  # match" cannot be debugged, which is the whole point of this block.
+  report() {
+    err "  what the workers actually returned ($HC_REQUESTS requests):"
+    sort "$tally" | uniq -c | sort -rn | while read -r n what; do
+      err "    ${n}x  $what"
+    done
+    err "  url:  $SITE_URL/_env.php"
+    err "  auth: $(auth_desc)"
+    if [ -n "$sample" ]; then err "  first non-matching body (300B): $sample"; fi
+    if [ -s "$TMP/hc.curl.err" ]; then sed 's/^/  curl: /' "$TMP/hc.curl.err" >&2 || true; fi
+    # The trap that cost a green staging install: a 401 while credentials WERE
+    # sent means the server could not READ the auth db, not that the password is
+    # wrong. Point at the modes rather than sending anyone to re-rotate.
+    if grep -q '^HTTP 401' "$tally" && [ -n "${BASIC_AUTH:-}" ]; then
+      err "  401 WITH credentials sent means the server could not read the auth db, NOT a bad"
+      err "  password. The server reads it as 'nobody':  ls -ld $ROOT/secrets  (needs 711)"
+      err "                                              ls -l $ROOT/secrets/.htpasswd (needs 644)"
+    fi
+  }
+
   if [ "$unresolved" -gt 0 ]; then
     err "R1 INVARIANT BROKEN: _env.php reports dir_resolved=false on $unresolved/$HC_REQUESTS requests."
     err "  __DIR__ is no longer the resolved release path, so resolver.php's four reads are not pinned"
     err "  to one release (DESIGN §3.2). This is a correctness failure, not a timing one."
+    report
     return 1
   fi
   if [ "$bad" -gt 0 ]; then
     err "worker pool not converged: $bad/$HC_REQUESTS requests did not report release=$want"
+    report
     return 1
   fi
   return 0
