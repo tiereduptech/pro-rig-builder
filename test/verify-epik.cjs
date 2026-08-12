@@ -18,6 +18,17 @@
 //  base — and this harness (a) confirms auth is ENFORCED (an unauthenticated
 //  request to / returns 401) and (b) sends the credentials on every fixture
 //  request so the status codes compare cleanly against un-authed Railway.
+//
+//  ORIGIN PINNING: before DNS moves, prorigbuilder.com answers from Railway, so
+//  a run against that hostname measures the stack we are migrating AWAY from and
+//  reports the difference as the new box's fault. <BASE>_RESOLVE=<ip> pins that
+//  base to one origin — curl's --resolve, done with a custom dns lookup so the
+//  Host header and the TLS SNI stay the real hostname and only the address
+//  changes. <BASE>_INSECURE=1 additionally skips cert validation, for the window
+//  where the origin's cert has not been issued for that name yet (AutoSSL's DNS
+//  validation resolves to Railway until cutover). Every run PRINTS which origin
+//  each base went to — a parity table that cannot tell you what it measured is
+//  how a clean flip gets called a failure.
 //  No external dependencies — Node http/https only.
 // =============================================================================
 
@@ -33,7 +44,10 @@ for (const arg of process.argv.slice(2)) {
   const name = arg.slice(0, i);
   // Optional per-base Basic Auth from env <NAME>_BASIC_AUTH ("user:password").
   const auth = process.env[`${name.toUpperCase()}_BASIC_AUTH`] || null;
-  bases.push({ name, url: arg.slice(i + 1).replace(/\/$/, ''), auth });
+  // Optional per-base origin pin: <NAME>_RESOLVE=<ip>, <NAME>_INSECURE=1.
+  const resolve = (process.env[`${name.toUpperCase()}_RESOLVE`] || '').trim() || null;
+  const insecure = process.env[`${name.toUpperCase()}_INSECURE`] === '1';
+  bases.push({ name, url: arg.slice(i + 1).replace(/\/$/, ''), auth, resolve, insecure });
 }
 if (!bases.length) {
   console.error('  usage: node test/verify-epik.cjs railway=https://prorigbuilder.com epik=https://staging...');
@@ -43,13 +57,34 @@ if (!bases.length) {
 const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'epik-fixture.json'), 'utf8'));
 const cases = fixture.cases;
 
-function fetchNoRedirect(baseUrl, urlPath, auth) {
+function fetchNoRedirect(base, urlPath, auth) {
   return new Promise((resolve) => {
     let target;
-    try { target = new URL(baseUrl + urlPath); } catch (e) { return resolve({ error: e.message }); }
+    try { target = new URL(base.url + urlPath); } catch (e) { return resolve({ error: e.message }); }
     const mod = target.protocol === 'https:' ? https : http;
     const opts = { method: 'GET' };
     if (auth) opts.auth = auth; // Node sets the Authorization: Basic header
+    if (base.resolve) {
+      // Address only. Node still derives the Host header and the TLS servername
+      // from the URL, so the origin is asked for the real hostname's vhost —
+      // which is what curl --resolve does. A Host: header against https://<ip>
+      // is NOT the same thing: SNI would become the IP and the box would answer
+      // from its default vhost, which is a different site.
+      const ip = base.resolve;
+      const family = ip.includes(':') ? 6 : 4;
+      // Three call shapes, because this file runs on CI's node AND on whatever
+      // node the box has: (host, cb), (host, opts, cb), and opts.all — node 24
+      // asks with {all:true} and expects an ARRAY, older ones want the tuple.
+      // Getting this wrong fails as "Invalid IP address: undefined", which reads
+      // like a config error and is not one.
+      opts.lookup = (hostname, o, cb) => {
+        const done = typeof o === 'function' ? o : cb;
+        if (o && typeof o === 'object' && o.all) return done(null, [{ address: ip, family }]);
+        return done(null, ip, family);
+      };
+    }
+    // Only meaningful for https; harmless on http.
+    if (base.insecure) opts.rejectUnauthorized = false;
     const req = mod.request(target, opts, (res) => {
       // Drain and discard the body — we only need status + headers.
       res.resume();
@@ -84,12 +119,21 @@ function evaluate(c, r) {
 (async () => {
   let blockers = 0;
 
+  // Say what each base actually is BEFORE any verdict. A table of statuses with
+  // no record of which origin answered is unreadable during a cutover, when the
+  // same hostname means two different stacks depending on the day.
+  for (const b of bases) {
+    console.log(`  [base] ${b.name}: ${b.url}` +
+      (b.resolve ? `  -> pinned to ${b.resolve}${b.insecure ? ' (cert not validated)' : ''}`
+                 : '  -> whatever DNS resolves it to'));
+  }
+
   // ── Basic Auth ENFORCEMENT: for every base with credentials, an UNauthenticated
   //    request to / must return 401. If it returns 200, the guard is missing —
   //    on staging that means it's crawlable; on prod it means a guard leaked. Either
   //    way it's a blocker before we bother comparing status codes.
   for (const b of bases.filter((x) => x.auth)) {
-    const r = await fetchNoRedirect(b.url, '/', null);
+    const r = await fetchNoRedirect(b, '/', null);
     const ok = r.status === 401;
     if (!ok) blockers++;
     console.log(`  [auth] ${b.name}: GET / without creds -> ${r.error ? 'ERR:' + r.error : r.status} ` +
@@ -100,7 +144,7 @@ function evaluate(c, r) {
   for (const c of cases) {
     const perBase = {};
     for (const b of bases) {
-      const r = await fetchNoRedirect(b.url, c.path, b.auth);
+      const r = await fetchNoRedirect(b, c.path, b.auth);
       const ev = evaluate(c, r);
       perBase[b.name] = ev;
       if (!ev.ok) blockers++;

@@ -95,6 +95,8 @@ SITE_URL=https://staging.prorigbuilder.com
 DOCROOT=/home/tier5415/staging.prorigbuilder.com
 BASIC_AUTH=USER:PASSWORD
 EXPECT_GUARD=1
+ORIGIN_IP=66.223.49.32
+ORIGIN_INSECURE=0
 RETAIN=10
 CFG
 chmod 600 ~/prb-staging/config
@@ -102,6 +104,15 @@ chmod 600 ~/prb-staging/config
 
 Set `DOCROOT` to whatever the staging docroot actually is — confirm with
 `ls -d ~/staging*` before continuing. It must be the path the vhost serves.
+
+`ORIGIN_IP` pins every healthcheck request to this box with `curl --resolve`
+instead of following DNS for `SITE_URL`. Leaving it empty is legitimate **only**
+when that hostname already resolves here: otherwise the check measures whatever
+stack the name currently points at and blames this box for the difference — which
+is exactly what happened on the production flip. Unpinned and answered by
+something else, `epik-pull.sh` now exits **3 (could not verify)** rather than
+reporting a fault. Set `ORIGIN_INSECURE=1` only while the origin's cert does not
+yet cover the hostname.
 
 ---
 
@@ -204,7 +215,20 @@ EPIK_BASIC_AUTH='USER:PASSWORD' node test/verify-epik.cjs \
 ```
 
 Same fixture, both stacks, side by side, redirects not followed. Exit 0 and
-`ALL CLEAR` is the gate. **Production stays on Railway and DNS does not move
+`ALL CLEAR` is the gate.
+
+To grade a base by **origin** rather than by DNS — required for production
+before cutover, since `prorigbuilder.com` still answers from Railway — pin it:
+
+```bash
+EPIK_RESOLVE=66.223.49.32 EPIK_INSECURE=1 node test/verify-epik.cjs \
+  epik=https://prorigbuilder.com
+```
+
+`<BASE>_RESOLVE` sets the address only; the Host header and the TLS SNI stay the
+real hostname, so the origin serves the right vhost. Every run prints which
+origin each base went to. Note that a release published **before** this option
+existed carries an `_ops/verify-epik.cjs` that ignores it and follows DNS. **Production stays on Railway and DNS does not move
 until that table is clean.**
 
 ---

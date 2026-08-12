@@ -154,7 +154,146 @@ Every run prints the inputs and the verdict on one line before acting:
 
 ---
 
-## 5. Reversing
+## 5. Step 4 — CP-1…CP-5 against the origin, before DNS moves
+
+`prorigbuilder.com` resolves to Railway until step 8. Every check below therefore
+pins the connection to the box with `--resolve` and skips cert validation with
+`-k` — the origin's AutoSSL cert for this name is validated against Railway, so
+it is not expected to validate here yet (CP-5 measures exactly that, and it is a
+Cloudflare Full-Strict blocker, not a serving one).
+
+**A hostname check is not an origin check.** The post-flip healthcheck learned
+this the hard way: it curled the hostname, got Railway's HTML, and reported the
+flip as unhealthy. `epik-pull.sh` now takes `ORIGIN_IP` and pins the same way,
+and returns exit **3 = could not verify** rather than inventing a fault
+(`hc_verdict()`, truth table in `test/epik-pull.hcverdict.test.sh`).
+
+```sh
+ORIGIN=66.223.49.32
+HOST=prorigbuilder.com
+C="curl -sS -k --resolve $HOST:443:$ORIGIN"
+```
+
+### CP-1 — the origin serves the intended release, on every worker
+
+```sh
+cat ~/prb/current/RELEASE.json                       # what the box has staged
+$C https://$HOST/RELEASE.json                        # what the box SERVES
+WANT=$(node -e 'console.log(require(process.env.HOME+"/prb/current/RELEASE.json").source_sha)')
+for i in $(seq 1 10); do $C "https://$HOST/_env.php?cb=$i"; echo; done \
+  | tee /tmp/cp1.txt | grep -c "\"release\":\"$WANT\""    # must be 10
+grep -c '"dir_resolved":true' /tmp/cp1.txt               # must be 10 (R1, DESIGN §3.2)
+```
+
+Ten requests, not one: the convergence band is per worker. `dir_resolved:false`
+on any of them is a correctness failure, not a timing one.
+
+### CP-2 — routing and status parity (the 15-case fixture, direct)
+
+The fixture ships inside the release. Drive it with curl rather than
+`_ops/verify-epik.cjs`, because the copy in a release published before
+`EPIK_RESOLVE` existed silently follows DNS — i.e. it would grade Railway.
+
+```sh
+node -e '
+  const cs=require(process.env.HOME+"/prb/current/_ops/epik-fixture.json").cases;
+  console.log(cs.map(c=>[c.path,c.status,c.expectLocation||"",
+    (c.expectHeader&&c.expectHeader["X-Robots-Tag"])||""].join("\t")).join("\n"));
+' > /tmp/cases.tsv
+
+fail=0
+while IFS=$'\t' read -r p want loc robots; do
+  h=$(mktemp)
+  code=$($C -o /dev/null -D "$h" -w '%{http_code}' "https://$HOST$p")
+  gl=$(awk 'tolower($1)=="location:"{print $2}' "$h" | tr -d '\r' | sed 's#^https\?://[^/]*##')
+  gr=$(awk 'tolower($1)=="x-robots-tag:"{sub(/^[^:]*:[ ]*/,"");print}' "$h" | tr -d '\r')
+  ok=ok
+  [ "$code" = "$want" ] || ok="BLOCKER status=$code want=$want"
+  [ -z "$loc" ] || [ "$gl" = "$loc" ] || ok="$ok BLOCKER location=$gl want=$loc"
+  [ -z "$robots" ] || case "$gr" in *"$robots"*) ;; *) ok="$ok BLOCKER robots=$gr want=$robots";; esac
+  [ "$ok" = ok ] || fail=$((fail+1))
+  printf '%-8s %-70s %s\n' "$code" "$p" "$ok"
+  rm -f "$h"
+done < /tmp/cases.tsv
+echo "CP-2 blockers: $fail"      # must be 0
+```
+
+### CP-3 — what the pages actually render (the prerender gate, over the wire)
+
+`verify-prerender.cjs` asserts these five on `dist/` in CI. CP-3 asserts them on
+what the origin **serves**, which is the claim that matters after a flip.
+
+```sh
+# PRODUCT pages only — the same sitemap carries /parts/<cat> category indexes,
+# which legitimately have no Product JSON-LD and would read as false blockers.
+for u in $($C https://$HOST/sitemap.xml \
+            | grep -oE "https://$HOST/parts/[a-z0-9-]+/[a-z0-9-]+-[0-9]{4,}" | shuf -n 20); do
+  p=${u#https://$HOST}
+  f=$(mktemp); $C "https://$HOST$p" -o "$f"
+  t=$(grep -o '<title[ >]' "$f" | wc -l)
+  o=$(grep -o 'property="og:title"' "$f" | wc -l)
+  c=$(grep -o 'rel="canonical"' "$f" | wc -l)
+  href=$(grep -o '<link[^>]*rel="canonical"[^>]*>' "$f" | grep -o 'href="[^"]*"' | head -1 | cut -d'"' -f2)
+  bad=""
+  grep -qi 'content="noindex"' "$f" && bad="$bad noindex"
+  grep -q  'name="robots" content="index' "$f" || bad="$bad no-index-directive"
+  { [ "$t" = 1 ] && [ "$o" = 1 ] && [ "$c" = 1 ]; } || bad="$bad head-tags(t=$t,og=$o,canon=$c)"
+  [ "$href" = "$u" ] || bad="$bad canonical($href)"
+  grep -qE '"@type" *: *"Product"' "$f" || bad="$bad no-product-jsonld"
+  grep -qEi 'Skip the shop visit|Product Not Found' "$f" && bad="$bad SHELL-LEAK"
+  [ "$(wc -c < "$f")" -ge 30000 ] || bad="$bad thin($(wc -c < "$f")B)"
+  printf '%-6s %s%s\n' "$([ -z "$bad" ] && echo ok || echo BLOCK)" "$p" "$bad"
+  rm -f "$f"
+done
+```
+
+Any `noindex` here is the failure mode that cost ~10 days of product indexing in
+July — it is the one line in this file to read first.
+
+### CP-4 — production is unauthenticated and exposes nothing
+
+```sh
+$C -o /dev/null -w 'GET /            -> %{http_code}  (200, NOT 401)\n' https://$HOST/
+$C -o /dev/null -w 'GET /_ops/fixture-> %{http_code}  (403)\n'          https://$HOST/_ops/epik-fixture.json
+$C -o /dev/null -w 'GET /_ops/verify -> %{http_code}  (403)\n'          https://$HOST/_ops/verify-epik.cjs
+$C -o /dev/null -w 'GET /.htpasswd   -> %{http_code}  (403 or 404)\n'   https://$HOST/.htpasswd
+$C https://$HOST/robots.txt | head -20        # no blanket "Disallow: /"
+grep -c PRB-STAGING-GUARD ~/prb/current/.htaccess          # 0
+grep -Eci '^[[:space:]]*(AuthType|AuthUserFile|Require[[:space:]]+valid-user)' ~/prb/current/.htaccess   # 0
+ls -A ~/prb/secrets                                        # empty
+```
+
+A 401 anywhere here means a staging artifact reached the production tree.
+
+### CP-5 — cache headers, and the cert Cloudflare will judge
+
+```sh
+$C -I https://$HOST/_deploy-status.json | grep -i '^cache-control'   # must be no-store
+$C -I https://$HOST/RELEASE.json        | grep -i '^cache-control'   # must be no-store
+$C -I https://$HOST/                    | grep -i '^cache-control'   # must-revalidate
+asset=$($C https://$HOST/ | grep -o '/assets/[A-Za-z0-9._-]*\.js' | head -1)
+$C -I "https://$HOST$asset"             | grep -i '^cache-control'   # immutable
+
+# The cert, WITHOUT -k — this is allowed to fail today, and what it says matters.
+curl -sS --resolve $HOST:443:$ORIGIN -o /dev/null -w '%{http_code}\n' https://$HOST/ \
+  || echo "cert does not validate for $HOST at the origin (expected pre-cutover)"
+curl -sSv --resolve $HOST:443:$ORIGIN https://$HOST/ -o /dev/null 2>&1 \
+  | grep -E 'subject:|issuer:|expire date|SSL certificate'
+```
+
+Without `no-store` on the first two, CI's confirm-poll reads a cached answer and
+reports a deploy that did not happen (DESIGN §11). Without a valid origin cert
+for this name, Cloudflare **Full (Strict)** cannot be turned on at step 8 — fix
+the cert before choosing the SSL mode, not after.
+
+### Gate
+
+CP-1…CP-4 clean is what DNS moving is conditional on. CP-5's cert line is allowed
+to be red before cutover; its cache lines are not.
+
+---
+
+## 6. Reversing
 
 Nothing in this step changes what production serves, so there is nothing to roll
 back — the install is additive. To remove it entirely:
@@ -166,7 +305,7 @@ rm -rf ~/prb          # optional; leaves no trace
 
 ---
 
-## 6. Not in this step
+## 7. Not in this step
 
 - **Docroot flip** — step 3, `bash ~/install-phase-a.sh --production --flip`.
 - **Cron** — deliberately deferred. A `*/5` entry against an unflipped docroot

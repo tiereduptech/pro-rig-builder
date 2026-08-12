@@ -32,8 +32,20 @@
 #                 serving the tree yet. The operator flips the docroot after.
 #    --check      healthcheck the current live release and rewrite the status
 #                 file. No fetching, no swapping. Safe to run any time.
+#                 EXIT 0 = healthy, 1 = unhealthy, 3 = COULD NOT VERIFY (see below).
 #    --force      ignore the sha short-circuit and redeploy the published
 #                 release even if it matches what is already live.
+#
+#  ORIGIN_IP — WHAT THE HEALTHCHECK IS ACTUALLY MEASURING.
+#  SITE_URL is a hostname, and a hostname is resolved by DNS to whatever the
+#  world currently points it at. During a cutover that is deliberately NOT this
+#  box: prorigbuilder.com answers from Railway until DNS moves. A check that
+#  follows DNS then measures the OTHER stack and reports the difference as a
+#  fault here — which is how a clean flip got called "unhealthy".
+#  Set ORIGIN_IP (config or env) and every site request is pinned to this box
+#  with --resolve, so the check measures the thing it claims to measure. Unpinned
+#  and unanswered, it reports exit 3 "could not verify" rather than inventing a
+#  fault: see hc_verdict().
 #
 #  CURL FLOOR. The box's curl rejected --etag-save/--etag-compare (7.68+, 2020)
 #  outright: "option --etag-save: is unknown", exit 2, before a packet moved.
@@ -54,6 +66,36 @@ for a in "$@"; do
     *) echo "epik-pull: unknown argument '$a'" >&2; exit 2 ;;
   esac
 done
+
+# ── the healthcheck verdict ─────────────────────────────────────────────────
+# hc_verdict <pinned 0|1> <bad> <mine> <foreign>  ->  ok | unhealthy | unverified
+#
+# The judgement that was previously made wrongly: "the site did not answer as
+# expected" is NOT the same claim as "this box is broken". They are the same
+# claim only when we know the request reached this box.
+#
+#   mine     responses carrying a release field. _env.php ships in every release,
+#            so a response shaped like ours came from a tree of ours. mine>0
+#            means the box WAS reached, and a mismatch is then really ours.
+#   foreign  responses that were HTTP 200 and a web page which is NOT an
+#            unexecuted copy of our own _env.php (that would start "<?php").
+#            This docroot cannot produce that at this path — another stack can.
+#
+# Pinned (--resolve to ORIGIN_IP): the request went to this box by construction,
+# so every failure is this box's. Unpinned, with nothing of ours in the sample
+# and a page from something else, we have not measured this box at all — say so,
+# rather than picking the alarming interpretation of evidence that allows both.
+#
+# Defined up here, above the config read, so the truth table can be driven
+# off-box with no config, site or box: test/epik-pull.hcverdict.test.sh.
+hc_verdict() {
+  local pinned="$1" bad="$2" mine="$3" foreign="$4"
+  if [ "$bad" -eq 0 ]; then echo ok; return 0; fi
+  if [ "$pinned" = 1 ]; then echo unhealthy; return 0; fi
+  if [ "$mine" -eq 0 ] && [ "$foreign" -gt 0 ]; then echo unverified; return 0; fi
+  echo unhealthy
+}
+[ -n "${EPIK_PULL_LIB_ONLY:-}" ] && return 0 2>/dev/null
 
 # The script finds its own install root, so ONE copy of this file serves both the
 # staging and the production install with no per-target edits:
@@ -77,6 +119,18 @@ EXPECT_GUARD="${EXPECT_GUARD:-0}"
 HC_REQUESTS="${HC_REQUESTS:-10}"
 SITE_URL="${SITE_URL%/}"
 
+# ── origin pinning ──────────────────────────────────────────────────────────
+# ORIGIN_IP may come from the config (survives cron) or the environment (a
+# one-off check). Empty means "follow DNS", which is correct only once DNS
+# points here.  ORIGIN_INSECURE=1 skips cert validation on the pinned request —
+# needed while the origin's cert is issued for a name that still validates
+# elsewhere (AutoSSL's DNS validation resolves to Railway until cutover).
+ORIGIN_IP="${ORIGIN_IP:-}"
+ORIGIN_INSECURE="${ORIGIN_INSECURE:-0}"
+SITE_HOST="${SITE_URL#*://}"; SITE_HOST="${SITE_HOST%%/*}"; SITE_HOST="${SITE_HOST%%:*}"
+case "$SITE_URL" in https://*) SITE_PORT=443 ;; *) SITE_PORT=80 ;; esac
+ORIGIN_PINNED=0
+
 STATE="$ROOT/state"; RELDIR="$ROOT/releases"; TMP="$ROOT/tmp"; LOGDIR="$ROOT/log"
 mkdir -p "$STATE" "$RELDIR" "$TMP" "$LOGDIR"
 
@@ -90,6 +144,46 @@ err() { printf '%s ERROR %s\n' "$(ts)" "$*" >&2; }          # stderr -> cron MAI
 CURL_BASE=(curl -sS --connect-timeout 10 --max-time 30 --retry 2 --retry-delay 3)
 SITE_CURL=("${CURL_BASE[@]}")
 if [ -n "${BASIC_AUTH:-}" ]; then SITE_CURL+=(-u "$BASIC_AUTH"); fi
+
+# --resolve is curl 7.21.3 (2010) — almost certainly present, but the CURL FLOOR
+# note above exists because this box already refused one option we assumed it
+# had. MEASURE it. A pin that silently did nothing would be worse than no pin:
+# the check would go back to measuring DNS while reporting that it did not.
+curl_has_resolve() {
+  local rc=0 out
+  out="$(curl -sS --resolve 'pin.invalid:1:127.0.0.1' --connect-timeout 1 --max-time 2 \
+         -o /dev/null 'http://pin.invalid:1/' 2>&1)" || rc=$?
+  # 2 = curl could not parse its command line; anything else means it parsed
+  # --resolve and went on to fail at the network, which is what we want here.
+  case "$rc" in
+    2) printf '%s' "$out"; return 1 ;;
+    *) return 0 ;;
+  esac
+}
+
+if [ -n "$ORIGIN_IP" ]; then
+  if WHY="$(curl_has_resolve)"; then
+    SITE_CURL+=(--resolve "$SITE_HOST:$SITE_PORT:$ORIGIN_IP")
+    if [ "$ORIGIN_INSECURE" = 1 ]; then SITE_CURL+=(-k); fi
+    ORIGIN_PINNED=1
+  else
+    echo "epik-pull: ORIGIN_IP=$ORIGIN_IP is set, but this curl rejected --resolve:" >&2
+    echo "  $WHY" >&2
+    echo "  Refusing to run: continuing would follow DNS while reporting a pinned check." >&2
+    exit 2
+  fi
+fi
+
+# Every message that names the URL uses this, so a log line can never leave you
+# guessing whether the request went to the box or to whatever DNS says today.
+site_desc() {
+  if [ "$ORIGIN_PINNED" = 1 ]; then
+    printf '%s (pinned: %s:%s -> %s%s)' "$SITE_URL" "$SITE_HOST" "$SITE_PORT" "$ORIGIN_IP" \
+      "$([ "$ORIGIN_INSECURE" = 1 ] && printf ', cert not validated')"
+  else
+    printf '%s (whatever DNS resolves %s to)' "$SITE_URL" "$SITE_HOST"
+  fi
+}
 site_get() { "${SITE_CURL[@]}" "$SITE_URL$1"; }
 
 # curl exit codes, spelled out. "HTTP 000" means the request never completed, so
@@ -243,14 +337,24 @@ classify_env() {  # <curl-rc> <status> <bodyfile> <want-sha>
 }
 
 unanimous() {
-  local want="$1" i status rc bad=0 unresolved=0 outcome sample=''
-  local body="$TMP/hc.body" tally="$TMP/hc.outcomes"
+  local want="$1" i status rc bad=0 unresolved=0 mine=0 foreign=0 outcome sample=''
+  local body="$TMP/hc.body" tally="$TMP/hc.outcomes" verdict
   : > "$tally"
   for i in $(seq 1 "$HC_REQUESTS"); do
     rc=0
     status="$(probe_env "$body" "$$.$i")" || rc=$?
     outcome="$(classify_env "$rc" "$status" "$body" "$want")"
     printf '%s\n' "$outcome" >> "$tally"
+    # Who answered, independent of whether the answer was the RIGHT one.
+    case "$outcome" in
+      match|release=*) mine=$((mine + 1)) ;;
+    esac
+    if [ "$rc" -eq 0 ] && [ "$status" = 200 ] && [ -s "$body" ]; then
+      case "$(head -c 5 "$body" 2>/dev/null || true)" in
+        '<?php') : ;;                       # our own file, unexecuted — our fault
+        '<'*)    foreign=$((foreign + 1)) ;;  # a web page from something else
+      esac
+    fi
     if [ "$outcome" != match ]; then
       bad=$((bad + 1))
       # Keep ONE verbatim body. A tally says what class of thing went wrong; the
@@ -272,6 +376,7 @@ unanimous() {
       err "    ${n}x  $what"
     done
     err "  url:  $SITE_URL/_env.php"
+    err "  went to: $(site_desc)"
     err "  auth: $(auth_desc)"
     if [ -n "$sample" ]; then err "  first non-matching body (300B): $sample"; fi
     if [ -s "$TMP/hc.curl.err" ]; then sed 's/^/  curl: /' "$TMP/hc.curl.err" >&2 || true; fi
@@ -290,6 +395,9 @@ unanimous() {
     fi
   }
 
+  # dir_resolved=false comes out of OUR OWN _env.php, so whoever answered, it was
+  # this tree. That is a correctness failure here regardless of pinning, and it is
+  # judged before the verdict function ever runs.
   if [ "$unresolved" -gt 0 ]; then
     err "R1 INVARIANT BROKEN: _env.php reports dir_resolved=false on $unresolved/$HC_REQUESTS requests."
     err "  __DIR__ is no longer the resolved release path, so resolver.php's four reads are not pinned"
@@ -297,12 +405,32 @@ unanimous() {
     report
     return 1
   fi
-  if [ "$bad" -gt 0 ]; then
-    err "worker pool not converged: $bad/$HC_REQUESTS requests did not report release=$want"
-    report
-    return 1
-  fi
-  return 0
+
+  verdict="$(hc_verdict "$ORIGIN_PINNED" "$bad" "$mine" "$foreign")"
+  case "$verdict" in
+    ok) return 0 ;;
+    unhealthy)
+      err "worker pool not converged: $bad/$HC_REQUESTS requests did not report release=$want"
+      report
+      return 1
+      ;;
+    unverified)
+      err "COULD NOT VERIFY — and this is NOT a verdict on the release."
+      err "  All $HC_REQUESTS requests to $SITE_URL/_env.php were answered with a web page by"
+      err "  something that is not this release. _env.php ships in every release and answers"
+      err "  JSON; an unexecuted copy of it would start '<?php'. Neither is what came back."
+      err "  $SITE_HOST is a DNS name and nothing here proves it points at this box, so two"
+      err "  very different situations are indistinguishable from this evidence:"
+      err "    a) this box is serving a broken release, or"
+      err "    b) the hostname still answers from another stack and this box was never asked."
+      err "  Pin the origin and the answer is unambiguous:"
+      err "    ORIGIN_IP=<this box's public IP> $0 --check"
+      err "    (persist it by adding ORIGIN_IP= to $CONFIG; add ORIGIN_INSECURE=1 if the"
+      err "     origin's cert does not yet validate for $SITE_HOST)"
+      report
+      return 3
+      ;;
+  esac
 }
 
 # The fixture harness ships inside the release (_ops/), so the box verifies
@@ -313,13 +441,20 @@ run_fixture() {
     err "release $dir has no _ops/verify-epik.cjs — cannot verify"
     return 1
   fi
-  EPIK_BASIC_AUTH="${BASIC_AUTH:-}" node "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
+  # EPIK_RESOLVE/EPIK_INSECURE pin the fixture to the same origin as the rest of
+  # the check. A release published before this option existed ignores them and
+  # follows DNS — which is why unanimous() runs first and is the pinned gate.
+  EPIK_BASIC_AUTH="${BASIC_AUTH:-}" \
+  EPIK_RESOLVE="${ORIGIN_IP:-}" EPIK_INSECURE="$ORIGIN_INSECURE" \
+  node "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
 }
 
+# 0 = healthy, 1 = unhealthy, 3 = could not verify (see hc_verdict).
 healthcheck() {   # $1 = expected sha, $2 = label
-  local want="$1" label="$2" out
-  say "healthcheck ($label)"
-  if ! unanimous "$want"; then return 1; fi
+  local want="$1" label="$2" out rc=0
+  say "healthcheck ($label) — $(site_desc)"
+  unanimous "$want" || rc=$?
+  if [ "$rc" -ne 0 ]; then return "$rc"; fi
   out="$TMP/fixture.$label.out"
   if ! run_fixture "$RELDIR/$want" > "$out" 2>&1; then
     err "fixture FAILED ($label):"
@@ -350,10 +485,20 @@ if [ "$MODE" = check ]; then
   assert_docroot
   LIVE="$(read_state live.sha)"
   if [ -z "$LIVE" ]; then fail "unknown" "--check: no state/live.sha — nothing has been deployed yet"; fi
-  if healthcheck "$LIVE" "check"; then
+  HC_RC=0
+  healthcheck "$LIVE" "check" || HC_RC=$?
+  if [ "$HC_RC" -eq 0 ]; then
     write_status ok "manual --check passed"
     say "check ok ($LIVE)"
     exit 0
+  fi
+  if [ "$HC_RC" -eq 3 ]; then
+    # Deliberately NOT written to _deploy-status.json. This run learned nothing,
+    # and recording "unverified" would overwrite a real earlier verdict and hand
+    # epik-watchdog.yml (health != ok) an alarm about a release it never measured.
+    err "--check: NOT VERIFIED (exit 3). This is not a failure verdict, and the status"
+    err "  file is left exactly as it was — this run measured nothing to record."
+    exit 3
   fi
   fail "unhealthy" "--check failed for $LIVE"
 fi
@@ -492,9 +637,17 @@ rollback() {
   printf '%s\n' "$PREV_SHA" > "$STATE/live.sha"
   # The failed tree is KEPT, not deleted, so it can be inspected.
   sleep 15
-  if healthcheck "$PREV_SHA" "post-rollback"; then
+  local prc=0
+  healthcheck "$PREV_SHA" "post-rollback" || prc=$?
+  if [ "$prc" -eq 0 ]; then
     write_status "rolled_back" "$why; rolled back to $PREV_SHA and it is healthy"
     err "rolled back to $PREV_SHA — site healthy. Failed tree kept at $FINAL"
+  elif [ "$prc" -eq 3 ]; then
+    # The same evidence that could not judge the new release cannot judge the old
+    # one either. Saying "ALSO UNHEALTHY" here would be the same error twice.
+    write_status "rolled_back" "$why; rolled back to $PREV_SHA, whose health could not be verified either"
+    err "rolled back to $PREV_SHA. Its health COULD NOT BE VERIFIED — same reason as above,"
+    err "  not a second fault. Pin ORIGIN_IP and run: $0 --check"
   else
     write_status "rolled_back" "$why; rolled back to $PREV_SHA but IT IS ALSO UNHEALTHY"
     err "ROLLED BACK AND STILL UNHEALTHY — the site needs a human now."
@@ -502,14 +655,33 @@ rollback() {
   exit 1
 }
 
+# A deploy that cannot be VERIFIED still rolls back — going back to a release that
+# was proven good is the conservative move when we know nothing about the new one.
+# But the message says which of the two it was, because they need different fixes:
+# a broken release needs a code change, an unverifiable one needs ORIGIN_IP.
+hc_why() {  # <rc> <label>
+  if [ "$1" -eq 3 ]; then
+    printf 'healthcheck at %s COULD NOT VERIFY the release (%s did not answer from this box). Rolled back as the conservative move — this is not a fault verdict on %s. Set ORIGIN_IP in %s and re-run.' \
+      "$2" "$SITE_HOST" "$SHA" "$CONFIG"
+  else
+    printf 'healthcheck failed at %s' "$2"
+  fi
+}
+
 sleep 15
-if ! healthcheck "$SHA" "T+15s"; then
-  rollback "healthcheck failed at T+15s"
-fi
+HC_RC=0
+healthcheck "$SHA" "T+15s" || HC_RC=$?
+if [ "$HC_RC" -ne 0 ]; then rollback "$(hc_why "$HC_RC" 'T+15s')"; fi
 
 sleep $((PASS2_AT - 15))
-if ! healthcheck "$SHA" "T+${PASS2_AT}s"; then
-  rollback "healthcheck failed at T+${PASS2_AT}s (first pass had passed — a worker was idle, or it did not settle)"
+HC_RC=0
+healthcheck "$SHA" "T+${PASS2_AT}s" || HC_RC=$?
+if [ "$HC_RC" -ne 0 ]; then
+  if [ "$HC_RC" -eq 3 ]; then
+    rollback "$(hc_why 3 "T+${PASS2_AT}s")"
+  else
+    rollback "healthcheck failed at T+${PASS2_AT}s (first pass had passed — a worker was idle, or it did not settle)"
+  fi
 fi
 
 # ── 8/9. status ─────────────────────────────────────────────────────────────

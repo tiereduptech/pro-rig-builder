@@ -451,7 +451,13 @@ argument (mid-request atomicity) needs no cache behaviour to be true at all.
   independent caches to converge. The T+15s in §6.7 is sized against that band, so
   if the band moves, that number moves with it.
 - **Phase B** — create `~/public_html -> ~/prb/current` by hand, once. Flip Cloudflare
-  from Railway to Epik.
+  from Railway to Epik. **Between those two, the hostname is not evidence about this
+  box** — it still answers from Railway. Everything in that window is checked against
+  the origin directly: `ORIGIN_IP` in the config pins `epik-pull.sh`'s healthcheck with
+  `curl --resolve`, `<BASE>_RESOLVE` pins the fixture harness, and the CP-1…CP-5
+  sequence in `PHASE-B-INSTALL.md` §5 is that check by hand. Unpinned and answered by
+  another stack, the healthcheck reports exit 3 "could not verify" — it does not
+  manufacture a fault out of a DNS record (`hc_verdict()`).
 - **Phase C** — keep `deploy-epik.yml` in the repo but disabled, as break-glass.
 - **Phase D** — delete the SFTP path and its secrets after two clean weeks.
 

@@ -71,6 +71,16 @@ jobs:
 
       - run: npm ci
 
+      # The two decisions in the deploy path that cannot be exercised end to end
+      # from a dev box (git-bash has no symlink privilege; a healthcheck needs a
+      # box and a DNS record). Both are pure functions, so their truth tables run
+      # here instead — one guards against burying a live docroot, the other
+      # against reporting a fault on a box that was never asked.
+      - name: Deploy-path truth tables
+        run: |
+          bash test/install-phase-a.docroot.test.sh
+          bash test/epik-pull.hcverdict.test.sh
+
       # dist/ is committed, but the Epik artifacts are regenerated so
       # resolver-config.php / redirects.php / gone.html / .htaccess / _env.php
       # can never drift from source. build-epik.cjs remains the single source of

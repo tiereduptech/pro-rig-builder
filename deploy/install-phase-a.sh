@@ -72,6 +72,18 @@ else
   SECRETS_MODE=711
 fi
 
+# ── which origin the healthcheck talks to ───────────────────────────────────
+# SITE_URL is a hostname, and until DNS is cut over that hostname answers from
+# the OLD stack — so a healthcheck that follows DNS measures Railway and blames
+# this box for the difference. ORIGIN_IP pins every site request to this box
+# (curl --resolve), and epik-pull.sh reads it from the config so cron inherits it.
+#
+# $SSH_CONNECTION is "<client ip> <client port> <server ip> <server port>": field
+# 3 is the address THIS session reached the box on. It is a measurement, not a
+# guess — but it is only a default, printed every time, and overridable.
+ORIGIN_IP="${ORIGIN_IP:-$(printf '%s' "${SSH_CONNECTION:-}" | awk '{print $3}')}"
+ORIGIN_INSECURE="${ORIGIN_INSECURE:-0}"
+
 RAW="https://raw.githubusercontent.com/$REPO/$REF/deploy/epik-pull.sh"
 CRON_LINE="*/5 * * * * /usr/bin/flock -n $ROOT/deploy.lock $ROOT/bin/epik-pull.sh >> $ROOT/log/deploy.log"
 
@@ -452,10 +464,40 @@ SITE_URL=$SITE_URL
 DOCROOT=$DOCROOT
 BASIC_AUTH=$CFG_BASIC_AUTH
 EXPECT_GUARD=$EXPECT_GUARD
+ORIGIN_IP=$ORIGIN_IP
+ORIGIN_INSECURE=$ORIGIN_INSECURE
 RETAIN=10
 CFG
   chmod 600 "$ROOT/config"
   info "wrote $ROOT/config (mode 600, EXPECT_GUARD=$EXPECT_GUARD)"
+fi
+# Written or not, say what the healthcheck will actually talk to. An empty
+# ORIGIN_IP is legitimate — it just means "follow DNS", which is only correct
+# once DNS points here.
+CFG_ORIGIN="$(sed -n 's/^ORIGIN_IP=//p' "$ROOT/config" 2>/dev/null | head -1)"
+if [ -n "$CFG_ORIGIN" ]; then
+  info "healthchecks pinned to origin $CFG_ORIGIN (curl --resolve $SITE_URL -> $CFG_ORIGIN)"
+  if [ -n "${SSH_CONNECTION:-}" ] && [ "$CFG_ORIGIN" = "$(printf '%s' "$SSH_CONNECTION" | awk '{print $3}')" ]; then
+    info "  (that is the address this SSH session reached the box on)"
+  fi
+else
+  info "NO ORIGIN_IP in $ROOT/config — healthchecks will follow DNS for $SITE_URL."
+  info "  Correct only if that name already resolves to this box. If it does not,"
+  info "  the check measures the other stack and reports the difference as a fault here."
+  # An existing config is kept, not rewritten — but a config written before this
+  # option existed is exactly the case that produced a false "unhealthy". Offer
+  # the one line rather than editing someone's file behind their back.
+  if [ -n "$ORIGIN_IP" ]; then
+    info "  This session reached the box on $ORIGIN_IP."
+    if ask "Add ORIGIN_IP=$ORIGIN_IP to $ROOT/config?" PIN; then
+      printf 'ORIGIN_IP=%s\n' "$ORIGIN_IP" >> "$ROOT/config"
+      info "appended ORIGIN_IP=$ORIGIN_IP — healthchecks are now pinned to this box"
+    else
+      info "skipped. Add it later with: echo ORIGIN_IP=$ORIGIN_IP >> $ROOT/config"
+    fi
+  else
+    info "  Add it with: echo ORIGIN_IP=<this box's public IP> >> $ROOT/config"
+  fi
 fi
 
 # ── 5. the pull ─────────────────────────────────────────────────────────────
@@ -522,8 +564,16 @@ elif [ "$ALREADY_FLIPPED" = 1 ]; then
   # the published sha is already live, so without this a resumed run would install
   # the crontab entry having proved nothing about the site it is about to automate.
   say "Healthcheck of the already-live release"
-  if "$ROOT/bin/epik-pull.sh" --check; then
+  HC_RC=0
+  "$ROOT/bin/epik-pull.sh" --check || HC_RC=$?
+  if [ "$HC_RC" -eq 0 ]; then
     info "healthcheck PASSED — safe to proceed to the crontab step"
+  elif [ "$HC_RC" -eq 3 ]; then
+    # exit 3 is "could not verify", not "unhealthy" — but a cron entry that cannot
+    # verify what it deploys is still not something to install on that basis.
+    die "the healthcheck COULD NOT VERIFY this box (exit 3) — see the reason above. It has
+   NOT reported a fault. Not installing a cron entry on an unverified site: pin the
+   origin (ORIGIN_IP=<box ip> in $ROOT/config) and re-run this script."
   else
     die "the already-flipped docroot is UNHEALTHY. Not installing a cron entry that would
    deploy onto a broken site every 5 minutes. Fix it, or run: bash $0 --uninstall"
@@ -539,8 +589,23 @@ elif ask "Flip the $TARGET docroot ($DOCROOT) to the pull tree?" FLIP; then
   info "previous tree preserved at $DOCROOT.pre-pull"
 
   say "Healthcheck against the live $TARGET site"
-  if "$ROOT/bin/epik-pull.sh" --check; then
+  HC_RC=0
+  "$ROOT/bin/epik-pull.sh" --check || HC_RC=$?
+  if [ "$HC_RC" -eq 0 ]; then
     info "healthcheck PASSED"
+  elif [ "$HC_RC" -eq 3 ]; then
+    # The flip is a local rename of a symlink; its success is observable ON THE BOX
+    # and does not depend on where a hostname points. Offering a rollback here —
+    # or calling the site unhealthy — asserts a fault on evidence that shows none.
+    printf '\n== Healthcheck could NOT VERIFY the site — and did not report a fault.\n'
+    info "$SITE_URL is a DNS name. Nothing in the check proves it points at this box,"
+    info "and before cutover it deliberately does not — it answers from the old stack."
+    info "The flip itself is local and did succeed; verify it on the box, not over DNS:"
+    info "  readlink $DOCROOT                 # -> $ROOT/current"
+    info "  cat $ROOT/current/RELEASE.json"
+    info "and verify what this box SERVES by pinning the origin:"
+    info "  ORIGIN_IP=<this box's public IP> $ROOT/bin/epik-pull.sh --check"
+    info "NOT offering a rollback: there is no evidence of anything to roll back from."
   else
     printf '\n!! Healthcheck FAILED after the flip.\n' >&2
     if ask "Roll the docroot back to the previous tree now?" ROLLBACK; then
