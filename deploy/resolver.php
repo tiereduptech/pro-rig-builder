@@ -44,7 +44,9 @@ if (preg_match(RESOLVER_PRODUCT_RE, $path)) {
     }
 
     // X-PreRender: gone-410 — 410 status, noindex header, prebuilt noindex shell.
-    http_response_code(410);
+    // LiteSpeed/lsapi ignores http_response_code() inside an ErrorDocument
+    // sub-request (verified on-host 2026-08-12); the CGI `Status:` line is honored.
+    header('Status: 410 Gone');
     header('X-Robots-Tag: noindex');
     header('Content-Type: text/html; charset=utf-8');
     readfile(__DIR__ . '/gone.html');
@@ -52,6 +54,6 @@ if (preg_match(RESOLVER_PRODUCT_RE, $path)) {
 }
 
 // server.cjs Layer 5: SPA fallback — index.html at 200, no Cache-Control.
-http_response_code(200);
+header('Status: 200 OK'); // not http_response_code() — see the 410 note above
 header('Content-Type: text/html; charset=utf-8');
 readfile(__DIR__ . '/index.html');
