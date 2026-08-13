@@ -63,6 +63,18 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      # A gate that has never fired is unproven. A scheduled run watches whatever
+      # the EPIK_WATCH_* vars say; this lets a MANUAL run watch production (and so
+      # exercise the pinned read + hc_verdict) on demand — WITHOUT setting
+      # EPIK_WATCH_PRODUCTION, which would also arm the scheduled alarm before its
+      # code is on main. 'as-configured' (the default, and what every scheduled
+      # run gets since it carries no inputs) reads the vars unchanged.
+      watch:
+        description: 'Targets for THIS manual run (scheduled runs always use the EPIK_WATCH_* vars)'
+        type: choice
+        options: [as-configured, production, staging, both]
+        default: as-configured
 
 permissions:
   contents: read
@@ -88,17 +100,27 @@ jobs:
           # Production only. Staging is grey-cloud and already resolves to the box,
           # so pinning it would assert something already true. Empty = follow DNS.
           ORIGIN_IP: ${{ vars.EPIK_ORIGIN_IP }}
+          # '' on a scheduled run (no inputs) -> "as-configured" below.
+          OVERRIDE: ${{ github.event.inputs.watch }}
         run: |
           set -euo pipefail
           node -e '
             const t=[];
-            if (process.env.WATCH_STAGING === "true") {
+            // A scheduled run carries no inputs, so OVERRIDE is "" -> "as-configured",
+            // which reads the EPIK_WATCH_* vars exactly as before. A manual dispatch
+            // may override, so the pinned production read can be PROVEN on demand
+            // without setting EPIK_WATCH_PRODUCTION (which would also arm the
+            // scheduled alarm before its code is on main).
+            const override = process.env.OVERRIDE || "as-configured";
+            const on = (name, v) => override === name || override === "both" ||
+                                    (override === "as-configured" && v === "true");
+            if (on("staging", process.env.WATCH_STAGING)) {
               t.push({ name:"staging", url:process.env.STAGING_URL, branch:"epik-release-staging", auth:true, origin_ip:"" });
             }
-            if (process.env.WATCH_PROD === "true") {
+            if (on("production", process.env.WATCH_PROD)) {
               t.push({ name:"production", url:"https://prorigbuilder.com", branch:"epik-release", auth:false, origin_ip:process.env.ORIGIN_IP || "" });
             }
-            if (!t.length) { console.log("::warning::no targets enabled — set repo var EPIK_WATCH_STAGING=true"); }
+            if (!t.length) { console.log("::warning::no targets — set EPIK_WATCH_STAGING/PRODUCTION, or dispatch with the watch input"); }
             require("fs").appendFileSync(process.env.GITHUB_OUTPUT, "targets=" + JSON.stringify({include:t}) + "\n");
           '
 
