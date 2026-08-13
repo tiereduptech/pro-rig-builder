@@ -129,12 +129,18 @@ jobs:
     if: fromJSON(needs.setup.outputs.targets).include[0] != null
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # actions:read so the persistent-block guard can read THIS workflow's own run
+    # history via the API — that history IS the guard's state, so it needs no
+    # write, no branch and no mutable marker of its own (§8.4).
+    permissions:
+      actions: read
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.setup.outputs.targets) }}
     name: watch (${{ matrix.name }})
     steps:
       - name: Assert the box is alive and honest
+        id: assert
         env:
           SITE: ${{ matrix.url }}
           BRANCH: ${{ matrix.branch }}
@@ -176,9 +182,24 @@ jobs:
             echo "reading status file at $SITE (whatever DNS resolves $HOST to)"
           fi
 
-          RAWSTATUS=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}" 2>/dev/null || true)
-          CODE=$(printf '%s' "$RAWSTATUS" | tail -1)
-          BODY=$(printf '%s' "$RAWSTATUS" | sed '$d')
+          # ONE shot is a coin toss against an intermittent challenge, and the
+          # persistent-block guard downstream counts CONSECUTIVE blocked runs — a
+          # signal only as trustworthy as each run's blocked/not-blocked call. So
+          # retry a few times WITHIN the run when the reply is the challenge: a run
+          # is "blocked" only if the origin challenged us on every attempt in this
+          # ~10s window, which is much closer to "persistently challenging right
+          # now" than a single unlucky poll. A real read short-circuits the loop.
+          RAWSTATUS=''; CODE=''; BODY=''
+          for attempt in 1 2 3; do
+            RAWSTATUS=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}.$attempt" 2>/dev/null || true)
+            CODE=$(printf '%s' "$RAWSTATUS" | tail -1)
+            BODY=$(printf '%s' "$RAWSTATUS" | sed '$d')
+            if ! printf '%s' "$BODY" | grep -qiE 'wsidchk|request is being verified'; then
+              break
+            fi
+            echo "attempt $attempt: origin bot-protection interstitial — retrying in 3s"
+            sleep 3
+          done
 
           PUBLISHED=$(curl -sS --max-time 25 \
             "https://raw.githubusercontent.com/$REPO/$BRANCH/RELEASE.json" 2>/dev/null || true)
@@ -195,6 +216,13 @@ jobs:
           const code = process.env.CODE || '';
           const body = process.env.BODY || '';
           const pinned = process.env.PINNED === '1';
+
+          // Publish this run's verdict as a step output so the persistent-block
+          // guard (and the mark-blocked step it reads out of history) can tell a
+          // green "blocked" run apart from a green healthy one — the run's own
+          // conclusion cannot, since both are success.
+          const emit = (v) => { try { if (process.env.GITHUB_OUTPUT)
+            require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `verdict=${v}\n`); } catch (e) {} };
 
           // Parse once. "mine" = a reply shaped like OUR status file: valid JSON
           // carrying a field only we write (checked_at on every tick, live_sha on
@@ -252,8 +280,9 @@ jobs:
             // same file every 30 min, so a challenge that clears on the next tick
             // self-resolves. A PERSISTENT block is a real coverage gap — see the
             // origin-bot-protection note in deploy/DESIGN-pull-deploy.md.
-            console.log(`::warning::BLOCKED BY ORIGIN BOT PROTECTION ${process.env.SITE} — the origin answered this ${pinned ? 'PINNED ' : ''}poll with its bot-challenge interstitial (a "request is being verified" page carrying a wsidchk JS challenge), HTTP ${code}, not our status file. That page is served by a layer IN FRONT of the box, so the box was never measured — pinning does not help, because the challenge comes FROM the origin we pinned to. This is NOT a health verdict. It is intermittent and also reaches publish-epik.yml's confirm-poll; the structural fix (exempt _deploy-status.json from the challenge, whitelist the runner ranges, or have the box push its status out) is in deploy/DESIGN-pull-deploy.md.`);
+            console.log(`::warning::BLOCKED BY ORIGIN BOT PROTECTION ${process.env.SITE} — the origin answered this ${pinned ? 'PINNED ' : ''}poll with its bot-challenge interstitial (a "request is being verified" page carrying a wsidchk JS challenge), HTTP ${code}, not our status file. That page is served by a layer IN FRONT of the box, so the box was never measured — pinning does not help, because the challenge comes FROM the origin we pinned to. This is NOT a health verdict. It is intermittent and also reaches publish-epik.yml's confirm-poll; the structural fix (exempt _deploy-status.json from the challenge, or have the box push its status out) is in deploy/DESIGN-pull-deploy.md §8.4. If this recurs for enough runs in a row the persistent-block guard turns it into a HARD failure.`);
             console.log(`not verified — blocked by origin bot protection, http=${code}, pinned=${pinned}`);
+            emit('blocked');
             process.exit(0);
           }
 
@@ -263,10 +292,12 @@ jobs:
             // what hc_verdict refuses, so this WARNS and stays green.
             console.log(`::warning::CANNOT VERIFY ${process.env.SITE} — the hostname answered with a web page from something that is not this release, and this poll was NOT pinned. "The box is broken" and "the hostname still resolves elsewhere (Railway, pre-cutover)" are indistinguishable from here, so this is not a verdict on the box. Pin it: set the EPIK_ORIGIN_IP repo variable to the origin IP; clear it once DNS points here.`);
             console.log(`not verified — http=${code || '(none)'}, pinned=false`);
+            emit('unverified');
             process.exit(0);
           }
 
           if (verdict === 'unhealthy') {
+            emit('unhealthy');
             if (pinned) {
               fail.push(`the poll was PINNED to ${process.env.ORIGIN_IP}, so it reached the box by construction — and the box did not return its status file (HTTP ${code || '(no response)'}${looksMine ? '' : ', body is not our JSON'}). A real failure on the box.`);
             } else {
@@ -279,7 +310,11 @@ jobs:
           }
 
           // verdict === 'ok': we hold OUR status file, so the read provably reached
-          // the box (pinned or not) and every rule below is a real judgement.
+          // the box (pinned or not) and every rule below is a real judgement. From
+          // the guard's view this run reached the box — it is NOT blocked — even if
+          // a health rule below fails it red; emit before those checks so a real
+          // health failure still resets the block streak.
+          emit('ok');
           if (s) {
             // ── RULE 1: is the loop alive? reads checked_at ──────────────────
             const ageMin = mins(s.checked_at);
@@ -360,3 +395,91 @@ jobs:
           console.log(`     loop ran ${s ? ago(mins(s.checked_at)) : '?'} ago (checked_at=${s && s.checked_at})`);
           console.log(`     health measured ${s && s.verified_at ? ago(mins(s.verified_at)) : '?'} ago (verified_at=${s && s.verified_at})`);
           NODE
+
+      # A green run whose conclusion is `success` cannot tell history WHY it was
+      # green — healthy and blocked look identical from the outside. This step is
+      # the distinguishing mark: it RUNS (conclusion `success`) only when the
+      # assert step returned `blocked`, and is SKIPPED otherwise. The guard below
+      # reads this step's presence off recent runs to count CONSECUTIVE blocks. Its
+      # name is load-bearing — the guard matches on it — so do not rename one
+      # without the other.
+      - name: mark-blocked
+        if: steps.assert.outputs.verdict == 'blocked'
+        run: echo "origin bot-protection block recorded for ${{ matrix.name }} (run ${{ github.run_id }})"
+
+      # ── persistent-block guard ──────────────────────────────────────────────
+      # green-on-blocked (the assert step) removes the FALSE red, but it opens a
+      # worse door: a PERSISTENT block turns this alarm SILENT. Blocked, the
+      # watchdog cannot read _deploy-status.json at all, so not one health rule
+      # runs and even the verified_at staleness rule never fires (it needs a
+      # successful read). A muted alarm is exactly the sftp-ingest timeout that
+      # went unnoticed for a week, in a new costume — and silent is worse than red.
+      #
+      # So: when THIS target has been blocked for BLOCKED_MAX runs IN A ROW, fail
+      # loudly. The state is the run history itself — no branch, no writes, no
+      # mutable marker that can itself get stuck or drift. We read the last
+      # completed runs of THIS workflow newest-first, and for each look at its
+      # `watch (<target>)` job for the mark-blocked step. A run that reached ANY
+      # real verdict skipped that step and so ENDS the streak — correct, because
+      # the box was measured, and such a run is already loud on its own if it was
+      # a health failure. Early runs after deploy have no history and so can never
+      # trip the threshold: the guard only ever fires on genuine, sustained blocks.
+      - name: Guard against a persistent silent block
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          TARGET: ${{ matrix.name }}
+          VERDICT: ${{ steps.assert.outputs.verdict }}
+          RUN_ID: ${{ github.run_id }}
+          # 30-min cron, so 6 in a row is ~3h of unbroken blocking — long past
+          # "intermittent", and each run already retries the poll 3x internally.
+          # Tune with the repo variable without touching this file.
+          BLOCKED_MAX: ${{ vars.EPIK_WATCHDOG_BLOCKED_MAX || '6' }}
+        run: |
+          set -uo pipefail
+
+          # Only a blocked run can extend a streak. Anything else — a real health
+          # verdict, an unverified, an empty output from a step that hard-failed
+          # for another reason — means the box WAS reached (or the run is already
+          # red for its own reason), so there is nothing silent to guard here.
+          if [ "$VERDICT" != "blocked" ]; then
+            echo "verdict='${VERDICT:-<none>}' (not blocked) — block streak reset, nothing to guard"
+            exit 0
+          fi
+
+          JOB_NAME="watch ($TARGET)"
+          echo "this run is BLOCKED; counting the consecutive blocked streak for '$JOB_NAME' (threshold $BLOCKED_MAX)"
+
+          # Prior completed runs of this workflow, newest first. The current run is
+          # still in_progress and so is excluded by status=completed.
+          RUN_IDS=$(gh api "/repos/$REPO/actions/workflows/epik-watchdog.yml/runs?status=completed&per_page=30" \
+                    --jq '.workflow_runs[].id' 2>/dev/null || true)
+
+          streak=0    # consecutive blocked runs BEFORE this one
+          for rid in $RUN_IDS; do
+            [ "$rid" = "$RUN_ID" ] && continue
+            JOBS=$(gh api "/repos/$REPO/actions/runs/$rid/jobs" 2>/dev/null || true)
+            [ -z "$JOBS" ] && continue    # transient API miss — no info, do not break
+            present=$(printf '%s' "$JOBS" | jq --arg n "$JOB_NAME" \
+                      '[.jobs[] | select(.name==$n)] | length' 2>/dev/null || echo 0)
+            # This run did not watch this target (staging-only, etc.) — it carries
+            # no evidence either way, so skip it without ending the streak.
+            [ "${present:-0}" -eq 0 ] && continue
+            wasblocked=$(printf '%s' "$JOBS" | jq --arg n "$JOB_NAME" \
+                        '[.jobs[] | select(.name==$n) | .steps[]? | select(.name=="mark-blocked" and .conclusion=="success")] | length' 2>/dev/null || echo 0)
+            if [ "${wasblocked:-0}" -ge 1 ]; then
+              streak=$((streak + 1))
+            else
+              break    # a run that reached a real verdict — the streak ends here
+            fi
+          done
+
+          total=$((streak + 1))   # + this run
+          echo "consecutive blocked runs for $TARGET, including this one: $total (threshold $BLOCKED_MAX)"
+
+          if [ "$total" -ge "$BLOCKED_MAX" ]; then
+            echo "::error::PERSISTENT ORIGIN BLOCK — $TARGET has been blocked by origin bot protection for $total watchdog runs in a row (~$((total * 30)) min). This stopped being intermittent hours ago: the watchdog has been UNABLE TO READ _deploy-status.json that whole time, so it can no longer tell whether the box is healthy. This is the silent-alarm failure the watchdog exists to prevent, so it now fails LOUDLY. Fix the block — see deploy/DESIGN-pull-deploy.md §8.4 (option 1: exempt the status path). Verify the box by hand meanwhile with a pinned curl or over SSH."
+            exit 1
+          fi
+          echo "under threshold — the block is not yet persistent, staying green (the streak will keep climbing until it clears or trips)"
