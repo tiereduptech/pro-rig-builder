@@ -427,31 +427,42 @@ untouched. Because both remote checks retry (watchdog every 30 min; confirm-poll
 ~20 min), an *intermittent* challenge self-heals — one clear read is enough, and the
 production publish did confirm green, so not every request is challenged.
 
-**Residual gap this buys.** Green-on-`blocked` removes the false red, but a *persistent*
-challenge would make the watchdog silently stop verifying — it cannot read the status file
-at all, so even the `verified_at` staleness guard (§8.2) never fires, because that guard
-needs a successful read. A muted alarm is exactly what §8 exists to prevent, so this trade
-is only acceptable while the block is intermittent. A durable fix is needed; a
-"consecutive-`blocked` runs exceed a threshold → alarm" guard would need cross-run state
-the stateless watchdog does not keep today (an artifact or a committed marker), so it is
-noted here as the follow-up, not yet built.
+**Residual gap this buys — and the guard that closes it.** Green-on-`blocked` removes the
+false red, but on its own it opens a worse door: a *persistent* challenge would make the
+watchdog silently stop verifying — it cannot read the status file at all, so no health rule
+runs and even the `verified_at` staleness rule never fires (that rule needs a successful
+read). A muted alarm is exactly what §8 exists to prevent, and silent is worse than red —
+it is the sftp-ingest timeout that went unnoticed for a week, in a new costume. So the
+watchdog now **fails loudly when a target has been `blocked` for `BLOCKED_MAX` runs in a
+row** (default 6 ≈ 3 h; repo variable `EPIK_WATCHDOG_BLOCKED_MAX`). The guard's state is
+the run history itself: it reads the last completed runs of its own workflow via the API
+(`actions: read`, no branch, no writes, no mutable marker that could itself drift) and
+counts consecutive runs whose per-target job ran the `mark-blocked` step — a green,
+queryable marker that a run emits only when its verdict was `blocked`, since a run's own
+`success` conclusion cannot distinguish blocked from healthy. Any run that reaches a real
+verdict skips that step and ends the streak. To keep the per-run blocked/not-blocked call
+trustworthy, the poll retries up to 3× within a run when it sees the challenge, so a run is
+`blocked` only when the origin challenged every attempt in that window — closer to "the
+origin is persistently challenging right now" than a single unlucky poll. So: an
+*intermittent* challenge self-heals within a run or across the 30-min cadence and stays
+green; a *sustained* one goes red within ~3 h. The gap is closed, not just documented.
 
-**The structural options, assessed.** In rough order of preference:
+**The structural fix, assessed.**
 
-1. **Exempt the status path from the challenge (preferred).** Serve `_deploy-status.json`
+1. **Exempt the status path from the challenge — the real fix.** Serve `_deploy-status.json`
    (and `_env.php`) from a URL rule the bot protection skips. This keeps the pull model
    intact — the check still reads the *real live site*, which is the property the pin was
    added to guarantee. Viability depends on **where** the challenge sits: if it is applied
    at the edge before `.htaccess` runs, an `.htaccess` exclusion cannot reach it and the
-   exemption has to be set in the bot-protection control (cPanel / provider UI). Next
-   action: from a runner, confirm the challenge fires on these exact paths, then test a
-   per-path allowlist in that control.
-2. **Whitelist the runner ranges (fragile fallback).** GitHub publishes its Actions egress
-   ranges at `api.github.com/meta`, but they are large and rotate without notice, so a
-   static cPanel allowlist silently reopens the gap on the next rotation and needs ongoing
-   upkeep. It may also not be exposed at all on managed bot protection. Use only if option
-   1 is unavailable, and treat it as maintenance debt, not a fix.
-3. **Invert to push — box publishes its status somewhere unchallenged (reserve, secondary
+   exemption has to be set in the bot-protection control (cPanel / provider UI); if a
+   browser User-Agent slips through where curl's does not, the challenge is UA-heuristic and
+   the poll can dodge it immediately by sending a realistic UA. `epik-origin-probe.yml` is a
+   `workflow_dispatch` probe that answers exactly this from a runner — it fetches the two
+   paths we care about, a pure-static file (`gone.html`, no PHP), and an `.htaccess`-produced
+   redirect, each under both a curl and a browser UA against the pinned origin, and prints
+   which layer the challenge lives in plus the implied fix. Run it before asking Epik for
+   anything, so the ask is specific.
+2. **Invert to push — box publishes its status somewhere unchallenged (reserve, secondary
    only).** The box already runs cron; it could `PUT`/commit `_deploy-status.json` to a
    place the runner reads without touching Epik (a private gist, a status branch via the
    GitHub API, an object store). This sidesteps the challenge entirely. **But** the checks
@@ -461,9 +472,15 @@ noted here as the follow-up, not yet built.
    *second* heartbeat for loop-liveness, and it adds an outbound credential to the box, but
    it must not become the sole health signal.
 
-Recommendation: ship the detection above now (done — it stops the false red immediately),
-pursue **option 1** as the real fix, and keep **option 3** only as a supplementary
-liveness channel. Revisit the persistent-block guard if blocks stop being intermittent.
+*A static allowlist of GitHub's runner ranges was considered and rejected: the Actions
+egress ranges (`api.github.com/meta`) are large and rotate without notice, so a static
+cPanel allowlist silently reopens the gap on the next rotation — worse than the problem it
+solves.*
+
+Recommendation: the detection and the persistent-block guard above are shipped (they stop
+the false red and make a sustained block loud). Run `epik-origin-probe.yml` to locate the
+challenge layer, then pursue **option 1** as the durable fix; keep **option 2** only as a
+supplementary liveness channel.
 
 ## 9. Transport: tarball, not shallow fetch — DECIDED
 
@@ -599,4 +616,5 @@ Full (Strict) — AutoSSL's DNS validation currently resolves to Railway.
 | Two crons overlapping | `flock -n` no-op |
 | Bad release reaches live | Two-pass healthcheck + automatic rollback to `prev` |
 | Silent failure | CI confirm-poll goes red on timeout |
-| Origin bot protection challenges the runner (`wsidchk` interstitial) | Detected and read as `blocked`, not a box fault — watchdog and confirm-poll warn and stay green, box returns exit 3 (§8.4). Intermittent challenges self-heal on retry; a *persistent* block is a residual coverage gap needing the option-1 path exemption (§8.4) |
+| Origin bot protection challenges the runner (`wsidchk` interstitial) | Detected and read as `blocked`, not a box fault — watchdog and confirm-poll warn and stay green, box returns exit 3 (§8.4). Intermittent challenges self-heal on retry |
+| A *persistent* block turns the watchdog silent (can't read the status file, so no rule fires) | Persistent-block guard: the watchdog counts consecutive `blocked` runs from its own run history and **fails loudly after `BLOCKED_MAX`** (default 6 ≈ 3 h). Silent is worse than red (§8.4) |

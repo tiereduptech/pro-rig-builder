@@ -1,0 +1,178 @@
+name: Epik origin probe (bot-protection layer)
+
+# =============================================================================
+#  A one-shot, on-demand probe that answers ONE question, from a GitHub runner —
+#  the same vantage point the watchdog and confirm-poll read from:
+#
+#    When Epik's shared hosting challenges us with the wsidchk "request is being
+#    verified" interstitial, WHERE does that challenge live? — because that
+#    decides how it can be exempted (DESIGN §8.4, option 1):
+#
+#      edge / pre-.htaccess  -> even a pure static file is challenged. .htaccess
+#                               cannot reach it; the exemption must be set in the
+#                               provider's bot-protection control.
+#      handler / path-scoped -> static files pass but PHP / the status JSON are
+#                               challenged. A per-path exclusion (.htaccess or the
+#                               bot tool) is likely to work.
+#      UA-heuristic          -> curl's User-Agent is challenged where a browser UA
+#                               is not. The poll can dodge it immediately by sending
+#                               a realistic UA; a UA/path allow is the durable fix.
+#      not reproduced        -> nothing challenged this run. The block is transient;
+#                               re-run a few times, ideally under load.
+#
+#  It only ever GETs the origin's own pages (read-only), pinned to EPIK_ORIGIN_IP
+#  exactly as the watchdog pins, so it measures the BOX and not whatever DNS points
+#  at pre-cutover. Dispatch it, read the summary, THEN ask Epik with specifics.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        description: 'Which origin to probe'
+        type: choice
+        options: [production, staging]
+        default: production
+      origin_ip:
+        description: 'Override the pinned origin IP (blank = use the EPIK_ORIGIN_IP repo variable)'
+        default: ''
+
+permissions: {}
+
+concurrency:
+  group: epik-origin-probe
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe the origin and locate the challenge layer
+        env:
+          SITE: ${{ github.event.inputs.site == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
+          AUTH: ${{ github.event.inputs.site == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+          # Same pin as the watchdog: production is the challenged, pre-DNS target.
+          # An explicit input wins, else the repo variable (production only).
+          ORIGIN_IP: ${{ github.event.inputs.origin_ip != '' && github.event.inputs.origin_ip || (github.event.inputs.site == 'production' && vars.EPIK_ORIGIN_IP || '') }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -uo pipefail
+          HOST=${SITE#*://}; HOST=${HOST%%/*}; HOST=${HOST%%:*}
+
+          BASE=(-sS --max-time 20 -D /tmp/hdr -o /tmp/body -w '%{http_code}')
+          [ -n "$AUTH" ] && BASE+=(-u "$AUTH")
+          if [ -n "$ORIGIN_IP" ]; then
+            BASE+=(--resolve "$HOST:443:$ORIGIN_IP" -k)
+            PIN="pinned: $HOST:443 -> $ORIGIN_IP (cert not validated)"
+          else
+            PIN="following DNS for $HOST"
+            echo "::warning::EPIK_ORIGIN_IP is unset and no override was given — this follows DNS, which pre-cutover answers from RAILWAY, not the box. The layer verdict will not describe the box's origin. Set the repo variable or pass the origin_ip input."
+          fi
+          echo "probing $SITE — $PIN"
+
+          # curl's honest default UA vs a current desktop-Chrome UA. If the second
+          # slips through where the first is challenged, the rule is UA-based.
+          UA_CURL="epik-origin-probe/1.0 (+github-actions; read-only origin probe)"
+          UA_CHROME="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+
+          # path | what it exercises. gone.html and robots.txt are PURE STATIC (no
+          # PHP, no rewrite) — if THEY are challenged, the challenge is in front of
+          # everything. _env.php is a PHP handler; the JSON is the watchdog's real
+          # read; the nonexistent path exercises the .htaccess rewrite -> resolver.
+          PATHS=(
+            "/_deploy-status.json|static JSON — the watchdog's actual read"
+            "/_env.php|PHP handler"
+            "/gone.html|pure static file (no PHP, no rewrite)"
+            "/robots.txt|pure static file"
+            "/|homepage"
+            "/__probe-nonexistent-$RUN_ID|unknown path — .htaccess rewrite then PHP resolver"
+          )
+
+          # Fetch one path with one UA. Echoes CHALLENGE or ok:<code>; captures the
+          # FIRST challenged response's headers+body as evidence.
+          EVID=0
+          probe() {  # $1=path  $2=ua
+            local code
+            code=$(curl "${BASE[@]}" -A "$2" "$SITE$1?cb=$RUN_ID" 2>/dev/null || echo 000)
+            if grep -qiE 'wsidchk|request is being verified' /tmp/body 2>/dev/null; then
+              if [ "$EVID" = 0 ]; then cp /tmp/hdr /tmp/evid.hdr 2>/dev/null || true; cp /tmp/body /tmp/evid.body 2>/dev/null || true; EVID=1; fi
+              printf 'CHALLENGE'
+            else
+              printf 'ok:%s' "$code"
+            fi
+          }
+
+          declare -A RC RH
+          for entry in "${PATHS[@]}"; do
+            p=${entry%%|*}
+            RC[$p]=$(probe "$p" "$UA_CURL")
+            RH[$p]=$(probe "$p" "$UA_CHROME")
+          done
+
+          ch() { [ "$1" = CHALLENGE ]; }
+
+          # ── build the results table ──────────────────────────────────────────
+          {
+            echo "## Epik origin probe — $SITE"
+            echo ""
+            echo "$PIN"
+            echo ""
+            echo "| path | exercises | curl UA | browser UA |"
+            echo "|---|---|---|---|"
+            for entry in "${PATHS[@]}"; do
+              p=${entry%%|*}; desc=${entry#*|}
+              echo "| \`$p\` | $desc | ${RC[$p]} | ${RH[$p]} |"
+            done
+            echo ""
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          # ── classify the layer ───────────────────────────────────────────────
+          static_ch=0
+          for p in /gone.html /robots.txt; do ch "${RC[$p]}" && static_ch=1; done
+          status_ch=0; ch "${RC[/_deploy-status.json]}" && status_ch=1
+          env_ch=0;    ch "${RC[/_env.php]}"            && env_ch=1
+          ua_dodge=0
+          for entry in "${PATHS[@]}"; do p=${entry%%|*}; if ch "${RC[$p]}" && ! ch "${RH[$p]}"; then ua_dodge=1; fi; done
+          any_ch=0
+          for entry in "${PATHS[@]}"; do p=${entry%%|*}; { ch "${RC[$p]}" || ch "${RH[$p]}"; } && any_ch=1; done
+
+          verdict=""; advice=""
+          if [ "$any_ch" = 0 ]; then
+            verdict="NOT REPRODUCED — nothing was challenged this run."
+            advice="The block is transient, not constant (the watchdog's green-on-blocked + retry already absorbs that, and the persistent-block guard catches a sustained one). Re-run this probe a few times, ideally when a deploy is in flight, before concluding it is gone."
+          elif [ "$ua_dodge" = 1 ] && [ "$static_ch" = 0 ]; then
+            verdict="UA-HEURISTIC — curl's User-Agent is challenged where a browser UA passes."
+            advice="Immediate mitigation: have the watchdog and confirm-poll send a browser User-Agent (-A) on the status read. Durable fix: ask Epik to allow the runner by UA or to exempt the status path in the bot-protection control. This does NOT need .htaccess."
+          elif [ "$static_ch" = 1 ]; then
+            verdict="EDGE / PRE-.HTACCESS — even a pure static file is challenged."
+            advice="The challenge runs before .htaccess, so an .htaccess exclusion cannot reach it. The exemption MUST be set in Epik's bot-protection control (cPanel / provider UI): allow the specific path(s) _deploy-status.json and _env.php, or the runner egress. Ask Epik for a per-path/UA exclusion at the WAF/bot layer, not a rewrite rule."
+          elif [ "$status_ch" = 1 ] || [ "$env_ch" = 1 ]; then
+            verdict="HANDLER / PATH-SCOPED — static files pass, but the status JSON and/or PHP are challenged."
+            advice="A per-path exclusion is likely to work. Try it at the .htaccess/app layer first (cheapest, in our control); if that does not clear it, the same exclusion in Epik's bot-protection control will. Ask Epik to exempt _deploy-status.json and _env.php specifically."
+          else
+            verdict="MIXED — a challenge appeared but not on the paths the checks read."
+            advice="Read the table above: the checks read _deploy-status.json (and _env.php). If those are green here, the earlier watchdog block may have been transient. Re-run under load."
+          fi
+
+          {
+            echo "### Verdict: $verdict"
+            echo ""
+            echo "$advice"
+            echo ""
+            if [ -s /tmp/evid.hdr ]; then
+              srv=$(grep -i '^server:' /tmp/evid.hdr | head -1 | tr -d '\r' || true)
+              echo "**Evidence — first challenged response**"
+              echo ""
+              echo '```'
+              [ -n "$srv" ] && echo "$srv"
+              head -c 400 /tmp/evid.body 2>/dev/null | tr -d '\r' | tr '\n' ' '
+              echo ""
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          echo ""
+          echo "VERDICT: $verdict"
+          echo "$advice"
+          echo "(full table in the run summary)"
