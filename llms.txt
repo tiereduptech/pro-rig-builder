@@ -1,0 +1,17 @@
+﻿# Pro Rig Builder
+
+> PC part comparison and upgrade tool. Compare prices across Amazon, Newegg, and Best Buy. Scan your PC to get personalized upgrade recommendations.
+
+## Main Pages
+
+- [Home](https://prorigbuilder.com/): Compare PC part prices across retailers
+- [PC Builder](https://prorigbuilder.com/builder): Build a full PC with live prices
+- [Upgrade Tool](https://prorigbuilder.com/upgrade): Scan your PC and get upgrade recommendations
+- [Browse GPUs](https://prorigbuilder.com/parts/gpu): Graphics card price comparison
+- [Browse CPUs](https://prorigbuilder.com/parts/cpu): Processor price comparison
+- [What Can I Upgrade](https://prorigbuilder.com/what-can-i-upgrade): Upgrade guide
+
+## About
+
+- Pro Rig Builder is a project by TieredUp Tech, Inc.
+- Prices update daily from retailer APIs.
