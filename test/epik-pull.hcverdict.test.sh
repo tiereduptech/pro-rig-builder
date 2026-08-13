@@ -10,16 +10,20 @@
 #
 #  So the verdict is a pure function of four counts, and this drives it:
 #
-#    pinned   1 when the request was pinned to the origin with --resolve, so it
-#             reached this box by construction
-#    bad      responses that were not the expected release
-#    mine     responses carrying a release field — shaped like our own _env.php,
-#             therefore answered by a tree of ours
-#    foreign  HTTP 200 web pages that are not an unexecuted copy of our _env.php
+#    pinned     1 when the request was pinned to the origin with --resolve, so it
+#               reached this box by construction
+#    bad        responses that were not the expected release
+#    mine       responses carrying a release field — shaped like our own
+#               _env.php, therefore answered by a tree of ours
+#    foreign    HTTP 200 web pages that are not an unexecuted copy of our _env.php
+#    challenged the origin's bot-protection interstitial (wsidchk). A page served
+#               IN FRONT of the box, so it can appear even when pinned.
 #
 #  The single rule: "unverified" requires evidence that we were not measured —
-#  unpinned AND nothing of ours answered AND something else did. Everything else
-#  that fails is ours to own.
+#  unpinned AND nothing of ours answered AND something else did. A challenge is a
+#  stronger form of the same thing — the origin itself intercepted the request
+#  ahead of the app — so it reads "blocked" and outranks even the pinned verdict.
+#  Everything else that fails is ours to own.
 #
 #  Run:  bash test/epik-pull.hcverdict.test.sh
 # =============================================================================
@@ -47,9 +51,9 @@ fi
 PASS=0; FAIL=0
 RESULTS=()
 
-check() { # check <desc> <pinned> <bad> <mine> <foreign> <want>
-  local desc="$1" pinned="$2" bad="$3" mine="$4" foreign="$5" want="$6" got
-  got="$(hc_verdict "$pinned" "$bad" "$mine" "$foreign")"
+check() { # check <desc> <pinned> <bad> <mine> <foreign> <want> [challenged]
+  local desc="$1" pinned="$2" bad="$3" mine="$4" foreign="$5" want="$6" challenged="${7:-0}" got
+  got="$(hc_verdict "$pinned" "$bad" "$mine" "$foreign" "$challenged")"
   if [ "$got" = "$want" ]; then
     PASS=$((PASS + 1)); RESULTS+=("  ok    $desc -> $got")
   else
@@ -85,6 +89,22 @@ check "unpinned, partial convergence   " 0 3  7  0 unhealthy
 # stack, so there is nothing supporting "someone else answered". Own it.
 check "unpinned, all timed out         " 0 10 0 0 unhealthy
 check "unpinned, all 401               " 0 10 0 0 unhealthy
+
+# ── challenged: the origin's bot-protection interstitial ───────────────────
+# A wsidchk page is served by a layer IN FRONT of the box, so it never measured
+# the box — pinned or not. "blocked" outranks the pinned verdict: this is the
+# GitHub-runner case that used to be miscalled "the box did not return its file".
+check "pinned,   all challenged        " 1 10 0 10 blocked 10
+check "unpinned, all challenged        " 0 10 0 10 blocked 10
+check "pinned,   one challenge in pool  " 1 10 0 1  blocked 1
+# A challenge among genuine box answers still means the box WAS reached and a
+# mismatch is real — challenged only decides the verdict when the pool did not
+# converge on its own. (bad>0 with mine>0 is a real non-convergence; the origin
+# challenging some OTHER request does not turn that into "not measured".) The
+# guard is that hc_verdict returns blocked whenever challenged>0 AND bad>0, which
+# is the conservative reading: if anything was blocked, do not manufacture a box
+# fault. Documented as such so the box+watchdog stay identical.
+check "challenged beats convergence    " 1 3  7  0 blocked 2
 
 printf '\nhc_verdict truth table\n'
 printf '%s\n' "==========================================================="
@@ -123,6 +143,46 @@ for pinned in 0 1; do
 done
 [ "$INV2" -eq 0 ] && printf '  ok    18 combinations, none unverified\n'
 INV_FAIL=$((INV_FAIL + INV2))
+
+printf '\ninvariant 3: a challenge on a non-converged pool is ALWAYS blocked\n'
+printf '  (something in front of the box answered — never manufacture a box fault)\n'
+INV3=0
+for pinned in 0 1; do
+  for bad in 1 5 10; do
+    for mine in 0 5 10; do
+      for foreign in 0 5 10; do
+        got="$(hc_verdict "$pinned" "$bad" "$mine" "$foreign" 1)"
+        if [ "$got" != blocked ]; then
+          printf '  FAIL  pinned=%s bad=%s mine=%s foreign=%s challenged=1 -> %s\n' \
+            "$pinned" "$bad" "$mine" "$foreign" "$got"
+          INV3=$((INV3 + 1))
+        fi
+      done
+    done
+  done
+done
+[ "$INV3" -eq 0 ] && printf '  ok    54 combinations, all blocked\n'
+INV_FAIL=$((INV_FAIL + INV3))
+
+printf '\ninvariant 4: no challenge -> verdict is exactly as before (challenged is additive)\n'
+INV4=0
+for pinned in 0 1; do
+  for bad in 0 1 5 10; do
+    for mine in 0 5 10; do
+      for foreign in 0 5 10; do
+        with="$(hc_verdict "$pinned" "$bad" "$mine" "$foreign" 0)"
+        without="$(hc_verdict "$pinned" "$bad" "$mine" "$foreign")"
+        if [ "$with" != "$without" ] || [ "$with" = blocked ]; then
+          printf '  FAIL  pinned=%s bad=%s mine=%s foreign=%s -> with0=%s without=%s\n' \
+            "$pinned" "$bad" "$mine" "$foreign" "$with" "$without"
+          INV4=$((INV4 + 1))
+        fi
+      done
+    done
+  done
+done
+[ "$INV4" -eq 0 ] && printf '  ok    72 combinations, identical with challenged=0 and unchanged 4-arg form\n'
+INV_FAIL=$((INV_FAIL + INV4))
 
 TOTAL_FAIL=$((FAIL + INV_FAIL))
 printf '\n'

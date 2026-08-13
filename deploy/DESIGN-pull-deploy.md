@@ -367,7 +367,10 @@ plus the published `epik-release` `RELEASE.json`, and **fails the workflow** if 
   and **warns**, without failing, if `verified_at` is older than `VERIFY_WARN_MIN` (26h —
   past a full nightly cycle plus margin). Health is only re-measured when something
   happens, so a day-old verdict is the normal steady state; failing on it would rebuild
-  the cries-wolf problem the split was made to remove.
+  the cries-wolf problem the split was made to remove. It also **warns**, without failing,
+  when the origin answers with its bot-protection interstitial instead of the status file
+  (`blocked` — §8.4): that page is served in front of the box, so the box was never
+  measured, and calling it a fault would be the same cries-wolf error.
   - `live_sha != ` the sha currently published on `epik-release` (a deploy that never
     landed, or landed and rolled back)
   - the docroot assertion flag is set
@@ -392,6 +395,75 @@ Worst-case latency: 5 min cron + up to ~5 min of `raw.githubusercontent` CDN cac
 `RELEASE.json` ≈ 10 min from merge to live. If that is too slow, the poll can move to the
 GitHub API (`/commits/epik-release`) which is not CDN-cached — at the cost of a 60/hr
 unauthenticated rate limit shared across the host's IP.
+
+### 8.4 — Origin bot protection: the shared-hosting constraint on the verification layer
+
+Both remote checks — the watchdog (§8.2) and the confirm-poll (§8, channel 3) — read
+`_deploy-status.json` over HTTPS **from a GitHub runner**. Epik's shared hosting sits
+behind server-side bot protection that intermittently challenges datacenter IPs, GitHub's
+runner ranges among them: instead of the JSON it answers **HTTP 200 with an HTML
+interstitial** — a "please wait while your request is being verified" page carrying a
+`wsidchk` JavaScript challenge. This is the one shared-hosting fact that reaches directly
+into the layer the whole pull design leans on to know the box is alive.
+
+**Why it is not a box fault, and why pinning does not fix it.** The interstitial is served
+by a layer *in front of* the release, before the request reaches `_env.php` /
+`_deploy-status.json`. The origin pin (`--resolve` to `EPIK_ORIGIN_IP`, §3/§11) forces the
+request to the box's IP and so closes the DNS-resolves-to-Railway gap — but the challenge
+is served **by that same origin IP**, ahead of the app, so a pinned request is challenged
+just the same. This breaks the otherwise-safe inference "pinned, therefore any failure is
+the box's". It is the same shape as `hc_verdict()`'s `unverified`: *something else
+answered* is not *the box served garbage*.
+
+**What the code now does.** `hc_verdict()` gains a fifth input, `challenged`, and a fourth
+verdict, `blocked`, which **outranks the pinned verdict** (`deploy/epik-pull.sh`,
+`test/epik-pull.hcverdict.test.sh` invariant 3). All three readers detect the signature
+(`wsidchk` / "request is being verified") and treat it as *not a verdict on the box*: the
+watchdog warns and stays green instead of failing with "the box did not return its status
+file"; the confirm-poll, if the **entire** ~20-min window was challenged and our status
+file never once got through, warns and stays green instead of "real failure to confirm";
+the box's own `--check`/deploy path returns 3 (could-not-verify), leaving the prior status
+untouched. Because both remote checks retry (watchdog every 30 min; confirm-poll 80× over
+~20 min), an *intermittent* challenge self-heals — one clear read is enough, and the
+production publish did confirm green, so not every request is challenged.
+
+**Residual gap this buys.** Green-on-`blocked` removes the false red, but a *persistent*
+challenge would make the watchdog silently stop verifying — it cannot read the status file
+at all, so even the `verified_at` staleness guard (§8.2) never fires, because that guard
+needs a successful read. A muted alarm is exactly what §8 exists to prevent, so this trade
+is only acceptable while the block is intermittent. A durable fix is needed; a
+"consecutive-`blocked` runs exceed a threshold → alarm" guard would need cross-run state
+the stateless watchdog does not keep today (an artifact or a committed marker), so it is
+noted here as the follow-up, not yet built.
+
+**The structural options, assessed.** In rough order of preference:
+
+1. **Exempt the status path from the challenge (preferred).** Serve `_deploy-status.json`
+   (and `_env.php`) from a URL rule the bot protection skips. This keeps the pull model
+   intact — the check still reads the *real live site*, which is the property the pin was
+   added to guarantee. Viability depends on **where** the challenge sits: if it is applied
+   at the edge before `.htaccess` runs, an `.htaccess` exclusion cannot reach it and the
+   exemption has to be set in the bot-protection control (cPanel / provider UI). Next
+   action: from a runner, confirm the challenge fires on these exact paths, then test a
+   per-path allowlist in that control.
+2. **Whitelist the runner ranges (fragile fallback).** GitHub publishes its Actions egress
+   ranges at `api.github.com/meta`, but they are large and rotate without notice, so a
+   static cPanel allowlist silently reopens the gap on the next rotation and needs ongoing
+   upkeep. It may also not be exposed at all on managed bot protection. Use only if option
+   1 is unavailable, and treat it as maintenance debt, not a fix.
+3. **Invert to push — box publishes its status somewhere unchallenged (reserve, secondary
+   only).** The box already runs cron; it could `PUT`/commit `_deploy-status.json` to a
+   place the runner reads without touching Epik (a private gist, a status branch via the
+   GitHub API, an object store). This sidesteps the challenge entirely. **But** the checks
+   would then verify what the box *claims*, read from GitHub, not what the public site
+   *serves* — which reopens the very "measured the wrong thing" gap the pinned read closed
+   (a box can report `ok` while the live site serves something else). So this is a good
+   *second* heartbeat for loop-liveness, and it adds an outbound credential to the box, but
+   it must not become the sole health signal.
+
+Recommendation: ship the detection above now (done — it stops the false red immediately),
+pursue **option 1** as the real fix, and keep **option 3** only as a supplementary
+liveness channel. Revisit the persistent-block guard if blocks stop being intermittent.
 
 ## 9. Transport: tarball, not shallow fetch — DECIDED
 
@@ -527,3 +599,4 @@ Full (Strict) — AutoSSL's DNS validation currently resolves to Railway.
 | Two crons overlapping | `flock -n` no-op |
 | Bad release reaches live | Two-pass healthcheck + automatic rollback to `prev` |
 | Silent failure | CI confirm-poll goes red on timeout |
+| Origin bot protection challenges the runner (`wsidchk` interstitial) | Detected and read as `blocked`, not a box fault — watchdog and confirm-poll warn and stay green, box returns exit 3 (§8.4). Intermittent challenges self-heal on retry; a *persistent* block is a residual coverage gap needing the option-1 path exemption (§8.4) |

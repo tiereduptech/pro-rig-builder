@@ -214,19 +214,48 @@ jobs:
           const head = body.replace(/^\s+/, '');
           const foreign = (code === '200' && head.startsWith('<') && !head.startsWith('<?php')) ? 1 : 0;
 
+          // The origin's bot-protection interstitial: HTTP 200, an HTML page
+          // carrying a wsidchk challenge ("request is being verified"). Epik's
+          // shared hosting serves this to some clients — GitHub's runner ranges
+          // among them — from a layer IN FRONT of the box, before the request
+          // reaches _deploy-status.json. It is a SPECIFIC foreign page, and
+          // unlike a generic one it can appear even when PINNED, because it is
+          // served by the very origin we --resolve'd to. So it gets its own
+          // classification and outranks the pinned verdict below.
+          const challenged = (code === '200' &&
+            (/wsidchk/i.test(body) || /request is being verified/i.test(body))) ? 1 : 0;
+
           const bad = mine ? 0 : 1;
 
           // hc_verdict(), ported verbatim from deploy/epik-pull.sh so the box and
           // the watchdog judge the SAME evidence the SAME way:
           //   reached the box (mine)            -> judge health for real
+          //   the origin challenged us          -> something in FRONT of the box
+          //                                        answered; the box was never
+          //                                        measured, pinned or not — cannot
+          //                                        verify, and NOT a box fault
           //   pinned, and it did not answer     -> the box's fault, alarm
           //   unpinned, a foreign page answered -> never measured the box; cannot
           //                                        verify (the hostname resolves
           //                                        elsewhere — Railway, pre-cutover)
           const verdict = bad === 0 ? 'ok'
+                        : challenged ? 'blocked'
                         : pinned    ? 'unhealthy'
                         : (mine === 0 && foreign > 0) ? 'unverified'
                         : 'unhealthy';
+
+          if (verdict === 'blocked') {
+            // Same rule as unverified — something else answered is not the box
+            // served garbage — so this WARNS and stays green rather than crying
+            // "the box did not return its status file" about a box it never
+            // reached. The scheduled watchdog is the backstop: it re-reads the
+            // same file every 30 min, so a challenge that clears on the next tick
+            // self-resolves. A PERSISTENT block is a real coverage gap — see the
+            // origin-bot-protection note in deploy/DESIGN-pull-deploy.md.
+            console.log(`::warning::BLOCKED BY ORIGIN BOT PROTECTION ${process.env.SITE} — the origin answered this ${pinned ? 'PINNED ' : ''}poll with its bot-challenge interstitial (a "request is being verified" page carrying a wsidchk JS challenge), HTTP ${code}, not our status file. That page is served by a layer IN FRONT of the box, so the box was never measured — pinning does not help, because the challenge comes FROM the origin we pinned to. This is NOT a health verdict. It is intermittent and also reaches publish-epik.yml's confirm-poll; the structural fix (exempt _deploy-status.json from the challenge, whitelist the runner ranges, or have the box push its status out) is in deploy/DESIGN-pull-deploy.md.`);
+            console.log(`not verified — blocked by origin bot protection, http=${code}, pinned=${pinned}`);
+            process.exit(0);
+          }
 
           if (verdict === 'unverified') {
             // NOT a health verdict — the same thing --check exits 3 for. Inventing

@@ -68,29 +68,41 @@ for a in "$@"; do
 done
 
 # ── the healthcheck verdict ─────────────────────────────────────────────────
-# hc_verdict <pinned 0|1> <bad> <mine> <foreign>  ->  ok | unhealthy | unverified
+# hc_verdict <pinned 0|1> <bad> <mine> <foreign> [challenged]
+#                                     ->  ok | blocked | unhealthy | unverified
 #
 # The judgement that was previously made wrongly: "the site did not answer as
 # expected" is NOT the same claim as "this box is broken". They are the same
 # claim only when we know the request reached this box.
 #
-#   mine     responses carrying a release field. _env.php ships in every release,
-#            so a response shaped like ours came from a tree of ours. mine>0
-#            means the box WAS reached, and a mismatch is then really ours.
-#   foreign  responses that were HTTP 200 and a web page which is NOT an
-#            unexecuted copy of our own _env.php (that would start "<?php").
-#            This docroot cannot produce that at this path — another stack can.
+#   mine       responses carrying a release field. _env.php ships in every
+#              release, so a response shaped like ours came from a tree of ours.
+#              mine>0 means the box WAS reached, and a mismatch is then ours.
+#   foreign    responses that were HTTP 200 and a web page which is NOT an
+#              unexecuted copy of our own _env.php (that would start "<?php").
+#              This docroot cannot produce that at this path — another stack can.
+#   challenged responses that were the ORIGIN's bot-protection interstitial (a
+#              "request is being verified" page carrying a wsidchk JS challenge).
+#              Epik's shared hosting serves this to some clients — datacenter IPs
+#              like GitHub's runners among them — from a layer IN FRONT of this
+#              release, before the request reaches _env.php.
 #
 # Pinned (--resolve to ORIGIN_IP): the request went to this box by construction,
-# so every failure is this box's. Unpinned, with nothing of ours in the sample
-# and a page from something else, we have not measured this box at all — say so,
-# rather than picking the alarming interpretation of evidence that allows both.
+# so every failure is this box's — EXCEPT a challenge, which pinning does not
+# rule out because the interstitial is served BY the origin we pinned to, ahead
+# of the app. So a challenge means the box was never measured no matter how we
+# reached it: same rule as unverified — something else answered is not the box
+# served garbage — hence `blocked` outranks the pinned verdict. Unpinned, with
+# nothing of ours in the sample and a page from something else, we have likewise
+# not measured this box — say so, rather than picking the alarming reading of
+# evidence that allows both.
 #
 # Defined up here, above the config read, so the truth table can be driven
 # off-box with no config, site or box: test/epik-pull.hcverdict.test.sh.
 hc_verdict() {
-  local pinned="$1" bad="$2" mine="$3" foreign="$4"
+  local pinned="$1" bad="$2" mine="$3" foreign="$4" challenged="${5:-0}"
   if [ "$bad" -eq 0 ]; then echo ok; return 0; fi
+  if [ "$challenged" -gt 0 ]; then echo blocked; return 0; fi
   if [ "$pinned" = 1 ]; then echo unhealthy; return 0; fi
   if [ "$mine" -eq 0 ] && [ "$foreign" -gt 0 ]; then echo unverified; return 0; fi
   echo unhealthy
@@ -426,6 +438,15 @@ classify_env() {  # <curl-rc> <status> <bodyfile> <want-sha>
   esac
   got="$(jget "$f" release 2>/dev/null || true)"
   if [ -n "$got" ]; then printf 'release=%s (wanted %s)' "$got" "$want"; return 0; fi
+  # The origin's bot-protection interstitial: HTTP 200, an HTML page carrying a
+  # wsidchk challenge ("request is being verified"). Something in FRONT of this
+  # release answered — not the box serving garbage — so it gets its own label,
+  # which unanimous() tallies into `challenged` and hc_verdict() turns into
+  # `blocked` rather than a fault. Checked before the generic '<' case, which
+  # this page would otherwise fall into as an undifferentiated "server error".
+  if grep -qiE 'wsidchk|request is being verified' "$f" 2>/dev/null; then
+    printf 'origin bot-protection interstitial'; return 0
+  fi
   case "$(head -c 1 "$f" 2>/dev/null || true)" in
     '<') printf 'HTML body, not JSON — a server error/login page' ;;
     *)   printf 'JSON without a release field' ;;
@@ -433,7 +454,7 @@ classify_env() {  # <curl-rc> <status> <bodyfile> <want-sha>
 }
 
 unanimous() {
-  local want="$1" i status rc bad=0 unresolved=0 mine=0 foreign=0 outcome sample=''
+  local want="$1" i status rc bad=0 unresolved=0 mine=0 foreign=0 challenged=0 outcome sample=''
   local body="$TMP/hc.body" tally="$TMP/hc.outcomes" verdict
   : > "$tally"
   for i in $(seq 1 "$HC_REQUESTS"); do
@@ -444,6 +465,7 @@ unanimous() {
     # Who answered, independent of whether the answer was the RIGHT one.
     case "$outcome" in
       match|release=*) mine=$((mine + 1)) ;;
+      'origin bot-protection interstitial') challenged=$((challenged + 1)) ;;
     esac
     if [ "$rc" -eq 0 ] && [ "$status" = 200 ] && [ -s "$body" ]; then
       case "$(head -c 5 "$body" 2>/dev/null || true)" in
@@ -502,9 +524,22 @@ unanimous() {
     return 1
   fi
 
-  verdict="$(hc_verdict "$ORIGIN_PINNED" "$bad" "$mine" "$foreign")"
+  verdict="$(hc_verdict "$ORIGIN_PINNED" "$bad" "$mine" "$foreign" "$challenged")"
   case "$verdict" in
     ok) return 0 ;;
+    blocked)
+      err "BLOCKED BY ORIGIN BOT PROTECTION — and this is NOT a verdict on the release."
+      err "  $challenged/$HC_REQUESTS requests to $SITE_URL/_env.php were answered with the origin's"
+      err "  bot-challenge interstitial — a 'request is being verified' page carrying a wsidchk JS"
+      err "  challenge, HTTP 200. That page is served by a layer IN FRONT of this release (Epik's"
+      err "  shared-hosting bot protection), before the request ever reaches _env.php."
+      err "  PINNING DOES NOT HELP: the challenge comes FROM the origin we pinned to, so the box was"
+      err "  never measured — the same situation as 'could not verify', reported the same way."
+      err "  This is intermittent and also reaches the publish confirm-poll; see the origin-bot-"
+      err "  protection note in deploy/DESIGN-pull-deploy.md for the structural fix."
+      report
+      return 3
+      ;;
     unhealthy)
       err "worker pool not converged: $bad/$HC_REQUESTS requests did not report release=$want"
       report

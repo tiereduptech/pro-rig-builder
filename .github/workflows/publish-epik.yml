@@ -352,10 +352,19 @@ jobs:
           fi
           echo "polling $SITE/_deploy-status.json for $GITHUB_SHA (cron is */5, allow ~20 min)"
           echo "  going to: $WHERE"
+          # Did we EVER read our own status file (proving the poll can reach the
+          # box), and did we EVER get the origin's bot-challenge instead? These
+          # decide, on timeout, whether "never confirmed" is a box fault or just
+          # the origin's bot protection standing between the runner and the box.
+          SAWMINE=0; SAWCHAL=0
           for i in $(seq 1 80); do
             BODY=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}.$i" 2>/dev/null || true)
-            LIVE=$(printf '%s' "$BODY" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{const o=JSON.parse(s);process.stdout.write(`${o.live_sha}|${o.health}|${o.message||""}`)}catch(e){process.stdout.write("|")}})')
-            SHA=${LIVE%%|*}; REST=${LIVE#*|}; HEALTH=${REST%%|*}; MSG=${REST#*|}
+            # kind=mine when the body parsed as our status JSON; kind=chal when it
+            # was the wsidchk "request is being verified" interstitial; else other.
+            LIVE=$(printf '%s' "$BODY" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{let kind="other",sha="",health="",msg="";try{const o=JSON.parse(s);kind="mine";sha=o.live_sha||"";health=o.health||"";msg=o.message||""}catch(e){if(/wsidchk|request is being verified/i.test(s))kind="chal"}process.stdout.write(`${kind}|${sha}|${health}|${msg}`)})')
+            KIND=${LIVE%%|*}; REST=${LIVE#*|}; SHA=${REST%%|*}; REST=${REST#*|}; HEALTH=${REST%%|*}; MSG=${REST#*|}
+            [ "$KIND" = mine ] && SAWMINE=1
+            [ "$KIND" = chal ] && SAWCHAL=1
             if [ "$SHA" = "$GITHUB_SHA" ] && [ "$HEALTH" = "ok" ]; then
               echo "confirmed live after ~$((i*15))s"
               if [ "${{ steps.r2.outputs.changed }}" = "true" ]; then
@@ -363,9 +372,22 @@ jobs:
               fi
               exit 0
             fi
+            [ "$KIND" = chal ] && echo "  origin bot-protection interstitial (wsidchk) — the box was not reached this poll"
             [ -n "$HEALTH" ] && [ "$HEALTH" != "ok" ] && echo "  box reports health=$HEALTH ${MSG:+($MSG)}"
             sleep 15
           done
+          # Blocked the whole window: every poll was the origin's bot-challenge and
+          # not once did our status file get through. Same rule as hc_verdict()'s
+          # "blocked" — something in FRONT of the box answered, so the box was
+          # never measured, pinned or not (the challenge is served BY the origin we
+          # pinned to). That is NOT a failure to confirm; crying red on it trains
+          # this alarm to be ignored during the exact burn-in it exists to protect.
+          # The scheduled watchdog re-reads the same file every 30 min and is the
+          # backstop, so this WARNS and stays green.
+          if [ "$SAWMINE" = 0 ] && [ "$SAWCHAL" = 1 ]; then
+            echo "::warning::BLOCKED BY ORIGIN BOT PROTECTION — could NOT confirm $GITHUB_SHA in ~20 min, but this is NOT a verdict on the box. Every poll was answered with the origin's bot-challenge interstitial (wsidchk / 'request is being verified') and our status file never got through${ORIGIN_IP:+ — even pinned to $ORIGIN_IP, because the challenge is served BY that origin, in front of the app}. The scheduled watchdog reads the same file every 30 min and is the backstop; see the origin-bot-protection note in deploy/DESIGN-pull-deploy.md. Staying GREEN rather than crying wolf on a box fault that is not in evidence."
+            exit 0
+          fi
           # Say WHICH failure this is. Pinned, the request reached the box by
           # construction and the box really did not confirm. Unpinned, the same
           # evidence fits two readings and picking the alarming one is exactly the
