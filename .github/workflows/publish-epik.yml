@@ -1,5 +1,13 @@
 name: Publish Epik release artifact
 
+# The runs list shows every publish under the same name, and a staging run is
+# indistinguishable from a production one there — which is exactly how a staging
+# green gets misread as a production release. Name the run after the channel it
+# actually targets. github.event.inputs.target is '' on a push, so the fallback
+# here is 'production' — the SAME resolution as the TARGET env below, so the
+# title never disagrees with what the job does.
+run-name: "Publish Epik → ${{ github.event.inputs.target || 'production' }} (${{ github.event_name }})"
+
 # =============================================================================
 #  PUBLISH ONLY — this workflow never touches the live site.
 #
@@ -81,6 +89,28 @@ jobs:
       TARGET: ${{ github.event.inputs.target || 'production' }}
 
     steps:
+      # Legibility banner, FIRST so it is on the summary even if a later step
+      # fails. The runs-list title (run-name) answers "which channel" at a
+      # glance; this answers it in full — the branch that gets force-pushed and
+      # the host the confirm will poll — so a staging run can never be mistaken
+      # for a production one from inside the run either.
+      - name: Announce the channel
+        env:
+          SITE: ${{ env.TARGET == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
+        run: |
+          if [ "$TARGET" = staging ]; then BR=epik-release-staging; else BR=epik-release; fi
+          {
+            echo "## Publishing to \`$TARGET\`"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| channel | \`$TARGET\` |"
+            echo "| release branch | \`$BR\` (force-pushed) |"
+            echo "| source sha | \`$GITHUB_SHA\` |"
+            echo "| confirm polls | $SITE |"
+            echo "| trigger | \`$GITHUB_EVENT_NAME\` |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
