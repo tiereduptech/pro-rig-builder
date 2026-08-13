@@ -23,6 +23,25 @@ name: Epik deploy watchdog
 #  could not detect what it claimed: a stopped cron and a quiet one looked
 #  identical. Staleness now reads checked_at; health reads verified_at.
 #
+#  ── EPIK_ORIGIN_IP: the pre-DNS window ──────────────────────────────────────
+#  This step reads the status file over HTTPS at the PRODUCTION hostname. Between
+#  the docroot flip and the DNS move, prorigbuilder.com still answers from
+#  RAILWAY, so an unpinned read measures the stack we are migrating away from and
+#  reports its 404/HTML as "the box is broken" — a red run every 30 minutes
+#  during the exact burn-in that is supposed to earn trust in this alarm. That is
+#  how an alarm gets muted. publish-epik.yml's confirm-poll already carries the
+#  fix; this now does too, and reaches the SAME verdict by the SAME rule:
+#    - EPIK_ORIGIN_IP set  -> pin with --resolve + -k (the origin carries a
+#      Cloudflare Origin CA cert no public store validates), so the read reaches
+#      the box by construction and every failure is really the box's.
+#    - EPIK_ORIGIN_IP unset, and the hostname answered with a foreign web page ->
+#      CANNOT VERIFY. It says so and stays GREEN, rather than reporting a health
+#      verdict on a box it never measured. This is hc_verdict() from epik-pull.sh,
+#      ported verbatim below.
+#  Production only — staging is grey-cloud and already resolves to the box. Set
+#  the repo variable before the burn-in; CLEAR it at cutover so the read goes
+#  back through the edge, the thing the world actually reaches.
+#
 #  It fails on:
 #    - status file unreachable, non-200, or unparseable
 #    - checked_at older than STALE_MIN (the cron has stopped running AT ALL —
@@ -66,15 +85,18 @@ jobs:
           WATCH_STAGING: ${{ vars.EPIK_WATCH_STAGING }}
           WATCH_PROD: ${{ vars.EPIK_WATCH_PRODUCTION }}
           STAGING_URL: ${{ vars.EPIK_STAGING_URL }}
+          # Production only. Staging is grey-cloud and already resolves to the box,
+          # so pinning it would assert something already true. Empty = follow DNS.
+          ORIGIN_IP: ${{ vars.EPIK_ORIGIN_IP }}
         run: |
           set -euo pipefail
           node -e '
             const t=[];
             if (process.env.WATCH_STAGING === "true") {
-              t.push({ name:"staging", url:process.env.STAGING_URL, branch:"epik-release-staging", auth:true });
+              t.push({ name:"staging", url:process.env.STAGING_URL, branch:"epik-release-staging", auth:true, origin_ip:"" });
             }
             if (process.env.WATCH_PROD === "true") {
-              t.push({ name:"production", url:"https://prorigbuilder.com", branch:"epik-release", auth:false });
+              t.push({ name:"production", url:"https://prorigbuilder.com", branch:"epik-release", auth:false, origin_ip:process.env.ORIGIN_IP || "" });
             }
             if (!t.length) { console.log("::warning::no targets enabled — set repo var EPIK_WATCH_STAGING=true"); }
             require("fs").appendFileSync(process.env.GITHUB_OUTPUT, "targets=" + JSON.stringify({include:t}) + "\n");
@@ -95,6 +117,7 @@ jobs:
           SITE: ${{ matrix.url }}
           BRANCH: ${{ matrix.branch }}
           AUTH: ${{ matrix.auth && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
+          ORIGIN_IP: ${{ matrix.origin_ip }}
           REPO: ${{ github.repository }}
           # checked_at: the cron is */5, so 20 min is four missed ticks.
           STALE_MIN: '20'
@@ -117,6 +140,20 @@ jobs:
           ARGS=(-sS --max-time 25 -w '\n%{http_code}')
           [ -n "$AUTH" ] && ARGS+=(-u "$AUTH")
 
+          # Pin to the origin when EPIK_ORIGIN_IP is set (production, pre-DNS),
+          # exactly as publish-epik.yml's confirm-poll does: --resolve forces the
+          # request to this box, and -k accepts the Cloudflare Origin CA cert that
+          # no public trust store validates by design. Unset -> follow DNS.
+          HOST=${SITE#*://}; HOST=${HOST%%/*}; HOST=${HOST%%:*}
+          PINNED=0
+          if [ -n "$ORIGIN_IP" ]; then
+            ARGS+=(--resolve "$HOST:443:$ORIGIN_IP" -k)
+            PINNED=1
+            echo "reading status file at $SITE (pinned: $HOST:443 -> $ORIGIN_IP, cert not validated)"
+          else
+            echo "reading status file at $SITE (whatever DNS resolves $HOST to)"
+          fi
+
           RAWSTATUS=$(curl "${ARGS[@]}" "$SITE/_deploy-status.json?t=${GITHUB_RUN_ID}" 2>/dev/null || true)
           CODE=$(printf '%s' "$RAWSTATUS" | tail -1)
           BODY=$(printf '%s' "$RAWSTATUS" | sed '$d')
@@ -124,7 +161,8 @@ jobs:
           PUBLISHED=$(curl -sS --max-time 25 \
             "https://raw.githubusercontent.com/$REPO/$BRANCH/RELEASE.json" 2>/dev/null || true)
 
-          CODE="$CODE" BODY="$BODY" PUBLISHED="$PUBLISHED" node <<'NODE'
+          CODE="$CODE" BODY="$BODY" PUBLISHED="$PUBLISHED" \
+          PINNED="$PINNED" ORIGIN_IP="$ORIGIN_IP" SITE="$SITE" node <<'NODE'
           const fail = [], warn = [];
           const staleMin = Number(process.env.STALE_MIN);
           const inflightMin = Number(process.env.INFLIGHT_MIN);
@@ -132,14 +170,65 @@ jobs:
           const mins = (t) => (Date.now() - Date.parse(t)) / 60000;
           const ago  = (m) => m < 90 ? `${m.toFixed(0)} min` : `${(m / 60).toFixed(1)} h`;
 
-          if (process.env.CODE !== '200') {
-            fail.push(`status file returned HTTP ${process.env.CODE || '(no response)'} — the box is unreachable or not serving`);
+          const code = process.env.CODE || '';
+          const body = process.env.BODY || '';
+          const pinned = process.env.PINNED === '1';
+
+          // Parse once. "mine" = a reply shaped like OUR status file: valid JSON
+          // carrying a field only we write (checked_at on every tick, live_sha on
+          // every deploy). A foreign stack answering this hostname returns HTML or
+          // someone else's JSON and fails this test — so mine==1 PROVES the read
+          // reached the box, pinned or not.
+          let s = null;
+          try { s = JSON.parse(body); } catch (e) {}
+          const looksMine = s !== null && (s.checked_at !== undefined || s.live_sha !== undefined);
+          const mine = (code === '200' && looksMine) ? 1 : 0;
+
+          // "foreign" = HTTP 200 that is a web PAGE, not our JSON. This endpoint
+          // serves pure JSON, so a body opening with '<' came from something that
+          // is not this release. ('<?php' mirrors epik-pull.sh's classify_env — an
+          // unexecuted copy of our own PHP would open that way; a status file is
+          // never PHP, but the guard is kept so the rule stays identical.)
+          const head = body.replace(/^\s+/, '');
+          const foreign = (code === '200' && head.startsWith('<') && !head.startsWith('<?php')) ? 1 : 0;
+
+          const bad = mine ? 0 : 1;
+
+          // hc_verdict(), ported verbatim from deploy/epik-pull.sh so the box and
+          // the watchdog judge the SAME evidence the SAME way:
+          //   reached the box (mine)            -> judge health for real
+          //   pinned, and it did not answer     -> the box's fault, alarm
+          //   unpinned, a foreign page answered -> never measured the box; cannot
+          //                                        verify (the hostname resolves
+          //                                        elsewhere — Railway, pre-cutover)
+          const verdict = bad === 0 ? 'ok'
+                        : pinned    ? 'unhealthy'
+                        : (mine === 0 && foreign > 0) ? 'unverified'
+                        : 'unhealthy';
+
+          if (verdict === 'unverified') {
+            // NOT a health verdict — the same thing --check exits 3 for. Inventing
+            // "the box is broken" from evidence that fits two stories is exactly
+            // what hc_verdict refuses, so this WARNS and stays green.
+            console.log(`::warning::CANNOT VERIFY ${process.env.SITE} — the hostname answered with a web page from something that is not this release, and this poll was NOT pinned. "The box is broken" and "the hostname still resolves elsewhere (Railway, pre-cutover)" are indistinguishable from here, so this is not a verdict on the box. Pin it: set the EPIK_ORIGIN_IP repo variable to the origin IP; clear it once DNS points here.`);
+            console.log(`not verified — http=${code || '(none)'}, pinned=false`);
+            process.exit(0);
           }
 
-          let s = null;
-          try { s = JSON.parse(process.env.BODY); }
-          catch (e) { if (process.env.CODE === '200') fail.push(`status file is not valid JSON: ${e.message}`); }
+          if (verdict === 'unhealthy') {
+            if (pinned) {
+              fail.push(`the poll was PINNED to ${process.env.ORIGIN_IP}, so it reached the box by construction — and the box did not return its status file (HTTP ${code || '(no response)'}${looksMine ? '' : ', body is not our JSON'}). A real failure on the box.`);
+            } else {
+              fail.push(`status file unreachable (HTTP ${code || '(no response)'}) and nothing answered like our status file or like another stack — the box is unreachable or not serving.`);
+            }
+            for (const f of fail) console.log(`::error::${f}`);
+            console.log(`\nWATCHDOG FAILED — ${fail.length} problem(s).`);
+            console.log(`status: ${body || '(none)'}`);
+            process.exit(1);
+          }
 
+          // verdict === 'ok': we hold OUR status file, so the read provably reached
+          // the box (pinned or not) and every rule below is a real judgement.
           if (s) {
             // ── RULE 1: is the loop alive? reads checked_at ──────────────────
             const ageMin = mins(s.checked_at);
