@@ -461,7 +461,10 @@ green; a *sustained* one goes red within ~3 h. The gap is closed, not just docum
    paths we care about, a pure-static file (`gone.html`, no PHP), and an `.htaccess`-produced
    redirect, each under both a curl and a browser UA against the pinned origin, and prints
    which layer the challenge lives in plus the implied fix. Run it before asking Epik for
-   anything, so the ask is specific.
+   anything, so the ask is specific. Because the challenge is intermittent — four hand-run
+   probes on 2026-08-13 all missed it, though the watchdog had caught it red twice ~90 min
+   earlier — the watchdog **dispatches this probe automatically on a `blocked` verdict**, so
+   it runs while the challenge is still live and reproduces it by construction.
 2. **Invert to push — box publishes its status somewhere unchallenged (reserve, secondary
    only).** The box already runs cron; it could `PUT`/commit `_deploy-status.json` to a
    place the runner reads without touching Epik (a private gist, a status branch via the

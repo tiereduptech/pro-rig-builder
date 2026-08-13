@@ -129,11 +129,16 @@ jobs:
     if: fromJSON(needs.setup.outputs.targets).include[0] != null
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # actions:read so the persistent-block guard can read THIS workflow's own run
-    # history via the API — that history IS the guard's state, so it needs no
-    # write, no branch and no mutable marker of its own (§8.4).
+    # actions:write covers two needs, both API-only (no branch, no contents):
+    #   read  — the persistent-block guard reads THIS workflow's own run history;
+    #           that history IS the guard's state (§8.4).
+    #   write — on a `blocked` verdict, dispatch epik-origin-probe.yml so it runs
+    #           WHILE the challenge is live and reproduces it by construction,
+    #           which a manual probe cannot reliably do (the block is intermittent).
+    #           workflow_dispatch is one of the two events GITHUB_TOKEN is allowed
+    #           to trigger, so no PAT is needed. write ⊇ read, so the guard is covered.
     permissions:
-      actions: read
+      actions: write
     strategy:
       fail-fast: false
       matrix: ${{ fromJSON(needs.setup.outputs.targets) }}
@@ -406,6 +411,23 @@ jobs:
       - name: mark-blocked
         if: steps.assert.outputs.verdict == 'blocked'
         run: echo "origin bot-protection block recorded for ${{ matrix.name }} (run ${{ github.run_id }})"
+
+      # The challenge is intermittent, so a probe dispatched by hand almost always
+      # arrives after it has cleared (four manual runs missed it entirely). Firing
+      # the probe FROM the block catches it by construction: it runs seconds later,
+      # against the same pinned origin, while the challenge is still up — which is
+      # the only reliable way to learn WHICH layer serves it (edge / handler / UA;
+      # DESIGN §8.4 option 1). Best-effort: a dispatch failure must never turn a
+      # green blocked run red, so it only warns.
+      - name: On block, fire the origin probe while the challenge is live
+        if: steps.assert.outputs.verdict == 'blocked'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -uo pipefail
+          echo "verdict=blocked — dispatching epik-origin-probe.yml for '${{ matrix.name }}' to catch the challenge while it is active"
+          gh workflow run epik-origin-probe.yml -f site='${{ matrix.name }}' \
+            || echo "::warning::could not dispatch epik-origin-probe.yml (needs actions:write) — while a block is active, dispatch it by hand to locate the challenge layer"
 
       # ── persistent-block guard ──────────────────────────────────────────────
       # green-on-blocked (the assert step) removes the FALSE red, but it opens a

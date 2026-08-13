@@ -23,6 +23,11 @@ name: Epik origin probe (bot-protection layer)
 #  It only ever GETs the origin's own pages (read-only), pinned to EPIK_ORIGIN_IP
 #  exactly as the watchdog pins, so it measures the BOX and not whatever DNS points
 #  at pre-cutover. Dispatch it, read the summary, THEN ask Epik with specifics.
+#
+#  The challenge is intermittent, so a hand-dispatched probe usually arrives after
+#  it has cleared. epik-watchdog.yml therefore dispatches this workflow AUTOMATICALLY
+#  the moment it sees a `blocked` verdict — that run arrives while the challenge is
+#  still up and reproduces it by construction. You can still dispatch it by hand.
 # =============================================================================
 
 on:
