@@ -326,17 +326,49 @@ A failed or rolled-back deploy still turns CI red.
 
 ```
 MAILTO=coby@tiereduptech.com
-*/5 * * * * /usr/bin/flock -n /home/tier5415/prb/deploy.lock /home/tier5415/prb/bin/epik-pull.sh >> /home/tier5415/prb/log/deploy.log
+*/5 * * * * /home/tier5415/prb/bin/lock-reaper.sh /home/tier5415/prb/deploy.lock ; /usr/bin/flock -n /home/tier5415/prb/deploy.lock /usr/bin/timeout -s KILL 600 /home/tier5415/prb/bin/epik-pull.sh >> /home/tier5415/prb/log/deploy.log
 ```
 
-Note what is **not** redirected: only stdout goes to the log. The script is silent on
-stdout for routine work and writes to **stderr only on failure**, so cron mails you
-exactly when something broke and never otherwise. `2>&1` would have swallowed that —
-it is deliberately absent.
+Three composed parts, in order, and each is a scar:
 
-`flock -n` means an overlapping tick **no-ops** rather than queueing — the same reasoning
-as `cancel-in-progress: false` in the existing workflow, reached from the other side.
-Absolute paths throughout because cPanel cron's environment is minimal.
+1. **`lock-reaper.sh` — runs BEFORE flock.** `flock -n` no-ops when the lock is held,
+   which is right for an overlapping tick and catastrophic for a lock that is held but
+   going nowhere: the wrapped command never runs, so nothing in the puller can recover
+   it. On 2026-08-14 a deploy tick wedged in the post-swap healthcheck (§6.7) with no
+   wall-clock ceiling and held `deploy.lock` for **9.5 hours**; every `*/5` tick after
+   it hit `flock -n`, found the lock held, and exited 1 silently. Worse, after the
+   wedged processes were killed `ps` showed *nothing* yet `flock` still could not
+   acquire — an orphaned open file description held the lock invisibly, and only
+   `rm -f` on the file cleared it. The reaper runs unconditionally at the top of each
+   tick and decides *why* the lock is held before yielding to it: a live holder younger
+   than the ceiling is a normal tick (leave it); a live holder **older** than the
+   ceiling is wedged (kill it, clear); a lock held by **no live `epik-pull` process** is
+   a ghost (rotate the file onto a fresh inode — the automatic form of the manual
+   `rm -f`, done only when no live process owns it). Its decision is a pure function
+   with an off-box truth table (`test/lock-reaper.test.sh`); it is silent unless it
+   acts, and writes to stderr when it does, so a reap reaches cron mail.
+2. **`flock -n` — single-writer.** Unchanged: an overlapping tick still **no-ops**
+   rather than queueing — the same reasoning as `cancel-in-progress: false`, reached
+   from the other side.
+3. **`timeout -s KILL 600` — the wall-clock ceiling on the run.** A stuck tick must
+   **die and free the lock**, not hold it for hours. 600s (10 min) clears the longest
+   legitimate run — the htaccess settle path is ~T+150s plus two healthchecks and a
+   possible rollback (§6.7) — with wide margin, while being ~1/57th of the 9.5h stall
+   and staying under the watchdog's 20-min `checked_at` window (§8.2). A hard KILL can
+   orphan a child that keeps the lock's fd (a new ghost); that is exactly what part 1
+   cleans up on the next tick, so the two compose. `timeout` is present on the box (§11).
+
+Note what is **not** redirected: only stdout goes to the log, and only for the flock
+tick. The reaper and the script are silent on stdout for routine work and write to
+**stderr only on failure**, so cron mails you exactly when something broke — a reaped
+lock, a failed deploy — and never otherwise. `2>&1` would have swallowed that; it is
+deliberately absent. Absolute paths throughout because cPanel cron's environment is
+minimal.
+
+Because `bin/lock-reaper.sh` and `bin/epik-pull.sh` are *copies* placed at install
+time, and this cron line names both, `refresh-epik-pull.sh` now installs the reaper and
+**rewrites the crontab line in place** alongside re-curling the puller — a script
+refresh that left the old bare-`flock` line would re-arm the exact 9.5h trap.
 
 ## 8. Alarms — what you actually see, and where
 
@@ -631,6 +663,10 @@ Full (Strict) — AutoSSL's DNS validation currently resolves to Railway.
 | Inode quota exhaustion | Retention N=10, set from the §10 measurement: 22,081 inodes/release against 910M free |
 | Partial download or extraction | Verified before naming; swapped only after `mv -T` |
 | Two crons overlapping | `flock -n` no-op |
+| A tick wedges and never returns (unbounded call in the healthcheck) | `timeout -s KILL 600` caps the run so it dies and frees the lock; the fixture — the one healthcheck child curl's `--max-time` does not cover — is additionally bounded by its own `timeout` (§7, §6.7) |
+| A wedged tick holds `deploy.lock` for hours, silently no-opping every later tick | `lock-reaper.sh` runs before flock and reaps a live holder older than the ceiling; the run `timeout` should kill it first, this is the backstop (§7) |
+| The lock is held by *no visible process* (orphaned fd; `ps` shows nothing, `flock` still fails) | `lock-reaper.sh` detects "held but no live `epik-pull` holder" and rotates the file onto a fresh inode — the automatic form of the manual `rm -f` (§7) |
+| The primary alarm cancels its own runs (GitHub bunches `*/30` schedules) | `epik-watchdog.yml` has **no** cancelling concurrency group — a cancelled alarm run is a muted alarm; overlapping reads are idempotent and cheap (§8.2) |
 | Bad release reaches live | Two-pass healthcheck + automatic rollback to `prev` |
 | Silent failure | CI confirm-poll goes red on timeout |
 | Origin bot protection challenges the runner (`wsidchk` interstitial) | Detected and read as `blocked`, not a box fault — watchdog and confirm-poll warn and stay green, box returns exit 3 (§8.4). Intermittent challenges self-heal on retry |

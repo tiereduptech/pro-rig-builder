@@ -178,15 +178,23 @@ unanimity on `_env.php` + the complete fixture), and writes `_deploy-status.json
 
 ```
 MAILTO=coby@tiereduptech.com
-*/5 * * * * /usr/bin/flock -n /home/tier5415/prb-staging/deploy.lock /home/tier5415/prb-staging/bin/epik-pull.sh >> /home/tier5415/prb-staging/log/deploy.log
+*/5 * * * * /home/tier5415/prb-staging/bin/lock-reaper.sh /home/tier5415/prb-staging/deploy.lock ; /usr/bin/flock -n /home/tier5415/prb-staging/deploy.lock /usr/bin/timeout -s KILL 600 /home/tier5415/prb-staging/bin/epik-pull.sh >> /home/tier5415/prb-staging/log/deploy.log
 ```
 
-Note what is **not** redirected: only stdout goes to the log. The script is
-silent on stdout for routine no-op ticks and writes to **stderr only on failure**,
-so cron mails you exactly when something broke and never otherwise. `2>&1` would
-swallow that — its absence is deliberate.
+Three composed parts (full reasoning in DESIGN §7):
+- **`lock-reaper.sh`** runs *before* flock and clears a lock that is held but going
+  nowhere — a tick wedged past the ceiling, or a **ghost** lock held by no live
+  process (the "`ps` shows nothing but `flock` still fails, only `rm -f` fixes it"
+  case). Recovery has to run here because `flock -n` never runs its command when the
+  lock is held.
+- **`flock -n`** makes an overlapping tick a **no-op** rather than queueing it.
+- **`timeout -s KILL 600`** is a hard 10-minute ceiling so a stuck tick dies and frees
+  the lock instead of holding it for hours.
 
-`flock -n` makes an overlapping tick a **no-op** rather than queueing it.
+Note what is **not** redirected: only stdout goes to the log. The reaper and the
+script are silent on stdout for routine work and write to **stderr only on failure**,
+so cron mails you exactly when something broke — a reaped lock, a failed deploy — and
+never otherwise. `2>&1` would swallow that; its absence is deliberate.
 
 ---
 

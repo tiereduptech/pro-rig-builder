@@ -129,6 +129,7 @@ jobs:
         run: |
           bash test/install-phase-a.docroot.test.sh
           bash test/epik-pull.hcverdict.test.sh
+          bash test/lock-reaper.test.sh
 
       # dist/ is committed, but the Epik artifacts are regenerated so
       # resolver-config.php / redirects.php / gone.html / .htaccess / _env.php

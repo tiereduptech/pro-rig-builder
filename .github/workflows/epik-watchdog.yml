@@ -79,9 +79,18 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: epik-watchdog
-  cancel-in-progress: true
+# NO concurrency group. This is the PRIMARY ALARM, and a cancelled alarm run is a
+# muted alarm — the exact failure this workflow exists to prevent, arriving as a
+# red X nobody reads. It was previously `group: epik-watchdog, cancel-in-progress:
+# true`, which cancels an in-progress run whenever a second run enters the group;
+# GitHub bunches delayed */30 schedules (and workflow_dispatch adds a second
+# trigger), so runs cancelled each other mid-assert — e.g. run created 2026-08-14
+# 22:51 was cancelled at 23:15 with both `watch` jobs stuck on the assert step,
+# "The operation was canceled". The watchdog writes NOTHING to main and reads a
+# status file idempotently, so overlapping runs are harmless — far better than a
+# cancelled one that reports no verdict at all. Two reads are cheap; a muted alarm
+# is not. (The origin-probe it dispatches has its OWN group; the persistent-block
+# guard tolerates transient overlap.)
 
 jobs:
   # Which targets to watch is data, not duplicated YAML. During Phase A only

@@ -199,6 +199,17 @@ else
   exit 3
 fi
 
+# A wall-clock cap for any child that is NOT a curl — specifically the fixture
+# node process below. curl caps itself with --max-time; node does not, and the
+# fixture is a network client with only an in-JS socket-idle timeout, which an
+# OLD shipped fixture may lack and a connection that hangs mid-handshake can
+# evade. On 2026-08-14 a deploy tick blocked in the post-swap healthcheck with no
+# ceiling and held deploy.lock for 9.5h; bounding the fixture removes the one
+# unbounded call in that path. `timeout` is present on the box (DESIGN §11); if
+# it somehow is not, we run the child bare rather than refuse to deploy.
+TIMEOUT_BIN="$(command -v timeout 2>/dev/null || true)"
+FIXTURE_TIMEOUT="${FIXTURE_TIMEOUT:-60}"
+
 # Two arrays, deliberately. BASIC_AUTH is the STAGING site credential; sending it
 # to raw.githubusercontent.com / codeload would hand our password to a third party
 # for no reason. The release branch is public by design (§2) — GitHub gets no -u.
@@ -575,9 +586,19 @@ run_fixture() {
   # EPIK_RESOLVE/EPIK_INSECURE pin the fixture to the same origin as the rest of
   # the check. A release published before this option existed ignores them and
   # follows DNS — which is why unanimous() runs first and is the pinned gate.
+  #
+  # Wrapped in `timeout -s KILL`: the fixture is the one child in the healthcheck
+  # that curl's --max-time does not cover, and an unbounded fixture is how the
+  # whole run wedged on 2026-08-14. A kill here surfaces as run_fixture failing,
+  # which the healthcheck reads as unhealthy and rolls back — the safe verdict for
+  # a fixture that will not answer. Bare fallback only if the box has no `timeout`.
+  # Expanded with the ${a[@]+"${a[@]}"} guard: an empty array under `set -u` is an
+  # "unbound variable" on bash 4.2 (CentOS 7), the same trap fetch() documents.
+  local -a wrap=()
+  [ -n "${TIMEOUT_BIN:-}" ] && wrap=("$TIMEOUT_BIN" -s KILL "$FIXTURE_TIMEOUT")
   EPIK_BASIC_AUTH="${BASIC_AUTH:-}" \
   EPIK_RESOLVE="${ORIGIN_IP:-}" EPIK_INSECURE="$ORIGIN_INSECURE" \
-  "$NODE" "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
+  ${wrap[@]+"${wrap[@]}"} "$NODE" "$dir/_ops/verify-epik.cjs" epik="$SITE_URL"
 }
 
 # 0 = healthy, 1 = unhealthy, 3 = could not verify (see hc_verdict).

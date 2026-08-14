@@ -44,6 +44,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin${PATH:+:$PATH}
 REPO="${REPO:-tiereduptech/pro-rig-builder}"
 REF="${REF:-main}"
 RAW="https://raw.githubusercontent.com/$REPO/$REF/deploy/epik-pull.sh"
+RAW_REAPER="https://raw.githubusercontent.com/$REPO/$REF/deploy/lock-reaper.sh"
 ROOTS="${ROOTS:-$HOME/prb-staging $HOME/prb}"
 
 # The markers that distinguish the post-2026-08-12 script from the one that
@@ -53,6 +54,12 @@ ROOTS="${ROOTS:-$HOME/prb-staging $HOME/prb}"
 MARK_DEF='touch_status() {'
 MARK_CALL='touch_status; exit 0'
 MARK_FIELD='verified_at'
+
+# Markers that prove a lock-reaper.sh download is the real thing and not a
+# truncated file or an error page: its pure decision function and the ghost case
+# it exists for. Both must be present.
+MARK_REAP_FN='lock_action() {'
+MARK_REAP_GHOST='ghost'
 
 PASS=0; FAIL=0; SKIP=0
 ok()   { PASS=$((PASS+1)); printf '  ok    %s\n' "$*"; }
@@ -123,6 +130,43 @@ for R in $ROOTS; do
     continue
   fi
 
+  # ── 4b. lock-reaper.sh — the cron tick names it, so refresh must place it ──
+  # Same verify-before-swap discipline as the puller. The updated cron line runs
+  # $R/bin/lock-reaper.sh BEFORE flock every tick; if it is missing the tick fails
+  # at the reaper, so a refresh that updates the script but not the reaper would
+  # break the box. A failed reaper fetch leaves the OLD reaper (if any) in place.
+  RNEW="$R/bin/lock-reaper.sh.new"
+  RCUR="$R/bin/lock-reaper.sh"
+  rm -f "$RNEW"
+  rrc=0
+  curl -fsSL --connect-timeout 10 --max-time 60 "$RAW_REAPER" -o "$RNEW" || rrc=$?
+  if [ "$rrc" -ne 0 ]; then
+    rm -f "$RNEW"
+    bad "lock-reaper download failed (curl exit $rrc) — ${RCUR} left as it was"
+    continue
+  fi
+  RBAD=''
+  case "$(head -1 "$RNEW")" in
+    '#!/bin/bash') : ;;
+    *) RBAD="first line is not a bash shebang" ;;
+  esac
+  RSZ="$(wc -c < "$RNEW" 2>/dev/null | tr -d ' ')"
+  [ -z "$RBAD" ] && [ "${RSZ:-0}" -lt 1500 ]              && RBAD="only ${RSZ} bytes — truncated or an error page"
+  [ -z "$RBAD" ] && ! grep -qF "$MARK_REAP_FN"    "$RNEW" && RBAD="no lock_action() — not the reaper"
+  [ -z "$RBAD" ] && ! grep -qF "$MARK_REAP_GHOST" "$RNEW" && RBAD="no ghost handling — truncated reaper"
+  if [ -n "$RBAD" ]; then
+    rm -f "$RNEW"
+    bad "lock-reaper download rejected: $RBAD — ${RCUR} left as it was"
+    continue
+  fi
+  if ! mv -f "$RNEW" "$RCUR"; then
+    rm -f "$RNEW"
+    bad "could not install $RCUR (permissions?) — old reaper still in place"
+    continue
+  fi
+  chmod +x "$RCUR" || true
+  ok "installed — $RCUR ($(wc -c < "$RCUR" | tr -d ' ') bytes)"
+
   # ── 5. seed verified_at ───────────────────────────────────────────────────
   # --check is a real health measurement, so it writes BOTH fields. Until it
   # runs, the status file has no verified_at and the watchdog fails on that.
@@ -167,6 +211,34 @@ for R in $ROOTS; do
     *)
       bad "could not read $SF" ;;
   esac
+
+  # ── 7. bring the crontab tick up to date ──────────────────────────────────
+  # Replacing bin/epik-pull.sh does NOT change how cron INVOKES it, and the old
+  # invocation — bare `flock -n ... epik-pull.sh` with no reaper and no run
+  # ceiling — is exactly what let a wedged tick hold the lock for 9.5h. So the
+  # crontab is where the fix actually lands. Idempotent: swap only the one epik
+  # line for THIS root, leave MAILTO and every other entry untouched, and do
+  # nothing at all if the line is already current. Skips a root that has no epik
+  # line yet (not automated here — that is install-phase-a's job).
+  WANT_CRON="*/5 * * * * $R/bin/lock-reaper.sh $R/deploy.lock ; /usr/bin/flock -n $R/deploy.lock /usr/bin/timeout -s KILL 600 $R/bin/epik-pull.sh >> $R/log/deploy.log"
+  CUR_CRON="$(crontab -l 2>/dev/null || true)"
+  if ! printf '%s\n' "$CUR_CRON" | grep -qF "$R/bin/epik-pull.sh"; then
+    note "no cron line for $R yet — not adding one (run install-phase-a to install the tick)"
+  elif printf '%s\n' "$CUR_CRON" | grep -qF "$WANT_CRON"; then
+    ok "cron tick already current for $R (reaper + flock + run ceiling)"
+  else
+    # Back up the exact text before touching it, then replace the one epik line.
+    printf '%s\n' "$CUR_CRON" > "$R/tmp/crontab.before-refresh" 2>/dev/null || true
+    if printf '%s\n' "$CUR_CRON" | grep -vF "$R/bin/epik-pull.sh" | { cat; printf '%s\n' "$WANT_CRON"; } | crontab -; then
+      if crontab -l 2>/dev/null | grep -qF "$WANT_CRON"; then
+        ok "cron tick UPGRADED for $R — now runs lock-reaper + flock + timeout 600 (backup: $R/tmp/crontab.before-refresh)"
+      else
+        bad "crontab reinstalled but the new line is NOT present — restore from $R/tmp/crontab.before-refresh and fix by hand"
+      fi
+    else
+      bad "could not rewrite the crontab for $R — old tick still in place (backup: $R/tmp/crontab.before-refresh)"
+    fi
+  fi
 done
 
 # ── summary ─────────────────────────────────────────────────────────────────

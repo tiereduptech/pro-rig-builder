@@ -85,7 +85,18 @@ ORIGIN_IP="${ORIGIN_IP:-$(printf '%s' "${SSH_CONNECTION:-}" | awk '{print $3}')}
 ORIGIN_INSECURE="${ORIGIN_INSECURE:-0}"
 
 RAW="https://raw.githubusercontent.com/$REPO/$REF/deploy/epik-pull.sh"
-CRON_LINE="*/5 * * * * /usr/bin/flock -n $ROOT/deploy.lock $ROOT/bin/epik-pull.sh >> $ROOT/log/deploy.log"
+RAW_REAPER="https://raw.githubusercontent.com/$REPO/$REF/deploy/lock-reaper.sh"
+# The tick, in three composed parts (see DESIGN §7):
+#   1. lock-reaper.sh — runs BEFORE flock so it can recover a lock flock cannot
+#      take: a wedged holder past the ceiling, or a GHOST held by no live process
+#      (the 2026-08-14 "held by nothing" case that needed a manual rm -f).
+#   2. flock -n — single-writer; an overlapping tick still no-ops.
+#   3. timeout -s KILL 600 — a hard wall-clock ceiling on the run, so a stuck
+#      tick DIES and frees the lock instead of holding it for hours.
+# `;` not `&&` after the reaper: a reaper failure must never stop the flock tick.
+# Only stdout is redirected, so the reaper's and the puller's stderr still reach
+# cron mail on failure — 2>&1 is deliberately absent.
+CRON_LINE="*/5 * * * * $ROOT/bin/lock-reaper.sh $ROOT/deploy.lock ; /usr/bin/flock -n $ROOT/deploy.lock /usr/bin/timeout -s KILL 600 $ROOT/bin/epik-pull.sh >> $ROOT/log/deploy.log"
 
 say()  { printf '\n== %s\n' "$*"; }
 info() { printf '   %s\n' "$*"; }
@@ -155,10 +166,10 @@ fi
 
 # ── 0. preflight ────────────────────────────────────────────────────────────
 say "Preflight"
-for c in curl tar sha256sum flock node php openssl crontab; do
+for c in curl tar sha256sum flock node php openssl crontab timeout pgrep; do
   command -v "$c" >/dev/null 2>&1 || die "missing required command: $c"
 done
-info "required commands present"
+info "required commands present (incl. timeout + pgrep — the run ceiling and the lock reaper need them)"
 
 mv --help 2>&1 | grep -q -- '-T' || die "this mv has no -T. Atomic swap is the whole design; stopping."
 info "mv -T available"
@@ -464,6 +475,28 @@ bash -n "$ROOT/bin/epik-pull.sh" || die "fetched epik-pull.sh does not parse —
 chmod +x "$ROOT/bin/epik-pull.sh"
 info "installed and parsed clean ($(wc -c < "$ROOT/bin/epik-pull.sh") bytes)"
 
+# ── 3b. the lock reaper — the cron line runs it BEFORE flock every tick ──────
+# Same verify-before-install discipline as the puller: a truncated or error-page
+# download must never end up on the crontab path. Without it the new cron line
+# would name a script that is not there and every tick would fail at the reaper.
+say "Fetching lock-reaper.sh from $REF"
+REAPER_ERR="$(mktemp "${TMPDIR:-/tmp}/prb-curl.XXXXXX")" || die "cannot create a temp file in ${TMPDIR:-/tmp}"
+RC=0
+curl -fsSL --connect-timeout 10 --max-time 60 "$RAW_REAPER" -o "$ROOT/bin/lock-reaper.sh" 2>"$REAPER_ERR" || RC=$?
+if [ "$RC" -ne 0 ]; then
+  printf '\n!! could not fetch %s\n' "$RAW_REAPER" >&2
+  printf '   curl exit %s — %s\n' "$RC" "$(curl_why "$RC")" >&2
+  [ "$RC" = 22 ] && printf '   (exit 22 with -f usually means 404: is deploy/lock-reaper.sh on ref %s?)\n' "$REF" >&2
+  if [ -s "$REAPER_ERR" ]; then sed 's/^/   curl: /' "$REAPER_ERR" >&2; fi
+  rm -f "$REAPER_ERR"
+  die "aborting — the cron tick names lock-reaper.sh, so it must be installed."
+fi
+rm -f "$REAPER_ERR"
+[ -s "$ROOT/bin/lock-reaper.sh" ] || die "$RAW_REAPER fetched as an EMPTY file — refusing to install it"
+bash -n "$ROOT/bin/lock-reaper.sh" || die "fetched lock-reaper.sh does not parse — refusing to install it"
+chmod +x "$ROOT/bin/lock-reaper.sh"
+info "installed and parsed clean ($(wc -c < "$ROOT/bin/lock-reaper.sh") bytes)"
+
 # ── 4. config — the ONLY difference between the staging and prod installs ────
 # Production is unauthenticated, so the credential is forced empty here no matter
 # what happens to be exported in the calling shell.
@@ -670,9 +703,19 @@ if [ "$DO_CRON" = never ]; then
   # and train the alarm to be ignored before it ever matters.
   info "NOT installing a cron entry — bootstrap only (no --cron given)."
   info "Deploy by hand while bootstrapping: $ROOT/bin/epik-pull.sh"
+elif crontab -l 2>/dev/null | grep -qF "$CRON_LINE"; then
+  info "entry already installed and current"
 elif crontab -l 2>/dev/null | grep -qF "$ROOT/bin/epik-pull.sh"; then
-  info "entry already installed"
-elif ask "Install the */5 cron entry (flock-guarded, mails you only on failure)?" YES; then
+  # An epik line exists but is not the current one — an OLDER install (e.g. the
+  # bare `flock -n ... epik-pull.sh` line with no reaper and no run ceiling). That
+  # exact line is what let a wedged tick hold the lock for 9.5h, so REPLACE it in
+  # place rather than leaving it. Idempotent: it swaps the one epik line and keeps
+  # everything else (MAILTO, other jobs) untouched.
+  info "found an OLDER epik cron line — upgrading it to the reaper + run-ceiling line"
+  { crontab -l 2>/dev/null | grep -vF "$ROOT/bin/epik-pull.sh"; \
+    echo "$CRON_LINE"; } | crontab -
+  info "upgraded: $CRON_LINE"
+elif ask "Install the */5 cron entry (reaper + flock + run ceiling; mails you only on failure)?" YES; then
   { crontab -l 2>/dev/null || true; \
     grep -q '^MAILTO=' <(crontab -l 2>/dev/null || true) || echo "MAILTO=coby@tiereduptech.com"; \
     echo "$CRON_LINE"; } | crontab -
