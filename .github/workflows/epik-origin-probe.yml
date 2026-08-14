@@ -1,33 +1,43 @@
-name: Epik origin probe (bot-protection layer)
+name: Epik origin probe (bot-protection layer + crawler gate)
 
 # =============================================================================
-#  A one-shot, on-demand probe that answers ONE question, from a GitHub runner —
-#  the same vantage point the watchdog and confirm-poll read from:
+#  A one-shot, on-demand probe that runs from a GitHub runner — the same
+#  datacenter-IP vantage the watchdog reads from — and answers TWO questions
+#  about Epik's shared-hosting bot protection (the wsidchk "request is being
+#  verified" interstitial):
 #
-#    When Epik's shared hosting challenges us with the wsidchk "request is being
-#    verified" interstitial, WHERE does that challenge live? — because that
-#    decides how it can be exempted (DESIGN §8.4, option 1):
+#  1. CRAWLER GATE (hard gate on DNS cutover). Does the challenge hit Googlebot
+#     and Bingbot on real content pages? If a search crawler is served the
+#     interstitial instead of a product page, that is the noindex disaster in a
+#     new form — 5,500+ pages de-ranked. So we request a product page (and a
+#     category and the homepage) with Googlebot's, Bingbot's, a browser's and
+#     curl's User-Agent, pinned to the origin, and compare.
 #
-#      edge / pre-.htaccess  -> even a pure static file is challenged. .htaccess
-#                               cannot reach it; the exemption must be set in the
-#                               provider's bot-protection control.
-#      handler / path-scoped -> static files pass but PHP / the status JSON are
-#                               challenged. A per-path exclusion (.htaccess or the
-#                               bot tool) is likely to work.
-#      UA-heuristic          -> curl's User-Agent is challenged where a browser UA
-#                               is not. The poll can dodge it immediately by sending
-#                               a realistic UA; a UA/path allow is the durable fix.
-#      not reproduced        -> nothing challenged this run. The block is transient;
-#                               re-run a few times, ideally under load.
+#       PASS (proven) : curl is challenged in the SAME run where Googlebot and
+#                       Bingbot get content -> the exemption is UA-based, so real
+#                       Googlebot passes too. Gate clear on the crawler question.
+#       FAIL          : a crawler UA is challenged. DNS MUST NOT MOVE. (Caveat: a
+#                       runner sending Googlebot's UA is a SPOOFER; a bot tool that
+#                       verifies crawlers by reverse-DNS would challenge the spoofer
+#                       yet pass real Googlebot — so a FAIL here does not PROVE real
+#                       Googlebot is harmed, but it means the gate cannot be cleared
+#                       from a runner. Only Epik confirming they exempt VERIFIED
+#                       crawlers clears it.)
+#       INCONCLUSIVE  : the challenge did not fire this run. Neither proven nor
+#                       disproven — let an auto-fired run (below) land, or re-run.
 #
-#  It only ever GETs the origin's own pages (read-only), pinned to EPIK_ORIGIN_IP
-#  exactly as the watchdog pins, so it measures the BOX and not whatever DNS points
-#  at pre-cutover. Dispatch it, read the summary, THEN ask Epik with specifics.
+#  2. LAYER (for the exemption ask, DESIGN §8.4 option 1). WHERE does the
+#     challenge live — edge/pre-.htaccess (even a static file is challenged),
+#     handler/path-scoped, or UA-heuristic? That decides how it can be exempted.
+#
+#  Read-only: it only GETs the origin's own pages, pinned to EPIK_ORIGIN_IP
+#  exactly as the watchdog pins, so it measures the BOX, not pre-cutover DNS.
 #
 #  The challenge is intermittent, so a hand-dispatched probe usually arrives after
-#  it has cleared. epik-watchdog.yml therefore dispatches this workflow AUTOMATICALLY
-#  the moment it sees a `blocked` verdict — that run arrives while the challenge is
-#  still up and reproduces it by construction. You can still dispatch it by hand.
+#  it has cleared. epik-watchdog.yml therefore dispatches this workflow
+#  AUTOMATICALLY the moment it sees a `blocked` verdict — that run arrives while
+#  the challenge is still up, which is the only time the PASS/FAIL observation is
+#  actually available. You can still dispatch it by hand.
 # =============================================================================
 
 on:
@@ -53,12 +63,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Probe the origin and locate the challenge layer
+      - name: Probe the origin — crawler gate and challenge layer
         env:
           SITE: ${{ github.event.inputs.site == 'staging' && vars.EPIK_STAGING_URL || 'https://prorigbuilder.com' }}
           AUTH: ${{ github.event.inputs.site == 'staging' && secrets.EPIK_STAGING_BASIC_AUTH || '' }}
-          # Same pin as the watchdog: production is the challenged, pre-DNS target.
-          # An explicit input wins, else the repo variable (production only).
           ORIGIN_IP: ${{ github.event.inputs.origin_ip != '' && github.event.inputs.origin_ip || (github.event.inputs.site == 'production' && vars.EPIK_ORIGIN_IP || '') }}
           RUN_ID: ${{ github.run_id }}
         run: |
@@ -72,34 +80,38 @@ jobs:
             PIN="pinned: $HOST:443 -> $ORIGIN_IP (cert not validated)"
           else
             PIN="following DNS for $HOST"
-            echo "::warning::EPIK_ORIGIN_IP is unset and no override was given — this follows DNS, which pre-cutover answers from RAILWAY, not the box. The layer verdict will not describe the box's origin. Set the repo variable or pass the origin_ip input."
+            echo "::warning::EPIK_ORIGIN_IP is unset and no override was given — this follows DNS, which pre-cutover answers from RAILWAY, not the box. Neither verdict will describe the box's origin. Set the repo variable or pass the origin_ip input."
           fi
           echo "probing $SITE — $PIN"
 
-          # curl's honest default UA vs a current desktop-Chrome UA. If the second
-          # slips through where the first is challenged, the rule is UA-based.
-          UA_CURL="epik-origin-probe/1.0 (+github-actions; read-only origin probe)"
-          UA_CHROME="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+          # Four User-Agents. curl = the honest datacenter client the watchdog uses;
+          # browser = a current desktop Chrome; then the two crawlers whose fate is
+          # the gate. If a crawler UA is served content where curl is challenged, the
+          # exemption is UA-based; if a crawler UA is itself challenged, the gate fails.
+          UAS=(curl browser googlebot bingbot)
+          declare -A UA
+          UA[curl]="epik-origin-probe/1.0 (+github-actions; read-only origin probe)"
+          UA[browser]="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+          UA[googlebot]="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+          UA[bingbot]="Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
 
-          # path | what it exercises. gone.html and robots.txt are PURE STATIC (no
-          # PHP, no rewrite) — if THEY are challenged, the challenge is in front of
-          # everything. _env.php is a PHP handler; the JSON is the watchdog's real
-          # read; the nonexistent path exercises the .htaccess rewrite -> resolver.
+          # path | kind | description.  kind=content -> a real SEO page, feeds the
+          # CRAWLER GATE. kind=layer -> feeds the layer verdict. gone.html is PURE
+          # STATIC (no PHP/rewrite); the product page is 1 of 5,516 crawled URLs.
           PATHS=(
-            "/_deploy-status.json|static JSON — the watchdog's actual read"
-            "/_env.php|PHP handler"
-            "/gone.html|pure static file (no PHP, no rewrite)"
-            "/robots.txt|pure static file"
-            "/|homepage"
-            "/__probe-nonexistent-$RUN_ID|unknown path — .htaccess rewrite then PHP resolver"
+            "/parts/cpu/amd-ryzen-9-9950x-10001|content|product page (1 of 5,516 crawled)"
+            "/parts/cpu|content|category page"
+            "/|content|homepage"
+            "/_deploy-status.json|layer|static JSON — the watchdog's read"
+            "/_env.php|layer|PHP handler"
+            "/gone.html|layer|pure static file (no PHP, no rewrite)"
+            "/__probe-nonexistent-$RUN_ID|layer|unknown path — .htaccess rewrite then resolver"
           )
 
-          # Fetch one path with one UA. Echoes CHALLENGE or ok:<code>; captures the
-          # FIRST challenged response's headers+body as evidence.
           EVID=0
-          probe() {  # $1=path  $2=ua
+          probe() {  # $1=path  $2=ua-string  -> echoes CHALLENGE | ok:<code>
             local code
-            code=$(curl "${BASE[@]}" -A "$2" "$SITE$1?cb=$RUN_ID" 2>/dev/null || echo 000)
+            code=$(curl "${BASE[@]}" -A "$2" "$SITE$1?cb=$RUN_ID.$RANDOM" 2>/dev/null || echo 000)
             if grep -qiE 'wsidchk|request is being verified' /tmp/body 2>/dev/null; then
               if [ "$EVID" = 0 ]; then cp /tmp/hdr /tmp/evid.hdr 2>/dev/null || true; cp /tmp/body /tmp/evid.body 2>/dev/null || true; EVID=1; fi
               printf 'CHALLENGE'
@@ -108,65 +120,82 @@ jobs:
             fi
           }
 
-          declare -A RC RH
+          declare -A R
           for entry in "${PATHS[@]}"; do
             p=${entry%%|*}
-            RC[$p]=$(probe "$p" "$UA_CURL")
-            RH[$p]=$(probe "$p" "$UA_CHROME")
+            for u in "${UAS[@]}"; do R["$p|$u"]=$(probe "$p" "${UA[$u]}"); done
           done
 
           ch() { [ "$1" = CHALLENGE ]; }
 
-          # ── build the results table ──────────────────────────────────────────
+          # ── results table ────────────────────────────────────────────────────
           {
             echo "## Epik origin probe — $SITE"
             echo ""
             echo "$PIN"
             echo ""
-            echo "| path | exercises | curl UA | browser UA |"
-            echo "|---|---|---|---|"
+            echo "| path | kind | curl | browser | googlebot | bingbot |"
+            echo "|---|---|---|---|---|---|"
             for entry in "${PATHS[@]}"; do
-              p=${entry%%|*}; desc=${entry#*|}
-              echo "| \`$p\` | $desc | ${RC[$p]} | ${RH[$p]} |"
+              p=${entry%%|*}; rest=${entry#*|}; kind=${rest%%|*}; desc=${rest#*|}
+              echo "| \`$p\` <br>_${desc}_ | $kind | ${R[$p|curl]} | ${R[$p|browser]} | ${R[$p|googlebot]} | ${R[$p|bingbot]} |"
             done
             echo ""
           } >> "$GITHUB_STEP_SUMMARY"
 
-          # ── classify the layer ───────────────────────────────────────────────
-          static_ch=0
-          for p in /gone.html /robots.txt; do ch "${RC[$p]}" && static_ch=1; done
-          status_ch=0; ch "${RC[/_deploy-status.json]}" && status_ch=1
-          env_ch=0;    ch "${RC[/_env.php]}"            && env_ch=1
-          ua_dodge=0
-          for entry in "${PATHS[@]}"; do p=${entry%%|*}; if ch "${RC[$p]}" && ! ch "${RH[$p]}"; then ua_dodge=1; fi; done
-          any_ch=0
-          for entry in "${PATHS[@]}"; do p=${entry%%|*}; { ch "${RC[$p]}" || ch "${RH[$p]}"; } && any_ch=1; done
+          # ── CRAWLER GATE ─────────────────────────────────────────────────────
+          crawler_challenged=0   # a crawler UA challenged on a content page
+          proof_exempt=0         # curl challenged AND both crawlers got content, same page
+          any_challenge=0        # the challenge fired at all this run
+          for entry in "${PATHS[@]}"; do
+            p=${entry%%|*}; rest=${entry#*|}; kind=${rest%%|*}
+            for u in "${UAS[@]}"; do ch "${R[$p|$u]}" && any_challenge=1; done
+            [ "$kind" = content ] || continue
+            { ch "${R[$p|googlebot]}" || ch "${R[$p|bingbot]}"; } && crawler_challenged=1
+            if ch "${R[$p|curl]}" && ! ch "${R[$p|googlebot]}" && ! ch "${R[$p|bingbot]}"; then proof_exempt=1; fi
+          done
 
-          verdict=""; advice=""
-          if [ "$any_ch" = 0 ]; then
-            verdict="NOT REPRODUCED — nothing was challenged this run."
-            advice="The block is transient, not constant (the watchdog's green-on-blocked + retry already absorbs that, and the persistent-block guard catches a sustained one). Re-run this probe a few times, ideally when a deploy is in flight, before concluding it is gone."
-          elif [ "$ua_dodge" = 1 ] && [ "$static_ch" = 0 ]; then
-            verdict="UA-HEURISTIC — curl's User-Agent is challenged where a browser UA passes."
-            advice="Immediate mitigation: have the watchdog and confirm-poll send a browser User-Agent (-A) on the status read. Durable fix: ask Epik to allow the runner by UA or to exempt the status path in the bot-protection control. This does NOT need .htaccess."
-          elif [ "$static_ch" = 1 ]; then
-            verdict="EDGE / PRE-.HTACCESS — even a pure static file is challenged."
-            advice="The challenge runs before .htaccess, so an .htaccess exclusion cannot reach it. The exemption MUST be set in Epik's bot-protection control (cPanel / provider UI): allow the specific path(s) _deploy-status.json and _env.php, or the runner egress. Ask Epik for a per-path/UA exclusion at the WAF/bot layer, not a rewrite rule."
-          elif [ "$status_ch" = 1 ] || [ "$env_ch" = 1 ]; then
-            verdict="HANDLER / PATH-SCOPED — static files pass, but the status JSON and/or PHP are challenged."
-            advice="A per-path exclusion is likely to work. Try it at the .htaccess/app layer first (cheapest, in our control); if that does not clear it, the same exclusion in Epik's bot-protection control will. Ask Epik to exempt _deploy-status.json and _env.php specifically."
+          if [ "$crawler_challenged" = 1 ]; then
+            GATE="FAIL"
+            GATE_MSG="A crawler User-Agent was served the interstitial on a content page. **DNS MUST NOT MOVE.** Served the challenge instead of the page, Googlebot/Bingbot would de-index those URLs — the noindex disaster in a new form. Caveat: this runner sends a SPOOFED crawler UA, so if Epik's bot tool verifies crawlers by reverse-DNS it would challenge this spoofer yet pass REAL Googlebot; that does not clear the gate from here. Do not cut over until Epik confirms IN WRITING that they exempt VERIFIED search-engine crawlers (Googlebot/Bingbot by reverse-DNS)."
+          elif [ "$proof_exempt" = 1 ]; then
+            GATE="PASS (proven)"
+            GATE_MSG="In this run curl was challenged while Googlebot AND Bingbot were served content on the same page — so the exemption is UA-based, and real Googlebot passes too. The crawler gate is clear. (Security note: a UA-only exemption is trivially spoofable; fine for SEO, worth knowing.)"
+          elif [ "$any_challenge" = 1 ]; then
+            GATE="LIKELY PASS"
+            GATE_MSG="The challenge fired this run but not on any content page under a crawler UA, and curl was not challenged on a page where a crawler got content, so there is no clean proof. Crawlers were not seen challenged — re-run, ideally via an auto-fired run during a live block, to convert this to PASS (proven)."
           else
-            verdict="MIXED — a challenge appeared but not on the paths the checks read."
-            advice="Read the table above: the checks read _deploy-status.json (and _env.php). If those are green here, the earlier watchdog block may have been transient. Re-run under load."
+            GATE="INCONCLUSIVE"
+            GATE_MSG="The challenge did not fire at all this run, so the crawler question is neither proven nor disproven. The watchdog auto-dispatches this probe on a \`blocked\` verdict — that is exactly when the PASS/FAIL observation is available. Let one of those runs land, or re-run under load, before treating the gate as clear."
+          fi
+
+          # ── LAYER (for the exemption ask) ────────────────────────────────────
+          static_ch=0; ch "${R[/gone.html|curl]}" && static_ch=1
+          json_ch=0;   ch "${R[/_deploy-status.json|curl]}" && json_ch=1
+          php_ch=0;    ch "${R[/_env.php|curl]}" && php_ch=1
+          ua_dodge=0
+          for entry in "${PATHS[@]}"; do p=${entry%%|*}; if ch "${R[$p|curl]}" && ! ch "${R[$p|browser]}"; then ua_dodge=1; fi; done
+          if [ "$any_challenge" = 0 ]; then
+            LAYER="NOT REPRODUCED — nothing challenged this run (re-run, or wait for an auto-fired run during a live block)."
+          elif [ "$ua_dodge" = 1 ] && [ "$static_ch" = 0 ]; then
+            LAYER="UA-HEURISTIC — curl challenged where a browser passes. Fix: send a browser UA, or ask Epik for a UA/path allow. No .htaccess needed."
+          elif [ "$static_ch" = 1 ]; then
+            LAYER="EDGE / PRE-.HTACCESS — even a pure static file is challenged. .htaccess cannot reach it; the exemption must be set in Epik's bot-protection control (per-path or runner allow)."
+          elif [ "$json_ch" = 1 ] || [ "$php_ch" = 1 ]; then
+            LAYER="HANDLER / PATH-SCOPED — static passes, JSON/PHP challenged. A per-path exclusion is likely to work (.htaccess/app first, else the bot tool)."
+          else
+            LAYER="MIXED — a challenge appeared but not on the layer paths. Read the table; re-run under load."
           fi
 
           {
-            echo "### Verdict: $verdict"
+            echo "### Crawler gate (hard gate on DNS cutover): $GATE"
             echo ""
-            echo "$advice"
+            echo "$GATE_MSG"
             echo ""
-            if [ -s /tmp/evid.hdr ]; then
-              srv=$(grep -i '^server:' /tmp/evid.hdr | head -1 | tr -d '\r' || true)
+            echo "### Challenge layer: $LAYER"
+            echo ""
+            if [ -s /tmp/evid.body ]; then
+              srv=$(grep -i '^server:' /tmp/evid.hdr 2>/dev/null | head -1 | tr -d '\r' || true)
               echo "**Evidence — first challenged response**"
               echo ""
               echo '```'
@@ -178,6 +207,14 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
           echo ""
-          echo "VERDICT: $verdict"
-          echo "$advice"
+          echo "CRAWLER GATE: $GATE"
+          echo "$GATE_MSG"
+          echo ""
+          echo "LAYER: $LAYER"
           echo "(full table in the run summary)"
+
+          # A FAIL is a hard gate — make the run itself red so it cannot be missed.
+          if [ "$GATE" = "FAIL" ]; then
+            echo "::error::CRAWLER GATE FAILED — a crawler UA was served the bot interstitial. DNS cutover is blocked until Epik exempts verified crawlers. See the run summary."
+            exit 1
+          fi

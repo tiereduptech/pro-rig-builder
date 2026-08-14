@@ -587,6 +587,20 @@ argument (mid-request atomicity) needs no cache behaviour to be true at all.
   sequence in `PHASE-B-INSTALL.md` §5 is that check by hand. Unpinned and answered by
   another stack, the healthcheck reports exit 3 "could not verify" — it does not
   manufacture a fault out of a DNS record (`hc_verdict()`).
+
+  **HARD GATE — crawler exemption (do not flip DNS until this clears).** The same bot
+  protection that challenges the watchdog (§8.4) would, if it also challenges Googlebot,
+  serve the interstitial to a crawler in place of a product page — the noindex disaster
+  in a new form, across 5,516 URLs. `epik-origin-probe.yml`'s **crawler gate** tests a
+  product page, a category and the homepage under Googlebot's, Bingbot's, a browser's and
+  curl's UA against the pinned origin. It clears the gate only on **PASS (proven)** — curl
+  challenged in the same run where both crawlers were served content, which shows the
+  exemption is UA-based and real Googlebot passes. A **FAIL** (any crawler UA challenged)
+  blocks cutover — with the caveat that a runner sends a *spoofed* crawler UA, so if Epik
+  verifies crawlers by reverse-DNS it would challenge the spoofer yet pass real Googlebot;
+  either way the gate cannot be cleared from a runner, only by Epik confirming they exempt
+  **verified** crawlers. Because the challenge is intermittent, the watchdog auto-fires
+  this probe on a `blocked` verdict, which is when the PASS/FAIL observation is available.
 - **Phase C** — keep `deploy-epik.yml` in the repo but disabled, as break-glass.
 - **Phase D** — delete the SFTP path and its secrets after two clean weeks.
 
