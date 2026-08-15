@@ -2,22 +2,37 @@
 
 Copyright © 2026 TieredUp Tech, Inc.
 
-Status: **canary verified, apex not moved.** The artifact is deployed on
-`prorigbuilder.pages.dev` and on the in-zone canary
-`pages-canary.prorigbuilder.com`, which has passed §4.3, CP-3 and the R2 check
-(2026-08-15 — results in §1). `prorigbuilder.com` still points at Railway.
+Status: **prep complete, apex not moved.** Every §3 item is cleared and every
+pre-flip check passes against the in-zone canary. `prorigbuilder.com` still
+points at Railway; the only remaining step is the DNS flip in §7.
 
-The §3.7 `.pages.dev` noindex host check is shipped in the resolver and verified
-locally; it reaches the edge on the next Pages deploy.
+Verified 2026-08-15, post-deploy (deployment `cae214a0`, `main` @ `8ab9e40`):
 
-One §3 item is **open**: Email Obfuscation is on and rewriting six routes. It was
-reported off twice on 2026-08-15 and measured still on both times — zone-wide, on
-the canary and the live apex, clean only on `pages.dev` which is outside the zone.
-A cache-busting query string is still rewritten and the injected cipher still
-varies per request, so it is neither cache nor propagation lag. If the Scrape
-Shield toggle reads off, check **Rules → Configuration Rules** for a rule turning
-it back on for matching requests; that override is invisible from the toggle.
-It must be off and `bytediff-pages.mjs` must exit 0 before the flip.
+| check | result |
+|---|---|
+| `bytediff-pages.mjs`, canary | exit 0 — 39/39 routes byte-identical to `dist/` |
+| `bytediff-pages.mjs`, `pages.dev` control | exit 0 — 39/39 |
+| CP-3, canary, `SAMPLE=40` | 40/40 clean, 0 hard violations |
+| §4.3, all six checks | pass — including the 404 control, now byte-identical |
+| redirect map, **all 12 entries** | 301 + relative `Location` + target 200 |
+| R2 through the zone | 200, correct `content-type` + CORS, preflight 204, no `cf-mitigated`, byte-exact against disk for both data dirs |
+| §3.7 `.pages.dev` noindex | live on the alias — see below |
+
+**Email Obfuscation is off.** It was reported off twice on 2026-08-15 and measured
+still on both times before it actually cleared. It is now off by positive evidence,
+not merely by an absent diff: the raw `mailto:` survives in-zone on the canary
+*and* on the live apex, with no `/cdn-cgi/l/email-protection` and no injected
+`email-decode` script on any of the three hosts. If it ever reappears while the
+Scrape Shield toggle reads off, check **Rules → Configuration Rules** for a rule
+turning it back on for matching requests; that override is invisible from the
+toggle, and it is what made the first two "it's off" reports wrong.
+
+**§3 item 2 is closed.** The apex was enumerated by hand and carries **zero** Page
+Rules (0 of 3 used), Redirect Rules, URL Rewrite Rules, Configuration Rules, Origin
+Rules, Cache Rules and Request Header Transform Rules. The only rules on it are the
+five Response Header Transform Rules assessed in §1. No leftover Railway forwarding
+rule exists, so nothing will fight the resolver's own 301s. This was the one §6 gap
+that could not be closed through the canary.
 
 Sibling documents: `DESIGN-cloudflare-pages.md` for the stack itself,
 `PHASE-B-INSTALL.md` for the Epik cutover this is mutually exclusive with.
@@ -94,7 +109,7 @@ Re-run against `https://pages-canary.prorigbuilder.com`, with the zone in front:
 | | result |
 |---|---|
 | §4.3 — all six checks | pass, identical to `pages.dev` except the 404 control |
-| §4.3 404 control | `404` correct, **body not byte-identical to `dist/404.html`** — see below |
+| §4.3 404 control | `404` correct, **body not byte-identical to `dist/404.html`** — see below. **Resolved once Email Obfuscation went off: re-measured byte-identical, 54,043 bytes, later the same day** |
 | CP-3, `SAMPLE=40` | 40/40 clean, 0 hard violations (offset 130) |
 | CP-3 negative control, same flags | exit 1, six violations — `ALLOW_NOINDEX_HEADER=1` suppresses that one line and nothing else |
 | byte diff, `/parts/` sample | 12/12 identical |
@@ -198,6 +213,14 @@ one by hand. The dangerous shapes:
   5,519 canonical tags in `public/sitemap.xml`, which are all apex
 - anything left over from Railway
 
+**CLEARED 2026-08-15, by hand.** The apex has **zero** rules in every one of these
+families: Page Rules (0 of 3 used), Redirect Rules, URL Rewrite Rules,
+Configuration Rules, Origin Rules, Cache Rules, Request Header Transform Rules.
+The only rules on the apex are the five Response Header Transform Rules assessed
+in §1. In particular there is **no leftover Railway forwarding rule**, so nothing
+will fight the resolver's 301s after the flip. This closes the item the canary was
+structurally unable to test.
+
 **3. Cache Rules / Cache Everything.** Cloudflare sends
 `public, max-age=0, must-revalidate` on Pages assets and HTML is not a default
 cached type, so the stock behaviour is correct (`DESIGN-cloudflare-pages.md` §6).
@@ -217,7 +240,7 @@ HTML on the custom domain and on nothing you have tested:
 | feature | what it does to a prerendered page |
 |---|---|
 | **Rocket Loader** | rewrites and defers `<script>` tags. Highest risk item on the list: this stack is a React SPA hydrating over prerendered HTML, and the Product JSON-LD CP-3 asserts on is itself a `<script>` tag |
-| **Email Obfuscation** | rewrites email-shaped text and injects a script. Corrupts any address inside JSON-LD or a meta description. **Confirmed ON 2026-08-15** — zone-wide, so it is rewriting the live apex today as well as the canary; six routes affected, no product page and no JSON-LD (§1) |
+| **Email Obfuscation** | rewrites email-shaped text and injects a script. Corrupts any address inside JSON-LD or a meta description. Was ON 2026-08-15 — zone-wide, six routes affected, no product page and no JSON-LD (§1). **Now OFF and confirmed by positive evidence** (raw `mailto:` survives in-zone on canary and apex), `bytediff-pages.mjs` exit 0 |
 | **Auto Minify** | removed by Cloudflare in 2024, but old zones still show the toggle. Minifying HTML can alter the tags CP-3 counts |
 | **Polish / Mirage** | rewrites `<img>`. Low correctness risk, but it is a rewrite |
 
@@ -311,6 +334,30 @@ It does not cover the 35 non-`/parts/` pages; widening `_routes.json` to reach t
 is what §5 refuses, and they carry canonicals. Accepted, and stated so it is not
 mistaken for covered.
 
+**Confirmed at the edge, 2026-08-15, deployment `cae214a0`.** The table above was
+`wrangler pages dev`; this is the deployed artifact. The scoping gap is now
+measured rather than inferred, and the split across the two columns is itself the
+proof of *which* mechanism sets the header on each host:
+
+| host | `/parts/<product>` | `/about` | source |
+|---|---|---|---|
+| `prorigbuilder.pages.dev` | `noindex, nofollow` | **none** | the resolver, scoped to `/parts/*` |
+| `cae214a0.prorigbuilder.pages.dev` | `noindex, nofollow` | `noindex` | resolver, plus Cloudflare's own per-deployment noindex |
+| `pages-canary.prorigbuilder.com` | `noindex, nofollow` | `noindex, nofollow` | the §2 Transform Rule, host-wide |
+| `prorigbuilder.com` | none | none | Railway — untouched by any of this |
+
+Read the rows against each other. A header that appears on `/parts/*` but *not* on
+`/about` can only be the Function, since every other mechanism here is host-wide;
+a header on both is the Transform Rule. That asymmetry is what distinguishes them,
+and it is why the canary's `noindex, nofollow` must not be read as evidence the
+resolver fired there — it did not, and the canary's headers are byte-for-byte what
+they were before this deploy.
+
+One unlooked-for benefit: Cloudflare already noindexes the per-deployment
+`<hash>.pages.dev` aliases itself, across all routes. The permanent
+`prorigbuilder.pages.dev` alias is the one that needed this code, which is exactly
+the host §3.7 was written for.
+
 ### How much of §3 is actually verified — read this before trusting it
 
 **Items 1, 3, 5 and 6 were verified by symptom through the canary, not by reading
@@ -344,16 +391,21 @@ the §5 rollback stands; a rollback to anything else does not.
 ## 4. The sequence
 
 ```
-settle apex ownership (§0)
-  -> enumerate zone config (§3)
-  -> attach pages-canary.prorigbuilder.com + noindex transform rule (§2)
-  -> bytediff-pages.mjs + §4.3 + cp3-pages.mjs against the canary  <- the real verification
-  -> clear §3 items 1-6            (2026-08-15: Email Obfuscation is the open one)
+settle apex ownership (§0)                                        [DONE 2026-08-15]
+  -> enumerate zone config (§3)                                   [DONE 2026-08-15]
+  -> attach pages-canary.prorigbuilder.com + noindex transform rule (§2)  [DONE]
+  -> bytediff-pages.mjs + §4.3 + cp3-pages.mjs against the canary  [DONE — found
+     Email Obfuscation; this is the run that earned the whole exercise]
+  -> clear §3 items 1-6                                           [DONE 2026-08-15]
   -> re-run all three against the canary       <- confirms the clearing
-     bytediff-pages.mjs must exit 0 here; that is what "cleared" means
-  -> ship the .pages.dev host check in the resolver (§3.7)   [DONE 2026-08-15]
-     it reaches the edge on the next Pages deploy — verify on pages.dev after
-  -> attach prorigbuilder.com as a Pages custom domain
+     bytediff-pages.mjs must exit 0 here; that is what "cleared" means  [DONE, 0]
+  -> ship the .pages.dev host check in the resolver (§3.7)         [DONE 2026-08-15]
+  -> merge to main + deploy target=production                     [DONE — 8ab9e40,
+     run 31905346482, deployment cae214a0, 16,406 files]
+  -> verify at the edge: pages.dev noindex, canary unchanged, bytediff 0,
+     CP-3 40/40, §4.3 six checks, R2                              [DONE 2026-08-15]
+  ───────────────────────────────────────────────────────  everything above: DONE
+  -> attach prorigbuilder.com as a Pages custom domain            <- YOU ARE HERE (§7)
   -> §4.3 + CP-3 against the apex, immediately
   -> delete the canary hostname
   -> set CF_PAGES_AUTO_DEPLOY=true
@@ -483,9 +535,10 @@ What does *not* roll back with it:
 
 Stated so it is not mistaken for covered:
 
-- **Apex-scoped rules.** The canary exercises everything except rules whose
-  expression names the apex host or an apex path. Those are read by hand (§3.2) and
-  are the one place where the first real measurement happens on live traffic.
+- ~~**Apex-scoped rules.**~~ **CLOSED 2026-08-15.** Read by hand (§3.2): the apex
+  carries zero rules in every family that could interfere. This was the gap that
+  could not be closed through the canary, and it is now closed by enumeration
+  rather than by symptom.
 - **The zone config itself.** §3 items 1/3/5/6 are verified by *symptom* through the
   canary, not by reading configuration — the enumeration curls at the top of §3 have
   never been run. See the table at the end of §3 for what each symptom does and does
@@ -502,3 +555,66 @@ Stated so it is not mistaken for covered:
   visible in Search Console days *after* it would be visible in curl. Watch
   "Page with redirect" and "Crawled – currently not indexed" for two weeks past
   cutover; a clean §4.3 is a necessary and not a sufficient condition.
+
+---
+
+## 7. The flip — dashboard clicks, in order
+
+Everything in §4 above this line is done. Prerequisites are met: §3 all clear,
+canary green, resolver noindex live at the edge.
+
+**Record the rollback target BEFORE touching anything.** The apex is proxied, so
+its origin is not readable from DNS or from this repo — once the record is
+overwritten, the only copy of the Railway target is the one you wrote down.
+
+```
+ 0. DNS -> Records -> prorigbuilder.com
+      screenshot the record. Write down: type, name, target, proxy status.
+      This is the rollback target. There is no other copy.
+
+ 1. Workers & Pages -> prorigbuilder -> Custom domains
+ 2. Set up a custom domain
+ 3. Enter: prorigbuilder.com          -> Continue
+ 4. Review the DNS change Cloudflare proposes  -> Activate domain
+ 5. Wait for Custom domains to show prorigbuilder.com = Active
+ 6. DNS -> Records -> confirm the apex record now points at the Pages project
+      and Proxy status is still Proxied (orange cloud)
+
+ 7. VERIFY, in this order, before touching anything else:
+      HOST=https://prorigbuilder.com node deploy/bytediff-pages.mjs      # exit 0
+      HOST=https://prorigbuilder.com SAMPLE=40 node deploy/cp3-pages.mjs # no ALLOW_NOINDEX_HEADER
+      curl -sI https://prorigbuilder.com/parts/ram/definitely-not-a-real-product-99999
+        -> 410, x-prerender: gone-410, x-robots-tag: noindex
+      curl -sI https://prorigbuilder.com/parts/cpu   -> 200, no location
+      curl -s -o /dev/null -w '%{http_code}' https://data.prorigbuilder.com/<any object>  -> 200
+      curl -sI https://prorigbuilder.com/parts/<product>  -> NO x-robots-tag
+
+ 8. Only after 7 is clean:
+      Custom domains -> pages-canary.prorigbuilder.com -> Remove
+      Rules -> Transform Rules -> delete the canary noindex rule
+```
+
+Step 7's last line is the one that matters most: an `X-Robots-Tag` on an apex
+product page means the resolver's host check misfired and the live catalog is
+being de-indexed. Roll back immediately.
+
+### Rollback
+
+```
+ 1. DNS -> Records -> prorigbuilder.com -> Edit
+      restore type/target from step 0, Proxy status Proxied
+      Save.  Propagation is seconds — the record is proxied, there is no TTL ramp.
+ 2. Workers & Pages -> prorigbuilder -> Custom domains
+      -> prorigbuilder.com -> Remove      (or Pages re-asserts the record)
+ 3. Caching -> Configuration -> Purge Everything
+ 4. curl -sI https://prorigbuilder.com/  -> expect x-railway-edge again
+```
+
+The rollback target must be HTTPS and must stay HTTPS: HSTS on this zone is
+`max-age=31536000; includeSubDomains; preload`, so the pin ships in the browsers'
+built-in list and cannot be lifted quickly (§5). Railway is HTTPS, so this
+rollback is sound; pointing the apex at a plain-HTTP origin to debug is not
+available and never will be.
+
+Do **not**, as part of a rollback, revert the `main` merge or redeploy Pages —
+neither touches what serves the apex, and both cost you the verified artifact.
