@@ -2,9 +2,13 @@
 
 Copyright © 2026 TieredUp Tech, Inc.
 
-Status: **not started.** The artifact is deployed and verified on
-`prorigbuilder.pages.dev` (production channel, 2026-08-15). No custom domain is
-attached, so nothing here has touched `prorigbuilder.com` yet.
+Status: **canary verified, apex not moved.** The artifact is deployed on
+`prorigbuilder.pages.dev` and on the in-zone canary
+`pages-canary.prorigbuilder.com`, which has passed §4.3, CP-3 and the R2 check
+(2026-08-15 — results in §1). `prorigbuilder.com` still points at Railway.
+
+One §3 item is **open**: Email Obfuscation is on and rewriting six routes. It must
+be off and the byte diff clean before the flip.
 
 Sibling documents: `DESIGN-cloudflare-pages.md` for the stack itself,
 `PHASE-B-INSTALL.md` for the Epik cutover this is mutually exclusive with.
@@ -73,6 +77,56 @@ result above was measured through an empty pipeline.
 Half of that middle box **rewrites HTML at the edge**, and CP-3 is an assertion
 about rendered HTML. So CP-3 passing at `pages.dev` says nothing about CP-3 on
 `prorigbuilder.com`. It has to be re-run through the zone.
+
+### What the canary then proved — 2026-08-15
+
+Re-run against `https://pages-canary.prorigbuilder.com`, with the zone in front:
+
+| | result |
+|---|---|
+| §4.3 — all six checks | pass, identical to `pages.dev` except the 404 control |
+| §4.3 404 control | `404` correct, **body not byte-identical to `dist/404.html`** — see below |
+| CP-3, `SAMPLE=40` | 40/40 clean, 0 hard violations (offset 130) |
+| CP-3 negative control, same flags | exit 1, six violations — `ALLOW_NOINDEX_HEADER=1` suppresses that one line and nothing else |
+| byte diff, `/parts/` sample | 12/12 identical |
+| byte diff, everything else | **6 of 27 routes rewritten** |
+| R2 through the zone | `200`, correct `content-type`, `access-control-allow-origin: https://prorigbuilder.com`, preflight `204`, no challenge, byte-length matches the same-origin copy |
+
+**Email Obfuscation was on**, rewriting `mailto:` into `/cdn-cgi/l/email-protection`
+on `/`, `/contact`, `/privacy`, `/terms`, `/affiliate` and `404.html`, and injecting
+`email-decode.min.js`. Contained: 0 of 5,493 product pages contain a `mailto:`, and
+all six JSON-LD blocks on the homepage still parse clean, so structured data was
+never touched. The cost is that the support address is JS-only for a non-JS client.
+
+**It is not a cutover regression.** `https://prorigbuilder.com/contact` shows the
+same rewrite today, in front of Railway — the setting is zone-wide and has been
+live on production all along. So it is not a new risk the flip introduces, and it
+is not a reason to delay on correctness grounds. It still has to go off before the
+flip for a different reason: while it is on, the byte diff can never be silent, and
+a verification step that is expected to fail is one nobody reads.
+
+Two things this run establishes beyond the immediate finding:
+
+- **CP-3 cannot see this class of defect** and never could — it samples product
+  pages, which is where the rewriting was not. Neither check subsumes the other.
+- **A zone rule can overwrite a header the Function sets.** The canary's noindex
+  Transform Rule replaced the resolver's `x-robots-tag: noindex` with
+  `noindex, nofollow` on the 410 path, rather than appending to it. Harmless here —
+  strictly stronger, on a throwaway hostname — but it is the mechanism behind the
+  July incident, and worth knowing before adding any header rule to the apex.
+
+### The zone's five response-header rules
+
+`HSTS`, `nosniff`, `X-Frame-Options: SAMEORIGIN`,
+`Referrer-Policy: strict-origin-when-cross-origin`,
+`Permissions-Policy: geolocation=(), microphone=(), camera=()`.
+
+**None interfere, and none are new at cutover — all five are already live on the
+apex today**, in front of Railway. Two of them (`nosniff`, `Referrer-Policy`) also
+appear on `pages.dev`, which is outside the zone, so Pages emits those itself with
+identical values; the zone rules are redundant there rather than conflicting, and
+no header is double-emitted (verified by header count). None touches
+`X-Robots-Tag`, canonicals, or `cache-control`.
 
 ---
 
@@ -154,7 +208,7 @@ HTML on the custom domain and on nothing you have tested:
 | feature | what it does to a prerendered page |
 |---|---|
 | **Rocket Loader** | rewrites and defers `<script>` tags. Highest risk item on the list: this stack is a React SPA hydrating over prerendered HTML, and the Product JSON-LD CP-3 asserts on is itself a `<script>` tag |
-| **Email Obfuscation** | rewrites email-shaped text and injects a script. Corrupts any address inside JSON-LD or a meta description |
+| **Email Obfuscation** | rewrites email-shaped text and injects a script. Corrupts any address inside JSON-LD or a meta description. **Confirmed ON 2026-08-15** — zone-wide, so it is rewriting the live apex today as well as the canary; six routes affected, no product page and no JSON-LD (§1) |
 | **Auto Minify** | removed by Cloudflare in 2024, but old zones still show the toggle. Minifying HTML can alter the tags CP-3 counts |
 | **Polish / Mirage** | rewrites `<img>`. Low correctness risk, but it is a rewrite |
 
@@ -214,6 +268,34 @@ It does not cover the 35 non-`/parts/` pages; widening `_routes.json` to reach t
 is what §5 refuses, and they carry canonicals. Accepted, and stated so it is not
 mistaken for covered.
 
+### How much of §3 is actually verified — read this before trusting it
+
+**Items 1, 3, 5 and 6 were verified by symptom through the canary, not by reading
+zone config.** The enumeration curls at the top of §3 need a `Zone:Read` token and
+have not been run. What that buys and what it leaves open, measured 2026-08-15:
+
+| item | symptom observed on the canary | what it does **not** prove |
+|---|---|---|
+| **1** SSL mode | HTTPS `200` throughout, no redirect loop on any route | that the mode is Full vs Full (Strict). It rules out Flexible, which is the failure §3.1 names, and nothing more |
+| **3** Cache Rules | `cache-control: public, max-age=0, must-revalidate` + `cf-cache-status: DYNAMIC` on HTML, on canary *and* apex — stock behaviour, so no Cache Everything with an Edge TTL override is in front of HTML | that no cache rule exists scoped to a path or hostname the canary never exercised — `/assets/*` included |
+| **5** Bot Fight / WAF | no challenge on any canary route; `data.prorigbuilder.com` returns `200` with `access-control-allow-origin: https://prorigbuilder.com`, preflight `204`, no `cf-mitigated` | **the thing §3.5 actually worries about.** These were browser-UA requests from one datacenter IP. Bot Fight challenges *crawlers*, and nothing here sent a crawler-shaped request or measured what Googlebot receives |
+| **6** HSTS | **on, and stronger than §3.6 assumed:** `max-age=31536000; includeSubDomains; preload` | nothing — this one is settled, and it tightens §5 (see below) |
+
+Item **2** (Page Rules / Redirect Rules on the apex) is not verifiable this way by
+construction — that is the §6 gap, unchanged. Item **4** *was* caught by symptom:
+Email Obfuscation was found on and rewriting six routes.
+
+The honest summary: the canary proves the zone is not breaking the artifact **for
+a browser**. It does not prove the zone config is what you think it is, and for
+item 5 the browser/crawler distinction is exactly the one that matters. Run the
+enumeration curls before the flip if a token can be had.
+
+`includeSubDomains; preload` also means §5's rollback caveat is understated: with
+`preload`, the pin is not just cached in clients that visited — it ships in the
+browser's built-in list, and removal is a months-long process through
+`hstspreload.org`. Any rollback target must be HTTPS, permanently. Railway is, so
+the §5 rollback stands; a rollback to anything else does not.
+
 ---
 
 ## 4. The sequence
@@ -222,9 +304,10 @@ mistaken for covered.
 settle apex ownership (§0)
   -> enumerate zone config (§3)
   -> attach pages-canary.prorigbuilder.com + noindex transform rule (§2)
-  -> byte-transparency diff + §4.3 + CP-3 against the canary   <- the real verification
-  -> clear §3 items 1-6
+  -> bytediff-pages.mjs + §4.3 + cp3-pages.mjs against the canary  <- the real verification
+  -> clear §3 items 1-6            (2026-08-15: Email Obfuscation is the open one)
   -> re-run all three against the canary       <- confirms the clearing
+     bytediff-pages.mjs must exit 0 here; that is what "cleared" means
   -> ship the .pages.dev host check in the resolver (§3.7)
   -> attach prorigbuilder.com as a Pages custom domain
   -> §4.3 + CP-3 against the apex, immediately
@@ -247,18 +330,46 @@ anything, including bytes no assertion names. The sharper test is to compare wha
 the host serves against what is on disk:
 
 ```sh
-HOST=https://pages-canary.prorigbuilder.com
-for f in $(find dist/parts -name index.html | shuf -n 12); do
-  u="${f#dist}"; u="${u%/index.html}"
-  curl -s "$HOST$u" | diff -q - "$f" >/dev/null || echo "REWRITTEN: $u"
-done
+HOST=https://pages-canary.prorigbuilder.com node deploy/bytediff-pages.mjs
 ```
 
-Silence means the pipeline is byte-transparent. This has a known-good baseline:
-on 2026-08-15 the `pages.dev` alias returned `dist/404.html` with a matching
-sha256 (`1f9b9cc2…`), so the Pages edge itself alters nothing. Any diff that
-appears on the canary and not on `pages.dev` is the zone, and §3.4 names the
-likely culprit — Rocket Loader first.
+Exit 0 means the pipeline is byte-transparent. This has a known-good baseline:
+the `pages.dev` alias is outside the zone, so it should always pass — run it
+there first as a control, and any route that differs on the canary but not on
+`pages.dev` is the zone. The script names the likely culprit itself from the
+injected markup rather than leaving you to guess at §3.4.
+
+**Do not go back to the `find dist/parts | shuf -n 12` loop this replaces.** It
+returned 12/12 clean against the canary on 2026-08-15 while Email Obfuscation was
+actively rewriting six routes, because not one of the 5,493 product pages contains
+a `mailto:` and every affected route was outside `/parts/`. It passed because it
+was not looking.
+
+The fix is not "sample more" — it is that the two halves of `dist/` want opposite
+strategies:
+
+| | volume | variety | strategy |
+|---|---|---|---|
+| `/parts/` | 5,493 | one template | rotating sample (`SAMPLE=`, default 12) |
+| everything else | 27 routes | each hand-built — the only `mailto:`, the only `<form>`, the only long-form prose | **exhaustive, every run** |
+
+Sampling the tail is close to worthless: the defect lives in whichever route the
+sample skipped. Checking it exhaustively costs 27 requests.
+
+Two details the script handles that a shell loop got wrong: `dist/` emits every
+static page twice (`about.html` *and* `about/index.html`, byte-identical — 25/25
+pairs verified 2026-08-15), so routes are collapsed rather than fetched twice; and
+`dist/404.html` is never served at `/404.html`, so it is probed via an unmatched
+path outside `/parts/`, which is how a client actually reaches it (`DESIGN` §4.1).
+
+When a route does differ, the script fetches it a second time. A body that differs
+between two fetches is a per-request injection — Email Obfuscation randomises its
+cipher byte on every response — which is a much stronger signal than one mismatch,
+and it rules out a stale `dist/` as the explanation.
+
+Not covered: this compares HTML only. Polish/Mirage rewrite `<img>` payloads
+rather than markup, so a Polish-only regression passes this check. §3.4 says turn
+it off; nothing here proves it is.
 
 ### Re-running the checks against a hostname
 
@@ -312,7 +423,12 @@ a TTL. Rollback is "point the apex back at Railway" and it is effectively instan
 What does *not* roll back with it:
 
 - **anything cached at the edge** while a §3.3 rule was active — purge everything
-- **HSTS** pins, if §3.6 is on
+- **HSTS.** Measured 2026-08-15 as `max-age=31536000; includeSubDomains; preload`.
+  `preload` makes this stronger than a cached pin: the zone ships in the browsers'
+  built-in list, so the constraint applies to clients that have never visited and
+  cannot be lifted quickly. **Every rollback target must be HTTPS, permanently.**
+  Railway is, so this rollback stands — but "point the apex at a plain-HTTP origin
+  for ten minutes to debug" is not available and never will be
 - **`VITE_DATA_BASE`**, if it has been set by then. `DESIGN-cloudflare-pages.md`
   §10 is explicit: the bundle is *committed*, so clearing the variable fixes
   nothing until another full prerender run rebuilds it. No redeploy undoes it
@@ -326,6 +442,15 @@ Stated so it is not mistaken for covered:
 - **Apex-scoped rules.** The canary exercises everything except rules whose
   expression names the apex host or an apex path. Those are read by hand (§3.2) and
   are the one place where the first real measurement happens on live traffic.
+- **The zone config itself.** §3 items 1/3/5/6 are verified by *symptom* through the
+  canary, not by reading configuration — the enumeration curls at the top of §3 have
+  never been run. See the table at the end of §3 for what each symptom does and does
+  not establish.
+- **Crawler treatment.** Everything measured so far was a browser-shaped request
+  from a datacenter IP. Bot Fight Mode challenges non-browser traffic, which is the
+  §3.5 exposure, and no check in this document has ever sent a crawler-shaped
+  request or observed what Googlebot receives. The URL Inspection tool in Search
+  Console is the only instrument that answers this, and it only works post-flip.
 - **Load.** All 5,484 product pages invoke the Function (`DESIGN` §5). The work is
   one `next()` and a status check, and nothing here has measured it at production
   request rates.
