@@ -20,6 +20,13 @@
     "cpus": 2
   },
 
+  // The javascript-node image has no SSH server, so `gh codespace ssh` has
+  // nothing to connect to. This feature installs sshd (on 2222) so the
+  // codespace is reachable from a local terminal instead of the browser one.
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": { "version": "latest" }
+  },
+
   "containerEnv": {
     // Skip Puppeteer's ~150 MB Chromium download during `npm ci`. Prerender
     // (the only thing that uses it) isn't supported in Codespaces anyway, and
