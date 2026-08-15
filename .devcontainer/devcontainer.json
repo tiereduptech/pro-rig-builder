@@ -1,0 +1,83 @@
+// GitHub Codespaces / Dev Container config for rigfinder.
+//
+// Goal: open a browser at codespace.github.com, get an identical dev box, run
+// `npm run dev` with live reload, and edit layout with no local checkout.
+//
+// Scope note: this is a DEV environment only. The nightly SEO prerender
+// (Puppeteer) and the ingest/verify scripts (external credentials) are NOT
+// expected to work here — see .devcontainer/README.md for the boundaries.
+{
+  "name": "rigfinder dev",
+
+  // Node 20 to match every GitHub Actions workflow (setup-node@v4 node 20).
+  // The Debian-based devcontainers image ships git + gh CLI preinstalled.
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20-bookworm",
+
+  // Base 2-core machine is plenty for a Vite dev server. Stating the minimum
+  // here nudges the create dialog toward the free-tier machine instead of a
+  // 4-/8-core box that burns Codespaces hours 2x/4x faster.
+  "hostRequirements": {
+    "cpus": 2
+  },
+
+  "containerEnv": {
+    // Skip Puppeteer's ~150 MB Chromium download during `npm ci`. Prerender
+    // (the only thing that uses it) isn't supported in Codespaces anyway, and
+    // this shaves the biggest chunk off container creation time. To run
+    // prerender manually, install a browser first:
+    //   npx puppeteer browsers install chrome
+    "PUPPETEER_SKIP_DOWNLOAD": "true",
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
+  },
+
+  // Reproducible install on create. Runs once when the container is built.
+  "postCreateCommand": "npm ci",
+
+  // Don't drop you at a terminal until deps are installed.
+  "waitFor": "postCreateCommand",
+
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Vite dev server",
+      // Pop the Simple Browser preview open automatically once Vite binds 3000.
+      "onAutoForward": "openPreview"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        // Keep the editor from indexing/watching the heavy, generated, or
+        // vendored trees. The repo commits a 16k-file dist/ and a ~33 MB
+        // catalog-build/; watching those makes the container feel like it's
+        // "crawling" on first open. None of it is edited by hand for dev.
+        "files.watcherExclude": {
+          "**/node_modules/**": true,
+          "**/dist/**": true,
+          "**/catalog-build/**": true,
+          "**/public/price-history/**": true,
+          "**/public/reviews/**": true,
+          "**/*.pre-*": true
+        },
+        "search.exclude": {
+          "**/node_modules": true,
+          "**/dist": true,
+          "**/catalog-build": true,
+          "**/public/price-history": true,
+          "**/public/reviews": true
+        },
+        // Hide the generated trees from the file tree so layout editing stays
+        // focused on src/. (Still on disk; just collapsed out of the way.)
+        "files.exclude": {
+          "**/dist": true,
+          "**/catalog-build": true
+        }
+      }
+    }
+  }
+}
