@@ -38,7 +38,8 @@
   },
 
   // Reproducible install on create. Runs once when the container is built.
-  "postCreateCommand": "npm ci",
+  // Also install Claude Code globally so it survives container rebuilds.
+  "postCreateCommand": "npm ci && npm install -g @anthropic-ai/claude-code",
 
   // Don't drop you at a terminal until deps are installed.
   "waitFor": "postCreateCommand",
