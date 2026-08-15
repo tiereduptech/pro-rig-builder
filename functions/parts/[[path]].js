@@ -77,10 +77,17 @@ const HTML = 'text/html; charset=utf-8';
 // non-product routes on the alias are unaffected. Widening that scope is what
 // DESIGN-cloudflare-pages.md §5 refuses; those pages carry absolute canonicals.
 // Accepted and stated, not overlooked.
+// `nofollow` as well as `noindex`, matching the canary's Transform Rule. noindex
+// alone would be enough if this Function saw the whole host, but _routes.json
+// scopes it to /parts/* while the prerendered internal links are relative, so a
+// crawler that lands on a covered product page can walk straight out to the 35
+// uncovered routes — which are then indexable duplicates of live production.
+// nofollow attenuates exactly that hop. It does not close it (Google treats
+// nofollow as a hint for discovery), so the gap below is still a gap.
 function noindexOnPagesDev(request, response) {
   if (!new URL(request.url).hostname.endsWith('.pages.dev')) return response;
   const tagged = new Response(response.body, response);
-  tagged.headers.set('X-Robots-Tag', 'noindex');
+  tagged.headers.set('X-Robots-Tag', 'noindex, nofollow');
   return tagged;
 }
 

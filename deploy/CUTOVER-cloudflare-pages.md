@@ -264,8 +264,16 @@ host check in the resolver**, not Cloudflare Access. **Shipped 2026-08-15** as
 ```js
 if (!new URL(request.url).hostname.endsWith('.pages.dev')) return response;
 const tagged = new Response(response.body, response);
-tagged.headers.set('X-Robots-Tag', 'noindex');
+tagged.headers.set('X-Robots-Tag', 'noindex, nofollow');
 ```
+
+`nofollow` as well as `noindex`, matching the canary's Transform Rule. `noindex`
+alone would suffice if this Function saw the whole host, but `_routes.json` scopes
+it to `/parts/*` while the prerendered internal links are relative — so a crawler
+landing on a covered product page can walk straight out to the 35 uncovered
+routes, which are then indexable duplicates of live production. `nofollow`
+attenuates that hop. It does not close it (Google treats `nofollow` as a discovery
+hint), so the gap below remains a gap.
 
 It is applied at the Function's single exit, not inside a branch. `onRequest` has
 seven return paths — asset hit, trailing-slash 200, non-404 passthrough, other
@@ -278,8 +286,8 @@ Verified with `wrangler pages dev`, 2026-08-15 — all seven paths, four hostnam
 
 | | `X-Robots-Tag` |
 |---|---|
-| `prorigbuilder.pages.dev`, all 7 paths | `noindex` |
-| `abc123.prorigbuilder.pages.dev` (preview), all 7 paths | `noindex` |
+| `prorigbuilder.pages.dev`, all 7 paths | `noindex, nofollow` |
+| `abc123.prorigbuilder.pages.dev` (preview), all 7 paths | `noindex, nofollow` |
 | `prorigbuilder.com`, all 7 paths | none, except the 410's own (unchanged) |
 | `pages-canary.prorigbuilder.com`, all 7 paths | none, except the 410's own (unchanged) |
 | `notpages.dev`, `pages.dev.evil.com` | none — the leading dot prevents a suffix false positive |
