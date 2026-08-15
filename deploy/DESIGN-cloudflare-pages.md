@@ -89,9 +89,20 @@ directive, and carries no canonical before it will emit anything.
 
 ## 4. Two platform behaviours that decide the shape of this design
 
-Both measured with `wrangler pages dev` (wrangler 4.86.0, workerd) against the
-real `dist/` on 2026-08-15. Both should be re-confirmed on the first staging
-deploy; they are local-runtime observations, not documented guarantees.
+> **Both are UNCONFIRMED against the real edge, and both must be re-confirmed on
+> the first staging deploy — see §4.3 for how.**
+>
+> They were measured with `wrangler pages dev` (wrangler 4.86.0, workerd) against
+> the real `dist/` on 2026-08-15. That is the same asset-serving implementation
+> Cloudflare runs, which is why it is trustworthy enough to design against — but
+> it is a local runtime, not the production edge, and neither behaviour is a
+> documented guarantee. Cloudflare can change either without changing wrangler.
+>
+> The two fixes below are **harmless if the edge disagrees** — a `404.html` that
+> is never served, and sibling files that are never reached. What would need
+> revisiting is the *reasoning*, and in one direction the failure is silent: if
+> the edge does not 404 the way §4.1 assumes, the resolver is inert and nothing
+> in the deploy goes red.
 
 ### 4.1 Without a `404.html`, the resolver is dead code
 
@@ -161,6 +172,46 @@ outside `/parts/` would mean a root `_middleware.js`, putting a Worker in front 
 every asset on the site to repair 25 URLs. Hence the split.
 
 Both forms answer 200 with identical bytes afterwards — verified.
+
+### 4.3 Re-confirming both on the first staging deploy
+
+Run these against the preview URL. Each isolates one of the two assumptions, and
+each says what it means if the edge disagrees.
+
+```sh
+PREVIEW=https://staging.<project>.pages.dev
+
+# §4.1 — does the edge 404 an unmatched path, so the resolver can see it?
+curl -sI "$PREVIEW/parts/ram/definitely-not-a-real-product-99999" \
+  | grep -E 'HTTP/|x-prerender|x-robots-tag'
+#   expect: HTTP/2 410, x-prerender: gone-410, x-robots-tag: noindex
+#   200 + no x-prerender  -> the resolver is INERT. next() is not seeing a 404,
+#                            so every retired URL is soft-404ing. Do not promote
+#                            this to production; the 404.html assumption is wrong
+#                            and the Function needs a different miss signal.
+
+# §4.1 control — the same path OUTSIDE /parts/, where no Worker runs
+curl -sI "$PREVIEW/definitely-not-a-real-page" | head -1
+#   expect: HTTP/2 404   (proves 404.html is being served by the asset layer)
+#   200                  -> the edge is still SPA-falling-back despite 404.html
+
+# §4.2 — does a canonical (unslashed) URL serve 200 rather than 308?
+curl -sI "$PREVIEW/parts/ram" | grep -E 'HTTP/|location|x-prerender'
+#   expect: HTTP/2 200, x-prerender: route-hit-noslash
+#   308 + location: /parts/ram/  -> the interception is not firing
+
+# §4.2 outside /parts/, where the sibling .html files do the work instead
+curl -sI "$PREVIEW/search" | head -1
+#   expect: HTTP/2 200 (not 308)
+
+# Sanity: the unslashed product URL serves the real page, not the shell
+curl -s "$PREVIEW/parts/ram/<a-live-product-slug>" | grep -o '<link rel="canonical"[^>]*>'
+#   expect: the product's own canonical, not https://prorigbuilder.com/
+```
+
+If §4.1 fails, that is the one to stop on. It is the only failure here that is
+invisible from the outside: the site looks entirely correct while every retired
+URL returns 200.
 
 ## 5. Why the Function is scoped to `/parts/`
 
@@ -296,13 +347,31 @@ Deploy `target=staging` and check, against the preview URL:
 
 ## 10. Open items
 
+- **Re-confirm §4.1 and §4.2 on the first staging deploy — before anything is
+  promoted to production.** Procedure in §4.3. §4.1 is the one that fails
+  silently.
+- **Set the `VITE_DATA_BASE` repo variable** to `https://data.prorigbuilder.com`.
+  The wiring is in place: `prerender.yml` reads the variable at build time, and
+  that is the only place it can be set — the deploy workflows ship the committed
+  `dist/` and cannot change a bundle the prerendered HTML references by content
+  hash. Verified inert until set: an unset variable and an empty one produce a
+  byte-identical bundle (`App-5QWoLWPV.js` in both), while setting the host
+  produces `App-CFpI-fMg.js` with `data.prorigbuilder.com` inlined.
+
+  Two reasons to set it *after* the first staging Pages deploy rather than
+  before, both from `prerender.yml` committing `dist/` to `main`, which Railway
+  (live production today) and Epik also serve:
+
+  1. The flip reaches live production on the next nightly run, with nobody
+     choosing to deploy. Confirm R2 actually serves these files to a browser on
+     a staging Pages deploy first.
+  2. Rollback is slow — the bundle would be *committed*, so clearing the
+     variable fixes nothing until another full prerender run rebuilds it. No
+     redeploy undoes it.
+
+  Until then the deploy ships the ~10.8k data files: 16,378 files against a
+  20,000 ceiling. Correct, just not the end state, and it does **not** trip the
+  deploy workflow's file-count gate (hard fail at 20,000, warning at 18,000).
 - **Zone Cache Rule for `/assets/*`** (§6) — after the custom domain is attached.
-- **`VITE_DATA_BASE` in `prerender.yml`** — until the nightly rebuilds `dist/`
-  with it, the committed bundle still fetches per-product JSON same-origin and
-  the deploy ships the ~10.8k data files. Not broken, just not the end state.
-- **Re-confirm §4.1 and §4.2 on the first staging deploy.** Both are local
-  `wrangler pages dev` observations. The fixes are harmless if the production
-  edge turns out to behave differently — a `404.html` that is never served, and
-  sibling files that are never reached — but the *reasons* would need revisiting.
 - **Basic Auth for staging** (§7) — only if the noindex-only guard proves
   insufficient.

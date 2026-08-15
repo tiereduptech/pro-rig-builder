@@ -49,6 +49,36 @@ jobs:
         run: npm run build -- --skip-prerender || npx vite build
         # The "|| npx vite build" fallback runs raw vite if the npm script
         # doesn't accept --skip-prerender. Either way we just need the assets.
+        #
+        # ── VITE_DATA_BASE: this is the ONLY place it can be set ─────────────
+        # It is compile-time inlined into the bundle (src/App.jsx routes the
+        # price-history/ and reviews/ fetches through it), and this job is the
+        # only one that builds the bundle. The deploy workflows ship the
+        # COMMITTED dist/ and cannot change it: the ~5.5k prerendered HTML files
+        # reference dist/assets/*.js by content hash, so a rebuild anywhere
+        # downstream emits hashes none of them point at.
+        #
+        # Sourced from the repo variable and therefore INERT until that variable
+        # is set — unset yields '', which is what src/App.jsx already defaults
+        # to, so the bundle stays byte-for-byte same-origin. Setting the variable
+        # is the deliberate flip, in the same shape as EPIK_PROD_AUTO_DEPLOY and
+        # CF_PAGES_AUTO_DEPLOY.
+        #
+        # Two things to know before setting it, because this job commits dist/
+        # to main and Railway (live production today) and Epik both serve that
+        # same dist/ — the blast radius is not limited to Cloudflare Pages:
+        #
+        #   1. The flip reaches live production on the NEXT nightly run, without
+        #      anyone choosing to deploy. So set it only once a staging Pages
+        #      deploy has confirmed R2 actually serves these files to a browser.
+        #   2. Rollback is slow. The bad bundle would be COMMITTED in dist/, so
+        #      clearing the variable does not fix it — it takes another full
+        #      prerender run (45 min, or a manual dispatch of this workflow) to
+        #      rebuild. There is no redeploy that undoes it.
+        #
+        # See deploy/DESIGN-cloudflare-pages.md §10.
+        env:
+          VITE_DATA_BASE: ${{ vars.VITE_DATA_BASE }}
 
       - name: Count indexable products
         id: count
