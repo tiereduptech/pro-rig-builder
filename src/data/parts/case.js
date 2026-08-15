@@ -2352,7 +2352,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70044,
@@ -3215,7 +3217,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70057,
@@ -5457,7 +5461,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70094,
@@ -9903,7 +9909,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70171,
@@ -10184,7 +10192,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70175,
@@ -13471,7 +13481,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 70235,
@@ -19910,7 +19922,9 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-15"
   },
   {
     "id": 100898,
