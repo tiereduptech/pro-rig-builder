@@ -15,15 +15,12 @@ name: Sync data to R2
 # ~6.7k files genuinely change every night. That churn is real new data,
 # not redundant uploads.
 
+# Manual only, for now. Once VITE_DATA_BASE is live and the bucket is
+# verified, add back a push trigger on main scoped to these paths so the
+# sync follows the nightly data commits:
+#   catalog-build/price-history.json, catalog-build/reviews.json,
+#   split-price-history.js, split-reviews.js
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'catalog-build/price-history.json'
-      - 'catalog-build/reviews.json'
-      - 'split-price-history.js'
-      - 'split-reviews.js'
-      - '.github/workflows/sync-data-r2.yml'
   workflow_dispatch:
     inputs:
       dry_run:
