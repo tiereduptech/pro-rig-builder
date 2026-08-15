@@ -1,0 +1,376 @@
+name: Deploy to Cloudflare Pages
+
+# The runs list shows every deploy under the same name, and a preview run is
+# indistinguishable from a production one there — which is exactly how a preview
+# green gets misread as a production release. Name the run after the channel it
+# actually targets. github.event.inputs.target is '' on a push, so the fallback
+# here is 'production' — the SAME resolution as the TARGET env below, so the
+# title never disagrees with what the job does.
+run-name: "Deploy Pages → ${{ github.event.inputs.target || 'production' }} (${{ github.event_name }})"
+
+# =============================================================================
+#  Ships the COMMITTED dist/ to a Cloudflare Pages project.
+#
+#  Same division of labour as deploy-epik.yml: the nightly prerender workflow
+#  builds dist/ and commits it to main; this workflow only uploads it. The
+#  45-minute headless-Chrome prerender never runs in the deploy path, so a
+#  deploy is a minute of upload, not an hour of rebuild.
+#
+#  That has one consequence worth stating plainly, because it is the thing most
+#  likely to surprise: THIS WORKFLOW CANNOT CHANGE WHAT IS IN THE BUNDLE. The
+#  JS in dist/assets was compiled by prerender.yml with whatever env that run
+#  had, and the 5.5k prerendered HTML files reference those bundles by content
+#  hash. Re-running `vite build` here would emit new hashes that none of the
+#  committed HTML points at — a site that loads a blank shell. So VITE_DATA_BASE
+#  must be set where the bundle is BUILT (prerender.yml), not here. The
+#  "Resolve data routing" step below detects which way the committed bundle was
+#  built and adapts the upload to match, rather than assuming.
+#
+#  ── Gating (mirrors publish-epik.yml / deploy-epik.yml) ────────────────────
+#  Dispatch only. There is deliberately no push trigger: during the migration a
+#  commit to main must never move a Cloudflare deployment. The `if:` below is
+#  written the same way as its siblings so that when a push trigger IS added at
+#  cutover, the gate is already correct — a workflow_dispatch always runs, and a
+#  push proceeds only once the repo variable CF_PAGES_AUTO_DEPLOY == 'true'.
+#
+#  ── What "production" means here ──────────────────────────────────────────
+#  Cloudflare decides production-vs-preview by whether --branch matches the
+#  project's production branch. target=production deploys as the project's
+#  production deployment; target=staging deploys as a preview with its own
+#  <branch>.<project>.pages.dev alias.
+#
+#  Until a custom domain is attached to the Pages project, NEITHER target serves
+#  prorigbuilder.com — production here means "the production deployment of the
+#  Pages project", not "the live site". The banner says which URL it is.
+#
+#  ── Required repo configuration ───────────────────────────────────────────
+#    secret  CLOUDFLARE_API_TOKEN   Pages:Edit token. NOT the R2 S3 credentials
+#                                   (R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY) —
+#                                   different auth system entirely.
+#    secret  CLOUDFLARE_ACCOUNT_ID  already set, shared with sync-data-r2.yml
+#    var     CF_PAGES_PROJECT       the Pages project name
+#    var     VITE_DATA_BASE         e.g. https://data.prorigbuilder.com — set
+#                                   this on prerender.yml too; see above
+#    var     CF_PAGES_AUTO_DEPLOY   unset during migration; 'true' at cutover
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Which Pages channel to deploy'
+        type: choice
+        options: [staging, production]
+        default: staging
+      ref:
+        description: 'Git ref to deploy (default main; use a branch to ship un-merged dist/)'
+        type: string
+        default: main
+      dry_run:
+        description: 'Assemble and check the upload, but do not deploy'
+        type: boolean
+        default: false
+
+# Same reasoning as deploy-epik.yml: cancelling mid-upload is the half-deploy we
+# are avoiding, so overlapping runs QUEUE rather than cancel.
+concurrency:
+  group: pages-deploy-${{ github.event.inputs.target || 'production' }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.CF_PAGES_AUTO_DEPLOY == 'true'
+
+    env:
+      TARGET: ${{ github.event.inputs.target || 'production' }}
+      # Cloudflare reads the production branch from the project config; this must
+      # match it for target=production to land as a production deployment.
+      PROD_BRANCH: main
+      # One place to bump. Pinned to a major so patches arrive but a major
+      # release cannot silently change the CLI's behaviour mid-migration.
+      WRANGLER_VERSION: '4'
+
+    steps:
+      # Legibility banner, FIRST so it is on the summary even if a later step
+      # fails. The runs-list title answers "which channel" at a glance; this
+      # answers it in full — project, branch, and the URL the deployment lands
+      # on — so a preview run can never be mistaken for a production one from
+      # inside the run either.
+      - name: Announce the channel
+        run: |
+          if [ "$TARGET" = production ]; then BR="$PROD_BRANCH"; else BR=staging; fi
+          {
+            echo "## Deploying to \`$TARGET\`"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| channel | \`$TARGET\` |"
+            echo "| pages project | \`${{ vars.CF_PAGES_PROJECT || '(unset — will fail preflight)' }}\` |"
+            echo "| --branch | \`$BR\` |"
+            echo "| deployment kind | ${{ github.event.inputs.target == 'staging' && 'preview' || 'PRODUCTION' }} |"
+            echo "| ref | \`${{ github.event.inputs.ref || 'main' }}\` |"
+            echo "| dry run | \`${{ github.event.inputs.dry_run || 'false' }}\` |"
+            echo "| trigger | \`$GITHUB_EVENT_NAME\` |"
+            echo ""
+            echo "Production here means the Pages project's production deployment."
+            echo "It only serves prorigbuilder.com once a custom domain is attached."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Fail on missing configuration BEFORE spending four minutes on checkout
+      # and npm ci. Each message names the exact thing to set, because the
+      # failure mode otherwise is a wrangler auth error that reads identically
+      # whether the token is missing, wrong-scoped, or pointed at another account.
+      - name: Preflight — required configuration
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        run: |
+          set -uo pipefail
+          fail=0
+          if [ -z "${CF_API_TOKEN:-}" ]; then
+            echo "::error::secret CLOUDFLARE_API_TOKEN is not set. This is a Cloudflare API token with Account > Cloudflare Pages > Edit. It is NOT the R2 S3 credential pair used by sync-data-r2.yml."
+            fail=1
+          fi
+          if [ -z "${CF_ACCOUNT_ID:-}" ]; then
+            echo "::error::secret CLOUDFLARE_ACCOUNT_ID is not set (sync-data-r2.yml uses the same secret)."
+            fail=1
+          fi
+          if [ -z "${CF_PROJECT:-}" ]; then
+            echo "::error::repo variable CF_PAGES_PROJECT is not set — it must be the Cloudflare Pages project name. Deliberately has no default: guessing it would either fail with an opaque 'project not found' or, worse, deploy into the wrong project."
+            fail=1
+          fi
+          exit $fail
+
+      - uses: actions/checkout@v4
+        with:
+          # Default main (steady state). A dispatch may override to a branch to
+          # ship un-merged dist/; push events always resolve to main.
+          ref: ${{ github.event.inputs.ref || 'main' }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Assert dist/ is present and looks like a real build
+        run: |
+          set -euo pipefail
+          [ -f dist/index.html ] || { echo "::error::dist/index.html missing — nothing to deploy. dist/ is committed by prerender.yml; check the ref."; exit 1; }
+          ls dist/assets/*.js >/dev/null 2>&1 || { echo "::error::dist/assets contains no JS — dist/ is not a completed build."; exit 1; }
+          echo "dist/ ok — $(find dist -type f | wc -l) files, $(du -sh dist | cut -f1)"
+
+      # ── Pages-specific artifacts ────────────────────────────────────────────
+      # build-pages.cjs emits what Pages needs in place of the Epik stack's
+      # .htaccess + resolver.php + redirects.php: the generated Worker module the
+      # resolver imports, dist/404.html, the trailing-slash siblings, _headers
+      # and _redirects. See deploy/DESIGN-cloudflare-pages.md.
+      #
+      # Its absence is not cosmetic, and the two most damaging consequences are
+      # both silent (DESIGN §4.1, §4.2):
+      #   - no dist/404.html, so the asset service answers unmatched paths with
+      #     the shell at 200 and the resolver's 301/410 branch never executes —
+      #     the whole retired catalog soft-404s while the deploy stays green
+      #   - no trailing-slash siblings, so every non-/parts/ canonical URL 308s
+      # On a preview that costs nothing and is worth allowing so the project can
+      # be smoke-tested; on production both are SEO regressions that would ship
+      # unnoticed. So: warn on staging, refuse on production.
+      - name: Regenerate Pages artifacts
+        run: |
+          set -uo pipefail
+          if [ -f build-pages.cjs ]; then
+            node build-pages.cjs ${{ env.TARGET == 'staging' && '--staging' || '' }} || exit 1
+            # 404.html is the one whose absence silently disables the resolver,
+            # so it is asserted rather than merely reported.
+            if [ ! -f dist/404.html ]; then
+              echo "::error::build-pages.cjs ran but produced no dist/404.html — without it Cloudflare answers unmatched paths with the shell at 200 and the 301/410 resolver never fires. Refusing."
+              exit 1
+            fi
+            for f in 404.html _redirects _headers; do
+              [ -f "dist/$f" ] && echo "  ✓ dist/$f"
+            done
+            echo "  ✓ $(find dist -maxdepth 2 -name '*.html' -not -name 'index.html' -not -name '404.html' | wc -l) trailing-slash siblings"
+            exit 0
+          fi
+          if [ "$TARGET" = production ]; then
+            echo "::error::build-pages.cjs is missing on this ref — refusing to deploy to PRODUCTION. Without it there is no dist/404.html, so every retired product URL returns the SPA shell at 200 instead of its 301/410 and the whole retired catalog soft-404s silently (DESIGN-cloudflare-pages.md §4.1). Deploy target=staging to smoke-test the project meanwhile."
+            exit 1
+          fi
+          echo "::warning::build-pages.cjs is missing on this ref. Deploying WITHOUT dist/404.html, the trailing-slash siblings, _headers and _redirects: retired product URLs will answer 200 with the shell rather than 301/410, and canonical URLs will 308. Acceptable on a preview, refused on production."
+          {
+            echo ""
+            echo "### ⚠ No Pages artifacts"
+            echo ""
+            echo "\`build-pages.cjs\` is not on this ref, so this preview has **no \`404.html\`**, no"
+            echo "trailing-slash siblings, no \`_headers\` and no \`_redirects\`. The resolver is inert:"
+            echo "redirect, 410 and canonical-URL behaviour are NOT represented in this deployment."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # wrangler picks Functions up from ./functions relative to the working
+      # directory — there is no --functions-dir flag on `pages deploy`. The
+      # deploy therefore only carries the resolver because this job runs from the
+      # repo root. If that ever stops being true the deploy still succeeds and
+      # still serves the site; it just silently loses every 301, every 410 and
+      # the trailing-slash fix. Assert the directory is where wrangler will look.
+      - name: Assert the Functions source is where wrangler will find it
+        if: hashFiles('build-pages.cjs') != ''
+        run: |
+          set -euo pipefail
+          test -f "functions/parts/[[path]].js" || {
+            echo "::error::functions/parts/[[path]].js not found from $(pwd). wrangler resolves Functions from ./functions relative to the CWD, so the deploy would ship no resolver."; exit 1; }
+          test -f functions-lib/resolver-data.generated.js || {
+            echo "::error::functions-lib/resolver-data.generated.js missing — build-pages.cjs did not generate it and the wrangler bundle will fail."; exit 1; }
+          echo "functions/ present; generated module present"
+
+      # ── Resolve data routing ────────────────────────────────────────────────
+      # dist/price-history (6.7k files) and dist/reviews (4.1k) are ~10.8k of the
+      # ~16.4k files in dist/. Moving them to R2 is what takes a deployment from
+      # ~16.4k files to ~5.6k — the entire point of Workstream 3 — and it is what
+      # keeps this project clear of the 20,000-files-per-deployment ceiling as the
+      # catalog grows.
+      #
+      # But excluding them is only safe if the BUNDLE fetches from R2, and this
+      # workflow cannot make that true (see the header). So don't assume it —
+      # measure it: if VITE_DATA_BASE was set when prerender.yml built dist/, its
+      # host is baked into dist/assets/*.js and greppable. Three cases:
+      #
+      #   var unset          → same-origin by design. Ship the data dirs.
+      #   var set,  in bundle → R2 is live. Exclude them; ~10.8k fewer files.
+      #   var set, NOT in bundle → the committed dist predates the change. Ship
+      #                            them anyway. The site is CORRECT this way
+      #                            (that is how it serves today) — it just isn't
+      #                            the intended end state, so warn rather than
+      #                            fail. Excluding them here is the one genuinely
+      #                            broken combination: every chart and review
+      #                            block would 404 site-wide.
+      - name: Resolve data routing
+        id: data
+        env:
+          DATA_BASE: ${{ vars.VITE_DATA_BASE }}
+        run: |
+          set -uo pipefail
+          if [ -z "${DATA_BASE:-}" ]; then
+            echo "exclude=false" >> "$GITHUB_OUTPUT"
+            echo "reason=VITE_DATA_BASE is unset — the site fetches per-product JSON same-origin, so dist/price-history and dist/reviews ship with the deployment." >> "$GITHUB_OUTPUT"
+            echo "VITE_DATA_BASE unset — shipping the data directories (same-origin)."
+            exit 0
+          fi
+          HOST=${DATA_BASE#*://}; HOST=${HOST%%/*}
+          if grep -rqF "$HOST" dist/assets/*.js; then
+            echo "exclude=true" >> "$GITHUB_OUTPUT"
+            echo "reason=The committed bundle fetches per-product JSON from $HOST, so dist/price-history and dist/reviews are excluded from the upload." >> "$GITHUB_OUTPUT"
+            echo "bundle references $HOST — excluding the data directories."
+          else
+            echo "exclude=false" >> "$GITHUB_OUTPUT"
+            echo "reason=VITE_DATA_BASE is set to $DATA_BASE but the committed bundle does NOT reference $HOST, so the data directories ship with the deployment." >> "$GITHUB_OUTPUT"
+            echo "::warning::VITE_DATA_BASE is set to $DATA_BASE, but the committed dist/assets bundle does not reference $HOST — it was built before that variable existed. Shipping dist/price-history and dist/reviews with the deployment, which is CORRECT (it is how the site serves today) but forgoes the ~10.8k file reduction R2 is meant to buy. Excluding them against this bundle would 404 every price chart and review block. Fix by setting VITE_DATA_BASE in prerender.yml and letting the nightly rebuild dist/ — not by changing anything here."
+          fi
+
+      # Assemble the upload out of tree rather than deleting from the checkout,
+      # so what gets counted and size-checked below is exactly what gets
+      # uploaded — no gap between the thing measured and the thing shipped.
+      - name: Assemble upload directory
+        id: upload
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/pages-upload && mkdir -p /tmp/pages-upload
+          EXCLUDES=()
+          if [ "${{ steps.data.outputs.exclude }}" = "true" ]; then
+            EXCLUDES=(--exclude=/price-history/ --exclude=/reviews/)
+          fi
+          rsync -a "${EXCLUDES[@]}" dist/ /tmp/pages-upload/
+          N=$(find /tmp/pages-upload -type f | wc -l)
+          SZ=$(du -sh /tmp/pages-upload | cut -f1)
+          echo "files=$N" >> "$GITHUB_OUTPUT"
+          echo "size=$SZ" >> "$GITHUB_OUTPUT"
+          echo "upload: $N files, $SZ"
+
+      # Cloudflare's own errors for both of these arrive after the upload has
+      # been running for a while and do not name the offending path. Check them
+      # here, where the message can point at the actual file.
+      - name: Pages platform limits
+        run: |
+          set -uo pipefail
+          N=${{ steps.upload.outputs.files }}
+          # Hard ceiling: 20,000 files per deployment.
+          if [ "$N" -ge 20000 ]; then
+            echo "::error::$N files in the upload — Cloudflare Pages allows 20,000 per deployment. Excluding dist/price-history and dist/reviews removes ~10.8k; that requires the bundle to fetch from R2 (set VITE_DATA_BASE in prerender.yml and let the nightly rebuild dist/)."
+            exit 1
+          fi
+          if [ "$N" -ge 18000 ]; then
+            echo "::warning::$N files in the upload, against a hard ceiling of 20,000. Headroom is $((20000 - N)) files and the catalog grows every night."
+          fi
+          # Hard ceiling: 25 MiB per file.
+          BIG=$(find /tmp/pages-upload -type f -size +25M -printf '%s\t%p\n' | sort -rn | head -5)
+          if [ -n "$BIG" ]; then
+            echo "::error::files above the Cloudflare Pages 25 MiB per-file limit:"
+            printf '%s\n' "$BIG"
+            exit 1
+          fi
+          echo "within Pages limits: $N files (max 20000), no file over 25 MiB"
+
+      - name: Deploy
+        id: deploy
+        if: github.event.inputs.dry_run != 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PROJECT: ${{ vars.CF_PAGES_PROJECT }}
+        run: |
+          set -euo pipefail
+          if [ "$TARGET" = production ]; then BR="$PROD_BRANCH"; else BR=staging; fi
+          # --commit-dirty because build-pages.cjs writes into the checkout; the
+          # tree being dirty is expected here and is not a reason to warn.
+          npx --yes "wrangler@${WRANGLER_VERSION}" pages deploy /tmp/pages-upload \
+            --project-name="$CF_PROJECT" \
+            --branch="$BR" \
+            --commit-hash="$GITHUB_SHA" \
+            --commit-dirty=true \
+            2>&1 | tee /tmp/wrangler.log
+          # Last .pages.dev URL wrangler printed is the deployment; the alias, if
+          # any, is printed alongside it and both are useful in the summary.
+          URL=$(grep -oE 'https://[a-z0-9.-]+\.pages\.dev[^ ]*' /tmp/wrangler.log | tail -1 || true)
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          # wrangler prints "No Functions. Shimming..." when it finds no
+          # functions/ directory, and deploys a pure-static site perfectly
+          # happily. That deployment serves every live page correctly and gets
+          # every retired URL wrong, which is not a difference a smoke test of
+          # the homepage would reveal. Treat it as a failed deploy.
+          if grep -q 'No Functions' /tmp/wrangler.log; then
+            echo "::error::wrangler reported 'No Functions' — the resolver was NOT deployed. Every retired product URL will answer 200 with the SPA shell instead of 301/410, and canonical /parts/ URLs will 308. Check that the job ran from the repo root."
+            exit 1
+          fi
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "### Upload"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| files | ${{ steps.upload.outputs.files || 'n/a' }} (Pages ceiling 20000) |"
+            echo "| size | ${{ steps.upload.outputs.size || 'n/a' }} |"
+            echo "| data dirs | ${{ steps.data.outputs.exclude == 'true' && 'excluded (served from R2)' || 'included (same-origin)' }} |"
+            echo ""
+            echo "${{ steps.data.outputs.reason }}"
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              echo ""
+              echo "**Dry run — nothing was deployed.**"
+            elif [ -n "${{ steps.deploy.outputs.url }}" ]; then
+              echo ""
+              echo "### Deployment"
+              echo ""
+              echo "${{ steps.deploy.outputs.url }}"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
