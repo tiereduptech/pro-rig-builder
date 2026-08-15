@@ -46,7 +46,49 @@ import {
 
 const HTML = 'text/html; charset=utf-8';
 
+// ── The .pages.dev alias: noindex, in code ──────────────────────────────────
+// prorigbuilder.pages.dev is permanent — Cloudflare offers no way to disable it
+// — so once the apex is served by this same project the alias stops being a
+// pre-launch artifact and becomes a crawlable, byte-for-byte duplicate of live
+// production. Internal links in the prerendered HTML are relative (74:2 on a
+// sampled product page), so one discovered page makes the whole catalog
+// spiderable within the host.
+//
+// Why here and not Cloudflare Access or a Transform Rule: this is the failure
+// DIRECTION argument from CUTOVER-cloudflare-pages.md §3.7. Access has to be
+// torn down at cutover and serves a broken login on the custom domain if it is
+// not. A Transform Rule works but is a rule someone has to remember exists. This
+// branch cannot fire on the apex — prorigbuilder.com does not end in .pages.dev
+// — and its misfire mode is a MISSING header on pages.dev, which is exactly the
+// state before this code existed. Compare the rejected /robots.txt variant,
+// whose misfire served Disallow: / on the live apex.
+//
+// Applied at the single exit rather than inside each branch: onRequest has seven
+// return paths (asset hit, trailing-slash 200, non-404 passthrough, other
+// redirects, SPA fallback, 301, 410) and tagging them individually means the
+// next branch added is silently untagged. Stamping the response on the way out
+// is the only shape where that cannot happen — which is the same lesson as the
+// byte diff that sampled only /parts/.
+//
+// The clone happens ONLY on .pages.dev, so the apex and canary hot paths return
+// the asset service's own Response object untouched.
+//
+// NOT covered: _routes.json scopes this Function to /parts/*, so the 35
+// non-product routes on the alias are unaffected. Widening that scope is what
+// DESIGN-cloudflare-pages.md §5 refuses; those pages carry absolute canonicals.
+// Accepted and stated, not overlooked.
+function noindexOnPagesDev(request, response) {
+  if (!new URL(request.url).hostname.endsWith('.pages.dev')) return response;
+  const tagged = new Response(response.body, response);
+  tagged.headers.set('X-Robots-Tag', 'noindex');
+  return tagged;
+}
+
 export async function onRequest(context) {
+  return noindexOnPagesDev(context.request, await resolve(context));
+}
+
+async function resolve(context) {
   const { request, next } = context;
 
   // server.cjs guards every resolver layer on the method; a POST to a product

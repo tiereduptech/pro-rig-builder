@@ -7,8 +7,17 @@ Status: **canary verified, apex not moved.** The artifact is deployed on
 `pages-canary.prorigbuilder.com`, which has passed §4.3, CP-3 and the R2 check
 (2026-08-15 — results in §1). `prorigbuilder.com` still points at Railway.
 
-One §3 item is **open**: Email Obfuscation is on and rewriting six routes. It must
-be off and the byte diff clean before the flip.
+The §3.7 `.pages.dev` noindex host check is shipped in the resolver and verified
+locally; it reaches the edge on the next Pages deploy.
+
+One §3 item is **open**: Email Obfuscation is on and rewriting six routes. It was
+reported off twice on 2026-08-15 and measured still on both times — zone-wide, on
+the canary and the live apex, clean only on `pages.dev` which is outside the zone.
+A cache-busting query string is still rewritten and the injected cipher still
+varies per request, so it is neither cache nor propagation lag. If the Scrape
+Shield toggle reads off, check **Rules → Configuration Rules** for a rule turning
+it back on for matching requests; that override is invisible from the toggle.
+It must be off and `bytediff-pages.mjs` must exit 0 before the flip.
 
 Sibling documents: `DESIGN-cloudflare-pages.md` for the stack itself,
 `PHASE-B-INSTALL.md` for the Epik cutover this is mutually exclusive with.
@@ -249,11 +258,37 @@ Measured 2026-08-15, the exposure is currently held by the canonicals alone:
 | **internal links** | **relative** (74:2 on a sampled product page) — so one discovered page makes all 5,484 spiderable within the host |
 
 Low discovery probability, high fan-out if it happens. **The permanent fix is a
-host check in the resolver**, not Cloudflare Access:
+host check in the resolver**, not Cloudflare Access. **Shipped 2026-08-15** as
+`noindexOnPagesDev()` in `functions/parts/[[path]].js`:
 
 ```js
-if (new URL(request.url).host.endsWith('.pages.dev')) headers.set('X-Robots-Tag', 'noindex');
+if (!new URL(request.url).hostname.endsWith('.pages.dev')) return response;
+const tagged = new Response(response.body, response);
+tagged.headers.set('X-Robots-Tag', 'noindex');
 ```
+
+It is applied at the Function's single exit, not inside a branch. `onRequest` has
+seven return paths — asset hit, trailing-slash 200, non-404 passthrough, other
+redirects, SPA fallback, 301, 410 — and tagging them one at a time means the next
+branch anyone adds is silently untagged. Stamping on the way out is the only shape
+where that cannot happen. `hostname` rather than `host` so a port can never
+defeat the suffix match.
+
+Verified with `wrangler pages dev`, 2026-08-15 — all seven paths, four hostnames:
+
+| | `X-Robots-Tag` |
+|---|---|
+| `prorigbuilder.pages.dev`, all 7 paths | `noindex` |
+| `abc123.prorigbuilder.pages.dev` (preview), all 7 paths | `noindex` |
+| `prorigbuilder.com`, all 7 paths | none, except the 410's own (unchanged) |
+| `pages-canary.prorigbuilder.com`, all 7 paths | none, except the 410's own (unchanged) |
+| `notpages.dev`, `pages.dev.evil.com` | none — the leading dot prevents a suffix false positive |
+
+Exactly one `X-Robots-Tag` on the 410, where the resolver already set its own —
+`set` replaces rather than appending. The response body is byte-identical across
+`pages.dev`, the apex and `dist/`, so the clone is header-only, and it happens
+**only** on `.pages.dev`: the apex and canary return the asset service's own
+Response object untouched.
 
 This is a host-conditional branch in the serving path, which §5 of the design and
 the rejected `robots.txt` variant both argue against — the distinction is the
@@ -308,7 +343,8 @@ settle apex ownership (§0)
   -> clear §3 items 1-6            (2026-08-15: Email Obfuscation is the open one)
   -> re-run all three against the canary       <- confirms the clearing
      bytediff-pages.mjs must exit 0 here; that is what "cleared" means
-  -> ship the .pages.dev host check in the resolver (§3.7)
+  -> ship the .pages.dev host check in the resolver (§3.7)   [DONE 2026-08-15]
+     it reaches the edge on the next Pages deploy — verify on pages.dev after
   -> attach prorigbuilder.com as a Pages custom domain
   -> §4.3 + CP-3 against the apex, immediately
   -> delete the canary hostname
