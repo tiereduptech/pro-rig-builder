@@ -31,6 +31,13 @@ const _CLEAN_SUBSERIES = [
 ];
 const _CLEAN_AIB_BRANDS = ['ASUS','MSI','GIGABYTE','Gigabyte','EVGA','PNY','PowerColor','Sapphire','Sparkle','XFX','ZOTAC','Yeston','ASRock','Inno3D','Galax'];
 
+// Origin for the generated per-product JSON (price-history/, reviews/).
+// Empty string = same-origin, which is how the site serves today. Set
+// VITE_DATA_BASE at build time (e.g. https://data.prorigbuilder.com) to
+// move those fetches to R2 without touching the call sites. No trailing
+// slash — the paths below supply their own leading "/".
+const DATA_BASE = (import.meta.env.VITE_DATA_BASE || "").replace(/\/$/, "");
+
 // ─── PRICE HISTORY ───────────────────────────────────────────────
 // Slug must match split-price-history.js exactly: normalized name → slug.
 function productSlug(p){
@@ -48,7 +55,7 @@ function PriceHistoryChart({ product, retailer }){
     let cancelled = false;
     const slug = productSlug(product);
     if (!slug) { setState({ status: "none", points: null }); return; }
-    fetch("/price-history/" + slug + ".json")
+    fetch(DATA_BASE + "/price-history/" + slug + ".json")
       .then(r => r.ok ? r.json() : Promise.reject(new Error("no data")))
       .then(data => {
         if (cancelled) return;
@@ -191,7 +198,7 @@ function ProductReviews({ product }){
     let cancelled = false;
     const slug = reviewSlug(product);
     if (!slug) { setState({ status: "none", reviews: null }); return; }
-    fetch("/reviews/" + slug + ".json")
+    fetch(DATA_BASE + "/reviews/" + slug + ".json")
       .then(r => r.ok ? r.json() : Promise.reject(new Error("no reviews")))
       .then(data => {
         if (cancelled) return;

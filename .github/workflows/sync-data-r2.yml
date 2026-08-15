@@ -1,0 +1,144 @@
+name: Sync data to R2
+
+# Publishes the generated per-product JSON (price-history/, reviews/) to the
+# R2 bucket behind data.prorigbuilder.com.
+#
+# These files are gitignored build artifacts: split-price-history.js and
+# split-reviews.js regenerate them from catalog-build/*.json on every run.
+# Because they're regenerated (not preserved), mtimes are always "now" —
+# so the sync compares CONTENT, not timestamps. rclone --checksum matches
+# the local MD5 against the R2 object's ETag and transfers only real diffs.
+#
+# Reality check on volume: reviews/ is nearly static, so almost none of its
+# ~4k files move on a normal day. price-history/ is different — the daily
+# recorder appends a dated point per product per retailer, so most of its
+# ~6.7k files genuinely change every night. That churn is real new data,
+# not redundant uploads.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'catalog-build/price-history.json'
+      - 'catalog-build/reviews.json'
+      - 'split-price-history.js'
+      - 'split-reviews.js'
+      - '.github/workflows/sync-data-r2.yml'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'List what would transfer without uploading'
+        type: boolean
+        default: false
+
+concurrency:
+  group: r2-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate per-product JSON
+        run: |
+          node split-price-history.js
+          node split-reviews.js
+
+      # rclone sync deletes remote objects that have no local counterpart.
+      # That's what prunes slugs for delisted products — but it also means a
+      # split script that silently produced nothing would wipe the bucket.
+      # Refuse to sync a directory that came out implausibly small.
+      - name: Guard against an empty generation
+        run: |
+          set -euo pipefail
+          fail=0
+          for pair in "public/price-history:1000" "public/reviews:500"; do
+            dir="${pair%%:*}"; floor="${pair##*:}"
+            if [ ! -d "$dir" ]; then
+              echo "::error::$dir does not exist — split step did not run"
+              fail=1; continue
+            fi
+            n=$(find "$dir" -type f -name '*.json' | wc -l)
+            echo "$dir: $n files (floor $floor)"
+            if [ "$n" -lt "$floor" ]; then
+              echo "::error::$dir has only $n files, below the floor of $floor — refusing to sync"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Install rclone
+        run: |
+          set -euo pipefail
+          sudo -v ; curl -fsSL https://rclone.org/install.sh | sudo bash
+          rclone version
+
+      - name: Sync to R2
+        env:
+          # R2's S3-compatible endpoint. These are R2 API token credentials
+          # (Access Key ID / Secret Access Key) — NOT the Cloudflare API token.
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_REGION: auto
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_ENDPOINT: https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
+          BUCKET: prorigbuilder-data
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${RCLONE_CONFIG_R2_ACCESS_KEY_ID:-}" ] \
+            || [ -z "${RCLONE_CONFIG_R2_SECRET_ACCESS_KEY:-}" ] \
+            || [ "$RCLONE_CONFIG_R2_ENDPOINT" = "https://.r2.cloudflarestorage.com" ]; then
+            echo "::error::Missing secrets — need R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, CLOUDFLARE_ACCOUNT_ID"
+            exit 1
+          fi
+
+          FLAGS=(
+            --checksum                 # compare content, ignore mtime
+            --transfers 32
+            --checkers 64
+            --fast-list                # one listing pass instead of per-dir
+            --s3-no-check-bucket       # don't attempt CreateBucket on R2
+            --header-upload "Cache-Control: public, max-age=300, stale-while-revalidate=86400"
+            --stats 30s
+            --stats-one-line
+          )
+          if [ "${DRY_RUN:-false}" = "true" ]; then
+            FLAGS+=(--dry-run)
+            echo "DRY RUN — nothing will be uploaded"
+          fi
+
+          for dir in price-history reviews; do
+            echo "=== syncing $dir ==="
+            rclone sync "public/$dir" "R2:$BUCKET/$dir" "${FLAGS[@]}" \
+              --log-level INFO 2>&1 | tee "/tmp/rclone-$dir.log"
+          done
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## R2 data sync"
+            echo "- **Trigger**: ${{ github.event_name }}"
+            echo "- **Dry run**: ${{ inputs.dry_run || 'false' }}"
+            for dir in price-history reviews; do
+              if [ -f "/tmp/rclone-$dir.log" ]; then
+                echo "- **$dir**: $(grep -cE 'Copied|Updated' "/tmp/rclone-$dir.log" || echo 0) transferred, \
+          $(grep -cE 'Deleted' "/tmp/rclone-$dir.log" || echo 0) deleted"
+              fi
+            done
+          } >> $GITHUB_STEP_SUMMARY
