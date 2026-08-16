@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-08-15T03:38:18.533Z",
+    "generatedAt": "2026-08-16T03:47:36.809Z",
     "mode": "READ-ONLY audit — no catalog writes, no relinks, no DataForSEO calls",
     "rowsAudited": 3745,
-    "uniqueAsinsQueried": 3654,
+    "uniqueAsinsQueried": 3653,
     "apiCalls": 366,
-    "elapsedSec": 438,
+    "elapsedSec": 465,
     "throttle429": 1,
     "apiBatchErrors": 0,
     "priceDivergenceThresholdPct": 15,
@@ -14,14 +14,14 @@
   },
   "totals": {
     "clean": 3168,
-    "deadAsin": 346,
-    "wrongProduct": 81,
+    "deadAsin": 345,
+    "wrongProduct": 82,
     "closeButWrong": 150,
     "titleVerbosity": 0,
     "realDefects": 577,
     "realDefectRatePct": 15.41,
     "rawGateFlagRatePct": 15.41,
-    "priceDivergentDefects": 59
+    "priceDivergentDefects": 62
   },
   "perCategory": {
     "CPU": {
@@ -36,19 +36,19 @@
     "Motherboard": {
       "total": 409,
       "dead": 51,
-      "wrong": 0,
+      "wrong": 1,
       "close": 3,
       "verbosity": 0,
-      "clean": 355,
+      "clean": 354,
       "priceFlag": 1
     },
     "GPU": {
       "total": 305,
-      "dead": 17,
+      "dead": 16,
       "wrong": 9,
       "close": 2,
       "verbosity": 0,
-      "clean": 277,
+      "clean": 278,
       "priceFlag": 5
     },
     "Case": {
@@ -58,7 +58,7 @@
       "close": 22,
       "verbosity": 0,
       "clean": 288,
-      "priceFlag": 1
+      "priceFlag": 0
     },
     "RAM": {
       "total": 210,
@@ -67,7 +67,7 @@
       "close": 5,
       "verbosity": 0,
       "clean": 182,
-      "priceFlag": 5
+      "priceFlag": 6
     },
     "Storage": {
       "total": 488,
@@ -94,7 +94,7 @@
       "close": 8,
       "verbosity": 0,
       "clean": 178,
-      "priceFlag": 3
+      "priceFlag": 5
     },
     "UPS": {
       "total": 11,
@@ -283,7 +283,7 @@
       "close": 3,
       "verbosity": 0,
       "clean": 9,
-      "priceFlag": 0
+      "priceFlag": 1
     },
     "OS": {
       "total": 3,
@@ -617,7 +617,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 169.99,
+      "storedPrice": 139.98,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -789,7 +789,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 139.99,
+      "storedPrice": 131.17,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -828,6 +828,25 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 20221,
+      "cat": "Motherboard",
+      "asin": "B0CKWSYT9R",
+      "storedName": "A620I Lightning WiFi AMD AM5 Mini-ITX Motherboard, Supports AMD Ryzen 9000/8000/7000 Series Processors, DDR5 7200+ (OC)",
+      "amazonTitle": "ASRock 620I LIGHTNING WIFI AM5 Ryzen7000 AMD A620 SATA 6Gb/s Mini-ITX Dual, (90-MXBMN0-A0UAYZ)",
+      "scoreStoredInAmazon": 0.35,
+      "scoreAmazonInStored": 0.4,
+      "gateScore": 0.35,
+      "capConflict": false,
+      "storedPrice": 237.59,
+      "amazonPrice": 237.59,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
       "needsReview": true
     },
     {
@@ -959,7 +978,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 339.95,
+      "storedPrice": 360.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1012,7 +1031,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 195.44,
+      "storedPrice": 176.36,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1080,7 +1099,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 259.99,
+      "storedPrice": 285.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1114,7 +1133,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 299,
+      "storedPrice": 332.85,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1131,7 +1150,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 75.42,
+      "storedPrice": 67.91,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1252,7 +1271,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 399.99,
+      "storedPrice": 369.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1303,7 +1322,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 288.99,
+      "storedPrice": 337.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1398,23 +1417,6 @@
       "priceDeltaPct": -27.2,
       "priceDivergent": true,
       "needsReview": true
-    },
-    {
-      "class": "dead-asin",
-      "id": 30075,
-      "cat": "GPU",
-      "asin": "B0DS6WPTLL",
-      "storedName": "ASUS Dual RTX 5070 OC",
-      "amazonTitle": null,
-      "scoreStoredInAmazon": null,
-      "scoreAmazonInStored": null,
-      "gateScore": null,
-      "storedPrice": 758,
-      "amazonPrice": null,
-      "priceDeltaPct": null,
-      "priceDivergent": false,
-      "capConflict": false,
-      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -1559,10 +1561,10 @@
       "gateScore": 0.28,
       "capConflict": false,
       "storedPrice": 1399.99,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 1399.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
+      "priceDeltaPct": 0,
       "priceDivergent": false,
       "needsReview": true
     },
@@ -1627,7 +1629,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 1390,
+      "storedPrice": 1499,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1685,7 +1687,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -1969,7 +1971,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2040,10 +2042,10 @@
       "gateScore": 0.31,
       "capConflict": false,
       "storedPrice": 59.99,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 59.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
+      "priceDeltaPct": 0,
       "priceDivergent": false,
       "needsReview": false
     },
@@ -2081,7 +2083,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -2168,12 +2170,12 @@
       "scoreAmazonInStored": 0.5,
       "gateScore": 0.38,
       "capConflict": false,
-      "storedPrice": 54.99,
+      "storedPrice": 79.99,
       "amazonPrice": 79.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 45.5,
-      "priceDivergent": true,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
       "needsReview": false
     },
     {
@@ -2191,7 +2193,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2375,7 +2377,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 74.98,
+      "storedPrice": 109.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -2392,7 +2394,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 74.98,
+      "storedPrice": 89.79,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -2435,7 +2437,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -2452,7 +2454,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2488,7 +2490,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -2628,7 +2630,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -2753,7 +2755,7 @@
       "priceDeltaPct": null,
       "priceDivergent": false,
       "capConflict": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3057,11 +3059,11 @@
       "gateScore": 0.44,
       "capConflict": false,
       "storedPrice": 229.99,
-      "amazonPrice": 215.45,
+      "amazonPrice": 194.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -6.3,
-      "priceDivergent": false,
+      "priceDeltaPct": -15.2,
+      "priceDivergent": true,
       "needsReview": true
     },
     {
@@ -3246,7 +3248,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 209.99,
+      "storedPrice": 224.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -3356,10 +3358,10 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 327.62,
-      "amazonPrice": 332.16,
+      "amazonPrice": 330.17,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 1.4,
+      "priceDeltaPct": 0.8,
       "priceDivergent": false,
       "needsReview": true
     },
@@ -3562,7 +3564,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 534.45,
+      "storedPrice": 439.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -3700,7 +3702,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 665.01,
+      "storedPrice": 585.97,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -3751,7 +3753,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 139.99,
+      "storedPrice": 110.89,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -3785,7 +3787,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 198,
+      "storedPrice": 160,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -3841,11 +3843,11 @@
       "scoreAmazonInStored": 0.7,
       "gateScore": 0.44,
       "capConflict": false,
-      "storedPrice": 549.93,
+      "storedPrice": 610.98,
       "amazonPrice": 610.98,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 11.1,
+      "priceDeltaPct": 0,
       "priceDivergent": false,
       "needsReview": false
     },
@@ -4071,10 +4073,10 @@
       "gateScore": 0.46,
       "capConflict": false,
       "storedPrice": 383.49,
-      "amazonPrice": 394.95,
+      "amazonPrice": 389.95,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 3,
+      "priceDeltaPct": 1.7,
       "priceDivergent": false,
       "needsReview": false
     },
@@ -4198,11 +4200,11 @@
       "gateScore": 0,
       "capConflict": false,
       "storedPrice": 159,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 184.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
-      "priceDivergent": false,
+      "priceDeltaPct": 16.3,
+      "priceDivergent": true,
       "needsReview": true
     },
     {
@@ -4308,7 +4310,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 89.99,
+      "storedPrice": 84.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -4325,7 +4327,7 @@
       "scoreStoredInAmazon": null,
       "scoreAmazonInStored": null,
       "gateScore": null,
-      "storedPrice": 169.99,
+      "storedPrice": 144.98,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -4591,12 +4593,12 @@
       "scoreAmazonInStored": 0.7,
       "gateScore": 0.3,
       "capConflict": false,
-      "storedPrice": 49.99,
+      "storedPrice": 69.9,
       "amazonPrice": 50.9,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 1.8,
-      "priceDivergent": false,
+      "priceDeltaPct": -27.2,
+      "priceDivergent": true,
       "needsReview": false
     },
     {
@@ -4861,10 +4863,10 @@
       "gateScore": 0.4,
       "capConflict": false,
       "storedPrice": 195,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 219,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
+      "priceDeltaPct": 12.3,
       "priceDivergent": false,
       "needsReview": true
     },
@@ -5009,10 +5011,10 @@
       "gateScore": 0.31,
       "capConflict": false,
       "storedPrice": 261.71,
-      "amazonPrice": 266.76,
+      "amazonPrice": 264.23,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 1.9,
+      "priceDeltaPct": 1,
       "priceDivergent": false,
       "needsReview": true
     },
@@ -6355,10 +6357,10 @@
       "gateScore": 0.67,
       "capConflict": false,
       "storedPrice": 105,
-      "amazonPrice": 84.99,
+      "amazonPrice": 81.66,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -19.1,
+      "priceDeltaPct": -22.2,
       "priceDivergent": true,
       "needsReview": true
     },
@@ -6410,10 +6412,10 @@
       "gateScore": 0.35,
       "capConflict": false,
       "storedPrice": 54.99,
-      "amazonPrice": 53.9,
+      "amazonPrice": 54.12,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -2,
+      "priceDeltaPct": -1.6,
       "priceDivergent": false,
       "needsReview": false
     },
@@ -6834,10 +6836,10 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 94.8,
-      "amazonPrice": 97.92,
+      "amazonPrice": 98.38,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 3.3,
+      "priceDeltaPct": 3.8,
       "priceDivergent": false,
       "needsReview": true
     },
@@ -10208,10 +10210,10 @@
       "gateScore": 0,
       "capConflict": false,
       "storedPrice": 49,
-      "amazonPrice": 89.98,
+      "amazonPrice": 89.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 83.6,
+      "priceDeltaPct": 83.7,
       "priceDivergent": true,
       "needsReview": true
     },
@@ -10434,11 +10436,11 @@
       "gateScore": 0.47,
       "capConflict": false,
       "storedPrice": 99.99,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 114.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
-      "priceDivergent": false,
+      "priceDeltaPct": 15,
+      "priceDivergent": true,
       "needsReview": false
     },
     {

@@ -129,7 +129,9 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-16"
   },
   {
     "id": 99703,
@@ -277,7 +279,9 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-16"
   },
   {
     "id": 99709,
