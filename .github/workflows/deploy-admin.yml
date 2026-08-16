@@ -1,0 +1,160 @@
+name: Deploy admin dashboard
+
+run-name: "Deploy admin → ${{ github.event.inputs.target || 'production' }} (${{ github.event_name }})"
+
+# =============================================================================
+#  Deploys admin/ to its OWN Cloudflare Pages project, serving
+#  admin.prorigbuilder.com. Deliberately separate from the catalog project —
+#  see deploy/DESIGN-admin-dashboard.md §2 for the four reasons.
+#
+#  This job holds no catalog secrets and writes nothing to the repository. The
+#  one credential the DEPLOYED site holds is a fine-grained GitHub PAT, set as a
+#  Pages secret on the admin project (never here).
+#
+#  ── Required configuration ────────────────────────────────────────────────
+#    secret  CLOUDFLARE_API_TOKEN    Pages:Edit (shared with deploy-pages.yml)
+#    secret  CLOUDFLARE_ACCOUNT_ID   shared
+#    var     CF_ADMIN_PAGES_PROJECT  the admin Pages project name
+#
+#  ── Set on the Pages project itself, NOT here ─────────────────────────────
+#    ACCESS_TEAM_DOMAIN   https://<team>.cloudflareaccess.com
+#    ACCESS_AUD           the Access application audience tag
+#    ADMIN_HOST           admin.prorigbuilder.com
+#    GITHUB_REPO          tiereduptech/pro-rig-builder
+#    GITHUB_TOKEN         fine-grained PAT: Contents read, Actions read+write.
+#                         NO `workflows` scope — that is what editing a cron
+#                         schedule would need, and §4 says a dashboard must not.
+#
+#  A missing ACCESS_* or ADMIN_HOST makes every request 500 rather than opening
+#  the site; the check fails closed by construction (functions-lib/access.js).
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Which Pages channel to deploy'
+        type: choice
+        options: [staging, production]
+        default: staging
+      dry_run:
+        description: 'Build and check, but do not deploy'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'admin/**'
+      - 'scripts/derive-constants.cjs'
+      - '.github/workflows/deploy-admin.yml'
+
+# Never cancel mid-upload; queue instead. Same reasoning as deploy-pages.yml.
+concurrency:
+  group: admin-deploy-${{ github.event.inputs.target || 'production' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # A push deploys only once the repo variable is set, so landing this file on
+    # main does not immediately start deploying. Same gate shape as its siblings.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      vars.ADMIN_AUTO_DEPLOY == 'true'
+
+    env:
+      TARGET: ${{ github.event.inputs.target || 'production' }}
+      PROD_BRANCH: main
+      WRANGLER_VERSION: '4'
+
+    steps:
+      - name: Preflight — required configuration
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PROJECT: ${{ vars.CF_ADMIN_PAGES_PROJECT }}
+        run: |
+          set -uo pipefail
+          fail=0
+          [ -n "${CF_API_TOKEN:-}" ]  || { echo "::error::secret CLOUDFLARE_API_TOKEN is not set (Account > Cloudflare Pages > Edit)."; fail=1; }
+          [ -n "${CF_ACCOUNT_ID:-}" ] || { echo "::error::secret CLOUDFLARE_ACCOUNT_ID is not set."; fail=1; }
+          [ -n "${CF_PROJECT:-}" ]    || { echo "::error::repo variable CF_ADMIN_PAGES_PROJECT is not set. It must be the ADMIN Pages project — deliberately no default, because guessing it could deploy the admin panel into the catalog project."; fail=1; }
+          exit $fail
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # The whole point of this step is its assertions: derive-constants.cjs
+      # fails if any constant it advertises has been renamed, moved or deleted,
+      # so a drifted dashboard cannot be deployed. See DESIGN §9.1.
+      - name: Derive pipeline constants from source
+        run: node scripts/derive-constants.cjs
+
+      - name: Assert the deployable set is complete
+        run: |
+          set -euo pipefail
+          test -f admin/public/index.html               || { echo "::error::admin/public/index.html missing"; exit 1; }
+          test -f admin/public/constants.generated.json || { echo "::error::derive-constants.cjs produced no JSON — the dashboard would render empty panels"; exit 1; }
+          test -f admin/functions/_middleware.js        || { echo "::error::admin/functions/_middleware.js missing — WITHOUT IT THE SITE HAS NO AUTH AT ALL. Refusing to deploy."; exit 1; }
+          test -f admin/functions-lib/access.js         || { echo "::error::admin/functions-lib/access.js missing — the middleware import would fail the bundle"; exit 1; }
+          node -e 'JSON.parse(require("fs").readFileSync("admin/public/constants.generated.json","utf8"))'
+          echo "admin bundle ok — $(find admin/public admin/functions admin/functions-lib -type f | wc -l) files"
+
+      - name: Deploy
+        id: deploy
+        if: github.event.inputs.dry_run != 'true'
+        working-directory: admin
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_PROJECT: ${{ vars.CF_ADMIN_PAGES_PROJECT }}
+        run: |
+          set -euo pipefail
+          if [ "$TARGET" = production ]; then BR="$PROD_BRANCH"; else BR=staging; fi
+          # Run from admin/ so wrangler resolves Functions from ./functions —
+          # there is no --functions-dir flag on `pages deploy`.
+          npx --yes "wrangler@${WRANGLER_VERSION}" pages deploy public \
+            --project-name="$CF_PROJECT" \
+            --branch="$BR" \
+            --commit-hash="$GITHUB_SHA" \
+            --commit-dirty=true \
+            2>&1 | tee /tmp/wrangler-admin.log
+
+          URL=$(grep -oE 'https://[a-z0-9.-]+\.pages\.dev[^ ]*' /tmp/wrangler-admin.log | tail -1 || true)
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+          # wrangler shims a missing functions/ directory and deploys happily.
+          # Here that would publish the dashboard with NO middleware — no Access
+          # check, no host check — as a green deploy. It is the single worst
+          # outcome this workflow can produce, so it is a hard failure.
+          if grep -q 'No Functions' /tmp/wrangler-admin.log; then
+            echo "::error::wrangler reported 'No Functions' — the auth middleware was NOT deployed. The dashboard would be served with no authentication. Check that the deploy ran from admin/."
+            exit 1
+          fi
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Admin dashboard → \`$TARGET\`"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| project | \`${{ vars.CF_ADMIN_PAGES_PROJECT || '(unset)' }}\` |"
+            echo "| dry run | \`${{ github.event.inputs.dry_run || 'false' }}\` |"
+            echo "| deployment | ${{ steps.deploy.outputs.url || 'n/a' }} |"
+            echo ""
+            echo "Serving admin.prorigbuilder.com requires the custom domain attached to this"
+            echo "project and an Access application in front of it. Until then the .pages.dev"
+            echo "URL answers 404 by design — the host check in \`functions-lib/access.js\`."
+          } >> "$GITHUB_STEP_SUMMARY"

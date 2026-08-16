@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PRB ops</title>
+<!-- Inline so the tab icon costs no request and no 404 in the logs. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231f5fd6'/%3E%3Crect x='4' y='4' width='8' height='8' rx='1' fill='none' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="bar">
+  <h1>PRB ops</h1>
+  <div class="bar-meta">
+    <span id="build-meta" class="muted">…</span>
+    <button id="refresh" type="button">Refresh</button>
+  </div>
+</header>
+
+<main>
+  <!-- ── Question 2: catalog counts ─────────────────────────────────────── -->
+  <section id="catalog">
+    <h2>Catalog</h2>
+    <div id="catalog-body" class="loading">Loading…</div>
+  </section>
+
+  <!-- ── Question 1: workflow runs ──────────────────────────────────────── -->
+  <section id="workflows">
+    <h2>Workflows</h2>
+    <div id="workflows-body" class="loading">Loading…</div>
+  </section>
+
+  <!-- ── Phase 1: dispatch ──────────────────────────────────────────────── -->
+  <section id="dispatch">
+    <h2>Run a workflow</h2>
+    <p class="note">
+      Starts a run that could already be started from the Actions tab, with inputs
+      restricted by the server-side allowlist. Nothing here edits a setting.
+    </p>
+    <div id="dispatch-body" class="loading">Loading…</div>
+    <div id="dispatch-result" hidden></div>
+  </section>
+
+  <!-- ── Calibration staleness ──────────────────────────────────────────── -->
+  <section id="calibration">
+    <h2>Gate calibration</h2>
+    <p class="note">
+      Display only, permanently. A stamp moves when the value it describes is
+      re-verified — never on its own, and never from a UI.
+    </p>
+    <div id="calibration-body" class="loading">Loading…</div>
+  </section>
+
+  <!-- ── Derived constants ──────────────────────────────────────────────── -->
+  <section id="constants">
+    <h2>Pipeline constants</h2>
+    <p class="note">
+      Derived from source at deploy time by <code>scripts/derive-constants.cjs</code>,
+      never transcribed — if a constant is renamed or moved, the deploy fails rather
+      than this page showing a stale number. Nothing here is editable in v1;
+      the badges are the Phase&nbsp;2–4 exposure classification from
+      <code>deploy/DESIGN-admin-dashboard.md</code> §3.
+    </p>
+    <div id="constants-body" class="loading">Loading…</div>
+  </section>
+</main>
+
+<footer>
+  <span class="muted">Phase 0 + Phase 1 — read-only plus dispatch. No settings are editable.</span>
+</footer>
+
+<script src="/app.js" type="module"></script>
+</body>
+</html>

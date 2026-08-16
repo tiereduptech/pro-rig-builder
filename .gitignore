@@ -111,8 +111,20 @@ dist/**/*.html
 # Rebuilt on every deploy from server.cjs / product-redirects.json / dist. A
 # committed copy could go stale against them, which is the drift build-pages.cjs
 # exists to prevent — so it is never committed.
-functions-lib/
+#
+# ROOT-ANCHORED. Unanchored, `functions-lib/` matches a directory of that name at
+# ANY depth, and it silently swallowed admin/functions-lib/ — the admin
+# dashboard's Access JWT verification, dispatch allowlist and GitHub client — on
+# its first `git add`. Those are hand-written source, not generated, and the
+# failure was invisible: `git add admin` simply reported fewer files. Only this
+# directory is generated; keep the leading slash.
+/functions-lib/
 
+# The admin dashboard's derived constants (deploy/DESIGN-admin-dashboard.md §9.1).
+# Same reasoning as functions-lib/: regenerated on every admin deploy by
+# scripts/derive-constants.cjs, and a committed copy is exactly the stale number
+# the derivation exists to prevent. Generate it locally before `wrangler pages dev`.
+admin/public/constants.generated.json
 
 # wrangler's local state / cache (wrangler pages dev).
 .wrangler/
