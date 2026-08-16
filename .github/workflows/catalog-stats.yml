@@ -1,0 +1,107 @@
+name: Catalog stats
+
+# =============================================================================
+#  Recomputes catalog-build/catalog-stats.json — the counts the admin dashboard
+#  reads (total / live / quarantined, by category, by reason, plus a bounded
+#  history for the delta). See deploy/DESIGN-admin-dashboard.md §9.2.
+#
+#  WHY IT IS TRIGGERED BY THE CATALOG AND NOT BY A CLOCK: the numbers only change
+#  when something commits to the catalog. A nightly cron would recompute
+#  identical numbers most nights and, worse, would lag a mid-day ingest by up to
+#  24 hours — while the dashboard displayed them as current.
+#
+#  NO LOOP: this workflow writes only to catalog-build/, which is not in its own
+#  trigger paths. Its own commit cannot re-trigger it.
+# =============================================================================
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/parts/**'
+      - 'src/data/parts.js'
+  workflow_dispatch: {}
+
+# Joins the repo-wide writer lock like every other workflow that pushes to main.
+# test/verify-main-writer-lock.cjs asserts this stays true.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Depth 2 so the history entry can be keyed to a real commit rather
+          # than a detached shallow SHA.
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Compute catalog stats
+        run: node scripts/catalog-stats.cjs
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- catalog-build/catalog-stats.json; then
+            echo "No change in catalog stats"
+            exit 0
+          fi
+
+          git add catalog-build/catalog-stats.json
+          git commit -m "chore(stats): recompute catalog counts
+
+          Automated. Source commit: ${GITHUB_SHA}"
+
+          # Same rebase-retry shape as verify-catalog.yml: main moves under the
+          # nightly workflows, and a lost stats commit would silently freeze the
+          # dashboard's numbers at an old value.
+          for i in 1 2 3; do
+            if git push origin main; then echo "pushed on attempt $i"; exit 0; fi
+            echo "push rejected, rebasing and retrying"
+            git pull --rebase origin main || { echo "::error::rebase failed"; exit 1; }
+            sleep 5
+          done
+          echo "::error::all push attempts failed"
+          exit 1
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Catalog stats"
+            echo ""
+            if [ -f catalog-build/catalog-stats.json ]; then
+              node -e '
+                const s = require("./catalog-build/catalog-stats.json");
+                const d = s.delta;
+                console.log("| | |"); console.log("|---|---|");
+                console.log(`| total | ${s.totals.total}${d ? ` (${d.total >= 0 ? "+" : ""}${d.total})` : ""} |`);
+                console.log(`| live | ${s.totals.live}${d ? ` (${d.live >= 0 ? "+" : ""}${d.live})` : ""} |`);
+                console.log(`| quarantined | ${s.totals.quarantined}${d ? ` (${d.quarantined >= 0 ? "+" : ""}${d.quarantined})` : ""} |`);
+                console.log(`| with a recorded reason | ${s.attribution.withReason} |`);
+                console.log(`| **no reason recorded** | **${s.attribution.withoutReason}** |`);
+                console.log("");
+                console.log("Top quarantine reasons:");
+                console.log("");
+                for (const r of s.byReason.slice(0, 8)) console.log(`- \`${r.reason}\` — ${r.rows}`);
+              '
+            else
+              echo "catalog-build/catalog-stats.json was not produced."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

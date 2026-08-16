@@ -9,6 +9,10 @@ pchw-scanner/bin/
 pchw-scanner/obj/
 catalog-build/*
 !catalog-build/price-history.json
+# Counts the admin dashboard reads. Committed (unlike the rest of catalog-build)
+# because the dashboard fetches it from the default branch, and because its
+# history array is the record of how the quarantine count moved over time.
+!catalog-build/catalog-stats.json
 verify-reports/
 public/downloads/
 dist/downloads/
@@ -108,6 +112,7 @@ dist/**/*.html
 # committed copy could go stale against them, which is the drift build-pages.cjs
 # exists to prevent — so it is never committed.
 functions-lib/
+
 
 # wrangler's local state / cache (wrangler pages dev).
 .wrangler/

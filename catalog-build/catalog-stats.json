@@ -1,0 +1,307 @@
+{
+  "$schemaVersion": 1,
+  "generatedAt": "2026-08-16T16:41:18.246Z",
+  "commit": "4c649cb781a1123fd09c25fe052ed40b78e11283",
+  "definitions": {
+    "total": "every row in the catalog",
+    "live": "!needsReview — identical to App.jsx:355 and scripts/url-slugs.cjs:99",
+    "quarantined": "!!needsReview",
+    "byReason": "rows mentioning each reason; a row with several flags appears under each, so these DO NOT sum to the quarantine total",
+    "attribution": "withReason + withoutReason === quarantined — this is the breakdown that reconciles"
+  },
+  "totals": {
+    "total": 6938,
+    "live": 5469,
+    "quarantined": 1469
+  },
+  "attribution": {
+    "withReason": 456,
+    "withoutReason": 1013
+  },
+  "byCategory": [
+    {
+      "category": "Case",
+      "total": 1417,
+      "live": 1245,
+      "quarantined": 172
+    },
+    {
+      "category": "Storage",
+      "total": 819,
+      "live": 633,
+      "quarantined": 186
+    },
+    {
+      "category": "RAM",
+      "total": 670,
+      "live": 602,
+      "quarantined": 68
+    },
+    {
+      "category": "GPU",
+      "total": 514,
+      "live": 324,
+      "quarantined": 190
+    },
+    {
+      "category": "Motherboard",
+      "total": 512,
+      "live": 340,
+      "quarantined": 172
+    },
+    {
+      "category": "Monitor",
+      "total": 503,
+      "live": 435,
+      "quarantined": 68
+    },
+    {
+      "category": "CPUCooler",
+      "total": 465,
+      "live": 355,
+      "quarantined": 110
+    },
+    {
+      "category": "PSU",
+      "total": 439,
+      "live": 376,
+      "quarantined": 63
+    },
+    {
+      "category": "CaseFan",
+      "total": 337,
+      "live": 235,
+      "quarantined": 102
+    },
+    {
+      "category": "CPU",
+      "total": 257,
+      "live": 187,
+      "quarantined": 70
+    },
+    {
+      "category": "Keyboard",
+      "total": 215,
+      "live": 148,
+      "quarantined": 67
+    },
+    {
+      "category": "Headset",
+      "total": 182,
+      "live": 130,
+      "quarantined": 52
+    },
+    {
+      "category": "Mouse",
+      "total": 142,
+      "live": 94,
+      "quarantined": 48
+    },
+    {
+      "category": "Microphone",
+      "total": 138,
+      "live": 98,
+      "quarantined": 40
+    },
+    {
+      "category": "MousePad",
+      "total": 75,
+      "live": 66,
+      "quarantined": 9
+    },
+    {
+      "category": "Webcam",
+      "total": 43,
+      "live": 37,
+      "quarantined": 6
+    },
+    {
+      "category": "ExternalStorage",
+      "total": 40,
+      "live": 35,
+      "quarantined": 5
+    },
+    {
+      "category": "ExtensionCables",
+      "total": 28,
+      "live": 22,
+      "quarantined": 6
+    },
+    {
+      "category": "EthernetCard",
+      "total": 17,
+      "live": 12,
+      "quarantined": 5
+    },
+    {
+      "category": "OpticalDrive",
+      "total": 16,
+      "live": 13,
+      "quarantined": 3
+    },
+    {
+      "category": "InternalDisplay",
+      "total": 15,
+      "live": 12,
+      "quarantined": 3
+    },
+    {
+      "category": "SoundCard",
+      "total": 13,
+      "live": 7,
+      "quarantined": 6
+    },
+    {
+      "category": "WiFiCard",
+      "total": 13,
+      "live": 11,
+      "quarantined": 2
+    },
+    {
+      "category": "UPS",
+      "total": 12,
+      "live": 8,
+      "quarantined": 4
+    },
+    {
+      "category": "Chair",
+      "total": 12,
+      "live": 9,
+      "quarantined": 3
+    },
+    {
+      "category": "Desk",
+      "total": 11,
+      "live": 7,
+      "quarantined": 4
+    },
+    {
+      "category": "ThermalPaste",
+      "total": 10,
+      "live": 8,
+      "quarantined": 2
+    },
+    {
+      "category": "Antivirus",
+      "total": 10,
+      "live": 10,
+      "quarantined": 0
+    },
+    {
+      "category": "ExternalOptical",
+      "total": 9,
+      "live": 8,
+      "quarantined": 1
+    },
+    {
+      "category": "OS",
+      "total": 4,
+      "live": 2,
+      "quarantined": 2
+    }
+  ],
+  "byReason": [
+    {
+      "reason": "relink:mismatch",
+      "rows": 147
+    },
+    {
+      "reason": "relink:no-price",
+      "rows": 138
+    },
+    {
+      "reason": "priceQuarantine:3p_markup",
+      "rows": 85
+    },
+    {
+      "reason": "cpu_ff:server_hedt_socket",
+      "rows": 23
+    },
+    {
+      "reason": "priceQuarantine:above_ceiling",
+      "rows": 12
+    },
+    {
+      "reason": "cpu_price:above_ceiling",
+      "rows": 9
+    },
+    {
+      "reason": "storage_brand:AMD",
+      "rows": 8
+    },
+    {
+      "reason": "prebuilt-system",
+      "rows": 7
+    },
+    {
+      "reason": "detector:stale-pr",
+      "rows": 6
+    },
+    {
+      "reason": "detector:wrong-asin",
+      "rows": 5
+    },
+    {
+      "reason": "relink:drift",
+      "rows": 4
+    },
+    {
+      "reason": "storage_price:above_ceiling",
+      "rows": 4
+    },
+    {
+      "reason": "nas_appliance",
+      "rows": 4
+    },
+    {
+      "reason": "cpu_price:below_floor",
+      "rows": 3
+    },
+    {
+      "reason": "storage_ff:enterprise_sas",
+      "rows": 3
+    },
+    {
+      "reason": "storage_brand:Intel",
+      "rows": 3
+    },
+    {
+      "reason": "cpu_ff:server_hedt_name",
+      "rows": 2
+    },
+    {
+      "reason": "storage_ff:enterprise_form",
+      "rows": 2
+    },
+    {
+      "reason": "storage_ff:external_usb",
+      "rows": 2
+    },
+    {
+      "reason": "server_redundant",
+      "rows": 2
+    },
+    {
+      "reason": "priceQuarantine:below_floor",
+      "rows": 1
+    },
+    {
+      "reason": "wrong-asin:ssd-purged",
+      "rows": 1
+    },
+    {
+      "reason": "wrong-asin:capacity-mismatch",
+      "rows": 1
+    }
+  ],
+  "delta": null,
+  "history": [
+    {
+      "at": "2026-08-16T16:41:18.246Z",
+      "commit": "4c649cb781a1",
+      "total": 6938,
+      "live": 5469,
+      "quarantined": 1469
+    }
+  ]
+}
