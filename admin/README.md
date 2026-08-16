@@ -3,6 +3,9 @@
 Operator view of the catalog pipeline. **Phase 0 + Phase 1 only**: it reads, and
 it can start a workflow run. It cannot change any setting.
 
+**Setting this up for the first time?** Follow `admin/SETUP.md` — 22 steps, in
+order. This file is the day-to-day reference; that one is the install.
+
 Design and the reasoning behind every choice: `deploy/DESIGN-admin-dashboard.md`.
 
 ---
