@@ -85,6 +85,16 @@ const LEAF_MATCH = {
 };
 const CATS = Object.keys(LEAF_MATCH);
 
+// The walk roots sftp-ingest and the census use. The MKPL feed is NOT at the
+// root — it lives under /ADDITIONAL/<mid>/MKPL/. Assuming otherwise is what
+// killed feed-overlap-audit run 31440517417 with "NoSuchKey" after it had
+// already spent 11 minutes streaming the main feed. Discover, do not guess.
+const WALK_ROOTS = ['/', '/ADDITIONAL', '/GLOBAL/EN-US_USD'];
+const SKIP_DIRS = new Set(['/GLOBAL']);
+// Full product catalogs only — a _delta feed carries CHANGES, so a sku's
+// absence from one means nothing at all.
+const FULL_CATALOG_RE = /^(\d+)_\d+_mp(_MKPL)?\.(txt|xml)\.gz$/i;
+
 const normUPC = (u) => String(u || '').replace(/\D/g, '').replace(/^0+/, '');
 const normMPN = (m) => { const c = String(m || '').toUpperCase().replace(/[\s\-_/]/g, ''); return (c.length < 5 || /^\d+$/.test(c)) ? '' : c; };
 const nkey = (s) => String(s || '').trim().toUpperCase();   // census's key rule, verbatim
@@ -96,10 +106,41 @@ const isDeleted = (v) => /^(1|true|yes|deleted)$/i.test(String(v || '').trim());
 const SIGHTING_RANK = { undefined: -1, null: -1, deleted: 1, unbuyable: 2, alive: 3 };
 const classifySighting = (del, avail) => del ? 'deleted' : (/in-?stock/i.test(String(avail || '').trim()) ? 'alive' : 'unbuyable');
 
+/** Walk the SFTP tree for full catalog feeds, exactly as the census does. */
+async function discoverFeeds(sftp) {
+  const found = [];
+  const queue = [...WALK_ROOTS];
+  const seen = new Set();
+  while (queue.length) {
+    const dir = queue.shift();
+    if (seen.has(dir) || SKIP_DIRS.has(dir)) continue;
+    seen.add(dir);
+    let entries;
+    try { entries = await sftp.list(dir); }
+    catch (e) { log(`  cannot list ${dir}: ${e.message}`); continue; }
+    for (const entry of entries) {
+      const full = (dir === '/' ? '' : dir) + '/' + entry.name;
+      if (entry.type === 'd') { if (!SKIP_DIRS.has(full)) queue.push(full); continue; }
+      if (entry.type !== '-') continue;
+      if (/_template|_deltatemplate/i.test(entry.name)) continue;
+      const m = FULL_CATALOG_RE.exec(entry.name);
+      if (!m || m[1] !== MID) continue;
+      if (/\.xml\.gz$/i.test(entry.name)) continue;   // parser is pipe-delimited
+      found.push({ remote: full, name: entry.name, kind: m[2] ? 'MKPL' : 'mp', size: entry.size, mtime: entry.modifyTime });
+    }
+  }
+  return found;
+}
+
 /** Stream one gzipped pipe feed straight off SFTP. onRow gets the raw split fields. */
-async function streamFeed(sftp, remote, label, onRow) {
-  let sizeMB = '?', mtime = null;
-  try { const st = await sftp.stat(remote); sizeMB = (st.size / 1048576).toFixed(0); mtime = st.modifyTime; } catch {}
+async function streamFeed(sftp, feed, label, onRow) {
+  const remote = feed.remote;
+  // Size and mtime come from the directory listing that found the file. stat()
+  // is a second opinion, not the source of truth: on this endpoint it can fail
+  // even for a file the listing just returned.
+  let sizeMB = feed.size ? (feed.size / 1048576).toFixed(0) : '?';
+  let mtime = feed.mtime || null;
+  try { const st = await sftp.stat(remote); sizeMB = (st.size / 1048576).toFixed(0); mtime = st.modifyTime; } catch (e) { log(`  (stat failed, using listing metadata: ${e.message})`); }
   const ageDays = mtime ? ((Date.now() - mtime) / 86400000).toFixed(0) : null;
   log(`Streaming ${label} ${remote} (${sizeMB}MB, mtime ${mtime ? new Date(mtime).toISOString().slice(0, 10) : '?'}, ${ageDays ?? '?'}d old)…`);
   const gunzip = zlib.createGunzip();
@@ -161,6 +202,7 @@ async function streamFeed(sftp, remote, label, onRow) {
 
   const sftp = new SftpClient();
   const feedStat = {};
+  const report0 = { discovered: [] };   // what the walk found, before any of it is read
   const mpIdx = {};   // Q1: per-category identity index from mp
   for (const c of CATS) mpIdx[c] = { item: new Set(), upc: new Set(), mpn: new Set(), n: 0, official: 0, marketplace: 0 };
   const q1 = {};
@@ -171,12 +213,19 @@ async function streamFeed(sftp, remote, label, onRow) {
     await sftp.connect({ host: FTP_HOST, port: 22, username: FTP_USER, password: FTP_PASS });
     log(`Connected to ${FTP_HOST} as ${FTP_USER}`);
 
-    const mpPath = `/${MID}_${SID}_mp.txt.gz`;
-    const mkplPath = `/${MID}_${SID}_mp_MKPL.txt.gz`;
+    log('Discovering feeds…');
+    const discovered = await discoverFeeds(sftp);
+    for (const d of discovered) log(`  ${d.kind.padEnd(4)} ${d.remote} (${(d.size / 1048576).toFixed(0)}MB, mtime ${new Date(d.mtime).toISOString().slice(0, 10)})`);
+    report0.discovered = discovered.map((d) => ({ ...d, mtimeISO: d.mtime ? new Date(d.mtime).toISOString() : null, ageDays: d.mtime ? +((Date.now() - d.mtime) / 86400000).toFixed(1) : null }));
+
+    const pick = (kind) => discovered.filter((d) => d.kind === kind).sort((a, b) => (b.mtime || 0) - (a.mtime || 0))[0];
+    const mpFeed = pick('mp'), mkplFeed = pick('MKPL');
+    if (!mpFeed) throw new Error('no mp feed discovered — cannot establish a baseline');
+    if (!mkplFeed) throw new Error('no MKPL feed discovered — it is not on the endpoint at all, which is itself the verdict');
 
     // ── PASS 1 — mp: index identities (Q1) and sight catalog skus (Q2) ──────
     let mpKept = 0;
-    feedStat.mp = await streamFeed(sftp, mpPath, 'mp', (f) => {
+    feedStat.mp = await streamFeed(sftp, mpFeed, 'mp', (f) => {
       const del = isDeleted(f[F.is_deleted]);
 
       // Q2 — catalog sighting, every row, no category filter (census parity)
@@ -202,7 +251,7 @@ async function streamFeed(sftp, remote, label, onRow) {
 
     // ── PASS 2 — MKPL: what does it carry that mp does not? ─────────────────
     let mkplKept = 0;
-    feedStat.mkpl = await streamFeed(sftp, mkplPath, 'MKPL', (f) => {
+    feedStat.mkpl = await streamFeed(sftp, mkplFeed, 'MKPL', (f) => {
       const del = isDeleted(f[F.is_deleted]);
 
       // Q2 — catalog sighting (keep the record for pendings MKPL rescues)
@@ -278,6 +327,7 @@ async function streamFeed(sftp, remote, label, onRow) {
   const report = {
     generatedAt: new Date().toISOString(),
     readOnly: true, wroteCatalog: false,
+    discovered: report0.discovered,
     feeds: feedStat,
     q1_redundancy: { perCategory: {}, totals: null },
     q2_blastRadius: {
