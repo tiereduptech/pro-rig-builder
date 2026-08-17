@@ -1,0 +1,101 @@
+name: Best Buy price truth probe (read-only)
+
+# DISPATCH-ONLY, READ-ONLY. No schedule, no writes, no commits, no push.
+#
+# Answers one question before anyone touches a cron: is `deals.bestbuy.price`
+# the number a customer actually pays?
+#
+# It prints three columns per row — stored / API salePrice / live selling price
+# — and classifies each row FIELD-WRONG, STALE-ONLY or AGREE. The distinction
+# decides the fix:
+#
+#   FIELD-WRONG dominant -> the defect is the field we read (same class as the
+#                           Amazon 3P bug). A refresh job would refresh a wrong
+#                           number on schedule and make it harder to spot,
+#                           because the timestamps would look healthy.
+#   STALE-ONLY  dominant -> the field is right, the data is just old. Build the
+#                           refresh job.
+#
+# Background: Best Buy prices have not moved since the 2026-04-20 integration.
+# Over 2026-05-19..08-17 the price-history recorder logged exactly 1 Best Buy
+# price change across 1,569 series, against 13,315 for Amazon — and that
+# recorder is 64-for-64 green, so the flat line is real data, not a broken
+# instrument. No Best Buy refresh workflow has ever existed.
+#
+# bestbuy-price.js records a live test from 2026-06-28: for sku 6519477 the
+# Developer API returned salePrice 399.99 (onSale:false) and the Impact catalog
+# returned CurrentPrice 399.99, while the real selling price was 239.99. That
+# is why the third column exists.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Rows to probe (max 200 — each row costs ~2s)"
+        type: string
+        default: "20"
+      sample:
+        description: "Which rows to pick"
+        type: choice
+        default: "under"
+        options:
+          - under   # Best Buy is the cheapest deal — it wins our buy box, so a wrong number is what a customer clicks
+          - over    # Best Buy is above every peer — the comp-value signature
+          - random  # deterministic spread across the catalog
+      category:
+        description: "Restrict to one category (blank = all), e.g. gpu, storage, motherboard"
+        type: string
+        default: ""
+      live:
+        description: "How to source the live selling price (column 3)"
+        type: choice
+        default: "auto"
+        options:
+          - auto        # try the product page, fall back to DataForSEO
+          - page        # product page only
+          - dataforseo  # DataForSEO Google Shopping only
+          - off         # skip column 3 (stored vs salePrice only)
+
+# NO concurrency group on purpose. This job writes nothing and pushes nothing,
+# so it must not join `main-writer` — that group is what has silently cancelled
+# 55 of the last 64 SFTP Ingest runs. A read-only probe should never queue
+# behind a writer, and should never be cancelled by one.
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # No `npm ci` — the probe uses only Node builtins and global fetch.
+
+      - name: Probe Best Buy prices
+        env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+        run: |
+          ARGS="--limit=${{ inputs.limit }} --sample=${{ inputs.sample }} --live=${{ inputs.live }}"
+          if [ -n "${{ inputs.category }}" ]; then ARGS="$ARGS --category=${{ inputs.category }}"; fi
+          echo "Running: node probe-bestbuy-price-truth.mjs $ARGS"
+          node probe-bestbuy-price-truth.mjs $ARGS
+
+      # Proof, not assertion: fail the job if the probe somehow dirtied the
+      # working tree. Read-only should be verifiable, not just claimed.
+      - name: Assert nothing was written
+        if: always()
+        run: |
+          if ! git diff --quiet || [ -n "$(git status --porcelain)" ]; then
+            echo "::error::probe modified the working tree — it must be read-only"
+            git status --porcelain
+            exit 1
+          fi
+          echo "Working tree clean — probe wrote nothing."
