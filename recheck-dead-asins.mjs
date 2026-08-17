@@ -15,7 +15,7 @@
 //   node recheck-dead-asins.mjs            # report only (default)
 //   node recheck-dead-asins.mjs --apply    # write quarantine flags to parts.js
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const CREDS_PATH  = process.env.PRORIG_AMAZON_CREDS || 'C:\\rigfinder\\PRB-credentials.csv';
 const PARTNER_TAG = 'tiereduptech-20';
@@ -47,11 +47,29 @@ function parseCsv(text) {
   if (field.length || row.length) { row.push(field); rows.push(row); }
   return rows.filter(r => r.some(v => v.trim() !== ''));
 }
+// ENV FIRST, CSV SECOND — the same order, and for the same reason, as
+// amazon-paapi.js loadCreds(). This script is strike 2 of a two-strike
+// quarantine whose strike 1 (amazon-asin-identity-audit.mjs) runs daily in CI
+// via asin-identity-audit.yml. Reading credentials only from a CSV at a Windows
+// path made strike 2 structurally unrunnable there: strike 1 kept producing
+// dead-ASIN candidates that nothing could ever confirm, so broken affiliate
+// links stayed live indefinitely. The env branch is what makes the second
+// strike schedulable; the CSV branch is retained for local runs.
 function loadCreds(p) {
-  const rows = parseCsv(readFileSync(p, 'utf8'));
-  const h = rows[0].map(x => x.trim().toLowerCase()), d = rows[1];
-  const g = n => { const i = h.indexOf(n); return i === -1 ? '' : (d[i] || '').trim(); };
-  return { id: g('credential id'), secret: g('secret') };
+  const id = process.env.AMAZON_CREATORS_CLIENT_ID;
+  const secret = process.env.AMAZON_CREATORS_CLIENT_SECRET;
+  if (id && secret) return { id, secret, source: 'env' };
+  // Absent/!readable CSV returns null rather than throwing an ENOENT stack, so
+  // the caller can name both places it looked.
+  if (!p || !existsSync(p)) return null;
+  try {
+    const rows = parseCsv(readFileSync(p, 'utf8'));
+    if (rows.length < 2) return null;
+    const h = rows[0].map(x => x.trim().toLowerCase()), d = rows[1];
+    const g = n => { const i = h.indexOf(n); return i === -1 ? '' : (d[i] || '').trim(); };
+    const cid = g('credential id'), csec = g('secret');
+    return cid && csec ? { id: cid, secret: csec, source: p } : null;
+  } catch { return null; }
 }
 async function getToken(id, secret) {
   const res = await fetch(TOKEN_URL, {
@@ -106,7 +124,20 @@ function saveCatalog(parts) {
   console.log(`  live (not quarantined) ... ${deadFindings.filter(f => !f.needsReview).length}`);
   console.log(`unique ASINs to re-check ... ${deadAsins.length}  (${Math.ceil(deadAsins.length / BATCH)} calls)\n`);
 
+  // HARD STOP, never a degraded run. confirmedDead below is computed as
+  // "every dead ASIN the API did NOT hand back", so a credential failure that
+  // let us reach the batch loop would return zero recoveries and read as
+  // "all of them are confirmed dead" — mass quarantine from an auth error.
+  // The only safe response to absent credentials is to exit before any of it.
   const creds = loadCreds(CREDS_PATH);
+  if (!creds) {
+    console.error('✗ No Amazon Creators credentials.');
+    console.error('  Looked for: AMAZON_CREATORS_CLIENT_ID + AMAZON_CREATORS_CLIENT_SECRET (env)');
+    console.error(`              then a credentials CSV at ${CREDS_PATH}`);
+    console.error('  Set PRORIG_AMAZON_CREDS to point elsewhere, or export the two env vars.');
+    process.exit(2);
+  }
+  console.log(`credentials ............... ${creds.source === 'env' ? 'env' : 'CSV ' + creds.source}\n`);
   TOKEN = await getToken(creds.id, creds.secret);
 
   // ---- strike 2 ---------------------------------------------------------

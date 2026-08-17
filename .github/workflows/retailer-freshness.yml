@@ -1,0 +1,87 @@
+name: Retailer Freshness
+
+# Fails when a retailer in the catalog is publishing prices nothing is refreshing.
+#
+# WHY THIS IS ITS OWN WORKFLOW, AND NOT A UNIT TEST
+#   The gate is expected to be RED right now — bestbuy, msi, newegg_openbox and
+#   newegg_marketplace have no refresher at all, and newegg's cron is commented
+#   out. Wiring a known-red assertion into `npm test` would turn every unrelated
+#   PR red, and a suite that is always red gets deleted or `|| true`-d within a
+#   week. That is the same "signal with no consequence" failure this gate exists
+#   to replace, so it gets its own job whose red state means one specific thing.
+#
+#   test/retailer-freshness.test.js is the half that belongs in `npm test`: it
+#   proves the gate discriminates, and it stays green.
+#
+# WHY IT DOES NOT PUSH TO MAIN
+#   Read-only by construction — it reads parts.js and the workflow files and
+#   writes nothing. So it is deliberately NOT in the `main-writer` concurrency
+#   group; test/verify-main-writer-lock.cjs asserts that only main-pushers carry
+#   that group, and adding it here would fail that gate.
+#
+# SCHEDULING
+#   13:00 UTC, after every job that writes parts.js has had its slot for the day
+#   (asin-identity-audit 03:00, prerender 06:00, price-history 07:00,
+#   verify-catalog 08/09/10/11, sftp-ingest 12:00). Measuring before the writers
+#   run would report yesterday's freshness and burn a day of budget.
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch: {}
+  # A PR that changes the catalog or the schedules can introduce a frozen
+  # retailer, so it is checked there too — this is where a newly added retailer
+  # with no cadence entry gets caught before it merges.
+  pull_request:
+    paths:
+      - 'src/data/parts.js'
+      - 'src/data/parts/**'
+      - 'scripts/assert-retailer-freshness.cjs'
+      - '.github/workflows/**'
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No npm ci — the gate depends only on node builtins. Keeping it
+      # dependency-free means a broken dependency tree can never be the reason
+      # the freshness alarm fails to run.
+      - name: Assert every retailer is confirmed within its cadence
+        id: assert
+        # pipefail is REQUIRED, not stylistic. The default runner shell is
+        # `bash -e`, where a pipeline exits with the status of its LAST command —
+        # so `node gate | tee` would report tee's 0 and the step would pass while
+        # the gate was failing. A freshness alarm that silently always passes is
+        # strictly worse than no alarm, since it also removes the reason to look.
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/assert-retailer-freshness.cjs | tee freshness.txt
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Retailer confirmation freshness"
+            echo ""
+            if [ "${{ steps.assert.outcome }}" = "success" ]; then
+              echo "All retailers confirmed within their stated cadence."
+            else
+              echo "**One or more retailers are publishing prices nothing is refreshing.**"
+              echo ""
+              echo "A retailer fails here when no scheduled job has confirmed its prices"
+              echo "against the retailer recently enough — or when no such job exists."
+              echo "Fix the job, or drop the retailer. Those are the only two outcomes"
+              echo "that make this pass."
+            fi
+            echo ""
+            echo '```'
+            cat freshness.txt 2>/dev/null || echo "(gate produced no output — it crashed before reporting)"
+            echo '```'
+          } >> $GITHUB_STEP_SUMMARY
