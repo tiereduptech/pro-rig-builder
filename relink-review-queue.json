@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-17T03:48:21.438Z",
+    "generatedAt": "2026-08-17T19:05:35.778Z",
     "policy": "REPORT ONLY — never auto-relinked"
   },
   "totals": {
-    "queued": 232,
+    "queued": 233,
     "wrongProduct": 82,
-    "closeButWrong": 150,
-    "live": 94,
-    "priceDivergent": 61
+    "closeButWrong": 151,
+    "live": 92,
+    "priceDivergent": 60
   },
   "queue": [
     {
@@ -28,6 +28,7 @@
       "merchant": null,
       "priceDeltaPct": 2111,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -47,6 +48,7 @@
       "merchant": null,
       "priceDeltaPct": 1246.4,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -66,6 +68,7 @@
       "merchant": null,
       "priceDeltaPct": 867.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -85,6 +88,7 @@
       "merchant": null,
       "priceDeltaPct": 378.2,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -104,6 +108,7 @@
       "merchant": null,
       "priceDeltaPct": 295.3,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -123,6 +128,7 @@
       "merchant": null,
       "priceDeltaPct": 274.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -142,6 +148,7 @@
       "merchant": null,
       "priceDeltaPct": 197.7,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -161,25 +168,7 @@
       "merchant": null,
       "priceDeltaPct": 181.1,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 99101,
-      "cat": "EthernetCard",
-      "asin": "B0FHZGXZH7",
-      "storedName": "TP-Link TX401 10GbE",
-      "amazonTitle": "Roam 7 BE3600 Wi-Fi 7 Portable Travel Router Dual-Band, 2.5G Port, USB 3.0",
-      "scoreStoredInAmazon": 0,
-      "scoreAmazonInStored": 0,
-      "gateScore": 0,
-      "capConflict": false,
-      "storedPrice": 49,
-      "amazonPrice": 119.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 144.9,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -199,6 +188,7 @@
       "merchant": null,
       "priceDeltaPct": 134.1,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -218,6 +208,7 @@
       "merchant": null,
       "priceDeltaPct": 112.8,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -237,6 +228,7 @@
       "merchant": null,
       "priceDeltaPct": -95.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -256,6 +248,27 @@
       "merchant": null,
       "priceDeltaPct": 89.6,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 99101,
+      "cat": "EthernetCard",
+      "asin": "B0FHZGXZH7",
+      "storedName": "TP-Link TX401 10GbE",
+      "amazonTitle": "Roam 7 BE3600 Wi-Fi 7 Portable Travel Router Dual-Band, 2.5G Port, USB 3.0",
+      "scoreStoredInAmazon": 0,
+      "scoreAmazonInStored": 0,
+      "gateScore": 0,
+      "capConflict": false,
+      "storedPrice": 49,
+      "amazonPrice": 89.98,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 83.6,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -275,6 +288,7 @@
       "merchant": null,
       "priceDeltaPct": -80.7,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -294,6 +308,7 @@
       "merchant": null,
       "priceDeltaPct": -75,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -313,6 +328,7 @@
       "merchant": null,
       "priceDeltaPct": -74.8,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -332,6 +348,7 @@
       "merchant": null,
       "priceDeltaPct": -69.7,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -351,6 +368,7 @@
       "merchant": null,
       "priceDeltaPct": -67.8,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -370,6 +388,27 @@
       "merchant": null,
       "priceDeltaPct": -65.6,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 97501,
+      "cat": "Microphone",
+      "asin": "B0BMFQP2ZZ",
+      "storedName": "HyperX QuadCast S RGB",
+      "amazonTitle": "FIFINE AmpliGame AM8 USB/XLR Dynamic Microphone for Gaming Streaming",
+      "scoreStoredInAmazon": 0,
+      "scoreAmazonInStored": 0,
+      "gateScore": 0,
+      "capConflict": false,
+      "storedPrice": 119,
+      "amazonPrice": 44.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -62.2,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -389,6 +428,7 @@
       "merchant": null,
       "priceDeltaPct": 59.1,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -408,6 +448,7 @@
       "merchant": null,
       "priceDeltaPct": -57.3,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -427,25 +468,7 @@
       "merchant": null,
       "priceDeltaPct": -56,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 97501,
-      "cat": "Microphone",
-      "asin": "B0BMFQP2ZZ",
-      "storedName": "HyperX QuadCast S RGB",
-      "amazonTitle": "FIFINE AmpliGame AM8 USB/XLR Dynamic Microphone for Gaming Streaming",
-      "scoreStoredInAmazon": 0,
-      "scoreAmazonInStored": 0,
-      "gateScore": 0,
-      "capConflict": false,
-      "storedPrice": 119,
-      "amazonPrice": 56.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -52.1,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -465,6 +488,7 @@
       "merchant": null,
       "priceDeltaPct": -51.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -484,6 +508,7 @@
       "merchant": null,
       "priceDeltaPct": -51.8,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -503,6 +528,7 @@
       "merchant": null,
       "priceDeltaPct": -50.5,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -522,6 +548,27 @@
       "merchant": null,
       "priceDeltaPct": -48.7,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 97004,
+      "cat": "Headset",
+      "asin": "B0D2HKCMBP",
+      "storedName": "Corsair Virtuoso RGB Wireless XT",
+      "amazonTitle": "SHOKZ OpenRun Pro 2 Bone Conduction Bluetooth Sport Headphones, Black",
+      "scoreStoredInAmazon": 0,
+      "scoreAmazonInStored": 0,
+      "gateScore": 0,
+      "capConflict": false,
+      "storedPrice": 269,
+      "amazonPrice": 139.95,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -48,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -541,6 +588,47 @@
       "merchant": null,
       "priceDeltaPct": -48,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 97502,
+      "cat": "Microphone",
+      "asin": "B0BMFQP2ZZ",
+      "storedName": "Rode NT-USB Mini",
+      "amazonTitle": "FIFINE AmpliGame AM8 USB/XLR Dynamic Microphone for Gaming Streaming",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.1,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 79,
+      "amazonPrice": 44.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -43.1,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 99989,
+      "cat": "Mouse",
+      "asin": "B07HC4NBQ8",
+      "storedName": "M908 Impact RGB LED MMO Gaming Mouse with 12 Side Buttons, Optical Wired Ergonomic Mouse with Max 12,400DPI, High Precision, 18 Programmable Macro Shortcuts, Comfort Grip",
+      "amazonTitle": "Redragon M908 Wired MMO RGB Gaming Mouse 12400 DPI Remapping Keys",
+      "scoreStoredInAmazon": 0.27,
+      "scoreAmazonInStored": 0.55,
+      "gateScore": 0.27,
+      "capConflict": false,
+      "storedPrice": 23.07,
+      "amazonPrice": 32.89,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 42.6,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -560,25 +648,7 @@
       "merchant": null,
       "priceDeltaPct": -41.3,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 90092,
-      "cat": "Monitor",
-      "asin": "B0FJ2G1T68",
-      "storedName": "27\" QD-OLED 3840 x 2160p 4K 240Hz Gaming Monitor, Gaming Console Ready, VRR",
-      "amazonTitle": "INNOCN 27\" OLED 4K 240Hz Monitor, G-SYNC Compatible, VRR, HDMI 2.1, DP, HDR 400, 0.03ms, FPS/RTS, Speaker, Pivot Adjustable Stand, Ultra-Thin - GA27W1Q",
-      "scoreStoredInAmazon": 0.44,
-      "scoreAmazonInStored": 0.2,
-      "gateScore": 0.44,
-      "capConflict": false,
-      "storedPrice": 657.29,
-      "amazonPrice": 926.24,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 40.9,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -598,6 +668,7 @@
       "merchant": null,
       "priceDeltaPct": -40.7,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -617,6 +688,7 @@
       "merchant": null,
       "priceDeltaPct": -37.4,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -636,6 +708,7 @@
       "merchant": null,
       "priceDeltaPct": 36.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -655,6 +728,7 @@
       "merchant": null,
       "priceDeltaPct": -35.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -674,6 +748,7 @@
       "merchant": null,
       "priceDeltaPct": 35.3,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -693,6 +768,7 @@
       "merchant": null,
       "priceDeltaPct": 34.6,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -712,6 +788,7 @@
       "merchant": null,
       "priceDeltaPct": 34.4,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -731,25 +808,7 @@
       "merchant": null,
       "priceDeltaPct": -33.2,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 97004,
-      "cat": "Headset",
-      "asin": "B0D2HKCMBP",
-      "storedName": "Corsair Virtuoso RGB Wireless XT",
-      "amazonTitle": "SHOKZ OpenRun Pro 2 Bone Conduction Bluetooth Sport Headphones, Black",
-      "scoreStoredInAmazon": 0,
-      "scoreAmazonInStored": 0,
-      "gateScore": 0,
-      "capConflict": false,
-      "storedPrice": 269,
-      "amazonPrice": 179.95,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -33.1,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -769,6 +828,7 @@
       "merchant": null,
       "priceDeltaPct": 32.5,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -788,6 +848,7 @@
       "merchant": null,
       "priceDeltaPct": -29.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -807,44 +868,7 @@
       "merchant": null,
       "priceDeltaPct": 28.2,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 97502,
-      "cat": "Microphone",
-      "asin": "B0BMFQP2ZZ",
-      "storedName": "Rode NT-USB Mini",
-      "amazonTitle": "FIFINE AmpliGame AM8 USB/XLR Dynamic Microphone for Gaming Streaming",
-      "scoreStoredInAmazon": 0.33,
-      "scoreAmazonInStored": 0.1,
-      "gateScore": 0.33,
-      "capConflict": false,
-      "storedPrice": 79,
-      "amazonPrice": 56.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -27.9,
-      "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 30073,
-      "cat": "GPU",
-      "asin": "B0DTRC7782",
-      "storedName": "ASUS ROG Strix RTX 5070 Ti OC",
-      "amazonTitle": "GIGABYTE GeForce RTX 5070 Ti Gaming OC 16G Graphics Card, 16GB 256-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, GV-N507TGAMING OC-16GD Video Card",
-      "scoreStoredInAmazon": 0.4,
-      "scoreAmazonInStored": 0.11,
-      "gateScore": 0.4,
-      "capConflict": false,
-      "storedPrice": 1494.99,
-      "amazonPrice": 1087.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -27.2,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -864,25 +888,7 @@
       "merchant": null,
       "priceDeltaPct": -27.2,
       "priceDivergent": true,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 100094,
-      "cat": "Webcam",
-      "asin": "B0FNBLG4SD",
-      "storedName": "Kiyo V2 X Streaming Webcam: 1440p 60 FPS - Auto Focus - Built-in Microphone - Wide Angle Lense - Integrated Privacy Shutter - Works with OBS, Xsplit, Streamlabs, Discord, Zoom, Teams - Black",
-      "amazonTitle": "Razer Kiyo V2 X Webcam for Streaming and Meetings, 1440p 60 FPS, Black",
-      "scoreStoredInAmazon": 0.25,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.25,
-      "capConflict": false,
-      "storedPrice": 96,
-      "amazonPrice": 69.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -27.1,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -902,6 +908,7 @@
       "merchant": null,
       "priceDeltaPct": -26.6,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -921,25 +928,47 @@
       "merchant": null,
       "priceDeltaPct": -24.5,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 99989,
-      "cat": "Mouse",
-      "asin": "B07HC4NBQ8",
-      "storedName": "M908 Impact RGB LED MMO Gaming Mouse with 12 Side Buttons, Optical Wired Ergonomic Mouse with Max 12,400DPI, High Precision, 18 Programmable Macro Shortcuts, Comfort Grip",
-      "amazonTitle": "Redragon M908 Wired MMO RGB Gaming Mouse 12400 DPI Remapping Keys",
-      "scoreStoredInAmazon": 0.27,
-      "scoreAmazonInStored": 0.55,
-      "gateScore": 0.27,
+      "id": 85006,
+      "cat": "CaseFan",
+      "asin": "B0CSSXZKJB",
+      "storedName": "Corsair iCUE AF120 RGB Elite 3-Pack",
+      "amazonTitle": "CORSAIR iCUE Link RX120 RGB 120mm PWM Fans with iCUE Link System Hub - Magnetic Dome Bearing - Triple Pack - Black",
+      "scoreStoredInAmazon": 0.67,
+      "scoreAmazonInStored": 0.24,
+      "gateScore": 0.67,
       "capConflict": false,
-      "storedPrice": 23.07,
-      "amazonPrice": 27.99,
+      "storedPrice": 105,
+      "amazonPrice": 79.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 21.3,
+      "priceDeltaPct": -23.8,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 30073,
+      "cat": "GPU",
+      "asin": "B0DTRC7782",
+      "storedName": "ASUS ROG Strix RTX 5070 Ti OC",
+      "amazonTitle": "GIGABYTE GeForce RTX 5070 Ti Gaming OC 16G Graphics Card, 16GB 256-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, GV-N507TGAMING OC-16GD Video Card",
+      "scoreStoredInAmazon": 0.4,
+      "scoreAmazonInStored": 0.11,
+      "gateScore": 0.4,
+      "capConflict": false,
+      "storedPrice": 1494.99,
+      "amazonPrice": 1149.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -23.1,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -959,6 +988,7 @@
       "merchant": null,
       "priceDeltaPct": 20.2,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -978,6 +1008,7 @@
       "merchant": null,
       "priceDeltaPct": 20,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -997,44 +1028,67 @@
       "merchant": null,
       "priceDeltaPct": -20,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": false
     },
     {
       "class": "close-but-wrong",
-      "id": 85006,
-      "cat": "CaseFan",
-      "asin": "B0CSSXZKJB",
-      "storedName": "Corsair iCUE AF120 RGB Elite 3-Pack",
-      "amazonTitle": "CORSAIR iCUE Link RX120 RGB 120mm PWM Fans with iCUE Link System Hub - Magnetic Dome Bearing - Triple Pack - Black",
-      "scoreStoredInAmazon": 0.67,
-      "scoreAmazonInStored": 0.24,
-      "gateScore": 0.67,
+      "id": 90092,
+      "cat": "Monitor",
+      "asin": "B0FJ2G1T68",
+      "storedName": "27\" QD-OLED 3840 x 2160p 4K 240Hz Gaming Monitor, Gaming Console Ready, VRR",
+      "amazonTitle": "INNOCN 27\" OLED 4K 240Hz Monitor, G-SYNC Compatible, VRR, HDMI 2.1, DP, HDR 400, 0.03ms, FPS/RTS, Speaker, Pivot Adjustable Stand, Ultra-Thin - GA27W1Q",
+      "scoreStoredInAmazon": 0.44,
+      "scoreAmazonInStored": 0.2,
+      "gateScore": 0.44,
       "capConflict": false,
-      "storedPrice": 105,
-      "amazonPrice": 84.99,
+      "storedPrice": 657.29,
+      "amazonPrice": 779.49,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -19.1,
+      "priceDeltaPct": 18.6,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 80060,
+      "id": 80172,
       "cat": "CPUCooler",
-      "asin": "B0F6NBL6C6",
-      "storedName": "CPU Cooler, 360mm AIO Liquid Cooling, High-Performance Pump",
-      "amazonTitle": "PCCOOLER DC360 360mm AIO CPU Cooler, 2.4-inch IPS LCD, ARGB Fans, Black",
-      "scoreStoredInAmazon": 0.44,
-      "scoreAmazonInStored": 0.33,
-      "gateScore": 0.44,
+      "asin": "B0DVNKR4L9",
+      "storedName": "360 Atmos Stealth Performance-Driven Close-Loop AIO Liquid Cooler, R9|Ultra 9, Dual Chamber Pump",
+      "amazonTitle": "Cooler Master Atmos Stealth 360 AIO Liquid CPU Cooler, Mobius Fans",
+      "scoreStoredInAmazon": 0.43,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.43,
       "capConflict": false,
-      "storedPrice": 84.99,
-      "amazonPrice": 98.99,
+      "storedPrice": 109.98,
+      "amazonPrice": 129.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 16.5,
+      "priceDeltaPct": 18.2,
       "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 50057,
+      "cat": "ExternalStorage",
+      "asin": "B08Y1Q2KSZ",
+      "storedName": "Game Drive for Xbox 2 TB External Hard Drive Portable HDD - USB 3.2 Gen 1, Black with built-in green LED bar, Xbox Ce...",
+      "amazonTitle": "Seagate 2TB Game Drive for Xbox | USB 3.0 (STKX2000400)",
+      "scoreStoredInAmazon": 0.31,
+      "scoreAmazonInStored": 0.63,
+      "gateScore": 0.31,
+      "capConflict": false,
+      "storedPrice": 119.99,
+      "amazonPrice": 139.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 16.7,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1054,6 +1108,7 @@
       "merchant": null,
       "priceDeltaPct": 16,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1073,6 +1128,7 @@
       "merchant": null,
       "priceDeltaPct": 15.9,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1092,25 +1148,27 @@
       "merchant": null,
       "priceDeltaPct": -15.8,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 50057,
-      "cat": "ExternalStorage",
-      "asin": "B08Y1Q2KSZ",
-      "storedName": "Game Drive for Xbox 2 TB External Hard Drive Portable HDD - USB 3.2 Gen 1, Black with built-in green LED bar, Xbox Ce...",
-      "amazonTitle": "Seagate 2TB Game Drive for Xbox | USB 3.0 (STKX2000400)",
-      "scoreStoredInAmazon": 0.31,
-      "scoreAmazonInStored": 0.63,
-      "gateScore": 0.31,
+      "id": 80060,
+      "cat": "CPUCooler",
+      "asin": "B0F6NBL6C6",
+      "storedName": "CPU Cooler, 360mm AIO Liquid Cooling, High-Performance Pump",
+      "amazonTitle": "PCCOOLER DC360 360mm AIO CPU Cooler, 2.4-inch IPS LCD, ARGB Fans, Black",
+      "scoreStoredInAmazon": 0.44,
+      "scoreAmazonInStored": 0.33,
+      "gateScore": 0.44,
       "capConflict": false,
-      "storedPrice": 119.99,
-      "amazonPrice": 139,
+      "storedPrice": 84.99,
+      "amazonPrice": 97.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 15.8,
+      "priceDeltaPct": 15.3,
       "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1130,25 +1188,7 @@
       "merchant": null,
       "priceDeltaPct": -15.2,
       "priceDivergent": true,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 101090,
-      "cat": "Monitor",
-      "asin": "B0CV24GQ9W",
-      "storedName": "ASUS ROG Strix 27” QHD (2560x1440) HDR400 USB-C Gaming Monitor (XG27ACS), 180Hz,1ms, Fast IPS, 133% sRGB, Extreme Low Motion Blur Sync, G-Sync Compatible, DisplayWidget, Tripod Socket, 3 Year Warranty",
-      "amazonTitle": "ASUS ROG XG27ACS 27 Inch 1440p 180Hz USB-C G-SYNC HDR Gaming Monitor",
-      "scoreStoredInAmazon": 0.3,
-      "scoreAmazonInStored": 0.73,
-      "gateScore": 0.3,
-      "capConflict": false,
-      "storedPrice": 199,
-      "amazonPrice": 229,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 15.1,
-      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1168,7 +1208,8 @@
       "merchant": null,
       "priceDeltaPct": 15,
       "priceDivergent": true,
-      "needsReview": false
+      "noOffer": false,
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -1187,6 +1228,47 @@
       "merchant": null,
       "priceDeltaPct": -14.3,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 70052,
+      "cat": "Case",
+      "asin": "B0DQPPKNSS",
+      "storedName": "H9 Flow (2025) – Large Dual-Chamber ATX Mid-Tower Airflow PC Case – Includes 3 x 140mm & 1 x 120mm Fans – 420mm Radia...",
+      "amazonTitle": "NZXT H9 Flow - Dual-Chamber ATX PC Case - Black",
+      "scoreStoredInAmazon": 0.31,
+      "scoreAmazonInStored": 0.71,
+      "gateScore": 0.31,
+      "capConflict": false,
+      "storedPrice": 139.99,
+      "amazonPrice": 119.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -14.3,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 85005,
+      "cat": "CaseFan",
+      "asin": "B0D49Q4CGM",
+      "storedName": "Corsair iCUE SP120 RGB Elite 3-Pack",
+      "amazonTitle": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.12,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 35,
+      "amazonPrice": 39.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 14.3,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1206,6 +1288,7 @@
       "merchant": null,
       "priceDeltaPct": 13.9,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1225,6 +1308,7 @@
       "merchant": null,
       "priceDeltaPct": -13.7,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1244,25 +1328,7 @@
       "merchant": null,
       "priceDeltaPct": 13.6,
       "priceDivergent": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 101067,
-      "cat": "Monitor",
-      "asin": "B0F1H325FN",
-      "storedName": "Dell 34 Plus USB-C Curved Monitor - S3425DW - 34-inch (3440 x 1440) up to 120 Hz 21:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, Integrated Speakers, 3000:1 Contrast Ratio",
-      "amazonTitle": "Dell 34 Monitor S3425DW, WQHD VA, 120Hz, FreeSync Premium, Eye Comfort",
-      "scoreStoredInAmazon": 0.23,
-      "scoreAmazonInStored": 0.56,
-      "gateScore": 0.23,
-      "capConflict": false,
-      "storedPrice": 379.99,
-      "amazonPrice": 329.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -13.2,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1282,6 +1348,7 @@
       "merchant": null,
       "priceDeltaPct": -12.4,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1301,25 +1368,27 @@
       "merchant": null,
       "priceDeltaPct": 12.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 96015,
-      "cat": "WiFiCard",
-      "asin": "B08KHV7H1S",
-      "storedName": "USB WiFi Adapter, AC1300Mbps Dual Band 5dBi High Gain Antenna 2.4GHz/ 5GHz Wireless Network Adapter ",
-      "amazonTitle": "TP-Link USB WiFi Adapter for Desktop PC, AC1300 Dual High Gain Antenna",
-      "scoreStoredInAmazon": 0.5,
-      "scoreAmazonInStored": 0.64,
-      "gateScore": 0.5,
+      "id": 90037,
+      "cat": "Monitor",
+      "asin": "B0FCXZ17JQ",
+      "storedName": "27 Inch 1440P 200Hz/180Hz White Gaming Monitor, MPRT 1ms 2K QHD, Fast IPS | HDR400 & TÜV Rheinland Eye Care & 12 Mont...",
+      "amazonTitle": "Amzfast 27\" White Gaming Monitor, WQHD 2560x1440 200Hz Fast IPS 1ms HDR400",
+      "scoreStoredInAmazon": 0.47,
+      "scoreAmazonInStored": 0.73,
+      "gateScore": 0.47,
       "capConflict": false,
-      "storedPrice": 21.56,
-      "amazonPrice": 23.99,
+      "storedPrice": 169.99,
+      "amazonPrice": 149.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 11.3,
+      "priceDeltaPct": -11.8,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1339,25 +1408,7 @@
       "merchant": null,
       "priceDeltaPct": -11.1,
       "priceDivergent": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 100990,
-      "cat": "Monitor",
-      "asin": "B0F1GFD44G",
-      "storedName": "Dell 27 Plus 4K USB-C Monitor - S2725QC - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
-      "amazonTitle": "Dell 27 Monitor S2725QC, 4K UHD IPS, 120Hz, 99% sRGB, 4ms, FreeSync Premium",
-      "scoreStoredInAmazon": 0.32,
-      "scoreAmazonInStored": 0.7,
-      "gateScore": 0.32,
-      "capConflict": false,
-      "storedPrice": 314.99,
-      "amazonPrice": 279.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -11.1,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1377,26 +1428,8 @@
       "merchant": null,
       "priceDeltaPct": 10,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 80092,
-      "cat": "CPUCooler",
-      "asin": "B0FLTZ2SHM",
-      "storedName": "Kraken Core 360 RGB - AIO CPU Liquid Cooler - 360 mm Radiator - 360 mm Single-Frame Fan - Compatible with AMD® AM5/AM...",
-      "amazonTitle": "NZXT Kraken Core 360 RGB - 360mm AIO CPU Cooler - Black",
-      "scoreStoredInAmazon": 0.44,
-      "scoreAmazonInStored": 0.7,
-      "gateScore": 0.44,
-      "capConflict": false,
-      "storedPrice": 100.32,
-      "amazonPrice": 109.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 9.6,
-      "priceDivergent": false,
-      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -1415,6 +1448,7 @@
       "merchant": null,
       "priceDeltaPct": -9.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1434,6 +1468,7 @@
       "merchant": null,
       "priceDeltaPct": 9,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1453,6 +1488,7 @@
       "merchant": null,
       "priceDeltaPct": 8.7,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1472,26 +1508,8 @@
       "merchant": null,
       "priceDeltaPct": 8.5,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 101597,
-      "cat": "Keyboard",
-      "asin": "B0F6WBD6PZ",
-      "storedName": "Redragon K719 PRO Wireless Gasket Gaming Keyboard w/Hype Screen & Knob, 95 Keys Mechanical Keyboard, Easy-Control 1.14’’ TFT Info Display, 5-Layer Noise Dampening, Custom Linear Switch, Anime Edition",
-      "amazonTitle": "Redragon K719 PRO Wireless RGB Gasket Gaming Keyboard, Dye-Sub Anime Keycap",
-      "scoreStoredInAmazon": 0.32,
-      "scoreAmazonInStored": 0.67,
-      "gateScore": 0.32,
-      "capConflict": false,
-      "storedPrice": 64.99,
-      "amazonPrice": 69.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 7.7,
-      "priceDivergent": false,
-      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -1510,6 +1528,27 @@
       "merchant": null,
       "priceDeltaPct": 7.4,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 99978,
+      "cat": "Mouse",
+      "asin": "B08SJ5Z8JL",
+      "storedName": "M612 Predator RGB Gaming Mouse, 8000 DPI Wired Optical Mouse with 11 Programmable Buttons & 5 Backlit Modes, Software Supports DIY Keybinds Rapid Fire Button",
+      "amazonTitle": "Redragon M612 Wired RGB Optical Gaming Mouse 8000 DPI Remapping Keys",
+      "scoreStoredInAmazon": 0.38,
+      "scoreAmazonInStored": 0.73,
+      "gateScore": 0.38,
+      "capConflict": false,
+      "storedPrice": 16.99,
+      "amazonPrice": 15.89,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -6.5,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1529,6 +1568,7 @@
       "merchant": null,
       "priceDeltaPct": -6.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1548,6 +1588,7 @@
       "merchant": null,
       "priceDeltaPct": -6.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1567,26 +1608,8 @@
       "merchant": null,
       "priceDeltaPct": -5.6,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 99982,
-      "cat": "Mouse",
-      "asin": "B087Z6LSHW",
-      "storedName": "M720 Triathlon Multi-Device Wireless Mouse, Bluetooth, USB Unifying Receiver, 1000 DPI, 6 Programmable Buttons, 2-Year Battery, Compatible with Laptop, PC, Mac, iPadOS - Black",
-      "amazonTitle": "Logitech M720 Triathalon Full Size Multi-Device Wireless Mouse - Black",
-      "scoreStoredInAmazon": 0.27,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.27,
-      "capConflict": false,
-      "storedPrice": 36.99,
-      "amazonPrice": 34.95,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -5.5,
-      "priceDivergent": false,
-      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -1605,6 +1628,7 @@
       "merchant": null,
       "priceDeltaPct": 5,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1624,6 +1648,7 @@
       "merchant": null,
       "priceDeltaPct": -5,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1643,6 +1668,7 @@
       "merchant": null,
       "priceDeltaPct": -4.8,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1662,26 +1688,8 @@
       "merchant": null,
       "priceDeltaPct": 4.6,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
-    },
-    {
-      "class": "wrong-product",
-      "id": 60045,
-      "cat": "PSU",
-      "asin": "B0DN15R9WR",
-      "storedName": "EDGE1000W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-...",
-      "amazonTitle": "Lian Li Edge 1000W Gold-White-EG1000G.WH",
-      "scoreStoredInAmazon": 0.07,
-      "scoreAmazonInStored": 0.17,
-      "gateScore": 0.07,
-      "capConflict": false,
-      "storedPrice": 158.99,
-      "amazonPrice": 152,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -4.4,
-      "priceDivergent": false,
-      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1700,6 +1708,7 @@
       "merchant": null,
       "priceDeltaPct": -4.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1719,6 +1728,7 @@
       "merchant": null,
       "priceDeltaPct": -4.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1738,6 +1748,27 @@
       "merchant": null,
       "priceDeltaPct": -4.2,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 85218,
+      "cat": "CaseFan",
+      "asin": "B0BTMHMQ33",
+      "storedName": "Lian Li UNI FAN SL-Infinity ARGB PWM Case Fan - 140mm, 6.5 Inches, Desktop-Computer-Fans",
+      "amazonTitle": "Lian Li SL-Infinity Fluid Dynamic Bearing 140MM CASE Fan - White",
+      "scoreStoredInAmazon": 0.42,
+      "scoreAmazonInStored": 0.56,
+      "gateScore": 0.42,
+      "capConflict": false,
+      "storedPrice": 31.03,
+      "amazonPrice": 32.11,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 3.5,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1752,11 +1783,12 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 94.8,
-      "amazonPrice": 98.38,
+      "amazonPrice": 97.91,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 3.8,
+      "priceDeltaPct": 3.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1776,6 +1808,7 @@
       "merchant": null,
       "priceDeltaPct": -3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1795,6 +1828,7 @@
       "merchant": null,
       "priceDeltaPct": -3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1814,6 +1848,7 @@
       "merchant": null,
       "priceDeltaPct": -3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1833,25 +1868,7 @@
       "merchant": null,
       "priceDeltaPct": 2.9,
       "priceDivergent": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 85016,
-      "cat": "CaseFan",
-      "asin": "B0FD49138J",
-      "storedName": "UNI Fan CL120 ARGB 120mm PWM Fans - Triple Pack - 2.4 GHz Wireless Signal RGB & PC Case Fans Control - Daisy-Chain - ...",
-      "amazonTitle": "Lian Li UNI Fan CL120 Wireless Triple Pack-Black-12CL1W3B",
-      "scoreStoredInAmazon": 0.35,
-      "scoreAmazonInStored": 0.67,
-      "gateScore": 0.35,
-      "capConflict": false,
-      "storedPrice": 54.99,
-      "amazonPrice": 53.41,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -2.9,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1871,6 +1888,7 @@
       "merchant": null,
       "priceDeltaPct": 2.5,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1890,6 +1908,27 @@
       "merchant": null,
       "priceDeltaPct": -2.3,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 101067,
+      "cat": "Monitor",
+      "asin": "B0F1H325FN",
+      "storedName": "Dell 34 Plus USB-C Curved Monitor - S3425DW - 34-inch (3440 x 1440) up to 120 Hz 21:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, Integrated Speakers, 3000:1 Contrast Ratio",
+      "amazonTitle": "Dell 34 Monitor S3425DW, WQHD VA, 120Hz, FreeSync Premium, Eye Comfort",
+      "scoreStoredInAmazon": 0.23,
+      "scoreAmazonInStored": 0.56,
+      "gateScore": 0.23,
+      "capConflict": false,
+      "storedPrice": 379.99,
+      "amazonPrice": 371.34,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -2.3,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1909,6 +1948,7 @@
       "merchant": null,
       "priceDeltaPct": -2.1,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1928,6 +1968,7 @@
       "merchant": null,
       "priceDeltaPct": 2,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1947,6 +1988,7 @@
       "merchant": null,
       "priceDeltaPct": 2,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1966,25 +2008,7 @@
       "merchant": null,
       "priceDeltaPct": -1.7,
       "priceDivergent": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 99506,
-      "cat": "ExternalStorage",
-      "asin": "B0874XWW23",
-      "storedName": "T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reliable Sto",
-      "amazonTitle": "Samsung T7 Portable SSD 2TB Titan Gray, USB 3.2 Gen 2, Up to 1,050MB/s",
-      "scoreStoredInAmazon": 0.46,
-      "scoreAmazonInStored": 0.67,
-      "gateScore": 0.46,
-      "capConflict": false,
-      "storedPrice": 383.49,
-      "amazonPrice": 389.9,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 1.7,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -1999,11 +2023,32 @@
       "gateScore": 0.38,
       "capConflict": false,
       "storedPrice": 142,
-      "amazonPrice": 139.99,
+      "amazonPrice": 139.93,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -1.4,
+      "priceDeltaPct": -1.5,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 100990,
+      "cat": "Monitor",
+      "asin": "B0F1GFD44G",
+      "storedName": "Dell 27 Plus 4K USB-C Monitor - S2725QC - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
+      "amazonTitle": "Dell 27 Monitor S2725QC, 4K UHD IPS, 120Hz, 99% sRGB, 4ms, FreeSync Premium",
+      "scoreStoredInAmazon": 0.32,
+      "scoreAmazonInStored": 0.7,
+      "gateScore": 0.32,
+      "capConflict": false,
+      "storedPrice": 314.99,
+      "amazonPrice": 310.33,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -1.5,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2023,6 +2068,7 @@
       "merchant": null,
       "priceDeltaPct": -1.3,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2042,6 +2088,7 @@
       "merchant": null,
       "priceDeltaPct": -1.2,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2061,6 +2108,27 @@
       "merchant": null,
       "priceDeltaPct": 1.2,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 85016,
+      "cat": "CaseFan",
+      "asin": "B0FD49138J",
+      "storedName": "UNI Fan CL120 ARGB 120mm PWM Fans - Triple Pack - 2.4 GHz Wireless Signal RGB & PC Case Fans Control - Daisy-Chain - ...",
+      "amazonTitle": "Lian Li UNI Fan CL120 Wireless Triple Pack-Black-12CL1W3B",
+      "scoreStoredInAmazon": 0.35,
+      "scoreAmazonInStored": 0.67,
+      "gateScore": 0.35,
+      "capConflict": false,
+      "storedPrice": 54.99,
+      "amazonPrice": 54.35,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -1.2,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2080,26 +2148,8 @@
       "merchant": null,
       "priceDeltaPct": -0.8,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 50042,
-      "cat": "Storage",
-      "asin": "B08QBJ2YMG",
-      "storedName": "870 EVO SATA III SSD 1TB 2.5” Internal Solid State Drive, Upgrade PC or Laptop Memory and Storage for IT Pros, Creators",
-      "amazonTitle": "Samsung SSD 870 EVO SATA III 2.5” 1TB, Read Speeds Up to 560MB/s",
-      "scoreStoredInAmazon": 0.33,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.33,
-      "capConflict": false,
-      "storedPrice": 327.62,
-      "amazonPrice": 325.12,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -0.8,
-      "priceDivergent": false,
-      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2118,6 +2168,7 @@
       "merchant": null,
       "priceDeltaPct": 0.7,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2137,6 +2188,7 @@
       "merchant": null,
       "priceDeltaPct": -0.6,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2156,6 +2208,7 @@
       "merchant": null,
       "priceDeltaPct": 0.4,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2175,6 +2228,47 @@
       "merchant": null,
       "priceDeltaPct": -0.4,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 99506,
+      "cat": "ExternalStorage",
+      "asin": "B0874XWW23",
+      "storedName": "T7 Portable SSD, 2TB External Solid State Drive, Speeds Up to 1,050MB/s, USB 3.2 Gen 2, Reliable Sto",
+      "amazonTitle": "Samsung T7 Portable SSD 2TB Titan Gray, USB 3.2 Gen 2, Up to 1,050MB/s",
+      "scoreStoredInAmazon": 0.46,
+      "scoreAmazonInStored": 0.67,
+      "gateScore": 0.46,
+      "capConflict": false,
+      "storedPrice": 383.49,
+      "amazonPrice": 384.5,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0.3,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 80092,
+      "cat": "CPUCooler",
+      "asin": "B0FLTZ2SHM",
+      "storedName": "Kraken Core 360 RGB - AIO CPU Liquid Cooler - 360 mm Radiator - 360 mm Single-Frame Fan - Compatible with AMD® AM5/AM...",
+      "amazonTitle": "NZXT Kraken Core 360 RGB - 360mm AIO CPU Cooler - Black",
+      "scoreStoredInAmazon": 0.44,
+      "scoreAmazonInStored": 0.7,
+      "gateScore": 0.44,
+      "capConflict": false,
+      "storedPrice": 100.32,
+      "amazonPrice": 99.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -0.3,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2194,7 +2288,28 @@
       "merchant": null,
       "priceDeltaPct": -0.2,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 20291,
+      "cat": "Motherboard",
+      "asin": "B0FK13RWDJ",
+      "storedName": "N7 B850 - AMD B850 AM5 ATX Gaming Motherboard for Ryzen 9000/8000/7000-16+2+1, DDR5, 3X M.2",
+      "amazonTitle": "NZXT N7 B850 - AMD B850 AM5 ATX Motherboard - Black",
+      "scoreStoredInAmazon": 0.42,
+      "scoreAmazonInStored": 0.71,
+      "gateScore": 0.42,
+      "capConflict": false,
+      "storedPrice": 254.2,
+      "amazonPrice": 254.54,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0.1,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -2213,6 +2328,27 @@
       "merchant": null,
       "priceDeltaPct": -0.1,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 50042,
+      "cat": "Storage",
+      "asin": "B08QBJ2YMG",
+      "storedName": "870 EVO SATA III SSD 1TB 2.5” Internal Solid State Drive, Upgrade PC or Laptop Memory and Storage for IT Pros, Creators",
+      "amazonTitle": "Samsung SSD 870 EVO SATA III 2.5” 1TB, Read Speeds Up to 560MB/s",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 327.62,
+      "amazonPrice": 328.05,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0.1,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2232,6 +2368,7 @@
       "merchant": null,
       "priceDeltaPct": -0.1,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2251,26 +2388,28 @@
       "merchant": null,
       "priceDeltaPct": -0.1,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
       "class": "close-but-wrong",
-      "id": 85218,
-      "cat": "CaseFan",
-      "asin": "B0BTMHMQ33",
-      "storedName": "Lian Li UNI FAN SL-Infinity ARGB PWM Case Fan - 140mm, 6.5 Inches, Desktop-Computer-Fans",
-      "amazonTitle": "Lian Li SL-Infinity Fluid Dynamic Bearing 140MM CASE Fan - White",
-      "scoreStoredInAmazon": 0.42,
-      "scoreAmazonInStored": 0.56,
-      "gateScore": 0.42,
+      "id": 96015,
+      "cat": "WiFiCard",
+      "asin": "B08KHV7H1S",
+      "storedName": "USB WiFi Adapter, AC1300Mbps Dual Band 5dBi High Gain Antenna 2.4GHz/ 5GHz Wireless Network Adapter ",
+      "amazonTitle": "TP-Link USB WiFi Adapter for Desktop PC, AC1300 Dual High Gain Antenna",
+      "scoreStoredInAmazon": 0.5,
+      "scoreAmazonInStored": 0.64,
+      "gateScore": 0.5,
       "capConflict": false,
-      "storedPrice": 31.03,
-      "amazonPrice": 30.99,
+      "storedPrice": 21.56,
+      "amazonPrice": 21.53,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -0.1,
       "priceDivergent": false,
-      "needsReview": true
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -2289,6 +2428,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2308,6 +2448,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2327,6 +2468,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2346,6 +2488,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2365,6 +2508,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2384,6 +2528,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2403,6 +2548,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2422,6 +2568,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2441,6 +2588,27 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 60045,
+      "cat": "PSU",
+      "asin": "B0DN15R9WR",
+      "storedName": "EDGE1000W Fully Modular Low-Noise ATX Power Supply - ATX 3.1 & PCIE 5.1 Compliant - Cybenetics Gold Efficiency - 12V-...",
+      "amazonTitle": "Lian Li Edge 1000W Gold-White-EG1000G.WH",
+      "scoreStoredInAmazon": 0.07,
+      "scoreAmazonInStored": 0.17,
+      "gateScore": 0.07,
+      "capConflict": false,
+      "storedPrice": 158.99,
+      "amazonPrice": 158.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2460,6 +2628,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2479,6 +2648,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2498,6 +2668,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2517,6 +2688,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2536,6 +2708,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2555,6 +2728,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2574,6 +2748,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2593,6 +2768,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2612,6 +2788,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2631,6 +2808,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2650,6 +2828,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2669,6 +2848,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2688,6 +2868,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -2707,26 +2888,8 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 20291,
-      "cat": "Motherboard",
-      "asin": "B0FK13RWDJ",
-      "storedName": "N7 B850 - AMD B850 AM5 ATX Gaming Motherboard for Ryzen 9000/8000/7000-16+2+1, DDR5, 3X M.2",
-      "amazonTitle": "NZXT N7 B850 - AMD B850 AM5 ATX Motherboard - Black",
-      "scoreStoredInAmazon": 0.42,
-      "scoreAmazonInStored": 0.71,
-      "gateScore": 0.42,
-      "capConflict": false,
-      "storedPrice": 254.2,
-      "amazonPrice": 254.29,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -2745,6 +2908,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2764,6 +2928,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2783,6 +2948,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2802,6 +2968,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2821,25 +2988,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 70052,
-      "cat": "Case",
-      "asin": "B0DQPPKNSS",
-      "storedName": "H9 Flow (2025) – Large Dual-Chamber ATX Mid-Tower Airflow PC Case – Includes 3 x 140mm & 1 x 120mm Fans – 420mm Radia...",
-      "amazonTitle": "NZXT H9 Flow - Dual-Chamber ATX PC Case - Black",
-      "scoreStoredInAmazon": 0.31,
-      "scoreAmazonInStored": 0.71,
-      "gateScore": 0.31,
-      "capConflict": false,
-      "storedPrice": 139.99,
-      "amazonPrice": 139.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2859,6 +3008,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": false
     },
     {
@@ -2878,6 +3028,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2897,6 +3048,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2916,6 +3068,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2935,6 +3088,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2954,6 +3108,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2973,6 +3128,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -2992,6 +3148,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3011,6 +3168,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3030,6 +3188,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3049,6 +3208,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3068,6 +3228,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3087,6 +3248,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -3106,6 +3268,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3125,6 +3288,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -3144,6 +3308,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3163,7 +3328,28 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 100866,
+      "cat": "Storage",
+      "asin": "B0G1C1YNN8",
+      "storedName": "UGREEN NAS DXP4800 Pro 4-Bay Desktop Network Attached Storage, Intel Core i3-1315U 6-Core CPU, 8GB DDR5 RAM, Built-in 128GB SSD, 1x 10GbE, 1x 2.5GbE, 2X M.2 NVMe Slots, 4K HDMI (Diskless)",
+      "amazonTitle": "UGREEN NAS DXP4800 Pro 4-Bay for IT Professionals, Developers & Power Users",
+      "scoreStoredInAmazon": 0.2,
+      "scoreAmazonInStored": 0.5,
+      "gateScore": 0.2,
+      "capConflict": false,
+      "storedPrice": 679.98,
+      "amazonPrice": 679.98,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3182,6 +3368,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3201,6 +3388,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3214,12 +3402,13 @@
       "scoreAmazonInStored": 0.6,
       "gateScore": 0.46,
       "capConflict": false,
-      "storedPrice": 139.99,
-      "amazonPrice": 139.99,
+      "storedPrice": 129.99,
+      "amazonPrice": 129.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3239,6 +3428,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3258,6 +3448,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3277,6 +3468,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3296,6 +3488,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3315,6 +3508,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3334,6 +3528,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3353,6 +3548,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3372,6 +3568,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3391,6 +3588,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3410,6 +3608,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3429,6 +3628,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3448,6 +3648,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3467,6 +3668,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3486,6 +3688,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3505,6 +3708,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3524,25 +3728,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 80172,
-      "cat": "CPUCooler",
-      "asin": "B0DVNKR4L9",
-      "storedName": "360 Atmos Stealth Performance-Driven Close-Loop AIO Liquid Cooler, R9|Ultra 9, Dual Chamber Pump",
-      "amazonTitle": "Cooler Master Atmos Stealth 360 AIO Liquid CPU Cooler, Mobius Fans",
-      "scoreStoredInAmazon": 0.43,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.43,
-      "capConflict": false,
-      "storedPrice": 109.98,
-      "amazonPrice": 109.98,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3562,6 +3748,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3581,6 +3768,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3600,6 +3788,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3619,6 +3808,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": false
     },
     {
@@ -3638,26 +3828,8 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 85005,
-      "cat": "CaseFan",
-      "asin": "B0D49Q4CGM",
-      "storedName": "Corsair iCUE SP120 RGB Elite 3-Pack",
-      "amazonTitle": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
-      "scoreStoredInAmazon": 0.33,
-      "scoreAmazonInStored": 0.12,
-      "gateScore": 0.33,
-      "capConflict": false,
-      "storedPrice": 35,
-      "amazonPrice": 34.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3676,6 +3848,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3695,6 +3868,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3714,6 +3888,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3733,6 +3908,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3752,6 +3928,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3771,6 +3948,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3790,6 +3968,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3809,6 +3988,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3828,6 +4008,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3847,6 +4028,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -3866,6 +4048,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3885,26 +4068,8 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 90037,
-      "cat": "Monitor",
-      "asin": "B0FCXZ17JQ",
-      "storedName": "27 Inch 1440P 200Hz/180Hz White Gaming Monitor, MPRT 1ms 2K QHD, Fast IPS | HDR400 & TÜV Rheinland Eye Care & 12 Mont...",
-      "amazonTitle": "Amzfast 27\" White Gaming Monitor, WQHD 2560x1440 200Hz Fast IPS 1ms HDR400",
-      "scoreStoredInAmazon": 0.47,
-      "scoreAmazonInStored": 0.73,
-      "gateScore": 0.47,
-      "capConflict": false,
-      "storedPrice": 169.99,
-      "amazonPrice": 169.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -3923,6 +4088,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3942,6 +4108,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3961,6 +4128,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3980,6 +4148,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -3999,6 +4168,27 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 101090,
+      "cat": "Monitor",
+      "asin": "B0CV24GQ9W",
+      "storedName": "ASUS ROG Strix 27” QHD (2560x1440) HDR400 USB-C Gaming Monitor (XG27ACS), 180Hz,1ms, Fast IPS, 133% sRGB, Extreme Low Motion Blur Sync, G-Sync Compatible, DisplayWidget, Tripod Socket, 3 Year Warranty",
+      "amazonTitle": "ASUS ROG XG27ACS 27 Inch 1440p 180Hz USB-C G-SYNC HDR Gaming Monitor",
+      "scoreStoredInAmazon": 0.3,
+      "scoreAmazonInStored": 0.73,
+      "gateScore": 0.3,
+      "capConflict": false,
+      "storedPrice": 199,
+      "amazonPrice": 199,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4018,6 +4208,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4037,6 +4228,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4056,7 +4248,28 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 101597,
+      "cat": "Keyboard",
+      "asin": "B0F6WBD6PZ",
+      "storedName": "Redragon K719 PRO Wireless Gasket Gaming Keyboard w/Hype Screen & Knob, 95 Keys Mechanical Keyboard, Easy-Control 1.14’’ TFT Info Display, 5-Layer Noise Dampening, Custom Linear Switch, Anime Edition",
+      "amazonTitle": "Redragon K719 PRO Wireless RGB Gasket Gaming Keyboard, Dye-Sub Anime Keycap",
+      "scoreStoredInAmazon": 0.32,
+      "scoreAmazonInStored": 0.67,
+      "gateScore": 0.32,
+      "capConflict": false,
+      "storedPrice": 69.99,
+      "amazonPrice": 69.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -4075,6 +4288,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4094,6 +4308,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4113,26 +4328,28 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 99978,
+      "id": 99982,
       "cat": "Mouse",
-      "asin": "B08SJ5Z8JL",
-      "storedName": "M612 Predator RGB Gaming Mouse, 8000 DPI Wired Optical Mouse with 11 Programmable Buttons & 5 Backlit Modes, Software Supports DIY Keybinds Rapid Fire Button",
-      "amazonTitle": "Redragon M612 Wired RGB Optical Gaming Mouse 8000 DPI Remapping Keys",
-      "scoreStoredInAmazon": 0.38,
-      "scoreAmazonInStored": 0.73,
-      "gateScore": 0.38,
+      "asin": "B087Z6LSHW",
+      "storedName": "M720 Triathlon Multi-Device Wireless Mouse, Bluetooth, USB Unifying Receiver, 1000 DPI, 6 Programmable Buttons, 2-Year Battery, Compatible with Laptop, PC, Mac, iPadOS - Black",
+      "amazonTitle": "Logitech M720 Triathalon Full Size Multi-Device Wireless Mouse - Black",
+      "scoreStoredInAmazon": 0.27,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.27,
       "capConflict": false,
-      "storedPrice": 16.99,
-      "amazonPrice": 16.99,
+      "storedPrice": 34.95,
+      "amazonPrice": 34.95,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
-      "needsReview": true
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -4151,6 +4368,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4170,6 +4388,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4189,6 +4408,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4208,6 +4428,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4227,6 +4448,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4246,6 +4468,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4265,6 +4488,27 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 100094,
+      "cat": "Webcam",
+      "asin": "B0FNBLG4SD",
+      "storedName": "Kiyo V2 X Streaming Webcam: 1440p 60 FPS - Auto Focus - Built-in Microphone - Wide Angle Lense - Integrated Privacy Shutter - Works with OBS, Xsplit, Streamlabs, Discord, Zoom, Teams - Black",
+      "amazonTitle": "Razer Kiyo V2 X Webcam for Streaming and Meetings, 1440p 60 FPS, Black",
+      "scoreStoredInAmazon": 0.25,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.25,
+      "capConflict": false,
+      "storedPrice": 69.99,
+      "amazonPrice": 69.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4284,6 +4528,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4303,6 +4548,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4322,6 +4568,7 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -4341,6 +4588,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4360,6 +4608,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4379,6 +4628,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": false
     },
     {
@@ -4398,7 +4648,8 @@
       "merchant": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
-      "needsReview": false
+      "noOffer": true,
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -4417,6 +4668,7 @@
       "merchant": null,
       "priceDeltaPct": 0,
       "priceDivergent": false,
+      "noOffer": false,
       "needsReview": true
     }
   ]
