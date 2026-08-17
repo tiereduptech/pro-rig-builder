@@ -108,6 +108,44 @@ const SKIP_DIRS = new Set(['/GLOBAL']);
 // condemn the entire catalog on the first run.
 const FULL_CATALOG_RE = /^(\d+)_\d+_mp(_MKPL)?\.(txt|xml)\.gz$/i;
 
+/**
+ * Feeds discovery must not surface at all.
+ *
+ * THIS IS NOT THE FRESHNESS GATE, AND THE DIFFERENCE IS LOAD-BEARING.
+ * An EXCLUDED feed (partitionFeedsByFreshness, below) is coverage the census
+ * did not read. A sku carried only by it is indistinguishable from a dead one,
+ * so every death verdict is withheld until somebody reads it. That is the
+ * correct response to an unknown, and it stays exactly as strict as it is.
+ *
+ * An IGNORED feed is not an unknown. MKPL was measured, in full, by run
+ * 32073301866 (mkpl-verdict.cjs) — all 2,918,315 records streamed against both
+ * the catalog and the mp feed:
+ *
+ *   · Of the 443 pending Newegg deals, MKPL carries ZERO. All 443 are absent
+ *     from both feeds. Its exclusion was protecting an empty set.
+ *   · Of its 95,175 in-scope rows, 83,508 (87.7%) are absent from mp — but
+ *     every single one is 3P (uniq 1P = 0 in all nine categories), and 83,502
+ *     of 83,508 claim "in-stock" in a file last written 2023-03-16.
+ *   · 10 of those "in-stock" rows were fetched from newegg.com: 6 returned a
+ *     hard 404, 3 load out-of-stock with no price and no cart, 1 resolves to a
+ *     different product at a different price. Zero were buyable as described.
+ *
+ * So it is a 2023 snapshot of dead marketplace inventory — MEASURED AND FOUND
+ * EMPTY, not assumed stale because the file is old and large. Treating it as
+ * withheld coverage suppressed every death verdict in the catalog on the
+ * strength of a file that contains none of the rows in question.
+ *
+ * The 87.7% is why this needs writing down. A future reader who checks only
+ * whether MKPL overlaps mp will find that it mostly does not, conclude it
+ * carries unique inventory, and put it back. It does not carry unique
+ * inventory; it carries unique *corpses*. Re-run mkpl-verdict.cjs before
+ * re-adding this feed, and re-add it only if Q2 comes back non-zero.
+ */
+const DISCOVERY_IGNORE = [{
+  re: /_mp_MKPL\.(txt|xml)\.gz$/i,
+  why: 'MKPL — measured empty of catalog pendings by run 32073301866; 2023-03-16 snapshot of dead 3P inventory',
+}];
+
 // ── Pure decision logic ───────────────────────────────────────────────────
 // Extracted and exported so the rules that can condemn a row are testable
 // without an SFTP endpoint. test/newegg-dead-sku-audit.test.js covers these.
@@ -212,7 +250,7 @@ function describeRestoredFeeds(freshFeeds = [], prevExcluded = []) {
   return freshFeeds.filter((f) => excludedNames.has(f.name)).map((f) => f.name);
 }
 
-async function discoverFeeds(sftp) {
+async function discoverFeeds(sftp, ignored = []) {
   const found = [];
   const queue = [...WALK_ROOTS];
   const seen = new Set();
@@ -231,6 +269,9 @@ async function discoverFeeds(sftp) {
       const m = FULL_CATALOG_RE.exec(entry.name);
       if (!m || m[1] !== NEWEGG_MID) continue;
       if (/\.xml\.gz$/i.test(entry.name)) continue;   // parser is pipe-delimited
+      // Measured-empty feeds never become coverage, so they never suppress.
+      const ig = DISCOVERY_IGNORE.find((r) => r.re.test(entry.name));
+      if (ig) { ignored.push({ remote: full, name: entry.name, size: entry.size, mtime: entry.modifyTime, why: ig.why }); continue; }
       found.push({
         remote: full, name: entry.name,
         kind: m[2] ? 'MKPL' : 'mp',
@@ -360,7 +401,7 @@ async function preflight() {
 
 // Exported before the entrypoint so `require()` can reach the decision rules
 // without connecting to SFTP or reading the catalog.
-module.exports = { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, SIGHTING_RANK, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight, feedAgeDays };
+module.exports = { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, SIGHTING_RANK, FULL_CATALOG_RE, DISCOVERY_IGNORE, partitionFeedsByFreshness, preflight, feedAgeDays };
 
 if (require.main === module) (async () => {
   // ── Preflight ───────────────────────────────────────────────────────────
@@ -460,7 +501,8 @@ if (require.main === module) (async () => {
   fs.mkdirSync(path.join(FEED_DIR, NEWEGG_MID), { recursive: true });
   const feeds = [];
   let discovered = [];
-  let staleFeeds = [];   // discovered, deliberately not downloaded, reported
+  let staleFeeds = [];    // discovered, deliberately not downloaded, SUPPRESSES verdicts
+  const ignoredFeeds = [];  // measured empty, not coverage, does NOT suppress
 
   // --local-feed re-parses feed files already on disk and never opens a socket.
   // Same parser, same verdicts; it exists so the matching path can be exercised
@@ -488,7 +530,14 @@ if (require.main === module) (async () => {
   try {
     await sftp.connect({ host: FTP_HOST, port: 22, username: FTP_USER, password: FTP_PASS });
     log(`Connected to ${FTP_HOST} as ${FTP_USER}`);
-    discovered = await discoverFeeds(sftp);
+    discovered = await discoverFeeds(sftp, ignoredFeeds);
+    // Say it out loud every run. A feed that vanishes from the log silently is
+    // how somebody re-adds it in six months on the theory that a big file must
+    // contain something.
+    for (const f of ignoredFeeds) {
+      log(`  ⊘  IGNORING ${f.name} (${(f.size / 1048576).toFixed(0)}MB) — ${f.why}`);
+      log('      Not coverage, so it does NOT withhold verdicts. Re-run mkpl-verdict.cjs before re-adding.');
+    }
     if (!discovered.length) throw new Error(`no full-catalog feed found for MID ${NEWEGG_MID} under ${WALK_ROOTS.join(', ')}`);
     for (const f of discovered) {
       log(`  found ${f.kind.padEnd(4)} ${f.remote} (${(f.size / 1048576).toFixed(0)}MB, mtime ${new Date(f.mtime).toISOString()})`);
@@ -747,6 +796,10 @@ if (require.main === module) (async () => {
     // Discovered and deliberately not read. A consumer of this report needs to
     // know which feeds a verdict was NOT checked against.
     excludedFeeds: staleFeeds.map(({ local, ...f }) => f),
+    // Discovered, measured, and deliberately not treated as coverage. Distinct
+    // from excludedFeeds: these do NOT withhold a verdict. Kept in the report so
+    // the decision is visible to anyone auditing why a death was allowed.
+    ignoredFeeds,
     summary: {
       dead: dead.length, pending: pending.length, unbuyable: unbuyable.length,
       alive: alive.length, unknown: unknown.length,
@@ -769,6 +822,9 @@ if (require.main === module) (async () => {
     suppression: suppression ? { runs: suppression.runs, maxAgeDays: suppression.maxAgeDays, feeds: suppression.feeds } : null,
     feeds: feedStats.map((f) => ({ name: f.name, kind: f.kind, size: f.size, mtime: f.mtime, ok: !!f.ok })),
     excludedFeeds: staleFeeds.map((f) => ({ name: f.name, kind: f.kind, mtime: f.mtime, ageDays: Math.round(f.ageDays) })),
+    // NOT read by priorStreakIsBlind — an ignored feed never made the prior run
+    // blind, so its strikes stay good.
+    ignoredFeeds: ignoredFeeds.map((f) => ({ name: f.name, why: f.why })),
     streak,
   }, null, 2));
   console.log(`\nReport -> ${path.relative(ROOT, OUT)}`);

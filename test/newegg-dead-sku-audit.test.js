@@ -16,7 +16,7 @@ import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const audit = require("../newegg-dead-sku-audit.cjs");
 
-const { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight } = audit;
+const { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, FULL_CATALOG_RE, DISCOVERY_IGNORE, partitionFeedsByFreshness, preflight } = audit;
 
 // ── The preflight ────────────────────────────────────────────────────────
 // Run 32057560889 spent 58 minutes and ~1.3GB of downloads to discover that
@@ -233,6 +233,34 @@ test("only full product catalogs are accepted as absence evidence", () => {
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_delta.txt.gz"), false);
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_delta_MKPL.txt.gz"), false);
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_template.txt.gz"), false);
+});
+
+// ── Ignored is not the same as excluded ──────────────────────────────────
+// An EXCLUDED feed is coverage nobody read, so it withholds every death
+// verdict. An IGNORED feed was read in full and found to carry none of the
+// rows in question, so it withholds nothing. Collapsing the two is how the
+// census spent its time refusing to condemn 443 deals on the authority of a
+// file that contained none of them.
+const ignored = (name) => DISCOVERY_IGNORE.some((r) => r.re.test(name));
+
+test("MKPL is dropped at discovery, so it can never become withheld coverage", () => {
+  assert.ok(ignored("44583_4681679_mp_MKPL.txt.gz"),
+    "run 32073301866 measured MKPL empty of catalog pendings — it is not coverage");
+  // The main feed and other merchants' feeds must be untouched by this.
+  assert.equal(ignored("44583_4681679_mp.txt.gz"), false);
+  assert.equal(ignored("12345_4681679_mp.txt.gz"), false);
+});
+
+test("dropping MKPL does not loosen the freshness gate for anything else", () => {
+  // The gate that suppresses on unread coverage stays exactly as strict; a
+  // stale non-MKPL feed must still be excluded and still withhold verdicts.
+  const parted = partitionFeedsByFreshness(
+    [feed("44583_4681679_mp.txt.gz", "2026-08-17T09:27:55Z", "mp"),
+     feed("44583_4681679_mp_OTHER.txt.gz", "2023-03-16T01:05:38Z", "OTHER")],
+    { now: RUN_AT });
+  assert.deepEqual(parted.stale.map((f) => f.kind), ["OTHER"],
+    "a stale feed that was never measured must still suppress");
+  assert.equal(strikeVerdict({ gone: true, prevN: 1, coverageComplete: false }).verdict, "pending");
 });
 
 // ── The suppression must announce itself ─────────────────────────────────

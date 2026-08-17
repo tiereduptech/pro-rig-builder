@@ -13,7 +13,7 @@ name: Best Buy dead-SKU audit (read-only)
 #  6 of them, and 30% over the full set would be ~450 rows, which is worth
 #  measuring exactly.
 #
-#  Read-only by construction, the same shape as feed-overlap-audit.yml:
+#  Read-only by construction, the same shape as mkpl-verdict.yml:
 #  contents: read, no commit step, no write to parts.js, and a step that asserts
 #  the tree came back clean. The script's only output is a report JSON under
 #  catalog-build/, which .gitignore excludes — it leaves as an artifact, not a

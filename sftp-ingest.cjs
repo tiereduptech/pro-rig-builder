@@ -96,7 +96,21 @@ async function walkAndDownload(sftp, manifest) {
         if (!/_mp(?:_delta|_MKPL|_delta_MKPL)?(?:_template|_deltatemplate|_template_MKPL|_deltatemplate_MKPL)?\.(txt|xml)\.gz$/i.test(entry.name)) continue;
         // Skip template files - they are schema examples, not real data
         if (/_template/i.test(entry.name)) continue;
-        
+        // Skip the MKPL marketplace feed. It is 886MB — 86% of all bytes this
+        // job pulls, and ~34 of its 60 minutes — which is why the nightly kept
+        // being cancelled before it committed anything.
+        //
+        // It is skipped because it is EMPTY, not because it is expensive. Run
+        // 32073301866 streamed all 2,918,315 records: of the 443 pending Newegg
+        // deals it carries zero, and of the 83,508 rows it holds that mp does
+        // not, every one is 3P and 83,502 claim "in-stock" in a file last
+        // written 2023-03-16. Ten were fetched from newegg.com — 6 hard 404, 3
+        // out-of-stock with no price, 1 resolving to a different product. See
+        // DISCOVERY_IGNORE in newegg-dead-sku-audit.cjs for the full measurement.
+        //
+        // Do not re-add it to save a round trip on "unique" rows. They are dead.
+        if (/_MKPL\./i.test(entry.name)) continue;
+
         // Extract MID from filename
         const midMatch = entry.name.match(/^(\d+)_/);
         const mid = midMatch ? midMatch[1] : 'unknown';
