@@ -1,12 +1,17 @@
 name: Newegg Feed Overlap Audit (read-only)
 
-# Answers ONE question: does mp_MKPL.txt.gz carry rows the main mp feed does not?
-# The nightly sftp-ingest spends ~34 of its 60 minutes on that 886MB file and then dies
-# before committing, so MKPL has to move — but whether it can be DROPPED or must be
-# RESCHEDULED depends on this measurement.
+# Settles whether mp_MKPL.txt.gz earns its place, without waiting on Rakuten.
+#   Q1 does MKPL carry rows the main mp feed does not?
+#   Q2 which of the catalog's pending Newegg deals does its exclusion protect?
+#   Q3 emit MKPL-only urls so their Newegg pages can be spot-checked by hand.
+#
+# The nightly sftp-ingest spends ~34 of its 60 minutes on that 886MB file and then
+# dies before committing, and the census suppresses every death verdict while the
+# feed goes unread. Whether MKPL can be DROPPED or must be RESCHEDULED depends on
+# this measurement.
 #
 # Read-only by construction: contents: read, no commit step, an assert-nothing-written
-# step, and the script only ever writes a report JSON under catalog-build/.
+# step, and the script only ever writes reports under catalog-build/.
 
 on:
   workflow_dispatch:
@@ -30,7 +35,7 @@ jobs:
           RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
           RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
           NODE_OPTIONS: "--max-old-space-size=6144"
-        run: node feed-overlap-audit.cjs
+        run: node mkpl-verdict.cjs
       - name: Assert nothing written to the catalog
         if: always()
         run: |
@@ -38,10 +43,12 @@ jobs:
             echo "::error::catalog was modified by a read-only audit"; git diff --stat -- src/data/; exit 1
           fi
           echo "Clean: no catalog writes."
-      - name: Upload overlap report
+      - name: Upload verdict + spot-check candidates
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: feed-overlap-audit
-          path: catalog-build/feed-overlap-audit.json
+          name: mkpl-verdict
+          path: |
+            catalog-build/mkpl-verdict.json
+            catalog-build/mkpl-spotcheck-candidates.json
           if-no-files-found: error
