@@ -1,16 +1,39 @@
 name: Refresh Newegg Prices
 
 on:
-  # DISABLED 2026-07-20 — searchBySku looks up Newegg item numbers via
-  # productsearch/1.0 `keyword=`, which does not index SKUs. Every lookup misses,
-  # so the job stamps staleSince and deletes the deal 7 days later. It has a 100%
-  # failure rate (0 of 5,428 products carry refreshedAt) and reported "0 updated"
-  # on every run since 2026-07-06 — it can only delete, never repair. This fuse
-  # already destroyed 1,655 deals on 7/06 (429 of them good first-party N82E
-  # listings) and was eating the surviving 62 twice a day.
-  # Re-enable ONLY after SKU lookup is fixed and verified against the live feed.
-  # schedule:
-  #   - cron: "0 6,18 * * *"
+  # ── HISTORY ────────────────────────────────────────────────────────────────
+  # DISABLED 2026-07-20 — searchBySku looked up Newegg item numbers via
+  # productsearch/1.0 `keyword=`, which does not index SKUs. Every lookup missed,
+  # so the job stamped staleSince and deleted the deal 7 days later. It had a 100%
+  # failure rate (0 of 5,428 products carried refreshedAt) and reported "0 updated"
+  # on every run since 2026-07-06 — it could only delete, never repair. That fuse
+  # destroyed 1,655 deals on 7/06 (429 of them good first-party N82E listings) and
+  # was eating the surviving 62 twice a day.
+  #
+  # The condition for re-enabling was: SKU lookup fixed AND verified against the
+  # live feed. Both are now met.
+  #
+  # FIXED 2026-07-20 in 058b6959700, hours after the disable: lookups resolve via
+  # newegg-match.js searchNewegg() on name/UPC — the same matcher ingest uses —
+  # and outcomes split into LOOKUP_FAILED vs CONFIRMED_ABSENT, with deletion
+  # reachable only from the latter. The cron simply never got uncommented.
+  #
+  # VERIFIED 2026-08-17 against the live feed, run 32048509582 (dry run, 50-product
+  # stratified sample, 46s):
+  #   50 processed · 38 matched · 12 lookup-failed (12%, breaker at 20%)
+  #   7 real price changes — median |delta| 6.1%, max 28.0%, 4 drops / 3 rises
+  #   only 2 deltas over 10%; extrapolates to ~373 of 2,666 rows, not a mass move
+  #   1 SUSPECT_HIGH withheld by the sanity gate (kept $67.10, rejected $82.16)
+  #   0 removal candidates, and REMOVALS_ENABLED = false still hard-blocks the
+  #     delete path at refresh-newegg-prices.cjs:107/517 regardless
+  #
+  # So the fuse that caused the 7/06 loss is off at the source, independently of
+  # this schedule. Re-enabling here restores re-pricing only.
+  #
+  # NOTE: the sample was 50 of 2,666 (1.9%). The other 98% is unmeasured; a full
+  # dry run (blank limit) is the way to see the whole shape if that matters later.
+  schedule:
+    - cron: "0 6,18 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -22,8 +45,8 @@ on:
         type: string
         default: "50"
 
-# Repo-wide lock shared by every workflow that pushes to main. Schedule is
-# disabled (see above) but workflow_dispatch still writes parts.js.
+# Repo-wide lock shared by every workflow that pushes to main. The schedule is
+# live again (see above), and workflow_dispatch also writes parts.js.
 concurrency:
   group: main-writer
   cancel-in-progress: false

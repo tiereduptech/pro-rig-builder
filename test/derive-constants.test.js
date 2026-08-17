@@ -107,14 +107,45 @@ test('every scheduled cron in verify-catalog.yml maps to a tier', async () => {
 });
 
 test('deriveSchedules distinguishes an active cron from a commented-out one', () => {
-  // refresh-newegg-prices.yml has its schedule commented out. Showing a disabled
-  // schedule as active is exactly the "expected every 12h, last ran in July"
-  // confusion the workflows panel exists to prevent.
-  const schedules = derive.deriveSchedules();
-  const rnp = schedules.find((s) => s.file === 'refresh-newegg-prices.yml');
-  assert.ok(rnp);
-  assert.deepEqual(rnp.crons, [], 'a commented cron must not be reported as active');
-  assert.ok(rnp.disabledCrons.length > 0, 'the commented cron should still be visible as disabled');
+  // Showing a disabled schedule as active is exactly the "expected every 12h,
+  // last ran in July" confusion the workflows panel exists to prevent.
+  //
+  // Asserted against a FIXTURE, not the live tree. This test used to pin
+  // refresh-newegg-prices.yml as the commented-out example, which coupled a unit
+  // test to a production schedule that was always going to be re-enabled — and
+  // it duly broke on 2026-08-17 when it was. The capability is what is under
+  // test; which real workflow happens to be disabled today is not.
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'wf-commented-'));
+  const prior = process.env.WF_DIR;
+  try {
+    // deriveSchedules requires a tier-mapped verify-catalog.yml to be present.
+    fs.copyFileSync('.github/workflows/verify-catalog.yml', path.join(dir, 'verify-catalog.yml'));
+    fs.writeFileSync(path.join(dir, 'mixed.yml'), [
+      'name: Mixed',
+      'on:',
+      '  # DISABLED because it ate the catalog',
+      '  # schedule:',
+      '  #   - cron: "0 6,18 * * *"',
+      '  schedule:',
+      '    - cron: "0 4 * * *"',
+      '  workflow_dispatch:',
+      'jobs:',
+      '  j:',
+      '    runs-on: ubuntu-latest',
+      '    steps:',
+      '      - run: echo hi',
+      '',
+    ].join('\n'));
+    process.env.WF_DIR = dir;
+
+    const mixed = derive.deriveSchedules().find((s) => s.file === 'mixed.yml');
+    assert.ok(mixed, 'fixture workflow not found');
+    assert.deepEqual(mixed.crons, ['0 4 * * *'], 'only the uncommented cron is active');
+    assert.deepEqual(mixed.disabledCrons, ['0 6,18 * * *'], 'the commented cron stays visible as disabled');
+  } finally {
+    if (prior === undefined) delete process.env.WF_DIR; else process.env.WF_DIR = prior;
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 });
 
 test('deriveSchedules fails when pointed at an empty workflow tree', () => {
