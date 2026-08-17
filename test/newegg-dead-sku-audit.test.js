@@ -16,7 +16,7 @@ import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const audit = require("../newegg-dead-sku-audit.cjs");
 
-const { classifySighting, strikeVerdict, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight } = audit;
+const { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight } = audit;
 
 // ── The preflight ────────────────────────────────────────────────────────
 // Run 32057560889 spent 58 minutes and ~1.3GB of downloads to discover that
@@ -141,6 +141,90 @@ test("a sku that is present earns no strike at all", () => {
   assert.deepEqual(strikeVerdict({ gone: false, prevN: 1 }), { n: 0, verdict: null });
 });
 
+// ── Incomplete coverage ──────────────────────────────────────────────────
+// Run 32067140458 excluded the MKPL feed (mtime 2023-03-16, 1251 days old) and
+// left 443 skus pending. 72 of those sit in the open-box and marketplace lanes,
+// where MKPL is the plausible carrier. A sku that lives only in MKPL is absent
+// from mp for a reason that has nothing to do with being dead, and on the next
+// run it would have taken strike two on a file nobody opened.
+//
+// A SKIPPED feed and a FAILED feed are the same epistemic state. The census
+// already refuses to condemn on a failed feed; these tests hold it to the same
+// rule for an excluded one. The exclusion is deliberately NOT scoped to a
+// guessed subset of skus — provenance is unknowable without reading the feed,
+// so the rule is all-or-nothing.
+
+test("an excluded feed blocks a death verdict outright", () => {
+  const v = strikeVerdict({ gone: true, prevN: 1, sameSnapshot: false, coverageComplete: false });
+  assert.equal(v.verdict, "pending",
+    "an MKPL-only sku must not be condemned on a feed the census never read");
+});
+
+test("a blind run does not advance the strike either", () => {
+  const v = strikeVerdict({ gone: true, prevN: 1, sameSnapshot: false, coverageComplete: false });
+  assert.equal(v.n, 1,
+    "letting n climb while blind only defers the false death to the first complete run");
+  // Ten blind runs must leave the sku exactly where one did.
+  let n = 0;
+  for (let i = 0; i < 10; i++) n = strikeVerdict({ gone: true, prevN: n, coverageComplete: false }).n;
+  assert.equal(n, 1, "no number of incomplete runs may add up to a death");
+});
+
+test("a confirmed death is withheld while coverage is incomplete, not forgotten", () => {
+  const v = strikeVerdict({ gone: true, prevN: 2, sameSnapshot: false, coverageComplete: false });
+  assert.equal(v.verdict, "pending", "no dead verdict may be issued while a feed is unread");
+  assert.equal(v.n, 2, "the strike survives in state so it re-asserts when coverage returns");
+  // Coverage returns; the same sku is dead again with no extra run required.
+  assert.equal(strikeVerdict({ gone: true, prevN: v.n, sameSnapshot: true, coverageComplete: true }).verdict, "dead");
+});
+
+test("complete coverage is the default, so an unaware caller cannot silently condemn", () => {
+  assert.equal(strikeVerdict({ gone: true, prevN: 1 }).verdict, "dead");
+});
+
+// ── Carrying strikes across a coverage change ────────────────────────────
+// Holding the strike during a blind run is only half the fix. Run 32067140458
+// ran BEFORE that rule existed and wrote 430 skus at n=1, every one of them
+// earned with MKPL unread. Carried forward naively, the first complete census
+// would find them at n=1, add a legitimate strike, and condemn all 430 on one
+// blind observation plus one real one. A strike is a record of an observation;
+// these were not observations.
+
+test("strikes from a run that excluded a feed are not carried forward", () => {
+  assert.equal(priorStreakIsBlind({ coverageComplete: false, streak: { A: { n: 1 } } }), true);
+});
+
+test("a pre-flag state file is judged by whether it recorded an exclusion", () => {
+  // Exactly the shape run 32067140458 wrote: no coverageComplete key, MKPL excluded.
+  assert.equal(priorStreakIsBlind({
+    excludedFeeds: [{ name: "44583_4681679_mp_MKPL.txt.gz", ageDays: 1251 }],
+    streak: { A: { n: 1 } },
+  }), true, "the 430 strikes from the first census must not survive into a death");
+  // A pre-flag run that read everything is still trustworthy.
+  assert.equal(priorStreakIsBlind({ excludedFeeds: [], streak: { A: { n: 1 } } }), false);
+});
+
+test("strikes from a complete census survive", () => {
+  assert.equal(priorStreakIsBlind({ coverageComplete: true, excludedFeeds: [], streak: { A: { n: 1 } } }), false);
+  // An explicit true is trusted even if an exclusion was recorded for reporting.
+  assert.equal(priorStreakIsBlind({ coverageComplete: true, excludedFeeds: [{ name: "x" }] }), false);
+});
+
+test("an absent or empty prior state is not treated as blind", () => {
+  assert.equal(priorStreakIsBlind(), false);
+  assert.equal(priorStreakIsBlind({}), false);
+});
+
+test("the two withholding rules compose — neither can be traded off against the other", () => {
+  const both = strikeVerdict({ gone: true, prevN: 1, sameSnapshot: true, coverageComplete: false });
+  assert.equal(both.n, 1);
+  assert.equal(both.verdict, "pending");
+  // A fresh snapshot does not buy back a missing feed...
+  assert.equal(strikeVerdict({ gone: true, prevN: 1, sameSnapshot: false, coverageComplete: false }).verdict, "pending");
+  // ...and complete coverage does not buy back a repeated snapshot.
+  assert.equal(strikeVerdict({ gone: true, prevN: 1, sameSnapshot: true, coverageComplete: true }).verdict, "pending");
+});
+
 test("only full product catalogs are accepted as absence evidence", () => {
   assert.ok(FULL_CATALOG_RE.test("44583_4681679_mp.txt.gz"));
   assert.ok(FULL_CATALOG_RE.test("44583_4681679_mp_MKPL.txt.gz"));
@@ -149,4 +233,62 @@ test("only full product catalogs are accepted as absence evidence", () => {
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_delta.txt.gz"), false);
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_delta_MKPL.txt.gz"), false);
   assert.equal(FULL_CATALOG_RE.test("44583_4681679_mp_template.txt.gz"), false);
+});
+
+// ── The suppression must announce itself ─────────────────────────────────
+// bestbuy-dead-sku-audit stayed frozen for 95 days with its guard working
+// perfectly and nobody reading it. A guard that reports once and then goes
+// quiet is indistinguishable from one that is not needed. These tests hold the
+// census to re-asserting the excluded feed's age on every run, with a
+// consecutive-run count that grows so the drift is a number, not a memory.
+
+const MKPL = {
+  name: "44583_4681679_mp_MKPL.txt.gz",
+  kind: "MKPL",
+  mtime: Date.parse("2023-03-16T01:05:38Z"),
+};
+const RUN_AT = Date.parse("2026-08-17T20:46:15Z");   // run 32067140458
+
+test("an excluded feed is reported with its age and the suppression it causes", () => {
+  const s = describeSuppression([MKPL], { now: RUN_AT });
+  assert.equal(s.maxAgeDays, 1251);
+  assert.equal(s.headlines.length, 1);
+  assert.match(s.headlines[0], /^MKPL last regenerated 1251 days ago \(2023-03-16\), deaths suppressed\.$/);
+});
+
+test("the consecutive-run count climbs so a long freeze cannot look like steady state", () => {
+  assert.equal(describeSuppression([MKPL], { now: RUN_AT, priorRuns: 0 }).runs, 1);
+  assert.equal(describeSuppression([MKPL], { now: RUN_AT, priorRuns: 94 }).runs, 95);
+});
+
+test("the age is recomputed every run, not carried from prior state", () => {
+  const day1 = describeSuppression([MKPL], { now: RUN_AT });
+  const day2 = describeSuppression([MKPL], { now: RUN_AT + 86400000 });
+  assert.equal(day2.maxAgeDays, day1.maxAgeDays + 1,
+    "the feed getting staler must show up as a bigger number without anyone updating a constant");
+});
+
+test("complete coverage produces no banner at all", () => {
+  assert.equal(describeSuppression([], { now: RUN_AT }), null);
+  assert.equal(describeSuppression(undefined, { now: RUN_AT }), null);
+});
+
+test("several excluded feeds are all named, oldest first", () => {
+  const newer = { name: "b.txt.gz", kind: "OTHER", mtime: Date.parse("2026-01-01T00:00:00Z") };
+  const s = describeSuppression([newer, MKPL], { now: RUN_AT });
+  assert.deepEqual(s.feeds.map((f) => f.kind), ["MKPL", "OTHER"]);
+  assert.equal(s.headlines.length, 2);
+});
+
+test("a feed that was excluded last run and is fresh now is called out", () => {
+  const restored = describeRestoredFeeds(
+    [{ name: "44583_4681679_mp.txt.gz" }, { name: MKPL.name }],
+    [{ name: MKPL.name }],
+  );
+  assert.deepEqual(restored, [MKPL.name], "coverage returning is the event that un-suppresses deaths");
+});
+
+test("nothing is 'restored' when it was never excluded", () => {
+  assert.deepEqual(describeRestoredFeeds([{ name: "44583_4681679_mp.txt.gz" }], []), []);
+  assert.deepEqual(describeRestoredFeeds([{ name: "a" }], [{ name: "b" }]), []);
 });
