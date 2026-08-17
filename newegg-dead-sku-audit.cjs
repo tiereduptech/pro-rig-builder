@@ -131,11 +131,85 @@ function classifySighting(rec) {
  * Two-strike gate. `gone` is absence-from-feed or is_deleted.
  * `sameSnapshot` means this run streamed a byte-identical feed to the last one:
  * re-reading the same file is one observation, not two, so the strike is held.
+ *
+ * `coverageComplete` is false when any discovered feed was excluded from this
+ * census. A SKIPPED feed and a FAILED feed are the same epistemic state — the
+ * sku was not looked at — and the completeness gate below already refuses to
+ * condemn on a failed feed. A sku carried only by the excluded MKPL feed reads
+ * as absent against mp alone, so without this it takes strike two on evidence
+ * nobody read.
+ *
+ * The strike is HELD as well as the verdict. Letting n climb through blind runs
+ * would only defer the false death: the first complete run would find a pile of
+ * skus already at n>=2 and condemn them all on the strength of runs that never
+ * opened MKPL. Deaths already confirmed under complete coverage keep their n in
+ * the state file and re-assert the moment coverage returns — the census abstains
+ * from the verdict, it does not forget the evidence.
  */
-function strikeVerdict({ gone, prevN = 0, sameSnapshot = false }) {
+function strikeVerdict({ gone, prevN = 0, sameSnapshot = false, coverageComplete = true }) {
   if (!gone) return { n: 0, verdict: null };
-  const n = sameSnapshot ? Math.max(prevN, 1) : prevN + 1;
-  return { n, verdict: n >= 2 ? 'dead' : 'pending' };
+  const held = sameSnapshot || !coverageComplete;
+  const n = held ? Math.max(prevN, 1) : prevN + 1;
+  return { n, verdict: (coverageComplete && n >= 2) ? 'dead' : 'pending' };
+}
+
+/**
+ * Were the strikes in a prior state file earned while a feed went unread?
+ *
+ * A strike earned blind is not evidence, and carrying it forward would let one
+ * blind run plus one good run add up to a death the moment coverage returns —
+ * the same false condemnation, just deferred. State written before
+ * `coverageComplete` existed is identified by having recorded an exclusion.
+ */
+function priorStreakIsBlind(prev = {}) {
+  if (prev.coverageComplete === true) return false;
+  if (prev.coverageComplete === false) return true;
+  return (prev.excludedFeeds || []).length > 0;   // pre-flag state file
+}
+
+/**
+ * Describe what an excluded feed is costing this census, every run, in one line.
+ *
+ * WHY THIS IS NOT JUST LOGGING
+ * bestbuy-dead-sku-audit sat frozen for 95 days. The suppression mechanism was
+ * working the whole time — it was reported once, quietly, and then nobody read
+ * it again. A guard that goes silent is indistinguishable from a guard that is
+ * not needed, and the longer it holds the more it looks like the steady state.
+ *
+ * So the census re-asserts the excluded feed's mtime on EVERY run and says what
+ * it is costing, with the age in days and the consecutive-run count so the drift
+ * is visible as a number that grows rather than a condition you have to remember.
+ * `runs` comes from the prior state; the first suppressed run reports 1.
+ */
+function describeSuppression(staleFeeds = [], { now = Date.now(), priorRuns = 0 } = {}) {
+  if (!staleFeeds.length) return null;
+  const feeds = staleFeeds
+    .map((f) => ({
+      name: f.name,
+      kind: f.kind,
+      mtime: f.mtime,
+      ageDays: Math.round(feedAgeDays(f.mtime, now)),
+      lastRegeneratedAt: new Date(f.mtime).toISOString().slice(0, 10),
+    }))
+    .sort((a, b) => b.ageDays - a.ageDays);
+  const runs = priorRuns + 1;
+  return {
+    feeds,
+    runs,
+    maxAgeDays: feeds[0].ageDays,
+    // The line the user reads. One per excluded feed, oldest first.
+    headlines: feeds.map((f) =>
+      `${f.kind} last regenerated ${f.ageDays} days ago (${f.lastRegeneratedAt}), deaths suppressed.`),
+  };
+}
+
+/**
+ * A feed that was excluded last run and is fresh now. Coverage returning is as
+ * newsworthy as coverage going, and it is the event that un-suppresses deaths.
+ */
+function describeRestoredFeeds(freshFeeds = [], prevExcluded = []) {
+  const excludedNames = new Set(prevExcluded.map((f) => f.name));
+  return freshFeeds.filter((f) => excludedNames.has(f.name)).map((f) => f.name);
 }
 
 async function discoverFeeds(sftp) {
@@ -286,7 +360,7 @@ async function preflight() {
 
 // Exported before the entrypoint so `require()` can reach the decision rules
 // without connecting to SFTP or reading the catalog.
-module.exports = { classifySighting, strikeVerdict, SIGHTING_RANK, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight, feedAgeDays };
+module.exports = { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, SIGHTING_RANK, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight, feedAgeDays };
 
 if (require.main === module) (async () => {
   // ── Preflight ───────────────────────────────────────────────────────────
@@ -365,6 +439,15 @@ if (require.main === module) (async () => {
       prev.feeds = prev.feeds || {};
       console.log(`Prior state: ${Object.keys(prev.streak).length} sku(s) carrying a strike, ` +
         `from run at ${prev.updatedAt || '(unknown time)'}`);
+
+      if (priorStreakIsBlind(prev)) {
+        const dropped = Object.keys(prev.streak).length;
+        console.log(`  ⚠  Prior run excluded ${(prev.excludedFeeds || []).map((f) => f.name).join(', ') || 'a feed'} — ` +
+          `its ${dropped} strike(s) were earned without full coverage.`);
+        console.log('     Discarding them. Strikes restart from the first complete census; a death');
+        console.log('     must rest on two runs that both actually read every discovered feed.');
+        prev.streak = {};
+      }
     } catch (e) {
       console.log(`Prior state unreadable (${e.message}) — starting clean; nothing can reach two strikes this run.`);
       prev = { streak: {}, feeds: {} };
@@ -502,6 +585,29 @@ if (require.main === module) (async () => {
   const snapshotId = feedStats.filter((f) => f.ok).map((f) => `${f.name}@${f.mtime}:${f.size}`).sort().join('|');
   const sameSnapshotAsLastRun = !!prev.snapshotId && prev.snapshotId === snapshotId;
 
+  // Coverage is complete only when every feed DISCOVERED on the endpoint was
+  // actually read. An excluded feed is un-read evidence, not absent evidence.
+  const coverageComplete = staleFeeds.length === 0;
+
+  // Re-asserted every run, suppressed or not. See describeSuppression().
+  const suppression = describeSuppression(staleFeeds, { priorRuns: prev.suppression?.runs || 0 });
+  const restoredFeeds = describeRestoredFeeds(feedStats.filter((f) => f.ok), prev.excludedFeeds || []);
+
+  // Reasons this census may not issue a death verdict. Both are measurement-is-
+  // fine, conclusion-is-not conditions: the counts below stay meaningful, the
+  // word "dead" does not.
+  const withheldReasons = [];
+  if (!coverageComplete) {
+    withheldReasons.push(
+      `${staleFeeds.length} discovered feed(s) excluded and unread (${staleFeeds.map((f) => f.name).join(', ')}) ` +
+      '— a sku carried only by an excluded feed is indistinguishable from a dead one');
+  }
+  if (sameSnapshotAsLastRun) {
+    withheldReasons.push(
+      'the feed snapshot is byte-identical to the previous run — a re-read of the same file is not a second opinion');
+  }
+  const verdictsBinding = withheldReasons.length === 0;
+
   const streak = {};
   for (const row of rows) {
     if (!row.status) row.status = feedsOk ? 'absent' : 'unknown';
@@ -512,6 +618,7 @@ if (require.main === module) (async () => {
       gone: true,
       prevN: prev.streak[key]?.n || 0,
       sameSnapshot: sameSnapshotAsLastRun,
+      coverageComplete,
     });
     streak[key] = { n, firstGoneAt: prev.streak[key]?.firstGoneAt || new Date().toISOString(), lastStatus: row.status };
     row.strikes = n;
@@ -555,9 +662,36 @@ if (require.main === module) (async () => {
   }
 
   // ── Report ──────────────────────────────────────────────────────────────
+  // ── Suppression banner ──────────────────────────────────────────────────
+  // Printed before the numbers, every run, so the condition cannot go quiet the
+  // way the Best Buy census did for 95 days. Also emitted as a workflow warning
+  // so it surfaces on the run page without opening the log.
+  if (suppression) {
+    console.log('');
+    console.log(bar);
+    for (const h of suppression.headlines) console.log(`  ⚠  ${h}`);
+    console.log(`  Suppressed on ${suppression.runs} consecutive run(s). No sku can be declared dead`);
+    console.log('  until every discovered feed is read. This is a coverage gap, not a clean bill.');
+    console.log(bar);
+    for (const h of suppression.headlines) console.log(`::warning title=Newegg census suppressed::${h}`);
+  }
+  if (restoredFeeds.length) {
+    console.log('');
+    console.log(`  ✓ COVERAGE RESTORED: ${restoredFeeds.join(', ')} is fresh again and was read this run.`);
+    console.log('    Strikes earned under the previous gap were discarded; deaths resume from here.');
+    console.log(`::notice title=Newegg census coverage restored::${restoredFeeds.join(', ')} regenerated — death verdicts are live again.`);
+  }
+
   console.log(bar);
-  console.log('RESULT — Newegg link census');
+  console.log(verdictsBinding ? 'RESULT — Newegg link census' : 'CENSUS ONLY — NOT A VERDICT — Newegg link census');
   console.log(bar);
+  if (!verdictsBinding) {
+    console.log('  No death verdict is issued by this run:');
+    for (const r of withheldReasons) console.log(`    · ${r}`);
+    console.log('  The counts below are a measurement of what the read feeds show.');
+    console.log('  Nothing here is a basis for quarantine.');
+    console.log('');
+  }
   console.log(`  deals checked .............. ${rows.length}`);
   console.log(`  DEAD (gone, 2+ strikes) .... ${dead.length}  (${pct(dead.length, rows.length)})   <- absent from the full feed, or is_deleted`);
   console.log(`  pending (1 strike) ......... ${pending.length}  <- gone this run only; NOT dead until a second, different feed snapshot agrees`);
@@ -581,9 +715,10 @@ if (require.main === module) (async () => {
     for (const f of staleFeeds) {
       console.log(`    excluded ${f.kind.padEnd(4)} ${f.name} — ${f.reason}`);
     }
-    console.log(`    Verdicts are made against: ${feedStats.filter((f) => f.ok).map((f) => f.kind).join(', ') || '(none)'}.`);
-    console.log('    A sku carried ONLY by an excluded feed reads as absent here, which is one');
-    console.log('    strike, not a death — the second must still come from a different snapshot.');
+    console.log(`    Read: ${feedStats.filter((f) => f.ok).map((f) => f.kind).join(', ') || '(none)'}.`);
+    console.log('    A sku carried ONLY by an excluded feed reads as absent here. While any');
+    console.log('    discovered feed is unread, absence is not evidence of death: no strike');
+    console.log('    advances and no sku is condemned, however many runs it sits out.');
   }
   if (sameSnapshotAsLastRun) {
     console.log('');
@@ -601,6 +736,13 @@ if (require.main === module) (async () => {
     feedsComplete: feedsOk,
     brokenFeed,
     sameSnapshotAsLastRun,
+    // Consumers must gate on this. When false, `dead` is guaranteed empty
+    // because the census abstained, NOT because nothing died.
+    verdictsBinding,
+    verdictsWithheld: withheldReasons.length ? withheldReasons : null,
+    coverageComplete,
+    suppression,
+    restoredFeeds,
     freshness: { maxAgeDays: MAX_FEED_AGE_DAYS, allowStale: ALLOW_STALE_FEEDS },
     // Discovered and deliberately not read. A consumer of this report needs to
     // know which feeds a verdict was NOT checked against.
@@ -621,6 +763,10 @@ if (require.main === module) (async () => {
   fs.writeFileSync(STATE_OUT, JSON.stringify({
     updatedAt: new Date().toISOString(),
     snapshotId,
+    // The next run reads this to decide whether these strikes are trustworthy.
+    coverageComplete,
+    // Carries the consecutive-suppressed-run counter so the number keeps climbing.
+    suppression: suppression ? { runs: suppression.runs, maxAgeDays: suppression.maxAgeDays, feeds: suppression.feeds } : null,
     feeds: feedStats.map((f) => ({ name: f.name, kind: f.kind, size: f.size, mtime: f.mtime, ok: !!f.ok })),
     excludedFeeds: staleFeeds.map((f) => ({ name: f.name, kind: f.kind, mtime: f.mtime, ageDays: Math.round(f.ageDays) })),
     streak,
@@ -632,6 +778,11 @@ if (require.main === module) (async () => {
   if (process.env.GITHUB_STEP_SUMMARY) {
     const md = [];
     md.push('## Newegg link census (read-only)\n');
+    if (!verdictsBinding) {
+      md.push('> [!WARNING]\n> **No death verdict was issued by this run.**\n>\n' +
+        withheldReasons.map((r) => `> - ${r}`).join('\n') +
+        '\n>\n> The table below is a measurement, not a basis for quarantine.\n');
+    }
     md.push(`Feeds streamed: ${feedStats.map((f) => `\`${f.name}\` (${f.ok ? `${f.recordCount} records` : `FAILED: ${f.error}`})`).join(', ')}\n`);
     md.push('| Verdict | Deals | Share |');
     md.push('| --- | --: | --: |');
@@ -661,6 +812,16 @@ if (require.main === module) (async () => {
   }
   if (unknown.length / rows.length > UNKNOWN_FAIL_PCT / 100) {
     console.error(`\n✗ ${unknown.length} of ${rows.length} deals (${pct(unknown.length, rows.length)}) are UNKNOWN — over the ${UNKNOWN_FAIL_PCT}% ceiling.`);
+    process.exit(1);
+  }
+  // A census that cannot condemn must not exit green. A green check on a run
+  // reporting "0 dead" reads as "nothing died" when it means "we did not look".
+  // The artifacts still upload — the workflow's upload steps are `if: always()`.
+  if (!verdictsBinding) {
+    console.error('\n✗ VERDICTS WITHHELD — this census is not a basis for quarantine:');
+    for (const r of withheldReasons) console.error(`    · ${r}`);
+    console.error('  dead = 0 here because the census abstained, not because nothing died.');
+    console.error('  Resolve the cause and re-run before acting on any row.');
     process.exit(1);
   }
   console.log('\n✓ Census complete. Nothing was written outside catalog-build/.');
