@@ -46,7 +46,11 @@ const PARTS_PATH = (() => {
   return a ? path.resolve(a.split('=')[1]) : path.join(__dirname, 'src', 'data', 'parts.js');
 })();
 
-if (!CLIENT_ID || !CLIENT_SECRET || !SID) {
+// Only enforce credentials when run directly as a CLI. When this file is
+// require()'d for its pure reporting helpers (priceDistribution /
+// printDistribution) it must not exit — those do no network I/O. Same
+// affordance, for the same reason, as ingest-msi-impact-v2.cjs.
+if (require.main === module && (!CLIENT_ID || !CLIENT_SECRET || !SID)) {
   console.error('Missing required env vars (RAKUTEN_CLIENT_ID / _SECRET / _SID)');
   process.exit(1);
 }
@@ -268,7 +272,84 @@ function chooseCandidate(p, candidates) {
   return { pick, kind: 'rematch' };
 }
 
-(async () => {
+// ── Delta distribution ───────────────────────────────────────────────────────
+//
+// Computed over EVERY price move, before `changes` is truncated to 100 in the
+// report. Deciding whether to put this job on a cadence means seeing the shape
+// of what it would write, and a truncated sample cannot show that: on a full
+// 2,666-row run the first 100 records are not a random sample of the rest. The
+// counts and percentiles here are complete even when the record list is not.
+//
+// Pure and exported so the numbers can be verified against a recorded production
+// run rather than trusted — see test/newegg-distribution.test.js.
+function priceDistribution(changes, stats = {}) {
+  const moves = (changes || [])
+    .filter((c) => c.change === 'price-update' && Number(c.from) > 0 && Number(c.to) > 0)
+    .map((c) => ({
+      name: c.name, sku: c.sku, from: Number(c.from), to: Number(c.to),
+      pct: ((Number(c.to) - Number(c.from)) / Number(c.from)) * 100,
+    }));
+  const byPct = [...moves].sort((a, b) => a.pct - b.pct);
+  const absPct = moves.map((m) => Math.abs(m.pct)).sort((a, b) => a - b);
+  const pctl = (p) => (absPct.length ? Number(absPct[Math.floor(p * (absPct.length - 1))].toFixed(1)) : null);
+
+  const BUCKETS = [1, 2, 5, 10, 20, 50, Infinity];
+  const histogram = {};
+  let lower = 0;
+  for (const b of BUCKETS) {
+    const label = b === Infinity ? '>50%' : lower + '-' + b + '%';
+    histogram[label] = absPct.filter((v) => v > lower && v <= b).length;
+    lower = b;
+  }
+
+  return {
+    rowsMoved: moves.length,
+    rowsLinkOnly: stats.linkOnly || 0,
+    rowsUnchanged: stats.unchanged || 0,
+    drops: moves.filter((m) => m.pct < 0).length,
+    rises: moves.filter((m) => m.pct > 0).length,
+    absMedianPct: pctl(0.5),
+    absP90Pct: pctl(0.9),
+    absMaxPct: absPct.length ? Number(absPct[absPct.length - 1].toFixed(1)) : null,
+    over10pct: absPct.filter((v) => v > 10).length,
+    over25pct: absPct.filter((v) => v > 25).length,
+    over50pct: absPct.filter((v) => v > 50).length,
+    histogram,
+    // Capped at half the set so the two lists never overlap. Without this a run
+    // with 7 moves prints all 7 as "biggest drops" AND all 7 as "biggest rises",
+    // which reads as 14 outliers.
+    biggestDrops: byPct.slice(0, outlierCount(moves.length)),
+    biggestRises: byPct.slice(-outlierCount(moves.length)).reverse(),
+  };
+}
+
+function outlierCount(n) {
+  return Math.min(10, Math.max(1, Math.floor(n / 2)));
+}
+
+function printDistribution(d) {
+  console.log('\n=== PRICE DELTA DISTRIBUTION ===');
+  if (!d.rowsMoved) { console.log('No price moved.'); return; }
+  console.log('Rows whose price moves: ' + d.rowsMoved + '  (' + d.drops + ' down, ' + d.rises + ' up)');
+  console.log('Link/sale-only rewrites: ' + d.rowsLinkOnly + '   price identical: ' + d.rowsUnchanged);
+  console.log('|delta|  median ' + d.absMedianPct + '%   p90 ' + d.absP90Pct + '%   max ' + d.absMaxPct + '%');
+  console.log('over 10%: ' + d.over10pct + '   over 25%: ' + d.over25pct + '   over 50%: ' + d.over50pct);
+  console.log('histogram of |delta|:');
+  for (const [k, v] of Object.entries(d.histogram)) {
+    console.log('  ' + k.padStart(7) + '  ' + String(v).padStart(5) + '  ' +
+      '#'.repeat(Math.min(50, Math.round((v / d.rowsMoved) * 50))));
+  }
+  const fmt = (m) => ('  ' + (m.pct >= 0 ? '+' : '') + m.pct.toFixed(1) + '%').padEnd(11) +
+    String(m.from).padStart(9) + ' -> ' + String(m.to).padEnd(9) + ' ' + String(m.name).slice(0, 46);
+  console.log('biggest drops:');
+  for (const m of d.biggestDrops) console.log(fmt(m));
+  console.log('biggest rises:');
+  for (const m of d.biggestRises) console.log(fmt(m));
+}
+
+module.exports = { priceDistribution, printDistribution };
+
+if (require.main === module) (async () => {
   console.log(`Loading parts.js...${DRY_RUN ? '  [DRY RUN — no writes]' : ''}`);
   NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
   const partsModule = await import(`file://${PARTS_PATH.replace(/\\/g, '/')}?t=${Date.now()}`);
@@ -282,7 +363,7 @@ function chooseCandidate(p, candidates) {
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, linkOnly: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -482,8 +563,20 @@ function chooseCandidate(p, candidates) {
       if (newSale) d.saleprice = newSale; else delete d.saleprice;
       d.linkurl = newLink;
       d.refreshedAt = new Date().toISOString();
-      stats.priced++;
-      changes.push({ name: p.n, change: 'price-update', from: oldPrice, to: item.price, sku });
+      // `priceChanged` is true when the sale price or the LINK moved too, so it
+      // is not the same question as "did the number a buyer sees change". The
+      // two were conflated and reported as one, which meant a 50-row sample
+      // reported 17 price-updates when only 7 prices had actually moved — and on
+      // a full 2,666-row run that noise would bury the delta distribution the
+      // report exists to show. Both still write, and both still count toward
+      // `mutating` below; they are only counted and labelled apart.
+      const moved = item.price !== oldPrice;
+      if (moved) stats.priced++; else stats.linkOnly++;
+      changes.push({
+        name: p.n,
+        change: moved ? 'price-update' : 'link-update',
+        from: oldPrice, to: item.price, sku,
+      });
     } else {
       d.refreshedAt = new Date().toISOString();
       stats.unchanged++;
@@ -525,7 +618,7 @@ function chooseCandidate(p, candidates) {
   // ── Report ──────────────────────────────────────────────────────────────────
   console.log(`\n=== SUMMARY ${DRY_RUN ? '(DRY RUN)' : ''} ===`);
   console.log(`Processed:        ${processed}`);
-  console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
+  console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, link-only ${stats.linkOnly}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
   console.log(`Price suspect:    ${stats.priceSuspect}  (bad price withheld, last good price KEPT)`);
   console.log(`Price quarantined:${stats.priceQuarantined}  (${PRICE_SUSPECT_QUARANTINE_STREAK}+ consecutive strikes -> needsReview, price KEPT)`);
   if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
@@ -554,10 +647,14 @@ function chooseCandidate(p, candidates) {
     for (const [k, v] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`   ${v.toString().padStart(4)}  ${k}`);
   }
 
+  const distribution = priceDistribution(changes, stats);
+  printDistribution(distribution, stats);
+
   const report = {
     timestamp: new Date().toISOString(),
     dryRun: DRY_RUN,
     processed, ...stats,
+    distribution,
     // `updated` is read by .github/workflows/refresh-newegg-prices.yml for the
     // commit message; kept as an alias of the renamed `priced` counter.
     updated: stats.priced,
@@ -572,6 +669,10 @@ function chooseCandidate(p, candidates) {
     breakers,
     thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap, MIN_MIGRATE_SIM: NEG.MIN_MIGRATE_SIM },
     failures: failures.slice(0, 50),
+    // Truncated on purpose — a full run can produce hundreds of records and the
+    // artifact is read by humans. Safe only because `distribution` above is
+    // computed over ALL of them, so the shape survives even though the list does not.
+    changesTotal: changes.length,
     changes: changes.slice(0, 100),
     scoreSamples,
   };
@@ -580,7 +681,11 @@ function chooseCandidate(p, candidates) {
 
   if (DRY_RUN) { console.log('DRY RUN — parts.js not written.'); return; }
 
-  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed;
+  // linkOnly is in the sum deliberately: those rows had their linkurl/saleprice
+  // rewritten above, so a run consisting only of link repairs still has real work
+  // to persist. Splitting it out of `priced` for reporting must not make it
+  // invisible to the write gate.
+  const mutating = stats.priced + stats.linkOnly + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed;
   if (mutating === 0) { console.log('No changes to write.'); return; }
 
   // Route through the shared writer so the re-split is part of the write
