@@ -150,6 +150,8 @@ jobs:
             echo "| Metric | Value |"
             echo "| --- | --- |"
             echo "| Dead ASINs quarantined | ${{ steps.audit.outputs.quarantined }} |"
+            echo "| Unbuyable (no purchasable New offer) | ${{ steps.audit.outputs.no_offer }} |"
+            echo "| …of those with no other retailer | ${{ steps.audit.outputs.no_offer_orphaned }} |"
             echo "| Queued for human review | ${{ steps.audit.outputs.queue }} |"
             echo "| Attach-defect rate | ${{ steps.audit.outputs.attach_rate }}% |"
             echo "| Jump vs trailing median | ${{ steps.audit.outputs.jump }} pp |"

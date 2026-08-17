@@ -237,10 +237,18 @@ async function loadCatalog() {
     if (!url) continue;
     const m = String(url).match(re);
     if (!m) continue;
+    // otherRetailers answers the only question that matters once an Amazon link
+    // turns out to be unbuyable: does the row still have somewhere to buy it, or
+    // does dropping the link take the product off the site?
+    const priced = (d) => !!d && ((typeof d.price === 'number' && d.price > 0) ||
+                                  (typeof d.saleprice === 'number' && d.saleprice > 0));
+    const otherRetailers = ['newegg', 'newegg_openbox', 'newegg_marketplace', 'bestbuy', 'msi']
+      .filter((k) => priced(p?.deals?.[k]));
     rows.push({
       id: p.id, cat: p.c || '?', name: p.n, cap: p.cap ?? null, asin: m[1],
       storedPrice: p?.deals?.amazon?.price ?? null,
       needsReview: !!p.needsReview,
+      otherRetailers,
     });
   }
   return rows;
@@ -318,6 +326,13 @@ async function loadCatalog() {
   const findings = [];
   const perCat = {};
   let clean = 0;
+  // The unbuyable census. newOffer() already computes this for every row on
+  // every nightly run — it returns null when the ASIN resolves but carries no
+  // purchasable New offer (used-only listing, no buybox). Until now that result
+  // was kept only for defect rows and discarded for the ~3,200 clean ones, so
+  // "how many Amazon links cannot be bought" was unanswerable from the report
+  // despite being measured every night. No extra API calls: same response.
+  const noOfferRows = [];
 
   for (const row of rows) {
     perCat[row.cat] ||= { total: 0, dead: 0, wrong: 0, close: 0, verbosity: 0, clean: 0, priceFlag: 0 };
@@ -342,6 +357,19 @@ async function loadCatalog() {
     const c  = containment(row.name, az);
     const offer = hit.offer;
     const azPrice = offer?.price ?? null;
+    // A resolved title with no New offer: the listing exists, the link works,
+    // and nothing can be bought through it. Distinct from dead-asin (nothing
+    // came back at all) and recorded for EVERY row, clean or not.
+    const noOffer = !offer;
+    if (noOffer) {
+      noOfferRows.push({
+        id: row.id, cat: row.cat, asin: row.asin, storedName: row.name,
+        storedPrice: row.storedPrice, amazonTitle: az,
+        needsReview: row.needsReview,
+        otherRetailers: row.otherRetailers ?? [],
+        orphaned: (row.otherRetailers ?? []).length === 0,
+      });
+    }
 
     let deltaPct = null, divergent = false;
     if (azPrice != null && row.storedPrice != null && row.storedPrice > 0) {
@@ -376,6 +404,7 @@ async function loadCatalog() {
       storedPrice: row.storedPrice, amazonPrice: azPrice,
       priceSource: offer?.source ?? null, merchant: offer?.merchant ?? null,
       priceDeltaPct: deltaPct, priceDivergent: divergent,
+      noOffer,
       needsReview: row.needsReview,
     });
   }
@@ -404,6 +433,10 @@ async function loadCatalog() {
   console.log(`  REAL DEFECTS ..................... ${realDefects.length}  (${(realDefects.length / rows.length * 100).toFixed(1)}%)`);
   console.log(`  raw gate flag rate ............... ${((realDefects.length + verbose.length) / rows.length * 100).toFixed(1)}%`);
   console.log(`  of real defects, price-divergent . ${priceFlagged.length} (>=${PRICE_DIVERGENCE * 100}% delta)`);
+  console.log('  ' + '-'.repeat(50));
+  console.log(`  UNBUYABLE (no purchasable New offer) ${noOfferRows.length}  (${(noOfferRows.length / rows.length * 100).toFixed(1)}%)  <- link works, listing exists, nothing to buy`);
+  console.log(`    of those, no other retailer ...... ${noOfferRows.filter(r => r.orphaned).length}  <- dropping the link takes the product off the site`);
+  console.log(`    of those, already quarantined .... ${noOfferRows.filter(r => r.needsReview).length}`);
   console.log(`\n  api 429s retried ................. ${stats429}`);
   console.log(`  api batch errors ................. ${apiErrors.length}`);
   console.log(`  elapsed .......................... ${elapsed.toFixed(0)}s (${(elapsed / 60).toFixed(1)} min)`);
@@ -447,6 +480,12 @@ async function loadCatalog() {
       clean, deadAsin: dead.length, wrongProduct: wrong.length,
       closeButWrong: close.length, titleVerbosity: verbose.length,
       realDefects: realDefects.length,
+      // Unbuyable is NOT a defect class: the link is correct and the listing is
+      // real, there is just no New offer behind it. Counted separately so it can
+      // never inflate the attach-defect rate the alert threshold watches.
+      noOffer: noOfferRows.length,
+      noOfferOrphaned: noOfferRows.filter(r => r.orphaned).length,
+      noOfferAlreadyQuarantined: noOfferRows.filter(r => r.needsReview).length,
       realDefectRatePct: +(realDefects.length / rows.length * 100).toFixed(2),
       rawGateFlagRatePct: +((realDefects.length + verbose.length) / rows.length * 100).toFixed(2),
       priceDivergentDefects: priceFlagged.length,
@@ -454,6 +493,10 @@ async function loadCatalog() {
     perCategory: perCat,
     apiErrors,
     findings,
+    // Every row whose ASIN resolved but carries no purchasable New offer,
+    // clean rows included — this list is the Amazon unbuyable census, and it is
+    // the counterpart of `unbuyableIds` in the Best Buy and Newegg reports.
+    noOfferRows,
   };
   writeFileSync(OUT_PATH, JSON.stringify(report, null, 2));
   console.log(`\nFull report written to ${OUT_PATH} (${findings.length} findings)`);
@@ -558,6 +601,7 @@ async function loadCatalog() {
     deadAsinRows: dead.length, wrongProduct: wrong.length, closeButWrong: close.length,
     attachRatePct: attachRate, realDefects: realDefects.length,
     quarantinedThisRun: quarantined,
+    noOffer: noOfferRows.length, noOfferOrphaned: noOfferRows.filter(r => r.orphaned).length,
   });
   if (state.history.length > HISTORY_KEEP) state.history = state.history.slice(-HISTORY_KEEP);
   writeFileSync(STATE_PATH, JSON.stringify(state, null, 2));
@@ -566,7 +610,8 @@ async function loadCatalog() {
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT,
       `alert=${alert}\nattach_rate=${attachRate}\njump=${jump ?? ''}\n` +
-      `quarantined=${quarantined}\nqueue=${queue.length}\ndegraded=${degraded}\n`);
+      `quarantined=${quarantined}\nqueue=${queue.length}\ndegraded=${degraded}\n` +
+      `no_offer=${noOfferRows.length}\nno_offer_orphaned=${noOfferRows.filter(r => r.orphaned).length}\n`);
   }
   console.log('\nwrong-product / close-but-wrong were REPORTED ONLY — never written, never relinked.');
 })();
