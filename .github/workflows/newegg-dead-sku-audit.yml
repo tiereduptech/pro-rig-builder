@@ -41,6 +41,26 @@ name: Newegg dead-SKU audit (read-only)
 #  the audit cannot drift from the ingest or resurrect the OOM. Peak heap is the
 #  ~3,400-key target index plus one record.
 #
+#  PREFLIGHT BEFORE BYTES
+#  Run 32057560889 downloaded ~1.3GB over 58 minutes and then died on
+#  `streamTxtFeed is not a function` — the export did not exist. Worse, because
+#  sftp-ingest.cjs had no `require.main === module` guard, merely requiring it
+#  started a SECOND full ingest in the background: a competing SFTP session on an
+#  endpoint that throttles concurrent readers (which is most of why one feed took
+#  2,973s), and, had it finished, a write to parts.js from a job declared
+#  read-only. The audit now proves every cross-module dependency before opening a
+#  socket — including streaming a synthetic feed and checking that the columns it
+#  reads still land at their spec positions. It costs about 10ms.
+#
+#  FEED FRESHNESS IS A CORRECTNESS GATE
+#  Sightings resolve least-condemning-wins, so a stale feed cannot reveal a death
+#  — it can only mask one. The MKPL feed measured mtime 2023-03-16 against mp's
+#  2026-08-17 (same listing call, same field, so this is Newegg's timestamp and
+#  not a unit bug); a 2023 `in-stock` would override the live feed and keep a
+#  dead link on the site. Feeds over 14 days old are excluded at DISCOVERY, before
+#  download, and named in the report and job summary. That is also where the
+#  runtime went: skipping the 886MB file drops this job from ~58 min to ~10.
+#
 #  Read-only by construction: contents: read, no commit step, an
 #  assert-nothing-written step, and the script writes only under catalog-build/,
 #  which .gitignore excludes. Acting on the findings is a separate, deliberate
@@ -49,8 +69,10 @@ name: Newegg dead-SKU audit (read-only)
 #  Dispatch-only: this is a measurement, not a schedule. Add a cron when
 #  something downstream depends on the trend.
 #
-#  Runtime: the main feed measured ~11 min to stream 1,035,311 records; MKPL is
-#  ~6x larger. The timeout is set for both plus download.
+#  Runtime: the main feed measured ~11 min to stream 1,035,311 records, plus a
+#  ~4 min download when nothing else is competing for the socket. MKPL is no
+#  longer pulled, so the timeout is sized for the mp feed with headroom rather
+#  than for 1GB of downloads.
 # =============================================================================
 
 on:
@@ -60,6 +82,16 @@ on:
         description: 'Carry the previous run''s strikes forward (uncheck to force a clean first-strike run)'
         required: false
         default: true
+        type: boolean
+      max_feed_age_days:
+        description: 'Ignore any feed older than this many days. The mp feed regenerates daily; MKPL has not since 2023-03-16.'
+        required: false
+        default: '14'
+        type: string
+      allow_stale_feeds:
+        description: 'Read stale feeds anyway. A stale in-stock row MASKS a death — only tick this to measure what MKPL still contains, never to publish a census.'
+        required: false
+        default: false
         type: boolean
 
 permissions: {}
@@ -76,7 +108,7 @@ jobs:
     permissions:
       contents: read
       actions: read        # read the previous run's state artifact, nothing more
-    timeout-minutes: 150
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -87,6 +119,13 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      # Seconds, before the SFTP secret is even read. Covers the decision rules
+      # that can condemn a row, the parser contract, and that requiring the
+      # ingest does not start one. The script re-runs its own preflight anyway;
+      # this fails the job before the download step is reached at all.
+      - name: Preflight — prove the rules and the parser before any bytes
+        run: node --test test/newegg-dead-sku-audit.test.js
 
       # The two-strike state lives in an artifact, not a commit, because a
       # read-only audit must not write to the repo to remember what it saw.
@@ -114,6 +153,8 @@ jobs:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
           RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+          MAX_FEED_AGE_DAYS: ${{ github.event.inputs.max_feed_age_days }}
+          ALLOW_STALE: ${{ github.event.inputs.allow_stale_feeds }}
         run: |
           set -uo pipefail
           if [ -z "${RAKUTEN_FTP_PASSWORD:-}" ]; then
@@ -126,6 +167,11 @@ jobs:
             echo "Carrying prior strikes forward."
           else
             echo "No prior state on disk — nothing can reach two strikes this run."
+          fi
+          ARGS="$ARGS --max-feed-age-days ${MAX_FEED_AGE_DAYS:-14}"
+          if [ "${ALLOW_STALE:-false}" = "true" ]; then
+            echo "::warning::--allow-stale-feeds is on. A stale feed's in-stock row overrides the live feed and hides dead skus. This census is a measurement, not a basis for quarantine."
+            ARGS="$ARGS --allow-stale-feeds"
           fi
           node newegg-dead-sku-audit.cjs $ARGS
 

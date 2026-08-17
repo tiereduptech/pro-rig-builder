@@ -36,14 +36,34 @@
  * size. The MKPL feed is 886MB gzipped and several million rows; nothing about
  * this job needs it resident.
  *
+ * PREFLIGHT BEFORE BYTES
+ * Everything this job needs from another module is proven in preflight(), which
+ * runs before a socket is opened. Run 32057560889 downloaded ~1.3GB over 58
+ * minutes and then died on `streamTxtFeed is not a function`; the check that
+ * would have caught it costs about a millisecond. It asserts more than
+ * existence — it streams a synthetic feed and checks that the columns the
+ * census actually reads still land where it expects, because a silently
+ * renamed field would not crash, it would report the whole catalog as absent.
+ *
+ * FEED FRESHNESS
+ * A stale feed is worse than no feed here. Sightings resolve least-condemning-
+ * wins, so a three-year-old snapshot listing a sku as in-stock MASKS a death
+ * the current feed would have shown. Feeds older than MAX_FEED_AGE_DAYS are
+ * therefore excluded at discovery, before they are downloaded — which is also
+ * where the runtime goes.
+ *
  * Run (Actions only — RAKUTEN_FTP_PASSWORD is a repo secret):
  *   node newegg-dead-sku-audit.cjs [--prev <state.json>] [--skip-download]
+ *                                  [--max-feed-age-days N] [--allow-stale-feeds]
  */
 
 const fs = require('fs');
+const os = require('os');
+const zlib = require('zlib');
 const path = require('path');
 const SftpClient = require('ssh2-sftp-client');
-const { streamTxtFeed } = require('./sftp-ingest.cjs');
+const ingest = require('./sftp-ingest.cjs');
+const { streamTxtFeed } = ingest;
 
 const ROOT = __dirname;
 const FEED_DIR = path.join(ROOT, 'catalog-build', 'feeds');
@@ -64,6 +84,14 @@ const PREV_PATH = argOf('--prev');
 const SKIP_DOWNLOAD = argv.includes('--skip-download');
 const LOCAL_FEEDS = (argOf('--local-feed') || '').split(',').filter(Boolean);
 const UNKNOWN_FAIL_PCT = 5;   // same completeness gate as the Best Buy census
+
+// A full catalog feed is Newegg's statement of what it sells TODAY. The main mp
+// feed regenerates daily; 14 days is slack for a holiday gap, not a licence to
+// read a 2023 file. Raise with --max-feed-age-days, or take the whole gate off
+// with --allow-stale-feeds, and the report will say you did.
+const MAX_FEED_AGE_DAYS = Number(argOf('--max-feed-age-days') || process.env.NEWEGG_FEED_MAX_AGE_DAYS || 14);
+const ALLOW_STALE_FEEDS = argv.includes('--allow-stale-feeds');
+const feedAgeDays = (mtime, now = Date.now()) => (now - new Date(mtime).getTime()) / 86400000;
 
 const bar = '─'.repeat(96);
 const pct = (n, d) => (d ? `${(100 * n / d).toFixed(1)}%` : '—');
@@ -139,11 +167,143 @@ async function discoverFeeds(sftp) {
   return found;
 }
 
+/**
+ * Split discovered feeds into the ones this census may trust and the ones it
+ * must not, by age.
+ *
+ * WHY AGE IS A CORRECTNESS CONCERN AND NOT A TIDINESS ONE
+ * Sightings resolve least-condemning-wins (see SIGHTING_RANK): across feeds,
+ * the most generous verdict for a sku is the one that sticks. That is right
+ * when every feed is a current statement — one feed saying in-stock settles
+ * "can this be bought". It is exactly wrong when a feed is a 2023 snapshot: an
+ * `alive` from it OVERRIDES the current feed and hides a sku that has since
+ * died. A stale feed cannot reveal a death; it can only conceal one.
+ *
+ * The MKPL feed measured mtime 2023-03-16 against mp's 2026-08-17 — same
+ * listing call, same field, so this is Newegg's timestamp and not a unit bug.
+ */
+function partitionFeedsByFreshness(discovered, { maxAgeDays = MAX_FEED_AGE_DAYS, allowStale = ALLOW_STALE_FEEDS, now = Date.now() } = {}) {
+  const fresh = [], stale = [];
+  for (const f of discovered) {
+    const ageDays = feedAgeDays(f.mtime, now);
+    const entry = { ...f, ageDays };
+    // An unparseable mtime is not evidence of staleness — keep the feed and let
+    // the census read it rather than dropping coverage on a bad timestamp.
+    if (!Number.isFinite(ageDays) || ageDays <= maxAgeDays || allowStale) fresh.push(entry);
+    else stale.push({ ...entry, reason: `mtime ${new Date(f.mtime).toISOString().slice(0, 10)} is ${ageDays.toFixed(0)}d old, over the ${maxAgeDays}d ceiling` });
+  }
+  return { fresh, stale };
+}
+
+/**
+ * Prove every cross-module dependency BEFORE the download phase.
+ *
+ * Cheap enough to be unconditional, and it checks the contract rather than the
+ * symbol: a synthetic feed goes through the real streamTxtFeed, and the columns
+ * the census reads are asserted to land where it expects. A renamed field would
+ * not throw at import — it would quietly make every sku look absent, which on
+ * this catalog means condemning 1,725 rows that have no other retailer.
+ *
+ * Throws on the first failure. Returns a short list of what it proved.
+ */
+async function preflight() {
+  const checked = [];
+  const need = (name, val, kind = 'function') => {
+    if (typeof val !== kind) {
+      throw new Error(`preflight: ${name} is ${val === undefined ? 'missing' : typeof val} — expected a ${kind}. ` +
+        `Check that sftp-ingest.cjs still exports it (it must also keep its \`require.main === module\` guard, ` +
+        `or requiring it starts a second ingest).`);
+    }
+    checked.push(name);
+  };
+
+  // 1. The imports this file cannot run without.
+  need('sftp-ingest.streamTxtFeed', streamTxtFeed);
+  need('sftp-ingest.DEFAULT_FIELD_ORDER', ingest.DEFAULT_FIELD_ORDER, 'object');
+  need('classifySighting', classifySighting);
+  need('strikeVerdict', strikeVerdict);
+  need('discoverFeeds', discoverFeeds);
+  need('partitionFeedsByFreshness', partitionFeedsByFreshness);
+
+  // 2. Requiring the ingest must not have started one. If the guard is ever
+  //    removed, a background SFTP session competes with ours for the same
+  //    throttled endpoint — which is what made one feed take 2,973 seconds.
+  if (typeof ingest.parseTxtFeed !== 'function') {
+    throw new Error('preflight: sftp-ingest.cjs did not export parseTxtFeed — the module shape changed');
+  }
+
+  // 3. The parser contract, end to end, on a feed we build here.
+  //
+  //    The fixture is written at ABSOLUTE column positions from the Rakuten
+  //    Product Catalog spec (Appendix A), deliberately NOT derived from
+  //    DEFAULT_FIELD_ORDER. Building it from the same array it is meant to
+  //    check would agree with itself no matter what the array said, and a
+  //    column inserted upstream would slide `availability` one place left
+  //    without a single test going red — every sku would then read as
+  //    unbuyable or absent, and this census condemns on absence.
+  const WIRE_POSITIONS = {
+    sku: 0, newegg_item_number: 2, is_deleted: 7,
+    sale_price: 12, retail_price: 13, availability: 22,
+  };
+  const FIELD_COUNT = 38;
+  const cell = (f) => `${f}#v`;
+  const cells = new Array(FIELD_COUNT).fill('');
+  for (const [f, i] of Object.entries(WIRE_POSITIONS)) cells[i] = cell(f);
+  const line = cells.join('|');
+  const fixture = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'newegg-preflight-')), 'fixture.txt.gz');
+  fs.writeFileSync(fixture, zlib.gzipSync(Buffer.from(
+    [`HDR|${NEWEGG_MID}|Newegg|20260817`, line, line, 'TRL|2', ''].join('\n'), 'utf8')));
+
+  const seen = [];
+  let res;
+  try {
+    res = await streamTxtFeed(fixture, (rec) => { seen.push(rec); });
+  } finally {
+    try { fs.rmSync(path.dirname(fixture), { recursive: true, force: true }); } catch { /* tmp */ }
+  }
+
+  if (seen.length !== 2) throw new Error(`preflight: streamTxtFeed yielded ${seen.length} records from a 2-record feed`);
+  if (res.recordCount !== 2) throw new Error(`preflight: streamTxtFeed reported recordCount=${res.recordCount}, expected 2`);
+  // The truncation guard is only as good as this number being real.
+  if (res.trailerCount !== 2) throw new Error(`preflight: streamTxtFeed reported trailerCount=${res.trailerCount}, expected 2 — the TRL trailer is no longer parsed, so a short read would read as "these skus are gone"`);
+  for (const [f, i] of Object.entries(WIRE_POSITIONS)) {
+    if (seen[0][f] !== cell(f)) {
+      throw new Error(`preflight: the census reads \`${f}\`, which the feed spec puts at column ${i}, ` +
+        `but the parser returned ${JSON.stringify(seen[0][f] === undefined ? '(no such field)' : seen[0][f])}. ` +
+        `DEFAULT_FIELD_ORDER in sftp-ingest.cjs and this census disagree about the wire format — ` +
+        `every sku would read as absent, and absence is how this job condemns a row.`);
+    }
+  }
+  checked.push(`streamTxtFeed contract (2 records, TRL trailer, ${Object.keys(WIRE_POSITIONS).length} columns at spec positions)`);
+
+  // 4. The catalog this census is about.
+  const partsPath = path.join(ROOT, 'src', 'data', 'parts.js');
+  if (!fs.existsSync(partsPath)) throw new Error(`preflight: ${path.relative(ROOT, partsPath)} not found`);
+  checked.push('src/data/parts.js present');
+
+  return checked;
+}
+
 // Exported before the entrypoint so `require()` can reach the decision rules
 // without connecting to SFTP or reading the catalog.
-module.exports = { classifySighting, strikeVerdict, SIGHTING_RANK, FULL_CATALOG_RE };
+module.exports = { classifySighting, strikeVerdict, SIGHTING_RANK, FULL_CATALOG_RE, partitionFeedsByFreshness, preflight, feedAgeDays };
 
 if (require.main === module) (async () => {
+  // ── Preflight ───────────────────────────────────────────────────────────
+  // Before the socket, before the bytes. Everything here is local and takes
+  // about a millisecond; the alternative is finding out at minute 58.
+  const t0 = Date.now();
+  let proved;
+  try {
+    proved = await preflight();
+  } catch (e) {
+    console.error(`\n✗ PREFLIGHT FAILED: ${e.message}`);
+    console.error('  Nothing was downloaded. Fix the above and re-dispatch.');
+    process.exit(1);
+  }
+  log(`Preflight OK in ${Date.now() - t0}ms — ${proved.length} checks:`);
+  for (const c of proved) log(`    ✓ ${c}`);
+
   if (!FTP_PASS && !LOCAL_FEEDS.length) {
     console.error('ERROR: RAKUTEN_FTP_PASSWORD required (repo secret; Actions only), or --local-feed <path>.');
     process.exit(1);
@@ -217,19 +377,29 @@ if (require.main === module) (async () => {
   fs.mkdirSync(path.join(FEED_DIR, NEWEGG_MID), { recursive: true });
   const feeds = [];
   let discovered = [];
+  let staleFeeds = [];   // discovered, deliberately not downloaded, reported
 
   // --local-feed re-parses feed files already on disk and never opens a socket.
   // Same parser, same verdicts; it exists so the matching path can be exercised
   // without the SFTP secret, and so a downloaded feed can be re-read for free.
   if (LOCAL_FEEDS.length) {
-    for (const p of LOCAL_FEEDS) {
+    const localCandidates = LOCAL_FEEDS.map((p) => {
       const st = fs.statSync(p);
-      feeds.push({
+      return {
         remote: '(local)', name: path.basename(p), kind: /_MKPL\./i.test(p) ? 'MKPL' : 'mp',
         size: st.size, mtime: st.mtimeMs, local: p,
-      });
-      log(`  local feed ${p} (${(st.size / 1048576).toFixed(1)}MB)`);
+      };
+    });
+    // The same age gate as the SFTP path. A stale feed masks deaths whether it
+    // arrived over the wire this run or was left on disk by the last one.
+    const parted = partitionFeedsByFreshness(localCandidates);
+    staleFeeds = parted.stale;
+    for (const f of staleFeeds) log(`  ⏭  SKIPPING local ${f.name} — ${f.reason}`);
+    for (const f of parted.fresh) {
+      feeds.push(f);
+      log(`  local feed ${f.local} (${(f.size / 1048576).toFixed(1)}MB)`);
     }
+    if (!feeds.length) throw new Error(`every --local-feed is over the ${MAX_FEED_AGE_DAYS}-day freshness ceiling`);
   } else {
   const sftp = new SftpClient();
   try {
@@ -240,7 +410,21 @@ if (require.main === module) (async () => {
     for (const f of discovered) {
       log(`  found ${f.kind.padEnd(4)} ${f.remote} (${(f.size / 1048576).toFixed(0)}MB, mtime ${new Date(f.mtime).toISOString()})`);
     }
-    for (const f of discovered) {
+
+    // Age gate BEFORE download — a feed we will not read is a feed we must not
+    // spend half an hour pulling. Skipping the 886MB MKPL file here is the
+    // difference between a ~10 minute job and a ~58 minute one.
+    const parted = partitionFeedsByFreshness(discovered);
+    staleFeeds = parted.stale;
+    for (const f of staleFeeds) {
+      log(`  ⏭  SKIPPING ${f.kind} ${f.name} — ${f.reason}`);
+      log(`      ${(f.size / 1048576).toFixed(0)}MB not downloaded. A stale feed cannot reveal a death, only mask one.`);
+    }
+    if (!parted.fresh.length) {
+      throw new Error(`every discovered feed is over the ${MAX_FEED_AGE_DAYS}-day freshness ceiling — ` +
+        `refusing to run a census with no current feed. Re-dispatch with --allow-stale-feeds only if you mean it.`);
+    }
+    for (const f of parted.fresh) {
       const local = path.join(FEED_DIR, NEWEGG_MID, f.name);
       if (SKIP_DOWNLOAD && fs.existsSync(local)) {
         log(`  ⏭  ${f.name} (--skip-download, using local copy)`);
@@ -391,6 +575,16 @@ if (require.main === module) (async () => {
   console.log('  by category (dead / pending / unbuyable / total):');
   Object.entries(byCat).sort((a, b) => (b[1].dead + b[1].pending + b[1].unbuyable) - (a[1].dead + a[1].pending + a[1].unbuyable))
     .forEach(([k, v]) => console.log(`    ${k.padEnd(18)} ${String(v.dead).padStart(5)} ${String(v.pending).padStart(6)} ${String(v.unbuyable).padStart(6)} ${String(v.total).padStart(7)}`));
+  if (staleFeeds.length) {
+    console.log('');
+    console.log('  COVERAGE: this census read only the feeds below the freshness ceiling.');
+    for (const f of staleFeeds) {
+      console.log(`    excluded ${f.kind.padEnd(4)} ${f.name} — ${f.reason}`);
+    }
+    console.log(`    Verdicts are made against: ${feedStats.filter((f) => f.ok).map((f) => f.kind).join(', ') || '(none)'}.`);
+    console.log('    A sku carried ONLY by an excluded feed reads as absent here, which is one');
+    console.log('    strike, not a death — the second must still come from a different snapshot.');
+  }
   if (sameSnapshotAsLastRun) {
     console.log('');
     console.log('  NOTE: the feed snapshot is byte-identical to the previous run. No strike was');
@@ -407,6 +601,10 @@ if (require.main === module) (async () => {
     feedsComplete: feedsOk,
     brokenFeed,
     sameSnapshotAsLastRun,
+    freshness: { maxAgeDays: MAX_FEED_AGE_DAYS, allowStale: ALLOW_STALE_FEEDS },
+    // Discovered and deliberately not read. A consumer of this report needs to
+    // know which feeds a verdict was NOT checked against.
+    excludedFeeds: staleFeeds.map(({ local, ...f }) => f),
     summary: {
       dead: dead.length, pending: pending.length, unbuyable: unbuyable.length,
       alive: alive.length, unknown: unknown.length,
@@ -424,6 +622,7 @@ if (require.main === module) (async () => {
     updatedAt: new Date().toISOString(),
     snapshotId,
     feeds: feedStats.map((f) => ({ name: f.name, kind: f.kind, size: f.size, mtime: f.mtime, ok: !!f.ok })),
+    excludedFeeds: staleFeeds.map((f) => ({ name: f.name, kind: f.kind, mtime: f.mtime, ageDays: Math.round(f.ageDays) })),
     streak,
   }, null, 2));
   console.log(`\nReport -> ${path.relative(ROOT, OUT)}`);
@@ -444,6 +643,12 @@ if (require.main === module) (async () => {
     md.push(`\n**Orphaned rows** (dead/unbuyable Newegg link and nothing else priced): **${orphanRows.length}**` +
       ` — ${orphanRows.filter((o) => o.quarantined).length} already quarantined\n`);
     if (!feedsOk) md.push(`\n> **Incomplete census.** ${brokenFeed}. Every unseen sku is UNKNOWN, not dead.\n`);
+    if (staleFeeds.length) {
+      md.push(`\n> **Feeds excluded as stale** (ceiling ${MAX_FEED_AGE_DAYS}d): ` +
+        staleFeeds.map((f) => `\`${f.name}\` — ${f.reason}`).join('; ') +
+        `. Not downloaded. A stale feed cannot reveal a death, only mask one — sightings resolve` +
+        ` least-condemning-wins, so an old \`in-stock\` would override the current feed.\n`);
+    }
     if (sameSnapshotAsLastRun) md.push('\n> Feed snapshot identical to the previous run — no strike advanced.\n');
     fs.writeFileSync(process.env.GITHUB_STEP_SUMMARY, md.join('\n') + '\n', { flag: 'a' });
   }
