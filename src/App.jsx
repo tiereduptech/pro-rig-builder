@@ -47,12 +47,82 @@ function productSlug(p){
     .replace(/-+/g,"-").replace(/^-|-$/g,"").slice(0,80).replace(/-$/,"");
 }
 
+// ─── PRICE FRESHNESS ─────────────────────────────────────────────
+// A price-history point records what OUR CATALOG said on a given day, not what
+// the retailer charged: record-price-snapshot.js reads src/data/parts.js and
+// never contacts a retailer. So a daily point proves we re-read our own file —
+// nothing more. A retailer nobody refreshes still produces a full 90 days of
+// identical points, which is how 1,561 dead-flat charts came to be captioned
+// "N days tracked".
+//
+// The only evidence a price was checked against the retailer is the stamp the
+// write path leaves on the deal. Fields below are the ones the pipeline
+// actually writes (verified against the live catalog, not transcribed):
+//   priceConfirmedAt    amazon, newegg, bestbuy, newegg_marketplace
+//   matchedAt           newegg, newegg_openbox, newegg_marketplace
+//   priceUnconfirmedAt  amazon — an explicit "we tried and could NOT confirm"
+//   refreshedAt         newegg — ZERO rows today, and that absence is the point:
+//                       refresh-newegg-prices.cjs:466 writes it on a successful
+//                       re-price, and its workflow cites "0 of 5,428 products
+//                       carry refreshedAt" as the evidence the job never worked.
+//                       Counted here anyway, because the moment that cron is
+//                       re-enabled it becomes the live Newegg confirmation stamp
+//                       and a reader that ignored it would render 2,666 freshly
+//                       confirmed rows as unverified.
+// Anything with no stamp has never been confirmed by any job.
+//
+// STALENESS THRESHOLD — derived from the pipeline's own slowest cadence rather
+// than picked by feel. verify-catalog.yml runs tier 1 every 2 days, tier 2
+// every 3, tiers 3 and 4 weekly; sftp-ingest.yml runs daily. So the slowest
+// scheduled confirmation any row can expect is WEEKLY. 14 days is two full
+// missed cycles of that slowest tier — long enough that normal jitter, a
+// skipped run, or a weekend never trips it, short enough that a genuinely
+// abandoned retailer is caught within a fortnight.
+//
+// Note for prerendering: prerender.yml runs daily (06:00 UTC), so a baked page
+// re-evaluates freshness every day and can drift at most ~24h.
+const PRICE_STALE_AFTER_DAYS = 14;
+
+const dayOnly = (t) => (t ? String(t).slice(0, 10) : null);
+
+// Returns { verified, at, ageDays, reason } for one retailer's price on a product.
+// reason: "ok" | "unstamped" | "stale" | "unconfirmed"
+function priceFreshness(product, retailer){
+  const d = product && product.deals && product.deals[retailer];
+  if (!d || typeof d !== "object") return { verified:false, at:null, ageDays:null, reason:"unstamped" };
+
+  // most recent positive confirmation of any kind
+  const stamps = [dayOnly(d.priceConfirmedAt), dayOnly(d.matchedAt), dayOnly(d.refreshedAt)]
+    .filter(Boolean).sort();
+  const at = stamps.length ? stamps[stamps.length - 1] : null;
+  if (!at) return { verified:false, at:null, ageDays:null, reason:"unstamped" };
+
+  // an explicit failure that is NEWER than the last success wins — the most
+  // recent thing we know is that we could not confirm this price.
+  const failedAt = dayOnly(d.priceUnconfirmedAt);
+  if (failedAt && failedAt > at) return { verified:false, at:failedAt, ageDays:null, reason:"unconfirmed" };
+
+  const ageDays = Math.floor((Date.now() - Date.parse(at + "T00:00:00Z")) / 86400000);
+  if (!Number.isFinite(ageDays) || ageDays > PRICE_STALE_AFTER_DAYS) {
+    return { verified:false, at, ageDays: Number.isFinite(ageDays) ? ageDays : null, reason:"stale" };
+  }
+  return { verified:true, at, ageDays, reason:"ok" };
+}
+
 // Per-retailer 90-day price history chart. Fetches /price-history/<slug>.json
 // on mount. Renders a compact inline SVG line for one retailer.
+//
+// Renders NOTHING unless the price is verified-fresh. Callers should gate the
+// disclosure button on priceFreshness(...).verified too, so an unverified
+// retailer never offers a "90-day price history" toggle in the first place;
+// the guard here is the backstop for any caller that forgets.
 function PriceHistoryChart({ product, retailer }){
   const [state, setState] = useState({ status: "loading", points: null });
+  const fresh = priceFreshness(product, retailer);
   useEffect(() => {
     let cancelled = false;
+    // Don't even fetch history we are not allowed to draw.
+    if (!fresh.verified) { setState({ status: "unverified", points: null }); return; }
     const slug = productSlug(product);
     if (!slug) { setState({ status: "none", points: null }); return; }
     fetch(DATA_BASE + "/price-history/" + slug + ".json")
@@ -65,7 +135,18 @@ function PriceHistoryChart({ product, retailer }){
       })
       .catch(() => { if (!cancelled) setState({ status: "none", points: null }); });
     return () => { cancelled = true; };
-  }, [product && product.id, retailer]);
+  }, [product && product.id, retailer, fresh.verified]);
+
+  // Unverified: say so plainly rather than drawing a flat line that reads as
+  // "we checked this every day and it never moved".
+  if (!fresh.verified) {
+    const msg = fresh.reason === "stale"
+      ? "Price last verified " + fresh.at + " (" + fresh.ageDays + " days ago). History hidden until it is re-checked."
+      : fresh.reason === "unconfirmed"
+      ? "We could not confirm this price with the retailer on " + fresh.at + ". History hidden."
+      : "This price has not been verified against the retailer, so no price history is shown.";
+    return <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mute)",padding:"10px 14px"}}>{msg}</div>;
+  }
 
   if (state.status === "loading") {
     return <div style={{fontFamily:"var(--ff)",fontSize:12,color:"var(--mute)",padding:"10px 14px"}}>Loading price history\u2026</div>;
@@ -95,7 +176,9 @@ function PriceHistoryChart({ product, retailer }){
         <circle cx={x(pts.length-1)} cy={y(cur)} r="3" fill="var(--accent)" />
       </svg>
       <div style={{display:"flex",justifyContent:"space-between",fontFamily:"var(--mono)",fontSize:9,color:"var(--mute)",marginTop:4}}>
-        <span>{first}</span><span>{pts.length} days tracked</span><span>{last}</span>
+        <span>{first}</span>
+        <span>{"Price verified " + fresh.at + (fresh.ageDays === 0 ? " (today)" : fresh.ageDays === 1 ? " (1 day ago)" : " (" + fresh.ageDays + " days ago)")}</span>
+        <span>{last}</span>
       </div>
     </div>
   );
@@ -3855,8 +3938,10 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                     <div style={{background:ri===0?"var(--mint)":"var(--bg4)",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy</div>
                   </div>
                 </a>
+                {priceFreshness(p,r.name).verified&&<React.Fragment>
                 <button onClick={()=>setHistOpen(histOpenHere?null:histKey)} style={{display:"flex",alignItems:"center",gap:5,background:"none",border:"none",cursor:"pointer",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",padding:"3px 12px"}}>{histOpenHere?"\u25b2 Hide price history":"\u25bc 90-day price history"}</button>
                 {histOpenHere&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,marginBottom:4}}><PriceHistoryChart product={p} retailer={r.name}/></div>}
+                </React.Fragment>}
                 </React.Fragment>;})
               :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"10px 12px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                 <div>
@@ -4292,8 +4377,10 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                           <div style={{background:ri===0?"var(--mint)":"var(--bg3)",border:ri===0?"none":"1px solid var(--bdr2)",borderRadius:6,padding:"8px 16px",fontFamily:"var(--ff)",fontSize:13,fontWeight:700,color:ri===0?"var(--bg)":"var(--txt)"}}>Buy →</div>
                         </div>
                       </a>
+                      {priceFreshness(p,r.name).verified&&<React.Fragment>
                       <button onClick={()=>setHistOpen(histOpenHere?null:histKey)} style={{display:"flex",alignItems:"center",gap:5,background:"none",border:"none",cursor:"pointer",fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",letterSpacing:"0.04em",textTransform:"uppercase",padding:"3px 14px"}}>{histOpenHere?"\u25b2 Hide price history":"\u25bc 90-day price history"}</button>
                       {histOpenHere&&<div style={{background:"var(--bg2)",border:"1px solid var(--bdr)",borderRadius:8,marginBottom:4}}><PriceHistoryChart product={p} retailer={r.name}/></div>}
+                      </React.Fragment>}
                       </React.Fragment>;})
                     :<a href={p.deals?.amazon?.url||"#"} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 16px",borderRadius:8,background:"var(--mint3)",border:"1px solid var(--mint)33",textDecoration:"none"}}>
                         <div><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>Amazon</span><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--sky)",marginTop:3}}>✓ In Stock</div></div>

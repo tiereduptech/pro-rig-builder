@@ -1,0 +1,104 @@
+name: Best Buy dead-SKU audit (read-only)
+
+# =============================================================================
+#  Answers ONE question across all 1,523 Best Buy rows: how many point at a sku
+#  Best Buy no longer sells?
+#
+#  Unlike the price question (probe-bestbuy-price-truth.mjs), this one is
+#  decidable today. It needs no live PDP — www.bestbuy.com is behind Akamai and
+#  refuses datacenter IPs, so a runner cannot read one either — and no ground
+#  truth. Best Buy's own Developer API either knows a sku or it does not. A sku
+#  it does not know is a broken affiliate link and a price attached to nothing;
+#  there is no "which field is right" argument to have. A 20-sku hand probe hit
+#  6 of them, and 30% over the full set would be ~450 rows, which is worth
+#  measuring exactly.
+#
+#  Read-only by construction, the same shape as feed-overlap-audit.yml:
+#  contents: read, no commit step, no write to parts.js, and a step that asserts
+#  the tree came back clean. The script's only output is a report JSON under
+#  catalog-build/, which .gitignore excludes — it leaves as an artifact, not a
+#  commit. Acting on the findings is a separate, deliberate run.
+#
+#  Dispatch-only: this is a measurement, not a schedule. Nothing downstream
+#  consumes it yet, so a cron would burn API quota to produce a number nobody
+#  reads. Add a schedule when something depends on the trend.
+#
+#  Runtime ~4-10 min: ~16 bulk requests for the whole catalog, then one
+#  individual request per sku the bulk pass omitted, paced at ~3 req/sec under
+#  Best Buy's documented 5/sec.
+#
+#  The job goes RED if more than 5% of skus come back UNKNOWN (API errors rather
+#  than verdicts) — see the completeness gate at the foot of the script. A green
+#  run means the number in the summary is the number.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: 'Limit to the first N skus (blank or 0 = all 1,523; use for a smoke run)'
+        required: false
+        default: ''
+        type: string
+
+permissions: {}
+
+# Not the main-writer lock — this workflow never pushes. It serialises only
+# against itself so two dispatches cannot double-spend the Best Buy quota.
+concurrency:
+  group: bestbuy-dead-sku-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # No `npm ci`: the script imports only node builtins, and src/data/parts.js
+      # is a barrel over pure-data modules with no dependencies of their own.
+
+      - name: Audit every Best Buy sku against the Developer API (read-only)
+        env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
+          N: ${{ github.event.inputs.n }}
+        run: |
+          set -uo pipefail
+          if [ -z "${BESTBUY_API_KEY:-}" ]; then
+            echo "::error::BESTBUY_API_KEY is not set on this repository. Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          ARGS=""
+          if [ -n "${N:-}" ] && [ "$N" != "0" ]; then ARGS="--n $N"; fi
+          node bestbuy-dead-sku-audit.mjs $ARGS
+
+      - name: Assert the tree came back clean
+        if: always()
+        run: |
+          # Stronger than "parts.js is unchanged": a read-only audit must leave
+          # NOTHING behind, tracked or untracked. catalog-build/ is gitignored,
+          # so the report does not count -- anything else showing up here is the
+          # script writing where it said it would not.
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a read-only audit modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the audit wrote nothing to the repo."
+
+      - name: Upload the audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bestbuy-dead-sku-audit
+          path: catalog-build/bestbuy-dead-sku-audit.json
+          if-no-files-found: error
+          retention-days: 90
