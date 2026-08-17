@@ -4,7 +4,7 @@
 **Scope:** everything stranded by the move off Railway — credentials that never
 reached GitHub secrets, jobs that never got a workflow, and jobs that have a
 workflow but do not actually run.
-**Status:** 5 of 21 findings fixed (see §7). The rest are open and tracked in §8.
+**Status:** 6 of 21 findings fixed (see §7). The rest are open and tracked in §8.
 
 ---
 
@@ -38,7 +38,7 @@ failing job rather than by noticing.
   dates and said so; that limitation is now removed, and it changed two
   conclusions materially (§1.1, §6.1).
 
-Reproduce any table here with the commands in §8.
+Reproduce any table here with the commands in §10.
 
 ---
 
@@ -116,10 +116,12 @@ retailer. The fields that actually occur on deal objects:
 re-pricer has never had a successful production run — its own workflow cites
 "0 of 5,428 products carry refreshedAt" for exactly this reason.
 
-> **Open follow-up:** `priceFreshness()` in `src/App.jsx:87` reads only
-> `priceConfirmedAt` and `matchedAt`. The moment the Newegg re-pricer runs it will
-> stamp `refreshedAt`, and the UI will still render those rows as unverified.
-> `scripts/assert-retailer-freshness.cjs` counts all three; `App.jsx` counts two.
+> **FIXED 2026-08-17.** `priceFreshness()` in `src/App.jsx` read only
+> `priceConfirmedAt` and `matchedAt`, so the moment the Newegg re-pricer ran it would
+> have stamped `refreshedAt` and the UI would still have rendered 2,666 freshly
+> confirmed rows as unverified. All three stamps are now counted, and the list is
+> asserted in sync with `CONFIRMATION_STAMPS` in
+> `scripts/assert-retailer-freshness.cjs`.
 
 ---
 
@@ -131,8 +133,8 @@ the Newegg SFTP feed is dispatch-only. And the SFTP feed does not complete.
 
 | Workflow | Cron (UTC) | Runs | Last success | Health |
 | --- | --- | --: | --- | --- |
-| `epik-watchdog.yml` | `*/30 * * * *` | 100 | 2026-08-17 | 13% flake rate |
-| `asin-identity-audit.yml` | `0 3 * * *` | 13 | 2026-08-17 | Healthy since 2026-08-12 |
+| `epik-watchdog.yml` | `*/30 * * * *` | 100 | 2026-08-17 | 14% failures — explained, §8.1 |
+| `asin-identity-audit.yml` | `0 3 * * *` | 13 | 2026-08-17 | Healthy since 2026-08-12, §8.1 |
 | `prerender.yml` | `0 6 * * *` | 95 | 2026-08-17 | Healthy |
 | `price-history.yml` | `0 7 * * *` | 92 | 2026-08-17 | 0 failures — **and it is the illusion** |
 | `verify-catalog.yml` | `0 8 */2` · `0 9 */3` · `0 10/11 * * 1` | 100 | 2026-08-17 | Healthy — the one real fetch |
@@ -183,7 +185,7 @@ wired. The credential gap is small. The scheduling gap is not.
 
 | # | Script / dataset | What it does | Last ran | Would anything notice? |
 | --: | --- | --- | --- | --- |
-| 9 | **Best Buy price refresh** | *Does not exist.* No script writes `priceConfirmedAt` for a bestbuy deal. Prices captured once at merge by `bestbuy-merge.js`. | Ingest ~2026-04-20 | **No.** 139,080 fabricated points made it look alive. |
+| 9 | **Best Buy price refresh** | *Does not exist.* No script writes `priceConfirmedAt` for a bestbuy deal. Prices captured once at merge by `bestbuy-merge.js`. **Measured in §9: only 17.0% of the 1,523 rows are publishable.** | Ingest ~2026-04-20 | **No.** 139,080 fabricated points made it look alive. |
 | 10 | `refresh-newegg-prices.cjs` | Daily Newegg re-price / re-match | **2026-07-20** (94 scheduled runs, then cron commented out) | Partly — 83% flat series, masked by `matchedAt`. |
 | 11 | `ingest-msi-impact-v2.cjs` | MSI Impact catalog (id 16410), UPC-matched | Never successfully in CI | **No.** 157 rows, zero stamps of any kind. |
 | 12 | `fetch-amazon-reviews.js`<br>`fetch-bestbuy-reviews.js` | Up to 5 reviews/product into `catalog-build/reviews.json` | 2026-05-18 | **Visible but silent** — rendered by `App.jsx` + `ReviewStars.jsx` with no staleness signal. |
@@ -430,9 +432,136 @@ to be *present*, or `loadCreds()` opens the circuit as `not_configured` before
 the mocked fetch is reached. They pass with any non-empty value, so they are
 green in CI on real secrets and red on every laptop.
 
+### 8.1 Flake rates — recorded, not gated
+
+Surfaced by §7.4 but deliberately not failed on. A flake-rate threshold picked
+without evidence is how a gate starts crying wolf, and both of these turn out to
+have explanations rather than needing a threshold.
+
+**`asin-identity-audit.yml` — 6 failures in 12 scheduled runs (50%). Already
+fixed; nothing to do.** All six are consecutive and historical: 2026-08-06
+through 2026-08-11. Green for six consecutive days since. The cause, from the
+2026-08-11 log:
+
+```
+Error: ENOENT: no such file or directory, open 'C:\rigfinder\PRB-credentials.csv'
+##[error]Process completed with exit code 1
+```
+
+That is the same Windows-CSV credential defect fixed in `recheck-dead-asins.mjs`
+in §7.2, in a second script — `amazon-asin-identity-audit.mjs` — where commit
+`f23481ed55b` ("fix(ci): wire PA API creds + fail loudly when absent") had
+already fixed it on 2026-08-11. The 50% rate is an artifact of a 12-run window
+that straddles the fix, not an ongoing flake. Worth noting that the same bug
+appeared independently in two scripts; a third occurrence would justify a shared
+credential helper.
+
+**`epik-watchdog.yml` — 14 failures in 100 scheduled runs (14%). Not the bot
+challenge.** The hypothesis was that these were the known origin bot protection.
+They are not, and the workflow already proves it cannot be: a bot block produces
+`verdict='blocked'` and only escalates to a failure after `BLOCKED_MAX: 6`
+consecutive blocked runs, so a transient challenge stays green by design. Across
+all 14 failures, three distinct real causes:
+
+| Count | Cause |
+| --: | --- |
+| 8 | `checked_at is N old (> 20 min) — the cron has stopped running`, with N running 46 min → 8.7 h |
+| 3 | `poll_failed` — could not fetch `raw.githubusercontent.com/...` |
+| 3 | poll PINNED to `66.223.49.32` and the box did not return its status file |
+
+The eight `checked_at` failures are one incident, not eight: the ages form a
+single ascending sequence (46 min, 2.2 h, 3.2 h, 5.3 h, 6.3 h, 7.2 h, 7.8 h,
+8.7 h), which is one ~8.7-hour outage of the Epik box's *own* server-side cron
+being re-reported every 30 minutes as it aged. The watchdog did its job
+correctly. The remaining six split between GitHub raw being transiently
+unreachable (genuine infrastructure flake, not actionable) and the origin not
+serving its status file when polled by IP.
+
+So: no threshold needed. The real follow-up is the ~8.7-hour box-cron outage,
+which nothing other than this watchdog appears to have noticed. Window measured:
+100 scheduled runs spanning 2026-08-14 → 2026-08-17.
+
 ---
 
-## 9. Reproducing this
+## 9. Best Buy dead-SKU census
+
+Run [32042836396](https://github.com/tiereduptech/pro-rig-builder/actions/runs/32042836396),
+`bestbuy-dead-sku-audit.mjs`, 2026-08-17, 24m27s, read-only, **0 UNKNOWN** — a
+clean pass where every verdict is solid and nothing was condemned on an API
+wobble. This is the measurement behind finding 9 and it is worse than the 20-sku
+hand probe suggested.
+
+### Publishable state of all 1,523 Best Buy rows
+
+| State | Rows | Share |
+| --- | --: | --: |
+| Dead sku — 404 twice | **483** | 31.7% |
+| Buyable, but stored price disagrees with the API | 438 | 28.8% |
+| Alive but unbuyable (`NotOrderable` 168, `SoldOut` 161) | 343 | 22.5% |
+| **Buyable, price agrees — genuinely publishable** | **259** | **17.0%** |
+
+Of the 483 dead SKUs, **379 are not quarantined** — they are live on the site
+now as affiliate links to products Best Buy no longer sells. 104 were already
+quarantined by other means.
+
+### Dead rate is a function of category churn
+
+| Category | Total | Dead | Rate |
+| --- | --: | --: | --: |
+| CPU | 39 | 25 | 64.1% |
+| Storage | 186 | 106 | 57.0% |
+| Motherboard | 168 | 93 | 55.4% |
+| RAM | 73 | 34 | 46.6% |
+| CPUCooler | 92 | 42 | 45.7% |
+| PSU | 90 | 28 | 31.1% |
+| Case | 162 | 47 | 29.0% |
+| GPU | 152 | 42 | 27.6% |
+| Monitor | 288 | 56 | 19.4% |
+| CaseFan | 75 | 9 | 12.0% |
+| Headset, Keyboard, Mouse, Microphone, Webcam, MousePad | 189 | **0** | 0.0% |
+
+Components get SKU-rotated as models refresh; peripherals persist. Not one
+peripheral SKU is dead. That shape argues for a refresher cadence weighted by
+category rather than a flat sweep.
+
+### The price disagreement is drift, not a comp-value bug
+
+601 of 1,040 alive rows disagree with the API, 440 by more than 10%. Crucially
+the disagreement is **bidirectional**:
+
+```
+our stored price HIGHER than API:  247   (we advertise more than Best Buy asks)
+our stored price LOWER  than API:  354   (we advertise less than Best Buy asks)
+identical:                         439
+delta (stored vs API)  p10 -27.2%  p25 -18.7%  median -6.3%  p75 +12.5%  p90 +25.0%
+```
+
+A systematic comp-value bug would push our stored prices consistently *below* the
+API, because the API would be publishing the struck-through higher figure. A
+roughly balanced spread centred near −6% is the signature of four months of
+ordinary price drift instead. That is evidence *for* writing the refresher, not
+against it — but it does not fully settle the comp-value question, because both
+our stored value and the API value could be comp. `probe-bestbuy-price-truth.mjs`
+against live PDPs is still the instrument for that.
+
+Supporting signal: the API's own `priceUpdateDate` is fresh — median 2026-08-06,
+662 of 1,040 stamped in 2026-08. The API is current; our copy is what is stale.
+
+### The two-strike rule earned its keep
+
+The bulk `products(sku in(...))` pass missed **1,039 of 1,522** SKUs that the
+individual re-check then proved alive. Had the audit trusted the bulk pass alone
+it would have declared 1,522 SKUs dead, of which **68% would have been false
+positives** — very nearly the whole Best Buy catalog. The individual GET is doing
+essentially all the real work here, which also explains the 24-minute runtime:
+the cost model is ~1,522 individual requests, not the ~16 bulk requests the
+script's header anticipated. Worth correcting in that header.
+
+---
+
+---
+
+## 10. Reproducing this
 
 ```bash
 # the gate — per-retailer freshness, exits 1 when a retailer goes quiet
