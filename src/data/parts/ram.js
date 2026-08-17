@@ -19,13 +19,7 @@ export default [
     "ecc": false,
     "rgb": true,
     "height": 40,
-    "deals": {
-      "amazon": {
-        "price": 109,
-        "url": "https://www.amazon.com/dp/B0CQCK7TYW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "value": 63,
     "memType": "DDR5",
     "formFactor": "UDIMM",
@@ -52,13 +46,7 @@ export default [
     "ecc": false,
     "rgb": true,
     "height": 56,
-    "deals": {
-      "amazon": {
-        "price": 179,
-        "url": "https://www.amazon.com/dp/B0CQCK7TYW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "value": 39,
     "memType": "DDR5",
     "formFactor": "UDIMM",
@@ -85,13 +73,7 @@ export default [
     "ecc": false,
     "rgb": true,
     "height": 56,
-    "deals": {
-      "amazon": {
-        "price": 249,
-        "url": "https://www.amazon.com/dp/B0CQCK7TYW?tag=tiereduptech-20",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "value": 53,
     "memType": "DDR5",
     "formFactor": "UDIMM",
