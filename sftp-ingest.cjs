@@ -132,26 +132,46 @@ async function walkAndDownload(sftp, manifest) {
 }
 
 // â”€â”€â”€ PHASE 2: PARSE PIPE-DELIMITED .txt.gz â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-async function parseTxtFeed(localPath) {
+/**
+ * streamTxtFeed(localPath, onRecord) — parse a gzipped pipe-delimited Rakuten
+ * product catalog, handing ONE record at a time to onRecord and keeping none.
+ *
+ * This is the primitive; parseTxtFeed() below is the buffering wrapper. They are
+ * one parser rather than two so a consumer that cannot afford to buffer (the
+ * dead-SKU census against the 886MB MKPL feed) and the nightly ingest cannot
+ * drift apart in how they read a row.
+ *
+ * Resolves { recordCount, trailerCount, header, lineNum }. The caller compares
+ * recordCount against trailerCount to detect a short read — a truncated feed
+ * that ends cleanly is indistinguishable from "these skus are gone" without it.
+ */
+async function streamTxtFeed(localPath, onRecord) {
+  if (typeof onRecord !== 'function') {
+    throw new TypeError('streamTxtFeed(localPath, onRecord): onRecord must be a function');
+  }
   return new Promise((resolve, reject) => {
-    const records = [];
     let header = null;
     let lineNum = 0;
+    let recordCount = 0;
     let trailerCount = null;
-    
+    let failed = false;
+
     const stream = fs.createReadStream(localPath).pipe(zlib.createGunzip());
     const rl = readline.createInterface({ input: stream, crlfDelay: Infinity });
-    
+
+    const fail = (e) => { if (failed) return; failed = true; rl.close(); stream.destroy(); reject(e); };
+
     rl.on('line', (line) => {
+      if (failed) return;
       lineNum++;
       if (!line) return;
-      
+
       // Trailer line: TRL|<count>
       if (line.startsWith('TRL|')) {
         trailerCount = parseInt(line.split('|')[1], 10);
         return;
       }
-      
+
       // Skip HDR metadata line: HDR|<mid>|<merchant>|<timestamp>
       if (line.startsWith('HDR|')) {
         return;
@@ -161,18 +181,27 @@ async function parseTxtFeed(localPath) {
       if (!header) {
         header = DEFAULT_FIELD_ORDER;
       }
-      
+
       const rec = {};
       for (let i = 0; i < header.length; i++) {
         rec[header[i]] = (fields[i] || '').trim();
       }
-      records.push(rec);
+      recordCount++;
+      // A throw from the consumer must abort the stream, not surface later as a
+      // silently short read that the truncation guard would call "gone".
+      try { onRecord(rec, recordCount); } catch (e) { fail(e); }
     });
-    
-    rl.on('close', () => resolve({ records, header, trailerCount, lineNum }));
-    rl.on('error', reject);
-    stream.on('error', reject);
+
+    rl.on('close', () => { if (!failed) resolve({ recordCount, trailerCount, header, lineNum }); });
+    rl.on('error', fail);
+    stream.on('error', fail);
   });
+}
+
+async function parseTxtFeed(localPath) {
+  const records = [];
+  const res = await streamTxtFeed(localPath, (rec) => { records.push(rec); });
+  return { records, header: res.header, trailerCount: res.trailerCount, lineNum: res.lineNum };
 }
 
 function normalizeFieldName(s) {
@@ -460,7 +489,19 @@ function writeParts(parts) {
 }
 
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-(async () => {
+// Exported so other jobs can share the parser instead of copying it. Everything
+// below the guard is the nightly ingest's own run.
+//
+// THE GUARD IS LEAD, NOT TRIM. Without `require.main === module` this file's
+// main IIFE fires on `require()`, so newegg-dead-sku-audit.cjs merely importing
+// the parser launched a SECOND full ingest in the background — a competing SFTP
+// session on an endpoint that throttles concurrent readers, and, had it run to
+// completion, a write to parts.js from a job declared read-only. Run
+// 32057560889 paid for that: ~1.3GB of duplicate downloads and a 535s/2973s
+// pair of feed pulls that contended with each other the whole way.
+module.exports = { streamTxtFeed, parseTxtFeed, DEFAULT_FIELD_ORDER, normUPC, normMPN };
+
+if (require.main === module) (async () => {
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
   NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
 
