@@ -1,0 +1,165 @@
+name: Newegg dead-SKU audit (read-only)
+
+# =============================================================================
+#  Answers ONE question across all 2,763 Newegg links (2,666 `newegg`, 60
+#  open-box, 37 marketplace): does Newegg still carry this sku, and can it be
+#  bought?
+#
+#  This is the counterpart of bestbuy-dead-sku-audit.yml and it carries more
+#  weight: 1,725 of those rows have NO other priced retailer, so whatever this
+#  reports is the difference between a link cleanup and a catalog shrink.
+#
+#  WHY THE FEED, NOT THE SEARCH API
+#  refresh-newegg-prices.cjs resolves by name/UPC through Rakuten product
+#  search, where a miss is a matcher outcome (`no_results`, `variant_rejected`)
+#  and not evidence of absence — the script says so and refuses to delete on it.
+#  The product catalog feed is Newegg's own enumeration of what it sells, keyed
+#  by the item numbers the catalog already stores, carrying `is_deleted` and
+#  `availability` per row.
+#
+#  TWO STRIKES, AND THE SNAPSHOT RULE
+#  A sku missing from one feed pull is `pending`, never `dead`. The second
+#  strike must come from a DIFFERENT feed snapshot: this job carries state
+#  forward as an artifact and refuses to advance a strike against a
+#  byte-identical feed, so dispatching twice in an hour cannot manufacture a
+#  confirmation. In practice that means the first dispatch reports unbuyable +
+#  pending and zero dead, and the second dispatch AFTER the feed refreshes is
+#  the one that can condemn anything.
+#
+#  UNKNOWN IS NEVER DEAD
+#  If a feed fails mid-stream or its TRL trailer disagrees with the parsed
+#  record count, every sku that feed could have carried is UNKNOWN and the job
+#  goes red. A census with holes in it has not measured the catalog. That is the
+#  failure mode of feed-overlap-audit run 31440517417, which streamed the main
+#  feed for 11 minutes and then died on a hardcoded MKPL path that does not
+#  exist — so this workflow DISCOVERS its feeds instead of assuming them.
+#
+#  MEMORY
+#  The MKPL feed is 886MB gzipped and several million rows; buffering it is what
+#  killed the nightly ingest for 95 days. This uses streamTxtFeed() from
+#  sftp-ingest.cjs directly — the fixed parser, shared rather than copied, so
+#  the audit cannot drift from the ingest or resurrect the OOM. Peak heap is the
+#  ~3,400-key target index plus one record.
+#
+#  Read-only by construction: contents: read, no commit step, an
+#  assert-nothing-written step, and the script writes only under catalog-build/,
+#  which .gitignore excludes. Acting on the findings is a separate, deliberate
+#  run.
+#
+#  Dispatch-only: this is a measurement, not a schedule. Add a cron when
+#  something downstream depends on the trend.
+#
+#  Runtime: the main feed measured ~11 min to stream 1,035,311 records; MKPL is
+#  ~6x larger. The timeout is set for both plus download.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      use_prior_state:
+        description: 'Carry the previous run''s strikes forward (uncheck to force a clean first-strike run)'
+        required: false
+        default: true
+        type: boolean
+
+permissions: {}
+
+# Not the main-writer lock — this workflow never pushes. It serialises only
+# against itself so two dispatches cannot fight over the same feed download.
+concurrency:
+  group: newegg-dead-sku-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read        # read the previous run's state artifact, nothing more
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The two-strike state lives in an artifact, not a commit, because a
+      # read-only audit must not write to the repo to remember what it saw.
+      - name: Fetch the previous run's strike state
+        if: ${{ github.event.inputs.use_prior_state != 'false' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          mkdir -p prev
+          RUN=$(gh run list --workflow newegg-dead-sku-audit.yml --status success \
+                  --limit 1 --json databaseId --jq '.[0].databaseId' || true)
+          if [ -z "${RUN:-}" ] || [ "$RUN" = "null" ]; then
+            echo "No prior successful run — this will be a first-strike run."
+            exit 0
+          fi
+          echo "Prior run: $RUN"
+          gh run download "$RUN" -n newegg-dead-sku-audit-state -D prev || \
+            echo "Prior run had no state artifact — first-strike run."
+          ls -la prev || true
+
+      - name: Census every Newegg sku against the live feed (read-only)
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
+          RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+        run: |
+          set -uo pipefail
+          if [ -z "${RAKUTEN_FTP_PASSWORD:-}" ]; then
+            echo "::error::RAKUTEN_FTP_PASSWORD is not set on this repository. Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          ARGS=""
+          if [ -f prev/newegg-dead-sku-audit-state.json ]; then
+            ARGS="--prev prev/newegg-dead-sku-audit-state.json"
+            echo "Carrying prior strikes forward."
+          else
+            echo "No prior state on disk — nothing can reach two strikes this run."
+          fi
+          node newegg-dead-sku-audit.cjs $ARGS
+
+      - name: Assert the tree came back clean
+        if: always()
+        run: |
+          # Stronger than "parts.js is unchanged": a read-only audit must leave
+          # NOTHING behind, tracked or untracked. catalog-build/ is gitignored,
+          # so the report and the downloaded feeds do not count -- anything else
+          # showing up here is the script writing where it said it would not.
+          DIRTY=$(git status --porcelain | grep -v '^?? prev/' || true)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a read-only audit modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the audit wrote nothing to the repo."
+
+      - name: Upload the census report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newegg-dead-sku-audit
+          path: catalog-build/newegg-dead-sku-audit.json
+          if-no-files-found: error
+          retention-days: 90
+
+      # Uploaded even on failure: a run that died mid-feed still recorded which
+      # skus it saw, and losing that would reset every strike to zero.
+      - name: Upload the strike state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newegg-dead-sku-audit-state
+          path: catalog-build/newegg-dead-sku-audit-state.json
+          if-no-files-found: warn
+          retention-days: 90
