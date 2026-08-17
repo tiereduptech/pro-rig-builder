@@ -4,7 +4,7 @@
 **Scope:** everything stranded by the move off Railway — credentials that never
 reached GitHub secrets, jobs that never got a workflow, and jobs that have a
 workflow but do not actually run.
-**Status:** 3 of 21 findings fixed (see §7). The rest are open and tracked below.
+**Status:** 5 of 21 findings fixed (see §7). The rest are open and tracked in §8.
 
 ---
 
@@ -57,9 +57,9 @@ sftp-ingest.yml — 99 runs:  success 2   cancelled 88   failure 9
 both successes were on 2026-05-14
 ```
 
-It has failed or been cancelled **every single day for 95 days**. Reading the
+It had failed or been cancelled **every single day for 95 days**. Reading the
 cron told me it was scheduled; only the run history told me it never finishes.
-Full diagnosis in §6.1 — it is now the most severe open finding in this file.
+Full diagnosis and the fix in §6.1.
 
 **The lesson is the same one this whole audit is about**: a schedule is not a
 signal that work happened, any more than a dated price point is. Both were read
@@ -256,7 +256,44 @@ the `_MKPL` parse and stop materialising the exclusives array.
 **Would anything notice?** Nothing did, for 95 days. This is the sharpest case
 in the file: the job is scheduled, it runs daily, it appears in Actions every
 day, and it has accomplished nothing since May. Only the *conclusion* field
-distinguishes it from a healthy job, and nothing was reading that.
+distinguishes it from a healthy job, and nothing was reading that — which is why
+§7.4 now does.
+
+#### FIXED 2026-08-17
+
+`parseTxtFeed` became `streamTxtFeed(localPath, onRecord)`: records are handed to
+a callback and dropped, never collected. Match-and-apply moved inside the
+callback, so peak heap is the catalog index plus one record — flat in feed size.
+
+Measured, not estimated:
+
+| | Old (buffered) | New (streaming) |
+| --- | --- | --- |
+| 2,000,000 records | ~2.9 GB retained | **4.1 MB** peak growth |
+| Throughput | — | 141,844 records/s |
+| Projected for the ~6.1M-record `_MKPL` feed | **~9.3 GB** vs a 6,144 MB cap | unchanged, flat |
+
+Backpressure was the necessary other half. The consumer writes ~1M exclusives to
+a `WriteStream`; a loop that ignores `write()`'s `false` return grows the stream's
+internal buffer without bound, which is the same OOM in a different costume and
+would have surfaced the moment the record array stopped being the first thing to
+blow. `ctl.backpressure(dest)` pauses the feed until `dest` drains.
+
+`timeout-minutes` raised 60 → 180. Sixty could not fit the work: ~35 min to pull
+~1 GB of feeds, leaving ~25 min for a parse that needs ~20 at the measured
+throughput. Steady state should be far under 180 — the manifest cache skips
+unchanged feeds, and it never got the chance to save before because
+`actions/cache` writes in its post step and the job never reached one.
+
+The CLI body is now gated on `require.main` so the parser can be imported and
+tested. `test/sftp-ingest.streaming.test.js` (11 tests) covers field mapping,
+HDR/TRL handling, the peak-heap bound, backpressure with no lost records, drain
+listener leaks, and callback-error propagation.
+
+> One bug the tests caught in the fix itself: `readline` emits `'close'`
+> synchronously from `close()`, so rejecting *after* closing let `resolve` settle
+> the promise first and a consumer error surfaced as a successful parse with a
+> truncated record count. The rejection now precedes the close.
 
 ---
 
@@ -306,32 +343,83 @@ API work. Verified both branches.
 
 Not scheduled, per §1.2.
 
-### 7.3 This file
+### 7.3 `sftp-ingest.cjs` — streaming parse
+
+See §6.1. The daily Newegg feed can complete again.
+
+### 7.4 The outcome gate — `scripts/assert-workflow-outcomes.cjs`
+
+The durable fix for the pattern this whole file documents. Three instances of one
+mistake, each a proxy read as the thing it stands for:
+
+| Proxy | Read as | Reality |
+| --- | --- | --- |
+| a dated price point | a retailer was checked | `record-price-snapshot.js` never contacts a retailer |
+| a cron | a job succeeded | `sftp-ingest.yml` ran daily, succeeded twice in 99 runs |
+| a green run | something deployed | — |
+
+§7.1's provenance layer closed the second only as far as *"the cron exists"*. A
+cron is still a proxy. This gate reads **run conclusions**:
+
+- **Only `conclusion === 'success'` counts.** An allow-list, not a deny-list of
+  bad outcomes — GitHub can add a conclusion at any time and an unknown one must
+  read as not-succeeded rather than slip through as fine.
+- **Cancelled is a failure.** 88 of sftp-ingest's runs were cancelled, which is
+  the quietest outcome GitHub produces: grey in the UI, no notification, and it
+  reads as *someone stopped it on purpose*. Nothing was stopping it; it was dying.
+  The full outcome distribution is printed so a wall of cancellations is legible
+  as one thing.
+- **Failure is on not-having-succeeded, not on not-having-been-scheduled.** The
+  budget comes from each workflow's own fastest cron via the same policy as §7.1.
+- **No table to maintain.** The set of jobs under assertion *is* the set of
+  workflow files carrying a live cron. Add a scheduled workflow and it is covered
+  on the next run.
+- **Exit 1**, and exit 2 with no token rather than passing by default — a gate
+  that silently skips when it cannot see is worse than no gate, because it also
+  removes the reason to look.
+
+Failure classes, each with a test: `stale-success`, `never-succeeded`,
+`workflow-disabled`, `not-on-remote`, `unparseable-cron`. Two deliberate
+non-alarms keep it from crying wolf: a genuinely new workflow gets a grace window
+equal to its budget, measured from GitHub's own `created_at` so it expires
+without a suppression anyone has to remember; and `not-on-remote` only fails on
+the default branch, so adding a scheduled workflow never reddens its own PR.
+
+Both gates run in `.github/workflows/retailer-freshness.yml` (now *Freshness
+Gates*) as one red light. `test/workflow-outcomes.test.js` (19 tests) is fully
+hermetic — the run and metadata fetchers are injected, so no token or network is
+involved and `npm test` is unaffected by the live repo's state.
+
+On its first run it catches `sftp-ingest.yml`:
+
+```
+sftp-ingest.yml   96 runs   1 ok   2026-05-14   95d   3d   STALE SUCCESS
+                  outcomes: 86 cancelled, 9 failure, 1 success
+```
+
+### 7.5 This file
 
 ---
 
 ## 8. Open, in dependency order
 
-1. **Fix `sftp-ingest.yml`** (§6.1). Largest single gap: the daily Newegg feed
-   has produced nothing for 95 days. Stream the `_MKPL` parse; stop
-   materialising 1M+ exclusives. Raising the heap cap is not a fix.
-2. **Enable the Newegg cron.** Dispatch once with `dry_run=true`, confirm the
+1. **Enable the Newegg cron.** Dispatch once with `dry_run=true`, confirm the
    summary, then uncomment lines 12–13 of `refresh-newegg-prices.yml`. Recovers
    2,666 rows. Note `REMOVALS_ENABLED = false` (`refresh-newegg-prices.cjs:107`)
    hard-gates every deletion at line 517, so the destructive path that motivated
    the disable is off in code. `assert-retailer-freshness` clears newegg's
    `schedule-disabled` failure automatically once the cron is live.
-3. **Write the Best Buy refresher** (§5, item 9). Read SKUs from `parts.js`,
+2. **Write the Best Buy refresher** (§5, item 9). Read SKUs from `parts.js`,
    call `/v1/products/<sku>.json`, write `priceConfirmedAt`. `BESTBUY_API_KEY` is
    already in GitHub. Settle the comp-value question first via
    `probe-bestbuy-price-truth.mjs` — a refresher that confidently writes comp
    value is worse than a frozen one.
-4. **Decide MSI**: add the two Impact secrets and schedule the ingest, or drop
+3. **Decide MSI**: add the two Impact secrets and schedule the ingest, or drop
    `deals.msi`. Publishing never-confirmed prices is the option to rule out.
-5. **Teach `App.jsx` about `refreshedAt`** (§2). One field in the `stamps` array
+4. **Teach `App.jsx` about `refreshedAt`** (§2). One field in the `stamps` array
    at `src/App.jsx:87`.
-6. **Schedule reviews** after fixing the `readdirSync` guard (§5.1).
-7. **Fold `newegg_openbox` and `newegg_marketplace`** into the Newegg re-pricer,
+5. **Schedule reviews** after fixing the `readdirSync` guard (§5.1).
+6. **Fold `newegg_openbox` and `newegg_marketplace`** into the Newegg re-pricer,
    or drop them.
 
 ### Unrelated, found in passing

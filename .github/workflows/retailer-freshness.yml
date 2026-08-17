@@ -1,47 +1,66 @@
-name: Retailer Freshness
+name: Freshness Gates
 
-# Fails when a retailer in the catalog is publishing prices nothing is refreshing.
+# Two assertions, one red light. Both answer "is this actually working?" rather
+# than "does it look like it should be working?"
 #
-# WHY THIS IS ITS OWN WORKFLOW, AND NOT A UNIT TEST
-#   The gate is expected to be RED right now — bestbuy, msi, newegg_openbox and
-#   newegg_marketplace have no refresher at all, and newegg's cron is commented
-#   out. Wiring a known-red assertion into `npm test` would turn every unrelated
-#   PR red, and a suite that is always red gets deleted or `|| true`-d within a
-#   week. That is the same "signal with no consequence" failure this gate exists
-#   to replace, so it gets its own job whose red state means one specific thing.
+#   1. scripts/assert-retailer-freshness.cjs — every retailer in parts.js has
+#      been confirmed against its retailer within a stated cadence, and the cron
+#      responsible for confirming it is still live.
 #
-#   test/retailer-freshness.test.js is the half that belongs in `npm test`: it
-#   proves the gate discriminates, and it stays green.
+#   2. scripts/assert-workflow-outcomes.cjs — every workflow with a live cron has
+#      actually SUCCEEDED within its cadence. Cancelled counts as not-succeeded.
+#
+# WHY BOTH, AND WHY SEPARATE FILES
+#   Same mistake, three shapes: a dated price point read as evidence a retailer
+#   was checked; a cron read as evidence a job succeeded; a green run read as
+#   evidence something deployed. Gate 1 closed the first, and its provenance
+#   layer closed the second only as far as "the cron exists". A cron is still a
+#   proxy — sftp-ingest.yml had a daily cron, ran every day, and succeeded twice
+#   in 99 runs while the Newegg feed wrote nothing for 95 days. Gate 2 reads the
+#   conclusions.
+#
+#   They are separate scripts because gate 1 is pure and offline — it runs on a
+#   laptop with no token — while gate 2 needs the Actions API. Folding them into
+#   one file would make the offline gate require a credential.
+#
+# WHY NOT IN `npm test`
+#   Both are expected to be RED right now. A known-red assertion in the shared
+#   suite turns every unrelated PR red, and an always-red suite gets deleted or
+#   `|| true`-d within a week — the same signal-with-no-consequence failure these
+#   gates exist to replace. `test/retailer-freshness.test.js`,
+#   `test/workflow-outcomes.test.js` and `test/sftp-ingest.streaming.test.js` are
+#   the halves that belong in `npm test`: they prove the gates discriminate, are
+#   hermetic, and stay green.
 #
 # WHY IT DOES NOT PUSH TO MAIN
-#   Read-only by construction — it reads parts.js and the workflow files and
-#   writes nothing. So it is deliberately NOT in the `main-writer` concurrency
-#   group; test/verify-main-writer-lock.cjs asserts that only main-pushers carry
-#   that group, and adding it here would fail that gate.
+#   Read-only by construction, so deliberately NOT in the `main-writer`
+#   concurrency group; test/verify-main-writer-lock.cjs asserts only main-pushers
+#   carry it.
 #
 # SCHEDULING
 #   13:00 UTC, after every job that writes parts.js has had its slot for the day
 #   (asin-identity-audit 03:00, prerender 06:00, price-history 07:00,
-#   verify-catalog 08/09/10/11, sftp-ingest 12:00). Measuring before the writers
-#   run would report yesterday's freshness and burn a day of budget.
+#   verify-catalog 08/09/10/11, sftp-ingest 12:00 + up to 3h).
 
 on:
   schedule:
     - cron: '0 13 * * *'
   workflow_dispatch: {}
-  # A PR that changes the catalog or the schedules can introduce a frozen
-  # retailer, so it is checked there too — this is where a newly added retailer
-  # with no cadence entry gets caught before it merges.
   pull_request:
     paths:
       - 'src/data/parts.js'
       - 'src/data/parts/**'
       - 'scripts/assert-retailer-freshness.cjs'
+      - 'scripts/assert-workflow-outcomes.cjs'
       - '.github/workflows/**'
 
 jobs:
   freshness:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # Gate 2 reads run conclusions via the Actions API.
+      actions: read
     steps:
       - uses: actions/checkout@v4
 
@@ -49,39 +68,68 @@ jobs:
         with:
           node-version: '20'
 
-      # No npm ci — the gate depends only on node builtins. Keeping it
+      # No npm ci — both gates depend only on node builtins. Keeping them
       # dependency-free means a broken dependency tree can never be the reason
-      # the freshness alarm fails to run.
-      - name: Assert every retailer is confirmed within its cadence
-        id: assert
-        # pipefail is REQUIRED, not stylistic. The default runner shell is
-        # `bash -e`, where a pipeline exits with the status of its LAST command —
-        # so `node gate | tee` would report tee's 0 and the step would pass while
-        # the gate was failing. A freshness alarm that silently always passes is
-        # strictly worse than no alarm, since it also removes the reason to look.
+      # the alarm fails to run.
+
+      # continue-on-error so gate 2 still reports when gate 1 is red. The final
+      # step is what actually fails the job, using both outcomes.
+      - name: 'Gate 1 — retailer confirmation freshness'
+        id: retailer
+        continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
-          node scripts/assert-retailer-freshness.cjs | tee freshness.txt
+          node scripts/assert-retailer-freshness.cjs | tee retailer-freshness.txt
+
+      - name: 'Gate 2 — scheduled workflow outcomes'
+        id: outcomes
+        if: always()
+        continue-on-error: true
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -o pipefail
+          node scripts/assert-workflow-outcomes.cjs | tee workflow-outcomes.txt
 
       - name: Job summary
         if: always()
         run: |
           {
-            echo "## Retailer confirmation freshness"
+            echo "## Freshness gates"
             echo ""
-            if [ "${{ steps.assert.outcome }}" = "success" ]; then
-              echo "All retailers confirmed within their stated cadence."
-            else
-              echo "**One or more retailers are publishing prices nothing is refreshing.**"
-              echo ""
-              echo "A retailer fails here when no scheduled job has confirmed its prices"
-              echo "against the retailer recently enough — or when no such job exists."
-              echo "Fix the job, or drop the retailer. Those are the only two outcomes"
-              echo "that make this pass."
-            fi
+            echo "| Gate | Result |"
+            echo "| --- | --- |"
+            echo "| Retailer confirmation freshness | ${{ steps.retailer.outcome }} |"
+            echo "| Scheduled workflow outcomes | ${{ steps.outcomes.outcome }} |"
             echo ""
+            echo "### Gate 1 — retailer confirmation freshness"
             echo '```'
-            cat freshness.txt 2>/dev/null || echo "(gate produced no output — it crashed before reporting)"
+            cat retailer-freshness.txt 2>/dev/null || echo "(gate crashed before reporting)"
+            echo '```'
+            echo ""
+            echo "### Gate 2 — scheduled workflow outcomes"
+            echo '```'
+            cat workflow-outcomes.txt 2>/dev/null || echo "(gate crashed before reporting)"
             echo '```'
           } >> $GITHUB_STEP_SUMMARY
+
+      # pipefail above keeps `node | tee` from masking a non-zero exit; this step
+      # is what turns either gate's failure into a failed job. Explicit rather
+      # than relying on continue-on-error semantics, so the reason is readable.
+      - name: Fail if either gate failed
+        if: always()
+        run: |
+          R='${{ steps.retailer.outcome }}'
+          O='${{ steps.outcomes.outcome }}'
+          echo "gate 1 (retailer freshness): $R"
+          echo "gate 2 (workflow outcomes):  $O"
+          if [ "$R" != "success" ] || [ "$O" != "success" ]; then
+            echo ""
+            echo "A gate above is red. Something in the pipeline is publishing data nothing"
+            echo "refreshes, or running on a schedule without ever completing. Fix the job,"
+            echo "or drop the retailer / remove the cron. Those are the outcomes that pass."
+            exit 1
+          fi

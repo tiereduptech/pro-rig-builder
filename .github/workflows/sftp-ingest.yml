@@ -17,7 +17,20 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 60
+    # 180, raised from 60 on 2026-08-17. Sixty could not fit the work: the two
+    # Newegg feeds are ~1GB and take ~35 min to pull from aftp.linksynergy.com,
+    # leaving ~25 min for a parse of ~6M marketplace records that needs ~20 at
+    # the measured 5.2k records/s. Every run landed at the edge, and 88 of 99
+    # were cancelled mid-parse at ~3620s while GC-thrashing against the old
+    # buffered parser. That parser now streams (peak heap 4MB for 2M records,
+    # measured), so the wall is wall-clock rather than memory — this is the
+    # budget that clears it.
+    #
+    # Steady state should be far under this: the manifest cache skips unchanged
+    # feeds, so only a cold cache or a genuinely changed feed pays full price.
+    # The cache never got the chance to save before, because actions/cache saves
+    # in its post step and the job never reached one.
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
