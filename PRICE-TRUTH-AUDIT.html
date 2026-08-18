@@ -1,0 +1,558 @@
+<title>Price Truth Audit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+
+<style>
+:root{
+  --ground:#F6F7F9; --surface:#FFFFFF; --surface-2:#EFF2F5;
+  --ink:#131820; --ink-2:#4C5766; --ink-3:#78838F;
+  --rule:#DDE2E8; --rule-2:#C7CED6;
+  --accent:#166D68; --accent-soft:#DCEBE9;
+  --ok:#2C6E49; --ok-soft:#DFEDE4;
+  --warn:#96650B; --warn-soft:#F7ECD6;
+  --bad:#A32C28; --bad-soft:#F7E0DE;
+  --shadow:0 1px 2px rgba(19,24,32,.06),0 4px 14px rgba(19,24,32,.05);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0D1116; --surface:#141A21; --surface-2:#1B222B;
+    --ink:#E4E9EF; --ink-2:#9AA5B2; --ink-3:#6F7A87;
+    --rule:#242C36; --rule-2:#333D49;
+    --accent:#4FB0A9; --accent-soft:#12312F;
+    --ok:#63B183; --ok-soft:#15291D;
+    --warn:#D4A143; --warn-soft:#2C2314;
+    --bad:#E0776F; --bad-soft:#2E1815;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0D1116; --surface:#141A21; --surface-2:#1B222B;
+  --ink:#E4E9EF; --ink-2:#9AA5B2; --ink-3:#6F7A87;
+  --rule:#242C36; --rule-2:#333D49;
+  --accent:#4FB0A9; --accent-soft:#12312F;
+  --ok:#63B183; --ok-soft:#15291D;
+  --warn:#D4A143; --warn-soft:#2C2314;
+  --bad:#E0776F; --bad-soft:#2E1815;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 14px rgba(0,0,0,.3);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Serif",Georgia,serif; font-size:16.5px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 28px 96px}
+.prose{max-width:68ch}
+
+h1,h2,h3,h4,.eyebrow,.label,th,.chip,.stat-n,.bar-key{font-family:"IBM Plex Sans Condensed",'Arial Narrow',sans-serif}
+h1{font-size:clamp(2.3rem,5.2vw,3.4rem); font-weight:700; line-height:1.04; letter-spacing:-.015em; margin:0; text-wrap:balance}
+h2{font-size:clamp(1.5rem,3vw,1.95rem); font-weight:700; line-height:1.15; letter-spacing:-.01em; margin:0; text-wrap:balance}
+h3{font-size:1.22rem; font-weight:600; line-height:1.25; margin:0; text-wrap:balance}
+h4{font-size:.95rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); margin:0}
+p{margin:0}
+a{color:var(--accent)}
+code,.mono,td.num,.stat-n,.bar-key{font-family:"IBM Plex Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums}
+code{font-size:.86em; background:var(--surface-2); padding:.12em .38em; border-radius:3px; color:var(--ink)}
+
+/* ── masthead ─────────────────────────────── */
+.mast{padding:64px 0 40px; border-bottom:2px solid var(--ink); display:flex; flex-direction:column; gap:20px}
+.eyebrow{font-size:.78rem; font-weight:600; letter-spacing:.19em; text-transform:uppercase; color:var(--accent)}
+.mast .deck{font-size:1.12rem; color:var(--ink-2); max-width:62ch}
+.mast-meta{display:flex; flex-wrap:wrap; gap:8px 26px; font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink-3); padding-top:6px}
+
+section{padding-top:60px; display:flex; flex-direction:column; gap:22px}
+.sec-head{display:flex; flex-direction:column; gap:9px; border-top:1px solid var(--rule-2); padding-top:22px}
+
+/* ── verdict strip ────────────────────────── */
+.verdicts{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px}
+.v{background:var(--surface); border:1px solid var(--rule); border-radius:5px; padding:18px 18px 16px; box-shadow:var(--shadow); border-left:4px solid var(--rule-2); display:flex; flex-direction:column; gap:5px}
+.v.ok{border-left-color:var(--ok)} .v.warn{border-left-color:var(--warn)} .v.bad{border-left-color:var(--bad)}
+.v .stat-n{font-size:2.05rem; font-weight:600; line-height:1; letter-spacing:-.02em}
+.v.ok .stat-n{color:var(--ok)} .v.warn .stat-n{color:var(--warn)} .v.bad .stat-n{color:var(--bad)}
+.v .label{font-size:.79rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-2)}
+.v .note{font-family:"IBM Plex Serif",serif; font-size:.87rem; color:var(--ink-3); line-height:1.45}
+
+/* ── tables ───────────────────────────────── */
+.tw{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--surface); box-shadow:var(--shadow)}
+table{border-collapse:collapse; width:100%; min-width:640px; font-size:.9rem}
+caption{text-align:left; padding:14px 16px 0; font-family:"IBM Plex Sans Condensed",sans-serif; font-size:.82rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-2)}
+th{text-align:left; font-size:.75rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-2); padding:13px 14px; border-bottom:1px solid var(--rule-2); white-space:nowrap; vertical-align:bottom}
+td{padding:11px 14px; border-bottom:1px solid var(--rule); vertical-align:top; font-family:"IBM Plex Serif",serif}
+tbody tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right; font-family:"IBM Plex Mono",monospace; white-space:nowrap}
+td.mono{font-family:"IBM Plex Mono",monospace; font-size:.83rem; white-space:nowrap}
+tr.total td{font-weight:600; background:var(--surface-2); border-top:1px solid var(--rule-2)}
+
+.chip{display:inline-block; font-size:.71rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; padding:2px 7px; border-radius:3px; white-space:nowrap}
+.chip.ok{background:var(--ok-soft); color:var(--ok)}
+.chip.warn{background:var(--warn-soft); color:var(--warn)}
+.chip.bad{background:var(--bad-soft); color:var(--bad)}
+.chip.mute{background:var(--surface-2); color:var(--ink-3)}
+
+/* ── retailer panels ──────────────────────── */
+.retailer{background:var(--surface); border:1px solid var(--rule); border-radius:5px; box-shadow:var(--shadow); overflow:hidden; display:flex; flex-direction:column}
+.retailer-hd{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; padding:17px 20px; border-bottom:1px solid var(--rule); border-top:4px solid var(--rule-2)}
+.retailer.ok .retailer-hd{border-top-color:var(--ok)}
+.retailer.warn .retailer-hd{border-top-color:var(--warn)}
+.retailer.bad .retailer-hd{border-top-color:var(--bad)}
+.retailer-hd .sub{font-family:"IBM Plex Mono",monospace; font-size:.76rem; color:var(--ink-3); margin-left:auto}
+.retailer-body{padding:20px; display:flex; flex-direction:column; gap:18px}
+.kv{display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr)); gap:16px}
+.kv > div{display:flex; flex-direction:column; gap:3px}
+.kv .label{font-size:.72rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-3)}
+.kv .val{font-family:"IBM Plex Mono",monospace; font-size:1.02rem; font-weight:500; color:var(--ink)}
+.kv .val small{font-family:"IBM Plex Serif",serif; font-size:.8rem; color:var(--ink-3); font-weight:400}
+
+/* freshness bar */
+.bar{display:flex; height:26px; border-radius:3px; overflow:hidden; border:1px solid var(--rule)}
+.bar > span{display:block}
+.bar-legend{display:flex; flex-wrap:wrap; gap:6px 18px; font-size:.78rem; color:var(--ink-2)}
+.bar-legend span{display:inline-flex; align-items:center; gap:6px}
+.sw{width:11px; height:11px; border-radius:2px; flex:none}
+.bar-key{font-size:.78rem; color:var(--ink-3)}
+
+.finding{border-left:3px solid var(--rule-2); padding-left:16px; display:flex; flex-direction:column; gap:6px}
+.finding.bad{border-left-color:var(--bad)}
+.finding.warn{border-left-color:var(--warn)}
+
+/* ── ranked list ──────────────────────────── */
+.ranked{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px; counter-reset:r}
+.ranked > li{counter-increment:r; background:var(--surface); border:1px solid var(--rule); border-radius:5px; box-shadow:var(--shadow); padding:20px 22px 20px 66px; position:relative; display:flex; flex-direction:column; gap:10px}
+.ranked > li::before{
+  content:counter(r); position:absolute; left:20px; top:19px;
+  font-family:"IBM Plex Mono",monospace; font-size:1.28rem; font-weight:600;
+  color:var(--ink-3); line-height:1;
+}
+.ranked h3{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+.cost{font-family:"IBM Plex Serif",serif; font-size:.93rem; color:var(--ink-2); border-top:1px dotted var(--rule-2); padding-top:9px}
+.cost b{font-family:"IBM Plex Sans Condensed",sans-serif; font-weight:600; color:var(--ink); letter-spacing:.03em; text-transform:uppercase; font-size:.76rem; margin-right:7px}
+
+.callout{background:var(--accent-soft); border:1px solid var(--rule); border-left:4px solid var(--accent); border-radius:4px; padding:17px 20px; display:flex; flex-direction:column; gap:8px}
+.callout h4{color:var(--accent)}
+
+.note-sm{font-size:.87rem; color:var(--ink-3); line-height:1.55}
+hr.end{border:none; border-top:2px solid var(--ink); margin:64px 0 0}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+@media (max-width:640px){
+  .wrap{padding:0 18px 72px}
+  .ranked > li{padding:18px 18px 18px 20px}
+  .ranked > li::before{position:static; display:block; margin-bottom:-4px}
+}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="eyebrow">Ingestion &amp; price verification · full state</div>
+  <h1>What is actually refreshing, and what only looks like it is</h1>
+  <p class="deck">Every retailer in the catalog, what refreshes it, when that last <em>succeeded</em>, and how much of the confirmed price data sits on a link pointing at the wrong product.</p>
+  <div class="mast-meta">
+    <span>Measured 2026-08-18</span>
+    <span>Tree: main @ 63c5bdd</span>
+    <span>6,938 catalog rows · 8,198 retailer links</span>
+  </div>
+</header>
+
+<!-- ══════════ THE SHORT ANSWER ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>The short answer</h2>
+    <p class="prose">Three of the four retailers have no working price refresh. The one that works, works well. The identity problem is real but smaller than the raw audit number suggests — and it is entirely unattended.</p>
+  </div>
+
+  <div class="verdicts">
+    <div class="v ok">
+      <span class="stat-n">73%</span>
+      <span class="label">Amazon prices moved</span>
+      <span class="note">3,179 of 4,348 price series changed at least once in 90 days. This pipeline is genuinely live.</span>
+    </div>
+    <div class="v bad">
+      <span class="stat-n">1</span>
+      <span class="label">Best Buy prices moved</span>
+      <span class="note">Of 1,591 series over 90 days, exactly one ever changed. There is no Best Buy price refresher in the repo.</span>
+    </div>
+    <div class="v bad">
+      <span class="stat-n">0</span>
+      <span class="label">Newegg ingests ever committed</span>
+      <span class="note">The daily SFTP ingest has run since 2026-05-13 and has never once written a catalog change.</span>
+    </div>
+    <div class="v warn">
+      <span class="stat-n">86</span>
+      <span class="label">Confirmed prices on flagged links</span>
+      <span class="note">Live, price-confirmed rows the identity audit flagged. On inspection, ~8 are certainly wrong products.</span>
+    </div>
+  </div>
+
+  <div class="callout">
+    <h4>The finding that costs the most</h4>
+    <p>2,597 rows visible on the site are priced <em>only</em> by a retailer whose prices have not moved in 90 days. Their displayed price has no living source. That is 48% of the live catalog — an order of magnitude more exposure than the 578 identity defects, which are the thing currently getting attention.</p>
+  </div>
+</section>
+
+<!-- ══════════ SCHEDULE ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>What runs, and when it last succeeded</h2>
+    <p class="prose">There is no <code>gh</code> CLI in this environment, so “last succeeded” is not read from Actions history. It is read from the evidence a successful run leaves behind: the bot commit it pushes, or the state file it writes. A job that runs green but changes nothing leaves no trace here — and for a price refresher, that <em>is</em> the failure.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <caption>Scheduled workflows on main</caption>
+      <thead>
+        <tr>
+          <th>Workflow</th><th>Schedule (UTC)</th><th>Writes</th><th>Last success</th><th>Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Catalog Verification</b> <span class="chip ok">working</span><br><span class="note-sm"><code>verify-catalog-asins.js</code></span></td>
+          <td class="mono">T1 0 8 */2 * *<br>T2 0 9 */3 * *<br>T3 0 10 * * 1<br>T4 0 11 * * 1</td>
+          <td>Amazon prices only</td>
+          <td class="mono">T1 08-17<br>T2 08-16<br>T3 08-17<br>T4 08-17</td>
+          <td class="note-sm">56 / 36 / 16 / 18 bot commits</td>
+        </tr>
+        <tr>
+          <td><b>ASIN Identity Audit</b> <span class="chip warn">reports only</span><br><span class="note-sm"><code>amazon-asin-identity-audit.mjs</code></span></td>
+          <td class="mono">0 3 * * *</td>
+          <td>Quarantines dead ASINs. Never writes wrong-product or close-but-wrong, in any mode.</td>
+          <td class="mono">2026-08-17</td>
+          <td class="note-sm">4 nightly commits since 08-15</td>
+        </tr>
+        <tr>
+          <td><b>Price History Snapshot</b> <span class="chip mute">recorder</span><br><span class="note-sm"><code>record-price-snapshot.js</code></span></td>
+          <td class="mono">0 7 * * *</td>
+          <td>Copies parts.js prices into history. Fetches nothing.</td>
+          <td class="mono">2026-08-17</td>
+          <td class="note-sm">92 daily commits</td>
+        </tr>
+        <tr>
+          <td><b>SFTP Ingest Newegg</b> <span class="chip bad">never effective</span><br><span class="note-sm"><code>sftp-ingest.cjs</code></span></td>
+          <td class="mono">0 12 * * *</td>
+          <td>Newegg prices + exclusives</td>
+          <td class="mono">never</td>
+          <td class="note-sm"><b>0 commits in 97 days.</b> No <code>sftp-ingest-summary.json</code>, no manifest.</td>
+        </tr>
+        <tr>
+          <td><b>Newegg feed watch</b> <span class="chip ok">working</span><br><span class="note-sm"><code>newegg-feed-watch.cjs</code></span></td>
+          <td class="mono">7,37 * * * *</td>
+          <td>Dispatch signal only</td>
+          <td class="mono">2026-08-18 00:44</td>
+          <td class="note-sm">State file; feed mtime 08-17 23:44, 0 quiet days</td>
+        </tr>
+        <tr>
+          <td><b>Prerender SEO</b></td>
+          <td class="mono">0 6 * * *</td>
+          <td>dist + sitemap</td>
+          <td class="mono">2026-08-17</td>
+          <td class="note-sm">79 commits</td>
+        </tr>
+        <tr>
+          <td><b>Refresh Newegg Prices</b> <span class="chip bad">disabled</span><br><span class="note-sm"><code>refresh-newegg-prices.cjs</code></span></td>
+          <td class="mono">— commented out</td>
+          <td>Would delete deals, not repair them</td>
+          <td class="mono">disabled 07-20</td>
+          <td class="note-sm">Documented 100% miss rate; destroyed 1,655 deals on 07-06</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="prose note-sm"><b>Dispatch-only, no schedule:</b> Newegg dead-SKU audit · Best Buy dead-SKU audit · Newegg case sweep · Newegg discovery dry-run and apply · MKPL feed overlap · Best Buy price-truth probe. <b>No workflow at all — run by hand or not at all:</b> <code>case-ingest.mjs</code> (the source of every 2026-08-10 row) · <code>weekend-amazon-ingest.mjs</code> · <code>quarantine-wrong-product.mjs</code> (the only consumer of the 233-row relink queue).</p>
+
+  <div class="finding warn">
+    <h4>One schedule is not where you think it is</h4>
+    <p class="note-sm">The commit <em>“ci(newegg): re-enable the price-refresh cron, verified against the live feed”</em> exists, but only on branch <code>feat/admin-dashboard</code>. On <code>main</code> the cron is still commented out.</p>
+  </div>
+</section>
+
+<!-- ══════════ PER RETAILER ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>Retailer by retailer</h2>
+    <p class="prose">“Confirmed fresh” means <code>priceConfidence === "confirmed"</code> with a <code>priceConfirmedAt</code> stamp inside the last 30 days. The 90-day movement figure is the harder test, and it comes from <code>price-history.json</code>: how many of this retailer’s price series ever changed value.</p>
+  </div>
+
+  <!-- AMAZON -->
+  <article class="retailer ok">
+    <div class="retailer-hd">
+      <h3>Amazon</h3><span class="chip ok">refreshing</span>
+      <span class="sub">3,755 links · 54% of catalog rows</span>
+    </div>
+    <div class="retailer-body">
+      <div class="kv">
+        <div><span class="label">Refreshed by</span><span class="val">verify-catalog-asins.js<small> DataForSEO pass 1, PA-API pass 2</small></span></div>
+        <div><span class="label">Cadence</span><span class="val">2 / 3 / 7 / 7 days<small> by tier</small></span></div>
+        <div><span class="label">Last succeeded</span><span class="val">2026-08-17<small> tiers 1, 3, 4; tier 2 on 08-16</small></span></div>
+        <div><span class="label">Confirmed fresh</span><span class="val">3,036<small> 80.9% of links</small></span></div>
+      </div>
+      <div>
+        <div class="bar" role="img" aria-label="3,036 confirmed, 423 unconfirmed, 296 with no confidence field">
+          <span style="width:80.9%;background:var(--ok)"></span>
+          <span style="width:11.3%;background:var(--warn)"></span>
+          <span style="width:7.8%;background:var(--rule-2)"></span>
+        </div>
+        <div class="bar-legend" style="margin-top:8px">
+          <span><i class="sw" style="background:var(--ok)"></i> confirmed <b class="bar-key">3,036</b></span>
+          <span><i class="sw" style="background:var(--warn)"></i> unconfirmed <b class="bar-key">423</b></span>
+          <span><i class="sw" style="background:var(--rule-2)"></i> no confidence field <b class="bar-key">296</b></span>
+        </div>
+      </div>
+      <p class="note-sm">Stamps are genuinely recent: 2,247 confirmed yesterday, 2,979 within two days, 3,004 within a week. Only 32 are older than a week, and none exceed 30 days. Split by method: 2,279 via DataForSEO, 757 via PA-API; 2,097 third-party buy-box, 939 first-party.</p>
+      <div class="finding">
+        <h4>Ingest</h4>
+        <p class="note-sm"><b>63 products in the last 30 days</b> — all from <code>amazon-case-discovery</code> on 2026-08-07. The main <code>amazon-discovery</code> source added 1,342 rows but has not run in 94 days, and <code>weekend-amazon-ingest.mjs</code> has no workflow. There is no scheduled Amazon ingest.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- NEWEGG -->
+  <article class="retailer bad">
+    <div class="retailer-hd">
+      <h3>Newegg</h3><span class="chip bad">frozen</span>
+      <span class="sub">2,763 links — 2,666 main · 60 open-box · 37 marketplace</span>
+    </div>
+    <div class="retailer-body">
+      <div class="kv">
+        <div><span class="label">Refreshed by</span><span class="val">sftp-ingest.cjs<small> daily 12:00 UTC</small></span></div>
+        <div><span class="label">Last effective run</span><span class="val" style="color:var(--bad)">never<small> 0 commits since 2026-05-13</small></span></div>
+        <div><span class="label">Confirmed fresh</span><span class="val">893<small> 33.5% — all Case, all stamped 08-10</small></span></div>
+        <div><span class="label">Series that moved in 90d</span><span class="val" style="color:var(--bad)">593 / 3,644<small> 16.3%</small></span></div>
+      </div>
+      <div>
+        <div class="bar" role="img" aria-label="893 confirmed, 1,773 with no confidence field">
+          <span style="width:33.5%;background:var(--ok)"></span>
+          <span style="width:66.5%;background:var(--rule-2)"></span>
+        </div>
+        <div class="bar-legend" style="margin-top:8px">
+          <span><i class="sw" style="background:var(--ok)"></i> confirmed <b class="bar-key">893</b></span>
+          <span><i class="sw" style="background:var(--rule-2)"></i> no confidence field at all <b class="bar-key">1,773</b></span>
+        </div>
+      </div>
+      <div class="finding bad">
+        <h4>The daily ingest has never applied an update</h4>
+        <p class="note-sm">Three independent measurements agree. <b>One:</b> the workflow commits <code>chore(sftp): newegg catalog ingest</code> whenever <code>totals.updated &gt; 0</code>; there are zero such commits in the entire repository history. <b>Two:</b> every applied match restamps <code>matchedAt</code>, and no Newegg row carries a <code>matchedAt</code> newer than 2026-08-10 — which came from the hand-run <code>case-ingest.mjs</code>, not the ingest. <b>Three:</b> 3,051 of 3,644 Newegg price series have never changed value in 90 days.</p>
+        <p class="note-sm">The feed itself is healthy: the watcher recorded a 157 MB feed with an mtime of 2026-08-17 23:44 and zero quiet days. Newegg is publishing daily. Something between the feed and <code>parts.js</code> is producing zero matches — and because the commit step is guarded by <code>if [ -f …summary.json ]</code>, a zero-update run and a crashed run look identical from the outside.</p>
+      </div>
+      <div class="finding">
+        <h4>Ingest</h4>
+        <p class="note-sm"><b>1,713 products in the last 30 days</b> — 968 from <code>newegg-case-discovery</code> (08-10) and 745 from <code>newegg-discovery</code> (07-24 and 07-30). Both are dispatch-only; neither is scheduled. New products are arriving faster than existing ones are being repriced.</p>
+      </div>
+      <p class="note-sm"><b>Exposure:</b> 1,725 Newegg rows have no other priced retailer. The pending dead-SKU census counts 443 rows at strike one.</p>
+    </div>
+  </article>
+
+  <!-- BEST BUY -->
+  <article class="retailer bad">
+    <div class="retailer-hd">
+      <h3>Best Buy</h3><span class="chip bad">no refresher exists</span>
+      <span class="sub">1,523 links</span>
+    </div>
+    <div class="retailer-body">
+      <div class="kv">
+        <div><span class="label">Refreshed by</span><span class="val" style="color:var(--bad)">nothing<small> no script, scheduled or otherwise</small></span></div>
+        <div><span class="label">Last confirmation</span><span class="val">2026-08-10<small> 9 rows, from a dispatch-only audit</small></span></div>
+        <div><span class="label">Confirmed fresh</span><span class="val" style="color:var(--bad)">9<small> 0.6% of links</small></span></div>
+        <div><span class="label">Series that moved in 90d</span><span class="val" style="color:var(--bad)">1 / 1,591<small> 0.06%</small></span></div>
+      </div>
+      <div>
+        <div class="bar" role="img" aria-label="9 confirmed, 1,514 with no confidence field">
+          <span style="width:0.6%;background:var(--ok)"></span>
+          <span style="width:99.4%;background:var(--rule-2)"></span>
+        </div>
+        <div class="bar-legend" style="margin-top:8px">
+          <span><i class="sw" style="background:var(--ok)"></i> confirmed <b class="bar-key">9</b></span>
+          <span><i class="sw" style="background:var(--rule-2)"></i> never verified <b class="bar-key">1,514</b></span>
+        </div>
+      </div>
+      <div class="finding bad">
+        <h4>Exactly one Best Buy price has changed in 90 days</h4>
+        <p class="note-sm">Not one per product — one across the entire retailer. 1,590 of 1,591 series are flat lines. The catalog verifier is ASIN-keyed and never touches <code>deals.bestbuy</code>; no other scheduled job writes it. The nine confirmations that exist came from <code>bestbuy-dead-sku-audit.mjs</code>, which is deliberately dispatch-only.</p>
+        <p class="note-sm">The daily price-history snapshot faithfully records these frozen numbers, so the product’s price chart shows 90 days of admirable price stability for a figure nobody has checked since May.</p>
+      </div>
+      <div class="finding">
+        <h4>Ingest</h4>
+        <p class="note-sm"><b>3 products in the last 30 days</b>, all from <code>bestbuy-case-discovery</code> on 2026-08-10. There is no Best Buy ingest pipeline on any schedule.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- MSI + minor -->
+  <article class="retailer warn">
+    <div class="retailer-hd">
+      <h3>MSI, Newegg open-box, Newegg marketplace</h3><span class="chip warn">orphaned</span>
+      <span class="sub">157 · 60 · 37 links</span>
+    </div>
+    <div class="retailer-body">
+      <p class="note-sm"><b>MSI</b> — 157 links, zero confidence fields, <b>zero price movements in 83 days</b>, no refresher, no ingest path, no audit. It was populated once by <code>ingest-msi-impact-v2.cjs</code> and has been untouched since.</p>
+      <p class="note-sm"><b>Newegg open-box</b> — 60 links, zero confirmations, zero movements in 90 days, all stamped more than 91 days ago. These are the only rows in the catalog still carrying <code>sftp:</code> match methods, which makes them the last surviving evidence that the SFTP ingest ever wrote anything.</p>
+      <p class="note-sm"><b>Newegg marketplace</b> — 37 links, 31 confirmed on 2026-08-10 by <code>case-ingest.mjs</code>, zero movements in the 6 days of history that exist.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ══════════ THE HARD QUESTION ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>Is the verification actually verifying?</h2>
+    <p class="prose">For Amazon: <b>yes for price, no for identity</b> — and the two are not connected. <code>verify-catalog-asins.js</code> asks “what does this ASIN cost today?” and answers it well. It never asks “is this ASIN the product this row claims to be.” The identity audit asks exactly that, nightly, and is forbidden from acting on the answer.</p>
+  </div>
+
+  <p class="prose">On your framing — a confirmed price on a wrong product is worse than an unconfirmed one — the overlap is real, but the raw numbers overstate it in one direction and understate it in another. Here is the join, row by row.</p>
+
+  <div class="tw">
+    <table>
+      <caption>578 audit findings × Amazon price-confidence state</caption>
+      <thead>
+        <tr>
+          <th>Defect class</th>
+          <th class="num">Findings</th>
+          <th class="num">Price “confirmed”</th>
+          <th class="num">Confirmed <i>and</i> live</th>
+          <th>Handled by</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>dead-asin</b><br><span class="note-sm">ASIN returns nothing</span></td>
+          <td class="num">345</td><td class="num">235</td>
+          <td class="num" style="color:var(--ok)">0</td>
+          <td class="note-sm"><span class="chip ok">quarantined</span> Two-strike rule works; all 345 are off the site.</td>
+        </tr>
+        <tr>
+          <td><b>close-but-wrong</b><br><span class="note-sm">same brand, different model or size</span></td>
+          <td class="num">151</td><td class="num">83</td>
+          <td class="num" style="color:var(--bad)">74</td>
+          <td class="note-sm"><span class="chip bad">nothing</span> Written to a review queue no scheduled job reads.</td>
+        </tr>
+        <tr>
+          <td><b>wrong-product</b><br><span class="note-sm">different product entirely</span></td>
+          <td class="num">82</td><td class="num">16</td>
+          <td class="num" style="color:var(--bad)">12</td>
+          <td class="note-sm"><span class="chip bad">nothing</span> Same queue.</td>
+        </tr>
+        <tr class="total">
+          <td>Total</td><td class="num">578</td>
+          <td class="num">334 <span class="note-sm">(11.0% of all confirmed)</span></td>
+          <td class="num">86 <span class="note-sm">(3.3% of live confirmed)</span></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="finding">
+    <h4>Reading the table</h4>
+    <p class="note-sm">The headline overlap is <b>334 rows — 11.0% of every confirmed Amazon price sits on a link the audit flagged.</b> But 235 of those are dead ASINs that are already quarantined and invisible to customers, which is the quarantine gate doing its job. The number that describes what a customer can actually reach is <b>86</b>: rows that are live on the site, carry a “confirmed” price stamp, and are flagged as pointing at the wrong product. Against 2,603 live confirmed rows, that is 3.3%.</p>
+  </div>
+
+  <h3 style="margin-top:14px">But 86 is still too high a number, because the audit over-reports</h3>
+  <p class="prose">This is the part worth knowing before anyone acts on the queue. The audit's gate compares the catalog's <code>n</code> field against the Amazon title. The catalog stores the brand separately in <code>b</code> and usually omits it from <code>n</code> — so <code>"O11D MINI V2 Flow | Compact ATX Mid-Tower"</code> is scored against <code>"Lian Li O11D MINI V2 Flow-ATX Mid-Tower PC Case-Black"</code> and fails on missing tokens, despite being the same case.</p>
+
+  <p class="prose">Re-running the audit's own unmodified gate with the brand restored from <code>b</code>: <b>44 of the 233 identity findings flip to clean</b>. Narrowing to the 86 live-and-confirmed rows and cross-checking model numbers:</p>
+
+  <div class="tw">
+    <table>
+      <caption>The 86 live, price-confirmed, identity-flagged rows — re-examined</caption>
+      <thead><tr><th>Assessment</th><th class="num">Rows</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td><b>Audit false positive</b></td><td class="num">16</td><td class="note-sm">Passes the gate once the brand is restored <em>and</em> shares a model token with the Amazon title. Same product.</td></tr>
+        <tr><td><b>Real mismatch</b></td><td class="num">8</td><td class="note-sm">No shared model number. Includes an APC BX1500M row linked to a CyberPower UPS, and a CyberPower CP1500PFCLCD linked to a CP1500PFCRM2U.</td></tr>
+        <tr><td><b>Undecidable from titles</b></td><td class="num">62</td><td class="note-sm">Neither the gate nor model tokens settle it; needs the PDP or a human.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="finding warn">
+    <h4>A third failure is hiding inside the second</h4>
+    <p class="note-sm">Testing brand agreement surfaced something the audit is not looking for: 88 of the 233 identity findings have a catalog brand that does not appear in the Amazon title, and many of those are <em>metadata</em> errors, not link errors. The catalog lists <code>b: "AMD"</code> for an Acer Nitro monitor, an ID-COOLING cooler and a PCCOOLER heatsink; <code>b: "MSI"</code> for a UTLGAMENG fan pack; <code>b: "Microsoft"</code> for a Logitech Brio. The links are fine; the brand field is wrong. Because the gate reads brand from the first token of the name and the classifier reads it from <code>b</code>, corrupt brand data both manufactures false defects and would mask real ones.</p>
+    <p class="note-sm">So the 578 is measuring three different failures at once — dead links, wrong links, and wrong metadata — and reporting them as one rate. The dead-ASIN half is trustworthy and acted on. The identity half is neither.</p>
+  </div>
+
+  <p class="prose note-sm"><b>On the 2,810 figure:</b> the current tree shows 3,036 rows at <code>priceConfidence: "confirmed"</code>, of which 2,603 are not quarantined. Neither is 2,810, and no report file in the repo contains that number. It is almost certainly a snapshot from a run a day or two earlier — 2,247 rows were re-confirmed on 08-17 alone, so this count moves by hundreds nightly. The conclusions above do not turn on which figure is used.</p>
+</section>
+
+<!-- ══════════ NOT WORKING, RANKED ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>What is not working as designed, ranked by cost</h2>
+    <p class="prose">Ranked by how many customer-visible rows carry a price with no living source behind it, which is the failure that turns into a wrong click and a lost commission.</p>
+  </div>
+
+  <ol class="ranked">
+    <li>
+      <h3>Best Buy has no price refresher at all <span class="chip bad">1,523 rows</span></h3>
+      <p>Not broken — absent. No script writes <code>deals.bestbuy.price</code> on any schedule; the catalog verifier is ASIN-keyed and skips the field entirely. One price change across 1,591 series in 90 days. 288 Monitor rows, 186 Storage and 168 Motherboard rows carry Best Buy prices last touched months ago.</p>
+      <p class="cost"><b>Cost</b> Every Best Buy price on the site is an unverified assertion. Affiliate clicks land on a PDP whose price disagrees with the one that earned the click, which is both the highest-friction way to lose a conversion and the fastest way to lose trust in the comparison itself.</p>
+    </li>
+
+    <li>
+      <h3>The daily Newegg ingest has never applied an update <span class="chip bad">2,763 rows</span></h3>
+      <p>Running daily since 2026-05-13, 97 consecutive days, zero commits. The feed is fresh and healthy — the watcher measured it at 157 MB with an mtime six hours old. 84% of Newegg price series have never moved. Meanwhile <code>refresh-newegg-prices.cjs</code>, the other path, is correctly disabled for a documented 100% failure rate.</p>
+      <p class="cost"><b>Cost</b> 1,725 of these rows have no other priced retailer, so this is not a stale-second-opinion problem — for those rows it is the only price on the page. It is also the difference between the pending dead-SKU census being a link cleanup and being a catalog shrink.</p>
+    </li>
+
+    <li>
+      <h3>Identity defects are detected nightly and acted on never <span class="chip warn">233 queued</span></h3>
+      <p>The audit writes 233 non-dead findings to <code>relink-review-queue.json</code> every night. Its only consumer, <code>quarantine-wrong-product.mjs</code>, is in no workflow. 86 of those rows are live with a confirmed price; roughly 8 are certainly the wrong product and 62 are undecidable without a PDP fetch.</p>
+      <p class="cost"><b>Cost</b> Smaller than it looks in row count, but it is the failure mode that produces a confidently wrong page — a correct, freshly-confirmed price attached to a product the customer did not search for. The queue growing nightly with nothing draining it also means the number can only rise.</p>
+    </li>
+
+    <li>
+      <h3>Structured data publishes prices nobody sells at <span class="chip warn">919 live rows</span></h3>
+      <p><code>ProductSchema</code> computes its price as <code>Math.min(...dealPrices, p.pr)</code>, but nothing in the pipeline ever syncs the top-level <code>pr</code> field — the verifier writes <code>deals.amazon.price</code> and leaves <code>pr</code> untouched. Where <code>pr</code> has drifted below every real retailer price, that stale number wins the <code>min</code> and goes into the page's schema.org markup. Example: a fan whose cheapest real price is $23.79 publishes $11.50.</p>
+      <p class="cost"><b>Cost</b> This is what Google reads for rich snippets. A below-market price in structured data attracts the click and then fails to honour it — the worst possible bounce, and a Merchant-listing quality risk. Note the on-page price is <em>not</em> affected: <code>bestPrice()</code> ignores <code>pr</code> whenever any deal exists.</p>
+    </li>
+
+    <li>
+      <h3>The displayed price ignores sale prices <span class="chip warn">618 rendered rows</span></h3>
+      <p><code>bestPrice()</code> reads <code>d.price</code> and never <code>d.saleprice</code>. Newegg feed rows carry both, and where a sale is active the site quotes the regular price — a Thermaltake fan shown at $59.99 that Newegg sells at $49.99, an open-box NZXT fan shown at $33.99 against an actual $13.99. Average overstatement across the 618: $46.34.</p>
+      <p class="cost"><b>Cost</b> Straight lost conversions: the site makes its own listings look worse than the retailer's, and loses every comparison where the sale price would have won. This is a one-line fix and the cheapest item on this list to close.</p>
+    </li>
+
+    <li>
+      <h3>Brand attribution is corrupt in the catalog <span class="chip warn">88 known</span></h3>
+      <p>Confirmed cases where <code>b</code> names a manufacturer that has nothing to do with the product: <code>"AMD"</code> on Acer monitors and third-party coolers, <code>"MSI"</code> on a no-name fan pack, <code>"Microsoft"</code> on a Logitech webcam, <code>"Budget"</code> and <code>"GPERHUAN"</code> as brands. 88 surfaced inside the audit findings alone; the true count across 6,938 rows is not measured.</p>
+      <p class="cost"><b>Cost</b> Mostly indirect, which is why it ranks here rather than higher: it poisons the identity audit in both directions and makes brand filters and facets quietly wrong. It is also a prerequisite for fixing item 3 — the queue cannot be triaged reliably until the brand field can be trusted.</p>
+    </li>
+
+    <li>
+      <h3>Amazon ingest is manual and has effectively stopped <span class="chip mute">63 in 30 days</span></h3>
+      <p><code>weekend-amazon-ingest.mjs</code> has no workflow. The main <code>amazon-discovery</code> source last ran 94 days ago. All 63 additions in the last 30 days came from a single hand-run case sweep on 08-07. Against 1,713 new Newegg rows in the same window, the catalog is drifting toward the retailer that cannot price itself.</p>
+      <p class="cost"><b>Cost</b> No immediate revenue loss — existing rows still reprice correctly. The cost is compounding: every new row lands on a retailer with a frozen price, so the share of the catalog with a living price source falls every time ingest runs.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ══════════ WHAT IS WORKING ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>What is working, and should be left alone</h2>
+  </div>
+  <div class="verdicts">
+    <div class="v ok">
+      <span class="label">Amazon price verification</span>
+      <span class="note">Four tiers, all succeeding on schedule, 73% of series moving, 98% of confirmations under a week old, two independent sources with a documented fallback.</span>
+    </div>
+    <div class="v ok">
+      <span class="label">The dead-ASIN quarantine</span>
+      <span class="note">345 dead ASINs found, all 345 off the site, zero live. Two-strike rule holding.</span>
+    </div>
+    <div class="v ok">
+      <span class="label">The Newegg feed watcher</span>
+      <span class="note">Firing every 30 minutes, correctly measuring the feed's own mtime rather than its memory, currently at zero quiet days.</span>
+    </div>
+    <div class="v ok">
+      <span class="label">Refusing to guess</span>
+      <span class="note">The disabled Newegg refresh, the abstaining census, and the read-only audits are all cases of the system declining to act on evidence it does not have. That instinct is why this report has clean data to work from.</span>
+    </div>
+  </div>
+</section>
+
+<hr class="end">
+<p class="note-sm" style="padding-top:18px">Every figure derives from the working tree at <code>main @ 63c5bdd</code>: <code>src/data/parts/*.js</code> (6,938 rows), <code>catalog-build/price-history.json</code> (90 days, 7,018 products), <code>amazon-asin-identity-audit.json</code> (generated 2026-08-17 19:05Z, 3,745 rows audited), <code>catalog-build/newegg-feed-watch-state.json</code>, and git history. Freshness is computed against 2026-08-18. “Last succeeded” is inferred from committed side-effects, not from Actions run history — no <code>gh</code> CLI is available in this environment, so a green run that wrote nothing cannot be distinguished here from one that never ran.</p>
+
+</div>
