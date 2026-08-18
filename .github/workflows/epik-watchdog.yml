@@ -60,8 +60,20 @@ name: Epik deploy watchdog
 # =============================================================================
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
+  # ── SCHEDULE MUTED 2026-08-18 ───────────────────────────────────────────────
+  # The site serves from Cloudflare Pages. Epik is an idle fallback nobody
+  # visits, and this alarm was going red every 30 minutes about a box whose
+  # health no longer reaches a customer. An alarm that fires constantly about
+  # something nobody will act on is how the alarms people MUST act on get
+  # ignored — the same muting this workflow's own header was written to prevent,
+  # arriving from the other direction.
+  #
+  # This is a MUTE, not a removal: every rule below is intact and
+  # workflow_dispatch still runs the full check on demand. Re-enable the cron
+  # the moment Epik carries real traffic again — a fallback nobody watches is a
+  # fallback that is not there, which is the failure the header describes.
+  # schedule:
+  #   - cron: '*/30 * * * *'
   workflow_dispatch:
     inputs:
       # A gate that has never fired is unproven. A scheduled run watches whatever
