@@ -1720,11 +1720,6 @@ export default [
         "matchMethod": "phase2:name-match",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10758944&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-265kf-20-cores-20-threads-4-6ghz-5-5-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ553TK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838926194892471806918",
         "itemNumber": "9SIC7PTM0T1979",
@@ -1740,7 +1735,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858550444",
-    "mpn": "BX80768265KF"
+    "mpn": "BX80768265KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10049,
@@ -1776,11 +1772,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10758921&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-5-245kf-14-cores-14-threads-4-6ghz-5-2-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5535T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312580536933705671470",
         "itemNumber": "N82E16819118509",
@@ -1797,7 +1788,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858550567",
-    "mpn": "BX80768245KF"
+    "mpn": "BX80768245KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10051,
@@ -2084,11 +2076,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 348.79,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588405&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-14700f-14th-gen-20-core-28-thread-5-4ghz-turbo-socket-lga1700-unlocked-desktop-processor-multi%2FJXZRJ55JG3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317963633859641468684",
         "itemNumber": "N82E16819118487",
@@ -2105,7 +2092,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858547680",
-    "mpn": "BX8071514700F"
+    "mpn": "BX8071514700F",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10059,
@@ -2141,11 +2129,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588403&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14600kf-14th-gen-14-core-20-thread-4-0ghz-5-3ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ557JX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832148732492245009425",
         "itemNumber": "N82E16819118472",
@@ -2162,7 +2145,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858546904",
-    "mpn": "BX8071514600KF"
+    "mpn": "BX8071514600KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10060,
@@ -2354,11 +2338,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 191.09,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12570790&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14400f-14th-gen-10-core-16-thread-4-7ghz-turbo-socket-lga1700-unlocked-desktop-processor-multi%2FJXZRJ55J28&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839349146320051021058",
         "itemNumber": "N82E16819118489",
@@ -2375,7 +2354,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858547581",
-    "mpn": "BX8071514400F"
+    "mpn": "BX8071514400F",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10064,
@@ -2454,11 +2434,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 104.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11052891&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i3-14100f-14th-gen-4-core-8-thread-4-7ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ55JJS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837303804476050315101",
         "itemNumber": "N82E16819118492",
@@ -2475,7 +2450,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858547536",
-    "mpn": "BX8071514100F"
+    "mpn": "BX8071514100F",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10066,
@@ -3030,11 +3006,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 466.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013490&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-12900k-desktop-processor-16-8p-8e-cores-up-to-5-2-ghz-unlocked-lga1700-600-series-chipset-125w-grey-black-gold%2FJXZRJ5WVY6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315101913868009020547",
         "itemNumber": "N82E16819118339",
@@ -3050,7 +3021,8 @@ export default [
       }
     },
     "upc": "00735858499613",
-    "mpn": "BX8071512900K"
+    "mpn": "BX8071512900K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10078,
@@ -3086,11 +3058,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 353.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588404&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-12900kf-desktop-processor-16-8p-8e-cores-up-to-5-2-ghz-unlocked-lga1700-600-series-chipset-125w%2FJXZRJ5WFH6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831906010534467823939",
         "itemNumber": "N82E16819118341",
@@ -3107,7 +3074,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858499163",
-    "mpn": "BX8071512900KF"
+    "mpn": "BX8071512900KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10079,
@@ -3195,11 +3163,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 275.55,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10180559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-12700kf-desktop-processor-12-8p-4e-cores-up-to-5-0-ghz-unlocked-lga1700-600-series-chipset-125w-grey-black-gold%2FJXZRJ5WFYG&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314428386815908467193",
         "itemNumber": "9SIBSWCM0S7820",
@@ -3215,7 +3178,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858498982",
-    "mpn": "BX8071512700KF"
+    "mpn": "BX8071512700KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10082,
@@ -3251,11 +3215,6 @@ export default [
         "priceSeller": "Wazno Electronics",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11048829&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-12600kf-desktop-processor-10-6p-4e-cores-up-to-4-9-ghz-unlocked-lga1700-600-series-chipset-125w%2FJXZRJ5WF9G&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16819118349",
         "price": 299.99,
@@ -3270,7 +3229,8 @@ export default [
     },
     "igpu": false,
     "upc": "00735858499057",
-    "mpn": "BX8071512600KF"
+    "mpn": "BX8071512600KF",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10083,
@@ -3788,11 +3748,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 162.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11576991&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-8400f-desktop-processor-6-core-12-threads-4-7-ghz-max-boost-clock-22-mb-total-cache-pcie-4-0-ready%2FJXKQHH58KS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314659337328576445745",
         "itemNumber": "9SIAFJ8KDU7812",
@@ -3820,7 +3775,8 @@ export default [
     "baseClock": 4700,
     "tdp": 65,
     "threads": 12,
-    "bench": 35
+    "bench": 35,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10128,
@@ -3901,11 +3857,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 298.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12090868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-12700f-12th-generation-12-core-20-thread-2-1-to-4-9-ghz-lga1700-desktop-processor-grey-black-gold%2FJXZRJ5KXV3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310826694776425348015",
         "itemNumber": "9SIC7PTM0T0315",
@@ -3935,7 +3886,8 @@ export default [
     "boostClock": 4900,
     "memType": "DDR5",
     "igpu": false,
-    "upc": "00735858503105"
+    "upc": "00735858503105",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10130,
@@ -4048,11 +4000,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 242.05,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11519277&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-12500-12th-generation-6-core-12-thread-3-0-to-4-6-ghz-lga1700-desktop-processor%2FJXZRJ5K8YL&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 12,
@@ -4072,7 +4019,8 @@ export default [
     "bench": 28,
     "boostClock": 4600,
     "memType": "DDR5",
-    "igpu": true
+    "igpu": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10133,
@@ -4260,11 +4208,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 731.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12025570&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-14900ks-24-core-3-2ghz-150w-lga-1700-desktop-processor-retail-box%2FJXZRJ55C46&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832201293737272559982",
         "itemNumber": "N82E16819118496",
@@ -4292,7 +4235,8 @@ export default [
     "boostClock": 6200,
     "memType": "DDR5",
     "igpu": true,
-    "upc": "00735858548663"
+    "upc": "00735858548663",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10139,
@@ -4316,11 +4260,6 @@ export default [
         "priceSeller": "Perfect Stock",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12551143&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-100-1000001904wof-ryzen-5-7500x3d-box-1ghz-base-4-7ghz-6-cores-12-threads-socket-am5-65w-base-tdp-radeon-graphic%2FJXKQHH5YJT&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445831548504802291812461",
@@ -4347,7 +4286,8 @@ export default [
     "bench": 36,
     "memType": "DDR5",
     "igpu": true,
-    "vcache": true
+    "vcache": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10140,
@@ -5072,11 +5012,6 @@ export default [
     "upc": "730143314121",
     "mpn": "100-100000457BOX",
     "deals": {
-      "bestbuy": {
-        "price": 95.79,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12090944&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-5500-6-core-12-thread-3-6-ghz-4-2-ghz-max-boost-socket-am4-pci-express-3-0-unlocked-desktop-processor-black%2FJXKQHH5CR4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311243796421013472549",
         "itemNumber": "N82E16819113737",
@@ -5102,7 +5037,8 @@ export default [
     "memType": "DDR4",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 27
+    "bench": 27,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10159,
@@ -5117,11 +5053,6 @@ export default [
     "upc": "730143314558",
     "mpn": "100-100000589WOF",
     "deals": {
-      "bestbuy": {
-        "price": 325.59,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12649282&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-7900x-12-core-24-thread-4-7-ghz-5-6-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-silver%2FJXKQHH52GL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838171992011505495191",
         "itemNumber": "N82E16819113769",
@@ -5148,7 +5079,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 73
+    "bench": 73,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10160,
@@ -5163,11 +5095,6 @@ export default [
     "upc": "730143314442",
     "mpn": "100-100000593WOF",
     "deals": {
-      "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013276&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-5-7600x-6-core-12-thread-4-7ghz-5-3-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-silver%2FJXKQHH52CT&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836993541884332506771",
         "itemNumber": "N82E16819113770",
@@ -5194,7 +5121,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "128 gigabytes",
     "unlocked": true,
-    "bench": 40
+    "bench": 40,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10161,
@@ -5209,11 +5137,6 @@ export default [
     "upc": "730143314930",
     "mpn": "100-100000910WOF",
     "deals": {
-      "bestbuy": {
-        "price": 376.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12102219&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-7-7800x3d-8-core-16-thread-4-2-ghz-5-0-ghz-max-boost-socket-am5-pci-express-5-0-unlocked-desktop-processor-black%2FJXKQHH5253&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836785218245808493291",
         "itemNumber": "N82E16819113793",
@@ -5241,7 +5164,8 @@ export default [
     "maxMem": "128 gigabytes",
     "unlocked": true,
     "bench": 49,
-    "vcache": true
+    "vcache": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10162,
@@ -5256,11 +5180,6 @@ export default [
     "upc": "735858546966",
     "mpn": "BX8071514900K",
     "deals": {
-      "bestbuy": {
-        "price": 449,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611741&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i9-14900k-14th-gen-24-core-32-thread-4-4ghz-6-0ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ5572H&intsrc=APIG_28060",
-        "inStock": true
-      },
       "amazon": {
         "price": 398.99,
         "url": "https://www.amazon.com/dp/B0CGJDKLB8?tag=tiereduptech-20",
@@ -5297,7 +5216,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 83
+    "bench": 83,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10163,
@@ -5366,11 +5286,6 @@ export default [
     "upc": "735858546881",
     "mpn": "BX8071514600K",
     "deals": {
-      "bestbuy": {
-        "price": 262.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013236&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i5-14600k-14th-gen-14-core-20-thread-4-0ghz-5-3ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ55778&intsrc=APIG_28060",
-        "inStock": true
-      },
       "amazon": {
         "price": 257.13,
         "url": "https://www.amazon.com/dp/B0CGJ9STNF?tag=tiereduptech-20",
@@ -5396,7 +5311,8 @@ export default [
     "unlocked": true,
     "bench": 55,
     "quarantinedAt": "2026-08-05",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10165,
@@ -5673,11 +5589,6 @@ export default [
     "upc": "735858550543",
     "mpn": "BX80768245K",
     "deals": {
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148443&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-5-245k-14-cores-14-threads-4-6ghz-5-2-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5534W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "amazon": {
         "price": 194.83,
         "url": "https://www.amazon.com/dp/B0DFK2P311?tag=tiereduptech-20",
@@ -5727,7 +5638,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 61
+    "bench": 61,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10172,
@@ -5742,11 +5654,6 @@ export default [
     "upc": "735858550383",
     "mpn": "BX80768285K",
     "deals": {
-      "bestbuy": {
-        "price": 549.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148518&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-9-285k-24-cores-24-threads-4-6ghz-5-7-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ553QL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "amazon": {
         "price": 489.98,
         "url": "https://www.amazon.com/dp/B0DFKC99VL?tag=tiereduptech-20",
@@ -5772,7 +5679,8 @@ export default [
     "unlocked": true,
     "bench": 96,
     "quarantinedAt": "2026-08-05",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10173,
@@ -5787,11 +5695,6 @@ export default [
     "upc": "735858550529",
     "mpn": "BX80768265K",
     "deals": {
-      "bestbuy": {
-        "price": 313.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12122566&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-265k-20-cores-20-threads-4-6ghz-5-5-ghz-turbo-socket-lga-1851-unlocked-desktop-processor-multi%2FJXZRJ5534X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "amazon": {
         "price": 345.99,
         "url": "https://www.amazon.com/dp/B0DFK2MH2D?tag=tiereduptech-20",
@@ -5829,7 +5732,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "192 gigabytes",
     "unlocked": true,
-    "bench": 84
+    "bench": 84,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10174,
@@ -6118,11 +6022,6 @@ export default [
     "upc": "735858553308",
     "mpn": "BX80768270K",
     "deals": {
-      "bestbuy": {
-        "price": 329.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12555947&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-ultra-7-processor-270k-plus-24-cores-8-p-cores-16-e-cores-up-to-5-5-ghz-multi%2FJXZRJ55PGL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317687773096029546502",
         "itemNumber": "N82E16819118628",
@@ -6149,7 +6048,8 @@ export default [
     "memType": "DDR5",
     "maxMem": "256 gigabytes",
     "unlocked": true,
-    "bench": 98
+    "bench": 98,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 10181,

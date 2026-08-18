@@ -716,11 +716,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 54.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186562&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-cl-wireless-120-triple-pack-rgb-pwm-pc-case-fans-control-28mm-fdb-controller-included-and-required-black%2FJ39TC2Z24H&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIAD6HKK14840",
         "price": 67.1,
@@ -754,7 +749,8 @@ export default [
     "mpn": "12CL1W3B",
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85017,
@@ -1096,11 +1092,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 19.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11079093&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rs120-argb-pwm-fan-daisy-chain-pwm-argb-airguide-cooling-magnetic-bearing-rgb%2FJ39QHTCKR4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583980788879329956428",
         "itemNumber": "N82E16835181445",
@@ -1134,7 +1125,8 @@ export default [
     "pack": 1,
     "bench": 53,
     "mpn": "CO-9050180-WW",
-    "fanSize": 120
+    "fanSize": 120,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85024,
@@ -2759,11 +2751,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-13"
       },
-      "bestbuy": {
-        "price": 104.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186563&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-wireless-120-triple-pack-reverse-blade-argb-fan-control-double-infinity-mirror-controller-included-white%2FJ39TC2ZCRP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC6EGM109720",
         "price": 104.99,
@@ -2795,7 +2782,8 @@ export default [
     "bench": 71,
     "mpn": "12RSLIN1W3W",
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85058,
@@ -4054,11 +4042,6 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.81,
         "sellerClass": "other"
-      },
-      "bestbuy": {
-        "price": 94.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10131180&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-tl-120-wireless-lcp-fan-blades-customizable-rgb-leds-triple-pack-with-controller-12tl1w3b-black%2FJ39TC2ZJ55&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4079,7 +4062,8 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 75,
-    "mpn": "12TL1W3B"
+    "mpn": "12TL1W3B",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85086,
@@ -4386,11 +4370,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0DJVMKDV1?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564586&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-wireless-120mm-argb-fan-triple-pack-2-4-ghz-wireless-signal-for-rgb-fans-control12sl1w3w-white%2FJ39TC2Z7V6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIAD6HKKM1744",
         "price": 110.13,
@@ -4424,7 +4403,8 @@ export default [
     "mpn": "12SL1W3W",
     "fanSize": 120,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85093,
@@ -5451,11 +5431,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 27.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12354316&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterfan-12mm-cooling-fan-black%2FJ3K4GJYYHW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16835103346",
         "price": 31,
@@ -5488,7 +5463,8 @@ export default [
     "pack": 1,
     "bench": 58,
     "mpn": "MFL-B2DN-21NP2-R2",
-    "fanSize": 120
+    "fanSize": 120,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85115,
@@ -8187,11 +8163,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12024035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-120-rgb-3-pcs-pack-uf-slin120-3w--l-connect-3-0-controller-included-white%2FJ39TC2KW3X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837552014795218774492",
         "itemNumber": "1YF-005G-00092",
@@ -8225,7 +8196,8 @@ export default [
     "pack": 3,
     "bench": 72,
     "mpn": "UF-SLIN120-3W",
-    "fanSize": 120
+    "fanSize": 120,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85174,
@@ -8549,11 +8521,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 69.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12494893&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140-duo-rgb-140mm-computer-case-fan-with-rgb-controller-and-fluid-dynamic-bearings-2-pack-white%2FJ3GWJHRZ65&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458316596992885812711200",
         "itemNumber": "13C-0069-00066",
@@ -8587,7 +8554,8 @@ export default [
     "pack": 2,
     "bench": 56,
     "mpn": "RF-D14DF-W1",
-    "fanSize": 140
+    "fanSize": 140,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85181,
@@ -9433,11 +9401,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11962592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-uni-fan-sl-infinity-120-rgb-3-pcs-pack-uf-slin120-3b--l-connect-3-0-controller-included-black%2FJ39TC2KWX9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315843779829622453939",
         "itemNumber": "1YF-005G-00093",
@@ -9463,7 +9426,8 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 88,
-    "mpn": "UF-SLIN120-3B"
+    "mpn": "UF-SLIN120-3B",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 85201,

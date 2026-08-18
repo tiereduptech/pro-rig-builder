@@ -1311,11 +1311,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 94.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12529941&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-13-m-750w-atx-3-1-power-supply--80-plus-gold-efficiency--pcie-5-1-gpus--modular--bp026us%2FCC5VXLQGR6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835332372626811205695",
         "itemNumber": "N82E16817222044",
@@ -1348,7 +1343,8 @@ export default [
     "eff": "Gold",
     "rgb": false,
     "fans": 1,
-    "upc": "04260052192238"
+    "upc": "04260052192238",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60036,
@@ -1434,11 +1430,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 59.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463635&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-700w-atx12v-2-3-80-plus-power-supply-black%2FJ39ZPCPVQL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838779473257571147226",
         "itemNumber": "N82E16817153231",
@@ -1474,7 +1465,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60038,
@@ -1915,11 +1907,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 158.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12566264&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge-gold-series-1000w-full-modular-power-supply-fan-hub-included-atx-3-0-3-1-pcie-5-1-l-shape-design-eg1000g-wh-white%2FJ39TC2Z7JV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIAFSTKE63072",
         "price": 158.99,
@@ -1950,7 +1937,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60046,
@@ -2314,11 +2302,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 102,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11519286&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-series-cx650-80-plus-bronze-atx-power-supply%2FJ39QHTJF9L&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 11,
@@ -2342,7 +2325,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60054,
@@ -2365,11 +2349,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 253.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm1000x-80-plus-gold-fully-modular-atx-power-supply-with-modular-side-interface-black%2FJ39QHT74GW&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16817139303",
@@ -2402,7 +2381,8 @@ export default [
     "fanSize": 135,
     "depth": 160,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60055,
@@ -2523,11 +2503,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11479619&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge-eg1200g-bh-1200w-gold-modular-psu-atx-3-1-pcie-5-1-l-shape-black%2FJ39TC2ZJR2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "1HU-01PP-00017",
         "price": 179.99,
@@ -2558,7 +2533,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60058,
@@ -2594,11 +2570,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.367Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 120.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349258&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-edge850w-modular-atx-3-1-psu-gold-efficiency-low-noise-l-shape-black-eg0850g-b%2FJ39TC2Z73Z&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -2618,7 +2589,8 @@ export default [
     "fanSize": 135,
     "rgb": false,
     "fans": 1,
-    "mpn": "EG0850G Black"
+    "mpn": "EG0850G Black",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60059,
@@ -2693,13 +2665,7 @@ export default [
     "r": 4.5,
     "asin": "B0CWLWGM67",
     "reviews": 185,
-    "deals": {
-      "bestbuy": {
-        "price": 181.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12593697&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm850x-shift-cybenetics-gold-fully-modular-atx-power-supply-white%2FJ39QHTJK3J&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81PlBQQTaNL._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81WzZbszsQL._AC_SL1500_.jpg",
@@ -2718,7 +2684,13 @@ export default [
     "fanSize": 135,
     "depth": 160,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 60061,
@@ -2856,11 +2828,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 75.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11277838&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-shift-series-rm750x-shift-cybenetics-gold-fully-modular-atx-power-supply-white%2FJ39QHTJW5P&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -2883,7 +2850,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-07"
+    "quarantinedAt": "2026-08-07",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60064,
@@ -3379,11 +3347,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 64.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12338450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frosewill-vng-650w-80-gold-atx-3-0-3-1-non-modular-low-noise-psu-5-year-warranty%2FJ39K6Y5WTJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314933724554380727505",
         "itemNumber": "N82E16817182471",
@@ -3428,7 +3391,8 @@ export default [
     "modular": "Non",
     "fanSize": 120,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60074,
@@ -3762,11 +3726,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 97.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256485&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-series-cx750-750-watt-80-plus-bronze-atx-power-supply-atx-120-v-ac-230-v-ac-input-3-3-v-dc-5%2FJ39QHTJFT2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837507079194078180190",
         "itemNumber": "N82E16817139323",
@@ -3800,7 +3759,8 @@ export default [
     "depth": 150,
     "atx3": false,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60082,
@@ -3866,11 +3826,6 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 97.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11073618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-full-modular-80-plus-gold-atx-power-supply-unit-internal-120-v-ac-230-v-ac-input-3-3-v-dc-5-v-dc%2FJ3K4GJLJ7V&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836855624160054697722",
         "itemNumber": "9SIA0ZXDH58783",
@@ -3902,7 +3857,8 @@ export default [
     "ff": "ATX",
     "atx3": false,
     "rgb": false,
-    "fans": 0
+    "fans": 0,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60084,
@@ -4060,11 +4016,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 101.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256503&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mwe-gold-850w-atx-3-1-psu-80-gold-90-12vhpwr-japanese-caps-zero-rpm-10-year%2FJ3K4GJPQZ3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314274103775378282360",
         "itemNumber": "N82E16817171241",
@@ -4099,7 +4050,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60088,
@@ -4210,11 +4162,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 69.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12500641&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsilverstone-sst-et550-b-550w-80-plus-bronze-active-pfc-psu%2FJ36P26XF36&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314864166409064264744",
         "itemNumber": "9SIC8A6M3J0606",
@@ -4244,7 +4191,8 @@ export default [
     "atx3": false,
     "fanSize": 120,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60091,
@@ -4491,11 +4439,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 193.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11074084&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-sf-rps0175-850w-power-supply-black-sfx-internal-120-v-230-v-input-3-3-v-5-v-12-v-5-v-sb-output%2FJ39QHTJSGT&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817139331",
         "price": 224.99,
@@ -4529,7 +4472,8 @@ export default [
     "rgb": false,
     "fans": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60097,
@@ -6822,11 +6766,6 @@ export default [
     "upc": "841163093658",
     "mpn": "PS-STP-1000FNFAPU-1",
     "deals": {
-      "bestbuy": {
-        "price": 194.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066773&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-sfx-1000w-80plus-platinum-atx-3-1-standard-power-supply-black%2FJ39ZPC9V4L&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817153467",
         "price": 199.99,
@@ -6848,7 +6787,8 @@ export default [
     "ff": "SFX",
     "value": 17,
     "atx3": true,
-    "fanSize": 92
+    "fanSize": 92,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 60152,
@@ -8194,18 +8134,14 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141450&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-vertex-px-1200w-power-supply-atx-3-1-pcie-5-1-12v-2x6-cybenetics-platinum-a-fully-modular-rtx-5090-amd-rx-9000-ready-black%2FC344V32XPK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100452,
@@ -8217,17 +8153,17 @@ export default [
     "msrp": 210.99,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/81gJdU1DGgL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 118.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-core-v2-gx-750-atx3-750w-80-gold-atx-3-0-pcie-5-1-ready-full-modular-atx-form-factor-premium-capacitor%2FC344V3236K&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "amazonRemovedAnomaly": "2026-06-28",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 100453,
@@ -8265,13 +8201,7 @@ export default [
     "msrp": 427.54,
     "r": 4.4,
     "img": "https://m.media-amazon.com/images/I/71PPiu33M9L._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10871690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-750w-power-supply-atx-3-1-pcie-5-1-cybenetics-platinum-fully-modular-rtx-5070-ti-amd-rx-9000-ready-white%2FC344V323W7&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "amazonRemovedAnomaly": "2026-06-28",
@@ -8280,7 +8210,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "detector:stale-pr"
-    ]
+    ],
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100455,
@@ -8303,17 +8234,13 @@ export default [
         "priceSeller": "TheKeyKey",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 142.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11500571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseasonic-focus-gx-atx3-1-850w-80-plus-gold-full-modular-psu%2FC344V32396&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100457,
@@ -8365,11 +8292,6 @@ export default [
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 124.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066027&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-13-m-850w-atx-80-plus-gold-modular-power-supply-black%2FCC5VXLQG9H&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "watts": 850,
@@ -8377,7 +8299,8 @@ export default [
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
     "ff": "ATX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100459,
@@ -8474,11 +8397,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 86.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mwe-gold-750-v3-atx-3-1-750w-80-gold-90-12vhpwr-japanese-caps-zero-rpm-hex-fan-10y%2FJ3K4GJPQKF&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817171242",
         "price": 129.99,
@@ -8497,7 +8415,8 @@ export default [
     "atx3": true,
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
-    "ff": "ATX"
+    "ff": "ATX",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100462,
@@ -8559,11 +8478,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0C6FY4JXF?tag=tiereduptech-20",
         "price": 499.9,
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11884054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-dark-power-pro-13-1600w-atx-3-0-psu--80-plus-titanium--pcie-5--modular--10y-warranty%2FCC5VXLQXJW&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "watts": 1600,
@@ -8573,7 +8487,8 @@ export default [
     "ff": "ATX",
     "eff": "80+ Titanium",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100464,
@@ -8799,11 +8714,6 @@ export default [
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 191.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11065101&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-pure-power-12-m-1200w-atx-80-plus-gold-modular-power-supply-black%2FCC5VXLQX8F&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "watts": 1200,
@@ -8811,7 +8721,8 @@ export default [
     "addedAt": "2026-05-15T13:17:14.416Z",
     "source": "amazon-discovery",
     "ff": "ATX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100471,
@@ -9048,11 +8959,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 237.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463625&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-1200w-gold-atx-3-0-80-gold-10-year-warranty%2FJJG7VTTLCV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835163683945762036176",
         "itemNumber": "N82E16817320029",
@@ -9075,7 +8981,8 @@ export default [
     "source": "amazon-discovery",
     "ff": "ATX",
     "upc": "00195553786805",
-    "mpn": "TUF-GAMING-750G"
+    "mpn": "TUF-GAMING-750G",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100479,
@@ -9201,11 +9108,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 107.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11124256&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-750w-gold-750w-atx-3-0-modular-80-gold-dual-bearings-2-colors-8-year-warranty%2FJJGGLRGL48&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311779140618196173614",
         "itemNumber": "N82E16817320045",
@@ -9228,7 +9130,8 @@ export default [
     "source": "amazon-discovery",
     "ff": "ATX",
     "upc": "00197105192720",
-    "mpn": "AP-850G"
+    "mpn": "AP-850G",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100483,
@@ -10679,11 +10582,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 145.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463638&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-loki-sfx-l-750w-platinum-modular-80-plat-aura-sync-pcie-5-0%2FJJG7VT6852&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16817320037",
         "price": 144.99,
@@ -10706,7 +10604,8 @@ export default [
     "upc": "00195553722049",
     "mpn": "ROG-LOKI-1000P-SFX-L-GAMING",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100582,
@@ -10859,11 +10758,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 95.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463653&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-be-quiet-pure-power-12-1000w-1000-w-atx3-1-atx3-0-compatible-80-plus-gold-certified-non-modular-atx-12v-power-supplies%2FCC5VXLQ873&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -10872,7 +10766,8 @@ export default [
     "eff": "80+ Gold",
     "modular": "Full",
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 101195,

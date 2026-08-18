@@ -1504,11 +1504,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-360-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-white%2FJ39QKP9KTH&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834278197751878776852",
         "itemNumber": "9SIA2W0KER9641",
@@ -1544,7 +1539,8 @@ export default [
     "cfm": 200,
     "mpn": "ACFRE00188A",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80031,
@@ -1963,11 +1959,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 23.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11180596&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-rgb-edition-120mm-cpu-cooling-fan-with-rgb-lighting-black%2FJ3K4GJ8C4S&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -1990,7 +1981,8 @@ export default [
     "radSize": "120",
     "fanSize": 120,
     "cfm": 56,
-    "mpn": "RR-212S-25PZ-R1"
+    "mpn": "RR-212S-25PZ-R1",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80040,
@@ -2013,11 +2005,6 @@ export default [
         "priceSeller": "TRYX NA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360l-am3m-g0w-panorama-se-360-argb-360mm-aio-rotatable-6-67-amoled-curved-screen-3d-anamorphic-aio-cooler-white%2FJ3R84KQLLY&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458313224118965145824094",
@@ -2056,7 +2043,8 @@ export default [
     "cfm": 180,
     "mpn": "L-P360L-AM3M-G0W",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80041,
@@ -2079,11 +2067,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 121.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641613&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-420-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KZH&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445839900506180629681426",
@@ -2121,7 +2104,8 @@ export default [
     "cfm": 240,
     "radiator": 420,
     "fanCount": 3,
-    "mpn": "ACFRE00181A"
+    "mpn": "ACFRE00181A",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80042,
@@ -2433,11 +2417,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 99.95,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256345&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-360l-core-argb-argb-12mm-radiator-cooling-fan-radiator-pump-liquid-cooler-3-x-12mm-core-fans-with-rgb-black%2FJ3K4GJPJ7H&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16835103356",
         "price": 99.99,
@@ -2476,7 +2455,8 @@ export default [
     "fanCount": 3,
     "mpn": "MLW-D36M-A18PZ-R1",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80049,
@@ -2669,11 +2649,6 @@ export default [
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-16"
-      },
-      "bestbuy": {
-        "price": 49.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12565344&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-240-elite-dual-chamber-pump-argb-amd-intel-compatible-white%2FJ3K4GJLWR7&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -2699,7 +2674,8 @@ export default [
     "cfm": 120,
     "mpn": "ELW-D24M-A21DA-RW",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80053,
@@ -2985,11 +2961,6 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12314552&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-hydroshift-ii-lcd-s-360tl-360mm-argb-liquid-cpu-cooler-black%2FJ39TC2ZLYF&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -3016,7 +2987,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80059,
@@ -3929,11 +3901,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 132.59,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629496&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-420-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-black%2FJ39QKP9KZF&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -3960,7 +3927,8 @@ export default [
     "radiator": 420,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80077,
@@ -4162,11 +4130,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 397,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175349&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-rgb%2FJJGGLQQKYQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839322218313316671549",
         "itemNumber": "N82E16835101119",
@@ -4204,7 +4167,8 @@ export default [
     "cfm": 180,
     "mpn": "RYUJIN III 360 ARGB EXTREME",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80081,
@@ -4608,11 +4572,6 @@ export default [
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B0FPCS7VH2?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-hydroshift-ii-lcd-s-360-tl-hs2lcds36tw-cpu-cooler-360mm-aio-3x-120-rgb-fans-white%2FJ39TC2ZLP3&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4639,7 +4598,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80090,
@@ -4794,11 +4754,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0FLTZ2SHM?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422791&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-kraken-core-rgb-360mm-radiator-liquid-cooler-1-x-360mm-single-frame-fan-with-rgb-pump-cap-black%2FJ3GWJHQXJZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16835146176",
         "price": 129.99,
@@ -4837,7 +4792,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80093,
@@ -5478,11 +5434,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 231.88,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12336494&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-ryuo-iii-360-argb-aio-cpu-cooler-with-anime-matrix-display-white%2FJJG7VWCY3P&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839811036610137058647",
         "itemNumber": "9SIA6ZPKVY7892",
@@ -5521,7 +5472,8 @@ export default [
     "mpn": "ROG RYUO III 360 ARGB WHT",
     "radiator": 360,
     "fanCount": 3,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80106,
@@ -5629,11 +5581,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175883&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360a-as3m-g1k-panorama-360-argb-360mm-aio-6-67-amoled-curved-screen-3d-anamorphic-customizable-aio-cooler-black%2FJ3R84KQLPS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834003634045447873973",
         "itemNumber": "9SIBWC8KD89078",
@@ -5671,7 +5618,8 @@ export default [
     "cfm": 180,
     "mpn": "L-P360A-AS3M-G1K",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80109,
@@ -5694,11 +5642,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 43.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359867&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-a-rgb-multi-compatible-tower-cpu-cooler-with-a-rgb-white%2FJ39QKP9WX7&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -5720,7 +5663,8 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80110,
@@ -5743,11 +5687,6 @@ export default [
         "priceSeller": "TRYX NA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 359.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175877&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ftryx-l-p360a-as3m-g1w-panorama-360-argb-360mm-aio-6-67-amoled-curved-screen-3d-anamorphic-customizable-aio-cooler-white%2FJ3R84KQLS2&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458312006717891136329671",
@@ -5786,7 +5725,8 @@ export default [
     "cfm": 180,
     "mpn": "L-P360A-AS3M-G1W",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80111,
@@ -6560,11 +6500,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 379.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12317023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-white%2FJJGGLQFJ8K&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834101491917943558179",
         "itemNumber": "N82E16835101120",
@@ -6602,7 +6537,8 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "mpn": "RYUJIN III 360 ARGB EXTREME WHT"
+    "mpn": "RYUJIN III 360 ARGB EXTREME WHT",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80127,
@@ -7353,11 +7289,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 36.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359857&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-multi-compatible-tower-cpu-cooler-black%2FJ39QKP9WC9&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 38,
@@ -7378,7 +7309,8 @@ export default [
     "value": 100,
     "bench": 53,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80142,
@@ -7395,11 +7327,6 @@ export default [
       "amazon": {
         "price": 76.49,
         "url": "https://www.amazon.com/dp/B0DPHRVNGL?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12369755&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-280-acfre00179a-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KKR&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -7428,7 +7355,8 @@ export default [
     "radiator": 280,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80143,
@@ -7509,11 +7437,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 113.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12595717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-acfre00106a-liquid-freezer-ii-280-a-rgb-multi-compatible-all-in-one-a-rgb-cpu-aio-water-cooler-black%2FJ39QKP9H55&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA2W0KFB2645",
         "price": 99.99,
@@ -7552,7 +7475,8 @@ export default [
     "radiator": 280,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80145,
@@ -7575,11 +7499,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 93.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12369761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-240-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-black%2FJ39QKP9KH2&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "9SIA2W0KG06336",
@@ -7617,7 +7536,8 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80146,
@@ -7695,11 +7615,6 @@ export default [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B0CKXCFLPN?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 97.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-240-a-rgb-multi-compatible-all-in-one-cpu-water-cooler-with-a-rgb-white%2FJ39QKP9WTH&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7726,7 +7641,8 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80148,
@@ -7743,11 +7659,6 @@ export default [
       "amazon": {
         "price": 87.99,
         "url": "https://www.amazon.com/dp/B0DPHPY8SG?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 117.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12595683&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-acfre00187a-liquid-freezer-iii-pro-280-a-rgb-aio-cpu-cooler-water-cooling-amd-am5-am4-intel-lga1851-1770-white%2FJ39QKP9KZY&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -7776,7 +7687,8 @@ export default [
     "radiator": 280,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80149,
@@ -7849,11 +7761,6 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 44.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12221181&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-240l-core-aio-argb-sync-amd-am5-am4-intel-lga-1851-1700-1200-white%2FJ3K4GJPJ7F&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 41,
@@ -7880,7 +7787,8 @@ export default [
     "mpn": "MLW-D24M-A18PZ-RW",
     "radiator": 240,
     "fanCount": 2,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80151,
@@ -7903,11 +7811,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12172742&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-ga-ii-lcd-360mm-aio-2-88-ips-lcd-screen-liquid-cooler-screen-recording-pre-installed-uni-fan-sl-inf-fans-black%2FJ39TC2K4ZJ&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 6,
@@ -7936,7 +7839,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80152,
@@ -8053,11 +7957,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 82.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12359885&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-liquid-freezer-iii-pro-240-multi-compatible-all-in-one-cpu-water-cooler-black%2FJ39QKP9KQ5&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 33,
@@ -8085,7 +7984,8 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80155,
@@ -8195,11 +8095,6 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 42.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641589&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Farctic-freezer-36-co-multi-compatible-tower-cpu-cooler-for-continuous-operation-black%2FJ39QKP9WCK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -8221,7 +8116,8 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80158,
@@ -8833,11 +8729,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11024604&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mlx-d36m-a25pz-r1-360-atmos-high-performance-close-loop-aio-liquid-cooler-black%2FJ3K4GJPXQZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834289082341125763715",
         "itemNumber": "9SIA2W0K2X0146",
@@ -8877,7 +8768,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80171,
@@ -9059,11 +8951,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12365866&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterliquid-core-ii-240mm-aio-cpu-liquid-cooler-black%2FJ3K4GJS2SJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIAD6HKHX9690",
         "price": 93.26,
@@ -9101,7 +8988,8 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80175,
@@ -9124,11 +9012,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 104.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186828&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lite-360mm-pbt-fan-liquid-cpu-cooler-black%2FJ39TC2Z7ZR&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445834161119850086815345",
@@ -9166,7 +9049,8 @@ export default [
     "cfm": 180,
     "mpn": "GA2L36PB",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80176,
@@ -9189,11 +9073,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12186827&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-ga-ii-lite-240mm-aio-cpu-cooler--2x120mm-fdb-fans-daisy-chain-low-noise-for-intel-amd-ga2l24pb-black%2FJ39TC2Z74C&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "37B-009H-00004",
@@ -9231,7 +9110,8 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80177,
@@ -9496,11 +9376,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 49.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12366841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-620s-dual-tower-sync-120mm-fan-6-heat-pipes-amd-intel-compatible-rr-d6na-17pa-r1-argb%2FJ3K4GJPJSJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313170495495992688077",
         "itemNumber": "N82E16835103358",
@@ -9533,7 +9408,8 @@ export default [
     "bench": 44,
     "radSize": "120",
     "cfm": 60,
-    "mpn": "RR-D6NA-17PA-R1"
+    "mpn": "RR-D6NA-17PA-R1",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80183,
@@ -9606,11 +9482,6 @@ export default [
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-16"
-      },
-      "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12366572&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-360mm-aio-cpu-liquid-cooler-black%2FJ3K4GJS297&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 7,
@@ -9639,7 +9510,8 @@ export default [
     "fanCount": 3,
     "needsReview": true,
     "quarantinedAt": "2026-08-18",
-    "mpn": "MLX-D36M-A25SZ-V1"
+    "mpn": "MLX-D36M-A25SZ-V1",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80185,
@@ -11057,11 +10929,6 @@ export default [
         "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-08-16"
       },
-      "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10302700&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsudokoo-proteus-360-aio-liquid-cpu-cooler-black%2FJ3R85WPS95&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "2YM-00BJ-00001",
         "price": 207.99,
@@ -11096,7 +10963,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80216,
@@ -11693,11 +11561,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 49.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11211968&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-skeleton-360-argb-cpu-cooler-360mm-rad-3x120mm-argb-fans-intel-lga-amd-am4-am5-black%2FJXVWSK3HJR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833654735771742308797",
         "itemNumber": "N82E16835209123",
@@ -11734,7 +11597,8 @@ export default [
     "cfm": 180,
     "mpn": "Skeleton 360 ARGB",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80229,
@@ -12005,11 +11869,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 248.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11074774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lcd-sl-inf-360-liquid-cooler-intel-lga-1851-1700-1200-amd-am5-am4-compatible-ga2alcd36inw-white%2FJ39TC2K4LX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458316877999901312192229",
         "itemNumber": "9SIA0ZXK2T0291",
@@ -12046,7 +11905,8 @@ export default [
     "cfm": 165,
     "mpn": "GA2ALCD36INW",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80235,
@@ -12669,11 +12529,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-16"
       },
-      "bestbuy": {
-        "price": 182.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11471948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-atmos-ii-360-lcd-aio-dual-pump-400mm-tubing-argb-pwm-am5-lga-1851-black%2FJ3K4GJSSX8&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839474182876879093444",
         "itemNumber": "N82E16835103383",
@@ -12711,7 +12566,8 @@ export default [
     "cfm": 180,
     "mpn": "MLX-D36M-A25SZ-L1",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80249,
@@ -13055,11 +12911,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 64.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12083655&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-coreliquid-a12-240-240mm-aio-argb-cpu-cooler-lga-1700-1851-am5-am4-black%2FJ3P7TX68F2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 74.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2824&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A12-240&intsrc=APIG_16410",
@@ -13102,7 +12953,8 @@ export default [
     "cfm": 120,
     "mpn": "MAG Coreliquid A12 240",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80257,
@@ -13169,11 +13021,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12172745&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lcd-280mm-aio-liquid-cooler-2-x-140mm-rgb-fans-2-88-ips-lcd-screen-pre-installed-daisy-chained-tl-fans-black%2FJ39TC2Z8HC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIAFSTKHZ7064",
         "price": 139.99,
@@ -13211,7 +13058,8 @@ export default [
     "radiator": 280,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80259,
@@ -13941,11 +13789,6 @@ export default [
     "upc": "810074842709",
     "mpn": "RL-KN280-B1",
     "deals": {
-      "bestbuy": {
-        "price": 212.92,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592752&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-kraken-280mm-radiator-cpu-liquid-cooler-2-x-140mm-f-fans-with-1-54-lcd-display-black%2FJ3GWJHRFLY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314304829086519122432",
         "itemNumber": "9SIC6EGM2W8973",
@@ -13976,7 +13819,8 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80276,
@@ -15015,11 +14859,6 @@ export default [
     "upc": "824142387764",
     "mpn": "MAG CORELIQUID A13 240",
     "deals": {
-      "bestbuy": {
-        "price": 74.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064196&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-core-liquid-a13-240-argb-liquid-cpu-cooler-240mm-radiator-dual-120mm-pwn-fans-rgb-lighting-black%2FJ3P7TX9ZPR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 69.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2407&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-Coreliquid-A13-240&intsrc=APIG_16410",
@@ -15056,7 +14895,8 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80300,
@@ -15259,11 +15099,6 @@ export default [
     "upc": "824142410837",
     "mpn": "MPG CORELIQUID P13 360 WHITE",
     "deals": {
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11115591&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-coreliquid-p13-360-cpu-liquid-cooler-360mm-radiator-ips-2-1lcd-screen-triple-120mm-argb-pwm-fans-uni-bracket-white%2FJ3P7TXRGL9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2766&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMPG-CORELIQUID-P13-360-WHITE&intsrc=APIG_16410",
@@ -15300,7 +15135,8 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 80306,
@@ -15367,11 +15203,6 @@ export default [
     "upc": "840480306236",
     "mpn": "CL-W481-PL12SW-A",
     "deals": {
-      "bestbuy": {
-        "price": 270.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11550732&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-minecube-360-ultra-argb-cpu-aio-liquid-cooler-black%2FJ39TQXRRVS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834195546409973268602",
         "itemNumber": "N82E16835106797",
@@ -15405,7 +15236,8 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100353,

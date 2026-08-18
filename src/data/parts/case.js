@@ -1550,11 +1550,6 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "sellerClass": "other"
-      },
-      "bestbuy": {
-        "price": 124.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166818&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11-vision-compact-white-color-aluminum-steel-tempered-glass-atx-mid-tower-computer-case-o11vpw-white%2FJ39TC2KVQY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -1586,7 +1581,8 @@ export default [
       280,
       240
     ],
-    "bench": 77
+    "bench": 77,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70032,
@@ -1678,11 +1674,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.508Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12160566&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-217-walnut-wood-mid-tower-case-5-pwm-fans-flexible-psu-cable-installation-black-lan217x-black%2FJ39TC2KV65&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -1714,7 +1705,8 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70034,
@@ -1922,11 +1914,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 99.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12153818&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11d-mini-v2-flow--compact-atx-mid-tower-case--panoramic-view--5-x-120mm-fans--cable-management-o11dmiv2fx-black%2FJ39TC2Z3VT&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 7,
@@ -1959,7 +1946,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 73
+    "bench": 73,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70038,
@@ -2066,11 +2054,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12312463&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11d-mini-v2-compact-atx-mid-tower-airflow-computer-case-panoramic-view-fully-ventilated-airflow-o11dmiv2x-black%2FJ39TC2Z3FK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 8,
@@ -2102,7 +2085,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70040,
@@ -2319,11 +2303,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367135&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-ridge-black-mini-itx-slim-small-form-factor-console-pc-case-with-pcie-4-0-riser-black%2FJ36XJSZKW4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811352210",
         "price": 148.99,
@@ -2371,7 +2350,8 @@ export default [
     "linkVerifiedBy": "case-ingest",
     "recoveredBy": "case-ingest-2026-08-10",
     "needsReview": true,
-    "quarantinedAt": "2026-08-15"
+    "quarantinedAt": "2026-08-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70044,
@@ -2394,11 +2374,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297635&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-flux-pro-6-x-pwm-fans-included-high-airflow-front-panel-with-walnut-wood-temp-display-full-tower-e-atx-pc-case-walnut%2FJXVWSWS9YS&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458313676203499740067420",
@@ -2443,7 +2418,8 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70045,
@@ -2778,11 +2754,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.769Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 82.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166819&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-207rx-atx-rgb-case-2x140mm-argb-2x120mm-pwm-fans-tempered-glass-black-black%2FJ39TC2KV9F&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -2814,7 +2785,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 79
+    "bench": 79,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70051,
@@ -4067,11 +4039,6 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "sellerClass": "other"
-      },
-      "bestbuy": {
-        "price": 79.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076118&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmontech-air-903-max-e-atx-mid-tower-4x-140mm-fans-tempered-glass-mesh-front-type-c-4090-support-black-black%2FC34KSQQR6Z&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4103,7 +4070,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 90
+    "bench": 90,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70071,
@@ -4252,11 +4220,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 229.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-2-xl-black-atx-flexible-light-tinted-tempered-glass-window-full-tower-computer-case-black%2FJ36XJSZRC9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312041267863630094807",
         "itemNumber": "N82E16811352137",
@@ -4300,7 +4263,8 @@ export default [
       280,
       240
     ],
-    "bench": 96
+    "bench": 96,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70074,
@@ -5207,11 +5171,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-11"
-      },
-      "bestbuy": {
-        "price": 59.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195347&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-v100x-atx-mid-tower-case-rgb-led-tempered-glass-420mm-gpu-support-360mm-radiator-dust-filter-black-black%2FJ39TC2ZCK4&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -5245,7 +5204,8 @@ export default [
     "bench": 79,
     "bundle": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70089,
@@ -5268,11 +5228,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 99.58,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12085949&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-qube-540-atx-mid-tower-case-415mm-gpu-clearance-tempered-glass-modular-design-stardust-iron-stardust-iron%2FJ3K4GJSRFQ&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445839628585421322787880",
@@ -5317,7 +5272,8 @@ export default [
     ],
     "color": "Black",
     "bench": 67,
-    "bundle": false
+    "bundle": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70090,
@@ -5462,11 +5418,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-north-computer-case-mid-tower-chalk-white-mesh-steel-5-x-bay-atx-micro-atx-mini-itx-white%2FJ36XJSZTRJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317273752555866858694",
         "itemNumber": "N82E16811352205",
@@ -5511,7 +5462,8 @@ export default [
       280,
       240
     ],
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70093,
@@ -5534,11 +5486,6 @@ export default [
         "priceSeller": "Rosewill Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 53.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12640382&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgamdias-aura-gc1-elite-atx-mid-tower-pc-case-airflow-mesh-front-4-argb-fans-tempered-glass-gpu-340mm-360mm-aio-black%2FJ3R7L47Q8K&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "2AM-00BP-00066",
@@ -5591,7 +5538,8 @@ export default [
     "linkVerifiedBy": "case-ingest",
     "recoveredBy": "case-ingest-2026-08-10",
     "needsReview": true,
-    "quarantinedAt": "2026-08-15"
+    "quarantinedAt": "2026-08-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70094,
@@ -5670,11 +5618,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297633&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c5-argb-7x-120mm-argb-fans-10-fan-support-type-c-3-2-gen-2-tempered-glass-360mm-radiator-mid-tower-atx-case-black%2FJXVWSWSP6P&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835806998149376374607",
         "itemNumber": "N82E16811129309",
@@ -5717,7 +5660,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 72
+    "bench": 72,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70096,
@@ -6287,11 +6231,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 119,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297874&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c8-wood-dual-chamber-type-c-360mm-radiator-seamless-tg-panels-rtx-40-compatible-full-tower-case-wood%2FJXVWSWSS8W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317572593397680814628",
         "itemNumber": "N82E16811129311",
@@ -6335,7 +6274,8 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 87
+    "bench": 87,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70107,
@@ -6882,11 +6822,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 74.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12473560&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-vsk4000e-u3-us-black-sgcc-steel-atx-mid-tower-computer-case-black%2FJXVWSZXW7G&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -6919,7 +6854,8 @@ export default [
     ],
     "bench": 62,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70117,
@@ -7452,11 +7388,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 62.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12486494&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-a31-black-atx-mid-tower-tempered-glass-btf-connectors-360-aio-support-argb-ready-optimized-airflow-black%2FJJGGLQ4CYF&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7488,7 +7419,8 @@ export default [
       280,
       240
     ],
-    "bench": 69
+    "bench": 69,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70127,
@@ -7511,11 +7443,6 @@ export default [
         "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367148&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-ambience-pro-rgb-atx-matx-mid-tower-pc-case-black-chassis-with-light-tinted-tg-side-panel-black%2FJ36XJSZ49P&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "44583126166352044407272",
@@ -7559,7 +7486,8 @@ export default [
       280,
       240
     ],
-    "bench": 75
+    "bench": 75,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70128,
@@ -7582,11 +7510,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 296.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11747669&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-xl-ambience-pro-rgb-e-atx-full-tower-pc-case-black-chassis-with-light-tinted-tg-side-panel-black%2FJ36XJSZ4RR&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458311373784819613714873",
@@ -7628,7 +7551,8 @@ export default [
       280,
       240
     ],
-    "bench": 75
+    "bench": 75,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70129,
@@ -7719,11 +7643,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 323.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11180582&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-air-5400-lx-r-rgb-icue-triple-chamber-mid-tower-case-with-3x-rgb-fans-system-hub-black%2FJ39TSCS79Z&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311889940109266554203",
         "itemNumber": "N82E16811139253",
@@ -7766,7 +7685,8 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 82
+    "bench": 82,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70131,
@@ -7789,11 +7709,6 @@ export default [
         "priceSeller": "FlashDeal Store",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 85.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12141304&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fokinos-air-cross-genuine-walnut-wood-atx-mid-tower-case-3x140mm-pwm-fan-2x120mm-reverse-pwm-fan-pre-installed-black%2FCGCLQGX83Q&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458311102623031472280240",
@@ -7837,7 +7752,8 @@ export default [
     ],
     "color": "Wood",
     "bench": 58,
-    "upc": "04897121941390"
+    "upc": "04897121941390",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70132,
@@ -8080,11 +7996,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-computer-case-meshify-3-black%2FJ36XJSZ4SS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811352224",
         "price": 154.99,
@@ -8124,7 +8035,8 @@ export default [
       280,
       240
     ],
-    "bench": 71
+    "bench": 71,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70137,
@@ -8306,11 +8218,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12568077&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-y40-atx-mid-tower-pc-case-white%2FJ3R75JLZ4X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834720761646328031099",
         "itemNumber": "N82E16811737007",
@@ -8352,7 +8259,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 92
+    "bench": 92,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70141,
@@ -8375,11 +8283,6 @@ export default [
         "priceSeller": "Adorama",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564468&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-y70-mid-tower-atx-gaming-pc-desktop-case-with-riser-cable-black-white%2FJ3R75JLFJL&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458316280174490073953837",
@@ -8425,7 +8328,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 77
+    "bench": 77,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70142,
@@ -8448,11 +8352,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 224.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068480&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-north-xl-white%2FJ36XJSZZ92&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445835752782997348742544",
@@ -8498,7 +8397,8 @@ export default [
       240
     ],
     "bench": 93,
-    "bundle": false
+    "bundle": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70143,
@@ -8577,11 +8477,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 88.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11146951&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-masterbox-mcb-nr200-knnn-s00-mini-itx-mini-dtx-mini-tower-case-black%2FJ3K4GJLJ9X&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 24,
@@ -8612,7 +8507,8 @@ export default [
     "color": "Black",
     "bench": 37,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70145,
@@ -8738,11 +8634,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0BTRYDX4K?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 144.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12309016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-performance-1-ft-full-tower-rtx40-compatible-temp-display-4-x-storm-t3-pwm-fans-dual-tg-side-panels-e-atx-pc-case-black%2FJXVWSWSSPP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811129292",
         "price": 144.99,
@@ -8792,7 +8683,8 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70148,
@@ -9646,11 +9538,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 173.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11821441&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-3500x-rgb-atx-mid-tower-pc-case-white%2FJ39QHT2JP4&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 16,
@@ -9681,7 +9568,8 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "color": "Black",
-    "bench": 75
+    "bench": 75,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70164,
@@ -9825,11 +9713,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 561.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12348000&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-hyperion-gr701-eatx-full-tower-case-semi-open-tool-free-panels-2x-420mm-rad-support-gpu-holder-2x-type-c-black%2FJJG7VWX5P4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836844406306171902727",
         "itemNumber": "N82E16811173052",
@@ -9874,7 +9757,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70167,
@@ -9897,11 +9781,6 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 184.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367117&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-torrent-compact-rgb-black-tg-light-tempered-glass-high-airflow-atx-computer-case-black%2FJ36XJSZRH8&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458317568030290045778043",
@@ -9945,7 +9824,8 @@ export default [
       280,
       240
     ],
-    "bench": 78
+    "bench": 78,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70168,
@@ -10088,11 +9968,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-09"
       },
-      "bestbuy": {
-        "price": 184.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367140&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-2-black-atx-light-tinted-tempered-glass-window-mid-tower-pc-case-black%2FJ36XJSZ65V&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811352133",
         "price": 174.99,
@@ -10142,7 +10017,8 @@ export default [
     "linkVerifiedBy": "case-ingest",
     "recoveredBy": "case-ingest-2026-08-10",
     "needsReview": true,
-    "quarantinedAt": "2026-08-15"
+    "quarantinedAt": "2026-08-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70171,
@@ -10165,11 +10041,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 183.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11463643&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gt502-white-atx-mid-tower-case-with-rgb-button-usb-3-2-type-c-2x-usb-3-0-2-way-gpu-mount-360-280mm-radiator-white%2FJJG7VWCLZ7&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458312283569160903031644",
@@ -10217,7 +10088,8 @@ export default [
       240
     ],
     "bench": 90,
-    "bundle": false
+    "bundle": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70172,
@@ -10234,11 +10106,6 @@ export default [
       "amazon": {
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0CT2LSSHK?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297860&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-c8-argb-dual-chamber-layout-type-c-360mm-radiator-support-seamless-tg-front-side-panels-full-tower-e-atx-pc-case-black%2FJXVWSWSPYX&intsrc=APIG_28060",
         "inStock": true
       },
       "newegg": {
@@ -10291,7 +10158,8 @@ export default [
     "linkVerifiedAt": "2026-08-10",
     "linkVerifiedSource": "newegg",
     "linkVerifiedBy": "case-ingest",
-    "recoveredBy": "case-ingest-2026-08-10"
+    "recoveredBy": "case-ingest-2026-08-10",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70173,
@@ -10596,11 +10464,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 284.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256435&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-pa602-e-atx-case-420mm-rad-dual-200mm-fans-tool-less-pcie-gpu-holder-usb-c-i-o-black%2FJJGGLRHHQ7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317219454514137438293",
         "itemNumber": "N82E16811173059",
@@ -10645,7 +10508,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 87
+    "bench": 87,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70180,
@@ -11111,11 +10975,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 128.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502887&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ceres-300-series-ceres-300-tg-argb-matcha-green-spcc-e-atx-mid-tower-case-matcha-green%2FJ39ZPC9W5Y&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831664814297187919542",
         "itemNumber": "N82E16811133532",
@@ -11160,7 +11019,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 90
+    "bench": 90,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70189,
@@ -11389,11 +11249,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 244.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-meshify-3-white%2FJ36XJSZ46L&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838733967842248489958",
         "itemNumber": "N82E16811352228",
@@ -11434,7 +11289,8 @@ export default [
       280,
       240
     ],
-    "bench": 75
+    "bench": 75,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70194,
@@ -12128,11 +11984,6 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.516Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 124.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12165412&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-lancool-217-inf-black-mid-tower-atx-case-w-3-fans-mirror-panel-black-lan217infx-black%2FJ39TC2ZG8Y&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -12164,7 +12015,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 76
+    "bench": 76,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70207,
@@ -12567,11 +12419,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12567177&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhyte-x50-modern-performance-atx-mid-tower-pc-gaming-case-matcha-milk%2FJ3R75JYLCV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833741643365353343492",
         "itemNumber": "N82E16811737031",
@@ -12615,7 +12462,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70215,
@@ -13438,11 +13286,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 75.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12323210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgamdias-athena-m4m-wood-mini-pc-case-3-pwm-fans-395mm-gpu-atx-psu-360mm-radiator-wood%2FJ3R7L47KVJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "4458314094904198251756295",
         "itemNumber": "2AM-00BP-00063R",
@@ -13498,7 +13341,8 @@ export default [
       240
     ],
     "color": "Wood",
-    "bench": 55
+    "bench": 55,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70230,
@@ -13673,11 +13517,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 109.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12152690&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbe-quiet-light-base-500-black-abs-steel-tempered-glass-atx-m-atx-mini-itx-btf-mb-case-black%2FCC5VXLQPCL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834698973640294685037",
         "itemNumber": "N82E16811734021",
@@ -13718,7 +13557,8 @@ export default [
     ],
     "color": "Black",
     "bench": 76,
-    "upc": "04260052193808"
+    "upc": "04260052193808",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70234,
@@ -14015,11 +13855,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 71.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11081499&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdiypc-diy-matx06-wood-black-usb3-0-type-c-micro-atx-mid-tower-case-w-tempered-glass-walnut-front-panel-4-pwm-fans-black%2FJX5SHP6RC2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834702899530246337236",
         "itemNumber": "N82E16811353273",
@@ -14075,7 +13910,8 @@ export default [
       280,
       240
     ],
-    "bench": 59
+    "bench": 59,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70239,
@@ -14098,11 +13934,6 @@ export default [
         "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 114.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367169&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-fdcepo1a03-pc-case-white%2FJ36XJS47S2&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445836130868640703193156",
@@ -14146,7 +13977,8 @@ export default [
       280,
       240
     ],
-    "bench": 77
+    "bench": 77,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70240,
@@ -14171,11 +14003,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 151.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076119&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-o11-vision-black-aluminum-steel-tempered-glass-atx-mid-tower-computer-case-o11vx-black%2FJ39TC2K4ZQ&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445834023567984554590486",
@@ -14220,7 +14047,8 @@ export default [
       280,
       240
     ],
-    "bench": 96
+    "bench": 96,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70241,
@@ -14342,11 +14170,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 134.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12367116&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Ffractal-design-epoch-black-rgb-tempered-glass-high-airflow-mesh-front-3-rgb-fans-spacious-atx-matx-itx-case-black%2FJ36XJS47SP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831350871403759787888",
         "itemNumber": "N82E16811352242",
@@ -14390,7 +14213,8 @@ export default [
       280,
       240
     ],
-    "bench": 79
+    "bench": 79,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70244,
@@ -15153,11 +14977,6 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 421.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12348390&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-cosmos-alpha-full-tower-curved-aluminum-200mm-fans-400mm-gpu-argb-underglow-black%2FJ3K4GJSQVV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811119476",
         "price": 499.99,
@@ -15200,7 +15019,8 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 83
+    "bench": 83,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 70258,
@@ -16115,13 +15935,7 @@ export default [
     "r": 0,
     "upc": "840006686064",
     "mpn": "CC-9011279-WW",
-    "deals": {
-      "bestbuy": {
-        "price": 180.92,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422732&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-3500x-argb-atx-mid-tower-pc-case-white%2FJ39QHTC5TR&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "tower": "Mid",
     "tg": false,
     "color": "White",
@@ -16142,7 +15956,13 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "bench": 64,
-    "bundle": false
+    "bundle": false,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 70277,
@@ -20199,11 +20019,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 86.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076955&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fap201-asus-prime-case-tg-black-black-steel-plastic-steel-plastic-tg-micro-atx-computer-case-black%2FJJG7VTHY5W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16811173069",
         "price": 134.99,
@@ -20221,7 +20036,8 @@ export default [
     "mobo": [
       "mATX"
     ],
-    "rgb": true
+    "rgb": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100888,

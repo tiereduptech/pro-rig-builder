@@ -568,11 +568,6 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 127.39,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12550147&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-fhd-curved-monitor-ls27d366ganxza-black%2FJ3ZYG2W7K9&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 28,
@@ -592,7 +587,8 @@ export default [
     "bench": 42,
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "1080p",
-    "curved": true
+    "curved": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90016,
@@ -961,11 +957,6 @@ export default [
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-13"
-      },
-      "bestbuy": {
-        "price": 478.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11920689&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-aw2723df-gaming-monitor%2FJ3K4L6JQGP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 34,
@@ -986,7 +977,8 @@ export default [
     "sync": "G-Sync",
     "ports": "DisplayPort",
     "needsReview": true,
-    "quarantinedAt": "2026-08-16"
+    "quarantinedAt": "2026-08-16",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90025,
@@ -1360,11 +1352,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 519.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592864&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Faoc-27-qd-oled-240hz-0-03ms-gaming-monitor-black-purple%2FJX9GSKP2YP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA8X5KRU9608",
         "price": 550,
@@ -1396,7 +1383,8 @@ export default [
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
     "needsReview": true,
-    "quarantinedAt": "2026-07-28"
+    "quarantinedAt": "2026-07-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90035,
@@ -1460,11 +1448,6 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "paapi"
       },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149025&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-ug27s-27-1080p-full-hd-1920-x-1080-300hz-1ms-1500r-curved-gaming-monitor-hdmi-x-2-dp-x-2-black%2FJ3LH5H8R9X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838933482926361755538",
         "itemNumber": "9SIAT2EKBR8382",
@@ -1495,7 +1478,8 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1080p",
-    "curved": true
+    "curved": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90037,
@@ -2700,11 +2684,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 914.95,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11027805&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-34-inch-curved-pc-gaming-monitor-aw3423dw-%2FJ3K4L67HK4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832503716794097167530",
         "itemNumber": "9SIABMTJT15325",
@@ -2735,7 +2714,8 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "curved": true
+    "curved": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90066,
@@ -2758,11 +2738,6 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Zero Edge Technology, LLC",
         "priceResolvedVia": "paapi"
-      },
-      "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11403794&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-27-2k-qhd-2560-x-1440-240-hz-1-ms-flat-panel-ips-gaming-monitor-hdmi-2-0-displayport-1-4-black%2FJ3LH5H8HVR&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458318141531490913197017",
@@ -2794,7 +2769,8 @@ export default [
     "bench": 91,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90067,
@@ -2953,11 +2929,6 @@ export default [
         "priceSeller": "Zero Edge Technology, LLC",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149041&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fz-z-edge-27-ultra-hd-3840-x-2160-100-srgb-60hz-5ms-ips-4k-monitor-hdr10-hdmi-dp-freesync-compatible-black%2FJ3LH5H8S3K&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311692701509625542803",
         "itemNumber": "9SIAT2EDP01537",
@@ -2986,7 +2957,8 @@ export default [
     "response": "14 Milliseconds",
     "bench": 50,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90071,
@@ -3419,11 +3391,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 329.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12196210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vx3267u-4k-32-ips-lcd-uhd-monitor-display-port-hdmi-black%2FJ37H88VLHT&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839178871217832592241",
         "itemNumber": "9SIAN7GK233136",
@@ -3453,7 +3420,8 @@ export default [
     "bench": 53,
     "hdr": "HDR10",
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90082,
@@ -3678,11 +3646,6 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Deco Brands USA – Official Five Star Store",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 191.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10189223&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdeco-gear-34-business-curved-super-ultrawide-wqhd-monitor-3440x1440-100hz-1ms-100-srgb-hdr-dp-hdmi-tilt-adjustable-black%2FJJG3SJY695&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -3701,7 +3664,8 @@ export default [
     "hdr": "HDR",
     "ports": "HDMI, DisplayPort",
     "resolution": "1440p",
-    "curved": true
+    "curved": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90088,
@@ -4009,13 +3973,7 @@ export default [
     "r": 0,
     "upc": "887276263533",
     "mpn": "U32J590",
-    "deals": {
-      "bestbuy": {
-        "price": 329.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233473&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-32-viewfinity-uj590-uhd-monitor-dark-gray-blue%2FJ3ZYGC34HL&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 32,
     "res": "4K",
     "refresh": 60,
@@ -4026,7 +3984,13 @@ export default [
     "value": 12,
     "bench": 61,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90097,
@@ -4100,13 +4064,7 @@ export default [
     "r": 0,
     "upc": "400063615645",
     "mpn": "GSRF 27GL850-B",
-    "deals": {
-      "bestbuy": {
-        "price": 87.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6361564&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6361564.p%3FskuId%3D6361564",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "1440p",
     "refresh": 144,
@@ -4120,7 +4078,13 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90100,
@@ -4862,13 +4826,7 @@ export default [
     "r": 0,
     "upc": "400064132554",
     "mpn": "GSRF KA242Y BI",
-    "deals": {
-      "bestbuy": {
-        "price": 40.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6413255&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6413255.p%3FskuId%3D6413255",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 23.8,
     "res": "1080p",
     "refresh": 75,
@@ -4881,7 +4839,13 @@ export default [
     "bench": 54,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90124,
@@ -4959,13 +4923,7 @@ export default [
     "r": 0,
     "upc": "400064209478",
     "mpn": "GSRF 38WN95C-W.AUS",
-    "deals": {
-      "bestbuy": {
-        "price": 350.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420947&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420947.p%3FskuId%3D6420947",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 38,
     "res": "4K",
     "refresh": 144,
@@ -4978,7 +4936,13 @@ export default [
     "bench": 92,
     "hdr": "HDR",
     "sync": "G-Sync Compatible",
-    "ports": "1x DisplayPort, 2x HDMI"
+    "ports": "1x DisplayPort, 2x HDMI",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90127,
@@ -5243,11 +5207,6 @@ export default [
     "upc": "766907008555",
     "mpn": "VG2756-4K",
     "deals": {
-      "bestbuy": {
-        "price": 449.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11067594&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vg2756-4k-27-ips-4k-uhd-docking-monitor-hdmi-usb-c-displayport-black%2FJ37H88F6T3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16824116994",
         "price": 449.99,
@@ -5270,7 +5229,8 @@ export default [
     "value": 7,
     "bench": 58,
     "ports": "HDMI, DisplayPort, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90136,
@@ -5316,13 +5276,7 @@ export default [
     "r": 0,
     "upc": "400064428350",
     "mpn": "GSRF 27QN600-B.AUS",
-    "deals": {
-      "bestbuy": {
-        "price": 229.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6442835&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6442835.p%3FskuId%3D6442835",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "1440p",
     "refresh": 60,
@@ -5336,7 +5290,13 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90138,
@@ -5349,13 +5309,7 @@ export default [
     "r": 0,
     "upc": "400064475545",
     "mpn": "GSRF X24IH",
-    "deals": {
-      "bestbuy": {
-        "price": 65.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6447554&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6447554.p%3FskuId%3D6447554",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 23.8,
     "res": "1080p",
     "refresh": 144,
@@ -5368,7 +5322,13 @@ export default [
     "bench": 62,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90139,
@@ -5586,13 +5546,7 @@ export default [
     "r": 0,
     "upc": "400064600589",
     "mpn": "GSRF 34GP950G-B.AUS",
-    "deals": {
-      "bestbuy": {
-        "price": 325.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460058&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460058.p%3FskuId%3D6460058",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 144,
@@ -5605,7 +5559,13 @@ export default [
     "bench": 85,
     "hdr": "HDR",
     "sync": "G-Sync Ultimate",
-    "ports": "HDMI, DisplayPort"
+    "ports": "HDMI, DisplayPort",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90146,
@@ -5682,13 +5642,7 @@ export default [
     "r": 0,
     "upc": "400064601791",
     "mpn": "GSRF M27F",
-    "deals": {
-      "bestbuy": {
-        "price": 67.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460179&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460179.p%3FskuId%3D6460179",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "1080p",
     "refresh": 70,
@@ -5701,7 +5655,13 @@ export default [
     "bench": 44,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90149,
@@ -6154,13 +6114,7 @@ export default [
     "r": 0,
     "upc": "195949765148",
     "mpn": "MYJH3LL/A / MMYQ3LL/A",
-    "deals": {
-      "bestbuy": {
-        "price": 1599.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501569&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501569.p%3FskuId%3D6501569",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "5120 x 2880",
     "refresh": 60,
@@ -6168,7 +6122,13 @@ export default [
     "contrast": "1000:1",
     "value": 0,
     "bench": 30,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90164,
@@ -6181,13 +6141,7 @@ export default [
     "r": 0,
     "upc": "195949764387",
     "mpn": "MYJF3LL/A / MK0Q3LL/A",
-    "deals": {
-      "bestbuy": {
-        "price": 1999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501570&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501570.p%3FskuId%3D6501570",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "5120 x 2880",
     "refresh": 60,
@@ -6195,7 +6149,13 @@ export default [
     "contrast": "1000:1",
     "value": 0,
     "bench": 30,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90165,
@@ -6208,13 +6168,7 @@ export default [
     "r": 0,
     "upc": "195949765520",
     "mpn": "MYJJ3LL/A / MMYV3LL/A",
-    "deals": {
-      "bestbuy": {
-        "price": 2299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501599&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501599.p%3FskuId%3D6501599",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "5120 x 2880",
     "refresh": 60,
@@ -6222,7 +6176,13 @@ export default [
     "contrast": "1000:1",
     "value": 0,
     "bench": 30,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90166,
@@ -6401,11 +6361,6 @@ export default [
     "upc": "766907014693",
     "mpn": "VG2448A",
     "deals": {
-      "bestbuy": {
-        "price": 159.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6508997&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6508997.p%3FskuId%3D6508997",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16824117082",
         "price": 159.99,
@@ -6428,7 +6383,8 @@ export default [
     "value": 31,
     "bench": 40,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90172,
@@ -6442,11 +6398,6 @@ export default [
     "upc": "195553091114",
     "mpn": "BE279QSK",
     "deals": {
-      "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512099&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512099.p%3FskuId%3D6512099",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "4458317788330031794290581",
         "itemNumber": "N82E16824281136R",
@@ -6471,7 +6422,8 @@ export default [
     "value": 20,
     "bench": 41,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90173,
@@ -6484,13 +6436,7 @@ export default [
     "r": 0,
     "upc": "195122737184",
     "mpn": "21Y56AA#ABA",
-    "deals": {
-      "bestbuy": {
-        "price": 573.87,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068313&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-34-va-lcd-curved-100hz-monitor-usb-hdmi-black%2FJJ8V3R3X9Y&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 100,
@@ -6500,7 +6446,13 @@ export default [
     "contrast": "5,000,000:1",
     "value": 12,
     "bench": 54,
-    "ports": "HDMI"
+    "ports": "HDMI",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90174,
@@ -6513,13 +6465,7 @@ export default [
     "r": 0,
     "upc": "887276724881",
     "mpn": "LS34C502GANXZA",
-    "deals": {
-      "bestbuy": {
-        "price": 329.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11885143&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-34-viewfinity-s5-ultrawide-qhd-100hz-amd-freesync-monitor-with-hdr10-displayport-hdmi-black%2FJ3ZYG2PYZ8&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 100,
@@ -6532,7 +6478,13 @@ export default [
     "hdr": "HDR10",
     "sync": "FreeSync",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90175,
@@ -6545,13 +6497,7 @@ export default [
     "r": 0,
     "upc": "887276712116",
     "mpn": "S34A654UBN",
-    "deals": {
-      "bestbuy": {
-        "price": 439,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11232914&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-viewfinity-s65ua-34-led-curved-ultra-wqhd-freesync-monitor-with-hdr10-usb-type-c-hdmi-displayport-lan-usb-black%2FJ3ZYG2YRYH&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 100,
@@ -6564,7 +6510,13 @@ export default [
     "hdr": "HDR10",
     "sync": "FreeSync",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90176,
@@ -6578,11 +6530,6 @@ export default [
     "upc": "196786296666",
     "mpn": "6N4D6AA#ABA",
     "deals": {
-      "bestbuy": {
-        "price": 619.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068151&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-31-5-ips-lcd-4k-uhd-60hz-monitor-usb-hdmi-black-silver-silver%2FJJG8755VHH&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "0JC-0019-02F10",
         "price": 674.99,
@@ -6605,7 +6552,8 @@ export default [
     "value": 5,
     "bench": 61,
     "ports": "HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90177,
@@ -6650,11 +6598,6 @@ export default [
     "upc": "766907019322",
     "mpn": "VX2776-4K-MHDU",
     "deals": {
-      "bestbuy": {
-        "price": 279.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11067617&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fviewsonic-vx2776-4k-mhdu-27-ips-lcd-4k-uhd-monitor-hdmi-displayport-silver%2FJ37H88V355&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835561044267228546061",
         "itemNumber": "9SIAFJ8KDW7178",
@@ -6678,7 +6621,8 @@ export default [
     "value": 14,
     "bench": 70,
     "ports": "HDMI, DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90179,
@@ -6890,11 +6834,6 @@ export default [
     "upc": "195174053904",
     "mpn": "27GR83Q-B",
     "deals": {
-      "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10187423&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flg-ultragear-27-qhd-240hz-1ms-nvidia-g-sync-and-amd-freesync-premium-with-displayhdr-400-hdmi-displayport-usb-black%2FJJ8VPZRS8X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIABMTKRN3097",
         "price": 315.49,
@@ -6919,7 +6858,8 @@ export default [
     "hdr": "HDR400",
     "sync": "G-Sync",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90186,
@@ -7761,11 +7701,6 @@ export default [
     "upc": "824142341100",
     "mpn": "MAG 321UPX QD-OLED",
     "deals": {
-      "bestbuy": {
-        "price": 799,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10102846&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag321upxqdoled-32-quantum-dot-oled-uhd-240hz-0-03ms-freesyncpremium-monitor-with-hdr400-displayport-hdmi-usb-c-black%2FJ3P7TXYZK7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2133&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMAG-321UPX-QD-OLED&intsrc=APIG_16410",
@@ -7796,7 +7731,8 @@ export default [
     "sync": "FreeSync",
     "ports": "HDMI, DisplayPort",
     "resolution": "4K",
-    "panel": "OLED"
+    "panel": "OLED",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90209,
@@ -7881,13 +7817,7 @@ export default [
     "r": 0,
     "upc": "840046049744",
     "mpn": "GW2790",
-    "deals": {
-      "bestbuy": {
-        "price": 119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578247&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578247.p%3FskuId%3D6578247",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "1080p",
     "refresh": 100,
@@ -7897,7 +7827,13 @@ export default [
     "value": 67,
     "bench": 47,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90212,
@@ -8245,13 +8181,7 @@ export default [
     "r": 0,
     "upc": "715663121091",
     "mpn": "27C4KPDWSCS",
-    "deals": {
-      "bestbuy": {
-        "price": 1099.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583257&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583257.p%3FskuId%3D6583257",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "4K",
     "refresh": 60,
@@ -8261,7 +8191,13 @@ export default [
     "value": 0,
     "bench": 53,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90224,
@@ -8318,11 +8254,6 @@ export default [
     "upc": "884116468769",
     "mpn": "DELL-P2725HE",
     "deals": {
-      "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584756&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584756.p%3FskuId%3D6584756",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834667725142361711101",
         "itemNumber": "9SIC0T2KG23219",
@@ -8346,7 +8277,8 @@ export default [
     "value": 20,
     "bench": 45,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90226,
@@ -8360,11 +8292,6 @@ export default [
     "upc": "884116468684",
     "mpn": "DELL-P2425H",
     "deals": {
-      "bestbuy": {
-        "price": 183.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584760.p%3FskuId%3D6584760",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "4458311733130193038301261",
         "price": 184.99,
@@ -8399,7 +8326,8 @@ export default [
     "value": 36,
     "bench": 40,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90227,
@@ -8412,13 +8340,7 @@ export default [
     "r": 0,
     "upc": "884116468714",
     "mpn": "DELL-P2425HE",
-    "deals": {
-      "bestbuy": {
-        "price": 309.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584761.p%3FskuId%3D6584761",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 23.8,
     "res": "1080p",
     "refresh": 100,
@@ -8429,7 +8351,13 @@ export default [
     "value": 20,
     "bench": 40,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90228,
@@ -8442,13 +8370,7 @@ export default [
     "r": 0,
     "upc": "884116468738",
     "mpn": "DELL-P2725H",
-    "deals": {
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584762&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584762.p%3FskuId%3D6584762",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "1080p",
     "refresh": 100,
@@ -8459,7 +8381,13 @@ export default [
     "value": 31,
     "bench": 45,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90229,
@@ -8473,11 +8401,6 @@ export default [
     "upc": "884116468660",
     "mpn": "DELL-P2225H",
     "deals": {
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584763&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584763.p%3FskuId%3D6584763",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833009221760992923561",
         "itemNumber": "9SIA4P0KTF8527",
@@ -8501,7 +8424,8 @@ export default [
     "value": 33,
     "bench": 40,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90230,
@@ -8806,13 +8730,7 @@ export default [
     "r": 0,
     "upc": "4897118180498",
     "mpn": "ES07DC9",
-    "deals": {
-      "bestbuy": {
-        "price": 329.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149827&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-one-27-in-4k-hdr-144-hz-monitor-with-usb-c-dock-glossy%2FCGCLR566KF&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "4K",
     "refresh": 144,
@@ -8823,7 +8741,13 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90240,
@@ -8836,13 +8760,7 @@ export default [
     "r": 0,
     "upc": "4897118180054",
     "mpn": "ES07D03",
-    "deals": {
-      "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148266&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-one-27-in-4k-hdr-144-hz-monitor-with-usb-c-dock-matte%2FCGCLR566CX&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "4K",
     "refresh": 144,
@@ -8853,7 +8771,13 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90241,
@@ -8989,13 +8913,7 @@ export default [
     "r": 0,
     "upc": "887276791524",
     "mpn": "S34C654TAN",
-    "deals": {
-      "bestbuy": {
-        "price": 699.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595124&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595124.p%3FskuId%3D6595124",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 100,
@@ -9005,7 +8923,13 @@ export default [
     "value": 9,
     "bench": 56,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90245,
@@ -9274,13 +9198,7 @@ export default [
     "r": 0,
     "upc": "884116475750",
     "mpn": "DELL-E2425HS",
-    "deals": {
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601745&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601745.p%3FskuId%3D6601745",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 24,
     "res": "1080p",
     "refresh": 75,
@@ -9291,7 +9209,13 @@ export default [
     "value": 30,
     "bench": 39,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90258,
@@ -9304,13 +9228,7 @@ export default [
     "r": 0,
     "upc": "884116441441",
     "mpn": "DELLP2424HEB",
-    "deals": {
-      "bestbuy": {
-        "price": 469.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602097&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602097.p%3FskuId%3D6602097",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 23.8,
     "res": "1080p",
     "refresh": 75,
@@ -9321,7 +9239,13 @@ export default [
     "value": 8,
     "bench": 40,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90259,
@@ -9334,13 +9258,7 @@ export default [
     "r": 0,
     "upc": "195174097533",
     "mpn": "34WR55QK-B",
-    "deals": {
-      "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602256&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602256.p%3FskuId%3D6602256",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 34,
     "res": "1440p",
     "refresh": 100,
@@ -9352,7 +9270,13 @@ export default [
     "bench": 54,
     "hdr": "HDR10",
     "ports": "HDMI, DisplayPort, USB-C",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90260,
@@ -9396,13 +9320,7 @@ export default [
     "r": 0,
     "upc": "887276836751",
     "mpn": "LS27D806EANXGO",
-    "deals": {
-      "bestbuy": {
-        "price": 209.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603447&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603447.p%3FskuId%3D6603447",
-        "inStock": false
-      }
-    },
+    "deals": {},
     "screenSize": 27,
     "res": "4K",
     "refresh": 60,
@@ -9414,7 +9332,13 @@ export default [
     "bench": 61,
     "hdr": "HDR10",
     "ports": "HDMI, DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90262,
@@ -9919,13 +9843,7 @@ export default [
     "r": 0,
     "upc": "4897118180566",
     "mpn": "ES07E91",
-    "deals": {
-      "bestbuy": {
-        "price": 669.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149829&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-black-32-in-class-4k-240-hz-dual-mode-woled-monitor-metallic%2FCGCLR5665H&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 31.5,
     "res": "4K",
     "refresh": 240,
@@ -9936,7 +9854,13 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90276,
@@ -9949,13 +9873,7 @@ export default [
     "r": 0,
     "upc": "4897118180610",
     "mpn": "ES07EFE",
-    "deals": {
-      "bestbuy": {
-        "price": 849.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10149833&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdough-spectrum-black-32-in-class-4k-240-hz-dual-mode-woled-with-gorilla-glass-metallic%2FCGCLR566VP&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 31.5,
     "res": "4K",
     "refresh": 240,
@@ -9966,7 +9884,13 @@ export default [
     "hdr": "HDR True Black 400",
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90277,
@@ -10066,13 +9990,7 @@ export default [
     "r": 0,
     "upc": "840046050658",
     "mpn": "RD320UA",
-    "deals": {
-      "bestbuy": {
-        "price": 749.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12563654&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbenq-rd320ua-31-5-ips-led-4k-programming-monitor-with-moonhalo-backlight-and-flexible-arm-hdmi-dp-usb-c-90w-black%2FJ39QZT58JL&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 31.5,
     "res": "4K",
     "refresh": 60,
@@ -10082,7 +10000,13 @@ export default [
     "value": 3,
     "bench": 63,
     "ports": "HDMI, DisplayPort, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90281,
@@ -10257,13 +10181,7 @@ export default [
     "r": 0,
     "upc": "887276836034",
     "mpn": "S32D606EAN",
-    "deals": {
-      "bestbuy": {
-        "price": 379.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617889&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617889.p%3FskuId%3D6617889",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 32,
     "res": "1440p",
     "refresh": 100,
@@ -10273,7 +10191,13 @@ export default [
     "value": 22,
     "bench": 58,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90287,
@@ -10286,13 +10210,7 @@ export default [
     "r": 0,
     "upc": "887276836676",
     "mpn": "S32D806UAN",
-    "deals": {
-      "bestbuy": {
-        "price": 489.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617890.p%3FskuId%3D6617890",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 32,
     "res": "4K",
     "refresh": 60,
@@ -10303,7 +10221,13 @@ export default [
     "bench": 60,
     "hdr": "HDR10",
     "ports": "DisplayPort, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90288,
@@ -10725,11 +10649,6 @@ export default [
     "upc": "197105628984",
     "mpn": "PA27JCV",
     "deals": {
-      "bestbuy": {
-        "price": 699.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620167&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620167.p%3FskuId%3D6620167",
-        "inStock": false
-      },
       "newegg": {
         "sku": "445837289008359025278643",
         "itemNumber": "N82E16824281343",
@@ -10767,7 +10686,8 @@ export default [
     "value": 3,
     "bench": 36,
     "hdr": "HDR",
-    "ports": "HDMI, DisplayPort"
+    "ports": "HDMI, DisplayPort",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90300,
@@ -11079,11 +10999,6 @@ export default [
     "upc": "766907029505",
     "mpn": "VP2788-5K",
     "deals": {
-      "bestbuy": {
-        "price": 929.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629449&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629449.p%3FskuId%3D6629449",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313753795303915270456",
         "itemNumber": "9SIAN7GKFT5405",
@@ -11107,7 +11022,8 @@ export default [
     "value": 3,
     "bench": 37,
     "ports": "HDMI, DisplayPort, Thunderbolt",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90309,
@@ -11597,11 +11513,6 @@ export default [
     "upc": "197498471341",
     "mpn": "8Y2K9AAABA",
     "deals": {
-      "bestbuy": {
-        "price": 979,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12587778&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fhp-7-pro-31-5-ips-led-4k-uhd-60hz-monitor-with-hdr-usb-hdmi-black-gray-dual-color%2FJJGLF4CX2H&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836957138536845070102",
         "itemNumber": "9SIA24GKA97290",
@@ -11626,7 +11537,8 @@ export default [
     "bench": 61,
     "hdr": "HDR",
     "ports": "HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90325,
@@ -11682,11 +11594,6 @@ export default [
     "upc": "884116484578",
     "mpn": "DELL-U2725QE",
     "deals": {
-      "bestbuy": {
-        "price": 659.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12569434&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-ultrasharp-27-ips-led-4k-uhd-120hz-monitor-with-hdr-usb-hdmi-black-silver-dual-color%2FJ3K4L637L2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583576241280024199425",
         "itemNumber": "9SIAA65KSC4472",
@@ -11711,7 +11618,8 @@ export default [
     "bench": 71,
     "hdr": "HDR",
     "ports": "HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90327,
@@ -11725,11 +11633,6 @@ export default [
     "upc": "195174130940",
     "mpn": "34U511A-B",
     "deals": {
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10926562&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flg-ultrawide-34-ips-fhd-100hz-5ms-monitor-with-vesa-displayhdr-400-hdmi-displayport-black%2FJJ8VPZKY9Q&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "4458318209251856026705781",
         "price": 299.99,
@@ -11753,7 +11656,8 @@ export default [
     "bench": 49,
     "hdr": "HDR400",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90328,
@@ -12081,11 +11985,6 @@ export default [
     "upc": "195174100684",
     "mpn": "27US550-W",
     "deals": {
-      "bestbuy": {
-        "price": 229.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641767&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641767.p%3FskuId%3D6641767",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16824026451",
         "price": 299.99,
@@ -12122,7 +12021,8 @@ export default [
     "bench": 61,
     "hdr": "HDR10",
     "ports": "HDMI, DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 90338,
@@ -12367,13 +12267,7 @@ export default [
     "r": 0,
     "upc": "840046050726",
     "mpn": "PD3226G",
-    "deals": {
-      "bestbuy": {
-        "price": 899.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12562948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbenq-pd3226g-31-5-ips-led-4k-144hz-mac-compatibile-monitor-hdmi-dp-thunderbolt-4-90w-white%2FJ39QZT58XJ&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "screenSize": 31.5,
     "res": "4K",
     "refresh": 144,
@@ -12384,7 +12278,13 @@ export default [
     "bench": 80,
     "sync": "FreeSync",
     "ports": "HDMI, DisplayPort, Thunderbolt",
-    "resolution": "4K"
+    "resolution": "4K",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 90345,

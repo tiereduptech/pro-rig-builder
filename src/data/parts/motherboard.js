@@ -35,11 +35,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 434.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013419&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870e-e-gaming-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQHLHT&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813119681",
         "price": 599.99,
@@ -57,7 +52,8 @@ export default [
     "upc": "00197105710306",
     "mpn": "ROG CROSSHAIR X870E HERO",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20001,
@@ -241,11 +237,6 @@ export default [
     "usb_c": true,
     "audio": "Realtek ALC1220",
     "deals": {
-      "bestbuy": {
-        "price": 392.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12215016&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-x3d-ice-am5-amd-x870e-atx-motherboard%2FJ3ZW9X7P2J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831326263641736495659",
         "itemNumber": "N82E16813145593",
@@ -265,7 +256,8 @@ export default [
     "upc": "00889523044803",
     "mpn": "X870E AORUS MASTER",
     "amazonRemovedAnomaly": "2026-06-28",
-    "amazonBundleAsin": true
+    "amazonBundleAsin": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20005,
@@ -383,17 +375,13 @@ export default [
         "priceSeller": "BestforLess Store ✓ (Serial# Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 243.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214966&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-b650e-i-gaming-wifi-am5-ddr5-mitx-motherboard-10-2-power-pcie-5-0-2-5g-lan-wifi-6e%2FJJG7VW2GQP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 34,
     "bench": 95,
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20008,
@@ -533,17 +521,13 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 105.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b650m-pro-rs-am5-amd-b650-micro-atx-motherboard%2FC34K265LF4&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 93,
     "bench": 64,
     "needsReview": true,
-    "quarantinedAt": "2026-07-21"
+    "quarantinedAt": "2026-07-21",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20011,
@@ -724,15 +708,11 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 151.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013053&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-aorus-elite-ax-v2%2FJ3ZW92F6LK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 61,
-    "bench": 76
+    "bench": 76,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20015,
@@ -933,11 +913,6 @@ export default [
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 275.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-z890-tomahawk-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9SRJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 259.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2373&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z890-TOMAHAWK-WIFI&intsrc=APIG_16410",
@@ -960,7 +935,8 @@ export default [
     "value": 27,
     "bench": 100,
     "upc": "00824142382226",
-    "mpn": "MAG Z890 TOMAHAWK WIFI"
+    "mpn": "MAG Z890 TOMAHAWK WIFI",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20020,
@@ -996,11 +972,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 275.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021831&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z890-aorus-elite-x-ice-lga-1851-ddr5-5x-m-2-pcie-5-0-thunderbolt-4-wifi7-2-5gbe-atx%2FJ3ZW92V5CP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838082438829531923635",
         "itemNumber": "N82E16813145525",
@@ -1018,7 +989,8 @@ export default [
     "value": 22,
     "bench": 100,
     "upc": "00889523045060",
-    "mpn": "Z890 AORUS ELITE X ICE"
+    "mpn": "Z890 AORUS ELITE X ICE",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20021,
@@ -1134,11 +1106,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 204.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12081396&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-a-wifi-ii-lga-1700-intel-z790-sata-6gb-s-ddr5-atx-motherboard%2FJ3P7TXHRFW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1492&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z790-TOMAHAWK-WIFI&intsrc=APIG_16410",
@@ -1161,7 +1128,8 @@ export default [
     "upc": "00824142305690",
     "mpn": "MAG Z790 TOMAHAWK WIFI",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20024,
@@ -1340,11 +1308,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 142.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11022761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-ds3h-ax-socket-lga-1700-intel-b760-matx-ddr4-motherboard-black%2FJ3ZW92V3YZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835701968347352623480",
         "itemNumber": "N82E16813145425",
@@ -1364,7 +1327,8 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-08-18",
     "upc": "04719331872793",
-    "mpn": "B760M DS3H GEN5"
+    "mpn": "B760M DS3H GEN5",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20028,
@@ -1477,11 +1441,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 131.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11941432&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650m-d3hp-ax-am5-ddr5-pcie-4-0-wi-fi-6e-2-5gbe%2FJ3ZW92VRFY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 83,
@@ -1490,7 +1449,8 @@ export default [
     "mpn": "B650M DS3H",
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20034,
@@ -1526,11 +1486,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 213.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12588169&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850-v-evo-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard%2FJ3P7TXT26J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 219.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2958&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-WIFI&intsrc=APIG_16410",
@@ -1551,7 +1506,8 @@ export default [
     "value": 34,
     "bench": 100,
     "upc": "00824142447574",
-    "mpn": "MAG B850 TOMAHAWK WIFI"
+    "mpn": "MAG B850 TOMAHAWK WIFI",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20035,
@@ -1704,11 +1660,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 148.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013060&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b850m-pro-rs-wifi-am5-amd-b850-micro-atx-motherboard%2FC34FQFQYRC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839858375610514091719",
         "itemNumber": "N82E16813162195",
@@ -1739,7 +1690,8 @@ export default [
     "value": 61,
     "bench": 94,
     "upc": "04711581490352",
-    "mpn": "B850M Pro RS WiFi"
+    "mpn": "B850M Pro RS WiFi",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20038,
@@ -1867,11 +1819,6 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 180.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013277&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-z890-pro-rs-motherboard%2FC34K265QFC&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 9,
@@ -1883,7 +1830,8 @@ export default [
     "quarantinedAt": "2026-07-22",
     "reviewFlags": [
       "detector:stale-pr"
-    ]
+    ],
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20041,
@@ -2105,11 +2053,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 127.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013367&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550m-aorus-elite-ax-desktop-motherboard%2FJ3ZW92VYHK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 100,
@@ -2117,7 +2060,8 @@ export default [
     "upc": "00889523036006",
     "mpn": "B550M K",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20046,
@@ -2153,11 +2097,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 97.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955152&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b550-phantom-gaming-4-socket-am4-amd-b550-ddr4-quad-crossfirex-sata3-usb3-2-m-2-atx-motherboard%2FC34K264QYV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310534438189077999261",
         "itemNumber": "N82E16813157936",
@@ -2175,7 +2114,8 @@ export default [
     "value": 100,
     "bench": 68,
     "upc": "04710483931512",
-    "mpn": "B550 PHAN GAM 4 AC"
+    "mpn": "B550 PHAN GAM 4 AC",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20047,
@@ -2303,17 +2243,13 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 198.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013283&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650i-ultra-gaming-desktop-motherboard%2FJ3ZW92V37T&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "value": 17,
     "bench": 80,
     "needsReview": true,
-    "quarantinedAt": "2026-08-11"
+    "quarantinedAt": "2026-08-11",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20050,
@@ -2369,11 +2305,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 121.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013079&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-eagle-wifi6-gaming-desktop-motherboard%2FJ3ZW9X77Q9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835031620843229052505",
         "itemNumber": "N82E16813145567",
@@ -2405,7 +2336,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6",
     "value": 93,
-    "bench": 66
+    "bench": 66,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20052,
@@ -2609,11 +2541,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 307.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11334666&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-a-gaming-wifi-intel-ultra-2-ready-ddr5-wifi-7-thunderbolt-4-ai-oc%2FJJGGLQWR2Y&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838499849801079964229",
         "itemNumber": "N82E16813119693",
@@ -2644,7 +2571,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 18,
-    "bench": 90
+    "bench": 90,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20056,
@@ -3689,11 +3617,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 101.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013026&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b550-gaming-x-v2%2FJ3ZW92F6RC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317392886828213259364",
         "itemNumber": "N82E16813145255",
@@ -3725,7 +3648,8 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 100,
-    "bench": 63
+    "bench": 63,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20079,
@@ -3760,11 +3684,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 309.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12243293&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870a-gam-wifi-white%2FJJGGLQT3R2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813119684",
         "price": 299.99,
@@ -3794,7 +3713,8 @@ export default [
     "wifi": "WiFi",
     "memType": "DDR5",
     "value": 32,
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20080,
@@ -3817,11 +3737,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 189,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11747668&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-x870-plus-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQHGK2&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458316853172344249856532",
@@ -3854,7 +3769,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 39,
-    "bench": 81
+    "bench": 81,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20081,
@@ -3938,11 +3854,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12641612&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b650e-max-gaming-wifi-w-am5-pcie-5-0-ddr5-wi-fi-6e-usb-10gbps-bios-flashback-aura-sync%2FJJGGLHGPFQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831268016896340577955",
         "itemNumber": "9SIC6M7M3P4800",
@@ -3971,7 +3882,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 56,
-    "bench": 76
+    "bench": 76,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20083,
@@ -4119,11 +4031,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 121.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013449&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-ddr4-lga-1700-micro-atx-motherboard-b760mpd4%2FJ3P7TXGWXQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 114.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B760M-P-DDR4&intsrc=APIG_16410",
@@ -4159,7 +4066,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 75,
-    "bench": 64
+    "bench": 64,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20086,
@@ -4366,11 +4274,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 524.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12312673&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-x870e-creator-wifi-amd-am5-pcie-5-0-ddr5-usb4-10-2-5-gb-lan-wifi-7-4-m-2%2FJJGGLQHK8X&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833869360160723216949",
         "itemNumber": "9SIA0ZXKE95959",
@@ -4414,7 +4317,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 2,
-    "bench": 82
+    "bench": 82,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20090,
@@ -5010,11 +4914,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 105.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11058483&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-b760maywwifid4ii-micro-atx-motherboard%2FJJGHGP2XK7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317524312527918436050",
         "itemNumber": "N82E16813119744",
@@ -5046,7 +4945,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 96,
-    "bench": 65
+    "bench": 65,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20100,
@@ -5108,11 +5008,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 151.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013434&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650m-aorus-elite-gaming-desktop-motherboard%2FJ3ZW92VXJY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 36,
@@ -5134,7 +5029,8 @@ export default [
     "value": 54,
     "bench": 72,
     "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "quarantinedAt": "2026-07-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20102,
@@ -5195,11 +5091,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 112.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11279839&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-h610m-g-ddr4-desktop-motherboard%2FJ3P7TX34JR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1254&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-H610M-G-DDR4&intsrc=APIG_16410",
@@ -5236,7 +5127,8 @@ export default [
     "value": 96,
     "bench": 48,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20104,
@@ -5645,11 +5537,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 185.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12249103&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870-gaming-wifi6-am5-atx-ddr5-3x-m-2-pcie-5-0-usb4-2-5gbe-5-year-warranty%2FJ3ZW92V5VK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834742943041071220360",
         "itemNumber": "9SIA2W0KNN5693",
@@ -5680,7 +5567,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6",
     "value": 46,
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20113,
@@ -5703,11 +5591,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 145.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-b760m-a-ax-desktop-motherboard%2FJJGGLR7JPG&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16813119640",
@@ -5738,7 +5621,8 @@ export default [
     "wifi": "None",
     "ff": "mATX",
     "value": 65,
-    "bench": 65
+    "bench": 65,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20114,
@@ -5880,11 +5764,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11898708&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-x870-p-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-white%2FJJGGLQQV7T&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 37,
@@ -5904,7 +5783,8 @@ export default [
     "value": 47,
     "bench": 77,
     "needsReview": true,
-    "quarantinedAt": "2026-07-25"
+    "quarantinedAt": "2026-07-25",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20117,
@@ -6115,11 +5995,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 480.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12193210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-z890-creator-wifi-workstation-motherboard%2FJJGGLQK74T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838561405574310649464",
         "itemNumber": "N82E16813119699",
@@ -6151,7 +6026,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 4,
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20121,
@@ -6300,11 +6176,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 235.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013168&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-gaming-b850-e-wifi-gaming-desktop-motherboard%2FJJGGLHL3JF&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 11,
@@ -6326,7 +6197,8 @@ export default [
     "value": 35,
     "bench": 78,
     "quarantinedAt": "2026-07-15",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20124,
@@ -6646,11 +6518,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 172.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237658&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650m-a-wifi-desktop-motherboard%2FJ3P7TXG8HW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1510&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650M-A-WIFI&intsrc=APIG_16410",
@@ -6675,7 +6542,8 @@ export default [
     "value": 51,
     "bench": 71,
     "needsReview": true,
-    "quarantinedAt": "2026-07-29"
+    "quarantinedAt": "2026-07-29",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20131,
@@ -6696,11 +6564,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 192.45,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11527748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650-s-wifi-desktop-motherboard%2FJ3P7TXY67T&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458317363615517290657160",
@@ -6734,7 +6597,8 @@ export default [
     "value": 67,
     "bench": 74,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20132,
@@ -6800,11 +6664,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 213.24,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11068425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z790-p-wifi-desktop-motherboard%2FJ3P7TXGLP7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1496&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z790-P-WIFI&intsrc=APIG_16410",
@@ -6839,7 +6698,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 43,
-    "bench": 81
+    "bench": 81,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20134,
@@ -6987,11 +6847,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 381.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214954&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-x3d-am5-amd-x870e-atx-motherboard%2FJ3ZW9X7PC6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315751721208473731959",
         "itemNumber": "N82E16813145596",
@@ -7023,7 +6878,8 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 11,
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20138,
@@ -7046,11 +6902,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 123.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12214973&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-a620i-ax-am5-mini-itx-motherboard-ddr5-pcie-4-0-wi-fi-6e-2-5gbe-q-flash-plus%2FJ3ZW92VSPJ&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445834748234082289410591",
@@ -7081,7 +6932,8 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "None",
     "value": 76,
-    "bench": 47
+    "bench": 47,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20139,
@@ -7159,11 +7011,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 121.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11287554&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610i-plus-d4-lga-1700-mini-itx-motherboard-pcie-4-0-ddr4-m-2-1-gb-lan-dp-hdmi-d-sub%2FJJG7VTQY3G&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458318395621824905590843",
         "itemNumber": "N82E16813119572",
@@ -7194,7 +7041,8 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "None",
     "value": 77,
-    "bench": 44
+    "bench": 44,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20141,
@@ -7464,11 +7312,6 @@ export default [
         "price": 86.11,
         "url": "https://www.amazon.com/dp/B0C3ZM464W?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 113.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12350034&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610m-e-d4-csm-lga1700-matx-mb-pcie-4-0-ddr4-2x-m-2-1gb-lan-dp-hdmi-d-sub-usb-3-2-rgb-com%2FJJG7VHVFTX&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 6,
@@ -7490,7 +7333,8 @@ export default [
     "value": 91,
     "bench": 48,
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20147,
@@ -7677,11 +7521,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 190.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013047&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-z890-gaming-plus-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9PLQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2367&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FZ890-GAMING-PLUS-WIFI&intsrc=APIG_16410",
@@ -7716,7 +7555,8 @@ export default [
     "value": 29,
     "bench": 87,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20151,
@@ -7739,11 +7579,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 106.27,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11455786&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-a620m-s2h-am5-ddr5-m-atx-motherboard-pcie-4-0-3-year-warranty%2FJ3ZW92VP48&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16813145458",
@@ -7773,7 +7608,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 100,
-    "bench": 48
+    "bench": 48,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20152,
@@ -7916,11 +7752,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 328.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013370&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-x870e-plus-wifi7-atx-motherboard%2FJJGHGP3P6W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839170342489965489287",
         "itemNumber": "N82E16813119748",
@@ -7952,7 +7783,8 @@ export default [
     "wifi": "WiFi 7",
     "ff": "ATX",
     "value": 18,
-    "bench": 88
+    "bench": 88,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20155,
@@ -7975,11 +7807,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 183.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11300603&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860m-a-wifi-lga-1851-intel-b860-ddr5-m-2-thunderbolt4-wi-fi-7-micro-atx%2FJ3P7TX62TT&intsrc=APIG_28060",
-        "inStock": true
       },
       "msi": {
         "price": 169.99,
@@ -8015,7 +7842,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 48,
-    "bench": 75
+    "bench": 75,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20156,
@@ -9069,11 +8897,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11061905&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b760-gaming-plus-wifi-lga-1700-ddr5-atx-sata-6gbps-wi-fi-6e-pcie-4-0%2FJ3P7TXLSJZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1746&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB760-GAMING-PLUS-WIFI&intsrc=APIG_16410",
@@ -9109,7 +8932,8 @@ export default [
     "value": 38,
     "bench": 73,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20178,
@@ -9386,11 +9210,6 @@ export default [
         "priceSeller": "STC Distributors (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 255.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013130&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650-aorus-elite-ax-ice-gaming-desktop-motherboard%2FJ3ZW92VRR9&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 10,
@@ -9412,7 +9231,8 @@ export default [
     "value": 32,
     "bench": 76,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20185,
@@ -9869,11 +9689,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 163.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013374&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650m-p-gaming-desktop-motherboard%2FJ3P7TXLKW9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836807393390324348205",
         "itemNumber": "9SIBP4YKU70748",
@@ -9904,7 +9719,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 60,
-    "bench": 70
+    "bench": 70,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20196,
@@ -10320,11 +10136,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 133.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12045588&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-pro-h610m-g-wifi-ddr4-lga-1700-intel-h610-micro-atx-motherboard%2FJ3P7TXG268&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 129.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2970&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2FPRO-H610M-G-WIFI-DDR4-B1&intsrc=APIG_16410",
@@ -10361,7 +10172,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 81,
-    "bench": 49
+    "bench": 49,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20206,
@@ -10465,11 +10277,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 148.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11333761&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-gaming-plus-wifi-ddr4-m-atx-motherboard-pcie-4-0-2x-m-2-usb-3-2-type-c-wifi-6-q-flash-plus%2FJ3ZW92VZC6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315706414125149251241",
         "itemNumber": "N82E16813145505",
@@ -10513,7 +10320,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 57,
-    "bench": 64
+    "bench": 64,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20210,
@@ -12446,11 +12254,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 260.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013104&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b650-aero-g-desktop-motherboard%2FJ3ZW92V2FL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838855329814347807539",
         "itemNumber": "N82E16813145410",
@@ -12494,7 +12297,8 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 30,
-    "bench": 70
+    "bench": 70,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20253,
@@ -12662,11 +12466,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 144.97,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12130843&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-h610m-g-wifi-gaming-desktop-motherboard%2FJ3P7TXSR6F&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 22,
@@ -12688,7 +12487,8 @@ export default [
     "value": 91,
     "bench": 55,
     "needsReview": true,
-    "quarantinedAt": "2026-08-13"
+    "quarantinedAt": "2026-08-13",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20257,
@@ -12754,11 +12554,6 @@ export default [
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 221.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12238678&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-b860-i-gaming-wifi-b860-mitx-intel-core-ultra-2-ready-ddr5-wifi7-thunderbolt-4%2FJJGGLQ53RZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813119710",
         "price": 229.99,
@@ -12790,7 +12585,8 @@ export default [
     "value": 38,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20259,
@@ -12854,11 +12650,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 233.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b850m-mortar-wifi-gaming-desktop-motherboard%2FJ3P7TXRG8Q&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 219.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2709&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850M-MORTAR-WIFI&intsrc=APIG_16410",
@@ -12895,7 +12686,8 @@ export default [
     "value": 31,
     "bench": 76,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20261,
@@ -13075,11 +12867,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 242.47,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955244&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760i-aorus-pro-gaming-desktop-motherboard%2FJ3ZW92VYTT&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145459",
         "price": 219.99,
@@ -13111,7 +12898,8 @@ export default [
     "value": 36,
     "bench": 73,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20266,
@@ -13134,11 +12922,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 183.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013341&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b840-gaming-plus-wifi-gaming-desktop-motherboard%2FJ3P7TX62WH&intsrc=APIG_28060",
-        "inStock": true
       },
       "msi": {
         "price": 149.99,
@@ -13175,7 +12958,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 51,
-    "bench": 69
+    "bench": 69,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20267,
@@ -13659,11 +13443,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 131.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11366131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850m-ds3h-am5-matx-motherboard-ddr5-pcie-5-0-2x-m-2-usb-c-2-5gbe-5-year-warranty%2FJ3ZW92VF53&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314639915471569147938",
         "itemNumber": "9SIC3DRKN68044",
@@ -13693,7 +13472,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 68,
-    "bench": 72
+    "bench": 72,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20279,
@@ -13727,11 +13507,6 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.771Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
-      },
-      "bestbuy": {
-        "price": 132.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11295394&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b760m-p-lga-1700-intel-b760-sata-6gb-s-micro-atx-motherboard%2FJ3P7TXLSTC&intsrc=APIG_28060",
-        "inStock": true
       },
       "msi": {
         "price": 119.99,
@@ -13769,7 +13544,8 @@ export default [
     "value": 78,
     "bench": 72,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20280,
@@ -13855,11 +13631,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 296.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013417&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-z890-aorus-master-gaming-desktop-motherboard%2FJ3ZW92V5XG&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145523",
         "price": 499.99,
@@ -13891,7 +13662,8 @@ export default [
     "value": 19,
     "bench": 97,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20283,
@@ -13953,11 +13725,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 221.02,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11233359&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-white-gaming-desktop-motherboard%2FJ3P7TX9V98&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2536&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-WHITE&intsrc=APIG_16410",
@@ -13992,7 +13759,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 30,
-    "bench": 88
+    "bench": 88,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20285,
@@ -14059,11 +13827,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 392.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078365&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-z890-carbon-wifi-lga-1851-intel-z890-atx-motherboard%2FJ3P7TX9RFW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 369.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2369&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890-CARBON-WIFI&intsrc=APIG_16410",
@@ -14100,7 +13863,8 @@ export default [
     "value": 11,
     "bench": 91,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20287,
@@ -14799,11 +14563,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 190.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013314&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b860-tomahawk-wifi-gaming-desktop-motherboard%2FJ3P7TX9VGC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 179,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2456&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860-TOMAHAWK-WIFI&intsrc=APIG_16410",
@@ -14839,7 +14598,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 44,
-    "bench": 82
+    "bench": 82,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20301,
@@ -15449,11 +15209,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 379.59,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12170643&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b850-ai-top-gaming-desktop-motherboard%2FJ3ZW92VFPW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145543",
         "price": 349.99,
@@ -15482,7 +15237,8 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 13,
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20315,
@@ -15547,11 +15303,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 226.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11334667&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-b860-plus-wifi-atx-motherboard-intel-core-ultra-2-ready-ddr5-pcie-5-0-wi-fi-7-2-5gb-lan-usb-20gbps-type-c%2FJJGGLQ5X3F&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312562899664496796722",
         "itemNumber": "N82E16813119711",
@@ -15582,7 +15333,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 45,
-    "bench": 78
+    "bench": 78,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20317,
@@ -15617,11 +15369,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 170.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013429&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860-ds3h-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VV2J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145556",
         "price": 169.99,
@@ -15650,7 +15397,8 @@ export default [
     "value": 53,
     "bench": 77,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20318,
@@ -15736,11 +15484,6 @@ export default [
         "url": "https://www.amazon.com/dp/B0FP77NFV7?tag=tiereduptech-20",
         "inStock": true
       },
-      "bestbuy": {
-        "price": 275.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013028&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-mlg-edition-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black-matt%2FJ3P7TXH3R6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2793&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-MLG-EDITION&intsrc=APIG_16410",
@@ -15765,7 +15508,8 @@ export default [
     "value": 31,
     "bench": 80,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20320,
@@ -15786,11 +15530,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 291.32,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12593740&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850i-aorus-pro-wifi7-socket-am5-amd-b850i-itx-ddr5-wi-fi-7-motherboard-black%2FJ3ZW92VVXR&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445838076904612156107794",
@@ -15821,7 +15560,8 @@ export default [
     "ff": "Mini-ITX",
     "value": 20,
     "bench": 73,
-    "upc": "00889523046364"
+    "upc": "00889523046364",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20321,
@@ -16186,11 +15926,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 222.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166343&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860i-aorus-pro-ice-motherboard-mini-itx-ddr5-pcie-5-0-thunderbolt-4-wifi7-2-5gbe-ez-latch%2FJ3ZW92VVW5&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834468463614240563306",
         "itemNumber": "N82E16813145563",
@@ -16220,7 +15955,8 @@ export default [
     "ff": "Mini-ITX",
     "wifi": "None",
     "value": 33,
-    "bench": 69
+    "bench": 69,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20330,
@@ -16470,11 +16206,6 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 161.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12166342&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b860m-eagle-plus-wifi6e-ddr5-matx-motherboard-pcie-5-0-usb-c-2-5gbe-lan%2FJ3ZW92VVX4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145560",
         "price": 159.99,
@@ -16503,7 +16234,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi 6E",
     "value": 49,
-    "bench": 74
+    "bench": 74,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20336,
@@ -16614,11 +16346,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 164.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013448&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860-eagle-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VFF2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583848416670250185249",
         "itemNumber": "N82E16813145556",
@@ -16650,7 +16377,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 52,
-    "bench": 80
+    "bench": 80,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20339,
@@ -16737,11 +16465,6 @@ export default [
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 169.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013285&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860-gaming-x-wifi6e-gaming-desktop-motherboard%2FJ3ZW92VV2Q&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458318393290357133054586",
         "itemNumber": "N82E16813145554",
@@ -16772,7 +16495,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 52,
-    "bench": 79
+    "bench": 79,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20341,
@@ -17502,11 +17226,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 233.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11422460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850m-a-wifi-pz-matx-motherboard-amd-ryzen-9000-8000-7000-am5-ddr5-pcie-5-0-m-2-gen5-wi-fi-7-5g-lan%2FJ3P7TXH8SC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 219.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2828&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850M-A-WIFI-PZ&intsrc=APIG_16410",
@@ -17542,7 +17261,8 @@ export default [
     "value": 30,
     "bench": 76,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20359,
@@ -17818,11 +17538,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 144.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12352834&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h810m-a-wifi-matx-ddr5-pcie-4-0-wi-fi-6-2x-m-2-usb-10gbps%2FJJGGLQFFJL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317106517212410747373",
         "itemNumber": "9SIAFVFKF93302",
@@ -17852,7 +17567,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 57,
-    "bench": 48
+    "bench": 48,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20365,
@@ -17929,11 +17645,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 223.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11019052&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b860-gaming-plus-wifi-lga-1851-ddr5-wi-fi-7-thunderbolt4-5gbps-lan-atx%2FJ3P7TX68KX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2455&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860-GAMING-PLUS-WIFI&intsrc=APIG_16410",
@@ -17968,7 +17679,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 36,
-    "bench": 77
+    "bench": 77,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20367,
@@ -18396,11 +18108,6 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TeckyStore",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 193.22,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12190720&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-q670m-d3h-gaming-desktop-motherboard-intel-q670-chipset-socket-lga-1700-micro-atx-core%2FJ3ZW92VYQ8&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -18419,7 +18126,8 @@ export default [
     "ff": "mATX",
     "wifi": "None",
     "value": 31,
-    "bench": 52
+    "bench": 52,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20377,
@@ -18703,11 +18411,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 171.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12190480&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-b860m-gaming-x-wifi6e-gaming-desktop-motherboard-intel-b860-chipset-socket-lga-1851-micro-atx%2FJ3ZW9X772J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832648798521357816387",
         "itemNumber": "9SIA6KXKUY6530",
@@ -18736,7 +18439,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi 6E",
     "value": 51,
-    "bench": 76
+    "bench": 76,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20383,
@@ -18759,11 +18463,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 239.64,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11527295&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-z890-ud-wifi6e-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3ZW92V56S&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16813145531",
@@ -18807,7 +18506,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi 6E",
     "value": 29,
-    "bench": 83
+    "bench": 83,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20384,
@@ -18987,11 +18687,6 @@ export default [
         "priceSeller": "MobileMonster",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 158.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11944735&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b760m-ds3h-wifi6e-gen5-lga-1700-ddr5-m-2-pcie-5-0-usb-3-2-type-c-2-5gbe-lan%2FJ3ZW9X73ZG&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -19011,7 +18706,8 @@ export default [
     "value": 47,
     "bench": 69,
     "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "quarantinedAt": "2026-07-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20388,
@@ -19188,11 +18884,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 242.88,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b860-p-wifi-gaming-desktop-motherboard%2FJ3P7TX62WY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2457&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B860-P-WIFI&intsrc=APIG_16410",
@@ -19227,7 +18918,8 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 45,
-    "bench": 80
+    "bench": 80,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20392,
@@ -19250,11 +18942,6 @@ export default [
         "priceSeller": "Newegg Business",
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 360.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013275&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-x870e-h-socket-am5-amd-x870-atx-ddr5-wi-fi-7-be-motherboard-black%2FJJGHGPYT6Y&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg_openbox": {
         "sku": "4458311708793403285836298",
@@ -19287,7 +18974,8 @@ export default [
     "value": 17,
     "bench": 91,
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20393,
@@ -19836,11 +19524,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 430.07,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12332841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x870i-edge-ti-evo-wifi-am5-amd-x870-motherboard%2FJ3P7TXHQR4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 399.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2883&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870I-EDGE-TI-EVO-WIFI&intsrc=APIG_16410",
@@ -19876,7 +19559,8 @@ export default [
     "value": 7,
     "bench": 75,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20405,
@@ -20107,11 +19791,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
-      "bestbuy": {
-        "price": 170.04,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12171520&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-b850m-e-wifi-amd-b850-matx-ddr5-pcie-5-0-3-m-2-wifi-6e-2-5gbe-dp-hdmi-usb-c%2FJJGHGP2YRQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833146574104996388234",
         "itemNumber": "N82E16813119758",
@@ -20142,7 +19821,8 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 33,
-    "bench": 65
+    "bench": 65,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20410,
@@ -20568,11 +20248,6 @@ export default [
     "upc": "824142301050",
     "mpn": "PRO B650-P WIFI",
     "deals": {
-      "bestbuy": {
-        "price": 127.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013268&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b650-p-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG8T7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583814998604076255781",
         "itemNumber": "9SIA2W0KJ71494",
@@ -20608,7 +20283,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "Black",
     "ff": "ATX",
-    "bench": 72
+    "bench": 72,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20421,
@@ -20622,11 +20298,6 @@ export default [
     "upc": "824142299333",
     "mpn": "MPG X670E CARBON WIFI",
     "deals": {
-      "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013020&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x670e-carbon-wifi-socket-am5-amd-x670-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG2FL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312030395168678891868",
         "itemNumber": "9SIC4RUKXJ3559",
@@ -20662,7 +20333,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "Black",
     "ff": "ATX",
-    "bench": 86
+    "bench": 86,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20422,
@@ -20911,11 +20583,6 @@ export default [
     "upc": "197105710306",
     "mpn": "ROG CROSSHAIR X870E HERO",
     "deals": {
-      "bestbuy": {
-        "price": 557,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12624795&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-crosshair-x870e-hero-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQQS98&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315391271189990839059",
         "itemNumber": "N82E16813119681",
@@ -20952,7 +20619,8 @@ export default [
     "color": "Black",
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "bench": 100
+    "bench": 100,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20428,
@@ -21118,11 +20786,6 @@ export default [
     "upc": "824142390528",
     "mpn": "X870 GAMING PLUS WIFI",
     "deals": {
-      "bestbuy": {
-        "price": 253.27,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10116458&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-x870-gaming-plus-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9V42&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "445832517271717519655793",
         "price": 209.99,
@@ -21149,7 +20812,8 @@ export default [
     "color": "Black",
     "ff": "ATX",
     "wifi": "WiFi 7",
-    "bench": 85
+    "bench": 85,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20433,
@@ -21417,13 +21081,7 @@ export default [
     "r": 0,
     "upc": "889523044803",
     "mpn": "X870E AORUS MASTER",
-    "deals": {
-      "bestbuy": {
-        "price": 393.12,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237546&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-master-amd-am5-lga-1718-atx-motherboard-supports-amd-ryzen-9000-8000-7000-series-processors-black%2FJ3ZW92V4T2&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "X870",
     "memSlots": 4,
@@ -21435,7 +21093,8 @@ export default [
     "wifi": "None",
     "bench": 80,
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20440,
@@ -21637,11 +21296,6 @@ export default [
     "upc": "197105974708",
     "mpn": "X870 AYW GAMING WIFI W",
     "deals": {
-      "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592482&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-x870-ayw-gaming-socket-am5-amd-x870-atx-ddr5-wi-fi-6-ax-motherboard-white%2FJJGGLHGY6L&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "445839914473418983906474",
         "itemNumber": "N82E16813119737R",
@@ -21678,7 +21332,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "White",
     "ff": "ATX",
-    "bench": 82
+    "bench": 82,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20445,
@@ -21691,13 +21346,7 @@ export default [
     "r": 0,
     "upc": "199291167452",
     "mpn": "TUF GAMING B850M-PLUS WIFI7 W",
-    "deals": {
-      "bestbuy": {
-        "price": 194.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349350&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-b850m-a-wifi-csm-gaming-desktop-motherboard%2FJJGHGPC8ZL&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "B850",
     "memSlots": 4,
@@ -21708,7 +21357,13 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi 7",
     "bench": 78,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 20446,
@@ -21777,11 +21432,6 @@ export default [
     "upc": "889523056844",
     "mpn": "X870E EAGLE X3D WIFI7",
     "deals": {
-      "bestbuy": {
-        "price": 385.12,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12520409&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-eagle-x3d-wf7-socket-am5-amd-atx-ddr5-motherboard-black%2FJ3ZW9X7QFK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839161292088530960022",
         "itemNumber": "N82E16813145614",
@@ -21805,7 +21455,8 @@ export default [
     "wifi": "WiFi 6",
     "color": "Black",
     "ff": "ATX",
-    "bench": 72
+    "bench": 72,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 20448,
@@ -22391,13 +22042,7 @@ export default [
     "msrp": 109.99,
     "r": 4,
     "img": "https://m.media-amazon.com/images/I/81r6gJjhzHL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 174.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013311&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b650m-project-zero-am5-micro-atx-motherboard-b650mpzero%2FJ3P7TXYYX2&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "socket": "AM5",
     "chipset": "B650",
     "memType": "DDR5",
@@ -22411,7 +22056,13 @@ export default [
     "bench": 65,
     "upc": "00824142301043",
     "mpn": "PRO B650M-A WIFI",
-    "wifi": "WiFi"
+    "wifi": "WiFi",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 20501,
@@ -23144,11 +22795,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 307.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-ultra-durable-x870i-aorus-pro-ice-gaming-desktop-motherboard%2FJ3ZW92VF93&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16813145538",
         "price": 299.99,
@@ -23166,7 +22812,8 @@ export default [
     "socket": "AM5",
     "ff": "mITX",
     "memType": "DDR5",
-    "wifi": "WiFi 7"
+    "wifi": "WiFi 7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100391,
@@ -23263,18 +22910,18 @@ export default [
     "msrp": 85.2,
     "r": 4.6,
     "img": "https://m.media-amazon.com/images/I/81+RJyfYdLL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 84.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013387&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-b450m-acr2-0-micro-atx-amd-motherboard%2FC34K264T9Y&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.776Z",
     "source": "amazon-discovery",
     "socket": "AM4",
     "chipset": "B450",
-    "wifi": "None"
+    "wifi": "None",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 100727,
@@ -23315,19 +22962,19 @@ export default [
     "msrp": 69.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/81CXTSqmnWL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 119.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013042&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-h610m-a-d4-csm-desktop-motherboard%2FJJG7VHVFC4&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.776Z",
     "source": "amazon-discovery",
     "socket": "LGA1700",
     "chipset": "H610",
     "ff": "mATX",
-    "wifi": "None"
+    "wifi": "None",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 100729,
@@ -23652,11 +23299,6 @@ export default [
         "priceSeller": "VERLINE ( S N Recorded )",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 224.93,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12627235&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-b650em-e-wifi-gaming-desktop-motherboard-amd-b650-chipset-socket-am5-micro-atx-ryzen-9-ryzen-7%2FJJGHGPJR4L&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
@@ -23665,7 +23307,8 @@ export default [
     "memType": "DDR5",
     "wifi": "WiFi 6",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100740,
