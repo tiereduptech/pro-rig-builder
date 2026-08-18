@@ -19,6 +19,7 @@ import {
   itemsOf, isBestBuy, pickBestBuyFromProducts, pickProductId,
   pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword, emptyProductsReason,
   titleScore, bestTitleMatch, modelMismatch, provenance, MIN_TITLE_OVERLAP,
+  identityCheck, variantClash, packSize, packClash,
 } from '../bestbuy-live-price.mjs';
 
 const productsJson = (items) => ({ tasks: [{ result: [{ items }] }] });
@@ -351,23 +352,25 @@ test('REGRESSION: a Best Buy row for a different product is refused, not priced'
   const hit = pickBestBuyFromProducts(items, 'Intel - Core i3-12100F Desktop Processor');
   assert.equal(hit.rejected, true, 'the price must not stand for our product');
   assert.equal(hit.price, 899.99, 'the refused offer is still reported, so the note can name it');
-  assert.equal(hit.clash, '9950x3d', 'the model number is what gives it away — overlap alone scores it 0.6');
+  assert.equal(hit.clash, 'model 9950x3d', 'the model number is what gives it away, and the note says so');
 });
 
-test('overlap alone cannot do this: the wrong CPU outscores the right headset', () => {
-  // The measurement that shaped the rule. Category vocabulary (core, desktop,
-  // processor) carries a mismatch above the floor, while a correct match loses
-  // points to marketing words the listing drops. No single threshold separates
-  // these two, which is why the model number is checked separately.
-  const wrong = titleScore('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor');
-  const right = titleScore(
-    'HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White',
-    'HyperX Cloud Stinger 2 Gaming Headset - White',
-  );
-  assert.ok(wrong > right, `expected the inversion that motivates modelMismatch (wrong ${wrong}, right ${right})`);
-  assert.ok(wrong >= MIN_TITLE_OVERLAP, 'the wrong product clears the overlap floor on its own');
-  assert.equal(modelMismatch('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor'), '9950x3d');
-  assert.equal(modelMismatch('HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White', 'HyperX Cloud Stinger 2 Gaming Headset - White'), null);
+test('overlap alone cannot do this: a variant scores well above the floor', () => {
+  // The measurement that shapes the rule, restated on real pairs from run
+  // 32178925976. Category vocabulary carries a WRONG variant to 58-67%, well
+  // clear of the floor, while a RIGHT match that loses marketing words the
+  // listing drops sits at 60%. No single threshold separates those, which is
+  // why the model number is checked separately.
+  //
+  // (The pair this test used to cite — i3-12100F against 9950X3D — no longer
+  // inverts, because `i3` is a token now and drops it to 33%. The tokenizer
+  // fix narrowed the overlap rule's blind spot; it did not remove it.)
+  const wrongVariant = titleScore('NZXT - H7 Flow 2024 Mid-Tower ATX PC Case with RGB Fans - White', 'NZXT H9 Flow RGB+ Dual-Chamber Mid-Tower ATX Case');
+  const rightProduct = titleScore('NZXT - H7 Flow 2024 Mid-Tower ATX PC Case - White', 'NZXT H7 Flow Mid-Tower Case');
+  assert.ok(wrongVariant >= MIN_TITLE_OVERLAP, `the wrong variant clears the floor on its own (${wrongVariant})`);
+  assert.ok(rightProduct - wrongVariant < 0.1, `no threshold separates these two (wrong ${wrongVariant}, right ${rightProduct})`);
+  assert.equal(modelMismatch('NZXT - H7 Flow 2024 Mid-Tower ATX PC Case with RGB Fans - White', 'NZXT H9 Flow RGB+ Dual-Chamber Mid-Tower ATX Case'), 'h9');
+  assert.equal(modelMismatch('NZXT - H7 Flow 2024 Mid-Tower ATX PC Case - White', 'NZXT H7 Flow Mid-Tower Case'), null);
 });
 
 test('a vendor part code on a name we do match is not a mismatch', () => {
@@ -417,7 +420,110 @@ test('a keyword with nothing to score stands the gate down rather than refusing 
   // shoppingKeyword() always supplies a name in production; this is the shape
   // a caller with no name at all gets, and it must not reject silently.
   assert.equal(titleScore('', 'anything at all'), 1);
-  assert.equal(titleScore('ab', 'anything at all'), 1, 'sub-token names score nothing to compare');
+  assert.equal(titleScore('-', 'anything at all'), 1, 'a name with no scorable token has nothing to compare');
+  assert.equal(titleScore('a', 'anything at all'), 1, 'a single character is not a token');
+});
+
+// ── the variant blind spot: run 32178925976 ──────────────────────────────
+//
+// That run resolved 13 of 20 rows and called 5 of them FIELD-WRONG. Three of
+// the five were the wrong VARIANT of the right product — an H9 case priced as
+// our H7, an 8G card priced as our 16G, an RX120 kit priced as our LX120 —
+// and each got through the gate rather than past it. These pin the three
+// defects that let them through, on the exact strings the run printed.
+
+test('REGRESSION: the tokens that separate variants are the short ones', () => {
+  // A three-character floor deleted Ti, H7, H9 and 8G before the gate saw
+  // them, which is the whole vocabulary of a variant. "RTX 5060 Ti" scored a
+  // clean 100% against an 8G non-Ti card because `ti` was not a token at all.
+  assert.ok(titleScore('NVIDIA GeForce RTX 5060 Ti', 'ASUS Dual -RTX5060-8G NVIDIA GeForce RTX 5060 8 GB GDDR7') < 1,
+    'the Ti has to cost something');
+  assert.equal(identityCheck('NVIDIA GeForce RTX 5060 Ti', 'ASUS Dual -RTX5060-8G NVIDIA GeForce RTX 5060 8 GB GDDR7').ok, false);
+  assert.equal(modelMismatch('NZXT - H7 Flow 2024 Mid-Tower ATX PC Case with RGB Fans - White', 'NZXT H9 Flow RGB+ Dual-Chamber Mid-Tower ATX Case'), 'h9');
+});
+
+test('REGRESSION: a shared spec token no longer silences the model rule', () => {
+  // Both kits are 120mm and both cards are GDDR7, and one shared model-shaped
+  // token used to stand the rule down entirely. gpu/30111 was priced $188
+  // below its salePrice on an 8G card because 16G and 8G share `gddr7`.
+  assert.equal(modelMismatch(
+    'CORSAIR - iCUE LINK LX120 RGB 120mm PWM Case Fans Starter Kit (3-pack) - White',
+    'CORSAIR iCUE LINK RX120 RGB 120mm PWM Triple Starter Kit',
+  ), 'rx120');
+  assert.equal(modelMismatch(
+    'GIGABYTE - GeForce RTX 5060 Ti Gaming OC 16G Graphics Card 16GB GDDR7',
+    'GIGABYTE GeForce RTX 5060 Ti Eagle MAX OC 8G Graphics Card 8GB GDDR7',
+  ), '8g');
+  assert.equal(modelMismatch('ASUS Prime B840-PLUS WiFi AMD AM5 B840 ATX', 'ASUS PRIME B850-PLUS WIFI ATX Motherboard'), 'b850',
+    'AM5 and ATX are shared, and the board is still a different board');
+});
+
+test('a shared spec token still cannot invent a mismatch out of a matching pair', () => {
+  // The other half of the same rule: the concession for vendor part codes has
+  // to survive, or every listing that appends its own sku is refused.
+  assert.equal(modelMismatch('CORSAIR - RS120 ARGB 120mm PWM Case Fans (3-pack) - Black', 'Corsair Rs120 Argb PWM 120mm Fans Triple Pack Simplified Control'), null);
+  assert.equal(modelMismatch('NZXT - Kraken Elite RGB 280mm 2024 Radiator Liquid Cooler', 'NZXT Kraken Elite RGB 280mm AIO Liquid Cooler Black'), null);
+  // ddr5 against pcie5 is the false positive the same-number arm has to avoid:
+  // they share a 5 and are not a variant apart. Three digits or more is what
+  // separates that from lx120 against rx120.
+  assert.equal(modelMismatch('ASUS Prime B840 DDR5 Motherboard', 'ASUS Prime B840 PCIe5 Motherboard'), null);
+});
+
+test('REGRESSION: a variant word the title adds is not free', () => {
+  // The score is the fraction of OUR tokens found in the title, so anything
+  // the title ADDS costs nothing — a Ti, a Pro, a 3-pack, or a bracket that
+  // names our TV in full. Those are read in both directions now.
+  assert.equal(variantClash('NVIDIA GeForce RTX 5060 Ti', 'ASUS Dual RTX 5060 8GB GDDR7'), 'ti');
+  assert.equal(variantClash('GIGABYTE GeForce RTX 5060 Gaming OC', 'GIGABYTE GeForce RTX 5060 Eagle MAX OC'), 'max');
+  assert.equal(variantClash('Samsung 65 inch Class QLED 4K Smart TV', 'Wall Mount Bracket for Samsung 65 inch Class QLED TV'), 'mount');
+  assert.ok(titleScore('Samsung 65 inch Class QLED 4K Smart TV', 'Wall Mount Bracket for Samsung 65 inch Class QLED TV') >= MIN_TITLE_OVERLAP,
+    'the accessory clears the overlap floor, which is why the word is checked');
+});
+
+test('an omitted word is not a contradiction — wired against silent still matches', () => {
+  // Half of Shopping's titles drop "Wired" from a wired headset. Refusing on
+  // the omission would cost the rows the probe exists to price; refusing on
+  // "Wireless" is the point.
+  assert.equal(variantClash('HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White', 'HyperX Cloud Stinger 2 Gaming Headset - White'), null);
+  assert.equal(variantClash('HyperX - Cloud Stinger 2 Wired Gaming Headset', 'HyperX Cloud Stinger 2 Wireless Gaming Headset'), 'wireless');
+});
+
+test('pack size is read in words as well as digits, and only clashes when both are stated', () => {
+  // "(3-pack)", "Triple Pack" and "Triple Starter Kit" are the same three
+  // fans; a kit that states no size states nothing, and guessing 1 would
+  // refuse every kit.
+  assert.equal(packSize('CORSAIR - RS120 ARGB 120mm PWM Case Fans (3-pack) - Black'), 3);
+  assert.equal(packSize('Corsair Rs120 Argb PWM 120mm Fans Triple Pack'), 3);
+  assert.equal(packSize('CORSAIR iCUE LINK RX120 RGB 120mm PWM Triple Starter Kit'), 3);
+  assert.equal(packSize('CORSAIR iCUE LINK LX120 RGB 120mm PWM Starter Kit'), null);
+  assert.equal(packClash('CORSAIR - RS120 ARGB 120mm Case Fans (3-pack)', 'Corsair RS120 ARGB 120mm Case Fan Single Pack'), '1-pack vs 3');
+  assert.equal(packClash('CORSAIR - RS120 ARGB 120mm Case Fans (3-pack)', 'Corsair RS120 ARGB 120mm PWM Case Fan'), null);
+});
+
+test('the three run-32178925976 variant rows are all refused, and the right ones are not', () => {
+  // The end-to-end statement of what this change is for: the rows that voted
+  // FIELD-WRONG on a different variant stop voting, and the rows that agreed
+  // with salePrice still resolve.
+  const refused = [
+    ['NZXT - H7 Flow 2024 Mid-Tower ATX PC Case with RGB Fans - White', 'NZXT H9 Flow RGB+ Dual-Chamber Mid-Tower ATX Case'],
+    ['GIGABYTE - GeForce RTX 5060 Ti Gaming OC 16G Graphics Card 16GB GDDR7', 'GIGABYTE GeForce RTX 5060 Ti Eagle MAX OC 8G Graphics Card 8GB'],
+    ['CORSAIR - iCUE LINK LX120 RGB 120mm PWM Case Fans Starter Kit (3-pack) - White', 'CORSAIR iCUE LINK RX120 RGB 120mm PWM Triple Starter Kit'],
+    ['NVIDIA GeForce RTX 5060 Ti', 'ASUS Dual -RTX5060-8G NVIDIA GeForce RTX 5060 8 GB GDDR7'],
+  ];
+  for (const [name, title] of refused) {
+    const r = identityCheck(name, title);
+    assert.equal(r.ok, false, `expected a refusal: ${title}`);
+    assert.ok(r.clash, `the refusal has to name itself: ${title}`);
+  }
+  const kept = [
+    ['NZXT - H7 Flow 2024 Mid-Tower ATX PC Case - White', 'NZXT H7 Flow Mid-Tower Case'],
+    ['CORSAIR - RS120 ARGB 120mm PWM Case Fans (3-pack) - Black', 'Corsair Rs120 Argb PWM 120mm Fans Triple Pack Simplified Control'],
+    ['HyperX - Cloud Stinger 2 Wired Gaming Headset', 'HyperX Cloud Stinger 2 Wired Gaming Headset'],
+    ['ASUS Prime B840-PLUS WiFi AMD AM5 B840 ATX Motherboard', 'ASUS PRIME B840-PLUS WIFI ATX Motherboard'],
+  ];
+  for (const [name, title] of kept) {
+    assert.equal(identityCheck(name, title).ok, true, `expected a match: ${title}`);
+  }
 });
 
 test('a refused row reports the refusal, not "no bestbuy offer"', async () => {
