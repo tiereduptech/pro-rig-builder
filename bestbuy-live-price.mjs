@@ -274,9 +274,10 @@ const overlap = (a, b) => {
  * POST and DataForSEO keeps the result for 30 days, so the timeout message
  * carries the task id and a later task_get can still collect it.
  *
- * Worst case is now ~4 minutes per row with both steps. The workflow's job
- * timeout has to cover limit × that; it is 60 minutes, so a 20-row run with
- * sellers on has no headroom to spare. Keep an eye on it before raising limit.
+ * Worst case is ~4 minutes for a row that reaches sellers — though the two
+ * ceilings rarely both apply, since a step 1 that burns its whole budget
+ * returns pending and never posts a sellers task. The workflow's job timeout
+ * has to cover limit × that: 20 rows x 4 min is 80, so it is 120 minutes.
  */
 async function pollTaskGet(getUrl, id, { fetchImpl, headers, sleep, attempts, ms }) {
   for (let attempt = 0; attempt < attempts; attempt++) {

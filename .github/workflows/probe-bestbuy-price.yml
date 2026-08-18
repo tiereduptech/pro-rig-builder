@@ -116,9 +116,16 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     # Each row waits on queued DataForSEO tasks — up to ~2 min per step, ~4 min
-    # with sellers on. This has to cover limit × that; a 20-row run with sellers
-    # on fills it. See the budget note in bestbuy-live-price.mjs.
-    timeout-minutes: 60
+    # for a row that reaches sellers. 20 rows x 4 min is 80, so 60 was under the
+    # worst case for the largest run this workflow offers.
+    #
+    # A timeout here costs the WHOLE run, not its tail: the probe prints its
+    # table and writes its summary only after every row is probed, so a job
+    # killed at minute 59 reports nothing at all while still having paid for
+    # every task it posted. The ceiling is sized above the worst case on
+    # purpose — Actions bills minutes used, not minutes reserved, so a run that
+    # finishes in 25 costs 25.
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
