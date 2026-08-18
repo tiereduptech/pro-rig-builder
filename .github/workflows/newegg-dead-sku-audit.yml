@@ -129,6 +129,24 @@ jobs:
 
       # The two-strike state lives in an artifact, not a commit, because a
       # read-only audit must not write to the repo to remember what it saw.
+      # BY ARTIFACT NAME, NOT BY RUN CONCLUSION.
+      #
+      # This step used to ask for the last run with `--status success`, which
+      # quietly broke the two-strike chain it exists to maintain. A census that
+      # withholds verdicts exits 1 BY DESIGN ("a census that cannot condemn must
+      # not exit green"), so the runs whose state matters most — the ones that
+      # read a feed and recorded what they saw — are exactly the ones a
+      # success filter throws away. Run 32078178352 is the case in point: it
+      # held 430 strikes under proven-complete coverage and was invisible here,
+      # so the next run would have reached past it to 32067140458, whose strikes
+      # were earned while MKPL went unread and are discarded on arrival. The
+      # chain could never advance; every run would restart at strike one.
+      #
+      # Carrying state from a failed run is safe by construction, and was always
+      # the intent: the upload step below is `if: always()` precisely because "a
+      # run that died mid-feed still recorded which skus it saw". Nothing is
+      # trusted for being present, either — priorStreakIsBlind() discards strikes
+      # earned without full coverage no matter which run they came from.
       - name: Fetch the previous run's strike state
         if: ${{ github.event.inputs.use_prior_state != 'false' }}
         continue-on-error: true
@@ -137,15 +155,15 @@ jobs:
         run: |
           set -uo pipefail
           mkdir -p prev
-          RUN=$(gh run list --workflow newegg-dead-sku-audit.yml --status success \
-                  --limit 1 --json databaseId --jq '.[0].databaseId' || true)
-          if [ -z "${RUN:-}" ] || [ "$RUN" = "null" ]; then
-            echo "No prior successful run — this will be a first-strike run."
+          RUN=$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts?name=newegg-dead-sku-audit-state&per_page=10" \
+                  --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' | head -1 || true)
+          if [ -z "${RUN:-}" ]; then
+            echo "No prior state artifact — this will be a first-strike run."
             exit 0
           fi
-          echo "Prior run: $RUN"
+          echo "Prior state from run: $RUN"
           gh run download "$RUN" -n newegg-dead-sku-audit-state -D prev || \
-            echo "Prior run had no state artifact — first-strike run."
+            echo "State artifact unreadable — first-strike run."
           ls -la prev || true
 
       - name: Census every Newegg sku against the live feed (read-only)
