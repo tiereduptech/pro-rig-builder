@@ -22,6 +22,21 @@ name: Best Buy price truth probe (read-only)
 # recorder is 64-for-64 green, so the flat line is real data, not a broken
 # instrument. No Best Buy refresh workflow has ever existed.
 #
+# THE TWO ARMS OF COLUMN 3, AND WHAT EACH CAN SETTLE
+# `sellers: false` runs step 1 only — merchant/google/products — which answers
+# "what products match this keyword", one row per listing and, in DataForSEO's
+# own words, "without per-seller breakdowns". It resolves only when Best Buy
+# happens to surface directly in the top `depth` results for a verbose catalog
+# product name, which is close to chance. It is the cheap look, and a run of
+# UNRESOLVED from it is expected, not a regression.
+#
+# The 2026-08-17 run that came back 20/20 UNRESOLVED was structurally incapable
+# of resolving: it matched on `item.url`, a field the products endpoint does not
+# return, and never queried sellers at all. The parsing defects are fixed, so
+# products-only now has a real chance where it previously had none — but only
+# `sellers: true` (merchant/google/sellers, keyed by product_id) can actually
+# answer "what does Best Buy charge for this product".
+#
 # bestbuy-price.js records a live test from 2026-06-28: for sku 6519477 the
 # Developer API returned salePrice 399.99 (onSale:false) and the Impact catalog
 # returned CurrentPrice 399.99, while the real selling price was 239.99. That
@@ -46,6 +61,10 @@ on:
         description: "Restrict to one category (blank = all), e.g. gpu, storage, motherboard"
         type: string
         default: ""
+      sellers:
+        description: "Run the DataForSEO sellers step (step 2). Off is the cheap path: products-only, resolves ONLY when Best Buy surfaces directly in Google Shopping."
+        type: boolean
+        default: true
       live:
         description: "How to source the live selling price (column 3)"
         type: choice
@@ -85,6 +104,10 @@ jobs:
         run: |
           ARGS="--limit=${{ inputs.limit }} --sample=${{ inputs.sample }} --live=${{ inputs.live }}"
           if [ -n "${{ inputs.category }}" ]; then ARGS="$ARGS --category=${{ inputs.category }}"; fi
+          # Step 2 (sellers) is task_post + poll, so it is the slow, costly arm.
+          # Turning it off is the cheap first look — but see the note above on
+          # what products-only can and cannot answer.
+          if [ "${{ inputs.sellers }}" != "true" ]; then ARGS="$ARGS --no-sellers"; fi
           echo "Running: node probe-bestbuy-price-truth.mjs $ARGS"
           node probe-bestbuy-price-truth.mjs $ARGS
 
