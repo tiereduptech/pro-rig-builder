@@ -245,7 +245,7 @@ async function loadCatalog() {
     const otherRetailers = ['newegg', 'newegg_openbox', 'newegg_marketplace', 'bestbuy', 'msi']
       .filter((k) => priced(p?.deals?.[k]));
     rows.push({
-      id: p.id, cat: p.c || '?', name: p.n, cap: p.cap ?? null, asin: m[1],
+      id: p.id, cat: p.c || '?', name: p.n, brand: p.b || null, cap: p.cap ?? null, asin: m[1],
       storedPrice: p?.deals?.amazon?.price ?? null,
       needsReview: !!p.needsReview,
       otherRetailers,
@@ -353,7 +353,7 @@ async function loadCatalog() {
     }
 
     const az = hit.title;
-    const tm = titleMatches(row.name, az, row.cap);   // the EXISTING gate, unmodified
+    const tm = titleMatches(row.name, az, row.cap, row.brand);   // the EXISTING gate, brand-qualified
     const c  = containment(row.name, az);
     const offer = hit.offer;
     const azPrice = offer?.price ?? null;

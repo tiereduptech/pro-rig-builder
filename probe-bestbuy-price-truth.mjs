@@ -34,18 +34,26 @@
  *                    under = Best Buy is the cheapest deal, so it wins our buy
  *                            box and a wrong number is what a customer clicks
  *   --live=auto|page|dataforseo|off   how to source column 3 (default auto)
+ *   --no-sellers     skip the DataForSEO sellers step (faster, cheaper, finds less)
  *
  * NETWORK NOTE: www.bestbuy.com sits behind Akamai bot management, which
  * accepts the TCP connection and then stalls the TLS handshake for datacenter
  * IPs (verified 2026-08-17: TCP 443 OPEN, handshake dies after Server Hello,
  * curl 000). GitHub Actions runners are datacenter IPs too, so --live=page may
  * well be blocked there as well. --live=auto tries the page first and falls
- * back to DataForSEO Google Shopping, which is how this repo already resolves
- * real Amazon buy-box prices in amazon-price.js.
+ * back to DataForSEO Google Shopping.
+ *
+ * That fallback is NOT the same path amazon-price.js uses — an earlier version
+ * of this comment claimed it was. amazon-price.js calls merchant/amazon/sellers,
+ * a different endpoint with a different response shape, so it lent this code no
+ * proven precedent. Google Shopping resolution lives in bestbuy-live-price.mjs
+ * and is pinned by test/bestbuy-live-price.test.js against the documented
+ * shapes; nothing here is validated by amazon-price.js working.
  */
 
 import { readdirSync, appendFileSync } from 'node:fs';
 import path from 'node:path';
+import { liveBestBuyPrice } from './bestbuy-live-price.mjs';
 
 const args = process.argv.slice(2);
 const argOf = (name, dflt) => {
@@ -56,6 +64,9 @@ const LIMIT = Math.min(Number(argOf('limit', '20')) || 20, 200);
 const CATEGORY = argOf('category', '') || null;
 const SAMPLE = argOf('sample', 'under');
 const LIVE_MODE = argOf('live', 'auto');
+// sellers is task-based (post + poll), so it is the slower and costlier arm.
+// --no-sellers restricts step 2 off for a fast, cheap first look.
+const LIVE_USE_SELLERS = !process.argv.includes('--no-sellers');
 
 const KEY = process.env.BESTBUY_API_KEY;
 if (!KEY) {
@@ -167,23 +178,12 @@ async function livePagePrice(sku) {
 }
 
 async function liveDataForSeoPrice(name) {
-  if (!DFS_LOGIN || !DFS_PW) return { error: 'no dataforseo creds' };
-  const auth = Buffer.from(`${DFS_LOGIN}:${DFS_PW}`).toString('base64');
-  try {
-    const r = await fetch('https://api.dataforseo.com/v3/merchant/google/products/live/advanced', {
-      method: 'POST',
-      headers: { Authorization: `Basic ${auth}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify([{ keyword: name.slice(0, 120), location_code: 2840, language_code: 'en', depth: 20 }]),
-      signal: AbortSignal.timeout(60000),
-    });
-    if (!r.ok) return { error: `dataforseo HTTP ${r.status}` };
-    const j = await r.json();
-    const items = j?.tasks?.[0]?.result?.[0]?.items || [];
-    const hit = items.find((i) => /best ?buy/i.test(String(i.seller || '')) || /bestbuy\.com/i.test(String(i.url || '')));
-    if (!hit) return { error: 'no bestbuy offer in shopping results' };
-    const price = hit.price?.current ?? hit.price ?? null;
-    return price ? { live: Number(price), via: 'dataforseo' } : { error: 'offer has no price' };
-  } catch (e) { return { error: e.name === 'TimeoutError' ? 'dataforseo timeout' : e.message }; }
+  // Parsing + the two-step products→sellers resolution live in
+  // bestbuy-live-price.mjs so they can be tested without creds or network.
+  // The first version of this function matched on `item.url`, a field the
+  // products endpoint does not have, and never queried the sellers endpoint at
+  // all — which is why the 2026-08-17 run returned 20/20 UNRESOLVED.
+  return liveBestBuyPrice(name, { login: DFS_LOGIN, pw: DFS_PW, useSellers: LIVE_USE_SELLERS });
 }
 
 async function livePrice(r) {

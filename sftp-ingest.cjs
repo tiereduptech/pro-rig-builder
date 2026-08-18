@@ -158,6 +158,25 @@ async function walkAndDownload(sftp, manifest) {
  * Resolves { recordCount, trailerCount, header, lineNum }. The caller compares
  * recordCount against trailerCount to detect a short read — a truncated feed
  * that ends cleanly is indistinguishable from "these skus are gone" without it.
+ *
+ * STREAMING, one record at a time — never an array of records. The previous
+ * version accumulated every parsed record and resolved with the whole array.
+ * That is what killed the daily ingest: on 2026-08-17 it died with "Ineffective
+ * mark-compacts near heap limit" at 6,135 MB of the 6,144 MB cap, part-way
+ * through 44583_4681679_mp_MKPL.txt.gz (886 MB gzipped, several million rows of
+ * 38 fields). The main feed's 1,034,587 records fit; the marketplace feed's do
+ * not, and never will — the feed only grows, so raising --max-old-space-size
+ * just moves the wall. Between 2026-05-14 and 2026-08-17 this workflow
+ * succeeded twice in 99 runs: 88 cancelled at the 60-minute timeout while
+ * GC-thrashing, 9 killed outright. The commit step is skipped on both, so the
+ * daily Newegg feed wrote nothing to the catalog for 95 days.
+ *
+ * BACKPRESSURE is the other half of the fix, and it is not optional. The ingest
+ * writes ~1M exclusives to a WriteStream; a loop that ignores write()'s false
+ * return grows that stream's internal buffer without bound — the same OOM in a
+ * different costume, which would have surfaced the moment the record array
+ * stopped being the first thing to blow. onRecord receives (rec, ctl); calling
+ * ctl.backpressure(dest) pauses the feed until dest drains.
  */
 async function streamTxtFeed(localPath, onRecord) {
   if (typeof onRecord !== 'function') {
@@ -168,12 +187,35 @@ async function streamTxtFeed(localPath, onRecord) {
     let lineNum = 0;
     let recordCount = 0;
     let trailerCount = null;
-    let failed = false;
+    let failed = null;
 
     const stream = fs.createReadStream(localPath).pipe(zlib.createGunzip());
     const rl = readline.createInterface({ input: stream, crlfDelay: Infinity });
 
-    const fail = (e) => { if (failed) return; failed = true; rl.close(); stream.destroy(); reject(e); };
+    // reject BEFORE close(). readline emits 'close' synchronously from close(),
+    // so resolving there would settle the promise first and the rejection would
+    // be a silent no-op — a consumer error would surface as a successful parse
+    // with a truncated record count.
+    const fail = (e) => {
+      if (failed) return;
+      failed = e;
+      reject(e);
+      rl.close();
+      stream.destroy();
+    };
+
+    // One pending drain at a time. Registering a fresh 'drain' listener per
+    // record while already paused would leak listeners on exactly the feeds
+    // that need the pause most.
+    let awaitingDrain = false;
+    const ctl = {
+      backpressure(dest) {
+        if (awaitingDrain) return;
+        awaitingDrain = true;
+        rl.pause();
+        dest.once('drain', () => { awaitingDrain = false; rl.resume(); });
+      },
+    };
 
     rl.on('line', (line) => {
       if (failed) return;
@@ -203,10 +245,13 @@ async function streamTxtFeed(localPath, onRecord) {
       recordCount++;
       // A throw from the consumer must abort the stream, not surface later as a
       // silently short read that the truncation guard would call "gone".
-      try { onRecord(rec, recordCount); } catch (e) { fail(e); }
+      try { onRecord(rec, ctl); } catch (e) { fail(e); }
     });
 
-    rl.on('close', () => { if (!failed) resolve({ recordCount, trailerCount, header, lineNum }); });
+    rl.on('close', () => {
+      if (failed) return;
+      resolve({ header: header || DEFAULT_FIELD_ORDER, trailerCount, lineNum, recordCount });
+    });
     rl.on('error', fail);
     stream.on('error', fail);
   });
@@ -503,7 +548,8 @@ function writeParts(parts) {
 }
 
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-// Exported so other jobs can share the parser instead of copying it. Everything
+// Exported so other jobs can share the parser instead of copying it, and so
+// test/sftp-ingest.streaming.test.js can drive it without SFTP. Everything
 // below the guard is the nightly ingest's own run.
 //
 // THE GUARD IS LEAD, NOT TRIM. Without `require.main === module` this file's
@@ -513,7 +559,8 @@ function writeParts(parts) {
 // completion, a write to parts.js from a job declared read-only. Run
 // 32057560889 paid for that: ~1.3GB of duplicate downloads and a 535s/2973s
 // pair of feed pulls that contended with each other the whole way.
-module.exports = { streamTxtFeed, parseTxtFeed, DEFAULT_FIELD_ORDER, normUPC, normMPN };
+module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex,
+                   DEFAULT_FIELD_ORDER, normUPC, normMPN };
 
 if (require.main === module) (async () => {
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
@@ -589,26 +636,13 @@ if (require.main === module) (async () => {
     
     const ms = { matched: 0, updated: 0, exclusives: 0, byMethod: { upc: 0, mpn: 0, sku: 0, 'brand+name': 0, name: 0 } };
     
-    let parsed;
-    try {
-      parsed = await parseTxtFeed(dl.localPath);
-    } catch (e) {
-      log(`  âœ— Parse error: ${e.message}`);
-      summary.totals.errors++;
-      continue;
-    }
-    
-    log(`  Parsed ${parsed.records.length} records (header has ${parsed.header.length} fields)`);
-    if (parsed.trailerCount != null && parsed.trailerCount !== parsed.records.length) {
-      log(`  âš  Trailer count ${parsed.trailerCount} != parsed ${parsed.records.length}`);
-    }
-    summary.totals.feedRecords += parsed.records.length;
-    
-    for (const rec of parsed.records) {
+    // Match + apply INSIDE the stream callback. No intermediate array exists,
+    // so peak heap is the catalog index plus one record — flat in feed size.
+    const onRecord = (rec, ctl) => {
       // Skip deleted products
-      if (/^(1|true|yes|deleted)$/i.test(rec.is_deleted || '')) continue;
+      if (/^(1|true|yes|deleted)$/i.test(rec.is_deleted || '')) return;
       // Skip out-of-stock
-      if (/out-of-stock|unavailable|no/i.test(rec.availability || '')) continue;
+      if (/out-of-stock|unavailable|no/i.test(rec.availability || '')) return;
       
       const match = matchRecord(rec, idx);
       if (match && match.part) {
@@ -636,12 +670,34 @@ if (require.main === module) (async () => {
             image: rec.image_url,
             availability: rec.availability
           };
-          if (exclusivesStream) exclusivesStream.write(JSON.stringify(exclusiveRec) + '\n');
+          if (exclusivesStream) {
+            // write() returning false means the buffer is full. Pause the feed
+            // until it drains rather than queueing another million lines.
+            if (!exclusivesStream.write(JSON.stringify(exclusiveRec) + '\n')) {
+              ctl.backpressure(exclusivesStream);
+            }
+          }
           exclusivesCount++;
           ms.exclusives++;
         }
       }
+    };
+
+    let parsed;
+    try {
+      parsed = await streamTxtFeed(dl.localPath, onRecord);
+    } catch (e) {
+      log(`  âœ— Parse error: ${e.message}`);
+      summary.totals.errors++;
+      continue;
     }
+    
+    log(`  Parsed ${parsed.recordCount} records (header has ${parsed.header.length} fields)`);
+    if (parsed.trailerCount != null && parsed.trailerCount !== parsed.recordCount) {
+      log(`  âš  Trailer count ${parsed.trailerCount} != parsed ${parsed.recordCount}`);
+    }
+    summary.totals.feedRecords += parsed.recordCount;
+    
     
     log(`  Matched: ${ms.matched} | Exclusives: ${ms.exclusives}`);
     log(`  By method: ${JSON.stringify(ms.byMethod)}`);

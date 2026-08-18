@@ -587,14 +587,30 @@ let P = SEED_PARTS
   .filter(isAvailable);
 
 // ── Price helpers — handles new multi-retailer deals structure ──
+// What a customer actually pays at one retailer. The Newegg feed carries BOTH
+// `price` (list) and `saleprice` (current), so reading `price` alone quotes the
+// pre-sale number and makes our listing look worse than the retailer's own page.
+// Take the LOWER of the two rather than preferring saleprice outright: 19 rows
+// carry a saleprice ABOVE price (bad feed data), and preferring it there would
+// overstate instead of understate. A missing/null/zero saleprice falls back to price.
+const dealPrice = d => {
+  if (!d || typeof d !== "object") return null;
+  const list = Number(d.price);
+  const sale = Number(d.saleprice);
+  const hasList = Number.isFinite(list) && list > 0;
+  const hasSale = Number.isFinite(sale) && sale > 0;
+  if (hasList && hasSale) return Math.min(list, sale);
+  if (hasSale) return sale;
+  return hasList ? list : null;
+};
 const bestPrice = p => {
   if (!p.deals || typeof p.deals !== "object") return p.pr;
-  const allRetailers = Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && p.deals[k].price);
+  const allRetailers = Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && dealPrice(p.deals[k]) != null);
   if (!allRetailers.length) return p.pr;
   // Prefer in-stock retailers; fall back to any retailer only if none are in stock
   const inStock = allRetailers.filter(k => p.deals[k].inStock !== false);
   const keys = inStock.length ? inStock : allRetailers;
-  return Math.min(...keys.map(k => p.deals[k].price));
+  return Math.min(...keys.map(k => dealPrice(p.deals[k])));
 };
 const $ = p => bestPrice(p);
 const VALUE_DIVISORS={
@@ -807,7 +823,7 @@ const retailers = p => {
     .filter(([k,v]) => typeof v === "object" && v && (v.price || v.saleprice))
     .map(([name, info]) => {
       const url = info.url || info.linkurl;
-      const rawPrice = info.saleprice && Number(info.saleprice) > 0 ? Number(info.saleprice) : Number(info.price);
+      const rawPrice = dealPrice(info);
       return { name, displayName: retailerDisplayName(name), price: rawPrice, url, inStock: info.inStock !== false,
         sellerClass: neweggSellerClass(name, info) };
     })
@@ -2477,11 +2493,11 @@ function ProductSchema({p}) {
   if (!p) return null;
 
   const price = p.deals && typeof p.deals === "object"
-    ? Math.min(...Object.values(p.deals).filter(d => d && typeof d === "object" && d.price).map(d => d.price), p.pr || 9999)
+    ? Math.min(...Object.values(p.deals).filter(d => d && typeof d === "object" && dealPrice(d) != null).map(d => dealPrice(d)), p.pr || 9999)
     : (p.pr || 0);
 
   const retailers = p.deals && typeof p.deals === "object"
-    ? Object.entries(p.deals).filter(([_, d]) => d && typeof d === "object" && d.url)
+    ? Object.entries(p.deals).filter(([_, d]) => d && typeof d === "object" && d.url && dealPrice(d) != null)
     : [];
 
   const schema = {
@@ -2496,7 +2512,7 @@ function ProductSchema({p}) {
       ? retailers.map(([retailer, d]) => ({
           "@type": "Offer",
           "url": d.url,
-          "price": d.price,
+          "price": dealPrice(d),
           "priceCurrency": "USD",
           "availability": d.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
           "seller": {"@type": "Organization", "name": retailer.charAt(0).toUpperCase() + retailer.slice(1)}

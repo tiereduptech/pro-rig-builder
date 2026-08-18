@@ -116,7 +116,46 @@ export function normalize(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-export function titleMatches(storedName, amazonTitle, storedCap = null) {
+// The catalog keeps the manufacturer in `b` and usually LEAVES IT OUT of `n`:
+// n = "O11D MINI V2 Flow | Compact ATX Mid-Tower", b = "Lian Li". Scoring that
+// against "Lian Li O11D MINI V2 Flow-ATX Mid-Tower PC Case-Black" fails on the
+// brand tokens the stored name never had, and — worse — brandShared below reads
+// the brand from the FIRST TOKEN OF THE STORED NAME, so for these rows it
+// compares "o11d" and the brand arm can never fire. The 2026-08-17 identity
+// audit put 44 of its 233 non-dead findings in exactly this bucket.
+//
+// Restoring the brand is therefore a correctness fix, not a loosening — but it
+// is applied as a SECOND ARM, never as a replacement. Prepending tokens grows
+// |tokensA|, which can only lower score = |A∩B|/|A| when the Amazon title omits
+// the brand; a row that passes today must keep passing. So: evaluate as-is
+// first, and only if that fails re-evaluate with the brand restored. The result
+// is monotonic — it can clear a false defect, it can never manufacture one —
+// which matters because the 3,167 rows the audit calls clean carry no stored
+// title to re-test against.
+function brandQualified(storedName, brand) {
+  const b = String(brand || '').trim();
+  if (!b) return null;
+  const n = String(storedName || '');
+  const nb = normalize(n), bb = normalize(b);
+  if (!bb) return null;
+  // already leads with the brand (in any punctuation/casing) — nothing to add
+  if (nb === bb || nb.startsWith(bb + ' ')) return null;
+  return b + ' ' + n;
+}
+
+export function titleMatches(storedName, amazonTitle, storedCap = null, brand = null) {
+  const direct = titleMatchesRaw(storedName, amazonTitle, storedCap);
+  if (direct.match || !brand) return direct;
+  const qualified = brandQualified(storedName, brand);
+  if (!qualified) return direct;
+  const rescued = titleMatchesRaw(qualified, amazonTitle, storedCap);
+  // A capacity conflict is a hard veto in both arms; never let the brand arm
+  // talk past it, and never report a pass whose score came from a failed arm.
+  if (!rescued.match || rescued.capConflict) return direct;
+  return { ...rescued, brandRescued: true };
+}
+
+function titleMatchesRaw(storedName, amazonTitle, storedCap = null) {
   if (!storedName || !amazonTitle) return { match: false, score: 0 };
   const a = normalize(storedName);
   const b = normalize(amazonTitle);
@@ -176,7 +215,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
     return { issues, fixes };
   }
   const azTitle = amazonData.title || amazonData.product_title;
-  const tm = titleMatches(product.n, azTitle, product.cap);
+  const tm = titleMatches(product.n, azTitle, product.cap, product.b);
 
   if (!tm.match) {
     // A capacity conflict is a wrong-product attach, not just a renamed listing.
