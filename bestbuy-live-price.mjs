@@ -111,6 +111,30 @@ export function pickBestBuyFromProducts(items) {
 }
 
 /**
+ * The keyword to send to Google Shopping for a catalog row.
+ *
+ * This choice decides whether column 3 can resolve at all. Catalog names carry
+ * manufacturer part numbers — "HyperX HHSS1C-KB-WT/G Cloud Stinger Core – W" —
+ * and Shopping indexes nothing under them. Run 32153401588 went 5/5 UNRESOLVED
+ * on `no shopping results for keyword`, dying at step 1, four lines before the
+ * sellers arm was ever consulted; turning sellers on would not have moved a
+ * single row. The Developer API's own name for the sku ("HyperX - Cloud
+ * Stinger 2 Wired Gaming Headset") is the string Shopping does index, and the
+ * probe has already fetched it for column 2 by the time it needs a keyword.
+ *
+ * Prefer the Best Buy name; fall back to the catalog name when the sku 404s or
+ * the API errored. `source` is reported so a run that still whiffs says which
+ * string it whiffed on.
+ *
+ * Returns { name, source: 'bb-api' | 'catalog' }.
+ */
+export function shoppingKeyword(catalogName, apiName) {
+  const bb = String(apiName || '').trim();
+  if (bb) return { name: bb, source: 'bb-api' };
+  return { name: String(catalogName || '').trim(), source: 'catalog' };
+}
+
+/**
  * The product_id to hand to the sellers endpoint. Prefers the offer whose title
  * best overlaps the catalog name, so a keyword that returns accessories for the
  * product does not send step 2 after a case for the monitor we asked about.

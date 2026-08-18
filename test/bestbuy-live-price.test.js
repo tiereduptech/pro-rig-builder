@@ -17,7 +17,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   itemsOf, isBestBuy, pickBestBuyFromProducts, pickProductId,
-  pickBestBuyFromSellers, liveBestBuyPrice,
+  pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword,
 } from '../bestbuy-live-price.mjs';
 
 const productsJson = (items) => ({ tasks: [{ result: [{ items }] }] });
@@ -215,4 +215,41 @@ test('an empty products result is distinguishable from a result with no Best Buy
     fetchImpl: async () => ({ ok: true, json: async () => productsJson([]) }),
   });
   assert.equal(r.error, 'no shopping results for keyword');
+});
+
+// ── the keyword, which decides whether step 1 returns anything at all ─────
+//
+// Run 32153401588 (5 rows, sellers off, live=dataforseo) came back 5/5
+// UNRESOLVED with `no shopping results for keyword` on every row. That error
+// returns before the useSellers branch, so the sellers arm was never reached
+// and enabling it would have changed nothing. The keyword was the catalog
+// name, part number and all.
+
+test('the Best Buy API name is preferred over the catalog name as the keyword', () => {
+  const kw = shoppingKeyword(
+    'HyperX HHSS1C-KB-WT/G Cloud Stinger Core – W',
+    'HyperX - Cloud Stinger 2 Wired Gaming Headset',
+  );
+  assert.equal(kw.name, 'HyperX - Cloud Stinger 2 Wired Gaming Headset');
+  assert.equal(kw.source, 'bb-api');
+});
+
+test('a 404ed sku falls back to the catalog name rather than sending an empty keyword', () => {
+  // apiPrice returns { missing: true } for a 404 — no `name` at all. Sending
+  // '' would make every such row fail as "no shopping results" for a reason
+  // that has nothing to do with the product.
+  const kw = shoppingKeyword('ASRock B650M-HDV/M.2 Motherboard', undefined);
+  assert.equal(kw.name, 'ASRock B650M-HDV/M.2 Motherboard');
+  assert.equal(kw.source, 'catalog');
+});
+
+test('an empty or whitespace API name is treated as absent, not as a valid keyword', () => {
+  assert.equal(shoppingKeyword('Catalog Name', '').source, 'catalog');
+  assert.equal(shoppingKeyword('Catalog Name', '   ').source, 'catalog');
+  assert.equal(shoppingKeyword('Catalog Name', '   ').name, 'Catalog Name');
+});
+
+test('the keyword source is reported so an UNRESOLVED run says which string it whiffed on', () => {
+  assert.equal(shoppingKeyword('a', 'b').source, 'bb-api');
+  assert.equal(shoppingKeyword('a', null).source, 'catalog');
 });

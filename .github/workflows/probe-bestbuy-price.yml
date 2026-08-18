@@ -37,6 +37,24 @@ name: Best Buy price truth probe (read-only)
 # `sellers: true` (merchant/google/sellers, keyed by product_id) can actually
 # answer "what does Best Buy charge for this product".
 #
+# SELLERS IS DOWNSTREAM OF STEP 1, SO IT CANNOT RESCUE AN EMPTY STEP 1
+# Run 32153401588 (5 rows, sellers off) returned 5/5 UNRESOLVED with `no
+# shopping results for keyword` on every row. That error returns from
+# bestbuy-live-price.mjs before the `useSellers` branch: sellers needs a
+# product_id, and a product_id only exists if step 1 returned items. Turning
+# `sellers: true` on for those same rows would not have moved one of them.
+# Read the row notes to tell the two failures apart — `no shopping results for
+# keyword` is step 1 finding nothing, `no bestbuy offer in shopping results` is
+# step 1 working and sellers being the missing arm. Only the second is an
+# argument for paying for step 2.
+#
+# The keyword is what step 1 lives or dies on. It used to be the catalog name,
+# part number and all ("HyperX HHSS1C-KB-WT/G Cloud Stinger Core – W"), which
+# Google Shopping indexes nothing under. It is now the Developer API's own name
+# for the sku, which column 2 has already fetched by then; rows that fall back
+# to the catalog name (sku 404, API error) are flagged KW-FALLBACK, and every
+# UNRESOLVED row prints the exact string it searched on.
+#
 # bestbuy-price.js records a live test from 2026-06-28: for sku 6519477 the
 # Developer API returned salePrice 399.99 (onSale:false) and the Impact catalog
 # returned CurrentPrice 399.99, while the real selling price was 239.99. That

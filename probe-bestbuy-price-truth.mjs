@@ -53,7 +53,7 @@
 
 import { readdirSync, appendFileSync } from 'node:fs';
 import path from 'node:path';
-import { liveBestBuyPrice } from './bestbuy-live-price.mjs';
+import { liveBestBuyPrice, shoppingKeyword } from './bestbuy-live-price.mjs';
 
 const args = process.argv.slice(2);
 const argOf = (name, dflt) => {
@@ -177,24 +177,26 @@ async function livePagePrice(sku) {
   } catch (e) { return { error: e.name === 'TimeoutError' ? 'page timeout (likely Akamai)' : e.message }; }
 }
 
-async function liveDataForSeoPrice(name) {
+async function liveDataForSeoPrice(name, keywordSource) {
   // Parsing + the two-step products→sellers resolution live in
   // bestbuy-live-price.mjs so they can be tested without creds or network.
   // The first version of this function matched on `item.url`, a field the
   // products endpoint does not have, and never queried the sellers endpoint at
   // all — which is why the 2026-08-17 run returned 20/20 UNRESOLVED.
-  return liveBestBuyPrice(name, { login: DFS_LOGIN, pw: DFS_PW, useSellers: LIVE_USE_SELLERS });
+  const res = await liveBestBuyPrice(name, { login: DFS_LOGIN, pw: DFS_PW, useSellers: LIVE_USE_SELLERS });
+  return { ...res, keyword: name, keywordSource };
 }
 
-async function livePrice(r) {
+async function livePrice(r, api) {
   if (LIVE_MODE === 'off') return { error: 'skipped' };
   if (LIVE_MODE === 'page') return livePagePrice(r.sku);
-  if (LIVE_MODE === 'dataforseo') return liveDataForSeoPrice(r.name);
+  const kw = shoppingKeyword(r.name, api?.name);
+  if (LIVE_MODE === 'dataforseo') return liveDataForSeoPrice(kw.name, kw.source);
   const page = await livePagePrice(r.sku);
   if (page.live != null) return page;
-  const dfs = await liveDataForSeoPrice(r.name);
+  const dfs = await liveDataForSeoPrice(kw.name, kw.source);
   if (dfs.live != null) return { ...dfs, note: `page: ${page.error}` };
-  return { error: `page: ${page.error}; dfs: ${dfs.error}` };
+  return { ...dfs, error: `page: ${page.error}; dfs: ${dfs.error}` };
 }
 
 // ── Run ───────────────────────────────────────────────────────────────────
@@ -202,7 +204,7 @@ const out = [];
 for (const [i, r] of sample.entries()) {
   const api = await apiPrice(r.sku);
   await sleep(650); // Developer API: stay under 5 req/sec
-  const live = await livePrice(r);
+  const live = await livePrice(r, api);
   if (LIVE_MODE !== 'off') await sleep(900);
   out.push({ ...r, api, live });
   process.stderr.write(`  probed ${i + 1}/${sample.length}\r`);
@@ -224,6 +226,7 @@ for (const r of out) {
   if (r.api?.marketplace) r.flags.push('3P');
   if (r.api?.orderable && /soldout|unavailable/i.test(String(r.api.orderable))) r.flags.push('sold-out');
   if (r.live?.error) r.flags.push(r.live.error);
+  if (r.live?.keywordSource === 'catalog') r.flags.push('KW-FALLBACK');
   if (r.api?.name && !r.api.name.toLowerCase().includes(r.name.toLowerCase().slice(0, 14))) r.flags.push('NAME-DRIFT');
 
   if (live == null) { r.verdict = 'UNRESOLVED'; tally.UNRESOLVED++; }
@@ -248,6 +251,8 @@ for (const r of out) {
   if (r.flags.length) console.log(''.padEnd(20) + '  ↳ ' + r.flags.join(' | '));
   if (r.api?.name && r.flags.includes('NAME-DRIFT'))
     console.log(''.padEnd(20) + `  ↳ catalog "${r.name.slice(0, 44)}" vs BB "${r.api.name.slice(0, 44)}"`);
+  if (r.verdict === 'UNRESOLVED' && r.live?.keyword)
+    console.log(''.padEnd(20) + `  ↳ keyword (${r.live.keywordSource}): "${r.live.keyword.slice(0, 80)}"`);
 }
 console.log('-'.repeat(116));
 console.log(`FIELD-WRONG : ${tally.FIELD_WRONG}   STALE-ONLY : ${tally.STALE_ONLY}   AGREE : ${tally.AGREE}   UNRESOLVED : ${tally.UNRESOLVED}`);
@@ -285,6 +290,7 @@ if (SUMMARY) {
       L.push(`- **${r.cat}/${r.id}** \`${r.sku}\` — ${r.flags.join(' | ')}`);
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - catalog: _${r.name.slice(0, 70)}_`);
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - Best Buy: _${(r.api.name || '').slice(0, 70)}_`);
+      if (r.verdict === 'UNRESOLVED' && r.live?.keyword) L.push(`  - keyword sent to Shopping (${r.live.keywordSource}): _${r.live.keyword.slice(0, 70)}_`);
     }
     L.push('');
   }
