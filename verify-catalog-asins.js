@@ -320,7 +320,7 @@ async function findBestASIN(product) {
     const title = r.title || r.product_title;
     const asin = r.asin || r.data_asin;
     if (!asin || !title) continue;
-    const match = titleMatches(product.n, title, product.cap);
+    const match = titleMatches(product.n, title, product.cap, product.b);
     // Never let a wrong-capacity listing become the chosen candidate.
     if (match.capConflict) continue;
     if (!best || match.score > best.score) {
