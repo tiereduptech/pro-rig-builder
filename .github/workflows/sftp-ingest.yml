@@ -94,5 +94,11 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
-            git push
+            # Not a bare `git push`. This job runs for ~an hour, and anyone
+            # merging a PR in that window moves main underneath it. Run
+            # 32136198527 built "16935 updated, 3171688 exclusives" and then lost
+            # the lot to `! [rejected] main -> main (fetch first)`. The
+            # main-writer lock serialises workflows against each other; it has no
+            # opinion about a person clicking Merge.
+            bash scripts/push-with-rebase.sh main
           fi
