@@ -22,6 +22,7 @@
  *   FIELD-WRONG  salePrice != live      -> wrong field; a cron cannot fix this
  *   STALE-ONLY   salePrice == live,
  *                stored != live         -> field is right; build the refresh job
+ *   NO-SALEPRICE no salePrice at all    -> dead sku; abstains from the above
  *   AGREE        stored == sale == live -> row is fine
  *
  * Usage:
@@ -54,6 +55,7 @@
 import { readdirSync, appendFileSync } from 'node:fs';
 import path from 'node:path';
 import { liveBestBuyPrice, shoppingKeyword } from './bestbuy-live-price.mjs';
+import { classify, tallyOf, VERDICTS } from './bestbuy-price-verdict.mjs';
 
 const args = process.argv.slice(2);
 const argOf = (name, dflt) => {
@@ -212,7 +214,6 @@ for (const [i, r] of sample.entries()) {
 process.stderr.write('\n');
 
 // ── Classify ──────────────────────────────────────────────────────────────
-const tally = { FIELD_WRONG: 0, STALE_ONLY: 0, AGREE: 0, UNRESOLVED: 0 };
 for (const r of out) {
   const sale = r.api?.salePrice ?? null;
   const live = r.live?.live ?? null;
@@ -229,11 +230,9 @@ for (const r of out) {
   if (r.live?.keywordSource === 'catalog') r.flags.push('KW-FALLBACK');
   if (r.api?.name && !r.api.name.toLowerCase().includes(r.name.toLowerCase().slice(0, 14))) r.flags.push('NAME-DRIFT');
 
-  if (live == null) { r.verdict = 'UNRESOLVED'; tally.UNRESOLVED++; }
-  else if (r.d_sale_live != null && Math.abs(r.d_sale_live) > 0.01) { r.verdict = 'FIELD-WRONG'; tally.FIELD_WRONG++; }
-  else if (Math.abs(r.d_stored_live) > 0.01) { r.verdict = 'STALE-ONLY'; tally.STALE_ONLY++; }
-  else { r.verdict = 'AGREE'; tally.AGREE++; }
+  r.verdict = classify({ stored: r.stored, sale, live });
 }
+const tally = tallyOf(out.map((r) => r.verdict));
 
 // ── Console table ─────────────────────────────────────────────────────────
 console.log('');
@@ -255,7 +254,7 @@ for (const r of out) {
     console.log(''.padEnd(20) + `  ↳ keyword (${r.live.keywordSource}): "${r.live.keyword.slice(0, 80)}"`);
 }
 console.log('-'.repeat(116));
-console.log(`FIELD-WRONG : ${tally.FIELD_WRONG}   STALE-ONLY : ${tally.STALE_ONLY}   AGREE : ${tally.AGREE}   UNRESOLVED : ${tally.UNRESOLVED}`);
+console.log(VERDICTS.map((v) => `${v} : ${tally[v]}`).join('   '));
 
 // ── Job summary ───────────────────────────────────────────────────────────
 const SUMMARY = process.env.GITHUB_STEP_SUMMARY;
@@ -277,10 +276,11 @@ if (SUMMARY) {
   L.push('');
   L.push('| classification | count | meaning |');
   L.push('|---|--:|---|');
-  L.push(`| FIELD-WRONG | ${tally.FIELD_WRONG} | \`salePrice\` != what a customer pays — wrong field; a cron cannot fix this |`);
-  L.push(`| STALE-ONLY | ${tally.STALE_ONLY} | \`salePrice\` is correct, stored value is old — build the refresh job |`);
-  L.push(`| AGREE | ${tally.AGREE} | stored == salePrice == live |`);
-  L.push(`| UNRESOLVED | ${tally.UNRESOLVED} | no live price obtained (see notes) |`);
+  L.push(`| FIELD-WRONG | ${tally['FIELD-WRONG']} | \`salePrice\` != what a customer pays — wrong field; a cron cannot fix this |`);
+  L.push(`| STALE-ONLY | ${tally['STALE-ONLY']} | \`salePrice\` is correct, stored value is old — build the refresh job |`);
+  L.push(`| NO-SALEPRICE | ${tally['NO-SALEPRICE']} | the API published no \`salePrice\` for this sku — it cannot vote on the field question |`);
+  L.push(`| AGREE | ${tally['AGREE']} | stored == salePrice == live |`);
+  L.push(`| UNRESOLVED | ${tally['UNRESOLVED']} | no live price obtained (see notes) |`);
   L.push('');
   const notes = out.filter((r) => r.flags.length);
   if (notes.length) {
@@ -299,6 +299,7 @@ if (SUMMARY) {
   L.push('- **FIELD-WRONG dominant** → the defect is the field we read, same class as the Amazon 3P bug. Fix the field before touching any schedule.');
   L.push('- **STALE-ONLY dominant** → the field is right and the data is simply old. Build the refresh job.');
   L.push('- **Both present** → do not ship a cron until the field question is settled; a schedule would refresh a wrong number on time.');
+  L.push('- **NO-SALEPRICE dominant** → the sample is mostly skus Best Buy no longer publishes. That is a catalog-liveness finding, and none of those rows says anything about the field; re-run on live skus before concluding anything.');
   L.push('');
   L.push('_Context: `bestbuy-price.js` records a live test from 2026-06-28 where the Developer API returned `salePrice` 399.99 (`onSale:false`) for sku 6519477 while the real selling price was 239.99 — a member price no feed publishes._');
   appendFileSync(SUMMARY, L.join('\n') + '\n');
