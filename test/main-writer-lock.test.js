@@ -43,6 +43,34 @@ test("the live .github/workflows tree passes the gate", () => {
   assert.equal(a.unlocked.length, 0);
 });
 
+// ── the retry-capable pusher ───────────────────────────────────────────────
+// sftp-ingest.yml no longer ends in a bare `git push`; it calls a helper that
+// rebases and retries, because a merge landing mid-run destroyed run
+// 32136198527's "16935 updated" commit. The gate must still see that as a push
+// to main, or it flips to the opposite complaint — "joins main-writer but
+// pushes nothing to main" — and the lock gets removed from a real writer.
+test("a call to push-with-rebase.sh counts as a main-write", () => {
+  const a = auditOf({ "w.yml": scheduled('      - run: |\n          bash scripts/push-with-rebase.sh main', LOCK) });
+  assert.equal(a.mustLock.length, 1, "the helper must be seen as a main-push");
+  assert.deepEqual(a.failures, [], a.failures.join(" | "));
+});
+
+test("push-with-rebase.sh with no argument defaults to main", () => {
+  const a = auditOf({ "w.yml": scheduled('      - run: |\n          bash scripts/push-with-rebase.sh', LOCK) });
+  assert.equal(a.mustLock.length, 1);
+  assert.deepEqual(a.failures, [], a.failures.join(" | "));
+});
+
+test("push-with-rebase.sh aimed at a non-main branch is NOT a main-write", () => {
+  const a = auditOf({ "w.yml": scheduled('      - run: |\n          bash scripts/push-with-rebase.sh epik-release') });
+  assert.equal(a.mustLock.length, 0, "a non-main target must not force the lock");
+});
+
+test("push-with-rebase.sh with an unresolvable target is indeterminate, not assumed safe", () => {
+  const a = auditOf({ "w.yml": scheduled('      - run: |\n          bash scripts/push-with-rebase.sh "$BRANCH"') });
+  assert.equal(a.mustLock.length, 1, "an indeterminate pusher must hold the lock");
+});
+
 // ── classification: the two shapes the first draft got wrong ───────────────
 test("a push behind a shell prefix (`if git push origin main; then`) counts as a main-write", () => {
   const a = auditOf({ "w.yml": scheduled('      - run: |\n          if git push origin main; then\n            echo ok\n          fi') });

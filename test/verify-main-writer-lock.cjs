@@ -15,8 +15,9 @@
  * workflows in both directions, which only the tally made visible.
  *
  * Classification of each `git push`:
- *   main          — literal `main` refspec, or a bare push in a workflow whose
- *                   checkout lands on the default branch
+ *   main          — literal `main` refspec, a bare push in a workflow whose
+ *                   checkout lands on the default branch, or a call to
+ *                   scripts/push-with-rebase.sh (which pushes on your behalf)
  *   other         — literal non-main refspec (orphan release branch, feature branch)
  *   indeterminate — refspec is an expression/variable that could not be resolved.
  *                   Never guessed: an indeterminate pusher must hold the lock.
@@ -112,6 +113,24 @@ function classifyPushes(doc) {
 
   for (const step of runSteps(doc)) {
     for (const line of logicalLines(step.run)) {
+      // scripts/push-with-rebase.sh IS a push to main — it wraps `git push` in a
+      // rebase-and-retry loop so a mid-run merge cannot destroy an hour of work.
+      // A gate that only greps for `git push` would classify sftp-ingest.yml as
+      // a non-writer and then fail it for holding main-writer "for nothing",
+      // which is the false-negative direction this file exists to catch.
+      const helper = line.match(/push-with-rebase\.sh(?:\s+(\S+))?/);
+      if (helper) {
+        const target = (helper[1] || 'main').replace(/^["']|["']$/g, '');
+        if (/^\$/.test(target) || target.indexOf('${{') >= 0) {
+          found.push({ line: line, kind: 'indeterminate', note: 'push-with-rebase.sh target ' + target + ' resolved only at run time' });
+        } else if (/(^|\/)main$/.test(target)) {
+          found.push({ line: line, kind: 'main', note: 'push-with-rebase.sh pushes literal ' + target });
+        } else {
+          found.push({ line: line, kind: 'other', note: 'push-with-rebase.sh pushes literal ' + target });
+        }
+        continue;
+      }
+
       if (!/\bgit\s+(?:-\S+\s+)*push\b/.test(line)) continue;
 
       // Collapse every `${{ ... }}` to ONE space-free, deliberately unresolvable
