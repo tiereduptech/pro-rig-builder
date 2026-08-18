@@ -1388,7 +1388,7 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6316584&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6316584.p%3FskuId%3D6316584",
-        "inStock": true
+        "inStock": false
       }
     },
     "discount": 13,
@@ -3216,7 +3216,7 @@ export default [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587612&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587612.p%3FskuId%3D6587612",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -3742,7 +3742,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597526&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597526.p%3FskuId%3D6597526",
-        "inStock": true
+        "inStock": false
       }
     },
     "discount": 42,
@@ -3796,7 +3796,7 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-360-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQR6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16835181496",
@@ -5321,7 +5321,7 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541734&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-halo-120mm-cpu-cooling-fan-with-gen-2-rgb-lighting-black-edition%2FJ3K4GJYW73&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "discount": 22,
@@ -6015,7 +6015,7 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630941&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630941.p%3FskuId%3D6630941",
-        "inStock": true
+        "inStock": false
       }
     },
     "discount": 23,
@@ -13726,7 +13726,12 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 120,
-    "fanCount": 1
+    "fanCount": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 80274,
@@ -13837,7 +13842,7 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6553301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-h150i-rgb-liquid-cpu-cooler-with-qx120-black%2FJ39QHTJQL3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "coolerType": "AIO",
@@ -13855,7 +13860,12 @@ export default [
     "tdp_rating_est": true,
     "bench": 52,
     "sockets": "LGA1700,LGA1851,AM5,AM4",
-    "height": 52
+    "height": 52,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 80277,
@@ -13872,7 +13882,7 @@ export default [
       "bestbuy": {
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566249.p%3FskuId%3D6566249",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16835106751",
@@ -14044,7 +14054,7 @@ export default [
       "bestbuy": {
         "price": 154.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566260&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566260.p%3FskuId%3D6566260",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445832297629522038067575",
@@ -14094,7 +14104,7 @@ export default [
       "bestbuy": {
         "price": 156.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569204&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569204.p%3FskuId%3D6569204",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458310427561789377507103",
@@ -14144,7 +14154,7 @@ export default [
       "bestbuy": {
         "price": 90.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569205.p%3FskuId%3D6569205",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458316042915044138034023",
@@ -14194,7 +14204,7 @@ export default [
       "bestbuy": {
         "price": 74.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569212.p%3FskuId%3D6569212",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458314374061741250609711",
@@ -14579,7 +14589,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597520&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597520.p%3FskuId%3D6597520",
-        "inStock": true
+        "inStock": false
       }
     },
     "coolerType": "AIO",
@@ -14638,7 +14648,12 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 80295,
@@ -14988,7 +15003,12 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 420,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 80302,

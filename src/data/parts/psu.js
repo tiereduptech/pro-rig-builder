@@ -2122,7 +2122,7 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6648892&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6648892.p%3FskuId%3D6648892",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445837495019903605701086",
@@ -5939,7 +5939,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6535780&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6535780.p%3FskuId%3D6535780",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "9SIB0ASKJV3623",
@@ -6030,7 +6030,7 @@ export default [
       "bestbuy": {
         "price": 86.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562433&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a750gl-pcie-5-750w-atx-3-1-full-modular-80-plus-gold-gaming-power-supply-black%2FJ3P7TXLPKR&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 109.99,
@@ -6339,7 +6339,12 @@ export default [
     "value": 7,
     "fanSize": 135,
     "depth": 180,
-    "atx3": true
+    "atx3": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 60141,
@@ -6398,7 +6403,7 @@ export default [
       "bestbuy": {
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586152.p%3FskuId%3D6586152",
-        "inStock": true
+        "inStock": false
       }
     },
     "watts": 1200,
@@ -6410,7 +6415,12 @@ export default [
     "atx3": true,
     "fanSize": 140,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 60143,
@@ -6469,7 +6479,7 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586156&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586156.p%3FskuId%3D6586156",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445831428603569642743789",
@@ -6511,7 +6521,7 @@ export default [
       "bestbuy": {
         "price": 339.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586157&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586157.p%3FskuId%3D6586157",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445838469550643369371660",
@@ -7047,7 +7057,7 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621974&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621974.p%3FskuId%3D6621974",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445835128263448220316865",
@@ -7090,7 +7100,7 @@ export default [
       "bestbuy": {
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626429&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626429.p%3FskuId%3D6626429",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445835908786805764340699",
@@ -7132,7 +7142,7 @@ export default [
       "bestbuy": {
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626430&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-w3-500w-80plus-certified-atx-v3-1-spec-power-supply-black%2FJ39ZPC6J2R&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "watts": 500,
@@ -7145,7 +7155,12 @@ export default [
     "value": 54,
     "fanSize": 120,
     "depth": 140,
-    "atx3": false
+    "atx3": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 60161,
@@ -7234,7 +7249,7 @@ export default [
       "bestbuy": {
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626444&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-sfx-750w-80plus-platinum-atx-3-1-standard-power-supply-black%2FJ39ZPC9V6V&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16817153465",
@@ -7508,7 +7523,7 @@ export default [
       "bestbuy": {
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645322&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645322.p%3FskuId%3D6645322",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 139.99,
@@ -7556,7 +7571,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645324&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645324.p%3FskuId%3D6645324",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 159.99,

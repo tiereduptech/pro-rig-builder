@@ -5235,7 +5235,7 @@ export default [
       "bestbuy": {
         "price": 377.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560420&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-14700k-14th-gen-20-core-28-thread-4-3ghz-5-6ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ557C2&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "amazon": {
         "price": 549.99,
@@ -5938,7 +5938,7 @@ export default [
       "bestbuy": {
         "price": 2499,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644816&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644816.p%3FskuId%3D6644816",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16819113915",
@@ -5987,7 +5987,7 @@ export default [
       "bestbuy": {
         "price": 4999,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644817&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644817.p%3FskuId%3D6644817",
-        "inStock": true
+        "inStock": false
       }
     },
     "cores": 64,

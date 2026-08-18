@@ -2813,7 +2813,7 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-170-tg-argb-micro-atx-mid-tower-pc-case-black%2FJ39ZPC6C6F&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458310984865128645341311",
@@ -3256,7 +3256,7 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6469130&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-7000d-airflow-atx-full-tower-pc-case-black%2FJ39QHHVWGC&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -5949,7 +5949,7 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603502&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603502.p%3FskuId%3D6603502",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -6009,7 +6009,7 @@ export default [
       "bestbuy": {
         "price": 63.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603510&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-270-plus-tg-argb-mid-tower-e-atx-pc-case-hydrangea-blue%2FJ39ZPC67K2&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -15220,7 +15220,12 @@ export default [
       280,
       240
     ],
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70262,
@@ -15449,7 +15454,12 @@ export default [
     "drive25": 2,
     "fans_inc": 3,
     "bench": 72,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70267,
@@ -15885,7 +15895,7 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578776&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578776.p%3FskuId%3D6578776",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16811737016",
@@ -15979,7 +15989,7 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583646&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-3500x-argb-atx-mid-tower-pc-case-black%2FJ39QHTC5TG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "tower": "Mid",
@@ -16002,7 +16012,12 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "bench": 66,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70278,
@@ -16042,7 +16057,12 @@ export default [
     "drive25": 2,
     "drive35": 2,
     "bench": 66,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70279,
@@ -16513,7 +16533,7 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602159&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602159.p%3FskuId%3D6602159",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16811352212",
@@ -17721,7 +17741,12 @@ export default [
       240
     ],
     "bench": 77,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70311,
@@ -18048,7 +18073,7 @@ export default [
       "bestbuy": {
         "price": 54.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626433&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626433.p%3FskuId%3D6626433",
-        "inStock": true
+        "inStock": false
       }
     },
     "tower": "Mid",
@@ -18072,7 +18097,12 @@ export default [
       240
     ],
     "bench": 63,
-    "bundle": false
+    "bundle": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 70319,
@@ -18254,7 +18284,7 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629571&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629571.p%3FskuId%3D6629571",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 99.99,

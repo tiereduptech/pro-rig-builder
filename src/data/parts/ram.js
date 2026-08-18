@@ -2672,7 +2672,7 @@ export default [
       "bestbuy": {
         "price": 1119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTC75V&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445831284010422222582994",
@@ -2893,7 +2893,7 @@ export default [
       "bestbuy": {
         "price": 1021.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637756&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTJVKG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -5802,7 +5802,7 @@ export default [
       "bestbuy": {
         "price": 1241.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645751.p%3FskuId%3D6645751",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -8745,7 +8745,7 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604864&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604864.p%3FskuId%3D6604864",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445832372807584213670022",
@@ -8793,7 +8793,7 @@ export default [
       "bestbuy": {
         "price": 476.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6608563&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6608563.p%3FskuId%3D6608563",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -8957,7 +8957,7 @@ export default [
       "bestbuy": {
         "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637057&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637057.p%3FskuId%3D6637057",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 64,
@@ -9027,7 +9027,7 @@ export default [
       "bestbuy": {
         "price": 1253.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645747&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645747.p%3FskuId%3D6645747",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 96,
@@ -9043,7 +9043,12 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR5",
     "height": 45,
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 40262,
@@ -9098,7 +9103,7 @@ export default [
       "bestbuy": {
         "price": 1228.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645750&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645750.p%3FskuId%3D6645750",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "44583602460974355416427",
@@ -9192,7 +9197,7 @@ export default [
       "bestbuy": {
         "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645754&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645754.p%3FskuId%3D6645754",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445832156532174368504792",

@@ -2377,7 +2377,7 @@ export default [
       "bestbuy": {
         "price": 284.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541324&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-1tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6H52&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445836225830510842221199",
@@ -15162,7 +15162,7 @@ export default [
       "bestbuy": {
         "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-16tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5L89&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -15208,7 +15208,7 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677302&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-12tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGJ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -21308,7 +21308,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 65,
-    "pcieGen": 3
+    "pcieGen": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50465,
@@ -21490,7 +21495,12 @@ export default [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 7
+    "value": 7,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50470,
@@ -21553,7 +21563,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 100,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50472,
@@ -21682,7 +21697,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 100,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50475,
@@ -21713,7 +21733,12 @@ export default [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 6
+    "value": 6,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50476,
@@ -21744,7 +21769,12 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 3,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50477,
@@ -21775,7 +21805,12 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50478,
@@ -21834,7 +21869,7 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6465362&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6465362.p%3FskuId%3D6465362",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445835025488262823789955",
@@ -21878,7 +21913,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5-and-desktops%2FJXJ62C6L5Q&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -21893,7 +21928,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 81,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50481,
@@ -21910,7 +21950,7 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-1tb-internal-ssd-sata%2FJXJ62C6LVK&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -21923,7 +21963,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50482,
@@ -21941,7 +21986,7 @@ export default [
       "bestbuy": {
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512129&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512129.p%3FskuId%3D6512129",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445839106550964096970288",
@@ -21986,7 +22031,7 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y93&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -22001,7 +22046,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 35,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50484,
@@ -22146,7 +22196,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 53,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50488,
@@ -22253,7 +22308,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 84,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50491,
@@ -22286,7 +22346,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 76,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50492,
@@ -22318,7 +22383,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 28,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50493,
@@ -22571,7 +22641,12 @@ export default [
     "dram": false,
     "value": 63,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50500,
@@ -22604,7 +22679,12 @@ export default [
     "dram": false,
     "value": 41,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50501,
@@ -22622,7 +22702,7 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-8tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62CRLLV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 8000,
@@ -22637,7 +22717,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 3,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50502,
@@ -22654,7 +22739,7 @@ export default [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6598876&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6598876.p%3FskuId%3D6598876",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16820156405",
@@ -22786,7 +22871,7 @@ export default [
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615939&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615939.p%3FskuId%3D6615939",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -22800,7 +22885,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 43,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50506,
@@ -22818,7 +22908,7 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615942&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615942.p%3FskuId%3D6615942",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "0D9-001A-003S1",
@@ -22861,7 +22951,7 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615945&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn7100-2tb-internal-ssd-gen-4-x4-nvme%2FJXJ62CRKFL&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -22875,7 +22965,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 31,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50508,
@@ -22908,7 +23003,12 @@ export default [
     "dram": false,
     "value": 100,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50509,
@@ -22941,7 +23041,12 @@ export default [
     "dram": false,
     "value": 32,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50510,
@@ -22974,7 +23079,12 @@ export default [
     "dram": false,
     "value": 62,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50511,
@@ -23148,7 +23258,7 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-2tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2W4&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -23164,7 +23274,12 @@ export default [
     "rpm": 7200,
     "value": 34,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50516,
@@ -23214,7 +23329,7 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-1tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2WR&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -23230,7 +23345,12 @@ export default [
     "rpm": 7200,
     "value": 70,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50518,
@@ -23461,7 +23581,7 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644048&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644048.p%3FskuId%3D6644048",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -23477,7 +23597,12 @@ export default [
     "dram": true,
     "value": 72,
     "read": 14700,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50525,
@@ -23495,7 +23620,7 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644705&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644705.p%3FskuId%3D6644705",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -23509,7 +23634,12 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 46,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50526,
@@ -23527,7 +23657,7 @@ export default [
       "bestbuy": {
         "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644706&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-2tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86L&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312342339091256267858",
@@ -23570,7 +23700,7 @@ export default [
       "bestbuy": {
         "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-4tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86J&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 4000,
@@ -23585,7 +23715,12 @@ export default [
     "dram": false,
     "value": 10,
     "bench": 75,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50528,
@@ -23619,7 +23754,12 @@ export default [
     "dram": true,
     "value": 100,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50529,
@@ -23637,7 +23777,7 @@ export default [
       "bestbuy": {
         "price": 1019.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667761.p%3FskuId%3D6667761",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 4000,
@@ -23652,7 +23792,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 22,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50530,
@@ -24347,7 +24492,7 @@ export default [
       "bestbuy": {
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616031&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-20tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGW&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 20000,
@@ -24359,7 +24504,12 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 35
+    "bench": 35,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50553,
@@ -24416,7 +24566,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-8tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5HK4YY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312443967769469554195",
@@ -24458,7 +24608,7 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-2tb-internal-hard-drive-for-desktops%2FJ37C5HK868&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458317948259558955777901",
@@ -24499,7 +24649,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616037&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-for-desktops%2FJ37C5HK32Z&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312911671136429775356",
@@ -24582,7 +24732,7 @@ export default [
       "bestbuy": {
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616039&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616039.p%3FskuId%3D6616039",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 24000,
@@ -24594,7 +24744,12 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 35
+    "bench": 35,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50559,

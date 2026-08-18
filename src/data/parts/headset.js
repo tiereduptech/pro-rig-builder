@@ -921,7 +921,7 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557062&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557062.p%3FskuId%3D6557062",
         "price": 24.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "hsType": "Wireless",
@@ -1508,14 +1508,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582440.p%3FskuId%3D6582440",
         "price": 99.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "hsType": "Wireless",
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 66
+    "bench": 66,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100228,
@@ -1625,7 +1630,12 @@ export default [
     "mic": true,
     "driver": 14,
     "anc": false,
-    "bench": 40
+    "bench": 40,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100233,
@@ -1860,14 +1870,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581760.p%3FskuId%3D6581760",
         "price": 29.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "hsType": "Wired",
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 55
+    "bench": 55,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100244,
@@ -1911,7 +1926,12 @@ export default [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 57
+    "bench": 57,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100246,
@@ -1933,7 +1953,12 @@ export default [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 57
+    "bench": 57,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100247,
@@ -1977,7 +2002,12 @@ export default [
     "mic": true,
     "driver": 50,
     "anc": true,
-    "bench": 89
+    "bench": 89,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100249,
@@ -2065,7 +2095,12 @@ export default [
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100253,
@@ -2212,14 +2247,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642944.p%3FskuId%3D6642944",
         "price": 119.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "hsType": "Wireless",
     "mic": true,
     "driver": 40,
     "anc": false,
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 101171,

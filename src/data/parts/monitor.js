@@ -3935,7 +3935,7 @@ export default [
       "bestbuy": {
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5689100&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5689100.p%3FskuId%3D5689100",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445833864962628197204716",
@@ -4037,7 +4037,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-24-ips-led-fhd-monitor-hdmi-vga-black%2FJ3K4L9KRW9&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 24,
@@ -4051,7 +4051,12 @@ export default [
     "bench": 39,
     "ports": "HDMI",
     "resolution": "1080p",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90099,
@@ -4101,7 +4106,7 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373922&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373922.p%3FskuId%3D6373922",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 15.6,
@@ -4114,7 +4119,12 @@ export default [
     "value": 6,
     "bench": 36,
     "ports": "HDMI, USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90101,
@@ -4146,7 +4156,12 @@ export default [
     "bench": 49,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90102,
@@ -4176,7 +4191,12 @@ export default [
     "condition": "refurbished",
     "value": 33,
     "bench": 20,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90103,
@@ -4207,7 +4227,12 @@ export default [
     "value": 15,
     "bench": 25,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90104,
@@ -4238,7 +4263,12 @@ export default [
     "value": 4,
     "bench": 42,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90105,
@@ -4269,7 +4299,12 @@ export default [
     "value": 15,
     "bench": 45,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90106,
@@ -4299,7 +4334,12 @@ export default [
     "condition": "refurbished",
     "value": 18,
     "bench": 39,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90107,
@@ -4331,7 +4371,12 @@ export default [
     "bench": 40,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90108,
@@ -4362,7 +4407,12 @@ export default [
     "value": 3,
     "bench": 56,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90109,
@@ -4394,7 +4444,12 @@ export default [
     "bench": 49,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90110,
@@ -4426,7 +4481,12 @@ export default [
     "bench": 39,
     "hdr": "HDR",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90111,
@@ -4457,7 +4517,12 @@ export default [
     "value": 0,
     "bench": 33,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90112,
@@ -4487,7 +4552,12 @@ export default [
     "condition": "refurbished",
     "value": 23,
     "bench": 36,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90113,
@@ -4518,7 +4588,12 @@ export default [
     "value": 17,
     "bench": 36,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90114,
@@ -4549,7 +4624,12 @@ export default [
     "value": 10,
     "bench": 49,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90115,
@@ -4580,7 +4660,12 @@ export default [
     "value": 16,
     "bench": 36,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90116,
@@ -4612,7 +4697,12 @@ export default [
     "bench": 71,
     "sync": "G-Sync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90117,
@@ -4645,7 +4735,12 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90118,
@@ -4662,7 +4757,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6403999&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6403999.p%3FskuId%3D6403999",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445831145804275859946783",
@@ -4718,7 +4813,12 @@ export default [
     "value": 51,
     "bench": 36,
     "ports": "USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90120,
@@ -4749,7 +4849,12 @@ export default [
     "value": 80,
     "bench": 46,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90121,
@@ -4781,7 +4886,12 @@ export default [
     "bench": 54,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90122,
@@ -4813,7 +4923,12 @@ export default [
     "bench": 81,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90123,
@@ -4878,7 +4993,12 @@ export default [
     "hdr": "HDR",
     "sync": "G-Sync Compatible",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90125,
@@ -4910,7 +5030,12 @@ export default [
     "bench": 77,
     "sync": "G-Sync Compatible",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90126,
@@ -4973,7 +5098,12 @@ export default [
     "value": 33,
     "bench": 71,
     "sync": "FreeSync",
-    "ports": "1x DisplayPort, 2x HDMI"
+    "ports": "1x DisplayPort, 2x HDMI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90128,
@@ -5005,7 +5135,12 @@ export default [
     "bench": 49,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90129,
@@ -5022,7 +5157,7 @@ export default [
       "bestbuy": {
         "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6426785&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6426785.p%3FskuId%3D6426785",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -5035,7 +5170,12 @@ export default [
     "value": 9,
     "bench": 51,
     "ports": "HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90130,
@@ -5067,7 +5207,12 @@ export default [
     "bench": 48,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90131,
@@ -5097,7 +5242,12 @@ export default [
     "value": 24,
     "bench": 31,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90132,
@@ -5129,7 +5279,12 @@ export default [
     "bench": 88,
     "sync": "G-Sync Compatible",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90133,
@@ -5161,7 +5316,12 @@ export default [
     "bench": 46,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90134,
@@ -5193,7 +5353,12 @@ export default [
     "bench": 58,
     "hdr": "HDR",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90135,
@@ -5263,7 +5428,12 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90137,
@@ -5403,7 +5573,12 @@ export default [
     "bench": 76,
     "hdr": "HDR",
     "sync": "FreeSync",
-    "ports": "1x DisplayPort, 2x HDMI"
+    "ports": "1x DisplayPort, 2x HDMI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90141,
@@ -5435,7 +5610,12 @@ export default [
     "bench": 49,
     "hdr": "HDR",
     "sync": "FreeSync",
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90142,
@@ -5467,7 +5647,12 @@ export default [
     "bench": 58,
     "hdr": "HDR",
     "ports": "HDMI, DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90143,
@@ -5533,7 +5718,12 @@ export default [
     "hdr": "HDR",
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90145,
@@ -5597,7 +5787,12 @@ export default [
     "bench": 61,
     "sync": "FreeSync",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90147,
@@ -5629,7 +5824,12 @@ export default [
     "bench": 67,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90148,
@@ -5693,7 +5893,12 @@ export default [
     "bench": 48,
     "sync": "FreeSync",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90150,
@@ -5767,7 +5972,12 @@ export default [
     "bench": 88,
     "hdr": "HDR",
     "sync": "G-Sync",
-    "ports": "1x DisplayPort, 2x HDMI"
+    "ports": "1x DisplayPort, 2x HDMI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90152,
@@ -5784,7 +5994,7 @@ export default [
       "bestbuy": {
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472142.p%3FskuId%3D6472142",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 15.8,
@@ -5796,7 +6006,12 @@ export default [
     "contrast": "1000:1",
     "value": 6,
     "bench": 36,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90153,
@@ -5873,7 +6088,7 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472145&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472145.p%3FskuId%3D6472145",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 14,
@@ -5884,7 +6099,12 @@ export default [
     "contrast": "1000:1",
     "value": 4,
     "bench": 25,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90156,
@@ -5916,7 +6136,12 @@ export default [
     "bench": 67,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90157,
@@ -5947,7 +6172,12 @@ export default [
     "bench": 41,
     "sync": "FreeSync",
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90158,
@@ -5979,7 +6209,12 @@ export default [
     "bench": 85,
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90159,
@@ -5996,7 +6231,7 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6481515&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-24-fhd-ips-75hz-monitor-displayport-hdmi-black%2FJJG7VQZJC3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445837990565307599233593",
@@ -6091,7 +6326,7 @@ export default [
       "bestbuy": {
         "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501568&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501568.p%3FskuId%3D6501568",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -6101,7 +6336,12 @@ export default [
     "contrast": "1000:1",
     "value": 0,
     "bench": 30,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90163,
@@ -6212,7 +6452,12 @@ export default [
     "value": 9,
     "bench": 61,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90167,
@@ -6324,7 +6569,7 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6507840&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-23-8-lcd-monitor-displayport-usb-hdmi-black-silver%2FJ3K4L67WQ3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458314977915363951345173",
@@ -6570,7 +6815,7 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541618&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541618.p%3FskuId%3D6541618",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 16,
@@ -6639,7 +6884,7 @@ export default [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542686&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6542686.p%3FskuId%3D6542686",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 23.8,
@@ -6653,7 +6898,12 @@ export default [
     "bench": 52,
     "sync": "FreeSync",
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90180,
@@ -6777,7 +7027,7 @@ export default [
       "bestbuy": {
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548579&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548579.p%3FskuId%3D6548579",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -6789,7 +7039,12 @@ export default [
     "contrast": "10,000:1",
     "value": 1,
     "bench": 36,
-    "ports": "Thunderbolt"
+    "ports": "Thunderbolt",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90184,
@@ -6876,7 +7131,7 @@ export default [
       "bestbuy": {
         "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6555705&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6555705.p%3FskuId%3D6555705",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -6889,7 +7144,12 @@ export default [
     "bench": 53,
     "hdr": "HDR",
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90187,
@@ -7087,7 +7347,7 @@ export default [
       "bestbuy": {
         "price": 329.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562735&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562735.p%3FskuId%3D6562735",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "9SIBVN6K8U1327",
@@ -7211,7 +7471,7 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570340&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-s39c-32-fhd-75hz-curved-monitor-hdmi-black%2FJ3ZYG2P3YQ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -7223,7 +7483,12 @@ export default [
     "value": 20,
     "bench": 46,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90196,
@@ -7282,7 +7547,7 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571133&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571133.p%3FskuId%3D6571133",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 209.99,
@@ -7350,7 +7615,7 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573719.p%3FskuId%3D6573719",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445833636707460554737857",
@@ -7434,7 +7699,7 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573721&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573721.p%3FskuId%3D6573721",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 31.5,
@@ -7447,7 +7712,12 @@ export default [
     "value": 28,
     "bench": 41,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90202,
@@ -7464,7 +7734,7 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573722.p%3FskuId%3D6573722",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "9SIC0T2M110917",
@@ -7588,7 +7858,7 @@ export default [
       "bestbuy": {
         "price": 779.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576566.p%3FskuId%3D6576566",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 779.99,
@@ -7923,7 +8193,12 @@ export default [
     "hdr": "HDR",
     "sync": "G-Sync Compatible",
     "ports": "1x DisplayPort, 2x HDMI",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90215,
@@ -7971,7 +8246,7 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581704&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-viewfinity-s8-27-led-4k-uhd-60hz-5-ms-monitor-with-hdr-10-hdmi-usb-black%2FJ3ZYG2T6TQ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -7985,7 +8260,12 @@ export default [
     "bench": 61,
     "hdr": "HDR10",
     "ports": "HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90217,
@@ -8002,7 +8282,7 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582197&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582197.p%3FskuId%3D6582197",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 15.6,
@@ -8015,7 +8295,12 @@ export default [
     "value": 22,
     "bench": 36,
     "ports": "USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90218,
@@ -8032,7 +8317,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583175&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583175.p%3FskuId%3D6583175",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 149.99,
@@ -8097,7 +8382,7 @@ export default [
       "bestbuy": {
         "price": 1099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583249.p%3FskuId%3D6583249",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -8109,7 +8394,12 @@ export default [
     "value": 1,
     "bench": 64,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90221,
@@ -8155,7 +8445,7 @@ export default [
       "bestbuy": {
         "price": 899.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583255&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583255.p%3FskuId%3D6583255",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -8168,7 +8458,12 @@ export default [
     "value": 1,
     "bench": 64,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90223,
@@ -8442,7 +8737,7 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584764&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584764.p%3FskuId%3D6584764",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458314803844702687716482",
@@ -8544,7 +8839,7 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587444&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587444.p%3FskuId%3D6587444",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 23.8,
@@ -8558,7 +8853,12 @@ export default [
     "bench": 58,
     "sync": "FreeSync",
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90234,
@@ -8589,7 +8889,12 @@ export default [
     "bench": 63,
     "sync": "FreeSync",
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90235,
@@ -8636,7 +8941,7 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593350&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593350.p%3FskuId%3D6593350",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 24.1,
@@ -8647,7 +8952,12 @@ export default [
     "contrast": "1000:1",
     "value": 9,
     "bench": 36,
-    "ports": "HDMI, DisplayPort, USB-C"
+    "ports": "HDMI, DisplayPort, USB-C",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90237,
@@ -8880,7 +9190,7 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594696&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594696.p%3FskuId%3D6594696",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 89.99,
@@ -9293,7 +9603,7 @@ export default [
       "bestbuy": {
         "price": 1999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602655&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602655.p%3FskuId%3D6602655",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 57,
@@ -9307,7 +9617,12 @@ export default [
     "bench": 94,
     "hdr": "HDR1000",
     "sync": "FreeSync",
-    "ports": "HDMI"
+    "ports": "HDMI",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90261,
@@ -9355,7 +9670,7 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604798&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604798.p%3FskuId%3D6604798",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 104.99,
@@ -9392,7 +9707,7 @@ export default [
       "bestbuy": {
         "price": 104.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604800&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604800.p%3FskuId%3D6604800",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 129.99,
@@ -9621,7 +9936,7 @@ export default [
       "bestbuy": {
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613012&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613012.p%3FskuId%3D6613012",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -9634,7 +9949,12 @@ export default [
     "value": 46,
     "bench": 47,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90271,
@@ -9701,7 +10021,7 @@ export default [
       "bestbuy": {
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613924&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613924.p%3FskuId%3D6613924",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 999.99,
@@ -9907,7 +10227,7 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614812&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614812.p%3FskuId%3D6614812",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -9919,7 +10239,12 @@ export default [
     "value": 5,
     "bench": 63,
     "ports": "HDMI, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90278,
@@ -10272,7 +10597,7 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618908&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618908.p%3FskuId%3D6618908",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 279.99,
@@ -10310,7 +10635,7 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619102&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619102.p%3FskuId%3D6619102",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445837320027569152666353",
@@ -10352,7 +10677,7 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619103&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619103.p%3FskuId%3D6619103",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 24,
@@ -10365,7 +10690,12 @@ export default [
     "value": 64,
     "bench": 43,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90292,
@@ -10850,7 +11180,7 @@ export default [
       "bestbuy": {
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6623964&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6623964.p%3FskuId%3D6623964",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 289.99,
@@ -11040,7 +11370,7 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632212.p%3FskuId%3D6632212",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -11053,7 +11383,12 @@ export default [
     "value": 9,
     "bench": 61,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90310,
@@ -11132,7 +11467,7 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632215&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632215.p%3FskuId%3D6632215",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -11145,7 +11480,12 @@ export default [
     "value": 9,
     "bench": 61,
     "ports": "USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90313,
@@ -11321,7 +11661,7 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr-10-black%2FJ3ZYG2T6VT&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -11335,7 +11675,12 @@ export default [
     "bench": 61,
     "hdr": "HDR10",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90318,
@@ -11352,7 +11697,7 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637461&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-32-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr10-black%2FJ3ZYG2T647&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -11366,7 +11711,12 @@ export default [
     "bench": 58,
     "hdr": "HDR10",
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90319,
@@ -11873,7 +12223,7 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641745&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641745.p%3FskuId%3D6641745",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458316305397092411526076",
@@ -12493,7 +12843,12 @@ export default [
     "contrast": "1200:1",
     "value": 3,
     "bench": 33,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90351,
@@ -12908,7 +13263,7 @@ export default [
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672909&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672909.p%3FskuId%3D6672909",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458313261365100336848039",
@@ -13075,7 +13430,7 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673533&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673533.p%3FskuId%3D6673533",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 23.8,
@@ -13088,7 +13443,12 @@ export default [
     "value": 33,
     "bench": 46,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90367,
@@ -13346,7 +13706,7 @@ export default [
       "bestbuy": {
         "price": 389.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6674547&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6674547.p%3FskuId%3D6674547",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -13359,7 +13719,12 @@ export default [
     "value": 22,
     "bench": 61,
     "ports": "HDMI, DisplayPort",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90373,
@@ -13417,7 +13782,7 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675758&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6675758.p%3FskuId%3D6675758",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 27,
@@ -13429,7 +13794,12 @@ export default [
     "value": 5,
     "bench": 63,
     "ports": "HDMI, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90375,
@@ -13487,7 +13857,7 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676890.p%3FskuId%3D6676890",
-        "inStock": true
+        "inStock": false
       }
     },
     "screenSize": 32,
@@ -13499,7 +13869,12 @@ export default [
     "value": 35,
     "bench": 46,
     "ports": "HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90377,
@@ -13529,7 +13904,12 @@ export default [
     "value": 14,
     "bench": 29,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 90378,
@@ -13558,7 +13938,12 @@ export default [
     "contrast": "8000:1",
     "value": 23,
     "bench": 35,
-    "ports": "1x HDMI, 1x DisplayPort"
+    "ports": "1x HDMI, 1x DisplayPort",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100989,

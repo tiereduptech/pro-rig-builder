@@ -2238,7 +2238,7 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563116&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563116.p%3FskuId%3D6563116",
-        "inStock": true
+        "inStock": false
       },
       "newegg_openbox": {
         "sku": "445831475251037413601447",
@@ -5042,7 +5042,7 @@ export default [
       "bestbuy": {
         "price": 21.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563123.p%3FskuId%3D6563123",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458311878658529105260618",
@@ -8105,7 +8105,7 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626415&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626415.p%3FskuId%3D6626415",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16835106740",
@@ -12139,7 +12139,7 @@ export default [
       "bestbuy": {
         "price": 28.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563107&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563107.p%3FskuId%3D6563107",
-        "inStock": true
+        "inStock": false
       }
     },
     "cfm": 48.58,
@@ -12328,7 +12328,7 @@ export default [
       "bestbuy": {
         "price": 15.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577053&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577053.p%3FskuId%3D6577053",
-        "inStock": true
+        "inStock": false
       }
     },
     "cfm": 74.2,
@@ -12342,7 +12342,12 @@ export default [
     "pwm": true,
     "pack": 1,
     "bench": 56,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 85269,
@@ -12626,7 +12631,7 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593516&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593516.p%3FskuId%3D6593516",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458313516264223216682233",
@@ -12761,7 +12766,7 @@ export default [
       "bestbuy": {
         "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604414&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604414.p%3FskuId%3D6604414",
-        "inStock": true
+        "inStock": false
       },
       "newegg_openbox": {
         "sku": "445834581165342101667335",
@@ -12951,7 +12956,7 @@ export default [
       "bestbuy": {
         "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604418&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604418.p%3FskuId%3D6604418",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445839203076102223061552",
@@ -13084,7 +13089,7 @@ export default [
       "bestbuy": {
         "price": 94.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611631&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-fan-starter-kit-3-pack-white%2FJ39QHT2JV3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cfm": 66.7,
@@ -13099,7 +13104,12 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 63,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 85286,
@@ -13160,7 +13170,7 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626410&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626410.p%3FskuId%3D6626410",
-        "inStock": true
+        "inStock": false
       }
     },
     "cfm": 131.6,
@@ -13174,7 +13184,12 @@ export default [
     "pwm": true,
     "pack": 1,
     "bench": 59,
-    "fanSize": 200
+    "fanSize": 200,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 85288,
@@ -13269,7 +13284,7 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626424&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626424.p%3FskuId%3D6626424",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445838428578799822103902",
@@ -13313,7 +13328,7 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626426&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626426.p%3FskuId%3D6626426",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445833520526241748237897",
@@ -13446,7 +13461,7 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626438.p%3FskuId%3D6626438",
-        "inStock": true
+        "inStock": false
       }
     },
     "cfm": 131.6,
