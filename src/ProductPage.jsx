@@ -20,13 +20,27 @@ import React from "react";
 import { ExternalLink, ChevronRight } from "lucide-react";
 
 // --- Self-contained helpers (mirrors App.jsx but no imports needed) ---------
+// Mirrors App.jsx bestPrice(): an out-of-stock retailer never sets the page
+// price while a buyable one exists, but it can still set it when nothing is
+// buyable, so the page shows a real number instead of "—". Without this a
+// sold-out Best Buy row undercut the retailer the customer would actually buy
+// from, and the headline price on this page disagreed with the main app's.
+//
+// The retailer list stays the four this page has always read. Widening it to the
+// newegg_* variants is a real gap, but it is App.jsx's bestPrice() that defines
+// pricing for the site — this page mirrors it, it does not lead it.
 function priceOf(p) {
   if (!p) return null;
-  const a = p?.deals?.amazon?.price;
-  const b = p?.deals?.bestbuy?.price;
-  const n = p?.deals?.newegg?.saleprice ?? p?.deals?.newegg?.price;
-  const m = p?.deals?.msi?.price;
-  const candidates = [a, b, n, m, p.pr].filter(x => typeof x === "number" && x > 0);
+  const d = p?.deals || {};
+  const offers = [
+    [d.amazon,  d.amazon?.price],
+    [d.bestbuy, d.bestbuy?.price],
+    [d.newegg,  d.newegg?.saleprice ?? d.newegg?.price],
+    [d.msi,     d.msi?.price],
+  ].filter(([, x]) => typeof x === "number" && x > 0);
+  const buyable = offers.filter(([deal]) => deal.inStock !== false);
+  const usable = buyable.length ? buyable : offers;
+  const candidates = [...usable.map(([, x]) => x), p.pr].filter(x => typeof x === "number" && x > 0);
   return candidates.length ? Math.min(...candidates) : null;
 }
 function fmtPrice(n) {
@@ -114,6 +128,24 @@ function getSpecs(p) {
 // --- Retailer buy buttons ---------------------------------------------------
 function BuyButton({ retailer, deal }) {
   if (!deal || !deal.url && !deal.linkurl) return null;
+  // A retailer that will not sell this today gets no buy button. Unlike the
+  // comparison list in App.jsx — which sinks the row and labels it OOS so the
+  // absence is explained — this page has no such affordance: every row here is a
+  // button that says "View on X" next to a price, and rendering one for a
+  // sold-out listing is an invitation to a dead end.
+  //
+  // Safe because two rules stand in front of this page: a row whose last
+  // retailer the audit calls unbuyable is quarantined by
+  // stamp-unbuyable-bestbuy.mjs, and App.jsx's isAvailable() drops any row whose
+  // every priced retailer is inStock:false out of search and browse. What
+  // survives both still has a buyable peer.
+  //
+  // Not "no row can ever be stranded": 5 rows carry a feed-set inStock:false
+  // with no peer and no needsReview (30219, 90235, 90245, 90288, 90358 as of
+  // 2026-08-18) — older than either rule and outside the dead-sku audit's
+  // unbuyable list. isAvailable() already hides them; suppressing the button
+  // here is the same answer arrived at one layer later.
+  if (deal.inStock === false) return null;
   const url = deal.url || deal.linkurl;
   const price = deal.saleprice ?? deal.price;
   if (!url || !price) return null;

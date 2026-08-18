@@ -570,11 +570,32 @@ function buildBreadcrumbLd({ page, product, category }) {
 // ─── Build primary JSON-LD (Product / WebSite / CollectionPage) ─────────────
 function buildPrimaryLd({ page, product, category, url, title, desc }) {
   if (product) {
-    const price = product?.deals?.amazon?.price || product?.deals?.bestbuy?.price
-      || product?.deals?.newegg?.saleprice || product?.deals?.newegg?.price || product.pr;
-    const offerUrl = product?.deals?.amazon?.url || product?.deals?.bestbuy?.url
-      || product?.deals?.newegg?.linkurl || product?.deals?.msi?.url || url;
-    const inStock = product?.deals?.amazon?.inStock !== false;
+    // ONE offer, described consistently. Availability used to read deals.amazon
+    // and nothing else, so `undefined !== false` made every product without an
+    // Amazon deal InStock by default — a Best Buy-only row that Best Buy itself
+    // reports sold out was telling Google it was buyable. Price and url mean-
+    // while came off two independent || chains that could name different
+    // retailers. Pick the offer first — buyable ahead of not, in the precedence
+    // this has always used — then read price, url and availability off that same
+    // deal, so the three can never describe different listings.
+    const OFFER_ORDER = [
+      ['amazon',  (d) => d?.price],
+      ['bestbuy', (d) => d?.price],
+      ['newegg',  (d) => d?.saleprice || d?.price],
+      ['msi',     (d) => d?.price],
+    ];
+    const priced = OFFER_ORDER
+      .map(([key, priceOf]) => {
+        const deal = product?.deals?.[key];
+        return { deal, price: priceOf(deal), url: deal?.url || deal?.linkurl };
+      })
+      .filter((o) => typeof o.price === "number" && o.price > 0);
+    const offer = priced.find((o) => o.deal.inStock !== false) || priced[0] || null;
+    const price = offer ? offer.price : product.pr;
+    const offerUrl = offer?.url || url;
+    // No priced deal at all leaves no evidence either way; the pre-existing
+    // default (InStock) stands rather than inventing an OutOfStock claim.
+    const inStock = offer ? offer.deal.inStock !== false : true;
     const image = product?.deals?.amazon?.image || product.img
       || product?.deals?.newegg?.imageurl || DEFAULT_OG_IMAGE;
     // priceValidUntil: prices refresh on every catalog rebuild; give Google a

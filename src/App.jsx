@@ -828,7 +828,27 @@ const retailers = p => {
         sellerClass: neweggSellerClass(name, info) };
     })
     .filter(r => r.url && r.price > 0)
-    .sort((a,b) => a.price - b.price);
+    // OUT-OF-STOCK ROWS SINK, whatever they cost. Sorting on price alone put a
+    // listing nobody can buy at the top of the comparison — and, because the BEST
+    // badge is positional, gave it the badge as well — while bestPrice() on the
+    // same card was already quoting the cheapest IN-STOCK retailer. The two
+    // disagreed on screen. Stock first, price within each group.
+    //
+    // Sink rather than filter: the row is still true and still worth showing with
+    // its OOS tag ("Best Buy has this, they just can't sell it today"). What it
+    // must not do is set the headline price or wear BEST.
+    .sort((a,b) => (b.inStock - a.inStock) || (a.price - b.price));
+};
+
+// The "Save $X at A vs B" line spans the cheapest and dearest offer a customer
+// can actually take. It used to read rr[0] and rr[rr.length-1] directly, which
+// was safe only while retailers() sorted on price alone; now that out-of-stock
+// rows sink to the END, the last element can be a CHEAPER sold-out listing and
+// that subtraction goes negative. Span the buyable rows only — they are a
+// price-sorted prefix — and say nothing when there are fewer than two.
+const savingsSpan = rr => {
+  const live = rr.filter(r => r.inStock);
+  return live.length > 1 ? { low: live[0], high: live[live.length - 1] } : null;
 };
 
 // "3RD-PARTY" rather than "MARKETPLACE": the filter sidebar already uses
@@ -922,7 +942,10 @@ function PriceCompare({part}) {
           <div style={{display:"flex",alignItems:"center",gap:6}}>
             <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)"}}>{r.displayName}</span>
             <SellerTag r={r}/>
-            {i===0 && <Tag color="var(--mint)">BEST</Tag>}
+            {/* BEST is positional, and retailers() now sinks OOS rows, so index 0
+                is out of stock only when EVERY row is — and a "best price" nobody
+                can buy is not a best price. Badge the row or badge nothing. */}
+            {i===0 && r.inStock && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
@@ -3861,7 +3884,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
                       <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>
                       <SellerTag r={r}/>
-                      {ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
+                      {ri===0&&r.inStock&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                     {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
@@ -4264,6 +4287,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
         {list.map((p,i)=>{
           const isExp=expanded===p.id;
           const rr=retailers(p);
+          const saveSpan=savingsSpan(rr);
           return <div key={p.id}>
             {isExp && !singleProductId && <ProductSchema p={p}/>}
             <div onClick={()=>setExpanded(isExp?null:p.id)} style={{display:"grid",gridTemplateColumns:`4fr ${cols.map(()=>"1fr").join(" ")} 60px 80px 70px`,gap:8,padding:"10px 12px",alignItems:"center",borderBottom:isExp?"none":"1px solid var(--bdr)",background:isExp?"var(--bg3)":i%2?"var(--bg2)":"transparent",cursor:"pointer",borderRadius:isExp?"8px 8px 0 0":0,transition:"background .2s"}}>
@@ -4299,7 +4323,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     {rr.length>0?rr.map((r,ri)=>{const histKey=p.id+":"+r.name;const histOpenHere=histOpen===histKey;return <React.Fragment key={r.name}>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
-                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
+                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&r.inStock&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                           {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
                         </div>
@@ -4387,8 +4411,8 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                       ); return _f || <div style={{flex:1}}/>; })()}
                     </div>
                   </div>
-                  {!(p.msrp&&p.msrp>$(p))&&rr.length>1&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{rr.length>1&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(rr[rr.length-1].price-rr[0].price).toFixed(2)}</span> at {rr[0].name} vs {rr[rr.length-1].name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {!(p.msrp&&p.msrp>$(p))&&saveSpan&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</div>}
+                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{saveSpan&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
                   {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
