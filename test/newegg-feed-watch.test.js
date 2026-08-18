@@ -218,3 +218,13 @@ test("no-coverage never dispatches, so it can only ever be code 11", () => {
   const d = decideWatch({ snapshotId: "", fresh: [], stale: [{ ...{ name: "x", kind: "mp", size: 1 }, mtime: NOW - 900 * DAY }], now: NOW, prev: {} });
   assert.equal(exitCodeFor(d), 11);
 });
+
+test("--dry-run suppresses the exit code, not just the bookkeeping", () => {
+  // Suppressing only the state write would leave the code saying 'dispatch',
+  // the workflow would start a 10-minute census, and the one switch whose whole
+  // job is 'decide but do not act' would act.
+  const { exitCodeFor } = watch;
+  assert.equal(exitCodeFor({ action: "dispatch", alarm: null, dryRun: true }), 0);
+  assert.equal(exitCodeFor({ action: "dispatch", alarm: { level: "quiet" }, dryRun: true }), 11,
+    "a dry run still reports the alarm — only the dispatch is withheld");
+});

@@ -235,8 +235,13 @@ function preflight() {
  *   12 DISPATCH, ALARM        <- both, and the workflow must honour both
  *   1  the watcher itself failed (preflight, missing secret, fatal)
  */
-function exitCodeFor({ action, alarm } = {}) {
-  const dispatching = action === 'dispatch';
+function exitCodeFor({ action, alarm, dryRun = false } = {}) {
+  // --dry-run has to suppress the CODE, not just the bookkeeping. Suppressing
+  // only the state write would leave the exit code saying "dispatch", the
+  // workflow would start a 10-minute census, and the one switch whose entire
+  // job is "decide but do not act" would act. A dry run that fires the thing it
+  // is dry-running is worse than not having the flag.
+  const dispatching = action === 'dispatch' && !dryRun;
   if (dispatching && alarm) return 12;
   if (dispatching) return 10;
   if (alarm) return 11;
@@ -311,7 +316,7 @@ if (require.main === module) (async () => {
   fs.writeFileSync(STATE_OUT, JSON.stringify(state, null, 2));
   log(`State -> ${path.relative(ROOT, STATE_OUT)}`);
 
-  const code = exitCodeFor(d);
+  const code = exitCodeFor({ ...d, dryRun: DRY_RUN });
   if (process.env.GITHUB_OUTPUT) {
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `dispatch=${d.action === 'dispatch' ? 'true' : 'false'}\n`);
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `alarm=${d.alarm ? 'true' : 'false'}\n`);
@@ -338,7 +343,8 @@ if (require.main === module) (async () => {
     console.error(`\n::error::${alarmText}`);
     console.error(`\n✗ ${alarmText}`);
   }
-  if (d.action === 'dispatch') console.log('\n→ New snapshot. The census will be dispatched.');
+  if (d.action === 'dispatch' && DRY_RUN) console.log('\n→ New snapshot. --dry-run: the census is NOT dispatched and no dispatch is recorded.');
+  else if (d.action === 'dispatch') console.log('\n→ New snapshot. The census will be dispatched.');
   else console.log('\n✓ Nothing to do — the census has already read this snapshot.');
   process.exit(code);
 })().catch((e) => { console.error('\n✗ FATAL:', e.stack || e.message); process.exit(1); });
