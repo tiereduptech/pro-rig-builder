@@ -162,8 +162,15 @@ jobs:
       # Written before the dispatch so the record survives a dispatch that dies
       # mid-call. The script only stamps lastDispatchedId when it decided to
       # fire, and the fire rule retries anything it did not confirm.
+      # NOT on a dry run. The state is the watcher's memory of what it
+      # dispatched, and a dry run dispatches nothing — so its state carries
+      # lastDispatchedId: null. Uploading that would (a) satisfy the seed step's
+      # "do I already have state" check and (b) tell the next tick it has never
+      # dispatched for this snapshot, firing a real census against a feed the
+      # census has already read. A dry run that arms the thing it is dry-running
+      # is the same defect as a dry run that fires it.
       - name: Upload the watch state
-        if: always()
+        if: always() && github.event.inputs.dry_run != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: newegg-feed-watch-state
