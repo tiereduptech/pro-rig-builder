@@ -49,7 +49,27 @@ jobs:
         env:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
           NODE_OPTIONS: "--max-old-space-size=6144"
-        run: node sftp-ingest.cjs
+        run: |
+          echo "INGEST_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+          node sftp-ingest.cjs
+
+      # The step above exiting 0 does not mean it produced anything, and the
+      # commit step below cannot tell the difference: with no summary on disk it
+      # skips its body and the job goes green having ingested nothing. That is
+      # how 99 runs committed once. Assert the outcome here, between the work
+      # and the commit, so a dead run is red instead of quiet.
+      #
+      # errors==0 fails the run: a feed that would not parse is a defect.
+      # feedRecords>0 only warns, because the manifest cache legitimately skips
+      # unchanged feeds, and a steady-state run that parses nothing is correct.
+      - name: Assert the ingest produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=catalog-build/sftp-ingest-summary.json \
+            --label="SFTP ingest" \
+            --newer-than-epoch="$INGEST_STARTED" \
+            --require='totals.errors==0' \
+            --warn='totals.feedRecords>0'
       # Re-emit the per-category chunk barrel so the frontend (which loads
       # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
       # the literal write, before the commit, so parts.js + chunks commit atomically.
@@ -57,17 +77,22 @@ jobs:
         run: node scripts/split-parts-by-cat.cjs
       - name: Commit and push if changed
         run: |
-          if [ -f catalog-build/sftp-ingest-summary.json ]; then
-            UPDATED=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.updated)")
-            EXCLUSIVES=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.exclusives)")
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
-            git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
-            if git diff --cached --quiet; then
-              echo "No changes to commit"
-            else
-              git commit -m "chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
-              git push
-            fi
+          # Not `if [ -f ... ]`. A missing summary here means the ingest died
+          # after the assertion somehow; either way it is a failure to report,
+          # never a branch to skip past on the way to a green check.
+          if [ ! -f catalog-build/sftp-ingest-summary.json ]; then
+            echo "::error::no ingest summary at commit time — refusing to report success"
+            exit 1
+          fi
+          UPDATED=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.updated)")
+          EXCLUSIVES=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.exclusives)")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
+          git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
+            git push
           fi
