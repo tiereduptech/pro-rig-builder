@@ -401,7 +401,7 @@ async function preflight() {
 
 // Exported before the entrypoint so `require()` can reach the decision rules
 // without connecting to SFTP or reading the catalog.
-module.exports = { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, SIGHTING_RANK, FULL_CATALOG_RE, DISCOVERY_IGNORE, partitionFeedsByFreshness, preflight, feedAgeDays };
+module.exports = { classifySighting, strikeVerdict, priorStreakIsBlind, describeSuppression, describeRestoredFeeds, SIGHTING_RANK, FULL_CATALOG_RE, DISCOVERY_IGNORE, discoverFeeds, partitionFeedsByFreshness, preflight, feedAgeDays };
 
 if (require.main === module) (async () => {
   // ── Preflight ───────────────────────────────────────────────────────────

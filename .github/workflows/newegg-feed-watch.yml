@@ -1,0 +1,217 @@
+name: Newegg feed watch (stat only)
+
+# =============================================================================
+#  THE TRIGGER FOR THE NEWEGG CENSUS. Cheap, scheduled, and loud when it has
+#  nothing to report for too long.
+#
+#  WHY A TRIGGER AND NOT A CRON ON THE CENSUS ITSELF
+#  The census refuses to advance a strike against a byte-identical feed — two
+#  strikes must come from two DIFFERENT snapshots. So a nightly census is mostly
+#  a nightly 10-minute download that abstains, and a census on a schedule that
+#  happens to miss a publish is a census that never condemns anything. The
+#  correct cadence is not a clock, it is "when Newegg publishes". Run
+#  32078178352 is the worked example: dispatched 14 seconds after PR #8 merged,
+#  it spent 556s pulling the same 150MB run 32067140458 had already read, then
+#  withheld every verdict. Correct behaviour, wasted run.
+#
+#  WHY THE ALARM IS THE POINT, NOT A NICETY
+#  bestbuy-dead-sku-audit sat frozen for 95 days. Nothing failed. The guard held,
+#  reported itself once, quietly, and was never read again — and a guard that
+#  goes silent is indistinguishable from a guard that is not needed. A feed that
+#  stops publishing is that same shape: not an error, an absence. So this job
+#  goes RED when the mtime stops moving, because a red run is a notification and
+#  a passive signal is not an alarm (epik-watchdog.yml, same argument).
+#
+#  COST
+#  One SFTP LIST over three directories. No get(), no 150MB, no parse. Seconds.
+#  That is what makes a 30-minute cadence reasonable — the expensive job stays
+#  event-driven, and only the cheap one runs on a clock.
+# =============================================================================
+
+on:
+  schedule:
+    # Every 30 minutes. The mp feed regenerates daily, so this is not about
+    # catching it fast — it is about there being no window in which a publish
+    # can pass unnoticed, and about the quiet alarm having a heartbeat.
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Stat and decide, but do not dispatch the census and do not record a dispatch'
+        required: false
+        default: false
+        type: boolean
+      quiet_alarm_days:
+        description: 'Go red if the feed mtime has not moved in this many days. The census stops trusting the feed entirely at 14.'
+        required: false
+        default: '3'
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: newegg-feed-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write        # dispatch the census; read both state artifacts
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The decision rules, proven before the SFTP secret is read. Cheap enough
+      # to be unconditional; the whole job is cheap enough that "unconditional"
+      # costs nothing at all.
+      - name: Preflight — prove the rules before the socket
+        run: node --test test/newegg-feed-watch.test.js
+
+      # ── State, fetched by ARTIFACT NAME rather than by run conclusion ──────
+      # `gh run list --status success` would be wrong here and is wrong in the
+      # census (fixed in the same change): this job goes RED on purpose when the
+      # feed is quiet, so its own most recent state usually belongs to a FAILED
+      # run. Filtering on conclusion would silently reset the watcher's memory
+      # every time it alarmed — and a watcher that forgets what it dispatched
+      # re-fires the census on a snapshot already read.
+      - name: Fetch the last watch state
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          mkdir -p prev
+          RUN=$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts?name=newegg-feed-watch-state&per_page=10" \
+                  --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' | head -1 || true)
+          if [ -z "${RUN:-}" ]; then
+            echo "No prior watch state — this run will seed from the census's own state."
+            exit 0
+          fi
+          echo "Prior watch state from run $RUN"
+          gh run download "$RUN" -n newegg-feed-watch-state -D prev || echo "state artifact unreadable — will seed"
+
+      # Only used when there is no watch state. The census has already read SOME
+      # snapshot; adopting it stops the watcher's first act being a 10-minute run
+      # against a feed the census just abstained on.
+      - name: Fetch the census's state to seed from
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          if [ -f prev/newegg-feed-watch-state.json ]; then
+            echo "Watch state present — no seed needed."
+            exit 0
+          fi
+          mkdir -p seed
+          RUN=$(gh api "repos/${GITHUB_REPOSITORY}/actions/artifacts?name=newegg-dead-sku-audit-state&per_page=10" \
+                  --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' | head -1 || true)
+          if [ -z "${RUN:-}" ]; then
+            echo "No census state either — the watcher will dispatch a first census."
+            exit 0
+          fi
+          echo "Seeding from census run $RUN"
+          gh run download "$RUN" -n newegg-dead-sku-audit-state -D seed || true
+
+      - name: Stat the feed and decide
+        id: watch
+        env:
+          RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
+          RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
+          RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
+          QUIET_DAYS: ${{ github.event.inputs.quiet_alarm_days || '3' }}
+          DRY: ${{ github.event.inputs.dry_run || 'false' }}
+        run: |
+          set -uo pipefail
+          if [ -z "${RAKUTEN_FTP_PASSWORD:-}" ]; then
+            echo "::error::RAKUTEN_FTP_PASSWORD is not set on this repository."
+            exit 1
+          fi
+          ARGS="--quiet-alarm-days ${QUIET_DAYS}"
+          [ -f prev/newegg-feed-watch-state.json ] && ARGS="$ARGS --prev prev/newegg-feed-watch-state.json"
+          [ -f seed/newegg-dead-sku-audit-state.json ] && ARGS="$ARGS --seed-from seed/newegg-dead-sku-audit-state.json"
+          [ "$DRY" = "true" ] && ARGS="$ARGS --dry-run"
+          set +e
+          node newegg-feed-watch.cjs $ARGS
+          CODE=$?
+          set -e
+          # 0 hold · 10 dispatch · 11 alarm · 12 dispatch AND alarm · 1 broken.
+          #
+          # This step stays GREEN for every decision, including the alarm. The
+          # red run is raised at the END of the job instead, because a step that
+          # failed here would skip the dispatch below — and the case where both
+          # fire (a quiet feed the census has never read) is exactly the case
+          # where the dispatch matters most. The alarm must not cancel the work
+          # it is warning about.
+          echo "code=$CODE" >> "$GITHUB_OUTPUT"
+          case "$CODE" in
+            0|10|11|12) exit 0 ;;
+            *) exit "$CODE" ;;
+          esac
+
+      # Written before the dispatch so the record survives a dispatch that dies
+      # mid-call. The script only stamps lastDispatchedId when it decided to
+      # fire, and the fire rule retries anything it did not confirm.
+      - name: Upload the watch state
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newegg-feed-watch-state
+          path: catalog-build/newegg-feed-watch-state.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Dispatch the census — the snapshot moved
+        if: steps.watch.outputs.code == '10' || steps.watch.outputs.code == '12'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          echo "New feed snapshot: ${{ steps.watch.outputs.snapshot_id }}"
+          echo "Dispatching the census."
+          gh workflow run newegg-dead-sku-audit.yml --ref "${GITHUB_REF_NAME}"
+          echo "### Census dispatched" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "A new Newegg feed snapshot was published, so the census was started. Its verdict lands in ~10 minutes:" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "<${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/workflows/newegg-dead-sku-audit.yml>" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Assert the tree came back clean
+        if: always()
+        run: |
+          # A stat is even more read-only than the census. catalog-build/ is
+          # gitignored; prev/ and seed/ are the downloaded artifacts.
+          DIRTY=$(git status --porcelain | grep -vE '^\?\? (prev|seed)/' || true)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a stat-only watcher modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the watcher wrote nothing to the repo."
+
+      # ── THE ALARM, RAISED LAST ────────────────────────────────────────────
+      # A red run is the notification; the ::error:: annotation the script
+      # already printed is what a human reads once they open it. This is
+      # deliberately the final step: everything else — the dispatch, the state
+      # upload — has already happened, so going red announces the problem
+      # without withholding any of the work.
+      #
+      # A feed that stops publishing is not a crash, it is an absence, and
+      # absences do not announce themselves. bestbuy-dead-sku-audit went 95 days
+      # on that principle being missing.
+      - name: Announce a feed that stopped publishing
+        if: steps.watch.outputs.code == '11' || steps.watch.outputs.code == '12'
+        run: |
+          echo "::error::The Newegg feed has stopped moving — see the annotation above for how long and what it suppresses."
+          echo "This run is red on purpose: the feed is not publishing, so no Newegg death verdict can be reached."
+          exit 1
