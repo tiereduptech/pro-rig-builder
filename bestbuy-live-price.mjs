@@ -54,14 +54,37 @@
  * `base_price` is the comparable to Best Buy's `salePrice`; `total_price` folds
  * in tax and shipping and would manufacture a FIELD-WRONG verdict on every row.
  *
- * NOTE ON COST AND LATENCY: sellers has no `live` variant — it is task_post,
- * then poll task_get. That is why step 2 runs only when step 1 fails to find a
- * Best Buy row directly, and why it is capped.
+ * ── WHY EVERY RUN AFTER THAT ALSO FOUND NOTHING: THE PATH ────────────────────
+ * The fixes above were never exercised. Runs 32153401588 and 32168477366, and
+ * the 20/20 before them, all died on the same envelope — task 40402 "Invalid
+ * Path.", tasks_error 1 — because step 1 was posted to
+ * `merchant/google/products/live/advanced`, a path that does not exist.
+ *
+ * DataForSEO's Google Shopping endpoints are task-based WITHOUT EXCEPTION:
+ * products, sellers, product_info and reviews each expose task_post,
+ * tasks_ready and task_get/advanced, and not one of them has a live variant.
+ * Merchant AMAZON does have live/advanced — import-expansion-cards.js:94 calls
+ * it and works — and that is where the wrong path came from. The two halves of
+ * the Merchant API do not share a shape.
+ *
+ * 40402 comes back with HTTP 200 and an empty `items`, so the transport check
+ * waved it through and every row landed UNRESOLVED with the keyword blamed.
+ * No run so far has reached the seller matching, the keyword, or the sellers
+ * arm — none of them is evidence for or against any of that work.
+ *
+ * NOTE ON COST AND LATENCY: both steps are now task_post + poll task_get, so
+ * step 1 costs one task per row and waits for it. Step 2 costs another and
+ * still runs only when step 1 fails to find a Best Buy row directly.
  */
 
-const PRODUCTS_URL = 'https://api.dataforseo.com/v3/merchant/google/products/live/advanced';
+const PRODUCTS_POST_URL = 'https://api.dataforseo.com/v3/merchant/google/products/task_post';
+const PRODUCTS_GET_URL = 'https://api.dataforseo.com/v3/merchant/google/products/task_get/advanced/';
 const SELLERS_POST_URL = 'https://api.dataforseo.com/v3/merchant/google/sellers/task_post';
 const SELLERS_GET_URL = 'https://api.dataforseo.com/v3/merchant/google/sellers/task_get/advanced/';
+
+// task_get answers HTTP 200 while the task is still working. These two codes
+// mean "ask again"; any other non-20000 code is terminal and worth quoting.
+const PENDING_STATUS = new Set([40601, 40602]); // Task Handed, Task In Queue
 
 // related_searches carries no offer; the carousels and paid slots do.
 const OFFER_TYPES = new Set([
@@ -96,19 +119,16 @@ export function itemsOf(json) {
 }
 
 /**
- * Why a products response came back with no items.
+ * Whatever the envelope says about itself: "task 40402 Invalid Path.;
+ * tasks_error 1". Empty string when it says nothing.
  *
- * An empty `items` is two different failures wearing the same face. Either
- * Shopping genuinely indexed nothing for the keyword — task 20000 "Ok.",
- * tasks_error 0 — or the request never ran at all: a rejected field, an
- * exhausted balance, a queue error. DataForSEO reports that second kind with
- * HTTP 200 and a non-20000 status on the task, plus a non-zero `tasks_error`
- * on the envelope, so the transport check above waves it through and the row
- * lands as UNRESOLVED with the keyword blamed. Run 32153401588 was read as a
- * keyword problem on exactly this evidence. Quote whatever the envelope says
- * so the next run does not have to guess which of the two it hit.
+ * DataForSEO reports a request that never ran with HTTP 200 and a non-20000
+ * status on the task, plus a non-zero `tasks_error` — a rejected field, an
+ * exhausted balance, a queue error, a path that does not exist. The transport
+ * check waves all of that through, so every caller that reports a failure
+ * quotes this instead of guessing at a cause.
  */
-export function emptyProductsReason(json) {
+export function taskEnvelopeReason(json) {
   const task = json?.tasks?.[0];
   const code = task?.status_code ?? null;
   const message = task?.status_message ?? null;
@@ -117,9 +137,38 @@ export function emptyProductsReason(json) {
   const parts = [];
   if (code != null || message != null) parts.push(`task ${code ?? 'no status_code'} ${message ?? 'no status_message'}`);
   if (tasksError != null) parts.push(`tasks_error ${tasksError}`);
-  return parts.length
-    ? `no shopping results for keyword (${parts.join('; ')})`
-    : 'no shopping results for keyword';
+  return parts.join('; ');
+}
+
+/**
+ * Why a finished products task came back with no items.
+ *
+ * An empty `items` is two different failures wearing the same face. Either
+ * Shopping genuinely indexed nothing for the keyword — task 20000 "Ok.",
+ * tasks_error 0 — or the task finished badly. Run 32153401588 was read as a
+ * keyword problem on exactly this evidence, so the reason carries the envelope
+ * and the next run does not have to guess which of the two it hit.
+ */
+export function emptyProductsReason(json) {
+  const detail = taskEnvelopeReason(json);
+  return detail ? `no shopping results for keyword (${detail})` : 'no shopping results for keyword';
+}
+
+/**
+ * Is this task_get answer finished, still working, or dead?
+ *
+ * A task that has not written its result yet comes back with no items — the
+ * same shape as a task that genuinely found nothing. `status_code` is what
+ * separates them: 20000 with an empty result is a real, empty answer, while a
+ * queue code is a reason to wait. An envelope with no status at all is treated
+ * as still working, so a slow task is never read as an empty one.
+ */
+export function taskState(json) {
+  const code = json?.tasks?.[0]?.status_code ?? null;
+  if (code != null && PENDING_STATUS.has(code)) return 'pending';
+  if (code != null && code !== 20000) return 'failed';
+  if (itemsOf(json).length) return 'done';
+  return code === 20000 ? 'done' : 'pending';
 }
 
 /**
@@ -210,6 +259,29 @@ const overlap = (a, b) => {
 };
 
 /**
+ * Poll task_get until the task finishes, fails, or the attempt budget runs out.
+ * Returns { json } | { failed: json } | { pending: true }. Transport hiccups
+ * burn an attempt rather than aborting the row — the task is already paid for.
+ */
+async function pollTaskGet(getUrl, id, { fetchImpl, headers, sleep, attempts, ms }) {
+  for (let attempt = 0; attempt < attempts; attempt++) {
+    await sleep(ms);
+    let j;
+    try {
+      const r = await fetchImpl(getUrl + encodeURIComponent(id), { headers, signal: AbortSignal.timeout(60000) });
+      if (!r.ok) continue;
+      j = await r.json();
+    } catch {
+      continue;
+    }
+    const state = taskState(j);
+    if (state === 'pending') continue;
+    return state === 'failed' ? { failed: j } : { json: j };
+  }
+  return { pending: true };
+}
+
+/**
  * Two-step resolution. `deps` is injected so tests drive it without network.
  *   deps.fetchImpl(url, init) -> Response-like
  *   deps.sleep(ms)
@@ -224,6 +296,8 @@ export async function liveBestBuyPrice(name, deps = {}) {
     location_code = 2840,
     language_code = 'en',
     depth = 40,
+    productsPollAttempts = 10,
+    productsPollMs = 4000,
     sellersPollAttempts = 6,
     sellersPollMs = 5000,
     useSellers = true,
@@ -233,19 +307,35 @@ export async function liveBestBuyPrice(name, deps = {}) {
   const auth = 'Basic ' + Buffer.from(`${login}:${pw}`).toString('base64');
   const headers = { Authorization: auth, 'Content-Type': 'application/json' };
 
-  let products;
+  // Step 1 — products. Task-based; there is no live path to shortcut to.
+  let posted;
   try {
-    const r = await fetchImpl(PRODUCTS_URL, {
+    const r = await fetchImpl(PRODUCTS_POST_URL, {
       method: 'POST',
       headers,
       body: JSON.stringify([{ keyword: String(name).slice(0, 120), location_code, language_code, depth }]),
       signal: AbortSignal.timeout(60000),
     });
     if (!r.ok) return { error: `dataforseo products HTTP ${r.status}` };
-    products = await r.json();
+    posted = await r.json();
   } catch (e) {
     return { error: e?.name === 'TimeoutError' ? 'dataforseo timeout' : String(e?.message || e) };
   }
+
+  const productsTaskId = posted?.tasks?.[0]?.id ?? null;
+  if (!productsTaskId) {
+    // The 40402 case lands here now: a rejected POST names itself instead of
+    // being read downstream as a keyword that matched nothing.
+    const detail = taskEnvelopeReason(posted);
+    return { error: detail ? `products task_post failed (${detail})` : 'products task_post returned no id' };
+  }
+
+  const productsPoll = await pollTaskGet(PRODUCTS_GET_URL, productsTaskId, {
+    fetchImpl, headers, sleep, attempts: productsPollAttempts, ms: productsPollMs,
+  });
+  if (productsPoll.pending) return { error: `products task ${productsTaskId} not ready after ${productsPollAttempts} polls` };
+  if (productsPoll.failed) return { error: `products task ${productsTaskId} failed (${taskEnvelopeReason(productsPoll.failed)})` };
+  const products = productsPoll.json;
 
   const items = itemsOf(products);
   if (!items.length) return { error: emptyProductsReason(products) };
@@ -258,7 +348,7 @@ export async function liveBestBuyPrice(name, deps = {}) {
   const productId = pickProductId(items, name);
   if (!productId) return { error: 'no product_id to query sellers with' };
 
-  // Step 2 — sellers has no live variant: task_post, then poll task_get.
+  // Step 2 — sellers, same task_post-then-poll shape as step 1.
   let taskId;
   try {
     const r = await fetchImpl(SELLERS_POST_URL, {
@@ -275,21 +365,14 @@ export async function liveBestBuyPrice(name, deps = {}) {
     return { error: e?.name === 'TimeoutError' ? 'sellers post timeout' : String(e?.message || e) };
   }
 
-  for (let attempt = 0; attempt < sellersPollAttempts; attempt++) {
-    await sleep(sellersPollMs);
-    let j;
-    try {
-      const r = await fetchImpl(SELLERS_GET_URL + encodeURIComponent(taskId), { headers, signal: AbortSignal.timeout(60000) });
-      if (!r.ok) continue;
-      j = await r.json();
-    } catch {
-      continue;
-    }
-    const sellerItems = itemsOf(j);
-    if (!sellerItems.length) continue;
-    const hit = pickBestBuyFromSellers(sellerItems);
-    if (hit) return { live: hit.price, via: 'dataforseo:sellers', productId };
-    return { error: `product ${productId} has ${sellerItems.length} sellers, none Best Buy` };
-  }
-  return { error: `sellers task ${taskId} not ready after ${sellersPollAttempts} polls` };
+  const sellersPoll = await pollTaskGet(SELLERS_GET_URL, taskId, {
+    fetchImpl, headers, sleep, attempts: sellersPollAttempts, ms: sellersPollMs,
+  });
+  if (sellersPoll.pending) return { error: `sellers task ${taskId} not ready after ${sellersPollAttempts} polls` };
+  if (sellersPoll.failed) return { error: `sellers task ${taskId} failed (${taskEnvelopeReason(sellersPoll.failed)})` };
+
+  const sellerItems = itemsOf(sellersPoll.json);
+  const hit = pickBestBuyFromSellers(sellerItems);
+  if (hit) return { live: hit.price, via: 'dataforseo:sellers', productId };
+  return { error: `product ${productId} has ${sellerItems.length} sellers, none Best Buy` };
 }

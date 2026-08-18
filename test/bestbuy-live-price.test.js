@@ -129,32 +129,110 @@ test('a missing or malformed envelope yields no items rather than throwing', () 
 });
 
 // ── the two-step flow, driven with an injected fetch ──────────────────────
+//
+// BOTH steps are task_post + poll task_get. Google Shopping has no live
+// endpoint — products, sellers, product_info and reviews are task-based
+// without exception — so a fixture is a routing table keyed on the path, not
+// one canned response. Runs 32153401588 and 32168477366 both posted step 1 to
+// `products/live/advanced` and got task 40402 "Invalid Path." with HTTP 200
+// and an empty result, which read downstream as a keyword that matched
+// nothing. A single-response mock cannot catch that; these route on the URL.
 
-test('the cheap path returns without ever calling the sellers endpoint', async () => {
-  const calls = [];
-  const fetchImpl = async (url) => {
-    calls.push(url);
-    return { ok: true, json: async () => productsJson([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1' }]) };
-  };
-  const r = await liveBestBuyPrice('Some TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
-  assert.equal(r.live, 239.99);
-  assert.equal(r.via, 'dataforseo:products');
-  assert.equal(calls.length, 1);
-  assert.match(calls[0], /merchant\/google\/products/);
-});
+const postedJson = (id) => ({ tasks_error: 0, tasks: [{ id, status_code: 20100, status_message: 'Task Created.' }] });
+const okTask = (items) => ({ tasks_error: 0, tasks: [{ status_code: 20000, status_message: 'Ok.', result: [{ items }] }] });
 
-test('no Best Buy row in products escalates to sellers and resolves there', async () => {
+function router(routes) {
   const seen = [];
   const fetchImpl = async (url) => {
     seen.push(url);
-    if (url.includes('/products/')) {
-      return { ok: true, json: async () => productsJson([{ type: 'google_shopping_serp', seller: 'Walmart', price: 249, product_id: 'PID42', title: 'Samsung 65 QLED' }]) };
+    for (const [match, handler] of routes) {
+      if (!url.includes(match)) continue;
+      const body = typeof handler === 'function' ? handler(url) : handler;
+      return { ok: true, json: async () => body };
     }
-    if (url.includes('/sellers/task_post')) {
-      return { ok: true, json: async () => ({ tasks: [{ id: 'TASK-1' }] }) };
-    }
-    return { ok: true, json: async () => productsJson([{ type: 'shops_list', seller_name: 'Best Buy', base_price: 239.99, domain: 'bestbuy.com' }]) };
+    throw new Error(`unrouted request: ${url}`);
   };
+  return { fetchImpl, seen };
+}
+
+test('REGRESSION: step 1 posts a task — there is no live path to shortcut to', async () => {
+  const { fetchImpl, seen } = router([
+    ['/products/task_post', postedJson('PT-1')],
+    ['/products/task_get/advanced/', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1' }])],
+  ]);
+  const r = await liveBestBuyPrice('Some TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.equal(r.live, 239.99);
+  assert.equal(r.via, 'dataforseo:products');
+  assert.ok(!seen.some((u) => u.includes('/live/')), 'no request may go to a live path');
+  assert.match(seen[0], /\/v3\/merchant\/google\/products\/task_post$/);
+  assert.match(seen[1], /\/v3\/merchant\/google\/products\/task_get\/advanced\/PT-1$/);
+});
+
+test('REGRESSION: 40402 Invalid Path names itself instead of blaming the keyword', async () => {
+  // The exact envelope from run 32168477366, on all three rows.
+  const r = await liveBestBuyPrice('x', {
+    login: 'u', pw: 'p', sleep: async () => {},
+    fetchImpl: async () => ({ ok: true, json: async () => ({ tasks_error: 1, tasks: [{ status_code: 40402, status_message: 'Invalid Path.' }] }) }),
+  });
+  assert.match(r.error, /task_post failed/);
+  assert.match(r.error, /40402 Invalid Path\./);
+  assert.doesNotMatch(r.error, /no shopping results for keyword/);
+});
+
+test('the cheap path returns without ever calling the sellers endpoint', async () => {
+  const { fetchImpl, seen } = router([
+    ['/products/task_post', postedJson('T1')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1' }])],
+  ]);
+  const r = await liveBestBuyPrice('Some TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.equal(r.live, 239.99);
+  assert.equal(r.via, 'dataforseo:products');
+  assert.ok(!seen.some((u) => u.includes('/sellers/')));
+});
+
+test('a task still in the queue is polled again, not read as an empty result', async () => {
+  // 40602 with no result is "come back later" wearing the same shape as a
+  // genuine miss. Reading it as a miss would blame the keyword all over again.
+  let gets = 0;
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T2')],
+    ['/products/task_get', () => (++gets < 3
+      ? { tasks_error: 0, tasks: [{ status_code: 40602, status_message: 'Task In Queue.' }] }
+      : okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 10, product_id: 'P' }]))],
+  ]);
+  const r = await liveBestBuyPrice('x', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.equal(r.live, 10);
+  assert.equal(gets, 3);
+});
+
+test('a products task that never becomes ready reports that, and is bounded', async () => {
+  let gets = 0;
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T3')],
+    ['/products/task_get', () => { gets++; return { tasks: [{ status_code: 40602, status_message: 'Task In Queue.' }] }; }],
+  ]);
+  const r = await liveBestBuyPrice('x', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {}, productsPollAttempts: 4 });
+  assert.match(r.error, /products task T3 not ready after 4 polls/);
+  assert.equal(gets, 4);
+});
+
+test('a products task that dies after creation is quoted, not silently empty', async () => {
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T4')],
+    ['/products/task_get', { tasks_error: 1, tasks: [{ status_code: 40200, status_message: 'Payment Required.' }] }],
+  ]);
+  const r = await liveBestBuyPrice('x', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.match(r.error, /products task T4 failed/);
+  assert.match(r.error, /40200 Payment Required\./);
+});
+
+test('no Best Buy row in products escalates to sellers and resolves there', async () => {
+  const { fetchImpl, seen } = router([
+    ['/products/task_post', postedJson('PT')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Walmart', price: 249, product_id: 'PID42', title: 'Samsung 65 QLED' }])],
+    ['/sellers/task_post', postedJson('TASK-1')],
+    ['/sellers/task_get', okTask([{ type: 'shops_list', seller_name: 'Best Buy', base_price: 239.99, domain: 'bestbuy.com' }])],
+  ]);
   const r = await liveBestBuyPrice('Samsung 65 QLED', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
   assert.equal(r.live, 239.99);
   assert.equal(r.via, 'dataforseo:sellers');
@@ -163,36 +241,36 @@ test('no Best Buy row in products escalates to sellers and resolves there', asyn
   assert.ok(seen.some((u) => u.includes('/sellers/task_get/advanced/TASK-1')));
 });
 
-test('--no-sellers stops after the products call', async () => {
-  const calls = [];
-  const fetchImpl = async (url) => {
-    calls.push(url);
-    return { ok: true, json: async () => productsJson([{ type: 'google_shopping_serp', seller: 'Walmart', price: 249, product_id: 'X' }]) };
-  };
+test('--no-sellers stops after step 1', async () => {
+  const { fetchImpl, seen } = router([
+    ['/products/task_post', postedJson('T5')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Walmart', price: 249, product_id: 'X' }])],
+  ]);
   const r = await liveBestBuyPrice('thing', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {}, useSellers: false });
   assert.equal(r.error, 'no bestbuy offer in shopping results');
-  assert.equal(calls.length, 1);
+  assert.equal(seen.length, 2);
 });
 
 test('a sellers task that never becomes ready reports that, and is bounded', async () => {
   let polls = 0;
-  const fetchImpl = async (url) => {
-    if (url.includes('/products/')) return { ok: true, json: async () => productsJson([{ type: 'google_shopping_serp', seller: 'Walmart', price: 1, product_id: 'P', title: 't' }]) };
-    if (url.includes('task_post')) return { ok: true, json: async () => ({ tasks: [{ id: 'T' }] }) };
-    polls++;
-    return { ok: true, json: async () => ({ tasks: [{ result: [] }] }) };
-  };
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('PT')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Walmart', price: 1, product_id: 'P', title: 't' }])],
+    ['/sellers/task_post', postedJson('T')],
+    ['/sellers/task_get', () => { polls++; return { tasks: [{ result: [] }] }; }],
+  ]);
   const r = await liveBestBuyPrice('t', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {}, sellersPollAttempts: 3 });
-  assert.match(r.error, /not ready after 3 polls/);
+  assert.match(r.error, /sellers task T not ready after 3 polls/);
   assert.equal(polls, 3);
 });
 
 test('a sellers result that lists other merchants says so, rather than "no offer"', async () => {
-  const fetchImpl = async (url) => {
-    if (url.includes('/products/')) return { ok: true, json: async () => productsJson([{ type: 'google_shopping_serp', seller: 'Walmart', price: 1, product_id: 'P9', title: 't' }]) };
-    if (url.includes('task_post')) return { ok: true, json: async () => ({ tasks: [{ id: 'T' }] }) };
-    return { ok: true, json: async () => productsJson([{ type: 'shops_list', seller_name: 'Target', base_price: 5, domain: 'target.com' }]) };
-  };
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('PT')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Walmart', price: 1, product_id: 'P9', title: 't' }])],
+    ['/sellers/task_post', postedJson('T')],
+    ['/sellers/task_get', okTask([{ type: 'shops_list', seller_name: 'Target', base_price: 5, domain: 'target.com' }])],
+  ]);
   const r = await liveBestBuyPrice('t', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
   assert.match(r.error, /1 sellers, none Best Buy/);
 });
@@ -210,11 +288,12 @@ test('an HTTP error is surfaced with its status, not swallowed as "no offer"', a
 });
 
 test('an empty products result is distinguishable from a result with no Best Buy', async () => {
-  const r = await liveBestBuyPrice('x', {
-    login: 'u', pw: 'p', sleep: async () => {},
-    fetchImpl: async () => ({ ok: true, json: async () => productsJson([]) }),
-  });
-  assert.equal(r.error, 'no shopping results for keyword');
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T6')],
+    ['/products/task_get', okTask([])],
+  ]);
+  const r = await liveBestBuyPrice('x', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.match(r.error, /^no shopping results for keyword \(task 20000 Ok\./);
 });
 
 // An empty `items` with HTTP 200 covers both "Shopping had nothing" and "the

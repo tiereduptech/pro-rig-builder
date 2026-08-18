@@ -37,6 +37,17 @@ name: Best Buy price truth probe (read-only)
 # `sellers: true` (merchant/google/sellers, keyed by product_id) can actually
 # answer "what does Best Buy charge for this product".
 #
+# EVERY RUN BEFORE 2026-08-18 DIED ON THE ENDPOINT, NOT ON THE DATA
+# Runs 32153401588 and 32168477366 both came back all-UNRESOLVED with `no
+# shopping results for keyword (task 40402 Invalid Path.; tasks_error 1)`.
+# 40402 means the URL does not exist: step 1 was posted to
+# `merchant/google/products/live/advanced`, and DataForSEO's Google Shopping
+# endpoints are task-based without exception — no live variant for products,
+# sellers, product_info or reviews. (Merchant Amazon does have live/advanced,
+# which is where the wrong path came from.) The call never ran, so none of
+# those runs is evidence about the keyword, the seller matching, or the sellers
+# arm. Both steps are now task_post + poll task_get.
+#
 # SELLERS IS DOWNSTREAM OF STEP 1, SO IT CANNOT RESCUE AN EMPTY STEP 1
 # Run 32153401588 (5 rows, sellers off) returned 5/5 UNRESOLVED with `no
 # shopping results for keyword` on every row. That error returns from
@@ -64,7 +75,7 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Rows to probe (max 200 — each row costs ~2s)"
+        description: "Rows to probe (max 200 — each row posts a DataForSEO task and waits for it, ~10-40s)"
         type: string
         default: "20"
       sample:
@@ -122,9 +133,9 @@ jobs:
         run: |
           ARGS="--limit=${{ inputs.limit }} --sample=${{ inputs.sample }} --live=${{ inputs.live }}"
           if [ -n "${{ inputs.category }}" ]; then ARGS="$ARGS --category=${{ inputs.category }}"; fi
-          # Step 2 (sellers) is task_post + poll, so it is the slow, costly arm.
-          # Turning it off is the cheap first look — but see the note above on
-          # what products-only can and cannot answer.
+          # Both steps are task_post + poll; step 2 is a second task per row on
+          # top of step 1. Turning it off is the cheaper first look — but see
+          # the note above on what products-only can and cannot answer.
           if [ "${{ inputs.sellers }}" != "true" ]; then ARGS="$ARGS --no-sellers"; fi
           echo "Running: node probe-bestbuy-price-truth.mjs $ARGS"
           node probe-bestbuy-price-truth.mjs $ARGS
