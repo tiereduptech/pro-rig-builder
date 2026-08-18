@@ -96,6 +96,33 @@ export function itemsOf(json) {
 }
 
 /**
+ * Why a products response came back with no items.
+ *
+ * An empty `items` is two different failures wearing the same face. Either
+ * Shopping genuinely indexed nothing for the keyword — task 20000 "Ok.",
+ * tasks_error 0 — or the request never ran at all: a rejected field, an
+ * exhausted balance, a queue error. DataForSEO reports that second kind with
+ * HTTP 200 and a non-20000 status on the task, plus a non-zero `tasks_error`
+ * on the envelope, so the transport check above waves it through and the row
+ * lands as UNRESOLVED with the keyword blamed. Run 32153401588 was read as a
+ * keyword problem on exactly this evidence. Quote whatever the envelope says
+ * so the next run does not have to guess which of the two it hit.
+ */
+export function emptyProductsReason(json) {
+  const task = json?.tasks?.[0];
+  const code = task?.status_code ?? null;
+  const message = task?.status_message ?? null;
+  const tasksError = json?.tasks_error ?? null;
+
+  const parts = [];
+  if (code != null || message != null) parts.push(`task ${code ?? 'no status_code'} ${message ?? 'no status_message'}`);
+  if (tasksError != null) parts.push(`tasks_error ${tasksError}`);
+  return parts.length
+    ? `no shopping results for keyword (${parts.join('; ')})`
+    : 'no shopping results for keyword';
+}
+
+/**
  * A Best Buy offer sitting directly in the products result — the cheap path.
  * Returns { price, seller, productId, shoppingUrl } or null.
  */
@@ -221,7 +248,7 @@ export async function liveBestBuyPrice(name, deps = {}) {
   }
 
   const items = itemsOf(products);
-  if (!items.length) return { error: 'no shopping results for keyword' };
+  if (!items.length) return { error: emptyProductsReason(products) };
 
   const direct = pickBestBuyFromProducts(items);
   if (direct) return { live: direct.price, via: 'dataforseo:products', productId: direct.productId };

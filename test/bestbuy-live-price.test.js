@@ -17,7 +17,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   itemsOf, isBestBuy, pickBestBuyFromProducts, pickProductId,
-  pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword,
+  pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword, emptyProductsReason,
 } from '../bestbuy-live-price.mjs';
 
 const productsJson = (items) => ({ tasks: [{ result: [{ items }] }] });
@@ -215,6 +215,46 @@ test('an empty products result is distinguishable from a result with no Best Buy
     fetchImpl: async () => ({ ok: true, json: async () => productsJson([]) }),
   });
   assert.equal(r.error, 'no shopping results for keyword');
+});
+
+// An empty `items` with HTTP 200 covers both "Shopping had nothing" and "the
+// task never ran". The envelope distinguishes them; the error string has to
+// carry that, or the next run re-investigates the keyword for a rejected
+// field or a drained balance.
+
+test('a task that failed with HTTP 200 reports its own status, not the keyword', async () => {
+  const r = await liveBestBuyPrice('x', {
+    login: 'u', pw: 'p', sleep: async () => {},
+    fetchImpl: async () => ({
+      ok: true,
+      json: async () => ({ tasks_error: 1, tasks: [{ status_code: 40501, status_message: "Invalid Field: 'keyword'." }] }),
+    }),
+  });
+  assert.match(r.error, /40501/);
+  assert.match(r.error, /Invalid Field: 'keyword'\./);
+  assert.match(r.error, /tasks_error 1/);
+});
+
+test('a genuinely empty but successful task says so, so the keyword is the suspect', async () => {
+  const r = await liveBestBuyPrice('x', {
+    login: 'u', pw: 'p', sleep: async () => {},
+    fetchImpl: async () => ({
+      ok: true,
+      json: async () => ({ tasks_error: 0, tasks: [{ status_code: 20000, status_message: 'Ok.', result: [{ items: [] }] }] }),
+    }),
+  });
+  assert.match(r.error, /task 20000 Ok\./);
+  assert.match(r.error, /tasks_error 0/);
+});
+
+test('an envelope carrying no status at all falls back to the plain message', () => {
+  assert.equal(emptyProductsReason({}), 'no shopping results for keyword');
+  assert.equal(emptyProductsReason(productsJson([])), 'no shopping results for keyword');
+});
+
+test('a half-populated envelope reports the half it has', () => {
+  assert.match(emptyProductsReason({ tasks: [{ status_code: 40200 }] }), /task 40200 no status_message/);
+  assert.match(emptyProductsReason({ tasks_error: 3 }), /tasks_error 3/);
 });
 
 // ── the keyword, which decides whether step 1 returns anything at all ─────
