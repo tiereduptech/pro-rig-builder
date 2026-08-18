@@ -509,6 +509,18 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445837387769681319473997",
+        "itemNumber": "N82E16826197336",
+        "sellerClass": "official",
+        "price": 119.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837387769681319473997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005565-g502-usb-lightspeed-wireless%2Fp%2FN82E16826197336%3Fitem%3DN82E16826197336",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-336-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.607Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "sensor": "Hero 25K",
@@ -1352,6 +1364,19 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333838.p%3FskuId%3D6333838",
         "price": 49.99,
         "inStock": false
+      },
+      "newegg": {
+        "sku": "4458310538121367208229815",
+        "itemNumber": "N82E16826197343",
+        "sellerClass": "official",
+        "price": 59.99,
+        "saleprice": 56.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310538121367208229815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-910-005630-g403-usb-wired%2Fp%2FN82E16826197343%3Fitem%3DN82E16826197343",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/26-197-343-Z01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.607Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "sensor": "Optical",

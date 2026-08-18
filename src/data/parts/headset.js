@@ -585,6 +585,18 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445836614629147546146248",
+        "itemNumber": "9SIA4P0FCY8909",
+        "sellerClass": "marketplace",
+        "price": 49,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836614629147546146248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-audio-technica-ath-m20x-over-the-ear%2Fp%2F0TF-004U-00087%3Fitem%3D9SIA4P0FCY8909",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A49G_1_20140809590183739.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:39.667Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
     },
     "hsType": "Wired",
@@ -592,7 +604,8 @@ export default [
     "mic": false,
     "anc": false,
     "bench": 58,
-    "mpn": "ATH-M20X"
+    "mpn": "ATH-M20X",
+    "upc": "04961310125400"
   },
   {
     "id": 100037,
@@ -781,6 +794,18 @@ export default [
         "priceSeller": "Kellards",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445838227136963703888298",
+        "itemNumber": "9SIABMTKJH9236",
+        "sellerClass": "marketplace",
+        "price": 89.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838227136963703888298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-0045-008Y4%3Fitem%3D9SIABMTKJH9236",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD250726029E2I8F.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:15.097Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",

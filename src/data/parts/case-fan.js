@@ -147,7 +147,11 @@ export default [
     "value": 50,
     "rpm": 2000,
     "pwm": true,
-    "bench": 74
+    "bench": 74,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "00841501110719",
+    "mpn": "NF-A12x25 G2 PWM Sx2-PP"
   },
   {
     "id": 85001,
@@ -173,13 +177,27 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458310903277055681265934",
+        "itemNumber": "9SIA4REK6N0315",
+        "sellerClass": "marketplace",
+        "price": 29.66,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310903277055681265934&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-pwm-case-fan%2Fp%2FN82E16835608047%3Fitem%3D9SIA4REK6N0315",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812Gi0HV.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.437Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "color": "Black",
     "value": 91,
     "rpm": 1500,
     "pwm": true,
-    "bench": 81
+    "bench": 81,
+    "upc": "00842431014399",
+    "mpn": "NF-A14 iPPC-2000 PWM"
   },
   {
     "id": 85002,
@@ -734,7 +752,9 @@ export default [
     "pack": 3,
     "bench": 73,
     "mpn": "12CL1W3B",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85017,
@@ -757,6 +777,18 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445831133083384880034749",
+        "itemNumber": "9SIA2W0KHS4399",
+        "sellerClass": "marketplace",
+        "price": 26.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831133083384880034749&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0019-000H9%3Fitem%3D9SIA2W0KHS4399",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2507181DOW3N86.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.751Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 39,
@@ -777,7 +809,8 @@ export default [
     "rgb": false,
     "pack": 5,
     "bench": 58,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "ACFAN00307A"
   },
   {
     "id": 85018,
@@ -800,6 +833,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445831141526464788954399",
+        "itemNumber": "9SIAADY76G1552",
+        "sellerClass": "marketplace",
+        "price": 16.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831141526464788954399&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1700-pwm-case-fan%2Fp%2F1YF-000T-000K3%3Fitem%3D9SIAADY76G1552",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131686839620287107z5okwWnjUy.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.620Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -843,15 +888,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBGX1KB04881",
+        "sku": "445839388713640567080484",
+        "itemNumber": "9SIBGX1KB04881",
+        "sellerClass": "marketplace",
         "price": 11.99,
-        "saleprice": 9.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839388713640567080484&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0129-00002%3Fitem%3D9SIBGX1KB04881",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2407240DU5RJ93.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:59.135Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -869,7 +915,9 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 36,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "00850059070123",
+    "mpn": "CP-FAN-120BK3"
   },
   {
     "id": 85020,
@@ -910,7 +958,10 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 55,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "ACFAN00305A"
   },
   {
     "id": 85021,
@@ -935,15 +986,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95160",
-        "price": 39.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313347543601719795572&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-case-fan%2Fp%2F1YF-000T-000K7%3Fitem%3D9SIBZT7KJ95160",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IJ02LB9.jpg",
+        "sku": "445831962690862270861962",
+        "itemNumber": "9SIAADY76X3131",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831962690862270861962&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-pwm-case-fan%2Fp%2F1YF-000T-000K7%3Fitem%3D9SIAADY76X3131",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IJ02LB9.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.624Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -962,7 +1014,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 73,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "NF-A12x25 5V"
   },
   {
     "id": 85022,
@@ -985,6 +1038,18 @@ export default [
         "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445837181998526065022080",
+        "itemNumber": "9SIA2W08JE1499",
+        "sellerClass": "marketplace",
+        "price": 27.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837181998526065022080&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-acfan00135a-case-fan%2Fp%2FN82E16835186207%3Fitem%3D9SIA2W08JE1499",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-186-207-V05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:36.894Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 18,
@@ -1037,14 +1102,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181445",
+        "sku": "44583980788879329956428",
+        "itemNumber": "N82E16835181445",
+        "sellerClass": "official",
         "price": 19.99,
-        "saleprice": 15.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583980788879329956428&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050180-ww-case-fan-120-mm-argb-led%2Fp%2FN82E16835181445%3Fitem%3DN82E16835181445",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-444-01.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -1268,15 +1334,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA2W0K1T1577",
-        "price": 25.52,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839417994258783928003&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00306%3Fitem%3D9SIA2W0K1T1577",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B4AMD2207140OC0HC18.jpg",
+        "sku": "445837796021418415952663",
+        "itemNumber": "9SIAZTUKK39264",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 19.5,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837796021418415952663&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-001J6%3Fitem%3D9SIAZTUKK39264",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2101164g8sV.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:51.213Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 20,
@@ -1298,7 +1365,9 @@ export default [
     "pack": 3,
     "bench": 66,
     "mpn": "MBVB09RWTCXRR",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85029,
@@ -1323,14 +1392,15 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIBGX1KDA5051",
+        "sku": "4458311157065906946590913",
+        "itemNumber": "9SIBGX1KDA5051",
+        "sellerClass": "marketplace",
         "price": 16.99,
-        "saleprice": 14.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311157065906946590913&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RH-00003%3Fitem%3D9SIBGX1KDA5051",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1D24092703M83M86.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:59.147Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -1511,15 +1581,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBVHXKPS6957",
-        "price": 39.9,
-        "saleprice": 35.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313457305489459870844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000Y5%3Fitem%3D9SIBVHXKPS6957",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2512170D6EBTFC.jpg",
+        "sku": "4458311271482639410781604",
+        "itemNumber": "9SIBVHXKFF8849",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 39.9,
+        "saleprice": 29.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311271482639410781604&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-0038-000X3%3Fitem%3D9SIBVHXKFF8849",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2505280FZJZV2E.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.102Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -1583,7 +1655,10 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 53,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "ACFAN00306A"
   },
   {
     "id": 85035,
@@ -1606,6 +1681,18 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458314354169143855646133",
+        "itemNumber": "9SIA2W0KR89532",
+        "sellerClass": "marketplace",
+        "price": 14.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314354169143855646133&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00379%3Fitem%3D9SIA2W0KR89532",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5S2512221DI5D036.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.930Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -1749,6 +1836,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458315102067640326009533",
+        "itemNumber": "9SIAADY4AW8188",
+        "sellerClass": "marketplace",
+        "price": 17.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315102067640326009533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1500-pwm%2Fp%2FN82E16835608065%3Fitem%3D9SIAADY4AW8188",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A00V_131957053445935799G75QUFfE4k.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.555Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1792,15 +1891,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKHH1273",
-        "price": 32,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311133046357449659866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-5v-pwm%2Fp%2F1YF-000T-000M2%3Fitem%3D9SIAZTUKHH1273",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AC0F_1_201903232014679835.jpg",
+        "sku": "4458316100302463623067380",
+        "itemNumber": "9SIA4REK2R0288",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 19.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316100302463623067380&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-flx-case-fan%2Fp%2FN82E16835608034%3Fitem%3D9SIA4REK2R0288",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-034-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.418Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -1819,7 +1919,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 75,
-    "fanSize": 140
+    "fanSize": 140,
+    "mpn": "NF-A14 FLX"
   },
   {
     "id": 85040,
@@ -1862,7 +1963,9 @@ export default [
     "bench": 73,
     "mpn": "ACFAN00120A",
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85041,
@@ -1885,6 +1988,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458312686103823939440795",
+        "itemNumber": "9SIAADY4B02739",
+        "sellerClass": "marketplace",
+        "price": 18.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312686103823939440795&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a9x14-case-fan%2Fp%2FN82E16835608031%3Fitem%3D9SIAADY4B02739",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-031-V04.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.571Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -1902,7 +2017,8 @@ export default [
     "rpm": 2500,
     "rgb": false,
     "pack": 1,
-    "bench": 62
+    "bench": 62,
+    "mpn": "NF-A9x14"
   },
   {
     "id": 85042,
@@ -1927,15 +2043,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKFH9417",
-        "price": 29.7,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831938322887914626099&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-pwm-case-fan%2Fp%2F1YF-000T-00091%3Fitem%3D9SIAZTUKFH9417",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400894271333793ToAzLLNl9U.jpg",
+        "sku": "445839143345394541995529",
+        "itemNumber": "9SIAADY5SE4696",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 23.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839143345394541995529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-flx-case-fan%2Fp%2F1YF-000T-00090%3Fitem%3D9SIAADY5SE4696",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400886376265271NL23kh0SsU.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.602Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -1952,7 +2069,9 @@ export default [
     "rpm": 1850,
     "rgb": false,
     "pack": 1,
-    "bench": 70
+    "bench": 70,
+    "mpn": "NF-A12x15 FLX",
+    "upc": "00841500110086"
   },
   {
     "id": 85043,
@@ -2067,14 +2186,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181359",
+        "sku": "445837509732178239651941",
+        "itemNumber": "N82E16835181359",
+        "sellerClass": "official",
         "price": 169.99,
-        "saleprice": 99.99,
+        "saleprice": 129.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837509732178239651941&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181359%3Fitem%3DN82E16835181359",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-359-01.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.069Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -2340,7 +2461,10 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 50,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "CO-9050188-WW"
   },
   {
     "id": 85051,
@@ -2459,6 +2583,18 @@ export default [
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458314640466610192102955",
+        "itemNumber": "9SIAADY4AW8130",
+        "sellerClass": "marketplace",
+        "price": 13.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314640466610192102955&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-r8-redux-1800%2Fp%2FN82E16835608055%3Fitem%3D9SIAADY4AW8130",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-055-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.555Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -2476,7 +2612,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 58,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "00842431012432",
+    "mpn": "NF-R8 redux-1800"
   },
   {
     "id": 85054,
@@ -3238,14 +3376,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181409",
+        "sku": "445834652354367108786856",
+        "itemNumber": "N82E16835181409",
+        "sellerClass": "official",
         "price": 34.99,
-        "saleprice": 30.99,
+        "saleprice": 29.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834652354367108786856&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181409%3Fitem%3DN82E16835181409",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-409-04.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.080Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3293,14 +3433,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835181448",
+        "sku": "445833657906380832714614",
+        "itemNumber": "N82E16835181448",
+        "sellerClass": "official",
         "price": 34.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833657906380832714614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050191-ww-case-fan-140mm-non-led-led%2Fp%2FN82E16835181448%3Fitem%3DN82E16835181448",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-448-03.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3320,7 +3461,8 @@ export default [
     "rgb": false,
     "pack": 2,
     "bench": 57,
-    "fanSize": 140
+    "fanSize": 140,
+    "mpn": "CO-9050191-WW"
   },
   {
     "id": 85072,
@@ -3633,15 +3775,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKG02371",
-        "price": 54.3,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316087214692451450956&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N0%3Fitem%3D9SIAZTUKG02371",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170OZHM684.jpg",
+        "sku": "445832525213456439153119",
+        "itemNumber": "9SIAADYKCT4310",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 44.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832525213456439153119&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N0%3Fitem%3D9SIAADYKCT4310",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170OZHM684.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.784Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -3659,7 +3802,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 75,
-    "fanSize": 140
+    "fanSize": 140,
+    "upc": "00841501110610",
+    "mpn": "NF-A14x25 G2 PWM"
   },
   {
     "id": 85080,
@@ -3741,7 +3886,11 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 53,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "04260052193853",
+    "mpn": "BL139"
   },
   {
     "id": 85082,
@@ -4648,6 +4797,18 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445835866517683512357755",
+        "itemNumber": "9SIAADY6J00966",
+        "sellerClass": "marketplace",
+        "price": 26.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835866517683512357755&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D8%3Fitem%3D9SIAADY6J00966",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826id4jI.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.618Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4666,7 +4827,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 65,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "NF-F12 PWM chromax.b"
   },
   {
     "id": 85102,
@@ -4689,6 +4851,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458312647991462201902312",
+        "itemNumber": "9SIAADY76G1537",
+        "sellerClass": "marketplace",
+        "price": 16.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312647991462201902312&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-redux-1300-pwm-case-fan%2Fp%2F1YF-000T-000K2%3Fitem%3D9SIAADY76G1537",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS210401kGffu.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.620Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4706,7 +4880,8 @@ export default [
     "rpm": 1300,
     "rgb": false,
     "pack": 1,
-    "bench": 66
+    "bench": 66,
+    "mpn": "NF-P12 redux-1300 PW"
   },
   {
     "id": 85103,
@@ -4729,6 +4904,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445833492211039337319431",
+        "itemNumber": "9SIAADY4B02823",
+        "sellerClass": "marketplace",
+        "price": 21.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833492211039337319431&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-s12a-flx-case-fan-120-mm-non-led%2Fp%2FN82E16835608037%3Fitem%3D9SIAADY4B02823",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812QrhRf.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.575Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -4747,7 +4934,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 76,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "NF-S12A FLX"
   },
   {
     "id": 85104,
@@ -4770,6 +4958,18 @@ export default [
         "priceSeller": "CoolTech Store",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445836550531154369833068",
+        "itemNumber": "9SIA2W0JT93384",
+        "sellerClass": "marketplace",
+        "price": 45.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836550531154369833068&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-001N6%3Fitem%3D9SIA2W0JT93384",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4N9S210618kBQB0.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.040Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4863,6 +5063,31 @@ export default [
         "price": 21.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563123.p%3FskuId%3D6563123",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311878658529105260618",
+        "itemNumber": "9SIAG1PK2Y7724",
+        "sellerClass": "marketplace",
+        "price": 21.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311878658529105260618&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f140-rgb-core-white-single-pack-case-fan%2Fp%2FN82E16835146140%3Fitem%3D9SIAG1PK2Y7724",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-140-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.519Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458313971636860022901117",
+        "itemNumber": "N82E16835146140R",
+        "sellerClass": "official",
+        "price": 29.99,
+        "saleprice": 20.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313971636860022901117&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f140-rgb-core-white-single-pack-case-fan-140mm-rgb-led%2Fp%2FN82E16835146140R%3Fitem%3DN82E16835146140R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-140-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.024Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -5132,14 +5357,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKCV3441",
-        "price": 41.5,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583140070010638949924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-5v-pwm%2Fp%2F1YF-000T-000M4%3Fitem%3D9SIAZTUKCV3441",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060I6LHSB9.jpg",
+        "sku": "4458314739327821006208133",
+        "itemNumber": "9SIAADY7K68995",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314739327821006208133&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-5v-pwm%2Fp%2F1YF-000T-000M4%3Fitem%3D9SIAADY7K68995",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060I6LHSB9.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.630Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5840,14 +6066,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "1YF-001G-004D6",
+        "sku": "4458314128079265714792440",
+        "itemNumber": "1YF-001G-004D6",
+        "sellerClass": "official",
         "price": 39.99,
         "saleprice": 38.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314128079265714792440&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004D6%3Fitem%3D1YF-001G-004D6",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2410241CAMQ275.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.500Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5935,6 +6163,18 @@ export default [
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445835838546040296892165",
+        "itemNumber": "9SIA2W0KKD5038",
+        "sellerClass": "marketplace",
+        "price": 9.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835838546040296892165&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00369%3Fitem%3D9SIA2W0KKD5038",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25082206W66NFC.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.772Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6101,6 +6341,32 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "44583329277646603153700",
+        "itemNumber": "N82E16835101127",
+        "sellerClass": "official",
+        "price": 14.99,
+        "saleprice": 12.69,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583329277646603153700&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835101127%3Fitem%3DN82E16835101127",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-127-17.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.745Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445837875296585796522723",
+        "itemNumber": "N82E16835101127R",
+        "sellerClass": "official",
+        "price": 14.99,
+        "saleprice": 10.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837875296585796522723&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835101127R%3Fitem%3DN82E16835101127R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-127-17.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.745Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 13,
@@ -6122,7 +6388,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 70,
-    "mpn": "90DA00L0-B08000"
+    "mpn": "90DA00L0-B08000",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85135,
@@ -6544,7 +6812,9 @@ export default [
     "pack": 5,
     "mpn": "ACFAN00248A",
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85145,
@@ -6619,6 +6889,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-16"
+      },
+      "newegg": {
+        "sku": "4458314972622154794700157",
+        "itemNumber": "9SIA2W0JSR4941",
+        "sellerClass": "marketplace",
+        "price": 35.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314972622154794700157&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-000J0%3Fitem%3D9SIA2W0JSR4941",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6_131898001494944447lv4PMj9tSo.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.036Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6660,6 +6942,19 @@ export default [
         "priceSeller": "Amazon Japan",
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "paapi"
+      },
+      "newegg_openbox": {
+        "sku": "4458315893276344239576737",
+        "itemNumber": "N82E16835181240R",
+        "sellerClass": "official",
+        "price": 24.99,
+        "saleprice": 14.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315893276344239576737&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050136-ww-case-fan%2Fp%2FN82E16835181240R%3Fitem%3DN82E16835181240R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-240-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.069Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6681,7 +6976,10 @@ export default [
     "pack": 1,
     "bench": 76,
     "fanSize": 120,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "CO-9050136-WW"
   },
   {
     "id": 85148,
@@ -6706,14 +7004,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKBH5684",
-        "price": 32.3,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316975531247198497398&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D9%3Fitem%3D9SIAZTUKBH5684",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1315262345813639822KDSI9Pcxr.jpg",
+        "sku": "445833938873110793478447",
+        "itemNumber": "9SIA4REK7S3630",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 26.2,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833938873110793478447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-chromax-black-swap-case-fan%2Fp%2F1YF-000T-000D9%3Fitem%3D9SIA4REK7S3630",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1315262345813639822KDSI9Pcxr.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.447Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -6733,7 +7032,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 75,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "NF-S12A PWM chromax."
   },
   {
     "id": 85149,
@@ -6967,6 +7267,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445834493452684552483168",
+        "itemNumber": "9SIA4REK842984",
+        "sellerClass": "marketplace",
+        "price": 17.19,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834493452684552483168&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200-pwm%2Fp%2FN82E16835608064%3Fitem%3D9SIA4REK842984",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-064-V12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.454Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7142857142857143
       }
     },
     "additionalImages": [
@@ -6984,7 +7296,8 @@ export default [
     "pwm": false,
     "rgb": false,
     "pack": 1,
-    "bench": 65
+    "bench": 65,
+    "mpn": "NF-P14s redux-1200 PWM"
   },
   {
     "id": 85155,
@@ -7009,14 +7322,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIC6KMM1A7622",
-        "price": 10.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312221830945218070292&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-acfan00121a-case-fan%2Fp%2FN82E16835186215%3Fitem%3D9SIC6KMM1A7622",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-186-215-V01.jpg",
+        "sku": "445835758609564676582928",
+        "itemNumber": "9SIA2W08JE1844",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 9.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835758609564676582928&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-acfan00121a-case-fan%2Fp%2FN82E16835186215%3Fitem%3D9SIA2W08JE1844",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-186-215-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:36.895Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7147,6 +7461,18 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "paapi"
+      },
+      "newegg": {
+        "sku": "4458313158843294682726691",
+        "itemNumber": "9SIAADY4B02817",
+        "sellerClass": "marketplace",
+        "price": 21.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313158843294682726691&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p12-pwm-case-fan%2Fp%2F1YF-000T-00004%3Fitem%3D9SIAADY4B02817",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7W_1_201903231351912389.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.574Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -7161,7 +7487,8 @@ export default [
     "rgb": false,
     "pack": 1,
     "pwm": false,
-    "fanSize": 120
+    "fanSize": 120,
+    "mpn": "NF-P12 PWM"
   },
   {
     "id": 85159,
@@ -7428,14 +7755,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKB85426",
-        "price": 41.38,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313355628112256215478&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-flx-case-fan%2Fp%2F1YF-000T-000K6%3Fitem%3D9SIAZTUKB85426",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IFAMGB9.jpg",
+        "sku": "44583612458261403688115",
+        "itemNumber": "9SIAADY76X3122",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583612458261403688115&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-flx-case-fan%2Fp%2F1YF-000T-000K6%3Fitem%3D9SIAADY76X3122",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IFAMGB9.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.623Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7475,6 +7803,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-16"
+      },
+      "newegg": {
+        "sku": "4458318260348133020667632",
+        "itemNumber": "9SIB0ASKJX2395",
+        "sellerClass": "marketplace",
+        "price": 31,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318260348133020667632&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00316%3Fitem%3D9SIB0ASKJX2395",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S230327124Y35D4.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:51.432Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8333333333333334
       }
     },
     "additionalImages": [
@@ -7730,15 +8070,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIC6ADM034554",
+        "sku": "445835761775214377948731",
+        "itemNumber": "9SIC6ADM034554",
+        "sellerClass": "marketplace",
         "price": 38.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835761775214377948731&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-05XF-00010%3Fitem%3D9SIC6ADM034554",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASSAD2202220E2KWE6F.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:37.217Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -7759,7 +8100,9 @@ export default [
     "rgbType": "RGB",
     "pack": 5,
     "bench": 48,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "06402411561929",
+    "mpn": "6402411561929ASDFA188169"
   },
   {
     "id": 85172,
@@ -7850,15 +8193,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA0ZXM1N1282",
-        "price": 71.17,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314565866229969317919&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000X9%3Fitem%3D9SIA0ZXM1N1282",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2607170FAREI0A.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.85
+        "sku": "445837552014795218774492",
+        "itemNumber": "1YF-005G-00092",
+        "sellerClass": "official",
+        "price": 91.99,
+        "saleprice": 73.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837552014795218774492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-00092%3Fitem%3D1YF-005G-00092",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS220602dywWN.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.504Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -7942,14 +8287,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA2W0JUV5435",
+        "sku": "44583701745530494173410",
+        "itemNumber": "9SIA2W0JUV5435",
+        "sellerClass": "marketplace",
         "price": 9.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583701745530494173410&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-002W6%3Fitem%3D9SIA2W0JUV5435",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD2203230KWB2U31.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.051Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7992,6 +8338,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445839467944618027203529",
+        "itemNumber": "9SIAADY4B02855",
+        "sellerClass": "marketplace",
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839467944618027203529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-ippc-2000-ip67-case-fan%2Fp%2FN82E16835608049%3Fitem%3D9SIAADY4B02855",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826DA6G1.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.576Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8084,14 +8442,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKB85427",
-        "price": 41.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583754060191622231769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-uln-case-fan%2Fp%2F1YF-000T-000K8%3Fitem%3D9SIAZTUKB85427",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IUXI7B9.jpg",
+        "sku": "445836976174561198105624",
+        "itemNumber": "9SIAADY76X3142",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836976174561198105624&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x25-uln-case-fan%2Fp%2F1YF-000T-000K8%3Fitem%3D9SIAADY76X3142",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2312060IUXI7B9.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.624Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -8133,6 +8492,18 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458316828491077089017848",
+        "itemNumber": "9SIAG1PHXV3636",
+        "sellerClass": "marketplace",
+        "price": 16.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316828491077089017848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-000Z4%3Fitem%3D9SIAG1PHXV3636",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2206040710EBD9.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.497Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7142857142857143
       }
     },
     "additionalImages": [
@@ -8151,7 +8522,10 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 57,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "RF-Q14SF-B2"
   },
   {
     "id": 85180,
@@ -8181,14 +8555,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "13C-0069-00066",
+        "sku": "4458316596992885812711200",
+        "itemNumber": "13C-0069-00066",
+        "sellerClass": "official",
         "price": 79.99,
         "saleprice": 69.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316596992885812711200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-f140rgb-duo-case-fan%2Fp%2F13C-0069-00066%3Fitem%3D13C-0069-00066",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD2306130LII2C2F.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.035Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -8234,6 +8610,18 @@ export default [
         "priceSeller": "Amazon Japan",
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "paapi"
+      },
+      "newegg": {
+        "sku": "445832136486512913104593",
+        "itemNumber": "9SIC5BHKST3174",
+        "sellerClass": "marketplace",
+        "price": 69,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832136486512913104593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050138-ww-case-fan%2Fp%2FN82E16835181242%3Fitem%3D9SIC5BHKST3174",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-242-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:34.401Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -8313,15 +8701,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKBH5607",
-        "price": 29.52,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313555118809001311909&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-5v-pwm%2Fp%2F1YF-000T-000M6%3Fitem%3D9SIAZTUKBH5607",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ADPT_1_201903231581369444.jpg",
+        "sku": "445833065382251515654514",
+        "itemNumber": "9SIAADY4B02802",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 21.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833065382251515654514&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIAADY4B02802",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-026-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.572Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -8482,14 +8871,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA8EFJT00447",
+        "sku": "445831534159123172081191",
+        "itemNumber": "9SIA8EFJT00447",
+        "sellerClass": "marketplace",
         "price": 39.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831534159123172081191&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct140-argb-sync-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106717%3Fitem%3D9SIA8EFJT00447",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-717-01.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.849Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -8720,7 +9110,11 @@ export default [
     "rgbType": "RGB",
     "pack": 3,
     "bench": 51,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "06402411562070",
+    "mpn": "6402411562070ASDFA260295"
   },
   {
     "id": 85193,
@@ -9045,14 +9439,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "1YF-005G-00093",
+        "sku": "4458315843779829622453939",
+        "itemNumber": "1YF-005G-00093",
+        "sellerClass": "official",
         "price": 90.99,
-        "saleprice": null,
+        "saleprice": 85.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315843779829622453939&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-uf-slin120-3b-case-fan%2Fp%2F1YF-005G-00093%3Fitem%3D1YF-005G-00093",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS220602V5w3w.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.505Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -9144,15 +9540,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "1YF-01RK-00002",
+        "sku": "445833580195193921690678",
+        "itemNumber": "1YF-01RK-00002",
+        "sellerClass": "official",
         "price": 79.99,
-        "saleprice": 67.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833580195193921690678&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00002%3Fitem%3D1YF-01RK-00002",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YP8QCD4.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.525Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 15,
@@ -9172,7 +9569,9 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 47,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "08881300820046",
+    "mpn": "MACH120 3in1"
   },
   {
     "id": 85203,
@@ -9326,6 +9725,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "44583134045837321969265",
+        "itemNumber": "9SIAADYH270173",
+        "sellerClass": "marketplace",
+        "price": 34.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583134045837321969265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2BJ-000W-00155%3Fitem%3D9SIAADYH270173",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404eIT5p.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.697Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -9341,7 +9752,9 @@ export default [
     "bench": 58,
     "rgb": false,
     "pack": 1,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "00841501110566",
+    "mpn": "NF-A12x25r PWM"
   },
   {
     "id": 85207,
@@ -9401,15 +9814,16 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIBRT8KBR8616",
+        "sku": "445836982428168071679306",
+        "itemNumber": "9SIBRT8KBR8616",
+        "sellerClass": "marketplace",
         "price": 39.9,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836982428168071679306&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01P6-00020%3Fitem%3D9SIBRT8KBR8616",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BRT8S2410280DPRINEC.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.94
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:03.298Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 5,
@@ -9431,7 +9845,11 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 56,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "06974433741103",
+    "mpn": "GEO-S2503B-14S"
   },
   {
     "id": 85209,
@@ -9537,15 +9955,16 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAWATKE83029",
+        "sku": "445837091614079089521031",
+        "itemNumber": "9SIAWATKE83029",
+        "sellerClass": "marketplace",
         "price": 42.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837091614079089521031&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-00RA-00006%3Fitem%3D9SIAWATKE83029",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AWATS250305081TUU04.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:50.065Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 9,
@@ -9566,7 +9985,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 46,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "06950376724878",
+    "mpn": "RED-WCF-F012W"
   },
   {
     "id": 85212,
@@ -9760,15 +10181,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKK69579",
-        "price": 54.8,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583357150733611491826&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N1%3Fitem%3D9SIAZTUKK69579",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170P5H8N84.jpg",
+        "sku": "445837251119394262118123",
+        "itemNumber": "9SIAADYKCT4313",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 44.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837251119394262118123&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000T-006N1%3Fitem%3D9SIAADYKCT4313",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409170P5H8N84.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.785Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -9784,7 +10206,9 @@ export default [
     "bench": 65,
     "rgb": false,
     "pack": 1,
-    "fanSize": 140
+    "fanSize": 140,
+    "upc": "00841501110627",
+    "mpn": "NF-A14x25 G2 LS-PWM"
   },
   {
     "id": 85217,
@@ -9896,15 +10320,16 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAZTUKRM1420",
-        "price": 21.1,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314805365571647346825&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00355%3Fitem%3D9SIAZTUKRM1420",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2405140JWF0V89.jpg",
+        "sku": "445836714055327935369097",
+        "itemNumber": "9SIAADYKAH9138",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 15.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836714055327935369097&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00355%3Fitem%3D9SIAADYKAH9138",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2405140JWF0V89.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.773Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -9918,7 +10343,9 @@ export default [
     "bench": 48,
     "rgb": false,
     "pack": 1,
-    "fanSize": 120
+    "fanSize": 120,
+    "upc": "00841501190193",
+    "mpn": "NV-AA1-12"
   },
   {
     "id": 85220,
@@ -10098,7 +10525,9 @@ export default [
     "mpn": "MFW-B2NN-17NPK-R1",
     "fanSize": 120,
     "bestbuyRemovedComp": "2026-06-28",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85224,
@@ -10264,15 +10693,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIB7VEKGJ0435",
-        "price": 32.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314335399227240699849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00316%3Fitem%3D9SIB7VEKGJ0435",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S230327124Y35D4.jpg",
+        "sku": "4458310150107420512921695",
+        "itemNumber": "9SIA2W0JV72809",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.71
+        "price": 49.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310150107420512921695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-acfan00257a%2Fp%2F1FR-004G-00017%3Fitem%3D9SIA2W0JV72809",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S211221pV0tY.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.053Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -10287,7 +10717,8 @@ export default [
     "value": 4,
     "bench": 73,
     "pack": 3,
-    "fanSize": 140
+    "fanSize": 140,
+    "mpn": "ACFAN00257A"
   },
   {
     "id": 85228,
@@ -11256,6 +11687,18 @@ export default [
         "price": 16.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4401200&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4401200.p%3FskuId%3D4401200",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "44583627969856179782121",
+        "itemNumber": "9SIA8EFK657899",
+        "sellerClass": "marketplace",
+        "price": 16.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583627969856179782121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f038-pl12bu-a-case-fan%2Fp%2FN82E16835106325%3Fitem%3D9SIA8EFK657899",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-325-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.887Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 40.6,
@@ -11322,6 +11765,18 @@ export default [
         "price": 13.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459388&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459388.p%3FskuId%3D6459388",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458318167192268187590657",
+        "itemNumber": "9SIA8EFK657978",
+        "sellerClass": "marketplace",
+        "price": 13.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318167192268187590657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f015-pl20bl-a-case-fan%2Fp%2FN82E16835106224%3Fitem%3D9SIA8EFK657978",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-224-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.894Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
     },
     "cfm": 129,
@@ -11389,14 +11844,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106733",
+        "sku": "4458317877494422458095540",
+        "itemNumber": "N82E16835106733",
+        "sellerClass": "official",
         "price": 119.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317877494422458095540&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-swafan-ex-14-rgb-white-case-fan%2Fp%2FN82E16835106733%3Fitem%3DN82E16835106733",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-733-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.849Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11431,14 +11887,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFJT00438",
-        "price": 24.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316345691876450527968&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-case-fan%2Fp%2FN82E16835106710%3Fitem%3D9SIA8EFJT00438",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-710-01.jpg",
+        "sku": "445835112867949874668167",
+        "itemNumber": "9SIC6XKM3S6341",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 24.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835112867949874668167&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-case-fan%2Fp%2FN82E16835106710%3Fitem%3D9SIC6XKM3S6341",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-710-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:38.873Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11472,14 +11929,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFJT00440",
+        "sku": "445832968106304409706272",
+        "itemNumber": "9SIA8EFJT00440",
+        "sellerClass": "marketplace",
         "price": 24.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832968106304409706272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106711%3Fitem%3D9SIA8EFJT00440",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-711-01.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.842Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11511,6 +11969,18 @@ export default [
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543496&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543496.p%3FskuId%3D6543496",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316271043451403378300",
+        "itemNumber": "9SIA8EFJT00445",
+        "sellerClass": "marketplace",
+        "price": 34.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316271043451403378300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-argb-sync-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106715%3Fitem%3D9SIA8EFJT00445",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-715-11.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.848Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 57.06,
@@ -11542,6 +12012,19 @@ export default [
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549153&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549153.p%3FskuId%3D6549153",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310820415184601124687",
+        "itemNumber": "N82E16835181363",
+        "sellerClass": "official",
+        "price": 169.99,
+        "saleprice": 124.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310820415184601124687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181363%3Fitem%3DN82E16835181363",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-363-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.069Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 63.1,
@@ -11603,15 +12086,16 @@ export default [
     "mpn": "RF-R12SF-B1",
     "deals": {
       "newegg": {
-        "sku": "N82E16835146177",
+        "sku": "445832513326932498915441",
+        "itemNumber": "N82E16835146177",
+        "sellerClass": "official",
         "price": 17.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832513326932498915441&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r212s-bf-case-fan-120mm-8-leds-led%2Fp%2FN82E16835146177%3Fitem%3DN82E16835146177",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-177-07.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.78
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.045Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7777777777777778
       }
     },
     "cfm": 50.18,
@@ -11647,14 +12131,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "1YF-000Z-00121",
+        "sku": "4458315990397704084717423",
+        "itemNumber": "1YF-000Z-00121",
+        "sellerClass": "official",
         "price": 39.99,
-        "saleprice": null,
+        "saleprice": 34.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315990397704084717423&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00121%3Fitem%3D1YF-000Z-00121",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2308220N9Z25B8.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.483Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11670,7 +12156,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 66,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85263,
@@ -11719,15 +12207,16 @@ export default [
     "mpn": "RF-R12SF-W1",
     "deals": {
       "newegg": {
-        "sku": "N82E16835146178",
+        "sku": "4458316805780022583573776",
+        "itemNumber": "N82E16835146178",
+        "sellerClass": "official",
         "price": 17.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316805780022583573776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r212s-wf-case-fan-120mm-rgb-led%2Fp%2FN82E16835146178%3Fitem%3DN82E16835146178",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-178-07.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.78
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.046Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7777777777777778
       }
     },
     "cfm": 50.18,
@@ -11763,14 +12252,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA6KXK888211",
+        "sku": "4458310770721419107949027",
+        "itemNumber": "9SIA6KXK888211",
+        "sellerClass": "marketplace",
         "price": 29.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310770721419107949027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-d12sf-w1-case-fan%2Fp%2F1YF-000Z-00120%3Fitem%3D9SIA6KXK888211",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2301131F1K6M38.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:48.084Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11908,14 +12398,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181410",
+        "sku": "445835834071920721049772",
+        "itemNumber": "N82E16835181410",
+        "sellerClass": "official",
         "price": 104.99,
-        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835834071920721049772&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181410%3Fitem%3DN82E16835181410",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-410-19.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.080Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11951,14 +12442,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181414",
-        "price": 104.99,
-        "saleprice": 76.99,
+        "sku": "445833109183607510918815",
+        "itemNumber": "N82E16835181414",
+        "sellerClass": "official",
+        "price": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833109183607510918815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181414%3Fitem%3DN82E16835181414",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-414-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.080Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12017,7 +12509,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 63,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85272,
@@ -12060,7 +12554,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 63,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85273,
@@ -12080,14 +12576,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181444",
+        "sku": "4458313741110233038245155",
+        "itemNumber": "N82E16835181444",
+        "sellerClass": "official",
         "price": 59.99,
-        "saleprice": 34.99,
+        "saleprice": 49.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313741110233038245155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050181-ww-case-fan-120-mm-argb-led%2Fp%2FN82E16835181444%3Fitem%3DN82E16835181444",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-444-06.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12123,14 +12621,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KT79844",
+        "sku": "445836512000889825036336",
+        "itemNumber": "9SIA2W0KT79844",
+        "sellerClass": "marketplace",
         "price": 44.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836512000889825036336&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9051029-ww-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181431%3Fitem%3D9SIA2W0KT79844",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-431-03.png",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.993Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12166,14 +12665,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK7N9108",
+        "sku": "4458313516264223216682233",
+        "itemNumber": "9SIA8EFK7N9108",
+        "sellerClass": "marketplace",
         "price": 59.99,
-        "saleprice": 49.99,
+        "saleprice": 44.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313516264223216682233&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f181-pl12sw-a-case-fan%2Fp%2F13C-001H-00266%3Fitem%3D9SIA8EFK7N9108",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2404240CCGK671.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.911Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12232,7 +12733,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 60,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85277,
@@ -12250,6 +12753,19 @@ export default [
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604413&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604413.p%3FskuId%3D6604413",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834885664083242435383",
+        "itemNumber": "N82E16835146152",
+        "sellerClass": "official",
+        "price": 44.99,
+        "saleprice": 31.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834885664083242435383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u24hf-b1-case-fan-240mm-rgb-led%2Fp%2FN82E16835146152%3Fitem%3DN82E16835146152",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-152-13.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.028Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 75.12,
@@ -12337,6 +12853,19 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "newegg": {
+        "sku": "4458317357736248792030296",
+        "itemNumber": "N82E16835146153",
+        "sellerClass": "official",
+        "price": 44.99,
+        "saleprice": 29.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317357736248792030296&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u24hf-w1-case-fan-240mm-rgb-led%2Fp%2FN82E16835146153%3Fitem%3DN82E16835146153",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-153-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.028Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 75.12,
@@ -12369,6 +12898,18 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604416&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604416.p%3FskuId%3D6604416",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839354304553251748952",
+        "itemNumber": "N82E16835146181",
+        "sellerClass": "official",
+        "price": 49.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839354304553251748952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r236u-bf-360mm-rgb-led%2Fp%2FN82E16835146181%3Fitem%3DN82E16835146181",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-181-09.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.049Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8
       }
     },
     "cfm": 75.12,
@@ -12401,6 +12942,18 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604417&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604417.p%3FskuId%3D6604417",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314302113585525179244",
+        "itemNumber": "N82E16835146182",
+        "sellerClass": "official",
+        "price": 49.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314302113585525179244&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r236u-wf-case-fan-360mm-rgb-led%2Fp%2FN82E16835146182%3Fitem%3DN82E16835146182",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-182-08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.050Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8
       }
     },
     "cfm": 75.12,
@@ -12415,7 +12968,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 3,
     "bench": 73,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 85282,
@@ -12433,6 +12988,19 @@ export default [
         "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604418&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604418.p%3FskuId%3D6604418",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839203076102223061552",
+        "itemNumber": "N82E16835146155",
+        "sellerClass": "official",
+        "price": 59.99,
+        "saleprice": 49.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839203076102223061552&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u28hf-w1-case-fan-280mm-rgb-led%2Fp%2FN82E16835146155%3Fitem%3DN82E16835146155",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-155-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.028Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 98.61,
@@ -12467,14 +13035,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181467",
+        "sku": "445835821662525757640717",
+        "itemNumber": "N82E16835181467",
+        "sellerClass": "official",
         "price": 139.99,
-        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821662525757640717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181467%3Fitem%3DN82E16835181467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-467-17.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12510,14 +13079,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KT79848",
+        "sku": "4458315433276012399258213",
+        "itemNumber": "9SIA2W0KT79848",
+        "sellerClass": "marketplace",
         "price": 44.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315433276012399258213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181464%3Fitem%3D9SIA2W0KT79848",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-464-02.png",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.993Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12585,14 +13155,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKE09201",
+        "sku": "445834288974296637463590",
+        "itemNumber": "9SIA8EFKE09201",
+        "sellerClass": "marketplace",
         "price": 24.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834288974296637463590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835106776%3Fitem%3D9SIA8EFKE09201",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2502130EE5BX89.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:46.003Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12693,14 +13264,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKDJ4452",
+        "sku": "4458358901142064675757",
+        "itemNumber": "9SIA8EFKDJ4452",
+        "sellerClass": "marketplace",
         "price": 59.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458358901142064675757&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004D9%3Fitem%3D9SIA8EFKDJ4452",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS25020517BUVR4C.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.976Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12736,14 +13308,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC3X1M1H3250",
+        "sku": "445838428578799822103902",
+        "itemNumber": "9SIC3X1M1H3250",
+        "sellerClass": "marketplace",
         "price": 88.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838428578799822103902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004E0%3Fitem%3D9SIC3X1M1H3250",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS25020517EQNLEF.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:33.166Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12779,14 +13352,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106741",
+        "sku": "445833520526241748237897",
+        "itemNumber": "N82E16835106741",
+        "sellerClass": "official",
         "price": 87.99,
-        "saleprice": 81.99,
+        "saleprice": 76.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833520526241748237897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-swafan-ex12-case-fan-120-mm-argb-led%2Fp%2FN82E16835106741%3Fitem%3DN82E16835106741",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2309090XYPF7D0.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.853Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12822,14 +13397,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKDJ4785",
+        "sku": "4458317870800000091401388",
+        "itemNumber": "9SIA8EFKDJ4785",
+        "sellerClass": "marketplace",
         "price": 59.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317870800000091401388&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004E1%3Fitem%3D9SIA8EFKDJ4785",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS25020517VCWLAA.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.976Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12865,14 +13441,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKDJ4389",
+        "sku": "445839826595236720671189",
+        "itemNumber": "9SIA8EFKDJ4389",
+        "sellerClass": "marketplace",
         "price": 59.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839826595236720671189&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004D8%3Fitem%3D9SIA8EFKDJ4389",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS250205178UPM9E.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.976Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -12941,14 +13518,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFK9E9043",
+        "sku": "4458313388718884369677415",
+        "itemNumber": "9SIA8EFK9E9043",
+        "sellerClass": "marketplace",
         "price": 59.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313388718884369677415&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004C1%3Fitem%3D9SIA8EFK9E9043",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2407120YLA0R7F.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.924Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13092,6 +13670,18 @@ export default [
         "price": 41.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628996&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628996.p%3FskuId%3D6628996",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834671627468841227083",
+        "itemNumber": "N82E16835181490",
+        "sellerClass": "official",
+        "price": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834671627468841227083&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181490%3Fitem%3DN82E16835181490",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-490-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.105Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 65.82,
@@ -13126,14 +13716,29 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "1YF-000Z-00147",
+        "sku": "445834184409651813759404",
+        "itemNumber": "1YF-000Z-00147",
+        "sellerClass": "official",
         "price": 74.99,
         "saleprice": 54.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834184409651813759404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00147%3Fitem%3D1YF-000Z-00147",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1YF-000Z-00147-02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.483Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "445836033134440619406095",
+        "itemNumber": "1YF-000Z-00147R",
         "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 74.99,
+        "saleprice": 20.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836033134440619406095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00147R%3Fitem%3D1YF-000Z-00147R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1YF-000Z-00147-02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.483Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13169,14 +13774,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "1YF-000Z-00146",
+        "sku": "445839888865565122258627",
+        "itemNumber": "1YF-000Z-00146",
+        "sellerClass": "official",
         "price": 74.99,
         "saleprice": 54.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839888865565122258627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00146%3Fitem%3D1YF-000Z-00146",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1YF-000Z-00146-02.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.483Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13212,14 +13819,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKN15089",
+        "sku": "445832989085196249275227",
+        "itemNumber": "9SIAG1PKN15089",
+        "sellerClass": "marketplace",
         "price": 34.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832989085196249275227&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00150%3Fitem%3D9SIAG1PKN15089",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510311194NF57.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.534Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13255,14 +13863,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKN92242",
+        "sku": "445833581464754739263138",
+        "itemNumber": "9SIAG1PKN92242",
+        "sellerClass": "marketplace",
         "price": 99.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833581464754739263138&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00153%3Fitem%3D9SIAG1PKN92242",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD251110173GFJC4.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.536Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13298,14 +13907,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKNA8597",
+        "sku": "445832507787470708910851",
+        "itemNumber": "9SIAG1PKNA8597",
+        "sellerClass": "marketplace",
         "price": 29.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832507787470708910851&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00154%3Fitem%3D9SIAG1PKNA8597",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511120Z5CVU5B.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.536Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13341,14 +13951,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKN46911",
+        "sku": "445836336073533735746822",
+        "itemNumber": "9SIAG1PKN46911",
+        "sellerClass": "marketplace",
         "price": 74.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836336073533735746822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00152%3Fitem%3D9SIAG1PKN46911",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511051ESPZMC4.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.536Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13384,14 +13995,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKN15088",
+        "sku": "4458311120814200173511732",
+        "itemNumber": "9SIAG1PKN15088",
+        "sellerClass": "marketplace",
         "price": 29.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311120814200173511732&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00149%3Fitem%3D9SIAG1PKN15088",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510311194FX5C.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.534Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13427,14 +14039,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKNA8598",
+        "sku": "4458316795696584337765986",
+        "itemNumber": "9SIAG1PKNA8598",
+        "sellerClass": "marketplace",
         "price": 69.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316795696584337765986&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00155%3Fitem%3D9SIAG1PKNA8598",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2511120Z5DCI01.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.536Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13470,14 +14083,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAG1PKMX8800",
+        "sku": "4458317832452845884084545",
+        "itemNumber": "9SIAG1PKMX8800",
+        "sellerClass": "marketplace",
         "price": 34.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317832452845884084545&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000Z-00148%3Fitem%3D9SIAG1PKMX8800",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2510300BGJS3CA.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:32.534Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13513,15 +14127,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFKN36943",
-        "price": 79.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317615673214965530666&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-f210-pl12sw-a-case-fan-120mm-argb-led%2Fp%2FN82E16835106793%3Fitem%3D9SIA8EFKN36943",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-793-09.jpg",
+        "sku": "445832235650566855291621",
+        "itemNumber": "9SIA6ZPM3V2745",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 51.16,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832235650566855291621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004G5%3Fitem%3D9SIA6ZPM3V2745",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS26071511TBWR0C.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:49.548Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7
       }
     },
     "cfm": 59.34,

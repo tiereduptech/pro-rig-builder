@@ -22,6 +22,18 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458314815512502418047155",
+        "itemNumber": "2WA-000W-00755",
+        "sellerClass": "official",
+        "price": 219.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314815512502418047155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stgx5000500-5tb%2Fp%2F2WA-000W-00755%3Fitem%3D2WA-000W-00755",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2WA-000W-00755-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:31.182Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -347,6 +359,18 @@ export default [
         "price": 280.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-6tb-p10-game-drive-portable-external-hard-drive-wdbz7d0060bbk-wesn--black%2FJXTHCC74RL&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445835462068887842472819",
+        "itemNumber": "N82E16822234570",
+        "sellerClass": "official",
+        "price": 334.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835462068887842472819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbz7d0060bbk-wesn-6tb-usb-3-2-gen-1-usb-2-0%2Fp%2FN82E16822234570%3Fitem%3DN82E16822234570",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-570-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:48.627Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -467,6 +491,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
+      },
+      "newegg": {
+        "sku": "4458310086512752069796021",
+        "itemNumber": "9SIAD6HKHA3761",
+        "sellerClass": "marketplace",
+        "price": 232.04,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-089-04.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:18.618Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -508,6 +544,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
+      },
+      "newegg": {
+        "sku": "445831880744134662176081",
+        "itemNumber": "9SIAD6HGTT8851",
+        "sellerClass": "marketplace",
+        "price": 293.44,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831880744134662176081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stkl5000400-5tb%2Fp%2FN82E16822184962%3Fitem%3D9SIAD6HGTT8851",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-962-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:18.077Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -546,6 +594,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
+      },
+      "newegg": {
+        "sku": "445833051914370546844471",
+        "itemNumber": "N82E16822184961",
+        "sellerClass": "official",
+        "price": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833051914370546844471&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stkl2000400-2tb%2Fp%2FN82E16822184961%3Fitem%3DN82E16822184961",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-961-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:48.463Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -580,6 +640,18 @@ export default [
         "price": 124.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290662&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290662.p%3FskuId%3D6290662",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312166774662900272271",
+        "itemNumber": "N82E16822234355",
+        "sellerClass": "official",
+        "price": 179.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312166774662900272271&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbkyj0020bsl-wesn-2tb-external%2Fp%2FN82E16822234355%3Fitem%3DN82E16822234355",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-355-V04.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:48.495Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cap": 2000,
@@ -612,7 +684,9 @@ export default [
     "storageType": "HDD",
     "pcie": 3,
     "value": 34,
-    "bench": 10
+    "bench": 10,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 50542,
@@ -630,6 +704,18 @@ export default [
         "price": 174.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356883.p%3FskuId%3D6356883",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834479990306302542573",
+        "itemNumber": "N82E16822234396",
+        "sellerClass": "official",
+        "price": 254.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834479990306302542573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdba2f0040bbl-wesn-4tb-external%2Fp%2FN82E16822234396%3Fitem%3DN82E16822234396",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-396-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:48.549Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cap": 4000,
@@ -637,7 +723,9 @@ export default [
     "storageType": "HDD",
     "rpm": 7200,
     "value": 35,
-    "bench": 10
+    "bench": 10,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 50543,
@@ -655,6 +743,18 @@ export default [
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356884&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356884.p%3FskuId%3D6356884",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458310160775847489576322",
+        "itemNumber": "N82E16822234397",
+        "sellerClass": "official",
+        "price": 174.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310160775847489576322&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdba2d0020bbl-wesn-2tb-external%2Fp%2FN82E16822234397%3Fitem%3DN82E16822234397",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-397-V05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:48.549Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cap": 2000,
@@ -662,7 +762,9 @@ export default [
     "storageType": "HDD",
     "rpm": 7200,
     "value": 25,
-    "bench": 10
+    "bench": 10,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 100820,

@@ -24,6 +24,18 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
+      },
+      "newegg": {
+        "sku": "44583520120264484301200",
+        "itemNumber": "N82E16832351749",
+        "sellerClass": "official",
+        "price": 198.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583520120264484301200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-pro-usb%2Fp%2FN82E16832351749%3Fitem%3DN82E16832351749",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-749-V06.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.663Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "upc": "00889842966169"
@@ -48,8 +60,22 @@ export default [
         "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499300&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmicrosoft-windows-11-home-usb-flash-drive-physical-english%2FJ3ZKK5V4QQ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458312977573271908579071",
+        "itemNumber": "N82E16832351748",
+        "sellerClass": "official",
+        "price": 139,
+        "saleprice": 128.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312977573271908579071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-home-usb%2Fp%2FN82E16832351748%3Fitem%3DN82E16832351748",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-748-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.663Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
-    }
+    },
+    "upc": "00889842966640"
   },
   {
     "id": 99005,

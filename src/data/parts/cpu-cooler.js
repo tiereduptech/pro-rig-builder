@@ -198,14 +198,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBTVCK8B0273",
-        "price": 121.09,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583415161469445755429&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIBTVCK8B0273",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
+        "sku": "445833218269696120695751",
+        "itemNumber": "9SIA4REJWR2200",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 122.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833218269696120695751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIA4REJWR2200",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.330Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -302,14 +303,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADY90E6829",
+        "sku": "445836911504703286597093",
+        "itemNumber": "9SIAADY90E6829",
+        "sellerClass": "marketplace",
         "price": 109.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836911504703286597093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIAADY90E6829",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826CTPyq.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.651Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -434,22 +436,26 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "13C-001F-00070",
-        "price": 124.9,
-        "saleprice": 79.9,
+        "sku": "445831146887239297320844",
+        "itemNumber": "13C-001F-00070",
+        "sellerClass": "official",
+        "price": 89.9,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831146887239297320844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-dark-rock-pro-5%2Fp%2F13C-001F-00070%3Fitem%3D13C-001F-00070",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS23101719JCQRFD.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "sellerClass": "other"
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.009Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "fans_inc": 2,
     "rgb": false,
     "value": 32,
     "bench": 68,
-    "cfm": 110
+    "cfm": 110,
+    "upc": "04260052190746",
+    "mpn": "BK036"
   },
   {
     "id": 80006,
@@ -482,13 +488,28 @@ export default [
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445839621508855750919966",
+        "itemNumber": "N82E16835269007",
+        "sellerClass": "official",
+        "price": 109.9,
+        "saleprice": 64.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839621508855750919966&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-dark-rock-5-120mm-intel-lga-1700-1200-1150-1151-1155-amd-socket-am5-am4%2Fp%2FN82E16835269007%3Fitem%3DN82E16835269007",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-269-007-06.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.184Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "fans_inc": 1,
     "rgb": false,
     "value": 32,
     "bench": 57,
-    "cfm": 65
+    "cfm": 65,
+    "upc": "04260052190739",
+    "mpn": "BK035"
   },
   {
     "id": 80007,
@@ -601,15 +622,17 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAZTUKFH6708",
-        "price": 65,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838806172413366840822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-011K-00392%3Fitem%3D9SIAZTUKFH6708",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASSAD2202220PSDCR3D.jpg",
+        "sku": "4458310269821976016004255",
+        "itemNumber": "9SIBVHXK8D7529",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 49.9,
+        "saleprice": 46.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310269821976016004255&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000J2%3Fitem%3D9SIBVHXK8D7529",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS24052407KAKNB6.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.072Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "fans_inc": 2,
@@ -617,7 +640,9 @@ export default [
     "value": 72,
     "bench": 64,
     "radSize": "120",
-    "cfm": 132
+    "cfm": 132,
+    "upc": "00619419139340",
+    "mpn": "ETEIZUpcm10y9rB09LGY38L4"
   },
   {
     "id": 80010,
@@ -657,7 +682,11 @@ export default [
     "value": 100,
     "bench": 64,
     "radSize": "120",
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "00814256019354",
+    "mpn": "PA120-D-B"
   },
   {
     "id": 80011,
@@ -1415,14 +1444,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181478",
+        "sku": "4458314985996934103841889",
+        "itemNumber": "N82E16835181478",
+        "sellerClass": "official",
         "price": 129.99,
-        "saleprice": 109.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314985996934103841889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4%2Fp%2FN82E16835181478%3Fitem%3DN82E16835181478",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-478-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.090Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -1480,14 +1510,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KER9641",
-        "price": 110.99,
-        "saleprice": null,
+        "sku": "445834278197751878776852",
+        "itemNumber": "9SIA2W0KER9641",
+        "sellerClass": "marketplace",
+        "price": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834278197751878776852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00080%3Fitem%3D9SIA2W0KER9641",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25040809FH7I08.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.657Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -1626,14 +1657,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBVHXKCK2083",
+        "sku": "445837869230979864655309",
+        "itemNumber": "9SIBVHXKCK2083",
+        "sellerClass": "marketplace",
         "price": 49.9,
-        "saleprice": 47.9,
+        "saleprice": 46.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837869230979864655309&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M3%3Fitem%3D9SIBVHXKCK2083",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2412020GA34X56.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.085Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -1771,15 +1804,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95173",
-        "price": 109.39,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312285541967999062349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-00324%3Fitem%3D9SIBZT7KJ95173",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS230413152MJ7CD.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 109,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:53.959Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -1827,15 +1861,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835181474",
-        "price": 109.99,
-        "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834866614674005417524&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4-black%2Fp%2FN82E16835181474%3Fitem%3DN82E16835181474",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-474-01.png",
+        "sku": "445839219722962354274099",
+        "itemNumber": "N82E16835181473",
         "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 89.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839219722962354274099&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-276-mm-intel-lga-1851-1700-amd-am5-am4-black%2Fp%2FN82E16835181473%3Fitem%3DN82E16835181473",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-473-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.087Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7058823529411765
       }
     },
     "discount": 18,
@@ -1985,14 +2020,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBWC8KCY3824",
+        "sku": "4458313224118965145824094",
+        "itemNumber": "9SIBWC8KCY3824",
+        "sellerClass": "marketplace",
         "price": 279.99,
-        "saleprice": null,
+        "saleprice": 249.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313224118965145824094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-white%2Fp%2F2YM-00BE-00014%3Fitem%3D9SIBWC8KCY3824",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2502260LFT258B.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.489Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -2049,14 +2086,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA2W0KHX4772",
-        "price": 108.99,
-        "saleprice": null,
+        "sku": "445839900506180629681426",
+        "itemNumber": "9SIA2W0KHX4772",
+        "sellerClass": "marketplace",
+        "price": 85.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839900506180629681426&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00086%3Fitem%3D9SIA2W0KHX4772",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2507231EIBJP3E.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.757Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -2082,7 +2120,8 @@ export default [
     "height": 52,
     "cfm": 240,
     "radiator": 420,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "ACFRE00181A"
   },
   {
     "id": 80042,
@@ -2285,15 +2324,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95178",
-        "price": 80.17,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831906428592930525727&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s%2Fp%2FN82E16835608067%3Fitem%3D9SIBZT7KJ95178",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-067-V02.jpg",
+        "sku": "445832123839912792104701",
+        "itemNumber": "9SIAADY44C5770",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 69.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832123839912792104701&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s%2Fp%2FN82E16835608067%3Fitem%3D9SIAADY44C5770",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-067-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.544Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -2313,7 +2353,8 @@ export default [
     "value": 13,
     "bench": 42,
     "fanSize": 92,
-    "cfm": 35
+    "cfm": 35,
+    "mpn": "NH-U9S"
   },
   {
     "id": 80047,
@@ -2432,7 +2473,10 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "MLW-D36M-A18PZ-R1",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80049,
@@ -2504,15 +2548,17 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIBVHXK987012",
+        "sku": "4458313030306394114655881",
+        "itemNumber": "9SIBVHXK987012",
+        "sellerClass": "marketplace",
         "price": 69.9,
         "saleprice": 65.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.085Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -2533,7 +2579,8 @@ export default [
     "value": 67,
     "bench": 65,
     "radSize": "120",
-    "cfm": 132
+    "cfm": 132,
+    "mpn": "814256015585"
   },
   {
     "id": 80051,
@@ -2563,14 +2610,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835146164",
+        "sku": "445833576459522483564104",
+        "itemNumber": "N82E16835146164",
+        "sellerClass": "official",
         "price": 299.99,
-        "saleprice": 279.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833576459522483564104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-360-series-radiator-size-402-mm%2Fp%2FN82E16835146164%3Fitem%3DN82E16835146164",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-164-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.031Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -2676,15 +2724,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "2YM-00BE-00013",
+        "sku": "445836844311812594380634",
+        "itemNumber": "2YM-00BE-00013",
+        "sellerClass": "official",
         "price": 279.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836844311812594380634&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-black%2Fp%2F2YM-00BE-00013%3Fitem%3D2YM-00BE-00013",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2502260LFE9Z3F.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.94
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:31.262Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -2709,7 +2758,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "L-P360L-AM3M-G0K"
   },
   {
     "id": 80054,
@@ -2734,15 +2784,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUK9W6291",
-        "price": 90,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317406220954920678728&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2F13C-0005-00340%3Fitem%3D9SIAZTUK9W6291",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KKSBQF7.jpg",
+        "sku": "4458314730255188469084924",
+        "itemNumber": "9SIA4REK7M3121",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 77.39,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314730255188469084924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2F13C-0005-00340%3Fitem%3D9SIA4REK7M3121",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KKSBQF7.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.447Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -3081,14 +3132,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95184",
-        "price": 78.5,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313430090345375142411&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIBZT7KJ95184",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-071-V02.jpg",
+        "sku": "4458313180727252948906460",
+        "itemNumber": "9SIA4REJY32632",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 64,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313180727252948906460&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIA4REJY32632",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-071-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.355Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3135,14 +3187,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95186",
-        "price": 85.17,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835685075813372637776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIBZT7KJ95186",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13C-0005-00315-01.jpg",
+        "sku": "445831190354103940616445",
+        "itemNumber": "9SIAADYCB45974",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 74.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831190354103940616445&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIAADYCB45974",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13C-0005-00315-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.672Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3242,14 +3295,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95172",
-        "price": 74.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831824327190638726690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12s-70mm-low-profile-cpu-cooler-with-quiet-120mm-pwm-fan%2Fp%2F13C-0005-00144%3Fitem%3D9SIBZT7KJ95172",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131504710147913939dt3BoXTedP.jpg",
+        "sku": "4458317300829246140972240",
+        "itemNumber": "9SIA4REJVG0783",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 73.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317300829246140972240&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12s-70mm-low-profile-cpu-cooler-with-quiet-120mm-pwm-fan%2Fp%2F13C-0005-00144%3Fitem%3D9SIA4REJVG0783",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131504710147913939dt3BoXTedP.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.304Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3296,14 +3350,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYCB28573",
+        "sku": "445837296121962617536774",
+        "itemNumber": "9SIAADYCB28573",
+        "sellerClass": "marketplace",
         "price": 109.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837296121962617536774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15s-chromax-black%2Fp%2F13C-0005-002Y6%3Fitem%3D9SIAADYCB28573",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2409040DH15TEA.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.672Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3352,14 +3407,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBTVCKJC3326",
-        "price": 120.39,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317700236370743661937&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr4-sp3-premium-grade-140mm-cpu-cooler-for-amd-tr4-sp3%2Fp%2F13C-0005-00140%3Fitem%3D9SIBTVCKJC3326",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131462424114421525y4HbR1MBia.jpg",
+        "sku": "4458310744979847037410265",
+        "itemNumber": "9SIA4REJWR2239",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 95.59,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310744979847037410265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr4-sp3-premium-grade-140mm-cpu-cooler-for-amd-tr4-sp3%2Fp%2F13C-0005-00140%3Fitem%3D9SIA4REJWR2239",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131462424114421525y4HbR1MBia.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.330Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3383,7 +3439,8 @@ export default [
     "radSize": "140",
     "fanSize": 140,
     "cfm": 75,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "mpn": "NH-U14S TR4-SP3"
   },
   {
     "id": 80067,
@@ -3516,15 +3573,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYH270112",
-        "price": 99.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315734960284684089781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIAADYH270112",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404YHWSh.jpg",
+        "sku": "4458313900724359036828864",
+        "itemNumber": "9SIA4REJUU9802",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 101.85,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313900724359036828864&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIA4REJUU9802",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404YHWSh.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.254Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -3544,7 +3602,9 @@ export default [
     "value": 10,
     "bench": 52,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "upc": "00841501100338",
+    "mpn": "NH-D12L"
   },
   {
     "id": 80070,
@@ -3611,14 +3671,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYKB59138",
+        "sku": "445838524361210619545839",
+        "itemNumber": "9SIAADYKB59138",
+        "sellerClass": "marketplace",
         "price": 159.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838524361210619545839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-lbc-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00357%3Fitem%3D9SIAADYKB59138",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J9FJXFA.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.773Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -3736,7 +3797,9 @@ export default [
     "cfm": 142,
     "mpn": "RL-KR24E-W2",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80074,
@@ -4038,14 +4101,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835146163",
+        "sku": "44583997718367946837839",
+        "itemNumber": "N82E16835146163",
+        "sellerClass": "official",
         "price": 279.99,
         "saleprice": 259.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583997718367946837839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-radiator-size-402-mm-intel-socket-lga-1851-1700-1200-115x-intel-core-i9-core-i7-core-i5-core-i3-pentium-celeron-amd-socket-am5-am4-amd-ryzen-9-ryzen-7-ryzen-5-ryzen-3%2Fp%2FN82E16835146163%3Fitem%3DN82E16835146163",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-163-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.031Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -4101,6 +4166,19 @@ export default [
         "price": 397,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11175349&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-rgb%2FJJGGLQQKYQ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839322218313316671549",
+        "itemNumber": "N82E16835101119",
+        "sellerClass": "official",
+        "price": 399.99,
+        "saleprice": 339.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839322218313316671549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-90rc0131-m0aay0-amd-socket-am4-amd-socket-am5-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835101119%3Fitem%3DN82E16835101119",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-119-08.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.738Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 11,
@@ -4151,14 +4229,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYK916921",
+        "sku": "4458317307517172578121862",
+        "itemNumber": "9SIAADYK916921",
+        "sellerClass": "marketplace",
         "price": 109.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.765Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -4206,14 +4285,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYK958942",
+        "sku": "4458311406344733952731852",
+        "itemNumber": "9SIAADYK958942",
+        "sellerClass": "marketplace",
         "price": 79.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311406344733952731852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00349%3Fitem%3D9SIAADYK958942",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2404090I2DYN41.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.765Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -4600,14 +4680,16 @@ export default [
         "matchScore": 1
       },
       "newegg": {
-        "sku": "N82E16835146175",
+        "sku": "4458315448780282110771242",
+        "itemNumber": "N82E16835146175",
+        "sellerClass": "official",
         "price": 99.99,
         "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315448780282110771242&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146175%3Fitem%3DN82E16835146175",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XRPZBC.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.041Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -4660,14 +4742,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAFSTKK73806",
+        "sku": "44583186795642064681258",
+        "itemNumber": "9SIAFSTKK73806",
+        "sellerClass": "marketplace",
         "price": 159.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583186795642064681258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00055%3Fitem%3D9SIAFSTKK73806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LAK4Q13.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:31.352Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -4691,7 +4774,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "HS2LCDS36NB"
   },
   {
     "id": 80092,
@@ -5165,15 +5249,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA9ZHKY47697",
+        "sku": "445832451917023969528274",
+        "itemNumber": "9SIA9ZHKY47697",
+        "sellerClass": "marketplace",
         "price": 43.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832451917023969528274&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fscythe-magoroku-w-120-x-d-120-x-h-26-mm%2Fp%2F13C-0004-000A4%3Fitem%3D9SIA9ZHKY47697",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9ZHS26060217K9NL77.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.86
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:51.765Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -5194,7 +5279,10 @@ export default [
     "value": 46,
     "bench": 72,
     "fanSize": 140,
-    "cfm": 110
+    "cfm": 110,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "SCKTT-3000"
   },
   {
     "id": 80102,
@@ -5219,14 +5307,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBTVCKNG9339",
-        "price": 95.59,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835232714880303475237&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2FN82E16835608068%3Fitem%3D9SIBTVCKNG9339",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-068-11.jpg",
+        "sku": "4458315319573514675949780",
+        "itemNumber": "9SIA4REJY57876",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 80.51,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315319573514675949780&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2FN82E16835608068%3Fitem%3D9SIA4REJY57876",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-068-11.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.357Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5248,7 +5337,8 @@ export default [
     "value": 7,
     "bench": 46,
     "fanSize": 92,
-    "cfm": 35
+    "cfm": 35,
+    "mpn": "NH-D9L"
   },
   {
     "id": 80103,
@@ -5323,14 +5413,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUKBJ3429",
-        "price": 69.1,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316650059415172071763&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIAZTUKBJ3429",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
+        "sku": "4458313459757043342972855",
+        "itemNumber": "9SIA4REJTB6664",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 51.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313459757043342972855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIA4REJTB6664",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.175Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5393,14 +5484,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA6ZPKVY7892",
+        "sku": "445839811036610137058647",
+        "itemNumber": "9SIA6ZPKVY7892",
+        "sellerClass": "marketplace",
         "price": 173.76,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811036610137058647&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIA6ZPKVY7892",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:49.312Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5543,14 +5635,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBWC8KD89078",
+        "sku": "445834003634045447873973",
+        "itemNumber": "9SIBWC8KD89078",
+        "sellerClass": "marketplace",
         "price": 359.99,
         "saleprice": 299.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834003634045447873973&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-black%2Fp%2F2YM-00BE-00015%3Fitem%3D9SIBWC8KD89078",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00015-15.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.489Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5656,14 +5750,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIBWC8KD89766",
+        "sku": "4458312006717891136329671",
+        "itemNumber": "9SIBWC8KD89766",
+        "sellerClass": "marketplace",
         "price": 359.99,
         "saleprice": 299.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312006717891136329671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2F2YM-00BE-00016%3Fitem%3D9SIBWC8KD89766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00016-12.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.490Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -5802,7 +5898,9 @@ export default [
     "cfm": 120,
     "mpn": "CW-9061031-WW",
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80113,
@@ -5917,15 +6015,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAK91KBF4032",
-        "price": 89.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316113190202006462033&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-liquid-cooling-system-intel-lga115x-1200-1700-20xx-amd-am3-am4-am5-white%2Fp%2FN82E16835988003%3Fitem%3D9SIAK91KBF4032",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-003-01.png",
+        "sku": "445835821316816746160185",
+        "itemNumber": "9SIAK91KBF4034",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.92
+        "price": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821316816746160185&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-liquid-cooling-system-intel-lga115x-1200-1700-20xx-amd-am3-am4-am5-black%2Fp%2FN82E16835988002%3Fitem%3D9SIAK91KBF4034",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-002-11.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:35.886Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -5949,7 +6048,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "upc": "04710562740820",
+    "mpn": "HyperFlow ARGB 240"
   },
   {
     "id": 80116,
@@ -6148,14 +6249,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYK5N2732",
-        "price": 84.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838114484701032267935&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIAADYK5N2732",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
+        "sku": "445834488846220905076850",
+        "itemNumber": "9SIA4REK842810",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 83.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834488846220905076850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIA4REK842810",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.450Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -6340,15 +6442,16 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAADYK4R6843",
-        "price": 139.95,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832744288922176863024&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr5-sp6%2Fp%2F13C-0005-00336%3Fitem%3D9SIAADYK4R6843",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2309120QL7X724.jpg",
+        "sku": "445839880189620757417103",
+        "itemNumber": "9SIA4REK2E6283",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "price": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839880189620757417103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u14s-tr5-sp6%2Fp%2F13C-0005-00336%3Fitem%3D9SIA4REK2E6283",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2309120QL7X724.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:41.411Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -6369,7 +6472,9 @@ export default [
     "bench": 55,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75
+    "cfm": 75,
+    "upc": "00841501100451",
+    "mpn": "NH-U14S TR5-SP6"
   },
   {
     "id": 80125,
@@ -6392,6 +6497,18 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445836975710492445276363",
+        "itemNumber": "9SIAHCTKKH8352",
+        "sellerClass": "marketplace",
+        "price": 109.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836975710492445276363&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-aio-gt-radiator-size-394-mm-intel-lga1851-1700-1200-115x-amd-am5-am4-black%2Fp%2F2YM-00BC-00017%3Fitem%3D9SIAHCTKKH8352",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2512300DVVW138.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:34.903Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7142857142857143
       }
     },
     "additionalImages": [
@@ -6415,7 +6532,11 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "06940526114444",
+    "mpn": "DT360-WHAWXY-GL"
   },
   {
     "id": 80126,
@@ -6443,6 +6564,19 @@ export default [
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12317023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-ryujin-iii-360-argb-extreme-cooling-fan-radiator-water-block-white%2FJJGGLQFJ8K&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834101491917943558179",
+        "itemNumber": "N82E16835101120",
+        "sellerClass": "official",
+        "price": 399.99,
+        "saleprice": 339.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834101491917943558179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-amd-socket-am4-amd-socket-am5-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2FN82E16835101120%3Fitem%3DN82E16835101120",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-120-33.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.738Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -6467,7 +6601,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "RYUJIN III 360 ARGB EXTREME WHT"
   },
   {
     "id": 80127,
@@ -6482,13 +6617,15 @@ export default [
     "reviews": 26,
     "deals": {
       "newegg": {
-        "sku": "9SIA6ZPKFZ0957",
-        "price": 89.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835214060401563366164&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-612-apex-lga-1831-1700-1200-sockets-am5-am4-sockets%2Fp%2FN82E16835103377%3Fitem%3D9SIA6ZPKFZ0957",
+        "sku": "4458315334530916853826230",
+        "itemNumber": "N82E16835103377",
+        "sellerClass": "official",
+        "price": 92.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315334530916853826230&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-612-apex-lga-1831-1700-1200-sockets-am5-am4-sockets%2Fp%2FN82E16835103377%3Fitem%3DN82E16835103377",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-377-17.png",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-28",
-        "matchMethod": "name",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.781Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -6537,14 +6674,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "13C-0133-00001",
+        "sku": "445839468406431217367301",
+        "itemNumber": "13C-0133-00001",
+        "sellerClass": "official",
         "price": 129.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839468406431217367301&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-h-t620n-dm2m-g0k-turris-120mm-intel-lga1851-1700-amd-am5-am4%2Fp%2F13C-0133-00001%3Fitem%3D13C-0133-00001",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S26031604RQQLA1.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:30.065Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -6697,6 +6835,18 @@ export default [
         "price": 26.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675642&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-cpu-air-cooler-black%2FJ3K4GJSYZY&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445832845816020324099725",
+        "itemNumber": "9SIA4P0KTH1388",
+        "sellerClass": "marketplace",
+        "price": 29,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832845816020324099725&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835103385%3Fitem%3D9SIA4P0KTH1388",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-385-11.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:40.654Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 12,
@@ -6719,7 +6869,9 @@ export default [
     "radSize": "120",
     "fanSize": 120,
     "cfm": 56,
-    "mpn": "MAY-T2HP-217PK-R1"
+    "mpn": "MAY-T2HP-217PK-R1",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80132,
@@ -6931,14 +7083,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADY44C6096",
+        "sku": "445838187596114683334860",
+        "itemNumber": "9SIAADY44C6096",
+        "sellerClass": "marketplace",
         "price": 99.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838187596114683334860&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15s%2Fp%2FN82E16835608072%3Fitem%3D9SIAADY44C6096",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-072-V02.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.547Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7145,14 +7298,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADY5BC3600",
+        "sku": "4458310117642679278262636",
+        "itemNumber": "9SIAADY5BC3600",
+        "sellerClass": "marketplace",
         "price": 74.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310117642679278262636&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-se-am4%2Fp%2F13C-0005-00112%3Fitem%3D9SIAADY5BC3600",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300OIY6I5B.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.596Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7299,15 +7453,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADY5BC1607",
+        "sku": "4458310074195816874490835",
+        "itemNumber": "9SIAADY5BC1607",
+        "sellerClass": "marketplace",
         "price": 129.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310074195816874490835&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-se-am4%2Fp%2F13C-0005-00111%3Fitem%3D9SIAADY5BC1607",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131315373821117808bUOcz3drmV.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.596Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 15,
@@ -7329,7 +7484,8 @@ export default [
     "value": 13,
     "bench": 87,
     "fanSize": 140,
-    "cfm": 150
+    "cfm": 150,
+    "mpn": "NH-D15 SE-AM4"
   },
   {
     "id": 80144,
@@ -7805,14 +7961,15 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAADYBGR5006",
+        "sku": "445835618195475224562414",
+        "itemNumber": "9SIAADYBGR5006",
+        "sellerClass": "marketplace",
         "price": 74.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835618195475224562414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12-ghost-s1-edition%2Fp%2F13C-0005-001K0%3Fitem%3D9SIAADYBGR5006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200622DKf1i.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.670Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -8334,7 +8491,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "upc": "00840353046498",
+    "mpn": "HSLCD36SB"
   },
   {
     "id": 80164,
@@ -8463,6 +8622,19 @@ export default [
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630946.p%3FskuId%3D6630946",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838505144744393167228",
+        "itemNumber": "N82E16835146167",
+        "sellerClass": "official",
+        "price": 179.99,
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838505144744393167228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-radiator-size-281-x-120-x-27-mm-intel-socket-lga-1851-1700-1200-115x-amd-socket-am5-am4-black%2Fp%2FN82E16835146167%3Fitem%3DN82E16835146167",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-167-03.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.033Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 33,
@@ -8665,6 +8837,18 @@ export default [
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11024604&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-mlx-d36m-a25pz-r1-360-atmos-high-performance-close-loop-aio-liquid-cooler-black%2FJ3K4GJPXQZ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445834289082341125763715",
+        "itemNumber": "9SIA2W0K2X0146",
+        "sellerClass": "marketplace",
+        "price": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834289082341125763715&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-liquid-cooling-system%2Fp%2FN82E16835103362%3Fitem%3D9SIA2W0K2X0146",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-362-10.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.136Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 43,
@@ -8691,7 +8875,9 @@ export default [
     "cfm": 180,
     "mpn": "MLX-D36M-A25PZ-R1",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80171,
@@ -8756,6 +8942,18 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445837485402738079440345",
+        "itemNumber": "N82E16835103376",
+        "sellerClass": "official",
+        "price": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837485402738079440345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-intel-lga-1851-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103376%3Fitem%3DN82E16835103376",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-376-12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.781Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 21,
@@ -8781,7 +8979,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "MLX-D36M-A24PK-R1"
   },
   {
     "id": 80173,
@@ -8932,15 +9131,17 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "37B-009H-00003",
-        "price": 130.99,
-        "saleprice": 116.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583416016821467543414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00003%3Fitem%3D37B-009H-00003",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25031303HRXVF4.jpg",
+        "sku": "445834161119850086815345",
+        "itemNumber": "37B-009H-00004",
         "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 99.99,
+        "saleprice": 84.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834161119850086815345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00004%3Fitem%3D37B-009H-00004",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS241128tlAAM.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:31.315Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -9088,7 +9289,10 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "ROG STRIX LC II 360"
   },
   {
     "id": 80178,
@@ -9296,6 +9500,18 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12366841&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-620s-dual-tower-sync-120mm-fan-6-heat-pipes-amd-intel-compatible-rr-d6na-17pa-r1-argb%2FJ3K4GJPJSJ&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458313170495495992688077",
+        "itemNumber": "N82E16835103358",
+        "sellerClass": "official",
+        "price": 63.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313170495495992688077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-620s-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103358%3Fitem%3DN82E16835103358",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-358-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.778Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9420,7 +9636,10 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "mpn": "MLX-D36M-A25SZ-V1"
   },
   {
     "id": 80185,
@@ -9578,14 +9797,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYKB59099",
+        "sku": "445834871204183147131830",
+        "itemNumber": "9SIAADYKB59099",
+        "sellerClass": "marketplace",
         "price": 159.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.773Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -10070,15 +10290,17 @@ export default [
     "reviews": 76,
     "deals": {
       "newegg": {
-        "sku": "2YM-00BJ-00003",
+        "sku": "445837151575107503741238",
+        "itemNumber": "2YM-00BJ-00003",
+        "sellerClass": "official",
         "price": 99.99,
-        "saleprice": 50,
+        "saleprice": 59.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837151575107503741238&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsudokoo-water-nexaura240-radiator-size-282-120-27-mm-cpu-black%2Fp%2F2YM-00BJ-00003%3Fitem%3D2YM-00BJ-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YXZPL5E.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "sellerClass": "other"
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:31.279Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -10104,7 +10326,8 @@ export default [
     "cfm": 120,
     "radiator": 240,
     "fanCount": 2,
-    "amazonRemovedAnomaly": "2026-06-28"
+    "amazonRemovedAnomaly": "2026-06-28",
+    "mpn": "NEXAURA 360"
   },
   {
     "id": 80200,
@@ -10173,15 +10396,16 @@ export default [
         "priceUnconfirmedAt": "2026-08-16"
       },
       "newegg": {
-        "sku": "9SIBVHXKD66176",
-        "price": 59.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318353536696411896464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M8%3Fitem%3D9SIBVHXKD66176",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS25011004VUZLA7.jpg",
+        "sku": "445835591941163412973055",
+        "itemNumber": "9SIBVHXKD66177",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.85
+        "price": 49.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835591941163412973055&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M9%3Fitem%3D9SIBVHXKD66177",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2502140L9KZ6F0.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.092Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8461538461538461
       }
     },
     "discount": 5,
@@ -10202,7 +10426,9 @@ export default [
     "bench": 61,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "upc": "00814256019279",
+    "mpn": "814256019279"
   },
   {
     "id": 80202,
@@ -10235,6 +10461,18 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
+        "matchScore": 1
+      },
+      "newegg": {
+        "sku": "4458315165269356823080327",
+        "itemNumber": "9SIC35VM210385",
+        "sellerClass": "marketplace",
+        "price": 64.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315165269356823080327&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835988009%3Fitem%3D9SIC35VM210385",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-009-09.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:31.374Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -10793,7 +11031,11 @@ export default [
     "value": 100,
     "bench": 37,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "upc": "06940526113638",
+    "mpn": "RZ820-BKNWNX-GL"
   },
   {
     "id": 80215,
@@ -10925,14 +11167,15 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "9SIAD6HKKM2746",
-        "price": 224.21,
-        "saleprice": null,
+        "sku": "445831539943860035097788",
+        "itemNumber": "9SIAD6HKKM2746",
+        "sellerClass": "marketplace",
+        "price": 230.03,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713e0EMY.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:18.835Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11028,14 +11271,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835101099",
+        "sku": "4458312571499905431791121",
+        "itemNumber": "N82E16835101099",
+        "sellerClass": "official",
         "price": 219.99,
-        "saleprice": 179.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312571499905431791121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-coolin-rog-ryujin-iii-radiator-size-279-mm-intel-lga-1700-1200-115x-amd-am5-am4-white%2Fp%2FN82E16835101099%3Fitem%3DN82E16835101099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-099-08.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.733Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11060,7 +11304,8 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "mpn": "ROG RYUJIN III 240 ARGB"
   },
   {
     "id": 80220,
@@ -11393,14 +11638,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA2W0KPW8659",
+        "sku": "445832150892608202230575",
+        "itemNumber": "9SIA2W0KPW8659",
+        "sellerClass": "marketplace",
         "price": 43.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832150892608202230575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA2W0KPW8659",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.915Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11422,7 +11668,8 @@ export default [
     "value": 22,
     "bench": 31,
     "cfm": 65,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "mpn": "RR-H410-25PK-R1"
   },
   {
     "id": 80228,
@@ -11450,6 +11697,18 @@ export default [
         "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11211968&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fantec-skeleton-360-argb-cpu-cooler-360mm-rad-3x120mm-argb-fans-intel-lga-amd-am4-am5-black%2FJXVWSK3HJR&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445833654735771742308797",
+        "itemNumber": "N82E16835209123",
+        "sellerClass": "official",
+        "price": 44.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833654735771742308797&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fantec-aio-luna-radiator-size-397-mm-intel-lga-115x-1200-1366-1700-1851-20xx-amd-am3-am4-am5-argb%2Fp%2FN82E16835209123%3Fitem%3DN82E16835209123",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-209-123-03.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.122Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7272727272727273
       }
     },
     "additionalImages": [
@@ -11543,15 +11802,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835846071",
+        "sku": "4458315757273679685080878",
+        "itemNumber": "N82E16835846071",
+        "sellerClass": "official",
         "price": 99.99,
         "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315757273679685080878&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-240-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835846071%3Fitem%3DN82E16835846071",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-071-21.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.79
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.434Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7894736842105263
       }
     },
     "discount": 30,
@@ -11576,7 +11837,8 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "mpn": "MAG CORELIQUID A15 240"
   },
   {
     "id": 80231,
@@ -11747,6 +12009,18 @@ export default [
         "price": 248.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11074774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flian-li-galahad-ii-lcd-sl-inf-360-liquid-cooler-intel-lga-1851-1700-1200-amd-am5-am4-compatible-ga2alcd36inw-white%2FJ39TC2K4LX&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316877999901312192229",
+        "itemNumber": "9SIA0ZXK2T0291",
+        "sellerClass": "marketplace",
+        "price": 228.96,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316877999901312192229&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-amd-socket-am4-am5-intel-lga-115x-lga-1200-intel-lga-1700-white%2Fp%2FN82E16835353028%3Fitem%3D9SIA0ZXK2T0291",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS231005qLvj1.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:31.845Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 15,
@@ -12241,15 +12515,17 @@ export default [
         "priceUnconfirmedAt": "2026-08-16"
       },
       "newegg": {
-        "sku": "9SIBVHXKFV5661",
+        "sku": "44583253514936075810061",
+        "itemNumber": "9SIBVHXKFV5661",
+        "sellerClass": "marketplace",
         "price": 59.9,
         "saleprice": 55.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583253514936075810061&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermalright-pa120-d-argb-w%2Fp%2F13C-000Y-000N5%3Fitem%3D9SIBVHXKFV5661",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXD2505300CN8RL58.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.77
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:05.110Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7692307692307693
       }
     },
     "additionalImages": [
@@ -12270,7 +12546,9 @@ export default [
     "radSize": "120",
     "fanSize": 140,
     "cfm": 132,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "upc": "00814256019385",
+    "mpn": "PA120-D-ARGB-W"
   },
   {
     "id": 80246,
@@ -12366,7 +12644,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "ROG Ryuo IV SLC 360 ARGB White"
   },
   {
     "id": 80248,
@@ -12394,6 +12673,18 @@ export default [
         "price": 182.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11471948&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-atmos-ii-360-lcd-aio-dual-pump-400mm-tubing-argb-pwm-am5-lga-1851-black%2FJ3K4GJSSX8&intsrc=APIG_28060",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445839474182876879093444",
+        "itemNumber": "N82E16835103383",
+        "sellerClass": "official",
+        "price": 191.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839474182876879093444&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-277-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2FN82E16835103383%3Fitem%3DN82E16835103383",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-383-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.790Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "discount": 10,
@@ -12618,15 +12909,16 @@ export default [
     "reviews": 14,
     "deals": {
       "newegg": {
-        "sku": "9SIC35VKPJ7123",
-        "price": 34.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837910481277643344548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00UE-00005%3Fitem%3D9SIC35VKPJ7123",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C35VD2512160CSUIY87.jpg",
+        "sku": "445835889887673873066915",
+        "itemNumber": "9SIC35VKPJ7124",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.88
+        "price": 33.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835889887673873066915&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00UE-00006%3Fitem%3D9SIC35VKPJ7124",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C35VD2512160CSOEN96.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:31.363Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -12645,7 +12937,9 @@ export default [
     "rgb": true,
     "value": 82,
     "bench": 39,
-    "cfm": 65
+    "cfm": 65,
+    "upc": "04710562740837",
+    "mpn": "NX600 ARGB W"
   },
   {
     "id": 80254,
@@ -12770,6 +13064,19 @@ export default [
         "price": 74.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2824&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A12-240&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445836195230420002548038",
+        "itemNumber": "N82E16835846077",
+        "sellerClass": "official",
+        "price": 74.99,
+        "saleprice": 59.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836195230420002548038&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835846077%3Fitem%3DN82E16835846077",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-077-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.437Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -12929,15 +13236,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADYJJH2774",
+        "sku": "4458317486102861121681615",
+        "itemNumber": "9SIAADYJJH2774",
+        "sellerClass": "marketplace",
         "price": 149.95,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317486102861121681615&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-dx-4677%2Fp%2F13C-0005-00318%3Fitem%3D9SIAADYJJH2774",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2302020JHK5Q3D.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.736Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -12958,7 +13266,9 @@ export default [
     "bench": 53,
     "radSize": "120",
     "fanSize": 120,
-    "cfm": 60
+    "cfm": 60,
+    "upc": "00841501100383",
+    "mpn": "NH-U12S DX-4677"
   },
   {
     "id": 80260,
@@ -13224,7 +13534,9 @@ export default [
     "mpn": "GA2T36B",
     "radiator": 360,
     "fanCount": 3,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80266,
@@ -13377,14 +13689,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EF5VJ0374",
+        "sku": "4458316016139715996759116",
+        "itemNumber": "9SIA8EF5VJ0374",
+        "sellerClass": "marketplace",
         "price": 29.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316016139715996759116&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-contac-silent-12-cl-p039-al12bl-a%2Fp%2FN82E16835106372%3Fitem%3D9SIA8EF5VJ0374",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-372-Z01.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.710Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13422,14 +13735,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106666",
+        "sku": "4458311130858640254898335",
+        "itemNumber": "N82E16835106666",
+        "sellerClass": "official",
         "price": 59.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311130858640254898335&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-p075-al12bl-a%2Fp%2FN82E16835106666%3Fitem%3DN82E16835106666",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-666-V01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.820Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13466,14 +13780,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIA8EFJ316320",
+        "sku": "445832492988320173252614",
+        "itemNumber": "9SIA8EFJ316320",
+        "sellerClass": "marketplace",
         "price": 19.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832492988320173252614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-p106-al09wt-a%2Fp%2FN82E16835106699%3Fitem%3D9SIA8EFJ316320",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-699-V01.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.827Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13490,7 +13805,9 @@ export default [
     "tdp_rating": 140,
     "sockets": "AM5,AM4,LGA1700,LGA1200",
     "value": 96,
-    "bench": 15
+    "bench": 15,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80272,
@@ -13579,6 +13896,18 @@ export default [
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510205.p%3FskuId%3D6510205",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838045254263919295564",
+        "itemNumber": "9SIA8EFK658001",
+        "sellerClass": "marketplace",
+        "price": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838045254263919295564&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system%2Fp%2FN82E16835106676%3Fitem%3D9SIA8EFK658001",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-676-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:45.901Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -13618,14 +13947,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIC7PTM0T0256",
-        "price": 172.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833430888907286819809&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-315-mm-intel-socket-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-black%2Fp%2FN82E16835146119%3Fitem%3D9SIC7PTM0T0256",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-119-10.jpg",
+        "sku": "4458314304829086519122432",
+        "itemNumber": "9SIC6EGM2W8973",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 184.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314304829086519122432&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-315-mm-intel-socket-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-black%2Fp%2FN82E16835146119%3Fitem%3D9SIC6EGM2W8973",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-119-10.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:37.576Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13823,14 +14153,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106752",
+        "sku": "445832564914943307493488",
+        "itemNumber": "N82E16835106752",
+        "sellerClass": "official",
         "price": 144.99,
         "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832564914943307493488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3DN82E16835106752",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A96G0F.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.869Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13871,14 +14203,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106755",
+        "sku": "445832297629522038067575",
+        "itemNumber": "N82E16835106755",
+        "sellerClass": "official",
         "price": 199.99,
-        "saleprice": 179.99,
+        "saleprice": 159.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832297629522038067575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th360-v2-ultra-argb%2Fp%2FN82E16835106755%3Fitem%3DN82E16835106755",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A9M094.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.869Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13919,14 +14253,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106753",
+        "sku": "4458310427561789377507103",
+        "itemNumber": "N82E16835106753",
+        "sellerClass": "official",
         "price": 164.99,
-        "saleprice": 149.99,
+        "saleprice": 134.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310427561789377507103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-ultra-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106753%3Fitem%3DN82E16835106753",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A98C83.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.869Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -13967,14 +14303,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106762",
+        "sku": "4458316042915044138034023",
+        "itemNumber": "N82E16835106762",
+        "sellerClass": "official",
         "price": 129.99,
-        "saleprice": 99.99,
+        "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316042915044138034023&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th360-v2-argb-snow%2Fp%2FN82E16835106762%3Fitem%3DN82E16835106762",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2404150CJ4GM4E.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.879Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14013,6 +14351,19 @@ export default [
         "price": 74.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569212.p%3FskuId%3D6569212",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458314374061741250609711",
+        "itemNumber": "N82E16835106749",
+        "sellerClass": "official",
+        "price": 106.99,
+        "saleprice": 104.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314374061741250609711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106749%3Fitem%3DN82E16835106749",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A97CCA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.869Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14166,15 +14517,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "0EZ-00MD-00003",
+        "sku": "4458316520423169428724710",
+        "itemNumber": "0EZ-00MD-00003",
+        "sellerClass": "official",
         "price": 199.99,
-        "saleprice": 149.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316520423169428724710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-radiator-size-396-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851-green%2Fp%2F0EZ-00MD-00003%3Fitem%3D0EZ-00MD-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPJ7D6.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "sellerClass": "other"
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:29.484Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14214,14 +14566,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181477",
+        "sku": "44583298304837687976192",
+        "itemNumber": "N82E16835181477",
+        "sellerClass": "official",
         "price": 99.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583298304837687976192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-276-mm-intel-lga-1851-1700-amd-am5-am4%2Fp%2FN82E16835181477%3Fitem%3DN82E16835181477",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-477-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.089Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14336,15 +14689,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "0EZ-00MD-00004",
-        "price": 199.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315654209091533159137&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-radiator-size-396-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851-green%2Fp%2F0EZ-00MD-00004%3Fitem%3D0EZ-00MD-00004",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPLP40.jpg",
-        "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "sellerClass": "other"
+        "sku": "445836226817927527122057",
+        "itemNumber": "0EZ-00MD-00002",
+        "sellerClass": "official",
+        "price": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836226817927527122057&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0EZ-00MD-00002%3Fitem%3D0EZ-00MD-00002",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPKC08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:29.484Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7692307692307693
       }
     },
     "coolerType": "AIO",
@@ -14401,7 +14755,9 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80294,
@@ -14534,7 +14890,9 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 280,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 80297,
@@ -14557,6 +14915,18 @@ export default [
         "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2309&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I240&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458316466367023259799271",
+        "itemNumber": "9SIAD6HKKM1485",
+        "sellerClass": "marketplace",
+        "price": 177.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316466367023259799271&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-liquid-cooling-system-mag-series-radiator-size-277-x-119-2-x-27mm-intel-lga1150-1151-1155-1156-1200-1700-amd-am5-am4-black%2Fp%2FN82E16835846065%3Fitem%3D9SIAD6HKKM1485",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-065-05.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:16:18.804Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14599,6 +14969,19 @@ export default [
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2304&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I360&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445838845169899382605432",
+        "itemNumber": "N82E16835846063",
+        "sellerClass": "official",
+        "price": 149.99,
+        "saleprice": 124.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838845169899382605432&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-liquid-cooling-system-mag-series-radiator-size-394-x-119-2-x-27mm-intel-lga1150-1151-1155-1156-1200-1700-amd-am5-am4-black%2Fp%2FN82E16835846063%3Fitem%3DN82E16835846063",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-063-05.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.423Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14641,6 +15024,19 @@ export default [
         "price": 69.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2407&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-Coreliquid-A13-240&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458376729058588809291",
+        "itemNumber": "N82E16835846067",
+        "sellerClass": "official",
+        "price": 84.99,
+        "saleprice": 69.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458376729058588809291&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-240-mm-intel-socket-lga-1700-1851-amd-socket-am5-am4%2Fp%2FN82E16835846067%3Fitem%3DN82E16835846067",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-067-03.png",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.423Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14683,6 +15079,19 @@ export default [
         "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2465&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A15-360&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458311315133555368667162",
+        "itemNumber": "N82E16835846072",
+        "sellerClass": "official",
+        "price": 119.99,
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311315133555368667162&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-360-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835846072%3Fitem%3DN82E16835846072",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-072-04.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.434Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14807,14 +15216,15 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835181494",
+        "sku": "445834252585428532743544",
+        "itemNumber": "N82E16835181494",
+        "sellerClass": "official",
         "price": 139.99,
-        "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834252585428532743544&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181494%3Fitem%3DN82E16835181494",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-494-02.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.108Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14860,14 +15270,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835846074",
+        "sku": "445831320570467464369778",
+        "itemNumber": "N82E16835846074",
+        "sellerClass": "official",
         "price": 189.99,
         "saleprice": 149.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831320570467464369778&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-coreliquid-p13-series-radiator-size-394-x-119-6-x-27mm-lga-1700-1851-am5-am4-white%2Fp%2FN82E16835846074%3Fitem%3DN82E16835846074",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-074-01.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.437Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14961,14 +15373,16 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "N82E16835106797",
-        "price": 399.99,
-        "saleprice": 369.99,
+        "sku": "445834195546409973268602",
+        "itemNumber": "N82E16835106797",
+        "sellerClass": "official",
+        "price": 402.99,
+        "saleprice": 343.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834195546409973268602&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835106797%3Fitem%3DN82E16835106797",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-797-06.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:49.917Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14989,7 +15403,9 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18"
   },
   {
     "id": 100353,
@@ -15153,15 +15569,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835846069",
+        "sku": "445838783684443768592965",
+        "itemNumber": "N82E16835846069",
+        "sellerClass": "official",
         "price": 109.99,
         "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838783684443768592965&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-360-mm-intel-socket-lga-1700-1851-amd-socket-am5-am4%2Fp%2FN82E16835846069%3Fitem%3DN82E16835846069",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-069-03.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.87
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:50.429Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -15176,7 +15594,9 @@ export default [
       "AM4"
     ],
     "noise": 14.4,
-    "rpm": 5200
+    "rpm": 5200,
+    "upc": "00824142387771",
+    "mpn": "MAG Coreliquid A13 360"
   },
   {
     "id": 100358,
@@ -15590,15 +16010,16 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 118.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.8
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:14:37.894Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -15614,7 +16035,9 @@ export default [
       "LGA1851"
     ],
     "airflow": 110,
-    "rpm": 2500
+    "rpm": 2500,
+    "upc": "00840033403030",
+    "mpn": "ACFRE00189A"
   },
   {
     "id": 100371,
@@ -17333,6 +17756,19 @@ export default [
         "priceSource": "3p",
         "priceSeller": "UTLGAMENG",
         "priceResolvedVia": "paapi"
+      },
+      "newegg": {
+        "sku": "445837247363179794751142",
+        "itemNumber": "9SIC25VKKC3973",
+        "sellerClass": "marketplace",
+        "price": 59.99,
+        "saleprice": 34.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837247363179794751142&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Futlgameng-mc75-8%2Fp%2F13C-012X-00002%3Fitem%3D9SIC25VKKC3973",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C25VD2509100H8BRK55.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:30.411Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -17345,7 +17781,9 @@ export default [
       "LGA1700"
     ],
     "noise": 19,
-    "rpm": 2100
+    "rpm": 2100,
+    "upc": "00795629699611",
+    "mpn": "MC75-8"
   },
   {
     "id": 100945,
@@ -18169,6 +18607,18 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-16"
+      },
+      "newegg": {
+        "sku": "4458315911533018610926929",
+        "itemNumber": "9SIBZW0KFR9535",
+        "sellerClass": "marketplace",
+        "price": 271.6,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315911533018610926929&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-kraken-elite-rgb-315mm-intel-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-blk%2Fp%2FN82E16835146133%3Fitem%3D9SIBZW0KFR9535",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-133-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:17:27.291Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.75
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
@@ -18178,7 +18628,9 @@ export default [
     "radiator": 280,
     "fanCount": 2,
     "noise": 34.48,
-    "rpm": 2800
+    "rpm": 2800,
+    "upc": "00810074842273",
+    "mpn": "RL-KR28E-B1"
   },
   {
     "id": 100976,
@@ -19943,6 +20395,18 @@ export default [
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458314849336187211392578",
+        "itemNumber": "9SIAADYGDF4010",
+        "sellerClass": "marketplace",
+        "price": 49.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314849336187211392578&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIAADYGDF4010",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-18T14:15:54.695Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -19952,7 +20416,9 @@ export default [
     "sockets": [
       "LGA1851",
       "LGA1700"
-    ]
+    ],
+    "upc": "00841501100277",
+    "mpn": "NH-L9i-17xx-"
   },
   {
     "id": 101261,
