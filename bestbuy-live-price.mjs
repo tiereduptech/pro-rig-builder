@@ -72,6 +72,25 @@
  * No run so far has reached the seller matching, the keyword, or the sellers
  * arm — none of them is evidence for or against any of that work.
  *
+ * ── NOTHING VERIFIED THAT THE PRICE WAS FOR THE SAME PRODUCT ─────────────────
+ * Run 32174849780 resolved 19 of 20 rows and produced 9 FIELD-WRONG. It also
+ * returned $899.99 as the live price of a CPU stored at $95.79. Shopping was
+ * asked for a keyword and answered with the FIRST Best Buy row it had; nothing
+ * compared that listing to the product we asked about. A wrong number that
+ * looks like an answer is worse than no number, because it votes.
+ *
+ * Every offer is now scored on how much of the keyword survives in its title,
+ * and anything under MIN_TITLE_OVERLAP is refused with its score said out
+ * loud. The sellers arm is gated the same way: its product_id is chosen by
+ * title too, so an unchecked pick there buys a confident price for the wrong
+ * product.
+ *
+ * WHAT THIS GATE DOES NOT DO: token overlap catches a different product. It
+ * does not catch a different VARIANT of the right one — a 3-pack of fans, a
+ * different capacity, a bundle — because those share nearly every token. That
+ * is why the resolved title is printed next to the price: the gate narrows the
+ * field, and a human settles the rest by reading it.
+ *
  * NOTE ON COST AND LATENCY: both steps are now task_post + poll task_get, so
  * step 1 costs one task per row and waits for it. Step 2 costs another and
  * still runs only when step 1 fails to find a Best Buy row directly.
@@ -171,19 +190,85 @@ export function taskState(json) {
   return code === 20000 ? 'done' : 'pending';
 }
 
+// How much of the keyword has to survive in a listing title before its price
+// is allowed to stand for our product. Sized to catch a different product, not
+// a different variant; the score travels with the answer so it can be tuned
+// against real titles rather than guessed at twice.
+export const MIN_TITLE_OVERLAP = 0.5;
+
 /**
- * A Best Buy offer sitting directly in the products result — the cheap path.
- * Returns { price, seller, productId, shoppingUrl } or null.
+ * Fraction of the keyword's tokens present in a listing title.
+ *
+ * A keyword with no scorable tokens leaves nothing to compare against, so it
+ * scores 1 and the gate stands down rather than refusing every row. Production
+ * always has one — shoppingKeyword() falls back to the catalog name — so that
+ * case is for callers that pass no name at all.
  */
-export function pickBestBuyFromProducts(items) {
+export function titleScore(name, title) {
+  const want = tokens(name || '');
+  return want.size ? overlap(want, tokens(title)) : 1;
+}
+
+// A token carrying both letters and digits: 12100f, 9950x3d, rs120, x870e,
+// gddr7, 8gb. These are the part of a product name that identifies WHICH
+// product it is; everything else is category vocabulary.
+const MODEL_TOKEN = /^(?=[a-z0-9]*[a-z])(?=[a-z0-9]*\d)[a-z0-9]{3,}$/;
+const modelTokens = (s) => new Set([...tokens(s)].filter((t) => MODEL_TOKEN.test(t)));
+
+/**
+ * The model number in the title that says this is a different product.
+ *
+ * Overlap alone cannot do this job. "Intel - Core i3-12100F Desktop Processor"
+ * against "AMD Ryzen 9 9950X3D 16-Core Desktop Processor" scores 0.6 — core,
+ * desktop and processor carry it — while a CORRECT match, "HyperX - Cloud
+ * Stinger 2 Wired Gaming Headset for PS5 and PS4 - White" against "HyperX
+ * Cloud Stinger 2 Gaming Headset - White", scores 0.55. Category vocabulary
+ * swamps the signal in both directions; the model number is the signal.
+ *
+ * The rule is deliberately narrow, because a false reject costs a row and a
+ * false accept costs a verdict: it fires only when the title states a model
+ * number AND states none of ours. A listing that adds a vendor part code to a
+ * name we do match ("DUAL-RTX5060-O8G") keeps its match, and a listing with no
+ * model number at all is left to the overlap floor.
+ */
+export function modelMismatch(name, title) {
+  const want = modelTokens(name);
+  if (!want.size) return null;
+  const have = modelTokens(title);
+  if (!have.size) return null;
+  for (const t of want) if (have.has(t)) return null;
+  return [...have][0];
+}
+
+/** Does this listing's title say it is our product? */
+export function identityCheck(name, title, minOverlap = MIN_TITLE_OVERLAP) {
+  const score = titleScore(name, title);
+  const clash = modelMismatch(name, title);
+  return { score, clash, ok: clash == null && score >= minOverlap };
+}
+
+/**
+ * The best-matching Best Buy offer in the products result — the cheap path.
+ * Returns { price, seller, productId, shoppingUrl, title, score } or null, with
+ * `rejected: true` when the best one Best Buy has does not look like our
+ * product. A rejected offer is still returned so the caller can say WHICH
+ * listing it refused and at what score.
+ */
+export function pickBestBuyFromProducts(items, name, minOverlap = MIN_TITLE_OVERLAP) {
+  let best = null;   // best offer that passes identity
+  let nearest = null; // best-scoring offer overall, for the refusal note
   for (const i of items || []) {
     if (i?.type && !OFFER_TYPES.has(i.type)) continue;
     if (!isBestBuy(i?.seller, i?.shopping_url, i?.url, i?.domain)) continue;
     const price = numberOrNull(i?.price);
     if (price == null) continue;
-    return { price, seller: i.seller ?? null, productId: i.product_id ?? null, shoppingUrl: i.shopping_url ?? null };
+    const { score, clash, ok } = identityCheck(name, i?.title, minOverlap);
+    const offer = { price, seller: i.seller ?? null, productId: i.product_id ?? null, shoppingUrl: i.shopping_url ?? null, title: i.title ?? null, score, clash };
+    if (ok && (!best || score > best.score)) best = offer;
+    if (!nearest || score > nearest.score) nearest = offer;
   }
-  return null;
+  if (best) return best;
+  return nearest ? { ...nearest, rejected: true } : null;
 }
 
 /**
@@ -215,16 +300,23 @@ export function shoppingKeyword(catalogName, apiName) {
  * best overlaps the catalog name, so a keyword that returns accessories for the
  * product does not send step 2 after a case for the monitor we asked about.
  */
-export function pickProductId(items, name) {
-  const want = tokens(name);
+export function bestTitleMatch(items, name, minOverlap = MIN_TITLE_OVERLAP) {
   let best = null;
+  let nearest = null;
   for (const i of items || []) {
     if (i?.type && !OFFER_TYPES.has(i.type)) continue;
     if (!i?.product_id) continue;
-    const score = want.size ? overlap(want, tokens(i.title)) : 0;
-    if (!best || score > best.score) best = { score, productId: String(i.product_id) };
+    const { score, clash, ok } = identityCheck(name, i?.title, minOverlap);
+    const m = { score, clash, ok, productId: String(i.product_id), title: i.title ?? null };
+    if (ok && (!best || score > best.score)) best = m;
+    if (!nearest || score > nearest.score) nearest = m;
   }
-  return best?.productId ?? null;
+  return best ?? nearest;
+}
+
+export function pickProductId(items, name, minOverlap = MIN_TITLE_OVERLAP) {
+  const best = bestTitleMatch(items, name, minOverlap);
+  return best?.ok ? best.productId : null;
 }
 
 /**
@@ -257,6 +349,19 @@ const overlap = (a, b) => {
   for (const t of a) if (b.has(t)) n++;
   return a.size ? n / a.size : 0;
 };
+
+/**
+ * Why a price was refused, in the row note — naming the listing, so a floor
+ * that turns out to be wrong can be seen and moved rather than guessed at.
+ *   not our product (model 9950x3d, title 60%): "AMD Ryzen 9 9950X3D 16-Core…"
+ *   not our product (title 31% < 50%): "Wall Mount Bracket for 65 inch TVs"
+ */
+export function rejectedReason(m) {
+  const pct = (n) => `${Math.round((n ?? 0) * 100)}%`;
+  const why = m?.clash ? `model ${m.clash}, title ${pct(m.score)}` : `title ${pct(m?.score)} < ${pct(MIN_TITLE_OVERLAP)}`;
+  const title = m?.title ? `: "${String(m.title).slice(0, 60)}"` : '';
+  return `not our product (${why})${title}`;
+}
 
 /**
  * Poll task_get until the task finishes, fails, or the attempt budget runs out.
@@ -356,13 +461,19 @@ export async function liveBestBuyPrice(name, deps = {}) {
   const items = itemsOf(products);
   if (!items.length) return { error: emptyProductsReason(products) };
 
-  const direct = pickBestBuyFromProducts(items);
-  if (direct) return { live: direct.price, via: 'dataforseo:products', productId: direct.productId };
+  const direct = pickBestBuyFromProducts(items, name);
+  if (direct && !direct.rejected) {
+    return { live: direct.price, via: 'dataforseo:products', productId: direct.productId, matchTitle: direct.title, matchScore: direct.score };
+  }
 
-  if (!useSellers) return { error: 'no bestbuy offer in shopping results' };
+  if (!useSellers) {
+    return { error: direct ? rejectedReason(direct) : 'no bestbuy offer in shopping results' };
+  }
 
-  const productId = pickProductId(items, name);
-  if (!productId) return { error: 'no product_id to query sellers with' };
+  const match = bestTitleMatch(items, name);
+  if (!match) return { error: 'no product_id to query sellers with' };
+  if (!match.ok) return { error: rejectedReason(direct ?? match) };
+  const productId = match.productId;
 
   // Step 2 — sellers, same task_post-then-poll shape as step 1.
   let taskId;
@@ -389,6 +500,6 @@ export async function liveBestBuyPrice(name, deps = {}) {
 
   const sellerItems = itemsOf(sellersPoll.json);
   const hit = pickBestBuyFromSellers(sellerItems);
-  if (hit) return { live: hit.price, via: 'dataforseo:sellers', productId };
+  if (hit) return { live: hit.price, via: 'dataforseo:sellers', productId, matchTitle: match.title, matchScore: match.score };
   return { error: `product ${productId} has ${sellerItems.length} sellers, none Best Buy` };
 }

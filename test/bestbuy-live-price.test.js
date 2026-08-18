@@ -18,6 +18,7 @@ import assert from 'node:assert/strict';
 import {
   itemsOf, isBestBuy, pickBestBuyFromProducts, pickProductId,
   pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword, emptyProductsReason,
+  titleScore, bestTitleMatch, modelMismatch, MIN_TITLE_OVERLAP,
 } from '../bestbuy-live-price.mjs';
 
 const productsJson = (items) => ({ tasks: [{ result: [{ items }] }] });
@@ -158,7 +159,7 @@ function router(routes) {
 test('REGRESSION: step 1 posts a task — there is no live path to shortcut to', async () => {
   const { fetchImpl, seen } = router([
     ['/products/task_post', postedJson('PT-1')],
-    ['/products/task_get/advanced/', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1' }])],
+    ['/products/task_get/advanced/', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1', title: 'Some TV' }])],
   ]);
   const r = await liveBestBuyPrice('Some TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
   assert.equal(r.live, 239.99);
@@ -182,7 +183,7 @@ test('REGRESSION: 40402 Invalid Path names itself instead of blaming the keyword
 test('the cheap path returns without ever calling the sellers endpoint', async () => {
   const { fetchImpl, seen } = router([
     ['/products/task_post', postedJson('T1')],
-    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1' }])],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 239.99, product_id: 'P1', title: 'Some TV' }])],
   ]);
   const r = await liveBestBuyPrice('Some TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
   assert.equal(r.live, 239.99);
@@ -334,6 +335,129 @@ test('an envelope carrying no status at all falls back to the plain message', ()
 test('a half-populated envelope reports the half it has', () => {
   assert.match(emptyProductsReason({ tasks: [{ status_code: 40200 }] }), /task 40200 no status_message/);
   assert.match(emptyProductsReason({ tasks_error: 3 }), /tasks_error 3/);
+});
+
+// ── product identity: is this price even for our product? ────────────────
+//
+// Run 32174849780 resolved 19 of 20 rows and returned $899.99 as the live
+// price of a CPU stored at $95.79. The products path took the FIRST Best Buy
+// row in the result and never compared it to what we asked for, so a wrong
+// number arrived wearing the same shape as a right one — and voted FIELD-WRONG.
+
+test('REGRESSION: a Best Buy row for a different product is refused, not priced', () => {
+  const items = [
+    { type: 'google_shopping_serp', seller: 'Best Buy', price: 899.99, product_id: 'X', title: 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor' },
+  ];
+  const hit = pickBestBuyFromProducts(items, 'Intel - Core i3-12100F Desktop Processor');
+  assert.equal(hit.rejected, true, 'the price must not stand for our product');
+  assert.equal(hit.price, 899.99, 'the refused offer is still reported, so the note can name it');
+  assert.equal(hit.clash, '9950x3d', 'the model number is what gives it away — overlap alone scores it 0.6');
+});
+
+test('overlap alone cannot do this: the wrong CPU outscores the right headset', () => {
+  // The measurement that shaped the rule. Category vocabulary (core, desktop,
+  // processor) carries a mismatch above the floor, while a correct match loses
+  // points to marketing words the listing drops. No single threshold separates
+  // these two, which is why the model number is checked separately.
+  const wrong = titleScore('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor');
+  const right = titleScore(
+    'HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White',
+    'HyperX Cloud Stinger 2 Gaming Headset - White',
+  );
+  assert.ok(wrong > right, `expected the inversion that motivates modelMismatch (wrong ${wrong}, right ${right})`);
+  assert.ok(wrong >= MIN_TITLE_OVERLAP, 'the wrong product clears the overlap floor on its own');
+  assert.equal(modelMismatch('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor'), '9950x3d');
+  assert.equal(modelMismatch('HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White', 'HyperX Cloud Stinger 2 Gaming Headset - White'), null);
+});
+
+test('a vendor part code on a name we do match is not a mismatch', () => {
+  // Listings append their own SKU. Rejecting on any unfamiliar model token
+  // would cost real rows, so the rule fires only when NONE of ours is present.
+  assert.equal(modelMismatch(
+    'ASUS - DUAL NVIDIA GeForce RTX 5060 OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card',
+    'ASUS Dual GeForce RTX 5060 OC DUAL-RTX5060-O8G 8GB GDDR7 Graphics Card',
+  ), null);
+});
+
+test('a title with no model number at all is left to the overlap floor', () => {
+  assert.equal(modelMismatch('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen Desktop Processor'), null);
+  assert.ok(titleScore('Intel - Core i3-12100F Desktop Processor', 'AMD Ryzen Desktop Processor') < MIN_TITLE_OVERLAP);
+});
+
+test('the best-matching Best Buy row wins, not the first one', () => {
+  const items = [
+    { type: 'google_shopping_serp', seller: 'Best Buy', price: 24.99, product_id: 'ACC', title: 'Wall Mount Bracket for Samsung 65 inch Class QLED TV' },
+    { type: 'google_shopping_serp', seller: 'Best Buy', price: 999.99, product_id: 'RIGHT', title: 'Samsung 65 inch Class QLED 4K Smart TV' },
+  ];
+  const hit = pickBestBuyFromProducts(items, 'Samsung 65 inch Class QLED 4K Smart TV');
+  assert.equal(hit.productId, 'RIGHT');
+  assert.ok(!hit.rejected);
+});
+
+test('a matching row carries its evidence out with the price', () => {
+  const hit = pickBestBuyFromProducts(
+    [{ type: 'google_shopping_serp', seller: 'Best Buy', price: 29.99, product_id: 'P', title: 'HyperX Cloud Stinger 2 Gaming Headset - White' }],
+    'HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White',
+  );
+  assert.equal(hit.title, 'HyperX Cloud Stinger 2 Gaming Headset - White');
+  assert.ok(hit.score >= MIN_TITLE_OVERLAP);
+});
+
+test('the sellers arm is gated too — an unchecked product_id buys the wrong price confidently', () => {
+  const items = [
+    { type: 'google_shopping_serp', product_id: 'WRONG', title: 'Wall Mount Bracket for 65 inch TVs' },
+  ];
+  assert.equal(pickProductId(items, 'Samsung 65 inch Class QLED 4K Smart TV'), null);
+  assert.equal(bestTitleMatch(items, 'Samsung 65 inch Class QLED 4K Smart TV').ok, false);
+  assert.equal(bestTitleMatch(items, 'Samsung 65 inch Class QLED 4K Smart TV').productId, 'WRONG',
+    'the near-miss is still reported, so the note can name what it refused');
+});
+
+test('a keyword with nothing to score stands the gate down rather than refusing every row', () => {
+  // shoppingKeyword() always supplies a name in production; this is the shape
+  // a caller with no name at all gets, and it must not reject silently.
+  assert.equal(titleScore('', 'anything at all'), 1);
+  assert.equal(titleScore('ab', 'anything at all'), 1, 'sub-token names score nothing to compare');
+});
+
+test('a refused row reports the refusal, not "no bestbuy offer"', async () => {
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T7')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 899.99, product_id: 'X', title: 'AMD Ryzen 9 9950X3D 16-Core Desktop Processor' }])],
+  ]);
+  const r = await liveBestBuyPrice('Intel - Core i3-12100F Desktop Processor', {
+    login: 'u', pw: 'p', fetchImpl, sleep: async () => {}, useSellers: false,
+  });
+  assert.equal(r.live, undefined, 'a refused offer resolves nothing');
+  assert.match(r.error, /not our product \(model 9950x3d/);
+  assert.match(r.error, /Ryzen 9 9950X3D/);
+});
+
+test('a resolved row says which arm answered and how well the title matched', async () => {
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('T8')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Best Buy', price: 29.99, product_id: 'P', title: 'HyperX Cloud Stinger 2 Gaming Headset - White' }])],
+  ]);
+  const r = await liveBestBuyPrice('HyperX - Cloud Stinger 2 Wired Gaming Headset for PS5 and PS4 - White', {
+    login: 'u', pw: 'p', fetchImpl, sleep: async () => {},
+  });
+  assert.equal(r.live, 29.99);
+  assert.equal(r.via, 'dataforseo:products');
+  assert.equal(r.matchTitle, 'HyperX Cloud Stinger 2 Gaming Headset - White');
+  assert.ok(r.matchScore >= MIN_TITLE_OVERLAP);
+});
+
+test('a sellers answer carries the identity the product_id was chosen on', async () => {
+  const { fetchImpl } = router([
+    ['/products/task_post', postedJson('PT')],
+    ['/products/task_get', okTask([{ type: 'google_shopping_serp', seller: 'Walmart', price: 249, product_id: 'PID42', title: 'Samsung 65 inch Class QLED 4K Smart TV' }])],
+    ['/sellers/task_post', postedJson('TASK-1')],
+    ['/sellers/task_get', okTask([{ type: 'shops_list', seller_name: 'Best Buy', base_price: 239.99, domain: 'bestbuy.com' }])],
+  ]);
+  const r = await liveBestBuyPrice('Samsung 65 inch Class QLED 4K Smart TV', { login: 'u', pw: 'p', fetchImpl, sleep: async () => {} });
+  assert.equal(r.via, 'dataforseo:sellers');
+  assert.equal(r.matchTitle, 'Samsung 65 inch Class QLED 4K Smart TV');
+  assert.equal(r.matchScore, 1);
 });
 
 // ── the keyword, which decides whether step 1 returns anything at all ─────
