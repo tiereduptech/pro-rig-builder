@@ -75,7 +75,7 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Rows to probe (max 200 — each row posts a DataForSEO task and waits for it, ~10-40s)"
+        description: "Rows to probe (max 200 — each row waits on a queued DataForSEO task, up to ~2 min per step)"
         type: string
         default: "20"
       sample:
@@ -115,7 +115,10 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Each row waits on queued DataForSEO tasks — up to ~2 min per step, ~4 min
+    # with sellers on. This has to cover limit × that; a 20-row run with sellers
+    # on fills it. See the budget note in bestbuy-live-price.mjs.
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 

@@ -262,6 +262,21 @@ const overlap = (a, b) => {
  * Poll task_get until the task finishes, fails, or the attempt budget runs out.
  * Returns { json } | { failed: json } | { pending: true }. Transport hiccups
  * burn an attempt rather than aborting the row — the task is already paid for.
+ *
+ * ── THE BUDGET ───────────────────────────────────────────────────────────────
+ * 20 × 6s = two minutes per step. The first task-based run, 32172326071, gave
+ * step 1 only 10 × 4s and two of three rows timed out at 40s with the task
+ * still queued — a budget failure, not an API one. Google Shopping tasks are
+ * queued, not instant, so a budget shorter than the queue reports every row as
+ * unreachable and looks exactly like a broken endpoint.
+ *
+ * Running out is not the same as losing the data: the task is paid for on
+ * POST and DataForSEO keeps the result for 30 days, so the timeout message
+ * carries the task id and a later task_get can still collect it.
+ *
+ * Worst case is now ~4 minutes per row with both steps. The workflow's job
+ * timeout has to cover limit × that; it is 60 minutes, so a 20-row run with
+ * sellers on has no headroom to spare. Keep an eye on it before raising limit.
  */
 async function pollTaskGet(getUrl, id, { fetchImpl, headers, sleep, attempts, ms }) {
   for (let attempt = 0; attempt < attempts; attempt++) {
@@ -296,10 +311,10 @@ export async function liveBestBuyPrice(name, deps = {}) {
     location_code = 2840,
     language_code = 'en',
     depth = 40,
-    productsPollAttempts = 10,
-    productsPollMs = 4000,
-    sellersPollAttempts = 6,
-    sellersPollMs = 5000,
+    productsPollAttempts = 20,
+    productsPollMs = 6000,
+    sellersPollAttempts = 20,
+    sellersPollMs = 6000,
     useSellers = true,
   } = deps;
 
