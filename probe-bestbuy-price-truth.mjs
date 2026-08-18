@@ -260,7 +260,11 @@ for (const r of out) {
     console.log(''.padEnd(20) + `  ↳ catalog "${r.name.slice(0, 44)}" vs BB "${r.api.name.slice(0, 44)}"`);
   if (r.liveP != null && r.live?.via)
     console.log(''.padEnd(20) + `  ↳ ${provenance(r.live)}`);
-  if (r.verdict === 'UNRESOLVED' && r.live?.keyword)
+  // Every row that asked Shopping prints what it asked, not just the ones that
+  // failed. A FIELD-WRONG row is only checkable if you can see both sides of
+  // the comparison: run 32178925976 printed the matched title but never the
+  // keyword, so "H7 Flow priced as an H9" took reading the catalog to spot.
+  if (r.live?.keyword)
     console.log(''.padEnd(20) + `  ↳ keyword (${r.live.keywordSource}): "${r.live.keyword.slice(0, 80)}"`);
 }
 console.log('-'.repeat(116));
@@ -292,7 +296,7 @@ if (SUMMARY) {
   L.push(`| AGREE | ${tally['AGREE']} | stored == salePrice == live |`);
   L.push(`| UNRESOLVED | ${tally['UNRESOLVED']} | no live price obtained (see notes) |`);
   L.push('');
-  const notes = out.filter((r) => r.flags.length || (r.liveP != null && r.live?.via));
+  const notes = out.filter((r) => r.flags.length || r.live?.keyword || (r.liveP != null && r.live?.via));
   if (notes.length) {
     L.push('### Row notes');
     L.push('');
@@ -301,7 +305,7 @@ if (SUMMARY) {
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - catalog: _${r.name.slice(0, 70)}_`);
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - Best Buy: _${(r.api.name || '').slice(0, 70)}_`);
       if (r.liveP != null && r.live?.via) L.push(`  - ${provenance(r.live)}`);
-      if (r.verdict === 'UNRESOLVED' && r.live?.keyword) L.push(`  - keyword sent to Shopping (${r.live.keywordSource}): _${r.live.keyword.slice(0, 70)}_`);
+      if (r.live?.keyword) L.push(`  - keyword sent to Shopping (${r.live.keywordSource}): _${r.live.keyword.slice(0, 70)}_`);
     }
     L.push('');
   }
@@ -310,7 +314,7 @@ if (SUMMARY) {
   L.push('- **FIELD-WRONG dominant** → the defect is the field we read, same class as the Amazon 3P bug. Fix the field before touching any schedule.');
   L.push('- **STALE-ONLY dominant** → the field is right and the data is simply old. Build the refresh job.');
   L.push('- **Both present** → do not ship a cron until the field question is settled; a schedule would refresh a wrong number on time.');
-  L.push('- **Read the matched title on every FIELD-WRONG row before believing it.** The identity gate refuses a different product; a different variant of the right one — a 3-pack, a capacity, a bundle — shares nearly every token and gets through.');
+  L.push('- **Read the keyword against the matched title on every FIELD-WRONG row before believing it.** Both are in the row notes. The gate refuses a different product and now refuses the variants it can name — a model number, a variant word, a stated pack size — but a variant that states none of those still gets through.');
   L.push('- **NO-SALEPRICE dominant** → the sample is mostly skus Best Buy no longer publishes. That is a catalog-liveness finding, and none of those rows says anything about the field; re-run on live skus before concluding anything.');
   L.push('');
   L.push('_Context: `bestbuy-price.js` records a live test from 2026-06-28 where the Developer API returned `salePrice` 399.99 (`onSale:false`) for sku 6519477 while the real selling price was 239.99 — a member price no feed publishes._');
