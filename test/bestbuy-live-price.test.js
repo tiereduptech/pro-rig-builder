@@ -18,7 +18,7 @@ import assert from 'node:assert/strict';
 import {
   itemsOf, isBestBuy, pickBestBuyFromProducts, pickProductId,
   pickBestBuyFromSellers, liveBestBuyPrice, shoppingKeyword, emptyProductsReason,
-  titleScore, bestTitleMatch, modelMismatch, MIN_TITLE_OVERLAP,
+  titleScore, bestTitleMatch, modelMismatch, provenance, MIN_TITLE_OVERLAP,
 } from '../bestbuy-live-price.mjs';
 
 const productsJson = (items) => ({ tasks: [{ result: [{ items }] }] });
@@ -495,4 +495,24 @@ test('an empty or whitespace API name is treated as absent, not as a valid keywo
 test('the keyword source is reported so an UNRESOLVED run says which string it whiffed on', () => {
   assert.equal(shoppingKeyword('a', 'b').source, 'bb-api');
   assert.equal(shoppingKeyword('a', null).source, 'catalog');
+});
+
+// ── provenance: what a live number was a price FOR ────────────────────────
+
+test('an accepted price says which arm answered, how well it matched, and what it matched', () => {
+  assert.equal(
+    provenance({ via: 'dataforseo:sellers', matchScore: 0.857, matchTitle: 'Samsung 65 inch Class QLED 4K Smart TV' }),
+    'via dataforseo:sellers 86%: "Samsung 65 inch Class QLED 4K Smart TV"',
+  );
+});
+
+test('provenance degrades rather than throwing when a field is absent', () => {
+  assert.equal(provenance({ via: 'dataforseo:products' }), 'via dataforseo:products');
+  assert.equal(provenance({}), 'via unknown');
+  assert.equal(provenance(null), 'via unknown');
+});
+
+test('a long listing title is trimmed, not printed whole into the table', () => {
+  const long = 'A'.repeat(200);
+  assert.ok(provenance({ via: 'x', matchTitle: long }).length < 100);
 });

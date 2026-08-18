@@ -54,7 +54,7 @@
 
 import { readdirSync, appendFileSync } from 'node:fs';
 import path from 'node:path';
-import { liveBestBuyPrice, shoppingKeyword } from './bestbuy-live-price.mjs';
+import { liveBestBuyPrice, shoppingKeyword, provenance } from './bestbuy-live-price.mjs';
 import { classify, tallyOf, VERDICTS } from './bestbuy-price-verdict.mjs';
 
 const args = process.argv.slice(2);
@@ -213,6 +213,14 @@ for (const [i, r] of sample.entries()) {
 }
 process.stderr.write('\n');
 
+// ── Provenance ────────────────────────────────────────────────────────────
+//
+// A live price is evidence only if you can see what it was a price FOR. Run
+// 32174849780 printed 9 FIELD-WRONG with no way to tell which arm answered or
+// what listing the number came off, so every one of them had to be taken on
+// faith. The identity gate refuses a different product; it cannot refuse a
+// different variant of the right one — a 3-pack, a capacity, a bundle — and
+// reading the matched title is how a human settles those.
 // ── Classify ──────────────────────────────────────────────────────────────
 for (const r of out) {
   const sale = r.api?.salePrice ?? null;
@@ -250,6 +258,8 @@ for (const r of out) {
   if (r.flags.length) console.log(''.padEnd(20) + '  ↳ ' + r.flags.join(' | '));
   if (r.api?.name && r.flags.includes('NAME-DRIFT'))
     console.log(''.padEnd(20) + `  ↳ catalog "${r.name.slice(0, 44)}" vs BB "${r.api.name.slice(0, 44)}"`);
+  if (r.liveP != null && r.live?.via)
+    console.log(''.padEnd(20) + `  ↳ ${provenance(r.live)}`);
   if (r.verdict === 'UNRESOLVED' && r.live?.keyword)
     console.log(''.padEnd(20) + `  ↳ keyword (${r.live.keywordSource}): "${r.live.keyword.slice(0, 80)}"`);
 }
@@ -282,14 +292,15 @@ if (SUMMARY) {
   L.push(`| AGREE | ${tally['AGREE']} | stored == salePrice == live |`);
   L.push(`| UNRESOLVED | ${tally['UNRESOLVED']} | no live price obtained (see notes) |`);
   L.push('');
-  const notes = out.filter((r) => r.flags.length);
+  const notes = out.filter((r) => r.flags.length || (r.liveP != null && r.live?.via));
   if (notes.length) {
     L.push('### Row notes');
     L.push('');
     for (const r of notes) {
-      L.push(`- **${r.cat}/${r.id}** \`${r.sku}\` — ${r.flags.join(' | ')}`);
+      L.push(`- **${r.cat}/${r.id}** \`${r.sku}\` — ${r.flags.length ? r.flags.join(' | ') : r.verdict}`);
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - catalog: _${r.name.slice(0, 70)}_`);
       if (r.flags.includes('NAME-DRIFT')) L.push(`  - Best Buy: _${(r.api.name || '').slice(0, 70)}_`);
+      if (r.liveP != null && r.live?.via) L.push(`  - ${provenance(r.live)}`);
       if (r.verdict === 'UNRESOLVED' && r.live?.keyword) L.push(`  - keyword sent to Shopping (${r.live.keywordSource}): _${r.live.keyword.slice(0, 70)}_`);
     }
     L.push('');
@@ -299,6 +310,7 @@ if (SUMMARY) {
   L.push('- **FIELD-WRONG dominant** → the defect is the field we read, same class as the Amazon 3P bug. Fix the field before touching any schedule.');
   L.push('- **STALE-ONLY dominant** → the field is right and the data is simply old. Build the refresh job.');
   L.push('- **Both present** → do not ship a cron until the field question is settled; a schedule would refresh a wrong number on time.');
+  L.push('- **Read the matched title on every FIELD-WRONG row before believing it.** The identity gate refuses a different product; a different variant of the right one — a 3-pack, a capacity, a bundle — shares nearly every token and gets through.');
   L.push('- **NO-SALEPRICE dominant** → the sample is mostly skus Best Buy no longer publishes. That is a catalog-liveness finding, and none of those rows says anything about the field; re-run on live skus before concluding anything.');
   L.push('');
   L.push('_Context: `bestbuy-price.js` records a live test from 2026-06-28 where the Developer API returned `salePrice` 399.99 (`onSale:false`) for sku 6519477 while the real selling price was 239.99 — a member price no feed publishes._');

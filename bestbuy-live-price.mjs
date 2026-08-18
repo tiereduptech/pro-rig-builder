@@ -364,6 +364,22 @@ export function rejectedReason(m) {
 }
 
 /**
+ * Where an accepted price came from — the mirror of rejectedReason().
+ *   via dataforseo:sellers 86%: "Samsung 65 inch Class QLED 4K Smart TV"
+ *
+ * A live price is evidence only if you can see what it was a price FOR. The
+ * identity gate refuses a different product; it cannot refuse a different
+ * VARIANT of the right one — a 3-pack, a capacity, a bundle — because those
+ * share nearly every token. Printing the matched title is how a human settles
+ * those, so it travels with every number the probe reports.
+ */
+export function provenance(live) {
+  const pct = live?.matchScore != null ? ` ${Math.round(live.matchScore * 100)}%` : '';
+  const title = live?.matchTitle ? `: "${String(live.matchTitle).slice(0, 62)}"` : '';
+  return `via ${live?.via ?? 'unknown'}${pct}${title}`;
+}
+
+/**
  * Poll task_get until the task finishes, fails, or the attempt budget runs out.
  * Returns { json } | { failed: json } | { pending: true }. Transport hiccups
  * burn an attempt rather than aborting the row — the task is already paid for.
