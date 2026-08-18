@@ -177,7 +177,7 @@ hr.end{border:none; border-top:2px solid var(--ink); margin:64px 0 0}
     <div class="v bad">
       <span class="stat-n">0</span>
       <span class="label">Newegg ingests ever committed</span>
-      <span class="note">The daily SFTP ingest has run since 2026-05-13 and has never once written a catalog change.</span>
+      <span class="note">Diagnosed: 99 runs, 88 cancelled at a 60-min timeout, 9 killed, 1 success. The fix exists on a branch and is <b>not merged</b>.</span>
     </div>
     <div class="v warn">
       <span class="stat-n">86</span>
@@ -475,6 +475,52 @@ hr.end{border:none; border-top:2px solid var(--ink); margin:64px 0 0}
   <p class="prose note-sm"><b>On the 2,810 figure:</b> the current tree shows 3,036 rows at <code>priceConfidence: "confirmed"</code>, of which 2,603 are not quarantined. Neither is 2,810, and no report file in the repo contains that number. It is almost certainly a snapshot from a run a day or two earlier — 2,247 rows were re-confirmed on 08-17 alone, so this count moves by hundreds nightly. The conclusions above do not turn on which figure is used.</p>
 </section>
 
+<!-- ══════════ STRANDED ══════════ -->
+<section>
+  <div class="sec-head">
+    <h2>The 2,597 stranded rows, and what would unstrand them</h2>
+    <p class="prose">Live rows whose only price comes from a retailer that is not refreshing. Broken down by which pipeline would actually recover them — because they are not one problem, and the largest share is already fixed on a branch.</p>
+  </div>
+
+  <div class="tw">
+    <table>
+      <caption>Live stranded rows by remedy</caption>
+      <thead><tr><th>Stranded by</th><th class="num">Rows</th><th>What gives it a working refresh</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>Newegg only</b><br><span class="note-sm">Case 879 · RAM 408 · Storage 171 · PSU 158</span></td>
+          <td class="num">1,627</td>
+          <td class="note-sm"><span class="chip warn">fix exists</span> Merge the SFTP streaming fix. The feed already carries a current price for these rows every day; nothing new needs building.</td>
+        </tr>
+        <tr>
+          <td><b>Newegg + Best Buy</b><br><span class="note-sm">no Amazon link</span></td>
+          <td class="num">255</td>
+          <td class="note-sm"><span class="chip warn">fix exists</span> Either pipeline covers these; the SFTP fix is the one already written.</td>
+        </tr>
+        <tr>
+          <td><b>Best Buy only</b><br><span class="note-sm">Monitor 227 · GPU 79 · Storage 53 · Mouse 43</span></td>
+          <td class="num">652</td>
+          <td class="note-sm"><span class="chip bad">blocked — settle the field first</span> See below. Do not build the cron yet.</td>
+        </tr>
+        <tr>
+          <td><b>Best Buy + MSI</b></td>
+          <td class="num">63</td>
+          <td class="note-sm">Same as Best Buy only. <b>No row is MSI-only</b> — all 157 MSI rows also carry Best Buy, so MSI needs no pipeline of its own.</td>
+        </tr>
+        <tr class="total"><td>Total</td><td class="num">2,597</td><td class="note-sm">$891,063 of displayed value</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="finding warn">
+    <h4>Why Best Buy is not simply "add a cron"</h4>
+    <p class="note-sm">The repo already recorded the reason. On 2026-06-28, for sku 6519477, the Best Buy Developer API returned <code>salePrice 399.99</code> with <code>onSale:false</code> and the Impact catalog agreed at 399.99 — while the real selling price was <b>$239.99</b>, a My Best Buy Plus/Total member price <em>no feed publishes</em>. If that reproduces at scale, the defect is <b>the field we read</b>, not the schedule we read it on, and a cron would refresh a wrong number punctually.</p>
+    <p class="note-sm"><code>probe-bestbuy-price-truth.mjs</code> exists to settle exactly this and classifies every row FIELD-WRONG / STALE-ONLY / AGREE. It has never been run — it is dispatch-only and needs <code>BESTBUY_API_KEY</code>. <b>Run it before writing a refresher.</b> If it comes back STALE-ONLY the job is nearly free: the dead-SKU audit's bulk pass already returns <code>salePrice</code> and <code>regularPrice</code> for every sku, 100 at a time.</p>
+  </div>
+
+  <p class="prose note-sm"><b>Only 15 of the 2,597 carry an ASIN</b>, so routing them to the one pipeline that demonstrably works is not an option — these rows are stranded because Amazon does not stock them, not because nobody looked.</p>
+</section>
+
 <!-- ══════════ NOT WORKING, RANKED ══════════ -->
 <section>
   <div class="sec-head">
@@ -491,14 +537,18 @@ hr.end{border:none; border-top:2px solid var(--ink); margin:64px 0 0}
 
     <li>
       <h3>The daily Newegg ingest has never applied an update <span class="chip bad">2,763 rows</span></h3>
-      <p>Running daily since 2026-05-13, 97 consecutive days, zero commits. The feed is fresh and healthy — the watcher measured it at 157 MB with an mtime six hours old. 84% of Newegg price series have never moved. Meanwhile <code>refresh-newegg-prices.cjs</code>, the other path, is correctly disabled for a documented 100% failure rate.</p>
-      <p class="cost"><b>Cost</b> 1,725 of these rows have no other priced retailer, so this is not a stale-second-opinion problem — for those rows it is the only price on the page. It is also the difference between the pending dead-SKU census being a link cleanup and being a catalog shrink.</p>
+      <p><b>Root cause found, and it is not a matching problem — the job never finished.</b> Between 2026-05-14 and 2026-08-17 it ran 99 times and succeeded once: <b>88 cancelled at the 60-minute timeout, 9 killed outright.</b> The commit step is skipped on both outcomes, so nothing was ever written.</p>
+      <p class="note-sm"><code>parseTxtFeed</code> accumulates every record into one array. The 886 MB <code>_MKPL</code> feed OOMs against the 6,144 MB cap — run 32029115254 died with <em>"Ineffective mark-compacts near heap limit"</em> at 6,135 MB. A second-order effect guaranteed the next failure: <code>actions/cache</code> saves the download manifest in a <em>post</em> step the job never reached, so every run re-pulled ~1 GB of feeds from scratch.</p>
+      <p class="note-sm"><b>Cancelled is the quietest outcome GitHub produces</b> — grey, no notification, and it reads as though a person stopped it. That is why 88 of them passed unnoticed for 95 days.</p>
+      <p class="cost"><b>Cost</b> 1,725 of these rows have no other priced retailer, so for them it is the only price on the page. It is also the difference between the pending dead-SKU census being a link cleanup and a catalog shrink.</p>
+      <p class="cost"><b>Fix</b> Already written — commit <code>82af73f</code> on <code>feat/admin-dashboard</code>: streaming parse (2.9 GB retained → 4.1 MB peak), backpressure on the exclusives stream, timeout 60→180, plus a gate that reads run <em>conclusions</em> so a wall of cancellations can never read as healthy again. <b>It is not on main.</b> main still buffers at <code>sftp-ingest.cjs:217</code> and still carries <code>timeout-minutes: 60</code>.</p>
     </li>
 
     <li>
-      <h3>Identity defects are detected nightly and acted on never <span class="chip warn">233 queued</span></h3>
+      <h3>Identity defects are detected nightly and acted on never <span class="chip warn">233 queued · ON HOLD</span></h3>
       <p>The audit writes 233 non-dead findings to <code>relink-review-queue.json</code> every night. Its only consumer, <code>quarantine-wrong-product.mjs</code>, is in no workflow. 86 of those rows are live with a confirmed price; roughly 8 are certainly the wrong product and 62 are undecidable without a PDP fetch.</p>
-      <p class="cost"><b>Cost</b> Smaller than it looks in row count, but it is the failure mode that produces a confidently wrong page — a correct, freshly-confirmed price attached to a product the customer did not search for. The queue growing nightly with nothing draining it also means the number can only rise.</p>
+      <p class="cost"><b>Cost</b> Smaller than it looks in row count, but it is the failure mode that produces a confidently wrong page — a correct, freshly-confirmed price attached to a product the customer did not search for.</p>
+      <p class="cost"><b>Status</b> Queue held deliberately. The gate now reads the brand from <code>b</code> as a second arm (monotonic — it clears false defects, it cannot create new ones), which clears <b>44 of the 233</b> on its own. Both unambiguous wrong-product rows survive it. Do not triage the remainder until <code>b</code> is trustworthy — see the brand-attribution bug below.</p>
     </li>
 
     <li>
@@ -508,9 +558,10 @@ hr.end{border:none; border-top:2px solid var(--ink); margin:64px 0 0}
     </li>
 
     <li>
-      <h3>The displayed price ignores sale prices <span class="chip warn">618 rendered rows</span></h3>
-      <p><code>bestPrice()</code> reads <code>d.price</code> and never <code>d.saleprice</code>. Newegg feed rows carry both, and where a sale is active the site quotes the regular price — a Thermaltake fan shown at $59.99 that Newegg sells at $49.99, an open-box NZXT fan shown at $33.99 against an actual $13.99. Average overstatement across the 618: $46.34.</p>
-      <p class="cost"><b>Cost</b> Straight lost conversions: the site makes its own listings look worse than the retailer's, and loses every comparison where the sale price would have won. This is a one-line fix and the cheapest item on this list to close.</p>
+      <h3>The displayed price ignores sale prices <span class="chip ok">fixed 2026-08-18</span></h3>
+      <p><code>bestPrice()</code> read <code>d.price</code> and never <code>d.saleprice</code>. Final measured scope was larger than first reported: <b>726 rendered rows, 697 of them live, averaging $45.13 too high.</b> The same file already had a sale-aware resolver in <code>retailers()</code>, so the headline price and the retailer list disagreed on the same screen; both now go through one <code>dealPrice()</code> helper.</p>
+      <p class="note-sm"><b>The trap:</b> 19 live rows carry a <code>saleprice</code> <em>above</em> <code>price</code>, so the obvious <code>saleprice || price</code> would have raised those. Taking the lower of the two gives 726 rows down, <b>0 up</b>, and all 19 anomalies held at list price.</p>
+      <p class="cost"><b>Cost</b> Was straight lost conversions — the site made its own listings look worse than the retailer's. Closed.</p>
     </li>
 
     <li>
