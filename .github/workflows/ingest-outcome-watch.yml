@@ -1,0 +1,78 @@
+name: Ingest outcome watch (read-only)
+
+# =============================================================================
+#  WATCHES OUR OWN WRITERS, FROM OUTSIDE THEM.
+#
+#  newegg-feed-watch.yml asks "is Newegg still publishing?". This asks the
+#  other half of the question: "are we still ingesting what they publish?"
+#  Those fail independently. Through the 95-day freeze the feed kept publishing
+#  on time — the ingest was the side that had stopped, and no alarm covered it.
+#
+#  WHY A SEPARATE JOB AND NOT A STEP IN THE INGEST
+#  Because the failure being watched for is the ingest not getting a turn.
+#  55 of the last 64 SFTP Ingest runs were cancelled by the `main-writer`
+#  concurrency group, and 88 of 99 were cancelled mid-parse. A cancelled run
+#  runs no steps, so an in-job assertion cannot report it — and GitHub sends no
+#  notification for `cancelled`, only for `failure`. That combination is what
+#  let 1,882 catalog rows sit stranded behind runs that looked merely grey.
+#
+#  So this job turns an absence into a failure, because a red run is a
+#  notification and a passive signal is not an alarm (newegg-feed-watch.yml and
+#  epik-watchdog.yml make the same argument for their own quiet failures).
+#
+#  COST
+#  One Actions API list call per watched workflow. No checkout of data, no
+#  network to Newegg, no writes. Seconds.
+# =============================================================================
+
+on:
+  schedule:
+    # Daily, a few hours after the 12:00 UTC ingest — late enough that a healthy
+    # run has finished and committed, early enough that a bad day is reported
+    # the same day rather than the next.
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      stale_days:
+        description: "Go red if the ingest has not succeeded in this many days"
+        required: false
+        default: "3"
+        type: string
+      cancel_streak:
+        description: "Go red on this many consecutive cancellations, even if a recent success exists"
+        required: false
+        default: "3"
+        type: string
+
+# Read-only. Must NOT join `main-writer` — joining the group that cancels the
+# writers is how a watchdog gets cancelled by the thing it is watching.
+concurrency:
+  group: ingest-outcome-watch
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      # No `npm ci` — the report uses only Node builtins and global fetch.
+
+      - name: SFTP ingest is still producing outcomes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/ingest-outcome-report.cjs \
+            --workflow=sftp-ingest.yml \
+            --label="SFTP Ingest Newegg Catalog" \
+            --stale-days=${{ inputs.stale_days || '3' }} \
+            --cancel-streak=${{ inputs.cancel_streak || '3' }}
