@@ -58,6 +58,21 @@ function scaffold({ shallow = false } = {}) {
   cloneArgs.push(`file://${origin}`, runner);
   git(root, ...cloneArgs);
 
+  // The identity the script's `git rebase` will commit under. The helper above
+  // passes GIT_AUTHOR_*/GIT_COMMITTER_* into ITS OWN git calls, but the script
+  // runs as a separate process against this repo, so it sees only what is
+  // configured here. Without it these tests pass on any dev box with a global
+  // git identity and fail on a bare CI runner with "empty ident name" — which
+  // is a property of the machine, not of the code under test.
+  //
+  // Set it the same way the real callers do: sftp-ingest.yml,
+  // refresh-bestbuy-prices.yml and relink-bestbuy-mismatches.yml all run
+  // `git config user.name/user.email` on the checkout before invoking the
+  // script, so configuring it on the repo is what production actually looks
+  // like.
+  git(runner, "config", "user.name", "github-actions[bot]");
+  git(runner, "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com");
+
   return { root, origin, seed, runner };
 }
 
