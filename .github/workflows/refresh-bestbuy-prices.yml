@@ -5,11 +5,32 @@ name: Refresh Best Buy Prices
 #  price + stock together. See refresh-bestbuy-prices.mjs for the rules; this
 #  file only carries the schedule question.
 #
-#  ── WHY THERE IS NO SCHEDULE YET ────────────────────────────────────────────
-#  Dispatch-only on purpose. The first apply run moves 566 prices at once —
-#  months of accumulated drift landing in one commit — and that is a run to
-#  watch, not to wake up to. Uncomment the cron below once one dispatched apply
-#  run has been reviewed.
+#  ── WHY THE SCHEDULE IS ON ──────────────────────────────────────────────────
+#  It was dispatch-only until the first apply run had been watched, because that
+#  run moves months of accumulated drift into one commit. That happened on
+#  2026-08-19 (cf8337013a7 — 561 prices, 39 stock flips, 175 held), it was
+#  reviewed, and the condition this section set is met. The cron is now on.
+#
+#  Slot chosen against the other `main-writer` schedules, measured, not guessed:
+#
+#    01:00  this job          ~16 min  (982s median over 3 runs)
+#    03:00  asin-identity-audit        ~10 min
+#    06:00  prerender                  ~54 min
+#    07:00  price-history              ~3 min
+#    08:00  verify-catalog (alt days)  ~38 min
+#    12:00  sftp-ingest                ~52 min
+#
+#  01:00 finishes around 01:17 and the next writer is two hours behind it, so
+#  this job neither waits on the lock nor holds it against anyone. That margin
+#  is measured on the DEGRADED path — every bulk chunk 400s and the run falls
+#  back to 1,039 individual GETs — so fixing the bulk pass only widens it.
+#
+#  ── THE ALARM ───────────────────────────────────────────────────────────────
+#  A schedule without a watcher is what produced the 95-day freeze: a cancelled
+#  run is grey, not red, and GitHub does not notify on grey. ingest-outcome-
+#  watch.yml now judges THIS workflow from outside, alongside the SFTP ingest —
+#  red if no success in 3 days, or on 3 consecutive cancellations. Turning this
+#  cron on without that step would rebuild the original bug.
 #
 #  ── WHAT THE INTERVAL SHOULD BE, MEASURED ───────────────────────────────────
 #  From the two dead-sku audits, 32.3h apart (2026-08-17T16:00 -> 2026-08-19T00:19),
@@ -67,8 +88,8 @@ name: Refresh Best Buy Prices
 # =============================================================================
 
 on:
-  # schedule:
-  #   - cron: '0 1 * * *'   # daily, 01:00 UTC — just after Best Buy's 00:xx batch
+  schedule:
+    - cron: '0 1 * * *'   # daily, 01:00 UTC — just after Best Buy's 00:xx batch
   workflow_dispatch:
     inputs:
       dry_run:

@@ -4,9 +4,19 @@ name: Ingest outcome watch (read-only)
 #  WATCHES OUR OWN WRITERS, FROM OUTSIDE THEM.
 #
 #  newegg-feed-watch.yml asks "is Newegg still publishing?". This asks the
-#  other half of the question: "are we still ingesting what they publish?"
+#  other half of the question: "are our writers still producing outcomes?"
 #  Those fail independently. Through the 95-day freeze the feed kept publishing
 #  on time — the ingest was the side that had stopped, and no alarm covered it.
+#
+#  WHAT IS WATCHED
+#    sftp-ingest.yml             the Newegg catalog ingest (12:00 UTC)
+#    refresh-bestbuy-prices.yml  the daily Best Buy price refresh (01:00 UTC)
+#
+#  Both are `main-writer` writers on a daily cron, which is exactly the shape
+#  that froze silently before: scheduled, cancellable, and grey when it loses
+#  the lock. A writer earns a step here when its cron goes on — the Best Buy
+#  refresh got one in the same PR that enabled its schedule, because a cron
+#  without a watcher is the original bug rebuilt.
 #
 #  WHY A SEPARATE JOB AND NOT A STEP IN THE INGEST
 #  Because the failure being watched for is the ingest not getting a turn.
@@ -74,5 +84,20 @@ jobs:
           node scripts/ingest-outcome-report.cjs \
             --workflow=sftp-ingest.yml \
             --label="SFTP Ingest Newegg Catalog" \
+            --stale-days=${{ inputs.stale_days || '3' }} \
+            --cancel-streak=${{ inputs.cancel_streak || '3' }}
+
+      # `always()` on purpose: these are two independent writers, and a red on
+      # the first must not skip the second. Step-level failure still fails the
+      # job, so a red on either one is still a notification — but a silent Best
+      # Buy freeze must not be hidden behind a noisy SFTP one.
+      - name: Best Buy price refresh is still producing outcomes
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/ingest-outcome-report.cjs \
+            --workflow=refresh-bestbuy-prices.yml \
+            --label="Refresh Best Buy Prices" \
             --stale-days=${{ inputs.stale_days || '3' }} \
             --cancel-streak=${{ inputs.cancel_streak || '3' }}
