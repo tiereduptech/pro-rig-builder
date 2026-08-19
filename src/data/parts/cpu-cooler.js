@@ -1969,6 +1969,19 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458316768462662642820017",
+        "itemNumber": "N82E16835103370",
+        "sellerClass": "official",
+        "price": 34.99,
+        "saleprice": 19.98,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316768462662642820017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-pro-120mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103370%3Fitem%3DN82E16835103370",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-370-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:28:16.625Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -11814,6 +11827,19 @@ export default [
         "priceConfirmedAt": "2026-08-19",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445832912868951116858706",
+        "itemNumber": "9SIAHCTKGH6535",
+        "sellerClass": "marketplace",
+        "price": 238.99,
+        "saleprice": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832912868951116858706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-dt-radiator-size-394-mm-intel-lga-1851-1700-1200-115x-amd-am5-am4-white%2Fp%2F2YM-00BC-00006%3Fitem%3D9SIAHCTKGH6535",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS2506300DJNF846.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:27:05.111Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7
       }
     },
     "discount": 30,
@@ -11837,7 +11863,9 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "upc": "06940526114444",
+    "mpn": "DT360-WHAWXY-GL"
   },
   {
     "id": 80232,
@@ -14036,7 +14064,9 @@ export default [
     "sockets": "LGA1700,LGA1851,AM5,AM4",
     "height": 52,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-19"
   },
   {
     "id": 80278,

@@ -806,7 +806,9 @@ export default [
     "pack": 5,
     "bench": 58,
     "fanSize": 120,
-    "mpn": "ACFAN00307A"
+    "mpn": "ACFAN00307A",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-19"
   },
   {
     "id": 85018,
@@ -2277,7 +2279,9 @@ export default [
     "pack": 1,
     "bench": 57,
     "mpn": "RF-C12SF-B1",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-19"
   },
   {
     "id": 85047,
@@ -5111,7 +5115,9 @@ export default [
     "pack": 1,
     "bench": 57,
     "mpn": "RF-C14SF-W1",
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-19"
   },
   {
     "id": 85107,
@@ -10703,16 +10709,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458310150107420512921695",
-        "itemNumber": "9SIA2W0JV72809",
+        "sku": "4458318260348133020667632",
+        "itemNumber": "9SIB0ASKJX2395",
         "sellerClass": "marketplace",
-        "price": 49.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310150107420512921695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-acfan00257a%2Fp%2F1FR-004G-00017%3Fitem%3D9SIA2W0JV72809",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S211221pV0tY.jpg",
+        "price": 31,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318260348133020667632&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-000P-00316%3Fitem%3D9SIB0ASKJX2395",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S230327124Y35D4.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:37.053Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchedAt": "2026-08-19T12:27:20.703Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7142857142857143
       }
     },
     "discount": 10,
@@ -12480,11 +12486,12 @@ export default [
         "sku": "445835834071920721049772",
         "itemNumber": "N82E16835181410",
         "sellerClass": "official",
-        "price": 104.99,
+        "price": 99.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835834071920721049772&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181410%3Fitem%3DN82E16835181410",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-410-19.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.080Z",
+        "matchedAt": "2026-08-19T12:28:16.892Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14953,7 +14960,11 @@ export default [
     "source": "amazon-discovery",
     "fanSize": 120,
     "pwm": true,
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-19",
+    "upc": "00840006682936",
+    "mpn": "CO-9051030-WW"
   },
   {
     "id": 101142,

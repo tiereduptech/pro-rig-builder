@@ -3644,12 +3644,26 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445838793027431033498786",
+        "itemNumber": "N82E16814202457",
+        "sellerClass": "official",
+        "price": 519.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838793027431033498786&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsapphire-tech-pulse-11350-03-20g-radeon-rx-9060-xt-16gb-graphics-card-double-fans%2Fp%2FN82E16814202457%3Fitem%3DN82E16814202457",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-202-457-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:28:13.548Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8
       }
     },
     "sp": 3456,
     "bench": 60,
     "baseClock": 1700,
-    "boostClock": 2544
+    "boostClock": 2544,
+    "upc": "00840777091319",
+    "mpn": "11348-03-20G"
   },
   {
     "id": 30101,
@@ -4604,10 +4618,11 @@ export default [
         "itemNumber": "N82E16814126831",
         "sellerClass": "official",
         "price": 859.99,
+        "saleprice": 809.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837366143263438209558&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rx9070xt-o16g-white-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126831%3Fitem%3DN82E16814126831",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-831-02.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.326Z",
+        "matchedAt": "2026-08-19T12:28:13.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -8292,10 +8307,11 @@ export default [
         "itemNumber": "N82E16814126832",
         "sellerClass": "official",
         "price": 759.99,
+        "saleprice": 709.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832419478278675430690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rx9070-o16g-evo-radeon-rx-9070-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126832%3Fitem%3DN82E16814126832",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-832-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.326Z",
+        "matchedAt": "2026-08-19T12:28:13.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

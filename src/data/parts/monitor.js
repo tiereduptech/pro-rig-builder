@@ -14056,6 +14056,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-19"
+      },
+      "newegg": {
+        "sku": "4458310961326153031810814",
+        "itemNumber": "9SIC0T2M4W4839",
+        "sellerClass": "marketplace",
+        "price": 157.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310961326153031810814&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-000A8%3Fitem%3D9SIC0T2M4W4839",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S26081818VYKN12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:27:57.368Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 27,
@@ -14360,14 +14372,14 @@ export default [
         "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
-        "sku": "4458312632721777882462771",
-        "itemNumber": "9SIA6ZPKP12061",
+        "sku": "4458310136380561835837936",
+        "itemNumber": "9SIAFJ8KTT3868",
         "sellerClass": "marketplace",
-        "price": 156.18,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312632721777882462771&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flenovo-24%2Fp%2F0JC-0006-00YA1%3Fitem%3D9SIA6ZPKP12061",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2511261668WY47.jpg",
+        "price": 151.18,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310136380561835837936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flenovo-24%2Fp%2F0JC-0006-00YA1%3Fitem%3D9SIAFJ8KTT3868",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD26072412CFJ847.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:18:10.789Z",
+        "matchedAt": "2026-08-19T12:27:01.335Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

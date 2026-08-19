@@ -3461,6 +3461,18 @@ export default [
         "priceSeller": "Silicon Power USA Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "44583429461254797398864",
+        "itemNumber": "9SIA1K6KRK2833",
+        "sellerClass": "marketplace",
+        "price": 230.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583429461254797398864&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2U3-0036-00001%3Fitem%3D9SIA1K6KRK2833",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2601060O7PSK20.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:25:08.962Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -5073,11 +5085,11 @@ export default [
         "sku": "4458318259682829725809526",
         "itemNumber": "9SIBTK0KUK6221",
         "sellerClass": "marketplace",
-        "price": 145.99,
+        "price": 143.95,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318259682829725809526&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-500gb-sn7100-nvme%2Fp%2FN82E16820250277%3Fitem%3D9SIBTK0KUK6221",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-277-03.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:04.643Z",
+        "matchedAt": "2026-08-19T12:27:32.803Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -5285,14 +5297,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445837627754164719892488",
-        "itemNumber": "9SIC7XKM1R5815",
+        "sku": "4458310148910386425588383",
+        "itemNumber": "9SIBTK0KUW0399",
         "sellerClass": "marketplace",
-        "price": 180.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837627754164719892488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sn5000-nvme%2Fp%2FN82E16820250268%3Fitem%3D9SIC7XKM1R5815",
+        "price": 179.09,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310148910386425588383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-blue-sn5000-nvme%2Fp%2FN82E16820250268%3Fitem%3D9SIBTK0KUW0399",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-268-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:41.589Z",
+        "matchedAt": "2026-08-19T12:27:32.824Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11469,6 +11481,18 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-19"
+      },
+      "newegg": {
+        "sku": "445837207010138223493516",
+        "itemNumber": "9SIC7XKM1K3909",
+        "sellerClass": "marketplace",
+        "price": 338,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837207010138223493516&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-mx500-sata%2Fp%2FN82E16820156174%3Fitem%3D9SIC7XKM1K3909",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-174-V09.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:28:09.142Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8333333333333334
       }
     },
     "additionalImages": [
@@ -11929,14 +11953,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445838504344132647857465",
-        "itemNumber": "9SIBTK0KUW0403",
+        "sku": "4458311374576513493187583",
+        "itemNumber": "9SIC4RUKXD6921",
         "sellerClass": "marketplace",
-        "price": 293.16,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838504344132647857465&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250253%3Fitem%3D9SIBTK0KUW0403",
+        "price": 252.41,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311374576513493187583&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250253%3Fitem%3D9SIC4RUKXD6921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-253-04.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:04.665Z",
+        "matchedAt": "2026-08-19T12:28:02.152Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12823,11 +12847,11 @@ export default [
         "sku": "445834035720704846679930",
         "itemNumber": "9SIC4RUKXJ6976",
         "sellerClass": "marketplace",
-        "price": 408.68,
+        "price": 390.62,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834035720704846679930&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-red-sa500%2Fp%2FN82E16820250265%3Fitem%3D9SIC4RUKXJ6976",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-265-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:33.973Z",
+        "matchedAt": "2026-08-19T12:28:02.214Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -18400,14 +18424,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445834669575337195178473",
-        "itemNumber": "9SIC6EGM0Z4488",
+        "sku": "4458315463360732793909218",
+        "itemNumber": "9SIA4P0KMG7624",
         "sellerClass": "marketplace",
-        "price": 747.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834669575337195178473&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000D0%3Fitem%3D9SIC6EGM0Z4488",
+        "price": 699.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315463360732793909218&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-003V-000D0%3Fitem%3D9SIA4P0KMG7624",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2509180IX19K4A.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:37.533Z",
+        "matchedAt": "2026-08-19T12:25:13.947Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -25898,13 +25922,13 @@ export default [
         "sku": "445833726385123877433051",
         "itemNumber": "9SIBFJRKTX7569",
         "sellerClass": "marketplace",
-        "price": 328,
+        "price": 295.15,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833726385123877433051&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-1tb-ultra-3d-sata%2Fp%2FN82E16820173632%3Fitem%3D9SIBFJRKTX7569",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-632-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:58.267Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8
+        "matchedAt": "2026-08-19T12:27:27.100Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -28694,11 +28718,11 @@ export default [
         "itemNumber": "0D9-001A-003S1",
         "sellerClass": "official",
         "price": 589.99,
-        "saleprice": 569.99,
+        "saleprice": 559.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318284833340300936522&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-4tb-sn7100-nvme%2Fp%2F0D9-001A-003S1%3Fitem%3D0D9-001A-003S1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-001A-003S1-15.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:29.390Z",
+        "matchedAt": "2026-08-19T12:25:03.345Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -28759,12 +28783,12 @@ export default [
         "sku": "4458316801510541620824444",
         "itemNumber": "0D9-002P-00015",
         "sellerClass": "official",
-        "price": 186.99,
-        "saleprice": 175.99,
+        "price": 184.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316801510541620824444&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-512gb%2Fp%2F0D9-002P-00015%3Fitem%3D0D9-002P-00015",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD220527191TU6C1.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-19T12:25:03.380Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -31581,11 +31605,12 @@ export default [
         "sku": "445837649669311045399472",
         "itemNumber": "N82E16820250272",
         "sellerClass": "official",
-        "price": 3799.99,
+        "price": 1399.99,
+        "saleprice": 1389.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837649669311045399472&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-black%2Fp%2FN82E16820250272%3Fitem%3DN82E16820250272",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-272-05.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.609Z",
+        "matchedAt": "2026-08-19T12:28:14.667Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
