@@ -34,6 +34,9 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
+// The spec parser lives in its own module so test/case-spec-parser.test.js can
+// exercise it against real listing shapes without this script's paid-API preflight.
+import { parseSpecs } from './scripts/case-spec-parser.mjs';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -180,97 +183,6 @@ if (flags.dryRun) {
   if (target.length > 10) console.log('  ... and ' + (target.length - 10) + ' more');
   writeSummary();
   process.exit(0);
-}
-
-// ─── Spec parser ────────────────────────────────────────────────────────────
-function parseSpecs(item) {
-  const specs = {};
-  if (!item) return specs;
-
-  // Collect all searchable text:
-  //   - title
-  //   - description
-  //   - product_information[].body (structured key-value dict per section)
-  //   - product_information[].contents[].rows[].text (nested bullet sections)
-  const parts = [];
-  if (item.title) parts.push(item.title);
-  if (item.description) parts.push(item.description);
-
-  const pi = item.product_information || [];
-  const bodyKV = {};       // flat key-value from all "Features & Specs" style sections
-  for (const section of pi) {
-    if (section?.body && typeof section.body === 'object') {
-      for (const [k, v] of Object.entries(section.body)) {
-        bodyKV[k.toLowerCase()] = String(v);
-        parts.push(`${k}: ${v}`);
-      }
-    }
-    // nested rows
-    for (const c of (section?.contents || [])) {
-      for (const row of (c?.rows || [])) {
-        if (row?.text) parts.push(row.text);
-      }
-    }
-  }
-  const text = parts.join(' \n ');
-
-  // ─── Max GPU Length ──
-  //   "Supports up to 340 mm GPU", "GPU Clearance: 365mm", "GPU Length 400mm"
-  let m = text.match(/(?:up to\s*)?(\d{3})\s*mm\s*GPU(?:\s*(?:in\s*)?length)?/i);
-  if (m) specs.maxGPU = parseInt(m[1]);
-  else {
-    m = text.match(/GPU\s*(?:Clearance|Length|Support|Max)\s*[:\-–]?\s*(\d{3})\s*mm/i);
-    if (m) specs.maxGPU = parseInt(m[1]);
-  }
-
-  // ─── Max Cooler Height ──
-  m = text.match(/(?:Max(?:imum)?\s*(?:CPU\s*)?(?:Air\s*)?Cooler|CPU\s*Cooler\s*(?:Height|Clearance))[^:\n]*?[:\-–]?\s*(\d{2,3})\s*mm/i);
-  if (m) specs.maxCooler = parseInt(m[1]);
-
-  // ─── Fans Included ──
-  //   "1 x Pre-Installed Fan", "Pre-installed 3 fans", "Includes 6 ARGB fans"
-  m = text.match(/(\d{1,2})\s*x\s*Pre[-\s]?Installed\s*Fans?/i);
-  if (m) specs.fans_inc = parseInt(m[1]);
-  else {
-    m = text.match(/Pre[-\s]?Install(?:ed)?\s*(\d{1,2})\s*(?:x\s*\d+mm)?\s*(?:ARGB\s*|RGB\s*|PWM\s*)*fans?/i);
-    if (m) specs.fans_inc = parseInt(m[1]);
-  }
-  if (specs.fans_inc == null) {
-    m = text.match(/Includes?\s*(\d{1,2})\s*(?:x\s*\d+mm\s*)?(?:ARGB\s*|RGB\s*|PWM\s*)*fans?/i);
-    if (m) specs.fans_inc = parseInt(m[1]);
-  }
-
-  // ─── Radiator Support ──
-  //   Collect all mentioned radiator sizes in the text (360mm, 280mm, 240mm, 120mm)
-  //
-  //   ARRAY OF INTEGERS, not "240mm,360mm". The AIO/Radiator filter in
-  //   src/App.jsx reads `Array.isArray(p.rads) ? p.rads : []` and buckets
-  //   anything else as "None", so a string here is a field the filter cannot
-  //   read — coverage on paper, an empty filter on the site.
-  //   normalize-case-rads.js settled this shape once already; this writer
-  //   reintroduced the string. Numeric sort, because [...set].sort() is
-  //   lexicographic and would order 1120 before 240 if the list ever widened.
-  const rads = new Set();
-  const radPat = /(\d{3})\s*mm\s*(?:AIO\s*)?(?:Radiator|rad\b)/gi;
-  let r;
-  while ((r = radPat.exec(text)) !== null) {
-    const n = parseInt(r[1]);
-    if ([120, 140, 240, 280, 360, 420].includes(n)) rads.add(n);
-  }
-  if (rads.size) specs.rads = [...rads].sort((a, b) => a - b);
-
-  // ─── Drive Bays from structured body ──
-  if (bodyKV['internal bays quantity']) {
-    const n = parseInt(bodyKV['internal bays quantity']);
-    if (n) {
-      // We don't know 2.5 vs 3.5 from this field alone, but Hard Disk Form Factor tells us
-      const form = bodyKV['hard disk form factor'] || '';
-      if (/3\.5/.test(form)) specs.drive35 = n;
-      else if (/2\.5/.test(form)) specs.drive25 = n;
-    }
-  }
-
-  return specs;
 }
 
 // ─── DataForSEO task POST/GET helpers ───────────────────────────────────────
