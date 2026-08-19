@@ -65,6 +65,56 @@
  * retailers is held, not written, and reported. --no-sanity-gate disables it
  * deliberately; there is no way to disable it by accident.
  *
+ * ── A CHECK WITH NO INDEPENDENT REFERENCE REPORTS "UNREFEREED", NOT "OK" ─────
+ * When a product has no other priced retailer, price-sanity.js falls back to
+ * the product's own `pr`. On this catalog `pr` is mostly a copy of the Best Buy
+ * price taken at ingest, so that fallback compares Best Buy to itself and its
+ * verdict is empty in both directions — an OK that means "the new price is near
+ * the old one", an objection that means "the new price is far from the old
+ * one", against the very number this job exists to correct.
+ *
+ * The 2026-08-19 dry run put 404 of 869 classified rows on that list basis and
+ * 371 of them were circular: 343 published a PASSED sanity check and 28
+ * published an objection, and none of the 371 had been checked against
+ * anything. Reporting either verdict overstates what is known, so those rows
+ * are now labelled UNREFEREED and counted separately. Only 33 rows had a `pr`
+ * genuinely independent of the Best Buy price; exactly one of those objected
+ * (50485), and it was right — a mismapped sku.
+ *
+ * UNREFEREED is not a hold. The price still comes from Best Buy's own API,
+ * which is the authority on what Best Buy charges; it is uncorroborated, not
+ * suspect, and holding all 371 would pin them to the stale numbers this job was
+ * written to fix. But a >=50% move with nothing to check it against is the
+ * shape a mismapped sku makes, so --unrefereed-cliffs=hold keeps the stored
+ * price on that population. The trade is real in both directions, so it is a
+ * flag rather than a default.
+ *
+ * ── THE SKU MUST NAME THE PRODUCT ON THE ROW ────────────────────────────────
+ * Before any price question is asked, the row's name is checked against the
+ * name Best Buy returns for its sku. This catches the one error class no price
+ * gate can: a mismapped sku, where the price is not wrong at all — it is the
+ * correct price for a different product.
+ *
+ * 50485 reads "WD Blue SA510 2TB SATA" and its prodsku resolves to "WD BLACK
+ * SN850P 2TB for PS5". The $877.99 is the SN850P's real, current price. The
+ * sanity gate had nothing to say about it, and certified two of its siblings
+ * (50465, 50466 — both pointing at Samsung T7 externals) as OK, because their
+ * only reference was the wrong product's own stored price.
+ *
+ * It compares MODEL DESIGNATIONS, not prose. Catalog names come from
+ * manufacturers and Best Buy's come from Best Buy, so the words differ
+ * constantly on rows that are the same product; what does not drift is SA510 vs
+ * SN850P, 970 EVO vs T7, SN770 vs SN850X. Over all 1,040 rows, 773 carry a
+ * model token on both sides and 6 disagree — 5 confirmed mismaps and one row
+ * (90365) whose Best Buy name omits the model entirely, which is exactly the
+ * case to hold rather than guess at.
+ *
+ * A mismatch holds the price, stamps priceUnconfirmedReason
+ * 'bestbuy:name-mismatch', and names the row in a CI warning. Unlike every
+ * other hold here, it does NOT self-heal: tomorrow's run re-reads the same
+ * wrong sku and agrees with itself. Each one needs a relink, which is
+ * deliberately a person's job and not this script's.
+ *
  * ── WHAT THIS SCRIPT DOES NOT DO ─────────────────────────────────────────────
  * It does not delete deals, quarantine rows, or purge dead skus. A sku the API
  * 404s gets inStock:false — that is an availability fact, self-healing, and the
@@ -79,7 +129,9 @@
  *     audit uses: a run with that many holes has not measured the catalog), or
  *   - more than 5% of comparable rows would move by 50% or more (a healthy day
  *     moves 4.6% of rows at all, and the largest real move measured was 44.6%;
- *     a cliff like that is the API publishing something else, not a sale).
+ *     a cliff like that is the API publishing something else, not a sale), or
+ *   - more than 5% of rows fail the identity check (the real rate is 0.6%; at
+ *     ten times that the matcher has regressed, not the catalog).
  *
  * ── HOW IT WRITES ────────────────────────────────────────────────────────────
  * Through scripts/write-catalog.cjs, the sanctioned path, which does the
@@ -110,6 +162,15 @@ const argOf = (name, dflt) => {
 const N = argv.includes('--n') ? Number(argv[argv.indexOf('--n') + 1]) || 0 : 0;
 const FROM_REPORT = argOf('from-report', null);
 const STALE_DAYS = Number(argOf('stale-days', '90'));
+// What to do with a >=CLIFF move on a row nothing independent can check.
+// 'write' is the behaviour that shipped; 'hold' keeps the stored price and
+// leaves the row unconfirmed. See the UNREFEREED block below for why this is a
+// choice and not a default.
+const UNREFEREED_CLIFFS = argOf('unrefereed-cliffs', 'write');
+if (!['write', 'hold'].includes(UNREFEREED_CLIFFS)) {
+  console.error(`ERROR: --unrefereed-cliffs must be 'write' or 'hold', got '${UNREFEREED_CLIFFS}'.`);
+  process.exit(1);
+}
 const ROOT = process.cwd();
 const SUMMARY_OUT = argOf('report', path.join(ROOT, 'catalog-build', 'bestbuy-refresh-summary.json'));
 
@@ -142,6 +203,11 @@ const CLIFF = 0.50;
 // Steady-state daily runs should sit near zero; if they do not, the number to
 // change is this one, deliberately, with the reason recorded.
 const MAX_CLIFF_RATE = Number(argOf('max-cliff-rate', '0.15'));
+// Share of rows allowed to fail the identity check before the run is treated as
+// a broken matcher rather than a broken catalog. Measured over all 1,040 rows
+// the real rate is 6 (0.6%); 5% is an order of magnitude of headroom and still
+// stops a tokenizer regression from holding the entire catalog in one run.
+const MAX_MISMATCH_RATE = Number(argOf('max-mismatch-rate', '0.05'));
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const bar = '='.repeat(96);
@@ -297,6 +363,79 @@ const peersOf = (p) => Object.entries(p.deals || {})
   .map(([, d]) => effectivePrice(d))
   .filter((n) => Number.isFinite(n) && n > 0);
 
+// ── Is `pr` independent of the Best Buy price? ───────────────────────────────
+// classifyDeal falls back to the product's own `pr` when no peer exists, and
+// on this catalog `pr` is usually a copy of the Best Buy price taken at ingest.
+// Comparing a new Best Buy price to that is comparing Best Buy to itself: the
+// verdict carries no information, whichever way it lands.
+//
+// The tie is measured against the STORED Best Buy price — the number this run
+// exists to correct — because that is what `pr` was copied from. A dollar of
+// slack catches the rounding the catalog does at ingest (99.99 -> 100,
+// 169.99 -> 170, 40.99 -> 41), and 1% covers the same rounding on dear rows.
+const prTracksBestBuy = (r) => {
+  const pr = r.p?.pr;
+  return Number.isFinite(pr) && r.stored > 0 &&
+    Math.abs(pr - r.stored) <= Math.max(1, r.stored * 0.01);
+};
+
+// Not added to price-sanity.js's CLASS. That enum answers "what does the
+// evidence say about this price"; this answers "is there any evidence" — a
+// fact about THIS catalog's pr provenance, which price-sanity.js has no view of.
+const UNREFEREED = 'UNREFEREED';
+
+// ── Does this sku describe the product on the row? ───────────────────────────
+// No price check can catch a mismapped sku, because the price is not wrong —
+// it is the right price for the wrong product. 50485 reads "WD Blue SA510 2TB
+// SATA" and its prodsku resolves to "WD BLACK SN850P 2TB for PS5"; $877.99 is
+// the SN850P's real price, correctly read, about to be written onto a SATA
+// drive. The sanity gate certified two of its siblings (50465, 50466) as OK.
+//
+// The API already returns `name` on every response and this job already asks
+// for it. Comparing it to the row's own name is the check that catches the
+// class — and it is the one error a daily job cannot recover from by waiting,
+// because tomorrow's run re-reads the same wrong sku and agrees with itself.
+//
+// MODEL TOKENS, NOT PROSE. Catalog names come from manufacturers, Best Buy's
+// come from Best Buy, so the words differ constantly on rows that are the same
+// product ("Fractal Design - North Charcoal Black" vs "North - Genuine Walnut
+// Wood Front"). What does NOT drift is the model designation: SA510 vs SN850P,
+// 970 EVO vs T7, SN770 vs SN850X. So the check ignores prose entirely and asks
+// one question — do these two names name the same model?
+//
+// Measured over all 1,040 rows: 773 have a model token on both sides and 6 of
+// those disagree. Five are confirmed mismaps (50465, 50466, 50480, 50485,
+// 50501); the sixth is 90365, where Best Buy's name drops the model number
+// altogether and the row cannot be confirmed either way — which is exactly the
+// case a gate should hold rather than guess at.
+const UNIT_TOKEN = /^(\d+(tb|gb|mb|kb|hz|khz|ghz|mhz|mm|cm|nm|in|bit|pin|rpm|w|v|k|p|x|ms|fps|core|thread|way|pack)|x\d+|gen\d+|\d{1,2})$/;
+const squashName = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
+const modelTokens = (s) => [...new Set(String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+  .split(' ').filter((t) => t && /\d/.test(t) && !UNIT_TOKEN.test(t)))];
+
+/**
+ * 'match' | 'mismatch' | 'unverifiable' — never a score. A row is held only on
+ * 'mismatch': both names carry a model designation and they name different ones.
+ */
+function nameVerdict(rowName, apiName) {
+  if (!rowName || !apiName) return { verdict: 'unverifiable', why: 'no name on one side' };
+  const rm = modelTokens(rowName), am = modelTokens(apiName);
+  if (!rm.length || !am.length) {
+    return { verdict: 'unverifiable', rowModels: rm, apiModels: am,
+      why: `no model designation in ${!rm.length ? 'the catalog name' : "Best Buy's name"}` };
+  }
+  // Separators are typed inconsistently on both sides — "MPG271QRXQDOLED" and
+  // "MPG 271QRX QD-OLED" are one model. Compare against the de-punctuated name
+  // too, at >=3 chars so a two-character token cannot match by accident.
+  const rs = squashName(rowName), as = squashName(apiName);
+  const hit = (tok, other, otherSquash) => other.includes(tok) || (tok.length >= 3 && otherSquash.includes(tok));
+  const agree = rm.some((t) => hit(t, am, as)) || am.some((t) => hit(t, rm, rs));
+  return agree
+    ? { verdict: 'match', rowModels: rm, apiModels: am }
+    : { verdict: 'mismatch', rowModels: rm, apiModels: am,
+        why: `row names model [${rm.join(' ')}], sku resolves to [${am.join(' ')}]` };
+}
+
 const OUT = {
   OK: 'ok',                 // price + stock written, stamped confirmed
   STALE: 'stale',           // upstream stamp is ancient — stock only, price held
@@ -305,8 +444,10 @@ const OUT = {
   UNKNOWN: 'unknown',       // no verdict — nothing written at all
 };
 
-const buckets = { ok: [], stale: [], flagged: [], dead: [], unknown: [] };
-const noted = [];   // written, but a list-price objection was recorded against them
+const buckets = { ok: [], stale: [], flagged: [], unrefereedHeld: [], nameMismatch: [], dead: [], unknown: [] };
+let nameChecked = 0, nameUnverifiable = 0;
+const noted = [];       // written, but a REAL list price objected — see below
+const unrefereed = [];  // written with nothing independent to check them at all
 let priceChanged = 0, stockChanged = 0, comparable = 0, cliffs = 0;
 
 for (const r of targets) {
@@ -330,6 +471,7 @@ for (const r of targets) {
     ...bare(r),
     p_pr: r.p.pr ?? null,
     api: {
+      name: v.name ?? null,
       salePrice: v.salePrice ?? null, regularPrice: v.regularPrice ?? null,
       onSale: v.onSale ?? null, active: v.active ?? null, orderable: v.orderable ?? null,
       onlineAvailability: v.onlineAvailability ?? null,
@@ -343,6 +485,23 @@ for (const r of targets) {
   };
   if (row.wasInStock !== row.willBeInStock) stockChanged++;
   if (row.deltaPct != null) { comparable++; if (Math.abs(row.deltaPct) >= CLIFF) cliffs++; }
+
+  // ── The identity gate, ahead of every price question ───────────────────────
+  // Asked first because it is not a question about the price. If the sku names
+  // a different product, "is this price plausible" has no meaning — the answer
+  // would be about something we do not sell. Reporting such a row as merely
+  // stale or merely suspect would file a mismap under a heading that implies
+  // it self-heals, and this one does not: tomorrow's run reads the same wrong
+  // sku and agrees with itself.
+  const nv = nameVerdict(r.name, v.name);
+  row.nameCheck = nv;
+  if (nv.verdict === 'mismatch') {
+    row.holdReason = `sku ${r.sku} names a different product — ${nv.why}`;
+    row.unconfirmedReason = 'bestbuy:name-mismatch';
+    buckets.nameMismatch.push(row);
+    continue;
+  }
+  if (nv.verdict === 'unverifiable') nameUnverifiable++; else nameChecked++;
 
   if (stale) {
     row.holdReason = v.priceUpdateDate
@@ -370,24 +529,9 @@ for (const r of targets) {
   const objection = cls.cls !== CLASS.OK && cls.cls !== CLASS.UNVERIFIED;
   // ONLY AN INDEPENDENT RETAILER MAY VETO A PRICE.
   //
-  // classifyDeal falls back to the product's own pr/msrp when no peer exists,
-  // and for Best Buy that fallback is circular: `pr` equals the stored Best Buy
-  // price on 690 of 1,040 rows (66.3%), so "price > pr * 1.4" degenerates into
-  // "the price went up a lot" — measured against the very number this job is
-  // here to correct. Every one of the 29 list-basis objections in the first dry
-  // run had ZERO priced peers, 16 of them had pr identical to the stored Best
-  // Buy price, and several had the new price landing exactly on the product's
-  // own msrp (20415 -> $195.99, 20430 -> $399.99, 90183 -> $1599.99) — the
-  // signature of an ingest-time sale that has since ended. Letting `pr` veto
-  // would pin those rows to an expired sale price permanently: held every
-  // night, never confirmed, with no path back.
-  //
-  // A peer verdict ('median' / 'pair') is different — another retailer is real,
-  // independent evidence, and price-sanity.js's SUSPECT_LOW/HIGH/PAIR classes
-  // exist for exactly that. Those still hold.
-  //
-  // The list-basis objection is not discarded, just demoted: it rides along on
-  // the row and gets its own report section so the population stays visible.
+  // A peer verdict ('median' / 'pair') is real, independent evidence — another
+  // retailer selling the same product — and price-sanity.js's SUSPECT_LOW /
+  // HIGH / PAIR classes exist for exactly that. Those hold the price.
   const peerBacked = cls.basis === 'median' || cls.basis === 'pair';
   if (objection && peerBacked) {
     row.holdReason = `sanity ${cls.cls} (${cls.basis}, ref $${cls.ref}, ${(cls.deviation * 100).toFixed(0)}%)`;
@@ -395,7 +539,56 @@ for (const r of targets) {
     buckets.flagged.push(row);
     continue;
   }
-  if (objection) {
+
+  // ── UNREFEREED: no peer, and `pr` is the Best Buy price wearing a hat ───────
+  //
+  // With no peer, classifyDeal falls back to the product's own pr/msrp. On this
+  // catalog that fallback is usually circular — `pr` was copied from the Best
+  // Buy price at ingest — so BOTH of its answers are empty:
+  //
+  //   the OK        degenerates into "the new price is near the old price"
+  //   the objection degenerates into "the new price is far from the old price"
+  //
+  // and this job exists precisely because the old price is the thing that is
+  // wrong. Measured on the 2026-08-19 dry run: 404 rows landed on a list basis,
+  // 371 of them circular — 343 reported a PASSED sanity check and 28 reported
+  // an objection, and not one of the 371 had been checked against anything.
+  // Only 33 rows had a `pr` that was genuinely independent of the Best Buy
+  // price, and exactly one of those objected (50485, which turned out to be a
+  // mismapped sku — the check earning its keep on the one row it could).
+  //
+  // So neither verdict is reported for a circular row. It is labelled
+  // UNREFEREED, which is the true statement: nothing checked this.
+  //
+  // Held? Not by default. An unrefereed price is not a suspect price — it comes
+  // from Best Buy's own API, which is the authority on what Best Buy charges —
+  // it is an UNCORROBORATED one, and holding all of them would pin 371 rows to
+  // the stale numbers this job was written to fix. But a >=CLIFF move with
+  // nothing to check it against is the shape a mismapped sku makes, so
+  // --unrefereed-cliffs=hold makes that population stock-only. The choice is
+  // explicit because the trade is real in both directions.
+  const circularPr = String(cls.basis).startsWith('list') && prTracksBestBuy(r);
+  if (circularPr) {
+    row.sanity = {
+      cls: UNREFEREED, ref: null, deviation: null, basis: 'unrefereed',
+      // Kept so the demotion is auditable rather than a silent swallow.
+      suppressed: { cls: cls.cls, basis: cls.basis, ref: cls.ref, deviation: cls.deviation },
+    };
+    row.unrefereedReason = `no peer retailer, and pr $${r.p.pr} is the stored Best Buy price $${r.stored} — nothing checked this`;
+    const isCliff = row.deltaPct != null && Math.abs(row.deltaPct) >= CLIFF;
+    if (isCliff && UNREFEREED_CLIFFS === 'hold') {
+      row.holdReason = `unrefereed cliff — ${(row.deltaPct * 100).toFixed(0)}% move with no independent price to check it against`;
+      row.unconfirmedReason = 'bestbuy:unrefereed-cliff';
+      buckets.unrefereedHeld.push(row);
+      continue;
+    }
+    if (isCliff) row.unrefereedCliff = true;
+    unrefereed.push(row);
+  } else if (objection) {
+    // A genuinely independent list price objected. Still written — pinning a
+    // row to an expired ingest-time sale price would hold it every night with
+    // no path back — but recorded, and now the population is only the rows
+    // where the objection actually means something.
     row.listObjection = `${cls.cls} (${cls.basis}, ref $${cls.ref}, ${(cls.deviation * 100).toFixed(0)}%) — no peer to corroborate, written anyway`;
     noted.push(row);
   }
@@ -415,6 +608,10 @@ const breakers = [];
 if (unknownRate > MAX_UNKNOWN_RATE) {
   breakers.push(`${buckets.unknown.length} of ${targets.length} skus (${pct(buckets.unknown.length, targets.length)}) came back UNKNOWN, over the ${(MAX_UNKNOWN_RATE * 100).toFixed(0)}% ceiling — this run did not read the catalog.`);
 }
+const mismatchRate = targets.length ? buckets.nameMismatch.length / targets.length : 0;
+if (mismatchRate > MAX_MISMATCH_RATE) {
+  breakers.push(`${buckets.nameMismatch.length} of ${targets.length} rows (${pct(buckets.nameMismatch.length, targets.length)}) name a different product than their sku, over the ${(MAX_MISMATCH_RATE * 100).toFixed(0)}% ceiling — at that rate the matcher is broken, not the catalog.`);
+}
 if (cliffRate > MAX_CLIFF_RATE) {
   breakers.push(`${cliffs} of ${comparable} comparable rows (${pct(cliffs, comparable)}) would move by ${(CLIFF * 100).toFixed(0)}% or more, over the ${(MAX_CLIFF_RATE * 100).toFixed(0)}% ceiling — the API is publishing something other than today's selling price.`);
 }
@@ -430,10 +627,20 @@ console.log(bar);
 console.log(`  rows considered ..................... ${targets.length}`);
 console.log(`  -> price + stock refreshed .......... ${n('ok')}  (${pct(n('ok'), targets.length)})`);
 console.log(`       of which the price moved ....... ${priceChanged}`);
-console.log(`  -> stock only, price HELD ........... ${n('stale') + n('flagged')}`);
+console.log(`  -> stock only, price HELD ........... ${n('stale') + n('flagged') + n('unrefereedHeld') + n('nameMismatch')}`);
+console.log(`       THE SKU NAMES ANOTHER PRODUCT .. ${n('nameMismatch')}  <- not self-healing; needs a relink`);
 console.log(`       upstream stamp ancient ......... ${n('stale')}`);
-console.log(`       failed the sanity gate ......... ${n('flagged')}`);
-console.log(`       (written, list-price objection noted) ${noted.length}`);
+console.log(`       a peer retailer vetoed it ...... ${n('flagged')}`);
+console.log(`       unrefereed cliff (--unrefereed-cliffs=hold) ${n('unrefereedHeld')}`);
+console.log('');
+console.log(`  identity: ${nameChecked} rows confirmed to name the same model as their sku, ` +
+  `${n('nameMismatch')} contradicted, ${nameUnverifiable} unverifiable (no model designation on one side)`);
+console.log('');
+console.log(`  of the rows written, how well checked:`);
+console.log(`       a peer retailer agreed ......... ${buckets.ok.filter((r) => r.sanity && ['median', 'pair'].includes(r.sanity.basis)).length}`);
+console.log(`       an independent list agreed ..... ${buckets.ok.length - unrefereed.length - noted.length - buckets.ok.filter((r) => r.sanity && ['median', 'pair'].includes(r.sanity.basis)).length}`);
+console.log(`       an independent list OBJECTED ... ${noted.length}  <- written anyway, listed below`);
+console.log(`       UNREFEREED — nothing checked it. ${unrefereed.length}  (of which >=${(CLIFF * 100).toFixed(0)}% moves: ${unrefereed.filter((r) => r.unrefereedCliff).length})`);
 console.log(`  -> dead sku (404), stock only ....... ${n('dead')}  <- purge-dead-bestbuy-links.mjs owns removal`);
 console.log(`  -> UNKNOWN, nothing written ......... ${n('unknown')}`);
 console.log('');
@@ -466,8 +673,24 @@ show('HELD — upstream stamp too old to trust:', buckets.stale.sort((a, b) => (
 show('HELD — the new price failed the cross-retailer sanity gate:', buckets.flagged,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} api $${String(r.api.salePrice).padEnd(9)} | ${r.holdReason}`);
 
-show('WRITTEN OVER A LIST-PRICE OBJECTION — no peer retailer to corroborate:', noted,
+show('HELD — THE SKU NAMES A DIFFERENT PRODUCT (relink required; no run fixes this):', buckets.nameMismatch,
+  (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} sku ${r.sku.padEnd(9)} stored $${String(r.stored).padEnd(9)} not written $${String(r.api.salePrice).padEnd(9)}\n` +
+         `           row: ${r.name.slice(0, 74)}\n` +
+         `           api: ${String(r.api.name || '—').slice(0, 74)}`, 25);
+
+show('HELD — an unrefereed cliff (--unrefereed-cliffs=hold):', buckets.unrefereedHeld,
+  (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} api $${String(r.api.salePrice).padEnd(9)} | ${r.holdReason}`);
+
+show('WRITTEN OVER A LIST-PRICE OBJECTION — an INDEPENDENT list price disagrees:', noted,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} -> $${String(r.api.salePrice).padEnd(9)} pr $${String(r.p_pr ?? '—').padEnd(9)} | ${r.listObjection}`);
+
+// Sorted by move size: the whole point of the section is that the biggest
+// numbers in it are the ones nothing corroborated.
+show(`UNREFEREED — no peer, and pr is the Best Buy price itself (nothing checked these, written ${UNREFEREED_CLIFFS === 'hold' ? 'except the cliffs' : 'anyway'}):`,
+  unrefereed.slice().sort((a, b) => Math.abs(b.deltaPct ?? 0) - Math.abs(a.deltaPct ?? 0)),
+  (r) => `${r.unrefereedCliff ? 'CLIFF ' : '      '}${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} $${String(r.stored).padEnd(9)} -> $${String(r.api.salePrice).padEnd(9)} ` +
+         `${(r.deltaPct * 100 >= 0 ? '+' : '')}${((r.deltaPct ?? 0) * 100).toFixed(1)}%`.padEnd(9) +
+         ` pr $${String(r.p_pr ?? '—').padEnd(9)} | ${r.name.slice(0, 30)}`, 25);
 
 show('DEAD SKU — inStock:false only, deal left in place:', buckets.dead,
   (r) => `${String(r.id).padEnd(8)} sku ${r.sku.padEnd(9)} ${String(r.cat || '').padEnd(12)} $${String(r.stored ?? '—').padEnd(9)} | ${r.name.slice(0, 44)}`);
@@ -511,6 +734,11 @@ if (APPLY && !breakers.length) {
   for (const r of buckets.ok) applyRow(r, { price: r.api.salePrice, stock: r.willBeInStock, confirm: true });
   for (const r of buckets.stale) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
   for (const r of buckets.flagged) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
+  for (const r of buckets.unrefereedHeld) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
+  // Stock still moves, as it does on every other hold — but note that on a
+  // mismapped row it is the WRONG product's stock. The row is broken until it
+  // is relinked; this only refuses to make it worse by writing a price too.
+  for (const r of buckets.nameMismatch) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
   for (const r of buckets.dead) {
     const t = byId.get(r.id);
     if (t) { t.deal.inStock = false; written++; }
@@ -523,19 +751,24 @@ const summary = {
   ranAt: new Date().toISOString(),
   apply: APPLY && !breakers.length,
   source: FROM_REPORT ? { replayOf: path.relative(ROOT, path.resolve(FROM_REPORT)), auditedAt } : { api: 'bestbuy-developer' },
-  options: { staleDays: STALE_DAYS, sanityGate: !NO_SANITY, limit: N || null },
+  options: { staleDays: STALE_DAYS, sanityGate: !NO_SANITY, limit: N || null, unrefereedCliffs: UNREFEREED_CLIFFS },
   totals: {
     considered: targets.length, rowsWithoutSku: noSku,
     refreshed: n('ok'), priceChanged, stockChanged,
-    heldStale: n('stale'), heldFlagged: n('flagged'),
+    heldStale: n('stale'), heldFlagged: n('flagged'), heldUnrefereedCliff: n('unrefereedHeld'),
+    heldNameMismatch: n('nameMismatch'), nameChecked, nameUnverifiable,
     dead: n('dead'), unknown: n('unknown'), notedListObjections: noted.length,
+    unrefereed: unrefereed.length,
+    unrefereedCliffs: unrefereed.filter((r) => r.unrefereedCliff).length + n('unrefereedHeld'),
     comparable, cliffs, bulkChunkErrors: bulkErrors,
     dealsWritten: written,
   },
   breakers,
   bulkErrorSamples,
   refreshed: buckets.ok, heldStale: buckets.stale, heldFlagged: buckets.flagged,
+  heldUnrefereedCliff: buckets.unrefereedHeld, heldNameMismatch: buckets.nameMismatch,
   dead: buckets.dead, unknown: buckets.unknown, notedListObjections: noted,
+  unrefereed,
 };
 mkdirSync(path.dirname(SUMMARY_OUT), { recursive: true });
 writeFileSync(SUMMARY_OUT, JSON.stringify(summary, null, 2));
@@ -552,7 +785,10 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   md.push(`| &nbsp;&nbsp;↳ price actually moved | ${priceChanged} | ${pct(priceChanged, targets.length)} |`);
   md.push(`| stock only — upstream stamp > ${STALE_DAYS}d | ${n('stale')} | ${pct(n('stale'), targets.length)} |`);
   md.push(`| stock only — a peer retailer contradicts the price | ${n('flagged')} | ${pct(n('flagged'), targets.length)} |`);
-  md.push(`| &nbsp;&nbsp;↳ written despite a list-price objection (no peer) | ${noted.length} | ${pct(noted.length, targets.length)} |`);
+  md.push(`| stock only — unrefereed cliff (\`--unrefereed-cliffs=hold\`) | ${n('unrefereedHeld')} | ${pct(n('unrefereedHeld'), targets.length)} |`);
+  md.push(`| **stock only — the sku names a different product** | **${n('nameMismatch')}** | ${pct(n('nameMismatch'), targets.length)} |`);
+  md.push(`| &nbsp;&nbsp;↳ written despite an **independent** list-price objection | ${noted.length} | ${pct(noted.length, targets.length)} |`);
+  md.push(`| &nbsp;&nbsp;↳ written **unrefereed** — nothing checked the price | ${unrefereed.length} | ${pct(unrefereed.length, targets.length)} |`);
   md.push(`| dead sku (404) — inStock:false only | ${n('dead')} | ${pct(n('dead'), targets.length)} |`);
   md.push(`| UNKNOWN — nothing written | ${n('unknown')} | ${pct(n('unknown'), targets.length)} |`);
   md.push('', `In-stock flips: **${stockChanged}**. Price-comparable rows: ${comparable}, of which ${cliffs} would move ≥${(CLIFF * 100).toFixed(0)}%.`, '');
@@ -581,6 +817,18 @@ if (n('dead')) {
   const msg = `${n('dead')} skus return 404. They were marked out of stock but NOT removed — run purge-dead-bestbuy-links.mjs to retire them.`;
   console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
 }
+if (n('nameMismatch')) {
+  const msg = `${n('nameMismatch')} rows have a sku that names a DIFFERENT product than the row. Their prices were held. ` +
+    `This does not self-heal — tomorrow's run reads the same wrong sku — so each one needs a relink: ` +
+    buckets.nameMismatch.map((r) => r.id).join(', ');
+  console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
+}
+const writtenCliffs = unrefereed.filter((r) => r.unrefereedCliff).length;
+if (writtenCliffs) {
+  const msg = `${writtenCliffs} rows would move by ${(CLIFF * 100).toFixed(0)}% or more with nothing independent to check the new price against. ` +
+    `They are being WRITTEN — pass --unrefereed-cliffs=hold to keep the stored price on those rows instead.`;
+  console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
+}
 if (breakers.length) {
   breakers.forEach((b) => console.log(CI ? `::error::${b}` : `ERROR: ${b}`));
   console.log('\nCIRCUIT BREAKER TRIPPED — nothing written, exiting 1.');
@@ -594,6 +842,6 @@ if (!APPLY) {
 
 await writeCatalog(parts, {
   loadedCount,
-  reason: `bestbuy daily refresh — ${n('ok')} repriced (${priceChanged} moved), ${stockChanged} stock flips, ${n('stale') + n('flagged')} held`,
+  reason: `bestbuy daily refresh — ${n('ok')} repriced (${priceChanged} moved), ${stockChanged} stock flips, ${n('stale') + n('flagged') + n('unrefereedHeld') + n('nameMismatch')} held`,
 });
 console.log('Done.');
