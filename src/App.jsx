@@ -926,7 +926,14 @@ const BUILDS=[
 
 const fp=id=>P.find(p=>p.id===id)||SEED_PARTS.find(p=>p.id===id);
 const ic=p=>CAT[p.c]?.icon||"📦";
-const uv=(cat,f,extract)=>{const items=P.filter(p=>p.c===cat&&p[f]!=null);let vals;if(extract){vals=[];for(const p of items){const v=extract(p);if(Array.isArray(v))vals.push(...v.filter(x=>x!=null&&x!==""));else if(v!=null&&v!=="")vals.push(v);}}else{vals=items.map(p=>String(p[f]));}return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
+// Filter options are derived from the rows the panel is actually showing, which
+// is why this takes a LIST rather than a category name. The builder narrows its
+// list by what the build already contains (socket, memory type, clearance), and
+// options drawn from the whole category instead do not survive that: pick an AM5
+// CPU and the motherboard panel offered 9 sockets, 8 of which matched no board
+// you could actually buy, and 23 chipsets, 17 of them the same.
+const uvIn=(items,f,extract)=>{const rows=items.filter(p=>p[f]!=null);let vals;if(extract){vals=[];for(const p of rows){const v=extract(p);if(Array.isArray(v))vals.push(...v.filter(x=>x!=null&&x!==""));else if(v!=null&&v!=="")vals.push(v);}}else{vals=rows.map(p=>String(p[f]));}return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
+const uv=(cat,f,extract)=>uvIn(P.filter(p=>p.c===cat),f,extract);
 
 /* ═══ RETAILER PRICE COMPARISON COMPONENT ═══ */
 function PriceCompare({part}) {
@@ -4652,7 +4659,11 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
         <FG label="RATING">{[4.5,4,0].map(rv=><Chk key={rv} label={rv?`${rv}+ ★`:"All"} checked={minR===rv} onChange={()=>setMinR(minR===rv?0:rv)}/>)}</FG>
         {/* Category-specific filters (same logic as SearchPage) */}
         {cat && CAT[cat]?.filters && Object.entries(CAT[cat].filters).map(([field,cfg])=>{
-          if(cfg.type==="boolean"){
+          // "bool", not "boolean" — every filter in CAT declares type:"bool", so this
+          // branch never ran and bool filters fell through to the generic checkbox
+          // list below, skipping the trueCount===0 guard that hides a filter no row
+          // can answer Yes to.
+          if(cfg.type==="bool"){
             const trueCount=compatList.filter(p=>p[field]).length;
             const falseCount=compatList.filter(p=>!p[field]).length;
             if(trueCount===0)return null;
@@ -4674,7 +4685,10 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
               </div>
             </FG>;
           }
-          const opts=uv(cat,field,cfg.extract);
+          // compatList, not the whole category: the counts beside each option already
+          // come from compatList, so drawing the options from P rendered rows whose
+          // own count was 0.
+          const opts=uvIn(compatList,field,cfg.extract);
           if(!opts.length)return null;
           const matchVal=cfg.extract?(p,v)=>{const ev=cfg.extract(p);return Array.isArray(ev)?ev.includes(v):ev===v;}:(p,v)=>String(p[field])===v;
           const lbl=cfg.extract?(v)=>String(v):(v)=>fmt(field,isNaN(v)?v:+v);
