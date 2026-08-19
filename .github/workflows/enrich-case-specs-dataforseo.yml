@@ -1,0 +1,206 @@
+name: Enrich Case Specs (DataForSEO)
+
+# =============================================================================
+#  Buys Amazon spec tables for the Case rows that are missing maxGPU, maxCooler
+#  or rads, and writes what comes back into the catalog. The gates and the
+#  parsing live in dataforseo-enrich-cases.js; this file carries the money and
+#  the scope.
+#
+#  ── WHY THERE IS NO SCHEDULE ────────────────────────────────────────────────
+#  Dispatch-only. This job spends money per row against a paid API, and its
+#  input set does not refill on a timer — it is a fixed backlog of 91 rows that
+#  shrinks as they are enriched and does not grow again on its own. A cron here
+#  would mostly wake up to find nothing to do, and on the runs where something
+#  HAD changed it would spend unattended.
+#
+#  ── SCOPE, AND THE CEILING ──────────────────────────────────────────────────
+#  HANDOFF-case-dimensions.md has the measurement: 974 of 1,221 visible cases
+#  are missing at least one of the three specs, and only 91 of them are
+#  reachable this way (~$0.14). The other 883 came in through the Newegg feed,
+#  which carries no dimensions at all — they are not waiting on budget or on
+#  more runs of this workflow, and the three filters top out near 28% coverage
+#  until a Newegg spec source exists. Do not re-run this expecting the rest.
+#  Sources already measured and rejected (title regex, the two spec
+#  dictionaries) are listed in that handoff with their accuracy; re-deriving
+#  them is the trap it exists to prevent.
+#
+#  ── WHY EVERY RUN UPLOADS AN ARTIFACT ───────────────────────────────────────
+#  The API is task-based: POST the tasks, pay for them, then poll for up to 30
+#  minutes to collect the results. The task ids and the responses land in
+#  catalog-build/, which is gitignored, so they live and die with the runner. A
+#  run that posts tasks and then dies mid-poll has paid for results nobody can
+#  ever collect — money burned for nothing, with no way to resume.
+#
+#  So the state directory is uploaded on EVERY run, pass or fail, and any later
+#  run can restore it via `restore_from_run_id` and finish with mode=resume
+#  (poll for tasks already paid for) or mode=apply-only (parse responses already
+#  on disk). That is the whole reason this is a workflow and not a shell script.
+#
+#  Caveat, same as everywhere else in this repo: an `always()` step cannot run
+#  after the runner is killed. If this job is cancelled by its concurrency
+#  group, nothing is uploaded and the tasks are unrecoverable. Do not queue it
+#  behind a long writer and walk away.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — list the candidates, spend nothing, commit nothing'
+        type: boolean
+        default: true
+      mode:
+        description: 'enrich = post new tasks | resume = poll tasks already paid for | apply-only = parse responses already on disk'
+        type: choice
+        options: [enrich, resume, apply-only]
+        default: enrich
+      limit:
+        description: 'Only process the first N candidates (blank = all ~91, ~$0.14). Cost is ~$0.0015/row.'
+        type: string
+        default: ''
+      restore_from_run_id:
+        description: 'Run id of an earlier run whose case-enrich state to restore first (required for resume / apply-only)'
+        type: string
+        default: ''
+
+# Repo-wide lock shared by every workflow that pushes to main. Dry runs take it
+# too, which costs nothing worth optimising away: a dry run makes no API calls
+# and finishes in seconds.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read   # download-artifact needs this to read another run's artifacts
+    # The poll loop alone is capped at 30 minutes (MAX_POLL_WAIT_MS), plus
+    # posting, fetching and the catalog write.
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      # No npm ci: the script and scripts/write-catalog.cjs use only node builtins.
+
+      # Unpacks to catalog-build/case-enrich/ (state) plus
+      # catalog-build/case-enrich-summary.json (the previous run's outcome).
+      # The restored summary is deliberately NOT trusted as this run's result —
+      # the freshness check in the assert step below rejects it on mtime, so a
+      # resume that dies before writing its own summary goes red rather than
+      # re-reporting the outcome of the run it was resuming.
+      - name: Restore case-enrich state from an earlier run
+        if: ${{ inputs.restore_from_run_id != '' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: case-enrich-state
+          run-id: ${{ inputs.restore_from_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: catalog-build
+
+      - name: Guard the resume modes
+        if: ${{ inputs.mode != 'enrich' && inputs.restore_from_run_id == '' }}
+        run: |
+          echo "::error::mode=${{ inputs.mode }} needs restore_from_run_id — there is no state on a fresh runner to resume from, and a run without it would silently re-post and re-pay for tasks."
+          exit 1
+
+      - name: Enrich case specs
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          MODE: ${{ inputs.mode }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          set -uo pipefail
+          if [ -z "${DATAFORSEO_LOGIN:-}" ] || [ -z "${DATAFORSEO_PASSWORD:-}" ]; then
+            echo "::error::DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD are not set on this repository. Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          echo "ENRICH_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+          ARGS=""
+          if [ "${DRY_RUN}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          case "${MODE}" in
+            resume)     ARGS="$ARGS --resume" ;;
+            apply-only) ARGS="$ARGS --apply-only" ;;
+          esac
+          if [ -n "${LIMIT:-}" ]; then ARGS="$ARGS --limit ${LIMIT}"; fi
+          echo "Running: node dataforseo-enrich-cases.js $ARGS"
+          node dataforseo-enrich-cases.js $ARGS
+
+      # Directly after the work and before anything that can fail, because this
+      # is the only copy of what the run paid for. `always()` so a run that dies
+      # mid-poll still leaves its task ids somewhere a later --resume can reach.
+      - name: Upload case-enrich state and summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: case-enrich-state
+          path: |
+            catalog-build/case-enrich/
+            catalog-build/case-enrich-summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      # Exiting 0 is not evidence that anything happened. Assert the outcome
+      # between the work and the commit.
+      #
+      # outcome!=paid-nothing-returned is the assertion that matters: tasks were
+      # POSTed or already outstanding, and zero results came back. The script
+      # computes it because only the script can tell that ending apart from
+      # "nothing-to-do", which is a legitimate empty run and stays green.
+      # dryRun== confirms the flag actually reached the script, so a "dry run"
+      # that quietly spent money cannot pass as one.
+      - name: Assert the run produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=catalog-build/case-enrich-summary.json \
+            --label="Case spec enrichment" \
+            --newer-than-epoch="$ENRICH_STARTED" \
+            --require='outcome!=paid-nothing-returned' \
+            --require='dryRun==${{ inputs.dry_run }}' \
+            --warn='totals.failed==0'
+
+      - name: Assert a dry run left the tree clean
+        if: ${{ inputs.dry_run == true }}
+        run: |
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a dry run modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the dry run wrote nothing to the repo."
+
+      # No re-split step here: the script writes through scripts/write-catalog.cjs,
+      # which re-splits src/data/parts/ itself and fails if the barrel does not
+      # come back. Adding one would duplicate that, not protect anything.
+      - name: Commit and push if changed
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          # Not `if [ -f ... ]`. A missing summary here means the run died after
+          # the assertion somehow; either way it is a failure to report, never a
+          # branch to skip past on the way to a green check.
+          if [ ! -f catalog-build/case-enrich-summary.json ]; then
+            echo "::error::no enrichment summary at commit time — refusing to report success"
+            exit 1
+          fi
+          APPLIED=$(node -e "console.log(require('./catalog-build/case-enrich-summary.json').totals.applied)")
+          COST=$(node -e "console.log(require('./catalog-build/case-enrich-summary.json').totals.estimatedCostUsd)")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/parts.js src/data/parts/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(cases): fill case dimensions from Amazon spec tables — $APPLIED rows, \$$COST"
+            # Not a bare `git push`. This job can run for ~40 minutes, and anyone
+            # merging a PR in that window moves main underneath it. The
+            # main-writer lock serialises workflows against each other; it has no
+            # opinion about a person clicking Merge, and losing that race here
+            # would throw away results already paid for.
+            bash scripts/push-with-rebase.sh main
+          fi
