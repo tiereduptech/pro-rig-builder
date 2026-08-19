@@ -2380,7 +2380,11 @@ export default [
       "bestbuy": {
         "price": 1099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6668647&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-swift-27-dual-mode-2k-540hz-fhd-720hz-oled-0-02ms-gaming-monitor-with-freesync-premium-pro-and-hdr-silver%2FJJGHGP948K&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6668647",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -3550,9 +3554,13 @@ export default [
     "reviews": 54,
     "deals": {
       "bestbuy": {
-        "price": 319.99,
+        "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619487&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Falienware-aw3225dm-32-va-led-curved-qhd-180hz-1ms-freesync-gaming-monitor-with-hdr-hdmi-displayport-interstellar-indigo%2FJ3K4L636PG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619487",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837927837759755370824",
@@ -3935,7 +3943,11 @@ export default [
       "bestbuy": {
         "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5689100&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5689100.p%3FskuId%3D5689100",
-        "inStock": false
+        "inStock": false,
+        "sku": "5689100",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833864962628197204716",
@@ -4007,7 +4019,11 @@ export default [
       "bestbuy": {
         "price": 94.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6325590&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6325590.p%3FskuId%3D6325590",
-        "inStock": true
+        "inStock": true,
+        "sku": "6325590",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 22,
@@ -4037,7 +4053,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-24-ips-led-fhd-monitor-hdmi-vga-black%2FJ3K4L9KRW9&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6346533",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -4106,7 +4126,11 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373922&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373922.p%3FskuId%3D6373922",
-        "inStock": false
+        "inStock": false,
+        "sku": "6373922",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -4141,7 +4165,11 @@ export default [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6378772&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6378772.p%3FskuId%3D6378772",
-        "inStock": false
+        "inStock": false,
+        "sku": "6378772",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -4178,7 +4206,11 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6378781&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6378781.p%3FskuId%3D6378781",
-        "inStock": false
+        "inStock": false,
+        "sku": "6378781",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 20,
@@ -4213,7 +4245,11 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379306&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379306.p%3FskuId%3D6379306",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379306",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -4249,7 +4285,11 @@ export default [
       "bestbuy": {
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379313&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379313.p%3FskuId%3D6379313",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379313",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 29,
@@ -4285,7 +4325,11 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379318&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379318.p%3FskuId%3D6379318",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379318",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 29,
@@ -4321,7 +4365,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379321&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379321.p%3FskuId%3D6379321",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379321",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -4356,7 +4404,11 @@ export default [
       "bestbuy": {
         "price": 47.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379322&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379322.p%3FskuId%3D6379322",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379322",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.5,
@@ -4393,7 +4445,11 @@ export default [
       "bestbuy": {
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379325&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379325.p%3FskuId%3D6379325",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379325",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 28,
@@ -4429,7 +4485,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379334&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379334.p%3FskuId%3D6379334",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379334",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -4466,7 +4526,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379346&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379346.p%3FskuId%3D6379346",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379346",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -4503,7 +4567,11 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379350&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379350.p%3FskuId%3D6379350",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379350",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -4539,7 +4607,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379411&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379411.p%3FskuId%3D6379411",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379411",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -4574,7 +4646,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379428&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379428.p%3FskuId%3D6379428",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379428",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23,
@@ -4610,7 +4686,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379660&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379660.p%3FskuId%3D6379660",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379660",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 25,
@@ -4646,7 +4726,11 @@ export default [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379663&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379663.p%3FskuId%3D6379663",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379663",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -4682,7 +4766,11 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6379664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6379664.p%3FskuId%3D6379664",
-        "inStock": false
+        "inStock": false,
+        "sku": "6379664",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -4719,7 +4807,11 @@ export default [
       "bestbuy": {
         "price": 112.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6382155&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6382155.p%3FskuId%3D6382155",
-        "inStock": false
+        "inStock": false,
+        "sku": "6382155",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -4755,9 +4847,13 @@ export default [
     "mpn": "MB16ACE",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6403999&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6403999.p%3FskuId%3D6403999",
-        "inStock": false
+        "inStock": false,
+        "sku": "6403999",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831145804275859946783",
@@ -4799,7 +4895,11 @@ export default [
       "bestbuy": {
         "price": 52.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6407932&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6407932.p%3FskuId%3D6407932",
-        "inStock": false
+        "inStock": false,
+        "sku": "6407932",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -4835,7 +4935,11 @@ export default [
       "bestbuy": {
         "price": 67.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6409643&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6409643.p%3FskuId%3D6409643",
-        "inStock": false
+        "inStock": false,
+        "sku": "6409643",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -4871,7 +4975,11 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6410215&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6410215.p%3FskuId%3D6410215",
-        "inStock": false
+        "inStock": false,
+        "sku": "6410215",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24.5,
@@ -4908,7 +5016,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6410225&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6410225.p%3FskuId%3D6410225",
-        "inStock": false
+        "inStock": false,
+        "sku": "6410225",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -4977,7 +5089,11 @@ export default [
       "bestbuy": {
         "price": 175.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6416479&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6416479.p%3FskuId%3D6416479",
-        "inStock": false
+        "inStock": false,
+        "sku": "6416479",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5015,7 +5131,11 @@ export default [
       "bestbuy": {
         "price": 62.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420944.p%3FskuId%3D6420944",
-        "inStock": false
+        "inStock": false,
+        "sku": "6420944",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24.5,
@@ -5084,7 +5204,11 @@ export default [
       "bestbuy": {
         "price": 329.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6423106&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6423106.p%3FskuId%3D6423106",
-        "inStock": false
+        "inStock": false,
+        "sku": "6423106",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5120,7 +5244,11 @@ export default [
       "bestbuy": {
         "price": 45.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6425145&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6425145.p%3FskuId%3D6425145",
-        "inStock": false
+        "inStock": false,
+        "sku": "6425145",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -5155,9 +5283,13 @@ export default [
     "mpn": "27MQ",
     "deals": {
       "bestbuy": {
-        "price": 369.99,
+        "price": 332.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6426785&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6426785.p%3FskuId%3D6426785",
-        "inStock": false
+        "inStock": false,
+        "sku": "6426785",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5192,7 +5324,11 @@ export default [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6432137&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6432137.p%3FskuId%3D6432137",
-        "inStock": false
+        "inStock": false,
+        "sku": "6432137",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5229,7 +5365,11 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6432765&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6432765.p%3FskuId%3D6432765",
-        "inStock": false
+        "inStock": false,
+        "sku": "6432765",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.6,
@@ -5264,7 +5404,11 @@ export default [
       "bestbuy": {
         "price": 1249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6434737&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6434737.p%3FskuId%3D6434737",
-        "inStock": false
+        "inStock": false,
+        "sku": "6434737",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 49,
@@ -5301,7 +5445,11 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6437570&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6437570.p%3FskuId%3D6437570",
-        "inStock": false
+        "inStock": false,
+        "sku": "6437570",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -5338,7 +5486,11 @@ export default [
       "bestbuy": {
         "price": 92.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6440498&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6440498.p%3FskuId%3D6440498",
-        "inStock": false
+        "inStock": false,
+        "sku": "6440498",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -5412,7 +5564,11 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6442829&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6442829.p%3FskuId%3D6442829",
-        "inStock": false
+        "inStock": false,
+        "sku": "6442829",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -5513,9 +5669,13 @@ export default [
     "mpn": "PA279CV",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6450748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-proart-27-4k-ips-professional-monitor-with-hdr-displayport-hdmi-usb-c-black%2FJJ8Q7RWQ2R&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6450748",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837658006594469084358",
@@ -5559,7 +5719,11 @@ export default [
       "bestbuy": {
         "price": 137.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6451691&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6451691.p%3FskuId%3D6451691",
-        "inStock": false
+        "inStock": false,
+        "sku": "6451691",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -5595,7 +5759,11 @@ export default [
       "bestbuy": {
         "price": 100.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453937&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453937.p%3FskuId%3D6453937",
-        "inStock": false
+        "inStock": false,
+        "sku": "6453937",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -5632,7 +5800,11 @@ export default [
       "bestbuy": {
         "price": 87.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453938&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453938.p%3FskuId%3D6453938",
-        "inStock": false
+        "inStock": false,
+        "sku": "6453938",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -5667,9 +5839,13 @@ export default [
     "mpn": "M22F",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6455487&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6455487.p%3FskuId%3D6455487",
-        "inStock": true
+        "inStock": true,
+        "sku": "6455487",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -5702,7 +5878,11 @@ export default [
       "bestbuy": {
         "price": 62.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457111&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6457111.p%3FskuId%3D6457111",
-        "inStock": false
+        "inStock": false,
+        "sku": "6457111",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -5772,7 +5952,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460148&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460148.p%3FskuId%3D6460148",
-        "inStock": false
+        "inStock": false,
+        "sku": "6460148",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5809,7 +5993,11 @@ export default [
       "bestbuy": {
         "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460174&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460174.p%3FskuId%3D6460174",
-        "inStock": false
+        "inStock": false,
+        "sku": "6460174",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -5878,7 +6066,11 @@ export default [
       "bestbuy": {
         "price": 77.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460182.p%3FskuId%3D6460182",
-        "inStock": false
+        "inStock": false,
+        "sku": "6460182",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -5915,7 +6107,11 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6464353&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6464353.p%3FskuId%3D6464353",
-        "inStock": false
+        "inStock": true,
+        "sku": "6464353",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837211886535269666571",
@@ -5957,7 +6153,11 @@ export default [
       "bestbuy": {
         "price": 575.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6471111&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6471111.p%3FskuId%3D6471111",
-        "inStock": false
+        "inStock": false,
+        "sku": "6471111",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 49,
@@ -5994,7 +6194,11 @@ export default [
       "bestbuy": {
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472142.p%3FskuId%3D6472142",
-        "inStock": false
+        "inStock": false,
+        "sku": "6472142",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.8,
@@ -6028,7 +6232,11 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472143&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472143.p%3FskuId%3D6472143",
-        "inStock": true
+        "inStock": true,
+        "sku": "6472143",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 12.5,
@@ -6058,7 +6266,11 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472144&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472144.p%3FskuId%3D6472144",
-        "inStock": true
+        "inStock": true,
+        "sku": "6472144",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 12.5,
@@ -6088,7 +6300,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6472145&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6472145.p%3FskuId%3D6472145",
-        "inStock": false
+        "inStock": false,
+        "sku": "6472145",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 14,
@@ -6121,7 +6337,11 @@ export default [
       "bestbuy": {
         "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6473795&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6473795.p%3FskuId%3D6473795",
-        "inStock": false
+        "inStock": false,
+        "sku": "6473795",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -6158,7 +6378,11 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6473811&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6473811.p%3FskuId%3D6473811",
-        "inStock": false
+        "inStock": false,
+        "sku": "6473811",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -6194,7 +6418,11 @@ export default [
       "bestbuy": {
         "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6475707&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6475707.p%3FskuId%3D6475707",
-        "inStock": false
+        "inStock": false,
+        "sku": "6475707",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -6231,7 +6459,11 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6481515&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-24-fhd-ips-75hz-monitor-displayport-hdmi-black%2FJJG7VQZJC3&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6481515",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837990565307599233593",
@@ -6272,7 +6504,11 @@ export default [
       "bestbuy": {
         "price": 569.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6482893&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6482893.p%3FskuId%3D6482893",
-        "inStock": true
+        "inStock": true,
+        "sku": "6482893",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -6326,7 +6562,10 @@ export default [
       "bestbuy": {
         "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6501568&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6501568.p%3FskuId%3D6501568",
-        "inStock": false
+        "inStock": false,
+        "sku": "6501568",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-11-26"
       }
     },
     "screenSize": 27,
@@ -6439,7 +6678,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502568&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502568.p%3FskuId%3D6502568",
-        "inStock": false
+        "inStock": false,
+        "sku": "6502568",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -6474,7 +6717,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6504299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6504299.p%3FskuId%3D6504299",
-        "inStock": false
+        "inStock": true,
+        "sku": "6504299",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16824276858",
@@ -6515,7 +6762,11 @@ export default [
       "bestbuy": {
         "price": 3299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6505397&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6505397.p%3FskuId%3D6505397",
-        "inStock": true
+        "inStock": true,
+        "sku": "6505397",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -6540,9 +6791,13 @@ export default [
     "mpn": "MFEN4LL/A",
     "deals": {
       "bestbuy": {
-        "price": 3299.99,
+        "price": 2899,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6505400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6505400.p%3FskuId%3D6505400",
-        "inStock": true
+        "inStock": true,
+        "sku": "6505400",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -6569,7 +6824,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6507840&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-23-8-lcd-monitor-displayport-usb-hdmi-black-silver%2FJ3K4L67WQ3&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6507840",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314977915363951345173",
@@ -6815,7 +7074,10 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541618&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541618.p%3FskuId%3D6541618",
-        "inStock": false
+        "inStock": false,
+        "sku": "6541618",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-08-26"
       }
     },
     "screenSize": 16,
@@ -6882,9 +7144,13 @@ export default [
     "mpn": "24CL1Y EBI",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542686&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6542686.p%3FskuId%3D6542686",
-        "inStock": false
+        "inStock": false,
+        "sku": "6542686",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -6920,7 +7186,11 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543519&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543519.p%3FskuId%3D6543519",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543519",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838090153121165756011",
@@ -6957,9 +7227,13 @@ export default [
     "mpn": "101-1010P01",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543520&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543520.p%3FskuId%3D6543520",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543520",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -6986,9 +7260,13 @@ export default [
     "mpn": "101-1009P01",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543523&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543523.p%3FskuId%3D6543523",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543523",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837784267191468712159",
@@ -7025,9 +7303,13 @@ export default [
     "mpn": "LS27C900PANXZA",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548579&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548579.p%3FskuId%3D6548579",
-        "inStock": false
+        "inStock": false,
+        "sku": "6548579",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -7061,7 +7343,11 @@ export default [
       "bestbuy": {
         "price": 329.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549858&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549858.p%3FskuId%3D6549858",
-        "inStock": true
+        "inStock": true,
+        "sku": "6549858",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -7129,9 +7415,13 @@ export default [
     "mpn": "SW272Q",
     "deals": {
       "bestbuy": {
-        "price": 799.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6555705&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6555705.p%3FskuId%3D6555705",
-        "inStock": false
+        "inStock": false,
+        "sku": "6555705",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -7166,7 +7456,11 @@ export default [
       "bestbuy": {
         "price": 1499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6555708&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6555708.p%3FskuId%3D6555708",
-        "inStock": true
+        "inStock": true,
+        "sku": "6555708",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -7193,9 +7487,13 @@ export default [
     "mpn": "EK220Q E3BI",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 69.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6555711&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6555711.p%3FskuId%3D6555711",
-        "inStock": true
+        "inStock": true,
+        "sku": "6555711",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -7223,9 +7521,13 @@ export default [
     "mpn": "DELLP2424HT",
     "deals": {
       "bestbuy": {
-        "price": 429.99,
+        "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6559242&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6559242.p%3FskuId%3D6559242",
-        "inStock": true
+        "inStock": true,
+        "sku": "6559242",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316531044873198690694",
@@ -7266,9 +7568,13 @@ export default [
     "mpn": "101-1007P06",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 229.49,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562731&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562731.p%3FskuId%3D6562731",
-        "inStock": true
+        "inStock": true,
+        "sku": "6562731",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317594579084745884534",
@@ -7306,9 +7612,13 @@ export default [
     "mpn": "101-1006P04",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562734&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562734.p%3FskuId%3D6562734",
-        "inStock": true
+        "inStock": true,
+        "sku": "6562734",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "9SIBVN6K8U2677",
@@ -7345,9 +7655,13 @@ export default [
     "mpn": "101-1003P04",
     "deals": {
       "bestbuy": {
-        "price": 329.99,
+        "price": 479.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562735&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562735.p%3FskuId%3D6562735",
-        "inStock": false
+        "inStock": false,
+        "sku": "6562735",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "9SIBVN6K8U1327",
@@ -7388,7 +7702,11 @@ export default [
       "bestbuy": {
         "price": 1479.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569319&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569319.p%3FskuId%3D6569319",
-        "inStock": true
+        "inStock": true,
+        "sku": "6569319",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833077901927779420896",
@@ -7428,9 +7746,13 @@ export default [
     "mpn": "DELLU2724D",
     "deals": {
       "bestbuy": {
-        "price": 449.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570197&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6570197.p%3FskuId%3D6570197",
-        "inStock": true
+        "inStock": true,
+        "sku": "6570197",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838765272002364047469",
@@ -7471,7 +7793,11 @@ export default [
       "bestbuy": {
         "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570340&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-s39c-32-fhd-75hz-curved-monitor-hdmi-black%2FJ3ZYG2P3YQ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6570340",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -7505,7 +7831,11 @@ export default [
       "bestbuy": {
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571117&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571117.p%3FskuId%3D6571117",
-        "inStock": true
+        "inStock": true,
+        "sku": "6571117",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315369765061163256757",
@@ -7545,9 +7875,13 @@ export default [
     "mpn": "PRO MP341CQW",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571133&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571133.p%3FskuId%3D6571133",
-        "inStock": false
+        "inStock": false,
+        "sku": "6571133",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 209.99,
@@ -7581,9 +7915,13 @@ export default [
     "mpn": "LS34C650TANXGO",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
+        "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571498&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571498.p%3FskuId%3D6571498",
-        "inStock": true
+        "inStock": true,
+        "sku": "6571498",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -7615,7 +7953,11 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573719.p%3FskuId%3D6573719",
-        "inStock": false
+        "inStock": false,
+        "sku": "6573719",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833636707460554737857",
@@ -7655,9 +7997,13 @@ export default [
     "mpn": "527SH",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573720&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573720.p%3FskuId%3D6573720",
-        "inStock": true
+        "inStock": true,
+        "sku": "6573720",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316382594507982126661",
@@ -7697,9 +8043,13 @@ export default [
     "mpn": "532SF",
     "deals": {
       "bestbuy": {
-        "price": 279.99,
+        "price": 223.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573721&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573721.p%3FskuId%3D6573721",
-        "inStock": false
+        "inStock": false,
+        "sku": "6573721",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -7732,9 +8082,13 @@ export default [
     "mpn": "527SA",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
+        "price": 215.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573722.p%3FskuId%3D6573722",
-        "inStock": false
+        "inStock": false,
+        "sku": "6573722",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "9SIC0T2M110917",
@@ -7775,7 +8129,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576178&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576178.p%3FskuId%3D6576178",
-        "inStock": true
+        "inStock": true,
+        "sku": "6576178",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312597161732011220848",
@@ -7813,9 +8171,13 @@ export default [
     "mpn": "DELL-U2424HE",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
+        "price": 339.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576359&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576359.p%3FskuId%3D6576359",
-        "inStock": true
+        "inStock": true,
+        "sku": "6576359",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836214026813845499819",
@@ -7856,9 +8218,13 @@ export default [
     "mpn": "MPG 491CQP QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 779.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576566.p%3FskuId%3D6576566",
-        "inStock": false
+        "inStock": false,
+        "sku": "6576566",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 779.99,
@@ -7893,9 +8259,13 @@ export default [
     "mpn": "MPG 271QRX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
+        "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576568&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg271qrxqdoled-27-quantum-dot-oled-qhd-360hz-0-03ms-freesyncpremium-monitor-with-hdr400-displayport-hdmi-usb-black%2FJ3P7TXYV5P&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6576568",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 599.99,
@@ -7930,9 +8300,13 @@ export default [
     "mpn": "DELLU2424H",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
+        "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577183&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577183.p%3FskuId%3D6577183",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577183",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837805512046856915199",
@@ -8019,7 +8393,11 @@ export default [
       "bestbuy": {
         "price": 589.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577236&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577236.p%3FskuId%3D6577236",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577236",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312287669003793358290",
@@ -8060,9 +8438,13 @@ export default [
     "mpn": "DELL-P2724DEB",
     "deals": {
       "bestbuy": {
-        "price": 509.99,
+        "price": 469.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577812&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577812.p%3FskuId%3D6577812",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577812",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8120,7 +8502,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578248&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578248.p%3FskuId%3D6578248",
-        "inStock": true
+        "inStock": true,
+        "sku": "6578248",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -8149,7 +8535,11 @@ export default [
       "bestbuy": {
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578358&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578358.p%3FskuId%3D6578358",
-        "inStock": true
+        "inStock": true,
+        "sku": "6578358",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -8178,7 +8568,11 @@ export default [
       "bestbuy": {
         "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6579916&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6579916.p%3FskuId%3D6579916",
-        "inStock": false
+        "inStock": false,
+        "sku": "6579916",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 37.5,
@@ -8213,9 +8607,13 @@ export default [
     "mpn": "LS27D702EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581702&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-viewfinity-s7-led-4k-uhd-60hz-monitor-with-hdr-10-displayport-hdmi-black%2FJ3ZYG2T6FW&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6581702",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8246,7 +8644,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581704&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-viewfinity-s8-27-led-4k-uhd-60hz-5-ms-monitor-with-hdr-10-hdmi-usb-black%2FJ3ZYG2T6TQ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6581704",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8280,9 +8682,13 @@ export default [
     "mpn": "16T15",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 98.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582197&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582197.p%3FskuId%3D6582197",
-        "inStock": false
+        "inStock": false,
+        "sku": "6582197",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -8315,9 +8721,13 @@ export default [
     "mpn": "PRO MP275Q",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583175&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583175.p%3FskuId%3D6583175",
-        "inStock": false
+        "inStock": true,
+        "sku": "6583175",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 149.99,
@@ -8351,9 +8761,13 @@ export default [
     "mpn": "PD3225U",
     "deals": {
       "bestbuy": {
-        "price": 899.99,
+        "price": 849.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583178&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583178.p%3FskuId%3D6583178",
-        "inStock": true
+        "inStock": true,
+        "sku": "6583178",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -8382,7 +8796,11 @@ export default [
       "bestbuy": {
         "price": 1099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583249.p%3FskuId%3D6583249",
-        "inStock": false
+        "inStock": false,
+        "sku": "6583249",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -8416,7 +8834,11 @@ export default [
       "bestbuy": {
         "price": 1399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583252&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583252.p%3FskuId%3D6583252",
-        "inStock": true
+        "inStock": true,
+        "sku": "6583252",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -8445,7 +8867,11 @@ export default [
       "bestbuy": {
         "price": 899.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583255&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583255.p%3FskuId%3D6583255",
-        "inStock": false
+        "inStock": false,
+        "sku": "6583255",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8509,7 +8935,11 @@ export default [
       "bestbuy": {
         "price": 659.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583668&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583668.p%3FskuId%3D6583668",
-        "inStock": true
+        "inStock": true,
+        "sku": "6583668",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834294440889754165546",
@@ -8737,7 +9167,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6584764&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6584764.p%3FskuId%3D6584764",
-        "inStock": false
+        "inStock": false,
+        "sku": "6584764",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314803844702687716482",
@@ -8779,7 +9213,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6585317&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6585317.p%3FskuId%3D6585317",
-        "inStock": true
+        "inStock": true,
+        "sku": "6585317",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -8807,9 +9245,13 @@ export default [
     "mpn": "CS272 WEMIIIRX",
     "deals": {
       "bestbuy": {
-        "price": 243.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6585318&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6585318.p%3FskuId%3D6585318",
-        "inStock": true
+        "inStock": true,
+        "sku": "6585318",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8837,9 +9279,13 @@ export default [
     "mpn": "KA242Y G0BI",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 113.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587444&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587444.p%3FskuId%3D6587444",
-        "inStock": false
+        "inStock": false,
+        "sku": "6587444",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -8873,9 +9319,13 @@ export default [
     "mpn": "KA272 G0BI",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 142.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587445&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587445.p%3FskuId%3D6587445",
-        "inStock": false
+        "inStock": false,
+        "sku": "6587445",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -8909,9 +9359,13 @@ export default [
     "mpn": "S32D806EAN",
     "deals": {
       "bestbuy": {
-        "price": 409.99,
+        "price": 438.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590420&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590420.p%3FskuId%3D6590420",
-        "inStock": false
+        "inStock": true,
+        "sku": "6590420",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -8939,9 +9393,13 @@ export default [
     "mpn": "RD240Q",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593350&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593350.p%3FskuId%3D6593350",
-        "inStock": false
+        "inStock": false,
+        "sku": "6593350",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24.1,
@@ -8972,9 +9430,13 @@ export default [
     "mpn": "RD280U",
     "deals": {
       "bestbuy": {
-        "price": 569.99,
+        "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593352&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593352.p%3FskuId%3D6593352",
-        "inStock": true
+        "inStock": true,
+        "sku": "6593352",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 28.2,
@@ -9001,9 +9463,13 @@ export default [
     "mpn": "RD280UA",
     "deals": {
       "bestbuy": {
-        "price": 619.99,
+        "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593353&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593353.p%3FskuId%3D6593353",
-        "inStock": true
+        "inStock": true,
+        "sku": "6593353",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314879746633890943261",
@@ -9102,9 +9568,13 @@ export default [
     "mpn": "PRO MP341CQ",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 226.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594693&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594693.p%3FskuId%3D6594693",
-        "inStock": true
+        "inStock": true,
+        "sku": "6594693",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 199.99,
@@ -9138,9 +9608,13 @@ export default [
     "mpn": "PRO MP273U",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594694&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp273u-27-uhd-60hz-4ms-adaptive-sync-monitor-with-hdr-ready-built-in-speakers-displayport-hdmi--matte-black%2FJ3P7TXPW8K&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6594694",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 219.99,
@@ -9190,7 +9664,11 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594696&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594696.p%3FskuId%3D6594696",
-        "inStock": false
+        "inStock": false,
+        "sku": "6594696",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 89.99,
@@ -9256,7 +9734,11 @@ export default [
       "bestbuy": {
         "price": 569.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595131&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595131.p%3FskuId%3D6595131",
-        "inStock": false
+        "inStock": true,
+        "sku": "6595131",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9285,7 +9767,11 @@ export default [
       "bestbuy": {
         "price": 3599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595374&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595374.p%3FskuId%3D6595374",
-        "inStock": true
+        "inStock": true,
+        "sku": "6595374",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9310,9 +9796,13 @@ export default [
     "mpn": "MFEQ4LL/A",
     "deals": {
       "bestbuy": {
-        "price": 3599.99,
+        "price": 3199,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595375&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595375.p%3FskuId%3D6595375",
-        "inStock": true
+        "inStock": true,
+        "sku": "6595375",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9339,7 +9829,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595424&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595424.p%3FskuId%3D6595424",
-        "inStock": true
+        "inStock": true,
+        "sku": "6595424",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 34,
@@ -9371,7 +9865,11 @@ export default [
       "bestbuy": {
         "price": 769.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595741&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595741.p%3FskuId%3D6595741",
-        "inStock": true
+        "inStock": true,
+        "sku": "6595741",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -9401,7 +9899,11 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6600068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6600068.p%3FskuId%3D6600068",
-        "inStock": false
+        "inStock": true,
+        "sku": "6600068",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317601078770681749899",
@@ -9442,7 +9944,11 @@ export default [
       "bestbuy": {
         "price": 144.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6600070&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6600070.p%3FskuId%3D6600070",
-        "inStock": true
+        "inStock": true,
+        "sku": "6600070",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9469,9 +9975,13 @@ export default [
     "mpn": "GW2786TC",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6600071&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6600071.p%3FskuId%3D6600071",
-        "inStock": true
+        "inStock": true,
+        "sku": "6600071",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838661217503570445278",
@@ -9601,9 +10111,13 @@ export default [
     "mpn": "Z57 BMIIPHUZX",
     "deals": {
       "bestbuy": {
-        "price": 1999.99,
+        "price": 1499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602655&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602655.p%3FskuId%3D6602655",
-        "inStock": false
+        "inStock": false,
+        "sku": "6602655",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 57,
@@ -9670,7 +10184,11 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604798&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604798.p%3FskuId%3D6604798",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604798",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 104.99,
@@ -9705,9 +10223,13 @@ export default [
     "mpn": "PRO MP271A E2",
     "deals": {
       "bestbuy": {
-        "price": 104.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604800&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604800.p%3FskuId%3D6604800",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604800",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 129.99,
@@ -9744,7 +10266,11 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6605004&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6605004.p%3FskuId%3D6605004",
-        "inStock": true
+        "inStock": true,
+        "sku": "6605004",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9772,9 +10298,13 @@ export default [
     "mpn": "LS24D300GANXZA",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6605005&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6605005.p%3FskuId%3D6605005",
-        "inStock": true
+        "inStock": true,
+        "sku": "6605005",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -9802,9 +10332,13 @@ export default [
     "mpn": "LS27D300GANXZA",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6605008&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6605008.p%3FskuId%3D6605008",
-        "inStock": true
+        "inStock": true,
+        "sku": "6605008",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9832,9 +10366,13 @@ export default [
     "mpn": "LS24D368GANXZA",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6605009&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6605009.p%3FskuId%3D6605009",
-        "inStock": true
+        "inStock": true,
+        "sku": "6605009",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -9864,7 +10402,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6605587&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6605587.p%3FskuId%3D6605587",
-        "inStock": false
+        "inStock": true,
+        "sku": "6605587",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834942461887522358067",
@@ -9906,7 +10448,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613011&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613011.p%3FskuId%3D6613011",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613011",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -9934,9 +10480,13 @@ export default [
     "mpn": "LS32D396GANXZA",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
+        "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613012&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613012.p%3FskuId%3D6613012",
-        "inStock": false
+        "inStock": false,
+        "sku": "6613012",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -9969,9 +10519,13 @@ export default [
     "mpn": "MAG 321CUP QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 688.99,
+        "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613923&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-321cup-qd-oled-32-3840x2160-dqhd-curved-oled-quantum-dot-monitor-165hz-0-03msgtg-hdr400-type-c-displayport-hdmi-black%2FJ3P7TX93VF&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613923",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 749.99,
@@ -10019,9 +10573,13 @@ export default [
     "mpn": "MPG 491CQPX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 949.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613924&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613924.p%3FskuId%3D6613924",
-        "inStock": false
+        "inStock": true,
+        "sku": "6613924",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 999.99,
@@ -10081,9 +10639,13 @@ export default [
     "mpn": "MPG 321CURX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 879.99,
+        "price": 849.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613926&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-321curx-qd-oled-32-3840x2160-uhd-curved-oled-quantum-dot-monitor-240hz-0-03msgtg-hdr400-type-c-displayport-hdmi-black%2FJ3P7TX98JW&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613926",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 879.99,
@@ -10120,7 +10682,11 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613927&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613927.p%3FskuId%3D6613927",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613927",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458314249852474452763216",
@@ -10227,7 +10793,11 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614812&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614812.p%3FskuId%3D6614812",
-        "inStock": false
+        "inStock": false,
+        "sku": "6614812",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -10261,7 +10831,11 @@ export default [
       "bestbuy": {
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614813&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614813.p%3FskuId%3D6614813",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614813",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -10290,7 +10864,11 @@ export default [
       "bestbuy": {
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614814&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614814.p%3FskuId%3D6614814",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614814",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -10348,7 +10926,11 @@ export default [
       "bestbuy": {
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615277&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615277.p%3FskuId%3D6615277",
-        "inStock": true
+        "inStock": true,
+        "sku": "6615277",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "0JC-000D-00EC3R",
@@ -10390,7 +10972,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615666&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615666.p%3FskuId%3D6615666",
-        "inStock": true
+        "inStock": true,
+        "sku": "6615666",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 37,
@@ -10421,7 +11007,10 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616086&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616086.p%3FskuId%3D6616086",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616086",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-01-23"
       }
     },
     "screenSize": 15.6,
@@ -10451,7 +11040,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616087&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616087.p%3FskuId%3D6616087",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616087",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -10478,9 +11071,13 @@ export default [
     "mpn": "PM161W BMIUUX",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617471&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617471.p%3FskuId%3D6617471",
-        "inStock": true
+        "inStock": true,
+        "sku": "6617471",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 16,
@@ -10569,7 +11166,11 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618457&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618457.p%3FskuId%3D6618457",
-        "inStock": false
+        "inStock": true,
+        "sku": "6618457",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 14.5,
@@ -10595,9 +11196,13 @@ export default [
     "mpn": "MODERN MD272UPSW",
     "deals": {
       "bestbuy": {
-        "price": 279.99,
+        "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618908&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618908.p%3FskuId%3D6618908",
-        "inStock": false
+        "inStock": false,
+        "sku": "6618908",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 279.99,
@@ -10635,7 +11240,11 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619102&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619102.p%3FskuId%3D6619102",
-        "inStock": false
+        "inStock": false,
+        "sku": "6619102",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837320027569152666353",
@@ -10675,9 +11284,13 @@ export default [
     "mpn": "S2425H",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619103&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619103.p%3FskuId%3D6619103",
-        "inStock": false
+        "inStock": false,
+        "sku": "6619103",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -10712,7 +11325,11 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619294&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619294.p%3FskuId%3D6619294",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619294",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -10743,7 +11360,10 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619295&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619295.p%3FskuId%3D6619295",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619295",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "9SIBSZRKYB7806",
@@ -10783,9 +11403,13 @@ export default [
     "mpn": "PRO MP251W E2",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 97.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619296&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619296.p%3FskuId%3D6619296",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619296",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 99.99,
@@ -10818,9 +11442,13 @@ export default [
     "mpn": "MB249C",
     "deals": {
       "bestbuy": {
-        "price": 312.99,
+        "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619326&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619326.p%3FskuId%3D6619326",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619326",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311110523806536664791",
@@ -10860,9 +11488,13 @@ export default [
     "mpn": "S2725QC",
     "deals": {
       "bestbuy": {
-        "price": 279.99,
+        "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619486&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white%2FJ3K4L63JXV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619486",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314400160117402379090",
@@ -10906,7 +11538,11 @@ export default [
       "bestbuy": {
         "price": 329.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619489&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619489.p%3FskuId%3D6619489",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619489",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313771635162800523773",
@@ -10949,9 +11585,13 @@ export default [
     "mpn": "27U731SA-W",
     "deals": {
       "bestbuy": {
-        "price": 379.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619496&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619496.p%3FskuId%3D6619496",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619496",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11034,7 +11674,11 @@ export default [
       "bestbuy": {
         "price": 495.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620606&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620606.p%3FskuId%3D6620606",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620606",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -11062,7 +11706,10 @@ export default [
       "bestbuy": {
         "price": 614.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620607&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620607.p%3FskuId%3D6620607",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620607",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-02-27"
       }
     },
     "screenSize": 15.6,
@@ -11090,7 +11737,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622478&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622478.p%3FskuId%3D6622478",
-        "inStock": true
+        "inStock": true,
+        "sku": "6622478",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832061269755553637382",
@@ -11130,9 +11781,13 @@ export default [
     "mpn": "MPG 272URX QD-OLED",
     "deals": {
       "bestbuy": {
-        "price": 899.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6623962&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6623962.p%3FskuId%3D6623962",
-        "inStock": true
+        "inStock": true,
+        "sku": "6623962",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458313302302168963358123",
@@ -11178,9 +11833,13 @@ export default [
     "mpn": "MODERN MD342CQPW",
     "deals": {
       "bestbuy": {
-        "price": 289.99,
+        "price": 339.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6623964&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6623964.p%3FskuId%3D6623964",
-        "inStock": false
+        "inStock": false,
+        "sku": "6623964",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 289.99,
@@ -11229,7 +11888,11 @@ export default [
       "bestbuy": {
         "price": 729.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6624221&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6624221.p%3FskuId%3D6624221",
-        "inStock": true
+        "inStock": true,
+        "sku": "6624221",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11258,9 +11921,13 @@ export default [
     "mpn": "DELL-P3225QE",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
+        "price": 589.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626393&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626393.p%3FskuId%3D6626393",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626393",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316000915161994789402",
@@ -11303,7 +11970,11 @@ export default [
       "bestbuy": {
         "price": 389.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628352&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628352.p%3FskuId%3D6628352",
-        "inStock": true
+        "inStock": true,
+        "sku": "6628352",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11370,7 +12041,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632212.p%3FskuId%3D6632212",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632212",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -11403,9 +12078,13 @@ export default [
     "mpn": "LS32FM902SNXZA",
     "deals": {
       "bestbuy": {
-        "price": 1599.99,
+        "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632213&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632213.p%3FskuId%3D6632213",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632213",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -11435,9 +12114,13 @@ export default [
     "mpn": "LS32FM803UNXZA",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
+        "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632214&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632214.p%3FskuId%3D6632214",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632214",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -11467,7 +12150,11 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632215&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632215.p%3FskuId%3D6632215",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632215",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -11500,9 +12187,13 @@ export default [
     "mpn": "LS43FM702UNXZA",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632216&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632216.p%3FskuId%3D6632216",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632216",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 43,
@@ -11530,9 +12221,13 @@ export default [
     "mpn": "DELL-E2425HM",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632776&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632776.p%3FskuId%3D6632776",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632776",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315936861180065390119",
@@ -11573,9 +12268,13 @@ export default [
     "mpn": "DELL-U3225QE",
     "deals": {
       "bestbuy": {
-        "price": 1049.99,
+        "price": 959.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633015&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633015.p%3FskuId%3D6633015",
-        "inStock": true
+        "inStock": true,
+        "sku": "6633015",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838831376097866899339",
@@ -11616,9 +12315,13 @@ export default [
     "mpn": "9U5J5UT#ABA",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636245&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636245.p%3FskuId%3D6636245",
-        "inStock": true
+        "inStock": true,
+        "sku": "6636245",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835362375852691389653",
@@ -11659,9 +12362,13 @@ export default [
     "mpn": "LS27D706EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 97.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637460&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-27-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr-10-black%2FJ3ZYG2T6VT&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637460",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11695,9 +12402,13 @@ export default [
     "mpn": "LS32D706EANXGO",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 102.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637461&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-32-viewfinity-s7-4k-uhd-high-resolution-monitor-with-hdr10-black%2FJ3ZYG2T647&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637461",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -11733,7 +12444,11 @@ export default [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638854&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638854.p%3FskuId%3D6638854",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638854",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -11762,9 +12477,13 @@ export default [
     "mpn": "27U41YA-B",
     "deals": {
       "bestbuy": {
-        "price": 124.99,
+        "price": 104.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638894&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638894.p%3FskuId%3D6638894",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638894",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11795,7 +12514,11 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638995&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638995.p%3FskuId%3D6638995",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638995",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317225127712832956584",
@@ -11833,9 +12556,13 @@ export default [
     "mpn": "8J9E6UT#ABA",
     "deals": {
       "bestbuy": {
-        "price": 602.99,
+        "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638996&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638996.p%3FskuId%3D6638996",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638996",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -11903,9 +12630,13 @@ export default [
     "mpn": "DELL-P2725QE",
     "deals": {
       "bestbuy": {
-        "price": 529.99,
+        "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6639013&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6639013.p%3FskuId%3D6639013",
-        "inStock": true
+        "inStock": true,
+        "sku": "6639013",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316586794418285984265",
@@ -12022,9 +12753,13 @@ export default [
     "mpn": "PA32QCV",
     "deals": {
       "bestbuy": {
-        "price": 1049.99,
+        "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641137&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641137.p%3FskuId%3D6641137",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641137",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458312858687762809260960",
@@ -12067,7 +12802,11 @@ export default [
       "bestbuy": {
         "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641733&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641733.p%3FskuId%3D6641733",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641733",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -12095,9 +12834,13 @@ export default [
     "mpn": "DELL-P3225DE",
     "deals": {
       "bestbuy": {
-        "price": 569.99,
+        "price": 529.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641738&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641738.p%3FskuId%3D6641738",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641738",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835862101508443831410",
@@ -12137,9 +12880,13 @@ export default [
     "mpn": "DELL-E2725HM",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641740&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641740.p%3FskuId%3D6641740",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641740",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313079755723857897100",
@@ -12180,9 +12927,13 @@ export default [
     "mpn": "DELL-P2725D",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641744&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641744.p%3FskuId%3D6641744",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641744",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315570524873219771339",
@@ -12221,9 +12972,13 @@ export default [
     "mpn": "DELL-E2225HM",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641745&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641745.p%3FskuId%3D6641745",
-        "inStock": false
+        "inStock": false,
+        "sku": "6641745",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316305397092411526076",
@@ -12264,9 +13019,13 @@ export default [
     "mpn": "DELL-P3425WE",
     "deals": {
       "bestbuy": {
-        "price": 719.99,
+        "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641746&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641746.p%3FskuId%3D6641746",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641746",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837625514704474782038",
@@ -12306,9 +13065,13 @@ export default [
     "mpn": "22B30HM2",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641763&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641763.p%3FskuId%3D6641763",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641763",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 22,
@@ -12387,9 +13150,13 @@ export default [
     "mpn": "32U990A-S",
     "deals": {
       "bestbuy": {
-        "price": 1599.99,
+        "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641768&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641768.p%3FskuId%3D6641768",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641768",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838040472639903555672",
@@ -12431,7 +13198,11 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642667&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642667.p%3FskuId%3D6642667",
-        "inStock": true
+        "inStock": true,
+        "sku": "6642667",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832871725599209740856",
@@ -12471,7 +13242,11 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643109&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643109.p%3FskuId%3D6643109",
-        "inStock": true
+        "inStock": true,
+        "sku": "6643109",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833443935517353961348",
@@ -12512,9 +13287,13 @@ export default [
     "mpn": "S22D304GAN",
     "deals": {
       "bestbuy": {
-        "price": 90.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643240&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-22-s30gd-ips-business-essential-monitor-hdmi-black%2FJ3ZYG24KF6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6643240",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 22,
@@ -12541,9 +13320,13 @@ export default [
     "mpn": "S24D304GAN",
     "deals": {
       "bestbuy": {
-        "price": 105.99,
+        "price": 93.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643241&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-24-s30gd-ips-business-essential-monitor-hdmi-black%2FJ3ZYG24ZJ6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6643241",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 24,
@@ -12570,9 +13353,13 @@ export default [
     "mpn": "PRO MP273L E14",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643699&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6643699.p%3FskuId%3D6643699",
-        "inStock": true
+        "inStock": true,
+        "sku": "6643699",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 104.99,
@@ -12649,9 +13436,13 @@ export default [
     "mpn": "64A4MATXUZ",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
+        "price": 178.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645723&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645723.p%3FskuId%3D6645723",
-        "inStock": true
+        "inStock": true,
+        "sku": "6645723",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313982677778309492304",
@@ -12693,7 +13484,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645725.p%3FskuId%3D6645725",
-        "inStock": true
+        "inStock": true,
+        "sku": "6645725",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "0JC-0006-00Y96",
@@ -12734,7 +13529,11 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645727&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645727.p%3FskuId%3D6645727",
-        "inStock": true
+        "inStock": true,
+        "sku": "6645727",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -12764,7 +13563,11 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649104&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649104.p%3FskuId%3D6649104",
-        "inStock": true
+        "inStock": false,
+        "sku": "6649104",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 16,
@@ -12790,9 +13593,13 @@ export default [
     "mpn": "101-1011P03",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649105&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649105.p%3FskuId%3D6649105",
-        "inStock": true
+        "inStock": true,
+        "sku": "6649105",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313600625162678441143",
@@ -12830,9 +13637,13 @@ export default [
     "mpn": "101-1004P05",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649106&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649106.p%3FskuId%3D6649106",
-        "inStock": false
+        "inStock": false,
+        "sku": "6649106",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 14.1,
@@ -12863,9 +13674,13 @@ export default [
     "mpn": "PRO MP273W E14A",
     "deals": {
       "bestbuy": {
-        "price": 104.99,
+        "price": 113.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666051&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666051.p%3FskuId%3D6666051",
-        "inStock": true
+        "inStock": true,
+        "sku": "6666051",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445837372862523400742544",
@@ -12923,9 +13738,13 @@ export default [
     "mpn": "PRO MP165 E6",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 76.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666053&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666053.p%3FskuId%3D6666053",
-        "inStock": true
+        "inStock": true,
+        "sku": "6666053",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 94.99,
@@ -12958,9 +13777,13 @@ export default [
     "mpn": "PRO MP243W E14",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp243w-e14-23-8-lcd-fhd-144hz-4ms-adaptive-sync-monitor-with-built-in-speakers-displayport-hdmi-matte-white%2FJ3P7TXQX6S&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6666054",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 119.99,
@@ -12993,9 +13816,13 @@ export default [
     "mpn": "MB16FC",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6668645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6668645.p%3FskuId%3D6668645",
-        "inStock": true
+        "inStock": true,
+        "sku": "6668645",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 16,
@@ -13024,9 +13851,13 @@ export default [
     "mpn": "KA242Y P6BI",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669467&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Facer-ka242y-p6bi-23-8-ips-led-full-hd-amd-freesync-monitor-up-to-144hz-1ms-hdmi-vga-black%2FJJ8V8HL56F&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669467",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -13054,9 +13885,13 @@ export default [
     "mpn": "KA272 P6BI",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 94.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669468&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Facer-ka272-p6bi-27-ips-led-full-hd-amd-freesync-monitor-up-to-144hz-1ms-hdmi-vga-black%2FJJ8V8HL5R3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669468",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -13084,9 +13919,13 @@ export default [
     "mpn": "16T35",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
+        "price": 74.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669819&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669819.p%3FskuId%3D6669819",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669819",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 15.6,
@@ -13116,7 +13955,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6670046&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6670046.p%3FskuId%3D6670046",
-        "inStock": false
+        "inStock": true,
+        "sku": "6670046",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 31.5,
@@ -13147,7 +13990,11 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6670395&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6670395.p%3FskuId%3D6670395",
-        "inStock": true
+        "inStock": true,
+        "sku": "6670395",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833144978447888031302",
@@ -13188,9 +14035,13 @@ export default [
     "mpn": "SE2726HS",
     "deals": {
       "bestbuy": {
-        "price": 114.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6670396&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-se2726hs-27-ips-lcd-fhd-144hz-freesync-height-adjustable-monitor-hdmi-black%2FJ3K4L6WZK9&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6670396",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -13221,7 +14072,11 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672591.p%3FskuId%3D6672591",
-        "inStock": true
+        "inStock": false,
+        "sku": "6672591",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311493248721502207897",
@@ -13263,7 +14118,11 @@ export default [
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672909&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672909.p%3FskuId%3D6672909",
-        "inStock": false
+        "inStock": false,
+        "sku": "6672909",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313261365100336848039",
@@ -13303,9 +14162,13 @@ export default [
     "mpn": "64CBKAT6US",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673528&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673528.p%3FskuId%3D6673528",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673528",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -13335,7 +14198,11 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673531&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673531.p%3FskuId%3D6673531",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673531",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317438505231675126698",
@@ -13375,7 +14242,10 @@ export default [
       "bestbuy": {
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673532&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673532.p%3FskuId%3D6673532",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673532",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       },
       "newegg_openbox": {
         "sku": "4458314398753134933535920",
@@ -13430,7 +14300,11 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673533&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673533.p%3FskuId%3D6673533",
-        "inStock": false
+        "inStock": false,
+        "sku": "6673533",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 23.8,
@@ -13463,9 +14337,13 @@ export default [
     "mpn": "64BAMAT1UZ",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 144.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673540&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673540.p%3FskuId%3D6673540",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673540",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312632721777882462771",
@@ -13505,9 +14383,13 @@ export default [
     "mpn": "MPG 271QR QD-OLED X50",
     "deals": {
       "bestbuy": {
-        "price": 799.99,
+        "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673814&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6673814.p%3FskuId%3D6673814",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673814",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 799.99,
@@ -13557,7 +14439,11 @@ export default [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673817&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp242-e14c-24-ips-lcd-fhd-144hz-1ms-freesync-buesiness-monitor-hdr-ready-with-built-in-speakers-usb-c-hdmi-black%2FJ3P7TXQRZ4&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673817",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 119.99,
@@ -13605,9 +14491,13 @@ export default [
     "mpn": "PRO MP272 E14C",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673819&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp272-e14c-27-ips-lcd-fhd-144hz-1ms-freesync-business-monitor-hdr-ready-with-built-in-speakers-usb-c-hdmi-black%2FJ3P7TXHJ3J&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673819",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 139.99,
@@ -13642,9 +14532,13 @@ export default [
     "mpn": "PRO MP243L E14",
     "deals": {
       "bestbuy": {
-        "price": 79.99,
+        "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6673821&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-mp243l-e14-24-fhd-ips-144hz-1ms-adaptive-sync-hdr-ready-hdmivga-matte-black%2FJ3P7TX6YR3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6673821",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 79.99,
@@ -13706,7 +14600,11 @@ export default [
       "bestbuy": {
         "price": 389.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6674547&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6674547.p%3FskuId%3D6674547",
-        "inStock": false
+        "inStock": false,
+        "sku": "6674547",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -13741,7 +14639,11 @@ export default [
       "bestbuy": {
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675756&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6675756.p%3FskuId%3D6675756",
-        "inStock": true
+        "inStock": true,
+        "sku": "6675756",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316726178453802850000",
@@ -13782,7 +14684,11 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675758&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6675758.p%3FskuId%3D6675758",
-        "inStock": false
+        "inStock": false,
+        "sku": "6675758",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 27,
@@ -13816,7 +14722,11 @@ export default [
       "bestbuy": {
         "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676889&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676889.p%3FskuId%3D6676889",
-        "inStock": true
+        "inStock": true,
+        "sku": "6676889",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315639638217190187987",
@@ -13857,7 +14767,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676890.p%3FskuId%3D6676890",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676890",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 32,
@@ -13891,7 +14805,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=7264121&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F7264121.p%3FskuId%3D7264121",
-        "inStock": false
+        "inStock": false,
+        "sku": "7264121",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 21.5,
@@ -13926,7 +14844,11 @@ export default [
       "bestbuy": {
         "price": 177.4,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9291312&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9291312.p%3FskuId%3D9291312",
-        "inStock": false
+        "inStock": false,
+        "sku": "9291312",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "screenSize": 19,

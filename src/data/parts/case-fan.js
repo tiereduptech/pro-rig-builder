@@ -2175,7 +2175,10 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549154&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549154.p%3FskuId%3D6549154",
-        "inStock": true
+        "inStock": true,
+        "sku": "6549154",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "445837509732178239651941",
@@ -2238,7 +2241,10 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563116&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563116.p%3FskuId%3D6563116",
-        "inStock": false
+        "inStock": false,
+        "sku": "6563116",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2023-10-09"
       },
       "newegg_openbox": {
         "sku": "445831475251037413601447",
@@ -2434,7 +2440,10 @@ export default [
       "bestbuy": {
         "price": 14.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626399&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626399.p%3FskuId%3D6626399",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626399",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-25"
       }
     },
     "additionalImages": [
@@ -2810,7 +2819,10 @@ export default [
       "bestbuy": {
         "price": 44.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628997&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628997.p%3FskuId%3D6628997",
-        "inStock": true
+        "inStock": true,
+        "sku": "6628997",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "N82E16835181489",
@@ -3361,7 +3373,11 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577057&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577057.p%3FskuId%3D6577057",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577057",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834652354367108786856",
@@ -5042,7 +5058,10 @@ export default [
       "bestbuy": {
         "price": 21.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563123.p%3FskuId%3D6563123",
-        "inStock": false
+        "inStock": false,
+        "sku": "6563123",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-20"
       },
       "newegg": {
         "sku": "4458311878658529105260618",
@@ -6039,7 +6058,10 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626420&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626420.p%3FskuId%3D6626420",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626420",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-09-08"
       },
       "newegg": {
         "sku": "4458314128079265714792440",
@@ -7489,9 +7511,13 @@ export default [
         "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
-        "price": 40.99,
+        "price": 31.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611629&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-expansion-fan-white%2FJ39QHT2JFF&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6611629",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 7,
@@ -7576,9 +7602,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 34.99,
+        "price": 35.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587611&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-rgb-120mm-pwm-single-case-fan-expansion-black%2FJ39QHTCTQG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587611",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 24,
@@ -8103,9 +8133,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 79.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626415&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626415.p%3FskuId%3D6626415",
-        "inStock": false
+        "inStock": false,
+        "sku": "6626415",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835106740",
@@ -11650,7 +11684,10 @@ export default [
       "bestbuy": {
         "price": 16.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4401200&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4401200.p%3FskuId%3D4401200",
-        "inStock": true
+        "inStock": true,
+        "sku": "4401200",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-02"
       },
       "newegg": {
         "sku": "44583627969856179782121",
@@ -11694,7 +11731,11 @@ export default [
       "bestbuy": {
         "price": 16.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4401201&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4401201.p%3FskuId%3D4401201",
-        "inStock": true
+        "inStock": true,
+        "sku": "4401201",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 40.6,
@@ -11728,7 +11769,10 @@ export default [
       "bestbuy": {
         "price": 13.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459388&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459388.p%3FskuId%3D6459388",
-        "inStock": true
+        "inStock": true,
+        "sku": "6459388",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-02-06"
       },
       "newegg": {
         "sku": "4458318167192268187590657",
@@ -11771,7 +11815,11 @@ export default [
       "bestbuy": {
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541179&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6541179.p%3FskuId%3D6541179",
-        "inStock": true
+        "inStock": true,
+        "sku": "6541179",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 57.05,
@@ -11805,7 +11853,10 @@ export default [
       "bestbuy": {
         "price": 102.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543483&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543483.p%3FskuId%3D6543483",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543483",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-14"
       },
       "newegg": {
         "sku": "4458317877494422458095540",
@@ -11848,7 +11899,10 @@ export default [
       "bestbuy": {
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543492&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543492.p%3FskuId%3D6543492",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543492",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-09-30"
       },
       "newegg": {
         "sku": "445835112867949874668167",
@@ -11890,7 +11944,10 @@ export default [
       "bestbuy": {
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543495&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543495.p%3FskuId%3D6543495",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543495",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-09-30"
       },
       "newegg": {
         "sku": "445832968106304409706272",
@@ -11932,7 +11989,10 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543496&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543496.p%3FskuId%3D6543496",
-        "inStock": true
+        "inStock": true,
+        "sku": "6543496",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-11-02"
       },
       "newegg": {
         "sku": "4458316271043451403378300",
@@ -11973,9 +12033,13 @@ export default [
     "mpn": "CO-9051006-WW",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549153&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549153.p%3FskuId%3D6549153",
-        "inStock": true
+        "inStock": true,
+        "sku": "6549153",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310820415184601124687",
@@ -12020,7 +12084,10 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549170&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549170.p%3FskuId%3D6549170",
-        "inStock": true
+        "inStock": true,
+        "sku": "6549170",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-10-20"
       }
     },
     "cfm": 82.5,
@@ -12092,7 +12159,10 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563105&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563105.p%3FskuId%3D6563105",
-        "inStock": true
+        "inStock": true,
+        "sku": "6563105",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-30"
       },
       "newegg": {
         "sku": "4458315990397704084717423",
@@ -12139,7 +12209,10 @@ export default [
       "bestbuy": {
         "price": 28.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563107&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563107.p%3FskuId%3D6563107",
-        "inStock": false
+        "inStock": false,
+        "sku": "6563107",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-08"
       }
     },
     "cfm": 48.58,
@@ -12211,9 +12284,13 @@ export default [
     "mpn": "RF-D12SF-W1",
     "deals": {
       "bestbuy": {
-        "price": 29.99,
+        "price": 32.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6563115&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6563115.p%3FskuId%3D6563115",
-        "inStock": true
+        "inStock": true,
+        "sku": "6563115",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310770721419107949027",
@@ -12294,9 +12371,13 @@ export default [
     "mpn": "CO-9051021-WW",
     "deals": {
       "bestbuy": {
-        "price": 26.99,
+        "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577052&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577052.p%3FskuId%3D6577052",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577052",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 74.2,
@@ -12328,7 +12409,10 @@ export default [
       "bestbuy": {
         "price": 15.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577053&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577053.p%3FskuId%3D6577053",
-        "inStock": false
+        "inStock": false,
+        "sku": "6577053",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-03"
       }
     },
     "cfm": 74.2,
@@ -12362,9 +12446,13 @@ export default [
     "mpn": "CO-9051018-WW",
     "deals": {
       "bestbuy": {
-        "price": 83.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577059&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-rx120-rgb-120mm-pwm-computer-case-fan-starter-kit-3-pack-black%2FJ39QHTCR97&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577059",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835834071920721049772",
@@ -12406,9 +12494,13 @@ export default [
     "mpn": "CO-9051022-WW",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
+        "price": 76.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577060&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577060.p%3FskuId%3D6577060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6577060",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833109183607510918815",
@@ -12452,7 +12544,10 @@ export default [
       "bestbuy": {
         "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587619.p%3FskuId%3D6587619",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587619",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "N82E16835181432",
@@ -12497,7 +12592,10 @@ export default [
       "bestbuy": {
         "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587620&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587620.p%3FskuId%3D6587620",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587620",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "N82E16835181428",
@@ -12540,9 +12638,13 @@ export default [
     "mpn": "CO-9050181-WW",
     "deals": {
       "bestbuy": {
-        "price": 34.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587622&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587622.p%3FskuId%3D6587622",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587622",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313741110233038245155",
@@ -12587,7 +12689,10 @@ export default [
       "bestbuy": {
         "price": 44.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587675&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587675.p%3FskuId%3D6587675",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587675",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-09"
       },
       "newegg": {
         "sku": "445836512000889825036336",
@@ -12629,9 +12734,13 @@ export default [
     "mpn": "CL-F181-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
+        "price": 44.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593516&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6593516.p%3FskuId%3D6593516",
-        "inStock": false
+        "inStock": false,
+        "sku": "6593516",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313516264223216682233",
@@ -12676,7 +12785,10 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595160&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595160.p%3FskuId%3D6595160",
-        "inStock": true
+        "inStock": true,
+        "sku": "6595160",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "N82E16835181442",
@@ -12719,9 +12831,13 @@ export default [
     "mpn": "RF-U24HF-B1",
     "deals": {
       "bestbuy": {
-        "price": 34.99,
+        "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604413&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604413.p%3FskuId%3D6604413",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604413",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834885664083242435383",
@@ -12766,7 +12882,10 @@ export default [
       "bestbuy": {
         "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604414&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604414.p%3FskuId%3D6604414",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604414",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg_openbox": {
         "sku": "445834581165342101667335",
@@ -12810,7 +12929,11 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604415&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604415.p%3FskuId%3D6604415",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604415",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "44583276217453295450017",
@@ -12864,9 +12987,13 @@ export default [
     "mpn": "RF-U36HF-B1",
     "deals": {
       "bestbuy": {
-        "price": 49.99,
+        "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604416&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604416.p%3FskuId%3D6604416",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604416",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839354304553251748952",
@@ -12908,9 +13035,13 @@ export default [
     "mpn": "RF-U36HF-W1",
     "deals": {
       "bestbuy": {
-        "price": 49.99,
+        "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604417&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604417.p%3FskuId%3D6604417",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604417",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314302113585525179244",
@@ -12954,9 +13085,13 @@ export default [
     "mpn": "RF-U28HF-W1",
     "deals": {
       "bestbuy": {
-        "price": 39.99,
+        "price": 49.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604418&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604418.p%3FskuId%3D6604418",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604418",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839203076102223061552",
@@ -12999,9 +13134,13 @@ export default [
     "mpn": "CO-9051050-WW",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611628&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-fan-starter-kit-3-pack-black%2FJ39QHT2J5W&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6611628",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835821662525757640717",
@@ -13045,7 +13184,11 @@ export default [
       "bestbuy": {
         "price": 44.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611630&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611630.p%3FskuId%3D6611630",
-        "inStock": true
+        "inStock": true,
+        "sku": "6611630",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315433276012399258213",
@@ -13087,9 +13230,13 @@ export default [
     "mpn": "CO-9051054-WW",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611631&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-lx120-r-rgb-120mm-pwm-reverse-blade-computer-case-fan-starter-kit-3-pack-white%2FJ39QHT2JV3&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6611631",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 66.7,
@@ -13126,7 +13273,10 @@ export default [
       "bestbuy": {
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626409&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626409.p%3FskuId%3D6626409",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626409",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-21"
       },
       "newegg": {
         "sku": "445834288974296637463590",
@@ -13170,7 +13320,10 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626410&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626410.p%3FskuId%3D6626410",
-        "inStock": false
+        "inStock": false,
+        "sku": "6626410",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-03"
       }
     },
     "cfm": 131.6,
@@ -13206,7 +13359,10 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626411&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626411.p%3FskuId%3D6626411",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626411",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-07-21"
       }
     },
     "cfm": 66.1,
@@ -13240,7 +13396,10 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626413&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626413.p%3FskuId%3D6626413",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626413",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-05"
       },
       "newegg": {
         "sku": "4458358901142064675757",
@@ -13284,7 +13443,11 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626424&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626424.p%3FskuId%3D6626424",
-        "inStock": false
+        "inStock": false,
+        "sku": "6626424",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838428578799822103902",
@@ -13326,9 +13489,13 @@ export default [
     "mpn": "CL-F169-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 79.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626426&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626426.p%3FskuId%3D6626426",
-        "inStock": false
+        "inStock": false,
+        "sku": "6626426",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833520526241748237897",
@@ -13373,7 +13540,10 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626434&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626434.p%3FskuId%3D6626434",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626434",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-05"
       },
       "newegg": {
         "sku": "4458317870800000091401388",
@@ -13415,9 +13585,13 @@ export default [
     "mpn": "CL-F215-PL12BB-A",
     "deals": {
       "bestbuy": {
-        "price": 51.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626435&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ct120-ex-argb-sync-120mm-computer-case-cooling-fan-3-pack-bumblebee%2FJ39ZPC6YXL&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626435",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839826595236720671189",
@@ -13461,7 +13635,11 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626438.p%3FskuId%3D6626438",
-        "inStock": false
+        "inStock": false,
+        "sku": "6626438",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 131.6,
@@ -13494,7 +13672,10 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626439&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626439.p%3FskuId%3D6626439",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626439",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-05"
       },
       "newegg": {
         "sku": "4458313388718884369677415",
@@ -13538,7 +13719,10 @@ export default [
       "bestbuy": {
         "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626441&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626441.p%3FskuId%3D6626441",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626441",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-11-02"
       }
     },
     "cfm": 131.6,
@@ -13570,9 +13754,13 @@ export default [
     "mpn": "CL-F190-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 46.99,
+        "price": 53.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626445&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ct120-ex-argb-sync-120mm-computer-case-cooling-fan-3-pack-white%2FJ39ZPC6JYV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626445",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "1YF-001G-004C0",
@@ -13615,7 +13803,11 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626450&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626450.p%3FskuId%3D6626450",
-        "inStock": true
+        "inStock": true,
+        "sku": "6626450",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cfm": 68,
@@ -13646,9 +13838,13 @@ export default [
     "mpn": "CO-9050197-WW",
     "deals": {
       "bestbuy": {
-        "price": 41.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628996&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628996.p%3FskuId%3D6628996",
-        "inStock": true
+        "inStock": true,
+        "sku": "6628996",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834671627468841227083",
@@ -13692,7 +13888,10 @@ export default [
       "bestbuy": {
         "price": 54.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629590&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629590.p%3FskuId%3D6629590",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629590",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "445834184409651813759404",
@@ -13750,7 +13949,11 @@ export default [
       "bestbuy": {
         "price": 54.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629602&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629602.p%3FskuId%3D6629602",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629602",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839888865565122258627",
@@ -13795,7 +13998,11 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664862&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140x-performance-fan-140mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-black%2FJ3GWJHQXTC&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664862",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832989085196249275227",
@@ -13839,7 +14046,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f360x-performance-fan-360mm-single-frame-case-fan-w-3-x-120mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-white%2FJ3GWJHQXKZ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664863",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833581464754739263138",
@@ -13883,7 +14094,11 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664864&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f120x-performance-fan-120mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-white%2FJ3GWJHQXHP&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664864",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832507787470708910851",
@@ -13927,7 +14142,11 @@ export default [
       "bestbuy": {
         "price": 74.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664866&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f280x-performance-fan-280mm-single-frame-case-fan-w-2-x-140mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-white%2FJ3GWJHQXW4&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664866",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836336073533735746822",
@@ -13971,7 +14190,11 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f140x-performance-fan-140mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-white%2FJ3GWJHQXTY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664868",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311120814200173511732",
@@ -14015,7 +14238,11 @@ export default [
       "bestbuy": {
         "price": 69.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664869&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-nzxt-f240x-performance-fan-240mm-single-frame-case-fan-w-2-x-120mm-pwm-rgb-computer-case-fans-with-lcp-frame-blades-black%2FJ3GWJHQXTH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664869",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316795696584337765986",
@@ -14059,7 +14286,11 @@ export default [
       "bestbuy": {
         "price": 34.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6664870&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-f120x-performance-fan-120mm-pwm-rgb-computer-case-fan-with-lcp-frame-blades-black%2FJ3GWJHQXH2&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6664870",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317832452845884084545",
@@ -14103,7 +14334,10 @@ export default [
       "bestbuy": {
         "price": 63.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665525&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665525.p%3FskuId%3D6665525",
-        "inStock": true
+        "inStock": true,
+        "sku": "6665525",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "445832235650566855291621",

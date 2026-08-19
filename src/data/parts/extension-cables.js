@@ -184,7 +184,10 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6437465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6437465.p%3FskuId%3D6437465",
-        "inStock": true
+        "inStock": true,
+        "sku": "6437465",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2022-11-29"
       }
     },
     "color": "Black",

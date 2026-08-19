@@ -419,8 +419,12 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396205.p%3FskuId%3D6396205",
-        "price": 49.99,
-        "inStock": true
+        "price": 54.99,
+        "inStock": true,
+        "sku": "6396205",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "layout": "TKL",
@@ -716,8 +720,12 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6493152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6493152.p%3FskuId%3D6493152",
-        "price": 69.99,
-        "inStock": false
+        "price": 59.99,
+        "inStock": false,
+        "sku": "6493152",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1040,8 +1048,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5799701&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5799701.p%3FskuId%3D5799701",
-        "price": 49.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "5799701",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Membrane",
@@ -1062,8 +1074,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6283508&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6283508.p%3FskuId%3D6283508",
-        "price": 36.99,
-        "inStock": false
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6283508",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Membrane",
@@ -1089,8 +1105,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346166&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6346166.p%3FskuId%3D6346166",
-        "price": 146.99,
-        "inStock": true
+        "price": 159.99,
+        "inStock": true,
+        "sku": "6346166",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1112,7 +1132,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6360840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6360840.p%3FskuId%3D6360840",
         "price": 159.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6360840",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2022-12-20"
       }
     },
     "switches": "Mechanical",
@@ -1138,8 +1161,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6372528&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6372528.p%3FskuId%3D6372528",
-        "price": 99.99,
-        "inStock": true
+        "price": 119.99,
+        "inStock": true,
+        "sku": "6372528",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1161,7 +1188,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6396208&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6396208.p%3FskuId%3D6396208",
         "price": 99.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6396208",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-23"
       }
     },
     "switches": "Mechanical",
@@ -1182,8 +1212,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6500797&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6500797.p%3FskuId%3D6500797",
-        "price": 69.99,
-        "inStock": false
+        "price": 79.99,
+        "inStock": true,
+        "sku": "6500797",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1209,8 +1243,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417111&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417111.p%3FskuId%3D6417111",
-        "price": 79.99,
-        "inStock": true
+        "price": 99.99,
+        "inStock": true,
+        "sku": "6417111",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1231,8 +1269,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6463502&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6463502.p%3FskuId%3D6463502",
-        "price": 99.99,
-        "inStock": true
+        "price": 199.99,
+        "inStock": true,
+        "sku": "6463502",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1253,8 +1295,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6453150&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6453150.p%3FskuId%3D6453150",
-        "price": 59.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6453150",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Membrane",
@@ -1276,7 +1322,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6458719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6458719.p%3FskuId%3D6458719",
         "price": 43.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6458719",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-06-04"
       }
     },
     "switches": "Blue",
@@ -1297,8 +1346,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6475702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6475702.p%3FskuId%3D6475702",
-        "price": 89.99,
-        "inStock": true
+        "price": 79.99,
+        "inStock": true,
+        "sku": "6475702",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1319,8 +1372,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476232&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476232.p%3FskuId%3D6476232",
-        "price": 54.99,
-        "inStock": false
+        "price": 52.99,
+        "inStock": false,
+        "sku": "6476232",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1346,8 +1403,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502757.p%3FskuId%3D6502757",
-        "price": 39.99,
-        "inStock": true
+        "price": 34.98,
+        "inStock": true,
+        "sku": "6502757",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Membrane",
@@ -1369,7 +1430,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511298.p%3FskuId%3D6511298",
         "price": 219.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6511298",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-12"
       }
     },
     "switches": "Mechanical",
@@ -1396,7 +1460,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6515127&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6515127.p%3FskuId%3D6515127",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6515127",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2022-12-26"
       }
     },
     "switches": "Red",
@@ -1417,8 +1484,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6599034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6599034.p%3FskuId%3D6599034",
-        "price": 74.99,
-        "inStock": true
+        "price": 69.99,
+        "inStock": true,
+        "sku": "6599034",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1439,8 +1510,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6518230&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6518230.p%3FskuId%3D6518230",
-        "price": 169.99,
-        "inStock": false
+        "price": 329.99,
+        "inStock": false,
+        "sku": "6518230",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1466,8 +1541,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519664.p%3FskuId%3D6519664",
-        "price": 105,
-        "inStock": false
+        "price": 116.99,
+        "inStock": false,
+        "sku": "6519664",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1493,8 +1572,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547466&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547466.p%3FskuId%3D6547466",
-        "price": 79.99,
-        "inStock": true
+        "price": 149.99,
+        "inStock": true,
+        "sku": "6547466",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1516,7 +1599,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547948.p%3FskuId%3D6547948",
         "price": 79.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6547948",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1537,8 +1624,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556751.p%3FskuId%3D6556751",
-        "price": 165.99,
-        "inStock": true
+        "price": 219.99,
+        "inStock": true,
+        "sku": "6556751",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1559,8 +1650,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578084&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578084.p%3FskuId%3D6578084",
-        "price": 118.97,
-        "inStock": true
+        "price": 109.99,
+        "inStock": true,
+        "sku": "6578084",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Optical",
@@ -1581,8 +1676,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633432.p%3FskuId%3D6633432",
-        "price": 99.99,
-        "inStock": true
+        "price": 89.99,
+        "inStock": true,
+        "sku": "6633432",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1603,8 +1702,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586064&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586064.p%3FskuId%3D6586064",
-        "price": 129.99,
-        "inStock": true
+        "price": 119.99,
+        "inStock": true,
+        "sku": "6586064",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1626,7 +1729,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586712&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586712.p%3FskuId%3D6586712",
         "price": 164.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6586712",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1647,8 +1754,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586717&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586717.p%3FskuId%3D6586717",
-        "price": 170.99,
-        "inStock": true
+        "price": 224.99,
+        "inStock": true,
+        "sku": "6586717",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "layout": "75%",
@@ -1669,8 +1780,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586725.p%3FskuId%3D6586725",
-        "price": 299.99,
-        "inStock": true
+        "price": 149.99,
+        "inStock": true,
+        "sku": "6586725",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1691,8 +1806,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586727&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586727.p%3FskuId%3D6586727",
-        "price": 115.99,
-        "inStock": true
+        "price": 119.99,
+        "inStock": true,
+        "sku": "6586727",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1713,8 +1832,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589585&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589585.p%3FskuId%3D6589585",
-        "price": 129,
-        "inStock": true
+        "price": 199,
+        "inStock": true,
+        "sku": "6589585",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1735,8 +1858,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589586&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589586.p%3FskuId%3D6589586",
-        "price": 229,
-        "inStock": true
+        "price": 109.99,
+        "inStock": false,
+        "sku": "6589586",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1757,8 +1884,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6599037&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6599037.p%3FskuId%3D6599037",
-        "price": 159.99,
-        "inStock": true
+        "price": 149.99,
+        "inStock": false,
+        "sku": "6599037",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Hall Effect",
@@ -1779,8 +1910,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621500.p%3FskuId%3D6621500",
-        "price": 129.99,
-        "inStock": true
+        "price": 56,
+        "inStock": true,
+        "sku": "6621500",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "layout": "75%",
@@ -1801,8 +1936,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633436&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633436.p%3FskuId%3D6633436",
-        "price": 349.99,
-        "inStock": true
+        "price": 199.99,
+        "inStock": true,
+        "sku": "6633436",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Hall Effect",
@@ -1823,8 +1962,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633438.p%3FskuId%3D6633438",
-        "price": 224.99,
-        "inStock": true
+        "price": 199.99,
+        "inStock": true,
+        "sku": "6633438",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1846,7 +1989,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636034.p%3FskuId%3D6636034",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6636034",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Membrane",
@@ -1867,8 +2014,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637498&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637498.p%3FskuId%3D6637498",
-        "price": 189.99,
-        "inStock": true
+        "price": 179.99,
+        "inStock": true,
+        "sku": "6637498",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Hall Effect",
@@ -1889,8 +2040,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637502&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637502.p%3FskuId%3D6637502",
-        "price": 149.99,
-        "inStock": true
+        "price": 119.99,
+        "inStock": true,
+        "sku": "6637502",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",
@@ -1912,7 +2067,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644852&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644852.p%3FskuId%3D6644852",
         "price": 144.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6644852",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Hall Effect",
@@ -1933,8 +2092,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667833.p%3FskuId%3D6667833",
-        "price": 349.99,
-        "inStock": true
+        "price": 299.99,
+        "inStock": true,
+        "sku": "6667833",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "switches": "Mechanical",

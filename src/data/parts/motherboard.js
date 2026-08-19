@@ -2362,9 +2362,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 139.99,
+        "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582203&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582203.p%3FskuId%3D6582203",
-        "inStock": true
+        "inStock": true,
+        "sku": "6582203",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317996457892385298931",
@@ -2424,7 +2428,11 @@ export default [
       "bestbuy": {
         "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619031&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619031.p%3FskuId%3D6619031",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619031",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831766867961009617944",
@@ -2484,7 +2492,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523178&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523178.p%3FskuId%3D6523178",
-        "inStock": true
+        "inStock": true,
+        "sku": "6523178",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310259276761697147752",
@@ -2597,9 +2609,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 359.99,
+        "price": 429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604429&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-x870e-carbon-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9S6K&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604429",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458311437381739544407579",
@@ -2672,9 +2688,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 179.99,
+        "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616912&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-b850-p-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX62XG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616912",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 179.99,
@@ -2737,7 +2757,11 @@ export default [
       "bestbuy": {
         "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637469&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637469.p%3FskuId%3D6637469",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637469",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458317375802073692873553",
@@ -3555,9 +3579,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 99.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629572&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629572.p%3FskuId%3D6629572",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629572",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 99.99,
@@ -3795,7 +3823,10 @@ export default [
       "bestbuy": {
         "price": 80.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619027&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619027.p%3FskuId%3D6619027",
-        "inStock": false
+        "inStock": false,
+        "sku": "6619027",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       }
     },
     "discount": 20,
@@ -3964,7 +3995,11 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582206&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582206.p%3FskuId%3D6582206",
-        "inStock": true
+        "inStock": true,
+        "sku": "6582206",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315701803246439010235",
@@ -4092,9 +4127,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 229.99,
+        "price": 231.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612912.p%3FskuId%3D6612912",
-        "inStock": true
+        "inStock": true,
+        "sku": "6612912",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16813119703",
@@ -4205,7 +4244,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602645.p%3FskuId%3D6602645",
-        "inStock": true
+        "inStock": true,
+        "sku": "6602645",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445838498309357532532497",
@@ -4345,7 +4388,11 @@ export default [
       "bestbuy": {
         "price": 94.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637463&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637463.p%3FskuId%3D6637463",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637463",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "9SIB319M1B2973",
@@ -4448,7 +4495,11 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602647&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602647.p%3FskuId%3D6602647",
-        "inStock": false
+        "inStock": false,
+        "sku": "6602647",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445832385068078830075420",
@@ -4518,9 +4569,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 229.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619029&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619029.p%3FskuId%3D6619029",
-        "inStock": false
+        "inStock": false,
+        "sku": "6619029",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312370088221308642167",
@@ -4577,9 +4632,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602648&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602648.p%3FskuId%3D6602648",
-        "inStock": true
+        "inStock": true,
+        "sku": "6602648",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445832652076351950017195",
@@ -4648,9 +4707,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 279.99,
+        "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635871&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635871.p%3FskuId%3D6635871",
-        "inStock": false
+        "inStock": false,
+        "sku": "6635871",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "44583972083718504275037",
@@ -4720,9 +4783,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619030&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619030.p%3FskuId%3D6619030",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619030",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310733319817326943821",
@@ -4832,9 +4899,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 189.99,
+        "price": 170.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6625649&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6625649.p%3FskuId%3D6625649",
-        "inStock": true
+        "inStock": true,
+        "sku": "6625649",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458317373425715565760486",
@@ -5257,7 +5328,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602646&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602646.p%3FskuId%3D6602646",
-        "inStock": false
+        "inStock": false,
+        "sku": "6602646",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310164938802597074852",
@@ -5647,9 +5722,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 281.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612911.p%3FskuId%3D6612911",
-        "inStock": true
+        "inStock": true,
+        "sku": "6612911",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16813119702",
@@ -5705,9 +5784,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 149.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619033&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619033.p%3FskuId%3D6619033",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619033",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839552939258034506825",
@@ -5864,9 +5947,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 157.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850m-eagle-wifi6e-ice-socket-am5-amd-b850-micro-atx-ddr5-wi-fi-6e-motherboard-white%2FJ3ZW9X7X9X&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6637462",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458311064365352754977786",
@@ -5937,9 +6024,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 199.99,
+        "price": 284.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604420&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604420.p%3FskuId%3D6604420",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604420",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839560756206244701416",
@@ -6121,7 +6212,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637465.p%3FskuId%3D6637465",
-        "inStock": true
+        "inStock": true,
+        "sku": "6637465",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838859729724394443297",
@@ -6958,9 +7053,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 289.99,
+        "price": 339.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629575.p%3FskuId%3D6629575",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629575",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 289.99,
@@ -7067,9 +7166,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604425&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-x870-p-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9YR9&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604425",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 169.99,
@@ -7132,9 +7235,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 309.99,
+        "price": 276.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602851&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602851.p%3FskuId%3D6602851",
-        "inStock": true
+        "inStock": true,
+        "sku": "6602851",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314608383159277316240",
@@ -7359,9 +7466,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616915&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616915.p%3FskuId%3D6616915",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616915",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 169.99,
@@ -7634,9 +7745,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 300.99,
+        "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637467&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637467.p%3FskuId%3D6637467",
-        "inStock": true
+        "inStock": true,
+        "sku": "6637467",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458382426790421679122",
@@ -7938,7 +8053,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636989&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-x870e-gaming-plus-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TXQ3WF&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6636989",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 239.99,
@@ -8043,9 +8162,13 @@ export default [
         "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
-        "price": 149.99,
+        "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665011&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665011.p%3FskuId%3D6665011",
-        "inStock": true
+        "inStock": true,
+        "sku": "6665011",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 149.99,
@@ -8209,9 +8332,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 149.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665014&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665014.p%3FskuId%3D6665014",
-        "inStock": true
+        "inStock": true,
+        "sku": "6665014",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 149.99,
@@ -8498,9 +8625,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 219.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571645.p%3FskuId%3D6571645",
-        "inStock": true
+        "inStock": true,
+        "sku": "6571645",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16813119618",
@@ -9339,7 +9470,10 @@ export default [
       "bestbuy": {
         "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578362&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578362.p%3FskuId%3D6578362",
-        "inStock": false
+        "inStock": false,
+        "sku": "6578362",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-06-11"
       }
     },
     "additionalImages": [
@@ -9503,7 +9637,10 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6538043&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6538043.p%3FskuId%3D6538043",
-        "inStock": false
+        "inStock": false,
+        "sku": "6538043",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-08-06"
       }
     },
     "additionalImages": [
@@ -11561,9 +11698,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 382.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601254&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-e-gaming-wifi-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-black%2FJJGGLQWYZ9&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601254",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445831548556914003983745",
@@ -12010,9 +12151,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 253.99,
+        "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629578&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-edge-ti-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-gray%2FJ3P7TX6G6V&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629578",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445835264071978261618615",
@@ -13894,9 +14039,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 199.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604423&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604423.p%3FskuId%3D6604423",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604423",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833999457754832239495",
@@ -14431,9 +14580,13 @@ export default [
         "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
-        "price": 229.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604430&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604430.p%3FskuId%3D6604430",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604430",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445836975818745100032353",
@@ -14756,7 +14909,10 @@ export default [
       "bestbuy": {
         "price": 100.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612913&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612913.p%3FskuId%3D6612913",
-        "inStock": false
+        "inStock": false,
+        "sku": "6612913",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-07"
       }
     },
     "discount": 37,
@@ -15021,7 +15177,10 @@ export default [
       "bestbuy": {
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6646541&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6646541.p%3FskuId%3D6646541",
-        "inStock": false
+        "inStock": false,
+        "sku": "6646541",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-13"
       }
     },
     "discount": 5,
@@ -15152,9 +15311,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 267.99,
+        "price": 285.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641933&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-b850i-edge-ti-wifi-socket-am5-amd-b850-iatx-ddr5-wi-fi-7-motherboard-gray-white-matt%2FJ3P7TXQRTS&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6641933",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 289.99,
@@ -15430,9 +15593,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 204.99,
+        "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629579&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-pro-z890-s-wifi-pz-socket-1851-intel-z890-atx-ddr5-wi-fi-7-motherboard-gray-white%2FJ3P7TX63W3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629579",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 249.99,
@@ -15591,9 +15758,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 349.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601252&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601252.p%3FskuId%3D6601252",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601252",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -17087,7 +17258,11 @@ export default [
       "bestbuy": {
         "price": 1054.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641934&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-meg-z890-godlike-socket-1851-intel-z890-eatx-ddr5-wi-fi-7-motherboard-black-matt%2FJ3P7TX9FFF&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641934",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1099.99,
@@ -18535,9 +18710,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 159.99,
+        "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582205.p%3FskuId%3D6582205",
-        "inStock": true
+        "inStock": true,
+        "sku": "6582205",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311689305419135439240",
@@ -20087,9 +20266,13 @@ export default [
     "mpn": "B550GPLUS",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 195.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6424047&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6424047.p%3FskuId%3D6424047",
-        "inStock": true
+        "inStock": true,
+        "sku": "6424047",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "AM4",
@@ -20120,7 +20303,11 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6504286&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6504286.p%3FskuId%3D6504286",
-        "inStock": true
+        "inStock": true,
+        "sku": "6504286",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 159.99,
@@ -20166,7 +20353,10 @@ export default [
       "bestbuy": {
         "price": 145.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523721&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523721.p%3FskuId%3D6523721",
-        "inStock": false
+        "inStock": false,
+        "sku": "6523721",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-07"
       }
     },
     "socket": "AM5",
@@ -20195,9 +20385,13 @@ export default [
     "mpn": "TUF GAMING B650-PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 54.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523722&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-b650-plus-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6-motherboard-black%2FJJG7VW7P83&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6523722",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "AM5",
@@ -20229,9 +20423,13 @@ export default [
     "mpn": "MAG B650 TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 175.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6528249&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b650-tomahawk-wifi-socket-am5-amd-b650-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXG8HS&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6528249",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "AM5",
@@ -20359,9 +20557,13 @@ export default [
     "mpn": "Z790 GAMING PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-z790-gaming-plus-wifi-socket-lga-1700-intel-z790-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXYPZF&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6571301",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "44583681349671910000113",
@@ -20416,9 +20618,13 @@ export default [
     "mpn": "MAG Z790 TOMAHAWK MAX WIFI",
     "deals": {
       "bestbuy": {
-        "price": 303.99,
+        "price": 212.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571302&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571302.p%3FskuId%3D6571302",
-        "inStock": false
+        "inStock": false,
+        "sku": "6571302",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "LGA1700",
@@ -20449,7 +20655,11 @@ export default [
       "bestbuy": {
         "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582204&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582204.p%3FskuId%3D6582204",
-        "inStock": true
+        "inStock": true,
+        "sku": "6582204",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445831194301229569670529",
@@ -20500,9 +20710,13 @@ export default [
     "mpn": "ROG MAXIMUS Z890 HERO",
     "deals": {
       "bestbuy": {
-        "price": 409.99,
+        "price": 449.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601251&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601251.p%3FskuId%3D6601251",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601251",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839327445260093841950",
@@ -20541,9 +20755,13 @@ export default [
     "mpn": "TUF GAMING Z890-PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 269.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601255&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601255.p%3FskuId%3D6601255",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601255",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445832971064703428752423",
@@ -20645,9 +20863,13 @@ export default [
     "mpn": "ROG STRIX X870-F GAMING WIFI",
     "deals": {
       "bestbuy": {
-        "price": 419.99,
+        "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601434&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601434.p%3FskuId%3D6601434",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601434",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "AM5",
@@ -20675,9 +20897,13 @@ export default [
     "mpn": "PRO Z890-A WIFI",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 160.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601461&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601461.p%3FskuId%3D6601461",
-        "inStock": false
+        "inStock": false,
+        "sku": "6601461",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "LGA1851",
@@ -20706,9 +20932,13 @@ export default [
     "mpn": "Z890 AORUS PRO ICE",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604422&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604422.p%3FskuId%3D6604422",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604422",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "LGA1851",
@@ -20739,7 +20969,11 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604428&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-x870-tomahawk-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9LKV&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604428",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 229.99,
@@ -20838,9 +21072,13 @@ export default [
     "mpn": "MAG X870E TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 322.99,
+        "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616917&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616917.p%3FskuId%3D6616917",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616917",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445837307446262959603190",
@@ -20896,9 +21134,13 @@ export default [
     "mpn": "MAG B850 TOMAHAWK MAX WIFI",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616918&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-b850-tomahawk-max-wifi-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX6GR8&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616918",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 209.99,
@@ -20956,9 +21198,13 @@ export default [
     "mpn": "B550M PRO-VDH WIFI",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 90.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629564&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629564.p%3FskuId%3D6629564",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629564",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 99.99,
@@ -21005,7 +21251,10 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629599&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629599.p%3FskuId%3D6629599",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629599",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-11"
       }
     },
     "socket": "LGA1851",
@@ -21039,7 +21288,10 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629603&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629603.p%3FskuId%3D6629603",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629603",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-05-16"
       }
     },
     "socket": "LGA1851",
@@ -21072,9 +21324,13 @@ export default [
     "mpn": "X870E AORUS ELITE WIFI7 ICE",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 177.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635872&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-x870e-aorus-elite-wifi7-ice-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-white%2FJ3ZW9X7XYT&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6635872",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "socket": "AM5",
@@ -21129,9 +21385,13 @@ export default [
     "mpn": "B550M GAMING X WIFI6",
     "deals": {
       "bestbuy": {
-        "price": 154.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637466&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637466.p%3FskuId%3D6637466",
-        "inStock": true
+        "inStock": true,
+        "sku": "6637466",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833934036076412969270",
@@ -21172,7 +21432,10 @@ export default [
       "bestbuy": {
         "price": 264.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637468&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637468.p%3FskuId%3D6637468",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637468",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "4458312829235833318413181",
@@ -21212,9 +21475,13 @@ export default [
     "mpn": "B850 GAMING PLUS WIFI PZ",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641931&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-b850-gaming-plus-wifi-pz-socket-am5-amd-b850-atx-ddr5-wi-fi-7-motherboard-gray-white-matt%2FJ3P7TXQWT2&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641931",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 249.99,
@@ -21260,7 +21527,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641932&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641932.p%3FskuId%3D6641932",
-        "inStock": true
+        "inStock": true,
+        "sku": "6641932",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 299.99,
@@ -21400,7 +21671,10 @@ export default [
       "bestbuy": {
         "price": 286.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643440&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-z890-h-socket-lga-1851-intel-z890-atx-ddr5-wi-fi-7-be-motherboard-black%2FJJGGLHJYJ5&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6643440",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "445831723791987925865516",
@@ -21493,7 +21767,11 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676831&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676831.p%3FskuId%3D6676831",
-        "inStock": true
+        "inStock": true,
+        "sku": "6676831",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1299.99,
@@ -21539,7 +21817,11 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676836&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676836.p%3FskuId%3D6676836",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676836",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 499.99,
@@ -21575,7 +21857,10 @@ export default [
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676837&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676837.p%3FskuId%3D6676837",
-        "inStock": true
+        "inStock": true,
+        "sku": "6676837",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "msi": {
         "price": 2289.99,
@@ -21614,7 +21899,11 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676840.p%3FskuId%3D6676840",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676840",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 259.99,

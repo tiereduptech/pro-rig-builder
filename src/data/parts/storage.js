@@ -1433,9 +1433,13 @@ export default [
         "inStock": true
       },
       "bestbuy": {
-        "price": 249.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523591&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-1tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG28J3X&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6523591",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16820147860",
@@ -1543,9 +1547,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 429.99,
+        "price": 389.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523595&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-2tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG28J3S&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6523595",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314038791236989107138",
@@ -1909,7 +1917,11 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618929&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-1tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG2454T&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6618929",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315194564439748350358",
@@ -2204,9 +2216,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 679.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6447128&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6447128.p%3FskuId%3D6447128",
-        "inStock": true
+        "inStock": true,
+        "sku": "6447128",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -2377,7 +2393,10 @@ export default [
       "bestbuy": {
         "price": 284.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541324&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-1tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6H52&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": true,
+        "sku": "6541324",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "445836225830510842221199",
@@ -3063,9 +3082,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 459.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618928&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-2tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG24547&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6618928",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837058164693199539961",
@@ -3984,7 +4007,10 @@ export default [
       "bestbuy": {
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-2tb-internal-ssd-pcie-gen-4x4-nvme-with-heatsink-for-ps5%2FJ3ZYG28JXH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6523590",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       }
     },
     "discount": 26,
@@ -4658,9 +4684,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 109.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385542&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-500gb-internal-ssd-sata%2FJXF2C42GFG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6385542",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831216631217183159214",
@@ -15162,7 +15192,11 @@ export default [
       "bestbuy": {
         "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-16tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5L89&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616032",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -15208,7 +15242,10 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677302&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-12tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGJ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6677302",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-05"
       }
     },
     "additionalImages": [
@@ -21293,7 +21330,11 @@ export default [
       "bestbuy": {
         "price": 84.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6351465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6351465.p%3FskuId%3D6351465",
-        "inStock": false
+        "inStock": false,
+        "sku": "6351465",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 500,
@@ -21331,7 +21372,10 @@ export default [
       "bestbuy": {
         "price": 234.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408299&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-1tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQG8H&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6408299",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       }
     },
     "cap": 1000,
@@ -21364,7 +21408,10 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-2tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQGGG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6408301",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       }
     },
     "cap": 2000,
@@ -21394,9 +21441,13 @@ export default [
     "mpn": "SSD7CS900-250-RB",
     "deals": {
       "bestbuy": {
-        "price": 64.99,
+        "price": 54.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6384059&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-250gb-internal-ssd-sata%2FJXF2C42G5Q&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6384059",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839199599803337663376",
@@ -21436,9 +21487,13 @@ export default [
     "mpn": "SSD7CS900-1TB-RB",
     "deals": {
       "bestbuy": {
-        "price": 187.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6385543&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs900-1tb-internal-ssd-sata%2FJXF2C42GFR&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6385543",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836648791639817075193",
@@ -21482,7 +21537,11 @@ export default [
       "bestbuy": {
         "price": 97.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6425154&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6425154.p%3FskuId%3D6425154",
-        "inStock": false
+        "inStock": false,
+        "sku": "6425154",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -21548,7 +21607,11 @@ export default [
       "bestbuy": {
         "price": 27.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6432767&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6432767.p%3FskuId%3D6432767",
-        "inStock": false
+        "inStock": false,
+        "sku": "6432767",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -21583,9 +21646,13 @@ export default [
     "mpn": "MZ-77E4T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 1359.99,
+        "price": 1399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6447130&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6447130.p%3FskuId%3D6447130",
-        "inStock": true
+        "inStock": true,
+        "sku": "6447130",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834815456360247752220",
@@ -21627,9 +21694,13 @@ export default [
     "mpn": "MZ-77E500B/AM",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448028&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448028.p%3FskuId%3D6448028",
-        "inStock": true
+        "inStock": true,
+        "sku": "6448028",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "amazon": {
         "price": 209.99,
@@ -21682,7 +21753,11 @@ export default [
       "bestbuy": {
         "price": 108.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6451686&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6451686.p%3FskuId%3D6451686",
-        "inStock": false
+        "inStock": false,
+        "sku": "6451686",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -21720,7 +21795,10 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6451687&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6451687.p%3FskuId%3D6451687",
-        "inStock": false
+        "inStock": false,
+        "sku": "6451687",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 1000,
@@ -21755,7 +21833,10 @@ export default [
       "bestbuy": {
         "price": 204.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6457123.p%3FskuId%3D6457123",
-        "inStock": false
+        "inStock": false,
+        "sku": "6457123",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 2000,
@@ -21791,7 +21872,10 @@ export default [
       "bestbuy": {
         "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457126&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6457126.p%3FskuId%3D6457126",
-        "inStock": false
+        "inStock": false,
+        "sku": "6457126",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 4000,
@@ -21825,9 +21909,13 @@ export default [
     "mpn": "SSD7CS900-2TB-RB",
     "deals": {
       "bestbuy": {
-        "price": 234.99,
+        "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6463141&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6463141.p%3FskuId%3D6463141",
-        "inStock": true
+        "inStock": true,
+        "sku": "6463141",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837200618655168250907",
@@ -21867,9 +21955,13 @@ export default [
     "mpn": "CT2000BX500SSD1",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6465362&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6465362.p%3FskuId%3D6465362",
-        "inStock": false
+        "inStock": false,
+        "sku": "6465362",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835025488262823789955",
@@ -21913,7 +22005,10 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5-and-desktops%2FJXJ62C6L5Q&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6512132",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       }
     },
     "cap": 1000,
@@ -21948,9 +22043,13 @@ export default [
     "mpn": "WDBB8H0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 238.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-1tb-internal-ssd-sata%2FJXJ62C6LVK&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6506976",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -21984,9 +22083,13 @@ export default [
     "mpn": "WDBB9G0040BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
+        "price": 796.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512129&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512129.p%3FskuId%3D6512129",
-        "inStock": false
+        "inStock": false,
+        "sku": "6512129",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839106550964096970288",
@@ -22029,9 +22132,13 @@ export default [
     "mpn": "WDBB9G0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 269.99,
+        "price": 292.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y93&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6512131",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -22105,7 +22212,10 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541326&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-2tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6HFY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6541326",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       }
     },
     "cap": 2000,
@@ -22133,9 +22243,13 @@ export default [
     "mpn": "WDBDNH0020BBK-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6551144&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6551144.p%3FskuId%3D6551144",
-        "inStock": true
+        "inStock": true,
+        "sku": "6551144",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312796021716212939989",
@@ -22182,7 +22296,10 @@ export default [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6565364&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6565364.p%3FskuId%3D6565364",
-        "inStock": false
+        "inStock": false,
+        "sku": "6565364",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 2000,
@@ -22219,7 +22336,10 @@ export default [
       "bestbuy": {
         "price": 264.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566097&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566097.p%3FskuId%3D6566097",
-        "inStock": false
+        "inStock": false,
+        "sku": "6566097",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-01"
       },
       "newegg": {
         "sku": "4458315404629033031909954",
@@ -22294,7 +22414,10 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566989&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566989.p%3FskuId%3D6566989",
-        "inStock": false
+        "inStock": false,
+        "sku": "6566989",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 1000,
@@ -22331,7 +22454,10 @@ export default [
       "bestbuy": {
         "price": 154.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566990&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566990.p%3FskuId%3D6566990",
-        "inStock": false
+        "inStock": true,
+        "sku": "6566990",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 1000,
@@ -22369,7 +22495,10 @@ export default [
       "bestbuy": {
         "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571074&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571074.p%3FskuId%3D6571074",
-        "inStock": false
+        "inStock": false,
+        "sku": "6571074",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 4000,
@@ -22406,7 +22535,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571723&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571723.p%3FskuId%3D6571723",
-        "inStock": false
+        "inStock": false,
+        "sku": "6571723",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -22520,7 +22653,11 @@ export default [
       "bestbuy": {
         "price": 539.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581745&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581745.p%3FskuId%3D6581745",
-        "inStock": false
+        "inStock": false,
+        "sku": "6581745",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 4000,
@@ -22626,7 +22763,10 @@ export default [
       "bestbuy": {
         "price": 124.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590152&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590152.p%3FskuId%3D6590152",
-        "inStock": false
+        "inStock": false,
+        "sku": "6590152",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 1000,
@@ -22664,7 +22804,11 @@ export default [
       "bestbuy": {
         "price": 188.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590153&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6590153.p%3FskuId%3D6590153",
-        "inStock": false
+        "inStock": false,
+        "sku": "6590153",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -22702,7 +22846,10 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-8tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62CRLLV&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6593303",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:name-mismatch"
       }
     },
     "cap": 8000,
@@ -22739,7 +22886,10 @@ export default [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6598876&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6598876.p%3FskuId%3D6598876",
-        "inStock": false
+        "inStock": false,
+        "sku": "6598876",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "N82E16820156405",
@@ -22783,7 +22933,10 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601256&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601256.p%3FskuId%3D6601256",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601256",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-04"
       },
       "newegg": {
         "sku": "4458312406021607618981359",
@@ -22825,9 +22978,13 @@ export default [
     "mpn": "MZ-V9S2T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601257&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601257.p%3FskuId%3D6601257",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601257",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832763479046581596621",
@@ -22869,9 +23026,13 @@ export default [
     "mpn": "WDBELG0010BBK-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
+        "price": 252.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615939&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615939.p%3FskuId%3D6615939",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615939",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -22906,9 +23067,13 @@ export default [
     "mpn": "WDBELG0040BBK-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 783.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615942&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615942.p%3FskuId%3D6615942",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615942",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "0D9-001A-003S1",
@@ -22949,9 +23114,13 @@ export default [
     "mpn": "WDBELG0020BBK-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 401.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615945&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn7100-2tb-internal-ssd-gen-4-x4-nvme%2FJXJ62CRKFL&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615945",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -22988,7 +23157,10 @@ export default [
       "bestbuy": {
         "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617142.p%3FskuId%3D6617142",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617142",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 1000,
@@ -23026,7 +23198,10 @@ export default [
       "bestbuy": {
         "price": 344.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617265.p%3FskuId%3D6617265",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617265",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 4000,
@@ -23064,7 +23239,10 @@ export default [
       "bestbuy": {
         "price": 184.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617382&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617382.p%3FskuId%3D6617382",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617382",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-21"
       }
     },
     "cap": 2000,
@@ -23143,7 +23321,10 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618926&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618926.p%3FskuId%3D6618926",
-        "inStock": true
+        "inStock": true,
+        "sku": "6618926",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-09"
       },
       "newegg": {
         "sku": "4458312181441351299420069",
@@ -23256,9 +23437,13 @@ export default [
     "mpn": "WDBCMT0020BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 459.99,
+        "price": 531.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-2tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2W4&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6633571",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -23329,7 +23514,11 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-1tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2WR&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6633573",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -23408,7 +23597,10 @@ export default [
       "bestbuy": {
         "price": 323.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636632&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636632.p%3FskuId%3D6636632",
-        "inStock": false
+        "inStock": false,
+        "sku": "6636632",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-01"
       },
       "newegg": {
         "sku": "445839817327201610141404",
@@ -23535,7 +23727,11 @@ export default [
       "bestbuy": {
         "price": 586.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636638&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6636638.p%3FskuId%3D6636638",
-        "inStock": false
+        "inStock": false,
+        "sku": "6636638",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312627823825814481940",
@@ -23581,7 +23777,11 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644048&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644048.p%3FskuId%3D6644048",
-        "inStock": false
+        "inStock": false,
+        "sku": "6644048",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -23618,9 +23818,13 @@ export default [
     "mpn": "WDBS4F0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
+        "price": 252.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644705&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644705.p%3FskuId%3D6644705",
-        "inStock": false
+        "inStock": false,
+        "sku": "6644705",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -23655,9 +23859,13 @@ export default [
     "mpn": "WDBS4F0020BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 309.99,
+        "price": 404.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644706&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-2tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86L&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6644706",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312342339091256267858",
@@ -23698,9 +23906,13 @@ export default [
     "mpn": "WDBS4F0040BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 799.99,
+        "price": 479.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-4tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86J&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6665054",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 4000,
@@ -23738,7 +23950,11 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667759&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667759.p%3FskuId%3D6667759",
-        "inStock": false
+        "inStock": false,
+        "sku": "6667759",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 8000,
@@ -23777,7 +23993,10 @@ export default [
       "bestbuy": {
         "price": 1019.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667761.p%3FskuId%3D6667761",
-        "inStock": false
+        "inStock": false,
+        "sku": "6667761",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-missing"
       }
     },
     "cap": 4000,
@@ -23850,9 +24069,13 @@ export default [
     "mpn": "SDSP71100TAN-000E0",
     "deals": {
       "bestbuy": {
-        "price": 349.99,
+        "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669300&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669300.p%3FskuId%3D6669300",
-        "inStock": false
+        "inStock": true,
+        "sku": "6669300",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -23909,9 +24132,13 @@ export default [
     "mpn": "SDSP81100TAN-000E0",
     "deals": {
       "bestbuy": {
-        "price": 439.99,
+        "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669307&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669307.p%3FskuId%3D6669307",
-        "inStock": false
+        "inStock": true,
+        "sku": "6669307",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -23941,9 +24168,13 @@ export default [
     "mpn": "M280CS2241-500-RB",
     "deals": {
       "bestbuy": {
-        "price": 114.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669707&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs2241-500gb-m-2-nvme-gen4-x4-internal-solid-state-drive-ssd-m280cs2241-500-rb%2FJXF2C49YK8&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669707",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317003027515303825812",
@@ -23986,9 +24217,13 @@ export default [
     "mpn": "ZP2000GS3A001",
     "deals": {
       "bestbuy": {
-        "price": 459.99,
+        "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672831&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672831.p%3FskuId%3D6672831",
-        "inStock": true
+        "inStock": true,
+        "sku": "6672831",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16820248263",
@@ -24032,9 +24267,13 @@ export default [
     "mpn": "ZP4000GS3A001",
     "deals": {
       "bestbuy": {
-        "price": 829.99,
+        "price": 1129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672833.p%3FskuId%3D6672833",
-        "inStock": true
+        "inStock": true,
+        "sku": "6672833",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16820248264",
@@ -24080,7 +24319,10 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672835&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672835.p%3FskuId%3D6672835",
-        "inStock": true
+        "inStock": true,
+        "sku": "6672835",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "4458310203267477092215811",
@@ -24136,7 +24378,10 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5193303&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5193303.p%3FskuId%3D5193303",
-        "inStock": false
+        "inStock": false,
+        "sku": "5193303",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-13"
       }
     },
     "cap": 4000,
@@ -24232,7 +24477,10 @@ export default [
       "bestbuy": {
         "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6425021&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6425021.p%3FskuId%3D6425021",
-        "inStock": false
+        "inStock": false,
+        "sku": "6425021",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-14"
       }
     },
     "cap": 8000,
@@ -24260,9 +24508,13 @@ export default [
     "mpn": "WD40EFPX",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 194.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523107&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6523107.p%3FskuId%3D6523107",
-        "inStock": false
+        "inStock": false,
+        "sku": "6523107",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "1Z4-0002-01R24",
@@ -24375,9 +24627,13 @@ export default [
     "mpn": "WD80EFPX",
     "deals": {
       "bestbuy": {
-        "price": 259.99,
+        "price": 354.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581897&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-8tb-nas-internal-hard-drive%2FJXTHCC7RTT&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6581897",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834456770010038223850",
@@ -24490,9 +24746,13 @@ export default [
     "mpn": "ST20000NTZ01",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
+        "price": 719.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616031&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-20tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGW&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616031",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 20000,
@@ -24524,9 +24784,13 @@ export default [
     "mpn": "ST12000VNZ008",
     "deals": {
       "bestbuy": {
-        "price": 329.99,
+        "price": 429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616034.p%3FskuId%3D6616034",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616034",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "1JW-001N-00027",
@@ -24566,7 +24830,11 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-8tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5HK4YY&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616035",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312443967769469554195",
@@ -24608,7 +24876,10 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-2tb-internal-hard-drive-for-desktops%2FJ37C5HK868&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616036",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "4458317948259558955777901",
@@ -24649,7 +24920,11 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616037&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-for-desktops%2FJ37C5HK32Z&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616037",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312911671136429775356",
@@ -24688,9 +24963,13 @@ export default [
     "mpn": "ST8000DMZ04",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616038&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616038.p%3FskuId%3D6616038",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616038",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835443742286411495518",
@@ -24732,7 +25011,10 @@ export default [
       "bestbuy": {
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616039&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616039.p%3FskuId%3D6616039",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616039",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-03"
       }
     },
     "cap": 24000,
@@ -24764,9 +25046,13 @@ export default [
     "mpn": "WD6004FZBX",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 314.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632693&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632693.p%3FskuId%3D6632693",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632693",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 6000,
@@ -24858,7 +25144,10 @@ export default [
       "bestbuy": {
         "price": 41.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9312076&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9312076.p%3FskuId%3D9312076",
-        "inStock": false
+        "inStock": false,
+        "sku": "9312076",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-03"
       }
     },
     "cap": 2000,

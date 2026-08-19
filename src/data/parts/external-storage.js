@@ -633,9 +633,13 @@ export default [
     "mpn": "WDBKYJ0020BSL-WESN",
     "deals": {
       "bestbuy": {
-        "price": 124.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290662&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290662.p%3FskuId%3D6290662",
-        "inStock": true
+        "inStock": true,
+        "sku": "6290662",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312166774662900272271",
@@ -670,9 +674,13 @@ export default [
     "mpn": "WDBPMV0040BSL-WESN",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
+        "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6290666&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6290666.p%3FskuId%3D6290666",
-        "inStock": true
+        "inStock": true,
+        "sku": "6290666",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 4000,
@@ -697,9 +705,13 @@ export default [
     "mpn": "WDBA2F0040BBL-WESN",
     "deals": {
       "bestbuy": {
-        "price": 174.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356883.p%3FskuId%3D6356883",
-        "inStock": true
+        "inStock": true,
+        "sku": "6356883",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834479990306302542573",
@@ -736,9 +748,13 @@ export default [
     "mpn": "WDBA2D0020BBL-WESN",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 174.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6356884&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6356884.p%3FskuId%3D6356884",
-        "inStock": true
+        "inStock": true,
+        "sku": "6356884",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310160775847489576322",

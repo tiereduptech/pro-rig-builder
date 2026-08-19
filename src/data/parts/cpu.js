@@ -3464,7 +3464,11 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669037&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669037.p%3FskuId%3D6669037",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669037",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833682930110779287158",
@@ -5233,9 +5237,13 @@ export default [
     "mpn": "BX8071514700K",
     "deals": {
       "bestbuy": {
-        "price": 377.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560420&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fintel-core-i7-14700k-14th-gen-20-core-28-thread-4-3ghz-5-6ghz-turbo-socket-lga-1700-unlocked-desktop-processor-multi%2FJXZRJ557C2&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6560420",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "amazon": {
         "price": 549.99,
@@ -5330,7 +5338,11 @@ export default [
       "bestbuy": {
         "price": 239,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-7-5800xt-8-core-16-thread-3-8-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH586J&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589129",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316089146151768131296",
@@ -5374,7 +5386,11 @@ export default [
       "bestbuy": {
         "price": 311,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-5900xt-16-core-32-thread-3-3-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH589C&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589133",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839475304564512464244",
@@ -5417,9 +5433,13 @@ export default [
     "mpn": "100-100001277WOF",
     "deals": {
       "bestbuy": {
-        "price": 649,
+        "price": 549,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589134&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589134.p%3FskuId%3D6589134",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589134",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317919762205493445447",
@@ -5463,9 +5483,13 @@ export default [
     "mpn": "100-100000662WOF",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 439.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589135&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589135.p%3FskuId%3D6589135",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589135",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313764603694254374003",
@@ -5509,9 +5533,13 @@ export default [
     "mpn": "100-100001404WOF",
     "deals": {
       "bestbuy": {
-        "price": 359,
+        "price": 339,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589136.p%3FskuId%3D6589136",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589136",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "44583877074514623128348",
@@ -5555,9 +5583,13 @@ export default [
     "mpn": "100-100001405WOF",
     "deals": {
       "bestbuy": {
-        "price": 279,
+        "price": 220,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589140&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589140.p%3FskuId%3D6589140",
-        "inStock": true
+        "inStock": true,
+        "sku": "6589140",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cores": 6,
@@ -5751,7 +5783,11 @@ export default [
       "bestbuy": {
         "price": 479,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6606318&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6606318.p%3FskuId%3D6606318",
-        "inStock": true
+        "inStock": true,
+        "sku": "6606318",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839998193130166726200",
@@ -5797,7 +5833,11 @@ export default [
       "bestbuy": {
         "price": 599,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621940&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621940.p%3FskuId%3D6621940",
-        "inStock": true
+        "inStock": true,
+        "sku": "6621940",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831552058699300246294",
@@ -5844,7 +5884,10 @@ export default [
       "bestbuy": {
         "price": 699,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621941&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621941.p%3FskuId%3D6621941",
-        "inStock": true
+        "inStock": true,
+        "sku": "6621941",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-08"
       },
       "newegg": {
         "sku": "4458316216955925978166093",
@@ -5890,7 +5933,10 @@ export default [
       "bestbuy": {
         "price": 1499,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644815&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644815.p%3FskuId%3D6644815",
-        "inStock": true
+        "inStock": true,
+        "sku": "6644815",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-11-01"
       },
       "newegg": {
         "sku": "N82E16819113916",
@@ -5938,7 +5984,10 @@ export default [
       "bestbuy": {
         "price": 2499,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644816&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644816.p%3FskuId%3D6644816",
-        "inStock": false
+        "inStock": false,
+        "sku": "6644816",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "N82E16819113915",
@@ -5985,9 +6034,13 @@ export default [
     "mpn": "100-100001593WOF",
     "deals": {
       "bestbuy": {
-        "price": 4999,
+        "price": 2499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644817&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644817.p%3FskuId%3D6644817",
-        "inStock": false
+        "inStock": false,
+        "sku": "6644817",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cores": 64,

@@ -584,8 +584,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4503702&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4503702.p%3FskuId%3D4503702",
-        "price": 79.99,
-        "inStock": true
+        "price": 69.99,
+        "inStock": true,
+        "sku": "4503702",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -605,8 +609,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5579380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5579380.p%3FskuId%3D5579380",
-        "price": 99.99,
-        "inStock": true
+        "price": 119.99,
+        "inStock": true,
+        "sku": "5579380",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -627,7 +635,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5761912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5761912.p%3FskuId%3D5761912",
         "price": 169.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "5761912",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "4K",
@@ -648,7 +660,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5914400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5914400.p%3FskuId%3D5914400",
         "price": 169.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "5914400",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-05-02"
       }
     },
     "resolution": "720p",
@@ -668,8 +683,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6321794&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6321794.p%3FskuId%3D6321794",
-        "price": 69.99,
-        "inStock": true
+        "price": 59.99,
+        "inStock": true,
+        "sku": "6321794",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -689,8 +708,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6366565&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6366565.p%3FskuId%3D6366565",
-        "price": 161.99,
-        "inStock": true
+        "price": 169.99,
+        "inStock": true,
+        "sku": "6366565",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -711,7 +734,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448067.p%3FskuId%3D6448067",
         "price": 69.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6448067",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-05-26"
       }
     },
     "resolution": "1080p",
@@ -732,7 +758,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6520150&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6520150.p%3FskuId%3D6520150",
         "price": 129.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6520150",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -752,8 +782,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6550199&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6550199.p%3FskuId%3D6550199",
-        "price": 24.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6550199",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "1080p",
@@ -774,7 +808,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571655&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571655.p%3FskuId%3D6571655",
         "price": 199.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6571655",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "4K",
@@ -795,7 +833,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595407.p%3FskuId%3D6595407",
         "price": 199.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6595407",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "4K",
@@ -816,7 +858,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595408&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595408.p%3FskuId%3D6595408",
         "price": 149.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6595408",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "4K",
@@ -836,8 +882,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9928354&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9928354.p%3FskuId%3D9928354",
-        "price": 19.99,
-        "inStock": true
+        "price": 29.99,
+        "inStock": true,
+        "sku": "9928354",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "resolution": "720p",

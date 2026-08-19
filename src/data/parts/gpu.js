@@ -137,9 +137,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 979.99,
+        "price": 1179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6K9J&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6619462",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "baseClock": 2295,
@@ -3912,9 +3916,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 469.99,
+        "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671699&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6671699.p%3FskuId%3D6671699",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671699",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317883389884691797587",
@@ -4066,9 +4074,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 549.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629367&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629367.p%3FskuId%3D6629367",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629367",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -4176,9 +4188,13 @@ export default [
         "priceConfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 1299.99,
+        "price": 1799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-argb-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZKT&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617114",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 7,
@@ -4224,9 +4240,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 1364.99,
+        "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615831&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615831.p%3FskuId%3D6615831",
-        "inStock": true
+        "inStock": true,
+        "sku": "6615831",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -4366,9 +4386,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 743.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671698&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-graphics-card-white%2FJ3ZW9X769S&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671698",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -4460,9 +4484,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 1861.99,
+        "price": 2099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613334&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-astral-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RYH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613334",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458316281947149435764482",
@@ -4719,9 +4747,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 499.99,
+        "price": 779.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672757.p%3FskuId%3D6672757",
-        "inStock": false
+        "inStock": false,
+        "sku": "6672757",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 569.99,
@@ -6370,7 +6402,10 @@ export default [
       "bestbuy": {
         "price": 1999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617116&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617116.p%3FskuId%3D6617116",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617116",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-02-10"
       }
     },
     "additionalImages": [
@@ -6857,9 +6892,13 @@ export default [
     "reviews": 66,
     "deals": {
       "bestbuy": {
-        "price": 539.99,
+        "price": 789.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631088&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631088.p%3FskuId%3D6631088",
-        "inStock": false
+        "inStock": false,
+        "sku": "6631088",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 539.99,
@@ -7547,9 +7586,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 379.99,
+        "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C46FJC&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6630571",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 7,
@@ -7628,9 +7671,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 1429.99,
+        "price": 1649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-white%2FJ3P7TX6LS9&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6615233",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1429.99,
@@ -7775,7 +7822,10 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614154&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614154.p%3FskuId%3D6614154",
-        "inStock": false
+        "inStock": false,
+        "sku": "6614154",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-01-07"
       }
     },
     "discount": 6,
@@ -8089,9 +8139,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 379.99,
+        "price": 489.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632718&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQJ9F&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632718",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 384.99,
@@ -8801,7 +8855,10 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6452940&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6452940.p%3FskuId%3D6452940",
-        "inStock": false
+        "inStock": false,
+        "sku": "6452940",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-01-01"
       }
     },
     "model": "GeForce RTX 3060",
@@ -8836,9 +8893,13 @@ export default [
     "mpn": "GV-N3060GAMING OC-12GD REV2.0",
     "deals": {
       "bestbuy": {
-        "price": 354.99,
+        "price": 479.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6468931&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6468931.p%3FskuId%3D6468931",
-        "inStock": false
+        "inStock": true,
+        "sku": "6468931",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 3060",
@@ -8870,7 +8931,10 @@ export default [
       "bestbuy": {
         "price": 68.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6513906&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6513906.p%3FskuId%3D6513906",
-        "inStock": false
+        "inStock": false,
+        "sku": "6513906",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-11-17"
       }
     },
     "model": "Radeon RX 6650 XT",
@@ -8907,7 +8971,10 @@ export default [
       "bestbuy": {
         "price": 399,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6543946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6543946.p%3FskuId%3D6543946",
-        "inStock": false
+        "inStock": false,
+        "sku": "6543946",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2023-05-19"
       }
     },
     "model": "GeForce RTX 4060 Ti",
@@ -8944,7 +9011,10 @@ export default [
       "bestbuy": {
         "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6545380&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6545380.p%3FskuId%3D6545380",
-        "inStock": false
+        "inStock": false,
+        "sku": "6545380",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-12-09"
       },
       "msi": {
         "price": 409.99,
@@ -8981,7 +9051,10 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6560971&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6560971.p%3FskuId%3D6560971",
-        "inStock": true
+        "inStock": true,
+        "sku": "6560971",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "msi": {
         "price": 249.99,
@@ -9029,9 +9102,13 @@ export default [
     "mpn": "RTX 3050 GAMING X 6G",
     "deals": {
       "bestbuy": {
-        "price": 219.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6588302&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6588302.p%3FskuId%3D6588302",
-        "inStock": true
+        "inStock": true,
+        "sku": "6588302",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 219.99,
@@ -9066,9 +9143,13 @@ export default [
     "mpn": "RX-76PSWFTFR",
     "deals": {
       "bestbuy": {
-        "price": 329.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597530&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597530.p%3FskuId%3D6597530",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597530",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 7600",
@@ -9100,7 +9181,10 @@ export default [
       "bestbuy": {
         "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613053&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613053.p%3FskuId%3D6613053",
-        "inStock": false
+        "inStock": false,
+        "sku": "6613053",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-01-01"
       },
       "amazon": {
         "price": 309.99,
@@ -9139,9 +9223,13 @@ export default [
     "mpn": "TUF-RTX5080-O16G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 1609.99,
+        "price": 1899.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613333&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-tuf-gaming-nvidia-geforce-rtx-5080-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7RLP&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613333",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838741269499957287495",
@@ -9184,9 +9272,13 @@ export default [
     "mpn": "PRIME-RTX5080-O16G",
     "deals": {
       "bestbuy": {
-        "price": 1481.99,
+        "price": 1699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6613335&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6613335.p%3FskuId%3D6613335",
-        "inStock": true
+        "inStock": true,
+        "sku": "6613335",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834987036341524085568",
@@ -9229,9 +9321,13 @@ export default [
     "mpn": "TUF-RTX5090-32G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 3109.99,
+        "price": 4099.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614119&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614119.p%3FskuId%3D6614119",
-        "inStock": false
+        "inStock": false,
+        "sku": "6614119",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9266,9 +9362,13 @@ export default [
     "mpn": "ROG-ASTRAL-RTX5090-O32G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 3899.99,
+        "price": 4829.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614120&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614120.p%3FskuId%3D6614120",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614120",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315646197290777529105",
@@ -9311,9 +9411,13 @@ export default [
     "mpn": "PRIME-RTX5070-O12G",
     "deals": {
       "bestbuy": {
-        "price": 699.99,
+        "price": 909.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614740&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614740.p%3FskuId%3D6614740",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614740",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310896375190425372521",
@@ -9356,9 +9460,13 @@ export default [
     "mpn": "TUF-RTX5070-O12G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 754.99,
+        "price": 949.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614741&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614741.p%3FskuId%3D6614741",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614741",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311361946608670386200",
@@ -9401,9 +9509,13 @@ export default [
     "mpn": "PRIME-RTX5070TI-O16G",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614742&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-ti-oc-edition-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHJX4K&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614742",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316526184115046836758",
@@ -9445,9 +9557,13 @@ export default [
     "mpn": "TUF-RTX5070TI-O16G-GAMING",
     "deals": {
       "bestbuy": {
-        "price": 1069.99,
+        "price": 1289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614743&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614743.p%3FskuId%3D6614743",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614743",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "4458313137355969489742434",
@@ -9539,9 +9655,13 @@ export default [
     "mpn": "PRIME-RTX5070-12G",
     "deals": {
       "bestbuy": {
-        "price": 642.99,
+        "price": 819.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614787&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-12gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH7TH6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6614787",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445837122812837057574787",
@@ -9582,9 +9702,13 @@ export default [
     "mpn": "G5080-16GTC",
     "deals": {
       "bestbuy": {
-        "price": 1599.99,
+        "price": 1799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615227&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615227.p%3FskuId%3D6615227",
-        "inStock": true
+        "inStock": true,
+        "sku": "6615227",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1599.99,
@@ -9632,9 +9756,13 @@ export default [
     "mpn": "G5080-16S3CP",
     "deals": {
       "bestbuy": {
-        "price": 1349.99,
+        "price": 1549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615239&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615239.p%3FskuId%3D6615239",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615239",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1349.99,
@@ -9762,9 +9890,13 @@ export default [
     "mpn": "GV-N5090GAMING OC-32GD",
     "deals": {
       "bestbuy": {
-        "price": 3699.99,
+        "price": 4399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615929&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615929.p%3FskuId%3D6615929",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615929",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9799,9 +9931,13 @@ export default [
     "mpn": "GV-N5090WF3OC-32GD",
     "deals": {
       "bestbuy": {
-        "price": 3299.99,
+        "price": 4299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615930&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615930.p%3FskuId%3D6615930",
-        "inStock": false
+        "inStock": false,
+        "sku": "6615930",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9838,7 +9974,10 @@ export default [
       "bestbuy": {
         "price": 335.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616025&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616025.p%3FskuId%3D6616025",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616025",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-19"
       },
       "newegg": {
         "sku": "4458314021598184013363696",
@@ -9881,9 +10020,13 @@ export default [
     "mpn": "G5090-32GTC",
     "deals": {
       "bestbuy": {
-        "price": 3599.99,
+        "price": 4399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616090&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616090.p%3FskuId%3D6616090",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616090",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 4238.99,
@@ -9918,9 +10061,13 @@ export default [
     "mpn": "G5090-32SLS",
     "deals": {
       "bestbuy": {
-        "price": 3799.99,
+        "price": 4599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616095&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616095.p%3FskuId%3D6616095",
-        "inStock": false
+        "inStock": false,
+        "sku": "6616095",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 3999.99,
@@ -9955,9 +10102,13 @@ export default [
     "mpn": "GV-N5080AERO OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1549.99,
+        "price": 1749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616100&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616100.p%3FskuId%3D6616100",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616100",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316670186518050524674",
@@ -10000,9 +10151,13 @@ export default [
     "mpn": "GV-N5080WF3OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1355.99,
+        "price": 1599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616102&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-oc-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7CH2&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616102",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831431106774666636889",
@@ -10044,9 +10199,13 @@ export default [
     "mpn": "VCG508016TFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 1269.99,
+        "price": 1699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616903&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZZH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6616903",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10078,7 +10237,10 @@ export default [
       "bestbuy": {
         "price": 4299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617115&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617115.p%3FskuId%3D6617115",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617115",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-14"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10113,9 +10275,13 @@ export default [
     "mpn": "GV-N5090AORUSM ICE-32GD",
     "deals": {
       "bestbuy": {
-        "price": 3899.99,
+        "price": 4499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617487&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617487.p%3FskuId%3D6617487",
-        "inStock": false
+        "inStock": false,
+        "sku": "6617487",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10152,7 +10318,11 @@ export default [
       "bestbuy": {
         "price": 739.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617866&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617866.p%3FskuId%3D6617866",
-        "inStock": true
+        "inStock": true,
+        "sku": "6617866",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10214,9 +10384,13 @@ export default [
     "mpn": "GV-N507TAERO OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1159.99,
+        "price": 1259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618880&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618880.p%3FskuId%3D6618880",
-        "inStock": true
+        "inStock": true,
+        "sku": "6618880",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312199583266327364218",
@@ -10300,9 +10474,13 @@ export default [
     "mpn": "GV-N507TWF3OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618883.p%3FskuId%3D6618883",
-        "inStock": false
+        "inStock": false,
+        "sku": "6618883",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838282168201662500127",
@@ -10344,9 +10522,13 @@ export default [
     "mpn": "GV-N507TGAMING OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 1099.99,
+        "price": 1249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618884&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618884.p%3FskuId%3D6618884",
-        "inStock": true
+        "inStock": true,
+        "sku": "6618884",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837104039445414289179",
@@ -10389,9 +10571,13 @@ export default [
     "mpn": "G5070-12GTC",
     "deals": {
       "bestbuy": {
-        "price": 669.99,
+        "price": 849.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619436&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-gaming-trio-oc-12gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX65JH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6619436",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 669.99,
@@ -10471,9 +10657,13 @@ export default [
     "mpn": "VCG507012TFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 629.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620352&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620352.p%3FskuId%3D6620352",
-        "inStock": true
+        "inStock": false,
+        "sku": "6620352",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10503,9 +10693,13 @@ export default [
     "mpn": "VCG507012TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 649.99,
+        "price": 869.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-12gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464CQ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6620354",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10540,9 +10734,13 @@ export default [
     "mpn": "VCG5070T16TFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620367&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464LK&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6620367",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10577,9 +10775,13 @@ export default [
     "mpn": "VCG5070T16TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620368&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464GZ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620368",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10609,9 +10811,13 @@ export default [
     "mpn": "RX-97TMARGB9",
     "deals": {
       "bestbuy": {
-        "price": 849.99,
+        "price": 839.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620452&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620452.p%3FskuId%3D6620452",
-        "inStock": false
+        "inStock": true,
+        "sku": "6620452",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10646,9 +10852,13 @@ export default [
     "mpn": "RX-97SWFB3W9",
     "deals": {
       "bestbuy": {
-        "price": 639.99,
+        "price": 729.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620453&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-swift-amd-radeon-rx-9070-oc-16gb-gddr6-pci-express-5-0-gaming-graphics-card-white%2FJ39HPQ82ZT&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620453",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -10678,9 +10888,13 @@ export default [
     "mpn": "RX-97TSWF3B9",
     "deals": {
       "bestbuy": {
-        "price": 789.99,
+        "price": 779.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620455&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620455.p%3FskuId%3D6620455",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620455",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10710,9 +10924,13 @@ export default [
     "mpn": "RX-97TSWF3W9",
     "deals": {
       "bestbuy": {
-        "price": 809.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620456&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620456.p%3FskuId%3D6620456",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620456",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10744,7 +10962,11 @@ export default [
       "bestbuy": {
         "price": 709.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620457&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620457.p%3FskuId%3D6620457",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620457",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -10774,9 +10996,13 @@ export default [
     "mpn": "RX-97TMARGW9",
     "deals": {
       "bestbuy": {
-        "price": 869.99,
+        "price": 859.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620458&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620458.p%3FskuId%3D6620458",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620458",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10806,9 +11032,13 @@ export default [
     "mpn": "G507T-16S3C",
     "deals": {
       "bestbuy": {
-        "price": 979.99,
+        "price": 1169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620605&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-shadow-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR2RL&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6620605",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 989.99,
@@ -10858,7 +11088,10 @@ export default [
       "bestbuy": {
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621078&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621078.p%3FskuId%3D6621078",
-        "inStock": false
+        "inStock": false,
+        "sku": "6621078",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-03-06"
       }
     },
     "model": "Radeon RX 9070",
@@ -10893,9 +11126,13 @@ export default [
     "mpn": "RX-97TRGBBW9",
     "deals": {
       "bestbuy": {
-        "price": 849.99,
+        "price": 839.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-mercury-amd-radeon-rx-9070xt-oc-16gb-gddr6-pci-express-5-0-gaming-graphics-card-with-rgb-white%2FJ39HPQ824L&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false,
+        "sku": "6621080",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10925,9 +11162,13 @@ export default [
     "mpn": "GV-N5070GAMING OC-12GD",
     "deals": {
       "bestbuy": {
-        "price": 679.99,
+        "price": 839.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621261&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621261.p%3FskuId%3D6621261",
-        "inStock": true
+        "inStock": true,
+        "sku": "6621261",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458313406832514703100995",
@@ -10969,9 +11210,13 @@ export default [
     "mpn": "GV-N5070WF3OC-12GD",
     "deals": {
       "bestbuy": {
-        "price": 635.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621265&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621265.p%3FskuId%3D6621265",
-        "inStock": true
+        "inStock": true,
+        "sku": "6621265",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458318276972651160204151",
@@ -11013,9 +11258,13 @@ export default [
     "mpn": "G5070-12S2C",
     "deals": {
       "bestbuy": {
-        "price": 629.99,
+        "price": 789.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621982&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621982.p%3FskuId%3D6621982",
-        "inStock": false
+        "inStock": false,
+        "sku": "6621982",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11050,9 +11299,13 @@ export default [
     "mpn": "PRIME-RTX5060TI-O16G",
     "deals": {
       "bestbuy": {
-        "price": 609.99,
+        "price": 829.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628261&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628261.p%3FskuId%3D6628261",
-        "inStock": true
+        "inStock": true,
+        "sku": "6628261",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11082,9 +11335,13 @@ export default [
     "mpn": "PRIME-RTX5060TI-16G",
     "deals": {
       "bestbuy": {
-        "price": 589.99,
+        "price": 809.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6628262&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6628262.p%3FskuId%3D6628262",
-        "inStock": true
+        "inStock": true,
+        "sku": "6628262",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "44583611646246345587271",
@@ -11159,9 +11416,13 @@ export default [
     "mpn": "GV-N506TAERO OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 489.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629359&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629359.p%3FskuId%3D6629359",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629359",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11196,9 +11457,13 @@ export default [
     "mpn": "GV-N506TWF2OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 519.99,
+        "price": 739.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629363&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629363.p%3FskuId%3D6629363",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629363",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11233,9 +11498,13 @@ export default [
     "mpn": "GV-N506TEAGLEOC ICE-16GD",
     "deals": {
       "bestbuy": {
-        "price": 529.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629368&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629368.p%3FskuId%3D6629368",
-        "inStock": false
+        "inStock": false,
+        "sku": "6629368",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11302,9 +11571,13 @@ export default [
     "mpn": "VCG50608DFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 339.99,
+        "price": 449.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630575&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C4R7LJ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6630575",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11334,9 +11607,13 @@ export default [
     "mpn": "VCG5060T16DFXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630626&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-16gb-gddr7-pci-express-5-0-graphics-card-with-dual-fan-black%2FJXF2C465C5&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6630626",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11366,9 +11643,13 @@ export default [
     "mpn": "G506T-16GTC",
     "deals": {
       "bestbuy": {
-        "price": 549.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631084&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631084.p%3FskuId%3D6631084",
-        "inStock": false
+        "inStock": false,
+        "sku": "6631084",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 549.99,
@@ -11403,9 +11684,13 @@ export default [
     "mpn": "G507T-16GTC",
     "deals": {
       "bestbuy": {
-        "price": 1049.99,
+        "price": 1249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6631085&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6631085.p%3FskuId%3D6631085",
-        "inStock": true
+        "inStock": true,
+        "sku": "6631085",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1049.99,
@@ -11440,9 +11725,13 @@ export default [
     "mpn": "PRIME-RTX5060-O8G",
     "deals": {
       "bestbuy": {
-        "price": 416.99,
+        "price": 539.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632191&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632191.p%3FskuId%3D6632191",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632191",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311169568038019010817",
@@ -11485,9 +11774,13 @@ export default [
     "mpn": "PRIME-RTX5060-8G",
     "deals": {
       "bestbuy": {
-        "price": 389.99,
+        "price": 489.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632193&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632193.p%3FskuId%3D6632193",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632193",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11517,9 +11810,13 @@ export default [
     "mpn": "GV-N5060OC-8GL",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
+        "price": 469.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632704&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632704.p%3FskuId%3D6632704",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632704",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11556,7 +11853,10 @@ export default [
       "bestbuy": {
         "price": 287.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632706&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632706.p%3FskuId%3D6632706",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632706",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-missing"
       }
     },
     "model": "GeForce RTX 5060",
@@ -11591,9 +11891,13 @@ export default [
     "mpn": "G5060-8V3C",
     "deals": {
       "bestbuy": {
-        "price": 364.99,
+        "price": 469.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632713&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-3x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ2JJ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632713",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 364.99,
@@ -11641,9 +11945,13 @@ export default [
     "mpn": "G5060-8V2CW",
     "deals": {
       "bestbuy": {
-        "price": 369.99,
+        "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632715.p%3FskuId%3D6632715",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632715",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 369.99,
@@ -11691,9 +11999,13 @@ export default [
     "mpn": "G5060-8V2C",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
+        "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632716&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-2x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ229&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632716",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 359.99,
@@ -11728,9 +12040,13 @@ export default [
     "mpn": "G5060-8S2C",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
+        "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632720&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632720.p%3FskuId%3D6632720",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632720",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 369.99,
@@ -11780,7 +12096,10 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632722.p%3FskuId%3D6632722",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632722",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-29"
       },
       "msi": {
         "price": 359.99,
@@ -11817,7 +12136,11 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632944.p%3FskuId%3D6632944",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632944",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11849,7 +12172,11 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632945&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632945.p%3FskuId%3D6632945",
-        "inStock": false
+        "inStock": true,
+        "sku": "6632945",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11886,7 +12213,11 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632946.p%3FskuId%3D6632946",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632946",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11918,7 +12249,11 @@ export default [
       "bestbuy": {
         "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632948.p%3FskuId%3D6632948",
-        "inStock": false
+        "inStock": false,
+        "sku": "6632948",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11953,9 +12288,13 @@ export default [
     "mpn": "DUAL-RTX5060-O8G",
     "deals": {
       "bestbuy": {
-        "price": 354.99,
+        "price": 469.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632993&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632993.p%3FskuId%3D6632993",
-        "inStock": true
+        "inStock": true,
+        "sku": "6632993",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831465555682926391145",
@@ -11998,9 +12337,13 @@ export default [
     "mpn": "GV-R9060XTGAMING OC-16GD",
     "deals": {
       "bestbuy": {
-        "price": 459.99,
+        "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633162&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633162.p%3FskuId%3D6633162",
-        "inStock": false
+        "inStock": false,
+        "sku": "6633162",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12035,9 +12378,13 @@ export default [
     "mpn": "G506T-8GC",
     "deals": {
       "bestbuy": {
-        "price": 419.99,
+        "price": 519.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633165&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR4CY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6633165",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 439.99,
@@ -12085,9 +12432,13 @@ export default [
     "mpn": "GV-R9060XTGAMING OC-8GD",
     "deals": {
       "bestbuy": {
-        "price": 359.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633167&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633167.p%3FskuId%3D6633167",
-        "inStock": true
+        "inStock": true,
+        "sku": "6633167",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12117,9 +12468,13 @@ export default [
     "mpn": "G5070-12V3C",
     "deals": {
       "bestbuy": {
-        "price": 639.99,
+        "price": 839.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634557&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634557.p%3FskuId%3D6634557",
-        "inStock": false
+        "inStock": false,
+        "sku": "6634557",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 639.99,
@@ -12156,7 +12511,10 @@ export default [
       "bestbuy": {
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634560&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634560.p%3FskuId%3D6634560",
-        "inStock": false
+        "inStock": false,
+        "sku": "6634560",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-29"
       },
       "msi": {
         "price": 669.99,
@@ -12191,9 +12549,13 @@ export default [
     "mpn": "G5070-12V2C",
     "deals": {
       "bestbuy": {
-        "price": 639.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634566.p%3FskuId%3D6634566",
-        "inStock": false
+        "inStock": false,
+        "sku": "6634566",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 639.99,
@@ -12366,9 +12728,13 @@ export default [
     "mpn": "G5050-8V2C",
     "deals": {
       "bestbuy": {
-        "price": 304.99,
+        "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638591.p%3FskuId%3D6638591",
-        "inStock": false
+        "inStock": false,
+        "sku": "6638591",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 304.99,
@@ -12403,9 +12769,13 @@ export default [
     "mpn": "G5050-8GC",
     "deals": {
       "bestbuy": {
-        "price": 309.99,
+        "price": 429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5050-8g-gaming-oc-8gb-gddr6-pci-express-gen-5-graphics-card-black%2FJ3P7TXHJLW&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6638592",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 314.99,
@@ -12453,9 +12823,13 @@ export default [
     "mpn": "G5050-8S2C",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638594&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638594.p%3FskuId%3D6638594",
-        "inStock": false
+        "inStock": false,
+        "sku": "6638594",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 299.99,
@@ -12490,9 +12864,13 @@ export default [
     "mpn": "DUAL-RTX5050-O8G",
     "deals": {
       "bestbuy": {
-        "price": 319.99,
+        "price": 419.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638643&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638643.p%3FskuId%3D6638643",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638643",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5050",
@@ -12522,9 +12900,13 @@ export default [
     "mpn": "GV-N5050WF2OC-8GD",
     "deals": {
       "bestbuy": {
-        "price": 289.99,
+        "price": 399.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638853&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638853.p%3FskuId%3D6638853",
-        "inStock": true
+        "inStock": true,
+        "sku": "6638853",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5050",
@@ -12554,9 +12936,13 @@ export default [
     "mpn": "DUAL-RTX5060TI-O16G",
     "deals": {
       "bestbuy": {
-        "price": 573.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644034&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644034.p%3FskuId%3D6644034",
-        "inStock": true
+        "inStock": true,
+        "sku": "6644034",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835544716960406231374",
@@ -12601,7 +12987,11 @@ export default [
       "bestbuy": {
         "price": 529.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6647992&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6647992.p%3FskuId%3D6647992",
-        "inStock": true
+        "inStock": true,
+        "sku": "6647992",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12631,9 +13021,13 @@ export default [
     "mpn": "G506T-8S2CP",
     "deals": {
       "bestbuy": {
-        "price": 409.99,
+        "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665010&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665010.p%3FskuId%3D6665010",
-        "inStock": false
+        "inStock": false,
+        "sku": "6665010",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 409.99,
@@ -12680,9 +13074,13 @@ export default [
     "upc": "4711581493124",
     "deals": {
       "bestbuy": {
-        "price": 719.99,
+        "price": 739.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671162&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-xt-16gb-gddr6-pci-express-5-0-graphics-card%2FC34FQFQ6VV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671162",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -12711,9 +13109,13 @@ export default [
     "upc": "4711581493605",
     "deals": {
       "bestbuy": {
-        "price": 629.99,
+        "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671163&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-16gb-gddr6-pci-express-5-0-graphics-card%2FC34FQFQRK3&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671163",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -12744,7 +13146,11 @@ export default [
       "bestbuy": {
         "price": 759.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671164&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6671164.p%3FskuId%3D6671164",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671164",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -12774,9 +13180,13 @@ export default [
     "mpn": "G507012WMLEC",
     "deals": {
       "bestbuy": {
-        "price": 699.99,
+        "price": 749.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672758&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-gddr7-pci-express-gen-5-graphics-card-tan%2FJ3P7TXTJGQ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6672758",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12811,9 +13221,13 @@ export default [
     "mpn": "G5070-12V2CB",
     "deals": {
       "bestbuy": {
-        "price": 639.99,
+        "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676832&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676832.p%3FskuId%3D6676832",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676832",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12848,9 +13262,13 @@ export default [
     "mpn": "G507T-16V3ZC",
     "deals": {
       "bestbuy": {
-        "price": 999.99,
+        "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676833.p%3FskuId%3D6676833",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676833",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 999.99,
@@ -12885,9 +13303,13 @@ export default [
     "mpn": "G507T-16V3ZCB",
     "deals": {
       "bestbuy": {
-        "price": 979.99,
+        "price": 1199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676835&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16gb-gddr7-ventus-3x-pz-oc-edition-pci-express-5-0-sff-ready-graphics-card-black%2FJ3P7TXTXSZ&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676835",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839046081871202297170",
@@ -12930,9 +13352,13 @@ export default [
     "mpn": "G5080-16I3CB",
     "deals": {
       "bestbuy": {
-        "price": 1429.99,
+        "price": 1699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676839.p%3FskuId%3D6676839",
-        "inStock": false
+        "inStock": false,
+        "sku": "6676839",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 1409.99,

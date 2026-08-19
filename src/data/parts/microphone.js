@@ -432,8 +432,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6361715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6361715.p%3FskuId%3D6361715",
-        "price": 99.99,
-        "inStock": true
+        "price": 79.99,
+        "inStock": true,
+        "sku": "6361715",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -454,7 +458,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6393956&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6393956.p%3FskuId%3D6393956",
         "price": 99.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6393956",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-09-13"
       }
     },
     "pattern": "Dynamic",
@@ -474,8 +481,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6483375&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6483375.p%3FskuId%3D6483375",
-        "price": 179.99,
-        "inStock": true
+        "price": 199.99,
+        "inStock": true,
+        "sku": "6483375",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "XLR",
@@ -495,8 +506,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6547472&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6547472.p%3FskuId%3D6547472",
-        "price": 205.99,
-        "inStock": true
+        "price": 204.99,
+        "inStock": true,
+        "sku": "6547472",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -517,7 +532,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556755.p%3FskuId%3D6556755",
         "price": 169.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6556755",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "pattern": "Supercardioid",
@@ -538,7 +557,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6570531&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6570531.p%3FskuId%3D6570531",
         "price": 269.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6570531",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "pattern": "Cardioid",
@@ -558,8 +581,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576377&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576377.p%3FskuId%3D6576377",
-        "price": 269.99,
-        "inStock": true
+        "price": 299.99,
+        "inStock": true,
+        "sku": "6576377",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -580,7 +607,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601728&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601728.p%3FskuId%3D6601728",
         "price": 169.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6601728",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -600,8 +631,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601911.p%3FskuId%3D6601911",
-        "price": 54.99,
-        "inStock": true
+        "price": 48.99,
+        "inStock": true,
+        "sku": "6601911",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -621,8 +656,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622725.p%3FskuId%3D6622725",
-        "price": 67.99,
-        "inStock": true
+        "price": 57.99,
+        "inStock": true,
+        "sku": "6622725",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -642,8 +681,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4758301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4758301.p%3FskuId%3D4758301",
-        "price": 106.99,
-        "inStock": true
+        "price": 109.99,
+        "inStock": true,
+        "sku": "4758301",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -664,7 +707,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6277346&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6277346.p%3FskuId%3D6277346",
         "price": 99.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6277346",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -690,7 +737,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6480355&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6480355.p%3FskuId%3D6480355",
         "price": 149.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6480355",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-02"
       }
     },
     "micType": "USB",
@@ -715,8 +765,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6530807&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6530807.p%3FskuId%3D6530807",
-        "price": 168.99,
-        "inStock": true
+        "price": 179.99,
+        "inStock": true,
+        "sku": "6530807",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -736,8 +790,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540970&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540970.p%3FskuId%3D6540970",
-        "price": 244.99,
-        "inStock": true
+        "price": 230.99,
+        "inStock": true,
+        "sku": "6540970",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "pattern": "Cardioid",
@@ -757,8 +815,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556752&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556752.p%3FskuId%3D6556752",
-        "price": 59.99,
-        "inStock": true
+        "price": 69.99,
+        "inStock": true,
+        "sku": "6556752",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "pattern": "Cardioid",
@@ -778,8 +840,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573619.p%3FskuId%3D6573619",
-        "price": 40.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6573619",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -799,8 +865,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618286&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618286.p%3FskuId%3D6618286",
-        "price": 109.99,
-        "inStock": true
+        "price": 149.99,
+        "inStock": true,
+        "sku": "6618286",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -820,8 +890,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601910&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601910.p%3FskuId%3D6601910",
-        "price": 52.99,
-        "inStock": true
+        "price": 42.99,
+        "inStock": true,
+        "sku": "6601910",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -842,7 +916,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622722.p%3FskuId%3D6622722",
         "price": 32.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6622722",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -863,7 +941,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642761.p%3FskuId%3D6642761",
         "price": 59.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6642761",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "USB",
@@ -883,8 +965,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9135241&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9135241.p%3FskuId%3D9135241",
-        "price": 395.99,
-        "inStock": true
+        "price": 439.99,
+        "inStock": true,
+        "sku": "9135241",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "micType": "XLR",

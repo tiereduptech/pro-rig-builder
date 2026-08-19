@@ -473,7 +473,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577935&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577935.p%3FskuId%3D6577935",
         "price": 69.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6577935",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -740,7 +744,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420856&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420856.p%3FskuId%3D6420856",
         "price": 119.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6420856",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -921,7 +929,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557062&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557062.p%3FskuId%3D6557062",
         "price": 24.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6557062",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       }
     },
     "hsType": "Wireless",
@@ -990,8 +1001,12 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320789&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320789.p%3FskuId%3D6320789",
-        "price": 49.99,
-        "inStock": true
+        "price": 34.99,
+        "inStock": true,
+        "sku": "6320789",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1098,7 +1113,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6577966&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6577966.p%3FskuId%3D6577966",
         "price": 109.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6577966",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1181,7 +1200,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=9539004&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F9539004.p%3FskuId%3D9539004",
         "price": 27.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "9539004",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wired",
@@ -1272,7 +1294,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6583838&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6583838.p%3FskuId%3D6583838",
         "price": 199.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6583838",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1419,8 +1445,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6423471&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6423471.p%3FskuId%3D6423471",
-        "price": 99.99,
-        "inStock": true
+        "price": 79.99,
+        "inStock": true,
+        "sku": "6423471",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1441,8 +1471,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6498042&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6498042.p%3FskuId%3D6498042",
-        "price": 40.99,
-        "inStock": true
+        "price": 69.99,
+        "inStock": true,
+        "sku": "6498042",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1464,7 +1498,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6557061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6557061.p%3FskuId%3D6557061",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6557061",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1486,7 +1524,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6567072&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6567072.p%3FskuId%3D6567072",
         "price": 149.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6567072",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1508,7 +1550,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582440.p%3FskuId%3D6582440",
         "price": 99.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6582440",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-23"
       }
     },
     "hsType": "Wireless",
@@ -1534,8 +1579,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641078&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641078.p%3FskuId%3D6641078",
-        "price": 59.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6641078",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1556,8 +1605,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6572603&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6572603.p%3FskuId%3D6572603",
-        "price": 399.99,
-        "inStock": true
+        "price": 359.99,
+        "inStock": true,
+        "sku": "6572603",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1579,7 +1632,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641635&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641635.p%3FskuId%3D6641635",
         "price": 179.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6641635",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1600,8 +1657,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320787&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320787.p%3FskuId%3D6320787",
-        "price": 119.99,
-        "inStock": true
+        "price": 94.99,
+        "inStock": true,
+        "sku": "6320787",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1623,7 +1684,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6373474&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6373474.p%3FskuId%3D6373474",
         "price": 19.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6373474",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wired",
@@ -1649,8 +1713,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644061.p%3FskuId%3D6644061",
-        "price": 99.13,
-        "inStock": true
+        "price": 129.99,
+        "inStock": true,
+        "sku": "6644061",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1672,7 +1740,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506968&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6506968.p%3FskuId%3D6506968",
         "price": 79.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6506968",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1693,8 +1765,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6502762&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6502762.p%3FskuId%3D6502762",
-        "price": 79.99,
-        "inStock": true
+        "price": 99.99,
+        "inStock": true,
+        "sku": "6502762",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1715,8 +1791,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510363&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510363.p%3FskuId%3D6510363",
-        "price": 199.99,
-        "inStock": true
+        "price": 179.99,
+        "inStock": true,
+        "sku": "6510363",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1738,7 +1818,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510365&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510365.p%3FskuId%3D6510365",
         "price": 79.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6510365",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1760,7 +1844,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594139&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594139.p%3FskuId%3D6594139",
         "price": 59.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6594139",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1781,8 +1869,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6544740&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6544740.p%3FskuId%3D6544740",
-        "price": 229.99,
-        "inStock": true
+        "price": 279.99,
+        "inStock": true,
+        "sku": "6544740",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1803,8 +1895,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562123&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562123.p%3FskuId%3D6562123",
-        "price": 179.99,
-        "inStock": true
+        "price": 159.99,
+        "inStock": true,
+        "sku": "6562123",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1825,8 +1921,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562124&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562124.p%3FskuId%3D6562124",
-        "price": 158,
-        "inStock": true
+        "price": 129.99,
+        "inStock": true,
+        "sku": "6562124",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -1847,8 +1947,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562867.p%3FskuId%3D6562867",
-        "price": 177.99,
-        "inStock": true
+        "price": 149.99,
+        "inStock": true,
+        "sku": "6562867",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1870,7 +1974,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581760.p%3FskuId%3D6581760",
         "price": 29.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6581760",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1896,8 +2004,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635946.p%3FskuId%3D6635946",
-        "price": 49.99,
-        "inStock": true
+        "price": 59.99,
+        "inStock": true,
+        "sku": "6635946",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -1919,7 +2031,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587294&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587294.p%3FskuId%3D6587294",
         "price": 44.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6587294",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wired",
@@ -1946,7 +2061,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587297&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587297.p%3FskuId%3D6587297",
         "price": 44.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6587297",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wired",
@@ -1973,7 +2091,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587298&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587298.p%3FskuId%3D6587298",
         "price": 329.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6587298",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wireless",
@@ -1995,7 +2116,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587299.p%3FskuId%3D6587299",
         "price": 329.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6587299",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-19"
       }
     },
     "hsType": "Wireless",
@@ -2021,8 +2145,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594136.p%3FskuId%3D6594136",
-        "price": 249.99,
-        "inStock": true
+        "price": 246.99,
+        "inStock": true,
+        "sku": "6594136",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2043,8 +2171,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6594142&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6594142.p%3FskuId%3D6594142",
-        "price": 166.99,
-        "inStock": true
+        "price": 179.99,
+        "inStock": true,
+        "sku": "6594142",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2065,8 +2197,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595014&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595014.p%3FskuId%3D6595014",
-        "price": 259.99,
-        "inStock": true
+        "price": 299.99,
+        "inStock": true,
+        "sku": "6595014",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2088,7 +2224,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595755&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595755.p%3FskuId%3D6595755",
         "price": 279.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6595755",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2114,8 +2254,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616893&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616893.p%3FskuId%3D6616893",
-        "price": 89.99,
-        "inStock": true
+        "price": 79.99,
+        "inStock": true,
+        "sku": "6616893",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2136,8 +2280,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618285&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618285.p%3FskuId%3D6618285",
-        "price": 49.99,
-        "inStock": true
+        "price": 59.99,
+        "inStock": true,
+        "sku": "6618285",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2158,8 +2306,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629016.p%3FskuId%3D6629016",
-        "price": 159.99,
-        "inStock": true
+        "price": 129.99,
+        "inStock": true,
+        "sku": "6629016",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2180,8 +2332,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632890&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632890.p%3FskuId%3D6632890",
-        "price": 74.99,
-        "inStock": true
+        "price": 71.99,
+        "inStock": true,
+        "sku": "6632890",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2202,8 +2358,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641368&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641368.p%3FskuId%3D6641368",
-        "price": 139.99,
-        "inStock": true
+        "price": 134.99,
+        "inStock": true,
+        "sku": "6641368",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wired",
@@ -2225,7 +2385,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642553&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642553.p%3FskuId%3D6642553",
         "price": 59.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6642553",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",
@@ -2246,8 +2410,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642944&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642944.p%3FskuId%3D6642944",
-        "price": 119.99,
-        "inStock": false
+        "price": 89.99,
+        "inStock": false,
+        "sku": "6642944",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "hsType": "Wireless",

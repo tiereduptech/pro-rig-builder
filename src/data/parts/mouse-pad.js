@@ -42,7 +42,11 @@ export default [
       "bestbuy": {
         "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671122&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsteelseries-qck-heavy-gaming-mousepad-xxl-magenta%2FJ3GWPZ3XV5&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6671122",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -332,7 +336,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417112&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417112.p%3FskuId%3D6417112",
         "price": 26.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6417112",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -437,7 +445,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6318751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6318751.p%3FskuId%3D6318751",
         "price": 59.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6318751",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-missing"
       }
     },
     "surface": "Cloth",
@@ -554,7 +565,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2822575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2822575.p%3FskuId%3D2822575",
         "price": 10.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "2822575",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -573,8 +588,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400",
-        "price": 6.99,
-        "inStock": false
+        "price": 11.99,
+        "inStock": true,
+        "sku": "4384400",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "padSize": "Medium",
@@ -598,8 +617,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549",
-        "price": 7.99,
-        "inStock": true
+        "price": 3.2,
+        "inStock": false,
+        "sku": "5869549",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -618,8 +641,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6285961&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6285961.p%3FskuId%3D6285961",
-        "price": 59.99,
-        "inStock": true
+        "price": 23.99,
+        "inStock": true,
+        "sku": "6285961",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -638,8 +665,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428299&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428299.p%3FskuId%3D6428299",
-        "price": 32.99,
-        "inStock": true
+        "price": 19.99,
+        "inStock": true,
+        "sku": "6428299",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -658,8 +689,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6428301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6428301.p%3FskuId%3D6428301",
-        "price": 24.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6428301",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -679,7 +714,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476680&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476680.p%3FskuId%3D6476680",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6476680",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Hard",
@@ -699,7 +738,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6482628&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6482628.p%3FskuId%3D6482628",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6482628",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Hybrid",
@@ -719,7 +762,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6499566.p%3FskuId%3D6499566",
         "price": 29.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6499566",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "padSize": "XXL",
@@ -739,7 +786,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514575.p%3FskuId%3D6514575",
         "price": 9.99,
-        "inStock": false
+        "inStock": true,
+        "sku": "6514575",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -763,8 +814,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514577&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514577.p%3FskuId%3D6514577",
-        "price": 34.99,
-        "inStock": true
+        "price": 39.99,
+        "inStock": true,
+        "sku": "6514577",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -783,8 +838,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514578&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514578.p%3FskuId%3D6514578",
-        "price": 19.99,
-        "inStock": true
+        "price": 15.99,
+        "inStock": true,
+        "sku": "6514578",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -803,8 +862,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578719.p%3FskuId%3D6578719",
-        "price": 34.99,
-        "inStock": false
+        "price": 19.99,
+        "inStock": false,
+        "sku": "6578719",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "surface": "Cloth",
@@ -829,7 +892,10 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586270&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586270.p%3FskuId%3D6586270",
         "price": 99.99,
-        "inStock": false
+        "inStock": false,
+        "sku": "6586270",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-10"
       }
     },
     "surface": "Cloth",
@@ -854,7 +920,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6614722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6614722.p%3FskuId%3D6614722",
         "price": 49.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6614722",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "padSize": "XXL",
@@ -874,7 +944,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484056&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484056.p%3FskuId%3D6484056",
         "price": 9.99,
-        "inStock": true
+        "inStock": true,
+        "sku": "6484056",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "padSize": "Medium",
@@ -893,8 +967,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6484067&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6484067.p%3FskuId%3D6484067",
-        "price": 19.99,
-        "inStock": true
+        "price": 22.99,
+        "inStock": true,
+        "sku": "6484067",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "padSize": "XXL",

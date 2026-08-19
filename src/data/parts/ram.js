@@ -233,9 +233,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 413.99,
+        "price": 489.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562319&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562319.p%3FskuId%3D6562319",
-        "inStock": true
+        "inStock": true,
+        "sku": "6562319",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316594714719994191893",
@@ -359,9 +363,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 239.99,
+        "price": 244.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669244&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669244.p%3FskuId%3D6669244",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669244",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835749512605623259902",
@@ -426,9 +434,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 450.99,
+        "price": 469.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669242&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669242.p%3FskuId%3D6669242",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669242",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458317951181358741495957",
@@ -761,7 +773,10 @@ export default [
       "bestbuy": {
         "price": 402.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649398&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649398.p%3FskuId%3D6649398",
-        "inStock": false
+        "inStock": false,
+        "sku": "6649398",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-20"
       },
       "newegg": {
         "sku": "445833130990736808344286",
@@ -825,7 +840,10 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580646&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580646.p%3FskuId%3D6580646",
-        "inStock": false
+        "inStock": false,
+        "sku": "6580646",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-14"
       },
       "newegg": {
         "sku": "4458313752807118383528387",
@@ -1642,9 +1660,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 259.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6457798&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-pro-sl-32gb-2x16gb-ddr4-3600mhz-c18-udimm-desktop-memory-white%2FJ39QHHVSLP&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6457798",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445839241002637620242245",
@@ -1850,7 +1872,10 @@ export default [
       "bestbuy": {
         "price": 654.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580645.p%3FskuId%3D6580645",
-        "inStock": false
+        "inStock": false,
+        "sku": "6580645",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-20"
       }
     },
     "additionalImages": [
@@ -2412,9 +2437,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 434.99,
+        "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669246&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669246.p%3FskuId%3D6669246",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669246",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -2670,9 +2699,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 1119.99,
+        "price": 1239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTC75V&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637757",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831284010422222582994",
@@ -2828,9 +2861,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-17"
       },
       "bestbuy": {
-        "price": 749.99,
+        "price": 919.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6496083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-5200mhz-c40-udimm-desktop-memory-black%2FJ39QHTJGVZ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false,
+        "sku": "6496083",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445831846308112295877265",
@@ -2891,9 +2928,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-11"
       },
       "bestbuy": {
-        "price": 1021.99,
+        "price": 1200.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637756&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTJVKG&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637756",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -5800,9 +5841,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 1241.99,
+        "price": 1366.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645751.p%3FskuId%3D6645751",
-        "inStock": false
+        "inStock": false,
+        "sku": "6645751",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -8113,7 +8158,10 @@ export default [
       "bestbuy": {
         "price": 166.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6412826&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6412826.p%3FskuId%3D6412826",
-        "inStock": true
+        "inStock": true,
+        "sku": "6412826",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-06"
       }
     },
     "cap": 16,
@@ -8145,9 +8193,13 @@ export default [
     "mpn": "CMK32GX4M2E3200C16",
     "deals": {
       "bestbuy": {
-        "price": 242.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448611&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448611.p%3FskuId%3D6448611",
-        "inStock": true
+        "inStock": true,
+        "sku": "6448611",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838924976332608996715",
@@ -8192,9 +8244,13 @@ export default [
     "mpn": "CMW32GX4M2D3600C18",
     "deals": {
       "bestbuy": {
-        "price": 324.99,
+        "price": 279.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6449223&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6449223.p%3FskuId%3D6449223",
-        "inStock": true
+        "inStock": true,
+        "sku": "6449223",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838199060494877778852",
@@ -8238,9 +8294,13 @@ export default [
     "mpn": "CMK32GX4M2D3600C18",
     "deals": {
       "bestbuy": {
-        "price": 279.99,
+        "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6470356&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6470356.p%3FskuId%3D6470356",
-        "inStock": true
+        "inStock": true,
+        "sku": "6470356",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832348929915714737104",
@@ -8325,9 +8385,13 @@ export default [
     "mpn": "CMK64GX5M2B6400C32",
     "deals": {
       "bestbuy": {
-        "price": 1049.99,
+        "price": 1255.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-6400mhz-c32-udimm-desktop-memory-black%2FJ39QHTJL46&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6542590",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445835637165874203267057",
@@ -8414,9 +8478,13 @@ export default [
     "mpn": "CMH32GX5M2X7200C34",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 650.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6554930&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6554930.p%3FskuId%3D6554930",
-        "inStock": true
+        "inStock": true,
+        "sku": "6554930",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836800986164123301204",
@@ -8461,9 +8529,13 @@ export default [
     "mpn": "CMK32GX5M2E6000C36",
     "deals": {
       "bestbuy": {
-        "price": 409.99,
+        "price": 479.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562317&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562317.p%3FskuId%3D6562317",
-        "inStock": true
+        "inStock": true,
+        "sku": "6562317",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458311545893267756925853",
@@ -8508,9 +8580,13 @@ export default [
     "mpn": "CMH64GX5M2Y6400C32",
     "deals": {
       "bestbuy": {
-        "price": 799.99,
+        "price": 1264.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576369&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576369.p%3FskuId%3D6576369",
-        "inStock": true
+        "inStock": true,
+        "sku": "6576369",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "9SIC3FZM0J3648",
@@ -8555,9 +8631,13 @@ export default [
     "mpn": "CMH32GX5M2E6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 441.99,
+        "price": 489.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580806&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580806.p%3FskuId%3D6580806",
-        "inStock": true
+        "inStock": true,
+        "sku": "6580806",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458312119486581860848701",
@@ -8604,7 +8684,11 @@ export default [
       "bestbuy": {
         "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580809&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2x16gb-ddr5-6000mhz-c30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHH5PXG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6580809",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315829885020854166605",
@@ -8649,9 +8733,13 @@ export default [
     "mpn": "CMH32GX5M2B6400Z32",
     "deals": {
       "bestbuy": {
-        "price": 584.99,
+        "price": 519.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602236&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602236.p%3FskuId%3D6602236",
-        "inStock": true
+        "inStock": true,
+        "sku": "6602236",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "44583583445794393242760",
@@ -8696,9 +8784,13 @@ export default [
     "mpn": "CMK32GX5M2B6400Z32",
     "deals": {
       "bestbuy": {
-        "price": 573.99,
+        "price": 615.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602237&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602237.p%3FskuId%3D6602237",
-        "inStock": true
+        "inStock": true,
+        "sku": "6602237",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314106380963906265577",
@@ -8745,7 +8837,10 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604864&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604864.p%3FskuId%3D6604864",
-        "inStock": false
+        "inStock": false,
+        "sku": "6604864",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-20"
       },
       "newegg": {
         "sku": "445832372807584213670022",
@@ -8791,9 +8886,13 @@ export default [
     "mpn": "CMH32GX5M2B6400Z36",
     "deals": {
       "bestbuy": {
-        "price": 476.99,
+        "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6608563&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6608563.p%3FskuId%3D6608563",
-        "inStock": false
+        "inStock": false,
+        "sku": "6608563",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -8838,9 +8937,13 @@ export default [
     "mpn": "CMK32GX5M2B6400Z36",
     "deals": {
       "bestbuy": {
-        "price": 464.99,
+        "price": 439.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6608564&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6608564.p%3FskuId%3D6608564",
-        "inStock": true
+        "inStock": true,
+        "sku": "6608564",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837384151701501811720",
@@ -8887,7 +8990,11 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621674&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2x16gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-black%2FJ39TSCPW2G&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6621674",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 32,
@@ -8919,9 +9026,13 @@ export default [
     "mpn": "CP2K64G56C46U5",
     "deals": {
       "bestbuy": {
-        "price": 1242.99,
+        "price": 994.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637048&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637048.p%3FskuId%3D6637048",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637048",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 128,
@@ -8957,7 +9068,10 @@ export default [
       "bestbuy": {
         "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637057&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637057.p%3FskuId%3D6637057",
-        "inStock": false
+        "inStock": false,
+        "sku": "6637057",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-04"
       }
     },
     "cap": 64,
@@ -9025,9 +9139,13 @@ export default [
     "mpn": "CMH96GX5M2E6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 1253.99,
+        "price": 1377.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645747&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645747.p%3FskuId%3D6645747",
-        "inStock": false
+        "inStock": false,
+        "sku": "6645747",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 96,
@@ -9064,9 +9182,13 @@ export default [
     "mpn": "CMH64GX5M2D6000Z40",
     "deals": {
       "bestbuy": {
-        "price": 599.99,
+        "price": 965.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645748&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645748.p%3FskuId%3D6645748",
-        "inStock": true
+        "inStock": true,
+        "sku": "6645748",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 64,
@@ -9103,7 +9225,10 @@ export default [
       "bestbuy": {
         "price": 1228.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645750&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645750.p%3FskuId%3D6645750",
-        "inStock": false
+        "inStock": false,
+        "sku": "6645750",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-06"
       },
       "newegg": {
         "sku": "44583602460974355416427",
@@ -9148,9 +9273,13 @@ export default [
     "mpn": "CMP64GX5M2B6000Z30W",
     "deals": {
       "bestbuy": {
-        "price": 1274.99,
+        "price": 1310.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645752&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-dominator-titanium-64gb-2-x-32gb-ddr5-6000-cl30-36-36-76-1-40v-intel-xmp-amd-expo-white%2FJ39TSCP5Y6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6645752",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836017013525624514274",
@@ -9195,9 +9324,13 @@ export default [
     "mpn": "CMK64GX5M2D6000Z40",
     "deals": {
       "bestbuy": {
-        "price": 699.99,
+        "price": 915.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645754&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645754.p%3FskuId%3D6645754",
-        "inStock": false
+        "inStock": false,
+        "sku": "6645754",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832156532174368504792",
@@ -9244,7 +9377,10 @@ export default [
       "bestbuy": {
         "price": 374.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649400.p%3FskuId%3D6649400",
-        "inStock": false
+        "inStock": false,
+        "sku": "6649400",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-20"
       },
       "newegg": {
         "sku": "445838411636995279288423",
@@ -9301,9 +9437,13 @@ export default [
     "mpn": "CMH16GX5M2B5200Z40",
     "deals": {
       "bestbuy": {
-        "price": 271.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669179&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669179.p%3FskuId%3D6669179",
-        "inStock": true
+        "inStock": true,
+        "sku": "6669179",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310967131818657006547",
@@ -9348,9 +9488,13 @@ export default [
     "mpn": "CMK16GX5M2Y6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 234.99,
+        "price": 244.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672866&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672866.p%3FskuId%3D6672866",
-        "inStock": true
+        "inStock": true,
+        "sku": "6672866",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 16,
@@ -9382,9 +9526,13 @@ export default [
     "mpn": "CMH16GX5M2Y6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 244.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672867.p%3FskuId%3D6672867",
-        "inStock": true
+        "inStock": true,
+        "sku": "6672867",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 16,

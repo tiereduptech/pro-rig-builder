@@ -74,9 +74,13 @@ export default [
     "mpn": "GH24NSB0",
     "deals": {
       "bestbuy": {
-        "price": 29.99,
+        "price": 8.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2691169&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2691169.p%3FskuId%3D2691169",
-        "inStock": false
+        "inStock": false,
+        "sku": "2691169",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "storageType": "DVD/CD",

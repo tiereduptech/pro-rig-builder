@@ -1388,7 +1388,11 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6316584&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6316584.p%3FskuId%3D6316584",
-        "inStock": false
+        "inStock": false,
+        "sku": "6316584",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 13,
@@ -1441,7 +1445,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604875&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604875.p%3FskuId%3D6604875",
-        "inStock": true
+        "inStock": true,
+        "sku": "6604875",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458314985996934103841889",
@@ -2585,9 +2593,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 259.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597523&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597523.p%3FskuId%3D6597523",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597523",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445833576459522483564104",
@@ -3214,9 +3226,13 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "bestbuy": {
-        "price": 219.99,
+        "price": 197.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587612&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587612.p%3FskuId%3D6587612",
-        "inStock": false
+        "inStock": false,
+        "sku": "6587612",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -3740,9 +3756,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-16"
       },
       "bestbuy": {
-        "price": 149.99,
+        "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597526&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597526.p%3FskuId%3D6597526",
-        "inStock": false
+        "inStock": false,
+        "sku": "6597526",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 42,
@@ -3794,9 +3814,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-16"
       },
       "bestbuy": {
-        "price": 139.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-360-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQR6&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6642459",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835181496",
@@ -3953,9 +3977,13 @@ export default [
         "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
-        "price": 129.99,
+        "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597525&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597525.p%3FskuId%3D6597525",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597525",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835146158",
@@ -4064,9 +4092,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 229.99,
+        "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597519&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597519.p%3FskuId%3D6597519",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597519",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "44583997718367946837839",
@@ -4626,7 +4658,11 @@ export default [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6646438&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6646438.p%3FskuId%3D6646438",
-        "inStock": true
+        "inStock": true,
+        "sku": "6646438",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg_openbox": {
         "sku": "445831543937097688732828",
@@ -5319,9 +5355,13 @@ export default [
         "priceConfirmedAt": "2026-08-16"
       },
       "bestbuy": {
-        "price": 29.99,
+        "price": 24.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541734&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-halo-120mm-cpu-cooling-fan-with-gen-2-rgb-lighting-black-edition%2FJ3K4GJYW73&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6541734",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 22,
@@ -5801,7 +5841,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-240-rs-lcd-liquid-cpu-cooler-black%2FJ39TSCPQ6G&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6642462",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835181493",
@@ -6013,9 +6057,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-07"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630941&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630941.p%3FskuId%3D6630941",
-        "inStock": false
+        "inStock": false,
+        "sku": "6630941",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 23,
@@ -6768,9 +6816,13 @@ export default [
         "priceConfirmedAt": "2026-08-16"
       },
       "bestbuy": {
-        "price": 26.99,
+        "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675642&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-cpu-air-cooler-black%2FJ3K4GJSYZY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6675642",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832845816020324099725",
@@ -7078,7 +7130,10 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587609&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587609.p%3FskuId%3D6587609",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587609",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       }
     },
     "discount": 50,
@@ -7129,9 +7184,13 @@ export default [
         "priceUnconfirmedAt": "2026-08-16"
       },
       "bestbuy": {
-        "price": 139.99,
+        "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587610&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-titan-240-rx-lcd-liquid-cpu-cooler-black%2FJ39TSCQ5TV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587610",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "additionalImages": [
@@ -8515,9 +8574,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6630946&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6630946.p%3FskuId%3D6630946",
-        "inStock": true
+        "inStock": true,
+        "sku": "6630946",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445838505144744393167228",
@@ -13534,7 +13597,10 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6353113&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6353113.p%3FskuId%3D6353113",
-        "inStock": true
+        "inStock": true,
+        "sku": "6353113",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-05-03"
       },
       "newegg": {
         "sku": "4458316016139715996759116",
@@ -13580,7 +13646,10 @@ export default [
       "bestbuy": {
         "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6539976&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6539976.p%3FskuId%3D6539976",
-        "inStock": true
+        "inStock": true,
+        "sku": "6539976",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-01"
       },
       "newegg": {
         "sku": "4458311130858640254898335",
@@ -13625,7 +13694,10 @@ export default [
       "bestbuy": {
         "price": 19.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6539980&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6539980.p%3FskuId%3D6539980",
-        "inStock": true
+        "inStock": true,
+        "sku": "6539980",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-06-10"
       },
       "newegg": {
         "sku": "445832492988320173252614",
@@ -13670,9 +13742,13 @@ export default [
     "mpn": "MAYT2HP217PAR1",
     "deals": {
       "bestbuy": {
-        "price": 22.99,
+        "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675645&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-black-argb-cpu-air-cooler-black-and-argb%2FJ3K4GJSYZH&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6675645",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "Air",
@@ -13704,9 +13780,13 @@ export default [
     "mpn": "RL-KR120-B1",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
+        "price": 71.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6486421&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6486421.p%3FskuId%3D6486421",
-        "inStock": false
+        "inStock": false,
+        "sku": "6486421",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -13748,7 +13828,10 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510205.p%3FskuId%3D6510205",
-        "inStock": true
+        "inStock": true,
+        "sku": "6510205",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-18"
       },
       "newegg": {
         "sku": "445838045254263919295564",
@@ -13840,9 +13923,13 @@ export default [
     "mpn": "CW-9061003-WW",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
+        "price": 215.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6553301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-h150i-rgb-liquid-cpu-cooler-with-qx120-black%2FJ39QHTJQL3&intsrc=APIG_28060",
-        "inStock": false
+        "inStock": false,
+        "sku": "6553301",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -13880,9 +13967,13 @@ export default [
     "mpn": "CL-W362-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566249&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566249.p%3FskuId%3D6566249",
-        "inStock": false
+        "inStock": false,
+        "sku": "6566249",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835106751",
@@ -13928,9 +14019,13 @@ export default [
     "mpn": "CL-W363-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 69.99,
+        "price": 75.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566255&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566255.p%3FskuId%3D6566255",
-        "inStock": true
+        "inStock": true,
+        "sku": "6566255",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -13967,7 +14062,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566257&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566257.p%3FskuId%3D6566257",
-        "inStock": true
+        "inStock": true,
+        "sku": "6566257",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14004,7 +14103,10 @@ export default [
       "bestbuy": {
         "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566258&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566258.p%3FskuId%3D6566258",
-        "inStock": true
+        "inStock": true,
+        "sku": "6566258",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-01-23"
       },
       "newegg": {
         "sku": "445832564914943307493488",
@@ -14052,9 +14154,13 @@ export default [
     "mpn": "CL-W384-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 154.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6566260&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6566260.p%3FskuId%3D6566260",
-        "inStock": false
+        "inStock": false,
+        "sku": "6566260",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445832297629522038067575",
@@ -14102,9 +14208,13 @@ export default [
     "mpn": "CL-W383-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 156.99,
+        "price": 134.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569204&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569204.p%3FskuId%3D6569204",
-        "inStock": false
+        "inStock": false,
+        "sku": "6569204",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458310427561789377507103",
@@ -14152,9 +14262,13 @@ export default [
     "mpn": "CL-W365-PL12SW-A",
     "deals": {
       "bestbuy": {
-        "price": 90.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569205.p%3FskuId%3D6569205",
-        "inStock": false
+        "inStock": false,
+        "sku": "6569205",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316042915044138034023",
@@ -14204,7 +14318,10 @@ export default [
       "bestbuy": {
         "price": 74.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6569212.p%3FskuId%3D6569212",
-        "inStock": false
+        "inStock": false,
+        "sku": "6569212",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
         "sku": "4458314374061741250609711",
@@ -14254,7 +14371,10 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578772&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578772.p%3FskuId%3D6578772",
-        "inStock": true
+        "inStock": true,
+        "sku": "6578772",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-12-03"
       }
     },
     "coolerType": "AIO",
@@ -14292,7 +14412,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578777&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578777.p%3FskuId%3D6578777",
-        "inStock": true
+        "inStock": true,
+        "sku": "6578777",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14330,7 +14454,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578778&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578778.p%3FskuId%3D6578778",
-        "inStock": true
+        "inStock": true,
+        "sku": "6578778",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14366,9 +14494,13 @@ export default [
     "mpn": "CW-9061018-WW",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587606&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587606.p%3FskuId%3D6587606",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587606",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "4458316520423169428724710",
@@ -14417,7 +14549,10 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587613&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587613.p%3FskuId%3D6587613",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587613",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-10-18"
       },
       "newegg": {
         "sku": "44583298304837687976192",
@@ -14464,9 +14599,13 @@ export default [
     "mpn": "CW-9061023-WW",
     "deals": {
       "bestbuy": {
-        "price": 194.99,
+        "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587617&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587617.p%3FskuId%3D6587617",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587617",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14501,9 +14640,13 @@ export default [
     "mpn": "CW-9061016-WW",
     "deals": {
       "bestbuy": {
-        "price": 79.99,
+        "price": 143.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587618&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587618.p%3FskuId%3D6587618",
-        "inStock": true
+        "inStock": false,
+        "sku": "6587618",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14538,9 +14681,13 @@ export default [
     "mpn": "CW-9061021-WW",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587621&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-titan-360-rx-liquid-cpu-cooler-with-rgb-lighting-white%2FJ39QHTC4W6&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6587621",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445836226817927527122057",
@@ -14587,9 +14734,13 @@ export default [
     "mpn": "RL-KR24E-B2",
     "deals": {
       "bestbuy": {
-        "price": 149.99,
+        "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597520&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597520.p%3FskuId%3D6597520",
-        "inStock": false
+        "inStock": false,
+        "sku": "6597520",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14626,9 +14777,13 @@ export default [
     "mpn": "RL-KR28E-B2",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
+        "price": 274.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597521&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597521.p%3FskuId%3D6597521",
-        "inStock": false
+        "inStock": false,
+        "sku": "6597521",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "coolerType": "AIO",
@@ -14668,9 +14823,13 @@ export default [
     "mpn": "RL-KR36E-W2",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
+        "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597524&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597524.p%3FskuId%3D6597524",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597524",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835146165",
@@ -14716,9 +14875,13 @@ export default [
     "mpn": "RL-KR28E-W2",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597527&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597527.p%3FskuId%3D6597527",
-        "inStock": true
+        "inStock": true,
+        "sku": "6597527",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835146162",
@@ -14766,9 +14929,13 @@ export default [
     "mpn": "MAG CORELIQUID I240",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601462&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601462.p%3FskuId%3D6601462",
-        "inStock": true
+        "inStock": true,
+        "sku": "6601462",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 119.99,
@@ -14822,7 +14989,11 @@ export default [
       "bestbuy": {
         "price": 124.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629569&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629569.p%3FskuId%3D6629569",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629569",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 149.99,
@@ -14926,9 +15097,13 @@ export default [
     "mpn": "MAG CORELIQUID A15 360",
     "deals": {
       "bestbuy": {
-        "price": 89.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629580&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629580.p%3FskuId%3D6629580",
-        "inStock": true
+        "inStock": true,
+        "sku": "6629580",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 89.99,
@@ -14983,7 +15158,10 @@ export default [
       "bestbuy": {
         "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641888&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641888.p%3FskuId%3D6641888",
-        "inStock": false
+        "inStock": false,
+        "sku": "6641888",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-03-03"
       }
     },
     "coolerType": "AIO",
@@ -15025,7 +15203,10 @@ export default [
       "bestbuy": {
         "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642460&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6642460.p%3FskuId%3D6642460",
-        "inStock": true
+        "inStock": true,
+        "sku": "6642460",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-24"
       },
       "newegg": {
         "sku": "N82E16835181495",
@@ -15073,7 +15254,11 @@ export default [
       "bestbuy": {
         "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642711&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-240-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQ6V&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": true,
+        "sku": "6642711",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445834252585428532743544",
@@ -15171,9 +15356,13 @@ export default [
     "mpn": "CORELIQUID A17 MLG EDITION",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6649238&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6649238.p%3FskuId%3D6649238",
-        "inStock": true
+        "inStock": true,
+        "sku": "6649238",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-19"
       },
       "msi": {
         "price": 179.99,
