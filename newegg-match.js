@@ -597,6 +597,59 @@ export function modularityConflict(ourName, theirName) {
   return a && b && a !== b ? { reason: 'modularity', detail: `${a} vs ${b}` } : false;
 }
 
+// ── Bundled-accessory variants ───────────────────────────────────────────────
+//
+// An M.2 SSD sold BARE and the same drive sold WITH A HEATSINK are two SKUs at
+// two prices. Every other gate passes them as the same product: same brand,
+// same model designation, same capacity, same condition, and a price gap well
+// inside what isPricePlausibleForCapacity tolerates. Only the accessory word
+// tells them apart, and it is alpha-only, so neither the digit-token check nor
+// modelSuffixConflict can see it.
+//
+// This is the class that put row 50480 into the Best Buy mismatch queue (a bare
+// SN770 1TB pointing at an "SN850X 1TB with Heatsink") and that relink run
+// 32257835049 would have written into row 50501 (a bare SN850X 8TB relinked to
+// "SN850X 8TB with Heatsink for PS5 and Desktops", search tier, no UPC).
+//
+// PRESENCE-ASYMMETRIC, not conflict-only. wattageConflict and modularityConflict
+// need both sides to state a value because a silent title genuinely carries no
+// claim, but "with Heatsink" is an ADDITION: a title that does not mention it is
+// describing the bare part. Silence is a claim here, so one-sided is a reject —
+// the same reasoning the color markers in VARIANT_MARKERS are kept symmetric on.
+//
+// SCOPED BY CATEGORY, because the qualifier is only an accessory in some of
+// them. On a CPUCooler a heatsink IS the product ("CPU cooler heatsink" is how
+// half the category is titled) and on a Motherboard it is a built-in feature of
+// the M.2 slot; applying this there would reject correct matches wholesale. It
+// is an add-on, and a separate SKU, on storage.
+const ACCESSORY_QUALIFIERS = [
+  {
+    key: 'heatsink',
+    cats: STORAGE_CATS,
+    re: /\b(?:heat\s?sinks?|heat\s?spreaders?|heatshields?|heat\s?shields?)\b/i,
+  },
+];
+
+/**
+ * True when one name bundles an accessory the other does not, in a category
+ * where that accessory marks a distinct SKU.
+ * @returns {false|{reason:string, detail:string}}
+ */
+export function accessoryConflict(ourName, theirName, cat) {
+  for (const q of ACCESSORY_QUALIFIERS) {
+    if (!q.cats.has(cat)) continue;
+    const ours = q.re.test(String(ourName || ''));
+    const theirs = q.re.test(String(theirName || ''));
+    if (ours !== theirs) {
+      return {
+        reason: `accessory_${q.key}`,
+        detail: `ours ${ours ? 'with' : 'without'} ${q.key}, candidate ${theirs ? 'with' : 'without'} ${q.key}`,
+      };
+    }
+  }
+  return false;
+}
+
 // ── Brand presence ───────────────────────────────────────────────────────────
 //
 // nameSimilarity compares NAMES ONLY. When our catalog title carries no brand
@@ -782,6 +835,9 @@ export function scoreMatch(ourProduct, neweggItem, notes, opts) {
   // is positive evidence the UPC (or the name match) is wrong, not just truncation.
   if (wattageConflict(ourProduct.n, neweggItem.name)) return set('variant_wattage');
   if (modularityConflict(ourProduct.n, neweggItem.name)) return set('variant_modularity');
+  // Same placement rationale as the two above: a barcode cannot put a heatsink
+  // in the box, so a one-sided accessory word is evidence against the UPC too.
+  if (accessoryConflict(ourProduct.n, neweggItem.name, ourProduct.c)) return set('variant_accessory');
   const ourUpcN = normalizeUpc(ourProduct.upc || ourProduct.UPC);
   const newUpcN = normalizeUpc(neweggItem.upc);
   if (ourUpcN && newUpcN && ourUpcN === newUpcN) return { method: 'upc', score: 1.0 };

@@ -642,3 +642,70 @@ test('brand gate never overrides a UPC match', () => {
   assert.ok(m);
   assert.equal(m.method, 'upc');
 });
+
+// ── Bundled-accessory variants ───────────────────────────────────────────────
+//
+// The bare-vs-heatsink collapse. Every pair below shares brand, model
+// designation, capacity and condition, so every other gate passes them; only
+// the accessory word separates the two SKUs. Both live cases come from the Best
+// Buy mismatch queue: 50480 arrived there because a bare SN770 was pointing at
+// an "SN850X with Heatsink", and relink dry run 32257835049 proposed writing
+// the same shape into 50501 off the keyword-search tier with no UPC.
+test('a bare storage part and its heatsink SKU are different products', () => {
+  const drops = [
+    ['50501 — the relink this gate exists to stop',
+      'WD - BLACK SN850X 8TB Internal SSD PCIe Gen 4 x4 NVMe',
+      'WD - BLACK SN850X 8TB Internal SSD PCIe Gen 4 x4 NVMe with Heatsink for PS5 and Desktops'],
+    ['50480 — the mismap that put the row in the queue',
+      'WD - BLACK SN770 1TB Internal SSD PCIe Gen 4 x4',
+      'WD - BLACK SN850X 1TB Internal SSD PCIe Gen 4 x4 NVMe with Heatsink for PS5 and Desktops'],
+    ['reverse direction — ours bundles, theirs is bare',
+      'Samsung 990 PRO 2TB with Heatsink PCIe 4.0 NVMe',
+      'Samsung 990 PRO 2TB PCIe 4.0 NVMe M.2 Internal SSD'],
+    ['spelled as two words',
+      'Crucial T700 4TB Gen5 NVMe M.2 SSD',
+      'Crucial T700 4TB Gen5 NVMe M.2 SSD with Heat Sink'],
+  ];
+  for (const [label, ours, theirs] of drops) {
+    const r = NEG.accessoryConflict(ours, theirs, 'Storage');
+    assert.ok(r, `should reject: ${label}`);
+    assert.equal(r.reason, 'accessory_heatsink');
+  }
+});
+
+test('the accessory gate is silent when both sides agree', () => {
+  assert.equal(NEG.accessoryConflict(
+    'WD - BLACK SN850X 2TB Internal SSD with Heatsink',
+    'WD - BLACK SN850X 2TB Internal SSD PCIe Gen 4 x4 with Heatsink for PS5', 'Storage'), false);
+  // The three rows relinked on 2026-08-19 — this gate must not have touched them.
+  assert.equal(NEG.accessoryConflict(
+    'WD - BLACK SN770 1TB Internal SSD PCIe Gen 4 x4',
+    'WD - BLACK SN770 1TB Internal SSD PCIe Gen 4 x4', 'Storage'), false);
+  for (const cap of ['1TB', '2TB']) {
+    const n = `Samsung - Geek Squad Certified Refurbished 970 EVO Plus ${cap} Internal SSD PCIe Gen 3 x4 NVMe`;
+    assert.equal(NEG.accessoryConflict(n, n, 'Storage'), false);
+  }
+});
+
+// Scope is the whole point: on a cooler the heatsink IS the product, and on a
+// board it is a feature of the M.2 slot. Firing there would reject correct
+// matches across two entire categories.
+test('the accessory gate only applies where the accessory is an add-on', () => {
+  const cooler = ['Noctua NH-D15 Premium CPU Cooler', 'Noctua NH-D15 Dual-Tower Heatsink CPU Cooler'];
+  assert.equal(NEG.accessoryConflict(cooler[0], cooler[1], 'CPUCooler'), false);
+  const board = ['ASUS ROG STRIX B650E-F Gaming WiFi', 'ASUS ROG STRIX B650E-F Gaming WiFi with M.2 Heatsink'];
+  assert.equal(NEG.accessoryConflict(board[0], board[1], 'Motherboard'), false);
+  // Same pair, storage category — proves the pass above is the scope and not a
+  // regex that simply fails to match.
+  assert.ok(NEG.accessoryConflict(board[0], board[1], 'Storage'));
+});
+
+test('the accessory conflict reaches scoreMatch as a variant reject', () => {
+  const notes = {};
+  assert.equal(scoreMatch(
+    { n: 'WD - BLACK SN850X 8TB Internal SSD PCIe Gen 4 x4 NVMe', b: 'WD', c: 'Storage', cap: 8000, pr: 1299.99 },
+    { name: 'WD - BLACK SN850X 8TB Internal SSD PCIe Gen 4 x4 NVMe with Heatsink for PS5 and Desktops',
+      sku: 'N82E16820250001', price: 1699.99, upc: '' }, notes), null);
+  assert.equal(notes.reject, 'variant_accessory');
+  assert.equal(NEG.rejectKind(notes.reject), 'variant');
+});

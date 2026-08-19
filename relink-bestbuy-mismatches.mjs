@@ -29,6 +29,8 @@
  *   price      isPricePlausibleForCapacity() on storage, as bestbuy-merge does
  *   condition  a refurbished row may only be relinked to a refurbished listing
  *              and vice versa (condition.cjs's isRenewedTitle)
+ *   accessory  a bare part may not be relinked to the bundled-accessory sku of
+ *              the same model, or the reverse (newegg-match's accessoryConflict)
  *   brand      the row's brand must appear in the candidate's name
  *
  * A row with exactly ONE candidate through all of that is not a guess: it is a
@@ -77,6 +79,7 @@ import {
   namesAgreeOnModel, modelDesignations, parseCapacityGB, capacityCompatible,
   isHardDrive, isPricePlausibleForCapacity,
 } from './normalize-product-name.js';
+import { accessoryConflict } from './newegg-match.js';
 
 const require = createRequire(import.meta.url);
 const { writeCatalog } = require('./scripts/write-catalog.cjs');
@@ -209,6 +212,15 @@ function reject(row, cand) {
   const ourRefurb = row.condition && row.condition !== 'new' ? true : isRenewedTitle(row.n);
   const theirRefurb = isRenewedTitle(cand.name || '');
   if (ourRefurb !== theirRefurb) return `condition: row ${ourRefurb ? 'refurbished' : 'new'}, candidate ${theirRefurb ? 'refurbished' : 'new'}`;
+  // A bundled accessory is identity too, for the same reason condition is: the
+  // bare drive and the heatsink drive are two skus at two prices, and every
+  // other gate here waves them through — same brand, same model designation,
+  // same capacity, same condition, a price gap inside what the capacity ladder
+  // tolerates. Row 50480 is in this queue BECAUSE of that confusion (a bare
+  // SN770 pointing at an "SN850X with Heatsink"), and on the 2026-08-19 dry run
+  // row 50501 was one --apply away from being relinked into it.
+  const acc = accessoryConflict(row.n, cand.name || '', row.c);
+  if (acc) return `accessory: ${acc.detail}`;
   const brand = String(row.b || '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const candName = String(cand.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
   if (brand && brand.length >= 2 && !candName.includes(brand)) return `brand "${row.b}" absent from the candidate`;
