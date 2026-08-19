@@ -21502,7 +21502,6 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxCooler": 170,
-    "rads": "120mm",
     "drive35": 2
   },
   {
@@ -22109,7 +22108,7 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "maxGPU": 280,
+    "maxGPU": 415,
     "fans_inc": 4,
     "rads": "360mm",
     "drive35": 5
@@ -22377,8 +22376,6 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "maxGPU": 415,
-    "maxCooler": 166,
     "fans_inc": 6,
     "rads": "360mm"
   },
@@ -23071,9 +23068,7 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "maxGPU": 420,
-    "maxCooler": 178,
-    "fans_inc": 6,
+    "fans_inc": 7,
     "rads": "240mm,360mm"
   },
   {
