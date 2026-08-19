@@ -57,11 +57,13 @@ name: Refresh Best Buy Prices
 #  summaries — which this job now records on every run.
 #
 #  ── RUNTIME ─────────────────────────────────────────────────────────────────
-#  ~7-10 min. Nominally 11 bulk requests, but every bulk chunk has failed on
-#  both audit runs to date (11/11 and 16/16), so in practice all ~1,039 skus
-#  resolve through the individual endpoint at ~3 req/sec. This job captures the
-#  bulk error text — which the audit only ever counted — so the next run can say
-#  why it is paying 1,039 requests for work 11 could do.
+#  11 bulk requests if the bulk pass is accepted; ~16 min and ~1,039 requests if
+#  it is not. Every chunk has been rejected on every run to date (11/11, 16/16,
+#  11/11) with a bare `HTTP 400` and no explanation, so the script now keeps the
+#  rejection body and, on the first failure, probes four query forms and adopts
+#  whichever the API answers. Read `bulk.probe` in the summary artifact after
+#  the next run: if a form other than the default answered, make it the default
+#  in BULK_FORMS and the run drops back to 11 requests.
 # =============================================================================
 
 on:

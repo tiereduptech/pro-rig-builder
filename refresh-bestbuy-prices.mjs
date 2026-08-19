@@ -115,6 +115,26 @@
  * wrong sku and agrees with itself. Each one needs a relink, which is
  * deliberately a person's job and not this script's.
  *
+ * ── ONE REQUEST PER 100 SKUS, NOT ONE PER SKU ───────────────────────────────
+ * Every bulk chunk this repo has ever sent has come back `HTTP 400`: 11/11 and
+ * 16/16 on the two dead-sku audits and 11/11 here. So a job that needs 11
+ * requests pays 1,039 and 16 minutes for them, and that bill grows with the
+ * catalog while the fix does not.
+ *
+ * Nothing could say why, because the rejection body was discarded and only the
+ * status kept. It is kept now. And the failing call is no longer assumed
+ * correct: it appended `.json` to a parenthesised QUERY, which Best Buy
+ * documents only on the single-resource form (`/products/6354884.json`) — the
+ * one thing it did that every working Best Buy call in this repo does not.
+ *
+ * That cannot be tested from a laptop: Best Buy validates the key before it
+ * parses the query, so every keyless probe answers 403 whatever is wrong with
+ * it. So the run tests it. On the first rejection it asks the same two-sku
+ * question four ways — documented form, the old `.json` form, without `show=`,
+ * and `sku=A|sku=B` — prints what the API says to each, adopts whichever
+ * answers, and records all four verdicts in the summary. One dispatch settles
+ * it either way.
+ *
  * ── WHAT THIS SCRIPT DOES NOT DO ─────────────────────────────────────────────
  * It does not delete deals, quarantine rows, or purge dead skus. A sku the API
  * 404s gets inStock:false — that is an availability fact, self-healing, and the
@@ -250,14 +270,37 @@ console.log(`Catalog: ${parts.length} products, ${rows.length} Best Buy rows` +
 const SHOW = ['sku', 'name', 'salePrice', 'regularPrice', 'onSale', 'active',
   'orderable', 'onlineAvailability', 'priceUpdateDate'].join(',');
 
+// A 4xx here is a verdict on the request, not weather: the same bytes sent
+// again get the same answer. Retrying one three times only spends three times
+// the quota to learn it three times — 22 wasted requests and ~26s per run at
+// the failure rate below. 403 and 429 stay retryable because Best Buy answers
+// an exceeded rate limit with a 403, and that one IS weather.
+const DETERMINISTIC = new Set([400, 401, 404, 414, 422]);
+
+// Best Buy explains a rejection in the response body and this job was throwing
+// it away, which is why two audits and a refresh run could report `HTTP 400`
+// 27 times and not one of them could say what the API objected to.
+function errDetail(status, body) {
+  let msg = null;
+  if (body) {
+    try { msg = JSON.parse(body).errorMessage || null; } catch {
+      const m = body.match(/<(?:errorMessage|message)>([^<]+)</i);
+      if (m) msg = m[1];
+    }
+    if (!msg) msg = body.replace(/\s+/g, ' ').trim().slice(0, 200) || null;
+  }
+  return `HTTP ${status}${msg ? ` — ${msg}` : ''}`;
+}
+
 async function get(url, label) {
   let last = null;
   for (let attempt = 1; attempt <= TRIES; attempt++) {
     try {
       const res = await fetch(url);
       if (res.ok) return { ok: true, json: await res.json(), status: res.status };
+      last = errDetail(res.status, await res.text().catch(() => ''));
       if (res.status === 404) return { ok: false, status: 404, err: 'HTTP 404' };
-      last = `HTTP ${res.status}${res.status === 403 ? ' (key rejected / quota)' : ''}`;
+      if (DETERMINISTIC.has(res.status)) return { ok: false, status: res.status, err: last };
     } catch (e) { last = e.message; }
     if (attempt < TRIES) await sleep(1200 * attempt);
   }
@@ -272,6 +315,83 @@ const pick = (p, via, extra = {}) => ({
   ...extra,
 });
 
+// ── The bulk query, four ways ────────────────────────────────────────────────
+// Every bulk chunk has been rejected on every run this repo has ever made:
+// 11/11 and 16/16 on the two dead-sku audits and 11/11 on the refresh, all
+// `HTTP 400`, so all 1,039 skus resolve one at a time and a job that needs 11
+// requests pays 1,039 and 16 minutes for them. That cost grows with the
+// catalog; the fix does not.
+//
+// A 400 with no body could not say why, so the first thing here is that the
+// body is now kept (see errDetail). The second is that the form the job was
+// sending is no longer assumed to be the right one:
+//
+//   `/products(sku in(…)).json?…`  — a `.json` extension appended to a QUERY.
+//
+// Best Buy documents the extension on the single-resource form,
+// `/products/6354884.json`, and documents queries as `/products(<filter>)`
+// with `format=json` as a parameter. Every other Best Buy call in this repo
+// that works — case-sweep, discover, the category audits — uses the parameter
+// form and none of them append `.json` to a parenthesised path. That makes the
+// extension the one thing the failing calls do that the working calls do not,
+// and it explains the shape of the evidence: EVERY chunk fails, including the
+// 22-sku tail chunk, so it is not length, not quota (the individual calls that
+// follow all succeed on the same key) and not the sku list.
+//
+// It is still a hypothesis, and it cannot be tested from here — Best Buy
+// validates the key before it parses the query, so without the secret every
+// probe answers 403. So the run tests it: on the first rejection it asks the
+// same two-sku question in each of these forms, prints what the API says about
+// each, and adopts whichever one actually answers. One dispatch settles it, and
+// if the answer is "the .json was fine, something else is wrong", the probe
+// says that too instead of leaving another run with `HTTP 400` and no body.
+const API = 'https://api.bestbuy.com/v1';
+const BULK_FORMS = [
+  { id: 'query',
+    why: 'documented query form — filter in the path, format as a parameter',
+    url: (c) => `${API}/products(sku%20in(${c.join(',')}))` +
+      `?apiKey=${KEY}&show=${SHOW}&pageSize=${CHUNK}&format=json` },
+  { id: 'query.json',
+    why: "what this job has always sent — '.json' appended to a query path",
+    url: (c) => `${API}/products(sku%20in(${c.join(',')})).json` +
+      `?apiKey=${KEY}&show=${SHOW}&pageSize=${CHUNK}&format=json` },
+  { id: 'query-no-show',
+    why: 'no show= — isolates a rejected field name in the projection',
+    url: (c) => `${API}/products(sku%20in(${c.join(',')}))` +
+      `?apiKey=${KEY}&pageSize=${CHUNK}&format=json` },
+  { id: 'or-list',
+    why: 'sku=A|sku=B|… — in case in() is the part being rejected',
+    url: (c) => `${API}/products(${c.map((x) => `sku=${x}`).join('%7C')})` +
+      `?apiKey=${KEY}&show=${SHOW}&pageSize=${CHUNK}&format=json` },
+];
+const redact = (u) => String(u).split(KEY || '\u0000').join('<key>');
+
+/**
+ * Ask the same two-sku question every way and report which ones the API takes.
+ * Four requests, once per run, only after a chunk has already been rejected.
+ *
+ * "Worked" means the response came back AND contained both skus asked for — a
+ * form that 200s with an empty product list has not answered the question, and
+ * adopting it would silently push every sku into the individual pass while
+ * reporting the bulk pass as healthy.
+ */
+async function probeBulkForms(sample) {
+  const out = [];
+  for (const f of BULK_FORMS) {
+    const res = await get(f.url(sample));
+    const returned = res.ok ? (res.json?.products || []).map((x) => String(x.sku)) : [];
+    const complete = sample.every((sku) => returned.includes(sku));
+    out.push({ form: f.id, why: f.why, ok: !!res.ok, complete,
+      status: res.status ?? null, err: res.ok ? null : res.err,
+      returned: returned.length, url: redact(f.url(sample)) });
+    console.log(`      ${f.id.padEnd(14)} ${res.ok
+      ? (complete ? `answered — ${returned.length}/${sample.length} skus` : `HTTP 200 but returned ${returned.length}/${sample.length} skus`)
+      : res.err}`);
+    await sleep(PACE_MS);
+  }
+  return out;
+}
+
 /** sku -> {status:'alive'|'dead'|'unknown', ...fields}. Two strikes, as the audit. */
 async function fetchFacts(skuList) {
   const bySku = new Map();
@@ -279,23 +399,36 @@ async function fetchFacts(skuList) {
   let bulkErrors = 0;
   const bulkErrorSamples = [];
 
+  let form = BULK_FORMS[0];
+  let bulkProbe = null;
+
   const chunks = [];
   for (let i = 0; i < skuList.length; i += CHUNK) chunks.push(skuList.slice(i, i + CHUNK));
-  console.log(`STRIKE 1 — bulk: ${chunks.length} request(s) covering ${skuList.length} skus`);
+  console.log(`STRIKE 1 — bulk: ${chunks.length} request(s) covering ${skuList.length} skus (form '${form.id}')`);
   for (let i = 0; i < chunks.length; i++) {
     const c = chunks[i];
-    const url = `https://api.bestbuy.com/v1/products(sku%20in(${c.join(',')})).json` +
-      `?apiKey=${KEY}&show=${SHOW}&pageSize=${CHUNK}&format=json`;
-    const res = await get(url, `bulk ${i + 1}/${chunks.length}`);
+    const res = await get(form.url(c), `bulk ${i + 1}/${chunks.length}`);
     if (!res.ok) {
+      // The first rejection is the only chance to find out why cheaply, so take
+      // it: four two-sku requests, then carry on with whichever form answered.
+      if (!bulkProbe) {
+        console.log(`[${i + 1}/${chunks.length}] BULK FAILED (${res.err})`);
+        console.log(`   Asking the same two-sku question ${BULK_FORMS.length} ways to find out what it objects to:`);
+        bulkProbe = await probeBulkForms(c.slice(0, 2));
+        const winner = BULK_FORMS.find((f) => bulkProbe.some((r) => r.form === f.id && r.complete));
+        if (winner && winner.id !== form.id) {
+          console.log(`   -> '${winner.id}' answered; using it for the rest of the run and retrying this chunk.`);
+          form = winner;
+          await sleep(PACE_MS);
+          i--;
+          continue;
+        }
+        console.log(winner
+          ? `   -> only '${winner.id}' answered, which is the form already in use — deferring.`
+          : '   -> no form answered. Every chunk will resolve one sku at a time.');
+      }
       // A failed bulk chunk is not evidence about its skus — they all fall
       // through to the individual pass, which is authoritative anyway.
-      //
-      // The error TEXT is captured because the audit only ever counted these.
-      // Both 2026-08 audit runs had every single bulk chunk fail (11/11 and
-      // 16/16) and resolved all 1,039 skus individually, and the artifact could
-      // not say why. A run that pays 1,039 requests for work 11 could do should
-      // be able to explain itself.
       bulkErrors++;
       if (bulkErrorSamples.length < 3) bulkErrorSamples.push(res.err);
       console.log(`[${i + 1}/${chunks.length}] BULK FAILED (${res.err}) — ${c.length} skus deferred`);
@@ -326,7 +459,7 @@ async function fetchFacts(skuList) {
     }
     await sleep(PACE_MS);
   }
-  return { bySku, bulkErrors, bulkErrorSamples };
+  return { bySku, bulkErrors, bulkErrorSamples, bulkForm: form.id, bulkProbe, individualGets: missed.length };
 }
 
 /** Replay an audit artifact instead of spending quota. Review path, not production. */
@@ -335,10 +468,10 @@ function factsFromReport(file) {
   if (!j?.bySku) throw new Error(`${file} has no bySku map — not a dead-sku audit report`);
   const bySku = new Map(Object.entries(j.bySku));
   console.log(`Replaying ${path.relative(ROOT, file)} (audited ${j.auditedAt}) — ${bySku.size} skus, no API calls.`);
-  return { bySku, bulkErrors: 0, bulkErrorSamples: [], auditedAt: j.auditedAt };
+  return { bySku, bulkErrors: 0, bulkErrorSamples: [], bulkForm: null, bulkProbe: null, individualGets: 0, auditedAt: j.auditedAt };
 }
 
-const { bySku, bulkErrors, bulkErrorSamples, auditedAt } =
+const { bySku, bulkErrors, bulkErrorSamples, bulkForm, bulkProbe, individualGets, auditedAt } =
   FROM_REPORT ? factsFromReport(path.resolve(FROM_REPORT)) : await fetchFacts(skus);
 
 // ── Classify ─────────────────────────────────────────────────────────────────
@@ -643,8 +776,12 @@ console.log(`  in-stock flips (either direction) ... ${stockChanged}`);
 console.log(`  price comparable rows ............... ${comparable}, of which >=${(CLIFF * 100).toFixed(0)}% move: ${cliffs} (${pct(cliffs, comparable)})`);
 if (bulkErrors) {
   console.log('');
-  console.log(`  bulk chunks that failed ............. ${bulkErrors}  (resolved individually)`);
+  console.log(`  bulk chunks that failed ............. ${bulkErrors}  (${individualGets} skus then read one at a time)`);
   bulkErrorSamples.forEach((e) => console.log(`      ${e}`));
+  if (bulkProbe) {
+    console.log(`  query forms probed .................. ${bulkProbe.length}`);
+    bulkProbe.forEach((r) => console.log(`      ${r.form.padEnd(14)} ${r.complete ? 'ANSWERED' : (r.ok ? 'empty' : r.err)}   ${r.why}`));
+  }
 }
 
 const show = (label, list, cols, limit = 15) => {
@@ -764,6 +901,10 @@ const summary = {
     dealsWritten: written,
   },
   breakers,
+  // What the bulk pass actually did, so the next run does not have to guess:
+  // which form was used, what the API said about each form it was asked, and
+  // the raw rejection text this job used to discard.
+  bulk: { form: bulkForm, chunkErrors: bulkErrors, individualGets, probe: bulkProbe },
   bulkErrorSamples,
   refreshed: buckets.ok, heldStale: buckets.stale, heldFlagged: buckets.flagged,
   heldUnrefereedCliff: buckets.unrefereedHeld, heldNameMismatch: buckets.nameMismatch,
@@ -811,6 +952,16 @@ if (process.env.GITHUB_STEP_SUMMARY) {
 const CI = !!process.env.GITHUB_ACTIONS;
 if (n('stale')) {
   const msg = `${n('stale')} rows kept their stored price because Best Buy has not repriced the sku in over ${STALE_DAYS} days. They are NOT stamped as confirmed.`;
+  console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
+}
+if (bulkErrors) {
+  const winner = bulkProbe && bulkProbe.find((r) => r.complete);
+  const msg = `${bulkErrors} bulk chunks were rejected, so ${individualGets} skus were read one at a time. ` +
+    (bulkProbe
+      ? (winner
+        ? `Form '${winner.form}' answered and was used for the rest of the run — make it the default in BULK_FORMS.`
+        : `No query form answered: ${bulkProbe.map((r) => `${r.form}=${r.err || 'empty'}`).join(' | ')}`)
+      : 'No form probe ran.');
   console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
 }
 if (n('dead')) {
