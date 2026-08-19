@@ -1,0 +1,188 @@
+name: Refresh Best Buy Prices
+
+# =============================================================================
+#  Re-reads every Best Buy sku from Best Buy's own Developer API and writes back
+#  price + stock together. See refresh-bestbuy-prices.mjs for the rules; this
+#  file only carries the schedule question.
+#
+#  ── WHY THERE IS NO SCHEDULE YET ────────────────────────────────────────────
+#  Dispatch-only on purpose. The first apply run moves 566 prices at once —
+#  months of accumulated drift landing in one commit — and that is a run to
+#  watch, not to wake up to. Uncomment the cron below once one dispatched apply
+#  run has been reviewed.
+#
+#  ── WHAT THE INTERVAL SHOULD BE, MEASURED ───────────────────────────────────
+#  From the two dead-sku audits, 32.3h apart (2026-08-17T16:00 -> 2026-08-19T00:19),
+#  over the 1,039 skus alive in both:
+#
+#    salePrice moved ........................ 48 rows (4.6%)   -> ~3.4%/day
+#    of those, priceUpdateDate also advanced . 48 of 48 (100%)
+#    of those, priceUpdateDate did NOT move .. 0
+#
+#  Every single price change was accompanied by an advance of Best Buy's own
+#  published priceUpdateDate, and 51.3% of all stamps land in the 00:xx UTC
+#  hour. Best Buy repriced 48 skus and restamped all 48. Price is a once-a-day
+#  UPSTREAM event, so polling faster than that batch cannot surface a price
+#  change that has not been published yet — it just re-reads the same numbers
+#  and spends quota doing it. Daily is not a compromise here, it is the actual
+#  period of the signal. 01:00 UTC lets the 00:xx batch settle, and lands ahead
+#  of price-history.yml at 07:00 so the daily snapshot records fresh prices.
+#
+#  Availability is a different signal and does NOT share that period:
+#
+#    buyability flips ....................... 29 rows (2.8%)   -> ~2.1%/day
+#    buyable -> unbuyable ................... 16 rows          -> ~1.1%/day (~12 rows)
+#    of the 29 flips, priceUpdateDate moved .. 5
+#    changed with no price event at all ...... 24
+#
+#  sku 5869549 is the case in point: `orderable` stayed "Available" and the
+#  price stamp stayed frozen at 2026-08-17T00:00:17 while `onlineAvailability`
+#  went true -> false. Nothing in the price fields moved; the row simply stopped
+#  being buyable. That is why the refresh reads onlineAvailability and active
+#  alongside orderable, and why every branch that HOLDS a price still writes
+#  stock.
+#
+#  So a daily run leaves a worst case of ~24h during which ~12 rows/day that
+#  went unbuyable still show as in stock. That is a real gap and it is the
+#  honest cost of daily. It is survivable because the frontend already stops
+#  believing a stale in-stock flag gracefully — since 1064ca40e7c an out-of-
+#  stock row sinks below buyable ones, cannot wear BEST, cannot set the headline
+#  price and cannot hand Google InStock — so the failure mode is a row that
+#  looks buyable for a few hours, never a wrong price on the comparison.
+#
+#  If that gap turns out to matter, the fix is a SECOND run at 13:00 UTC, which
+#  halves the window at 2x the API spend. It is deliberately not the default:
+#  paying double every day to shorten the exposure on ~12 rows is a trade worth
+#  making on evidence, and the evidence would be a rising flip rate in the daily
+#  summaries — which this job now records on every run.
+#
+#  ── RUNTIME ─────────────────────────────────────────────────────────────────
+#  ~7-10 min. Nominally 11 bulk requests, but every bulk chunk has failed on
+#  both audit runs to date (11/11 and 16/16), so in practice all ~1,039 skus
+#  resolve through the individual endpoint at ~3 req/sec. This job captures the
+#  bulk error text — which the audit only ever counted — so the next run can say
+#  why it is paying 1,039 requests for work 11 could do.
+# =============================================================================
+
+on:
+  # schedule:
+  #   - cron: '0 1 * * *'   # daily, 01:00 UTC — just after Best Buy's 00:xx batch
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — read the API, report, write and commit nothing'
+        type: boolean
+        default: true
+      n:
+        description: 'Limit to the first N skus (blank = all 1,040; use for a smoke run)'
+        required: false
+        default: ''
+        type: string
+      stale_days:
+        description: 'Hold the price on any sku Best Buy has not repriced in this many days'
+        required: false
+        default: '90'
+        type: string
+
+# Repo-wide lock shared by every workflow that pushes to main.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # No `npm ci`: the script imports node builtins, price-sanity.js and
+      # scripts/write-catalog.cjs, none of which have dependencies.
+
+      - name: Refresh Best Buy prices and stock
+        env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          N: ${{ inputs.n }}
+          STALE_DAYS: ${{ inputs.stale_days }}
+        run: |
+          set -uo pipefail
+          if [ -z "${BESTBUY_API_KEY:-}" ]; then
+            echo "::error::BESTBUY_API_KEY is not set on this repository. Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          echo "REFRESH_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+          ARGS="--stale-days=${STALE_DAYS:-90}"
+          # Dry is the script's default; --apply is the only thing that writes.
+          if [ "${DRY_RUN}" != "true" ]; then ARGS="$ARGS --apply"; fi
+          if [ -n "${N:-}" ] && [ "$N" != "0" ]; then ARGS="$ARGS --n $N"; fi
+          echo "Running: node refresh-bestbuy-prices.mjs $ARGS"
+          node refresh-bestbuy-prices.mjs $ARGS
+
+      # The step above exiting 0 does not mean it produced anything. Assert the
+      # outcome between the work and the commit, so a run that read nothing is
+      # red rather than a quiet green with no commit — the failure mode that let
+      # 99 SFTP runs commit once.
+      - name: Assert the refresh produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=catalog-build/bestbuy-refresh-summary.json \
+            --label="Best Buy refresh" \
+            --newer-than-epoch="$REFRESH_STARTED" \
+            --require='totals.considered>0' \
+            --warn='totals.refreshed>0' \
+            --warn='totals.unknown==0'
+
+      - name: Upload the refresh summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bestbuy-refresh-summary
+          path: catalog-build/bestbuy-refresh-summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      # A dry run must leave NOTHING behind. catalog-build/ and verify-reports/
+      # are gitignored, so the summaries do not count; anything else here is the
+      # script writing where it said it would not.
+      - name: Assert a dry run left the tree clean
+        if: ${{ inputs.dry_run == true }}
+        run: |
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a dry run modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the dry run wrote nothing to the repo."
+
+      # writeCatalog() already re-splits and verifies the barrel before it
+      # returns, so there is no separate re-split step here — if the chunks were
+      # stale the script would have thrown rather than reached this point.
+      - name: Commit and push if changed
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ ! -f catalog-build/bestbuy-refresh-summary.json ]; then
+            echo "::error::no refresh summary at commit time — refusing to report success"
+            exit 1
+          fi
+          REFRESHED=$(node -e "console.log(require('./catalog-build/bestbuy-refresh-summary.json').totals.priceChanged)")
+          FLIPS=$(node -e "console.log(require('./catalog-build/bestbuy-refresh-summary.json').totals.stockChanged)")
+          HELD=$(node -e "const t=require('./catalog-build/bestbuy-refresh-summary.json').totals;console.log(t.heldStale+t.heldFlagged)")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/parts.js src/data/parts/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(bestbuy): daily refresh — $REFRESHED prices, $FLIPS stock flips, $HELD held"
+            # Not a bare `git push`. The main-writer lock serialises workflows
+            # against each other; it has no opinion about a person clicking
+            # Merge while this runs.
+            bash scripts/push-with-rebase.sh main
+          fi
