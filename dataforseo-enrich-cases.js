@@ -126,8 +126,13 @@ console.log('━━━━━━━━━━━━━━━━━━━━━━�
 //   nothing-to-do          no candidates left, no money spent — fine.
 //   paid-nothing-returned  tasks POSTed and billed, zero results collected —
 //                          the failure worth waking someone for.
+// Count what the SITE can use, not what is merely non-empty. `rads` is only
+// coverage if it is a non-empty array — the filter discards every other shape,
+// so counting truthiness reported 383 while the filter could read 341.
 const coverageOf = (rows, field) =>
-  field === 'fans_inc' ? rows.filter(x => x.fans_inc != null).length : rows.filter(x => x[field]).length;
+  field === 'fans_inc' ? rows.filter(x => x.fans_inc != null).length
+  : field === 'rads' ? rows.filter(x => Array.isArray(x.rads) && x.rads.length).length
+  : rows.filter(x => x[field]).length;
 
 function writeSummary({ posted = 0, outstanding = 0, fetched = 0, applied = 0, stats = {} } = {}) {
   const cases = parts.filter(p => p.c === 'Case');
@@ -237,14 +242,22 @@ function parseSpecs(item) {
 
   // ─── Radiator Support ──
   //   Collect all mentioned radiator sizes in the text (360mm, 280mm, 240mm, 120mm)
+  //
+  //   ARRAY OF INTEGERS, not "240mm,360mm". The AIO/Radiator filter in
+  //   src/App.jsx reads `Array.isArray(p.rads) ? p.rads : []` and buckets
+  //   anything else as "None", so a string here is a field the filter cannot
+  //   read — coverage on paper, an empty filter on the site.
+  //   normalize-case-rads.js settled this shape once already; this writer
+  //   reintroduced the string. Numeric sort, because [...set].sort() is
+  //   lexicographic and would order 1120 before 240 if the list ever widened.
   const rads = new Set();
   const radPat = /(\d{3})\s*mm\s*(?:AIO\s*)?(?:Radiator|rad\b)/gi;
   let r;
   while ((r = radPat.exec(text)) !== null) {
     const n = parseInt(r[1]);
-    if ([120, 140, 240, 280, 360, 420].includes(n)) rads.add(n + 'mm');
+    if ([120, 140, 240, 280, 360, 420].includes(n)) rads.add(n);
   }
-  if (rads.size) specs.rads = [...rads].sort().join(',');
+  if (rads.size) specs.rads = [...rads].sort((a, b) => a - b);
 
   // ─── Drive Bays from structured body ──
   if (bodyKV['internal bays quantity']) {
@@ -400,7 +413,7 @@ async function run() {
   console.log('  maxGPU:  ', cases.filter(x => x.maxGPU).length + '/' + cases.length);
   console.log('  maxCooler:', cases.filter(x => x.maxCooler).length + '/' + cases.length);
   console.log('  fans_inc:', cases.filter(x => x.fans_inc != null).length + '/' + cases.length);
-  console.log('  rads:    ', cases.filter(x => x.rads).length + '/' + cases.length);
+  console.log('  rads:    ', coverageOf(cases, 'rads') + '/' + cases.length);
 
   writeSummary({ posted, outstanding, fetched, applied, stats });
 }
