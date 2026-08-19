@@ -65,6 +65,30 @@
  * retailers is held, not written, and reported. --no-sanity-gate disables it
  * deliberately; there is no way to disable it by accident.
  *
+ * ── A CHECK WITH NO INDEPENDENT REFERENCE REPORTS "UNREFEREED", NOT "OK" ─────
+ * When a product has no other priced retailer, price-sanity.js falls back to
+ * the product's own `pr`. On this catalog `pr` is mostly a copy of the Best Buy
+ * price taken at ingest, so that fallback compares Best Buy to itself and its
+ * verdict is empty in both directions — an OK that means "the new price is near
+ * the old one", an objection that means "the new price is far from the old
+ * one", against the very number this job exists to correct.
+ *
+ * The 2026-08-19 dry run put 404 of 869 classified rows on that list basis and
+ * 371 of them were circular: 343 published a PASSED sanity check and 28
+ * published an objection, and none of the 371 had been checked against
+ * anything. Reporting either verdict overstates what is known, so those rows
+ * are now labelled UNREFEREED and counted separately. Only 33 rows had a `pr`
+ * genuinely independent of the Best Buy price; exactly one of those objected
+ * (50485), and it was right — a mismapped sku.
+ *
+ * UNREFEREED is not a hold. The price still comes from Best Buy's own API,
+ * which is the authority on what Best Buy charges; it is uncorroborated, not
+ * suspect, and holding all 371 would pin them to the stale numbers this job was
+ * written to fix. But a >=50% move with nothing to check it against is the
+ * shape a mismapped sku makes, so --unrefereed-cliffs=hold keeps the stored
+ * price on that population. The trade is real in both directions, so it is a
+ * flag rather than a default.
+ *
  * ── WHAT THIS SCRIPT DOES NOT DO ─────────────────────────────────────────────
  * It does not delete deals, quarantine rows, or purge dead skus. A sku the API
  * 404s gets inStock:false — that is an availability fact, self-healing, and the
@@ -110,6 +134,15 @@ const argOf = (name, dflt) => {
 const N = argv.includes('--n') ? Number(argv[argv.indexOf('--n') + 1]) || 0 : 0;
 const FROM_REPORT = argOf('from-report', null);
 const STALE_DAYS = Number(argOf('stale-days', '90'));
+// What to do with a >=CLIFF move on a row nothing independent can check.
+// 'write' is the behaviour that shipped; 'hold' keeps the stored price and
+// leaves the row unconfirmed. See the UNREFEREED block below for why this is a
+// choice and not a default.
+const UNREFEREED_CLIFFS = argOf('unrefereed-cliffs', 'write');
+if (!['write', 'hold'].includes(UNREFEREED_CLIFFS)) {
+  console.error(`ERROR: --unrefereed-cliffs must be 'write' or 'hold', got '${UNREFEREED_CLIFFS}'.`);
+  process.exit(1);
+}
 const ROOT = process.cwd();
 const SUMMARY_OUT = argOf('report', path.join(ROOT, 'catalog-build', 'bestbuy-refresh-summary.json'));
 
@@ -297,6 +330,27 @@ const peersOf = (p) => Object.entries(p.deals || {})
   .map(([, d]) => effectivePrice(d))
   .filter((n) => Number.isFinite(n) && n > 0);
 
+// ── Is `pr` independent of the Best Buy price? ───────────────────────────────
+// classifyDeal falls back to the product's own `pr` when no peer exists, and
+// on this catalog `pr` is usually a copy of the Best Buy price taken at ingest.
+// Comparing a new Best Buy price to that is comparing Best Buy to itself: the
+// verdict carries no information, whichever way it lands.
+//
+// The tie is measured against the STORED Best Buy price — the number this run
+// exists to correct — because that is what `pr` was copied from. A dollar of
+// slack catches the rounding the catalog does at ingest (99.99 -> 100,
+// 169.99 -> 170, 40.99 -> 41), and 1% covers the same rounding on dear rows.
+const prTracksBestBuy = (r) => {
+  const pr = r.p?.pr;
+  return Number.isFinite(pr) && r.stored > 0 &&
+    Math.abs(pr - r.stored) <= Math.max(1, r.stored * 0.01);
+};
+
+// Not added to price-sanity.js's CLASS. That enum answers "what does the
+// evidence say about this price"; this answers "is there any evidence" — a
+// fact about THIS catalog's pr provenance, which price-sanity.js has no view of.
+const UNREFEREED = 'UNREFEREED';
+
 const OUT = {
   OK: 'ok',                 // price + stock written, stamped confirmed
   STALE: 'stale',           // upstream stamp is ancient — stock only, price held
@@ -305,8 +359,9 @@ const OUT = {
   UNKNOWN: 'unknown',       // no verdict — nothing written at all
 };
 
-const buckets = { ok: [], stale: [], flagged: [], dead: [], unknown: [] };
-const noted = [];   // written, but a list-price objection was recorded against them
+const buckets = { ok: [], stale: [], flagged: [], unrefereedHeld: [], dead: [], unknown: [] };
+const noted = [];       // written, but a REAL list price objected — see below
+const unrefereed = [];  // written with nothing independent to check them at all
 let priceChanged = 0, stockChanged = 0, comparable = 0, cliffs = 0;
 
 for (const r of targets) {
@@ -370,24 +425,9 @@ for (const r of targets) {
   const objection = cls.cls !== CLASS.OK && cls.cls !== CLASS.UNVERIFIED;
   // ONLY AN INDEPENDENT RETAILER MAY VETO A PRICE.
   //
-  // classifyDeal falls back to the product's own pr/msrp when no peer exists,
-  // and for Best Buy that fallback is circular: `pr` equals the stored Best Buy
-  // price on 690 of 1,040 rows (66.3%), so "price > pr * 1.4" degenerates into
-  // "the price went up a lot" — measured against the very number this job is
-  // here to correct. Every one of the 29 list-basis objections in the first dry
-  // run had ZERO priced peers, 16 of them had pr identical to the stored Best
-  // Buy price, and several had the new price landing exactly on the product's
-  // own msrp (20415 -> $195.99, 20430 -> $399.99, 90183 -> $1599.99) — the
-  // signature of an ingest-time sale that has since ended. Letting `pr` veto
-  // would pin those rows to an expired sale price permanently: held every
-  // night, never confirmed, with no path back.
-  //
-  // A peer verdict ('median' / 'pair') is different — another retailer is real,
-  // independent evidence, and price-sanity.js's SUSPECT_LOW/HIGH/PAIR classes
-  // exist for exactly that. Those still hold.
-  //
-  // The list-basis objection is not discarded, just demoted: it rides along on
-  // the row and gets its own report section so the population stays visible.
+  // A peer verdict ('median' / 'pair') is real, independent evidence — another
+  // retailer selling the same product — and price-sanity.js's SUSPECT_LOW /
+  // HIGH / PAIR classes exist for exactly that. Those hold the price.
   const peerBacked = cls.basis === 'median' || cls.basis === 'pair';
   if (objection && peerBacked) {
     row.holdReason = `sanity ${cls.cls} (${cls.basis}, ref $${cls.ref}, ${(cls.deviation * 100).toFixed(0)}%)`;
@@ -395,7 +435,56 @@ for (const r of targets) {
     buckets.flagged.push(row);
     continue;
   }
-  if (objection) {
+
+  // ── UNREFEREED: no peer, and `pr` is the Best Buy price wearing a hat ───────
+  //
+  // With no peer, classifyDeal falls back to the product's own pr/msrp. On this
+  // catalog that fallback is usually circular — `pr` was copied from the Best
+  // Buy price at ingest — so BOTH of its answers are empty:
+  //
+  //   the OK        degenerates into "the new price is near the old price"
+  //   the objection degenerates into "the new price is far from the old price"
+  //
+  // and this job exists precisely because the old price is the thing that is
+  // wrong. Measured on the 2026-08-19 dry run: 404 rows landed on a list basis,
+  // 371 of them circular — 343 reported a PASSED sanity check and 28 reported
+  // an objection, and not one of the 371 had been checked against anything.
+  // Only 33 rows had a `pr` that was genuinely independent of the Best Buy
+  // price, and exactly one of those objected (50485, which turned out to be a
+  // mismapped sku — the check earning its keep on the one row it could).
+  //
+  // So neither verdict is reported for a circular row. It is labelled
+  // UNREFEREED, which is the true statement: nothing checked this.
+  //
+  // Held? Not by default. An unrefereed price is not a suspect price — it comes
+  // from Best Buy's own API, which is the authority on what Best Buy charges —
+  // it is an UNCORROBORATED one, and holding all of them would pin 371 rows to
+  // the stale numbers this job was written to fix. But a >=CLIFF move with
+  // nothing to check it against is the shape a mismapped sku makes, so
+  // --unrefereed-cliffs=hold makes that population stock-only. The choice is
+  // explicit because the trade is real in both directions.
+  const circularPr = String(cls.basis).startsWith('list') && prTracksBestBuy(r);
+  if (circularPr) {
+    row.sanity = {
+      cls: UNREFEREED, ref: null, deviation: null, basis: 'unrefereed',
+      // Kept so the demotion is auditable rather than a silent swallow.
+      suppressed: { cls: cls.cls, basis: cls.basis, ref: cls.ref, deviation: cls.deviation },
+    };
+    row.unrefereedReason = `no peer retailer, and pr $${r.p.pr} is the stored Best Buy price $${r.stored} — nothing checked this`;
+    const isCliff = row.deltaPct != null && Math.abs(row.deltaPct) >= CLIFF;
+    if (isCliff && UNREFEREED_CLIFFS === 'hold') {
+      row.holdReason = `unrefereed cliff — ${(row.deltaPct * 100).toFixed(0)}% move with no independent price to check it against`;
+      row.unconfirmedReason = 'bestbuy:unrefereed-cliff';
+      buckets.unrefereedHeld.push(row);
+      continue;
+    }
+    if (isCliff) row.unrefereedCliff = true;
+    unrefereed.push(row);
+  } else if (objection) {
+    // A genuinely independent list price objected. Still written — pinning a
+    // row to an expired ingest-time sale price would hold it every night with
+    // no path back — but recorded, and now the population is only the rows
+    // where the objection actually means something.
     row.listObjection = `${cls.cls} (${cls.basis}, ref $${cls.ref}, ${(cls.deviation * 100).toFixed(0)}%) — no peer to corroborate, written anyway`;
     noted.push(row);
   }
@@ -430,10 +519,16 @@ console.log(bar);
 console.log(`  rows considered ..................... ${targets.length}`);
 console.log(`  -> price + stock refreshed .......... ${n('ok')}  (${pct(n('ok'), targets.length)})`);
 console.log(`       of which the price moved ....... ${priceChanged}`);
-console.log(`  -> stock only, price HELD ........... ${n('stale') + n('flagged')}`);
+console.log(`  -> stock only, price HELD ........... ${n('stale') + n('flagged') + n('unrefereedHeld')}`);
 console.log(`       upstream stamp ancient ......... ${n('stale')}`);
-console.log(`       failed the sanity gate ......... ${n('flagged')}`);
-console.log(`       (written, list-price objection noted) ${noted.length}`);
+console.log(`       a peer retailer vetoed it ...... ${n('flagged')}`);
+console.log(`       unrefereed cliff (--unrefereed-cliffs=hold) ${n('unrefereedHeld')}`);
+console.log('');
+console.log(`  of the rows written, how well checked:`);
+console.log(`       a peer retailer agreed ......... ${buckets.ok.filter((r) => r.sanity && ['median', 'pair'].includes(r.sanity.basis)).length}`);
+console.log(`       an independent list agreed ..... ${buckets.ok.length - unrefereed.length - noted.length - buckets.ok.filter((r) => r.sanity && ['median', 'pair'].includes(r.sanity.basis)).length}`);
+console.log(`       an independent list OBJECTED ... ${noted.length}  <- written anyway, listed below`);
+console.log(`       UNREFEREED — nothing checked it. ${unrefereed.length}  (of which >=${(CLIFF * 100).toFixed(0)}% moves: ${unrefereed.filter((r) => r.unrefereedCliff).length})`);
 console.log(`  -> dead sku (404), stock only ....... ${n('dead')}  <- purge-dead-bestbuy-links.mjs owns removal`);
 console.log(`  -> UNKNOWN, nothing written ......... ${n('unknown')}`);
 console.log('');
@@ -466,8 +561,19 @@ show('HELD — upstream stamp too old to trust:', buckets.stale.sort((a, b) => (
 show('HELD — the new price failed the cross-retailer sanity gate:', buckets.flagged,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} api $${String(r.api.salePrice).padEnd(9)} | ${r.holdReason}`);
 
-show('WRITTEN OVER A LIST-PRICE OBJECTION — no peer retailer to corroborate:', noted,
+show('HELD — an unrefereed cliff (--unrefereed-cliffs=hold):', buckets.unrefereedHeld,
+  (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} api $${String(r.api.salePrice).padEnd(9)} | ${r.holdReason}`);
+
+show('WRITTEN OVER A LIST-PRICE OBJECTION — an INDEPENDENT list price disagrees:', noted,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} -> $${String(r.api.salePrice).padEnd(9)} pr $${String(r.p_pr ?? '—').padEnd(9)} | ${r.listObjection}`);
+
+// Sorted by move size: the whole point of the section is that the biggest
+// numbers in it are the ones nothing corroborated.
+show(`UNREFEREED — no peer, and pr is the Best Buy price itself (nothing checked these, written ${UNREFEREED_CLIFFS === 'hold' ? 'except the cliffs' : 'anyway'}):`,
+  unrefereed.slice().sort((a, b) => Math.abs(b.deltaPct ?? 0) - Math.abs(a.deltaPct ?? 0)),
+  (r) => `${r.unrefereedCliff ? 'CLIFF ' : '      '}${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} $${String(r.stored).padEnd(9)} -> $${String(r.api.salePrice).padEnd(9)} ` +
+         `${(r.deltaPct * 100 >= 0 ? '+' : '')}${((r.deltaPct ?? 0) * 100).toFixed(1)}%`.padEnd(9) +
+         ` pr $${String(r.p_pr ?? '—').padEnd(9)} | ${r.name.slice(0, 30)}`, 25);
 
 show('DEAD SKU — inStock:false only, deal left in place:', buckets.dead,
   (r) => `${String(r.id).padEnd(8)} sku ${r.sku.padEnd(9)} ${String(r.cat || '').padEnd(12)} $${String(r.stored ?? '—').padEnd(9)} | ${r.name.slice(0, 44)}`);
@@ -511,6 +617,7 @@ if (APPLY && !breakers.length) {
   for (const r of buckets.ok) applyRow(r, { price: r.api.salePrice, stock: r.willBeInStock, confirm: true });
   for (const r of buckets.stale) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
   for (const r of buckets.flagged) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
+  for (const r of buckets.unrefereedHeld) applyRow(r, { stock: r.willBeInStock, confirm: false, unconfirmedReason: r.unconfirmedReason });
   for (const r of buckets.dead) {
     const t = byId.get(r.id);
     if (t) { t.deal.inStock = false; written++; }
@@ -523,19 +630,23 @@ const summary = {
   ranAt: new Date().toISOString(),
   apply: APPLY && !breakers.length,
   source: FROM_REPORT ? { replayOf: path.relative(ROOT, path.resolve(FROM_REPORT)), auditedAt } : { api: 'bestbuy-developer' },
-  options: { staleDays: STALE_DAYS, sanityGate: !NO_SANITY, limit: N || null },
+  options: { staleDays: STALE_DAYS, sanityGate: !NO_SANITY, limit: N || null, unrefereedCliffs: UNREFEREED_CLIFFS },
   totals: {
     considered: targets.length, rowsWithoutSku: noSku,
     refreshed: n('ok'), priceChanged, stockChanged,
-    heldStale: n('stale'), heldFlagged: n('flagged'),
+    heldStale: n('stale'), heldFlagged: n('flagged'), heldUnrefereedCliff: n('unrefereedHeld'),
     dead: n('dead'), unknown: n('unknown'), notedListObjections: noted.length,
+    unrefereed: unrefereed.length,
+    unrefereedCliffs: unrefereed.filter((r) => r.unrefereedCliff).length + n('unrefereedHeld'),
     comparable, cliffs, bulkChunkErrors: bulkErrors,
     dealsWritten: written,
   },
   breakers,
   bulkErrorSamples,
   refreshed: buckets.ok, heldStale: buckets.stale, heldFlagged: buckets.flagged,
+  heldUnrefereedCliff: buckets.unrefereedHeld,
   dead: buckets.dead, unknown: buckets.unknown, notedListObjections: noted,
+  unrefereed,
 };
 mkdirSync(path.dirname(SUMMARY_OUT), { recursive: true });
 writeFileSync(SUMMARY_OUT, JSON.stringify(summary, null, 2));
@@ -552,7 +663,9 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   md.push(`| &nbsp;&nbsp;↳ price actually moved | ${priceChanged} | ${pct(priceChanged, targets.length)} |`);
   md.push(`| stock only — upstream stamp > ${STALE_DAYS}d | ${n('stale')} | ${pct(n('stale'), targets.length)} |`);
   md.push(`| stock only — a peer retailer contradicts the price | ${n('flagged')} | ${pct(n('flagged'), targets.length)} |`);
-  md.push(`| &nbsp;&nbsp;↳ written despite a list-price objection (no peer) | ${noted.length} | ${pct(noted.length, targets.length)} |`);
+  md.push(`| stock only — unrefereed cliff (\`--unrefereed-cliffs=hold\`) | ${n('unrefereedHeld')} | ${pct(n('unrefereedHeld'), targets.length)} |`);
+  md.push(`| &nbsp;&nbsp;↳ written despite an **independent** list-price objection | ${noted.length} | ${pct(noted.length, targets.length)} |`);
+  md.push(`| &nbsp;&nbsp;↳ written **unrefereed** — nothing checked the price | ${unrefereed.length} | ${pct(unrefereed.length, targets.length)} |`);
   md.push(`| dead sku (404) — inStock:false only | ${n('dead')} | ${pct(n('dead'), targets.length)} |`);
   md.push(`| UNKNOWN — nothing written | ${n('unknown')} | ${pct(n('unknown'), targets.length)} |`);
   md.push('', `In-stock flips: **${stockChanged}**. Price-comparable rows: ${comparable}, of which ${cliffs} would move ≥${(CLIFF * 100).toFixed(0)}%.`, '');
@@ -581,6 +694,12 @@ if (n('dead')) {
   const msg = `${n('dead')} skus return 404. They were marked out of stock but NOT removed — run purge-dead-bestbuy-links.mjs to retire them.`;
   console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
 }
+const writtenCliffs = unrefereed.filter((r) => r.unrefereedCliff).length;
+if (writtenCliffs) {
+  const msg = `${writtenCliffs} rows would move by ${(CLIFF * 100).toFixed(0)}% or more with nothing independent to check the new price against. ` +
+    `They are being WRITTEN — pass --unrefereed-cliffs=hold to keep the stored price on those rows instead.`;
+  console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
+}
 if (breakers.length) {
   breakers.forEach((b) => console.log(CI ? `::error::${b}` : `ERROR: ${b}`));
   console.log('\nCIRCUIT BREAKER TRIPPED — nothing written, exiting 1.');
@@ -594,6 +713,6 @@ if (!APPLY) {
 
 await writeCatalog(parts, {
   loadedCount,
-  reason: `bestbuy daily refresh — ${n('ok')} repriced (${priceChanged} moved), ${stockChanged} stock flips, ${n('stale') + n('flagged')} held`,
+  reason: `bestbuy daily refresh — ${n('ok')} repriced (${priceChanged} moved), ${stockChanged} stock flips, ${n('stale') + n('flagged') + n('unrefereedHeld')} held`,
 });
 console.log('Done.');
