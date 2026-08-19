@@ -358,6 +358,7 @@ let partsRev = 0;
 import { GAMES, GPU_SCORES, CPU_SCORES, RES_SCALE, QUALITY_SCALE, estimateFPS, estimateAllGames, matchGPU, matchCPU } from "./data/fps-engine.js";
 import ReviewStars from "./components/ReviewStars";
 import { CategoryBrowse } from './CategoryBrowse.jsx';
+import { smartMatch, matchesText } from './search-match.js';
 import UpgradePage from "./UpgradePage.jsx";
 
 /* ═══ API CLIENT ═══ */
@@ -1470,7 +1471,9 @@ function SearchSelect({value,onChange,options,placeholder="Search..."}){
     document.addEventListener("mousedown",handler);
     return ()=>document.removeEventListener("mousedown",handler);
   },[]);
-  const filtered=query?options.filter(o=>{const q=query.toLowerCase();const blob=(o.label+" "+(o.detail||"")).toLowerCase();const blobNoSpace=blob.replace(/\s+/g,"");const tokens=q.split(/[\s\-,\/\(\)]+/).filter(Boolean);if(tokens.every(t=>blob.includes(t)||blobNoSpace.includes(t)))return true;const qNoSpace=q.replace(/[\s\-,\/\(\)]+/g,"");return qNoSpace.length>=3&&blobNoSpace.includes(qNoSpace);}):options;
+  // Same matcher as the browse pages — an option list is just text. This used
+  // to be a substring scan, so typing "ti" offered every "Optimized" card.
+  const filtered=query?options.filter(o=>matchesText(o.label+" "+(o.detail||""),query)):options;
   const selectedLabel=options.find(o=>o.value===value)?.label||"";
   return <div ref={ref} style={{position:"relative",marginBottom:8}}>
     <div onClick={()=>{setOpen(!open);if(!open)setTimeout(()=>inputRef.current?.focus(),50);}}
@@ -3512,104 +3515,10 @@ function HomePage({go,browse,th}){
 
 /* ═══ SEARCH PAGE ═══ */
 
-/* === SMART SEARCH === */
-// Build a search blob from a product: name, brand, and relevant spec fields
-function buildSearchBlob(p) {
-  const parts = [
-    p.n || '',
-    p.b || '',
-    p.fullTitle || '',
-    p.model || '',
-    p.asin || '',
-    p.mpn || '',
-    // CPU specs
-    p.socket || '', p.arch || '', p.memType || '',
-    p.cores != null ? p.cores + 'core ' + p.cores + 'c' : '',
-    p.threads != null ? p.threads + 'thread ' + p.threads + 't' : '',
-    // GPU specs
-    p.vram != null ? p.vram + 'gb' : '',
-    // RAM specs
-    p.cap != null ? p.cap + 'gb' : '',
-    p.speed != null ? p.speed + 'mhz ' + p.speed : '',
-    p.cl != null ? 'cl' + p.cl : '',
-    p.sticks != null ? p.sticks + 'x ' + p.sticks + 'stick' : '',
-    // Storage
-    p.storageType || '', p.interface || '',
-    p.ff || '',
-    // Mobo
-    p.chipset || '',
-    // PSU
-    p.watts != null ? p.watts + 'w ' + p.watts + 'watt' : '',
-    p.eff || '',
-    // Monitor
-    p.res || '', p.refresh != null ? p.refresh + 'hz' : '',
-    p.panel || '',
-  ];
-  return parts.join(' ').toLowerCase();
-}
-
-// Synonyms: query token -> alternate(s). Both directions.
-const SEARCH_SYNONYMS = {
-  'ram': 'memory',
-  'memory': 'ram',
-  'gpu': 'graphics card video',
-  'graphics': 'gpu video',
-  'video': 'gpu graphics',
-  'cpu': 'processor',
-  'processor': 'cpu',
-  'mobo': 'motherboard',
-  'motherboard': 'mobo',
-  'psu': 'power supply',
-  'ssd': 'solid state nvme',
-  'hdd': 'hard drive',
-  'mhz': 'mhz',
-};
-
-// Match a single token against the blob, with synonym fallback
-function tokenMatches(token, blob) {
-  // SHORT-TOKEN word-boundary fix: a 1-3 char token containing a letter
-  // (e.g. "ti", "xt", "kf") must match a whole word or a digit-glued form
-  // like "5070ti" — never a substring buried inside another word.
-  const hasLetter = /[a-z]/i.test(token);
-  const matchOne = (t) => {
-    if (!t) return false;
-    if (t.length <= 3 && /[a-z]/i.test(t)) {
-      // whole-word match, allowing the token to be glued to digits
-      const esc = t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const re = new RegExp("(^|[^a-z0-9])\\d*" + esc + "\\d*([^a-z0-9]|$)", "i");
-      return re.test(blob);
-    }
-    return blob.includes(t);
-  };
-  // Also normalize a digit+letter glued query token ("5070ti") so it can
-  // match a spaced blob ("5070 ti"): split into the run pieces and require all.
-  const glued = token.match(/^(\d+)([a-z].*)$/i);
-  if (glued) {
-    if (matchOne(token)) return true;
-    if (blob.includes(glued[1]) && matchOne(glued[2])) return true;
-  } else if (matchOne(token)) {
-    return true;
-  }
-  const syn = SEARCH_SYNONYMS[token];
-  if (syn) {
-    for (const alt of syn.split(" ")) {
-      if (matchOne(alt)) return true;
-    }
-  }
-  return false;
-}
-
-// Main smart match: returns true if all tokens in query match the product
-function smartMatch(p, query) {
-  if (!query) return true;
-  const blob = buildSearchBlob(p);
-  // Split query on whitespace, dashes, commas, slashes, parens
-  const tokens = query.toLowerCase().split(/[\s\-,\/\(\)]+/).filter(Boolean);
-  if (tokens.length === 0) return true;
-  // Every token must match somewhere
-  return tokens.every(t => tokenMatches(t, blob));
-}
-/* === END SMART SEARCH === */
+/* === SMART SEARCH ===
+   Moved to src/search-match.js so the browse pages, both builder pickers,
+   the tool dropdowns and the compare tool all match identically. It used to
+   live here and be reachable from four of those six places. */
 
 /* === BRAND RESOLVER === */
 // For CPUs, derives real CPU brand (Intel/AMD) from product name
@@ -4677,35 +4586,42 @@ function BuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,build})
   const [prMax,setPrMax]=useState(99999);
   const [expanded,setExpanded]=useState(null);
 
-  const allBr=[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort();
-  const prMx=Math.max(...compatList.map(p=>$(p)),100);
+  const allBr=useMemo(()=>[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort(),[compatList]);
+  const prMx=useMemo(()=>Math.max(...compatList.map(p=>$(p)),100),[compatList]);
 
-  let list=compatList.filter(p=>{
-    if(q&&!smartMatch(p,q))return false;
-    if(brands.length&&!brands.includes(resolveBrand(p)))return false;
-    if(conditions.length){
-      const cond = (p.used===true||p.condition==="used")?"Used":(p.condition==="refurbished")?"Refurbished":(p.condition==="open-box")?"Open Box":"New";
-      if(!conditions.includes(cond)) return false;
-    }
-    if(minR&&p.r<minR)return false;
-    if($(p)<prMin||$(p)>prMax)return false;
-    for(const [key,vals] of Object.entries(sf)){
-      if(key.endsWith("_max")){
-        const field=key.replace("_max","");
-        if(p[field]!=null&&p[field]>vals)return false;
-      }else if(Array.isArray(vals)&&vals.length){
-        const cfg=cat&&CAT[cat]?.filters?.[key];
-        const ev=cfg?.extract?cfg.extract(p):null;
-        const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
-        if(!(vals.includes(String(p[key]))||evMatch))return false;
+  // Memoized: this walks every compatible part (up to ~1.2k for Case, and the
+  // whole 5k catalog before the compatibility filters bite) and calls the
+  // matcher on each one. Unmemoized it re-ran on every render — expanding a
+  // row, opening the filter drawer, a hover — none of which change the list.
+  const list=useMemo(()=>{
+    const r=compatList.filter(p=>{
+      if(q&&!smartMatch(p,q))return false;
+      if(brands.length&&!brands.includes(resolveBrand(p)))return false;
+      if(conditions.length){
+        const cond = (p.used===true||p.condition==="used")?"Used":(p.condition==="refurbished")?"Refurbished":(p.condition==="open-box")?"Open Box":"New";
+        if(!conditions.includes(cond)) return false;
       }
-    }
-    return true;
-  });
-  if(sort==="price-asc")list.sort((a,b)=>$(a)-$(b));
-  else if(sort==="price-desc")list.sort((a,b)=>$(b)-$(a));
-  else if(sort==="rating-desc")list.sort((a,b)=>b.r-a.r);
-  else if(sort==="bench-desc")list.sort((a,b)=>(b.bench||0)-(a.bench||0));
+      if(minR&&p.r<minR)return false;
+      if($(p)<prMin||$(p)>prMax)return false;
+      for(const [key,vals] of Object.entries(sf)){
+        if(key.endsWith("_max")){
+          const field=key.replace("_max","");
+          if(p[field]!=null&&p[field]>vals)return false;
+        }else if(Array.isArray(vals)&&vals.length){
+          const cfg=cat&&CAT[cat]?.filters?.[key];
+          const ev=cfg?.extract?cfg.extract(p):null;
+          const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
+          if(!(vals.includes(String(p[key]))||evMatch))return false;
+        }
+      }
+      return true;
+    });
+    if(sort==="price-asc")r.sort((a,b)=>$(a)-$(b));
+    else if(sort==="price-desc")r.sort((a,b)=>$(b)-$(a));
+    else if(sort==="rating-desc")r.sort((a,b)=>b.r-a.r);
+    else if(sort==="bench-desc")r.sort((a,b)=>(b.bench||0)-(a.bench||0));
+    return r;
+  },[compatList,cat,q,brands,conditions,minR,prMin,prMax,sf,sort]);
 
   return <div className="fade" style={{maxWidth:1600,margin:"0 auto",padding:"28px 20px"}}>
     <div className="picker-grid" style={{display:"grid",gridTemplateColumns:"1fr 280px",gap:24,alignItems:"start"}}>
@@ -4860,31 +4776,38 @@ function MobileBuilerPartPicker({cat,meta,cols,compatList,onAdd,onBack,isMulti,b
   const [sf,setSf]=useState({});
   const togSf=(col,val)=>setSf(pv=>{const cu=pv[col]||[];return{...pv,[col]:cu.includes(val)?cu.filter(v=>v!==val):[...cu,val]};});
 
-  const allBr=[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort();
-  const prMx=Math.max(...compatList.map(p=>$(p)),100);
+  const allBr=useMemo(()=>[...new Set(compatList.map(p=>resolveBrand(p)).filter(Boolean))].sort(),[compatList]);
+  const prMx=useMemo(()=>Math.max(...compatList.map(p=>$(p)),100),[compatList]);
 
-  let list=compatList.filter(p=>{
-    if(q&&!smartMatch(p,q))return false;
-    if(brands.length&&!brands.includes(resolveBrand(p)))return false;
-    if(minR&&p.r<minR)return false;
-    if($(p)<prMin||$(p)>prMax)return false;
-    for(const [key,vals] of Object.entries(sf)){
-      if(key.endsWith("_max")){
-        const field=key.replace("_max","");
-        if(p[field]!=null&&p[field]>vals)return false;
-      }else if(Array.isArray(vals)&&vals.length){
-        const cfg=cat&&CAT[cat]?.filters?.[key];
-        const ev=cfg?.extract?cfg.extract(p):null;
-        const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
-        if(!(vals.includes(String(p[key]))||evMatch))return false;
+  // Memoized: this walks every compatible part (up to ~1.2k for Case, and the
+  // whole 5k catalog before the compatibility filters bite) and calls the
+  // matcher on each one. Unmemoized it re-ran on every render — expanding a
+  // row, opening the filter drawer, a hover — none of which change the list.
+  const list=useMemo(()=>{
+    const r=compatList.filter(p=>{
+      if(q&&!smartMatch(p,q))return false;
+      if(brands.length&&!brands.includes(resolveBrand(p)))return false;
+      if(minR&&p.r<minR)return false;
+      if($(p)<prMin||$(p)>prMax)return false;
+      for(const [key,vals] of Object.entries(sf)){
+        if(key.endsWith("_max")){
+          const field=key.replace("_max","");
+          if(p[field]!=null&&p[field]>vals)return false;
+        }else if(Array.isArray(vals)&&vals.length){
+          const cfg=cat&&CAT[cat]?.filters?.[key];
+          const ev=cfg?.extract?cfg.extract(p):null;
+          const evMatch=Array.isArray(ev)?ev.some(x=>vals.includes(x)):(ev!=null&&vals.includes(ev));
+          if(!(vals.includes(String(p[key]))||evMatch))return false;
+        }
       }
-    }
-    return true;
-  });
-  if(sort==="price-asc")list.sort((a,b)=>$(a)-$(b));
-  else if(sort==="price-desc")list.sort((a,b)=>$(b)-$(a));
-  else if(sort==="rating-desc")list.sort((a,b)=>b.r-a.r);
-  else if(sort==="bench-desc")list.sort((a,b)=>(b.bench||0)-(a.bench||0));
+      return true;
+    });
+    if(sort==="price-asc")r.sort((a,b)=>$(a)-$(b));
+    else if(sort==="price-desc")r.sort((a,b)=>$(b)-$(a));
+    else if(sort==="rating-desc")r.sort((a,b)=>b.r-a.r);
+    else if(sort==="bench-desc")r.sort((a,b)=>(b.bench||0)-(a.bench||0));
+    return r;
+  },[compatList,cat,q,brands,minR,prMin,prMax,sf,sort]);
 
   const ac=[brands.length,minR,prMax<99999,prMin>0].filter(Boolean).length;
   const clearFilters=()=>{setBrands([]);setMinR(0);setPrMin(0);setPrMax(99999);};
@@ -5658,7 +5581,9 @@ function ToolsPage({th}){
     setFpsLoading(false);
   };
 
-  const cmp=()=>{const a=SEED_PARTS.find(p=>p.n.toLowerCase().includes(cA.toLowerCase()));const b=SEED_PARTS.find(p=>p.n.toLowerCase().includes(cB.toLowerCase()));if(a&&b)setCmpResult({a,b});};
+  // Was a raw substring of the name, so "5060 rtx" found nothing and no spec
+  // or brand was searchable. Same matcher as everywhere else now.
+  const cmp=()=>{const a=SEED_PARTS.find(p=>smartMatch(p,cA));const b=SEED_PARTS.find(p=>smartMatch(p,cB));if(a&&b)setCmpResult({a,b});};
 
   // Bottleneck calculator state
   const [bnGPU,setBnGPU]=useState("");const [bnCPU,setBnCPU]=useState("");const [bnRes,setBnRes]=useState("1080p");const [bnResult,setBnResult]=useState(null);
