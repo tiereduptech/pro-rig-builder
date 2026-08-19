@@ -21416,12 +21416,14 @@ export default [
     "mpn": "GSRF MZ-V7S1T0BAM",
     "deals": {
       "bestbuy": {
-        "price": 234.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408299&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-1tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQG8H&intsrc=APIG_28060",
-        "inStock": true,
-        "sku": "6408299",
+        "price": 120.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6351466&u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6351466%2Fpdp&intsrc=APIG_28060",
+        "inStock": false,
+        "sku": "6351466",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:name-mismatch"
+        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceSource": "1p",
+        "relinkedAt": "2026-08-19"
       }
     },
     "cap": 1000,
@@ -21452,12 +21454,14 @@ export default [
     "mpn": "GSRF MZ-V7S2T0B/AM",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6408301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-t7-2tb-external-usb-3-2-gen-2-portable-ssd-with-hardware-encryption-titan-gray%2FJ3ZYGCQGGG&intsrc=APIG_28060",
-        "inStock": true,
-        "sku": "6408301",
+        "price": 172.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6362136&u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6362136%2Fpdp&intsrc=APIG_28060",
+        "inStock": false,
+        "sku": "6362136",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:name-mismatch"
+        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceSource": "1p",
+        "relinkedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -22049,12 +22053,14 @@ export default [
     "mpn": "WDBBDL0010BNC-WRSN",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5-and-desktops%2FJXJ62C6L5Q&intsrc=APIG_28060",
+        "price": 99.99,
+        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6495881&u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6495881%2Fpdp&intsrc=APIG_28060",
         "inStock": false,
-        "sku": "6512132",
+        "sku": "6495881",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:name-mismatch"
+        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceSource": "1p",
+        "relinkedAt": "2026-08-19"
       }
     },
     "cap": 1000,
