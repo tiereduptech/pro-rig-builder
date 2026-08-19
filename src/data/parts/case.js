@@ -24,7 +24,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.415Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "drive35": 2
   },
   {
     "id": 70000,
@@ -19811,7 +19812,8 @@ export default [
       "ATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "rads": "420mm"
   },
   {
     "id": 100534,
@@ -19842,7 +19844,8 @@ export default [
       "ATX"
     ],
     "tg": true,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "rads": "420mm"
   },
   {
     "id": 100535,
@@ -19920,7 +19923,8 @@ export default [
     "tg": true,
     "usb_c": true,
     "upc": "00761345100199",
-    "mpn": "C8"
+    "mpn": "C8",
+    "rads": "360mm"
   },
   {
     "id": 100537,
@@ -19947,7 +19951,8 @@ export default [
     "ff": "Mini Tower",
     "mobo": [
       "mATX"
-    ]
+    ],
+    "drive25": 5
   },
   {
     "id": 100538,
@@ -20025,7 +20030,8 @@ export default [
       "E-ATX",
       "ATX"
     ],
-    "tg": true
+    "tg": true,
+    "drive35": 1
   },
   {
     "id": 100540,
@@ -20052,7 +20058,8 @@ export default [
     "addedAt": "2026-05-15T13:17:14.424Z",
     "source": "amazon-discovery",
     "ff": "Mid Tower",
-    "rgb": true
+    "rgb": true,
+    "drive35": 4
   },
   {
     "id": 100541,
@@ -20125,7 +20132,8 @@ export default [
       "mATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "drive35": 2
   },
   {
     "id": 100873,
@@ -20169,7 +20177,8 @@ export default [
       "ATX"
     ],
     "upc": "00848604049274",
-    "mpn": "CS-HYTE-Y70TTI-WW"
+    "mpn": "CS-HYTE-Y70TTI-WW",
+    "rads": "360mm"
   },
   {
     "id": 100874,
@@ -20392,7 +20401,9 @@ export default [
     ],
     "tg": true,
     "upc": "00848604045634",
-    "mpn": "CS-HYTE-Y70-B"
+    "mpn": "CS-HYTE-Y70-B",
+    "rads": "360mm",
+    "drive35": 3
   },
   {
     "id": 100885,
@@ -20422,7 +20433,9 @@ export default [
     "mobo": [
       "ATX"
     ],
-    "tg": true
+    "tg": true,
+    "rads": "360mm",
+    "drive35": 4
   },
   {
     "id": 100886,
@@ -20494,7 +20507,10 @@ export default [
       "mATX"
     ],
     "rgb": true,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "maxGPU": 420,
+    "maxCooler": 175,
+    "rads": "360mm"
   },
   {
     "id": 100888,
@@ -20551,7 +20567,9 @@ export default [
     "ff": "Mid Tower",
     "mobo": [
       "ATX"
-    ]
+    ],
+    "rads": "360mm",
+    "drive35": 3
   },
   {
     "id": 100890,
@@ -20590,7 +20608,8 @@ export default [
     "addedAt": "2026-05-15T14:34:31.790Z",
     "source": "amazon-discovery",
     "upc": "00843276110437",
-    "mpn": "FD-C-POA2A-01"
+    "mpn": "FD-C-POA2A-01",
+    "drive25": 9
   },
   {
     "id": 100891,
@@ -20632,7 +20651,8 @@ export default [
     "tg": true,
     "rgb": true,
     "upc": "00843276103002",
-    "mpn": "FD-C-POR1A-03"
+    "mpn": "FD-C-POR1A-03",
+    "drive35": 3
   },
   {
     "id": 100892,
@@ -20675,7 +20695,8 @@ export default [
     ],
     "tg": true,
     "upc": "00843276110444",
-    "mpn": "FD-C-POA2A-02"
+    "mpn": "FD-C-POA2A-02",
+    "rads": "360mm"
   },
   {
     "id": 100893,
@@ -20789,7 +20810,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T14:34:31.790Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "drive35": 8
   },
   {
     "id": 100896,
@@ -20818,7 +20840,11 @@ export default [
     "mobo": [
       "ATX",
       "mATX"
-    ]
+    ],
+    "maxGPU": 338,
+    "maxCooler": 170,
+    "rads": "360mm",
+    "drive35": 1
   },
   {
     "id": 100897,
@@ -20912,7 +20938,8 @@ export default [
       "mATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "drive35": 7
   },
   {
     "id": 100899,
@@ -20942,7 +20969,9 @@ export default [
       "E-ATX",
       "ATX"
     ],
-    "usb_c": true
+    "usb_c": true,
+    "rads": "360mm",
+    "drive35": 4
   },
   {
     "id": 101211,
@@ -20986,7 +21015,8 @@ export default [
     "mobo": [
       "ATX",
       "mATX"
-    ]
+    ],
+    "drive35": 1
   },
   {
     "id": 101215,
@@ -21061,7 +21091,8 @@ export default [
       "E-ATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "drive35": 4
   },
   {
     "id": 101217,
@@ -21091,7 +21122,9 @@ export default [
       "E-ATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "rads": "420mm",
+    "drive35": 7
   },
   {
     "id": 101218,
@@ -21122,7 +21155,9 @@ export default [
       "E-ATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "rads": "420mm",
+    "drive35": 7
   },
   {
     "id": 101359,
@@ -21182,7 +21217,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102770,
@@ -21212,7 +21248,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 4
   },
   {
     "id": 102771,
@@ -21242,7 +21280,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102772,
@@ -21272,7 +21311,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102773,
@@ -21302,7 +21342,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 3
   },
   {
     "id": 102774,
@@ -21332,7 +21374,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "120mm",
+    "drive35": 2
   },
   {
     "id": 102775,
@@ -21362,7 +21406,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102776,
@@ -21392,7 +21437,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102777,
@@ -21422,7 +21468,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 6
   },
   {
     "id": 102778,
@@ -21452,7 +21500,10 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 170,
+    "rads": "120mm",
+    "drive35": 2
   },
   {
     "id": 102779,
@@ -21482,7 +21533,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 4
   },
   {
     "id": 102780,
@@ -21512,7 +21565,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102781,
@@ -21542,7 +21596,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102782,
@@ -21572,7 +21627,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 340
   },
   {
     "id": 102783,
@@ -21602,7 +21658,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 340,
+    "maxCooler": 165,
+    "rads": "360mm",
+    "drive35": 10
   },
   {
     "id": 102784,
@@ -21632,7 +21692,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "fans_inc": 6,
+    "rads": "360mm"
   },
   {
     "id": 102785,
@@ -21662,7 +21724,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102786,
@@ -21692,7 +21755,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 3
   },
   {
     "id": 102787,
@@ -21722,7 +21786,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 2
   },
   {
     "id": 102788,
@@ -21752,7 +21818,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102789,
@@ -21782,7 +21849,10 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 410,
+    "rads": "240mm,360mm",
+    "drive35": 3
   },
   {
     "id": 102790,
@@ -21812,7 +21882,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 410,
+    "maxCooler": 160,
+    "fans_inc": 7,
+    "drive35": 3
   },
   {
     "id": 102791,
@@ -21842,7 +21916,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "360mm"
   },
   {
     "id": 102792,
@@ -21872,7 +21947,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 160,
+    "drive35": 5
   },
   {
     "id": 102793,
@@ -21932,7 +22009,10 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 150,
+    "fans_inc": 4,
+    "drive35": 4
   },
   {
     "id": 102795,
@@ -21962,7 +22042,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 160,
+    "drive25": 3
   },
   {
     "id": 102796,
@@ -21992,7 +22074,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 340,
+    "maxCooler": 165,
+    "rads": "360mm",
+    "drive35": 4
   },
   {
     "id": 102797,
@@ -22022,7 +22108,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 280,
+    "fans_inc": 4,
+    "rads": "360mm",
+    "drive35": 5
   },
   {
     "id": 102798,
@@ -22066,7 +22156,8 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "upc": "00840951136492",
-    "mpn": "FBM-X5-400"
+    "mpn": "FBM-X5-400",
+    "drive35": 3
   },
   {
     "id": 102799,
@@ -22096,7 +22187,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm,360mm",
+    "drive25": 5
   },
   {
     "id": 102800,
@@ -22126,7 +22219,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "120mm,360mm"
   },
   {
     "id": 102801,
@@ -22156,7 +22250,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 6
   },
   {
     "id": 102802,
@@ -22186,7 +22281,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm,360mm"
   },
   {
     "id": 102803,
@@ -22216,7 +22312,10 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 340,
+    "fans_inc": 4,
+    "drive35": 6
   },
   {
     "id": 102804,
@@ -22277,7 +22376,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 415,
+    "maxCooler": 166,
+    "fans_inc": 6,
+    "rads": "360mm"
   },
   {
     "id": 102806,
@@ -22307,7 +22410,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 305,
+    "rads": "240mm"
   },
   {
     "id": 102807,
@@ -22337,7 +22442,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 403,
+    "maxCooler": 170
   },
   {
     "id": 102808,
@@ -22367,7 +22474,10 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 180,
+    "rads": "280mm",
+    "drive35": 2
   },
   {
     "id": 102809,
@@ -22397,7 +22507,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive25": 4
   },
   {
     "id": 102810,
@@ -22427,7 +22538,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 455,
+    "maxCooler": 170,
+    "fans_inc": 8,
+    "rads": "360mm,420mm"
   },
   {
     "id": 102811,
@@ -22457,7 +22572,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 5
   },
   {
     "id": 102812,
@@ -22487,7 +22603,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 400,
+    "rads": "360mm"
   },
   {
     "id": 102813,
@@ -22517,7 +22635,12 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 320,
+    "maxCooler": 160,
+    "fans_inc": 6,
+    "rads": "240mm",
+    "drive35": 4
   },
   {
     "id": 102814,
@@ -22547,7 +22670,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxCooler": 165,
+    "drive35": 6
   },
   {
     "id": 102815,
@@ -22591,7 +22716,11 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "upc": "00824142211809",
-    "mpn": "MPG GUNGNIR 110R"
+    "mpn": "MPG GUNGNIR 110R",
+    "maxGPU": 340,
+    "maxCooler": 170,
+    "rads": "360mm",
+    "drive35": 7
   },
   {
     "id": 102816,
@@ -22621,7 +22750,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 410,
+    "maxCooler": 180,
+    "rads": "360mm",
+    "drive35": 4
   },
   {
     "id": 102817,
@@ -22681,7 +22814,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 7
   },
   {
     "id": 102819,
@@ -22711,7 +22845,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "240mm",
+    "drive35": 4
   },
   {
     "id": 102820,
@@ -22743,7 +22879,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "rads": "360mm",
+    "drive35": 5
   },
   {
     "id": 102821,
@@ -22773,7 +22911,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 360,
+    "drive25": 3
   },
   {
     "id": 102822,
@@ -22803,7 +22943,9 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 400,
+    "rads": "360mm"
   },
   {
     "id": 102823,
@@ -22833,7 +22975,12 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 450,
+    "maxCooler": 190,
+    "fans_inc": 4,
+    "rads": "140mm,420mm",
+    "drive35": 6
   },
   {
     "id": 102824,
@@ -22923,7 +23070,11 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "maxGPU": 420,
+    "maxCooler": 178,
+    "fans_inc": 6,
+    "rads": "240mm,360mm"
   },
   {
     "id": 102827,
@@ -22984,7 +23135,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102829,
@@ -23014,7 +23166,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 2
   },
   {
     "id": 102830,
@@ -23044,7 +23197,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 3
   },
   {
     "id": 102831,
@@ -23074,7 +23228,8 @@ export default [
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
-    "addedAt": "2026-08-07T16:04:24.713Z"
+    "addedAt": "2026-08-07T16:04:24.713Z",
+    "drive35": 4
   },
   {
     "id": 102832,
