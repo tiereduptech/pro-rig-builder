@@ -10,6 +10,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
+// These tests stub globalThis.fetch, so no request ever leaves the process and
+// no real credential is needed — but amazon-paapi.js checks for one BEFORE it
+// would call fetch: loadCreds() falls back to a Windows CSV path that does not
+// exist on Linux or in CI, and getToken() then opens the circuit with
+// 'not_configured' and returns null. Every assertion below about failover,
+// pacing and paging would be answered by that guard instead of by the code
+// under test, which is why the suite was 18 tests red on any machine without
+// the real credentials wired in — including every CI runner.
+//
+// Placeholders satisfy the guard. They are never sent anywhere: the stub is
+// installed before the first call, and the two tests that DO exercise the
+// missing-credential path clear these vars themselves.
+process.env.AMAZON_CREATORS_CLIENT_ID ||= 'test-client-id';
+process.env.AMAZON_CREATORS_CLIENT_SECRET ||= 'test-client-secret';
+
+
 import { searchItems, resolveItems, paapiStatus, resetPaapi, SEARCH_PAGE_MAX } from '../amazon-paapi.js';
 
 const realFetch = globalThis.fetch;
