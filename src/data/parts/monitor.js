@@ -9259,7 +9259,7 @@ export default [
     "mpn": "CS272 WEMIIIRX",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
+        "price": 243.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6585318&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6585318.p%3FskuId%3D6585318",
         "inStock": true,
         "sku": "6585318",
@@ -11502,7 +11502,7 @@ export default [
     "mpn": "S2725QC",
     "deals": {
       "bestbuy": {
-        "price": 369.99,
+        "price": 315.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619486&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fdell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white%2FJ3K4L63JXV&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6619486",
@@ -11749,7 +11749,7 @@ export default [
     "mpn": "9D9V7AA#ABA",
     "deals": {
       "bestbuy": {
-        "price": 299.99,
+        "price": 291.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622478&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622478.p%3FskuId%3D6622478",
         "inStock": true,
         "sku": "6622478",
@@ -12053,7 +12053,7 @@ export default [
     "mpn": "LS32FM703UNXZA",
     "deals": {
       "bestbuy": {
-        "price": 399.99,
+        "price": 331.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632212.p%3FskuId%3D6632212",
         "inStock": false,
         "sku": "6632212",
@@ -12988,7 +12988,7 @@ export default [
       "bestbuy": {
         "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641745&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6641745.p%3FskuId%3D6641745",
-        "inStock": false,
+        "inStock": true,
         "sku": "6641745",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
@@ -13450,7 +13450,7 @@ export default [
     "mpn": "64A4MATXUZ",
     "deals": {
       "bestbuy": {
-        "price": 178.99,
+        "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645723&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645723.p%3FskuId%3D6645723",
         "inStock": true,
         "sku": "6645723",
@@ -14096,7 +14096,7 @@ export default [
     "mpn": "64A5MAT6UZ",
     "deals": {
       "bestbuy": {
-        "price": 239.99,
+        "price": 210.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672591.p%3FskuId%3D6672591",
         "inStock": false,
         "sku": "6672591",

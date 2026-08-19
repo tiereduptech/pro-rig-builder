@@ -1105,7 +1105,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6346166&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6346166.p%3FskuId%3D6346166",
-        "price": 159.99,
+        "price": 148.99,
         "inStock": true,
         "sku": "6346166",
         "priceSource": "1p",
@@ -1624,7 +1624,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6556751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6556751.p%3FskuId%3D6556751",
-        "price": 219.99,
+        "price": 155.99,
         "inStock": true,
         "sku": "6556751",
         "priceSource": "1p",

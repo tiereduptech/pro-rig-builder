@@ -1857,7 +1857,7 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 94.99,
+        "price": 86.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6574591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6574591.p%3FskuId%3D6574591",
         "inStock": true,
         "sku": "6574591",
@@ -1977,7 +1977,7 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 189.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6611987&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6611987.p%3FskuId%3D6611987",
         "inStock": true,
         "sku": "6611987",
@@ -3178,7 +3178,7 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 89.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6569210&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-smart-bm3-80-bronze-pcie-gen-5-atx-3-0-750w-semi-modular-power-supply-black%2FJ39ZPC9WTX&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6569210",
@@ -5941,7 +5941,7 @@ export default [
     "mpn": "PS-TPD-0600NNFAGU-2",
     "deals": {
       "bestbuy": {
-        "price": 69.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6510212&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6510212.p%3FskuId%3D6510212",
         "inStock": true,
         "sku": "6510212",
@@ -6363,7 +6363,7 @@ export default [
     "mpn": "PS-TPD-0750FNFAGU-P",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
+        "price": 82.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6574592&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6574592.p%3FskuId%3D6574592",
         "inStock": true,
         "sku": "6574592",
@@ -6668,7 +6668,7 @@ export default [
     "mpn": "CP-9020271-NA",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 166.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587607&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-rmx-series-rm1000x-cybenetics-gold-fully-modular-atx-power-supply-black%2FJ39QHTJWGF&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6587607",

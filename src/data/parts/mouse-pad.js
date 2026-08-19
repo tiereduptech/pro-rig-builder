@@ -448,7 +448,7 @@ export default [
         "inStock": false,
         "sku": "6318751",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:price-stamp-missing"
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-02-04"
       }
     },
     "surface": "Cloth",
@@ -589,7 +589,7 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400",
         "price": 11.99,
-        "inStock": true,
+        "inStock": false,
         "sku": "4384400",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
@@ -741,8 +741,9 @@ export default [
         "inStock": true,
         "sku": "6482628",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-25"
       }
     },
     "surface": "Hybrid",
@@ -814,7 +815,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514577&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514577.p%3FskuId%3D6514577",
-        "price": 39.99,
+        "price": 37.99,
         "inStock": true,
         "sku": "6514577",
         "priceSource": "1p",

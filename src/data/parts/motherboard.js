@@ -8640,7 +8640,7 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 249.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571645&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6571645.p%3FskuId%3D6571645",
         "inStock": true,
         "sku": "6571645",
@@ -15367,7 +15367,7 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 285.99,
+        "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641933&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mpg-b850i-edge-ti-wifi-socket-am5-amd-b850-iatx-ddr5-wi-fi-7-motherboard-gray-white-matt%2FJ3P7TXQRTS&intsrc=APIG_28060",
         "inStock": false,
         "sku": "6641933",

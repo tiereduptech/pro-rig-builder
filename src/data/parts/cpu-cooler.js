@@ -7152,8 +7152,9 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587609&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587609.p%3FskuId%3D6587609",
         "inStock": true,
         "sku": "6587609",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 50,
@@ -14477,8 +14478,9 @@ export default [
         "inStock": true,
         "sku": "6578777",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-01-29"
       }
     },
     "coolerType": "AIO",
@@ -14519,8 +14521,9 @@ export default [
         "inStock": true,
         "sku": "6578778",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2024-12-03"
       }
     },
     "coolerType": "AIO",
@@ -14937,7 +14940,7 @@ export default [
     "mpn": "RL-KR28E-W2",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
+        "price": 231.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6597527&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6597527.p%3FskuId%3D6597527",
         "inStock": true,
         "sku": "6597527",

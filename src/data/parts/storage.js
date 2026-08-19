@@ -2398,7 +2398,7 @@ export default [
       "bestbuy": {
         "price": 284.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541324&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-1tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6H52&intsrc=APIG_28060",
-        "inStock": true,
+        "inStock": false,
         "sku": "6541324",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
@@ -4029,8 +4029,9 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6523590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-2tb-internal-ssd-pcie-gen-4x4-nvme-with-heatsink-for-ps5%2FJ3ZYG28JXH&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6523590",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "discount": 26,
@@ -21379,8 +21380,9 @@ export default [
         "inStock": false,
         "sku": "6351465",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-02-11"
       }
     },
     "cap": 500,
@@ -21421,7 +21423,7 @@ export default [
         "inStock": false,
         "sku": "6351466",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-04-04",
         "priceSource": "1p",
         "relinkedAt": "2026-08-19"
       }
@@ -21458,10 +21460,10 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6362136&u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6362136%2Fpdp&intsrc=APIG_28060",
         "inStock": false,
         "sku": "6362136",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "relinkedAt": "2026-08-19"
+        "relinkedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "cap": 2000,
@@ -22058,7 +22060,7 @@ export default [
         "inStock": false,
         "sku": "6495881",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:relinked-2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-05-26",
         "priceSource": "1p",
         "relinkedAt": "2026-08-19"
       }
@@ -22590,8 +22592,9 @@ export default [
         "inStock": false,
         "sku": "6571723",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-30"
       }
     },
     "cap": 1000,
@@ -23035,8 +23038,9 @@ export default [
         "inStock": true,
         "sku": "6601257",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-04"
       },
       "newegg": {
         "sku": "445832763479046581596621",
@@ -23491,7 +23495,7 @@ export default [
       "bestbuy": {
         "price": 531.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-2tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2W4&intsrc=APIG_28060",
-        "inStock": false,
+        "inStock": true,
         "sku": "6633571",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
@@ -23782,8 +23786,9 @@ export default [
         "inStock": false,
         "sku": "6636638",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-01"
       },
       "newegg": {
         "sku": "4458312627823825814481940",
@@ -24220,7 +24225,7 @@ export default [
     "mpn": "M280CS2241-500-RB",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669707&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs2241-500gb-m-2-nvme-gen4-x4-internal-solid-state-drive-ssd-m280cs2241-500-rb%2FJXF2C49YK8&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6669707",

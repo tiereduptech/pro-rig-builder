@@ -2865,7 +2865,7 @@ export default [
       "bestbuy": {
         "price": 919.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6496083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-5200mhz-c40-udimm-desktop-memory-black%2FJ39QHTJGVZ&intsrc=APIG_28060",
-        "inStock": false,
+        "inStock": true,
         "sku": "6496083",
         "priceSource": "1p",
         "priceConfidence": "confirmed",

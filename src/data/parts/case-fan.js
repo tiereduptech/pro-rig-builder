@@ -2175,12 +2175,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 109.99,
+        "price": 117.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6549154&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6549154.p%3FskuId%3D6549154",
         "inStock": true,
         "sku": "6549154",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "445837509732178239651941",
@@ -12571,12 +12572,13 @@ export default [
     "mpn": "CO-9051030-WW",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587619.p%3FskuId%3D6587619",
         "inStock": true,
         "sku": "6587619",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835181432",
@@ -12812,12 +12814,13 @@ export default [
     "mpn": "CO-9050185-WW",
     "deals": {
       "bestbuy": {
-        "price": 34.99,
+        "price": 39.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595160&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595160.p%3FskuId%3D6595160",
         "inStock": true,
         "sku": "6595160",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16835181442",
@@ -13614,7 +13617,7 @@ export default [
     "mpn": "CL-F215-PL12BB-A",
     "deals": {
       "bestbuy": {
-        "price": 59.99,
+        "price": 51.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626435&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-ct120-ex-argb-sync-120mm-computer-case-cooling-fan-3-pack-bumblebee%2FJ39ZPC6YXL&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6626435",

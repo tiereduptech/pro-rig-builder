@@ -484,11 +484,12 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6420867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6420867.p%3FskuId%3D6420867",
-        "price": 21.99,
+        "price": 29.99,
         "inStock": true,
         "sku": "6420867",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       }
     },
     "sensor": "Optical",
@@ -1654,7 +1655,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6459644&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6459644.p%3FskuId%3D6459644",
-        "price": 69.99,
+        "price": 63.99,
         "inStock": true,
         "sku": "6459644",
         "priceSource": "1p",
@@ -1680,7 +1681,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485231&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485231.p%3FskuId%3D6485231",
-        "price": 69.99,
+        "price": 59.99,
         "inStock": true,
         "sku": "6485231",
         "priceSource": "1p",
@@ -2102,7 +2103,7 @@ export default [
         "inStock": true,
         "sku": "6578712",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:price-stamp-missing"
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-15"
       }
     },
     "sensor": "Optical",
@@ -2357,7 +2358,7 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637500.p%3FskuId%3D6637500",
-        "price": 99.99,
+        "price": 79.99,
         "inStock": true,
         "sku": "6637500",
         "priceSource": "1p",

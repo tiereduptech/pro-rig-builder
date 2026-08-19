@@ -3119,12 +3119,13 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 79.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645432.p%3FskuId%3D6645432",
         "inStock": true,
         "sku": "6645432",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceConfirmedAt": "2026-08-19"
       },
       "newegg": {
         "sku": "N82E16811139244",
@@ -16541,7 +16542,7 @@ export default [
     "mpn": "CC-H52FW-R1",
     "deals": {
       "bestbuy": {
-        "price": 95.99,
+        "price": 99.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6590132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnzxt-h5-flow-rgb-2024-compact-atx-mid-tower-airflow-pc-case-white%2FJ3GWJHQ2S5&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6590132",
@@ -17023,7 +17024,7 @@ export default [
     "mpn": "CA-1Z2-00MEWN-00",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 80.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603500&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603500.p%3FskuId%3D6603500",
         "inStock": true,
         "sku": "6603500",
@@ -17136,7 +17137,7 @@ export default [
     "mpn": "CA-1Z1-00MFWN-00",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603503&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603503.p%3FskuId%3D6603503",
         "inStock": true,
         "sku": "6603503",
@@ -17198,8 +17199,9 @@ export default [
         "inStock": true,
         "sku": "6603505",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-18"
       },
       "newegg": {
         "sku": "4458318368421785340985947",
@@ -17348,7 +17350,7 @@ export default [
     "mpn": "CA-1Z8-00MGWN-00",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 150.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6603509&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6603509.p%3FskuId%3D6603509",
         "inStock": true,
         "sku": "6603509",
@@ -18500,7 +18502,7 @@ export default [
     "mpn": "CA-11A-00S1NN-00",
     "deals": {
       "bestbuy": {
-        "price": 129.99,
+        "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626447&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626447.p%3FskuId%3D6626447",
         "inStock": true,
         "sku": "6626447",
@@ -19023,7 +19025,7 @@ export default [
     "mpn": "CC-9011309-WW",
     "deals": {
       "bestbuy": {
-        "price": 199.99,
+        "price": 159.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635049&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635049.p%3FskuId%3D6635049",
         "inStock": true,
         "sku": "6635049",
@@ -19505,7 +19507,7 @@ export default [
     "mpn": "CA-11H-00FNWN-00",
     "deals": {
       "bestbuy": {
-        "price": 169.99,
+        "price": 189.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665526&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-view-600-tg-full-tower-atx-pc-case-future-dusk%2FJ39TQXR9JH&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6665526",
@@ -19563,11 +19565,12 @@ export default [
       "bestbuy": {
         "price": 194.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667766&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667766.p%3FskuId%3D6667766",
-        "inStock": false,
+        "inStock": true,
         "sku": "6667766",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-31"
       },
       "newegg": {
         "sku": "445832510146835320926414",
@@ -19623,8 +19626,9 @@ export default [
         "inStock": true,
         "sku": "6667767",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-19",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-21"
       },
       "newegg": {
         "sku": "445833643163212039490155",
@@ -60969,7 +60973,7 @@ export default [
     "mpn": "CA-11E-00M6WN-00",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 86.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626432&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626432.p%3FskuId%3D6626432",
         "inStock": true,
         "priceSource": "1p",
