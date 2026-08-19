@@ -23,18 +23,52 @@ Re-measured against the live apex on 2026-08-19, after the flip:
 | §3.6 HSTS | `max-age=31536000; includeSubDomains; preload`, unchanged |
 | §2 canary hostname | **deleted** — `pages-canary.prorigbuilder.com` does not resolve |
 
-**What that run does *not* cover, so it is not mistaken for a full pass:** it is a
-header-level spot check of §7 step 7, not `bytediff-pages.mjs` and not
-`cp3-pages.mjs`. Those two are the checks §7 step 7 actually names, they are the
-ones that would catch a §3.4 feature quietly rewriting HTML on the apex, and this
-document has no record of either being run against `prorigbuilder.com`. Run them —
-they take a minute and they are the difference between "the resolver answers" and
-"the bytes are right":
+### The real harnesses, against the apex — first run ever, 2026-08-19
+
+Everything above is header-level. `bytediff-pages.mjs` and `cp3-pages.mjs` are the
+checks §7 step 7 actually names, and until now both had only ever run against the
+canary and `pages.dev`. Both have now run against `prorigbuilder.com`:
+
+| harness | result |
+|---|---|
+| `bytediff-pages.mjs`, `SAMPLE=12` | **exit 0** — 39/39 routes byte-identical to `dist/`: 26 tail routes exhaustively, the 404 probe, and 12 sampled products |
+| `cp3-pages.mjs`, `SAMPLE=40`, no `ALLOW_NOINDEX_HEADER` | **exit 0** — 40/40 clean, 0 hard violations (offset 20) |
+| CP-3 negative control, same host | **exit 1**, all seven violations — the harness has teeth against *this* host, not just against `pages.dev` |
+| byte-diff negative control, same host | **exit 1** — a 15-byte edit to `dist/about/index.html` was located and named at byte 45714 |
+
+Both negative controls were run deliberately: §4 argues that a harness grading
+everything clean is indistinguishable from a healthy site, and that argument
+applies to the apex too. A pass is only worth what its matching failure is.
+
+**Two methodology notes, because the run is not reproducible without them.**
+
+1. **Diff against the `dist/` that is actually deployed, not against `main`.**
+   The live site is one build behind `main` (§8), so running `bytediff-pages.mjs`
+   from a `main` checkout compares the served bytes against a build the world has
+   never seen and reports the entire site as rewritten. The run above used a
+   detached worktree at `eb2ae17c1d4`, the commit whose bundle the apex is
+   actually serving. That isolates the question to the zone, which is the only
+   question this harness is asking. Once auto-deploy has closed the gap, a plain
+   `main` checkout is the right base again.
+2. **`dist/404.html` is not committed.** `build-pages.cjs` generates it, along
+   with `_headers`, `_redirects` and the trailing-slash siblings, at deploy time.
+   A fresh checkout has none of them, and `bytediff-pages.mjs` crashes on the
+   missing `dist/404.html` rather than skipping it. Run `node build-pages.cjs`
+   first — exactly as the deploy workflow does.
 
 ```sh
+git worktree add --detach /tmp/live-dist <sha-that-is-live>
+cd /tmp/live-dist && node build-pages.cjs
 HOST=https://prorigbuilder.com node deploy/bytediff-pages.mjs             # exit 0
 HOST=https://prorigbuilder.com SAMPLE=40 node deploy/cp3-pages.mjs        # no ALLOW_NOINDEX_HEADER
 ```
+
+**What this closes.** §1's whole argument was that `pages.dev` results do not
+transfer to the apex because the zone sits in between, and §6 carried "byte
+transparency on the apex" as unverified. That is now measured: no §3.4 feature is
+rewriting HTML on `prorigbuilder.com`, and the resolver's output survives the zone
+intact. **Crawler treatment (§6) remains the one genuinely unrun check** — every
+request in this document, including these, was browser-shaped.
 
 Verified 2026-08-15, pre-flip, post-deploy (deployment `cae214a0`, `main` @ `8ab9e40`):
 
@@ -450,17 +484,19 @@ settle apex ownership (§0)                                        [DONE 2026-08
   -> verify at the edge: pages.dev noindex, canary unchanged, bytediff 0,
      CP-3 40/40, §4.3 six checks, R2                              [DONE 2026-08-15]
   -> attach prorigbuilder.com as a Pages custom domain             [DONE — §7]
-  -> §4.3 + CP-3 against the apex, immediately                     [PARTIAL — §7
-     step 7's header checks re-measured clean 2026-08-19; bytediff-pages.mjs and
-     cp3-pages.mjs against the apex are NOT recorded anywhere. Run them]
+  -> §4.3 + CP-3 against the apex, immediately                      [DONE — §7
+     step 7's header checks re-measured clean 2026-08-19; the harnesses
+     themselves ran the same day, two lines below]
   -> delete the canary hostname                                    [DONE — the
      hostname no longer resolves]
   -> set CF_PAGES_AUTO_DEPLOY=true                                 [DONE]
   -> give deploy-pages.yml an automatic trigger                    [DONE — see §8]
-  ───────────────────────────────────────────────────────  everything above: DONE
   -> a live-vs-committed deploy watcher (§8)                       [DONE —
      scripts/deploy-freshness-report.cjs, wired into ingest-outcome-watch.yml]
-  -> run bytediff-pages.mjs + cp3-pages.mjs against the apex       <- YOU ARE HERE
+  -> run bytediff-pages.mjs + cp3-pages.mjs against the apex       [DONE — both
+     exit 0, both negative controls exit 1; see the status block]
+  ───────────────────────────────────────────────────────  everything above: DONE
+  -> URL Inspection in Search Console — the crawler question (§6)  <- YOU ARE HERE
   -> zone Cache Rule for /assets/* (DESIGN §6)
   -> reintroduce any §3.4 feature you want back, one at a time, CP-3 between each
 ```
@@ -621,12 +657,11 @@ Stated so it is not mistaken for covered:
   **It is post-flip now** — this stopped being a thing that had to wait and became
   a thing nobody has done. Run URL Inspection on one product page and one category
   page; it is the single highest-value unrun check left in this document.
-- **Byte transparency on the apex.** `bytediff-pages.mjs` and `cp3-pages.mjs` were
-  run exhaustively against the canary and never, on the record, against
-  `prorigbuilder.com` itself. The canary carried the zone config, so the result
-  should transfer — but "should transfer" is the reasoning §1 spends a page
-  arguing is not good enough, and the apex is the one host where a §3.4 feature
-  can be scoped to match and the canary could not have seen it.
+- ~~**Byte transparency on the apex.**~~ **CLOSED 2026-08-19.** Both harnesses ran
+  against `prorigbuilder.com` for the first time: `bytediff-pages.mjs` exit 0 on
+  39/39 routes, `cp3-pages.mjs` 40/40 clean, and both negative controls exit 1 on
+  the same host. See the status block. This was the last item that could be
+  settled without a crawler.
 - **Load.** All 5,484 product pages invoke the Function (`DESIGN` §5). The work is
   one `next()` and a status check, and nothing here has measured it at production
   request rates.
