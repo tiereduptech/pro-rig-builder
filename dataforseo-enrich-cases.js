@@ -7,18 +7,30 @@
  * Cost:     ~$0.0015 per ASIN × ~224 cases = ~$0.34
  * Runtime:  ~10-20 minutes (task-based API with polling)
  *
- * USAGE:
- *   railway run node dataforseo-enrich-cases.js --dry-run      # plan only, no $ spend
- *   railway run node dataforseo-enrich-cases.js --limit 5      # test 5 ASINs (~$0.008)
- *   railway run node dataforseo-enrich-cases.js                # full run (~$0.34)
- *   railway run node dataforseo-enrich-cases.js --resume       # continue interrupted
- *   railway run node dataforseo-enrich-cases.js --apply-only   # skip fetch, apply cached results
+ * USAGE: needs DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD in the environment. In CI
+ * that is .github/workflows/enrich-case-specs-dataforseo.yml, which holds them
+ * as repository secrets; locally, export them first. The old `railway run`
+ * prefix is gone with the Railway project — it only ever injected those two.
+ *
+ *   node dataforseo-enrich-cases.js --dry-run      # plan only, no $ spend
+ *   node dataforseo-enrich-cases.js --limit 5      # test 5 ASINs (~$0.008)
+ *   node dataforseo-enrich-cases.js                # full run (~$0.14 at 91 rows)
+ *   node dataforseo-enrich-cases.js --resume       # poll tasks already paid for
+ *   node dataforseo-enrich-cases.js --apply-only   # skip fetch, apply cached results
  *
  * Output:
  *   catalog-build/case-enrich/{ASIN}.json     — raw responses
  *   catalog-build/case-enrich/_progress.json  — which ASINs done/failed
  *   catalog-build/case-enrich/_tasks.json     — in-flight task IDs
- *   src/data/parts.js                         — updated in place at end
+ *   catalog-build/case-enrich-summary.json    — what this run did, for
+ *                                               scripts/assert-outcome.cjs
+ *   src/data/parts.js (+ src/data/parts/)     — rewritten via write-catalog.cjs
+ *
+ * The first three are the RESUME STATE, and catalog-build/ is gitignored, so
+ * they live and die with the runner. A run that posts tasks and then dies has
+ * paid for results it can no longer collect — which is why the workflow uploads
+ * that directory as an artifact on every run, and can restore it into a later
+ * run to finish with --resume or --apply-only.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join } from 'path';
@@ -27,7 +39,7 @@ const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
 if (!LOGIN || !PASSWORD) {
   console.error('✗ Missing DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD env vars.');
-  console.error('  Run with: railway run node dataforseo-enrich-cases.js');
+  console.error('  Export them locally, or dispatch Enrich Case Specs (DataForSEO), which passes them from repository secrets.');
   process.exit(1);
 }
 
@@ -37,6 +49,7 @@ const BASE = 'https://api.dataforseo.com/v3';
 const OUTPUT_DIR = './catalog-build/case-enrich';
 const PROGRESS_PATH = join(OUTPUT_DIR, '_progress.json');
 const TASKS_PATH = join(OUTPUT_DIR, '_tasks.json');
+const SUMMARY_PATH = './catalog-build/case-enrich-summary.json';
 
 const BATCH_SIZE = 50;
 const POLL_INTERVAL_MS = 10_000;
@@ -102,10 +115,65 @@ console.log('Dry run:', flags.dryRun);
 console.log('Apply-only:', flags.applyOnly);
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
+// ─── Run summary ────────────────────────────────────────────────────────────
+// Exiting 0 is not evidence that anything happened. scripts/assert-outcome.cjs
+// reads this file between the work and the commit, and a job that dies before
+// writing it goes red on the artifact's absence rather than reporting success
+// over an empty run — the SFTP ingest failure mode, which cost 1,882 rows.
+//
+// `outcome` is computed here rather than asserted in shell because only this
+// script knows the difference between the two zero-row endings:
+//   nothing-to-do          no candidates left, no money spent — fine.
+//   paid-nothing-returned  tasks POSTed and billed, zero results collected —
+//                          the failure worth waking someone for.
+const coverageOf = (rows, field) =>
+  field === 'fans_inc' ? rows.filter(x => x.fans_inc != null).length : rows.filter(x => x[field]).length;
+
+function writeSummary({ posted = 0, outstanding = 0, fetched = 0, applied = 0, stats = {} } = {}) {
+  const cases = parts.filter(p => p.c === 'Case');
+  const failed = Object.keys(progress.failed).length;
+  // `outstanding`, not `posted`: a --resume run posts nothing and is collecting
+  // tasks an EARLIER run already paid for. Coming back empty from those is the
+  // same burned money, and has to read as the same failure.
+  const outcome = flags.dryRun ? 'dry-run'
+    : outstanding > 0 && fetched === 0 ? 'paid-nothing-returned'
+    : target.length === 0 ? 'nothing-to-do'
+    : 'enriched';
+  const summary = {
+    generatedAt: new Date().toISOString(),
+    dryRun: Boolean(flags.dryRun),
+    applyOnly: Boolean(flags.applyOnly),
+    resume: Boolean(flags.resume),
+    outcome,
+    totals: {
+      candidates: candidates.length,
+      targeted: target.length,
+      posted,
+      outstanding,
+      fetched,
+      failed,
+      applied,
+      estimatedCostUsd: Number((posted * 0.0015).toFixed(4)),
+    },
+    fields: stats,
+    coverage: {
+      cases: cases.length,
+      maxGPU: coverageOf(cases, 'maxGPU'),
+      maxCooler: coverageOf(cases, 'maxCooler'),
+      fans_inc: coverageOf(cases, 'fans_inc'),
+      rads: coverageOf(cases, 'rads'),
+    },
+  };
+  writeFileSync(SUMMARY_PATH, JSON.stringify(summary, null, 2));
+  console.log('\nSummary written:', SUMMARY_PATH, '— outcome:', outcome);
+  return summary;
+}
+
 if (flags.dryRun) {
   console.log('DRY RUN — would enrich:');
   target.slice(0, 10).forEach(p => console.log('  ' + resolveAsin(p) + '  ' + p.n.slice(0, 70)));
   if (target.length > 10) console.log('  ... and ' + (target.length - 10) + ' more');
+  writeSummary();
   process.exit(0);
 }
 
@@ -250,11 +318,16 @@ async function run() {
     ? JSON.parse(readFileSync(TASKS_PATH, 'utf8'))
     : {};
 
+  let posted = 0;
+  let outstanding = 0;
+  let fetched = 0;
+
   if (!flags.applyOnly && !flags.resume && toPost.length) {
     console.log('POSTing', toPost.length, 'tasks in batches of', BATCH_SIZE, '...');
     for (let i = 0; i < toPost.length; i += BATCH_SIZE) {
       const batch = toPost.slice(i, i + BATCH_SIZE);
       const batchTasks = await postTasks(batch);
+      posted += Object.keys(batchTasks).length;
       Object.assign(tasks, batchTasks);
       writeFileSync(TASKS_PATH, JSON.stringify(tasks, null, 2));
       console.log(`  Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${Object.keys(batchTasks).length}/${batch.length} posted`);
@@ -265,6 +338,9 @@ async function run() {
   // Step 2: Poll for ready and fetch
   if (!flags.applyOnly) {
     const pending = { ...tasks };
+    // Everything we are on the hook to collect, whether this run paid for it or
+    // a run that died mid-poll did.
+    outstanding = Object.keys(pending).length;
     const start = Date.now();
     while (Object.keys(pending).length > 0 && Date.now() - start < MAX_POLL_WAIT_MS) {
       await new Promise(r => setTimeout(r, POLL_INTERVAL_MS));
@@ -277,7 +353,7 @@ async function run() {
         const slice = readyEntries.slice(i, i + GET_CONCURRENCY);
         await Promise.all(slice.map(async ([asin, id]) => {
           const item = await getTask(id, asin);
-          if (item) progress.done[asin] = true;
+          if (item) { progress.done[asin] = true; fetched++; }
           else progress.failed[asin] = { stage: 'get', msg: 'empty result' };
           delete pending[asin];
         }));
@@ -325,6 +401,8 @@ async function run() {
   console.log('  maxCooler:', cases.filter(x => x.maxCooler).length + '/' + cases.length);
   console.log('  fans_inc:', cases.filter(x => x.fans_inc != null).length + '/' + cases.length);
   console.log('  rads:    ', cases.filter(x => x.rads).length + '/' + cases.length);
+
+  writeSummary({ posted, outstanding, fetched, applied, stats });
 }
 
 run().catch(err => {
