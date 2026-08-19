@@ -101,6 +101,25 @@ jobs:
           echo "Running: node verify-catalog-asins.js $ARGS"
           node verify-catalog-asins.js $ARGS
 
+      # One Amazon listing on two catalog rows means at most one of them is
+      # right. The verifier cannot see it — it checks a row against its own ASIN,
+      # never two rows against each other — so this runs after the write, over
+      # whatever the verifier just left behind. Report only: it never touches the
+      # catalog, and it warns rather than failing, because the fix needs a person
+      # with the Amazon listing open.
+      - name: Audit ASINs shared by more than one product
+        if: always()
+        run: node audit-duplicate-asins.js
+
+      - name: Upload the duplicate-ASIN report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: duplicate-asins
+          path: verify-reports/duplicate-asins-*.json
+          if-no-files-found: warn
+          retention-days: 90
+
       # Re-emit the per-category chunk barrel so the frontend (which loads
       # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
       # the verifier write, before change-detection, so the barrel + chunks are

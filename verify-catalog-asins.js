@@ -21,6 +21,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { loadOverrides, buildOverrideIndex } from './asin-override-table.js';
 import { canonicalizeProductName, extractModelToken,
          parseCapacityGB, capacityCompatible, capacitiesMatch,
          isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
@@ -75,22 +76,30 @@ const ASIN_FIX_MIN_SCORE = 0.8;
 // truth for spend math, shared with the ceiling projection). MEASURED $0.00150/call.
 
 // ═══ STRATEGY 2: Known-good ASIN overrides table ═══
-let ASIN_OVERRIDES = {};
-const OVERRIDES_PATH = './src/data/asin-overrides.json';
-if (existsSync(OVERRIDES_PATH)) {
-  try {
-    ASIN_OVERRIDES = JSON.parse(readFileSync(OVERRIDES_PATH, 'utf8'));
-    console.log(`Loaded ${Object.keys(ASIN_OVERRIDES).length} known-good ASIN overrides`);
-  } catch (e) {
-    console.warn('Failed to load asin-overrides.json:', e.message);
+// The table is keyed by canonicalizeProductName(), which is a CLASS for GPUs,
+// cases and boards — "NVIDIA|RTX|5080" is 31 distinct cards. This lookup used
+// to answer any of them with the same ASIN at score 1.0, and it is the FIRST
+// thing tried when repairing a mismatched ASIN, on a cron that runs with
+// --fix-asins every two days. asin-override-table.js refuses a key that answers
+// for more than one product and requires each entry to name the product it was
+// verified for. See rekey-asin-overrides.mjs for how the table was bound.
+const ASIN_OVERRIDES = loadOverrides();
+console.log(`Loaded ${Object.keys(ASIN_OVERRIDES).length} known-good ASIN overrides`);
+let OVERRIDE_INDEX = { lookup: () => null, stats: {}, refusals: [] };
+
+/** Must be called once the catalog is loaded — the ambiguity guard counts products. */
+function armOverrideTable(parts) {
+  OVERRIDE_INDEX = buildOverrideIndex(parts, ASIN_OVERRIDES);
+  const ambiguous = [...OVERRIDE_INDEX.namesPerKey.entries()]
+    .filter(([k, names]) => ASIN_OVERRIDES[k] && names.size > 1);
+  if (ambiguous.length) {
+    console.warn(`  ${ambiguous.length} override key(s) answer for more than one product and will be REFUSED:`);
+    ambiguous.slice(0, 10).forEach(([k, names]) => console.warn(`    ${k} -> ${names.size} products`));
   }
 }
 
 function lookupKnownGoodASIN(product) {
-  const key = canonicalizeProductName(product.n, product.c);
-  if (!key) return null;
-  const entry = ASIN_OVERRIDES[key];
-  return entry ? { asin: entry.asin, source: 'known-good-table', score: 1.0 } : null;
+  return OVERRIDE_INDEX.lookup(product);
 }
 
 // Strict model-token matching — "5900X" must NOT match "5900XT"
@@ -511,6 +520,9 @@ async function runPaapiGate(probeAsins, { fatal, force }) {
 
 (async () => {
   const parts = await loadCatalog();
+  // Before anything consults the override table: count how many products each
+  // key answers for, so a class key is refused rather than believed.
+  armOverrideTable(parts);
   const products = selectProducts(parts, flags.tier);
   const ids = products.map(p => p.id);
   console.log(`━━━ Verifier v2 ━━━`);
@@ -713,6 +725,10 @@ async function runPaapiGate(probeAsins, { fatal, force }) {
     }
     if (mismatches.length) {
       console.log(`\nStrategy 2 summary: ${viaTable} via known-good table, ${viaSearch} via search, ${viaQuarantine} quarantined`);
+      const os = OVERRIDE_INDEX.stats;
+      console.log(`  override table: ${os.hits} answered | refused ${os.refusedAmbiguous} (key answers for >1 product), ` +
+        `${os.refusedBinding} (verified for another product), ${os.refusedUnbound} (names no product)`);
+      OVERRIDE_INDEX.refusals.slice(0, 10).forEach((r) => console.log(`    refused ${r.id}: ${r.why}`));
     }
   }
 
