@@ -136,8 +136,19 @@ async function get(url, label) {
     try {
       const res = await fetch(url);
       if (res.ok) return { ok: true, json: await res.json(), status: res.status };
+      // Best Buy explains a rejection in the body. Two audits reported `HTTP
+      // 400` 27 times and could not say what the API objected to, because this
+      // line threw the explanation away.
+      const body = await res.text().catch(() => '');
+      let why = null;
+      if (body) {
+        try { why = JSON.parse(body).errorMessage || null; } catch {
+          const m = body.match(/<(?:errorMessage|message)>([^<]+)</i);
+          why = m ? m[1] : body.replace(/\s+/g, ' ').trim().slice(0, 200) || null;
+        }
+      }
       if (res.status === 404) return { ok: false, status: 404, err: 'HTTP 404' };
-      last = `HTTP ${res.status}${res.status === 403 ? ' (key rejected / quota)' : ''}`;
+      last = `HTTP ${res.status}${res.status === 403 ? ' (key rejected / quota)' : ''}${why ? ` — ${why}` : ''}`;
     } catch (e) { last = e.message; }
     if (attempt < TRIES) {
       const back = 1200 * attempt;
@@ -163,7 +174,12 @@ let bulkErrors = 0;
 const missed = [];
 for (let i = 0; i < chunks.length; i++) {
   const c = chunks[i];
-  const url = `https://api.bestbuy.com/v1/products(sku%20in(${c.join(',')})).json` +
+  // No `.json` on a parenthesised query — that extension is the single-resource
+  // form (`/products/6354884.json`), and appending it to a filter is the one
+  // thing this call did that every working Best Buy call in this repo does not.
+  // It rejected 16/16 chunks here and 11/11 on the refresh; see
+  // refresh-bestbuy-prices.mjs, which probes the forms and reports the verdict.
+  const url = `https://api.bestbuy.com/v1/products(sku%20in(${c.join(',')}))` +
     `?apiKey=${KEY}&show=${SHOW}&pageSize=${CHUNK}&format=json`;
   const res = await get(url, `bulk ${i + 1}/${chunks.length}`);
   if (!res.ok) {
