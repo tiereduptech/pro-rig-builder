@@ -68,11 +68,25 @@ const saveProgress = () => writeFileSync(PROGRESS_PATH, JSON.stringify(progress,
 const mod = await import(`file://${process.cwd().replace(/\\/g, '/')}/src/data/parts.js`);
 const parts = mod.PARTS;
 
-// Candidates: Case products with ASIN and missing key specs
+// The ASIN lives in two places depending on when the row was ingested: older
+// rows carry a bare p.asin, newer ones only have it inside the Amazon deal URL.
+// Selecting on p.asin alone silently skipped 111 case rows that have an Amazon
+// listing — they were never "not reachable", just not looked at.
+const ASIN_RE = /\/dp\/([A-Z0-9]{10})/;
+const resolveAsin = (p) =>
+  p.asin || (p.deals && p.deals.amazon && (ASIN_RE.exec(p.deals.amazon.url || '') || [])[1]) || null;
+
+// Candidates: cases a visitor can actually see, missing at least one of the
+// three specs people pick a case by. fans_inc is NOT a trigger — it rides along
+// free when the spec table comes back, but it is not worth an API call of its
+// own, and including it in the trigger pulled in rows that already had every
+// dimension we were paying to get.
 const candidates = parts.filter(p =>
   p.c === 'Case'
-  && p.asin
-  && (!p.maxGPU || !p.fans_inc || !p.rads)
+  && !p.needsReview
+  && !p.bundle
+  && resolveAsin(p)
+  && (!p.maxGPU || !p.maxCooler || !p.rads)
 );
 
 const target = flags.limit ? candidates.slice(0, flags.limit) : candidates;
@@ -90,7 +104,7 @@ console.log('━━━━━━━━━━━━━━━━━━━━━━�
 
 if (flags.dryRun) {
   console.log('DRY RUN — would enrich:');
-  target.slice(0, 10).forEach(p => console.log('  ' + p.asin + '  ' + p.n.slice(0, 70)));
+  target.slice(0, 10).forEach(p => console.log('  ' + resolveAsin(p) + '  ' + p.n.slice(0, 70)));
   if (target.length > 10) console.log('  ... and ' + (target.length - 10) + ' more');
   process.exit(0);
 }
@@ -229,7 +243,7 @@ async function getTask(id, asin) {
 async function run() {
   // Step 1: POST tasks for ASINs not yet done
   const toPost = target
-    .map(p => p.asin)
+    .map(p => resolveAsin(p))
     .filter(asin => !progress.done[asin] && !progress.failed[asin]);
 
   let tasks = existsSync(TASKS_PATH) && flags.resume
@@ -278,7 +292,7 @@ async function run() {
   let applied = 0;
   const stats = { maxGPU: 0, maxCooler: 0, fans_inc: 0, rads: 0, drive25: 0, drive35: 0 };
   for (const p of target) {
-    const path = join(OUTPUT_DIR, `${p.asin}.json`);
+    const path = join(OUTPUT_DIR, `${resolveAsin(p)}.json`);
     if (!existsSync(path)) continue;
     try {
       const result = JSON.parse(readFileSync(path, 'utf8'));
@@ -297,10 +311,13 @@ async function run() {
   console.log('Products updated:', applied);
   console.log('Fields filled:', JSON.stringify(stats));
 
-  writeFileSync(
-    './src/data/parts.js',
-    `// Auto-merged catalog. Edit with care.\nexport const PARTS = ${JSON.stringify(parts, null, 2)};\n\nexport default PARTS;\n`
-  );
+  // Through scripts/write-catalog.cjs, which verifies the write and re-splits the
+  // per-category chunks. Writing a literal straight over src/data/parts.js and
+  // stopping is the 2026-06-27 breakage shape: a literal PARTS plus a stray
+  // barrel, a SyntaxError that took out prerender and sitemap generation.
+  const { createRequire } = await import('node:module');
+  const { writeCatalog } = createRequire(import.meta.url)('./scripts/write-catalog.cjs');
+  await writeCatalog(parts, { loadedCount: parts.length, reason: `dataforseo case spec enrichment (${applied} rows)` });
 
   const cases = parts.filter(p => p.c === 'Case');
   console.log('\nCase coverage after:');
