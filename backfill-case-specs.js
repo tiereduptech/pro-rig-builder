@@ -17,7 +17,6 @@
  * PASS 2 — DICTIONARY for known models:
  *   Fills maxGPU, maxCooler from manufacturer spec sheets for top brands.
  */
-import { writeFileSync } from 'node:fs';
 
 const mod = await import(`file://${process.cwd().replace(/\\/g, '/')}/src/data/parts.js`);
 let parts = [...mod.PARTS];
@@ -58,17 +57,22 @@ function inferCase(p) {
     else if (/\bRed\b/i.test(text)) out.color = 'Red';
   }
 
-  if (p.rads == null || (Array.isArray(p.rads) && p.rads.length === 0)) {
-    const sizes = new Set();
-    const rx = /\b(120|140|240|280|360|420|480)\s*mm\s*(?:Rad|Radiator|AIO)/ig;
-    let m;
-    while ((m = rx.exec(text)) !== null) sizes.add(parseInt(m[1], 10));
-    const upto = text.match(/(?:Supports?\s*(?:Up\s*to\s*)?|Up\s*to\s*)(\d{3})\s*mm/i);
-    if (upto) sizes.add(parseInt(upto[1], 10));
-    if (sizes.size > 0) {
-      out.rads = [...sizes].sort((a, b) => a - b);
-    }
-  }
+  // rads is NOT inferred from the title. Measured against the rows enriched from
+  // Amazon's spec tables, this inference scored 0 agree / 13 disagree — it never
+  // once got a row right. Two reasons, and both are structural rather than a
+  // matter of tightening the regex:
+  //
+  //   1. it answers a different question. `rads` is the LIST of radiator sizes a
+  //      case supports; a title states only the largest ("Up to 420mm Radiator").
+  //      Writing [420] onto a case that also takes 240/280/360 does not just lose
+  //      the smaller sizes, it asserts they do not fit.
+  //   2. the "Up to (\d{3})mm" fallback has no subject. It reads "Up to 280mm
+  //      E-ATX Motherboard" as a radiator, and on the NZXT H9 Flow it picked 420
+  //      out of a sentence that was not about radiators at all.
+  //
+  // The filter shows "Up to <max>mm", so a title-derived maximum looks right in
+  // the UI while the stored field is a lie to everything else that reads it.
+  // Left blank until a vendor spec table can answer the actual question.
 
   if (p.usb_c == null) {
     out.usb_c = /\bType-?C\b|\bUSB-?C\b/i.test(text);
@@ -337,27 +341,33 @@ const DB = [
   { pat: /Mini-?ITX|\bITX\b/i,                          maxGPU: 320, maxCooler: 140, rads: [120,240] },
 ];
 
-const db_filled = {};
-let db_matched = 0;
-for (const p of parts) {
-  if (p.c !== 'Case') continue;
-  const text = `${p.b} ${p.n}`;
-  for (const entry of DB) {
-    if (!entry.pat.test(text)) continue;
-    db_matched++;
-    for (const key of ['maxGPU', 'maxCooler', 'rads']) {
-      if (entry[key] !== undefined && (p[key] == null || (key === 'rads' && Array.isArray(p[key]) && p[key].length === 0))) {
-        p[key] = entry[key];
-        db_filled[key] = (db_filled[key] || 0) + 1;
-      }
-    }
-    break;
-  }
-}
-
-console.log(`\n━━━ PASS 2: DICTIONARY ━━━`);
-console.log(`  Matched: ${db_matched}`);
-Object.entries(db_filled).forEach(([k, v]) => console.log(`  ${k.padEnd(14)} +${v}`));
+// PASS 2 IS DISABLED. It is left here, and left readable, because the shape of
+// it is exactly what makes it tempting: 175 patterns, each carrying tidy
+// manufacturer numbers, filling 550 rows of the emptiest filters on the site in
+// one run and printing a very satisfying "+550" when it does.
+//
+// It is wrong most of the time. audit-case-spec-sources.cjs scores every
+// available source against the rows enriched from Amazon's spec tables, which
+// is where the values we trust came from:
+//
+//     maxGPU     73 agree / 117 disagree   (38% right)
+//     maxCooler  73 agree / 117 disagree   (38% right)
+//     rads        7 agree / 183 disagree   ( 4% right)
+//
+// The cause is that the patterns are prefix-loose. /Fractal.*Meshify 2/ also
+// matches "Meshify 2 Compact" and hands the smaller case the full-size model's
+// 491mm of GPU clearance; /Corsair.*5000[DXTQ]/ gives the 5000T the 5000D's
+// numbers. Every such row then reads as authoritative data on a product page.
+//
+// A missing maxGPU means a case is absent from a filter someone is using. A
+// wrong one means a case that cannot fit their card is shown to them as fitting
+// it, and they find out after it ships. The second is not a smaller version of
+// the first, so this pass does not get to write these three fields until the
+// patterns are model-exact and re-measured against the trusted rows.
+console.log(`\n━━━ PASS 2: DICTIONARY — DISABLED ━━━`);
+console.log(`  ${DB.length} patterns available; 0 applied.`);
+console.log(`  maxGPU/maxCooler/rads are 38%/38%/4% accurate from this table.`);
+console.log(`  Measure before re-enabling: node audit-case-spec-sources.cjs`);
 
 // FINAL COVERAGE
 const cases = parts.filter(p => p.c === 'Case');
@@ -367,6 +377,22 @@ for (const f of ['tower', 'ff', 'maxGPU', 'maxCooler', 'rads', 'fans_inc', 'tg',
   console.log(`  ${f.padEnd(12)} ${n}/${cases.length}  (${Math.round(n / cases.length * 100)}%)`);
 }
 
-const source = `// Auto-merged catalog. Edit with care.\nexport const PARTS = ${JSON.stringify(parts, null, 2)};\n\nexport default PARTS;\n`;
-writeFileSync('./src/data/parts.js', source);
-console.log('\nWrote parts.js');
+// The write goes through scripts/write-catalog.cjs, which is the only sanctioned
+// way to write the catalog: it writes to a temp, verifies the temp imports, then
+// promotes and RE-SPLITS the per-category chunks. This script used to
+// writeFileSync a literal straight over src/data/parts.js and stop there, which
+// is the exact shape of the 2026-06-27 breakage — a literal PARTS plus a stray
+// barrel, a hard SyntaxError that took out prerender and sitemap generation.
+//
+// Dry run is now the default, because this script has no other brake and its
+// whole job is to touch thousands of rows.
+const { createRequire } = await import('node:module');
+const { writeCatalog } = createRequire(import.meta.url)('./scripts/write-catalog.cjs');
+
+const APPLY = process.argv.includes('--apply');
+if (!APPLY) {
+  console.log('\nDRY RUN — nothing written. Re-run with --apply.');
+} else {
+  await writeCatalog(parts, { loadedCount: mod.PARTS.length, reason: 'backfill case specs (title inference)' });
+  console.log('\nWrote catalog.');
+}
