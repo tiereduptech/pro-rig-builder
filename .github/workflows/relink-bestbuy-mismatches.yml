@@ -1,0 +1,139 @@
+name: Relink Mismatched Best Buy Skus
+
+# =============================================================================
+#  Finds the right Best Buy sku for the rows whose sku names a DIFFERENT
+#  product, and relinks only the ones that are certain. See
+#  relink-bestbuy-mismatches.mjs for the gates; this file carries the scope
+#  question.
+#
+#  ── WHY THERE IS NO SCHEDULE ────────────────────────────────────────────────
+#  Dispatch-only, and not a candidate for a cron. This pass decides which
+#  PRODUCT a row is, which is not a decision to take unattended: a wrong sku
+#  replaced by a guessed sku is the same bug in a new coat. The gates are built
+#  so that a guess cannot get through — one candidate, agreeing model
+#  designation, matching capacity, matching condition, plausible price — and
+#  the rows that do not clear them are meant to be read by a person, not
+#  retried nightly until something slips past.
+#
+#  It is also self-limiting by design. Its input is the daily refresh's
+#  heldNameMismatch list (6 rows on the 2026-08-19 run, 0.6% of Best Buy rows);
+#  there is nothing here to run every night.
+#
+#  ── ORDER OF OPERATIONS ─────────────────────────────────────────────────────
+#  Run the refresh first (dry is fine — it writes the summary either way), then
+#  this. This pass reads catalog-build/bestbuy-refresh-summary.json for its
+#  scope, and that artifact does not survive between runners, so a fresh run of
+#  this workflow with no `ids` input falls back to catalog rows already stamped
+#  `bestbuy:name-mismatch`. Passing `ids` explicitly is the reliable path until
+#  the refresh applies its stamps to main.
+#
+#  ── COST ────────────────────────────────────────────────────────────────────
+#  Up to 4 requests per row: one to re-read the sku on the row, then upc,
+#  modelNumber and search until one produces a candidate. Six rows is ~24
+#  requests, under a minute.
+# =============================================================================
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — search, report, write and commit nothing'
+        type: boolean
+        default: true
+      ids:
+        description: 'Comma-separated product ids (blank = the refresh summary, or rows stamped bestbuy:name-mismatch)'
+        required: false
+        default: ''
+        type: string
+      expect_count:
+        description: 'Fail unless the scope is exactly this many rows (blank = no assertion)'
+        required: false
+        default: ''
+        type: string
+
+# Repo-wide lock shared by every workflow that pushes to main.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
+jobs:
+  relink:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Relink the mismatched skus
+        env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          IDS: ${{ inputs.ids }}
+          EXPECT_COUNT: ${{ inputs.expect_count }}
+        run: |
+          set -uo pipefail
+          if [ -z "${BESTBUY_API_KEY:-}" ]; then
+            echo "::error::BESTBUY_API_KEY is not set on this repository. Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          echo "RELINK_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+          ARGS=""
+          if [ "${DRY_RUN}" != "true" ]; then ARGS="$ARGS --apply"; fi
+          if [ -n "${IDS:-}" ]; then ARGS="$ARGS --ids=$IDS"; fi
+          if [ -n "${EXPECT_COUNT:-}" ]; then ARGS="$ARGS --expect-count=$EXPECT_COUNT"; fi
+          echo "Running: node relink-bestbuy-mismatches.mjs $ARGS"
+          node relink-bestbuy-mismatches.mjs $ARGS
+
+      # Exiting 0 does not mean it read anything. Assert the outcome between the
+      # work and the commit.
+      - name: Assert the pass produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=verify-reports/bestbuy-relink-$(date -u +%F).json \
+            --label="Best Buy relink" \
+            --newer-than-epoch="$RELINK_STARTED" \
+            --require='totals.considered>0' \
+            --warn='totals.unknown==0'
+
+      - name: Upload the relink report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bestbuy-relink-report
+          path: verify-reports/bestbuy-relink-*.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Assert a dry run left the tree clean
+        if: ${{ inputs.dry_run == true }}
+        run: |
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a dry run modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the dry run wrote nothing to the repo."
+
+      - name: Commit and push if changed
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          REPORT=verify-reports/bestbuy-relink-$(date -u +%F).json
+          if [ ! -f "$REPORT" ]; then
+            echo "::error::no relink report at commit time — refusing to report success"
+            exit 1
+          fi
+          RELINKED=$(node -e "console.log(require('./'+process.argv[1]).totals.relinked)" "$REPORT")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/parts.js src/data/parts/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(bestbuy): relink $RELINKED mismapped sku(s) to the product the row names"
+            bash scripts/push-with-rebase.sh main
+          fi
