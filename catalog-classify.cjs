@@ -445,6 +445,48 @@ function ramSticks(title) {
   return null;
 }
 
+// Keyboard attributes a title actually states: connection, backlight, layout.
+//
+// These three were measured against the 56 keyboard rows that already carry
+// them: wireless 44/44, rgb 38/38, layout 40/41 — the single layout miss is a
+// title that claims both ("GMMK 2 Prebuilt 96% Full Size"), where reading the
+// stated 96% is defensible either way.
+//
+// switches is DELIBERATELY ABSENT. The stored field conflates two different
+// specs — the switch TECHNOLOGY (Mechanical, Optical, Membrane, Hall Effect,
+// Scissor) and the switch FEEL (Linear, Tactile, Clicky, and colour names that
+// stand in for feel). A buyer filters on the feel; a title usually states the
+// feel; and the field currently holds 24 rows of "Mechanical" against a handful
+// of "Brown"/"Blue"/"Red". Extracting into it would deepen the conflation
+// rather than fill it, so it stays blank until the field is split.
+function keyboardAttributes(title) {
+  const t = String(title || '');
+  const out = {};
+
+  // Connection. Positive wireless evidence wins; "wired" only answers when
+  // nothing claims wireless, because tri-mode boards list both.
+  if (/\bwireless\b|\bbluetooth\b|\bBT\s?5|\b2\.4\s*g(?:hz)?\b|\btri[-\s]?mode\b|\bdual[-\s]?mode\b/i.test(t)) out.wireless = true;
+  else if (/\bwired\b|\bUSB[-\s]?C\s*(?:cable|wired)\b/i.test(t)) out.wireless = false;
+
+  // Backlight. Only a positive claim counts: the absence of "RGB" in a title is
+  // not a statement that the board has no backlight.
+  if (/\bRGB\b|\bARGB\b|\bbacklit\b|\bbacklight\b|\bLED\b/i.test(t)) out.rgb = true;
+
+  // Layout, most specific first. A percentage or key count beats the words
+  // "full size", because a 96% board is routinely marketed as full size.
+  const layout =
+      /\bTKL\b|tenkeyless|\b87[-\s]?key|\b80\s*%/i.test(t) ? 'TKL'
+    : /\b96\s*%|\b1800\b/i.test(t) ? '96%'
+    : /\b75\s*%|\b84[-\s]?key/i.test(t) ? '75%'
+    : /\b65\s*%|\b68[-\s]?key/i.test(t) ? '65%'
+    : /\b60\s*%|\b61[-\s]?key/i.test(t) ? '60%'
+    : /\bfull[-\s]?sized?\b|\b104[-\s]?key|\b108[-\s]?key|\bnumeric\s*keypad\b/i.test(t) ? 'Full-Size'
+    : null;
+  if (layout) out.layout = layout;
+
+  return out;
+}
+
 function extractSpecs(title, category) {
   const specs = {};
   const t = title || '';
@@ -535,6 +577,8 @@ function extractSpecs(title, category) {
     else if (/\brpm\b/i.test(t) && !/\bssd\b/i.test(t)) specs.storageType = 'HDD';
     else if (/\bssd\b|solid[\s-]?state/i.test(t)) specs.storageType = 'SSD';
     else if (/\bhdd\b|hard drive|hard disk/i.test(t)) specs.storageType = 'HDD';
+  } else if (category === 'Keyboard') {
+    Object.assign(specs, keyboardAttributes(t));
   }
   return specs;
 }
@@ -923,6 +967,7 @@ module.exports = {
   extractSpecs,
   ramAttributes,
   ramSticks,
+  keyboardAttributes,
   ramRejectReason,
   storageRejectReason,
   storageAttributes,
