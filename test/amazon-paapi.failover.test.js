@@ -14,6 +14,22 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
+// These tests stub globalThis.fetch, so no request ever leaves the process and
+// no real credential is needed — but amazon-paapi.js checks for one BEFORE it
+// would call fetch: loadCreds() falls back to a Windows CSV path that does not
+// exist on Linux or in CI, and getToken() then opens the circuit with
+// 'not_configured' and returns null. Every assertion below about failover,
+// pacing and paging would be answered by that guard instead of by the code
+// under test, which is why the suite was 18 tests red on any machine without
+// the real credentials wired in — including every CI runner.
+//
+// Placeholders satisfy the guard. They are never sent anywhere — the stub is
+// installed before the first call. The one test that must see NO credentials
+// clears them itself and puts them back; see 'no credentials at all'.
+process.env.AMAZON_CREATORS_CLIENT_ID ||= 'test-client-id';
+process.env.AMAZON_CREATORS_CLIENT_SECRET ||= 'test-client-secret';
+
+
 import { resolveItems, paapiStatus, resetPaapi, onPaapiAlert, BATCH_MAX } from '../amazon-paapi.js';
 
 const realFetch = globalThis.fetch;
@@ -24,6 +40,31 @@ const tokenOK = () => new Response(JSON.stringify({ access_token: 't', expires_i
   { status: 200, headers: { 'content-type': 'application/json' } });
 
 test.afterEach(() => { restore(); resetPaapi(); });
+
+test('no credentials at all opens the circuit as our_bug, without a request', async () => {
+  // The branch the placeholders above hide from every other test in this file.
+  // It is the loudest failure mode PA API has — classifyPaapiReason maps
+  // not_configured to 'our_bug', which FAILS the job rather than degrading —
+  // so it is worth one test that genuinely has nothing configured.
+  const { AMAZON_CREATORS_CLIENT_ID: id, AMAZON_CREATORS_CLIENT_SECRET: secret } = process.env;
+  delete process.env.AMAZON_CREATORS_CLIENT_ID;
+  delete process.env.AMAZON_CREATORS_CLIENT_SECRET;
+  let called = 0;
+  const reasons = [];
+  onPaapiAlert(a => reasons.push(a.reason));
+  try {
+    stubFetch(async () => { called++; return tokenOK(); });
+    const out = await resolveItems(['A', 'B']);
+    assert.equal(out.size, 0, 'degrades to empty rather than throwing');
+    assert.equal(called, 0, 'a missing credential must not cost a request');
+    assert.equal(paapiStatus().available, false);
+    assert.equal(paapiStatus().disabledReason, 'not_configured');
+    assert.deepEqual(reasons, ['not_configured']);
+  } finally {
+    process.env.AMAZON_CREATORS_CLIENT_ID = id;
+    process.env.AMAZON_CREATORS_CLIENT_SECRET = secret;
+  }
+});
 
 test('empty / missing input never calls the network', async () => {
   let called = 0;

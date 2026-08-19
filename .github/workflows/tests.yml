@@ -1,0 +1,85 @@
+name: Tests
+
+# =============================================================================
+#  Runs the test suite on every pull request and on every push to main.
+#
+#  WHY THIS EXISTS. Until this workflow, no workflow in this repo had a
+#  `pull_request` trigger, and nothing ran the suite on a change to main either.
+#  `npm test` appeared in exactly two places — apply-newegg.yml and
+#  ingest-newegg-dry-run.yml — as a pre-flight before those jobs do their own
+#  work, and two more workflows ran a single named test file each. So a change
+#  could alter any matcher, gate or ladder in the repo and no test would run
+#  against it before or after merge. The machinery existed; nothing invoked it.
+#
+#  WHAT ELSE THAT MEANT. Both workflows that run the full `npm test` were
+#  already gated on a suite that fails: 18 of the amazon-paapi tests were red on
+#  any machine without real PA API credentials, which is every CI runner. Their
+#  last full runs were 2026-07-23 and 2026-07-30, before those tests existed, so
+#  the breakage had not surfaced yet — the next dispatch of apply-newegg would
+#  have failed at the gate, on tests unrelated to the ingest it was blocking.
+#  Fixed in the same change as this file: the tests stub fetch and never make a
+#  request, so placeholder credentials are enough to exercise them, and they now
+#  set their own.
+#
+#  SCOPE. This job runs the suite. It does not build, prerender or deploy — the
+#  bundle is built and dist/ is committed by prerender.yml, and the deploy
+#  workflows ship what is committed (see deploy-pages.yml). Adding a build here
+#  would prove nothing that prerender.yml does not already prove nightly.
+# =============================================================================
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# A superseded run proves nothing about the commit that replaced it. Unlike the
+# deploy and ingest workflows, cancelling this one mid-flight cannot leave
+# anything half-done: it writes nothing and touches no remote.
+concurrency:
+  group: tests-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Matches the newer workflows (apply-newegg, newegg-feed-watch).
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        # puppeteer is a devDependency of the PRERENDER path, not of the tests —
+        # no test imports it. Skipping its ~150MB Chrome download here takes a
+        # minute off every run; prerender.yml does its own install and still
+        # gets the browser.
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+        run: npm ci
+
+      - name: node --test
+        run: npm test
+
+      # `npm test` is `node --test test/*.test.js`, which does not match the
+      # .test.sh files. Three of the repo's truth tables are shell — the
+      # epik-pull health verdict, the phase-A docroot verdict and the lock
+      # reaper — and they cover the two decisions whose failure modes are
+      # destructive or actively misleading. Left out of the glob, they would
+      # keep running nowhere, which is the whole problem this file addresses.
+      # They are pure functions over fixtures: no network, no secrets.
+      - name: Shell truth tables
+        run: |
+          set -euo pipefail
+          status=0
+          for f in test/*.test.sh; do
+            echo "── $f"
+            bash "$f" || { echo "::error file=$f::$f failed"; status=1; }
+          done
+          exit $status
