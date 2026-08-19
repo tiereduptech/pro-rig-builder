@@ -2,11 +2,75 @@
 
 Copyright © 2026 TieredUp Tech, Inc.
 
-Status: **prep complete, apex not moved.** Every §3 item is cleared and every
-pre-flip check passes against the in-zone canary. `prorigbuilder.com` still
-points at Railway; the only remaining step is the DNS flip in §7.
+Status: **flipped. The apex serves from Pages, and automatic deploys are on.**
+`prorigbuilder.com` is attached to the Pages project as a custom domain, §7 is
+done, the canary hostname is gone, and `CF_PAGES_AUTO_DEPLOY` is set to `'true'`.
+This document is now a record of how the flip was done, not a runbook for doing
+it. The live checklist is the short list in §8.
 
-Verified 2026-08-15, post-deploy (deployment `cae214a0`, `main` @ `8ab9e40`):
+Re-measured against the live apex on 2026-08-19, after the flip:
+
+| check | result |
+|---|---|
+| apex is Pages, not Railway | `x-prerender: route-hit-noslash` on `/parts/cpu` — that header comes from the Function, so the resolver is live on the apex. No `x-railway-edge` on any response |
+| §7 step 7 — unmatched product path | `410`, `x-prerender: gone-410`, `x-robots-tag: noindex` |
+| §7 step 7 — unslashed category | `200`, `x-prerender: route-hit-noslash`, no `location` |
+| §7 step 7 — unslashed product | `200`, `x-prerender: route-hit-noslash`, no 308 |
+| §7 step 7 — `/search` (outside `/parts/`) | `200`, no 308 |
+| **§7 step 7 — `X-Robots-Tag` on an apex product page** | **absent.** This is the check that matters most: a header here would mean `noindexOnPagesDev()` misfired and the live catalog was being de-indexed. It did not fire |
+| §1 five response-header rules | all five present on the apex, unchanged |
+| §3.3 stock cache behaviour | `cache-control: public, max-age=0, must-revalidate` + `cf-cache-status: DYNAMIC` on HTML — still no Cache Everything in front of it |
+| §3.6 HSTS | `max-age=31536000; includeSubDomains; preload`, unchanged |
+| §2 canary hostname | **deleted** — `pages-canary.prorigbuilder.com` does not resolve |
+
+### The real harnesses, against the apex — first run ever, 2026-08-19
+
+Everything above is header-level. `bytediff-pages.mjs` and `cp3-pages.mjs` are the
+checks §7 step 7 actually names, and until now both had only ever run against the
+canary and `pages.dev`. Both have now run against `prorigbuilder.com`:
+
+| harness | result |
+|---|---|
+| `bytediff-pages.mjs`, `SAMPLE=12` | **exit 0** — 39/39 routes byte-identical to `dist/`: 26 tail routes exhaustively, the 404 probe, and 12 sampled products |
+| `cp3-pages.mjs`, `SAMPLE=40`, no `ALLOW_NOINDEX_HEADER` | **exit 0** — 40/40 clean, 0 hard violations (offset 20) |
+| CP-3 negative control, same host | **exit 1**, all seven violations — the harness has teeth against *this* host, not just against `pages.dev` |
+| byte-diff negative control, same host | **exit 1** — a 15-byte edit to `dist/about/index.html` was located and named at byte 45714 |
+
+Both negative controls were run deliberately: §4 argues that a harness grading
+everything clean is indistinguishable from a healthy site, and that argument
+applies to the apex too. A pass is only worth what its matching failure is.
+
+**Two methodology notes, because the run is not reproducible without them.**
+
+1. **Diff against the `dist/` that is actually deployed, not against `main`.**
+   The live site is one build behind `main` (§8), so running `bytediff-pages.mjs`
+   from a `main` checkout compares the served bytes against a build the world has
+   never seen and reports the entire site as rewritten. The run above used a
+   detached worktree at `eb2ae17c1d4`, the commit whose bundle the apex is
+   actually serving. That isolates the question to the zone, which is the only
+   question this harness is asking. Once auto-deploy has closed the gap, a plain
+   `main` checkout is the right base again.
+2. **`dist/404.html` is not committed.** `build-pages.cjs` generates it, along
+   with `_headers`, `_redirects` and the trailing-slash siblings, at deploy time.
+   A fresh checkout has none of them, and `bytediff-pages.mjs` crashes on the
+   missing `dist/404.html` rather than skipping it. Run `node build-pages.cjs`
+   first — exactly as the deploy workflow does.
+
+```sh
+git worktree add --detach /tmp/live-dist <sha-that-is-live>
+cd /tmp/live-dist && node build-pages.cjs
+HOST=https://prorigbuilder.com node deploy/bytediff-pages.mjs             # exit 0
+HOST=https://prorigbuilder.com SAMPLE=40 node deploy/cp3-pages.mjs        # no ALLOW_NOINDEX_HEADER
+```
+
+**What this closes.** §1's whole argument was that `pages.dev` results do not
+transfer to the apex because the zone sits in between, and §6 carried "byte
+transparency on the apex" as unverified. That is now measured: no §3.4 feature is
+rewriting HTML on `prorigbuilder.com`, and the resolver's output survives the zone
+intact. **Crawler treatment (§6) remains the one genuinely unrun check** — every
+request in this document, including these, was browser-shaped.
+
+Verified 2026-08-15, pre-flip, post-deploy (deployment `cae214a0`, `main` @ `8ab9e40`):
 
 | check | result |
 |---|---|
@@ -179,6 +243,14 @@ unlike `pages.dev` — a Transform Rule scoped to
 nofollow` costs one rule and touches nothing in the artifact. Add it when you
 create the hostname, and delete the hostname when the verification run is done.
 
+**Both are gone.** `pages-canary.prorigbuilder.com` no longer resolves (checked
+2026-08-19), so §7 step 8 ran. Confirm the Transform Rule went with it — a
+`noindex, nofollow` rule left behind on a hostname that no longer exists is inert
+today, but it is one dashboard edit away from matching something that does. This
+section is retained because the technique is worth having: any future change to
+zone config in front of the artifact can be tested this way instead of on the
+apex, and it is what caught Email Obfuscation.
+
 ---
 
 ## 3. Clear these before DNS — in this order
@@ -346,6 +418,13 @@ proof of *which* mechanism sets the header on each host:
 | `pages-canary.prorigbuilder.com` | `noindex, nofollow` | `noindex, nofollow` | the §2 Transform Rule, host-wide |
 | `prorigbuilder.com` | none | none | Railway — untouched by any of this |
 
+That last row is **2026-08-15 and historical**: the apex served from Railway when
+this was measured. Re-measured on the apex post-flip, it still reads `none` /
+`none` — now because the resolver's host check correctly declines to fire on a
+host that does not end in `.pages.dev`, which is the §7 step 7 result in the
+status block. Same values, entirely different mechanism, and the second one is
+the one that had to be checked.
+
 Read the rows against each other. A header that appears on `/parts/*` but *not* on
 `/about` can only be the Function, since every other mechanism here is host-wide;
 a header on both is the Transform Rule. That asymmetry is what distinguishes them,
@@ -404,20 +483,33 @@ settle apex ownership (§0)                                        [DONE 2026-08
      run 31905346482, deployment cae214a0, 16,406 files]
   -> verify at the edge: pages.dev noindex, canary unchanged, bytediff 0,
      CP-3 40/40, §4.3 six checks, R2                              [DONE 2026-08-15]
+  -> attach prorigbuilder.com as a Pages custom domain             [DONE — §7]
+  -> §4.3 + CP-3 against the apex, immediately                      [DONE — §7
+     step 7's header checks re-measured clean 2026-08-19; the harnesses
+     themselves ran the same day, two lines below]
+  -> delete the canary hostname                                    [DONE — the
+     hostname no longer resolves]
+  -> set CF_PAGES_AUTO_DEPLOY=true                                 [DONE]
+  -> give deploy-pages.yml an automatic trigger                    [DONE — see §8]
+  -> a live-vs-committed deploy watcher (§8)                       [DONE —
+     scripts/deploy-freshness-report.cjs, wired into ingest-outcome-watch.yml]
+  -> run bytediff-pages.mjs + cp3-pages.mjs against the apex       [DONE — both
+     exit 0, both negative controls exit 1; see the status block]
   ───────────────────────────────────────────────────────  everything above: DONE
-  -> attach prorigbuilder.com as a Pages custom domain            <- YOU ARE HERE (§7)
-  -> §4.3 + CP-3 against the apex, immediately
-  -> delete the canary hostname
-  -> set CF_PAGES_AUTO_DEPLOY=true
+  -> URL Inspection in Search Console — the crawler question (§6)  <- YOU ARE HERE
   -> zone Cache Rule for /assets/* (DESIGN §6)
   -> reintroduce any §3.4 feature you want back, one at a time, CP-3 between each
 ```
 
-`CF_PAGES_AUTO_DEPLOY` comes **after** the flip is verified, for the reason
-`deploy-pages.yml` states in its gating comment: until it is set, no commit to
-`main` can move a Cloudflare deployment. Setting it earlier means an ordinary
-commit ships the apex as a side effect, which is the trap
-`DESIGN-pull-deploy.md` records for `EPIK_PULL_AUTO_PUBLISH`.
+`CF_PAGES_AUTO_DEPLOY` was held back until **after** the flip was verified, for
+the reason `deploy-pages.yml` states in its gating comment: while it was unset, no
+commit to `main` could move a Cloudflare deployment. Setting it earlier would have
+meant an ordinary commit shipping the apex as a side effect, which is the trap
+`DESIGN-pull-deploy.md` records for `EPIK_PULL_AUTO_PUBLISH`. It is set now, and
+the ordering it protected is spent — from here on, a merged commit that lands
+before the nightly prerender **does** reach visitors, without anyone pressing
+anything. That is the intended steady state; it is also a new way to ship a
+mistake, so it is worth stating rather than discovering.
 
 ### The byte-transparency diff — run this one first
 
@@ -516,6 +608,20 @@ Better than Epik's, and worth knowing before the flip rather than during it: the
 apex record is **proxied**, so reverting it propagates in seconds rather than over
 a TTL. Rollback is "point the apex back at Railway" and it is effectively instant.
 
+**Post-flip, this section rests on two things nobody has re-checked.** It was
+written when Railway was serving the apex, so both were self-evidently true and
+neither is any more:
+
+1. **That the step-0 record exists.** The apex is proxied, so Pages overwriting
+   the record destroyed the only readable copy of the Railway target. If it was
+   not written down, the rollback below has no destination.
+2. **That Railway is still up and still serving this app.** Nothing in this repo
+   or in any check here would notice it being torn down or idled out. A rollback
+   to an origin that no longer answers is not a rollback.
+
+Confirm both while they are still cheap to confirm, rather than during the
+incident that needs them.
+
 What does *not* roll back with it:
 
 - **anything cached at the edge** while a §3.3 rule was active — purge everything
@@ -548,6 +654,14 @@ Stated so it is not mistaken for covered:
   §3.5 exposure, and no check in this document has ever sent a crawler-shaped
   request or observed what Googlebot receives. The URL Inspection tool in Search
   Console is the only instrument that answers this, and it only works post-flip.
+  **It is post-flip now** — this stopped being a thing that had to wait and became
+  a thing nobody has done. Run URL Inspection on one product page and one category
+  page; it is the single highest-value unrun check left in this document.
+- ~~**Byte transparency on the apex.**~~ **CLOSED 2026-08-19.** Both harnesses ran
+  against `prorigbuilder.com` for the first time: `bytediff-pages.mjs` exit 0 on
+  39/39 routes, `cp3-pages.mjs` 40/40 clean, and both negative controls exit 1 on
+  the same host. See the status block. This was the last item that could be
+  settled without a crawler.
 - **Load.** All 5,484 product pages invoke the Function (`DESIGN` §5). The work is
   one `next()` and a status check, and nothing here has measured it at production
   request rates.
@@ -560,8 +674,12 @@ Stated so it is not mistaken for covered:
 
 ## 7. The flip — dashboard clicks, in order
 
-Everything in §4 above this line is done. Prerequisites are met: §3 all clear,
-canary green, resolver noindex live at the edge.
+**Done.** The apex is attached and the canary is removed; steps 0-8 below all ran.
+Kept as the record of what was done and as the procedure to reverse it — the
+Rollback block at the end of this section is still live, and it is the reason
+step 0 mattered. If the rollback target from step 0 was never written down, that
+is an open gap: the apex record is proxied, so the Railway target is not readable
+from DNS or from this repo now that Pages has overwritten it.
 
 **Record the rollback target BEFORE touching anything.** The apex is proxied, so
 its origin is not readable from DNS or from this repo — once the record is
@@ -618,3 +736,89 @@ available and never will be.
 
 Do **not**, as part of a rollback, revert the `main` merge or redeploy Pages —
 neither touches what serves the apex, and both cost you the verified artifact.
+
+---
+
+## 8. After the flip — how deploys work now
+
+The flip changed what serves the apex. This changed how it gets updated.
+
+### The trigger
+
+`deploy-pages.yml` fires on `workflow_run` when **"Prerender SEO pages"**
+completes on `main`, gated on `vars.CF_PAGES_AUTO_DEPLOY == 'true'` *and*
+`github.event.workflow_run.conclusion == 'success'`. So the nightly prerender
+builds `dist/`, commits it, and the deploy follows automatically. A
+`workflow_dispatch` still runs unconditionally and still bypasses the gate,
+which is the escape hatch for shipping out of band.
+
+**It is not a `push` trigger, and it must not become one.** `prerender.yml` is
+the only writer of `dist/` and it hardcodes `[skip ci]` into its commit message —
+25 of the last 30 `dist/` commits carry the marker. GitHub Actions honours
+`[skip ci]` by skipping push-triggered runs, so `push: paths: [dist/**]` would be
+armed, green in the editor, and would never once fire. `workflow_run` keys off
+the upstream workflow *completing* rather than off the push, so `[skip ci]` never
+reaches it, and it fires exactly when `dist/` changed because prerender is the
+thing that changes `dist/`.
+
+### The failure mode this introduces
+
+An automatic deploy that stops happening is **silent**. When
+`CF_PAGES_AUTO_DEPLOY` is unset, or the upstream conclusion is not `success`, the
+job is *skipped* — and a skipped job in the runs list is the same grey as a
+deliberate no-op. Nothing goes red. The site simply stops receiving builds while
+every workflow in the repo reports healthy.
+
+That is the same shape as the 95-day Best Buy freeze, and the same rule applies:
+a check that only watches run history cannot see it, because nothing failed.
+
+**The watcher is `scripts/deploy-freshness-report.cjs`**, run as a step in
+`ingest-outcome-watch.yml` alongside the two ingest watchers (18:00 UTC daily,
+twelve hours after the 06:00 prerender, so there is no race with an in-flight
+deploy). It ignores run history entirely and compares what the live host serves
+against what `main` committed:
+
+```sh
+node scripts/deploy-freshness-report.cjs --url=https://prorigbuilder.com/ \
+  --dist=dist/index.html --sitemap=dist/sitemap.xml
+```
+
+**Two signals, because each is blind where the other sees.** This is the part
+worth understanding before trusting it:
+
+| signal | catches | blind to |
+|---|---|---|
+| entry bundle `assets/index-<hash>.js` | any change to the built JS | a nightly that changed only catalog content — the hash **repeated on 6 of the last 25 builds**, so a freeze beginning on one of those nights reads as current. Aug 12 → Aug 13 is a real instance |
+| `sitemap.xml` (content digest) | route additions and removals, and the build date it stamps into every `<lastmod>` | drift **inside a single day** — `<lastmod>` is day-granular, so two builds dated the same day are indistinguishable by it |
+
+Either one disagreeing is red. The sitemap is compared by digest; `<lastmod>` and
+the `<loc>` count are extracted only to say *how far* behind in the message,
+because "4 days and 31 routes behind" is actionable and "digests differ" is not.
+
+Verified against the live site in all three directions, 2026-08-19: red on the
+real drift with both signals firing and both hashes named, green when pointed at
+the commit whose build is actually live, and red — not quietly green — when the
+host is unreachable or serving a shell. 16 tests.
+
+Measured while writing this: `main` carried `index-C7Z5usPQ.js` and the apex
+served `index-DXvLsYDC.js` — **one nightly behind**, and the sitemap showed the
+live site with **5,099 URLs against main's 5,068**. Note the direction on that
+second one: the live site has *more* routes than `main`, so the most recent
+prerender dropped 31. That is worth a look on its own account and is not
+something this watcher is trying to tell you.
+
+### Verifying a deploy landed
+
+The header checks in §7 step 7 are the fast ones and they are cheap enough to run
+after any deploy that worries you. The real check is still the pair in the status
+block at the top: `bytediff-pages.mjs` for byte transparency, `cp3-pages.mjs` for
+the assertions. Neither is wired into the deploy path.
+
+### What is still hand-pressed
+
+- the zone Cache Rule for `/assets/*` (`DESIGN-cloudflare-pages.md` §6) — a
+  post-cutover performance item, still not added
+- reintroducing any §3.4 feature, one at a time with CP-3 between each — none has
+  been reintroduced, which means Rocket Loader, Email Obfuscation, Auto Minify and
+  Polish/Mirage are all still off. That is the safe state; it is also not
+  necessarily the state anyone chose to keep

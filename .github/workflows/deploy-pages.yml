@@ -3,9 +3,10 @@ name: Deploy to Cloudflare Pages
 # The runs list shows every deploy under the same name, and a preview run is
 # indistinguishable from a production one there — which is exactly how a preview
 # green gets misread as a production release. Name the run after the channel it
-# actually targets. github.event.inputs.target is '' on a push, so the fallback
-# here is 'production' — the SAME resolution as the TARGET env below, so the
-# title never disagrees with what the job does.
+# actually targets. github.event.inputs.target is '' on an automatic
+# (workflow_run) trigger, so the fallback here is 'production' — the SAME
+# resolution as the TARGET env below, so the title never disagrees with what
+# the job does.
 run-name: "Deploy Pages → ${{ github.event.inputs.target || 'production' }} (${{ github.event_name }})"
 
 # =============================================================================
@@ -27,11 +28,29 @@ run-name: "Deploy Pages → ${{ github.event.inputs.target || 'production' }} ($
 #  built and adapts the upload to match, rather than assuming.
 #
 #  ── Gating (mirrors publish-epik.yml / deploy-epik.yml) ────────────────────
-#  Dispatch only. There is deliberately no push trigger: during the migration a
-#  commit to main must never move a Cloudflare deployment. The `if:` below is
-#  written the same way as its siblings so that when a push trigger IS added at
-#  cutover, the gate is already correct — a workflow_dispatch always runs, and a
-#  push proceeds only once the repo variable CF_PAGES_AUTO_DEPLOY == 'true'.
+#  Dispatch-only was deliberate: during the migration a commit to main must
+#  never move a Cloudflare deployment. That migration is over — the site serves
+#  from Pages (it is why epik-watchdog.yml was muted on 2026-08-18) — and the
+#  cost of the gate outliving it was four nightly builds sitting on main while
+#  the live site served the 2026-08-15 bundle. Every deployment this project has
+#  ever had came from a hand press, and the last one was 2026-08-15.
+#
+#  WHY workflow_run AND NOT push. The obvious trigger is `push` on `dist/**`,
+#  and it would never fire. prerender.yml is the only writer of dist/, and it
+#  commits with "chore(seo): nightly prerender [skip ci]" — 25 of the last 30
+#  dist/ commits carry that marker. GitHub Actions honours [skip ci] by skipping
+#  PUSH-triggered runs, so a push trigger here would be silently inert: green
+#  everywhere, nothing deployed, which is precisely the bug being fixed.
+#  `workflow_run` fires on the upstream workflow COMPLETING, not on the push, so
+#  [skip ci] does not reach it. It also fires exactly when dist/ has changed,
+#  because prerender.yml is the thing that changes it.
+#
+#  The CF_PAGES_AUTO_DEPLOY gate is kept as written. A workflow_dispatch always
+#  runs; an automatic trigger proceeds only once that repo variable is 'true'.
+#  SETTING IT IS THE CUTOVER — until it is 'true' this trigger is armed but
+#  completely inert, and it is inert SILENTLY: every run is a skipped job, which
+#  the runs list renders the same grey as a deliberate no-op. Nothing in this
+#  workflow can tell you the site has stopped receiving builds.
 #
 #  ── What "production" means here ──────────────────────────────────────────
 #  Cloudflare decides production-vs-preview by whether --branch matches the
@@ -39,9 +58,12 @@ run-name: "Deploy Pages → ${{ github.event.inputs.target || 'production' }} ($
 #  production deployment; target=staging deploys as a preview with its own
 #  <branch>.<project>.pages.dev alias.
 #
-#  Until a custom domain is attached to the Pages project, NEITHER target serves
-#  prorigbuilder.com — production here means "the production deployment of the
-#  Pages project", not "the live site". The banner says which URL it is.
+#  The apex is attached, so target=production now IS the live site:
+#  prorigbuilder.com serves from this project. That was not true when this file
+#  was written — until the flip, production meant only "the production
+#  deployment of the Pages project". It no longer does. A dispatch with
+#  target=production moves what visitors see. The banner says which URL it is;
+#  read it before pressing the button.
 #
 #  ── Required repo configuration ───────────────────────────────────────────
 #    secret  CLOUDFLARE_API_TOKEN   Pages:Edit token. NOT the R2 S3 credentials
@@ -51,10 +73,17 @@ run-name: "Deploy Pages → ${{ github.event.inputs.target || 'production' }} ($
 #    var     CF_PAGES_PROJECT       the Pages project name
 #    var     VITE_DATA_BASE         e.g. https://data.prorigbuilder.com — set
 #                                   this on prerender.yml too; see above
-#    var     CF_PAGES_AUTO_DEPLOY   unset during migration; 'true' at cutover
+#    var     CF_PAGES_AUTO_DEPLOY   'true' — set at cutover. Unsetting it stops
+#                                   automatic deploys silently; see gating above
 # =============================================================================
 
 on:
+  # Fires when the nightly rebuild finishes, which is the moment dist/ changed.
+  # See WHY workflow_run AND NOT push above.
+  workflow_run:
+    workflows: ["Prerender SEO pages"]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
     inputs:
       target:
@@ -83,9 +112,14 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: read
+    # A dispatch always runs. An automatic run needs BOTH the cutover variable
+    # and a GREEN upstream: `types: [completed]` fires on failure too, and a
+    # prerender that died mid-build either committed nothing or committed a
+    # half-built dist/ — neither is a thing to ship.
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      vars.CF_PAGES_AUTO_DEPLOY == 'true'
+      (vars.CF_PAGES_AUTO_DEPLOY == 'true' &&
+       github.event.workflow_run.conclusion == 'success')
 
     env:
       TARGET: ${{ github.event.inputs.target || 'production' }}
@@ -118,8 +152,8 @@ jobs:
             echo "| dry run | \`${{ github.event.inputs.dry_run || 'false' }}\` |"
             echo "| trigger | \`$GITHUB_EVENT_NAME\` |"
             echo ""
-            echo "Production here means the Pages project's production deployment."
-            echo "It only serves prorigbuilder.com once a custom domain is attached."
+            echo "target=production serves **https://prorigbuilder.com** — the apex is"
+            echo "attached to this project. A production deploy moves the live site."
           } >> "$GITHUB_STEP_SUMMARY"
 
       # Fail on missing configuration BEFORE spending four minutes on checkout
@@ -151,7 +185,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # Default main (steady state). A dispatch may override to a branch to
-          # ship un-merged dist/; push events always resolve to main.
+          # ship un-merged dist/; workflow_run always resolves to main HEAD, which
+          # is the commit prerender.yml just pushed.
           ref: ${{ github.event.inputs.ref || 'main' }}
 
       - uses: actions/setup-node@v4

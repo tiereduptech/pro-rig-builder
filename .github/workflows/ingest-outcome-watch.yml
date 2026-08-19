@@ -11,12 +11,28 @@ name: Ingest outcome watch (read-only)
 #  WHAT IS WATCHED
 #    sftp-ingest.yml             the Newegg catalog ingest (12:00 UTC)
 #    refresh-bestbuy-prices.yml  the daily Best Buy price refresh (01:00 UTC)
+#    the LIVE SITE               is it serving what main has committed?
 #
-#  Both are `main-writer` writers on a daily cron, which is exactly the shape
-#  that froze silently before: scheduled, cancellable, and grey when it loses
-#  the lock. A writer earns a step here when its cron goes on — the Best Buy
-#  refresh got one in the same PR that enabled its schedule, because a cron
+#  The two writers are `main-writer` jobs on a daily cron, which is exactly the
+#  shape that froze silently before: scheduled, cancellable, and grey when it
+#  loses the lock. A writer earns a step here when its cron goes on — the Best
+#  Buy refresh got one in the same PR that enabled its schedule, because a cron
 #  without a watcher is the original bug rebuilt.
+#
+#  THE LIVE-SITE STEP IS A DIFFERENT KIND OF QUESTION, and it is here because the
+#  run-history rule above provably cannot answer it. deploy-pages.yml now deploys
+#  automatically on `workflow_run` from the nightly prerender, gated on the repo
+#  variable CF_PAGES_AUTO_DEPLOY. When that gate is not satisfied the job is
+#  SKIPPED — and a skipped job is the same grey as a deliberate no-op, so nothing
+#  fails, nothing goes red, and the site quietly stops receiving builds. On
+#  2026-08-19 every writer was green, deploy-pages.yml had no failed run in its
+#  life, and the live site was still behind main. Nothing had FAILED; nothing had
+#  been DEPLOYED. Judging runs would have called that healthy.
+#
+#  So this step ignores run history entirely and compares the artifact the world
+#  actually receives against the artifact main committed. That is the same lesson
+#  as the 95-day freeze, applied to deploys instead of to ingests: announce the
+#  absence, do not infer health from the absence of a failure.
 #
 #  WHY A SEPARATE JOB AND NOT A STEP IN THE INGEST
 #  Because the failure being watched for is the ingest not getting a turn.
@@ -31,8 +47,9 @@ name: Ingest outcome watch (read-only)
 #  epik-watchdog.yml make the same argument for their own quiet failures).
 #
 #  COST
-#  One Actions API list call per watched workflow. No checkout of data, no
-#  network to Newegg, no writes. Seconds.
+#  One Actions API list call per watched workflow, plus two HTTPS GETs to the
+#  live site (its homepage and sitemap.xml) for the deploy check. No network to
+#  Newegg, no writes. Seconds.
 # =============================================================================
 
 on:
@@ -101,3 +118,22 @@ jobs:
             --label="Refresh Best Buy Prices" \
             --stale-days=${{ inputs.stale_days || '3' }} \
             --cancel-streak=${{ inputs.cancel_streak || '3' }}
+
+      # No GITHUB_TOKEN: this one asks the internet, not the Actions API. It reads
+      # dist/index.html and dist/sitemap.xml from the checkout above (both are
+      # committed, so the default depth-1 checkout is enough) and fetches the same
+      # two paths over HTTPS, cache-busted, because the question is what the
+      # ORIGIN serves and not what an edge remembers.
+      #
+      # Two signals, because each is blind where the other sees. The entry-bundle
+      # hash repeated on 6 of the last 25 builds, so a freeze starting on one of
+      # those nights would read as current; sitemap.xml is regenerated every build
+      # and carries the build date, but <lastmod> is day-granular so it cannot see
+      # drift within a single day. Either one disagreeing is red.
+      - name: Live site is serving what main has committed
+        if: always()
+        run: |
+          node scripts/deploy-freshness-report.cjs \
+            --url=${{ vars.PUBLIC_SITE_URL || 'https://prorigbuilder.com/' }} \
+            --dist=dist/index.html \
+            --sitemap=dist/sitemap.xml
