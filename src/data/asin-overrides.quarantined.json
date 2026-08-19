@@ -1,0 +1,4868 @@
+{
+  "meta": {
+    "generatedAt": "2026-08-19T03:11:04.111Z",
+    "from": "./src/data/asin-overrides.json",
+    "policy": "NOT deleted, and NOT usable. Each entry needs an Amazon lookup to bind it to one product; move it back into asin-overrides.json with a verifiedName once it has one."
+  },
+  "totals": {
+    "quarantined": 150,
+    "classKeys": 100,
+    "unreachable": 44,
+    "contestedAsin": 6
+  },
+  "entries": [
+    {
+      "key": "AMD|Ryzen 9|9950X",
+      "asin": "B0D6NNRBGP",
+      "productId": 5000,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10001,
+          "name": "AMD Ryzen 9 9950X"
+        },
+        {
+          "id": 10134,
+          "name": "AMD Ryzen 9 9950X CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0 x16, M.2 Gen5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10001,
+          "name": "AMD Ryzen 9 9950X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 9|9900X",
+      "asin": "B0D6NN87T8",
+      "productId": 5001,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10002,
+          "name": "AMD Ryzen 9 9900X"
+        },
+        {
+          "id": 10155,
+          "name": "AMD Ryzen 9 9900X CPU Processor with ASUS ROG Strix X870E-E Gaming WiFi X870 ATX Motherboard (18+2+2 Power Stages, Wi..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10002,
+          "name": "AMD Ryzen 9 9900X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|9700X",
+      "asin": "B0D6NMDNNX",
+      "productId": 5002,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10003,
+          "name": "AMD Ryzen 7 9700X"
+        },
+        {
+          "id": 10142,
+          "name": "Azure 3 Gaming PC, AMD Ryzen 7 9700X 3.8GHz, NVIDIA RTX 5060"
+        },
+        {
+          "id": 10143,
+          "name": "AMD Ryzen 7 9700X CPU Processor with MSI B850 Gaming Plus WiFi Motherboard (ATX, AM5, DDR5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10003,
+          "name": "AMD Ryzen 7 9700X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 5|9600X",
+      "asin": "B0D6NN6TM7",
+      "productId": 5003,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10004,
+          "name": "AMD Ryzen 5 9600X"
+        },
+        {
+          "id": 10147,
+          "name": "AMD Ryzen 5 9600X CPU Processor with MSI PRO B850-P WiFi Motherboard (ATX, AM5, DDR5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10004,
+          "name": "AMD Ryzen 5 9600X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 9|9950X3D",
+      "asin": "B0DVZSG8D5",
+      "productId": 5004,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10005,
+          "name": "AMD Ryzen 9 9950X3D"
+        },
+        {
+          "id": 10133,
+          "name": "AMD Ryzen 9 9950X3D CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0, M.2 Gen5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10005,
+          "name": "AMD Ryzen 9 9950X3D"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 9|7950X",
+      "asin": "B0BBHD5D8Y",
+      "productId": 5011,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10012,
+          "name": "AMD Ryzen 9 7950X"
+        },
+        {
+          "id": 10156,
+          "name": "AMD Ryzen 9 7950X CPU Processor with MSI X670E Gaming Plus Motherboard, AM5 Socket, DDR5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10012,
+          "name": "AMD Ryzen 9 7950X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 9|7900",
+      "asin": "B0BBJ59WJ4",
+      "productId": 5015,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10016,
+          "name": "AMD Ryzen 9 7900"
+        },
+        {
+          "id": 100314,
+          "name": "AMD Ryzen 9 7900 12-Core, 24-Thread Unlocked Desktop Processor"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10014,
+          "name": "AMD Ryzen 9 7900X"
+        },
+        {
+          "id": 10016,
+          "name": "AMD Ryzen 9 7900"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|7800X3D",
+      "asin": "B0BTZB7F88",
+      "productId": 5016,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10017,
+          "name": "AMD Ryzen 7 7800X3D"
+        },
+        {
+          "id": 10140,
+          "name": "CPU Motherboard Kit AMD Ryzen 7 7800X3D Unlocked Desktop Processor with ASUS ROG Strix B650-A Gaming WiFi 6E AM5 Gami..."
+        },
+        {
+          "id": 10148,
+          "name": "Micro Center AMD Ryzen 7 7800X3D CPU Processor with Gigabyte B850 Gaming WIFI6 Motherboard (ATX, DDR5, 3X M.2"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10017,
+          "name": "AMD Ryzen 7 7800X3D"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|7700X",
+      "asin": "B0BBHHT8LY",
+      "productId": 5017,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10018,
+          "name": "AMD Ryzen 7 7700X"
+        },
+        {
+          "id": 10144,
+          "name": "AMD Ryzen 7 7700X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        },
+        {
+          "id": 10151,
+          "name": "Micro Center AMD Ryzen 7 7700X CPU Processor with MSI B850 Gaming Plus WiFi Motherboard (ATX, AM5, DDR5"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10018,
+          "name": "AMD Ryzen 7 7700X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 5|7600",
+      "asin": "B0BBJDS62N",
+      "productId": 5020,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10020,
+          "name": "AMD Ryzen 5 7600"
+        },
+        {
+          "id": 100319,
+          "name": "AMD Ryzen 5 7600 6-Core, 12-Thread Unlocked Desktop Processor"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10019,
+          "name": "AMD Ryzen 5 7600X"
+        },
+        {
+          "id": 10020,
+          "name": "AMD Ryzen 5 7600"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|5700X",
+      "asin": "B09VCHQHZ6",
+      "productId": 5028,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10028,
+          "name": "AMD Ryzen 7 5700X"
+        },
+        {
+          "id": 100345,
+          "name": "AMD Ryzen 7 5700X Octa-core [8 Core] 3.40 GHz Processor"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10028,
+          "name": "AMD Ryzen 7 5700X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|5700",
+      "asin": "B0CQ4HPJYV",
+      "productId": 5030,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10030,
+          "name": "AMD Ryzen 7 5700"
+        },
+        {
+          "id": 100317,
+          "name": "AMD Ryzen 7 5700 8 Cores / 16 Thread 65W TDP Socket AM4 L2+L3 Cache 20MB Up to 4.6GHz Boost Clock Wraith Stealth Cooler"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10030,
+          "name": "AMD Ryzen 7 5700"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 5|5600",
+      "asin": "B09VCHR1VH",
+      "productId": 5032,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10032,
+          "name": "AMD Ryzen 5 5600"
+        },
+        {
+          "id": 100611,
+          "name": "AMD Ryzen 5 5600 Hexa-core [6 Core] 3.50 GHz Processor"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10032,
+          "name": "AMD Ryzen 5 5600"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 9|3950X",
+      "asin": "B07ZTYKLZW",
+      "productId": 5037,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "AMD|Ryzen 9|3900X",
+      "asin": "B07SXMZLP9",
+      "productId": 5038,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "AMD|Ryzen 7|3800X",
+      "asin": "B07SXMZLPJ",
+      "productId": 5039,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "AMD|Ryzen 5|3600",
+      "asin": "B09VCJ171S",
+      "productId": 5041,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 10033,
+          "name": "AMD Ryzen 5 5500"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 3|3300X",
+      "asin": "B0876YS2T4",
+      "productId": 5043,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "INTEL|Core Ultra 9|285K",
+      "asin": "B0DFKC99VL",
+      "productId": 5045,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 10172,
+          "name": "Intel - Core Ultra 9 285K 24-Cores 24-Threads - 4.6GHz (5.7 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core Ultra 7|265K",
+      "asin": "B0DFK2MH2D",
+      "productId": 5046,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 10173,
+          "name": "Intel - Core Ultra 7 265K 20-Cores 20-Threads - 4.6GHz (5.5 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core Ultra 7|265KF",
+      "asin": "B0DFK2WHF8",
+      "productId": 5047,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10047,
+          "name": "Intel Core Ultra 7 265KF"
+        },
+        {
+          "id": 10150,
+          "name": "CPU Motherbard Combo - Intel core Ultra 7 265KF Gaming Desktop Processor with msi Z890 Gaming Plus WiFi Motherboard"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10047,
+          "name": "Intel Core Ultra 7 265KF"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core Ultra 5|245K",
+      "asin": "B0DFK2P311",
+      "productId": 5048,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 10171,
+          "name": "Intel - Core Ultra 5 245K 14-Cores 14-Threads - 4.6GHz (5.2 GHz Turbo) Socket LGA 1851 Unlocked Desktop Processor - Mult"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i9|14900K",
+      "asin": "B0CGJDKLB8",
+      "productId": 5050,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 10052,
+          "name": "Intel Core i9-14900"
+        },
+        {
+          "id": 10162,
+          "name": "Intel - Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - M"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i9|14900",
+      "asin": "B0CGJDKLB8",
+      "productId": 5052,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10052,
+          "name": "Intel Core i9-14900"
+        },
+        {
+          "id": 100323,
+          "name": "Intel Core i9-14900 Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 5.8 GHz"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10052,
+          "name": "Intel Core i9-14900"
+        },
+        {
+          "id": 10162,
+          "name": "Intel - Core i9-14900K 14th Gen 24-Core 32-Thread - 4.4GHz (6.0GHz Turbo) Socket LGA 1700 Unlocked Desktop Processor - M"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i5|13400",
+      "asin": "B0BQ68QB6R",
+      "productId": 5073,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10073,
+          "name": "Intel Core i5-13400"
+        },
+        {
+          "id": 100621,
+          "name": "acer Aspire XC-1780-UA91 Desktop | Intel Core i5-13400 10-Core Processor (Up to 4.6GHz) | 8GB 3200MHz DDR4 RAM | 512GB PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home"
+        },
+        {
+          "id": 100622,
+          "name": "acer Aspire TC-1780-UR11 Desktop | 13th Gen Intel Core i5-13400 10-Core Processor | 16GB 3200MHz DDR4 | 512GB M.2 2280 PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Pro,Black"
+        },
+        {
+          "id": 100623,
+          "name": "acer Aspire TC-1780-UA93 Desktop | 13th Gen Intel Core i5-13400 10-Core Processor | 16GB 3200MHz DDR4 | 1TB M.2 2280 PCIe Gen 4 SSD | SD Card Reader | Intel Wi-Fi 6E AX211 | Windows 11 Home"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10073,
+          "name": "Intel Core i5-13400"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i3|13100",
+      "asin": "B0BN5Z8MDR",
+      "productId": 5075,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10075,
+          "name": "Intel Core i3-13100"
+        },
+        {
+          "id": 100603,
+          "name": "Intel Core i3-13100 4 Core Desktop Processor (Up to 4.5GHz) LGA 1700 - UHD Graphics 730-12MB Cache (OEM Tray Version, Cooler Not Included) - Reliable Performance for Entertainment, Home and Office"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10075,
+          "name": "Intel Core i3-13100"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i5|12400",
+      "asin": "B09NMPD8V2",
+      "productId": 5083,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10083,
+          "name": "Intel Core i5-12400"
+        },
+        {
+          "id": 100618,
+          "name": "Intel CORE I5-12400 Desktop Processor LGA 1700 10 (6P+0E) Cores (18M Cache UP to 4.40 GHZ) with Intel Laminar RM1 Air Cooler. OEMTray (CM8071504650608) (Bulk Packaging)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10083,
+          "name": "Intel Core i5-12400"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i3|12100",
+      "asin": "B09NPHJLPT",
+      "productId": 5085,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 10085,
+          "name": "Intel Core i3-12100"
+        },
+        {
+          "id": 100606,
+          "name": "Intel Core i3-12100 4 Core Desktop Processor (Up to 4.3GHz) LGA 1700 - UHD Graphics 730-12MB Cache (OEM Tray Version, Cooler Not Included) - Reliable Performance for Entertainment, Home and Office"
+        },
+        {
+          "id": 100608,
+          "name": "Intel Core i3-12100 3.30GHZ 12MB LGA1700 Processor - PN# BX8071512100, Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10085,
+          "name": "Intel Core i3-12100"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5090",
+      "asin": "B0DS2WQZ2M",
+      "productId": 8000,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 29 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30002,
+          "name": "NVIDIA GeForce RTX 5090"
+        },
+        {
+          "id": 30066,
+          "name": "ASUS ROG Strix RTX 5090 OC"
+        },
+        {
+          "id": 30067,
+          "name": "MSI RTX 5090 SUPRIM Liquid X"
+        },
+        {
+          "id": 30068,
+          "name": "Gigabyte AORUS RTX 5090 MASTER"
+        },
+        {
+          "id": 30069,
+          "name": "ZOTAC RTX 5090 AMP Extreme AIRO"
+        },
+        {
+          "id": 30112,
+          "name": "ROG Astral GeForce RTX 5090 White OC Edition Graphics Card, NVIDIA (PCIe 5.0, 32GB GDDR7"
+        },
+        {
+          "id": 30118,
+          "name": "ROG Astral GeForce RTX 5090 BTF OC Edition, 32GB GDDR7, 3.8-Slot"
+        },
+        {
+          "id": 30175,
+          "name": "NVIDIA GeForce RTX 5090 32G Ventus 3X OC Gaming Graphics Card GDDR7 512-bit, Boost Frequency up to 2452 MHz, PCIe Gen 5"
+        },
+        {
+          "id": 30180,
+          "name": "Gaming RTX 5090 32G Vanguard SOC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2527 MHz"
+        },
+        {
+          "id": 30185,
+          "name": "GeForce RTX 5090 WINDFORCE OC 32G Graphics Card - 32GB GDDR7, 512 Bits, PCI-E 5.0"
+        },
+        {
+          "id": 30205,
+          "name": "Gaming GeForce RTX 5090 Solid OC Graphics Card ZT-B50900J-10P VD8991"
+        },
+        {
+          "id": 30208,
+          "name": "Gaming GeForce RTX 5090 Solid 32GB GDDR7 Reflex 2 RTX AI DLSS4"
+        },
+        {
+          "id": 30209,
+          "name": "ROG Astral GeForce RTX 5090 32GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design..."
+        },
+        {
+          "id": 30215,
+          "name": "ROG Astral LC GeForce RTX 5090 Gaming Graphics Card (PCIe 5.0, 32GB GDDR7, HDMI/DP 2.1"
+        },
+        {
+          "id": 30216,
+          "name": "GeForce RTX 5090 Astral LC Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card, 7680 x 4320 Maximum Resolutio..."
+        },
+        {
+          "id": 30229,
+          "name": "ASUS - TUF Gaming NVIDIA GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30230,
+          "name": "ASUS - ROG Astral NVIDIA GeForce RTX 5090 32GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30242,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5090 GAMING OC 32G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30243,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5090 WINDFORCE OC 32G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30245,
+          "name": "MSI - NVIDIA GeForce GeForce RTX 5090 32G GAMING TRIO OC 32GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30246,
+          "name": "MSI - NVIDIA GeForce GeForce RTX 5090 32G SUPRIM LIQUID SOC 32GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30250,
+          "name": "PNY - GeForce RTX 5090 ARGB 32GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30251,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5090 AORUS MASTER ICE 32G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 100394,
+          "name": "msi Gaming RTX 5090 32G Gaming Trio OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        },
+        {
+          "id": 100395,
+          "name": "GIGABYTE GeForce RTX 5090 Gaming OC 32G Graphics Card, WINDFORCE Cooling System, 32GB 512-bit GDDR7, by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5090GAMING OC-32GD Video Card"
+        },
+        {
+          "id": 100396,
+          "name": "ZOTAC GeForce RTX 5090 Solid OC Graphics Card, NVIDIA, 32GB GDDR7, DLSS 4, 3× DisplayPort 2.1b & HDMI 2.1b, PCIE 5.0 (ZT-B50900J-10P)"
+        },
+        {
+          "id": 100397,
+          "name": "GIGABYTE AORUS GeForce RTX 5090 Stealth ICE 32G Graphics Card, 32GB 512-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Versatile VGA Holder, GV-N5090AORUSST ICE-32GDVideo Card"
+        },
+        {
+          "id": 100398,
+          "name": "msi Gaming RTX 5090 32G Ventus 3X OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2452 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        },
+        {
+          "id": 100399,
+          "name": "msi Gaming RTX 5090 32G Lightning Z Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2775 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30066,
+          "name": "ASUS ROG Strix RTX 5090 OC"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5080",
+      "asin": "B0DSXJ5QF4",
+      "productId": 14848,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 31 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30003,
+          "name": "NVIDIA GeForce RTX 5080"
+        },
+        {
+          "id": 30070,
+          "name": "ASUS TUF RTX 5080 OC"
+        },
+        {
+          "id": 30071,
+          "name": "MSI RTX 5080 Gaming X Trio"
+        },
+        {
+          "id": 30072,
+          "name": "Gigabyte RTX 5080 AORUS MASTER"
+        },
+        {
+          "id": 30114,
+          "name": "NVIDIA GeForce RTX 5080 Graphic Card - 16 GB GDDR7-7680 x 4320-2.62 GHz Boost Clock - 256 bit Bus Width - PCI Express..."
+        },
+        {
+          "id": 30115,
+          "name": "Gaming GeForce RTX 5080 Solid CORE OC DLSS 4 16GB GDDR7 256-bit 30 Gbps PCIE 5.0 Gaming Graphics Card, IceStorm 3.0 A..."
+        },
+        {
+          "id": 30120,
+          "name": "GeForce RTX 5080 Founders Edition"
+        },
+        {
+          "id": 30122,
+          "name": "Gaming RTX 5080 16G SUPRIM SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz"
+        },
+        {
+          "id": 30152,
+          "name": "VGA GEFORCE RTX 5080 16G Shadow 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)"
+        },
+        {
+          "id": 30164,
+          "name": "GeForce RTX 5080 WINDFORCE OC SFF 16G Graphics Card - 16GB GDDR7, 256bit, PCI-E 5.0"
+        },
+        {
+          "id": 30173,
+          "name": "GeForce RTX 5080 WINDFORCE SFF 16G Graphics Card, 16GB 256-bit GDDR7, PCIe 5.0"
+        },
+        {
+          "id": 30181,
+          "name": "NVIDIA GeForce RTX 5080 16G Ventus 3X OC Plus Graphics Card - 16GB GDDR7 (30 GB/s /256 Bits), PCIe 5.0 - Triple Fan (..."
+        },
+        {
+          "id": 30187,
+          "name": "ROG Astral GeForce RTX 5080 16GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design..."
+        },
+        {
+          "id": 30188,
+          "name": "Gaming GeForce RTX 5080 Solid Core DLSS 4 16GB GDDR7 256-bit 30Gbps PCIE 5.0 Gaming Graphics Card, IceStorm 3.0 Advan..."
+        },
+        {
+          "id": 30192,
+          "name": "Gaming RTX 5080 16G Ventus 3X OC White Graphics Card (16GB GDDR7, 256-bit, Extreme Clock TBD MHz"
+        },
+        {
+          "id": 30198,
+          "name": "Gaming RTX 5080 16G Inspire 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Clock TBD MHz"
+        },
+        {
+          "id": 30199,
+          "name": "Gaming RTX 5080 16G Expert OC Graphics Card (16GB GDDR7,256-bit, Extreme Performance: 2730 MHz"
+        },
+        {
+          "id": 30201,
+          "name": "Gaming RTX 5080 16G Ventus 3X OC Plus Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2655 MHz"
+        },
+        {
+          "id": 30210,
+          "name": "GAMING GeForce RTX 5080 SOLID CORE"
+        },
+        {
+          "id": 30213,
+          "name": "Gaming RTX 5080 16G Ventus 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2655 MHz"
+        },
+        {
+          "id": 30227,
+          "name": "ASUS - TUF Gaming NVIDIA GeForce RTX 5080 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30228,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5080 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30238,
+          "name": "MSI - NVIDIA GeForce RTX 5080 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30239,
+          "name": "MSI - NVIDIA GeForce GeForce RTX 5080 16G SHADOW 3X OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30241,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5080 GAMING OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30247,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5080 AERO OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 30248,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5080 WINDFORCE OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30249,
+          "name": "PNY - GeForce RTX 5080 16GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30327,
+          "name": "MSI - NVIDIA GeForce RTX 5080 16GB GDDR7 INSPIRE 3X OC Edition PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 100400,
+          "name": "GIGABYTE AORUS GeForce RTX 5080 Master ICE 16G Graphics Card, WINDFORCE Cooling System, 16GB 256-bit GDDR7, GV-N5080AORUSM ICE-16GD Video Card"
+        },
+        {
+          "id": 100403,
+          "name": "msi Gaming RTX 5080 16G SUPRIM Liquid SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30070,
+          "name": "ASUS TUF RTX 5080 OC"
+        },
+        {
+          "id": 30122,
+          "name": "Gaming RTX 5080 16G SUPRIM SOC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2760 MHz"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5070 TI",
+      "asin": "B0DTRC7782",
+      "productId": 6002,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 21 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30004,
+          "name": "NVIDIA GeForce RTX 5070 Ti"
+        },
+        {
+          "id": 30073,
+          "name": "ASUS ROG Strix RTX 5070 Ti OC"
+        },
+        {
+          "id": 30074,
+          "name": "MSI RTX 5070 Ti Gaming X Trio"
+        },
+        {
+          "id": 30234,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30235,
+          "name": "ASUS - TUF Gaming NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30236,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30253,
+          "name": "MSI - NVIDIA GeForce RTX 5070 Ti 16G GAMING TRIO OC PLUS 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30254,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti AERO OC 16G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 30255,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti EAGLE OC ICE SFF 16G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 30256,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti WINDFORCE OC SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30257,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti GAMING OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30259,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 Ti WINDFORCE SFF 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30262,
+          "name": "PNY - GeForce RTX 5070 Ti 16GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30263,
+          "name": "PNY - GeForce RTX 5070 Ti 16GB ARGB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30270,
+          "name": "MSI - NVIDIA GeForce GeForce RTX 5070 TI 16G SHADOW 3X OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30286,
+          "name": "MSI - NVIDIA GeForce RTX 5070 Ti 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30309,
+          "name": "ASUS - ROG Strix NVIDIA GeForce RTX 5070 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30325,
+          "name": "MSI - NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 VENTUS 3X PZ OC Edition PCI Express 5.0 SFF-Ready Graphics Card - Black/Sliv"
+        },
+        {
+          "id": 30326,
+          "name": "MSI - NVIDIA GeForce RTX 5070 Ti 16GB GDDR7 VENTUS 3X PZ OC Edition PCI Express 5.0 SFF-Ready Graphics Card - Black"
+        },
+        {
+          "id": 100404,
+          "name": "msi Gaming RTX 5070 Ti 16G Ventus 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x 3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        },
+        {
+          "id": 100411,
+          "name": "msi Gaming RTX 5070 TI 16G Shadow 3X OC Graphics Card (16GB GDDR7, 256-bit, Extreme Performance: 2497 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30004,
+          "name": "NVIDIA GeForce RTX 5070 Ti"
+        },
+        {
+          "id": 30073,
+          "name": "ASUS ROG Strix RTX 5070 Ti OC"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5070",
+      "asin": "B0DTQMLX4F",
+      "productId": 6003,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 22 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30005,
+          "name": "NVIDIA GeForce RTX 5070"
+        },
+        {
+          "id": 30075,
+          "name": "ASUS Dual RTX 5070 OC"
+        },
+        {
+          "id": 30076,
+          "name": "MSI RTX 5070 Ventus 3X OC"
+        },
+        {
+          "id": 30077,
+          "name": "Gigabyte RTX 5070 Gaming OC"
+        },
+        {
+          "id": 30154,
+          "name": "GeForce RTX 5070 12G Shadow 2X OC"
+        },
+        {
+          "id": 30195,
+          "name": "- GeForce RTX 5070 12GB GDDR7 Graphics Card - Graphite Grey"
+        },
+        {
+          "id": 30232,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30233,
+          "name": "ASUS - TUF Gaming NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30237,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5070 12GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30258,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G GAMING TRIO OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30260,
+          "name": "PNY - GeForce RTX 5070 12GB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30261,
+          "name": "PNY - GeForce RTX 5070 12GB ARGB OC GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30273,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 GAMING OC 12G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30274,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5070 WINDFORCE OC SFF 12G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30275,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G SHADOW 2X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30304,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 3X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30305,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G INSPIRE 3X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30306,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 2X OC 12GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30308,
+          "name": "ASUS - ROG Strix NVIDIA GeForce RTX 5070 OC Edition 12GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30323,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12G World of Warcraft MIDNIGHT LIGHT EDITION OC GDDR7 PCI Express Gen 5 Graphics Card - Ta"
+        },
+        {
+          "id": 30324,
+          "name": "MSI - NVIDIA GeForce RTX 5070 12GB GDDR7 VENTUS 2X OC PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 100406,
+          "name": "msi Gaming RTX 5070 12G Ventus 2X OC Graphics Card (12GB GDDR7, 192-bit, Extreme Performance: 2557 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30005,
+          "name": "NVIDIA GeForce RTX 5070"
+        },
+        {
+          "id": 30075,
+          "name": "ASUS Dual RTX 5070 OC"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5060 TI",
+      "asin": "B0G2B2VTG3",
+      "productId": 14849,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 27 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30006,
+          "name": "NVIDIA GeForce RTX 5060 Ti"
+        },
+        {
+          "id": 30111,
+          "name": "GeForce RTX 5060 Ti Gaming OC 16G Graphics Card, by NVIDIA,16GB 128-bit GDDR7"
+        },
+        {
+          "id": 30123,
+          "name": "Gaming RTX 5060 Ti 8G Ventus 3X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2602 MHz"
+        },
+        {
+          "id": 30124,
+          "name": "Gaming RTX 5060 Ti 16G Shadow 2X OC Graphics Card (16GB GDDR7, 128-bit, Extreme Performance: TBA MHz"
+        },
+        {
+          "id": 30125,
+          "name": "GeForce RTX 5060 Ti Eagle MAX OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0"
+        },
+        {
+          "id": 30145,
+          "name": "Dual GeForce RTX 5060 Ti 16GB GDDR7 OC Edition (PCIe 5.0, 16GB GDDR7, DLSS 4"
+        },
+        {
+          "id": 30146,
+          "name": "GeForce RTX 5060 Ti 16G Ventus 2X OC Plus Graphics Card - RTX 5060 Ti GPU, 16GB GDDR7 (28Gbps/128-bit), PCIe 5.0 - Du..."
+        },
+        {
+          "id": 30169,
+          "name": "Gaming RTX 5060 Ti 16G Ventus 3X OC Graphics Card (16GB GDDR7, 128-bit, Extreme Performance: 2617 MHz"
+        },
+        {
+          "id": 30172,
+          "name": "GeForce RTX 5060 Ti WINDFORCE OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0"
+        },
+        {
+          "id": 30174,
+          "name": "Gaming RTX 5060 Ti 16G, OC Graphics Card - 16GB GDDR7, 128-bit"
+        },
+        {
+          "id": 30197,
+          "name": "GeForce RTX 5060 Ti WINDFORCE 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0"
+        },
+        {
+          "id": 30203,
+          "name": "GeForce RTX 5060 Ti AERO OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0"
+        },
+        {
+          "id": 30214,
+          "name": "Gaming Geforce RTX 5060 Ti Amp Nvidia 16 Gb Gddr7, W129163508 (Amp Nvidia 16 Gb Gddr7)"
+        },
+        {
+          "id": 30276,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30277,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30278,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5060 Ti OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30279,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti AERO OC 16G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 30280,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti WINDFORCE OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30281,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti EAGLE OC ICE 16G GDDR7 PCI Express 5.0 Graphics Card - White"
+        },
+        {
+          "id": 30282,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 5060 Ti EAGLE OC 16G GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30284,
+          "name": "PNY - GeForce RTX 5060 Ti Overclocked 16GB GDDR7 PCI Express 5.0 Graphics Card with Dual Fan - Black"
+        },
+        {
+          "id": 30285,
+          "name": "MSI - NVIDIA GeForce GeForce RTX 5060 Ti 16G GAMING TRIO OC 16GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30302,
+          "name": "MSI - NVIDIA GeForce RTX 5060 Ti 8G GAMING OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30307,
+          "name": "MSI - NVIDIA GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30310,
+          "name": "PNY - GeForce RTX 5060 Ti Overclocked 8GB GDDR7 PCI Express 5.0 Graphics Card with Triple Fan - Black"
+        },
+        {
+          "id": 30316,
+          "name": "ASUS - DUAL NVIDIA GeForce RTX 5060 Ti OC Edition 16GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30319,
+          "name": "MSI - NVIDIA GeForce RTX 5060 Ti 8G SHADOW 2X OC PLUS 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30123,
+          "name": "Gaming RTX 5060 Ti 8G Ventus 3X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2602 MHz"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|5060",
+      "asin": "B0F4LZ5YG7",
+      "productId": 14928,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 17 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30007,
+          "name": "NVIDIA GeForce RTX 5060"
+        },
+        {
+          "id": 30194,
+          "name": "GeForce RTX 5060 Twin Edge OC White Edition Graphics Card, NVIDIA, 8GB GDDR7"
+        },
+        {
+          "id": 30202,
+          "name": "Gaming RTX 5060 8G Gaming OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2640 MHz"
+        },
+        {
+          "id": 30283,
+          "name": "PNY - GeForce RTX 5060 Overclocked 8GB GDDR7 PCI Express 5.0 Graphics Card with Dual Fan - Black"
+        },
+        {
+          "id": 30287,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5060 OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30288,
+          "name": "ASUS - PRIME NVIDIA GeForce RTX 5060 8GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30289,
+          "name": "GIGABYTE - GeForce RTX 5060 OC Low Profile 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, Supports up to 4 displays - Bl"
+        },
+        {
+          "id": 30290,
+          "name": "GIGABYTE - GeForce RTX 5060 GAMING OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, WINDFORCE cooling system - Black"
+        },
+        {
+          "id": 30291,
+          "name": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 3X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30292,
+          "name": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - White"
+        },
+        {
+          "id": 30293,
+          "name": "MSI - NVIDIA GeForce RTX 5060 8G VENTUS 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30294,
+          "name": "MSI - NVIDIA GeForce RTX 5060 8G SHADOW 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30295,
+          "name": "MSI - NVIDIA GeForce RTX 5060 8G INSPIRE 2X OC 8GB GDDR7 PCI Express Gen 5 Graphics Card - Black"
+        },
+        {
+          "id": 30300,
+          "name": "ASUS - DUAL NVIDIA GeForce RTX 5060 OC Edition 8GB GDDR7 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 100417,
+          "name": "msi Gaming RTX 5060 8G Shadow 2X OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2535 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)"
+        },
+        {
+          "id": 100418,
+          "name": "GIGABYTE GeForce RTX 5060 AERO OC 8G Graphics Card, 8GB 128-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Made by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5060AERO OC-8GD Video Card"
+        },
+        {
+          "id": 100706,
+          "name": "GIGABYTE GeForce RTX 5060 OC Low Profile 8G Graphics Card, by NVIDIA, 8GB 128-bit GDDR7, PCIe 5.0, Supports up to 4 displays, DisplayPort & HDMI - Video Output Interface, GV-N5060OC-8GL Video Card"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30202,
+          "name": "Gaming RTX 5060 8G Gaming OC Graphics Card (8GB GDDR7,128-bit, Extreme Performance: 2640 MHz"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4090",
+      "asin": "B0CPB3P36K",
+      "productId": 14943,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30008,
+          "name": "NVIDIA GeForce RTX 4090"
+        },
+        {
+          "id": 30078,
+          "name": "ASUS ROG Strix RTX 4090 OC"
+        },
+        {
+          "id": 30079,
+          "name": "MSI RTX 4090 SUPRIM X"
+        },
+        {
+          "id": 30080,
+          "name": "Gigabyte RTX 4090 AORUS MASTER"
+        },
+        {
+          "id": 30153,
+          "name": "GeForce RTX 4090 Gaming OC 24GB Graphics Card - 24GB GDDR6X, PCI-E 4.0, Core 2535Mhz"
+        },
+        {
+          "id": 30217,
+          "name": "VIPERA NVIDIA GeForce RTX 4090 Founders Edition Graphic Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30217,
+          "name": "VIPERA NVIDIA GeForce RTX 4090 Founders Edition Graphic Card (Renewed)"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4080 SUPER",
+      "asin": "B0DTFYPGWS",
+      "productId": 6007,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 10 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30009,
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        {
+          "id": 30136,
+          "name": "GeForce RTX 4080 Super WINDFORCE V2 Graphics Card - 2550MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0"
+        },
+        {
+          "id": 30137,
+          "name": "GeForce RTX 4080 Super AERO OC Graphics Card - 2595MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0"
+        },
+        {
+          "id": 30138,
+          "name": "GeForce RTX 4080 Super Gaming OC Graphics Card - 2595MHz Core, 16GB GDDR6X 23000MHz 256-bit Memory, PCI-E 4.0"
+        },
+        {
+          "id": 30151,
+          "name": "Gaming RTX 4080 Super 16G Expert Graphics Card (NVIDIA RTX 4080 Super, 256-Bit, Extreme Clock: 2625 MHz"
+        },
+        {
+          "id": 30176,
+          "name": "GeForce RTX 4080 Super 16GB Ventus 3X OC Graphics Card - 16 GB GDDR6X (23Gbps / 256 Bits), PCIe 4.0-3 x Fans TORX 4.0..."
+        },
+        {
+          "id": 30207,
+          "name": "- GeForce RTX 4080 Super 16GB GDDR6X Gra"
+        },
+        {
+          "id": 30328,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)"
+        },
+        {
+          "id": 100716,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)"
+        },
+        {
+          "id": 100718,
+          "name": "GIGABYTE GeForce RTX 4080 Super Gaming OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X, GV-N408SGAMING OC-16GD Video Card"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|4080",
+      "asin": "B0BMZ9TGH1",
+      "productId": 6008,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30010,
+          "name": "NVIDIA GeForce RTX 4080"
+        },
+        {
+          "id": 30143,
+          "name": "Gaming GeForce RTX 4080 16GB GDRR6X 384-Bit HDMI/DP Nvlink Tri-Frozr 3 Ada Lovelace Architecture Graphics Card (RTX 4..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30010,
+          "name": "NVIDIA GeForce RTX 4080"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4070 TI",
+      "asin": "B0BQTSV2GG",
+      "productId": 6010,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30012,
+          "name": "NVIDIA GeForce RTX 4070 Ti"
+        },
+        {
+          "id": 30135,
+          "name": "Gaming GeForce RTX 4070 Ti Trinity OC DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Gaming Graphics Card, IceStorm 2.0 ..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30012,
+          "name": "NVIDIA GeForce RTX 4070 Ti"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4070 SUPER",
+      "asin": "B0CSBDWT1W",
+      "productId": 14884,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 11 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30013,
+          "name": "NVIDIA GeForce RTX 4070 SUPER"
+        },
+        {
+          "id": 30083,
+          "name": "ASUS Dual RTX 4070 SUPER OC"
+        },
+        {
+          "id": 30084,
+          "name": "MSI RTX 4070 SUPER Ventus 2X OC"
+        },
+        {
+          "id": 30129,
+          "name": "GeForce RTX 4070 Super WINDFORCE OC Graphics Card - 2505MHz Core, 12GB GDDR6X 21000MHz 192-bit Memory, PCI-E 4.0"
+        },
+        {
+          "id": 30144,
+          "name": "GeForce RTX 4070 Super WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X"
+        },
+        {
+          "id": 30156,
+          "name": "Gaming RTX 4070 Super 12G Gaming X Slim Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2655 MHz"
+        },
+        {
+          "id": 30158,
+          "name": "Gaming GeForce RTX 4070 Super Twin Edge DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Compact Gaming Graphics Card, Ice..."
+        },
+        {
+          "id": 30186,
+          "name": "Gaming RTX 4070 Super 12G Ventus 2X White OC Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2520 MHz"
+        },
+        {
+          "id": 30193,
+          "name": "- GeForce RTX 4070 Super 12GB GDDR6X Graphics Card - Titanium/Black"
+        },
+        {
+          "id": 30196,
+          "name": "VCG4070S12DFXPB1-O RTX 4070 Super 12GB GDDR6X Graphics Card"
+        },
+        {
+          "id": 100420,
+          "name": "GIGABYTE GeForce RTX 4070 Super WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X, GV-N407SWF3OC-12GD Video Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30158,
+          "name": "Gaming GeForce RTX 4070 Super Twin Edge DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Compact Gaming Graphics Card, Ice..."
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4070",
+      "asin": "B0BZHCQ6PF",
+      "productId": 14856,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30014,
+          "name": "NVIDIA GeForce RTX 4070"
+        },
+        {
+          "id": 30130,
+          "name": "GeForce RTX 4070 WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X"
+        },
+        {
+          "id": 30183,
+          "name": "GeForce RTX 4070 Founder's Edition (FE) Graphics Card - Titanium and Black (900-1G141-2544-000)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30130,
+          "name": "GeForce RTX 4070 WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4060 TI",
+      "asin": "B0C5BQ1HM6",
+      "productId": 14865,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 15 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30015,
+          "name": "NVIDIA GeForce RTX 4060 Ti 16GB"
+        },
+        {
+          "id": 30016,
+          "name": "NVIDIA GeForce RTX 4060 Ti 8GB"
+        },
+        {
+          "id": 30085,
+          "name": "MSI RTX 4060 Ti Ventus 2X OC"
+        },
+        {
+          "id": 30086,
+          "name": "ASUS Dual RTX 4060 Ti OC"
+        },
+        {
+          "id": 30126,
+          "name": "GeForce RTX 4060 Ti Ventus 3X 16G OC Graphics Card -NVIDIA RTX 4060 Ti, 16GB GDDR6 Memory, 18Gbps"
+        },
+        {
+          "id": 30131,
+          "name": "Gaming GeForce RTX 4060 Ti 8GB GDRR6 Extreme Clock: 2580 MHz 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Archite..."
+        },
+        {
+          "id": 30139,
+          "name": "GV-N406TEAGLE-8GD GeForce RTX 4060 Ti Eagle 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6"
+        },
+        {
+          "id": 30147,
+          "name": "Dual GeForce RTX 4060 Ti OC Edition 8GB GDDR6 Gaming Graphics Card Black (Nvidia GeForce RTX4060Ti DLSS 3, PCIe 4.0, ..."
+        },
+        {
+          "id": 30161,
+          "name": "Gaming GeForce RTX 4060 Ti 8GB Twin Edge DLSS 3 8GB GDDR6 128-bit 18 Gbps PCIE 4.0 Compact Gaming Graphics Card, IceS..."
+        },
+        {
+          "id": 30167,
+          "name": "NVIDIA GeForce RTX 4060 Ti WINDFORCE OC Graphics Card - 8GB GDDR6, 128-bit, PCI-E 4.0"
+        },
+        {
+          "id": 30189,
+          "name": "Mind Graphics Card RTX 4060 Ti Desktop GPU, 16GB GDDR6, External GPU Dock with Speakers for Laptop"
+        },
+        {
+          "id": 30206,
+          "name": "NVIDIA GeForce RTX 4060Ti Founders Edition"
+        },
+        {
+          "id": 30221,
+          "name": "NVIDIA - GeForce RTX 4060 Ti 8GB GDDR6 Graphics Card - Titanium/Black"
+        },
+        {
+          "id": 30222,
+          "name": "MSI - NVIDIA GeForce RTX 4060 Ti 8GB VENTUS 3X OC 8GB GDDR6 PCI Express 4.0 Graphics Card - Black"
+        },
+        {
+          "id": 100710,
+          "name": "ASUS Dual GeForce RTX 4060 Ti V2 OC Edition 8GB GDDR6 SFF Compatible with Axial-tech Fan/DUAL-RTX4060TI-O8G-V2 (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30016,
+          "name": "NVIDIA GeForce RTX 4060 Ti 8GB"
+        },
+        {
+          "id": 30139,
+          "name": "GV-N406TEAGLE-8GD GeForce RTX 4060 Ti Eagle 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4060",
+      "asin": "B0CQKRRZ9K",
+      "productId": 8022,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30017,
+          "name": "NVIDIA GeForce RTX 4060"
+        },
+        {
+          "id": 30087,
+          "name": "ASUS Dual RTX 4060 OC"
+        },
+        {
+          "id": 30088,
+          "name": "Gigabyte RTX 4060 Windforce OC"
+        },
+        {
+          "id": 30089,
+          "name": "EVGA RTX 4060 XC Gaming"
+        },
+        {
+          "id": 30329,
+          "name": "MSI Gaming GeForce RTX 4060 8GB GDRR6 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ventus 2X Black 8G OC) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3090 TI",
+      "asin": "B09GWB753L",
+      "productId": 6016,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30018,
+          "name": "NVIDIA GeForce RTX 3090 Ti"
+        },
+        {
+          "id": 30330,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3090 Ti OC Edition Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3090",
+      "asin": "B09GWB753L",
+      "productId": 6017,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30019,
+          "name": "NVIDIA GeForce RTX 3090"
+        },
+        {
+          "id": 30200,
+          "name": "24GB NVIDIA GeForce RTX 3090 Turbo GDDR6X Graphics Card Model GV-N3090TURBO-24GD"
+        },
+        {
+          "id": 30331,
+          "name": "ASUS ROG Strix GeForce RTX 3090 OC Edition 24GB GDDR6X Gaming Graphics Card with Axial-tech Fans & Central Static Pressure Fan ROG-STRIX-RTX3090-O24G-GAMING (Renewed)"
+        },
+        {
+          "id": 30332,
+          "name": "MSI Gaming GeForce RTX 3090 24GB GDRR6X 384-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3090 VENTUS 3X 24G OC) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3080 TI",
+      "asin": "B09WSC85GP",
+      "productId": 6018,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30020,
+          "name": "NVIDIA GeForce RTX 3080 Ti"
+        },
+        {
+          "id": 30333,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Ti OC Edition Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)"
+        },
+        {
+          "id": 30334,
+          "name": "MSI Gaming GeForce RTX 3080 Ti Gaming X Trio 12G Computer Gaming Graphics Card 12GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC, NVIDIA GPU Video Cards for Gaming PC (Renewed)"
+        },
+        {
+          "id": 30335,
+          "name": "GIGABYTE GeForce RTX 3080 Ti Gaming OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 384-Bit GDDR6X, GV-N308TGAMING OC-12GD Video Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3080",
+      "asin": "B09WSC85GP",
+      "productId": 6019,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30021,
+          "name": "NVIDIA GeForce RTX 3080 12GB"
+        },
+        {
+          "id": 30022,
+          "name": "NVIDIA GeForce RTX 3080 10GB"
+        },
+        {
+          "id": 30336,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 Graphics Card (PCIe 4.0, 10GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)"
+        },
+        {
+          "id": 30337,
+          "name": "MSI Gaming GeForce RTX 3080 LHR 10GB GDRR6X 320-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3080 Ventus 3X 10G OC LHR) (Renewed)"
+        },
+        {
+          "id": 30338,
+          "name": "GIGABYTE GeForce RTX 3080 Gaming OC 10G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 10GB 320-bit GDDR6X, GV-N3080GAMING OC-10GD REV2.0 Video Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3070 TI",
+      "asin": "B09B38Z7DB",
+      "productId": 6021,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30023,
+          "name": "NVIDIA GeForce RTX 3070 Ti"
+        },
+        {
+          "id": 30339,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade Certification, GPU Tweak II) (Renewed)"
+        },
+        {
+          "id": 30340,
+          "name": "MSI Gaming GeForce RTX 3070 Ti Gaming X Trio 8G 8GB GDDR6X Graphics Card - NVIDIA Video Card GPU for Gaming PC, 256-Bit HDMI/DP Nvlink, Ampere Architecture Computer Graphics Cards (Renewed)"
+        },
+        {
+          "id": 30341,
+          "name": "GIGABYTE GeForce RTX 3070 Ti Gaming OC 8G Graphics Card, WINDFORCE 3X Cooling System, 8GB 256-bit GDDR6X, GV-N307TGAMING OC-8GD Video Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3070",
+      "asin": "B08MYCN952",
+      "productId": 6022,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30024,
+          "name": "NVIDIA GeForce RTX 3070"
+        },
+        {
+          "id": 30342,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3070 OC Edition Graphics Card- PCIe 4.0, 8GB GDDR6, HDMI 2.1 , DisplayPort 1.4a, Dual Ball Fan Bearings (Renewed)"
+        },
+        {
+          "id": 30343,
+          "name": "MSI Gaming GeForce RTX 3070 8GB GDRR6 256-Bit HDMI/DP TORX Fan 3.0 Ampere Architecture OC Graphics Card (RTX 3070 Ventus 3X OC) (Renewed)"
+        },
+        {
+          "id": 30344,
+          "name": "Gigabyte GeForce RTX 3070 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 256-Bit GDDR6, GV-N3070GAMING OC-8GD Video Card (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30024,
+          "name": "NVIDIA GeForce RTX 3070"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|3060 TI",
+      "asin": "B09SZKN2NX",
+      "productId": 6023,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 7 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30025,
+          "name": "NVIDIA GeForce RTX 3060 Ti"
+        },
+        {
+          "id": 30345,
+          "name": "ASUS TUF Gaming NVIDIA GeForce RTX 3060 Ti V2 OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6, LHR, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, Military-Grade , GPU Tweak II) (Renewed)"
+        },
+        {
+          "id": 30346,
+          "name": "MSI Gaming GeForce RTX 3060 Ti LHR 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan 3 Ampere Architecture OC Graphics Card (RTX 3060 Ti Ventus 2X 8G OCV1 LHR) (Renewed)"
+        },
+        {
+          "id": 30347,
+          "name": "GIGABYTE AORUS GeForce RTX 3060 Ti Elite 8G (REV2.0) Graphics Card, 3X WINDFORCE Fans, LHR, 8GB 256-bit GDDR6, GV-N306TAORUS E-8GD REV2.0 Video Card (Renewed)"
+        },
+        {
+          "id": 100656,
+          "name": "ASUS Dual NVIDIA GeForce RTX 3060 Ti OC Edition Graphics Card (PCIe 4.0, 8GB GDDR6X Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, and More) (Renewed)"
+        },
+        {
+          "id": 100657,
+          "name": "Geforce Nvidia RTX 3060ti Founders Edition 8GB"
+        },
+        {
+          "id": 100658,
+          "name": "Dell Gaming OEM Nvidia GeForce RTX 3060 Ti 8GB GDDR6 256-bit 14Gbps PCIe 4.0 x16 Graphics Video Card 0MTVG8 08GXMM (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "NVIDIA|RTX|3050",
+      "asin": "B0CVCG2VPK",
+      "productId": 14833,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 10 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30027,
+          "name": "NVIDIA GeForce RTX 3050 8GB"
+        },
+        {
+          "id": 30107,
+          "name": "Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1"
+        },
+        {
+          "id": 30223,
+          "name": "MSI - NVIDIA RTX 3050 VENTUS 2X XS 8G OC - 8GB GDDR6 - PCI Express 4.0 - Graphics Card - Black"
+        },
+        {
+          "id": 30224,
+          "name": "MSI - NVIDIA RTX 3050 GAMING X 6G - 6GB GDDR6 - PCI Express 4.0 - Graphics Card - Black"
+        },
+        {
+          "id": 30240,
+          "name": "GIGABYTE - NVIDIA GeForce RTX 3050 WINDFORCE OC V2 6GB GDDR6 PCI Express 4.0 Graphics Card - Black"
+        },
+        {
+          "id": 100651,
+          "name": "msi Gaming RTX 3050 Ventus 2X 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)"
+        },
+        {
+          "id": 100652,
+          "name": "msi Gaming RTX 3050 LP 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)"
+        },
+        {
+          "id": 100653,
+          "name": "ASUS Phoenix NVIDIA GeForce RTX 3050 Gaming Graphics Card - PCIe 4.0, 8GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan, Protective Backplate, Dual Ball Fan Bearings, Auto-Extreme (Renewed)"
+        },
+        {
+          "id": 100654,
+          "name": "ASUS Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, Steel Bracket"
+        },
+        {
+          "id": 100655,
+          "name": "Gigabyte NVIDIA GeForce RTX 3050 OC Low Profile 6G Graphics Card - 6GB GDDR6, 96-bit, PCI-E 4.0, 1477MHz Core Clock, 2X DP 1.4, 2 x HDMI 2.1, GV-N3050OC-6GL"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30107,
+          "name": "Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|9070 XT",
+      "asin": "B0F38GLLKR",
+      "productId": 14938,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 25 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30028,
+          "name": "AMD Radeon RX 9070 XT"
+        },
+        {
+          "id": 30090,
+          "name": "SAPPHIRE Nitro+ RX 9070 XT"
+        },
+        {
+          "id": 30091,
+          "name": "PowerColor Red Devil RX 9070 XT"
+        },
+        {
+          "id": 30092,
+          "name": "XFX Speedster MERC310 RX 9070 XT"
+        },
+        {
+          "id": 30093,
+          "name": "ASRock RX 9070 XT Taichi OC"
+        },
+        {
+          "id": 30109,
+          "name": "Prime Radeon™ RX 9070 XT OC Edition Graphics Card, AMD (PCIe 5.0, HDMI/DP 2.1"
+        },
+        {
+          "id": 30117,
+          "name": "Radeon™ RX 9070 XT Gaming OC ICE 16G Graphics Card (16GB GDDR6, 256-bit, PCIe 5.0"
+        },
+        {
+          "id": 30121,
+          "name": "Prime Radeon™ RX 9070 XT White OC Edition Graphics Card, AMD (PCIe 5.0, HDMI/DP 2.1"
+        },
+        {
+          "id": 30133,
+          "name": "Radeon RX 9070 XT Gaming OC 16G Graphics Card - 16 GB GDDR6, 256 Bit, PCI-E 5.0"
+        },
+        {
+          "id": 30212,
+          "name": "Sakura Atlantis Radeon RX 9070 XT 16G GDDR6 256bit 4nm Video Cards Desktop Computer PC Graphics Card"
+        },
+        {
+          "id": 30252,
+          "name": "GIGABYTE - Radeon RX 9070 XT GAMING OC 16G GDDR6 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30264,
+          "name": "XFX - Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - Bl"
+        },
+        {
+          "id": 30266,
+          "name": "XFX - Swift AMD Radeon RX 9070XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black"
+        },
+        {
+          "id": 30267,
+          "name": "XFX - Swift AMD Radeon RX 9070XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White"
+        },
+        {
+          "id": 30269,
+          "name": "XFX - Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - Wh"
+        },
+        {
+          "id": 30272,
+          "name": "XFX - Mercury AMD Radeon RX 9070XT OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card with RGB - White"
+        },
+        {
+          "id": 30320,
+          "name": "ASRock - Challenger Radeon RX 9070 XT 16GB GDDR6 PCI Express 5.0 Graphics Card"
+        },
+        {
+          "id": 30322,
+          "name": "ASRock - Steel Legend Radeon RX 9070 XT 16GB GDDR6 PCI Express 5.0 Graphics Card"
+        },
+        {
+          "id": 100424,
+          "name": "ASRock Radeon RX 9070 XT Challenger 16GB OC Graphics Card - AMD RDNA 4 Architecture, 2970 MHz Boost Clock, 16GB GDDR6, PCIe 5.0, DisplayPort 2.1a, HDMI 2.1b, Triple Fan Cooling 800W"
+        },
+        {
+          "id": 100425,
+          "name": "ASRock Radeon RX 9070 XT Steel Legend 16GB Graphics Card, AMD RDNA 4 Architecture, 16GB GDDR6, PCIe 5.0, Triple Fans, Polychrome SYNC, Reinforced Metal Frame, DisplayPort 2.1a, HDMI 2.1b"
+        },
+        {
+          "id": 100427,
+          "name": "Sapphire 11348-01-20G Nitro+ AMD Radeon™ RX 9070 XT Gaming OC Graphics Card with 16GB GDDR6, AMD RDNA 4"
+        },
+        {
+          "id": 100428,
+          "name": "XFX Swift AMD Radeon RX 9070 XT Triple Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, RDNA 4 RX-97TSWF3B9, Graphics Card, Compatible with Desktop PCs"
+        },
+        {
+          "id": 100430,
+          "name": "XFX Mercury AMD Radeon RX 9070XT OC Magnetic Air Edition with RGB 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97TMARGB9"
+        },
+        {
+          "id": 100432,
+          "name": "Gigabyte AORUS Radeon RX 9070 XT Elite 16G Graphics Card - 16GB GDDR6, 256bit, PCI-E 5.0, 3100 MHz Core Clock, 2 x DisplayPort, 2 x HDMI, GV-R9070XTAORUS E-16GD"
+        },
+        {
+          "id": 100690,
+          "name": "XFX Quicksilver AMD Radeon RX 9070 XT Gaming Edition with 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97TQICKB9"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30090,
+          "name": "SAPPHIRE Nitro+ RX 9070 XT"
+        },
+        {
+          "id": 30091,
+          "name": "PowerColor Red Devil RX 9070 XT"
+        },
+        {
+          "id": 30092,
+          "name": "XFX Speedster MERC310 RX 9070 XT"
+        },
+        {
+          "id": 30093,
+          "name": "ASRock RX 9070 XT Taichi OC"
+        },
+        {
+          "id": 30212,
+          "name": "Sakura Atlantis Radeon RX 9070 XT 16G GDDR6 256bit 4nm Video Cards Desktop Computer PC Graphics Card"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|9070",
+      "asin": "B0FRPW9V2Y",
+      "productId": 14930,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 10 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30029,
+          "name": "AMD Radeon RX 9070"
+        },
+        {
+          "id": 30178,
+          "name": "Radeon RX 9070 Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6"
+        },
+        {
+          "id": 30204,
+          "name": "Prime Radeon™ RX 9070 OC Edition Graphics Card (PCIe 5.0, HDMI/DP 2.1, 2.5-Slot Design"
+        },
+        {
+          "id": 30265,
+          "name": "XFX - Swift AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White"
+        },
+        {
+          "id": 30268,
+          "name": "XFX - Swift AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black"
+        },
+        {
+          "id": 30271,
+          "name": "XFX - QuickSilver AMD Radeon RX 9070 OC 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black"
+        },
+        {
+          "id": 30321,
+          "name": "ASRock - Challenger Radeon RX 9070 16GB GDDR6 PCI Express 5.0 Graphics Card"
+        },
+        {
+          "id": 100426,
+          "name": "PowerColor Reaper AMD Radeon RX 9070 16GB GDDR6"
+        },
+        {
+          "id": 100429,
+          "name": "XFX Swift AMD Radeon RX 9070 OC Triple 90mm Fan Gaming Edition with 16GB GDDR6 HDMI 3xDP, AMD RDNA 4 RX-97SWFT3BA"
+        },
+        {
+          "id": 100431,
+          "name": "XFX Quicksilver AMD Radeon RX 9070 OC Gaming Edition 16GB GDDR6 Graphics Card, Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30204,
+          "name": "Prime Radeon™ RX 9070 OC Edition Graphics Card (PCIe 5.0, HDMI/DP 2.1, 2.5-Slot Design"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|9060 XT",
+      "asin": "B0G2GMZTCN",
+      "productId": 14834,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 16 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30030,
+          "name": "AMD Radeon RX 9060 XT"
+        },
+        {
+          "id": 30108,
+          "name": "Radeon™ RX 9060 XT Gaming OC ICE 16G Graphics Card (16GB GDDR6, 128-bit, PCIe 5.0"
+        },
+        {
+          "id": 30110,
+          "name": "Dual Radeon™ RX 9060 XT 16GB GDDR6 Graphics Card (PCIe 5.0, HDMI 2.1b, DisplayPort 2.1a"
+        },
+        {
+          "id": 30128,
+          "name": "Radeon RX 9060 XT Gaming OC 16G Graphics Card - 16GB GDDR6, 128bit, PCI-E 5.0"
+        },
+        {
+          "id": 30296,
+          "name": "XFX - Mercury AMD Radeon RX 9060XT OC Gaming Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black"
+        },
+        {
+          "id": 30297,
+          "name": "XFX - Swift AMD Radeon RX 9060XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White"
+        },
+        {
+          "id": 30298,
+          "name": "XFX - Swift AMD Radeon RX 9060XT 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - Black"
+        },
+        {
+          "id": 30299,
+          "name": "XFX - Swift AMD Radeon RX 9060XT OC Gaming Edition 8GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White"
+        },
+        {
+          "id": 30301,
+          "name": "GIGABYTE - Radeon RX 9060 XT GAMING OC 16G GDDR6 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30303,
+          "name": "GIGABYTE - Radeon RX 9060 XT GAMING OC 8G GDDR6 PCI Express 5.0 Graphics Card - Black"
+        },
+        {
+          "id": 30318,
+          "name": "XFX - Mercury AMD Radeon RX 9060XT OC Gaming Edition 16GB GDDR6 PCI Express 5.0 Gaming Graphics Card - White"
+        },
+        {
+          "id": 100671,
+          "name": "XFX Swift AMD Radeon RX 9060 XT OC Gaming Edition with 16GB GDDR6 HDMI 2xDP, RDNA 4 RX-96TSW16BQ, Graphics Card, Compatible with Desktop PCs"
+        },
+        {
+          "id": 100678,
+          "name": "XFX Swift AMD Radeon RX 9060 XT OC White Gaming Edition with 8GB GDDR6 HDMI 2xDP, AMD RDNA 4 RX 9060XT RX-96TSW8GWQ"
+        },
+        {
+          "id": 100695,
+          "name": "ASRock Radeon RX 9060 XT Challenger 16GB OC Graphics Card, AMD RDNA 4 Architecture, 16GB GDDR6, PCIe 5.0, Dual Fans, 0dB Silent Cooling, LED Indicator, DisplayPort 2.1a, HDMI 2.1b"
+        },
+        {
+          "id": 100697,
+          "name": "PowerColor Reaper AMD Radeon RX 9060 XT 16GB GDDR6"
+        },
+        {
+          "id": 100699,
+          "name": "XFX Swift AMD Radeon RX 9060 XT OC Triple Fan Gaming Edition with 16GB GDDR6 HDMI 2xDP, RDNA 4 RX-96TS316BA, Graphics Card, Compatible with Desktop PCs"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30108,
+          "name": "Radeon™ RX 9060 XT Gaming OC ICE 16G Graphics Card (16GB GDDR6, 128-bit, PCIe 5.0"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7900 XTX",
+      "asin": "B0BNLSDRKB",
+      "productId": 6030,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 7 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30032,
+          "name": "AMD Radeon RX 7900 XTX"
+        },
+        {
+          "id": 30094,
+          "name": "SAPPHIRE Nitro+ RX 7900 XTX"
+        },
+        {
+          "id": 30095,
+          "name": "PowerColor Red Devil RX 7900 XTX"
+        },
+        {
+          "id": 30160,
+          "name": "Radeon RX 7900 XTX Gaming Trio Classic 24G 384-Bit HDMI/DP Torx Fan 4 AMD RDNA 3 Graphics Card"
+        },
+        {
+          "id": 100435,
+          "name": "XFX Speedster MERC310 AMD Radeon RX 7900XTX Black Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3 RX-79XMERCB9"
+        },
+        {
+          "id": 100437,
+          "name": "PowerColor Hellhound AMD Radeon RX 7900 XTX Graphics Card"
+        },
+        {
+          "id": 100443,
+          "name": "Sapphire 11322-02-20G Pulse AMD Radeon RX 7900 XTX Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30032,
+          "name": "AMD Radeon RX 7900 XTX"
+        },
+        {
+          "id": 30033,
+          "name": "AMD Radeon RX 7900 XT"
+        },
+        {
+          "id": 30034,
+          "name": "AMD Radeon RX 7900 GRE"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7900 XT",
+      "asin": "B0BNLSDRKB",
+      "productId": 6031,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 7 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30033,
+          "name": "AMD Radeon RX 7900 XT"
+        },
+        {
+          "id": 30142,
+          "name": "Hellhound AMD Radeon RX 7900 XT Graphics Card"
+        },
+        {
+          "id": 100436,
+          "name": "XFX Speedster MERC310 AMD Radeon RX 7900XT Black Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3 RX-79TMERCB9"
+        },
+        {
+          "id": 100438,
+          "name": "Sapphire 21323-01-20G AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3, Black"
+        },
+        {
+          "id": 100439,
+          "name": "PowerColor AMD Radeon RX 7900 XT Graphics Card (Renewed)"
+        },
+        {
+          "id": 100441,
+          "name": "Sapphire 11323-02-20G Pulse AMD Radeon RX 7900 XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3"
+        },
+        {
+          "id": 100442,
+          "name": "ASRock AMD Radeon™ RX 7900 XT Phantom Gaming 20GB OC Graphics Card 320 Bit 7680 x 4320 0dB Silent Cooling 3 x DisplayPort™ 2.1 GDDR6 1 x HDMI™ 2.1 20Gbps PCI Express 4.0"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30032,
+          "name": "AMD Radeon RX 7900 XTX"
+        },
+        {
+          "id": 30033,
+          "name": "AMD Radeon RX 7900 XT"
+        },
+        {
+          "id": 30034,
+          "name": "AMD Radeon RX 7900 GRE"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7900",
+      "asin": "B0BNLSDRKB",
+      "productId": 6032,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30034,
+          "name": "AMD Radeon RX 7900 GRE"
+        },
+        {
+          "id": 100440,
+          "name": "Sapphire 11325-02-20G Nitro+ AMD Radeon RX 7900 GRE Gaming Graphics Card with 16GB GDDR6, AMD RDNA 3"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30032,
+          "name": "AMD Radeon RX 7900 XTX"
+        },
+        {
+          "id": 30033,
+          "name": "AMD Radeon RX 7900 XT"
+        },
+        {
+          "id": 30034,
+          "name": "AMD Radeon RX 7900 GRE"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7700 XT",
+      "asin": "B0CQRWMYQF",
+      "productId": 14903,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30036,
+          "name": "AMD Radeon RX 7700 XT"
+        },
+        {
+          "id": 30100,
+          "name": "SAPPHIRE Pulse RX 7700 XT"
+        },
+        {
+          "id": 30101,
+          "name": "XFX Speedster SWFT210 RX 7700 XT"
+        },
+        {
+          "id": 30177,
+          "name": "Dual Radeon™ RX 7700 XT O12G GDDR6X (PCIe 4.0, 12GB GDDR6X, HDMI 2.1"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30177,
+          "name": "Dual Radeon™ RX 7700 XT O12G GDDR6X (PCIe 4.0, 12GB GDDR6X, HDMI 2.1"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7600",
+      "asin": "B0C5S9CHMG",
+      "productId": 14853,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 8 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30038,
+          "name": "AMD Radeon RX 7600"
+        },
+        {
+          "id": 30102,
+          "name": "MSI RX 7600 MECH 2X"
+        },
+        {
+          "id": 30103,
+          "name": "SAPPHIRE Pulse RX 7600"
+        },
+        {
+          "id": 30104,
+          "name": "ASRock RX 7600 Challenger"
+        },
+        {
+          "id": 30127,
+          "name": "GV-R76GAMING OC-8GD Radeon RX 7600 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans 8GB 128-bit GDDR6, Video Card"
+        },
+        {
+          "id": 30225,
+          "name": "XFX - SPEEDSTER SWFT210 AMD Radeon RX 7600 Core 8GB GDDR6 PCI Express 4.0 Graphics Card - Black"
+        },
+        {
+          "id": 100668,
+          "name": "XFX Speedster SWFT210 Radeon RX 7600 Graphics Card with 8GB GDDR6 HDMI 3xDP, AMD RDNA 3 RX-76PSWFTFY"
+        },
+        {
+          "id": 100687,
+          "name": "ASRock AMD Radeon RX 7600 Steel Legend 8GB OC GDDR6 128-bit 0dB Silent Cooling Graphics Card DisplayPort 7680 x 4320 HDMI 18 Gbps 3 Fans PCI Express 4"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30127,
+          "name": "GV-R76GAMING OC-8GD Radeon RX 7600 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans 8GB 128-bit GDDR6, Video Card"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|6900 XT",
+      "asin": "B08Q2R71CS",
+      "productId": 6038,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30040,
+          "name": "AMD Radeon RX 6900 XT"
+        },
+        {
+          "id": 30364,
+          "name": "GIGABYTE MSI Gaming Radeon RX 6900 XT Gaming Z Trio 16G 16GB GDDR6 256-Bit HDMI/DP Nvlink Torx Fan 4 AMD Graphics Card (RX 6900 XT Gaming Z Trio 16G)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30040,
+          "name": "AMD Radeon RX 6900 XT"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|6800",
+      "asin": "B0DFMMF59C",
+      "productId": 6040,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30042,
+          "name": "AMD Radeon RX 6800"
+        },
+        {
+          "id": 100693,
+          "name": "AMD Radeon RX 6800 16GB GDDR6 Reference Model Graphics Card (Renewed)"
+        },
+        {
+          "id": 100694,
+          "name": "XFX Speedster SWFT319 AMD Radeon RX 6800 Gaming Graphics Card with 16GB GDDR6, AMD RDNA 2 RX-68XLAQBD9 (Renewed)"
+        },
+        {
+          "id": 100696,
+          "name": "Sapphire 11305-02-20G Pulse AMD Radeon RX 6800 PCIe 4.0 Gaming Graphics Card with 16GB GDDR6 Pack of 1 (Renewed)"
+        },
+        {
+          "id": 100700,
+          "name": "PowerColor Red Dragon AMD Radeon RX 6800 Gaming Graphics Card with 16GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache (Renewed)"
+        },
+        {
+          "id": 100702,
+          "name": "XFX Speedster SWFT319 ,Radeon™ RX 6800 Core Gaming Graphics Card with 16GB GDDR6, AMD RDNA™ 2 (RX-68XLAQFD9) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30042,
+          "name": "AMD Radeon RX 6800"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Arc|B580",
+      "asin": "B0DNV4NWF7",
+      "productId": 6046,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30226,
+          "name": "Intel - Arc B580 Limited Edition Graphics Card - Multi"
+        },
+        {
+          "id": 30383,
+          "name": "Sparkle Intel Arc B580 Titan OC, 12GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB580T-12GOC"
+        },
+        {
+          "id": 100448,
+          "name": "Intel Arc B580 Limited Edition Graphics Card"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30226,
+          "name": "Intel - Arc B580 Limited Edition Graphics Card - Multi"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Arc|B570",
+      "asin": "B0DQYM2MHX",
+      "productId": 6047,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30049,
+          "name": "Intel Arc B570"
+        },
+        {
+          "id": 30244,
+          "name": "ASRock - Intel Arc B570 Challenger 10GB GDDR6 OC PCIe 4.0 Graphic Card - Black"
+        },
+        {
+          "id": 30384,
+          "name": "Sparkle Intel Arc B570 Guardian OC Graphics Card, 10GB GDDR6, Torn Cooling 2.0, Axial Fan, Breathing Light, Metal Backplate, SB570G-10GOC"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30049,
+          "name": "Intel Arc B570"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Arc|A750",
+      "asin": "B0BNYXRTFN",
+      "productId": 6049,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30051,
+          "name": "Intel Arc A750"
+        },
+        {
+          "id": 30386,
+          "name": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC"
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "INTEL|Arc|A580",
+      "asin": "B0CJGSP9R7",
+      "productId": 6050,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30052,
+          "name": "Intel Arc A580"
+        },
+        {
+          "id": 100705,
+          "name": "Sparkle Intel Arc A580 ORC OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA580C-8GOC"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30052,
+          "name": "Intel Arc A580"
+        }
+      ]
+    },
+    {
+      "key": "GSKILL|DDR5|32GB-7600",
+      "asin": "B0DD2LKVMD",
+      "productId": 7012,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "KINGSTON|DDR5|32GB-7200",
+      "asin": "B0BMQTXZ3Q",
+      "productId": 7016,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "KINGSTON|DDR4|32GB-3200",
+      "asin": "B0GVGMHZ2C",
+      "productId": 7035,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "CRUCIAL|2TB|NVME",
+      "asin": "B0C3K2WRPV",
+      "productId": 7037,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50000,
+          "name": "Crucial T700 2TB NVMe Gen5"
+        }
+      ]
+    },
+    {
+      "key": "CRUCIAL|1TB|NVME",
+      "asin": "B0F9XN4DCC",
+      "productId": 7038,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50001,
+          "name": "Crucial T700 1TB NVMe Gen5"
+        }
+      ]
+    },
+    {
+      "key": "SAMSUNG|1TB|NVME",
+      "asin": "B0DHLFWBQ1",
+      "productId": 7040,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50003,
+          "name": "Samsung 990 EVO Plus 1TB NVMe Gen5"
+        },
+        {
+          "id": 50007,
+          "name": "Samsung 990 Pro 1TB NVMe Gen4"
+        }
+      ]
+    },
+    {
+      "key": "CORSAIR|2TB|NVME",
+      "asin": "B0FV33S11L",
+      "productId": 7041,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50004,
+          "name": "Corsair MP700 PRO 2TB NVMe Gen5"
+        }
+      ]
+    },
+    {
+      "key": "SAMSUNG|1TB|SATA",
+      "asin": "B0DF2DC3R4",
+      "productId": 7057,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50020,
+          "name": "Samsung 870 EVO 1TB SATA SSD"
+        },
+        {
+          "id": 50023,
+          "name": "Crucial MX500 1TB SATA SSD"
+        }
+      ]
+    },
+    {
+      "key": "CRUCIAL|1TB|SATA",
+      "asin": "B0DF2DC3R4",
+      "productId": 7060,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50020,
+          "name": "Samsung 870 EVO 1TB SATA SSD"
+        },
+        {
+          "id": 50023,
+          "name": "Crucial MX500 1TB SATA SSD"
+        }
+      ]
+    },
+    {
+      "key": "WD|2TB|HDD",
+      "asin": "B0FWCNQW1H",
+      "productId": 7068,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50031,
+          "name": "WD Blue 2TB 5400RPM HDD"
+        }
+      ]
+    },
+    {
+      "key": "WD|4TB|HDD",
+      "asin": "B0FY2MVB6D",
+      "productId": 7069,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50032,
+          "name": "WD Blue 4TB 5400RPM HDD"
+        }
+      ]
+    },
+    {
+      "key": "WD|8TB|HDD",
+      "asin": "B0CMQ6SK7W",
+      "productId": 7071,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50034,
+          "name": "WD Red Plus 8TB NAS HDD"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|X870E",
+      "asin": "B0F47J56S4",
+      "productId": 15045,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20000,
+          "name": "ASUS ROG Crosshair X870E Hero"
+        },
+        {
+          "id": 20001,
+          "name": "ASUS ROG Strix X870E-E Gaming WiFi"
+        },
+        {
+          "id": 20072,
+          "name": "AMD Ryzen 9 9950X3D CPU Processor with ASUS ROG Strix X870E-E Gaming WiFi X870 ATX Motherboard (18+2+2 Power Stages, ..."
+        },
+        {
+          "id": 20427,
+          "name": "ASUS - ROG CROSSHAIR X870E HERO (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20072,
+          "name": "AMD Ryzen 9 9950X3D CPU Processor with ASUS ROG Strix X870E-E Gaming WiFi X870 ATX Motherboard (18+2+2 Power Stages, ..."
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|X870E",
+      "asin": "B0F1FSQ119",
+      "productId": 15039,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 9 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20002,
+          "name": "MSI MEG X870E Ace"
+        },
+        {
+          "id": 20059,
+          "name": "AMD Ryzen 7 9800X3D CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0, M.2 Gen5"
+        },
+        {
+          "id": 20060,
+          "name": "AMD Ryzen 7 9850X3D CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0, M.2 Gen5"
+        },
+        {
+          "id": 20066,
+          "name": "AMD Ryzen 9 9900X CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0 x16, M.2 Gen5"
+        },
+        {
+          "id": 20433,
+          "name": "MSI - MAG X870E TOMAHAWK WIFI (Socket AM5) AMD X870 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        },
+        {
+          "id": 20448,
+          "name": "MSI - MEG X870E GODLIKE MAX (Socket AM5) AMD X870E E-ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black"
+        },
+        {
+          "id": 20449,
+          "name": "MSI - MPG X870E CARBON MAX WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black"
+        },
+        {
+          "id": 20450,
+          "name": "MSI - MAG X870E GAMING MAX WIFI (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black/Sli"
+        },
+        {
+          "id": 20481,
+          "name": "MSI MAG X870E Tomahawk WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5-80A SPS VRM, DDR5 Memory Boost 8400+ MT/s (OC), PCIe 5.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20066,
+          "name": "AMD Ryzen 9 9900X CPU Processor with MSI MAG X870E Tomahawk WiFi ATX Motherboard (DDR5, PCIe 5.0 x16, M.2 Gen5"
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|B650",
+      "asin": "B0BHCCNSRH",
+      "productId": 7083,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20006,
+          "name": "MSI MAG B650 Tomahawk WiFi"
+        },
+        {
+          "id": 20009,
+          "name": "MSI PRO B650-P WiFi"
+        },
+        {
+          "id": 20419,
+          "name": "MSI - MAG B650 Tomahawk WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6E Motherboard - Black"
+        },
+        {
+          "id": 20420,
+          "name": "MSI - PRO B650-P WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6E Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20006,
+          "name": "MSI MAG B650 Tomahawk WiFi"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|B650E",
+      "asin": "B0FKZSMMQK",
+      "productId": 15375,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20007,
+          "name": "ASUS ROG Strix B650E-F Gaming WiFi"
+        },
+        {
+          "id": 20048,
+          "name": "ASUS ROG Strix B650E-I Gaming WiFi"
+        },
+        {
+          "id": 20061,
+          "name": "AMD Ryzen 5 7600X CPU Processor Bundle with ASUS TUF Gaming B650E-E WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0 Ready, 3..."
+        },
+        {
+          "id": 20069,
+          "name": "AMD Ryzen 7 7800X3D CPU Processor Bundle with ASUS TUF Gaming B650E-E WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0 Ready,..."
+        },
+        {
+          "id": 20402,
+          "name": "AMD Ryzen 5 9600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        },
+        {
+          "id": 20417,
+          "name": "ASUS - ROG STRIX B650E-F GAMING WIFI (Socket AM5) AMD B650E ATX DDR5 Wi-Fi 6E Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20402,
+          "name": "AMD Ryzen 5 9600X CPU Processor Bundle with ASUS B650E MAX Gaming WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|B650",
+      "asin": "B0BHN7GGBQ",
+      "productId": 7085,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20008,
+          "name": "ASUS TUF Gaming B650-Plus WiFi"
+        },
+        {
+          "id": 20063,
+          "name": "AMD Ryzen 9 9900X AM5 CPU Processor Bundle with ASUS ROG Strix B650-A Gaming WiFi 6E AM5 Ryzen 7000 Gaming Motherboard"
+        },
+        {
+          "id": 20418,
+          "name": "ASUS - TUF GAMING B650-PLUS WIFI (Socket AM5) AMD B650 ATX DDR5 Wi-Fi 6 Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20008,
+          "name": "ASUS TUF Gaming B650-Plus WiFi"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|B550",
+      "asin": "B09GP7P1XS",
+      "productId": 7089,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20012,
+          "name": "ASUS ROG Strix B550-F Gaming WiFi II"
+        },
+        {
+          "id": 20507,
+          "name": "AMD Ryzen 7 5800XT Desktop Processor with ASUS TUF Gaming B550-PLUS WiFi II AM4 ATX Gaming Motherboard (DDR4, PCIe 4.0, WiFi 6, 2.5Gb LAN, USB 3.2 Gen 2)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20012,
+          "name": "ASUS ROG Strix B550-F Gaming WiFi II"
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|B550",
+      "asin": "B09ZJ73LDY",
+      "productId": 7090,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20013,
+          "name": "MSI MAG B550 Tomahawk"
+        },
+        {
+          "id": 20047,
+          "name": "MSI MPG B550 Gaming Plus"
+        },
+        {
+          "id": 20415,
+          "name": "MSI - B550 GAMING PLUS (Socket AM4) AMD B550 ATX DDR4 Motherboard - Black"
+        },
+        {
+          "id": 20416,
+          "name": "MSI - B550 TOMAHAWK MAX WIFI (Socket AM4) AMD B550 ATX DDR4 Wi-Fi 6E Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20013,
+          "name": "MSI MAG B550 Tomahawk"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|B550",
+      "asin": "B08KGVH7YC",
+      "productId": 7091,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20014,
+          "name": "Gigabyte B550 AORUS Pro V2"
+        },
+        {
+          "id": 20511,
+          "name": "GIGABYTE B550 Eagle WIFI6 AMD AM4 ATX Motherboard, Supports Ryzen 5000/4000/3000 Processors, DDR4, 10+3 Power Phase, 2X M.2, PCIe 4.0, USB-C, WIFI6, GbE LAN, PCIe EZ-Latch, EZ-Latch, RGB Fusion"
+        },
+        {
+          "id": 20512,
+          "name": "Micro Center AMD Ryzen 5 5500 Desktop Processor with GIGABYTE B550 Eagle WIFI6 ATX Motherboard (AM4, DDR4, 2X M.2, PCIe 4.0, WIFI6, 1GbE LAN, EZ-Latch)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20014,
+          "name": "Gigabyte B550 AORUS Pro V2"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|Z890",
+      "asin": "B0F5DHXNSB",
+      "productId": 15246,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 8 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20017,
+          "name": "ASUS ROG Maximus Z890 Hero"
+        },
+        {
+          "id": 20021,
+          "name": "ASUS TUF Gaming Z890-Plus WiFi"
+        },
+        {
+          "id": 20273,
+          "name": "CPU Motherbard Combo -Ultra7 265K 20-Cores Unlocked Gaming Desktop Processor with Asus Z890 AYW Gaming WiFi W LGA 185..."
+        },
+        {
+          "id": 20425,
+          "name": "ASUS - ROG MAXIMUS Z890 HERO (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        },
+        {
+          "id": 20426,
+          "name": "ASUS - TUF GAMING Z890-PLUS WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        },
+        {
+          "id": 20446,
+          "name": "ASUS - ROG STRIX Z890-H (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 BE Motherboard - Black"
+        },
+        {
+          "id": 100379,
+          "name": "ASUS PRIME Z890-P WIFI Z890 LGA 1851 ATX motherboard, Intel® Core™ Ultra Series 2 Ready, Advanced AI PC-ready, 14+1+1+2 power stage, DDR5, PCIe® 5.0, Thunderbolt™ 4 USB Type-C®, 4x M.2, Wi-Fi 7, 2.5Gb"
+        },
+        {
+          "id": 100380,
+          "name": "ASUS ROG Strix Z890-H Gaming WiFi Z890 LGA 1851 ATX Motherboard, Intel® Core™ Ultra Series 2 Ready, Advanced AI PC-Ready, 16+2+1+2 Stages, DDR5, 5Gb LAN, WiFi 7, 4X M.2, PCIe 5.0, USB Type-C®, AI OC"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20273,
+          "name": "CPU Motherbard Combo -Ultra7 265K 20-Cores Unlocked Gaming Desktop Processor with Asus Z890 AYW Gaming WiFi W LGA 185..."
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|Z890",
+      "asin": "B0DH6SF5LB",
+      "productId": 7096,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20018,
+          "name": "MSI MEG Z890 Ace"
+        },
+        {
+          "id": 20019,
+          "name": "MSI MAG Z890 Tomahawk WiFi"
+        },
+        {
+          "id": 20038,
+          "name": "MSI PRO Z890-A WiFi"
+        },
+        {
+          "id": 20429,
+          "name": "MSI - PRO Z890-A WIFI (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20019,
+          "name": "MSI MAG Z890 Tomahawk WiFi"
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|Z790",
+      "asin": "B0BL8K1YH1",
+      "productId": 7100,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 7 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20023,
+          "name": "MSI MAG Z790 Tomahawk WiFi"
+        },
+        {
+          "id": 20041,
+          "name": "MSI PRO Z790-A WiFi DDR4"
+        },
+        {
+          "id": 20422,
+          "name": "MSI - Z790 GAMING PLUS WIFI (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 6E Motherboard - Black"
+        },
+        {
+          "id": 20423,
+          "name": "MSI - MAG Z790 TOMAHAWK MAX WIFI (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        },
+        {
+          "id": 20455,
+          "name": "MSI MPG Z790 Edge WiFi Gaming Motherboard (Supports 12th/13th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, ATX) (Renewed)"
+        },
+        {
+          "id": 100381,
+          "name": "MSI PRO Z790-P WiFi ProSeries Motherboard (Supports 12th/13th/14th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, 2.5Gbps LAN, USB 3.2 Gen2, HDMI/DP, Wi-Fi 6E, Bluetooth 5.3, ATX) (Renewed)"
+        },
+        {
+          "id": 100383,
+          "name": "MSI Z790 Gaming Plus WiFi-AMZ Gaming Motherboard (Support 14th/13th/12th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2 Slots, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 6E, Bluetooth 5.3, ATX)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20023,
+          "name": "MSI MAG Z790 Tomahawk WiFi"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|Z790",
+      "asin": "B0BH9DXY38",
+      "productId": 7101,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20024,
+          "name": "Gigabyte Z790 AORUS Elite AX"
+        },
+        {
+          "id": 20424,
+          "name": "GIGABYTE - Z790 AORUS ELITE AX (Socket LGA 1700) Intel Z790 ATX DDR5 Wi-Fi 6E Motherboard - Black"
+        },
+        {
+          "id": 20456,
+          "name": "GIGABYTE Z790 AORUS Elite AX (LGA 1700/ Intel Z790/ ATX/ DDR5/ Quad M.2/ PCIe 5.0/ USB 3.2 Gen2X2 Type-C/Intel WiFi 6E/ 2.5GbE LAN/Q-Flash Plus/PCIe EZ-Latch/Gaming Motherboard) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20024,
+          "name": "Gigabyte Z790 AORUS Elite AX"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|B760M",
+      "asin": "B0BR8TRLRB",
+      "productId": 7102,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20025,
+          "name": "ASUS TUF Gaming B760M-Plus WiFi D4"
+        },
+        {
+          "id": 20459,
+          "name": "ASUS Prime B760M-A AX LGA 1700(Intel® 12th&13th Gen) microATX Motherboard (PCIe® 4.0, 2xM.2 Slots, DDR5,Realtek 2.5 Gb LAN,WiFi 6, DP,Rear USB 3.2 Gen 2, Front USB 3.2 Gen 1 Type-C®) (Renewed)"
+        },
+        {
+          "id": 100735,
+          "name": "ASUS Pro B760M-CT-CSM Intel LGA1700(13th&12th Gen)mATX commercial motherboard,DDR5,PCIe 4.0,2xM.2 PCIe 4.0 slots,front USB 3.2 Gen 1 Type-C,D-Sub,TPM IC onboard,Q-LED Core,Mono-out header,SMBUS header"
+        },
+        {
+          "id": 100740,
+          "name": "ASUS B760M MAX Gaming WiFi Intel® B760 (LGA 1700) mATX Motherboard, Advanced AI PC-Ready, PCIe 5.0 x16, DDR5, 3X M.2, Wi-Fi 6, DisplayPort, HDMI, SATA, USB 10Gbps Type-A, USB 5Gbps Type-C®, Aura Sync"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20025,
+          "name": "ASUS TUF Gaming B760M-Plus WiFi D4"
+        }
+      ]
+    },
+    {
+      "key": "ASROCK|MOBO|B760M",
+      "asin": "B0C2C96LDL",
+      "productId": 7105,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20028,
+          "name": "ASRock B760M Pro RS/D4"
+        },
+        {
+          "id": 20461,
+          "name": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB"
+        },
+        {
+          "id": 100386,
+          "name": "Asrock B760M Pro RS WiFi White Intel Micro ATX Motherboard DDR5 DIMM 7200 MHz 256 GB LGA1700 SATA3 6.0 Gb/s LED M.2"
+        },
+        {
+          "id": 100388,
+          "name": "ASRock B760M-ITX/D4 WiFi Supports 13th Gen & 12th Gen Intel® Core™ Processors (LGA1700)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20028,
+          "name": "ASRock B760M Pro RS/D4"
+        },
+        {
+          "id": 20461,
+          "name": "ASRock B760M Pro RS Motherboard DDR5 7200MHz HDMI DisplayPort eDP PCIe Gen5 (Graphics) 14th 13th 12th Gen Intel Core Processors LGA1700 192GB"
+        }
+      ]
+    },
+    {
+      "key": "CORSAIR|CASE|ICUE",
+      "asin": "B09K1YNJTR",
+      "productId": 7135,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70000,
+          "name": "Corsair iCUE 5000T RGB"
+        },
+        {
+          "id": 100540,
+          "name": "Corsair iCUE 4000D RGB Airflow Mid-Tower Case - 3X AF120 RGB Elite Fans - iCUE Lighting Node PRO Controller - High-Airflow Design - CORSAIR RapidRoute Cable Management System - True White"
+        },
+        {
+          "id": 100541,
+          "name": "CORSAIR iCUE 7000X RGB Full-Tower ATX PC Case – Three Tempered Glass Panels – Spacious Interior – Easy Cable Management – 4X CORSAIR SP140 RGB Elite Fans Included – White"
+        },
+        {
+          "id": 103020,
+          "name": "Corsair iCUE 220T RGB Airflow Mid-Tower Velztorm Version Black Case- CC-9900016-VEL"
+        },
+        {
+          "id": 103375,
+          "name": "CORSAIR iCUE LINK 2500X RGB Micro ATX Dual Chamber PC Case - White - Two Tempered Glass Panels - 2x RX120 RGB Fans Included - Highly Customizable"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70000,
+          "name": "Corsair iCUE 5000T RGB"
+        }
+      ]
+    },
+    {
+      "key": "FRACTALDESIGN|CASE|NORTH",
+      "asin": "B09V8HNWW9",
+      "productId": 7138,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70002,
+          "name": "Fractal Design North"
+        },
+        {
+          "id": 100895,
+          "name": "Fractal Design North XL Charcoal Black TG Dark"
+        },
+        {
+          "id": 100897,
+          "name": "Fractal Design North Momentum Black - Glass Side Panel - Genuine Blackened Oak Wood Front - High Airflow PC Gaming Case - Three Powerful 120mm Momentum Fans Included - ATX Support"
+        },
+        {
+          "id": 103828,
+          "name": "Fractal Design North XL RC FD-C-NOR1X-05 Charcoal Black Cases (Computer Cases - ATX Form)"
+        },
+        {
+          "id": 103829,
+          "name": "Fractal Design North XL RC FD-C-NOR1X-06 Chalk White Cases m(Computer Cases - ATX Form)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70002,
+          "name": "Fractal Design North"
+        }
+      ]
+    },
+    {
+      "key": "CORSAIR|CASE|4000D",
+      "asin": "B0DFHNV7TK",
+      "productId": 7140,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70003,
+          "name": "Corsair 4000D Airflow"
+        },
+        {
+          "id": 100888,
+          "name": "CORSAIR 4000D RS ARGB Frame Modular Mid-Tower ATX PC Case – High Airflow, 3X Pre-Installed RS ARGB Fans, InfiniRail Fan Mounting System, ASUS BTF, MSI Project Zero, Gigabyte Project Stealth – White"
+        },
+        {
+          "id": 100889,
+          "name": "CORSAIR 4000D Frame Modular Mid-Tower ATX PC Case – High Airflow, InfiniRail Fan Mounting System, Dual 360mm Radiator Support, ASUS BTF, MSI Project Zero, Gigabyte Project Stealth – White"
+        },
+        {
+          "id": 103022,
+          "name": "Corsair 4000D Airflow CC-9011201-WW White Computer Case"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70003,
+          "name": "Corsair 4000D Airflow"
+        }
+      ]
+    },
+    {
+      "key": "FRACTALDESIGN|CASE|MESHIFY",
+      "asin": "B0822Y6H34",
+      "productId": 7141,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 10 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70004,
+          "name": "Fractal Design Meshify 2 Compact"
+        },
+        {
+          "id": 100538,
+          "name": "Fractal Design Meshify 3 XL Black TG Light Tint - Computer Case"
+        },
+        {
+          "id": 102907,
+          "name": "Fractal Design Meshify 3 XL Ambience Pro RGB E-ATX Full Tower PC Case - White Chassis with Clear TG Side Panel"
+        },
+        {
+          "id": 102909,
+          "name": "Fractal Design Meshify 3 RGB ATX mATX Mid Tower PC Case - Black Chassis with Light Tinted TG Side Panel"
+        },
+        {
+          "id": 102931,
+          "name": "Fractal Design Meshify C Black ATX High-Airflow Compact Dark Tint Tempered Glass Window Mid Tower Computer Case"
+        },
+        {
+          "id": 103003,
+          "name": "Fractal Design Meshify 3 RGB ATX mATX Mid Tower PC Case - White Chassis with Clear TG Side Panel"
+        },
+        {
+          "id": 103808,
+          "name": "Fractal Design Meshify 2 Black ATX Flexible Mid Tower Computer Case"
+        },
+        {
+          "id": 103809,
+          "name": "Fractal Design Meshify 2 Compact Black ATX Flexible High-Airflow Light Tinted Tempered Glass Window Mid Tower Computer Case"
+        },
+        {
+          "id": 103825,
+          "name": "Fractal Design Meshify 3 ATX mATX Mid Tower PC Case - White Chassis with Clear TG Side Panel"
+        },
+        {
+          "id": 103827,
+          "name": "Fractal Design Meshify 3 XL E-ATX Full Tower PC Case - Black Chassis with Solid Side Panel"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70004,
+          "name": "Fractal Design Meshify 2 Compact"
+        }
+      ]
+    },
+    {
+      "key": "COOLERMASTER|CASE|HAF",
+      "asin": "B09TL7Z2DZ",
+      "productId": 7146,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70009,
+          "name": "Cooler Master HAF 700 EVO"
+        },
+        {
+          "id": 100882,
+          "name": "Cooler Master HAF 700 EVO E-ATX High Airflow PC Case, IRIS Customizable LCD & Intel® CoreTM i9-14900K New Gaming Desktop Processor 24 (8 P-cores + 16 E-cores)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70009,
+          "name": "Cooler Master HAF 700 EVO"
+        }
+      ]
+    },
+    {
+      "key": "NZXT|CASE|H5",
+      "asin": "B0D2MK6NML",
+      "productId": 7148,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70011,
+          "name": "NZXT H5 Flow"
+        },
+        {
+          "id": 103144,
+          "name": "NZXT H5 Flow - All White CC-H51FW-01 White Computer Cases"
+        },
+        {
+          "id": 103202,
+          "name": "NZXT H5 Elite - All White CC-H51EW-01 White Computer Cases"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70011,
+          "name": "NZXT H5 Flow"
+        }
+      ]
+    },
+    {
+      "key": "LIANLI|CASE|A4-H2O",
+      "asin": "B09T73JG49",
+      "productId": 7150,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70013,
+          "name": "Lian Li A4-H2O"
+        },
+        {
+          "id": 103177,
+          "name": "Lian Li A4-H2O Mini-ITX PC Case, Triple-Slot Mount GPU, Aluminum Exterior & SPCC Steel Interior, 240mm AIO, SFX Sandwich Layout, PCIe 5.0, Supports..."
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "FRACTALDESIGN|CASE|DEFINE",
+      "asin": "B08146GB6Y",
+      "productId": 7154,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70017,
+          "name": "Fractal Design Define 7 XL"
+        },
+        {
+          "id": 100539,
+          "name": "Fractal Design Define 7 Black Brushed Aluminum/Steel E-ATX Silent Modular Dark Tempered Glass Window Mid Tower Computer Case"
+        },
+        {
+          "id": 103805,
+          "name": "Fractal Design Define 7 XL Black Brushed Aluminum / Steel E-ATX Silent Modular Full Tower Computer Case"
+        },
+        {
+          "id": 103806,
+          "name": "Fractal Design Define 7 XL Black Brushed Aluminum / Steel E-ATX Silent Modular Dark Tinted Tempered Glass Window Full Tower Computer Case"
+        },
+        {
+          "id": 103807,
+          "name": "Fractal Design Define 7 Compact Black Brushed Aluminum/Steel ATX Compact Silent Mid Tower Computer Case"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70017,
+          "name": "Fractal Design Define 7 XL"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|RTX|4070 TI SUPER",
+      "asin": "B0CSK87B4R",
+      "productId": 14875,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 7 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30011,
+          "name": "NVIDIA GeForce RTX 4070 Ti SUPER"
+        },
+        {
+          "id": 30081,
+          "name": "ASUS TUF RTX 4070 Ti SUPER OC"
+        },
+        {
+          "id": 30082,
+          "name": "MSI RTX 4070 Ti SUPER Gaming X Trio"
+        },
+        {
+          "id": 30149,
+          "name": "GeForce RTX 4070 Ti Super Eagle OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X"
+        },
+        {
+          "id": 30166,
+          "name": "GeForce RTX 4070 Ti Super WINDFORCE OC Graphics Card - 2625MHz Core, 16GB GDDR6X 21000MHz 256-bit Memory, PCI-E 4.0"
+        },
+        {
+          "id": 30171,
+          "name": "Gaming RTX 4070 Ti Super 16G Ventus 2X OC Graphics Card (NVIDIA RTX 4070 Ti Super, 256-Bit, Extreme Clock: 2655 MHz"
+        },
+        {
+          "id": 30182,
+          "name": "GeForce RTX 4070 Ti Super 16G Ventus 2X OC Gaming Graphics Card - 16 GB GDDR6X (21Gbps / 256 Bits), PCIe 4.0-2 x TORX..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30011,
+          "name": "NVIDIA GeForce RTX 4070 Ti SUPER"
+        },
+        {
+          "id": 30149,
+          "name": "GeForce RTX 4070 Ti Super Eagle OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7800 XT",
+      "asin": "B0CGHQ32S2",
+      "productId": 14860,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30035,
+          "name": "AMD Radeon RX 7800 XT"
+        },
+        {
+          "id": 30096,
+          "name": "SAPPHIRE Pulse RX 7800 XT"
+        },
+        {
+          "id": 30097,
+          "name": "XFX Speedster MERC310 RX 7800 XT"
+        },
+        {
+          "id": 30098,
+          "name": "PowerColor Red Devil RX 7800 XT"
+        },
+        {
+          "id": 30099,
+          "name": "ASRock RX 7800 XT Challenger OC"
+        },
+        {
+          "id": 30134,
+          "name": "Radeon RX 7800 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 256-bit GDDR6, GV-R78XTGAMING OC-16GD Video Card"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30097,
+          "name": "XFX Speedster MERC310 RX 7800 XT"
+        },
+        {
+          "id": 30134,
+          "name": "Radeon RX 7800 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 256-bit GDDR6, GV-R78XTGAMING OC-16GD Video Card"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|B650M",
+      "asin": "B0CH92B3S2",
+      "productId": 8046,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20033,
+          "name": "Gigabyte B650M DS3H"
+        },
+        {
+          "id": 20502,
+          "name": "GIGABYTE B650M C V3 (rev. 1.0) AM5 LGA 1718 AMD B650 M-ATX Motherboard with 5-Year Warranty, DDR5, PCIe 4.0 M.2, PCIe 4.0, USB 3.2 Gen1 Type-C, 1GbE LAN, Q-Flash Plus, EZ-Latch (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20033,
+          "name": "Gigabyte B650M DS3H"
+        }
+      ]
+    },
+    {
+      "key": "MSI|MOBO|B850",
+      "asin": "B0DT58JK2W",
+      "productId": 8047,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20034,
+          "name": "MSI MAG B850 Tomahawk WiFi"
+        },
+        {
+          "id": 20434,
+          "name": "MSI - MAG B850 TOMAHAWK MAX WIFI (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Black"
+        },
+        {
+          "id": 20442,
+          "name": "MSI - B850 GAMING PLUS WIFI PZ (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - Gray White/Matt"
+        },
+        {
+          "id": 20451,
+          "name": "MSI - MAG B850 TOMAHAWK MAX WIFI II (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Ryzen 9000 / 8000 / 7000 Motherboard - Black"
+        },
+        {
+          "id": 20491,
+          "name": "AMD Ryzen 7 7700X CPU Processor with MSI B850 Gaming PRO WIFI6E Motherboard (ATX, AM5, DDR5, M.2 Gen5, Wi-Fi 6E)"
+        },
+        {
+          "id": 20492,
+          "name": "AMD Ryzen 7 9700X CPU Processor with MSI B850 Gaming Plus WiFi Motherboard (ATX, AM5, DDR5, PCIe 5.0, M.2 Gen5, Wi-Fi 7, 5G LAN)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20034,
+          "name": "MSI MAG B850 Tomahawk WiFi"
+        }
+      ]
+    },
+    {
+      "key": "ASUS|MOBO|B850",
+      "asin": "B0FKZWNSXW",
+      "productId": 15046,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20035,
+          "name": "ASUS TUF Gaming B850-Plus WiFi"
+        },
+        {
+          "id": 20062,
+          "name": "AMD Ryzen 7 9700X CPU Processor with ASUS TUF Gaming B850-PLUS WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        },
+        {
+          "id": 20067,
+          "name": "AMD Ryzen 7 7800X3D CPU Processor with ASUS TUF Gaming B850-PLUS WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        },
+        {
+          "id": 20073,
+          "name": "AMD Ryzen 7 9800X3D CPU Processor with ASUS TUF Gaming B850-PLUS WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        },
+        {
+          "id": 100389,
+          "name": "ASUS ROG Strix B850-I Gaming WiFi AMD AM5 B850 Mini-ITX mITX Motherboard 10+2+1 Stages, DDR5, 2.5G LAN, WiFi 7, 2X M.2, PCIe® 5.0 x16, USB 20Gbps Type-C®, AI Overclocking, AI Networking II, Aura Sync"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20073,
+          "name": "AMD Ryzen 7 9800X3D CPU Processor with ASUS TUF Gaming B850-PLUS WiFi AM5 ATX Motherboard (DDR5, PCIe 5.0, 3X M.2"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|B850",
+      "asin": "B0GP5Y8BXH",
+      "productId": 8049,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20036,
+          "name": "Gigabyte B850 AORUS Elite WiFi7"
+        },
+        {
+          "id": 20070,
+          "name": "AMD Ryzen 7 9700X CPU Processor with GIGABYTE B850 Gaming WIFI6 Motherboard (ATX, DDR5, 3X M.2"
+        },
+        {
+          "id": 20441,
+          "name": "GIGABYTE - B850 AORUS STEALTH ICE (Socket AM5) AMD B850 ATX DDR5 Wi-Fi 7 Motherboard - White"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20036,
+          "name": "Gigabyte B850 AORUS Elite WiFi7"
+        }
+      ]
+    },
+    {
+      "key": "ASROCK|MOBO|B850M",
+      "asin": "B0DRTWM32Q",
+      "productId": 8050,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20037,
+          "name": "ASRock B850M Pro RS WiFi"
+        },
+        {
+          "id": 20493,
+          "name": "MB ASRock AMD AM5 B850M Pro-A"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20037,
+          "name": "ASRock B850M Pro RS WiFi"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|Z890",
+      "asin": "B0DJP8NFWP",
+      "productId": 8052,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20020,
+          "name": "Gigabyte Z890 AORUS Elite WiFi7"
+        },
+        {
+          "id": 20039,
+          "name": "Gigabyte Z890 AORUS Pro WiFi7"
+        },
+        {
+          "id": 20430,
+          "name": "GIGABYTE - Z890 AORUS PRO ICE (Socket LGA 1851) Intel Z890 ATX DDR5 Wi-Fi 7 Motherboard - White"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20020,
+          "name": "Gigabyte Z890 AORUS Elite WiFi7"
+        },
+        {
+          "id": 20039,
+          "name": "Gigabyte Z890 AORUS Pro WiFi7"
+        }
+      ]
+    },
+    {
+      "key": "ASROCK|MOBO|B550",
+      "asin": "B089VTZ83Q",
+      "productId": 8059,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20046,
+          "name": "ASRock B550 Phantom Gaming 4"
+        },
+        {
+          "id": 100727,
+          "name": "ASRock AMD B550 PG Riptide ATX Motherboard Dual Channel DDR4 4933 MHz AM4 Socket 128 GB SATA3 6.0 Gb/s M.2"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20046,
+          "name": "ASRock B550 Phantom Gaming 4"
+        }
+      ]
+    },
+    {
+      "key": "PHANTEKS|CASE|ECLIPSE",
+      "asin": "B0BMPD1CVP",
+      "productId": 8066,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70020,
+          "name": "Phanteks Eclipse G500A"
+        },
+        {
+          "id": 103887,
+          "name": "Phanteks Eclipse G500A DRGB, High Performance Mid-Tower Case, Mesh Front Panel, Integrated D/A-RGB Lighting, Tempered Glass Window, 3x M25-140..."
+        },
+        {
+          "id": 103898,
+          "name": "Phanteks Eclipse G370A, mid-tower Gaming Chassis, high airflow mesh, 3x M25 D-RGB Fans, Black."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70020,
+          "name": "Phanteks Eclipse G500A"
+        }
+      ]
+    },
+    {
+      "key": "COOLERMASTER|CASE|MASTERBOX",
+      "asin": "B0BP4B8QX3",
+      "productId": 8067,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70021,
+          "name": "Cooler Master MasterBox TD500 Mesh V2"
+        },
+        {
+          "id": 101891,
+          "name": "COOLER MASTER MASTERBOX Elite 500 Cabinet with Side ODD Glass – E500-KG5N-S00 - COOLER MASTER"
+        },
+        {
+          "id": 101212,
+          "name": "Cooler Master MasterBox Q300L Micro-ATX Tower with Magnetic Design Dust Filter & Thermaltake Smart 600W ATX 12V V2.3/EPS 12V 80 Plus Certified Active PFC Power Supply PS-SPD-0600NPCWUS-W"
+        },
+        {
+          "id": 102980,
+          "name": "Cooler Master MasterBox MB600L V2 Computer Case MB600L2KN5NS00"
+        },
+        {
+          "id": 103143,
+          "name": "Cooler Master MasterBox MB320L ARGB Micro-ATX Mini Tower with DarkMirror Front Panel, Mesh Intake Vents, Tempered Glass Side Panel, ARGB..."
+        },
+        {
+          "id": 103658,
+          "name": "Cooler Master MasterBox 600 ATX Black Mid-Tower Case, Back-Connected Motherboard Asus MSI Gigabyte, 410mm GPU Max, *420mm AIO Max, Type C, Tempered..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70021,
+          "name": "Cooler Master MasterBox TD500 Mesh V2"
+        }
+      ]
+    },
+    {
+      "key": "LIANLI|CASE|LANCOOL",
+      "asin": "B0BN3SY5XW",
+      "productId": 8068,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70007,
+          "name": "Lian Li Lancool III"
+        },
+        {
+          "id": 70022,
+          "name": "Lian Li Lancool 216"
+        },
+        {
+          "id": 102890,
+          "name": "LIAN LI LANCOOL 216RX Black Steel / Tempered Glass ATX Mid Tower Computer Case,2x 16 cm ARGB Fans Included --LANCOOL 216RX"
+        },
+        {
+          "id": 103154,
+          "name": "LIAN LI LANCOOL 207 Compact ATX RGB Gaming Computer Case, Tower Chassis w/ 2x140mm ARGB,2x120mm PWM Fans Pre-Installed, USB Type-C Port, Tempered..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70022,
+          "name": "Lian Li Lancool 216"
+        }
+      ]
+    },
+    {
+      "key": "NZXT|CASE|H9",
+      "asin": "B0DQPQ5KN7",
+      "productId": 8069,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70023,
+          "name": "NZXT H9 Flow"
+        },
+        {
+          "id": 100533,
+          "name": "NZXT H9 Flow RGB (2025) – Large Dual-Chamber ATX Mid-Tower Airflow PC Case – Includes 1 x 420mm RGB Fan Unit & 1 x 120mm Fan – 420mm Radiator Support – Tempered Glass – Back-Connect Ready – White"
+        },
+        {
+          "id": 100534,
+          "name": "NZXT H9 Flow (2025) – Large Dual-Chamber ATX Mid-Tower Airflow PC Case – Includes 3 x 140mm & 1 x 120mm Fans – 420mm Radiator Support – Tempered Glass – Back-Connect Ready – White"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70023,
+          "name": "NZXT H9 Flow"
+        }
+      ]
+    },
+    {
+      "key": "FRACTALDESIGN|CASE|POP",
+      "asin": "B08C2XKPNK",
+      "productId": 8072,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 15 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70026,
+          "name": "Fractal Design Pop Air"
+        },
+        {
+          "id": 100535,
+          "name": "Fractal Design Pop 2 Vision Black Panoramic Glass PC Gaming Case - Dual-Chamber Layout - Four Reverse Fans Included – Reverse Connector & ATX/E-ATX/mATX/ITX"
+        },
+        {
+          "id": 100890,
+          "name": "Fractal Design Pop Air Black Solid"
+        },
+        {
+          "id": 100891,
+          "name": "Fractal Design Pop Air RGB Black Tempered Glass Clear Tint"
+        },
+        {
+          "id": 100892,
+          "name": "Fractal Design Pop 2 Air Black TG - Tempered Glass - Performance Airflow PC Gaming Case - Mesh Front Panel - Three 120 mm Fans Included - Spacious Interior - ATX/mATX/ITX Motherboard Support"
+        },
+        {
+          "id": 100893,
+          "name": "Fractal Design Pop 2 Air Black RGB - Tempered Glass - Performance Airflow PC Gaming Case - Mesh Front Panel - Three 120 mm RGB Fans Included - Spacious Interior - ATX/mATX/ITX Motherboard Support"
+        },
+        {
+          "id": 100894,
+          "name": "Fractal Design Pop 2 Vision Black RGB Panoramic Glass PC Gaming Case - Dual-Chamber Layout - Four Reverse Fans Included – Reverse Connector & ATX/E-ATX/mATX/ITX"
+        },
+        {
+          "id": 103813,
+          "name": "Fractal Design Pop Mini Silent Black mATX Sound Damped Solid Panel Tower Computer Case"
+        },
+        {
+          "id": 103814,
+          "name": "Fractal Design Pop Air RGB Black Orange Core TG ATX High-Airflow Clear Tempered Glass Window Mid Tower Computer Case"
+        },
+        {
+          "id": 103815,
+          "name": "Fractal Design Pop Silent Black ATX Sound Damped Solid Panel Mid Tower Computer Case"
+        },
+        {
+          "id": 103816,
+          "name": "Fractal Design Pop XL Air RGB White TG ATX High-Airflow Clear Tempered Glass Window Full Tower Computer Case"
+        },
+        {
+          "id": 103817,
+          "name": "Fractal Design Pop XL Silent Black ATX Sound Damped Solid Panel Full Tower Computer Case"
+        },
+        {
+          "id": 103837,
+          "name": "Fractal Design Pop 2 Vision Black - Dual-Chamber PC Gaming Case - Front and Side Glass Panels- Four 120 mm Reverse Blade Fans Included - Spacious..."
+        },
+        {
+          "id": 103838,
+          "name": "Fractal Design Pop 2 Vision Black RGB - Dual-Chamber PC Gaming Case - Front and Side Glass Panels- Four 120 mm Reverse Blade RGB Fans Included -..."
+        },
+        {
+          "id": 103839,
+          "name": "Fractal Design Pop 2 Vision White RGB - Dual-Chamber PC Gaming Case - Front and Side Glass Panels- Four 120 mm Reverse Blade RGB Fans Included -..."
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70026,
+          "name": "Fractal Design Pop Air"
+        }
+      ]
+    },
+    {
+      "key": "MONTECH|CASE|X3",
+      "asin": "B0F9WB5Y9R",
+      "productId": 8073,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70027,
+          "name": "Montech X3 Mesh"
+        },
+        {
+          "id": 102889,
+          "name": "Montech X3 Mesh, 3 x 140mm& 3 x 120mm Fixed RGB Lighting Fans (Pre-Installed) ATX Mid-Tower PC Gaming Case, USB3.0, Door Open Tempered Glass Side..."
+        }
+      ],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "LIANLI|CASE|O11",
+      "asin": "B0GHST7YY9",
+      "productId": 14274,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 16 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 70001,
+          "name": "Lian Li O11 Dynamic EVO"
+        },
+        {
+          "id": 70255,
+          "name": "- Solo Leveling Computer Case Bundle – Lian Li O11 Dynamic EVO RGB E‑ATX/ATX/mATX PC Tower – with UV Printed Artwork"
+        },
+        {
+          "id": 100886,
+          "name": "META PCS Night Reaper Lian Li O11 Dynamic EVO RGB - Full Tower ATX PC Case – Tempered Glass Gaming Computer Case with Modular Design, High Airflow, and Customizable RGB Lighting"
+        },
+        {
+          "id": 101215,
+          "name": "Lian Li O11 Vision Compact Black-Steel-Tempered Glass ATX Mid Tower Computer Case-Back Connect Support-O11VPX"
+        },
+        {
+          "id": 101218,
+          "name": "LIAN LI O11 Dynamic EVO XL RGB Tempered Glass EATX Full Tower Computer CASE - Whit"
+        },
+        {
+          "id": 102845,
+          "name": "LIAN LI O11 Dynamic EVO XL O11DEXL Black Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case --- O11DEXL-X"
+        },
+        {
+          "id": 102846,
+          "name": "LIAN LI O11 Dynamic EVO XL O11DEXL White Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case --- O11DEXL-W"
+        },
+        {
+          "id": 102847,
+          "name": "LIAN LI O11 EVO RGB White Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case --O11DERGBW"
+        },
+        {
+          "id": 102856,
+          "name": "Lian Li O11 Vision-M - mATX Mid Tower PC Case with 140mm Fan - Hidden AIO Design - Triple Tempered Glass Panels - Up to 360mm AIO Support - Black..."
+        },
+        {
+          "id": 102857,
+          "name": "Lian Li O11 Vision-M - mATX Mid Tower PC Case with 140mm Fan - Hidden AIO Design - Triple Tempered Glass Panels - Up to 360mm AIO Support - White..."
+        },
+        {
+          "id": 103209,
+          "name": "LIAN LI O11 VISION CHROME ATX MI TOWER Case, Aluminum / Steel / Tempered glass --O11VC"
+        },
+        {
+          "id": 103210,
+          "name": "LIAN LI O11 Vision White Aluminum / Steel / Tempered Glass ATX Mid Tower Computer Case --- O11VW"
+        },
+        {
+          "id": 103211,
+          "name": "LIAN LI O11 Dynamic XL ROG Certificated - White Color - Tempered Glass on the Front, and Left Side - E-ATX, ATX Full Tower Gaming Computer Case -..."
+        },
+        {
+          "id": 103502,
+          "name": "Starforge - Old School RuneScape Computer Case Bundle Lian Li O11 Dynamic EVO RGB EATX/ATX/mATX PC Tower Embossed & UV Printed Artwork"
+        },
+        {
+          "id": 103503,
+          "name": "Starforge - Kaiju No. 8 Computer Case Bundle Lian Li O11 Dynamic EVO RGB Full-Tower ATX"
+        },
+        {
+          "id": 103504,
+          "name": "Starforge - Frieren: Beyond Journeys End Computer Case Bundle Lian Li O11 Dynamic EVO RGB EATX/ATX/mATX PC Tower with Embossed & UV Printed Artwork"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 70255,
+          "name": "- Solo Leveling Computer Case Bundle – Lian Li O11 Dynamic EVO RGB E‑ATX/ATX/mATX PC Tower – with UV Printed Artwork"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|5500 XT",
+      "asin": "B0BS1G3B7P",
+      "productId": 14866,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 2 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30140,
+          "name": "RX 5500 XT 8gb GDDR6 Graphics Card,128 Bit, 3XDP"
+        },
+        {
+          "id": 30378,
+          "name": "MSI Gaming Radeon RX 5500 XT Boost Clock: 1845 MHz 128-bit 4GB GDDR6 DP/HDMI Dual Torx 3.0 Fans Freesync VR Ready Graphics Card (RX 5500 XT MECH 4G OC) (Radeon RX 5500 XT MECH 4G OC) (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30140,
+          "name": "RX 5500 XT 8gb GDDR6 Graphics Card,128 Bit, 3XDP"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|6700 XT",
+      "asin": "B08Z5M4KFM",
+      "productId": 14894,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 13 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30044,
+          "name": "AMD Radeon RX 6700 XT"
+        },
+        {
+          "id": 30168,
+          "name": "Radeon RX 6700 XT Gaming OC 12G Graphics Card, WINDFORCE 3X Cooling System, 12GB 192-bit GDDR6"
+        },
+        {
+          "id": 30367,
+          "name": "MSI Gaming Radeon RX 6700 XT 192-bit 12GB GDDR6 DP/HDMI Dual Torx 3.0 Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6700 XT MECH 2X 12G OC) (Renewed)"
+        },
+        {
+          "id": 100676,
+          "name": "AMD Radeon RX 6700 XT 12GB GDDR6 Reference Model Graphics Card (Renewed)"
+        },
+        {
+          "id": 100677,
+          "name": "XFX Speedster QICK319 AMD Radeon RX 6700 XT Black Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYPBDP (Renewed)"
+        },
+        {
+          "id": 100679,
+          "name": "Sapphire Technology Nitro+ AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6, AMD RDNA 2 (11306-01-20G) (Renewed)"
+        },
+        {
+          "id": 100680,
+          "name": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV (Renewed)"
+        },
+        {
+          "id": 100681,
+          "name": "PowerColor Red Devil AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache (Renewed)"
+        },
+        {
+          "id": 100682,
+          "name": "ASRock Radeon RX 6700 XT Challenger D 12GB OC Graphics Card, 2615 MHz Boost Clock, 12GB GDDR6, AMD RDNA 2, DisplayPort 1.4, HDMI 2.1 VRR, PCIe 4.0, Dual Fan Cooling"
+        },
+        {
+          "id": 100683,
+          "name": "Sapphire VCX 11306-01-20T Nitro+ AMD Radeon RX 6700 XT Gaming OC 12GB GDDR6"
+        },
+        {
+          "id": 100684,
+          "name": "ASUS ROG Strix AMD Radeon RX 6700 XT OC Edition Gaming Graphics Card AMD RDNA 2, PCIe 4.0, 12GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Axial-tech Fan Design, 2.9-Slot, Super Alloy Power II, GPU Tweak II"
+        },
+        {
+          "id": 100685,
+          "name": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV"
+        },
+        {
+          "id": 100686,
+          "name": "PowerColor Red Devil AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30168,
+          "name": "Radeon RX 6700 XT Gaming OC 12G Graphics Card, WINDFORCE 3X Cooling System, 12GB 192-bit GDDR6"
+        }
+      ]
+    },
+    {
+      "key": "NVIDIA|GTX|1660 SUPER",
+      "asin": "B0CJFFZTJC",
+      "productId": 14917,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 6 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 30191,
+          "name": "GeForce GTX 1660 Super Graphics Card, 6GB GDDR6 Gaming PC GPU 192bit Video Card PCIe 3.0 x16 DP HDMI DVI Display 1660..."
+        },
+        {
+          "id": 100659,
+          "name": "MSI Gaming GeForce GTX 1660 Super 192-bit HDMI/DP 6GB GDRR6 HDCP Support DirectX 12 Dual Fan VR Ready OC Graphics Card (GTX 1660 Super VENTUS XS OC) (Renewed)"
+        },
+        {
+          "id": 100660,
+          "name": "EVGA 06G-P4-1068-KR GeForce GTX 1660 Super Sc Ultra Gaming, 6GB GDDR6, Dual Fan, Metal Backplate (Renewed)"
+        },
+        {
+          "id": 100661,
+          "name": "ASUS TUF Gaming GeForce GTX 1660 Super Overclocked 6GB Edition HDMI DP DVI Gaming Graphics Card (TUF-GTX1660S-O6G-GAMING)"
+        },
+        {
+          "id": 100663,
+          "name": "MSI NVIDIA GeForce GTX 1660 Super Ventus XS VR Ready OC PCIe 3.0 Graphics Card Dual Fan 6GB GDDR6 HDCP Support DirectX 12 NVIDIA G-SYNC DisplayPort HDMI w HDMI Cable"
+        },
+        {
+          "id": 100664,
+          "name": "PNY GeForce GTX 1660 Super 6GB XLR8 Gaming Overclocked Edition Single Fan (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30191,
+          "name": "GeForce GTX 1660 Super Graphics Card, 6GB GDDR6 Gaming PC GPU 192bit Video Card PCIe 3.0 x16 DP HDMI DVI Display 1660..."
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|B650",
+      "asin": "B0D2NY1XMP",
+      "productId": 15037,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20005,
+          "name": "Gigabyte B650 AORUS Elite AX"
+        },
+        {
+          "id": 20064,
+          "name": "AMD Ryzen 7 7700X CPU Processor with GIGABYTE B650 Gaming X AX V2 Motherboard (AM5, ATX, DDR5"
+        },
+        {
+          "id": 20065,
+          "name": "Ryzen 5 7600X + GIGABYTE B650 AORUS ELITE AX Motherboard"
+        },
+        {
+          "id": 20501,
+          "name": "GIGABYTE B650 Gaming X AX V2 (rev. 1.0) AM5 LGA 1718 AMD B650 ATX DDR5, Triple M.2, PCIe 5.0, USB 3.2 Gen2x2 Type-C, AMD Wi-Fi 6E, Realtek 2.5GbE LAN (Renewed)"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20064,
+          "name": "AMD Ryzen 7 7700X CPU Processor with GIGABYTE B650 Gaming X AX V2 Motherboard (AM5, ATX, DDR5"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|X870E",
+      "asin": "B0FFSZ71T6",
+      "productId": 15041,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 5 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20004,
+          "name": "Gigabyte X870E AORUS Master"
+        },
+        {
+          "id": 20068,
+          "name": "AMD Ryzen 7 9800X3D CPU Processor with GIGABYTE X870E AORUS Elite WIFI7 AM5 Motherboard (ATX, DDR5, 4X M.2"
+        },
+        {
+          "id": 20438,
+          "name": "GIGABYTE - X870E AORUS ELITE WIFI7 ICE (Socket AM5) AMD X870E ATX DDR5 Wi-Fi 7 Motherboard - White"
+        },
+        {
+          "id": 20439,
+          "name": "GIGABYTE - X870E AORUS MASTER X3D AMD AM5 LGA 1718 ATX Motherboard, Supports AMD Ryzen 9000/8000/7000 Series Processors "
+        },
+        {
+          "id": 20447,
+          "name": "GIGABYTE - X870E EAGLE X3D WF7 (Socket AM5) AMD ATX DDR5 Motherboard - Black"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20068,
+          "name": "AMD Ryzen 7 9800X3D CPU Processor with GIGABYTE X870E AORUS Elite WIFI7 AM5 Motherboard (ATX, DDR5, 4X M.2"
+        }
+      ]
+    },
+    {
+      "key": "GIGABYTE|MOBO|B760M",
+      "asin": "B0FJCSW7L3",
+      "productId": 15044,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 4 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20027,
+          "name": "Gigabyte B760M DS3H DDR4"
+        },
+        {
+          "id": 20071,
+          "name": "CPU Motherboard Combo - Core i5-14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M G..."
+        },
+        {
+          "id": 20410,
+          "name": "CPU Motherboard Combo - 14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M DS3H AX D..."
+        },
+        {
+          "id": 100741,
+          "name": "GIGABYTE B760M DS3H DDR4 Intel LGA 1700 mATX Motherboard, Supports Intel Core 14th/13th/12th Gen, DDR4, 6+2+1 Power Phase, 2X M.2, PCIe 4.0, USB-C, 2.5GbE LAN, Q-Flash Plus, PCIe EZ-Latch"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20071,
+          "name": "CPU Motherboard Combo - Core i5-14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M G..."
+        }
+      ]
+    },
+    {
+      "key": "ASROCK|MOBO|B550M",
+      "asin": "B0DQTFCZ53",
+      "productId": 15310,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key answers for 3 distinct products — the ASIN is right for at most one",
+      "answersFor": [
+        {
+          "id": 20015,
+          "name": "ASRock B550M Steel Legend"
+        },
+        {
+          "id": 20337,
+          "name": "- B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen..."
+        },
+        {
+          "id": 20513,
+          "name": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 20015,
+          "name": "ASRock B550M Steel Legend"
+        },
+        {
+          "id": 20337,
+          "name": "- B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen..."
+        },
+        {
+          "id": 20513,
+          "name": "B550M PRO SE - ASRock B550M Pro SE Gaming Desktop Motherboard - AMD PRO565 Chipset - Socket AM4 - Micro ATX - Ryzen 5, Ryzen 3 Processor Supported - 128 GB DDR4 SDRAM Maximum RAM - DIMM,"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|10TB|HDD",
+      "asin": "B0F4R3YCL6",
+      "productId": 15702,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50060,
+          "name": "Western Digital 10TB WD Red Plus NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 GB/s, CMR"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|256GB|NVME",
+      "asin": "B07ZGK3K4V",
+      "productId": 15722,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50079,
+          "name": "Silicon Power 256GB NVMe M.2 PCIe Gen3x4 2280 SSD (SP256GBP34A60M28)"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|1TB|NVME",
+      "asin": "B07ZGJVTZK",
+      "productId": 15724,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50081,
+          "name": "Silicon Power 1TB - NVMe M.2 PCIe Gen3x4 2280 SSD (SP001TBP34A60M28)"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|8TB|HDD",
+      "asin": "B0D1V1SNDX",
+      "productId": 15733,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50090,
+          "name": "Western Digital 8TB WD_Black Performance Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, 256 MB Cache"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|1TB|SSD",
+      "asin": "B0G42FGS7V",
+      "productId": 15745,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50102,
+          "name": "Silicon Power 1TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") SSD Internal Solid State Driv..."
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|512GB|NVME",
+      "asin": "B07ZGJYLNL",
+      "productId": 15749,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50106,
+          "name": "Silicon Power 512GB NVMe M.2 PCIe Gen3x4 2280 SSD (SP512GBP34A60M28)"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|2TB|NVME",
+      "asin": "B0CF1H9SYQ",
+      "productId": 15975,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50330,
+          "name": "Silicon Power 2TB UD90 2230 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/3,200MB/s Solid State Drive Compatible with St..."
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|12TB|HDD",
+      "asin": "B0F7MJV2X8",
+      "productId": 15775,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50132,
+          "name": "Western Digital 12TB WD Blue Internal Hard Drive HDD - 7200 RPM, SATA 6 Gb/s, 512 MB Cache"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|6TB|HDD",
+      "asin": "B071V6SVK2",
+      "productId": 15799,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50156,
+          "name": "Western Digital 6TB WD Purple Surveillance Internal Hard Drive HDD - SATA 6 Gb/s, 64 MB Cache, 3.5\" - WD60PURZ"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|2TB|SSD",
+      "asin": "B0G42YVQRJ",
+      "productId": 15816,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50173,
+          "name": "Silicon Power 2TB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5\" 7mm (0.28\") SSD Internal Solid State Driv..."
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|4TB|NVME",
+      "asin": "B0CJ2N9485",
+      "productId": 15849,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50206,
+          "name": "Silicon Power 4TB US75 Nvme PCIe Gen4 M.2 2280 SSD R/W Up to 7,000/6,500 MB/s"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|1TB|NVME",
+      "asin": "B0B4SQB1HY",
+      "productId": 15834,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50191,
+          "name": "Western Digital 1TB SN850 NVMe SSD for PS5 Consoles Solid State Drive with Heatsink - Gen4 PCIe, M.2 2280, Up to 7"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|1TB|SSD",
+      "asin": "B09ZRD38D8",
+      "productId": 15842,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50199,
+          "name": "Western Digital 1TB P40 Game Drive SSD - Up to 2,000MB/s, RGB Lighting"
+        }
+      ]
+    },
+    {
+      "key": "WD|8GB|M.2",
+      "asin": "B07YFFX5MD",
+      "productId": 15886,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50241,
+          "name": "1TB WD Blue SN550 NVMe Internal SSD - Gen3 x4 PCIe 8Gb/s, M.2 2280, 3D NAND"
+        }
+      ]
+    },
+    {
+      "key": "WD|16GB|M.2",
+      "asin": "B0C8WPRM9T",
+      "productId": 15903,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50258,
+          "name": "2TB WD Blue SN580 NVMe Internal Solid State Drive SSD - Gen4 x4 PCIe 16Gb/s, M.2 2280, Up to 4"
+        }
+      ]
+    },
+    {
+      "key": "SILICONPOWER|500GB|NVME",
+      "asin": "B0B218CQVD",
+      "productId": 15915,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50270,
+          "name": "Silicon Power 500GB UD90 NVMe 4.0 Gen4 PCIe M.2 SSD R/W up to 5,000/2,700 MB/s (SP500GBP44UD9005)"
+        }
+      ]
+    },
+    {
+      "key": "WESTERNDIGITAL|10TB|SATA",
+      "asin": "B0719498XY",
+      "productId": 15976,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50331,
+          "name": "Western Digital 10TB WD Red NAS Internal Hard Drive - 5400 RPM Class, SATA 6 Gb/s, CMR"
+        }
+      ]
+    },
+    {
+      "key": "WD|500GB|NVME",
+      "asin": "B0FJ8VGNK8",
+      "productId": 15979,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50334,
+          "name": "WD Blue SN5100 500GB NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 6"
+        }
+      ]
+    },
+    {
+      "key": "WD|2TB|NVME",
+      "asin": "B09C4BKTRV",
+      "productId": 16063,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50418,
+          "name": "WD Black SN850 2TB NVMe PCIe 4.0 M.2 Internal Gaming SSD with Heatsink"
+        }
+      ]
+    },
+    {
+      "key": "WD|1TB|NVME",
+      "asin": "B0FJ8QFWBQ",
+      "productId": 15981,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50336,
+          "name": "WD Blue SN5100 1TB NVMe SSD - M.2 2280, PCIe Gen 4.0, Internal Solid State Drive - Read Speeds Up to 7"
+        }
+      ]
+    },
+    {
+      "key": "WD|6TB|SATA",
+      "asin": "B0CKSS5VCF",
+      "productId": 16027,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50382,
+          "name": "WD Red Plus Internal Hard Drive 6 TB CMR 3.5 Inch SATA 5400 rpm 256 MB NAS (Amazon.co.jp Limited)"
+        }
+      ]
+    },
+    {
+      "key": "WD|8TB|SATA",
+      "asin": "B0CP7CFNK4",
+      "productId": 16020,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": []
+    },
+    {
+      "key": "SAMSUNG|2TB|M.2",
+      "asin": "B0BXX1JJH8",
+      "productId": 16046,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "key matches no product in the catalog — it can never be consulted",
+      "answersFor": [],
+      "asinCurrentlyOn": [
+        {
+          "id": 50401,
+          "name": "Samsung 990 PRO 2TB, 3-bit TLC V-NAND, M.2 (2280)"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|5800X",
+      "asin": "B0815XFSGK",
+      "productId": 5025,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0815XFSGK is claimed by 2 entries (AMD|Ryzen 7|5800X, AMD|Ryzen 7|5800) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 10025,
+          "name": "AMD Ryzen 7 5800X"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10025,
+          "name": "AMD Ryzen 7 5800X"
+        },
+        {
+          "id": 10027,
+          "name": "AMD Ryzen 7 5800"
+        }
+      ]
+    },
+    {
+      "key": "AMD|Ryzen 7|5800",
+      "asin": "B0815XFSGK",
+      "productId": 5027,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0815XFSGK is claimed by 2 entries (AMD|Ryzen 7|5800X, AMD|Ryzen 7|5800) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 10027,
+          "name": "AMD Ryzen 7 5800"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10025,
+          "name": "AMD Ryzen 7 5800X"
+        },
+        {
+          "id": 10027,
+          "name": "AMD Ryzen 7 5800"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i5|14600KF",
+      "asin": "B0CGJ4MLC8",
+      "productId": 5059,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0CGJ4MLC8 is claimed by 2 entries (INTEL|Core i5|14600KF, INTEL|Core i5|14600) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 10059,
+          "name": "Intel Core i5-14600KF"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10059,
+          "name": "Intel Core i5-14600KF"
+        },
+        {
+          "id": 10060,
+          "name": "Intel Core i5-14600"
+        }
+      ]
+    },
+    {
+      "key": "INTEL|Core i5|14600",
+      "asin": "B0CGJ4MLC8",
+      "productId": 5060,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0CGJ4MLC8 is claimed by 2 entries (INTEL|Core i5|14600KF, INTEL|Core i5|14600) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 10060,
+          "name": "Intel Core i5-14600"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 10059,
+          "name": "Intel Core i5-14600KF"
+        },
+        {
+          "id": 10060,
+          "name": "Intel Core i5-14600"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|7600 XT",
+      "asin": "B0CHK2345D",
+      "productId": 6035,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0CHK2345D is claimed by 2 entries (AMD|RX|7600 XT, AMD|RX|6750 XT) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 30037,
+          "name": "AMD Radeon RX 7600 XT"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30036,
+          "name": "AMD Radeon RX 7700 XT"
+        },
+        {
+          "id": 30037,
+          "name": "AMD Radeon RX 7600 XT"
+        },
+        {
+          "id": 30043,
+          "name": "AMD Radeon RX 6750 XT"
+        },
+        {
+          "id": 30099,
+          "name": "ASRock RX 7800 XT Challenger OC"
+        }
+      ]
+    },
+    {
+      "key": "AMD|RX|6750 XT",
+      "asin": "B0CHK2345D",
+      "productId": 6041,
+      "source": "verified",
+      "verifiedAt": "2026-04-22",
+      "reason": "ASIN B0CHK2345D is claimed by 2 entries (AMD|RX|7600 XT, AMD|RX|6750 XT) — one listing, more than one product",
+      "answersFor": [
+        {
+          "id": 30043,
+          "name": "AMD Radeon RX 6750 XT"
+        }
+      ],
+      "asinCurrentlyOn": [
+        {
+          "id": 30036,
+          "name": "AMD Radeon RX 7700 XT"
+        },
+        {
+          "id": 30037,
+          "name": "AMD Radeon RX 7600 XT"
+        },
+        {
+          "id": 30043,
+          "name": "AMD Radeon RX 6750 XT"
+        },
+        {
+          "id": 30099,
+          "name": "ASRock RX 7800 XT Challenger OC"
+        }
+      ]
+    }
+  ]
+}
