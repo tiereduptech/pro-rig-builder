@@ -8,6 +8,62 @@
 // number is a required token. Different models = different keys.
 // ═══════════════════════════════════════════════════════════════════
 
+// ═══════════════════════════════════════════════════════════════════
+// MODEL DESIGNATIONS — the tokens that actually identify a product
+//
+// A product name is prose plus a designation. The prose differs between every
+// source that writes it ("Fractal Design - North Charcoal Black" vs "North -
+// Genuine Walnut Wood Front"); the designation does not — SA510 is SA510 at
+// every retailer, and it is never SN850P.
+//
+// So identity is asked as one question: do these two names designate the same
+// model? Not a similarity score, and never a token-overlap ratio — overlap is
+// what matched "Samsung 970 EVO Plus 1TB" to "Samsung T7 1TB External" in the
+// first place, because they share every word that is not the model.
+//
+// A token counts as a designation if it contains a digit and is not a unit.
+// That keeps SA510, SN850X, 970, RM850x, B650E and drops 1TB, 850W, Gen 4, x4,
+// 100Hz and bare small integers.
+const UNIT_TOKEN = /^(\d+(tb|gb|mb|kb|hz|khz|ghz|mhz|mm|cm|nm|in|bit|pin|rpm|w|v|k|p|x|ms|fps|core|thread|way|pack)|x\d+|gen\d+|\d{1,2})$/;
+const squashName = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+/** The model designations in a name, lowercased, in order, deduped. */
+export function modelDesignations(name) {
+  if (!name) return [];
+  return [...new Set(String(name).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
+    .split(' ').filter((t) => t && /\d/.test(t) && !UNIT_TOKEN.test(t)))];
+}
+
+/**
+ * Do two names designate the same model?
+ *
+ *   'match'        both carry a designation and they agree
+ *   'mismatch'     both carry a designation and they name different models
+ *   'unverifiable' one side carries none — which is not evidence of anything
+ *
+ * Never a score. A caller that needs to reject on doubt rejects on anything
+ * that is not 'match'; a caller that only refuses to make things worse (the
+ * daily refresh) acts on 'mismatch' alone.
+ */
+export function namesAgreeOnModel(nameA, nameB) {
+  if (!nameA || !nameB) return { verdict: 'unverifiable', a: [], b: [], why: 'no name on one side' };
+  const am = modelDesignations(nameA), bm = modelDesignations(nameB);
+  if (!am.length || !bm.length) {
+    return { verdict: 'unverifiable', a: am, b: bm,
+      why: `no model designation in ${!am.length ? 'the first name' : 'the second name'}` };
+  }
+  // Separators are typed inconsistently on both sides — "MPG271QRXQDOLED" and
+  // "MPG 271QRX QD-OLED" are one model. Compare against the de-punctuated name
+  // too, at >=3 chars so a two-character token cannot match by accident.
+  const as = squashName(nameA), bs = squashName(nameB);
+  const hit = (tok, other, otherSquash) => other.includes(tok) || (tok.length >= 3 && otherSquash.includes(tok));
+  const agree = am.some((t) => hit(t, bm, bs)) || bm.some((t) => hit(t, am, as));
+  return agree
+    ? { verdict: 'match', a: am, b: bm }
+    : { verdict: 'mismatch', a: am, b: bm,
+        why: `first names model [${am.join(' ')}], second names [${bm.join(' ')}]` };
+}
+
 // Common CPU patterns
 const CPU_PATTERNS = [
   // Intel Core iX-YYYYY with optional suffix (K, KF, F, etc.)
@@ -58,17 +114,44 @@ const RAM_PATTERNS = [
 ];
 
 // Storage patterns
+//
+// The third segment is the MODEL, not the interface. It used to be whichever of
+// NVMe/SATA/SSD/HDD appeared first, which made the key a class: every Samsung
+// 1TB SSD in the catalog keyed to "SAMSUNG|1TB|SSD", so the 970 EVO Plus and
+// the T7 external were one product as far as any name-tier matcher could tell.
+// That is how five storage rows ended up pointing at a different drive's sku.
 const STORAGE_PATTERNS = [
-  // Brand + capacity + type
-  { rx: /\b(Samsung|WD|Western Digital|Seagate|Crucial|SanDisk|Kingston|Corsair|TeamGroup|SK hynix|Solidigm|ADATA|XPG|Lexar|SiliconPower|Silicon Power)\b.*?(\d+(?:\.\d+)?)\s*(TB|GB)\b.*?(NVMe|SATA|M\.2|SSD|HDD)/i,
-    fmt: (m) => `${m[1].toUpperCase().replace(/\s+/g, '')}|${m[2]}${m[3].toUpperCase()}|${m[4].toUpperCase()}` },
+  // Brand + capacity + model designation. Capacity comes from parseCapacityGB,
+  // the shared parser, rather than a second capacity regex here — the local one
+  // read "2TB WD Red Plus NAS … SATA 6 Gb/s" as a 6GB drive, because it started
+  // scanning after the brand and 6 Gb/s was the next thing that looked like a
+  // size. That keyed six Red Plus drives of four different capacities together.
+  { rx: /\b(Samsung|WD|Western Digital|Seagate|Crucial|SanDisk|Kingston|Corsair|TeamGroup|SK hynix|Solidigm|ADATA|XPG|Lexar|SiliconPower|Silicon Power)\b/i,
+    fmt: (m, name) => {
+      const cap = parseCapacityGB(name);
+      const model = modelDesignations(name);
+      // No designation means no identity. A key of brand+capacity alone would
+      // be a class again, so this name simply does not canonicalize.
+      if (!cap || !model.length) return null;
+      const size = cap >= 1000 && cap % 1000 === 0 ? `${cap / 1000}TB` : `${cap}GB`;
+      return `${m[1].toUpperCase().replace(/\s+/g, '')}|${size}|${model.join(' ').toUpperCase()}`;
+    } },
 ];
 
 // PSU patterns
+//
+// Same correction as Storage: the third segment was the 80 PLUS rating, so
+// "CORSAIR|850W|GOLD" was one key for the RM850x, the HX850 and every other
+// Corsair 850W Gold unit — three different products at three different prices.
 const PSU_PATTERNS = [
-  // Brand + wattage + efficiency rating
-  { rx: /\b(Corsair|EVGA|Seasonic|Cooler Master|Thermaltake|be quiet|NZXT|ASUS|MSI|SUPER FLOWER|FSP|Antec|Rosewill|ARESGAME|Phanteks)\b.*?(\d{3,4})W.*?(Bronze|Silver|Gold|Platinum|Titanium)/i,
-    fmt: (m) => `${m[1].toUpperCase().replace(/\s+/g, '')}|${m[2]}W|${m[3].toUpperCase()}` },
+  // Brand + wattage + model designation
+  { rx: /\b(Corsair|EVGA|Seasonic|Cooler Master|Thermaltake|be quiet|NZXT|ASUS|MSI|SUPER FLOWER|FSP|Antec|Rosewill|ARESGAME|Phanteks)\b.*?(\d{3,4})W/i,
+    fmt: (m, name) => {
+      const model = modelDesignations(name);
+      return model.length
+        ? `${m[1].toUpperCase().replace(/\s+/g, '')}|${m[2]}W|${model.join(' ').toUpperCase()}`
+        : null;
+    } },
 ];
 
 // Case patterns
@@ -102,7 +185,9 @@ export function canonicalizeProductName(name, category) {
   if (!patterns) return null;
   for (const { rx, fmt } of patterns) {
     const match = name.match(rx);
-    if (match) return fmt(match);
+    // fmt may decline: a pattern that matched the shape but found no model
+    // designation returns null rather than a key that names a class.
+    if (match) { const key = fmt(match, name); if (key) return key; }
   }
   return null;
 }
@@ -121,6 +206,12 @@ export function sameCanonicalIdentity(nameA, nameB, category) {
 /**
  * Extract the "model token" from a name — the distinguishing identifier.
  * Used for strict token-level matching (5900X ≠ 5900XT).
+ *
+ * The last segment of a canonical key is the model for every category. It was
+ * not always: Storage keys ended in the interface word, so this returned "SSD"
+ * and verify-catalog-asins.js's "strict model-token matching" was asking
+ * whether an Amazon title contains the word SSD. PSU keys ended in the 80 PLUS
+ * rating and it asked for "GOLD".
  */
 export function extractModelToken(name, category) {
   const canonical = canonicalizeProductName(name, category);
@@ -413,6 +504,7 @@ export function validatePriceBatch(rows, opts) {
 
 export default {
   canonicalizeProductName, sameCanonicalIdentity, extractModelToken,
+  modelDesignations, namesAgreeOnModel,
   parseCapacityGB, capacitiesMatch, capacityCompatible, isHardDrive, isPricePlausibleForCapacity,
   RAM_PRICE_CEILING_PER_GB, STORAGE_PRICE_CEILING_PER_GB, PSU_PRICE_CEILING_PER_W, absolutePriceCeiling,
   PRICE_TABLE, PRICE_TABLE_CALIBRATED_AT, PRICE_TABLE_MAX_AGE_DAYS, STALE_CEILING_FAILURE_RATE,
