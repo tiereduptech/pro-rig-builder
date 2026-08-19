@@ -105,9 +105,9 @@
  * manufacturers and Best Buy's come from Best Buy, so the words differ
  * constantly on rows that are the same product; what does not drift is SA510 vs
  * SN850P, 970 EVO vs T7, SN770 vs SN850X. Over all 1,040 rows, 773 carry a
- * model token on both sides and 6 disagree — 5 confirmed mismaps and one row
- * (90365) whose Best Buy name omits the model entirely, which is exactly the
- * case to hold rather than guess at.
+ * model token on both sides and 6 disagree — 5 confirmed mismaps and 90365,
+ * which is held for a reason worth reading before anyone cites it as proof the
+ * check works (see below).
  *
  * A mismatch holds the price, stamps priceUnconfirmedReason
  * 'bestbuy:name-mismatch', and names the row in a CI warning. Unlike every
@@ -405,10 +405,27 @@ const UNREFEREED = 'UNREFEREED';
 // one question — do these two names name the same model?
 //
 // Measured over all 1,040 rows: 773 have a model token on both sides and 6 of
-// those disagree. Five are confirmed mismaps (50465, 50466, 50480, 50485,
-// 50501); the sixth is 90365, where Best Buy's name drops the model number
-// altogether and the row cannot be confirmed either way — which is exactly the
-// case a gate should hold rather than guess at.
+// those disagree. Five are confirmed mismaps: 50465, 50466, 50480, 50485, 50501.
+//
+// THE SIXTH IS NOT A MODEL CONFLICT, whatever the hold reason reads like.
+// 90365 is held on this comparison:
+//
+//   catalog  "Lenovo - ThinkVision P24Q-40 24" Class WQHD …"   -> [p24q]
+//   Best Buy "Lenovo - ThinkVision 23.8" IPS LED QHD (2560x1440) 48Hz - 120Hz …"
+//                                                              -> [2560x1440]
+//
+// Best Buy's name carries no model designation at all. What it does carry is a
+// resolution, and "2560x1440" is alphanumeric, contains digits, and is not in
+// UNIT_TOKEN — so it is read as a designation, and "p24q != 2560x1440" is
+// recorded as a model conflict. The outcome is right (a 48-120Hz QHD panel is
+// not a 60Hz P24q-40) and holding an unidentifiable row is right, but the
+// evidence is a resolution mismatched against a model number.
+//
+// So do not read 90365 as the check catching a mismap: on that row, the check
+// answered a question it was not asked. It is pinned in
+// test/product-identity.test.js so a change to the tokenizer has to decide
+// about it deliberately — if resolutions ever stop counting as designations,
+// 90365 becomes 'unverifiable' and its price stops being held.
 // The tokenizer and the verdict live in normalize-product-name.js, with the
 // canonical keys they correct: the same question is asked when a matcher DECIDES
 // to attach a sku and when this job checks one it inherited, and two copies of
@@ -654,7 +671,12 @@ show('HELD — the new price failed the cross-retailer sanity gate:', buckets.fl
 show('HELD — THE SKU NAMES A DIFFERENT PRODUCT (relink required; no run fixes this):', buckets.nameMismatch,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} sku ${r.sku.padEnd(9)} stored $${String(r.stored).padEnd(9)} not written $${String(r.api.salePrice).padEnd(9)}\n` +
          `           row: ${r.name.slice(0, 74)}\n` +
-         `           api: ${String(r.api.name || '—').slice(0, 74)}`, 25);
+         `           api: ${String(r.api.name || '—').slice(0, 74)}\n` +
+         // The tokens the verdict actually rests on. Print them: on 90365 they
+         // are [p24q] against [2560x1440], which is a resolution standing in
+         // for a model designation, and a reader who only sees "the sku names a
+         // different product" would file that as a caught mismap.
+         `           held on: [${(r.nameCheck?.rowModels || []).join(' ') || '—'}] vs [${(r.nameCheck?.apiModels || []).join(' ') || '—'}]`, 25);
 
 show('HELD — an unrefereed cliff (--unrefereed-cliffs=hold):', buckets.unrefereedHeld,
   (r) => `${String(r.id).padEnd(8)} ${String(r.cat || '').padEnd(12)} stored $${String(r.stored).padEnd(9)} api $${String(r.api.salePrice).padEnd(9)} | ${r.holdReason}`);
