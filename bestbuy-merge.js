@@ -18,7 +18,7 @@
 
 import { readFileSync, writeFileSync, copyFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { canonicalizeProductName,
+import { canonicalizeProductName, namesAgreeOnModel,
          parseCapacityGB, capacityCompatible, isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
 import { bestbuyDecision } from './bestbuy-price.js';
 
@@ -257,6 +257,8 @@ function serializeParts(parts) {
   const stats = {};
   let totalMatched = 0;
   const matchTiers = {};
+  const identitySamples = [];
+  let totalIdentityRejected = 0;
   let listingsConsidered = 0;
   let totalAdded = 0;
   let totalSkippedNoGtin = 0;
@@ -268,6 +270,7 @@ function serializeParts(parts) {
     let skippedNoGtin = 0;
     let skipped3p = 0;
     let capacityRejected = 0;
+    let identityRejected = 0;
     let compGated = 0;
 
     for (const bb of products) {
@@ -294,6 +297,30 @@ function serializeParts(parts) {
         let key = null;
         try { key = canonicalizeProductName(bb.name, bbCat); } catch { key = null; }
         if (key) { match = nameIndex.get(bbCat + "|" + key.toLowerCase()); if (match) matchTier = "name"; }
+        // ── IDENTITY GATE ON THE NAME TIER ──
+        // A canonical key is a bucket, not a product: 1,079 of the 1,641
+        // catalog rows it can key still share a key with a different product,
+        // and for GPUs, cases and boards it is a whole class by design
+        // ("NVIDIA|RTX|5080" is 31 distinct cards). GTIN and MPN identify; a
+        // name-tier hit only narrows, so the model designations have to agree
+        // before the deal is attached. Five storage rows in this catalog point
+        // at another drive's sku because this gate did not exist: the 970 EVO
+        // Plus 1TB got the T7 1TB's listing, the SA510 2TB got the SN850P's.
+        //
+        // 'unverifiable' is rejected too, not just 'mismatch'. This is the
+        // last-resort tier — no UPC, no MPN — and if neither name carries a
+        // designation then brand and bucket are the whole of the evidence,
+        // which is what produced the bug.
+        if (match && matchTier === "name") {
+          const id = namesAgreeOnModel(match.n, bb.name);
+          if (id.verdict !== "match") {
+            identityRejected++;
+            if (identitySamples.length < 20) {
+              identitySamples.push(`${match.id} ${id.verdict}: "${match.n.slice(0, 60)}" vs "${bb.name.slice(0, 60)}"`);
+            }
+            match = null; matchTier = null;
+          }
+        }
       }
       if (match) {
         // ── CAPACITY GUARD (retailer-agnostic) ──
@@ -350,11 +377,12 @@ function serializeParts(parts) {
       }
     }
 
-    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p, capacityRejected, compGated };
+    stats[category] = { total: products.length, matched, added, skippedNoGtin, skipped3p, capacityRejected, identityRejected, compGated };
     totalMatched += matched;
     totalAdded += added;
     totalSkippedNoGtin += skippedNoGtin;
     totalSkipped3p += skipped3p;
+    totalIdentityRejected += identityRejected;
 
     const matchRate = products.length ? ((matched / products.length) * 100).toFixed(1) : '0.0';
     console.log(`  ${category.padEnd(14)} ${products.length.toString().padStart(5)} items  match ${matched} (${matchRate}%)  +new ${added}  no-gtin ${skippedNoGtin}  3p ${skipped3p}  comp-gated ${compGated}`);
@@ -363,6 +391,10 @@ function serializeParts(parts) {
   console.log('\n━━━ TOTALS ━━━');
   console.log(`  Matched (Amazon + Best Buy): ${totalMatched}`);
   console.log(`    by GTIN: ${matchTiers.gtin||0} | by MPN: ${matchTiers.mpn||0} | by name: ${matchTiers.name||0}`);
+  if (totalIdentityRejected) {
+    console.log(`    name-tier hits rejected because the models disagree: ${totalIdentityRejected}`);
+    identitySamples.forEach((x) => console.log(`      ${x}`));
+  }
   console.log(`    (${listingsConsidered} Best Buy listings considered \u2192 ${totalMatched} products got the best-priced one)`);
   console.log(`  Added (Best Buy only):       ${totalAdded}`);
   console.log(`  Skipped (no GTIN):           ${totalSkippedNoGtin}`);

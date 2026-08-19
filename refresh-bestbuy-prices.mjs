@@ -147,6 +147,7 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 
 import { classifyDeal, effectivePrice, CLASS } from './price-sanity.js';
+import { namesAgreeOnModel } from './normalize-product-name.js';
 
 const require = createRequire(import.meta.url);
 const { writeCatalog } = require('./scripts/write-catalog.cjs');
@@ -408,33 +409,10 @@ const UNREFEREED = 'UNREFEREED';
 // 50501); the sixth is 90365, where Best Buy's name drops the model number
 // altogether and the row cannot be confirmed either way — which is exactly the
 // case a gate should hold rather than guess at.
-const UNIT_TOKEN = /^(\d+(tb|gb|mb|kb|hz|khz|ghz|mhz|mm|cm|nm|in|bit|pin|rpm|w|v|k|p|x|ms|fps|core|thread|way|pack)|x\d+|gen\d+|\d{1,2})$/;
-const squashName = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
-const modelTokens = (s) => [...new Set(String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()
-  .split(' ').filter((t) => t && /\d/.test(t) && !UNIT_TOKEN.test(t)))];
-
-/**
- * 'match' | 'mismatch' | 'unverifiable' — never a score. A row is held only on
- * 'mismatch': both names carry a model designation and they name different ones.
- */
-function nameVerdict(rowName, apiName) {
-  if (!rowName || !apiName) return { verdict: 'unverifiable', why: 'no name on one side' };
-  const rm = modelTokens(rowName), am = modelTokens(apiName);
-  if (!rm.length || !am.length) {
-    return { verdict: 'unverifiable', rowModels: rm, apiModels: am,
-      why: `no model designation in ${!rm.length ? 'the catalog name' : "Best Buy's name"}` };
-  }
-  // Separators are typed inconsistently on both sides — "MPG271QRXQDOLED" and
-  // "MPG 271QRX QD-OLED" are one model. Compare against the de-punctuated name
-  // too, at >=3 chars so a two-character token cannot match by accident.
-  const rs = squashName(rowName), as = squashName(apiName);
-  const hit = (tok, other, otherSquash) => other.includes(tok) || (tok.length >= 3 && otherSquash.includes(tok));
-  const agree = rm.some((t) => hit(t, am, as)) || am.some((t) => hit(t, rm, rs));
-  return agree
-    ? { verdict: 'match', rowModels: rm, apiModels: am }
-    : { verdict: 'mismatch', rowModels: rm, apiModels: am,
-        why: `row names model [${rm.join(' ')}], sku resolves to [${am.join(' ')}]` };
-}
+// The tokenizer and the verdict live in normalize-product-name.js, with the
+// canonical keys they correct: the same question is asked when a matcher DECIDES
+// to attach a sku and when this job checks one it inherited, and two copies of
+// it would drift into two answers.
 
 const OUT = {
   OK: 'ok',                 // price + stock written, stamped confirmed
@@ -493,10 +471,10 @@ for (const r of targets) {
   // stale or merely suspect would file a mismap under a heading that implies
   // it self-heals, and this one does not: tomorrow's run reads the same wrong
   // sku and agrees with itself.
-  const nv = nameVerdict(r.name, v.name);
-  row.nameCheck = nv;
+  const nv = namesAgreeOnModel(r.name, v.name);
+  row.nameCheck = { verdict: nv.verdict, rowModels: nv.a, apiModels: nv.b, why: nv.why };
   if (nv.verdict === 'mismatch') {
-    row.holdReason = `sku ${r.sku} names a different product — ${nv.why}`;
+    row.holdReason = `sku ${r.sku} names a different product — row names model [${nv.a.join(' ')}], sku resolves to [${nv.b.join(' ')}]`;
     row.unconfirmedReason = 'bestbuy:name-mismatch';
     buckets.nameMismatch.push(row);
     continue;
