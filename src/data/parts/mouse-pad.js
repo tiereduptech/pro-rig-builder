@@ -574,12 +574,17 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4384400&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4384400.p%3FskuId%3D4384400",
         "price": 6.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "padSize": "Medium",
     "surface": "Cloth",
-    "bench": 62
+    "bench": 62,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100297,
@@ -734,12 +739,17 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6514575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6514575.p%3FskuId%3D6514575",
         "price": 9.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "surface": "Cloth",
     "padSize": "Small",
-    "bench": 56
+    "bench": 56,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100305,
@@ -794,12 +804,17 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578719.p%3FskuId%3D6578719",
         "price": 34.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "surface": "Cloth",
     "padSize": "Large",
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100308,
@@ -819,7 +834,12 @@ export default [
     },
     "surface": "Cloth",
     "padSize": "Medium",
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100309,

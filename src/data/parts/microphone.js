@@ -664,13 +664,18 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6277346&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6277346.p%3FskuId%3D6277346",
         "price": 99.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "micType": "USB",
     "pattern": "Multi-Pattern",
     "sampleRate": 48,
-    "bench": 89
+    "bench": 89,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100272,
@@ -685,13 +690,18 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6480355&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6480355.p%3FskuId%3D6480355",
         "price": 149.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 96,
-    "bench": 81
+    "bench": 81,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100273,

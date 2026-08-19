@@ -355,11 +355,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 280.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608080&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-6tb-p10-game-drive-portable-external-hard-drive-wdbz7d0060bbk-wesn--black%2FJXTHCC74RL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835462068887842472819",
         "itemNumber": "N82E16822234570",
@@ -388,7 +383,8 @@ export default [
     "interface": "USB",
     "rpm": 7200,
     "value": 40,
-    "bench": 10
+    "bench": 10,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50198,

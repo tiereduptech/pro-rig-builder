@@ -78,11 +78,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 279.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12177717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-1tb-gen5-nvme-ssd-pcie-5-0-m-2-up-to-11000-mb-s-with-heatsink-ps5-compatible%2FJX8PSKCR8Y&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313616839381121011296",
         "itemNumber": "9SIBZW0KWM4218",
@@ -100,7 +95,8 @@ export default [
     "nand": "TLC",
     "value": 96,
     "upc": "00649528935632",
-    "mpn": "CT1000T700SSD3"
+    "mpn": "CT1000T700SSD3",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50002,
@@ -434,11 +430,6 @@ export default [
     "tlc": true,
     "dram": true,
     "deals": {
-      "bestbuy": {
-        "price": 459.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11058459&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsk-hynix-platinum-p51-2tb-pcie-gen5-nvme-m-2-ssd-i-238-layer-nand-up-to-14-7gb-s-read%2FBGWLPVKCXF&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838310598542854473674",
         "itemNumber": "9SIC3DRKN40420",
@@ -458,7 +449,8 @@ export default [
     "bench": 47,
     "upc": "08809433503070",
     "mpn": "HFS2T0GEJ9X",
-    "amazonRemovedAnomaly": "2026-06-28"
+    "amazonRemovedAnomaly": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50011,
@@ -1503,11 +1495,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 519.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12574815&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-870-evo-1tb-internal-ssd-sata%2FJ3ZYGCHH2Z&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -1529,7 +1516,8 @@ export default [
     "dram": true,
     "value": 1,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50043,
@@ -1618,11 +1606,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 196.54,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11052103&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-1tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-1000g-up-to-6000-mb-s%2FJX4LR3PJHQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831874679547615715184",
         "itemNumber": "N82E16820242902",
@@ -1658,7 +1641,8 @@ export default [
     "value": 57,
     "read": 6000,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50045,
@@ -1682,11 +1666,6 @@ export default [
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 297.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12503865&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-2280-pcie-gen4-nvme-ssd-up-to-7100-mb-s-3d-nand-acronis-offer%2FJX8PSKCYK6&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445832341052501456809978",
@@ -1722,7 +1701,8 @@ export default [
     "dram": false,
     "value": 45,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50046,
@@ -1802,11 +1782,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 188.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12514533&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-m-2-2280-1tb-pci-express-4-0-x4-nvme-3d-nand-internal-solid-state-drive-ssd-ct1000p310ssd801%2FJX8PSKCYZK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314822686352588708495",
         "itemNumber": "9SIC0X3KVK4925",
@@ -1840,7 +1815,8 @@ export default [
     "dram": false,
     "value": 60,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50048,
@@ -1864,11 +1840,6 @@ export default [
         "priceSeller": "TEKTURN®",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 114.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12199398&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-500gb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-500g-up-to-up-to-6000-mb-s%2FJX4LR3PJT8&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445836750414204277416004",
@@ -1909,7 +1880,8 @@ export default [
     "formFactor": "M.2 2280",
     "reviewFlags": [
       "detector:wrong-asin"
-    ]
+    ],
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50049,
@@ -2104,11 +2076,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 121.34,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12313939&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-a400-480gb-internal-ssd-sata%2FJX4LR3X49T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836296222711815839684",
         "itemNumber": "N82E16820242834",
@@ -2141,7 +2108,8 @@ export default [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 6
+    "value": 6,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50053,
@@ -2164,11 +2132,6 @@ export default [
         "priceSeller": "SaleTime Distributers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 174.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12608393&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-bx500-1tb-internal-ssd-sata%2FJX8PSWKR92&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "44583149854755867736759",
@@ -2215,7 +2178,8 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 4,
-    "bench": 45
+    "bench": 45,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50054,
@@ -2291,11 +2255,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 929,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12189747&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-4tb-internal-ssd-pcle-gen-4x4-nvme%2FJ3ZYG2R5GZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837033268726003955369",
         "itemNumber": "N82E16820147879",
@@ -2330,7 +2289,8 @@ export default [
     "dram": true,
     "value": 11,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50056,
@@ -2353,11 +2313,6 @@ export default [
         "priceSeller": "Woot",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 199.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12100848&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-1tb-sa510-2-5-internal-solid-state-drive-ssd-wds100t3b0a%2FJXTHCJVQS2&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "9SIC0X3KGY4249",
@@ -2393,7 +2348,8 @@ export default [
     "value": 2,
     "bench": 50,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50058,
@@ -2421,7 +2377,7 @@ export default [
       "bestbuy": {
         "price": 284.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6541324&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-1tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62C6H52&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445836225830510842221199",
@@ -2527,11 +2483,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 421.08,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10750023&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-10tb-nas-internal-hard-drive%2FJXTHCC7VFJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310378637172091100500",
         "itemNumber": "N82E16822234588",
@@ -2560,7 +2511,8 @@ export default [
     "interface": "SATA",
     "rpm": 5400,
     "value": 52,
-    "bench": 13
+    "bench": 13,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50061,
@@ -2644,11 +2596,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 145.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018069&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-1tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253tz001t0c101%2FJ37P8XC4WZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833078127786923803774",
         "itemNumber": "N82E16820331833",
@@ -2681,7 +2628,8 @@ export default [
     "dram": false,
     "value": 4,
     "bench": 45,
-    "formFactor": "2.5\""
+    "formFactor": "2.5\"",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50064,
@@ -2807,11 +2755,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018011&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-2tb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds200t4x0e%2FJXTHCC7X2S&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836220505555022762679",
         "itemNumber": "N82E16820250275",
@@ -2846,7 +2789,8 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 30,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50067,
@@ -3329,11 +3273,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 80.5,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10845853&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-a400-240gb-internal-ssd-sata%2FJX4LR3XTFK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820242400",
         "price": 99.99,
@@ -3364,7 +3303,8 @@ export default [
     "seq_w": 450,
     "nand": "TLC",
     "dram": false,
-    "value": 8
+    "value": 8,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50079,
@@ -3435,11 +3375,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 60.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12182074&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p300-m-2-2280-256gb-pcie-gen3-x4-nvme-1-3-internal-solid-state-drive-ssd-p300p256gm28%2FJ3L95X5TPK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835210349387194011354",
         "itemNumber": "N82E16820225234",
@@ -3474,7 +3409,8 @@ export default [
     "dram": false,
     "value": 54,
     "pcieGen": 3,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50081,
@@ -3573,11 +3509,6 @@ export default [
         "priceSeller": "SiliconValleySeller  (SN# Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12327433&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-4tb-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14800-mb-s%2FJ3ZYG245ZK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -3602,7 +3533,8 @@ export default [
     "pcieGen": 5,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50084,
@@ -3881,11 +3813,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 659,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11332461&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd_black-4tb-sn850x-nvme-internal-gaming-ssd-solid-state-drive-gen4-pcie-m-2-2280-up-to-7300-mb-s-wds400t2x0e%2FJXTHCC7J32&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831749202950568255183",
         "itemNumber": "N82E16820250244",
@@ -3920,7 +3847,8 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 16,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50090,
@@ -3943,11 +3871,6 @@ export default [
         "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 409.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11232590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-8tb-gaming-internal-hard-drive%2FJXTHCJ5F6Z&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445831566793742603459855",
@@ -3977,7 +3900,8 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "value": 44,
-    "bench": 10
+    "bench": 10,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50091,
@@ -4001,11 +3925,6 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 91.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12528837&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p300-m-2-2280-512gb-pcie-gen3-x4-nvme-1-3-internal-solid-state-drive-ssd-p300p512gm28%2FJ3L95X5TSJ&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458310436771311620365698",
@@ -4042,7 +3961,8 @@ export default [
     "dram": false,
     "value": 34,
     "pcieGen": 3,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50092,
@@ -4165,11 +4085,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 314.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564755&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-pcie-gen4-2230-nvme-m-2-ssd%2FJX8PSKCGQQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIA12KKD19265",
         "price": 358.55,
@@ -4204,7 +4119,8 @@ export default [
     "pcieGen": 4,
     "formFactor": "M.2 2230",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50095,
@@ -4225,11 +4141,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-07"
-      },
-      "bestbuy": {
-        "price": 1019.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10148054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-28tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5KWC&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16822185113",
@@ -4261,7 +4172,8 @@ export default [
     "bench": 15,
     "formFactor": "3.5\"",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50096,
@@ -4388,11 +4300,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 459.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018029&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd_black-2tb-sn8100-nvme-ssd-pcie-5-0x4-m-2-2280-14900-mb-s-ai-gaming-video-editing%2FJXJ62CQ2YP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820250279",
         "price": 399.99,
@@ -4427,7 +4334,8 @@ export default [
     "rpm": 7200,
     "value": 46,
     "pcieGen": 5,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50099,
@@ -4445,11 +4353,6 @@ export default [
       "amazon": {
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0D42CPWT8?tag=tiereduptech-20",
-        "inStock": true
-      },
-      "bestbuy": {
-        "price": 289.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11065076&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-mp600-mn-m-2-2230-2tb-pci-express-4-0-x4-3d-tlc-internal-solid-state-drive-ssd-cssd-f2000gbmp600mnr2%2FJ39QHT2CJP&intsrc=APIG_28060",
         "inStock": true
       }
     },
@@ -4473,7 +4376,8 @@ export default [
     "value": 26,
     "formFactor": "M.2 2230",
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50100,
@@ -4695,11 +4599,6 @@ export default [
         "priceSeller": "New Sun Mart (S/N Recorded）",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 499.95,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12069445&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-2tb-sn850x-nvme-ssd-7300-mb-s-ps5-gen4-m-2-2280%2FJXTHCC7JCY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820250247",
         "price": 349.99,
@@ -4733,7 +4632,8 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 25,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50105,
@@ -5025,11 +4925,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 102.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12313332&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp33-m-2-2280-512gb-pcie-3-0-x4-with-nvme-1-3-3d-nand-internal-solid-state-drive-ssd-tm8fp6512g0c101%2FJ37P8XCJFR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315939339291975966921",
         "itemNumber": "N82E16820331416",
@@ -5065,7 +4960,8 @@ export default [
     "value": 25,
     "bench": 37,
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50111,
@@ -5131,11 +5027,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 203.46,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021198&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-500gb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds500g4x0e%2FJXTHCC7X49&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458318259682829725809526",
         "itemNumber": "9SIBTK0KUK6221",
@@ -5170,7 +5061,8 @@ export default [
     "dram": false,
     "value": 66,
     "bench": 80,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50113,
@@ -5354,11 +5246,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12481237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-blue-sn5000-nvme-ssd-pcie-gen-4-0-up-to-5150-mb-s-read%2FJXTHCC78WW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837627754164719892488",
         "itemNumber": "9SIC7XKM1R5815",
@@ -5394,7 +5281,8 @@ export default [
     "value": 39,
     "bench": 59,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50120,
@@ -5418,11 +5306,6 @@ export default [
         "priceSeller": "The Superior Mart",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12567050&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-pcie-gen4-2230-nvme-m-2-ssd%2FJX8PSKCGQ5&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458316242025117343419063",
@@ -5457,7 +5340,8 @@ export default [
     "dram": false,
     "value": 56,
     "pcieGen": 4,
-    "formFactor": "M.2 2230"
+    "formFactor": "M.2 2230",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50121,
@@ -5851,11 +5735,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 114.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10955034&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-500gb-wd-green-sn3000-nvme-internal-ssd-gen4-pcie-m-2-2280-up-to-5000-mb-s-wds500g4g0e%2FJXTHCC75PY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832665077151435217303",
         "itemNumber": "9SIA2W0KHY9910",
@@ -5888,7 +5767,8 @@ export default [
     "nand": "QLC",
     "dram": false,
     "value": 68,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50131,
@@ -6252,11 +6132,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 359.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11082257&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-2tb-pcie-4-0-x4-nvme-internal-solid-state-drive-ssd-snv3s-2000g-up-to-6000-mb-s%2FJX4LR3PJHL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312189695682523971615",
         "itemNumber": "N82E16820242903",
@@ -6293,7 +6168,8 @@ export default [
     "value": 37,
     "read": 6000,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50139,
@@ -6962,11 +6838,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 89.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12532098&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p320-m-2-2280-512gb-pci-express-3-0-x4-internal-solid-state-drive-ssd-p320p512gm28%2FC345Z2KYXQ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311430099588652077933",
         "itemNumber": "N82E16820225424",
@@ -6999,7 +6870,8 @@ export default [
     "value": 32,
     "upc": "04711378427615",
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50154,
@@ -7161,11 +7033,6 @@ export default [
         "priceSeller": "CODeal",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-1tb-sn8100-nvme-ssd-pcie-5-0x4-m-2-2280-14900-mb-s-ai-gaming-video-editing%2FJXJ62CQ2PY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 44,
@@ -7192,7 +7059,8 @@ export default [
     "pcieGen": 5,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50158,
@@ -7215,11 +7083,6 @@ export default [
         "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 168.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12500646&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-e100-m-2-2280-1tb-pci-express-4-0-x4-pcie-internal-solid-state-drive-ssd%2FJX8PSKC64G&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "N82E16820363155",
@@ -7254,7 +7117,8 @@ export default [
     "value": 47,
     "bench": 67,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50159,
@@ -7509,11 +7373,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 239.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11236786&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-4tb-barracuda-5400-rpm-128mb-cache-sata-6-0gb-s-2-5-15mm-laptop-internal-hard-drive-st4000lm024%2FJ37C5HH4HS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836249847313245738144",
         "itemNumber": "9SIA2W0KBW3377",
@@ -7541,7 +7400,8 @@ export default [
     "interface": "SATA",
     "rpm": 7200,
     "value": 39,
-    "bench": 10
+    "bench": 10,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50165,
@@ -7984,11 +7844,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12349769&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-2tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGRH&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820156413",
         "price": 299.99,
@@ -8020,7 +7875,8 @@ export default [
     "nand": "QLC",
     "dram": false,
     "value": 38,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50175,
@@ -8146,11 +8002,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12616469&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds200t3x0e-black-2tb-sn770-nvme-internal-gaming-ssd-solid-state-drive-gen4-pcie-m-2-2280-up-to-5150-mb-s%2FJXTHCJVKKG&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBTK0KTH2252",
         "price": 293.55,
@@ -8186,7 +8037,8 @@ export default [
     "value": 20,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50178,
@@ -8266,11 +8118,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 1885.72,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11066569&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-870-qvo-8tb-internal-ssd-sata%2FJ3ZYGCQWRW&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311895349289376929918",
         "itemNumber": "N82E16820147784",
@@ -8304,7 +8151,8 @@ export default [
     "nand": "QLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50180,
@@ -8505,11 +8353,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 257.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018108&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-2tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253tz002t0c101%2FJ37P8XC4K9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835451521925388423065",
         "itemNumber": "N82E16820331861",
@@ -8542,7 +8385,8 @@ export default [
     "dram": false,
     "value": 2,
     "bench": 45,
-    "formFactor": "2.5\""
+    "formFactor": "2.5\"",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50185,
@@ -8608,11 +8452,6 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 449.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592781&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-4tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGQL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314303336209764793818",
         "itemNumber": "9SIC0X3KPS7952",
@@ -8646,7 +8485,8 @@ export default [
     "value": 0,
     "bench": 40,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50187,
@@ -8874,11 +8714,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 249,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12503997&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-green-sn350-nvme-internal-ssdgen3-pcieqlcm-2-2280up-to-3200-mb-swds100t3g0c%2FJ37FJ43YX3&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -8901,7 +8736,8 @@ export default [
     "rpm": 7200,
     "value": 36,
     "formFactor": "M.2 2280",
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50192,
@@ -9014,11 +8850,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 378.06,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10493868&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-sn5000-wds200t4b0e-2-tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-pci-express-nvme-4-0-x4-900%2FJXTHCC7XX2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313323083635946285164",
         "itemNumber": "9SIC7XKM1R5461",
@@ -9069,7 +8900,8 @@ export default [
     "pcieGen": 4,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50195,
@@ -9211,11 +9043,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11024600&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds100t3g0a-1tb-wd-green-internal-ssd-solid-state-drive%2FJXTHCC73T6&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBTK0KAS6894",
         "price": 219.35,
@@ -9250,7 +9077,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "storage_ff:external_usb"
-    ]
+    ],
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50200,
@@ -9337,11 +9165,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 729.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12199539&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-4tb-pcie-gen5-nvme-ssd-up-to-14100-mb-s-game-ready-internal-ssd-1mo-adobe-cc%2FJX8PSKCXLY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820156399",
         "price": 689.99,
@@ -9373,7 +9196,8 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 31,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50202,
@@ -9690,11 +9514,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018049&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-4tb-wd_black-sn8100-pcie-5-0x4-nvme-m-2-ssd-wds400t1x0m-00cmt0%2FJXJ62CQ2PH&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 56,
@@ -9721,7 +9540,8 @@ export default [
     "pcieGen": 5,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50209,
@@ -9744,11 +9564,6 @@ export default [
         "priceSeller": "PCNation",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 349.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018420&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-t-force-vulcan-z-2-5-4tb-sata-iii-3d-nand-internal-solid-state-drive-ssd-t253ty004t0c101%2FJ37P8X5PQ5&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445832952027580306467181",
@@ -9783,7 +9598,8 @@ export default [
     "dram": false,
     "value": 1,
     "bench": 45,
-    "formFactor": "2.5\""
+    "formFactor": "2.5\"",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50210,
@@ -9988,11 +9804,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018198&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs2230-m-2-2280-1tb-pci-express-3-0-x4-3d-nand-internal-solid-state-drive-ssd-m280cs2230-1tb-rb%2FJXF2C4SP74&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -10017,7 +9828,8 @@ export default [
     "bench": 50,
     "formFactor": "M.2",
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50215,
@@ -10040,11 +9852,6 @@ export default [
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 178.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018040&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp44l-m-2-2280-1tb-pcie-4-0-x4-with-nvme-1-4-tlc-internal-solid-state-drive-ssd-tm8fpk001t0c101%2FJ37P8XCVGS&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458313784137307945686930",
@@ -10081,7 +9888,8 @@ export default [
     "value": 61,
     "bench": 85,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50216,
@@ -10104,11 +9912,6 @@ export default [
         "priceSeller": "QuickDealStore",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 639.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12596889&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-x24-16tb-internal-hard-drive%2FJ37C5H53Y8&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -10131,7 +9934,8 @@ export default [
     "quarantinedAt": "2026-07-28",
     "reviewFlags": [
       "storage_ff:enterprise_sas"
-    ]
+    ],
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50217,
@@ -10664,11 +10468,6 @@ export default [
         "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 193.34,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11965663&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-western-digital-green-sn3000-1-tb-m-2-nvme-ssd-2280-pcie-4-0-x4%2FJXTHCCJJSX&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -10693,7 +10492,8 @@ export default [
     "bench": 62,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50229,
@@ -11439,11 +11239,6 @@ export default [
         "priceSeller": "Blue Orbit Commerce Group",
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo"
-      },
-      "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225089&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds100t3x0e-black-1tb-sn770-nvme-gen4-pcie-m-2-2280-up-to-5150-mb-s-internal-gaming-ssd-solid-state-drive%2FJXTHCJVKWL&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -11466,7 +11261,8 @@ export default [
     "value": 32,
     "formFactor": "M.2 2280",
     "quarantinedAt": "2026-08-07",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50245,
@@ -11818,11 +11614,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 549.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225065&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-nv3-m-2-2280-4tb-pcie-4-0-x4-nvme-internal-solid-state-drive-up-to-6000-mb-s-snv3s-4000g%2FJX4LR3PXRC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832948554448318742798",
         "itemNumber": "0D9-001B-005B8",
@@ -11859,7 +11650,8 @@ export default [
     "value": 15,
     "read": 6000,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50254,
@@ -12086,11 +11878,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 368.02,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136357&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-sn580-wds200t3b0e-2tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-4-0-x4%2FJXTHCC7W5V&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838504344132647857465",
         "itemNumber": "9SIBTK0KUW0403",
@@ -12125,7 +11912,8 @@ export default [
     "rpm": 7200,
     "value": 16,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50259,
@@ -12924,11 +12712,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12561715&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t500-1tb-internal-ssd-pcie-gen-4x4-nvme-m-2-with-heatsink-for-ps5%2FJX8PSKCX7W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313109266796536180186",
         "itemNumber": "9SIC0X3KX99023",
@@ -12961,7 +12744,8 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 53,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50280,
@@ -13088,11 +12872,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 152.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12481234&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-western-digital-500gb-wd-blue-sn5000-nvme-internal-ssd-pcie-gen-4-0-m-2-2280-up-to-5000-mb-s-wds500g4b0e%2FJXTHCC78K7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839403878559776738658",
         "itemNumber": "9SIBTK0KUW0401",
@@ -13128,7 +12907,8 @@ export default [
     "value": 40,
     "bench": 59,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50283,
@@ -13152,11 +12932,6 @@ export default [
         "priceSeller": "Server Technology",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 519,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12603197&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-wds400t4b0e-4tb-wd-blue-sn5000-nvme-internal-solid-state-drive-ssd%2FJXTHCC79PY&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445834976670706303425678",
@@ -13194,7 +12969,8 @@ export default [
     "dram": false,
     "value": 14,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50284,
@@ -13272,11 +13048,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 513.91,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10854614&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-ultra-sdssdh3-2t00-g26-2-tb-solid-state-drive-2-5-internal-sata%2FJXJ62C6F7J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831175181919054285452",
         "itemNumber": "N82E16820173636",
@@ -13307,7 +13078,8 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50286,
@@ -13731,11 +13503,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12532095&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-p320-m-2-2280-1tb-pci-express-3-0-x4-internal-solid-state-drive-ssd-p320p1tbm28%2FC345Z2KYX5&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820225425",
         "price": 179.99,
@@ -13769,7 +13536,8 @@ export default [
     "bench": 37,
     "upc": "04711378427622",
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50295,
@@ -13997,11 +13765,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 419.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12530366&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-2tb-pcie-gen5-nvme-m-2-ssd-up-to-14500-mb-s-game-ready-1mo-adobe-cc%2FJX8PSKCXGX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312806417683942714575",
         "itemNumber": "9SIBZW0M3W5997",
@@ -14034,7 +13797,8 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 53,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50300,
@@ -14157,11 +13921,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 206.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502665&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-m-2-2280-1tb-pci-express-5-0-3d-nand-internal-solid-state-drive-ssd-ct1000p510ssd5-01%2FJX8PSKCR53&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820156429",
         "price": 199.99,
@@ -14193,7 +13952,8 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 85,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50303,
@@ -15191,11 +14951,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12352032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-e100-2tb-m-2-2280-nvme-pci-express-4-0-x4-pcie-gen4-internal-ssd-up-to-5000mb-s-ct2000e100ssd8%2FJX8PSKC64R&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837883275931074564543",
         "itemNumber": "0D9-000E-00346",
@@ -15230,7 +14985,8 @@ export default [
     "dram": false,
     "value": 26,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50325,
@@ -15406,7 +15162,7 @@ export default [
       "bestbuy": {
         "price": 579.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616032&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-16tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5L89&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -15452,7 +15208,7 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6677302&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-12tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGJ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -15549,11 +15305,6 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.87,
         "sellerClass": "other"
-      },
-      "bestbuy": {
-        "price": 381.43,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12013734&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd-blue-wd100eagz-10tb-7200-rpm-512mb-cache-sata-6-0gb-s-3-5-internal-hard-drive%2FJXTHCCJCR4&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -15572,7 +15323,8 @@ export default [
     "value": 26,
     "bench": 13,
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50332,
@@ -15709,11 +15461,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 139.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12048481&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-500gb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds500g5b0e-00cpe0%2FJXTHCCJ7J9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833866390688274707232",
         "itemNumber": "N82E16820173683",
@@ -15750,7 +15497,8 @@ export default [
     "dram": false,
     "value": 96,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50335,
@@ -15774,11 +15522,6 @@ export default [
         "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 309.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018088&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-2tb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds200t5b0e-00cpe0%2FJXTHCCJ776&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458313919530850249954171",
@@ -15815,7 +15558,8 @@ export default [
     "dram": false,
     "value": 37,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50336,
@@ -15839,11 +15583,6 @@ export default [
         "priceSeller": "Xcess Limited",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 219.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12205769&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-sandisk-wd-blue-sn5100-m-2-2280-1tb-pci-express-4-0-x4-3d-nand-internal-solid-state-drive-ssd-wds100t5b0e-00cpe0%2FJXTHCCJ778&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445839693542341139934287",
@@ -15879,7 +15618,8 @@ export default [
     "dram": false,
     "value": 54,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50337,
@@ -16456,11 +16196,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 399,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12336966&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t705-2-tb-solid-state-drive-m-2-2280-internal-pci-express-nvme-pci-express-nvme-5-0-x4-desktop-pc%2FJX8PSKCX6R&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBFJRKA54231",
         "price": 389,
@@ -16494,7 +16229,8 @@ export default [
     "value": 58,
     "pcieGen": 5,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50351,
@@ -16752,11 +16488,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 304.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12486822&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-mp44l-m-2-2280-2tb-pcie-4-0-x4-with-nvme-1-4-tm8fpk002t0c101%2FJ37P8XCVL2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583504217171258713996",
         "itemNumber": "N82E16820331920",
@@ -16793,7 +16524,8 @@ export default [
     "value": 38,
     "bench": 85,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50357,
@@ -17410,11 +17142,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 319.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12524251&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-teamgroup-mp44q-2tb-pcie-gen4-m-2-ssd-7400mb-s-tm8ffd002t0c101%2FC34F794Y9T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445832180842668769769450",
         "itemNumber": "N82E16820985175",
@@ -17450,7 +17177,8 @@ export default [
     "bench": 85,
     "upc": "04711430802817",
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50371,
@@ -18062,11 +17790,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 739.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12564683&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Flexar-nq780-4tb-pcie-gen-4x4-nvme-m-2-internal-ssd%2FJ36XPK4KG2&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -18090,7 +17813,8 @@ export default [
     "pcieGen": 4,
     "formFactor": "M.2 2280",
     "needsReview": true,
-    "quarantinedAt": "2026-08-15"
+    "quarantinedAt": "2026-08-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50388,
@@ -18515,11 +18239,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225084&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-internal-ssd-pcie-gen-4-x4-nvme-m-2%2FJX8PSKCGL8&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837950166611076139811",
         "itemNumber": "N82E16820156412",
@@ -18553,7 +18272,8 @@ export default [
     "dram": false,
     "value": 59,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50398,
@@ -19788,11 +19508,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 729.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12109946&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-ssd-spatium-m480-pro-pcie-4-0-nvme-m-2-4tb-internal-solid-state-drive-ssd%2FJ3P7TXLFC3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 729.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2195&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FStorage-Devices%2FSPATIUM-M480-PRO-4TB&intsrc=APIG_16410",
@@ -19831,7 +19546,8 @@ export default [
     "dram": true,
     "value": 15,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50425,
@@ -20042,11 +19758,6 @@ export default [
         "price": 194.99,
         "url": "https://www.amazon.com/dp/B0CSPRDW27?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 174.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11018053&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-cs3150-xlr8-gaming-rgb-1tb-pcie-gen5-nvme-ssd-with-rgb-fan-up-to-11500-mb-s-read%2FJXF2C46755&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 6,
@@ -20073,7 +19784,8 @@ export default [
     "pcieGen": 5,
     "formFactor": "M.2",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50430,
@@ -20299,11 +20011,6 @@ export default [
         "price": 109.99,
         "url": "https://www.amazon.com/dp/B0B94R72J5?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 141.7,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10757455&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-2tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5G2K&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 15,
@@ -20325,7 +20032,8 @@ export default [
     "bench": 10,
     "formFactor": "3.5\"",
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50436,
@@ -20402,11 +20110,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 379.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12168114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-2tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y95&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315741127343365614106",
         "itemNumber": "9SIBDKWKS09386",
@@ -20442,7 +20145,8 @@ export default [
     "value": 32,
     "bench": 83,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50438,
@@ -20729,11 +20433,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 339.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11078559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p510-2tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-for-laptop-and-desktop%2FJX8PSKC6T5&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820156428",
         "price": 339.99,
@@ -20765,7 +20464,8 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 75,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50445,
@@ -21116,11 +20816,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 158.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-hdd-3-5-inch-sata-6-gb-s-5400-rpm-256mb-cache-for-computer-desktop-pc%2FJ37C5HTJJC&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -21139,7 +20834,8 @@ export default [
     "bench": 10,
     "upc": "00763649094402",
     "quarantinedAt": "2026-07-25",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50453,
@@ -21612,7 +21308,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 65,
-    "pcieGen": 3
+    "pcieGen": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50465,
@@ -21794,7 +21495,12 @@ export default [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 7
+    "value": 7,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50470,
@@ -21807,13 +21513,7 @@ export default [
     "r": 0,
     "upc": "400064251576",
     "mpn": "GSRF MZ-77Q4T0B/AM",
-    "deals": {
-      "bestbuy": {
-        "price": 995,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12542184&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-pro-4tb-internal-ssd-pcie-gen-4x4-nvme-with-heatsink-for-ps5%2FJ3ZYG2979Y&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 4000,
     "form": "2.5 in.",
     "interface": "SATA",
@@ -21824,7 +21524,13 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 1,
-    "bench": 50
+    "bench": 50,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 50471,
@@ -21857,7 +21563,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 100,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50472,
@@ -21986,7 +21697,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 100,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50475,
@@ -22017,7 +21733,12 @@ export default [
     "condition": "refurbished",
     "storageType": "SSD",
     "dram": true,
-    "value": 6
+    "value": 6,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50476,
@@ -22048,7 +21769,12 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 3,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50477,
@@ -22079,7 +21805,12 @@ export default [
     "storageType": "SSD",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50478,
@@ -22138,7 +21869,7 @@ export default [
       "bestbuy": {
         "price": 229.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6465362&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6465362.p%3FskuId%3D6465362",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445835025488262823789955",
@@ -22182,7 +21913,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512132&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5-and-desktops%2FJXJ62C6L5Q&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -22197,7 +21928,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 81,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50481,
@@ -22214,7 +21950,7 @@ export default [
       "bestbuy": {
         "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6506976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-1tb-internal-ssd-sata%2FJXJ62C6LVK&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -22227,7 +21963,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 2,
-    "bench": 50
+    "bench": 50,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50482,
@@ -22245,7 +21986,7 @@ export default [
       "bestbuy": {
         "price": 599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512129&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6512129.p%3FskuId%3D6512129",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445839106550964096970288",
@@ -22290,7 +22031,7 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6512131&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850x-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJXJ62C6Y93&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -22305,7 +22046,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 35,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50484,
@@ -22319,11 +22065,6 @@ export default [
     "upc": "619659201111",
     "mpn": "WDBB8H0040BNC-WRSN",
     "deals": {
-      "bestbuy": {
-        "price": 845.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12562220&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sa510-4tb-internal-ssd-sata%2FJXJ62C64KS&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820250252",
         "price": 649.99,
@@ -22346,7 +22087,8 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50485,
@@ -22454,7 +22196,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 53,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50488,
@@ -22512,13 +22259,7 @@ export default [
     "r": 0,
     "upc": "400065669745",
     "mpn": "GSRF MZ-77Q8T0B/AM",
-    "deals": {
-      "bestbuy": {
-        "price": 2449,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12649195&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-ssd-9100-pro-with-heatsink-8tb-internal-ssd-pcie-5-0x4-m-2%2FJ3ZYG2454V&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 8000,
     "form": "2.5 in.",
     "interface": "SATA",
@@ -22529,7 +22270,13 @@ export default [
     "nand": "QLC",
     "dram": true,
     "value": 0,
-    "bench": 50
+    "bench": 50,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 50490,
@@ -22561,7 +22308,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 84,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50491,
@@ -22594,7 +22346,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 76,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50492,
@@ -22626,7 +22383,12 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 28,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50493,
@@ -22676,11 +22438,6 @@ export default [
     "upc": "887276812526",
     "mpn": "MZ-V9E2T0B/AM",
     "deals": {
-      "bestbuy": {
-        "price": 549.34,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592992&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-990-evo-ssd-2tb-internal-ssd-pcie-gen-4x4--gen-5x2-m-2-2280-speeds-up-to-5000mb-s%2FJ3ZYG2H7JJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311066849019636786992",
         "itemNumber": "9SIAADFKY32559",
@@ -22705,7 +22462,8 @@ export default [
     "dram": false,
     "value": 37,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50495,
@@ -22719,11 +22477,6 @@ export default [
     "upc": "763649183090",
     "mpn": "ZP2000GM3A063",
     "deals": {
-      "bestbuy": {
-        "price": 504.62,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12558337&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-firecuda-530r-2tb-internal-ssd-pcie-gen-4-x4-nvme-with-heatsink-for-ps5%2FJ37C5H5TVZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314518291357655883027",
         "itemNumber": "9SIBZW0KSB0726",
@@ -22749,7 +22502,8 @@ export default [
     "dram": true,
     "value": 41,
     "bench": 88,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50496,
@@ -22799,11 +22553,6 @@ export default [
     "upc": "763649183083",
     "mpn": "ZP1000GM3A063",
     "deals": {
-      "bestbuy": {
-        "price": 236.45,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592976&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-firecuda-530r-1tb-internal-ssd-pcie-gen-4-x4-nvme%2FJ37C5H5TFL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIBZW0KXJ1298",
         "price": 329,
@@ -22829,7 +22578,8 @@ export default [
     "value": 78,
     "pcieGen": 4,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50498,
@@ -22891,7 +22641,12 @@ export default [
     "dram": false,
     "value": 63,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50500,
@@ -22924,7 +22679,12 @@ export default [
     "dram": false,
     "value": 41,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50501,
@@ -22942,7 +22702,7 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6593303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn850p-8tb-internal-ssd-pcie-gen-4-x4-with-heatsink-for-ps5%2FJXJ62CRLLV&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 8000,
@@ -22957,7 +22717,12 @@ export default [
     "dram": true,
     "rpm": 7200,
     "value": 3,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50502,
@@ -22974,7 +22739,7 @@ export default [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6598876&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6598876.p%3FskuId%3D6598876",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "N82E16820156405",
@@ -23106,7 +22871,7 @@ export default [
       "bestbuy": {
         "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615939&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615939.p%3FskuId%3D6615939",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -23120,7 +22885,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 43,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50506,
@@ -23138,7 +22908,7 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615942&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615942.p%3FskuId%3D6615942",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "0D9-001A-003S1",
@@ -23181,7 +22951,7 @@ export default [
       "bestbuy": {
         "price": 349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615945&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn7100-2tb-internal-ssd-gen-4-x4-nvme%2FJXJ62CRKFL&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -23195,7 +22965,12 @@ export default [
     "dram": false,
     "rpm": 7200,
     "value": 31,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50508,
@@ -23228,7 +23003,12 @@ export default [
     "dram": false,
     "value": 100,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50509,
@@ -23261,7 +23041,12 @@ export default [
     "dram": false,
     "value": 32,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50510,
@@ -23294,7 +23079,12 @@ export default [
     "dram": false,
     "value": 62,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50511,
@@ -23308,11 +23098,6 @@ export default [
     "upc": "649528946393",
     "mpn": "CT1000P510SSD8",
     "deals": {
-      "bestbuy": {
-        "price": 189.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12487153&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-p310-1tb-internal-ssd-pcie-gen-4-x4-nvme-m-2-with-heatsink-for-ps5%2FJX8PSKCSQR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458318347950779971189654",
         "itemNumber": "9SIC7XKM3V8674",
@@ -23339,7 +23124,8 @@ export default [
     "value": 100,
     "bench": 85,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50512,
@@ -23399,11 +23185,6 @@ export default [
     "upc": "887276904948",
     "mpn": "MZ-VAP2T0C/AM",
     "deals": {
-      "bestbuy": {
-        "price": 599.95,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12327418&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsamsung-9100-pro-2tb-with-heatsink-internal-ssd-pcie-gen-5x4-nvme-speeds-up-to-14700-mb-s%2FJ3ZYG2455F&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831883455586370293962",
         "itemNumber": "N82E16820147907",
@@ -23429,7 +23210,8 @@ export default [
     "dram": true,
     "value": 32,
     "read": 14700,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50514,
@@ -23476,7 +23258,7 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633571&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-2tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2W4&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -23492,7 +23274,12 @@ export default [
     "rpm": 7200,
     "value": 34,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50516,
@@ -23505,13 +23292,7 @@ export default [
     "r": 0,
     "upc": "619659221102",
     "mpn": "WDBCMT0040BNC-WRSN",
-    "deals": {
-      "bestbuy": {
-        "price": 999,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12069446&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-4tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2KC&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 4000,
     "form": "M.2 2280",
     "interface": "NVMe",
@@ -23525,7 +23306,13 @@ export default [
     "rpm": 7200,
     "value": 17,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 50517,
@@ -23542,7 +23329,7 @@ export default [
       "bestbuy": {
         "price": 269.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633573&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-black-sn8100-1tb-non-heatsink-internal-ssd-gen-5x4-nvme%2FJXJ62CQ2WR&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -23558,7 +23345,12 @@ export default [
     "rpm": 7200,
     "value": 70,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50518,
@@ -23572,11 +23364,6 @@ export default [
     "upc": "649528945532",
     "mpn": "CT1000T710SSD5",
     "deals": {
-      "bestbuy": {
-        "price": 339.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12197254&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-1tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-heatsink%2FJX8PSKC94G&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839227973618801000108",
         "itemNumber": "N82E16820156446",
@@ -23603,7 +23390,8 @@ export default [
     "value": 100,
     "bench": 100,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50519,
@@ -23662,11 +23450,6 @@ export default [
     "upc": "649528945921",
     "mpn": "CT4000T710SSD8",
     "deals": {
-      "bestbuy": {
-        "price": 749.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12633982&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-4tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-3d-nand-memory%2FJX8PSKC6S4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458316466911617793716918",
         "itemNumber": "9SIA12KKJ65092",
@@ -23693,7 +23476,8 @@ export default [
     "value": 39,
     "bench": 100,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50522,
@@ -23707,11 +23491,6 @@ export default [
     "upc": "649528945549",
     "mpn": "CT2000T710SSD5",
     "deals": {
-      "bestbuy": {
-        "price": 442.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11937384&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-t710-2tb-internal-ssd-pcie-gen-5-x4-nvme-m-2-with-heatsink%2FJX8PSKC94V&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838395420661102535537",
         "itemNumber": "9SIA12KKN25667",
@@ -23738,7 +23517,8 @@ export default [
     "value": 67,
     "bench": 100,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50523,
@@ -23801,7 +23581,7 @@ export default [
       "bestbuy": {
         "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644048&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644048.p%3FskuId%3D6644048",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 2000,
@@ -23817,7 +23597,12 @@ export default [
     "dram": true,
     "value": 72,
     "read": 14700,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50525,
@@ -23835,7 +23620,7 @@ export default [
       "bestbuy": {
         "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644705&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644705.p%3FskuId%3D6644705",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 1000,
@@ -23849,7 +23634,12 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 46,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50526,
@@ -23867,7 +23657,7 @@ export default [
       "bestbuy": {
         "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644706&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-2tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86L&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312342339091256267858",
@@ -23910,7 +23700,7 @@ export default [
       "bestbuy": {
         "price": 799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665054&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-sn5100-4tb-internal-ssd-pcie-gen-4-x4-nvme-for-laptops-and-desktops%2FJXJ62CQ86J&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 4000,
@@ -23925,7 +23715,12 @@ export default [
     "dram": false,
     "value": 10,
     "bench": 75,
-    "pcieGen": 4
+    "pcieGen": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50528,
@@ -23959,7 +23754,12 @@ export default [
     "dram": true,
     "value": 100,
     "pcieGen": 5,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50529,
@@ -23977,7 +23777,7 @@ export default [
       "bestbuy": {
         "price": 1019.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6667761&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6667761.p%3FskuId%3D6667761",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 4000,
@@ -23992,7 +23792,12 @@ export default [
     "storageType": "NVMe",
     "dram": true,
     "value": 22,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50530,
@@ -24006,11 +23811,6 @@ export default [
     "upc": "619659232252",
     "mpn": "SDSP71100TAT-000E0",
     "deals": {
-      "bestbuy": {
-        "price": 179.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11256332&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-portable-ssd-1tb-usb-3-2-gen-2-usb-c-sdssde30-1t00-g26%2FJXJ62CRCZC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839697947457781679453",
         "itemNumber": "N82E16820173716",
@@ -24034,7 +23834,8 @@ export default [
     "nand": "TLC",
     "dram": true,
     "value": 31,
-    "bench": 82
+    "bench": 82,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50531,
@@ -24079,13 +23880,7 @@ export default [
     "r": 0,
     "upc": "619659232139",
     "mpn": "SDSP71500GAN-000E0",
-    "deals": {
-      "bestbuy": {
-        "price": 198.06,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10749145&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsandisk-wd-blue-500gb-sa510-2-5-internal-solid-state-drive-ssd-wds500g3b0a%2FJXTHCJVQPR&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 500,
     "form": "M.2 2280",
     "interface": "NVMe",
@@ -24098,7 +23893,8 @@ export default [
     "value": 56,
     "bench": 82,
     "needsReview": true,
-    "quarantinedAt": "2026-07-22"
+    "quarantinedAt": "2026-07-22",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50533,
@@ -24369,11 +24165,6 @@ export default [
     "upc": "718037847405",
     "mpn": "WD20SPZX",
     "deals": {
-      "bestbuy": {
-        "price": 156.06,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10116205&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-2tb-pc-internal-hard-drive-for-laptops%2FJXTHCJ5343&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835478611202325681777",
         "itemNumber": "N82E16822234339",
@@ -24396,7 +24187,8 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 1,
-    "bench": 15
+    "bench": 15,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50544,
@@ -24409,13 +24201,7 @@ export default [
     "r": 0,
     "upc": "763649138311",
     "mpn": "ST8000VNA04",
-    "deals": {
-      "bestbuy": {
-        "price": 339.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013193&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-st8000nt001-8-tb-hard-drive-3-5-internal-sata-sata-600-conventional-magnetic-recording%2FJ37C5H5GC6&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 8000,
     "form": "3.5 in.",
     "interface": "SATA",
@@ -24423,7 +24209,13 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 70,
-    "bench": 10
+    "bench": 10,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 50545,
@@ -24508,11 +24300,6 @@ export default [
     "upc": "718037875729",
     "mpn": "WD181KFGX",
     "deals": {
-      "bestbuy": {
-        "price": 678.79,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10117399&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-pro-18tb-nas-internal-hard-drive%2FJXTHCJVJXX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313095203959238816777",
         "itemNumber": "N82E16822234430",
@@ -24535,7 +24322,8 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 35
+    "bench": 35,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50548,
@@ -24549,11 +24337,6 @@ export default [
     "upc": "718037889245",
     "mpn": "WD85PURZ",
     "deals": {
-      "bestbuy": {
-        "price": 304.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013233&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-purple-8tb-surveillance-internal-hard-drive%2FJXTHCJV5KZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583410372155013037457",
         "itemNumber": "9SIC7XHM1R9827",
@@ -24576,7 +24359,8 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50549,
@@ -24632,11 +24416,6 @@ export default [
     "upc": "718037899800",
     "mpn": "WD60EFPX",
     "deals": {
-      "bestbuy": {
-        "price": 292.2,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11525251&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-red-plus-6tb-nas-internal-hard-drive%2FJXTHCC7RT7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458316930391535686763147",
         "itemNumber": "9SIC7XHM1F1541",
@@ -24658,7 +24437,8 @@ export default [
     "rpm": 5400,
     "storageType": "HDD",
     "value": 0,
-    "bench": 20
+    "bench": 20,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50551,
@@ -24672,11 +24452,6 @@ export default [
     "upc": "718037898346",
     "mpn": "WD80EAAZ",
     "deals": {
-      "bestbuy": {
-        "price": 280.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013171&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-8tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79L4&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458317726905710857903755",
         "itemNumber": "1Z4-0002-01NP8",
@@ -24699,7 +24474,8 @@ export default [
     "rpm": 5640,
     "storageType": "HDD",
     "value": 0,
-    "bench": 25
+    "bench": 25,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50552,
@@ -24716,7 +24492,7 @@ export default [
       "bestbuy": {
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616031&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-20tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5H5LGW&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 20000,
@@ -24728,7 +24504,12 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 35
+    "bench": 35,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50553,
@@ -24785,7 +24566,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616035&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-8tb-nas-internal-hard-drive-with-rescue-data-recovery-services%2FJ37C5HK4YY&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312443967769469554195",
@@ -24827,7 +24608,7 @@ export default [
       "bestbuy": {
         "price": 119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616036&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-2tb-internal-hard-drive-for-desktops%2FJ37C5HK868&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458317948259558955777901",
@@ -24868,7 +24649,7 @@ export default [
       "bestbuy": {
         "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616037&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-barracuda-4tb-internal-hard-drive-for-desktops%2FJ37C5HK32Z&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458312911671136429775356",
@@ -24951,7 +24732,7 @@ export default [
       "bestbuy": {
         "price": 679.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616039&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616039.p%3FskuId%3D6616039",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 24000,
@@ -24963,7 +24744,12 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 0,
-    "bench": 35
+    "bench": 35,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 50559,
@@ -25007,13 +24793,7 @@ export default [
     "r": 0,
     "upc": "718037898605",
     "mpn": "WD40EZAX",
-    "deals": {
-      "bestbuy": {
-        "price": 153.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013338&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-4tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79K3&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 4000,
     "form": "3.5 in.",
     "interface": "SATA",
@@ -25024,7 +24804,8 @@ export default [
     "value": 0,
     "bench": 20,
     "needsReview": true,
-    "quarantinedAt": "2026-08-18"
+    "quarantinedAt": "2026-08-18",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50561,
@@ -25038,11 +24819,6 @@ export default [
     "upc": "718037898612",
     "mpn": "WD60EZAX",
     "deals": {
-      "bestbuy": {
-        "price": 211.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013474&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-6tb-pc-internal-hard-drive-for-desktops%2FJXTHCC79K9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834778016765776337054",
         "itemNumber": "N82E16822234535",
@@ -25064,7 +24840,8 @@ export default [
     "rpm": 5400,
     "storageType": "HDD",
     "value": 0,
-    "bench": 20
+    "bench": 20,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 50562,
@@ -25109,11 +24886,6 @@ export default [
     "upc": "718037845319",
     "mpn": "WD10SPZX",
     "deals": {
-      "bestbuy": {
-        "price": 107.04,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592846&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-blue-1tb-pc-internal-hard-drive-for-laptops%2FJXTHCJ5C9K&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311406320257738247107",
         "itemNumber": "9SIC7XHM204145",
@@ -25136,7 +24908,8 @@ export default [
     "heatsink": false,
     "storageType": "HDD",
     "value": 3,
-    "bench": 20
+    "bench": 20,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100516,
@@ -26105,11 +25878,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 752.8,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021222&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-wd_black-sn7100-m-2-2280-4tb-pci-express-4-0-x4-tlc-3d-nand-internal-solid-state-drive-ssd-wds400t4x0e%2FJXTHCC7KKG&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313406985577790640587",
         "itemNumber": "9SIBTK0KV38389",
@@ -26132,7 +25900,8 @@ export default [
     "needsReview": true,
     "quarantinedAt": "2026-08-18",
     "upc": "00718037903620",
-    "mpn": "WDS400T2R0A-68CKB0"
+    "mpn": "WDS400T2R0A-68CKB0",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100810,
@@ -26553,11 +26322,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 107.6,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12613618&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwd-wd1002fbys-1tb-32mb-cache-7200rpm-sata2-3-5-hard-drive%2FJ2V4LQVJ86&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.780Z",
@@ -26569,7 +26333,8 @@ export default [
     "formFactor": "M.2 2280",
     "neweggRemovedOutlier": "2026-06-28",
     "quarantinedAt": "2026-07-27",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100825,
@@ -26592,11 +26357,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 134.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12502208&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fwestern-digital-1tb-wd-purple-surveillance-internal-hard-drive-hdd-sata-6-gb-s-64-mb-cache-3-5-wd11purz%2FJXTHCC7YT9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "9SIC7XHM204145",
         "price": 134.99,
@@ -26615,7 +26375,8 @@ export default [
     "storageType": "HDD",
     "interface": "SATA",
     "ff": "2.5\"",
-    "rpm": 5400
+    "rpm": 5400,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100826,
@@ -26715,11 +26476,6 @@ export default [
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 146.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12142099&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-teamgroup-ms30-1tb-slc-cache-3d-nand-tlc-m-2-2280-sata-iii-ssd-530-480-mb-s-read-write-for-laptop-desktop%2FJ37P8XJQRY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.781Z",
@@ -26730,7 +26486,8 @@ export default [
     "pcie": 4,
     "ff": "M.2 2280",
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100829,
@@ -27067,20 +26824,20 @@ export default [
     "msrp": 387.99,
     "r": 3.9,
     "img": "https://m.media-amazon.com/images/I/71cmXEwUk2L._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 730.96,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11122178&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-exos-16tb-enterprise-hdd-x16-sata-6gb-s-7200-rpm-256mb-cache-3-5-internal-hard-drive-st16000nm001g-oem%2FJ37C5HWFQ5&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.782Z",
     "source": "amazon-discovery",
     "cap": 16000,
     "storageType": "HDD",
     "interface": "SATA",
     "rpm": 7200,
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 100844,
@@ -27427,11 +27184,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-08-15"
-      },
-      "bestbuy": {
-        "price": 710.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12314187&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-ironwolf-pro-st20000nt001-20tb-7200-rpm-256mb-cache-sata-6-0gb-s-3-5-internal-hard-drive%2FJ37C5H5G7C&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -27442,7 +27194,8 @@ export default [
     "formFactor": "3.5\"",
     "needsReview": true,
     "quarantinedAt": "2026-08-17",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 100855,
@@ -27569,13 +27322,7 @@ export default [
     "msrp": 79.99,
     "r": 5,
     "img": "https://m.media-amazon.com/images/I/71euGCyIarL._AC_UY218_.jpg",
-    "deals": {
-      "bestbuy": {
-        "price": 175.96,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10948600&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fseagate-enterprise-capacity-3-5-hdd-v-5-2tb-internal-sata-hard-drive-for-desktops%2FJ37C5HQ68R&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "addedAt": "2026-05-15T14:34:31.783Z",
     "source": "amazon-discovery",
     "cap": 2000,
@@ -27583,7 +27330,13 @@ export default [
     "interface": "SATA",
     "ff": "3.5\"",
     "formFactor": "3.5\"",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 100862,

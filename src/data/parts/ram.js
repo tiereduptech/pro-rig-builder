@@ -171,11 +171,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 479.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237712&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2x16gb-ddr5-6000mhz-c36-udimm-desktop-memory-black%2FJ39QHTJQKP&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837549669031244055233",
         "itemNumber": "N82E16820236991",
@@ -211,7 +206,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40038,
@@ -301,11 +297,6 @@ export default [
         "priceConfirmedAt": "2026-08-17",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 490.27,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12474237&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6400-pc5-51200-desktop-memory-model-cmh32gx5m2b6400c36-black%2FJ39QHTJQTF&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838901026564144549112",
         "itemNumber": "N82E16820236982",
@@ -341,7 +332,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40043,
@@ -582,11 +574,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225057&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2b6000z30-gray%2FJ39QHTCC8W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445834973306073294138750",
         "itemNumber": "N82E16820982040",
@@ -622,7 +609,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Gray",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40049,
@@ -646,11 +634,6 @@ export default [
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 129.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12139685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-z-16gb-2-x-8gb-ddr4-3200-pc4-25600-desktop-memory-model-tlzgd416g3200hc16fdc01-gray%2FJ37P83Q4TF&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458311755567346921749343",
@@ -688,7 +671,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Gray",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40050,
@@ -712,11 +696,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12076580&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-288-pin-pc-ram-ddr5-5200-pc5-41600-desktop-memory-model-cmh16gx5m2b5200c40-black%2FJ39TSCH8RC&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445838137338228791344774",
@@ -753,7 +732,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40052,
@@ -907,11 +887,6 @@ export default [
         "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 259.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248174&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frefurbished-g-skill-ripjaws-v-32gb-ddr4-3200mhz-ram-2x16gb-pc4-25600-black%2FJ36V4SGC3S&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 10,
@@ -938,7 +913,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40058,
@@ -1220,11 +1196,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 399.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11298791&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-oc-gaming-32gb-2x16gb-ddr5-6400mhz-c38-udimm-intel-xmp-3-0-amd-expo-desktop-memory-white%2FJX8PSKC9X9&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458314127620090924968665",
         "itemNumber": "9SIC7PTM0T0192",
@@ -1259,7 +1230,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40064,
@@ -1283,11 +1255,6 @@ export default [
         "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 720.74,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12173069&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fg-skill-flare-x5-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-f5-6000j3038f16gx2-fx5-black%2FJ36V4SLR46&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445832835364458301054022",
@@ -1324,7 +1291,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40065,
@@ -1408,11 +1376,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 489.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11939843&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-ddr5-6000mhz-ram-2x16gb-model-kf560c30bbeak2-32-black%2FJX4LR3YFQZ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583723411550403212580",
         "itemNumber": "N82E16820242861",
@@ -1449,7 +1412,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40069,
@@ -1984,11 +1948,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 469.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021666&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-ff3d532g6000hc30dc01-black%2FJ37P83HLTC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311071399220059141040",
         "itemNumber": "N82E16820331845",
@@ -2025,7 +1984,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40084,
@@ -2348,11 +2308,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 479.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244699&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-memory-desktop-memory-model-kf560c30bbek2-32-black%2FJX4LR3YFKK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458313340891654871444043",
         "itemNumber": "N82E16820242860",
@@ -2388,7 +2343,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40093,
@@ -2650,11 +2606,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-z-16gb-2-x-8gb-288-pin-pc-ram-ddr4-3200-pc4-25600-desktop-memory-model-tlzgd416g3200hc16cdc01-gray%2FJ37P83QL9W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445836195037060588182354",
         "itemNumber": "N82E16820331354",
@@ -2690,7 +2641,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Gray",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40103,
@@ -2720,7 +2672,7 @@ export default [
       "bestbuy": {
         "price": 1119.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTC75V&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445831284010422222582994",
@@ -2941,7 +2893,7 @@ export default [
       "bestbuy": {
         "price": 1021.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637756&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTJVKG&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -3055,11 +3007,6 @@ export default [
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 1019,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12643181&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2x32gb-6400mhz-ddr5-c32-dimm-desktop-memory-black%2FJ39QHTJ64J&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445835514514661201458835",
         "itemNumber": "N82E16820982005",
@@ -3096,7 +3043,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40113,
@@ -3120,11 +3068,6 @@ export default [
         "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 542.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12225063&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2b6000c30-black%2FJ39QHTJVX7&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458313259524782540986056",
@@ -3161,7 +3104,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40114,
@@ -3183,11 +3127,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 596.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12603559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2x16gb-ddr5-6400mhz-c32-udimm-desktop-memory-black%2FJ39QHH563K&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "445832705904573443294150",
@@ -3224,7 +3163,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40115,
@@ -3302,11 +3242,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 269.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11076325&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-performance-32gb-2x16gb-3200mhz-ddr4-dram-cl22-so-dimm-notebook-laptop-memory-kit-black%2FJXF2C43XLR&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 27,
@@ -3332,7 +3267,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "quarantinedAt": "2026-07-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40120,
@@ -3449,11 +3385,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 249.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12182090&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr4-3200-pc4-25600-desktop-memory-model-tf3d432g3200hc16fdc01-black%2FJ37P83Q5Y7&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458318334980112469129502",
         "itemNumber": "N82E16820331634",
@@ -3490,7 +3421,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40123,
@@ -3607,11 +3539,6 @@ export default [
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 469.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11082014&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Frefurbished-team-group-t-create-expert-32gb-ddr5-6000mhz-ram-2x16gb-ctced532g6000hc30dc01-black%2FJ37P83FJLG&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 10,
@@ -3638,7 +3565,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40126,
@@ -3813,11 +3741,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 374.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248729&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpatriot-viper-venom-rgb-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-pvvr532g600c36k-black%2FJ3L95X55LR&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458311909541356568796984",
         "itemNumber": "N82E16820225310",
@@ -3853,7 +3776,8 @@ export default [
     "height": 39,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40130,
@@ -4366,11 +4290,6 @@ export default [
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 899.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11021661&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-delta-rgb-64gb-2-x-32gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-ff4d564g6000hc38adc01-white%2FJ37P83H9QT&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4396,7 +4315,8 @@ export default [
     "color": "White",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-29"
+    "quarantinedAt": "2026-07-29",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40144,
@@ -4510,11 +4430,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 1374.31,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12527698&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6000mhz-2-x-32gb-pc-ram-black%2FJX4LR3Y87G&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4538,7 +4453,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Red",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40148,
@@ -5424,11 +5340,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 1119.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244961&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6400mhz-ram-2x32gb-kf564c32bbeak2-64-black%2FJX4LR3YFFL&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458312278885426103772274",
         "itemNumber": "N82E16820242873",
@@ -5465,7 +5376,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40168,
@@ -5489,11 +5401,6 @@ export default [
         "priceSeller": "A Mark Store (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248721&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-ddr5-6400mhz-ram-2x16gb-pc5-51200-desktop-memory-black%2FJX4LR3YFV6&intsrc=APIG_28060",
-        "inStock": true
       },
       "newegg": {
         "sku": "4458318278868375321708866",
@@ -5531,7 +5438,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40170,
@@ -5590,11 +5498,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11939844&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-ddr5-6000mhz-pc5-48000-288-pin-desktop-ram-silver-white%2FJX4LR3YLR3&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315301867388533030497",
         "itemNumber": "0RM-001W-006X5",
@@ -5629,7 +5532,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40172,
@@ -5752,13 +5656,7 @@ export default [
     "r": 4.5,
     "asin": "B09P35J2PQ",
     "reviews": 115,
-    "deals": {
-      "bestbuy": {
-        "price": 429.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12184620&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fteam-group-team-t-force-vulcan-32gb-2-x-16gb-288-pin-pc-ram-ddr5-5200-pc5-41600-desktop-memory-model-flbd532g5200hc40cdc01-black%2FJ37P83H3H5&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "additionalImages": [
       "https://m.media-amazon.com/images/I/81P8i435r1L._AC_SL1500_.jpg",
       "https://m.media-amazon.com/images/I/81SSi3h9N5L._AC_SL1500_.jpg",
@@ -5780,7 +5678,13 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 40175,
@@ -5898,7 +5802,7 @@ export default [
       "bestbuy": {
         "price": 1241.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645751.p%3FskuId%3D6645751",
-        "inStock": true
+        "inStock": false
       }
     },
     "additionalImages": [
@@ -6264,11 +6168,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11244893&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-5600mt-s-ddr5-cl40-desktop-memory-single-module-kf556c40bb-32-black%2FJX4LR3L59T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833048916503491903224",
         "itemNumber": "0RN-001J-013N1",
@@ -6303,7 +6202,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40187,
@@ -7271,11 +7171,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 1099.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11247685&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-64gb-2-x-32gb-288-pin-pc-ram-ddr5-6400-pc5-51200-memory-desktop-memory-model-kf564c32bbek2-64-black%2FJX4LR3YFYY&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445831822006779106933533",
         "itemNumber": "N82E16820242872",
@@ -7312,7 +7207,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40211,
@@ -7487,11 +7383,6 @@ export default [
         "priceSeller": "Giz-Promo",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 264.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12076584&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fg-skill-flare-x5-16gb-2-x-8gb-288-pin-pc-ram-ddr5-5600-pc5-44800-desktop-memory-model-f5-5600j3636c8gh2-fx5-black%2FJ36V4SYG7W&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7517,7 +7408,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40215,
@@ -7797,11 +7689,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 489.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11276242&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6400-pc5-51200-memory-desktop-memory-model-kf564c32bbek2-32-black%2FJX4LR3YFPQ&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7827,7 +7714,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-07-15"
+    "quarantinedAt": "2026-07-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40224,
@@ -7897,11 +7785,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 474.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11248709&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2-x-16gb-288-pin-pc-ram-ddr5-6000-pc5-48000-desktop-memory-model-cmk32gx5m2f6000z36-gray%2FJ39TSCS4JC&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445837284845405244635606",
         "itemNumber": "N82E16820982286",
@@ -7932,7 +7815,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Gray",
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40226,
@@ -7956,11 +7840,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 999.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11237719&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fkingston-fury-beast-ram-module-for-motherboard-64-gb-1-x-64gb-ddr5-5600-pc5-44800-ddr5-sdram-5600-mhz-unknown%2FJX4LR3PPXS&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7985,7 +7864,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40229,
@@ -8403,11 +8283,6 @@ export default [
     "upc": "751492649849",
     "mpn": "MD16GSD43200-TB",
     "deals": {
-      "bestbuy": {
-        "price": 149.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12377676&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-performance-16gb-1x16gb-ddr4-ram-3200mhz-pc4-25600-cl22-1-2v-desktop-memory-md16gsd43200-tb-black%2FJXF2C4XRWV&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "N82E16820177135",
         "price": 149.99,
@@ -8433,7 +8308,8 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR4",
     "height": 32,
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40241,
@@ -8495,11 +8371,6 @@ export default [
     "upc": "649528937803",
     "mpn": "CP2K16G56C46U5",
     "deals": {
-      "bestbuy": {
-        "price": 553.44,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592814&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-32gb-2x16gb-ddr5-5600mhz-c46-udimm-desktop-memory-black%2FJX8PSKC792&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445839793294290713234027",
         "itemNumber": "9SIBZW0KPR4224",
@@ -8526,7 +8397,8 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR5",
     "height": 31,
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 40243,
@@ -8873,7 +8745,7 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604864&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604864.p%3FskuId%3D6604864",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445832372807584213670022",
@@ -8921,7 +8793,7 @@ export default [
       "bestbuy": {
         "price": 476.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6608563&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6608563.p%3FskuId%3D6608563",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -9085,7 +8957,7 @@ export default [
       "bestbuy": {
         "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637057&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637057.p%3FskuId%3D6637057",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 64,
@@ -9117,13 +8989,7 @@ export default [
     "r": 0,
     "upc": "649528945709",
     "mpn": "CP2K32G64C40U5B",
-    "deals": {
-      "bestbuy": {
-        "price": 1374.69,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592849&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcrucial-pro-oc-gaming-64gb-2x32gb-ddr5-6400mhz-c40-udimm-intel-xmp-3-0-amd-expo-desktop-memory-black%2FJX8PSKC62Y&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "cap": 64,
     "memType": "DDR5",
     "speed": 6400,
@@ -9137,7 +9003,13 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR5",
     "height": 31,
-    "ecc": false
+    "ecc": false,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 40261,
@@ -9155,7 +9027,7 @@ export default [
       "bestbuy": {
         "price": 1253.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645747&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645747.p%3FskuId%3D6645747",
-        "inStock": true
+        "inStock": false
       }
     },
     "cap": 96,
@@ -9171,7 +9043,12 @@ export default [
     "formFactor": "UDIMM",
     "ramType": "DDR5",
     "height": 45,
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 40262,
@@ -9226,7 +9103,7 @@ export default [
       "bestbuy": {
         "price": 1228.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645750&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645750.p%3FskuId%3D6645750",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "44583602460974355416427",
@@ -9320,7 +9197,7 @@ export default [
       "bestbuy": {
         "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645754&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645754.p%3FskuId%3D6645754",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445832156532174368504792",

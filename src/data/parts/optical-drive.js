@@ -76,7 +76,7 @@ export default [
       "bestbuy": {
         "price": 29.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2691169&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2691169.p%3FskuId%3D2691169",
-        "inStock": true
+        "inStock": false
       }
     },
     "storageType": "DVD/CD",
@@ -85,7 +85,12 @@ export default [
     "formFactor": "5.25\"",
     "mdisc": false,
     "readSpeed": "48x CD / 16x DVD",
-    "writeSpeed": "24x DVD±R"
+    "writeSpeed": "24x DVD±R",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 99303,

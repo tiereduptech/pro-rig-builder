@@ -1063,14 +1063,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6283508&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6283508.p%3FskuId%3D6283508",
         "price": 36.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "switches": "Membrane",
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 39
+    "bench": 39,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100180,
@@ -1114,7 +1119,12 @@ export default [
     "layout": "Full-Size",
     "wireless": false,
     "rgb": true,
-    "bench": 64
+    "bench": 64,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100182,
@@ -1173,14 +1183,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6500797&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6500797.p%3FskuId%3D6500797",
         "price": 69.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "switches": "Mechanical",
     "layout": "65%",
     "wireless": false,
     "rgb": true,
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100185,
@@ -1305,14 +1320,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476232&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476232.p%3FskuId%3D6476232",
         "price": 54.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "switches": "Mechanical",
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100192,
@@ -1356,7 +1376,12 @@ export default [
     "layout": "TKL",
     "wireless": true,
     "rgb": true,
-    "bench": 77
+    "bench": 77,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100194,
@@ -1415,14 +1440,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6518230&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6518230.p%3FskuId%3D6518230",
         "price": 169.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "switches": "Mechanical",
     "layout": "Full-Size",
     "wireless": true,
     "rgb": true,
-    "bench": 70
+    "bench": 70,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100199,
@@ -1437,14 +1467,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519664&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519664.p%3FskuId%3D6519664",
         "price": 105,
-        "inStock": true
+        "inStock": false
       }
     },
     "switches": "Optical",
     "layout": "60%",
     "wireless": false,
     "rgb": true,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100200,

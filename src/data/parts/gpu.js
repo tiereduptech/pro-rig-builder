@@ -55,17 +55,13 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 3699.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136303&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-xg-mobile-external-graphics-card-nvidia-geforce-rtx-5090-laptop-gpu-thunderbolt-5-off-black%2FJJGGLQP5HG&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2017,
     "boostClock": 2407,
     "needsReview": true,
-    "quarantinedAt": "2026-08-11"
+    "quarantinedAt": "2026-08-11",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30003,
@@ -100,15 +96,11 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 1499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12633606&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-inspire-rtx-5080-16gb-gddr7-3x-oc-gpu-triple-fan-pcie-5-0-hdmi-4k-8k-g5080-16i3c-bundle-w-alienware-backpack%2FJJGHT5QPSY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2295,
-    "boostClock": 2617
+    "boostClock": 2617,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30004,
@@ -147,7 +139,7 @@ export default [
       "bestbuy": {
         "price": 979.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5070-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6K9J&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "baseClock": 2295,
@@ -186,15 +178,11 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 667.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12335989&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fzotac-twin-edge-oc-geforce-rtx-5070-12gb-gddr7-pci-express-5-0-x16-atx-graphics-card-rtx-5070-twin-edge-oc%2FJ3GTZ3F64J&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2325,
-    "boostClock": 2512
+    "boostClock": 2512,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30006,
@@ -229,17 +217,13 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 402.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12195469&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fzotac-twin-edge-oc-rtx-5060-ti-8gb-gddr7-pcie-5-0-x8-atx-gpu%2FJ3GTZ3F6WR&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2407,
     "boostClock": 2572,
     "needsReview": true,
-    "quarantinedAt": "2026-08-15"
+    "quarantinedAt": "2026-08-15",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30007,
@@ -274,15 +258,11 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 370.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013426&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-geforce-rtx-5060-windforce-oc-8g-graphics-card-8gb-128-bit-gddr7-pcie-5-0-windforce-cooling-system-black%2FJ3ZW9X7388&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2400,
-    "boostClock": 2497
+    "boostClock": 2497,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30008,
@@ -934,15 +914,15 @@ export default [
     "arch": "Ampere",
     "type": "gaming",
     "bench": 33,
-    "deals": {
-      "bestbuy": {
-        "price": 222.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11019298&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-ventus-geforce-rtx-3050-6gb-gddr6-pci-express-4-0-x8-atx-graphics-card-rtx-3050-ventus-2x-6g-oc%2FJ3P7TXPGFP&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "baseClock": 1552,
-    "boostClock": 1777
+    "boostClock": 1777,
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30028,
@@ -978,11 +958,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 784.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592847&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-mercury-radeon-rx-9070-xt-oc-16gb-256-bit-gddr6-pci-express-5-0-rdna-4-graphics-card-rx-97trgbbb9%2FJ39HPQ82Z2&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310315983665494511596",
         "itemNumber": "27N-0002-001K1",
@@ -1000,7 +975,8 @@ export default [
     "baseClock": 2400,
     "boostClock": 2970,
     "upc": "00840191502958",
-    "mpn": "RX-97TQICKBA"
+    "mpn": "RX-97TQICKBA",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30029,
@@ -1035,15 +1011,11 @@ export default [
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 657.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064748&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-16gb-gddr6-pci-express-5-0-x16-graphics-card-rx9070-cl-16g%2FC34FQFQYK7&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 2070,
-    "boostClock": 2520
+    "boostClock": 2520,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30030,
@@ -1076,13 +1048,9 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 423.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013497&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-swift-amd-radeon-rx-9060xt-oc-gaming-edition-8gb-gddr6-pci-express-5-0-gaming-graphics-card-black%2FJ39HPQ83CH&intsrc=APIG_28060",
-        "inStock": true
       }
-    }
+    },
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30031,
@@ -1189,17 +1157,13 @@ export default [
         "priceSeller": "MemoryC",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 769.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12558717&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-speedster-merc310-amd-radeon-rx-7900xt-20gb-gddr6-pci-express-4-0-gaming-graphics-card-black%2FJ39HPQ8J7L&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 1500,
     "boostClock": 2400,
     "needsReview": true,
-    "quarantinedAt": "2026-07-21"
+    "quarantinedAt": "2026-07-21",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30034,
@@ -1267,17 +1231,13 @@ export default [
         "price": 579.99,
         "url": "https://www.amazon.com/dp/B0DQF23NLJ?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 579.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12297119&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpowercolor-radeon-rx-7800-xt-16gb-gddr6-video-graphics-card%2FC35834Q3WC&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 1295,
     "boostClock": 2430,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30036,
@@ -1350,15 +1310,11 @@ export default [
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 499.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12298401&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-speedster-swft210-amd-radeon-rx-7600xt-16gb-gddr6-pci-express-4-0-graphics-card-black%2FJ39HPQ8JZP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 1980,
-    "boostClock": 2755
+    "boostClock": 2755,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30038,
@@ -1393,15 +1349,11 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 302.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12560334&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fsapphire-pulse-radeon-rx-7600-8gb-gddr6-pci-express-4-0-x8-atx-graphics-card-11324-01-20g%2FJ39WZRLTPK&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 1720,
-    "boostClock": 2655
+    "boostClock": 2655,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30039,
@@ -1533,17 +1485,13 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 449.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10812833&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fxfx-radeon-rx-6800-16gb-speedster-swft319-oc-gddr6-video-graphics-card-gpu%2FJ39HPQ82VY&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "baseClock": 1700,
     "boostClock": 2105,
     "needsReview": true,
-    "quarantinedAt": "2026-07-27"
+    "quarantinedAt": "2026-07-27",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30043,
@@ -1969,13 +1917,9 @@ export default [
         "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 2428.56,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12067540&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-nvidia-quadro-rtx-4500-graphic-card-24-gb-gddr6-displayport-4-x-displayport%2FJXF2C4945T&intsrc=APIG_28060",
-        "inStock": true
       }
-    }
+    },
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30056,
@@ -2046,13 +1990,9 @@ export default [
         "priceSeller": "Hard2FindParts",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 719.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12542559&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-rtx-2000-vcnrtx2000ada-pb-16gb-128-bit-gddr6-pci-express-4-0-x8-graphics-card%2FJXF2C46GPG&intsrc=APIG_28060",
-        "inStock": true
       }
-    }
+    },
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30058,
@@ -3913,11 +3853,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 265.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12611252&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-dual-rtx-3050-6gb-oc-gaming-gpu-pcie-4-0-gddr6-hdmi-2-1-dp-1-4a-2-slot-axial-tech-fans-0db-tech%2FJJGGLQ727K&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583592661843778831268",
         "itemNumber": "N82E16814126708",
@@ -3950,7 +3885,8 @@ export default [
     "boostClock": 1777,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30108,
@@ -4028,11 +3964,6 @@ export default [
         "price": 799.95,
         "url": "https://www.amazon.com/dp/B0F38GLLKR?tag=tiereduptech-20",
         "inStock": true
-      },
-      "bestbuy": {
-        "price": 847.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064923&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-radeon-rx-9070-xt-16gb-256-bit-gddr6-pci-express-5-0-rdna-4-graphics-card-prime-rx9070xt-o16g%2FJJGGLH7CGP&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "discount": 15,
@@ -4054,7 +3985,8 @@ export default [
     "boostClock": 2970,
     "pcie": "5.0 x16",
     "quarantinedAt": "2026-08-17",
-    "needsReview": true
+    "needsReview": true,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30110,
@@ -4184,11 +4116,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 4499,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12506688&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-astral-geforce-rtx-5090-32gb-gddr7-pci-express-5-0-graphics-card-rog-astral-rtx5090-o32g-white%2FJJGHGP8XLK&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "44583510508037670625616",
         "itemNumber": "N82E16814126814",
@@ -4222,7 +4149,8 @@ export default [
     "boostClock": 2407,
     "pcie": "5.0 x16",
     "slots": 3.5,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30113,
@@ -4250,7 +4178,7 @@ export default [
       "bestbuy": {
         "price": 1299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617114&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5080-argb-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C46ZKT&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "discount": 7,
@@ -4586,11 +4514,6 @@ export default [
         "priceSeller": "Custom Hardware",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 2335.25,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592931&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fnvidia-geforce-rtx-5080-16gb-gddr7-founders-edition-graphics-card-dark-gun-metal%2FJ3GWYHGP8C&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -4610,7 +4533,8 @@ export default [
     "baseClock": 2295,
     "boostClock": 2617,
     "pcie": "5.0 x16",
-    "slots": 3
+    "slots": 3,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30121,
@@ -4739,11 +4663,6 @@ export default [
         "priceSeller": "Empowered PC",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 414.1,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592845&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8gb-gddr7-ventus-3x-oc-edition-pci-express-5-0-graphics-card-black-sliver%2FJ3P7TXRFH8&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 419.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2977&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-8G-VENTUS-3X-OC&intsrc=APIG_16410",
@@ -4771,7 +4690,8 @@ export default [
     "slots": 2.5,
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-17",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30124,
@@ -4801,7 +4721,7 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672757&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672757.p%3FskuId%3D6672757",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 569.99,
@@ -6468,7 +6388,12 @@ export default [
     "length": 330,
     "bench": 100,
     "memType": "GDDR7",
-    "amazonRemovedAnomaly": "2026-06-28"
+    "amazonRemovedAnomaly": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30164,
@@ -6695,11 +6620,6 @@ export default [
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
       },
-      "bestbuy": {
-        "price": 614.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11064774&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFHF&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 579.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2650&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-VENTUS-3X-OC&intsrc=APIG_16410",
@@ -6736,7 +6656,8 @@ export default [
     "boostClock": 2572,
     "pcie": "5.0 x8",
     "slots": 2.5,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30170,
@@ -6848,11 +6769,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 434.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013499&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5060-ti-windforce-oc-8g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7X7R&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -6876,7 +6792,8 @@ export default [
     "upc": "00889523049389",
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-07-19"
+    "quarantinedAt": "2026-07-19",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30173,
@@ -6900,11 +6817,6 @@ export default [
         "priceSeller": "Vagari LLC (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 1499,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136240&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-windforce-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J7R&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -6928,7 +6840,8 @@ export default [
     "slots": 3,
     "memType": "GDDR7",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30174,
@@ -7129,11 +7042,6 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 710.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013506&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-radeon-rx-9070-gaming-oc-16g-gddr6-pci-express-5-0-graphics-card-black%2FJ3ZW9X7JCC&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7156,7 +7064,8 @@ export default [
     "pcie": "5.0 x16",
     "memType": "GDDR6",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30179,
@@ -7180,11 +7089,6 @@ export default [
         "priceSeller": "AzITStore",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 1599,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136232&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-vcg508016tfxpb1-nvidia-geforce-rtx-5080-16gb-256-bit-gddr7-dlss-4-0-pci-express-5-0-x16-video-card%2FJXF2C46ZZF&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -7199,7 +7103,8 @@ export default [
     "interface": "PCI-Express x16",
     "tdp": 360,
     "length": 310,
-    "bench": 94
+    "bench": 94,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30180,
@@ -8130,11 +8035,6 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
-      "bestbuy": {
-        "price": 1649,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918859&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-geforce-rtx-5080-16g-ventus-3x-oc-plus-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6LYJ&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 1399.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2483&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC-PLUS&intsrc=APIG_16410",
@@ -8160,7 +8060,8 @@ export default [
     "boostClock": 2617,
     "pcie": "5.0 x16",
     "slots": 3,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30202,
@@ -8190,7 +8091,7 @@ export default [
       "bestbuy": {
         "price": 379.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632718&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-gaming-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQJ9F&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 384.99,
@@ -8604,11 +8505,6 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-17"
-      },
-      "bestbuy": {
-        "price": 686.42,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12606225&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-16gb-graphics-card%2FJXF2C46524&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "additionalImages": [
@@ -8624,7 +8520,8 @@ export default [
     "interface": "PCI-Express x16",
     "tdp": 180,
     "length": 260,
-    "bench": 59
+    "bench": 59,
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30212,
@@ -8691,11 +8588,6 @@ export default [
         "priceSeller": "electrolert",
         "priceResolvedVia": "dataforseo"
       },
-      "bestbuy": {
-        "price": 1799,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491759&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5080-16g-ventus-3x-oc-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXR733&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 1399.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2482&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC&intsrc=APIG_16410",
@@ -8722,7 +8614,8 @@ export default [
     "boostClock": 2617,
     "pcie": "5.0 x16",
     "slots": 3,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30214,
@@ -8922,7 +8815,12 @@ export default [
     "slots": "2-slot",
     "length": 235,
     "bench": 45,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30219,
@@ -8986,7 +8884,12 @@ export default [
     "slots": "2-slot",
     "length": 240,
     "bench": 45,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30221,
@@ -9018,7 +8921,12 @@ export default [
     "slots": "2-slot",
     "length": 245,
     "bench": 59,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30222,
@@ -9337,7 +9245,12 @@ export default [
     "slots": "4-slot",
     "length": 330,
     "bench": 100,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30230,
@@ -9574,11 +9487,6 @@ export default [
     "upc": "197105878068",
     "mpn": "PRIME-RTX5070TI-16G",
     "deals": {
-      "bestbuy": {
-        "price": 1139,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918863&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5070-ti-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHJX5W&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg_openbox": {
         "sku": "445835434376973822081397",
         "price": 989.99,
@@ -9614,7 +9522,8 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 85,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30237,
@@ -9725,7 +9634,7 @@ export default [
       "bestbuy": {
         "price": 1349.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6615239&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6615239.p%3FskuId%3D6615239",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 1349.99,
@@ -9771,11 +9680,6 @@ export default [
     "upc": "889523045879",
     "mpn": "GV-N3050WF2OCV2-6GD",
     "deals": {
-      "bestbuy": {
-        "price": 222.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013412&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-pci-express-4-0-graphics-card-black%2FJ3ZW92VFPX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445838676784629540102766",
         "itemNumber": "N82E16814932749",
@@ -9801,7 +9705,8 @@ export default [
     "slots": "2-slot",
     "length": 225,
     "bench": 33,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30241,
@@ -9816,11 +9721,6 @@ export default [
     "upc": "889523047521",
     "mpn": "GV-N5080GAMING OC-16GD",
     "deals": {
-      "bestbuy": {
-        "price": 1479,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12491760&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5080-gaming-oc-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X7J74&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "445833433688408193519454",
         "itemNumber": "N82E16814932753",
@@ -9845,7 +9745,8 @@ export default [
     "slots": "3.5-slot",
     "length": 310,
     "bench": 96,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30242,
@@ -9877,7 +9778,12 @@ export default [
     "slots": "3.5-slot",
     "length": 330,
     "bench": 100,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30243,
@@ -9909,7 +9815,12 @@ export default [
     "slots": "3.5-slot",
     "length": 330,
     "bench": 100,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30244,
@@ -9927,7 +9838,7 @@ export default [
       "bestbuy": {
         "price": 335.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616025&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616025.p%3FskuId%3D6616025",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "4458314021598184013363696",
@@ -9972,7 +9883,7 @@ export default [
       "bestbuy": {
         "price": 3599.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616090&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616090.p%3FskuId%3D6616090",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 4238.99,
@@ -10009,7 +9920,7 @@ export default [
       "bestbuy": {
         "price": 3799.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616095&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616095.p%3FskuId%3D6616095",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 3999.99,
@@ -10167,7 +10078,7 @@ export default [
       "bestbuy": {
         "price": 4299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6617115&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6617115.p%3FskuId%3D6617115",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5090",
@@ -10181,7 +10092,12 @@ export default [
     "slots": "3.5-slot",
     "length": 330,
     "bench": 100,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30251,
@@ -10213,7 +10129,12 @@ export default [
     "slots": "3.5-slot",
     "length": 330,
     "bench": 100,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30252,
@@ -10259,13 +10180,7 @@ export default [
     "r": 0,
     "upc": "824142402863",
     "mpn": "G507T-16GTCP",
-    "deals": {
-      "bestbuy": {
-        "price": 1299.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10918861&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16g-gaming-trio-oc-plus-16gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TX6KR6&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5070 Ti",
     "vram": 16,
     "vramType": "GDDR7",
@@ -10277,7 +10192,13 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30254,
@@ -10337,11 +10258,6 @@ export default [
     "upc": "889523048504",
     "mpn": "GV-N507TEAGLEOC ICE-16GD",
     "deals": {
-      "bestbuy": {
-        "price": 1119,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10886676&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5070-ti-eagle-oc-ice-sff-16g-gddr7-pci-express-5-0-graphics-card-white%2FJ3ZW9X7CQX&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458315112060008078983284",
         "itemNumber": "N82E16814932769",
@@ -10367,7 +10283,8 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30256,
@@ -10385,7 +10302,7 @@ export default [
       "bestbuy": {
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618883&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618883.p%3FskuId%3D6618883",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445838282168201662500127",
@@ -10520,13 +10437,7 @@ export default [
     "r": 0,
     "upc": "889523049259",
     "mpn": "GV-N507TWF3-16GD",
-    "deals": {
-      "bestbuy": {
-        "price": 1199,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12017814&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5070-ti-windforce-sff-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X72ZY&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5070 Ti",
     "vram": 16,
     "vramType": "GDDR7",
@@ -10538,7 +10449,13 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 86,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30260,
@@ -10588,7 +10505,7 @@ export default [
       "bestbuy": {
         "price": 649.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620354&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-12gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464CQ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070",
@@ -10602,7 +10519,12 @@ export default [
     "slots": "2-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30262,
@@ -10620,7 +10542,7 @@ export default [
       "bestbuy": {
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620367&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464LK&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10634,7 +10556,12 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30263,
@@ -10684,7 +10611,7 @@ export default [
       "bestbuy": {
         "price": 849.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620452&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620452.p%3FskuId%3D6620452",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10698,7 +10625,12 @@ export default [
     "slots": "3.5-slot",
     "length": 290,
     "bench": 72,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30265,
@@ -10940,7 +10872,12 @@ export default [
     "slots": "3.5-slot",
     "length": 285,
     "bench": 68,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30272,
@@ -11078,7 +11015,7 @@ export default [
       "bestbuy": {
         "price": 629.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621982&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621982.p%3FskuId%3D6621982",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070",
@@ -11092,7 +11029,12 @@ export default [
     "slots": "2.5-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30276,
@@ -11183,13 +11125,7 @@ export default [
     "r": 0,
     "upc": "199291014954",
     "mpn": "PRIME-RTX5060TI-O8G",
-    "deals": {
-      "bestbuy": {
-        "price": 572.05,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=10732524&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-prime-nvidia-geforce-rtx-5060-ti-oc-edition-8gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGHGYVFFX&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5060 Ti",
     "vram": 8,
     "vramType": "GDDR7",
@@ -11201,7 +11137,13 @@ export default [
     "slots": "2.5-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30279,
@@ -11233,7 +11175,12 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30280,
@@ -11265,7 +11212,12 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30281,
@@ -11297,7 +11249,12 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30282,
@@ -11311,13 +11268,7 @@ export default [
     "r": 0,
     "upc": "889523049334",
     "mpn": "GV-N506TEAGLE OC-16GD",
-    "deals": {
-      "bestbuy": {
-        "price": 659,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12569739&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-nvidia-geforce-rtx-5060-ti-eagle-oc-16g-gddr7-pci-express-5-0-graphics-card-black%2FJ3ZW9X72FY&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5060 Ti",
     "vram": 16,
     "vramType": "GDDR7",
@@ -11329,7 +11280,13 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30283,
@@ -11576,7 +11533,12 @@ export default [
     "slots": "2-slot",
     "length": 250,
     "bench": 56,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30290,
@@ -11608,7 +11570,12 @@ export default [
     "slots": "2-slot",
     "length": 250,
     "bench": 56,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30291,
@@ -11676,7 +11643,7 @@ export default [
       "bestbuy": {
         "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632715&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632715.p%3FskuId%3D6632715",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 369.99,
@@ -11726,7 +11693,7 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632716&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-8g-ventus-2x-oc-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXQ229&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 359.99,
@@ -11763,7 +11730,7 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632720&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632720.p%3FskuId%3D6632720",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 369.99,
@@ -11813,7 +11780,7 @@ export default [
       "bestbuy": {
         "price": 359.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632722&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632722.p%3FskuId%3D6632722",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 359.99,
@@ -11882,7 +11849,7 @@ export default [
       "bestbuy": {
         "price": 509.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632945&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632945.p%3FskuId%3D6632945",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11896,7 +11863,12 @@ export default [
     "slots": "3.5-slot",
     "length": 260,
     "bench": 53,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30298,
@@ -11946,7 +11918,7 @@ export default [
       "bestbuy": {
         "price": 369.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6632948&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6632948.p%3FskuId%3D6632948",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -11960,7 +11932,12 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 54,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30300,
@@ -12023,7 +12000,7 @@ export default [
       "bestbuy": {
         "price": 459.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6633162&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6633162.p%3FskuId%3D6633162",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12037,7 +12014,12 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 54,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30302,
@@ -12137,7 +12119,7 @@ export default [
       "bestbuy": {
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634557&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634557.p%3FskuId%3D6634557",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 639.99,
@@ -12174,7 +12156,7 @@ export default [
       "bestbuy": {
         "price": 669.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634560&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634560.p%3FskuId%3D6634560",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 669.99,
@@ -12211,7 +12193,7 @@ export default [
       "bestbuy": {
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6634566&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6634566.p%3FskuId%3D6634566",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 639.99,
@@ -12245,11 +12227,6 @@ export default [
     "upc": "824142420997",
     "mpn": "G506T-8V2CP",
     "deals": {
-      "bestbuy": {
-        "price": 399,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12629058&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5060-ti-8g-ventus-2x-oc-plus-8gb-gddr7-pci-express-gen-5-graphics-card-black%2FJ3P7TXRFR5&intsrc=APIG_28060",
-        "inStock": true
-      },
       "msi": {
         "price": 419.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2646&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FRTX-5060-Ti-8G-VENTUS-2X-OC-PLUS&intsrc=APIG_16410",
@@ -12267,7 +12244,8 @@ export default [
     "slots": "2.5-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30308,
@@ -12282,11 +12260,6 @@ export default [
     "upc": "197105970342",
     "mpn": "ROG-STRIX-RTX5070-O12G-GAMING",
     "deals": {
-      "bestbuy": {
-        "price": 1104.1,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12592793&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-nvidia-geforce-rtx-5070-oc-edition-12gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLHGC6T&intsrc=APIG_28060",
-        "inStock": true
-      },
       "newegg": {
         "sku": "4458310694632590118865430",
         "itemNumber": "N82E16814126784",
@@ -12312,7 +12285,8 @@ export default [
     "slots": "3.25-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30309,
@@ -12326,13 +12300,7 @@ export default [
     "r": 0,
     "upc": "197105955080",
     "mpn": "ROG-STRIX-RTX5070TI-O16G-GAMIN",
-    "deals": {
-      "bestbuy": {
-        "price": 1519,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12136242&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasus-rog-strix-nvidia-geforce-rtx-5070-ti-oc-edition-16gb-gddr7-pci-express-5-0-graphics-card-black%2FJJGGLH8223&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5070 Ti",
     "vram": 16,
     "vramType": "GDDR7",
@@ -12344,7 +12312,13 @@ export default [
     "slots": "3.25-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30310,
@@ -12358,13 +12332,7 @@ export default [
     "r": 0,
     "upc": "751492795621",
     "mpn": "VCG5060T8TFXXPB1-O",
-    "deals": {
-      "bestbuy": {
-        "price": 434.99,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=11013462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5060-ti-overclocked-8gb-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C465V4&intsrc=APIG_28060",
-        "inStock": true
-      }
-    },
+    "deals": {},
     "model": "GeForce RTX 5060 Ti",
     "vram": 8,
     "vramType": "GDDR7",
@@ -12376,7 +12344,13 @@ export default [
     "slots": "2-slot",
     "length": 260,
     "bench": 59,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:dead-sku-orphan"
+    ]
   },
   {
     "id": 30311,
@@ -12394,7 +12368,7 @@ export default [
       "bestbuy": {
         "price": 304.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638591&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638591.p%3FskuId%3D6638591",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 304.99,
@@ -12431,7 +12405,7 @@ export default [
       "bestbuy": {
         "price": 309.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638592&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5050-8g-gaming-oc-8gb-gddr6-pci-express-gen-5-graphics-card-black%2FJ3P7TXHJLW&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 314.99,
@@ -12481,7 +12455,7 @@ export default [
       "bestbuy": {
         "price": 299.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6638594&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6638594.p%3FskuId%3D6638594",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 299.99,
@@ -12659,7 +12633,7 @@ export default [
       "bestbuy": {
         "price": 409.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665010&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665010.p%3FskuId%3D6665010",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 409.99,
@@ -12802,7 +12776,7 @@ export default [
       "bestbuy": {
         "price": 699.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672758&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-gddr7-pci-express-gen-5-graphics-card-tan%2FJ3P7TXTJGQ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070",
@@ -12816,7 +12790,12 @@ export default [
     "slots": "2.7-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30324,
@@ -12834,7 +12813,7 @@ export default [
       "bestbuy": {
         "price": 639.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676832&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676832.p%3FskuId%3D6676832",
-        "inStock": true
+        "inStock": false
       }
     },
     "model": "GeForce RTX 5070",
@@ -12848,7 +12827,12 @@ export default [
     "slots": "2.5-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 30325,
@@ -12866,7 +12850,7 @@ export default [
       "bestbuy": {
         "price": 999.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676833&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676833.p%3FskuId%3D6676833",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 999.99,
@@ -12903,7 +12887,7 @@ export default [
       "bestbuy": {
         "price": 979.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676835&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-nvidia-geforce-rtx-5070-ti-16gb-gddr7-ventus-3x-pz-oc-edition-pci-express-5-0-sff-ready-graphics-card-black%2FJ3P7TXTXSZ&intsrc=APIG_28060",
-        "inStock": true
+        "inStock": false
       },
       "newegg": {
         "sku": "445839046081871202297170",
@@ -12948,7 +12932,7 @@ export default [
       "bestbuy": {
         "price": 1429.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676839.p%3FskuId%3D6676839",
-        "inStock": true
+        "inStock": false
       },
       "msi": {
         "price": 1409.99,
@@ -14534,18 +14518,14 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
-      },
-      "bestbuy": {
-        "price": 148.49,
-        "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=12077476&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-intel-arc-a380-challenger-itx-6gb-gddr6-oc-pcie-4-0-graphic-card-black%2FC34K265CVQ&intsrc=APIG_28060",
-        "inStock": true
       }
     },
     "tdp": 75,
     "bench": 17,
     "vram": 6,
     "length": 195,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "bestbuyRemovedDead": "2026-08-18"
   },
   {
     "id": 30389,

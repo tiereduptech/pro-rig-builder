@@ -1326,7 +1326,12 @@ export default [
     "mouseType": "Wireless",
     "weight": 80,
     "dpi": 25600,
-    "bench": 79
+    "bench": 79,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100136,
@@ -1451,7 +1456,12 @@ export default [
     "mouseType": "Wireless",
     "weight": 130,
     "dpi": 18000,
-    "bench": 53
+    "bench": 53,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100141,
@@ -1473,7 +1483,12 @@ export default [
     "mouseType": "Wired",
     "weight": 100,
     "dpi": 16000,
-    "bench": 52
+    "bench": 52,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100142,
@@ -1561,7 +1576,12 @@ export default [
     "mouseType": "Wired",
     "weight": 77,
     "dpi": 8500,
-    "bench": 53
+    "bench": 53,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100146,
@@ -1671,7 +1691,12 @@ export default [
     "mouseType": "Wired",
     "weight": 59,
     "dpi": 16000,
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100151,
@@ -1686,14 +1711,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6511295&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6511295.p%3FskuId%3D6511295",
         "price": 69.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "sensor": "Optical",
     "mouseType": "Wireless",
     "weight": 85,
     "dpi": 8200,
-    "bench": 57
+    "bench": 57,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100152,
@@ -1708,14 +1738,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6519203&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6519203.p%3FskuId%3D6519203",
         "price": 79.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "sensor": "Optical",
     "mouseType": "Wireless",
     "weight": 69,
     "dpi": 19000,
-    "bench": 77
+    "bench": 77,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100153,
@@ -1803,7 +1838,12 @@ export default [
     "mouseType": "Wired",
     "weight": 59,
     "dpi": 26000,
-    "bench": 77
+    "bench": 77,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100157,
@@ -1840,14 +1880,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548182&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548182.p%3FskuId%3D6548182",
         "price": 99.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "sensor": "Optical",
     "mouseType": "Wireless",
     "weight": 77,
     "dpi": 30000,
-    "bench": 82
+    "bench": 82,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100159,
@@ -1906,14 +1951,19 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573602&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573602.p%3FskuId%3D6573602",
         "price": 64.99,
-        "inStock": true
+        "inStock": false
       }
     },
     "sensor": "Optical",
     "mouseType": "Wireless",
     "weight": 89,
     "dpi": 26000,
-    "bench": 70
+    "bench": 70,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-18",
+    "reviewFlags": [
+      "bestbuy:unbuyable-orphan"
+    ]
   },
   {
     "id": 100162,
