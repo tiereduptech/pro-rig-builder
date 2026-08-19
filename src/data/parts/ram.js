@@ -1052,7 +1052,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40060,
@@ -1751,7 +1752,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40077,
@@ -3263,7 +3265,8 @@ export default [
       "liveRetail": 89.99,
       "ratio": 8.85,
       "note": "Kingston KF436C18BB/32 single 32GB DDR4-3600; ~9x live retail (2026-07-27 live audit)"
-    }
+    },
+    "sticks": 1
   },
   {
     "id": 40119,
@@ -4229,7 +4232,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40141,
@@ -4274,7 +4278,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 2
   },
   {
     "id": 40142,
@@ -4661,7 +4666,8 @@ export default [
     "color": "Red",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "sticks": 1
   },
   {
     "id": 40151,
@@ -5790,7 +5796,8 @@ export default [
     "quarantinedAt": "2026-08-19",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "sticks": 2
   },
   {
     "id": 40176,
@@ -6207,7 +6214,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40185,
@@ -6267,7 +6275,8 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "sticks": 1
   },
   {
     "id": 40187,
@@ -6443,7 +6452,8 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 2
   },
   {
     "id": 40191,
@@ -6933,7 +6943,8 @@ export default [
     "color": "Red",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "sticks": 2
   },
   {
     "id": 40203,
@@ -6981,7 +6992,8 @@ export default [
     "color": "Red",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-19"
+    "quarantinedAt": "2026-08-19",
+    "sticks": 2
   },
   {
     "id": 40204,
@@ -7027,7 +7039,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Red",
-    "ecc": false
+    "ecc": false,
+    "sticks": 2
   },
   {
     "id": 40206,
@@ -7175,7 +7188,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40209,
@@ -7210,7 +7224,8 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "sticks": 2
   },
   {
     "id": 40210,
@@ -7317,7 +7332,8 @@ export default [
     "quarantinedAt": "2026-08-19",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "sticks": 2
   },
   {
     "id": 40212,
@@ -7520,7 +7536,8 @@ export default [
     "quarantinedAt": "2026-08-19",
     "reviewFlags": [
       "relink:no-price"
-    ]
+    ],
+    "sticks": 2
   },
   {
     "id": 40216,
@@ -7933,7 +7950,8 @@ export default [
     "ecc": false,
     "needsReview": true,
     "quarantinedAt": "2026-08-17",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "sticks": 1
   },
   {
     "id": 40229,
@@ -8025,7 +8043,8 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "sticks": 1
   },
   {
     "id": 40231,
@@ -9597,7 +9616,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.409Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "sticks": 2
   },
   {
     "id": 100347,
@@ -9623,7 +9643,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.409Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "sticks": 2
   },
   {
     "id": 100348,
@@ -9639,7 +9660,8 @@ export default [
     "addedAt": "2026-05-15T13:17:14.409Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "sticks": 2
   },
   {
     "id": 100349,
@@ -9662,7 +9684,8 @@ export default [
     "addedAt": "2026-05-15T13:17:14.409Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-08-19"
+    "quarantinedAt": "2026-08-19",
+    "sticks": 2
   },
   {
     "id": 100350,
@@ -9688,7 +9711,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "sticks": 2
   },
   {
     "id": 100351,
@@ -9712,7 +9736,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "sticks": 2
   },
   {
     "id": 100352,
@@ -9738,7 +9763,8 @@ export default [
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "sticks": 4
   },
   {
     "id": 100492,
@@ -10446,7 +10472,8 @@ export default [
     "formFactor": "DIMM",
     "rgb": true,
     "needsReview": true,
-    "quarantinedAt": "2026-06-28"
+    "quarantinedAt": "2026-06-28",
+    "sticks": 4
   },
   {
     "id": 100514,
@@ -10586,7 +10613,8 @@ export default [
     "memType": "DDR4",
     "formFactor": "DIMM",
     "upc": "00649528776341",
-    "mpn": "CT2K8G4SFS824A"
+    "mpn": "CT2K8G4SFS824A",
+    "sticks": 2
   },
   {
     "id": 100752,
@@ -10630,7 +10658,8 @@ export default [
     "memType": "DDR4",
     "formFactor": "DIMM",
     "upc": "00649528773418",
-    "mpn": "CT2K16G4SFD824A"
+    "mpn": "CT2K16G4SFD824A",
+    "sticks": 2
   },
   {
     "id": 100753,
@@ -10661,7 +10690,8 @@ export default [
     "speed": 3200,
     "cl": 22,
     "memType": "DDR4",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 100754,
@@ -10726,7 +10756,8 @@ export default [
     "speed": 2666,
     "cl": 19,
     "memType": "DDR4",
-    "formFactor": "DIMM"
+    "formFactor": "DIMM",
+    "sticks": 1
   },
   {
     "id": 100756,
@@ -10770,7 +10801,8 @@ export default [
     "memType": "DDR4",
     "formFactor": "DIMM",
     "upc": "04260580370870",
-    "mpn": "RNAB07DNRD3T7"
+    "mpn": "RNAB07DNRD3T7",
+    "sticks": 1
   },
   {
     "id": 100757,
@@ -10999,7 +11031,8 @@ export default [
     "speed": 7200,
     "cl": 34,
     "memType": "DDR5",
-    "formFactor": "DIMM"
+    "formFactor": "DIMM",
+    "sticks": 2
   },
   {
     "id": 100765,
@@ -11091,7 +11124,8 @@ export default [
     "cl": 28,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "sticks": 2
   },
   {
     "id": 100769,
@@ -11137,7 +11171,8 @@ export default [
     "formFactor": "DIMM",
     "rgb": true,
     "upc": "00740617342956",
-    "mpn": "KF560C30BBEA-16"
+    "mpn": "KF560C30BBEA-16",
+    "sticks": 1
   },
   {
     "id": 100770,
@@ -11169,7 +11204,8 @@ export default [
     "cl": 32,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "sticks": 1
   },
   {
     "id": 100771,
@@ -11200,7 +11236,8 @@ export default [
     "speed": 4800,
     "cl": 40,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 100772,
@@ -11245,7 +11282,8 @@ export default [
     "memType": "DDR5",
     "formFactor": "DIMM",
     "upc": "00740617343038",
-    "mpn": "KF560C30BBE-16"
+    "mpn": "KF560C30BBE-16",
+    "sticks": 1
   },
   {
     "id": 100773,
@@ -11275,7 +11313,8 @@ export default [
     "cap": 32,
     "speed": 5600,
     "memType": "DDR5",
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 100774,
@@ -11307,7 +11346,8 @@ export default [
     "cl": 36,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "sticks": 1
   },
   {
     "id": 100776,
@@ -11372,7 +11412,8 @@ export default [
     "memType": "DDR5",
     "formFactor": "UDIMM",
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-05",
+    "sticks": 1
   },
   {
     "id": 100785,
@@ -11436,7 +11477,8 @@ export default [
     "cl": 40,
     "memType": "DDR5",
     "formFactor": "DIMM",
-    "rgb": true
+    "rgb": true,
+    "sticks": 2
   },
   {
     "id": 100787,
@@ -12028,7 +12070,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": true,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 2
   },
   {
     "id": 101948,
@@ -12220,7 +12263,8 @@ export default [
     "ramType": "DDR4",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 101957,
@@ -12726,7 +12770,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 101971,
@@ -15794,7 +15839,8 @@ export default [
     "ramType": "DDR4",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102103,
@@ -18946,7 +18992,8 @@ export default [
     "ramType": "DDR4",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102193,
@@ -18984,7 +19031,8 @@ export default [
     "ramType": "DDR4",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102194,
@@ -22483,7 +22531,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": true,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102293,
@@ -22521,7 +22570,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102294,
@@ -22559,7 +22609,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102295,
@@ -22597,7 +22648,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": false,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102296,
@@ -22635,7 +22687,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": true,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102297,
@@ -22673,7 +22726,8 @@ export default [
     "ramType": "DDR5",
     "ecc": false,
     "rgb": true,
-    "formFactor": "UDIMM"
+    "formFactor": "UDIMM",
+    "sticks": 1
   },
   {
     "id": 102298,
