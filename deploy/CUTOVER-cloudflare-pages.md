@@ -458,8 +458,9 @@ settle apex ownership (§0)                                        [DONE 2026-08
   -> set CF_PAGES_AUTO_DEPLOY=true                                 [DONE]
   -> give deploy-pages.yml an automatic trigger                    [DONE — see §8]
   ───────────────────────────────────────────────────────  everything above: DONE
+  -> a live-vs-committed deploy watcher (§8)                       [DONE —
+     scripts/deploy-freshness-report.cjs, wired into ingest-outcome-watch.yml]
   -> run bytediff-pages.mjs + cp3-pages.mjs against the apex       <- YOU ARE HERE
-  -> a live-vs-committed bundle watcher (§8)
   -> zone Cache Rule for /assets/* (DESIGN §6)
   -> reintroduce any §3.4 feature you want back, one at a time, CP-3 between each
 ```
@@ -735,23 +736,41 @@ every workflow in the repo reports healthy.
 
 That is the same shape as the 95-day Best Buy freeze, and the same rule applies:
 a check that only watches run history cannot see it, because nothing failed.
-The check that *can* see it compares the entry-bundle hash the **live site**
-serves against the one committed in `dist/` on `main`:
+
+**The watcher is `scripts/deploy-freshness-report.cjs`**, run as a step in
+`ingest-outcome-watch.yml` alongside the two ingest watchers (18:00 UTC daily,
+twelve hours after the 06:00 prerender, so there is no race with an in-flight
+deploy). It ignores run history entirely and compares what the live host serves
+against what `main` committed:
 
 ```sh
-# what main says the bundle is
-git show origin/main:dist/index.html | grep -oE 'assets/index-[A-Za-z0-9_-]+\.js'
-# what visitors actually receive (cache-bust so this measures the origin)
-curl -s "https://prorigbuilder.com/?cb=$RANDOM" | grep -oE 'assets/index-[A-Za-z0-9_-]+\.js'
+node scripts/deploy-freshness-report.cjs --url=https://prorigbuilder.com/ \
+  --dist=dist/index.html --sitemap=dist/sitemap.xml
 ```
 
-Measured 2026-08-19: `main` carries `index-C7Z5usPQ.js`, the apex serves
-`index-DXvLsYDC.js` — **one nightly behind**. That is exactly the drift the
-trigger exists to close, and it is visible from nowhere else.
+**Two signals, because each is blind where the other sees.** This is the part
+worth understanding before trusting it:
 
-**This watcher is not built yet.** The comparison above is a shell snippet in a
-document, which is the weakest possible form of a check. It wants to be a step
-that goes red, and it does not exist.
+| signal | catches | blind to |
+|---|---|---|
+| entry bundle `assets/index-<hash>.js` | any change to the built JS | a nightly that changed only catalog content — the hash **repeated on 6 of the last 25 builds**, so a freeze beginning on one of those nights reads as current. Aug 12 → Aug 13 is a real instance |
+| `sitemap.xml` (content digest) | route additions and removals, and the build date it stamps into every `<lastmod>` | drift **inside a single day** — `<lastmod>` is day-granular, so two builds dated the same day are indistinguishable by it |
+
+Either one disagreeing is red. The sitemap is compared by digest; `<lastmod>` and
+the `<loc>` count are extracted only to say *how far* behind in the message,
+because "4 days and 31 routes behind" is actionable and "digests differ" is not.
+
+Verified against the live site in all three directions, 2026-08-19: red on the
+real drift with both signals firing and both hashes named, green when pointed at
+the commit whose build is actually live, and red — not quietly green — when the
+host is unreachable or serving a shell. 16 tests.
+
+Measured while writing this: `main` carried `index-C7Z5usPQ.js` and the apex
+served `index-DXvLsYDC.js` — **one nightly behind**, and the sitemap showed the
+live site with **5,099 URLs against main's 5,068**. Note the direction on that
+second one: the live site has *more* routes than `main`, so the most recent
+prerender dropped 31. That is worth a look on its own account and is not
+something this watcher is trying to tell you.
 
 ### Verifying a deploy landed
 
