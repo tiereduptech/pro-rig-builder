@@ -380,6 +380,71 @@ function implausibleBrandForCategory(brand, category) {
 }
 
 // Extract basic specs from a title for a known category.
+// Stick count from a RAM title.
+//
+// Ordered strongest-first. Every branch is direct evidence in the title or a
+// documented vendor part-number convention. Returns null for "unknown", and
+// callers MUST leave the field blank rather than assume 1: a wrong stick count
+// silently breaks the build compatibility check in App.jsx (RAM sticks vs mobo
+// ramSlots) and mislabels a single module as a dual-channel kit.
+//
+// Deliberately NOT inferred here: "a capacity with no kit notation" -> 1. That
+// reads correctly on most real titles but it is an assumption, not evidence, so
+// it belongs in a reviewed backfill and not in the ingest path where it would
+// silently stamp every future single-capacity title.
+function ramSticks(title) {
+  const raw = String(title || '').replace(/ /g, ' ');
+  // "2Rx8" / "1Rx8" is the module RANK, not a stick count. Mask it before any
+  // "<n> x <n>" pattern runs, or every dual-rank module reads as a 2-stick kit.
+  const t = raw.replace(/\b\d\s*R\s*x\s*\d+\b/ig, ' ');
+  let m;
+
+  // 1. kit notation, forward: "(2x16GB)", "2 x 16GB", "KIT 2 X 24GB".
+  //    The parentheses are OPTIONAL. Requiring them is the original bug: it
+  //    left 13% of RAM rows blank and undercounted the 1-stick bucket 12x.
+  if ((m = t.match(/(?:^|[\s(\[|,\/-])(\d{1,2})\s*[x×*]\s*\d{1,3}\s*GB\b/i))) return parseInt(m[1]);
+  // 2. kit notation, reversed: "(16GBx2)", "[16GB x 2 Sheets]".
+  if ((m = t.match(/\d{1,3}\s*GB\s*[x×*]\s*(\d{1,2})\b/i))) return parseInt(m[1]);
+  // 3. counted kit words: "(Kit of 2)", "2-Pack", "4 modules".
+  if ((m = t.match(/\bkit\s*of\s*(\d{1,2})\b/i)
+        || t.match(/\b(\d{1,2})\s*[-\s]?(?:pack|pcs|sticks|modules|dimms)\b/i))) return parseInt(m[1]);
+  // 4. explicit single-module wording ("Single Module", "Single Stick").
+  if (/\bsingle\s*(?:module|stick|dimm)\b/i.test(raw)) return 1;
+
+  // 5. vendor part-number kit markers. Cross-checked against the 161 catalog
+  //    rows whose stick count came independently from title kit notation:
+  //    161/161 agreed, 0 disagreements.
+  //    G.Skill DDR4 "F4-3600C18D-32GTZN": S=1 module, D=2, Q=4.
+  if ((m = raw.match(/\bF[45]-\d{3,5}C\d{2}[A-Z]?([SDQ])-/i))) {
+    const n = { S: 1, D: 2, Q: 4 }[m[1].toUpperCase()];
+    if (n) return n;
+  }
+  //    G.Skill DDR5 "F5-6000J3038F16GX2-TZ5NR": X<n> = module count.
+  if ((m = raw.match(/\d{1,3}G[XH](\d)-/i))) return parseInt(m[1]);
+  //    Kingston "KF556C40BBAK2-64": K<n> before the capacity = kit of n.
+  if ((m = raw.match(/\bK[FH][A-Z0-9]*K(\d)-\d+/i))) return parseInt(m[1]);
+
+  // 6. ABSENCE of a kit marker inside a WELL-FORMED vendor part number. In
+  //    Kingston's and Crucial's schemes the kit marker is the only thing that
+  //    distinguishes a kit from a single module, so a complete part number
+  //    without one is a positive statement of "one module" — not a silent gap.
+  //    This is the one place we read absence as evidence, so it is confined to
+  //    part numbers we can parse end to end, and it was measured rather than
+  //    assumed: against the rows whose count comes independently from title kit
+  //    notation, Kingston is 51/51 and Crucial 4/4, with 0 disagreements.
+  //
+  //    Rejected on the same evidence: reading a singular "Memory Module" as one
+  //    stick. It scored 2 agree / 16 disagree — "Desktop Memory Module Ram" is
+  //    marketing prose that sits happily on a "(2x16GB)" kit.
+  //
+  //    Kingston "KF###C##...[K<n>]-<cap>": K<n> = kit of n, none = 1 module.
+  if ((m = raw.match(/\bK[FH]\d{3}C\d{2}[A-Z0-9]*?(?:K(\d))?[-\/]\d{1,3}\b/i))) return m[1] ? parseInt(m[1]) : 1;
+  //    Crucial "CT[<n>K]<cap>G...": <n>K after CT = kit of n, none = 1 module.
+  if ((m = raw.match(/\bCT(?:(\d)K)?\d{1,3}G\d[A-Z0-9]*\b/i))) return m[1] ? parseInt(m[1]) : 1;
+
+  return null;
+}
+
 function extractSpecs(title, category) {
   const specs = {};
   const t = title || '';
@@ -431,10 +496,10 @@ function extractSpecs(title, category) {
     const cap = t.match(/(\d+)\s*GB\b/i);
     if (cap) specs.cap = parseInt(cap[1]);
 
-    // stick count — "(2 x 16GB)" / "(2x16GB)", or Newegg's reversed "(16GBx4)".
-    const sticks = t.match(/\((\d+)\s*x\s*\d+\s*gb\)/i);
-    if (sticks) specs.sticks = parseInt(sticks[1]);
-    else { const rev = t.match(/\(\d+\s*gb\s*x\s*(\d+)\)/i); if (rev) specs.sticks = parseInt(rev[1]); }
+    // stick count — see ramSticks(): kit notation with or without parentheses,
+    // counted kit words, explicit single-module wording, vendor MPN markers.
+    const sticks = ramSticks(t);
+    if (sticks != null) specs.sticks = sticks;
 
     // speed in MT/s (the number DDR marketing prints as "MHz"). Priority:
     //   1. explicit "6000MHz" / "5200MT/s" / "800 MHz"  (3-5 digits)
@@ -857,6 +922,7 @@ module.exports = {
   implausibleBrandForCategory,
   extractSpecs,
   ramAttributes,
+  ramSticks,
   ramRejectReason,
   storageRejectReason,
   storageAttributes,

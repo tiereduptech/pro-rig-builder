@@ -12,7 +12,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
-const { extractSpecs, ramAttributes, ramRejectReason, resolveDiscoveryBrand } = require('../catalog-classify.cjs');
+const { extractSpecs, ramAttributes, ramRejectReason, ramSticks, resolveDiscoveryBrand } = require('../catalog-classify.cjs');
 
 // Each row: [title, expected-subset]. We assert every named field equals; fields
 // not named must be absent (so a wrong extraction that INVENTS a value fails).
@@ -50,8 +50,9 @@ const NEWEGG = [
   ['Kingston FURY Beast 128GB (4 x 32GB) 288-Pin PC RAM DDR5 5200 (PC5 41600) Memory', { cap: 128, sticks: 4, speed: 5200, memType: 'DDR5' }],
   // SO-DIMM DDR4, "DDR4 3200"
   ['Kingston FURY Impact 32GB (1 x 32GB) 260-pin SO-DIMM DDR4 3200', { cap: 32, sticks: 1, speed: 3200, memType: 'DDR4' }],
-  // "5200MT/s" + CL, capacity with NO parenthesis
-  ['Kingston 64GB 5200MT/s DDR5 CL40 DIMM (Kit of 2) FURY Beast White RGB XMP', { cap: 64, speed: 5200, memType: 'DDR5', cl: 40 }],
+  // "5200MT/s" + CL, capacity with NO parenthesis. "(Kit of 2)" IS a stick
+  // count — this row previously asserted sticks absent, which was the bug.
+  ['Kingston 64GB 5200MT/s DDR5 CL40 DIMM (Kit of 2) FURY Beast White RGB XMP', { cap: 64, sticks: 2, speed: 5200, memType: 'DDR5', cl: 40 }],
   // reversed sticks "(32GBx4)" + explicit PC class
   ['V-COLOR 128GB (32GBx4) DDR5 6400MT/s PC5-51200 CL52', { cap: 128, sticks: 4, speed: 6400, memType: 'DDR5', cl: 52 }],
   ['V-COLOR DDR5 64GB (16GBx4) 6400MT/s CL52 2Gx8 1Rx8 ECC', { cap: 64, sticks: 4, speed: 6400, memType: 'DDR5', cl: 52 }],
@@ -170,4 +171,79 @@ test('RAM scope gate: rejects laptop/server/ECC, keeps non-ECC desktop DIMM', ()
     // memory — must NOT be flagged (Lexar Thor Z false-positive, 2026-07-27 audit).
     'Lexar Thor Z Series RGB DDR5 RAM 32GB Kit (2x16GB) 6000 MHz, 288-Pin UDIMM Intel XMP 3.0 & AMD EXPO, On-die ECC, PMIC, 1.35V, for Gaming',
   ]) assert.strictEqual(ramRejectReason(n), null, `should keep: ${n}`);
+});
+
+// ── ramSticks(): the stick-count fix ─────────────────────────────────────────
+// The original extractor required the kit notation to be PARENTHESISED
+// (/\((\d+)\s*x\s*\d+\s*gb\)/), which left 75 of 590 visible RAM rows blank and
+// undercounted the 1-stick filter bucket 12x (5 shown, ~61 real). Each title
+// below is a real catalog row that the old pattern missed.
+test('ramSticks: kit notation without parentheses', () => {
+  const cases = [
+    ['TEAMGROUP T-Create Expert 48GB KIT 2 X 24GB DDR5-7200 PC5-57600 CL34 Dual C', 2],
+    ['Corsair Vengeance LPX 32GB 2x16GB DDR4 3600MHz C18', 2],
+    ['Crucial 64GB DDR5 RAM Kit (2x32GB), 4800MHz CL40 Desktop Memory', 2],
+    ['GIGASTONE Game PRO 32GB Kit (4x8GB) DDR4 3600MHz PC4-28800', 4],
+  ];
+  for (const [title, want] of cases) assert.strictEqual(ramSticks(title), want, title);
+});
+
+test('ramSticks: reversed notation, incl. bracketed and marketplace phrasings', () => {
+  assert.strictEqual(ramSticks('CMK32GX4M2C3200C18 DDR4-3200MHz Desktop PC Memory 32GB [16GB x 2 Sheets]'), 2);
+  assert.strictEqual(ramSticks('Black Opal DW100 DDR5 RGB RAM 32GB (16GBx2) 6000MHz CL30'), 2);
+  assert.strictEqual(ramSticks('Crucial 16GB kit (8GBx2), 288-pin DIMM, DDR4 PC4-19200,'), 2);
+});
+
+test('ramSticks: counted kit words and explicit single-module wording', () => {
+  assert.strictEqual(ramSticks('Kingston FURY Beast RGB 64GB 5600MT/s DDR5 CL40 DIMM Desktop Memory (Kit of 2)'), 2);
+  assert.strictEqual(ramSticks('FURY Beast 8GB 3200MHz DDR4 CL16 Desktop Memory Single Module KF432C16BB/8'), 1);
+  assert.strictEqual(ramSticks('Kingston Fury Beast 32GB 3600MHz DDR4 CL18 Desktop Memory Single Stick KF436C18BB/32'), 1);
+  assert.strictEqual(ramSticks('Samsung M378A1K43CB2-CTD Memory Module (8 GB, 1 x 8 GB, DDR4, 2666 MHz)'), 1);
+});
+
+test('ramSticks: vendor part-number kit markers', () => {
+  assert.strictEqual(ramSticks('G.Skill Ripjaws V F4-3600C18D-32GVK'), 2);      // D = dual
+  assert.strictEqual(ramSticks('G. SKILL Ripjaws V Series 16GB Model F4-3200C16S-16GVK'), 1); // S = single
+  assert.strictEqual(ramSticks('G.Skill Trident Z5 Neo F5-6000J3038F16GX2-TZ5NR'), 2);
+  assert.strictEqual(ramSticks('G. SKILL Flare X5 16GB Model F5-6000J3636F16GX1-FX5'), 1);
+  assert.strictEqual(ramSticks('Kingston FURY Beast RGB 64GB KF556C40BBAK2-64'), 2);
+  assert.strictEqual(ramSticks('Crucial 32GB DDR4 RAM Kit CT2K16G4DFRA32A'), 2);
+});
+
+// The guard that matters most: rank notation is not a stick count.
+test('ramSticks: "2Rx8" is module RANK, never a stick count', () => {
+  assert.strictEqual(ramSticks('Black Diamond 32GB (2Rx8) DDR5 5600 Memory BD32G5600MC28'), null);
+  assert.strictEqual(ramSticks('Black Diamond 8GB (1Rx8) DDR5 4800 Memory BD8G4800MC28'), null);
+  // rank alongside real kit notation must still read the kit, not the rank
+  assert.strictEqual(ramSticks('V-COLOR DDR5 64GB (16GBx4) 6400MT/s CL52 2Gx8 1Rx8 ECC'), 4);
+});
+
+// The one place absence counts as evidence: a complete Kingston/Crucial part
+// number carries a kit marker when it is a kit, so a complete one without a kit
+// marker says "single module". Measured against rows whose count comes
+// independently from title kit notation: Kingston 51/51, Crucial 4/4.
+test('ramSticks: a well-formed vendor part number with no kit marker is one module', () => {
+  assert.strictEqual(ramSticks('Fury Beast RGB 8GB 3200MT/s DDR4 CL16 DIMM Computer Memory KF432C16BB2A/8'), 1);
+  assert.strictEqual(ramSticks('FURY Beast White 32GB 5600MT/s CL36 DDR5 EXPO DIMM | AMD EXPO | KF556C36BWE-32'), 1);
+  assert.strictEqual(ramSticks('Kingston Fury Beast 16GB PC RAM DDR4 3200 Memory Model KF432C16BB/16'), 1);
+  assert.strictEqual(ramSticks('Crucial RAM 8GB DDR4 2666 MHz CL19 Desktop Memory CT8G4DFRA266'), 1);
+  // the kit marker still wins wherever it is present
+  assert.strictEqual(ramSticks('Kingston FURY Beast RGB 64GB KF556C40BBAK2-64'), 2);
+  assert.strictEqual(ramSticks('Crucial 32GB DDR4 RAM Kit CT2K16G4DFRA32A'), 2);
+});
+
+// Rejected on measurement: singular "Module" wording scored 2 agree / 16
+// disagree against the same truth set, because it sits happily on kit titles.
+test('ramSticks: singular "Memory Module" wording is not a stick count', () => {
+  assert.strictEqual(ramSticks('T-Force Vulcan DDR5 32GB (2x16GB) 6000MHz CL38 Desktop Memory Module Ram'), 2);
+  assert.strictEqual(ramSticks('Crucial Pro - DDR5 - Module - 16 GB - DIMM 288-PIN - 6000 MHz - CL36'), null);
+});
+
+// Unknown must stay unknown. Assuming 1 here is what breaks builds.
+test('ramSticks: returns null rather than guessing', () => {
+  for (const title of [
+    '16GB DDR4 RAM, 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin',
+    'Total Micro 16GB DDR4 2666MHz PC4-21300 Unbuffered Non-ECC 1.2',
+    'Total Micro - A9321911-TM - 8gb 2400mhz Ddr4 Memory For Dell',
+  ]) assert.strictEqual(ramSticks(title), null, title);
 });
