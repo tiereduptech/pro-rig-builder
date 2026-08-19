@@ -69,6 +69,22 @@
  * mismatch is gone (Best Buy corrected the listing, or someone relinked it
  * already) the row is reported as resolved and left alone. A stale report must
  * not be able to move a row that is no longer broken.
+ *
+ * ── WHEN THE DISAGREEMENT IS ON OUR SIDE ─────────────────────────────────────
+ * A row lands in this queue because two NAMES disagreed, and a name has two
+ * sides. Usually the link is the wrong one. Sometimes it is our title.
+ *
+ * The tell is the row's own sku coming back from an IDENTIFIER tier: Best Buy's
+ * record for this row's upc or model number resolving to the sku the row
+ * already carries. The barcode and the link then corroborate each other and the
+ * stored name is the outlier. Those rows are reported as `name-suspect` rather
+ * than folded in with `none`, because the remedy is the opposite one — check
+ * the product title, do not go hunting for a different sku. Row 90365 on
+ * 2026-08-19 is the case: upc 199271246627 returned sku 6673532, the sku on the
+ * row, and nothing else.
+ *
+ * Nothing is written for them either way. The distinction is about pointing the
+ * reviewer at the half of the row that is actually in doubt.
  */
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
@@ -193,6 +209,11 @@ console.log(bar);
 // ── Gates ────────────────────────────────────────────────────────────────────
 const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 
+// Tiers that look a row up by an EXACT identifier rather than by words. Which
+// tier found a candidate is normally just provenance; for the row's own sku it
+// is the whole signal — see the self-drop note in the candidate loop.
+const IDENTIFIER_TIERS = new Set(['upc', 'modelNumber']);
+
 /** Why a candidate was rejected, or null if it survives every gate. */
 function reject(row, cand) {
   const id = namesAgreeOnModel(row.n, cand.name || '');
@@ -276,6 +297,7 @@ for (const id of ids) {
   const seen = new Map();      // sku -> candidate
   const rejected = [];
   const survivors = [];
+  const selfSkuBy = [];   // identifier tiers that returned the row's OWN sku
   let usedTier = null;
   for (const t of tiers) {
     const res = await get(t.url);
@@ -285,10 +307,25 @@ for (const id of ids) {
     for (const cand of found) {
       if (seen.has(String(cand.sku))) continue;
       seen.set(String(cand.sku), cand);
-      // The row's own sku can come back as a candidate. It is the wrong
-      // product — that is why the row is here — and it has already failed the
-      // identity gate, but drop it explicitly rather than relying on that.
-      if (String(cand.sku) === sku) { rejected.push({ tier: t.tier, sku, name: cand.name, why: 'this is the mismapped sku already on the row' }); continue; }
+      // The row's own sku can come back as a candidate. It cannot be the
+      // ANSWER — relinking a row to the sku it already has is a no-op — so it
+      // is dropped here either way.
+      //
+      // But WHY it came back is not a detail. This comment used to say the sku
+      // "is the wrong product — that is why the row is here", and that asserts
+      // the very thing in question. The row is here because a NAME comparison
+      // disagreed, and a name has two sides. When an IDENTIFIER tier is what
+      // returned it — Best Buy's own record for this row's upc or model number
+      // resolving to the sku already on the row — the barcode and the link
+      // agree with each other and our stored NAME is the odd one out. Row 90365
+      // on 2026-08-19: upc 199271246627 returned sku 6673532, the sku on the
+      // row, and nothing else. Calling that "no candidate" points the reviewer
+      // at picking a sku when the thing to check is the product title.
+      if (String(cand.sku) === sku) {
+        if (IDENTIFIER_TIERS.has(t.tier)) selfSkuBy.push(t.tier);
+        rejected.push({ tier: t.tier, sku, name: cand.name, why: `the sku already on the row, returned by the ${t.tier} tier` });
+        continue;
+      }
       const why = reject(p, cand);
       if (why) rejected.push({ tier: t.tier, sku: String(cand.sku), name: cand.name, why });
       else survivors.push({ tier: t.tier, cand });
@@ -317,6 +354,16 @@ for (const id of ids) {
     results.push({ ...row, outcome: 'ambiguous', considered: seen.size,
       why: `${survivors.length} candidates cleared every gate`,
       candidates: survivors.map((s) => ({ sku: String(s.cand.sku), name: s.cand.name, price: s.cand.salePrice ?? null, tier: s.tier })) });
+  } else if (selfSkuBy.length) {
+    // Not "no candidate". The identifier resolved, and it resolved to the sku
+    // this row already carries. That is a different finding with a different
+    // remedy, and it is reported as one rather than being folded into the pile
+    // of rows whose sku is unknown.
+    results.push({ ...row, outcome: 'name-suspect', considered: seen.size,
+      identifierAgreesOn: selfSkuBy,
+      why: `Best Buy resolves this row's ${selfSkuBy.join(' and ')} to sku ${sku} — the sku already on the row. ` +
+        'The identifier and the link agree; only our stored name disagrees, so the name is the more likely error.',
+      rejected: rejected.slice(0, 12) });
   } else {
     results.push({ ...row, outcome: 'none', considered: seen.size,
       why: seen.size ? 'every candidate failed a gate' : 'no candidate returned by any tier',
@@ -333,6 +380,7 @@ console.log(`  rows in scope ....................... ${results.length}`);
 console.log(`  -> relinkable (one clean candidate) . ${n('relink')}`);
 console.log(`  -> ambiguous (more than one) ........ ${n('ambiguous')}  <- left alone`);
 console.log(`  -> no candidate ..................... ${n('none')}  <- left alone`);
+console.log(`  -> our name is the suspect .......... ${n('name-suspect')}  <- left alone`);
 console.log(`  -> already resolved upstream ........ ${n('resolved')}`);
 console.log(`  -> url could not be repointed ....... ${n('unwritable')}`);
 console.log(`  -> row gone / no sku ................ ${n('gone')}`);
@@ -354,6 +402,15 @@ for (const r of of('none')) {
   console.log('');
   console.log(`NO CANDIDATE ${r.id}  ${r.name.slice(0, 70)} — ${r.why} (${r.considered} looked at)`);
   (r.rejected || []).slice(0, 5).forEach((x) => console.log(`   ${x.sku ? `sku ${x.sku}` : x.tier}: ${x.why}`));
+}
+for (const r of of('name-suspect')) {
+  console.log('');
+  console.log(`NAME SUSPECT ${r.id}  ${r.name.slice(0, 70)}`);
+  console.log(`   sku ${r.sku} is what Best Buy returns for this row's ${r.identifierAgreesOn.join(' and ')}.`);
+  console.log(`   ours   "${String(r.name).slice(0, 74)}"`);
+  console.log(`   theirs "${String(r.currentSkuName || '').slice(0, 74)}"`);
+  console.log('   The link is corroborated by the identifier; the stored name is not.');
+  console.log('   Check the product title before touching the sku.');
 }
 
 // ── Write ────────────────────────────────────────────────────────────────────
@@ -380,7 +437,7 @@ const report = {
   scope: { ids, source: idSource, expectCount: EXPECT },
   totals: {
     considered: results.length, relinkable: n('relink'), relinked: written,
-    ambiguous: n('ambiguous'), noCandidate: n('none'), resolved: n('resolved'),
+    ambiguous: n('ambiguous'), noCandidate: n('none'), nameSuspect: n('name-suspect'), resolved: n('resolved'),
     unwritable: n('unwritable'), gone: n('gone'), unknown: n('unknown'),
   },
   results,
@@ -396,8 +453,18 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   md.push(`| relinked | ${APPLY ? written : `${n('relink')} (dry)`} |`);
   md.push(`| ambiguous — left alone | ${n('ambiguous')} |`);
   md.push(`| no candidate — left alone | ${n('none')} |`);
+  md.push(`| our name is the suspect — left alone | ${n('name-suspect')} |`);
   md.push(`| already resolved upstream | ${n('resolved')} |`);
   md.push(`| API gave no answer | ${n('unknown')} |`, '');
+  if (n('name-suspect')) {
+    md.push('', '### Rows whose stored NAME is the likely error', '',
+      'Best Buy resolves these rows\' own identifier to the sku already on the row. The link is',
+      'corroborated; the name is not. Check the product title before changing the sku.', '');
+    md.push('| id | identifier agrees on | our name | the sku\'s name |', '|---|---|---|---|');
+    of('name-suspect').forEach((r) => md.push(
+      `| ${r.id} | ${r.identifierAgreesOn.join(', ')} | ${String(r.name).slice(0, 60)} | ${String(r.currentSkuName || '').slice(0, 60)} |`));
+    md.push('');
+  }
   if (n('relink')) {
     md.push('| id | from | to | tier |', '|---|---|---|---|');
     of('relink').forEach((r) => md.push(`| ${r.id} | ${r.sku} ${String(r.currentSkuName).slice(0, 40)} | ${r.newSku} ${String(r.newName).slice(0, 40)} | ${r.tier} |`));
@@ -411,6 +478,17 @@ if (n('ambiguous') || n('none')) {
   const left = [...of('ambiguous'), ...of('none')].map((r) => r.id).join(', ');
   const msg = `${n('ambiguous') + n('none')} rows could not be relinked automatically and are untouched: ${left}. ` +
     'They still point at the wrong product and their prices stay held. Each needs a person to pick the sku.';
+  console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
+}
+// Separate from the warning above on purpose. Those rows need a sku chosen;
+// these need a name checked, and telling a reviewer to go sku-hunting on a row
+// whose sku is corroborated by its own barcode is how the wrong half gets
+// edited. Same silence either way would hide that difference.
+if (n('name-suspect')) {
+  const rows = of('name-suspect').map((r) => `${r.id} (${r.identifierAgreesOn.join('+')})`).join(', ');
+  const msg = `${n('name-suspect')} row(s) are flagged as name-suspect and untouched: ${rows}. ` +
+    "Best Buy resolves the row's own identifier to the sku it already carries, so the link is corroborated " +
+    'and our stored name is the more likely error. Check the product title before changing the sku.';
   console.log(CI ? `::warning::${msg}` : `NOTE: ${msg}`);
 }
 
