@@ -2188,11 +2188,11 @@ export default [
         "itemNumber": "N82E16835181359",
         "sellerClass": "official",
         "price": 169.99,
-        "saleprice": 129.99,
+        "saleprice": 123.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837509732178239651941&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-qx120-rgb-starter-kit-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181359%3Fitem%3DN82E16835181359",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-359-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.069Z",
+        "matchedAt": "2026-08-20T12:42:10.817Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12537,10 +12537,11 @@ export default [
         "itemNumber": "N82E16835181414",
         "sellerClass": "official",
         "price": 99.99,
+        "saleprice": 80.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833109183607510918815&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181414%3Fitem%3DN82E16835181414",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-414-02.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.080Z",
+        "matchedAt": "2026-08-20T12:42:10.825Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12682,11 +12683,11 @@ export default [
         "itemNumber": "N82E16835181444",
         "sellerClass": "official",
         "price": 59.99,
-        "saleprice": 49.99,
+        "saleprice": 47.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313741110233038245155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-co-9050181-ww-case-fan-120-mm-argb-led%2Fp%2FN82E16835181444%3Fitem%3DN82E16835181444",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-444-06.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchedAt": "2026-08-20T12:42:10.830Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13179,10 +13180,11 @@ export default [
         "itemNumber": "N82E16835181467",
         "sellerClass": "official",
         "price": 139.99,
+        "saleprice": 105.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821662525757640717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181467%3Fitem%3DN82E16835181467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-467-17.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.084Z",
+        "matchedAt": "2026-08-20T12:42:10.830Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13795,14 +13797,16 @@ export default [
         "priceConfirmedAt": "2026-08-20"
       },
       "newegg": {
-        "sku": "1YF-001G-004C0",
+        "sku": "445838575754441415643190",
+        "itemNumber": "1YF-001G-004C0",
+        "sellerClass": "official",
         "price": 67.99,
-        "saleprice": 49.99,
+        "saleprice": 53.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838575754441415643190&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004C0%3Fitem%3D1YF-001G-004C0",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2407120YG7M60F.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:39:48.732Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

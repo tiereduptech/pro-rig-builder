@@ -8323,14 +8323,14 @@ export default [
         "priceConfirmedAt": "2026-08-20"
       },
       "newegg": {
-        "sku": "445837805512046856915199",
-        "itemNumber": "9SIC0T2KG07888",
+        "sku": "4458313837426928799544539",
+        "itemNumber": "9SIA36ZKKR2685",
         "sellerClass": "marketplace",
-        "price": 263.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837805512046856915199&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-24%2Fp%2F0JC-0004-00V97%3Fitem%3D9SIC0T2KG07888",
+        "price": 230.39,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313837426928799544539&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-24%2Fp%2F0JC-0004-00V97%3Fitem%3D9SIA36ZKKR2685",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2312050ECDGJFE.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:29.355Z",
+        "matchedAt": "2026-08-20T12:39:54.281Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12605,14 +12605,14 @@ export default [
     "mpn": "8Y2K9AAABA",
     "deals": {
       "newegg": {
-        "sku": "445836957138536845070102",
-        "itemNumber": "9SIA24GKA97290",
+        "sku": "4458313920266882151391269",
+        "itemNumber": "9SIA0ZXK720747",
         "sellerClass": "marketplace",
-        "price": 998.64,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836957138536845070102&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-31-5%2Fp%2F0JC-0019-02GG0%3Fitem%3D9SIA24GKA97290",
+        "price": 982.67,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313920266882151391269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-31-5%2Fp%2F0JC-0019-02GG0%3Fitem%3D9SIA0ZXK720747",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD24040614CGFAA1.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:35.668Z",
+        "matchedAt": "2026-08-20T12:39:49.742Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14105,14 +14105,14 @@ export default [
         "priceConfirmedAt": "2026-08-20"
       },
       "newegg": {
-        "sku": "4458311493248721502207897",
-        "itemNumber": "9SIAFJ8KTT3901",
+        "sku": "4458318182108442465258800",
+        "itemNumber": "9SIA6ZPKRC8549",
         "sellerClass": "marketplace",
-        "price": 241.01,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311493248721502207897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC5%3Fitem%3D9SIAFJ8KTT3901",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2604070XRTNJ33.jpg",
+        "price": 239.68,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318182108442465258800&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC5%3Fitem%3D9SIA6ZPKRC8549",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2602040XY3CP33.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:30.891Z",
+        "matchedAt": "2026-08-20T12:42:25.427Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

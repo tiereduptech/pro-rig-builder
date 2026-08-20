@@ -4201,14 +4201,15 @@ export default [
         "priceUnconfirmedAt": "2026-08-19"
       },
       "newegg": {
-        "sku": "4458314864166409064264744",
-        "itemNumber": "9SIC8A6M3J0606",
-        "sellerClass": "marketplace",
-        "price": 73.88,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314864166409064264744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-essential-series-atx12v-v2-4-550-w-80-plus-bronze-certified-power-supply-sst-et550-b%2Fp%2FN82E16817256189%3Fitem%3D9SIC8A6M3J0606",
+        "sku": "4458316909674234559455735",
+        "itemNumber": "N82E16817256189",
+        "sellerClass": "official",
+        "price": 74.99,
+        "saleprice": 70.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316909674234559455735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-essential-series-atx12v-v2-4-550-w-80-plus-bronze-certified-power-supply-sst-et550-b%2Fp%2FN82E16817256189%3Fitem%3DN82E16817256189",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-189-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:43.342Z",
+        "matchedAt": "2026-08-20T12:42:08.491Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -8021,11 +8022,11 @@ export default [
         "itemNumber": "1HU-0014-006W8",
         "sellerClass": "official",
         "price": 109.99,
-        "saleprice": 94.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315485478305864622799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-3-1-compatible-850-w-meet-80-plus-gold-at-115vac-input-power-supplies-black-ps-tpt-0850fnfagu-3%2Fp%2F1HU-0014-006W8%3Fitem%3D1HU-0014-006W8",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2409301F33PS36.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.314Z",
+        "matchedAt": "2026-08-20T12:39:48.620Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -10857,11 +10858,11 @@ export default [
         "itemNumber": "N82E16817955027R",
         "sellerClass": "official",
         "price": 64.99,
-        "saleprice": 54.99,
+        "saleprice": 38.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310185471451601425029&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-pro-series-atx-3-1-compatible-650-w-80-plus-bronze-certified-power-supply-black-pro-650b%2Fp%2FN82E16817955027R%3Fitem%3DN82E16817955027R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-027-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-19T12:28:13.800Z",
+        "matchedAt": "2026-08-20T12:42:08.519Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11915,11 +11916,11 @@ export default [
         "itemNumber": "1HU-00RG-00278",
         "sellerClass": "official",
         "price": 339.99,
-        "saleprice": 297.99,
+        "saleprice": 295.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836741666656661893685&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-technology-atx-3-0-compatible-1200-w-cybenetics-platinum-power-supplies%2Fp%2F1HU-00RG-00278%3Fitem%3D1HU-00RG-00278",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A62VS2211230GAFJ632.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.367Z",
+        "matchedAt": "2026-08-20T12:39:48.658Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14153,8 +14154,9 @@ export default [
         "saleprice": 153.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836484482992288985050&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-sfx-l-700w-80-plus-platinum-certified-power-supply-sx700-lpt%2Fp%2FN82E16817256166%3Fitem%3DN82E16817256166",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-166-07.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:42:08.491Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14181,11 +14183,12 @@ export default [
         "itemNumber": "N82E16817256175",
         "sellerClass": "official",
         "price": 79.99,
-        "saleprice": null,
+        "saleprice": 78.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835385884690664481251&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-sfx-series-300-w-80-plus-bronze-certified-power-supply-sst-st30sf-v2%2Fp%2FN82E16817256175%3Fitem%3DN82E16817256175",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-175-Z01.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:42:08.491Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14212,11 +14215,11 @@ export default [
         "itemNumber": "N82E16817256176",
         "sellerClass": "official",
         "price": 99.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583942654742887309015&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-sfx-series-450-w-80-plus-bronze-certified-power-supply-sst-st45sf-v3%2Fp%2FN82E16817256176%3Fitem%3DN82E16817256176",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-176-Z01.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:42:08.491Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -14243,11 +14246,12 @@ export default [
         "itemNumber": "N82E16817256179",
         "sellerClass": "official",
         "price": 329.99,
-        "saleprice": 307.99,
+        "saleprice": 304.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314325885655900783542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-strider-platinum-series-atx12v-eps12v-1200-w-80-plus-platinum-certified-power-supply-sst-st1200-pt%2Fp%2FN82E16817256179%3Fitem%3DN82E16817256179",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-256-179-Z01.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:42:08.491Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -15435,11 +15439,11 @@ export default [
         "itemNumber": "N82E16817955008R",
         "sellerClass": "official",
         "price": 159.99,
-        "saleprice": 87.99,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316080433418011700050&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-1000-w-cybenetics-titanium-power-supply-black-sl-1000g%2Fp%2FN82E16817955008R%3Fitem%3DN82E16817955008R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-008-25.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.699Z",
+        "matchedAt": "2026-08-20T12:42:08.517Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -15754,11 +15758,11 @@ export default [
         "itemNumber": "N82E16817955017R",
         "sellerClass": "official",
         "price": 84.99,
-        "saleprice": 69.99,
+        "saleprice": 42.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314719509118380106968&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx-750-w-80-plus-bronze-certified-power-supplies-cl-750b%2Fp%2FN82E16817955017R%3Fitem%3DN82E16817955017R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-017-08.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.704Z",
+        "matchedAt": "2026-08-20T12:42:08.519Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

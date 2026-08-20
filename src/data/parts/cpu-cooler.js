@@ -11246,10 +11246,11 @@ export default [
         "itemNumber": "N82E16835101099",
         "sellerClass": "official",
         "price": 219.99,
+        "saleprice": 199.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312571499905431791121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-liquid-coolin-rog-ryujin-iii-radiator-size-279-mm-intel-lga-1700-1200-115x-amd-am5-am4-white%2Fp%2FN82E16835101099%3Fitem%3DN82E16835101099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-099-08.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:49.733Z",
+        "matchedAt": "2026-08-20T12:42:10.561Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14671,6 +14672,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-20"
+      },
+      "newegg": {
+        "sku": "4458314252156542432542317",
+        "itemNumber": "9SIC6EGM2W8803",
+        "sellerClass": "marketplace",
+        "price": 243.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314252156542432542317&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-radiator-size-396-x-120-x-27-mm-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181479%3Fitem%3D9SIC6EGM2W8803",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-479-17.png",
+        "inStock": true,
+        "matchedAt": "2026-08-20T12:42:02.108Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
