@@ -19813,7 +19813,9 @@ export default [
     ],
     "tg": true,
     "rgb": true,
-    "rads": "420mm"
+    "rads": [
+      420
+    ]
   },
   {
     "id": 100534,
@@ -19845,7 +19847,9 @@ export default [
     ],
     "tg": true,
     "neweggRemovedOutlier": "2026-06-28",
-    "rads": "420mm"
+    "rads": [
+      420
+    ]
   },
   {
     "id": 100535,
@@ -19924,7 +19928,9 @@ export default [
     "usb_c": true,
     "upc": "00761345100199",
     "mpn": "C8",
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 100537,
@@ -20178,7 +20184,9 @@ export default [
     ],
     "upc": "00848604049274",
     "mpn": "CS-HYTE-Y70TTI-WW",
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 100874,
@@ -20402,7 +20410,9 @@ export default [
     "tg": true,
     "upc": "00848604045634",
     "mpn": "CS-HYTE-Y70-B",
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 3
   },
   {
@@ -20434,7 +20444,9 @@ export default [
       "ATX"
     ],
     "tg": true,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 4
   },
   {
@@ -20510,7 +20522,9 @@ export default [
     "bestbuyRemovedDead": "2026-08-18",
     "maxGPU": 420,
     "maxCooler": 175,
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 100888,
@@ -20568,7 +20582,9 @@ export default [
     "mobo": [
       "ATX"
     ],
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 3
   },
   {
@@ -20696,7 +20712,9 @@ export default [
     "tg": true,
     "upc": "00843276110444",
     "mpn": "FD-C-POA2A-02",
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 100893,
@@ -20843,7 +20861,9 @@ export default [
     ],
     "maxGPU": 338,
     "maxCooler": 170,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 1
   },
   {
@@ -20970,7 +20990,9 @@ export default [
       "ATX"
     ],
     "usb_c": true,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 4
   },
   {
@@ -21123,7 +21145,9 @@ export default [
     ],
     "tg": true,
     "rgb": true,
-    "rads": "420mm",
+    "rads": [
+      420
+    ],
     "drive35": 7
   },
   {
@@ -21156,7 +21180,9 @@ export default [
     ],
     "tg": true,
     "rgb": true,
-    "rads": "420mm",
+    "rads": [
+      420
+    ],
     "drive35": 7
   },
   {
@@ -21249,7 +21275,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 4
   },
   {
@@ -21343,7 +21371,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 3
   },
   {
@@ -21375,7 +21405,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "120mm",
+    "rads": [
+      120
+    ],
     "drive35": 2
   },
   {
@@ -21469,7 +21501,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 6
   },
   {
@@ -21533,7 +21567,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 4
   },
   {
@@ -21660,7 +21696,9 @@ export default [
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 340,
     "maxCooler": 165,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 10
   },
   {
@@ -21693,7 +21731,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "fans_inc": 6,
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 102785,
@@ -21786,7 +21826,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 2
   },
   {
@@ -21850,7 +21892,10 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 410,
-    "rads": "240mm,360mm",
+    "rads": [
+      240,
+      360
+    ],
     "drive35": 3
   },
   {
@@ -21916,7 +21961,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 102792,
@@ -22076,7 +22123,9 @@ export default [
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 340,
     "maxCooler": 165,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 4
   },
   {
@@ -22110,7 +22159,9 @@ export default [
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 415,
     "fans_inc": 4,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 5
   },
   {
@@ -22187,7 +22238,10 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm,360mm",
+    "rads": [
+      240,
+      360
+    ],
     "drive25": 5
   },
   {
@@ -22219,7 +22273,10 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "120mm,360mm"
+    "rads": [
+      120,
+      360
+    ]
   },
   {
     "id": 102801,
@@ -22281,7 +22338,10 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm,360mm"
+    "rads": [
+      240,
+      360
+    ]
   },
   {
     "id": 102803,
@@ -22377,7 +22437,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "fans_inc": 6,
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 102806,
@@ -22409,7 +22471,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 305,
-    "rads": "240mm"
+    "rads": [
+      240
+    ]
   },
   {
     "id": 102807,
@@ -22473,7 +22537,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxCooler": 180,
-    "rads": "280mm",
+    "rads": [
+      280
+    ],
     "drive35": 2
   },
   {
@@ -22539,7 +22605,10 @@ export default [
     "maxGPU": 455,
     "maxCooler": 170,
     "fans_inc": 8,
-    "rads": "360mm,420mm"
+    "rads": [
+      360,
+      420
+    ]
   },
   {
     "id": 102811,
@@ -22602,7 +22671,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 400,
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 102813,
@@ -22636,7 +22707,9 @@ export default [
     "maxGPU": 320,
     "maxCooler": 160,
     "fans_inc": 6,
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 4
   },
   {
@@ -22716,7 +22789,9 @@ export default [
     "mpn": "MPG GUNGNIR 110R",
     "maxGPU": 340,
     "maxCooler": 170,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 7
   },
   {
@@ -22750,7 +22825,9 @@ export default [
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 410,
     "maxCooler": 180,
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 4
   },
   {
@@ -22843,7 +22920,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "240mm",
+    "rads": [
+      240
+    ],
     "drive35": 4
   },
   {
@@ -22877,7 +22956,9 @@ export default [
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "rads": "360mm",
+    "rads": [
+      360
+    ],
     "drive35": 5
   },
   {
@@ -22942,7 +23023,9 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxGPU": 400,
-    "rads": "360mm"
+    "rads": [
+      360
+    ]
   },
   {
     "id": 102823,
@@ -22976,7 +23059,10 @@ export default [
     "maxGPU": 450,
     "maxCooler": 190,
     "fans_inc": 4,
-    "rads": "140mm,420mm",
+    "rads": [
+      140,
+      420
+    ],
     "drive35": 6
   },
   {
@@ -23069,7 +23155,10 @@ export default [
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "fans_inc": 7,
-    "rads": "240mm,360mm"
+    "rads": [
+      240,
+      360
+    ]
   },
   {
     "id": 102827,

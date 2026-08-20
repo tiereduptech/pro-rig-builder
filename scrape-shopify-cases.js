@@ -117,24 +117,24 @@ function extractSpecs(product) {
   }
 
   // ── Radiator support (rads) ──────────────────────────────────────
-  // Build a set of supported sizes by searching for each.
-  const radSizes = [];
+  // Build a set of supported sizes by searching for each. ARRAY OF INTEGERS:
+  // the AIO/Radiator filter in src/App.jsx reads
+  // `Array.isArray(p.rads) ? p.rads : []` and buckets every other shape as
+  // "None", so a joined string is a field the filter cannot read.
+  const radSizes = new Set();
   for (const size of [120, 140, 240, 280, 360, 420, 480]) {
     const re = new RegExp(`${size}\\s*mm\\s*(?:AIO|radiator|rad|liquid|water)`, 'i');
-    if (re.test(text)) radSizes.push(`${size}mm`);
+    if (re.test(text)) radSizes.add(size);
   }
   // Also match ranges like "supports 120/240/360mm"
   const rangeMatch = text.match(/(\d{3}(?:\s*[\/,]\s*\d{3})+)\s*mm\s*(?:radiator|AIO)/i);
   if (rangeMatch) {
-    const nums = rangeMatch[1].match(/\d{3}/g) || [];
-    for (const n of nums) {
-      const s = `${n}mm`;
-      if ([120, 140, 240, 280, 360, 420, 480].includes(parseInt(n, 10)) && !radSizes.includes(s)) {
-        radSizes.push(s);
-      }
+    for (const n of (rangeMatch[1].match(/\d{3}/g) || [])) {
+      const size = parseInt(n, 10);
+      if ([120, 140, 240, 280, 360, 420, 480].includes(size)) radSizes.add(size);
     }
   }
-  if (radSizes.length) specs.rads = radSizes.sort((a, b) => parseInt(a) - parseInt(b)).join(',');
+  if (radSizes.size) specs.rads = [...radSizes].sort((a, b) => a - b);
 
   // ── Model token (for matching) ───────────────────────────────────
   // Extract SKU-like tokens from title: "Y6-N6-W", "K2-3-B", "F600", "EC2"
@@ -239,7 +239,7 @@ console.log('\nCase coverage after Shopify scrape:');
 console.log('  maxGPU:   ', cases.filter(x => x.maxGPU).length + '/' + cases.length);
 console.log('  maxCooler:', cases.filter(x => x.maxCooler).length + '/' + cases.length);
 console.log('  fans_inc: ', cases.filter(x => x.fans_inc != null).length + '/' + cases.length);
-console.log('  rads:     ', cases.filter(x => x.rads).length + '/' + cases.length);
+console.log('  rads:     ', cases.filter(x => Array.isArray(x.rads) && x.rads.length).length + '/' + cases.length);
 
 const source = `// Auto-merged catalog. Edit with care.\nexport const PARTS = ${JSON.stringify(parts, null, 2)};\n\nexport default PARTS;\n`;
 writeFileSync('./src/data/parts.js', source);
