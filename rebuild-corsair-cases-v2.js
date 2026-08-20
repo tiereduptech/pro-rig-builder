@@ -14,6 +14,8 @@
  * No guessing. Save every 5 records.
  */
 import { writeFileSync } from 'node:fs';
+// One shared list of real radiator sizes, so the parser and every writer agree.
+import { RAD_SIZES } from './scripts/case-spec-parser.mjs';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
 
@@ -171,11 +173,24 @@ function parseSpecsToFields(specs) {
     const m = cool.match(/(\d{2,4})\s*mm/);
     if (m) out.maxCooler = parseInt(m[1], 10);
   }
-  // rads
+  // rads: "Radiator Compatibility: 120mm, 140mm, 240mm, 280mm, 360mm"
+  //
+  // Whitelisted against RAD_SIZES, and the whole field is REFUSED if it holds a
+  // size that is not a radiator size at all. This row once matched Corsair's FAN
+  // compatibility instead ("Front: 3x 120mm, 3x 140mm, 2x 200mm"), and the three
+  // 5000D RS rows shipped rads [120,140,200] — no 200mm AIO exists, and the site
+  // rendered them "AIO Support: 120mm only" for cases that take 420mm (#38).
+  // Filtering alone would have left [120,140] and displayed the same lie, so a
+  // stray size is treated as proof the wrong row matched, not as noise to strip.
   const radStr = find('Radiator Compatibility', 'Radiator Support', 'Maximum Radiator');
   if (radStr) {
-    const sizes = [...radStr.matchAll(/(\d{3})\s*mm/g)].map(m => parseInt(m[1], 10));
-    if (sizes.length) out.rads = [...new Set(sizes)].sort((a, b) => a - b);
+    const seen = [...new Set([...radStr.matchAll(/(\d{3})\s*mm/g)].map(m => parseInt(m[1], 10)))];
+    const bogus = seen.filter(n => !RAD_SIZES.includes(n));
+    if (bogus.length) {
+      console.warn(`  ! rads refused: "${radStr}" lists ${bogus.join(', ')}mm, which no radiator comes in — this is probably the fan row`);
+    } else if (seen.length) {
+      out.rads = seen.sort((a, b) => a - b);
+    }
   }
   // mobo
   const mb = find('Motherboard Support', 'Case Supported', 'Form Factor Support');
@@ -200,7 +215,7 @@ function parseTitleFields(name) {
   let m = name.match(/(?:Up\s*to\s*)?(\d{2,4})\s*mm\s*GPU/i);
   if (m) out.maxGPU = parseInt(m[1], 10);
   m = name.match(/(\d{3})\s*mm\s*(?:Rad|Radiator|AIO)/i);
-  if (m) out.rads = [parseInt(m[1], 10)];
+  if (m && RAD_SIZES.includes(parseInt(m[1], 10))) out.rads = [parseInt(m[1], 10)];
   m = name.match(/(\d{2,4})\s*mm\s*(?:CPU\s*)?Cooler/i);
   if (m) out.maxCooler = parseInt(m[1], 10);
   return out;

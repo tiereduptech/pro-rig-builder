@@ -20,6 +20,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import PARTS from '../src/data/parts.js';
+import { RAD_SIZES } from '../scripts/case-spec-parser.mjs';
 
 const cases = PARTS.filter(p => p.c === 'Case');
 const withRads = cases.filter(p => p.rads != null);
@@ -46,18 +47,26 @@ test('every Case.rads entry is a positive integer, not "360mm"', () => {
 test('rads holds no duplicate sizes', () => {
   // Deliberately NOT asserting an order: plenty of pre-existing rows are
   // descending ([360,280,240]) and the filter takes Math.max(...arr), so order
-  // never mattered. The writers fixed in this change emit ascending anyway.
-  //
-  // Also deliberately NOT asserting a vocabulary of known radiator sizes. Three
-  // pre-existing Corsair 5000D rows carry 200 — almost certainly the case's
-  // 200mm FAN support parsed as a radiator, since no 200mm AIO ships. That is a
-  // value bug in rebuild-corsair-cases.js, not a shape bug, and it predates the
-  // enrichment this change is cleaning up. Blessing 200 here would launder it;
-  // failing on it would block CI on something this change did not touch.
+  // never mattered. The writers emit ascending anyway.
   const duped = withRads
     .filter(p => Array.isArray(p.rads) && new Set(p.rads).size !== p.rads.length)
     .map(p => `${p.id}: ${JSON.stringify(p.rads)}`);
   assert.deepEqual(duped, [], `duplicate sizes:\n  ${duped.join('\n  ')}`);
+});
+
+test('every rads entry is a size radiators actually come in', () => {
+  // Three Corsair 5000D rows carried 200 — the case's 200mm FAN mount read as a
+  // radiator by rebuild-corsair-cases*.js (#38). max(120,140,200) is 200, which
+  // clears none of the display thresholds, so all three product pages read
+  // "AIO Support: 120mm only" for cases that take a 420mm radiator. A wrong size
+  // does not just add noise; it drags the bucket down and inverts the answer.
+  //
+  // RAD_SIZES is imported, not redeclared, so the writers and this guard cannot
+  // drift apart.
+  const bad = withRads
+    .filter(p => Array.isArray(p.rads))
+    .flatMap(p => p.rads.filter(v => !RAD_SIZES.includes(v)).map(v => `${p.id}: ${v} (rads ${JSON.stringify(p.rads)})`));
+  assert.deepEqual(bad, [], `no radiator is made in these sizes:\n  ${bad.join('\n  ')}`);
 });
 
 test('the filter buckets every rads-carrying Case somewhere other than "None"', () => {
