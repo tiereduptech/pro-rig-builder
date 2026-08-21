@@ -1169,6 +1169,18 @@ export default [
         "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445837816132707378939753",
+        "itemNumber": "9SIC3FZM519889",
+        "sellerClass": "marketplace",
+        "price": 659.78,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837816132707378939753&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-64gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232990%3Fitem%3D9SIC3FZM519889",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-990-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-21T12:45:39.876Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -11858,10 +11870,11 @@ export default [
         "itemNumber": "0DF-006A-00003",
         "sellerClass": "official",
         "price": 73.99,
+        "saleprice": 52.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836312670681205015551&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-8gb-240-pin-ddr3-sdram%2Fp%2F0DF-006A-00003%3Fitem%3D0DF-006A-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFK6_1_20200412453662058.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:29.457Z",
+        "matchedAt": "2026-08-21T12:43:54.492Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

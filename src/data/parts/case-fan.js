@@ -13181,11 +13181,11 @@ export default [
         "itemNumber": "N82E16835181467",
         "sellerClass": "official",
         "price": 139.99,
-        "saleprice": 105.99,
+        "saleprice": 103.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821662525757640717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835181467%3Fitem%3DN82E16835181467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-467-17.png",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:42:10.830Z",
+        "matchedAt": "2026-08-21T12:45:49.321Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

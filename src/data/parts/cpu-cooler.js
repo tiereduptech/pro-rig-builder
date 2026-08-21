@@ -11610,14 +11610,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445832150892608202230575",
-        "itemNumber": "9SIA2W0KPW8659",
+        "sku": "445831501802986156908340",
+        "itemNumber": "9SIA1K6KS87476",
         "sellerClass": "marketplace",
-        "price": 43.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832150892608202230575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA2W0KPW8659",
+        "price": 43.92,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831501802986156908340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA1K6KS87476",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:37.915Z",
+        "matchedAt": "2026-08-21T12:43:57.861Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14573,10 +14573,11 @@ export default [
         "itemNumber": "0EZ-00MD-00003",
         "sellerClass": "official",
         "price": 199.99,
+        "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316520423169428724710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Falphacool-aio-radiator-size-396-mm-amd-socket-am4-amd-socket-am5-intel-lga-1700-intel-lga-1851-green%2Fp%2F0EZ-00MD-00003%3Fitem%3D0EZ-00MD-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24092519JPJ7D6.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:29.484Z",
+        "matchedAt": "2026-08-21T12:43:54.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

@@ -7772,11 +7772,11 @@ export default [
         "sku": "445838765272002364047469",
         "itemNumber": "9SIAFVFK864868",
         "sellerClass": "marketplace",
-        "price": 430.82,
+        "price": 427.82,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838765272002364047469&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-27%2Fp%2F0JC-0004-00V98%3Fitem%3D9SIAFVFK864868",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2312050ECESY43.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:31.508Z",
+        "matchedAt": "2026-08-21T12:45:04.999Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12953,11 +12953,11 @@ export default [
         "sku": "4458315570524873219771339",
         "itemNumber": "9SIAFVFKJP6019",
         "sellerClass": "marketplace",
-        "price": 332.82,
+        "price": 329.82,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315570524873219771339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIAFVFKJP6019",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-260-955-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:31.671Z",
+        "matchedAt": "2026-08-21T12:45:05.085Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13764,6 +13764,18 @@ export default [
         "price": 94.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2802&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FPortable-Monitors%2FPro-MP165-E6&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "445837557893024845258852",
+        "itemNumber": "9SIAFVFKPR2784",
+        "sellerClass": "marketplace",
+        "price": 79.81,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837557893024845258852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp165-e6-15-6-fhd-144-hz-ips-matte-black%2Fp%2FN82E16824475521%3Fitem%3D9SIAFVFKPR2784",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-521-12.png",
+        "inStock": true,
+        "matchedAt": "2026-08-21T12:45:05.118Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 15.6,
@@ -14672,14 +14684,14 @@ export default [
         "priceConfirmedAt": "2026-08-21"
       },
       "newegg": {
-        "sku": "4458316726178453802850000",
-        "itemNumber": "9SIA4P0KSN3793",
-        "sellerClass": "marketplace",
-        "price": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316726178453802850000&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824936003%3Fitem%3D9SIA4P0KSN3793",
+        "sku": "4458310205235698034744742",
+        "itemNumber": "N82E16824936003",
+        "sellerClass": "official",
+        "price": 699.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310205235698034744742&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824936003%3Fitem%3DN82E16824936003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-936-003-05.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:40.591Z",
+        "matchedAt": "2026-08-21T12:45:49.022Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

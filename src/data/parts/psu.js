@@ -2377,15 +2377,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16817139303",
-        "price": 234.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313978174766782124356&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rm1000x-shift-atx-atx-3-0-compatible-1000-w-80-plus-gold-certified-power-supply-cp-9020253-na%2Fp%2FN82E16817139303%3Fitem%3DN82E16817139303",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-303-01.png",
+        "sku": "445831423764191614485964",
+        "itemNumber": "N82E16817139350",
         "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "price": 209.99,
+        "saleprice": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831423764191614485964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817139350%3Fitem%3DN82E16817139350",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-350-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-21T12:45:47.427Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7857142857142857
       }
     },
     "discount": 20,
@@ -6106,10 +6108,11 @@ export default [
         "itemNumber": "N82E16817701022",
         "sellerClass": "official",
         "price": 109.99,
+        "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835106365202183666303&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-750-w-80-plus-gold-certified-power-supplies-black-mag-a750gl-pcie5%2Fp%2FN82E16817701022%3Fitem%3DN82E16817701022",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-022-36.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.681Z",
+        "matchedAt": "2026-08-21T12:45:47.481Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -8792,12 +8795,13 @@ export default [
         "itemNumber": "N82E16817701013",
         "sellerClass": "official",
         "price": 64.99,
+        "saleprice": 59.73,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583632951530093606407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-intel-atx-12v-650-w-80-plus-bronze-certified-power-supply-black-mag-a650bn%2Fp%2FN82E16817701013%3Fitem%3DN82E16817701013",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-013-08.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.681Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-21T12:45:47.479Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "watts": 650,
@@ -11307,7 +11311,9 @@ export default [
     "ff": "SFX-L",
     "atx3": true,
     "upc": "00195553722698",
-    "mpn": "ROG-LOKI-850P-SFX-L-GAMING"
+    "mpn": "ROG-LOKI-850P-SFX-L-GAMING",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-21"
   },
   {
     "id": 101202,
@@ -12641,11 +12647,11 @@ export default [
         "itemNumber": "2AM-006F-001E1",
         "sellerClass": "official",
         "price": 289.99,
-        "saleprice": 233.99,
+        "saleprice": 222.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310340022989059826023&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-technology-sfx12v-850-w-cybenetics-platinum-cases-black-extreme-850r-platinum%2Fp%2F2AM-006F-001E1%3Fitem%3D2AM-006F-001E1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A62VS231006UMqjV.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.870Z",
+        "matchedAt": "2026-08-21T12:43:55.283Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -16042,11 +16048,11 @@ export default [
         "itemNumber": "N82E16817955028",
         "sellerClass": "official",
         "price": 249.99,
-        "saleprice": 199.99,
+        "saleprice": 189.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838239139465906934714&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx-3-1-1000-w-80-plus-platinum-certified-power-supply-black-pg-1000psf%2Fp%2FN82E16817955028%3Fitem%3DN82E16817955028",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-028-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.710Z",
+        "matchedAt": "2026-08-21T12:45:47.485Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -16074,11 +16080,11 @@ export default [
         "itemNumber": "N82E16817955029",
         "sellerClass": "official",
         "price": 219.99,
-        "saleprice": 179.99,
+        "saleprice": 169.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313941175285504249045&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx-3-1-850-w-80-plus-platinum-certified-power-supply-black-pg-850psf%2Fp%2FN82E16817955029%3Fitem%3DN82E16817955029",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-029-18.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.710Z",
+        "matchedAt": "2026-08-21T12:45:47.485Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

@@ -3677,7 +3677,9 @@ export default [
     "baseClock": 1700,
     "boostClock": 2544,
     "upc": "00840777091319",
-    "mpn": "11348-03-20G"
+    "mpn": "11348-03-20G",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-21"
   },
   {
     "id": 30101,
