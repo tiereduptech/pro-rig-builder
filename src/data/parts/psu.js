@@ -3871,14 +3871,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445836855624160054697722",
-        "itemNumber": "9SIA0ZXDH58783",
+        "sku": "445836436137136875053349",
+        "itemNumber": "9SIAFVFKSE3376",
         "sellerClass": "marketplace",
-        "price": 108.31,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836855624160054697722&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-mwe-gold-850-v2-atx-12v-ver-2-41-850-w-80-plus-gold-certified-power-supply-mpe-8501-afaag-us%2Fp%2FN82E16817171180%3Fitem%3D9SIA0ZXDH58783",
+        "price": 107.81,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836436137136875053349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-mwe-gold-850-v2-atx-12v-ver-2-41-850-w-80-plus-gold-certified-power-supply-mpe-8501-afaag-us%2Fp%2FN82E16817171180%3Fitem%3D9SIAFVFKSE3376",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-171-180-V04.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:31.594Z",
+        "matchedAt": "2026-08-22T12:23:53.371Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85
       }
@@ -6687,11 +6687,11 @@ export default [
         "itemNumber": "N82E16817139334",
         "sellerClass": "official",
         "price": 209.99,
-        "saleprice": 166.24,
+        "saleprice": 164.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458353269413137818452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-1000-w-cybenetics-gold-power-supply-black-rm1000x%2Fp%2FN82E16817139334%3Fitem%3DN82E16817139334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-334-05.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.553Z",
+        "matchedAt": "2026-08-22T12:25:05.880Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -6910,14 +6910,15 @@ export default [
     "mpn": "PS-STP-1000FNFAPU-1",
     "deals": {
       "newegg": {
-        "sku": "N82E16817153467",
-        "price": 199.99,
-        "saleprice": 189.99,
+        "sku": "4458316226037302919324852",
+        "itemNumber": "N82E16817153467",
+        "sellerClass": "official",
+        "price": 213.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316226037302919324852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-1000-w-80-plus-platinum-certified-power-supply-black-sfx-1000ah8flp%2Fp%2FN82E16817153467%3Fitem%3DN82E16817153467",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-467-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:05.904Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7431,14 +7432,16 @@ export default [
         "priceConfirmedAt": "2026-08-22"
       },
       "newegg": {
-        "sku": "N82E16817153465",
+        "sku": "445831561131287933011183",
+        "itemNumber": "N82E16817153465",
+        "sellerClass": "official",
         "price": 169.99,
-        "saleprice": 159.99,
+        "saleprice": 149.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831561131287933011183&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-sfx-atx-12v-3-1-750-w-80-plus-platinum-certified-power-supply-black-sfx-0750ah8flp%2Fp%2FN82E16817153465%3Fitem%3DN82E16817153465",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-465-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:05.903Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -8163,14 +8166,15 @@ export default [
         "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "newegg": {
-        "sku": "N82E16817153475",
-        "price": 149.99,
-        "saleprice": null,
+        "sku": "445834702665317517506018",
+        "itemNumber": "N82E16817153475",
+        "sellerClass": "official",
+        "price": 111.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834702665317517506018&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-fully-modular-1000-w-80-plus-gold-certified-power-supply-black-ps-tpt-1000fnfagu-3%2Fp%2FN82E16817153475%3Fitem%3DN82E16817153475",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-475-05.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:05.904Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

@@ -11143,11 +11143,11 @@ export default [
         "sku": "445831539943860035097788",
         "itemNumber": "9SIAD6HKKM2746",
         "sellerClass": "marketplace",
-        "price": 230.03,
+        "price": 220.4,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713e0EMY.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.835Z",
+        "matchedAt": "2026-08-22T12:23:40.765Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14913,14 +14913,15 @@ export default [
         "priceConfirmedAt": "2026-08-22"
       },
       "newegg": {
-        "sku": "N82E16835146165",
-        "price": 299.99,
-        "saleprice": 279.99,
+        "sku": "445839407014954044059943",
+        "itemNumber": "N82E16835146165",
+        "sellerClass": "official",
+        "price": 319.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839407014954044059943&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-360-series-radiator-size-402-mm%2Fp%2FN82E16835146165%3Fitem%3DN82E16835146165",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-165-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:09.018Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

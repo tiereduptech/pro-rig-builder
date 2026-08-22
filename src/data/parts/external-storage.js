@@ -492,11 +492,11 @@ export default [
         "sku": "4458310086512752069796021",
         "itemNumber": "9SIAD6HKHA3761",
         "sellerClass": "marketplace",
-        "price": 232.04,
+        "price": 223.3,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-089-04.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.618Z",
+        "matchedAt": "2026-08-22T12:23:40.540Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -545,11 +545,11 @@ export default [
         "sku": "445831880744134662176081",
         "itemNumber": "9SIAD6HGTT8851",
         "sellerClass": "marketplace",
-        "price": 293.44,
+        "price": 283.63,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831880744134662176081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stkl5000400-5tb%2Fp%2FN82E16822184962%3Fitem%3D9SIAD6HGTT8851",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-962-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.077Z",
+        "matchedAt": "2026-08-22T12:23:39.991Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

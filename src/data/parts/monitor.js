@@ -8286,6 +8286,19 @@ export default [
         "price": 599.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2098&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QRX-QD-OLED&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg_openbox": {
+        "sku": "4458315024948118250085806",
+        "itemNumber": "N82E16824475359R",
+        "sellerClass": "official",
+        "price": 629.99,
+        "saleprice": 424.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315024948118250085806&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-271qrx-qd-oled-27-wqhd-360-hz%2Fp%2FN82E16824475359R%3Fitem%3DN82E16824475359R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-359-10.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:08.384Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 27,
@@ -13817,6 +13830,18 @@ export default [
         "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2872&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243W-E14&intsrc=APIG_16410",
         "inStock": true
+      },
+      "newegg": {
+        "sku": "4458318124016705179246337",
+        "itemNumber": "9SIAFVFKNC0358",
+        "sellerClass": "marketplace",
+        "price": 102.81,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318124016705179246337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824475520%3Fitem%3D9SIAFVFKNC0358",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-520-03.png",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:23:53.305Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 23.8,
@@ -14168,11 +14193,11 @@ export default [
         "sku": "4458313261365100336848039",
         "itemNumber": "9SIAD6HKVR5400",
         "sellerClass": "marketplace",
-        "price": 308.7,
+        "price": 298.61,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313261365100336848039&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F299-004C-00003%3Fitem%3D9SIAD6HKVR5400",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2604240KE9CVD4.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.924Z",
+        "matchedAt": "2026-08-22T12:23:40.848Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

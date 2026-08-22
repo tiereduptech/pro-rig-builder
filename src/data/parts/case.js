@@ -3519,11 +3519,11 @@ export default [
         "itemNumber": "N82E16811146357",
         "sellerClass": "official",
         "price": 109.99,
-        "saleprice": 84.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836430473027545541192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-mid-tower-sgcc-steel-ultra-clear-tempered-glass-dark-tinted-tempered-glass-computer-case-black-cc-h61fb-01%2Fp%2FN82E16811146357%3Fitem%3DN82E16811146357",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-146-357-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:44.338Z",
+        "matchedAt": "2026-08-22T12:25:03.980Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },
@@ -17974,14 +17974,16 @@ export default [
         "priceConfirmedAt": "2026-08-22"
       },
       "newegg": {
-        "sku": "N82E16811737023",
+        "sku": "4458310628973497818618706",
+        "itemNumber": "N82E16811737023",
+        "sellerClass": "official",
         "price": 299.99,
         "saleprice": 286.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310628973497818618706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdual-chamber-mid-tower-atx-case-hyte-y70-p3r-abs-steel-tempered-glass-computer-case-black-green%2Fp%2FN82E16811737023%3Fitem%3DN82E16811737023",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-737-023-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:05.023Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -20240,11 +20242,11 @@ export default [
         "itemNumber": "N82E16811737018",
         "sellerClass": "official",
         "price": 399.99,
-        "saleprice": 368.99,
+        "saleprice": 368.01,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316046822736404499223&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdual-chamber-mid-tower-atx-case-y70-touch-infinite-abs-steel-tempered-glass-computer-case-snow-white-cs-hyte-y70tti-ww%2Fp%2FN82E16811737018%3Fitem%3DN82E16811737018",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-737-018-07.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:46.920Z",
+        "matchedAt": "2026-08-22T12:25:05.015Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -22935,13 +22937,13 @@ export default [
         "sku": "4458313573577816812949180",
         "itemNumber": "9SIAD6HBUP1771",
         "sellerClass": "marketplace",
-        "price": 183.71,
+        "price": 175.82,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313573577816812949180&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx-mid-tower-computer-case-black-mpg-gungnir-110r%2Fp%2FN82E16811320026%3Fitem%3D9SIAD6HBUP1771",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-320-026-V15.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.048Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-22T12:23:39.959Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25233,19 +25235,17 @@ export default [
     "mpn": "V40-BKADA6X1-GL",
     "deals": {
       "newegg": {
-        "sku": "2AM-009W-00095",
-        "price": 71.99,
-        "saleprice": 68.99,
+        "sku": "445837824494300315284059",
+        "itemNumber": "2AM-009W-00095",
+        "sellerClass": "official",
+        "price": 95,
+        "saleprice": 67.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837824494300315284059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsama-atx-micro-atx-mid-tower-v40-series-spcc-tempered-glass-cases-v40-black%2Fp%2F2AM-009W-00095%3Fitem%3D2AM-009W-00095",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B41TS2507100GQNK602.jpg",
-        "sellerClass": "official",
         "inStock": true,
-        "matchedAt": "2026-08-10",
-        "matchMethod": "case-discovery",
-        "priceSource": "1p",
-        "priceSeller": null,
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-10"
+        "matchedAt": "2026-08-22T12:21:53.825Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       },
       "newegg_marketplace": {
         "sku": "9SIB41TKCS1732",
@@ -26153,14 +26153,15 @@ export default [
     "mpn": "Z589CQ450TB3",
     "deals": {
       "newegg": {
-        "sku": "4458317581066855995223133",
-        "itemNumber": "9SIA6ZPKAM4069",
-        "sellerClass": "marketplace",
-        "price": 118.43,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317581066855995223133&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-micro-atx-cases%2Fp%2F2AM-001H-00240%3Fitem%3D9SIA6ZPKAM4069",
+        "sku": "445833597147946774545136",
+        "itemNumber": "2AM-001H-00240",
+        "sellerClass": "official",
+        "price": 124.99,
+        "saleprice": 122.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833597147946774545136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-micro-atx-cases%2Fp%2F2AM-001H-00240%3Fitem%3D2AM-001H-00240",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2603260H4MQY23.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:44:05.387Z",
+        "matchedAt": "2026-08-22T12:21:53.707Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -45936,11 +45937,11 @@ export default [
         "sku": "445833612806055333397785",
         "itemNumber": "9SIBTK0KXV8080",
         "sellerClass": "marketplace",
-        "price": 1124.83,
+        "price": 1090.6,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833612806055333397785&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000S5%3Fitem%3D9SIBTK0KXV8080",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2605280MFH4MC9.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:23.539Z",
+        "matchedAt": "2026-08-22T12:24:24.511Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

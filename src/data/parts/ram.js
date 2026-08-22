@@ -2091,14 +2091,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458317269409502879248913",
-        "itemNumber": "9SIC4RUKZP6171",
+        "sku": "4458310143348309199958167",
+        "itemNumber": "9SIC6E1M4N1992",
         "sellerClass": "marketplace",
-        "price": 279.83,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317269409502879248913&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-ddr5-classic-16gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820156355%3Fitem%3D9SIC4RUKZP6171",
+        "price": 278.93,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310143348309199958167&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-ddr5-classic-16gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820156355%3Fitem%3D9SIC6E1M4N1992",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-288-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-19T12:28:02.324Z",
+        "matchedAt": "2026-08-22T12:24:56.758Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -3709,11 +3709,11 @@ export default [
         "sku": "445837895129471709364210",
         "itemNumber": "9SIAD6HKKK9561",
         "sellerClass": "marketplace",
-        "price": 607.79,
+        "price": 592.52,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837895129471709364210&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820242648%3Fitem%3D9SIAD6HKKK9561",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-648-S01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:18.782Z",
+        "matchedAt": "2026-08-22T12:23:40.719Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -8362,14 +8362,14 @@ export default [
         "priceConfirmedAt": "2026-08-22"
       },
       "newegg": {
-        "sku": "445832348929915714737104",
-        "itemNumber": "9SIC5BHKSU7280",
+        "sku": "4458318315804240578148613",
+        "itemNumber": "9SIC3FZM4S0708",
         "sellerClass": "marketplace",
-        "price": 209,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832348929915714737104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820236596%3Fitem%3D9SIC5BHKSU7280",
+        "price": 208.5,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318315804240578148613&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820236596%3Fitem%3D9SIC3FZM4S0708",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-596-S02.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:34.805Z",
+        "matchedAt": "2026-08-22T12:24:52.389Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -17686,8 +17686,9 @@ export default [
         "saleprice": 239.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313066390575419770304&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242798%3Fitem%3DN82E16820242798",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-794-01.jpg",
-        "matchedAt": "2026-07-24",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:06.756Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -17802,8 +17803,9 @@ export default [
         "saleprice": 1599.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312729310129823953318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-renegade-96gb-ddr5-6000-cas-latency-cl32-memory-silver-black%2Fp%2FN82E16820242825%3Fitem%3DN82E16820242825",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD23052206SYWO60.jpg",
-        "matchedAt": "2026-07-24",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:06.757Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -21301,12 +21303,13 @@ export default [
         "sku": "4458315730697802521005794",
         "itemNumber": "N82E16820374584",
         "sellerClass": "official",
-        "price": 669.99,
-        "saleprice": 649.99,
+        "price": 699.99,
+        "saleprice": 679.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315730697802521005794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-48gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374584%3Fitem%3DN82E16820374584",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-544-04.png",
-        "matchedAt": "2026-07-24",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:07.112Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

@@ -1354,14 +1354,14 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "4458313126857888999294908",
-        "itemNumber": "9SIC4RUKSV4950",
+        "sku": "4458310428019251681908577",
+        "itemNumber": "9SIC6E1M4K7852",
         "sellerClass": "marketplace",
-        "price": 299.88,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313126857888999294908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00220%3Fitem%3D9SIC4RUKSV4950",
+        "price": 297.5,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310428019251681908577&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00220%3Fitem%3D9SIC6E1M4K7852",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502110IDZXMD3.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:47:36.183Z",
+        "matchedAt": "2026-08-22T12:24:56.615Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -2783,11 +2783,11 @@ export default [
         "sku": "445837966889548423619651",
         "itemNumber": "9SIBZW0M081033",
         "sellerClass": "marketplace",
-        "price": 293.53,
+        "price": 283.75,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837966889548423619651&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13500-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118429%3Fitem%3D9SIBZW0M081033",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-429-04.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:37.037Z",
+        "matchedAt": "2026-08-22T12:24:47.506Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -2939,11 +2939,11 @@ export default [
         "sku": "445831531452921848314480",
         "itemNumber": "9SIBZW0M081037",
         "sellerClass": "marketplace",
-        "price": 206.99,
+        "price": 199.81,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831531452921848314480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-13th-gen-core-i3-13100-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118432%3Fitem%3D9SIBZW0M081037",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-432-05.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:37.038Z",
+        "matchedAt": "2026-08-22T12:24:47.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -5687,11 +5687,11 @@ export default [
         "itemNumber": "N82E16819118508R",
         "sellerClass": "official",
         "price": 329.99,
-        "saleprice": 204.99,
+        "saleprice": 193.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834191833753504320321&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-5-245k-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118508R%3Fitem%3DN82E16819118508R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-508-15.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.788Z",
+        "matchedAt": "2026-08-22T12:25:06.031Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -6642,11 +6642,11 @@ export default [
         "sku": "4458317901509828354083043",
         "itemNumber": "9SIBZW0KFS7554",
         "sellerClass": "marketplace",
-        "price": 351.95,
+        "price": 340.42,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317901509828354083043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00850%3Fitem%3D9SIBZW0KFS7554",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD22013008UMB86E.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:36.705Z",
+        "matchedAt": "2026-08-22T12:24:46.949Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

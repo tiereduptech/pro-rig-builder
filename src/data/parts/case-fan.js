@@ -9458,11 +9458,11 @@ export default [
         "itemNumber": "1YF-005G-00093",
         "sellerClass": "official",
         "price": 90.99,
-        "saleprice": 85.99,
+        "saleprice": 73.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315843779829622453939&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-uf-slin120-3b-case-fan%2Fp%2F1YF-005G-00093%3Fitem%3D1YF-005G-00093",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS220602V5w3w.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.505Z",
+        "matchedAt": "2026-08-22T12:21:53.440Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12932,6 +12932,19 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-154-01.jpg",
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.796Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
+      },
+      "newegg": {
+        "sku": "4458314742999893006302559",
+        "itemNumber": "N82E16835146154",
+        "sellerClass": "official",
+        "price": 59.99,
+        "saleprice": 32.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314742999893006302559&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u28hf-b1-case-fan-280mm-rgb-led%2Fp%2FN82E16835146154%3Fitem%3DN82E16835146154",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-154-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-22T12:25:09.009Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
