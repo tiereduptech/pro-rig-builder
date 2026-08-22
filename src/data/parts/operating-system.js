@@ -63,7 +63,7 @@ export default [
         "sku": "6499300",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-21"
+        "priceConfirmedAt": "2026-08-22"
       },
       "newegg": {
         "sku": "4458312977573271908579071",
