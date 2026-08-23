@@ -22952,11 +22952,11 @@ export default [
         "sku": "4458313573577816812949180",
         "itemNumber": "9SIAD6HBUP1771",
         "sellerClass": "marketplace",
-        "price": 175.82,
+        "price": 174.26,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313573577816812949180&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx-mid-tower-computer-case-black-mpg-gungnir-110r%2Fp%2FN82E16811320026%3Fitem%3D9SIAD6HBUP1771",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-320-026-V15.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:23:39.959Z",
+        "matchedAt": "2026-08-23T12:25:42.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -23575,11 +23575,11 @@ export default [
         "itemNumber": "1FR-0046-00005",
         "sellerClass": "official",
         "price": 121,
-        "saleprice": 90.99,
+        "saleprice": 89.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312191532961261113406&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-micro-atx-tower-accessories-cpu-ck709-ff300tb3%2Fp%2F1FR-0046-00005%3Fitem%3D1FR-0046-00005",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/1FR-0046-00005-S14.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.302Z",
+        "matchedAt": "2026-08-23T12:23:55.943Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -24526,19 +24526,17 @@ export default [
     "mpn": "V150INFX",
     "deals": {
       "newegg": {
-        "sku": "2AM-000Z-000H6",
-        "price": 74.99,
-        "saleprice": null,
+        "sku": "4458317785605342448044773",
+        "itemNumber": "2AM-000Z-000H6",
+        "sellerClass": "official",
+        "price": 84.99,
+        "saleprice": 69.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317785605342448044773&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-micro-atx-v150-cases-computer-cases-atx-form-black%2Fp%2F2AM-000Z-000H6%3Fitem%3D2AM-000Z-000H6",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS26041704VM06A7.jpg",
-        "sellerClass": "official",
         "inStock": true,
-        "matchedAt": "2026-08-10",
-        "matchMethod": "case-discovery",
-        "priceSource": "1p",
-        "priceSeller": null,
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-10"
+        "matchedAt": "2026-08-23T12:23:56.418Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "source": "newegg-case-discovery",
@@ -45953,11 +45951,11 @@ export default [
         "sku": "445833612806055333397785",
         "itemNumber": "9SIBTK0KXV8080",
         "sellerClass": "marketplace",
-        "price": 1090.6,
+        "price": 1013.05,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833612806055333397785&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000S5%3Fitem%3D9SIBTK0KXV8080",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2605280MFH4MC9.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:24:24.511Z",
+        "matchedAt": "2026-08-23T12:26:28.129Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -51948,11 +51946,11 @@ export default [
         "sku": "4458315112379316287709144",
         "itemNumber": "9SIC6U8KXE0717",
         "sellerClass": "marketplace",
-        "price": 127.96,
+        "price": 127.93,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315112379316287709144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-atx-desktop-cases%2Fp%2F2AM-001H-00206%3Fitem%3D9SIC6U8KXE0717",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD2203300NPI4WBD.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:38.570Z",
+        "matchedAt": "2026-08-23T12:27:01.806Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -56030,11 +56028,11 @@ export default [
         "itemNumber": "N82E16811197049R",
         "sellerClass": "official",
         "price": 109.99,
-        "saleprice": 74.99,
+        "saleprice": 67.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832280924787076576898&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811197049R%3Fitem%3DN82E16811197049R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-197-049-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:45.193Z",
+        "matchedAt": "2026-08-23T12:27:08.684Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

@@ -3797,14 +3797,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458313132854811212920165",
-        "itemNumber": "9SIC4RUKX90878",
+        "sku": "44583585977570641453848",
+        "itemNumber": "9SIC6E1M4H8881",
         "sellerClass": "marketplace",
-        "price": 147.31,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313132854811212920165&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-8400f-ryzen-5-8000-series-phoenix-zen-4-socket-am5%2Fp%2FN82E16819113826%3Fitem%3D9SIC4RUKX90878",
+        "price": 145.56,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583585977570641453848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-8400f-ryzen-5-8000-series-phoenix-zen-4-socket-am5%2Fp%2FN82E16819113826%3Fitem%3D9SIC6E1M4H8881",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-826-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:47:36.473Z",
+        "matchedAt": "2026-08-23T12:30:17.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7788,14 +7788,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458313271464877905896548",
-        "itemNumber": "9SIC7XKM1J9980",
+        "sku": "4458314889560687914682150",
+        "itemNumber": "9SIBZW0KFS7488",
         "sellerClass": "marketplace",
-        "price": 55.26,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313271464877905896548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-7th-gen-core-i5-7400-kaby-lake-lga-1151-desktop-cpu-processor%2Fp%2FN82E16819117731%3Fitem%3D9SIC7XKM1J9980",
+        "price": 54.66,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314889560687914682150&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-7th-gen-core-i5-7400-kaby-lake-lga-1151-desktop-cpu-processor%2Fp%2FN82E16819117731%3Fitem%3D9SIBZW0KFS7488",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-117-731-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:42:04.856Z",
+        "matchedAt": "2026-08-23T12:26:50.739Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -9084,16 +9084,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458310981224316636056716",
-        "itemNumber": "9SIC7XKM1R4056",
+        "sku": "4458315948462096901383796",
+        "itemNumber": "9SIC6E1M4J4193",
         "sellerClass": "marketplace",
-        "price": 136.4,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310981224316636056716&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00222%3Fitem%3D9SIC7XKM1R4056",
+        "price": 124.16,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315948462096901383796&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00222%3Fitem%3D9SIC6E1M4J4193",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502130GQNPU08.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:41.559Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.7272727272727273
+        "matchedAt": "2026-08-23T12:30:17.871Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.770Z",

@@ -4431,14 +4431,15 @@ export default [
         "priceConfirmedAt": "2026-08-23"
       },
       "newegg": {
-        "sku": "9SIB319M1B2973",
-        "price": 99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311155843625914705936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b550m-ds3h-ac-r2-micro-atx-motherboard-amd-b550-am4%2Fp%2FN82E16813145582%3Fitem%3D9SIB319M1B2973",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-582-01.jpg",
+        "sku": "445831318952534734441792",
+        "itemNumber": "9SIA0ZXKGS2974",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 128.78,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831318952534734441792&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b550m-ds3h-ac-r2-micro-atx-motherboard-amd-b550-am4%2Fp%2FN82E16813145582%3Fitem%3D9SIA0ZXKGS2974",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-582-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-23T12:23:57.884Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -9928,11 +9929,11 @@ export default [
         "sku": "445835544565639231092105",
         "itemNumber": "9SIAD6HKRC3065",
         "sellerClass": "marketplace",
-        "price": 194.49,
+        "price": 192.72,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835544565639231092105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b650m-p-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144607%3Fitem%3D9SIAD6HKRC3065",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-607-06.png",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:23:40.840Z",
+        "matchedAt": "2026-08-23T12:25:43.640Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -9983,13 +9984,13 @@ export default [
         "sku": "445835581609381304292343",
         "itemNumber": "9SIAD6HJME1424",
         "sellerClass": "marketplace",
-        "price": 337.06,
+        "price": 334.08,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835581609381304292343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b760-tomahawk-wifi-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813144585%3Fitem%3D9SIAD6HJME1424",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-585-03.png",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:23:40.076Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-23T12:25:42.854Z",
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9
       }
     },
     "discount": 9,
@@ -10595,14 +10596,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-23"
       },
       "newegg": {
-        "sku": "4458315773035208227786357",
-        "itemNumber": "9SIC7XKM1R5980",
+        "sku": "445838461351614216990738",
+        "itemNumber": "9SIC6E1M4J9429",
         "sellerClass": "marketplace",
-        "price": 260,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315773035208227786357&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b650i-edge-wifi-mini-itx-motherboard-amd-b650-am5%2Fp%2FN82E16813144556%3Fitem%3D9SIC7XKM1R5980",
+        "price": 216.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838461351614216990738&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b650i-edge-wifi-mini-itx-motherboard-amd-b650-am5%2Fp%2FN82E16813144556%3Fitem%3D9SIC6E1M4J9429",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-556-16.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:25:01.137Z",
+        "matchedAt": "2026-08-23T12:30:17.992Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11401,14 +11402,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458315544067847427896955",
-        "itemNumber": "9SIC4RUKT00091",
+        "sku": "445835050626087022770529",
+        "itemNumber": "9SIC6E1M4H6846",
         "sellerClass": "marketplace",
-        "price": 198.49,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315544067847427896955&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650e-a-elite-x-ice-atx-motherboards-amd-b650-am5%2Fp%2FN82E16813145500%3Fitem%3D9SIC4RUKT00091",
+        "price": 197.85,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835050626087022770529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650e-a-elite-x-ice-atx-motherboards-amd-b650-am5%2Fp%2FN82E16813145500%3Fitem%3D9SIC6E1M4H6846",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-500-07.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:47:36.300Z",
+        "matchedAt": "2026-08-23T12:30:17.575Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11562,16 +11563,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445838531701965161038092",
-        "itemNumber": "9SIC6VHKXB9747",
+        "sku": "445838727076215944714268",
+        "itemNumber": "9SIC6E1M4J1398",
         "sellerClass": "marketplace",
-        "price": 199.19,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838531701965161038092&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01A65%3Fitem%3D9SIC6VHKXB9747",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506200FFFA3CF.jpg",
+        "price": 175.83,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838727076215944714268&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-micro-atx-motherboards-intel-intel-b760-lga-1700%2Fp%2F1JW-000C-016U9%3Fitem%3D9SIC6E1M4J1398",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVS2302210F1IA97E.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:38.674Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchedAt": "2026-08-23T12:30:17.832Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7692307692307693
       }
     },
     "additionalImages": [
@@ -18738,14 +18739,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445837211878917650289460",
-        "itemNumber": "9SIC4RUKSV4903",
+        "sku": "4458311000405841994057111",
+        "itemNumber": "9SIC6E1M4H5752",
         "sellerClass": "marketplace",
-        "price": 129.54,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837211878917650289460&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b860m-x-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813162216%3Fitem%3D9SIC4RUKSV4903",
+        "price": 127.09,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311000405841994057111&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b860m-x-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813162216%3Fitem%3D9SIC6E1M4H5752",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-216-03.png",
         "inStock": true,
-        "matchedAt": "2026-08-19T12:28:01.321Z",
+        "matchedAt": "2026-08-23T12:30:17.396Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -19120,11 +19121,11 @@ export default [
         "itemNumber": "1JW-000C-01B12",
         "sellerClass": "official",
         "price": 479.99,
-        "saleprice": 476.99,
+        "saleprice": 474.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313621996513852326951&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pro-ws-z890-ace-se-motherboards-intel-lga-1851%2Fp%2F1JW-000C-01B12%3Fitem%3D1JW-000C-01B12",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8N2D2510221965FK2A.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.425Z",
+        "matchedAt": "2026-08-23T12:23:56.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -20945,10 +20946,11 @@ export default [
         "itemNumber": "N82E16813119691",
         "sellerClass": "official",
         "price": 449.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839327445260093841950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-maximus-z890-hero-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119691%3Fitem%3DN82E16813119691",
+        "saleprice": 428.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839327445260093841950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-maximus-z890-hero-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119691%3Fitem%3DN82E16813119691",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-691-12.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:45.712Z",
+        "matchedAt": "2026-08-23T12:30:32.569Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },

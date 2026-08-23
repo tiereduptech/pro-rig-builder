@@ -9228,11 +9228,11 @@ export default [
         "itemNumber": "N82E16814137877",
         "sellerClass": "official",
         "price": 299.99,
-        "saleprice": 279.99,
+        "saleprice": 279.97,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-877-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:42:08.321Z",
+        "matchedAt": "2026-08-23T12:27:09.616Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

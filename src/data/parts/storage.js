@@ -7482,14 +7482,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445836249847313245738144",
-        "itemNumber": "9SIA2W0KBW3377",
+        "sku": "4458314191474722375930866",
+        "itemNumber": "9SIAPBJGVS7935",
         "sellerClass": "marketplace",
-        "price": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836249847313245738144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIA2W0KBW3377",
+        "price": 179.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314191474722375930866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIAPBJGVS7935",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-105-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:37.451Z",
+        "matchedAt": "2026-08-23T12:26:10.163Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -13203,10 +13203,11 @@ export default [
         "itemNumber": "N82E16820173636",
         "sellerClass": "official",
         "price": 399.99,
+        "saleprice": 379.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831175181919054285452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsandisk-2tb-ultra-3d%2Fp%2FN82E16820173636%3Fitem%3DN82E16820173636",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-173-639-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.384Z",
+        "matchedAt": "2026-08-23T12:27:10.547Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -17175,14 +17176,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445837004522232364647276",
-        "itemNumber": "9SIBFJRKSV3598",
+        "sku": "445837396142936340330443",
+        "itemNumber": "9SIAADFKSC3004",
         "sellerClass": "marketplace",
-        "price": 344.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837004522232364647276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo%2Fp%2F0D9-0009-00AF7%3Fitem%3D9SIBFJRKSV3598",
+        "price": 344.79,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837396142936340330443&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo%2Fp%2F0D9-0009-00AF7%3Fitem%3D9SIAADFKSC3004",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS210125KJRTE.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:58.254Z",
+        "matchedAt": "2026-08-23T12:25:20.102Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -25022,12 +25023,13 @@ export default [
         "itemNumber": "N82E16822184955",
         "sellerClass": "official",
         "price": 279.99,
+        "saleprice": 259.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312443967769469554195&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-expansion-8tb-black-usb-3-0%2Fp%2FN82E16822184955%3Fitem%3DN82E16822184955",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-955-V12.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:48.463Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.75
+        "matchedAt": "2026-08-23T12:27:11.599Z",
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9
       }
     },
     "cap": 8000,
@@ -25108,14 +25110,14 @@ export default [
         "priceConfirmedAt": "2026-08-23"
       },
       "newegg": {
-        "sku": "4458312911671136429775356",
-        "itemNumber": "9SIAG98K4G2633",
+        "sku": "445836608254916959412373",
+        "itemNumber": "9SIC7XHM555976",
         "sellerClass": "marketplace",
-        "price": 170,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312911671136429775356&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-022U2%3Fitem%3D9SIAG98K4G2633",
+        "price": 157.89,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836608254916959412373&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1Z4-002P-022U2%3Fitem%3D9SIC7XHM555976",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD210315YYOHJ.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:32.826Z",
+        "matchedAt": "2026-08-23T12:30:32.547Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85
       }
@@ -31881,10 +31883,11 @@ export default [
         "itemNumber": "N82E16820250296",
         "sellerClass": "official",
         "price": 1899.99,
+        "saleprice": 1749.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837598788192676331215&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-nvme%2Fp%2FN82E16820250296%3Fitem%3DN82E16820250296",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-296-09.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.610Z",
+        "matchedAt": "2026-08-23T12:27:10.779Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

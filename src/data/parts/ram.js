@@ -2088,11 +2088,11 @@ export default [
         "sku": "4458310143348309199958167",
         "itemNumber": "9SIC6E1M4N1992",
         "sellerClass": "marketplace",
-        "price": 278.93,
+        "price": 266.33,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310143348309199958167&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-ddr5-classic-16gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820156355%3Fitem%3D9SIC6E1M4N1992",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-288-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:24:56.758Z",
+        "matchedAt": "2026-08-23T12:30:18.385Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -3703,11 +3703,11 @@ export default [
         "sku": "445837895129471709364210",
         "itemNumber": "9SIAD6HKKK9561",
         "sellerClass": "marketplace",
-        "price": 592.52,
+        "price": 587.27,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837895129471709364210&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820242648%3Fitem%3D9SIAD6HKKK9561",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-648-S01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:23:40.719Z",
+        "matchedAt": "2026-08-23T12:25:43.516Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -27676,12 +27676,12 @@ export default [
         "sku": "445833855186539640455221",
         "itemNumber": "N82E16820991078",
         "sellerClass": "official",
-        "price": 169.99,
-        "saleprice": 149.99,
+        "price": 149.99,
+        "saleprice": 129.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833855186539640455221&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeil-orion-rgb-16gb-2-x-8gb-ddr4-3200-pc4-25600-cas-latency-cl18-desktop-memory-titanium-gray%2Fp%2FN82E16820991078%3Fitem%3DN82E16820991078",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-991-078-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:48.355Z",
+        "matchedAt": "2026-08-23T12:27:11.502Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

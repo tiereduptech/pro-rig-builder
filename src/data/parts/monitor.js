@@ -8797,6 +8797,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-23"
+      },
+      "newegg": {
+        "sku": "445837815829844734662546",
+        "itemNumber": "9SIA4P0K7Z1255",
+        "sellerClass": "marketplace",
+        "price": 849.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837815829844734662546&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbenq-32%2Fp%2FN82E16824014954%3Fitem%3D9SIA4P0K7Z1255",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-014-954-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-23T12:24:05.551Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 31.5,
@@ -10898,6 +10910,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-23"
+      },
+      "newegg": {
+        "sku": "445833480549433696265860",
+        "itemNumber": "9SIA4P0KEH7741",
+        "sellerClass": "marketplace",
+        "price": 679.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833480549433696265860&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-009J-000G8%3Fitem%3D9SIA4P0KEH7741",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2503271609ZW34.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-23T12:24:05.649Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 31.5,
