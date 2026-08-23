@@ -21,6 +21,7 @@ import { readFileSync, existsSync } from 'node:fs';
 const TOKEN_URL   = 'https://api.amazon.com/auth/o2/token';
 const GETITEMS    = 'https://creatorsapi.amazon/catalog/v1/getItems';
 const SEARCHITEMS = 'https://creatorsapi.amazon/catalog/v1/searchItems';
+const VARIATIONS  = 'https://creatorsapi.amazon/catalog/v1/getVariations';
 const SCOPE       = 'creatorsapi::default';
 const MARKETPLACE = 'www.amazon.com';
 const PARTNER_TAG = process.env.AMAZON_PARTNER_TAG || 'tiereduptech-20';
@@ -47,6 +48,17 @@ export const SEARCH_RESOURCES = [
   'itemInfo.byLineInfo',
   'offersV2.listings.price',
   'offersV2.listings.availability',
+];
+
+// GetVariations resolves a parent ASIN's variation family (colour/size/capacity …).
+// variationSummary.variationDimension names WHICH axes vary, so a caller can tell a
+// capacity family (relevant: a 1TB vs 2TB SKU is a different product) from a colour
+// family (usually the same product), while the per-child offer/title come back too.
+export const VARIATION_RESOURCES = [
+  'itemInfo.title',
+  'offersV2.listings.price',
+  'offersV2.listings.condition',
+  'variationSummary.variationDimension',
 ];
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -267,6 +279,47 @@ export async function searchItems(keywords, {
     if (page < maxPages) await sleep(pace);
   }
   return { items: [...out.values()], totalResultCount, pagesFetched };
+}
+
+// GetVariations serves at most SEARCH_PAGE_MAX (10) children per page; a large family
+// (e.g. a capacity ladder) pages exactly like SearchItems does.
+export const VARIATION_PAGE_MAX = 10;   // children per page (API cap)
+
+/**
+ * Resolve a parent ASIN's variation family. NEVER throws.
+ * Pages children (each ≤10) under the SAME circuit breaker and pacing as the other
+ * endpoints, deduping child ASINs across pages. Returns
+ *   { items: item[], variationDimensions: string[], totalResultCount: number|null, pagesFetched: number }
+ * A degraded client (open circuit, bad creds, eligibility loss) returns an empty item
+ * list so callers fall back cleanly instead of seeing an exception.
+ */
+export async function getVariations(asin, {
+  pages = 1, itemCount = VARIATION_PAGE_MAX, resources = VARIATION_RESOURCES, pace = PACE_MS,
+} = {}) {
+  const out = new Map();                 // childAsin -> item, deduped across pages
+  let totalResultCount = null, pagesFetched = 0;
+  const dims = new Set();
+  const parent = String(asin || '').trim();
+  if (!parent || circuitOpen) return { items: [], variationDimensions: [], totalResultCount, pagesFetched };
+
+  const maxPages = Math.min(Math.max(1, pages | 0), SEARCH_PAGE_LIMIT);
+  for (let page = 1; page <= maxPages; page++) {
+    if (circuitOpen) break;              // opened mid-run: stop, do not thrash
+    const json = await paapiPost(VARIATIONS, { asin: parent, variationPage: page, variationCount: itemCount, resources });
+    if (!json) break;                    // terminal error / circuit — stop paging
+    pagesFetched++;
+    const items = json.variationsResult?.items || json.result?.items || json.itemsResult?.items || json.items || [];
+    const summary = json.variationsResult?.variationSummary || json.variationSummary || null;
+    const total = summary?.variationCount ?? summary?.pageCount ?? json.variationsResult?.totalResultCount ?? null;
+    if (total != null) totalResultCount = total;
+    for (const d of (summary?.variationDimensions || summary?.variationDimension || [])) {
+      const name = d?.name || d?.displayName || d; if (name) dims.add(String(name));
+    }
+    for (const it of items) { const a = it?.asin; if (a && !out.has(a)) { out.set(a, it); stats.items++; } }
+    if (!items.length) break;            // exhausted the family — no point paging further
+    if (page < maxPages) await sleep(pace);
+  }
+  return { items: [...out.values()], variationDimensions: [...dims], totalResultCount, pagesFetched };
 }
 
 // ---- configuration preflight -------------------------------------------
