@@ -239,7 +239,12 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
   // offer. Those keep their existing price and get tagged for separate action.
   let verdict = classifyBuyBox(amazonData);
   const storedPrice = product.deals?.amazon?.price;
-  let resolvedVia = 'dataforseo';
+  // Provenance of the PRIMARY source is self-identifying by shape: a PA API item
+  // carries offersV2 (and no DataForSEO `.items`), so when verify-catalog's PA-primary
+  // PASS 1 passes one straight in as amazonData, the write is tagged 'paapi'. A
+  // DataForSEO result0 has `.items` -> 'dataforseo'. The PA second-opinion path below
+  // sets 'paapi' explicitly on an upgrade, so both routes stay correctly labeled.
+  let resolvedVia = (amazonData.offersV2 && !amazonData.items) ? 'paapi' : 'dataforseo';
 
   // PA API SECOND OPINION. DataForSEO cannot see buy-box ownership (no
   // isBuyBoxWinner field) and often returns a blank condition on the featured

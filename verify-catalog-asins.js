@@ -26,7 +26,8 @@ import { loadOverrides, buildOverrideIndex } from './asin-override-table.js';
 import { canonicalizeProductName, extractModelToken,
          parseCapacityGB, capacityCompatible, capacitiesMatch,
          isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
-import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity, normalizeOffer } from './amazon-price.js';
+import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity, normalizeOffer,
+         classifyBuyBox, BUYBOX_STATE } from './amazon-price.js';
 // The price-drift gate lives in ONE place. Threshold, titleMatches, and
 // analyzeResult are imported — never re-declared here (see drift-gate.js).
 import { STORAGE_CATS, titleMatches, analyzeResult,
@@ -392,6 +393,37 @@ export async function findBestASIN(product) {
 }
 
 
+// Adapt a PA API item into the `amazonData` shape analyzeResult reads. Only the title
+// needs surfacing — classifyBuyBox / selectNewOffer / lowestAnyConditionPrice already
+// read .offersV2.listings (PA shape) via offersOf(), and the spread preserves it. The
+// resulting object is self-identifying as 'paapi' provenance (offersV2, no `.items`).
+export function paapiToAmazonData(item) {
+  return { ...item, title: item.itemInfo?.title?.displayValue || '' };
+}
+
+// Migration 3 router: split verified products by whether PA API GetItems alone can
+// settle them. A row is PA-settled ONLY when PA returned an item whose Buy Box
+// classifies CONFIRMED — the one PA verdict safe to trust despite the ≤2-listing
+// offer cap. Everything else — PA absent (dead/unresolved ASIN), UNCONFIRMED, or BAD
+// (New offer may simply be truncated out of PA's response) — falls to the DataForSEO
+// sellers pass, which sees the full offer table and stays the authority there. When
+// PA is gated, paItems is empty and EVERY row lands in needDfs: the failover is just
+// the empty-map case, not a special branch.
+export function partitionByPaapi(products, paItems) {
+  const paSettled = [];   // { product, asin, paItem } — confirmable by PA alone, $0
+  const needDfs = [];     // { product, asin, paItem } — needs the paid sellers pass
+  for (const product of products) {
+    const asin = extractASIN(product.deals?.amazon?.url);
+    const paItem = (asin && paItems.get(asin)) || null;   // item-or-null, never undefined
+    if (paItem && classifyBuyBox(paItem).state === BUYBOX_STATE.CONFIRMED) {
+      paSettled.push({ product, asin, paItem });
+    } else {
+      needDfs.push({ product, asin, paItem });
+    }
+  }
+  return { paSettled, needDfs };
+}
+
 function applyFixes(parts, perProductFixes) {
   let changed = 0;
   for (const p of parts) {
@@ -580,8 +612,8 @@ if (IS_MAIN) (async () => {
   console.log(`━━━ Verifier v2 ━━━`);
   console.log(`  Tier: ${flags.tier}${ONLY_IDS ? ` (scoped to ${ONLY_IDS.size}-id allowlist)` : ''}`);
   console.log(`  Products: ${products.length}`);
-  console.log(`  Est cost: $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} (sellers endpoint)${flags.fixAsins ? ' + ASIN searches (PA API first — $0 unless PA API is gated)' : ''}`);
-  console.log(`  Bills: sellers-task only${flags.fixAsins ? ' + ASIN searches via PA API SearchItems (FREE); paid DataForSEO products-search ONLY as failover if PA API is gated' : ' — NO ASIN searches'}`);
+  console.log(`  Est cost (WORST CASE): $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} sellers — but PA API GetItems (PASS 1) confirms most rows for $0; only rows it cannot confirm bill DataForSEO${flags.fixAsins ? ' + ASIN searches (PA API first)' : ''}`);
+  console.log(`  Bills: DataForSEO sellers ONLY for rows PA API cannot confirm (all rows only if PA gated)${flags.fixAsins ? '; ASIN searches via PA API SearchItems, paid DataForSEO products-search only as failover' : ''}`);
   console.log(`  First 5 ids: ${ids.slice(0, 5).join(', ')}`);
   console.log(`  Last 5 ids:  ${ids.slice(-5).join(', ')}`);
   console.log(`  Mode: ${flags.dryRun ? 'DRY RUN' : flags.autoFix ? 'AUTO-FIX' : 'REPORT-ONLY'}${flags.fixAsins ? ' + ASIN repair' : ''}`);
@@ -625,46 +657,62 @@ if (IS_MAIN) (async () => {
 
   if (flags.dryRun) { console.log(`\nDry run complete — ZERO tasks posted, $0 spent.`); return; }
 
-  const tasks = await postTasks(products);
-  const results = await fetchAllResults(tasks);
-  console.log(`\nGot ${results.length} results`);
-
   const byProduct = new Map(parts.map(p => [p.id, p]));
 
-  // ── PASS 1: DataForSEO only ─────────────────────────────────────────────
+  // ── PASS 1 PRIMARY: PA API GetItems for every row (FREE) ─────────────────
+  // Migration 3 — this is the change that stops the recurring DataForSEO spend.
+  // verify-catalog is the only DataForSEO consumer on a cron; it used to bill one
+  // sellers task PER ROW every run. Now PA API GetItems settles every row it can
+  // confirm for $0, and ONLY the rows it cannot confirm fall through to the paid
+  // sellers pass below. "New Buy Box is enough" (decided) makes this safe: a PA
+  // CONFIRMED buy box is exactly the New price we write.
+  //
+  // A PA UNCONFIRMED/BAD is NOT trusted — offersV2 caps at buy box + one alternate,
+  // so a "no New offer" can be truncation, not truth — and an ASIN PA can't resolve
+  // is likewise unproven; both route to DataForSEO, which sees the full offer table.
+  // If PA is gated, resolveItems returns an empty map and EVERY row routes to
+  // DataForSEO: the failover is the empty-map case, no special branch, no failure.
+  onPaapiAlert(a => console.log(`  !! PA API DEGRADED (${a.reason}): ${a.detail}\n     Rows fall through to the DataForSEO sellers pass — run continues.`));
+  const allAsins = products.map(p => extractASIN(p.deals?.amazon?.url)).filter(Boolean);
+  console.log(`\nPASS 1 (PA API GetItems): resolving ${allAsins.length} ASINs in ${Math.ceil(allAsins.length / PAAPI_BATCH)} free call(s)...`);
+  const paItems = await resolveItems(allAsins);
+
+  const { paSettled, needDfs } = partitionByPaapi(products, paItems);
+  const paSt = paapiStatus();
+  console.log(`  PA API confirmed ${paSettled.length}/${products.length} rows for $0` +
+              `${paSt.available ? '' : ` (PA API unavailable: ${paSt.disabledReason})`}` +
+              `  [calls=${paSt.stats.calls} throttled=${paSt.stats.throttled} errors=${paSt.stats.batchErrors}]`);
+
   const pass1 = [];
-  for (const r of results) {
-    const product = byProduct.get(r.productId);
-    if (!product) continue;
-    pass1.push({ r, product, out: analyzeResult(product, r.data) });
+  for (const { product, asin, paItem } of paSettled) {
+    // Synthetic `r` carries the two fields the downstream reducer reads (productId,
+    // asin); the PA item is the PRIMARY amazonData, so analyzeResult tags 'paapi'.
+    pass1.push({ r: { productId: product.id, asin }, product,
+                 out: analyzeResult(product, paapiToAmazonData(paItem)) });
   }
 
-  // ── PASS 2: PA API second opinion on the unconfirmed rows ───────────────
-  // DataForSEO cannot see buy-box ownership; PA API can. Measured, it resolves
-  // 93% of the `unlabeled_buybox` class to a clean New buy box. PA API is free,
-  // batches 10 ASINs per call, and — critically — degrades to an empty result
-  // rather than throwing, so a revoked credential silently costs us nothing but
-  // the resolution itself. See amazon-paapi.js for the circuit breaker.
-  const unconfirmed = pass1.filter(x => x.out.fixes?.priceConfidence === 'unconfirmed');
-  if (unconfirmed.length) {
-    const asins = unconfirmed.map(x => extractASIN(x.product.deals?.amazon?.url)).filter(Boolean);
-    console.log(`\nPA API second opinion on ${unconfirmed.length} unconfirmed rows (${Math.ceil(asins.length / PAAPI_BATCH)} free calls)...`);
-    onPaapiAlert(a => console.log(`  !! PA API DEGRADED (${a.reason}): ${a.detail}\n     Falling back to keep-price for all remaining rows — run continues.`));
-    const items = await resolveItems(asins);
-    let upgraded = 0;
-    for (const x of unconfirmed) {
-      const asin = extractASIN(x.product.deals?.amazon?.url);
-      const item = asin ? items.get(asin) : null;
-      if (!item) continue;
-      const redo = analyzeResult(x.product, x.r.data, item);
-      if (redo.fixes?.priceConfidence === 'confirmed') { x.out = redo; upgraded++; }
+  // ── PASS 2 RESIDUAL/FAILOVER: DataForSEO sellers on the rows PA couldn't settle ──
+  // The ONLY DataForSEO spend left — one sellers task per unconfirmed row, and $0 of
+  // it when PA confirmed everything. Any PA item PA returned rides along as the same
+  // second opinion it always was: it can still upgrade an unlabeled DataForSEO buy
+  // box to CONFIRMED (analyzeResult's PA-second-opinion path, unchanged).
+  if (needDfs.length) {
+    console.log(`\nPASS 2 (DataForSEO sellers): ${needDfs.length} row(s) PA could not confirm ` +
+                `→ $${(needDfs.length * COST_PER_SELLERS_TASK).toFixed(2)} on the sellers endpoint...`);
+    const tasks = await postTasks(needDfs.map(x => x.product));
+    const results = await fetchAllResults(tasks);
+    console.log(`\nGot ${results.length} DataForSEO results`);
+    const ctxById = new Map(needDfs.map(x => [x.product.id, x]));
+    for (const r of results) {
+      const ctx = ctxById.get(r.productId);
+      const product = ctx?.product || byProduct.get(r.productId);
+      if (!product) continue;
+      pass1.push({ r, product, out: analyzeResult(product, r.data, ctx?.paItem || null) });
     }
-    const st = paapiStatus();
-    console.log(`  resolved ${upgraded}/${unconfirmed.length} via PA API` +
-                `${st.available ? '' : ` (PA API disabled: ${st.disabledReason})`}` +
-                `  [calls=${st.stats.calls} throttled=${st.stats.throttled} errors=${st.stats.batchErrors}]`);
-    PAAPI_RUN_SUMMARY = { attempted: unconfirmed.length, upgraded, ...st };
+  } else {
+    console.log(`\nNo DataForSEO sellers tasks needed — PA API confirmed every row. $0 spent on DataForSEO.`);
   }
+  PAAPI_RUN_SUMMARY = { paConfirmed: paSettled.length, dfsFallback: needDfs.length, ...paapiStatus() };
 
   const allIssues = [];
   const perProductFixes = {};
@@ -786,8 +834,12 @@ if (IS_MAIN) (async () => {
 
   const meta = {
     timestamp: new Date().toISOString(),
-    tier: flags.tier, checked: results.length,
+    tier: flags.tier, checked: pass1.length,
     mode: flags.autoFix ? 'auto-fix' : 'report-only',
+    // Migration 3 observability: how many rows PA API settled for $0 vs how many fell
+    // to the paid DataForSEO sellers pass. dfsFallback is the run's DataForSEO spend
+    // in rows — the number this migration exists to drive toward zero.
+    paapi: PAAPI_RUN_SUMMARY,
   };
   writeReports(allIssues, asinRepairs, meta);
 
