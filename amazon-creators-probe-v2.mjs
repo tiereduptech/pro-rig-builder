@@ -15,7 +15,7 @@
 // Run: node amazon-creators-probe-v2.mjs
 // Zero dependencies (Node 18+ global fetch).
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 
 // ---- config -------------------------------------------------------------
 const CREDS_PATH  = process.env.PRORIG_AMAZON_CREDS || 'C:\\rigfinder\\PRB-credentials.csv';
@@ -52,15 +52,26 @@ function parseCsv(text) {
   return rows.filter(r => r.some(v => v.trim() !== ''));
 }
 
-function loadCreds(path) {
-  const rows = parseCsv(readFileSync(path, 'utf8'));
+// Env vars first (the CI / Actions route — AMAZON_CREATORS_CLIENT_ID/SECRET, the
+// same secrets verify-catalog.yml injects), CSV file only as a local fallback.
+// The Windows CSV path is a Railway-era leftover, not the primary route.
+function loadCreds() {
+  const envId = process.env.AMAZON_CREATORS_CLIENT_ID;
+  const envSecret = process.env.AMAZON_CREATORS_CLIENT_SECRET;
+  if (envId && envSecret) {
+    return { id: envId, secret: envSecret, version: process.env.AMAZON_CREATORS_VERSION || '(env)', source: 'env' };
+  }
+  if (!existsSync(CREDS_PATH)) {
+    throw new Error(`no AMAZON_CREATORS_CLIENT_ID/SECRET env vars and no credentials CSV at ${CREDS_PATH}`);
+  }
+  const rows = parseCsv(readFileSync(CREDS_PATH, 'utf8'));
   if (rows.length < 2) throw new Error('CSV has no data row');
   const headers = rows[0].map(h => h.trim().toLowerCase());
   const data = rows[1];
   const get = (n) => { const i = headers.indexOf(n); return i === -1 ? '' : (data[i] || '').trim(); };
   const id = get('credential id'), secret = get('secret'), version = get('version');
   if (!id || !secret) throw new Error('Could not find Credential Id / Secret columns');
-  return { id, secret, version };
+  return { id, secret, version, source: 'csv' };
 }
 
 async function getAccessToken(id, secret) {
@@ -226,9 +237,9 @@ const RESOURCES = [
 
   // creds + token
   let creds;
-  try { creds = loadCreds(CREDS_PATH); }
+  try { creds = loadCreds(); }
   catch (e) { console.log('CREDS ERROR:', e.message); process.exit(1); }
-  console.log('creds:', creds.id.slice(0, 35) + '…', '| version', creds.version, '| tag', PARTNER_TAG);
+  console.log('creds:', creds.id.slice(0, 35) + '…', '| version', creds.version, '| source', creds.source, '| tag', PARTNER_TAG);
 
   const tok = await getAccessToken(creds.id, creds.secret);
   if (tok.error) { console.log('TOKEN ERROR:', JSON.stringify(tok.error)); process.exit(2); }

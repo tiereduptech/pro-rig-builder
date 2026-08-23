@@ -1,0 +1,55 @@
+name: Amazon Creators API Probe
+
+# Manual, read-only capability probe for the Amazon Creators API (PA-API
+# successor). Answers "what is actually authorized" — does SearchItems work,
+# which resources come back, and (the reason it exists) whether eligibility has
+# flipped from AssociateNotEligible now that trailing-30-day sales cross the
+# threshold. Writes NOTHING: no catalog, no commit, no push. Raw response lands
+# in the job summary.
+#
+# Dispatch only — never scheduled. Creds come from the same secrets
+# verify-catalog.yml injects; the probe's Windows-CSV path is a local-only
+# fallback and is not used here.
+on:
+  workflow_dispatch:
+
+# Read-only. This job does not touch main, so it deliberately does NOT join the
+# `main-writer` concurrency lock — no reason to serialise a read against ingest.
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # The probe has zero npm dependencies and reads the committed catalog
+      # (src/data/parts.js) straight off the checkout, so no `npm ci` needed.
+      - name: Run Creators API probe
+        env:
+          AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
+          AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
+        run: |
+          set +e
+          node amazon-creators-probe-v2.mjs 2>&1 | tee probe-output.txt
+          code=${PIPESTATUS[0]}
+          {
+            echo "## Amazon Creators API — capability probe"
+            echo ""
+            echo "Exit \`$code\` · commit \`${GITHUB_SHA::7}\` · $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo ""
+            echo '```'
+            cat probe-output.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          # Surface hard failures (missing creds = exit 1, token error = exit 2)
+          # as a red run. A reachable-but-not-eligible answer exits 0 and the
+          # verdict is in the summary above.
+          exit $code
