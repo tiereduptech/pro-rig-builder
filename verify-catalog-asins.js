@@ -21,11 +21,12 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
+import { pathToFileURL } from 'node:url';
 import { loadOverrides, buildOverrideIndex } from './asin-override-table.js';
 import { canonicalizeProductName, extractModelToken,
          parseCapacityGB, capacityCompatible, capacitiesMatch,
          isHardDrive, isPricePlausibleForCapacity } from './normalize-product-name.js';
-import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity } from './amazon-price.js';
+import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity, normalizeOffer } from './amazon-price.js';
 // The price-drift gate lives in ONE place. Threshold, titleMatches, and
 // analyzeResult are imported — never re-declared here (see drift-gate.js).
 import { STORAGE_CATS, titleMatches, analyzeResult,
@@ -38,8 +39,14 @@ import { evaluateSpendGuard, COST_PER_SELLERS_TASK } from './verify-spend-guard.
 // PA API is a free second opinion on rows DataForSEO cannot confirm. Its client
 // never throws: missing creds, a 401, or AssociateNotEligible all degrade to an
 // empty result plus an alert, so the run continues on DataForSEO alone.
-import { resolveItems, onPaapiAlert, paapiStatus, preflightPaapi, BATCH_MAX as PAAPI_BATCH } from './amazon-paapi.js';
+import { resolveItems, searchItems, SEARCH_RESOURCES, onPaapiAlert, paapiStatus, preflightPaapi, BATCH_MAX as PAAPI_BATCH } from './amazon-paapi.js';
 let PAAPI_RUN_SUMMARY = null;
+
+// Run-vs-import guard: this file executes a full verification run as a side effect
+// when invoked directly, but its search helpers are unit-tested by importing it.
+// Every side effect below (the credential exit, the run IIFE) is gated on IS_MAIN so
+// an `import` is inert.
+const IS_MAIN = !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -47,7 +54,7 @@ const PASSWORD = process.env.DATAFORSEO_PASSWORD;
 // scope before anyone spends, so it must run without credentials. --paapi-preflight
 // only checks the (free) PA API config and posts nothing either. Only a real
 // (task-posting) run requires DataForSEO credentials.
-if (!process.argv.includes('--dry-run') && !process.argv.includes('--paapi-preflight')
+if (IS_MAIN && !process.argv.includes('--dry-run') && !process.argv.includes('--paapi-preflight')
     && (!LOGIN || !PASSWORD)) {
   console.error('ERROR: Missing DATAFORSEO_LOGIN or DATAFORSEO_PASSWORD env vars.');
   process.exit(1);
@@ -159,10 +166,14 @@ if (flags.onlyIds) {
     console.log(`Scoping to ${ONLY_IDS.size} product ids (from ${flags.onlyIds})`);
   } catch (e) { console.error(`Failed to load --only-ids: ${e.message}`); process.exit(1); }
 }
-if (!flags.tier) { console.error('Must specify --tier (1|2|3|4|all)'); process.exit(1); }
-if (!flags.dryRun && !flags.reportOnly && !flags.autoFix && !flags.paapiPreflight) {
-  console.error('Must specify mode: --dry-run, --report-only, --auto-fix, or --paapi-preflight');
-  process.exit(1);
+// CLI argument validation — only meaningful for a direct run, so it must not fire
+// (and exit) when the module is imported by a test. IS_MAIN gates it.
+if (IS_MAIN) {
+  if (!flags.tier) { console.error('Must specify --tier (1|2|3|4|all)'); process.exit(1); }
+  if (!flags.dryRun && !flags.reportOnly && !flags.autoFix && !flags.paapiPreflight) {
+    console.error('Must specify mode: --dry-run, --report-only, --auto-fix, or --paapi-preflight');
+    process.exit(1);
+  }
 }
 
 async function dfs(method, path, body = null) {
@@ -298,7 +309,11 @@ async function fetchAllResults(tasks) {
   return [...results.values()];
 }
 
-async function searchAmazonFor(productName) {
+// DataForSEO products-search — the PAID FAILOVER path for ASIN repair. Entered only
+// when PA API SearchItems is unavailable (see searchAmazonFor). Bills one products
+// task per call. Normalizes to the SAME {asin,title,price} shape the PA API path
+// returns, so findBestASIN scores both sources identically.
+export async function searchAmazonForViaDataForSEO(productName) {
   try {
     const resp = await dfs('POST', '/merchant/amazon/products/task_post', [{
       keyword: productName, language_code: 'en_US', location_code: 2840, depth: 10,
@@ -313,7 +328,14 @@ async function searchAmazonFor(productName) {
         await new Promise(r => setTimeout(r, 15000));
         continue;
       }
-      if (task?.result) return task.result[0]?.items?.slice(0, 5) || [];
+      if (task?.result) {
+        const items = task.result[0]?.items?.slice(0, 5) || [];
+        return items.map(r => ({
+          asin: r.asin || r.data_asin,
+          title: r.title || r.product_title,
+          price: r.price?.current ?? r.price_from ?? null,
+        }));
+      }
     }
     return null;
   } catch (e) {
@@ -321,19 +343,49 @@ async function searchAmazonFor(productName) {
   }
 }
 
-async function findBestASIN(product) {
+// A candidate's price: prefer the New buy box (condition-KNOWN via PA API), else the
+// first listing's price. Only positive, finite numbers — an out-of-band/NaN price
+// must read as "no price" so amazonPriceSanity downstream is never fed garbage.
+function paapiCandidatePrice(item) {
+  const newp = selectNewOffer(item)?.price;
+  if (Number.isFinite(newp) && newp > 0) return newp;
+  const first = normalizeOffer(item.offersV2?.listings?.[0])?.price;
+  return Number.isFinite(first) && first > 0 ? first : null;
+}
+
+// ASIN-repair keyword search. PA API SearchItems (FREE) is primary; the paid
+// DataForSEO products-search is the FAILOVER, entered ONLY when PA API is unavailable
+// (gated by AssociateNotEligible, unconfigured, or transiently degraded) — never when
+// PA API is healthy but simply found nothing, which is a real "not found" that a paid
+// search must not re-bill. This IS Migration 1: a repair search costs $0 while the
+// Associates account stays eligible, and still runs (on DataForSEO) the moment it
+// lapses. Both paths return the same [{asin,title,price}] shape.
+export async function searchAmazonFor(productName) {
+  const kw = String(productName || '').trim();
+  if (!kw) return null;
+  const { items } = await searchItems(kw, { pages: 1, resources: SEARCH_RESOURCES });
+  if (paapiStatus().available) {
+    // PA API healthy: its result is authoritative. Empty == genuine not-found.
+    return items
+      .map(it => ({ asin: it.asin, title: it.itemInfo?.title?.displayValue || '', price: paapiCandidatePrice(it) }))
+      .filter(c => c.asin && c.title);
+  }
+  // PA API unavailable mid-run — fall back to the paid DataForSEO products search so
+  // ASIN repair still runs. The loud degradation alert has already fired via onPaapiAlert.
+  return searchAmazonForViaDataForSEO(kw);
+}
+
+export async function findBestASIN(product) {
   const searchResults = await searchAmazonFor(product.n);
   if (!searchResults || !searchResults.length) return null;
   let best = null;
-  for (const r of searchResults) {
-    const title = r.title || r.product_title;
-    const asin = r.asin || r.data_asin;
+  for (const { asin, title, price } of searchResults) {
     if (!asin || !title) continue;
     const match = titleMatches(product.n, title, product.cap, product.b);
     // Never let a wrong-capacity listing become the chosen candidate.
     if (match.capConflict) continue;
     if (!best || match.score > best.score) {
-      best = { asin, title, score: match.score, price: r.price?.current || r.price_from };
+      best = { asin, title, score: match.score, price };
     }
   }
   return best;
@@ -518,7 +570,7 @@ async function runPaapiGate(probeAsins, { fatal, force }) {
   return pf;
 }
 
-(async () => {
+if (IS_MAIN) (async () => {
   const parts = await loadCatalog();
   // Before anything consults the override table: count how many products each
   // key answers for, so a class key is refused rather than believed.
@@ -528,8 +580,8 @@ async function runPaapiGate(probeAsins, { fatal, force }) {
   console.log(`━━━ Verifier v2 ━━━`);
   console.log(`  Tier: ${flags.tier}${ONLY_IDS ? ` (scoped to ${ONLY_IDS.size}-id allowlist)` : ''}`);
   console.log(`  Products: ${products.length}`);
-  console.log(`  Est cost: $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} (sellers endpoint)${flags.fixAsins ? ' + ASIN searches' : ''}`);
-  console.log(`  Bills: sellers-task only${flags.fixAsins ? ' + products-endpoint ASIN searches (!!)' : ' — NO products-endpoint ASIN searches'}`);
+  console.log(`  Est cost: $${(products.length * COST_PER_SELLERS_TASK).toFixed(2)} (sellers endpoint)${flags.fixAsins ? ' + ASIN searches (PA API first — $0 unless PA API is gated)' : ''}`);
+  console.log(`  Bills: sellers-task only${flags.fixAsins ? ' + ASIN searches via PA API SearchItems (FREE); paid DataForSEO products-search ONLY as failover if PA API is gated' : ' — NO ASIN searches'}`);
   console.log(`  First 5 ids: ${ids.slice(0, 5).join(', ')}`);
   console.log(`  Last 5 ids:  ${ids.slice(-5).join(', ')}`);
   console.log(`  Mode: ${flags.dryRun ? 'DRY RUN' : flags.autoFix ? 'AUTO-FIX' : 'REPORT-ONLY'}${flags.fixAsins ? ' + ASIN repair' : ''}`);
