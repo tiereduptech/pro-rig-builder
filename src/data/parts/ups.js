@@ -16,10 +16,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
         "price": 199.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
-        "priceSource": "3p",
-        "priceSeller": "Provantage LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -52,7 +52,9 @@ export default [
         "priceConfidence": "confirmed"
       }
     },
-    "ff": "Tower"
+    "ff": "Tower",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99931,
@@ -79,7 +81,9 @@ export default [
         "priceConfidence": "confirmed"
       }
     },
-    "ff": "Tower"
+    "ff": "Tower",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99932,
@@ -103,7 +107,7 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99702,
@@ -131,7 +135,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99703,
@@ -168,9 +172,11 @@ export default [
         "price": 62.36,
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-17"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-24",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "needsReview": true,
@@ -199,7 +205,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-12"
+        "priceUnconfirmedAt": "2026-08-24"
       }
     },
     "needsReview": true,
@@ -223,10 +229,10 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B06VY6FXMM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     }
@@ -250,7 +256,7 @@ export default [
         "url": "https://www.amazon.com/dp/B000FBK3QK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "1 Stop Computer Shop, Inc.",
         "priceResolvedVia": "paapi"
@@ -285,7 +291,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99709,
@@ -305,10 +311,10 @@ export default [
         "price": 120,
         "url": "https://www.amazon.com/dp/B00DBAA696?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
-        "priceSource": "3p",
-        "priceSeller": "Focus Camera LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     }
