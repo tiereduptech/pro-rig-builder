@@ -505,6 +505,7 @@ function writeReports(allIssues, asinRepairs, meta) {
   let md = `# Catalog ASIN Verification Report\n\n`;
   md += `**Run at:** ${meta.timestamp}\n**Tier:** ${meta.tier}\n**Products checked:** ${meta.checked}\n`;
   md += `**With issues:** ${allIssues.filter(e => e.issues.length).length}\n**Mode:** ${meta.mode}\n`;
+  if (meta.paapi) md += `**PA API confirmed (free):** ${meta.paapi.paConfirmed} | **DataForSEO fallback rows (billed):** ${meta.paapi.dfsFallback}\n`;
   md += `**ASIN repairs:** ${asinRepairs.length}\n\n---\n\n## Summary\n\n`;
   for (const [type, list] of Object.entries(byType).sort((a, b) => b[1].length - a[1].length)) {
     md += `- **${type}**: ${list.length}\n`;
