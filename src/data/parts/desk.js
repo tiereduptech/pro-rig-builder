@@ -18,7 +18,7 @@ export default [
         "price": 808,
         "url": "https://www.amazon.com/dp/B07RS4TPVW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "UPLIFT Desk",
         "priceResolvedVia": "paapi",
@@ -51,7 +51,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -76,7 +76,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -98,7 +98,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07Q3TGL7M?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
         "priceResolvedVia": "paapi"
@@ -127,7 +127,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-17"
+        "priceUnconfirmedAt": "2026-08-24"
       }
     }
   },
@@ -148,7 +148,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BJNNF81W?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
         "priceResolvedVia": "paapi"
@@ -172,7 +172,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07MMDD779?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
         "priceResolvedVia": "paapi"
@@ -201,7 +201,9 @@ export default [
         "priceSeller": "V I V O",
         "priceResolvedVia": "paapi"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99309,
@@ -222,7 +224,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -249,7 +251,9 @@ export default [
         "priceSeller": "V I V O",
         "priceResolvedVia": "paapi"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 99311,
@@ -268,7 +272,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DDT9Y99Z?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "LVB Furniture",
         "priceResolvedVia": "paapi"

@@ -28,7 +28,7 @@ export default [
     },
     "bench": 99,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -57,7 +57,7 @@ export default [
     },
     "bench": 86,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -86,7 +86,7 @@ export default [
     },
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -105,10 +105,10 @@ export default [
         "url": "https://www.amazon.com/Logitech-Widescreen-Calling-Recording-Desktop/dp/B006JH8T3S/ref=sr_1_1?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-1&tag=tiereduptech-20",
         "price": 68.5,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Online Gaming Store",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -146,8 +146,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -168,12 +168,12 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-C922x-Pro-Stream-Webcam/dp/B01LXCDPPK/ref=sr_1_14?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-14&tag=tiereduptech-20",
-        "price": 116.79,
+        "price": 89.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
-        "priceSource": "3p",
-        "priceSeller": "Kyras Deals LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -196,10 +196,10 @@ export default [
         "url": "https://www.amazon.com/Logitech-Mic-Enabled-Certified-Microsoft-Compatible/dp/B09DVGV7BH/ref=sr_1_4?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-4&tag=tiereduptech-20",
         "price": 69.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
-        "priceSeller": "LW OUTLET",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "Hot Audio",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -224,8 +224,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -248,10 +248,10 @@ export default [
         "url": "https://www.amazon.com/Insta360-Link-2C-Noise-Canceling-Streaming/dp/B0DDTGY8FG/ref=sr_1_1?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-1&tag=tiereduptech-20",
         "price": 149.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Insta360 Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -272,12 +272,12 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-2017-Brio-4K-Webcam/dp/B01N5UOYC4/ref=sr_1_35?crid=HAN2OPTSB7WU&dib=eyJ2IjoiMSJ9.-d6QW9KDdjTdsF-cm_1lKjh8xG2w92PgrZLofe05k9SY5ZVx13HMmxhu3XdfbSqH6gSA9PeoqZXcFmPOdoVCMOKrPw8HsgykwJckKmqG2XUQLdYZg8CsKlHDOx2nFWwdb87Fo3Yq6dpLVRohDzkDlmQkegOcXHUahzJzTakY3DlNeKyBzaVWVF1i0cQVEoQR6PfojgZo3aa1DZb-0-i2PRc3VM53sv4YrLFG_1xdRL4.PXIVAwtxGM2O1IsMdZbDBjZk39iNVF-k2elbeNFUcDQ&dib_tag=se&keywords=Razer+Kiyo+Pro&qid=1777130742&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BKiyo%2BPro%2Caps%2C252&sr=8-35&xpid=paxmvJBrnqNjM&tag=tiereduptech-20",
-        "price": 109.99,
+        "price": 95.17,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "Trends Goods",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "Corebuy",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -300,10 +300,10 @@ export default [
         "url": "https://www.amazon.com/AutoFocus-Microphone-NexiGo-Streaming-Compatible/dp/B08931JJLV/ref=sr_1_44?crid=NJ0CRHMHL91P&dib=eyJ2IjoiMSJ9.U4aoqx6hhrpJ-Ohs6nmpufS1aJIpycqBT1bWa9Vbwc-p77zqWCcx4WrJD5ClkA_whZA8g5y3lF5VZQ9TLh57MuKkaI2yRILNkE62lYeAgHGOBG2aHZtplsq0sTmew6VXhZKt7ythJdyv8zdpIkq_gfJcp_DewV7LGROc_-pAOs_CWKuPAaWBxWvbpxCJTwtr1rxZJ5g11xMs22KIdRePgHgK4sBLP6X2N_A_F5RTNU0.Ij3OFqC0PdASzPKwp93PdwGDxsfNsGDCOnExWr8wJ4s&dib_tag=se&keywords=Razer+Kiyo&qid=1777130798&sprefix=Razer%2BKiyo%2Caps%2C101&sr=8-44&xpid=bINkmmP0uMtqX&tag=tiereduptech-20",
         "price": 33.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "NexiGo USA",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -326,10 +326,10 @@ export default [
         "url": "https://www.amazon.com/Insta360-Link-Tracking-Noise-Canceling-Streaming/dp/B0DDTH3HX8/ref=sr_1_2?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.hJSkz3sQocJ_XCbsNwK4Y3temiZftjZIuidlhDIadNoQXKABVsp77EPw6rHnKJx1R-qngsQAdOX0sqTkWeSRhG1izla6v08YK8wrLT1k8iZIvEbkynROzlrFsb0x0w2TYbK-LJJxWKuW_SSc36I4cQRlNOCBcBNsLizYq0fqPaFDqzOCoNGtE5sCtWuOHeLW_4xHVYYgLJGQGg8isGwxuvy6buEL0X_i-P__43l6pgk.mN3Z7VdEXLQJQlwmmIyFQy4QNCEn4e7DcXTHtRZb0pM&dib_tag=se&keywords=Insta360+webcam&qid=1777130736&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-2&tag=tiereduptech-20",
         "price": 199.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Insta360 Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -352,10 +352,10 @@ export default [
         "url": "https://www.amazon.com/Webcam-Streaming-Recording-Built-Correction/dp/B07M6Y7355/ref=sr_1_20?crid=2YLWT04NN0AX&dib=eyJ2IjoiMSJ9.wFokn-eKRu9L3nRf8EvVLlftN9vnyOPxV0aOnhOh7idInPFVKRIVV0Uu46poJmBwwSQgB0IdWlSn2cRE6UG040OJzr-uuiSlcCD7MNsdPT2F-YvFIFyHorIaBs5-JDpLFu9LS05stx8i95YLvqWc4nWRF1ItyjMDOMwOA6Mc1vIPKlXup_NZdftDP-yFS0QgBEFDZ5s9RrnOPijOA4SUksOCeX3BFC6O3rnE24LQ_e4.HU_k5xG3BmNJxtaSsInvJg82ppnktuwczcI-AC9PWJA&dib_tag=se&keywords=Aukey+webcam&qid=1777130752&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Aukey%2Bwebcam%2Caps%2C211&sr=8-20&xpid=s7TLFTCwXxRia&tag=tiereduptech-20",
         "price": 33.14,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "EMEET Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -378,7 +378,7 @@ export default [
         "url": "https://www.amazon.com/OBSBOT-Lightweight-Microphone-Space-Grey/dp/B0D9W7J9SK/ref=sr_1_22?crid=FSN84WU0UR66&dib=eyJ2IjoiMSJ9.b2Sz-jyj-WUkz2JGIumihOIPDzhip9843zgZ5SlVjUj5cr_GCnxJkjS9RYWMUt2Nt-Uj0qjyaaQaSBL2CaAtBTAjzRLhrXzSt_IfQ1QrvkdlzLvXF_dlDUDmm7-r3dHo-y2kGsFSkFRPuhtTfs434gDIZTu4fevNK4oiS5By72MjGKqK4-dMyCvfHHxqAhHNM6SAXYogElJ00gHjlE4uhOi6dV1aCmX8SXfrMbdLtmk.RcfsA1j5PovddvFyNz-FEsvDn2GyRtjJEpyMzA5CtwM&dib_tag=se&keywords=Insta360+webcam&qid=1777130738&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Insta360%2Bwebcam%2Caps%2C156&sr=8-22&xpid=8Ae2VxcKgdFGq&tag=tiereduptech-20",
         "price": 99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "OBSBOT Official Store",
         "priceResolvedVia": "paapi",
@@ -407,7 +407,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "OBSBOT Official Store",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceResolvedVia": "paapi"
       }
     },
@@ -452,9 +452,9 @@ export default [
         "price": 197.99,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "RDA TRADING",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "Bannister Hillshire",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -492,7 +492,9 @@ export default [
     "resolution": "4K",
     "fps": 30,
     "autofocus": true,
-    "bench": 87
+    "bench": 87,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 100092,
@@ -508,10 +510,10 @@ export default [
         "url": "https://www.amazon.com/EMEET-Microphone-C960-2025-Version/dp/B0DSPJPRXD/ref=sr_1_7?crid=EW1N21FRQ61U&dib=eyJ2IjoiMSJ9.jPNsGEG4koGA9IWUTRKVVtoGAXhh2AFxmylYPBLDCpYxwA8pbFif40Z2-U0yypxvhySTVMa_7EIm1G2_M3TIJN0XOq2WXUvQqFUTgJ7xAsvhA1IeTQDcVYbyG7vw6-BtyckVgb-HVTNfzrQm3c9kMq5rwKjs5SGiwFh2nHTXzI942rrTk83o1nHgAIX2VHWKRIKVq32l7se9y0gi8gmwT0OCLQ90SwU4ZH3NOTQUrnw.W05UqzZZtPz0Id3nuPFxAvBT09KeEtazcm8mdzxHZ24&dib_tag=se&keywords=Logitech+C920&qid=1777130737&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BC920%2Caps%2C251&sr=8-7&tag=tiereduptech-20",
         "price": 28.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "EMEET Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -544,7 +546,9 @@ export default [
     "resolution": "1080p",
     "fps": 30,
     "autofocus": true,
-    "bench": 64
+    "bench": 64,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 100094,
@@ -570,7 +574,9 @@ export default [
     "resolution": "1440p",
     "fps": 60,
     "autofocus": true,
-    "bench": 83
+    "bench": 83,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 100282,
@@ -910,7 +916,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0G3T1QKWL?tag=tiereduptech-20",
         "price": 249.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Insta360 Direct",
         "priceResolvedVia": "paapi",
@@ -936,7 +942,7 @@ export default [
         "price": 199.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Insta360 Direct",
         "priceResolvedVia": "paapi"
@@ -978,8 +984,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1001,10 +1007,10 @@ export default [
         "url": "https://www.amazon.com/dp/B08CS18WVP?tag=tiereduptech-20",
         "price": 69.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1026,10 +1032,10 @@ export default [
         "url": "https://www.amazon.com/dp/B07TZT4Q89?tag=tiereduptech-20",
         "price": 159.97,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1056,7 +1062,7 @@ export default [
     "addedAt": "2026-05-15T17:05:43.653Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-08-17",
+    "quarantinedAt": "2026-08-24",
     "reviewFlags": [
       "relink:no-price"
     ],
@@ -1077,10 +1083,10 @@ export default [
         "url": "https://www.amazon.com/dp/B097QZGRCQ?tag=tiereduptech-20",
         "price": 58.6,
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-17",
-        "priceResolvedVia": "dataforseo",
+        "priceSource": "3p",
+        "priceSeller": "Guthry Sales LLC",
+        "priceConfirmedAt": "2026-08-24",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1103,7 +1109,7 @@ export default [
         "price": 27.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-24",
         "priceSource": "3p",
         "priceSeller": "Acetaken Mount",
         "priceResolvedVia": "paapi"
