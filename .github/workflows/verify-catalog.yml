@@ -27,6 +27,14 @@ on:
         required: false
         default: true
         type: boolean
+      mode:
+        description: 'report-only (verify + report, NO writes) or auto-fix (write price/ASIN fixes to main)'
+        required: false
+        default: report-only
+        type: choice
+        options:
+          - report-only
+          - auto-fix
       force_paapi_unconfigured:
         description: 'SELF-TEST: pretend PA API creds are missing, to prove the gate fails the job loudly'
         required: false
@@ -66,6 +74,10 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "tier=${{ github.event.inputs.tier }}" >> $GITHUB_OUTPUT
             echo "fix_asins=${{ github.event.inputs.fix_asins }}" >> $GITHUB_OUTPUT
+            # Manual dispatch defaults to report-only (the input default): a rewritten
+            # pricing path must never write to main on an operator's say-so without a
+            # report read first. auto-fix is opt-in per dispatch.
+            echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
           else
             case "${{ github.event.schedule }}" in
               "0 8 */2 * *") echo "tier=1" >> $GITHUB_OUTPUT ;;
@@ -75,6 +87,9 @@ jobs:
               *)             echo "tier=1" >> $GITHUB_OUTPUT ;;
             esac
             echo "fix_asins=true" >> $GITHUB_OUTPUT
+            # A cron carries no inputs; the nightly MUST keep writing, so it is always
+            # auto-fix. Only a manual dispatch can choose report-only.
+            echo "mode=auto-fix" >> $GITHUB_OUTPUT
           fi
 
       - name: Run catalog verifier
@@ -87,7 +102,11 @@ jobs:
           AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
           AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
         run: |
-          ARGS="--tier ${{ steps.tier.outputs.tier }} --auto-fix"
+          # mode is 'report-only' or 'auto-fix' → the script's --report-only / --auto-fix
+          # flag directly. report-only runs both passes (so meta.paapi.dfsFallback is
+          # real) but commits nothing; the change-detection gate below then finds no
+          # diff and the push step is skipped.
+          ARGS="--tier ${{ steps.tier.outputs.tier }} --${{ steps.tier.outputs.mode }}"
           if [ "${{ steps.tier.outputs.fix_asins }}" = "true" ]; then
             ARGS="$ARGS --fix-asins"
           fi
@@ -117,6 +136,20 @@ jobs:
         with:
           name: duplicate-asins
           path: verify-reports/duplicate-asins-*.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      # The verifier's own report — carries meta.paapi.{paConfirmed,dfsFallback}, the
+      # PA-settled-for-$0 vs DataForSEO-billed split. This is what a report-only dry
+      # outing is read for before anyone commits an auto-fix run.
+      - name: Upload the verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-verification-report
+          path: |
+            verify-reports/report-*.json
+            verify-reports/report-*.md
           if-no-files-found: warn
           retention-days: 90
 
@@ -184,5 +217,13 @@ jobs:
         run: |
           echo "## Catalog Verification Results" >> $GITHUB_STEP_SUMMARY
           echo "- **Tier**: ${{ steps.tier.outputs.tier }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: ${{ steps.tier.outputs.mode }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Changes committed**: ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          # Surface the Migration 3 spend split straight from the report meta so a
+          # report-only run's DataForSEO fallback count is visible without downloading
+          # the artifact. dfsFallback = rows that still billed DataForSEO this run.
+          REPORT=$(ls -t verify-reports/report-*.json 2>/dev/null | head -1)
+          if [ -n "$REPORT" ]; then
+            node -e "const fs=require('fs');const r=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const p=(r.meta&&r.meta.paapi)||{};const s=process.env.GITHUB_STEP_SUMMARY;fs.appendFileSync(s,'- **Rows checked**: '+(r.meta&&r.meta.checked)+'\n');fs.appendFileSync(s,'- **PA API confirmed (\$0)**: '+(p.paConfirmed??'n/a')+'\n');fs.appendFileSync(s,'- **DataForSEO fallback rows (billed)**: '+(p.dfsFallback??'n/a')+'\n');" "$REPORT"
+          fi
