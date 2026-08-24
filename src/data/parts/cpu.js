@@ -1501,21 +1501,23 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445839715628626867913000",
-        "itemNumber": "9SIC4RUKSV5124",
+        "sku": "4458318179910264573436757",
+        "itemNumber": "9SIC3U3KN44182",
         "sellerClass": "marketplace",
-        "price": 122.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839715628626867913000&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5000-series-ryzen-5-5600-vermeer-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113736%3Fitem%3D9SIC4RUKSV5124",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-736-V03.jpg",
+        "price": 116.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318179910264573436757&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5000-series-ryzen-5-5600-vermeer-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113747%3Fitem%3D9SIC3U3KN44182",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A25VD2308170HWGSB01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:47:36.213Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchedAt": "2026-08-24T12:32:28.280Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "igpu": false,
     "upc": "00730143314190",
-    "mpn": "Ryzen 5 5600"
+    "mpn": "Ryzen 5 5600",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24"
   },
   {
     "id": 10033,
@@ -2939,11 +2941,11 @@ export default [
         "sku": "445831531452921848314480",
         "itemNumber": "9SIBZW0M081037",
         "sellerClass": "marketplace",
-        "price": 199.81,
+        "price": 192.85,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831531452921848314480&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-13th-gen-core-i3-13100-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118432%3Fitem%3D9SIBZW0M081037",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-432-05.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:24:47.507Z",
+        "matchedAt": "2026-08-24T12:32:23.365Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -6642,11 +6644,11 @@ export default [
         "sku": "4458317901509828354083043",
         "itemNumber": "9SIBZW0KFS7554",
         "sellerClass": "marketplace",
-        "price": 340.42,
+        "price": 329.24,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317901509828354083043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00850%3Fitem%3D9SIBZW0KFS7554",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD22013008UMB86E.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:24:46.949Z",
+        "matchedAt": "2026-08-24T12:32:47.565Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7311,13 +7313,13 @@ export default [
         "sku": "445836655147968632470640",
         "itemNumber": "9SIC7VBM152513",
         "sellerClass": "marketplace",
-        "price": 172.98,
+        "price": 172.8,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836655147968632470640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5600gt-ryzen-5-5000-series-cezanne-zen-3-socket-am4%2Fp%2FN82E16819113816%3Fitem%3D9SIC7VBM152513",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-816-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:40.404Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.75
+        "matchedAt": "2026-08-24T12:32:35.631Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cores": 6,
@@ -7781,11 +7783,11 @@ export default [
         "sku": "4458314889560687914682150",
         "itemNumber": "9SIBZW0KFS7488",
         "sellerClass": "marketplace",
-        "price": 54.66,
+        "price": 52.05,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314889560687914682150&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-7th-gen-core-i5-7400-kaby-lake-lga-1151-desktop-cpu-processor%2Fp%2FN82E16819117731%3Fitem%3D9SIBZW0KFS7488",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-117-731-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:26:50.739Z",
+        "matchedAt": "2026-08-24T12:32:22.816Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -10129,16 +10131,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445832228215229127790715",
-        "itemNumber": "9SIC3U3KN45511",
-        "sellerClass": "marketplace",
-        "price": 999.28,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832228215229127790715&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-threadripper-pro-5955wx-chagall-pro-socket-swrx8-desktop-cpu-processor%2Fp%2FN82E16819113776%3Fitem%3D9SIC3U3KN45511",
+        "sku": "4458317175313465191661819",
+        "itemNumber": "N82E16819113776",
+        "sellerClass": "official",
+        "price": 1379,
+        "saleprice": 779,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317175313465191661819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-threadripper-pro-5955wx-chagall-pro-socket-swrx8-desktop-cpu-processor%2Fp%2FN82E16819113776%3Fitem%3DN82E16819113776",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-776-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:33.019Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8181818181818182
+        "matchedAt": "2026-08-24T12:32:47.948Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.771Z",

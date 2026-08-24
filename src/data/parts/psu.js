@@ -4953,11 +4953,11 @@ export default [
         "itemNumber": "1HU-004H-000S7",
         "sellerClass": "official",
         "price": 479.9,
-        "saleprice": 399.9,
+        "saleprice": 389.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833237672345245385565&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-004H-000S7%3Fitem%3D1HU-004H-000S7",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS2305100X28CPC9.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.326Z",
+        "matchedAt": "2026-08-24T12:32:45.998Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13935,11 +13935,11 @@ export default [
         "itemNumber": "N82E16817222047",
         "sellerClass": "official",
         "price": 229.9,
-        "saleprice": 209.9,
+        "saleprice": 174.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583984632794476889867&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817222047%3Fitem%3DN82E16817222047",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-222-047-11.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.620Z",
+        "matchedAt": "2026-08-24T12:32:42.296Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13968,11 +13968,11 @@ export default [
         "itemNumber": "N82E16817222049",
         "sellerClass": "official",
         "price": 309.9,
-        "saleprice": 299.9,
+        "saleprice": 279.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838457598016259327237&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817222049%3Fitem%3DN82E16817222049",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-222-049-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.623Z",
+        "matchedAt": "2026-08-24T12:32:47.948Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -15402,11 +15402,11 @@ export default [
         "itemNumber": "N82E16817955006R",
         "sellerClass": "official",
         "price": 159.99,
-        "saleprice": 74.99,
+        "saleprice": 59.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312079968488527099934&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-850-w-cybenetics-gold-power-supply-black-pg-850g%2Fp%2FN82E16817955006R%3Fitem%3DN82E16817955006R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-006-17.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.699Z",
+        "matchedAt": "2026-08-24T12:32:42.341Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

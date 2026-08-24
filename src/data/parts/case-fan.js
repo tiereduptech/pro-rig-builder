@@ -9562,12 +9562,13 @@ export default [
         "itemNumber": "1YF-01RK-00002",
         "sellerClass": "official",
         "price": 79.99,
+        "saleprice": 67.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833580195193921690678&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RK-00002%3Fitem%3D1YF-01RK-00002",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BZH7S2508120YP8QCD4.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:30.525Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-24T12:29:29.683Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 15,

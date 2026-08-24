@@ -6381,7 +6381,10 @@ export default [
     "bench": 62,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24",
+    "mpn": "Peerless Assassin 120 SE V3"
   },
   {
     "id": 80123,
@@ -8125,7 +8128,10 @@ export default [
     "bench": 66,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-24",
+    "mpn": "PA120SE BLACK"
   },
   {
     "id": 80156,
@@ -9028,7 +9034,8 @@ export default [
     "value": 42,
     "bench": 49,
     "radSize": "120",
-    "cfm": 60
+    "cfm": 60,
+    "mpn": "RR-S4WW-20PA-R1"
   },
   {
     "id": 80174,

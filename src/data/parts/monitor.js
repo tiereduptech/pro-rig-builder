@@ -6484,11 +6484,11 @@ export default [
         "sku": "445837990565307599233593",
         "itemNumber": "9SIA4P0HTV4270",
         "sellerClass": "marketplace",
-        "price": 154.99,
+        "price": 149,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837990565307599233593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-va24dqsb-23-8-full-hd%2Fp%2FN82E16824281153%3Fitem%3D9SIA4P0HTV4270",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-153-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:39.695Z",
+        "matchedAt": "2026-08-24T12:29:38.692Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13213,14 +13213,14 @@ export default [
         "priceConfirmedAt": "2026-08-24"
       },
       "newegg": {
-        "sku": "445838040472639903555672",
-        "itemNumber": "9SIA8X5M4A6688",
+        "sku": "44583181741035400026639",
+        "itemNumber": "9SIA4P0KPS1372",
         "sellerClass": "marketplace",
-        "price": 1309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838040472639903555672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-000W-00DF9%3Fitem%3D9SIA8X5M4A6688",
+        "price": 1162.41,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583181741035400026639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-000W-00DF9%3Fitem%3D9SIA4P0KPS1372",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/15Z-000W-00DF9-02.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:15:48.225Z",
+        "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14342,10 +14342,11 @@ export default [
         "itemNumber": "0JC-0006-00YC3R",
         "sellerClass": "official",
         "price": 299.99,
+        "saleprice": 197.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314398753134933535920&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC3R%3Fitem%3D0JC-0006-00YC3R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD260105152DAS2B.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:29.514Z",
+        "matchedAt": "2026-08-24T12:29:28.731Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       },

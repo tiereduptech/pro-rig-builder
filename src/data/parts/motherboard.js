@@ -325,16 +325,16 @@ export default [
         "priceUnconfirmedAt": "2026-08-24"
       },
       "newegg": {
-        "sku": "445838204776275859776673",
-        "itemNumber": "9SIC80CM2X9961",
+        "sku": "4458312080713472554985393",
+        "itemNumber": "9SIC6E1M4H7166",
         "sellerClass": "marketplace",
-        "price": 192,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838204776275859776673&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650m-mortar-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144558%3Fitem%3D9SIC80CM2X9961",
+        "price": 187.56,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312080713472554985393&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650m-mortar-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144558%3Fitem%3D9SIC6E1M4H7166",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-558-09.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:41.952Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8
+        "matchedAt": "2026-08-24T12:32:32.174Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "value": 32,
@@ -7038,14 +7038,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445834748234082289410591",
-        "itemNumber": "9SIC80CM2Y1606",
+        "sku": "445831082726859289467846",
+        "itemNumber": "9SIC70UM4H1872",
         "sellerClass": "marketplace",
-        "price": 119.44,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834748234082289410591&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-a620i-ax-mini-itx-motherboard-amd-a620-am5%2Fp%2FN82E16813145470%3Fitem%3D9SIC80CM2Y1606",
+        "price": 118.38,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831082726859289467846&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-a620i-ax-mini-itx-motherboard-amd-a620-am5%2Fp%2FN82E16813145470%3Fitem%3D9SIC70UM4H1872",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-470-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:45.084Z",
+        "matchedAt": "2026-08-24T12:32:34.433Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11402,14 +11402,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445835050626087022770529",
-        "itemNumber": "9SIC6E1M4H6846",
+        "sku": "445831579713931542764890",
+        "itemNumber": "9SIC7VBM152211",
         "sellerClass": "marketplace",
-        "price": 197.85,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835050626087022770529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650e-a-elite-x-ice-atx-motherboards-amd-b650-am5%2Fp%2FN82E16813145500%3Fitem%3D9SIC6E1M4H6846",
+        "price": 197.13,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831579713931542764890&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b650e-a-elite-x-ice-atx-motherboards-amd-b650-am5%2Fp%2FN82E16813145500%3Fitem%3D9SIC7VBM152211",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-500-07.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:30:17.575Z",
+        "matchedAt": "2026-08-24T12:32:35.491Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -18551,13 +18551,13 @@ export default [
         "itemNumber": "N82E16813144674",
         "sellerClass": "official",
         "price": 369.99,
-        "saleprice": 360.99,
+        "saleprice": 339.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583748233631049934817&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-z890-carbon-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144674%3Fitem%3DN82E16813144674",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-674-07.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:45.888Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-24T12:32:41.662Z",
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -19119,11 +19119,11 @@ export default [
         "itemNumber": "1JW-000C-01B12",
         "sellerClass": "official",
         "price": 479.99,
-        "saleprice": 474.99,
+        "saleprice": 471.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313621996513852326951&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pro-ws-z890-ace-se-motherboards-intel-lga-1851%2Fp%2F1JW-000C-01B12%3Fitem%3D1JW-000C-01B12",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8N2D2510221965FK2A.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:23:56.055Z",
+        "matchedAt": "2026-08-24T12:32:45.998Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
