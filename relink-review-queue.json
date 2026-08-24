@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generatedAt": "2026-08-23T03:49:09.957Z",
+    "generatedAt": "2026-08-24T03:53:32.848Z",
     "policy": "REPORT ONLY — never auto-relinked"
   },
   "totals": {
     "queued": 198,
     "wrongProduct": 72,
     "closeButWrong": 126,
-    "live": 70,
+    "live": 53,
     "priceDivergent": 52
   },
   "queue": [
@@ -183,7 +183,7 @@
       "gateScore": 0,
       "capConflict": false,
       "storedPrice": 2499,
-      "amazonPrice": 493.95,
+      "amazonPrice": 493.94,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -80.2,
@@ -323,7 +323,7 @@
       "gateScore": 0,
       "capConflict": false,
       "storedPrice": 1299,
-      "amazonPrice": 493.95,
+      "amazonPrice": 493.94,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -62,
@@ -412,6 +412,26 @@
       "needsReview": true
     },
     {
+      "class": "close-but-wrong",
+      "id": 95003,
+      "cat": "Keyboard",
+      "asin": "B07QQB9VCV",
+      "storedName": "Logitech G915 TKL Lightspeed",
+      "amazonTitle": "Logitech G PRO Mechanical TKL Tenkeyless Gaming Keyboard (Clicky) - Black",
+      "scoreStoredInAmazon": 0.5,
+      "scoreAmazonInStored": 0.22,
+      "gateScore": 0.5,
+      "capConflict": false,
+      "storedPrice": 229,
+      "amazonPrice": 101.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -55.5,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
       "class": "wrong-product",
       "id": 98750,
       "cat": "Chair",
@@ -484,26 +504,6 @@
       "capConflict": false,
       "storedPrice": 269,
       "amazonPrice": 139.95,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -48,
-      "priceDivergent": true,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 95003,
-      "cat": "Keyboard",
-      "asin": "B07QQB9VCV",
-      "storedName": "Logitech G915 TKL Lightspeed",
-      "amazonTitle": "Logitech G PRO Mechanical TKL Tenkeyless Gaming Keyboard (Clicky) - Black",
-      "scoreStoredInAmazon": 0.5,
-      "scoreAmazonInStored": 0.22,
-      "gateScore": 0.5,
-      "capConflict": false,
-      "storedPrice": 229,
-      "amazonPrice": 119,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -48,
@@ -592,6 +592,26 @@
       "needsReview": true
     },
     {
+      "class": "close-but-wrong",
+      "id": 85005,
+      "cat": "CaseFan",
+      "asin": "B0D49Q4CGM",
+      "storedName": "Corsair iCUE SP120 RGB Elite 3-Pack",
+      "amazonTitle": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.12,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 35,
+      "amazonPrice": 48.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 40,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
       "class": "wrong-product",
       "id": 90012,
       "cat": "Monitor",
@@ -610,6 +630,26 @@
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 96015,
+      "cat": "WiFiCard",
+      "asin": "B08KHV7H1S",
+      "storedName": "USB WiFi Adapter, AC1300Mbps Dual Band 5dBi High Gain Antenna 2.4GHz/ 5GHz Wireless Network Adapter ",
+      "amazonTitle": "TP-Link USB WiFi Adapter for Desktop PC, AC1300 Dual High Gain Antenna",
+      "scoreStoredInAmazon": 0.5,
+      "scoreAmazonInStored": 0.64,
+      "gateScore": 0.5,
+      "capConflict": false,
+      "storedPrice": 21.56,
+      "amazonPrice": 29.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 39.1,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -647,26 +687,6 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -37.4,
-      "priceDivergent": true,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 85005,
-      "cat": "CaseFan",
-      "asin": "B0D49Q4CGM",
-      "storedName": "Corsair iCUE SP120 RGB Elite 3-Pack",
-      "amazonTitle": "CORSAIR RS120 ARGB 120mm PWM Fans – Daisy-Chain Connection – Low-Noise – Magnetic Dome Bearing – Triple Pack – Black",
-      "scoreStoredInAmazon": 0.33,
-      "scoreAmazonInStored": 0.12,
-      "gateScore": 0.33,
-      "capConflict": false,
-      "storedPrice": 35,
-      "amazonPrice": 47.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 37.1,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -849,7 +869,7 @@
       "priceDeltaPct": -27.2,
       "priceDivergent": true,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -929,7 +949,7 @@
       "priceDeltaPct": -20,
       "priceDivergent": true,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -943,10 +963,10 @@
       "gateScore": 0.3,
       "capConflict": false,
       "storedPrice": 26.99,
-      "amazonPrice": 21.99,
+      "amazonPrice": 21.98,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -18.5,
+      "priceDeltaPct": -18.6,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": false
@@ -987,26 +1007,6 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -17.6,
-      "priceDivergent": true,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "wrong-product",
-      "id": 60027,
-      "cat": "PSU",
-      "asin": "B0DXVPBJJ2",
-      "storedName": "DeepCool PX1200G",
-      "amazonTitle": "CORSAIR RM1200e (2023) ATX 3.1 PCIe 5.1 Ready 1200W Power Supply – Black",
-      "scoreStoredInAmazon": 0,
-      "scoreAmazonInStored": 0,
-      "gateScore": 0,
-      "capConflict": false,
-      "storedPrice": 159,
-      "amazonPrice": 184.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 16.3,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -1132,6 +1132,26 @@
       "needsReview": true
     },
     {
+      "class": "close-but-wrong",
+      "id": 60036,
+      "cat": "PSU",
+      "asin": "B0DPR86ZC8",
+      "storedName": "RM850e (2025) Fully Modular Low-Noise ATX Power Supply with 12V-2x6 Cable – ATX 3.1 & PCIe 5.1 Compliant, Cybenetics ...",
+      "amazonTitle": "CORSAIR RM850e (2025) ATX 3.1 PCIe 5.1 Ready 850W Power Supply – Black",
+      "scoreStoredInAmazon": 0.38,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.38,
+      "capConflict": false,
+      "storedPrice": 104.99,
+      "amazonPrice": 119,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 13.3,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
       "class": "wrong-product",
       "id": 90002,
       "cat": "Monitor",
@@ -1150,26 +1170,6 @@
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 96015,
-      "cat": "WiFiCard",
-      "asin": "B08KHV7H1S",
-      "storedName": "USB WiFi Adapter, AC1300Mbps Dual Band 5dBi High Gain Antenna 2.4GHz/ 5GHz Wireless Network Adapter ",
-      "amazonTitle": "TP-Link USB WiFi Adapter for Desktop PC, AC1300 Dual High Gain Antenna",
-      "scoreStoredInAmazon": 0.5,
-      "scoreAmazonInStored": 0.64,
-      "gateScore": 0.5,
-      "capConflict": false,
-      "storedPrice": 21.56,
-      "amazonPrice": 23.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 11.3,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -1293,20 +1293,20 @@
     },
     {
       "class": "close-but-wrong",
-      "id": 85092,
-      "cat": "CaseFan",
-      "asin": "B0DJVMKDV1",
-      "storedName": "UNI Fan SL Wireless 120mm ARGB Fan - Triple Pack - 2.4 GHz Wireless Signal for RGB & Fans Control - Customizable Ligh...",
-      "amazonTitle": "Lian Li UNI Fan SL Wireless-120-Controller Included-White-12SL1W3W",
-      "scoreStoredInAmazon": 0.2,
-      "scoreAmazonInStored": 0.33,
-      "gateScore": 0.2,
+      "id": 60046,
+      "cat": "PSU",
+      "asin": "B0DPR5RZ1T",
+      "storedName": "RM1000e (2025) Fully Modular Low-Noise ATX Power Supply with 12V-2x6 Cable – ATX 3.1 & PCIe 5.1 Compliant, Cybenetics...",
+      "amazonTitle": "CORSAIR RM1000e (2025) ATX 3.1 PCIe 5.1 Ready 1000W Power Supply – Black",
+      "scoreStoredInAmazon": 0.38,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.38,
       "capConflict": false,
-      "storedPrice": 94.8,
-      "amazonPrice": 101.98,
+      "storedPrice": 129.99,
+      "amazonPrice": 139.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 7.6,
+      "priceDeltaPct": 7.7,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -1387,6 +1387,26 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -6.5,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 85092,
+      "cat": "CaseFan",
+      "asin": "B0DJVMKDV1",
+      "storedName": "UNI Fan SL Wireless 120mm ARGB Fan - Triple Pack - 2.4 GHz Wireless Signal for RGB & Fans Control - Customizable Ligh...",
+      "amazonTitle": "Lian Li UNI Fan SL Wireless-120-Controller Included-White-12SL1W3W",
+      "scoreStoredInAmazon": 0.2,
+      "scoreAmazonInStored": 0.33,
+      "gateScore": 0.2,
+      "capConflict": false,
+      "storedPrice": 94.8,
+      "amazonPrice": 100.81,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 6.3,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -1487,26 +1507,6 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -4.8,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 80163,
-      "cat": "CPUCooler",
-      "asin": "B0D83QQWDD",
-      "storedName": "Hydroshift 360 AIO - Pre-Installed 3 x 28MM Fans, Side-Mounted Coolant Pathway, 2.88” LCD Screen 480 x 480 Res. Captu...",
-      "amazonTitle": "Lian Li Hydroshift 360 AIO LCD-Black-HSLCD36SB",
-      "scoreStoredInAmazon": 0.25,
-      "scoreAmazonInStored": 0.57,
-      "gateScore": 0.25,
-      "capConflict": false,
-      "storedPrice": 119.99,
-      "amazonPrice": 125.3,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 4.4,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": false
@@ -1623,7 +1623,7 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 327.62,
-      "amazonPrice": 318.99,
+      "amazonPrice": 319.01,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -2.6,
@@ -1749,7 +1749,7 @@
       "priceDeltaPct": 2,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1789,7 +1789,7 @@
       "priceDeltaPct": 1.2,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1869,7 +1869,7 @@
       "priceDeltaPct": 0.4,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1909,7 +1909,7 @@
       "priceDeltaPct": -0.3,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2069,7 +2069,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -2143,6 +2143,26 @@
       "gateScore": 0.17,
       "capConflict": true,
       "storedPrice": 79,
+      "amazonPrice": null,
+      "priceSource": null,
+      "merchant": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "noOffer": true,
+      "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 60027,
+      "cat": "PSU",
+      "asin": "B0DXVPBJJ2",
+      "storedName": "DeepCool PX1200G",
+      "amazonTitle": "CORSAIR RM1200e (2023) ATX 3.1 PCIe 5.1 Ready 1200W Power Supply – Black",
+      "scoreStoredInAmazon": 0,
+      "scoreAmazonInStored": 0,
+      "gateScore": 0,
+      "capConflict": false,
+      "storedPrice": 159,
       "amazonPrice": null,
       "priceSource": null,
       "merchant": null,
@@ -2373,26 +2393,6 @@
     },
     {
       "class": "close-but-wrong",
-      "id": 30114,
-      "cat": "GPU",
-      "asin": "B0GPKCL34W",
-      "storedName": "NVIDIA GeForce RTX 5080 Graphic Card - 16 GB GDDR7-7680 x 4320-2.62 GHz Boost Clock - 256 bit Bus Width - PCI Express...",
-      "amazonTitle": "PNY NVIDIA GeForce RTX™ 5080 Slim Dual-Fan Dual-Slot OC Graphics Card",
-      "scoreStoredInAmazon": 0.28,
-      "scoreAmazonInStored": 0.45,
-      "gateScore": 0.28,
-      "capConflict": false,
-      "storedPrice": 1799.99,
-      "amazonPrice": 1799.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
       "id": 30389,
       "cat": "GPU",
       "asin": "B0BFD8DSM3",
@@ -2429,7 +2429,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2449,7 +2449,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2469,7 +2469,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2549,7 +2549,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2609,7 +2609,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2629,7 +2629,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2693,46 +2693,6 @@
     },
     {
       "class": "close-but-wrong",
-      "id": 60036,
-      "cat": "PSU",
-      "asin": "B0DPR86ZC8",
-      "storedName": "RM850e (2025) Fully Modular Low-Noise ATX Power Supply with 12V-2x6 Cable – ATX 3.1 & PCIe 5.1 Compliant, Cybenetics ...",
-      "amazonTitle": "CORSAIR RM850e (2025) ATX 3.1 PCIe 5.1 Ready 850W Power Supply – Black",
-      "scoreStoredInAmazon": 0.38,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.38,
-      "capConflict": false,
-      "storedPrice": 119,
-      "amazonPrice": 119,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 60046,
-      "cat": "PSU",
-      "asin": "B0DPR5RZ1T",
-      "storedName": "RM1000e (2025) Fully Modular Low-Noise ATX Power Supply with 12V-2x6 Cable – ATX 3.1 & PCIe 5.1 Compliant, Cybenetics...",
-      "amazonTitle": "CORSAIR RM1000e (2025) ATX 3.1 PCIe 5.1 Ready 1000W Power Supply – Black",
-      "scoreStoredInAmazon": 0.38,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.38,
-      "capConflict": false,
-      "storedPrice": 139.99,
-      "amazonPrice": 139.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
       "id": 60047,
       "cat": "PSU",
       "asin": "B0F1NF61BQ",
@@ -2749,7 +2709,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2769,7 +2729,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2789,7 +2749,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2990,6 +2950,26 @@
       "priceDivergent": false,
       "noOffer": true,
       "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 80163,
+      "cat": "CPUCooler",
+      "asin": "B0D83QQWDD",
+      "storedName": "Hydroshift 360 AIO - Pre-Installed 3 x 28MM Fans, Side-Mounted Coolant Pathway, 2.88” LCD Screen 480 x 480 Res. Captu...",
+      "amazonTitle": "Lian Li Hydroshift 360 AIO LCD-Black-HSLCD36SB",
+      "scoreStoredInAmazon": 0.25,
+      "scoreAmazonInStored": 0.57,
+      "gateScore": 0.25,
+      "capConflict": false,
+      "storedPrice": 119.99,
+      "amazonPrice": 119.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -3910,6 +3890,26 @@
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 99610,
+      "cat": "ExternalOptical",
+      "asin": "B006HUMYCO",
+      "storedName": "ASUS LITE Portable USB 2.0 Slim 8X DVD/Burner +/- Rewriter External Drive, Compatible with Both Mac ",
+      "amazonTitle": "Asus Storage SDRW-08D2S-U/BLK/G/AS Slim DVDRW 8X USB Black Retail",
+      "scoreStoredInAmazon": 0.21,
+      "scoreAmazonInStored": 0.3,
+      "gateScore": 0.21,
+      "capConflict": false,
+      "storedPrice": 32.99,
+      "amazonPrice": 32.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
