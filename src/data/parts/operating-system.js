@@ -62,8 +62,9 @@ export default [
         "inStock": true,
         "sku": "6499300",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-26"
       },
       "newegg": {
         "sku": "4458312977573271908579071",

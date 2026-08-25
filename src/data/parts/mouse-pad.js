@@ -46,7 +46,7 @@ export default [
         "sku": "6671122",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -337,12 +337,12 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6417112&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6417112.p%3FskuId%3D6417112",
-        "price": 26.98,
+        "price": 29.99,
         "inStock": true,
         "sku": "6417112",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -575,12 +575,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=2822575&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F2822575.p%3FskuId%3D2822575",
-        "price": 10.99,
+        "price": 11.99,
         "inStock": true,
         "sku": "2822575",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -604,7 +604,7 @@ export default [
         "sku": "4384400",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "padSize": "Medium",
@@ -628,12 +628,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=5869549&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F5869549.p%3FskuId%3D5869549",
-        "price": 3.2,
+        "price": 7.99,
         "inStock": false,
         "sku": "5869549",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -652,12 +652,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6285961&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6285961.p%3FskuId%3D6285961",
-        "price": 23.99,
+        "price": 59.99,
         "inStock": true,
         "sku": "6285961",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -681,7 +681,7 @@ export default [
         "sku": "6428299",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -705,7 +705,7 @@ export default [
         "sku": "6428301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -729,7 +729,7 @@ export default [
         "sku": "6476680",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Hard",
@@ -778,7 +778,7 @@ export default [
         "sku": "6499566",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "padSize": "XXL",
@@ -802,7 +802,7 @@ export default [
         "sku": "6514575",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -831,7 +831,7 @@ export default [
         "sku": "6514577",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -855,7 +855,7 @@ export default [
         "sku": "6514578",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -874,12 +874,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6578719&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6578719.p%3FskuId%3D6578719",
-        "price": 19.99,
+        "price": 34.99,
         "inStock": false,
         "sku": "6578719",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "surface": "Cloth",
@@ -936,7 +936,7 @@ export default [
         "sku": "6614722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "padSize": "XXL",
@@ -960,7 +960,7 @@ export default [
         "sku": "6484056",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "padSize": "Medium",
@@ -984,7 +984,7 @@ export default [
         "sku": "6484067",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "padSize": "XXL",

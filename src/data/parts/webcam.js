@@ -595,7 +595,7 @@ export default [
         "sku": "4503702",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -620,7 +620,7 @@ export default [
         "sku": "5579380",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -645,7 +645,7 @@ export default [
         "sku": "5761912",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "4K",
@@ -694,7 +694,7 @@ export default [
         "sku": "6321794",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -719,7 +719,7 @@ export default [
         "sku": "6366565",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -768,7 +768,7 @@ export default [
         "sku": "6520150",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -788,12 +788,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6550199&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6550199.p%3FskuId%3D6550199",
-        "price": 39.99,
+        "price": 24.99,
         "inStock": true,
         "sku": "6550199",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "1080p",
@@ -818,7 +818,7 @@ export default [
         "sku": "6571655",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "4K",
@@ -843,7 +843,7 @@ export default [
         "sku": "6595407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "4K",
@@ -868,7 +868,7 @@ export default [
         "sku": "6595408",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "4K",
@@ -893,7 +893,7 @@ export default [
         "sku": "9928354",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "resolution": "720p",
