@@ -427,6 +427,28 @@ export function partitionByPaapi(products, paItems) {
   return { paSettled, needDfs };
 }
 
+// Of the rows PA could not confirm, which ones may reach the PAID pass?
+//
+// A quarantined row (needsReview) is already hidden from every buy surface —
+// App.jsx filters !needsReview before the catalog reaches the page. Paying
+// DataForSEO to re-price something no visitor can see buys nothing, and it was
+// buying it on EVERY run: 692 of 2163 tier-1 rows (32%) were quarantined, and 246
+// of them were both quarantined and billed. At 2x/day that is $22.44/month for
+// answers about rows nobody sees.
+//
+// The skip is on the PAID pass ONLY. Skipped rows still ride the free PA pass, so
+// a row that recovers is still SEEN to recover — which is what lifting a stale
+// quarantine depends on. Dropping the row entirely would make recovery
+// undetectable and turn quarantine into a one-way door.
+export function partitionPaidPass(unconfirmed) {
+  const needDfs = [];
+  const quarantineSkipped = [];
+  for (const entry of unconfirmed) {
+    (entry.product?.needsReview ? quarantineSkipped : needDfs).push(entry);
+  }
+  return { needDfs, quarantineSkipped };
+}
+
 function applyFixes(parts, perProductFixes) {
   let changed = 0;
   for (const p of parts) {
@@ -681,7 +703,22 @@ if (IS_MAIN) (async () => {
   console.log(`\nPASS 1 (PA API GetItems): resolving ${allAsins.length} ASINs in ${Math.ceil(allAsins.length / PAAPI_BATCH)} free call(s)...`);
   const paItems = await resolveItems(allAsins);
 
-  const { paSettled, needDfs } = partitionByPaapi(products, paItems);
+  const { paSettled, needDfs: unconfirmed } = partitionByPaapi(products, paItems);
+
+  // Quarantined rows skip the PAID pass — see partitionPaidPass. Reported, never
+  // silent: same rule as the link-verified skip above, because a skip that quietly
+  // shrinks coverage is indistinguishable from coverage that broke.
+  const { needDfs, quarantineSkipped } = partitionPaidPass(unconfirmed);
+  if (quarantineSkipped.length) {
+    const saved = quarantineSkipped.length * COST_PER_SELLERS_TASK;
+    console.log(`\nQuarantine skip: ${quarantineSkipped.length} row(s) already needsReview → not sent to the paid pass ` +
+                `(saves $${saved.toFixed(2)} this run). They stay in the free PA pass so recovery is still visible.`);
+    const byCat = {};
+    for (const x of quarantineSkipped) byCat[x.product.c] = (byCat[x.product.c] || 0) + 1;
+    for (const [c, n] of Object.entries(byCat).sort((a, b) => b[1] - a[1])) {
+      console.log(`  ${String(n).padStart(4)}  ${c}`);
+    }
+  }
   const paSt = paapiStatus();
   console.log(`  PA API confirmed ${paSettled.length}/${products.length} rows for $0` +
               `${paSt.available ? '' : ` (PA API unavailable: ${paSt.disabledReason})`}` +
@@ -716,13 +753,33 @@ if (IS_MAIN) (async () => {
   } else {
     console.log(`\nNo DataForSEO sellers tasks needed — PA API confirmed every row. $0 spent on DataForSEO.`);
   }
-  PAAPI_RUN_SUMMARY = { paConfirmed: paSettled.length, dfsFallback: needDfs.length, ...paapiStatus() };
+  PAAPI_RUN_SUMMARY = {
+    paConfirmed: paSettled.length,
+    dfsFallback: needDfs.length,
+    quarantineSkipped: quarantineSkipped.length,
+    ...paapiStatus(),
+  };
 
   const allIssues = [];
   const perProductFixes = {};
   for (const { r, product, out } of pass1) {
     allIssues.push({ productId: r.productId, asin: r.asin, name: product.n, category: product.c, issues: out.issues });
     if (Object.keys(out.fixes).length) perProductFixes[r.productId] = out.fixes;
+  }
+
+  // Skipped rows still appear in the report, carrying no fixes. The population has
+  // to stay countable: this is the set piece 3 reads to decide what can be lifted,
+  // and a row that vanishes from the report cannot be reasoned about later.
+  for (const { product, asin, paItem } of quarantineSkipped) {
+    allIssues.push({
+      productId: product.id, asin, name: product.n, category: product.c,
+      issues: [{
+        type: 'quarantine_skipped', severity: 'low',
+        msg: `Already needsReview since ${product.quarantinedAt || 'unknown'} — skipped the paid pass; ` +
+             `PA API ${paItem ? 'returned the item but could not confirm a New buy box' : 'returned no item'}`,
+        stored: product.deals?.amazon?.price ?? null, amazon: null,
+      }],
+    });
   }
 
   // Drift-gate staleness: if a whole category drift-quarantines an implausible
