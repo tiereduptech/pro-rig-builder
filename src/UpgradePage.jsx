@@ -24,6 +24,7 @@ import { PARTS as RAW_PARTS, loadAllParts, subscribe as subscribeToParts } from 
 // together in their own tested module — see the header there for why comparing
 // a CPU throughput bench against a GPU graphics bench was giving wrong advice.
 import { gamingScore, analyzeBottleneck } from "./bottleneck.js";
+import { inferMoboGen } from "./mobo-gen.js";
 // Budget allocation lives in its own tested module — see the header there for why
 // a single GPU ceiling cannot serve both a GPU-only upgrade and a rig that also
 // needs a new CPU.
@@ -441,33 +442,6 @@ function candidateRAMs(specs, maxPrice) {
   return out;
 }
 
-// Map the user's motherboard string to the PCIe generation we can safely assume
-// for an NVMe drive on that board. CONSERVATIVE by design: a board "supports
-// Gen5" only if every SKU on that chipset guarantees a Gen5 M.2 slot; if it's
-// per-board (e.g. Z890, X670, B650), we floor to Gen4 so we never recommend an
-// unusable Gen5 drive on a Gen4-only motherboard. Default Gen3 on any unknown
-// or OEM string (Dell/HP/Lenovo) — same principle: never overpay.
-function inferMoboGen(moboStr) {
-  if (!moboStr || typeof moboStr !== "string") return 3;
-  const s = moboStr.toUpperCase();
-  // Gen4 chipsets — modern AM4/AM5 and recent Intel platforms (conservative floor)
-  // Trailing letter is optional ("B650" / "B650M" / "B650E" / "B650M-A") — a
-  // simple \b boundary won't match because the next char is a word char.
-  const hit = (pat) => new RegExp("\\b(?:" + pat + ")[A-Z]?\\b").test(s);
-  if (hit("B550|X570")) return 4;
-  if (hit("A620|B650|X670|B850")) return 4;
-  if (hit("H510|B560|H570|Z590")) return 4;
-  if (hit("B660|H670|Z690|B760|H770|Z790")) return 4;
-  if (hit("B860|Z890")) return 4;
-  // Gen3 chipsets — older AM4, all LGA1151/1200 entry, and AM5 B840
-  if (hit("A320|B350|X370|B450|X470|A520")) return 3;
-  if (hit("B840")) return 3;
-  if (hit("H110|B150|H170|Z170|B250|H270|Z270")) return 3;
-  if (hit("H310|B360|B365|H370|Z370|Z390")) return 3;
-  if (hit("H410|B460|H470|Z490")) return 3;
-  if (hit("H610")) return 3;
-  return 3;
-}
 
 function candidateStorages(wantGB, wantType, maxPrice, moboGen = 3) {
   if (!wantGB || !wantType) return [];
