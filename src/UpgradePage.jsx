@@ -343,13 +343,25 @@ function candidateGPUs(currentGPU, maxPrice) {
 // gamingScore: looks up a CPU's gaming-performance index (0-100) from
 // the curated gaming tier table. Falls back to PassMark bench when the
 // CPU is not in the table (Threadrippers, Xeons, obscure OEM chips).
+//
+// This runs inside sort() comparators over the whole CPU pool, so it is called
+// thousands of times per analysis. The table is uppercased ONCE here rather
+// than per call, and results are memoized per part object: a CPU profile of a
+// platform-refresh analysis put 70% of total time in this one function when it
+// rebuilt Object.entries() + toUpperCase() on every invocation.
+const GAMING_TIERS_UC = Object.entries(GAMING_TIERS).map(([model, score]) => [model.toUpperCase(), score]);
+const gamingScoreCache = new WeakMap();
 function gamingScore(cpu) {
   if (!cpu) return 0;
+  const cached = gamingScoreCache.get(cpu);
+  if (cached !== undefined) return cached;
   const name = (cpu.n || "").toUpperCase();
-  for (const [model, score] of Object.entries(GAMING_TIERS)) {
-    if (name.includes(model.toUpperCase())) return score;
+  let score = cpu.bench || 0;
+  for (let i = 0; i < GAMING_TIERS_UC.length; i++) {
+    if (name.includes(GAMING_TIERS_UC[i][0])) { score = GAMING_TIERS_UC[i][1]; break; }
   }
-  return cpu.bench || 0;
+  gamingScoreCache.set(cpu, score);
+  return score;
 }
 // cpuScoreForUseCase: gaming -> gaming index; else -> PassMark bench.
 function cpuScoreForUseCase(cpu, useCase) {
