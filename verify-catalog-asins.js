@@ -64,8 +64,11 @@ const AUTH = 'Basic ' + Buffer.from(`${LOGIN}:${PASSWORD}`).toString('base64');
 const BASE = 'https://api.dataforseo.com/v3';
 
 const TIERS = {
-  1: ['CPU', 'GPU', 'Motherboard', 'RAM', 'Storage', 'PSU', 'Case'],
-  2: ['CPUCooler', 'CaseFan', 'Monitor'],
+  // Tier 1 = the primary build components, verified twice a day. CPUCooler moved
+  // here from tier 2 on 2026-08-25: a cooler is a primary build component, and it
+  // was the one category in the primary set sitting on the slower cadence.
+  1: ['CPU', 'GPU', 'Motherboard', 'RAM', 'Storage', 'PSU', 'Case', 'CPUCooler'],
+  2: ['CaseFan', 'Monitor'],
   3: ['Keyboard', 'Mouse', 'Headset', 'Microphone', 'Webcam', 'MousePad', 'Chair', 'Desk'],
   4: ['SoundCard', 'EthernetCard', 'WiFiCard', 'OpticalDrive', 'ExtensionCables',
       'InternalLCD', 'InternalDisplay', 'ThermalPaste', 'ExternalStorage',
