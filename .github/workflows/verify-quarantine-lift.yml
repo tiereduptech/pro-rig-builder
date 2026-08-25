@@ -1,0 +1,113 @@
+name: Quarantine Lift Verification (read-only)
+
+# Asks Amazon, today, which shortlisted quarantine rows can actually come back.
+#
+# stale-quarantine-report.mjs narrows 2070 hidden rows to a shortlist from
+# stored state alone. Stored state cannot answer the two questions that decide a
+# lift — does the link still resolve, and does the price still match — so this
+# workflow re-checks the strictest tier of that shortlist (liftable AND
+# priceConfidence === 'confirmed') against the live PA API.
+#
+# Exists as a workflow because the Amazon credentials live in repo secrets, not
+# on any developer machine. Same creds verify-catalog.yml injects.
+#
+# READ-ONLY BY CONSTRUCTION, the same shape as mkpl-verdict.yml:
+# contents: read, no commit step, an assert-nothing-written step, and the script
+# writes only a report under catalog-build/ (which .gitignore excludes). Nothing
+# is un-hidden here. Acting on the verdicts is a separate, deliberate run.
+#
+# COST: free. ~542 unique ASINs / 10 per GetItems call = ~55 calls at ~1 req/s,
+# roughly a minute of API time, well under the pacing asin-identity-audit.yml
+# already sustains daily. No DataForSEO spend — this never enters that path.
+#
+# Dispatch-only: this is a measurement taken when someone is ready to act on it,
+# not a schedule. A cron would burn quota to produce a number nobody reads.
+
+on:
+  workflow_dispatch:
+
+# Read-only. This job does not touch main, so it deliberately does NOT join the
+# `main-writer` concurrency lock — no reason to serialise a read against ingest.
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The decision table is pure and unit-tested. Running it here means a
+      # broken verdict rule fails before it spends a run and before anyone reads
+      # a shortlist built by it.
+      - name: Test the verdict rules
+        run: node --test test/verify-quarantine-lift.test.js test/stale-quarantine-report.test.js
+
+      - name: Verify the shortlist against the live PA API (read-only)
+        env:
+          AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
+          AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
+        run: node verify-quarantine-lift.mjs catalog-build/quarantine-lift-verification.json
+
+      - name: Assert nothing written to the catalog
+        if: always()
+        run: |
+          if ! git diff --quiet -- src/data/parts.js src/data/parts/; then
+            echo "::error::catalog was modified by a read-only verification"
+            git diff --stat -- src/data/
+            exit 1
+          fi
+          echo "Clean: no catalog writes."
+
+      # The counts are the point of the run, so put them where they are read
+      # without downloading anything. A degraded run says so at the top rather
+      # than presenting its numbers as a result.
+      - name: Summarise
+        if: always()
+        run: |
+          F=catalog-build/quarantine-lift-verification.json
+          if [ ! -f "$F" ]; then
+            echo "No report produced — the run failed before writing one." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          node -e '
+            const r = JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"));
+            const t = r.totals, out = [];
+            if (r.degraded) out.push("> **DEGRADED RUN — do not act on these counts.** PA API reported `" +
+              (r.paapi.disabledReason || "alerts during the run") + "`.\n");
+            out.push("## Quarantine lift verification — " + r.generatedFor + "\n");
+            out.push("| Verdict | Rows | Meaning |");
+            out.push("|---|---:|---|");
+            out.push("| **CONFIRMED** | **" + t.confirmed + "** | Link resolves, New Buy Box, price matches — liftable |");
+            out.push("| price moved | " + t.priceMoved + " | Listing fine, our price is stale — re-price, not lift |");
+            out.push("| Buy Box unconfirmed | " + t.unconfirmed + " | Ambiguous — stays hidden |");
+            out.push("| affirmatively bad | " + t.bad + " | Out of stock, or nothing New offered |");
+            out.push("| ASIN returned nothing | " + t.notReturned + " | Dead link — needs a relink |");
+            out.push("| not checkable | " + t.unverifiable + " | No Amazon ASIN (Best Buy / Newegg only) |");
+            out.push("| | **" + t.shortlist + "** | shortlist total |");
+            const byCat = {};
+            for (const x of r.confirmed) byCat[x.category] = (byCat[x.category] || 0) + 1;
+            const cats = Object.entries(byCat).sort((a, b) => b[1] - a[1]);
+            if (cats.length) {
+              out.push("\n### Confirmed by category\n");
+              out.push(cats.map(([c, n]) => "`" + c + "` " + n).join(" · "));
+            }
+            out.push("\nFull report in the `quarantine-lift-verification` artifact. Nothing was written to the catalog.");
+            require("fs").appendFileSync(process.env.GITHUB_STEP_SUMMARY, out.join("\n") + "\n");
+          ' "$F"
+
+      - name: Upload verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quarantine-lift-verification
+          path: catalog-build/quarantine-lift-verification.json
+          if-no-files-found: error
