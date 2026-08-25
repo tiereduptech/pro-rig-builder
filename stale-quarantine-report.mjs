@@ -160,6 +160,11 @@ export function classify(p, today) {
     asin: asinOf(p),
     price: best ? best.price : null,
     retailer: best ? best.retailer : null,
+    // The Amazon price specifically, kept alongside the cheapest-retailer price.
+    // A live PA API check compares against THIS: `price` on a multi-retailer row
+    // is often Newegg, and checking a Newegg price against an Amazon Buy Box
+    // would fail every one of them.
+    amazonPrice: dealPrice(p.deals?.amazon) ?? null,
     msrp,
     msrpRatio: msrp && best ? +(best.price / msrp).toFixed(2) : null,
     quarantinedAt: p.quarantinedAt || null,
