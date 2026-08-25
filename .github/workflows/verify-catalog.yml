@@ -2,14 +2,21 @@ name: Catalog Verification
 
 on:
   schedule:
-    # Tier 1 — every 2 days at 08:00 UTC (CPU/GPU/Mobo/RAM/Storage/PSU/Case)
-    - cron: '0 8 */2 * *'
-    # Tier 2 — every 3 days at 09:00 UTC (CPUCooler/CaseFan/Monitor)
-    - cron: '0 9 */3 * *'
-    # Tier 3 — Mondays at 10:00 UTC (peripherals)
-    - cron: '0 10 * * 1'
-    # Tier 4 — Mondays at 11:00 UTC (accessories)
-    - cron: '0 11 * * 1'
+    # Slots are spaced so no two main-writer jobs overlap. Observed medians:
+    # verify 9.2 min (max 11.0), prerender 49.6 min (06:00-06:50), price-history
+    # 3.6 min (max 11.0 at 07:00), sftp-ingest 11.8 min (max 29.0 at 12:00).
+    # Every gap below is >= 45 min.
+    #
+    # Tier 1 — twice daily, 08:00 and 20:00 UTC (an even 12-hour split)
+    #          CPU/GPU/Mobo/RAM/Storage/PSU/Case/CPUCooler
+    - cron: '0 8 * * *'
+    - cron: '0 20 * * *'
+    # Tier 2 — daily at 09:00 UTC (CaseFan/Monitor)
+    - cron: '0 9 * * *'
+    # Tier 3 — daily at 10:00 UTC (peripherals)
+    - cron: '0 10 * * *'
+    # Tier 4 — daily at 11:00 UTC (accessories)
+    - cron: '0 11 * * *'
   workflow_dispatch:
     inputs:
       tier:
@@ -80,10 +87,11 @@ jobs:
             echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
           else
             case "${{ github.event.schedule }}" in
-              "0 8 */2 * *") echo "tier=1" >> $GITHUB_OUTPUT ;;
-              "0 9 */3 * *") echo "tier=2" >> $GITHUB_OUTPUT ;;
-              "0 10 * * 1")  echo "tier=3" >> $GITHUB_OUTPUT ;;
-              "0 11 * * 1")  echo "tier=4" >> $GITHUB_OUTPUT ;;
+              "0 8 * * *")  echo "tier=1" >> $GITHUB_OUTPUT ;;
+              "0 20 * * *") echo "tier=1" >> $GITHUB_OUTPUT ;;
+              "0 9 * * *")  echo "tier=2" >> $GITHUB_OUTPUT ;;
+              "0 10 * * *") echo "tier=3" >> $GITHUB_OUTPUT ;;
+              "0 11 * * *") echo "tier=4" >> $GITHUB_OUTPUT ;;
               *)             echo "tier=1" >> $GITHUB_OUTPUT ;;
             esac
             echo "fix_asins=true" >> $GITHUB_OUTPUT

@@ -36,10 +36,20 @@ export const COST_PER_SELLERS_TASK = 0.0015;
 export const COST_PER_ASIN_SEARCH = 0.0015;
 
 // Per-run spend ceiling — the universal backstop for BOTH scoped and full-tier runs.
-// $10 clears the largest legitimate run (full tier 1, 2114 rows, with --fix-asins:
-// worst case 2114 × ($0.0015 sellers + $0.0015 ASIN) = $6.34) with headroom, while a
-// blowup past ~3,300 fix-asins rows (or ~6,600 sellers-only) trips it.
-export const DOLLAR_CEILING = 10;
+//
+// Sized to clear the largest legitimate run with the same ~1.5x margin it has always
+// had, so the backstop still bites on a real blowup:
+//
+//   before  tier 1 = 2114 rows -> worst case 2114 × $0.0030 = $6.34, ceiling $10 (1.58x)
+//   now     tier 1 = 2563 rows -> worst case 2563 × $0.0030 = $7.69, ceiling $12 (1.56x)
+//
+// The growth is CPUCooler moving into tier 1 on 2026-08-25 (400 rows). Left at $10 the
+// margin would have fallen to 1.30x — 30% catalog growth from trip, and tier 1 is the
+// tier that grows. This is the same failure the flat POST_HARD_CAP caused above: a
+// guard that fires on a legitimate run takes the paid pipeline dark, which is worse
+// than the overspend it was protecting against. A blowup past ~4,000 fix-asins rows
+// (or ~8,000 sellers-only) still trips it.
+export const DOLLAR_CEILING = 12;
 // Stamp the cost basis like the price table. Past the max age the (non-fatal) age
 // warning fires: a projection built on an un-reconfirmed cost can silently
 // under-estimate a repriced API. Re-confirm DataForSEO task cost, then bump this.

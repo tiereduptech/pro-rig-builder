@@ -65,9 +65,13 @@ test('full-tier: missing tier baseline aborts (cannot verify scope)', () => {
 
 // ── PATH 4: universal dollar ceiling ─────────────────────────────────────────
 test('ceiling: a projected-overspend run aborts BEFORE posting', () => {
-  // 4000 rows within a 5000-row tier (passes band) but 4000 × $0.003 = $12 > $10.
-  const g = evaluateSpendGuard(4000, {
-    scoped: false, tier: '1', tierBaseline: 5000, fixAsins: true, todayISO: DOLLAR_CEILING_CALIBRATED_AT,
+  // Derived from DOLLAR_CEILING rather than hard-coded: this test used to say
+  // "4000 rows × $0.003 = $12 > $10" and silently stopped testing anything when the
+  // ceiling moved to $12 — 4000 rows then projected EXACTLY the ceiling, and the
+  // boundary is a strict >. Sized from the constant, it cannot rot that way again.
+  const rows = Math.ceil((DOLLAR_CEILING + 0.01) / (COST_PER_SELLERS_TASK + COST_PER_ASIN_SEARCH));
+  const g = evaluateSpendGuard(rows, {
+    scoped: false, tier: '1', tierBaseline: rows * 2, fixAsins: true, todayISO: DOLLAR_CEILING_CALIBRATED_AT,
   });
   assert.strictEqual(g.abort, true);
   assert.match(g.reason, /SPEND CEILING/);
