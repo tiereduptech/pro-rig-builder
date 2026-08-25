@@ -21,6 +21,9 @@ import React, { useState, useEffect, useMemo, useDeferredValue } from "react";
 // new categories land.
 import { PARTS as RAW_PARTS, loadAllParts, subscribe as subscribeToParts } from "./data/parts-frontend.js";
 import GAMING_TIERS from "../gaming-cpu-tiers.json";
+// CPU model parsing lives in its own tested module — see the header there for
+// why (X3D suffixes were being truncated into a different, real processor).
+import { extractCPUModel } from "./cpu-model.js";
 
 const isWorkstationGPU = (p) => {
   if (p.c !== "GPU") return false;
@@ -93,16 +96,6 @@ function extractGPUModel(name) {
   if (m) return `RX ${m[1]}${m[2] ? " " + m[2] : ""}`.trim();
   m = n.match(/ARC\s*([AB]\d{3})/);
   if (m) return `Arc ${m[1]}`.trim();
-  return null;
-}
-
-function extractCPUModel(name) {
-  if (!name) return null;
-  const n = name.toUpperCase();
-  let m = n.match(/CORE\s+(?:ULTRA\s+)?[IU]?[3579]-?(\d{3,5}[A-Z]{0,2})/);
-  if (m) return { brand: "Intel", model: m[1] };
-  m = n.match(/RYZEN\s*\d\s+(\d{4}[A-Z]{0,2})/);
-  if (m) return { brand: "AMD", model: m[1] };
   return null;
 }
 
