@@ -29,7 +29,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
+        "priceSeller": "Better Deals Online",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -861,7 +861,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "GizRenew",
+        "priceSeller": "Giz-Promo",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1005,7 +1005,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "DEVECHO INC",
+        "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2732,11 +2732,13 @@ export default [
         "price": 328.78,
         "url": "https://www.amazon.com/dp/B0BCF5CZ16?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
         "priceConfirmedAt": "2026-08-25",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "igpu": false,
@@ -3145,7 +3147,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Assiduus Global Inc",
+        "priceSeller": "Tech-Mart  (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3559,7 +3561,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Micro Center",
+        "priceSeller": "Skoodooh",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4066,7 +4068,9 @@ export default [
     "boostClock": 4600,
     "memType": "DDR5",
     "igpu": true,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 10133,
@@ -4556,7 +4560,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "ConfigureSystem",
+        "priceSeller": "StallionTek Certified",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6711,7 +6715,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "DM-PC",
+        "priceSeller": "Tech-Mart  (S/N Recorded)",
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
@@ -6794,12 +6798,12 @@ export default [
     "img": "https://m.media-amazon.com/images/I/51honjJxV7L._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 349.95,
+        "price": 295,
         "url": "https://www.amazon.com/dp/B086MN2XYL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Mega Micro Devices Inc",
+        "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6873,13 +6877,11 @@ export default [
         "price": 229,
         "url": "https://www.amazon.com/dp/B086M8441R?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "socket": "LGA1200",
@@ -6932,7 +6934,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Lyvion",
+        "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6994,13 +6996,11 @@ export default [
         "price": 149,
         "url": "https://www.amazon.com/dp/B086MMRW87?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
-        "priceConfirmedAt": "2026-08-19",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceSeller": "OneDealOutlet Online",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "socket": "LGA1200",
@@ -7023,7 +7023,7 @@ export default [
     "img": "https://m.media-amazon.com/images/I/61mHdcn-DIL._AC_UY218_.jpg",
     "deals": {
       "amazon": {
-        "price": 127.88,
+        "price": 138.87,
         "url": "https://www.amazon.com/dp/B092ZGRHB5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
@@ -7355,7 +7355,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Tech ANA LLC",
+        "priceSeller": "ALL4YOU.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7596,11 +7596,11 @@ export default [
       "amazon": {
         "asin": "B0DT7JDLDH",
         "url": "https://www.amazon.com/dp/B0DT7JDLDH?tag=tiereduptech-20",
-        "price": 599,
+        "price": 664.89,
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceSeller": "Prime Merchant LLC (SN Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7995,11 +7995,13 @@ export default [
         "url": "https://www.amazon.com/dp/B0GMLFFHS1?tag=tiereduptech-20",
         "price": 199.99,
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "cores": 16,
@@ -8341,13 +8343,11 @@ export default [
         "url": "https://www.amazon.com/dp/B09VCJN7HZ?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-21",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -8797,10 +8797,10 @@ export default [
         "url": "https://www.amazon.com/dp/B07S8DWC81?tag=tiereduptech-20",
         "price": 80,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },

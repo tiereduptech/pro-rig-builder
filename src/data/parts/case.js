@@ -348,7 +348,7 @@ export default [
     "color": "Black",
     "bench": 79,
     "needsReview": true,
-    "quarantinedAt": "2026-08-17"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 70007,
@@ -2568,7 +2568,7 @@ export default [
     "bench": 67,
     "bestbuyRemovedComp": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 70047,
@@ -3059,7 +3059,7 @@ export default [
     "linkVerifiedBy": "case-ingest",
     "recoveredBy": "case-ingest-2026-08-10",
     "needsReview": true,
-    "quarantinedAt": "2026-08-23"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 70054,
@@ -9451,7 +9451,7 @@ export default [
     "reviews": 270,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B09HZ2NCNT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
@@ -9989,7 +9989,7 @@ export default [
     "reviews": 164,
     "deals": {
       "amazon": {
-        "price": 116.91,
+        "price": 129.9,
         "url": "https://www.amazon.com/dp/B0D73VS65B?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
@@ -10551,12 +10551,14 @@ export default [
     "reviews": 118,
     "deals": {
       "amazon": {
-        "price": 178.72,
+        "price": 164.99,
         "url": "https://www.amazon.com/dp/B0BN696NKQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "discount": 20,
@@ -11394,13 +11396,11 @@ export default [
         "price": 239,
         "url": "https://www.amazon.com/dp/B0CS3QXYZL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445838733967842248489958",
@@ -11543,7 +11543,7 @@ export default [
     "color": "Black",
     "bench": 61,
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 70196,
@@ -12364,13 +12364,11 @@ export default [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0FN49S4LG?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-21",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14111,8 +14109,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ1V1H11?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -20673,7 +20671,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-15"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.790Z",
@@ -22953,14 +22951,15 @@ export default [
         "priceConfirmedAt": "2026-08-25"
       }
     },
-    "needsReview": false,
+    "needsReview": true,
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
     "maxCooler": 165,
     "drive35": 6,
-    "maxGPU": 455
+    "maxGPU": 455,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 102815,

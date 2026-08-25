@@ -149,15 +149,13 @@ export default [
       "amazon": {
         "asin": "B0FNMP513T",
         "url": "https://www.amazon.com/dp/B0FNMP513T?tag=tiereduptech-20",
-        "price": 93.53,
+        "price": 105.37,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "Byte-TechDirect",
-        "priceConfirmedAt": "2026-08-13",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceSeller": "Triplenet Pricing INC",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -1863,7 +1861,7 @@ export default [
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3841,12 +3839,14 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 175,
+        "price": 165.85,
         "url": "https://www.amazon.com/dp/B0FGDMTHY4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed",
+        "priceSource": "3p",
+        "priceSeller": "Amazon Japan",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       },
       "bestbuy": {
         "price": 159.99,
@@ -5170,16 +5170,14 @@ export default [
     "reviews": 5246,
     "deals": {
       "amazon": {
-        "price": 84.95,
+        "price": 79.95,
         "url": "https://www.amazon.com/dp/B00C9EYVGY?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-07",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "9SIBZT7KJ95174",
@@ -6101,9 +6099,11 @@ export default [
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B0F5SCHSZQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi"
       },
       "bestbuy": {
         "price": 219.99,
@@ -7737,7 +7737,7 @@ export default [
     "reviews": 703,
     "deals": {
       "amazon": {
-        "price": 34.99,
+        "price": 37.99,
         "url": "https://www.amazon.com/dp/B0CKXCFLPN?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "3p",
@@ -9520,8 +9520,8 @@ export default [
         "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -9627,8 +9627,8 @@ export default [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "V+W Goods",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
         "priceConfirmedAt": "2026-08-25"
@@ -10632,8 +10632,8 @@ export default [
         "price": 369,
         "url": "https://www.amazon.com/dp/B0CLB6FPX1?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Skoodooh",
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -15795,10 +15795,10 @@ export default [
         "price": 159.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -16488,7 +16488,7 @@ export default [
     "noise": 25.6,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100903,
@@ -19842,7 +19842,7 @@ export default [
       "amazon": {
         "asin": "B0D83M25X5",
         "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
-        "price": 144.33,
+        "price": 163.13,
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
@@ -20003,7 +20003,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Byte-TechDirect",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -20485,7 +20485,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
