@@ -13,7 +13,7 @@
 //  Bench scale: 0-100 (PassMark G3D/CPU Mark calibrated, RTX 4090 = 100).
 // =============================================================================
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useDeferredValue } from "react";
 // Lazy parts: PARTS starts empty and grows as category chunks arrive.
 // UpgradePage always needs the full catalog, so the component calls
 // loadAllParts() in a useEffect and re-renders via subscribeToParts.
@@ -980,8 +980,39 @@ export default function UpgradePage() {
   const [specs, setSpecs] = useState(null);
   const [loading, setLoading] = useState(true);
   const [refreshPath, setRefreshPath] = useState("value");  // "value" | "future" toggle for dead-end refreshes
+  // Live budget slider position (0-1000 raw). null until specs land, at which
+  // point it seeds from the URL budget; from then on the slider owns the value
+  // and the whole analysis re-derives from it.
+  const [sliderRaw, setSliderRaw] = useState(null);
 
   useEffect(() => { setSpecs(parseSpecs()); setLoading(false); }, []);
+
+  // Seed the slider from whatever budget arrived in ?specs= (or from the answers
+  // QuestionFlow merged in). Only ever runs while sliderRaw is still null, so a
+  // user drag is never clobbered by a later specs update.
+  useEffect(() => {
+    if (sliderRaw != null) return;
+    if (!specs || specs.budget === undefined || specs.budget === null) return;
+    // Same fallback the analysis has always used for an unparseable budget, so a
+    // malformed ?specs= still opens at $1,000 rather than collapsing to the floor.
+    const seed = Number(specs.budget) || 1000;
+    setSliderRaw(Math.round(budgetToSliderPct(seed) * BUDGET_RAW_PER_PCT));
+  }, [specs, sliderRaw]);
+
+  // The single budget the whole page is a function of. Once the slider is live
+  // it wins; before that we fall back to the URL value so first paint is right.
+  const budget = sliderRaw != null
+    ? sliderPctToBudget(sliderRaw / BUDGET_RAW_PER_PCT)
+    : (Number(specs?.budget) || 1000);
+
+  // The analysis runs on EVERY slider tick — no debounce, so the recommendations
+  // track the drag continuously. On a rig that needs a platform refresh a tick
+  // costs ~10ms, which is close enough to a frame that a slow machine would
+  // stutter, so the expensive tree renders at deferred priority: React keeps the
+  // thumb and the budget figure at input priority and lets the heavy re-render
+  // be interrupted. Nothing is delayed on a timer; it just yields to the drag.
+  const analysisBudget = useDeferredValue(budget);
+  const recalculating = analysisBudget !== budget;
 
   // Ensure the entire catalog is in memory before we run the analysis.
   // loadAllParts is idempotent so this is safe to call on every mount.
@@ -993,15 +1024,28 @@ export default function UpgradePage() {
     return subscribeToParts(() => _bumpTick(partsRev));
   }, []);
 
-  const analysis = useMemo(() => {
+  // Identifying the user's current parts does not depend on the budget, so it is
+  // kept out of the per-tick path: hoisting it keeps a slider drag off ~0.9ms of
+  // full-catalog scanning per frame, and — because the memo returns the SAME
+  // currentCPU object each tick — lets gamingScore's WeakMap actually hit.
+  const hardware = useMemo(() => {
     if (!specs) return null;
-
-    const budget = Number(specs.budget) || 1000;
-    const maxBudget = budget * (1 + BUDGET_OVERAGE);
     const currentGPU = findCatalogMatch("GPU", specs.gpu);
     const currentCPU = findCatalogMatch("CPU", specs.cpu);
     const cpuModel = extractCPUModel(specs.cpu);
-    const refresh = needsPlatformRefresh(currentCPU, cpuModel, specs.cpu_socket);
+    return {
+      currentGPU, currentCPU, cpuModel,
+      refresh: needsPlatformRefresh(currentCPU, cpuModel, specs.cpu_socket),
+      moboGen: inferMoboGen(specs.mobo),
+    };
+  }, [specs?.cpu, specs?.gpu, specs?.cpu_socket, specs?.mobo, partsRev]);
+
+  const analysis = useMemo(() => {
+    if (!specs || !hardware) return null;
+
+    const budget = analysisBudget;
+    const maxBudget = budget * (1 + BUDGET_OVERAGE);
+    const { currentGPU, currentCPU, cpuModel, refresh, moboGen } = hardware;
 
     const gpus = candidateGPUs(currentGPU, maxBudget);
     const useCase = specs.use_case || "gaming";
@@ -1009,7 +1053,6 @@ export default function UpgradePage() {
     const rams = candidateRAMs(specs, maxBudget);
     const storageWant = Number(specs.add_storage_gb) || 0;
     const storageType = specs.add_storage_type || "";
-    const moboGen = inferMoboGen(specs.mobo);
     const storages = storageWant > 0 ? candidateStorages(storageWant, storageType, maxBudget, moboGen) : [];
 
     const recommendedBuild = optimizeBuild(currentGPU, currentCPU, { gpus, cpus, rams, storages, useCase }, budget);
@@ -1058,7 +1101,28 @@ export default function UpgradePage() {
       recommendedBuild, refreshPaths,
       storageWant, storageType, moboGen,
     };
-  }, [specs, partsRev]);
+  }, [specs, hardware, analysisBudget, partsRev]);
+
+  // Keep the URL in step with the slider so the current budget is shareable and
+  // survives a reload. Re-encodes the same specs object the page was opened
+  // with, so the result stays a plain scanner URL rather than a second format.
+  // replaceState (not push) keeps a drag out of the back-button history, and the
+  // delay keeps a fast drag under Safari's ~100-calls-per-30s history rate limit.
+  useEffect(() => {
+    if (!specs || sliderRaw == null) return;
+    const id = setTimeout(() => {
+      try {
+        // btoa is the exact inverse of the atob in parseSpecs, so a spec that
+        // arrived from a scanner re-encodes byte-for-byte identically.
+        const encoded = btoa(JSON.stringify({ ...specs, budget: String(budget) }));
+        const url = window.location.pathname + "?specs=" + encodeURIComponent(encoded);
+        window.history.replaceState(window.history.state, "", url);
+      } catch (e) {
+        console.error("budget URL sync failed:", e);
+      }
+    }, 200);
+    return () => clearTimeout(id);
+  }, [budget, specs, sliderRaw]);
 
   if (loading) return <div style={{padding:40, textAlign:"center", color:"var(--dim)"}}>Loading your specs…</div>;
   if (!specs)  return <MissingSpecsView />;
@@ -1174,7 +1238,8 @@ export default function UpgradePage() {
         {rp && rp.sameSocket && rp.value && (
           <FutureproofBadge socket={rp.value.socket} />
         )}
-        <RecommendedBuildBanner budget={a.budget} build={rb} />
+        <RecommendedBuildBanner budget={budget} analysisBudget={a.budget} build={rb}
+          sliderRaw={sliderRaw} onSliderChange={setSliderRaw} recalculating={recalculating} />
         {a.bottleneck && <BottleneckAnalysisCard bn={a.bottleneck} />}
         <UpgradeStrategyExplanation analysis={a}/>
         <PSUWarning watts={a.psuWattsNeeded} />
@@ -1363,11 +1428,16 @@ function PlatformRefreshAlert({reason}) {
   );
 }
 
-function RecommendedBuildBanner({budget, build}) {
+// `budget` is the live slider value and drives the headline figure, so it tracks
+// the thumb exactly. `analysisBudget` is the (possibly one frame older) value the
+// current build was actually costed against — over/unused are computed from THAT,
+// so the arithmetic on screen is always self-consistent even mid-drag.
+function RecommendedBuildBanner({budget, analysisBudget, build, sliderRaw, onSliderChange, recalculating}) {
   const cost = build?.cost || 0;
-  const over = cost > budget;
-  const overPct = budget > 0 ? ((cost - budget) / budget) * 100 : 0;
-  const unused = budget - cost;
+  const basis = analysisBudget ?? budget;
+  const over = cost > basis;
+  const overPct = basis > 0 ? ((cost - basis) / basis) * 100 : 0;
+  const unused = basis - cost;
   return (
     <div style={{background:"var(--bg2)", borderRadius:12, border:"1px solid var(--bdr)", padding:"16px 20px", marginBottom:20}}>
       <div style={{display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:12}}>
@@ -1377,13 +1447,27 @@ function RecommendedBuildBanner({budget, build}) {
         </div>
         <div style={{textAlign:"right"}}>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, letterSpacing:1.5}}>RECOMMENDED BUILD TOTAL</div>
-          <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)"}}>
+          <div style={{fontFamily:"var(--ff)", fontSize:26, fontWeight:800, color: over ? "#FFB020" : "var(--txt)", opacity: recalculating ? 0.55 : 1, transition:"opacity .12s"}}>
             ${cost.toLocaleString()}
             {over && <span style={{fontSize:12, marginLeft:8, fontWeight:600}}>(+{overPct.toFixed(0)}% over)</span>}
             {!over && unused > 50 && <span style={{fontSize:12, marginLeft:8, fontWeight:500, color:"var(--dim)"}}>(${unused.toLocaleString()} unused)</span>}
           </div>
         </div>
       </div>
+      {sliderRaw != null && (
+        <div style={{marginTop:16}}>
+          <input type="range" min={0} max={100 * BUDGET_RAW_PER_PCT} value={sliderRaw}
+            aria-label="Upgrade budget"
+            aria-valuetext={`$${budget.toLocaleString()}`}
+            onChange={(e) => onSliderChange(Number(e.target.value))}
+            style={{width:"100%", accentColor:"var(--accent)", cursor:"pointer"}} />
+          <div style={{display:"flex", justifyContent:"space-between", fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", marginTop:6}}>
+            <span>${BUDGET_MIN.toLocaleString()}</span>
+            <span>Drag to re-plan your upgrade</span>
+            <span>${BUDGET_MAX.toLocaleString()}</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -1650,10 +1734,32 @@ function CoolerRow({rec}) {
 // the answers into `specs` so the existing analysis runs unchanged.
 
 // Old exe budget curve: $300–$8000, eased so low budgets get finer control.
+// Mirrors MainWindow.xaml.cs UpdateBudgetLabelFromSlider() exactly — same
+// exponent, same range, same $25 snap — so an identical drag in the desktop
+// scanner and on the web lands on the same dollar figure.
+const BUDGET_MIN   = 300;
+const BUDGET_MAX   = 8000;
+const BUDGET_CURVE = 2.5;
+const BUDGET_SNAP  = 25;
+// Slider inputs run 0-1000 rather than 0-100: the curve is steep at the top,
+// where whole-percent steps would jump $200 at a time. Tenths land within the
+// $25 snap quantum across the whole range, matching the exe's continuous WPF
+// slider. RAW_PER_PCT converts between the two.
+const BUDGET_RAW_PER_PCT = 10;
+
 function sliderPctToBudget(pct) {
   const t = pct / 100;
-  const raw = 300 + Math.pow(t, 2.5) * (8000 - 300);
-  return Math.round(raw / 25) * 25;  // snap to $25, matching the exe
+  const raw = BUDGET_MIN + Math.pow(t, BUDGET_CURVE) * (BUDGET_MAX - BUDGET_MIN);
+  return Math.round(raw / BUDGET_SNAP) * BUDGET_SNAP;  // snap to $25, matching the exe
+}
+
+// Inverse of sliderPctToBudget: the slider position (0-100) that produces a
+// given dollar figure. Used to seed the live slider from an incoming ?specs=
+// budget so a shared or reloaded URL opens with the thumb already in place.
+// Round-trips every snapped budget in the range without drift.
+function budgetToSliderPct(budget) {
+  const clamped = Math.max(BUDGET_MIN, Math.min(BUDGET_MAX, Number(budget) || BUDGET_MIN));
+  return 100 * Math.pow((clamped - BUDGET_MIN) / (BUDGET_MAX - BUDGET_MIN), 1 / BUDGET_CURVE);
 }
 
 const COOLER_OPTIONS = [
@@ -1770,7 +1876,7 @@ function QuestionFlow({ specs, onComplete }) {
   const [storageGB, setStorageGB]         = useState(0);
   const [coolerType, setCoolerType]       = useState(null);
 
-  const budget = sliderPctToBudget(sliderVal / 10);  // raw 0-1000 → 0-100 pct for the curve
+  const budget = sliderPctToBudget(sliderVal / BUDGET_RAW_PER_PCT);  // raw 0-1000 → 0-100 pct for the curve
   const storageReady = storageChoice === "no" || (storageType && storageGB > 0);
   const canSubmit = budget > 0 && !!coolerType && storageReady;
 
@@ -1804,11 +1910,11 @@ function QuestionFlow({ specs, onComplete }) {
         <div style={{fontFamily:"var(--ff)", fontSize:32, fontWeight:800, color:"var(--accent)", textAlign:"center", marginBottom:14}}>
           ${budget.toLocaleString()}
         </div>
-        <input type="range" min={0} max={1000} value={sliderVal}
+        <input type="range" min={0} max={100 * BUDGET_RAW_PER_PCT} value={sliderVal}
           onChange={(e) => setSliderVal(Number(e.target.value))}
           style={{width:"100%", accentColor:"var(--accent)", cursor:"pointer"}} />
         <div style={{display:"flex", justifyContent:"space-between", fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", marginTop:6}}>
-          <span>$300</span><span>$8,000</span>
+          <span>${BUDGET_MIN.toLocaleString()}</span><span>${BUDGET_MAX.toLocaleString()}</span>
         </div>
       </div>
 
