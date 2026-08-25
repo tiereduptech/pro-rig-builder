@@ -108,3 +108,49 @@ test("the verdict is suppressed for productivity, where it would contradict the 
   // Defaults to gaming when no use case is supplied.
   assert.ok(analyzeBottleneck(cpu, gpu(45)));
 });
+
+test("the CPU side is measured by the workload, not always by gaming", () => {
+  // A Ryzen 7 9800X3D is a 100 for frames and ~60 for throughput — eight cores is
+  // not many for an export queue. Both readings are right for their own workload;
+  // only the gaming one was ever shown.
+  const x3d = { n: "AMD Ryzen 7 9800X3D", bench: 57, threads: 16 };
+  const fastGpu = gpu(85);
+  assert.equal(analyzeBottleneck(x3d, fastGpu, "gaming").who, "Balanced");
+  assert.equal(analyzeBottleneck(x3d, fastGpu, "content").who, "CPU",
+    "for rendering, an 8-core chip behind a fast GPU IS the limiting part");
+});
+
+test("gaming verdicts are byte-identical — the gaming path is unchanged", () => {
+  // cpuScoreFor(cpu, "gaming") IS gamingScore, so nothing about gaming moves.
+  for (const [name, bench, gpuBench] of [
+    ["AMD Ryzen 7 9800X3D", 57, 100], ["AMD Ryzen 7 5800X3D", 40, 84],
+    ["Intel Core i5-12400F", 33, 45], ["AMD Ryzen 5 1600", 12, 100],
+    ["AMD Ryzen 7 9800X3D", 57, 11],
+  ]) {
+    const v = analyzeBottleneck(catalogCPU(name, bench), gpu(gpuBench), "gaming");
+    const expected = gamingScore(catalogCPU(name, bench)) / gpuBench;
+    const who = expected < 0.75 ? "CPU" : expected > 1.4 ? "GPU" : "Balanced";
+    assert.equal(v.who, who, name);
+  }
+});
+
+test("advice text matches the workload rather than always talking about resolution", () => {
+  const cpuBound = { n: "AMD Ryzen 5 1600", bench: 12, threads: 12 };
+  const g = gpu(100);
+  // Gaming keeps its resolution framing.
+  assert.match(analyzeBottleneck(cpuBound, g, "gaming").detail, /1080p/);
+  // Content and AI must not mention gaming resolutions.
+  for (const uc of ["content", "ai"]) {
+    const d = analyzeBottleneck(cpuBound, g, uc).detail;
+    assert.doesNotMatch(d, /1080p|1440p|4K/, `${uc} detail should not talk about resolution: ${d}`);
+    assert.ok(d.length > 40, `${uc} detail should be substantive`);
+  }
+  // Each workload says something different.
+  const details = ["gaming", "content", "ai"].map((uc) => analyzeBottleneck(cpuBound, g, uc).detail);
+  assert.equal(new Set(details).size, 3, "each workload needs its own wording");
+});
+
+test("an unknown use case falls back to the gaming wording rather than undefined", () => {
+  const v = analyzeBottleneck(catalogCPU("AMD Ryzen 5 1600", 12), gpu(100), "something-new");
+  assert.ok(v.detail && v.detail.length > 40);
+});

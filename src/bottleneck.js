@@ -97,6 +97,53 @@ export function gamingScore(cpu) {
 const CPU_LIMITED_BELOW = 0.75;
 const GPU_LIMITED_ABOVE = 1.4;
 
+// How the CPU side of the comparison is measured, per workload.
+//
+// The verdict used to read the gaming index for every workload. That is right
+// for gaming and wrong everywhere else: 107 of 141 catalog CPUs score more than
+// 8 points apart between the two, and the answers genuinely differ. A Ryzen 7
+// 9800X3D is a 100 for frames and a 60 for throughput, so next to a fast GPU it
+// is "balanced" for gaming and a real "CPU bottleneck" for video rendering —
+// eight cores is not many for an export queue. Both readings are correct for
+// their own workload; only one of them was ever being shown.
+//
+// Content and AI are throughput workloads, so they use PassMark bench with the
+// multi-core bonus, which is the same number the optimizer already ranks their
+// CPU upgrades by. Gaming is unchanged: cpuScoreForUseCase("gaming") IS
+// gamingScore, so every existing gaming verdict is byte-identical.
+function cpuScoreFor(cpu, useCase) {
+  if (useCase === "gaming") return gamingScore(cpu);
+  const bench = cpu.bench || 0;
+  const threads = cpu.threads || cpu.cores || 0;
+  if (threads > 0) {
+    const mcBonus = Math.min(0.25, (Math.sqrt(threads) - Math.sqrt(8)) * 0.05);
+    return bench * (1 + Math.max(0, mcBonus));
+  }
+  return bench;
+}
+
+// The advice text is workload-specific. The gaming wording ("especially at
+// 1080p", "1440p/4K") was previously shown to content and AI users too, for whom
+// resolution is not the axis that matters.
+const DETAIL = {
+  gaming: {
+    CPU: "Your CPU is holding back your GPU's potential. Prioritize a CPU upgrade for the biggest performance gain, especially at 1080p.",
+    GPU: "Your CPU has more headroom than your GPU can use. A GPU upgrade will unlock significant gains, especially at 1440p/4K.",
+    Balanced: "Your CPU and GPU are closely matched. Any category upgrade will give proportional gains.",
+  },
+  content: {
+    CPU: "Your CPU is the limiting part for timeline scrubbing, encoding and export times. A CPU upgrade — more cores especially — is the biggest win for render throughput.",
+    GPU: "Your CPU has more headroom than your GPU can use. A GPU upgrade will speed up accelerated effects, previews and GPU-based encoding.",
+    Balanced: "Your CPU and GPU are closely matched for content work. Either upgrade will give proportional gains across editing and rendering.",
+  },
+  ai: {
+    CPU: "Your CPU is the limiting part for data loading and preprocessing. A CPU upgrade will keep the GPU fed during training and inference runs.",
+    GPU: "Your CPU has more headroom than your GPU can use. A GPU upgrade — VRAM capacity above all — is what unlocks larger models and faster inference.",
+    Balanced: "Your CPU and GPU are closely matched. For AI work, check VRAM capacity separately: it gates which models will run at all, regardless of this balance.",
+  },
+};
+const detailFor = (useCase, who) => (DETAIL[useCase] || DETAIL.gaming)[who];
+
 // Workloads where a bottleneck verdict is not meaningful advice.
 //
 // The card's own copy is gaming-framed ("especially at 1080p", "1440p/4K"), and
@@ -116,30 +163,18 @@ const NO_BOTTLENECK_VERDICT = new Set(["productivity"]);
 export function analyzeBottleneck(currentCPU, currentGPU, useCase = "gaming") {
   if (!currentCPU || !currentGPU?.bench) return null;
   if (NO_BOTTLENECK_VERDICT.has(useCase)) return null;
-  const cpuScore = gamingScore(currentCPU);
+  const cpuScore = cpuScoreFor(currentCPU, useCase);
   if (!cpuScore) return null;
 
   const ratio = cpuScore / currentGPU.bench;
   if (ratio < CPU_LIMITED_BELOW) {
-    return {
-      who: "CPU",
-      severity: Math.round((1 - ratio) * 100),
-      text: "CPU is your bottleneck",
-      detail: "Your CPU is holding back your GPU's potential. Prioritize a CPU upgrade for the biggest performance gain, especially at 1080p.",
-    };
+    return { who: "CPU", severity: Math.round((1 - ratio) * 100),
+             text: "CPU is your bottleneck", detail: detailFor(useCase, "CPU") };
   }
   if (ratio > GPU_LIMITED_ABOVE) {
-    return {
-      who: "GPU",
-      severity: Math.round((ratio - 1) * 100),
-      text: "GPU is your bottleneck",
-      detail: "Your CPU has more headroom than your GPU can use. A GPU upgrade will unlock significant gains, especially at 1440p/4K.",
-    };
+    return { who: "GPU", severity: Math.round((ratio - 1) * 100),
+             text: "GPU is your bottleneck", detail: detailFor(useCase, "GPU") };
   }
-  return {
-    who: "Balanced",
-    severity: 0,
-    text: "System is well balanced",
-    detail: "Your CPU and GPU are closely matched. Any category upgrade will give proportional gains.",
-  };
+  return { who: "Balanced", severity: 0,
+           text: "System is well balanced", detail: detailFor(useCase, "Balanced") };
 }
