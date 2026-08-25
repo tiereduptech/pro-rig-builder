@@ -12007,14 +12007,14 @@ export default [
         "priceUnconfirmedReason": "bestbuy:price-stamp-2024-09-30"
       },
       "newegg": {
-        "sku": "445832968106304409706272",
-        "itemNumber": "9SIA8EFJT00440",
+        "sku": "445836667851819817520031",
+        "itemNumber": "9SIC60PM5C4441",
         "sellerClass": "marketplace",
-        "price": 24.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832968106304409706272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106711%3Fitem%3D9SIA8EFJT00440",
+        "price": 24.94,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836667851819817520031&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-ct120-pc-cooling-fan-white-case-fan%2Fp%2FN82E16835106711%3Fitem%3D9SIC60PM5C4441",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-711-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:15:45.842Z",
+        "matchedAt": "2026-08-25T12:31:39.323Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13071,16 +13071,17 @@ export default [
         "priceConfirmedAt": "2026-08-25"
       },
       "newegg": {
-        "sku": "445839354304553251748952",
-        "itemNumber": "N82E16835146181",
+        "sku": "445834043561891363265796",
+        "itemNumber": "N82E16835146156",
         "sellerClass": "official",
-        "price": 49.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839354304553251748952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-r236u-bf-360mm-rgb-led%2Fp%2FN82E16835146181%3Fitem%3DN82E16835146181",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-181-09.jpg",
+        "price": 79.99,
+        "saleprice": 39.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834043561891363265796&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-rf-u36hf-b1-case-fan-360mm-rgb-led%2Fp%2FN82E16835146156%3Fitem%3DN82E16835146156",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-156-08.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:50.049Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8
+        "matchedAt": "2026-08-25T12:31:37.931Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cfm": 75.12,

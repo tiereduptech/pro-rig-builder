@@ -34,11 +34,11 @@ export default [
         "sku": "4458310834854919855814425",
         "itemNumber": "9SIBZW0KWR4572",
         "sellerClass": "marketplace",
-        "price": 391.89,
+        "price": 379.16,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310834854919855814425&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t700-nvme%2Fp%2FN82E16820156330%3Fitem%3D9SIBZW0KWR4572",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-329-19.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:47.586Z",
+        "matchedAt": "2026-08-25T12:31:19.190Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -82,11 +82,11 @@ export default [
         "sku": "4458313616839381121011296",
         "itemNumber": "9SIBZW0KWM4218",
         "sellerClass": "marketplace",
-        "price": 231.2,
+        "price": 223.29,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313616839381121011296&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t700-nvme-2-0%2Fp%2FN82E16820156329%3Fitem%3D9SIBZW0KWM4218",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-329-19.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:23.298Z",
+        "matchedAt": "2026-08-25T12:31:19.179Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -833,14 +833,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16820147794",
+        "sku": "4458317437300821385619827",
+        "itemNumber": "N82E16820147794",
+        "sellerClass": "official",
         "price": 879.99,
-        "saleprice": 399.99,
+        "saleprice": 499.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317437300821385619827&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-2tb-870-evo-series-sata%2Fp%2FN82E16820147794%3Fitem%3DN82E16820147794",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-147-794-V01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:36.065Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11559,11 +11561,11 @@ export default [
         "sku": "445837207010138223493516",
         "itemNumber": "9SIC7XKM1K3909",
         "sellerClass": "marketplace",
-        "price": 270.96,
+        "price": 260.62,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837207010138223493516&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-mx500-sata%2Fp%2FN82E16820156174%3Fitem%3D9SIC7XKM1K3909",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-174-V09.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:37.025Z",
+        "matchedAt": "2026-08-25T12:31:31.804Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9
       }
@@ -16492,11 +16494,11 @@ export default [
         "sku": "445834692938817636055757",
         "itemNumber": "0D9-0006-00663",
         "sellerClass": "official",
-        "price": 229.99,
+        "price": 189.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834692938817636055757&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0006-00663%3Fitem%3D0D9-0006-00663",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2510310GBFFJFE.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:39:48.016Z",
+        "matchedAt": "2026-08-25T12:29:06.714Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -17195,14 +17197,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445837396142936340330443",
-        "itemNumber": "9SIAADFKSC3004",
+        "sku": "445837004522232364647276",
+        "itemNumber": "9SIBFJRKSV3598",
         "sellerClass": "marketplace",
-        "price": 344.79,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837396142936340330443&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo%2Fp%2F0D9-0009-00AF7%3Fitem%3D9SIAADFKSC3004",
+        "price": 344.75,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837004522232364647276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-1tb-870-evo%2Fp%2F0D9-0009-00AF7%3Fitem%3D9SIBFJRKSV3598",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS210125KJRTE.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:25:20.102Z",
+        "matchedAt": "2026-08-25T12:30:57.037Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -17491,11 +17493,11 @@ export default [
         "sku": "44583354055942166037947",
         "itemNumber": "9SIBT5SKUP6550",
         "sellerClass": "marketplace",
-        "price": 74.99,
+        "price": 74.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583354055942166037947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-firecuda-500gb-st500lx025%2Fp%2FN82E16822179112%3Fitem%3D9SIBT5SKUP6550",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-112-S01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:03.848Z",
+        "matchedAt": "2026-08-25T12:31:01.291Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -23488,11 +23490,11 @@ export default [
         "sku": "4458318347950779971189654",
         "itemNumber": "9SIC7XKM3V8674",
         "sellerClass": "marketplace",
-        "price": 199,
+        "price": 198.5,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318347950779971189654&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156427%3Fitem%3D9SIC7XKM3V8674",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-427-08.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:41.658Z",
+        "matchedAt": "2026-08-25T12:31:32.145Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -24388,14 +24390,14 @@ export default [
         "priceConfirmedAt": "2026-08-25"
       },
       "newegg": {
-        "sku": "4458317003027515303825812",
-        "itemNumber": "9SIA2W0K1J4415",
-        "sellerClass": "marketplace",
-        "price": 153.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317003027515303825812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-500gb-cs2241%2Fp%2FN82E16820177156%3Fitem%3D9SIA2W0K1J4415",
+        "sku": "4458312855842283240092710",
+        "itemNumber": "N82E16820177156",
+        "sellerClass": "official",
+        "price": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312855842283240092710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-500gb-cs2241%2Fp%2FN82E16820177156%3Fitem%3DN82E16820177156",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-156-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:37.108Z",
+        "matchedAt": "2026-08-25T12:31:36.180Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -29151,12 +29153,12 @@ export default [
         "sku": "4458318418980936578026908",
         "itemNumber": "0D9-00RZ-00006",
         "sellerClass": "official",
-        "price": 171.99,
-        "saleprice": null,
+        "price": 180.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318418980936578026908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-00RZ-00006%3Fitem%3D0D9-00RZ-00006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD240406149YWO0C.jpg",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:38.403Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -29217,10 +29219,11 @@ export default [
         "itemNumber": "0D9-0118-00006",
         "sellerClass": "official",
         "price": 259.99,
+        "saleprice": 249.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310833746429118174131&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhuadisk-2tb-nvme-1-4%2Fp%2F0D9-0118-00006%3Fitem%3D0D9-0118-00006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C6CWS2606120KSXAQ9D.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:29.449Z",
+        "matchedAt": "2026-08-25T12:31:38.404Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -32606,10 +32609,11 @@ export default [
         "itemNumber": "N82E16820971002",
         "sellerClass": "official",
         "price": 176.99,
+        "saleprice": 169.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583492857355925728144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingspec-1tb-oneboom-nvme-1-4%2Fp%2FN82E16820971002%3Fitem%3DN82E16820971002",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-971-002-06.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:48.139Z",
+        "matchedAt": "2026-08-25T12:31:36.725Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

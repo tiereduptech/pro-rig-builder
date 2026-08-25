@@ -4259,11 +4259,11 @@ export default [
         "itemNumber": "N82E16819118496",
         "sellerClass": "official",
         "price": 729.99,
-        "saleprice": 689.99,
+        "saleprice": 599.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832201293737272559982&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900ks-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118496%3Fitem%3DN82E16819118496",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-496-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.787Z",
+        "matchedAt": "2026-08-25T12:31:35.677Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

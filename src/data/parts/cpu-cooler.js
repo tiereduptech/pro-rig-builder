@@ -2306,7 +2306,10 @@ export default [
     "bench": 66,
     "radSize": "120",
     "fanSize": 140,
-    "cfm": 132
+    "cfm": 132,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "mpn": "PA120SE BLACK"
   },
   {
     "id": 80046,
@@ -9040,15 +9043,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16835103345",
+        "sku": "4458315956410155036373498",
+        "itemNumber": "N82E16835103345",
+        "sellerClass": "official",
         "price": 42.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315956410155036373498&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-hyper-212-halo-white-120mm-intel-lga-1700-1200-1151-1150-1155-1156-amd-am5-am4%2Fp%2FN82E16835103345%3Fitem%3DN82E16835103345",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-345-15.png",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.73
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:37.749Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95
       }
     },
     "discount": 9,
@@ -11192,11 +11196,11 @@ export default [
         "sku": "445831539943860035097788",
         "itemNumber": "9SIAD6HKKM2746",
         "sellerClass": "marketplace",
-        "price": 218.4,
+        "price": 214.39,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713e0EMY.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:25:43.563Z",
+        "matchedAt": "2026-08-25T12:30:28.023Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11664,11 +11668,11 @@ export default [
         "sku": "445831501802986156908340",
         "itemNumber": "9SIA1K6KS87476",
         "sellerClass": "marketplace",
-        "price": 43.92,
+        "price": 43.85,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831501802986156908340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA1K6KS87476",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:43:57.861Z",
+        "matchedAt": "2026-08-25T12:31:38.657Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

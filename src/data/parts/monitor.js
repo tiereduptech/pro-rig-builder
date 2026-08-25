@@ -630,7 +630,10 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "HDMI",
     "resolution": "1080p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00382569353576"
   },
   {
     "id": 90017,
@@ -1566,7 +1569,9 @@ export default [
     "ports": "DisplayPort",
     "upc": "00792343334224",
     "resolution": "1440p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 90039,
@@ -1680,7 +1685,10 @@ export default [
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1080p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00333411930452"
   },
   {
     "id": 90042,
@@ -1884,7 +1892,10 @@ export default [
     "bench": 89,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1440p"
+    "resolution": "1440p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00861718106978"
   },
   {
     "id": 90047,
@@ -2122,6 +2133,18 @@ export default [
         "priceSeller": "ZZA-Factory",
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
+      },
+      "newegg": {
+        "sku": "4458315620483556268529152",
+        "itemNumber": "9SIC7GWM0C4990",
+        "sellerClass": "marketplace",
+        "price": 324.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315620483556268529152&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-07PK-00DN4%3Fitem%3D9SIC7GWM0C4990",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C7GWS26062704PKOK9D.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:30.000Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -2138,7 +2161,10 @@ export default [
     "response": "1 Milliseconds",
     "bench": 61,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00873215805285"
   },
   {
     "id": 90053,
@@ -2632,7 +2658,10 @@ export default [
     "sync": "FreeSync",
     "ports": "1x DisplayPort, 2x HDMI",
     "resolution": "1440p",
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00983878650341"
   },
   {
     "id": 90064,
@@ -2878,7 +2907,10 @@ export default [
     "response": "1 Milliseconds",
     "bench": 62,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00810298959573"
   },
   {
     "id": 90069,
@@ -3089,7 +3121,10 @@ export default [
     "bench": 99,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00380811568631"
   },
   {
     "id": 90074,
@@ -3173,7 +3208,10 @@ export default [
     "bench": 78,
     "sync": "Adaptive Sync",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00873215805308"
   },
   {
     "id": 90076,
@@ -3381,7 +3419,10 @@ export default [
     "bench": 46,
     "hdr": "HDR",
     "ports": "HDMI, USB-C",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00884809586138"
   },
   {
     "id": 90081,
@@ -3683,7 +3724,9 @@ export default [
     "ports": "HDMI, DisplayPort",
     "resolution": "1440p",
     "curved": true,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 90088,
@@ -3723,7 +3766,10 @@ export default [
     "bench": 55,
     "hdr": "HDR",
     "ports": "HDMI, USB-C",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00498527118276"
   },
   {
     "id": 90089,
@@ -3763,7 +3809,10 @@ export default [
     "bench": 80,
     "sync": "FreeSync Premium",
     "ports": "1x DisplayPort, 2x HDMI",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00560761867279"
   },
   {
     "id": 90090,
@@ -12861,6 +12910,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-25"
+      },
+      "newegg": {
+        "sku": "4458312673718150792503056",
+        "itemNumber": "9SIA6ZPKFE6483",
+        "sellerClass": "marketplace",
+        "price": 208.45,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312673718150792503056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00XX6%3Fitem%3D9SIA6ZPKFE6483",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/VAFJD2408280WVXP2FB.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:29:20.775Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 23.8,
@@ -15797,7 +15858,11 @@ export default [
     "screenSize": 27,
     "resolution": "1440p",
     "refresh": 180,
-    "curved": true
+    "curved": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00266507881263",
+    "mpn": "266507881263"
   },
   {
     "id": 101018,
@@ -16172,13 +16237,27 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458314649765231262485095",
+        "itemNumber": "9SIC7GTM0E6875",
+        "sellerClass": "marketplace",
+        "price": 358.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314649765231262485095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-07PK-00FU6%3Fitem%3D9SIC7GTM0E6875",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C7GTS2606280LDEY97C.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:29.259Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 180,
-    "curved": true
+    "curved": true,
+    "upc": "00450885315056",
+    "mpn": "450885315056"
   },
   {
     "id": 101031,
@@ -16266,7 +16345,11 @@ export default [
     },
     "addedAt": "2026-05-15T14:34:31.801Z",
     "source": "amazon-discovery",
-    "refresh": 240
+    "refresh": 240,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25",
+    "upc": "00369556204967",
+    "mpn": "369556204967"
   },
   {
     "id": 101034,
@@ -17223,13 +17306,27 @@ export default [
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458316691211117643919776",
+        "itemNumber": "9SIC7GTM0C0651",
+        "sellerClass": "marketplace",
+        "price": 417.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316691211117643919776&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3C6-07PK-00CN2%3Fitem%3D9SIC7GTM0C0651",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C7GTS2606260XTKKBFF.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:29.073Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "addedAt": "2026-05-15T14:34:31.803Z",
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 100,
-    "screenSize": 34
+    "screenSize": 34,
+    "upc": "00519624870734",
+    "mpn": "519624870734"
   },
   {
     "id": 101067,

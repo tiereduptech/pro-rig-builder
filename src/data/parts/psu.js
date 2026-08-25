@@ -7569,7 +7569,9 @@ export default [
     "atx3": true,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 60166,
@@ -14485,11 +14487,11 @@ export default [
         "itemNumber": "N82E16817320054",
         "sellerClass": "official",
         "price": 239.99,
-        "saleprice": 218.99,
+        "saleprice": 214.95,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834949698808830422348&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx-3-1-1000-w-80-plus-platinum-certified-power-supply-black%2Fp%2FN82E16817320054%3Fitem%3DN82E16817320054",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-054-11.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.659Z",
+        "matchedAt": "2026-08-25T12:31:35.619Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

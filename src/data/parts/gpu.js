@@ -4255,6 +4255,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-25"
+      },
+      "newegg": {
+        "sku": "4458312483729121480322576",
+        "itemNumber": "N82E16814133898",
+        "sellerClass": "official",
+        "price": 1899.99,
+        "saleprice": 1799.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312483729121480322576&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-argb-oc-vcg508016tfxxpb1-o-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814133898%3Fitem%3DN82E16814133898",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-898-02.png",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:35.429Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 7,
@@ -9804,6 +9817,19 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "newegg": {
+        "sku": "445832601390906217617414",
+        "itemNumber": "N82E16814126761",
+        "sellerClass": "official",
+        "price": 1099.99,
+        "saleprice": 819.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832601390906217617414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070-12g-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814126761%3Fitem%3DN82E16814126761",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-761-01.png",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:35.402Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "GeForce RTX 5070",
@@ -10913,6 +10939,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-25"
+      },
+      "newegg": {
+        "sku": "4458310552061468811885112",
+        "itemNumber": "N82E16814133901",
+        "sellerClass": "official",
+        "price": 1399.99,
+        "saleprice": 1349.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310552061468811885112&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-technologies-inc-rtx5070-ti-argb-epic-x-rgb-triple-fan-gpu-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814133901%3Fitem%3DN82E16814133901",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-133-901-04.png",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:35.429Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11437,6 +11476,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-25"
+      },
+      "newegg": {
+        "sku": "445838335532347964154996",
+        "itemNumber": "N82E16814126795",
+        "sellerClass": "official",
+        "price": 899.99,
+        "saleprice": 829.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838335532347964154996&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5060ti-o16g-geforce-rtx-5060-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126795%3Fitem%3DN82E16814126795",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-795-28.png",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:35.405Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11840,6 +11892,19 @@ export default [
         "price": 1049.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2583&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-Ti-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
         "inStock": false
+      },
+      "newegg": {
+        "sku": "445831797446638480780895",
+        "itemNumber": "N82E16814137931",
+        "sellerClass": "official",
+        "price": 1079.99,
+        "saleprice": 1049.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831797446638480780895&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-ti-16g-gaming-trio-oc-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814137931%3Fitem%3DN82E16814137931",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-931-05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-25T12:31:35.435Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "GeForce RTX 5070 Ti",
