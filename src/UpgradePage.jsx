@@ -24,6 +24,13 @@ import { PARTS as RAW_PARTS, loadAllParts, subscribe as subscribeToParts } from 
 // together in their own tested module — see the header there for why comparing
 // a CPU throughput bench against a GPU graphics bench was giving wrong advice.
 import { gamingScore, analyzeBottleneck } from "./bottleneck.js";
+// Budget allocation lives in its own tested module — see the header there for why
+// a single GPU ceiling cannot serve both a GPU-only upgrade and a rig that also
+// needs a new CPU.
+import {
+  optimizeBuild, bestPrice, cpuScoreForUseCase, useCaseWeights,
+  LEFTOVER_PRIORITY, GPU_BUDGET_SHARE, MAX_GPU_CPU_BENCH_RATIO, BUDGET_OVERAGE,
+} from "./build-optimizer.js";
 // CPU model parsing lives in its own tested module — see the header there for
 // why (X3D suffixes were being truncated into a different, real processor).
 import { extractCPUModel } from "./cpu-model.js";
@@ -48,7 +55,6 @@ subscribeToParts(() => {
 
 // ─── CONFIG ─────────────────────────────────────────────────────────
 const MIN_IMPROVEMENT = 0.10;
-const BUDGET_OVERAGE  = 0.10;
 const N_ALTERNATIVES  = 3;
 const COOLER_TDP_HEADROOM = 1.15;
 
@@ -264,13 +270,6 @@ function findCatalogMatch(type, scannerName) {
 }
 
 // ─── PRICE / RETAILER ───────────────────────────────────────────────
-function bestPrice(p) {
-  const amazonPrice = Number(p?.deals?.amazon?.price);
-  if (amazonPrice > 0) return amazonPrice;
-  const bestbuyPrice = Number(p?.deals?.bestbuy?.price);
-  if (bestbuyPrice > 0) return bestbuyPrice;
-  return Number(p?.pr) || 0;
-}
 function retailerUrl(p) {
   if (!p?.deals || typeof p.deals !== 'object') return null;
   const labels = { amazon: 'Amazon', bestbuy: 'Best Buy', newegg: 'Newegg', bhphoto: 'B&H', antonline: 'Antonline' };
@@ -338,26 +337,6 @@ function candidateGPUs(currentGPU, maxPrice) {
   return out;
 }
 
-// cpuScoreForUseCase: gaming -> gaming index; else -> PassMark bench.
-function cpuScoreForUseCase(cpu, useCase) {
-  if (!cpu) return 0;
-  if (useCase === "gaming") return gamingScore(cpu);
-  // Productivity / content creation / AI are throughput workloads: they scale with
-  // cores & threads, not single-thread gaming clocks. Blend raw bench with a modest
-  // multi-core bonus so high-core chips rank above high-clock low-core ones — but
-  // bench stays the dominant term so we never recommend a 16-core HEDT for light work
-  // purely on core count. Falls back to bench when cores/threads are absent.
-  const bench = cpu.bench || 0;
-  if (useCase === "productivity" || useCase === "content" || useCase === "ai") {
-    const threads = cpu.threads || cpu.cores || 0;
-    if (threads > 0) {
-      // up to +25% for very high thread counts, scaled gently (sqrt) so it tapers off
-      const mcBonus = Math.min(0.25, (Math.sqrt(threads) - Math.sqrt(8)) * 0.05);
-      return bench * (1 + Math.max(0, mcBonus));
-    }
-  }
-  return bench;
-}
 
 function candidateCPUs(currentCPU, maxPrice, useCase) {
   if (!currentCPU?.bench || !currentCPU.socket) return [];
@@ -624,13 +603,6 @@ const COOLER_TIER_LABELS = {
 // Universal use-case weighting. Every workload is the same scoring function with
 // different CPU/GPU emphasis. Used by both the refresh-bundle optimizer and (later)
 // the same-socket optimizer so behavior is identical across all use cases.
-const USE_CASE_WEIGHTS = {
-  gaming:       { cpu: 0.6, gpu: 1.0 },
-  content:      { cpu: 1.0, gpu: 1.0 },
-  ai:           { cpu: 0.9, gpu: 1.2 },
-  productivity: { cpu: 1.2, gpu: 0.6 },
-};
-function useCaseWeights(useCase) { return USE_CASE_WEIGHTS[useCase] || { cpu: 0.8, gpu: 1.0 }; }
 
 // VRM / power-delivery safety. Chipset tier is a reliable proxy for sustained power
 // capability (manufacturers segment VRM quality by chipset). A budget board CAN boot a
@@ -664,88 +636,9 @@ function moboSupportsCPU(mobo, cpu) {
 
 // Per-use-case leftover-budget priority. After the base platform is chosen, spend
 // remaining budget on the parts that actually help THIS workload, in this order.
-const LEFTOVER_PRIORITY = {
-  productivity: ["ram", "gpu"],          // multitasking is capacity-bound; GPU barely used
-  gaming:       ["gpu", "cpu", "ram"],   // frames first
-  content:      ["gpu", "cpu", "ram"],   // renders use GPU + CPU heavily
-  ai:           ["gpu", "ram", "cpu"],   // GPU/VRAM first, then memory
-};
 // Sensible RAM capacity ceilings by use case (no 128GB for an office PC).
 const RAM_CAP_CEILING = { productivity: 64, gaming: 32, content: 128, ai: 128 };
-// Max share of budget a GPU may consume, by use case (keeps productivity from grabbing a gaming card).
-const GPU_BUDGET_SHARE = { productivity: 0.20, gaming: 0.65, content: 0.55, ai: 0.60 };
 
-// ─── BUILD OPTIMIZER ────────────────────────────────────────────────
-// Recommended ratio: GPU bench ≤ ~3.5x CPU bench for balanced gaming.
-// Past that, CPU becomes the limiting factor and GPU performance is wasted.
-const MAX_GPU_CPU_BENCH_RATIO = 2.0;
-
-// Same-socket / non-refresh build. Uses the SAME budget-filling engine as the refresh
-// path: pick the best CPU & GPU within budget, then spend leftover by the use-case
-// priority chain. RAM is OPTIONAL here (user keeps existing RAM unless a kit helps).
-function optimizeBuild(currentGPU, currentCPU, candidates, budget) {
-  const maxBudget = budget * (1 + BUDGET_OVERAGE);
-  const useCase = candidates.useCase || "gaming";
-  const w = useCaseWeights(useCase);
-  const priority = LEFTOVER_PRIORITY[useCase] || ["gpu", "cpu", "ram"];
-  const gpuShare = GPU_BUDGET_SHARE[useCase] ?? 0.5;
-
-  const curC = currentCPU?.bench || 0;
-  const curG = currentGPU?.bench || 0;
-
-  const cpus = candidates.cpus || [];
-  const gpus = candidates.gpus || [];
-  const rams = candidates.rams || [];
-  const stors = candidates.storages || [];
-
-  // Use-case weighted absolute performance, with CPU-bottleneck guard.
-  const scoreBuild = (cpu, gpu) => {
-    const cpuScore = cpu ? cpuScoreForUseCase(cpu, useCase) : curC;
-    const gpuBench = gpu ? gpu.bench : curG;
-    let s = cpuScore * w.cpu + gpuBench * w.gpu;
-    if (gpuBench > 0 && cpuScore > 0) {
-      const ratio = gpuBench / cpuScore;
-      if (ratio > MAX_GPU_CPU_BENCH_RATIO) {
-        const over = ratio / MAX_GPU_CPU_BENCH_RATIO;
-        s *= (1 - Math.min(0.5, (over - 1) * 0.6));
-      }
-    }
-    return s;
-  };
-
-  let chosenCpu = null, chosenGpu = null, chosenRam = null, chosenSto = null;
-  const spend = () => (chosenCpu ? bestPrice(chosenCpu) : 0) + (chosenGpu ? bestPrice(chosenGpu) : 0) +
-                      (chosenRam ? bestPrice(chosenRam) : 0) + (chosenSto ? bestPrice(chosenSto) : 0);
-
-  // Honor an explicit storage request first (user asked for it).
-  if (stors.length) { const s = stors.find(x => bestPrice(x) <= maxBudget); if (s) chosenSto = s; }
-
-  // Allocate budget by use-case priority chain.
-  for (const slot of priority) {
-    const remaining = maxBudget - spend();
-    if (remaining <= 0) break;
-    if (slot === "gpu") {
-      const budgetForGpu = remaining + (chosenGpu ? bestPrice(chosenGpu) : 0);
-      const g = gpus.filter(x => bestPrice(x) <= budgetForGpu && bestPrice(x) <= budget * gpuShare && (!chosenGpu || x.bench > chosenGpu.bench) && x.bench > curG)
-                    .sort((a, b) => b.bench - a.bench)[0];
-      if (g) chosenGpu = g;
-    } else if (slot === "cpu") {
-      const budgetForCpu = remaining + (chosenCpu ? bestPrice(chosenCpu) : 0);
-      const c = cpus.filter(x => bestPrice(x) <= budgetForCpu && (!chosenCpu || cpuScoreForUseCase(x, useCase) > cpuScoreForUseCase(chosenCpu, useCase)))
-                    .sort((a, b) => cpuScoreForUseCase(b, useCase) - cpuScoreForUseCase(a, useCase))[0];
-      if (c) chosenCpu = c;
-    } else if (slot === "ram") {
-      const r = rams.filter(x => bestPrice(x) <= remaining)[0];
-      if (r) chosenRam = r;
-    }
-  }
-
-  if (!chosenCpu && !chosenGpu && !chosenRam && !chosenSto) return null;
-
-  const cost = spend();
-  const score = scoreBuild(chosenCpu, chosenGpu);
-  return { gpu: chosenGpu, cpu: chosenCpu, ram: chosenRam, sto: chosenSto, cost, score, adjustedScore: score, overPct: Math.max(0, (cost - budget) / budget) };
-}
 
 // ─── REFRESH BUNDLE ─────────────────────────────────
 // Dead-end platform => user needs CPU + motherboard + RAM on a modern socket. Builds a
