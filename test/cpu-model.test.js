@@ -82,21 +82,46 @@ test("Intel parsing is unchanged", () => {
   assert.equal(model("Intel Core i5-13600"), "13600");
 });
 
-// SEPARATE PRE-EXISTING BUG, deliberately not fixed here — different concern.
-//
-// "Core Ultra 9 285K" puts a SPACE between the tier digit and the model number,
-// and the Intel pattern has no allowance for one, so every Core Ultra Series 2
-// chip extracts as null and the upgrade page cannot identify it. The catalog
-// carries 7 of them on LGA1851 with real benches, and intelGeneration() already
-// has a branch written for exactly these models ("3-digit bare numbers (Core
-// Ultra 245/265) ... treat as gen 15") that is currently unreachable.
-//
-// Marked todo so the gap is recorded and this starts passing the moment the
-// pattern is widened, rather than asserting the broken result as correct.
-test("Core Ultra Series 2 models extract", { todo: "Intel pattern does not allow a space before the model number" }, () => {
+// Core Ultra (Series 2, LGA1851) puts a separator between the tier digit and the
+// model number, which the classic Intel pattern had no allowance for — so every
+// one extracted as null and the page could not identify the CPU at all. Three
+// other places were already written for these models and were unreachable:
+// intelGeneration()'s gen-15 branch, inferCPUSocket's LGA1851 mapping, and the
+// "245K"/"265K"/"285K" rows in CPU_BASELINE_INTEL.
+test("Core Ultra Series 2 models extract", () => {
   assert.equal(model("Intel Core Ultra 9 285K"), "285K");
   assert.equal(model("Intel Core Ultra 7 265K"), "265K");
+  assert.equal(model("Intel Core Ultra 7 265KF"), "265KF");
   assert.equal(model("Intel Core Ultra 5 245K"), "245K");
+  assert.equal(model("Intel Core Ultra 5 245KF"), "245KF");
+  assert.equal(model("Intel Core Ultra 5 225F"), "225F");
+  assert.equal(model("Intel Core Ultra 9 285"), "285");
+  assert.equal(amd("Intel Core Ultra 9 285K").brand, "Intel");
+});
+
+test("the Core Ultra naming variants that actually ship all parse", () => {
+  // Every distinct shape present in the catalog and in scanner output.
+  // No space after "Ultra":
+  assert.equal(model("(Amazon.co.jp Exclusive) Intel CPU Core Ultra5 225F Processor (20 M Cache)"), "225F");
+  // A word between the tier digit and the model:
+  assert.equal(model("Intel - Core Ultra 7 Processor 270K Plus 24 cores (8 P-cores + 16 E-cores)"), "270K");
+  assert.equal(model("Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores"), "250KF");
+  // Two words, plus trademark marks the scanner does not always strip:
+  assert.equal(model("Core™ Ultra 5 Desktop Processor 225 10 cores (6 P-cores + 4 E-cores)"), "225");
+  assert.equal(model("Intel® Core™ Ultra 9 Desktop Processor 285 24 cores"), "285");
+  assert.equal(model("Intel® Core™ Ultra 7 Desktop Processor 265F 20 cores"), "265F");
+  // Trailing spec text must not be dragged into the model:
+  assert.equal(model("Intel - Core Ultra 9 285K 24-Cores 24-Threads - 4.6GHz (5.7 GHz Turbo) Socket LGA1851"), "285K");
+});
+
+test("the Core Ultra pattern does not disturb classic Intel parsing", () => {
+  // The classic pattern is tried first and is unchanged; these must be untouched.
+  assert.equal(model("Intel Core i7-14700K"), "14700K");
+  assert.equal(model("Intel Core i9-14900KS"), "14900KS");
+  assert.equal(model("Intel Core i5-12400F"), "12400F");
+  assert.equal(model("Intel Core i7-7700K"), "7700K");
+  // A non-Ultra name mentioning "processor" must not pick up a stray number.
+  assert.equal(model("Intel Core i5-13600 Desktop Processor 14 cores"), "13600");
 });
 
 test("Intel is matched before AMD so cross-brand strings do not collide", () => {
