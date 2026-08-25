@@ -20,7 +20,10 @@ import React, { useState, useEffect, useMemo, useDeferredValue } from "react";
 // The analysis useMemo includes partsRev in its deps so it re-runs when
 // new categories land.
 import { PARTS as RAW_PARTS, loadAllParts, subscribe as subscribeToParts } from "./data/parts-frontend.js";
-import GAMING_TIERS from "../gaming-cpu-tiers.json";
+// Gaming-capability scoring and the bottleneck verdict that depends on it live
+// together in their own tested module — see the header there for why comparing
+// a CPU throughput bench against a GPU graphics bench was giving wrong advice.
+import { gamingScore, analyzeBottleneck } from "./bottleneck.js";
 // CPU model parsing lives in its own tested module — see the header there for
 // why (X3D suffixes were being truncated into a different, real processor).
 import { extractCPUModel } from "./cpu-model.js";
@@ -251,7 +254,10 @@ function findCatalogMatch(type, scannerName) {
       if (hit) return hit;
       const b = lookupCPUBaseline(cpu.model, cpu.brand);
       const inferredSocket = inferCPUSocket(cpu.model, cpu.brand);
-      if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, isBaseline: true };
+      // `model` is carried so gamingScore can resolve a placeholder through the
+      // brand-scoped model index — the synthesised "Current: X" name can never
+      // match a tier key by substring.
+      if (b && b.bench > 0) return { n: "Current: " + b.name, bench: b.bench, socket: inferredSocket, brand: cpu.brand, model: cpu.model, isBaseline: true };
       return null;
     }
   return null;
@@ -332,30 +338,6 @@ function candidateGPUs(currentGPU, maxPrice) {
   return out;
 }
 
-// --- Gaming-aware CPU scoring -------------------------------------
-// gamingScore: looks up a CPU's gaming-performance index (0-100) from
-// the curated gaming tier table. Falls back to PassMark bench when the
-// CPU is not in the table (Threadrippers, Xeons, obscure OEM chips).
-//
-// This runs inside sort() comparators over the whole CPU pool, so it is called
-// thousands of times per analysis. The table is uppercased ONCE here rather
-// than per call, and results are memoized per part object: a CPU profile of a
-// platform-refresh analysis put 70% of total time in this one function when it
-// rebuilt Object.entries() + toUpperCase() on every invocation.
-const GAMING_TIERS_UC = Object.entries(GAMING_TIERS).map(([model, score]) => [model.toUpperCase(), score]);
-const gamingScoreCache = new WeakMap();
-function gamingScore(cpu) {
-  if (!cpu) return 0;
-  const cached = gamingScoreCache.get(cpu);
-  if (cached !== undefined) return cached;
-  const name = (cpu.n || "").toUpperCase();
-  let score = cpu.bench || 0;
-  for (let i = 0; i < GAMING_TIERS_UC.length; i++) {
-    if (name.includes(GAMING_TIERS_UC[i][0])) { score = GAMING_TIERS_UC[i][1]; break; }
-  }
-  gamingScoreCache.set(cpu, score);
-  return score;
-}
 // cpuScoreForUseCase: gaming -> gaming index; else -> PassMark bench.
 function cpuScoreForUseCase(cpu, useCase) {
   if (!cpu) return 0;
@@ -888,20 +870,6 @@ function computeRefreshPaths(currentGPU, useCase, budget, brand) {
   return { value, future, sameSocket };
 }
 
-function analyzeBottleneck(currentCPU, currentGPU) {
-  if (!currentCPU?.bench || !currentGPU?.bench) return null;
-  const ratio = currentCPU.bench / currentGPU.bench;
-  if (ratio < 0.75) {
-    const severity = Math.round((1 - ratio) * 100);
-    return { who: "CPU", severity, text: "CPU is your bottleneck", detail: "Your CPU is holding back your GPU's potential. Prioritize a CPU upgrade for the biggest performance gain, especially at 1080p." };
-  }
-  if (ratio > 1.4) {
-    const severity = Math.round((ratio - 1) * 100);
-    return { who: "GPU", severity, text: "GPU is your bottleneck", detail: "Your CPU has more headroom than your GPU can use. A GPU upgrade will unlock significant gains, especially at 1440p/4K." };
-  }
-  return { who: "Balanced", severity: 0, text: "System is well balanced", detail: "Your CPU and GPU are closely matched. Any category upgrade will give proportional gains." };
-}
-
 // Practical recommended PSU minimums by GPU model.
 // Sources: AMD/NVIDIA official specs, cross-referenced with real-world guides
 // (Tom's Hardware, GamersNexus, PCPartPicker, overclock.net). Values include
@@ -1053,7 +1021,7 @@ export default function UpgradePage() {
     // (AM*/FM* => AMD, LGA*/Intel name => Intel) so old AMD chips get AM4/AM5, not Intel.
     const refreshBrand = cpuModel?.brand || (/^AM|^FM/.test(specs.cpu_socket || "") || /\bAMD\b|\bFX\b|\bPHENOM\b|\bATHLON\b|\bRYZEN\b/i.test(specs.cpu || "") ? "AMD" : "Intel");
     const refreshPaths = refresh.refresh ? computeRefreshPaths(currentGPU, useCase, budget, refreshBrand) : null;
-    const bottleneck = analyzeBottleneck(currentCPU, currentGPU);
+    const bottleneck = analyzeBottleneck(currentCPU, currentGPU, useCase);
 
     const newCpuTDP = recommendedBuild?.cpu?.tdp ?? currentCPU?.tdp ?? 125;
     const newGpuTDP = recommendedBuild?.gpu?.tdp ?? currentGPU?.tdp ?? 200;
@@ -1157,7 +1125,7 @@ export default function UpgradePage() {
   const gpuSection = (
     <UpgradeSection key="gpu" title="GPU" color="#4ADE80" icon="🟢"
       selected={rb?.gpu} alternatives={gpuAlts} baseline={a.currentGPU}
-      effectiveCpuBench={rb?.cpu?.bench || a.currentCPU?.bench || 0} checkBottleneck={true}
+      effectiveCpuScore={gamingScore(rb?.cpu) || gamingScore(a.currentCPU) || 0} checkBottleneck={true}
       emptyMsg="No GPU upgrades within budget offer 10%+ improvement over your current card."/>
   );
   // Motherboard section is only relevant during a platform refresh (new socket).
@@ -1550,7 +1518,7 @@ function PSUWarning({watts}) {
   );
 }
 
-function UpgradeSection({title, color, icon, selected, alternatives, baseline, description, warning, emptyMsg, effectiveCpuBench, checkBottleneck}) {
+function UpgradeSection({title, color, icon, selected, alternatives, baseline, description, warning, emptyMsg, effectiveCpuScore, checkBottleneck}) {
   if (!selected && (!alternatives || alternatives.length === 0)) {
     return (
       <div style={{background:"var(--bg2)", borderRadius:16, border:"1px solid var(--bdr)", padding:20, marginBottom:20}}>
@@ -1577,14 +1545,14 @@ function UpgradeSection({title, color, icon, selected, alternatives, baseline, d
       {selected && (
         <div style={{marginBottom:12}}>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--accent)", fontWeight:700, marginBottom:6, letterSpacing:1.5}}>RECOMMENDED</div>
-          <UpgradeRow part={selected} color={color} baseline={baseline} highlighted={true} effectiveCpuBench={effectiveCpuBench} checkBottleneck={checkBottleneck}/>
+          <UpgradeRow part={selected} color={color} baseline={baseline} highlighted={true} effectiveCpuScore={effectiveCpuScore} checkBottleneck={checkBottleneck}/>
         </div>
       )}
       {alternatives && alternatives.length > 0 && (
         <>
           <div style={{fontFamily:"var(--mono)", fontSize:10, color:"var(--dim)", fontWeight:600, marginTop:selected ? 14 : 0, marginBottom:6, letterSpacing:1.5}}>OTHER OPTIONS</div>
           <div style={{display:"flex", flexDirection:"column", gap:6}}>
-            {alternatives.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline} effectiveCpuBench={effectiveCpuBench} checkBottleneck={checkBottleneck}/>)}
+            {alternatives.map((p, i) => <UpgradeRow key={p.id || i} part={p} color={color} baseline={baseline} effectiveCpuScore={effectiveCpuScore} checkBottleneck={checkBottleneck}/>)}
           </div>
         </>
       )}
@@ -1592,16 +1560,19 @@ function UpgradeSection({title, color, icon, selected, alternatives, baseline, d
   );
 }
 
-function UpgradeRow({part, color, baseline, highlighted, effectiveCpuBench, checkBottleneck}) {
+function UpgradeRow({part, color, baseline, highlighted, effectiveCpuScore, checkBottleneck}) {
   const price = bestPrice(part);
   const retailer = retailerUrl(part);
   const improvement = (baseline?.bench != null && baseline.bench > 0 && part.bench != null)
     ? Math.round(((part.bench - baseline.bench) / baseline.bench) * 100) : null;
 
-  // Bottleneck check (only applied to GPUs via checkBottleneck prop)
+  // Bottleneck check (only applied to GPUs via checkBottleneck prop).
+  // Compares against the CPU's GAMING index, not its throughput bench — the
+  // card above uses the same basis, and the two must agree or the page argues
+  // with itself ("System is well balanced" over a row tagged CPU BOTTLENECK).
   let bottleneckSeverity = null;   // null | "mild" | "severe"
-  if (checkBottleneck && part?.bench && effectiveCpuBench > 0) {
-    const ratio = part.bench / effectiveCpuBench;
+  if (checkBottleneck && part?.bench && effectiveCpuScore > 0) {
+    const ratio = part.bench / effectiveCpuScore;
     if (ratio > MAX_GPU_CPU_BENCH_RATIO * 1.5) bottleneckSeverity = "severe";
     else if (ratio > MAX_GPU_CPU_BENCH_RATIO) bottleneckSeverity = "mild";
   }
