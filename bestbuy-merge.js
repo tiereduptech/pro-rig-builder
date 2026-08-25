@@ -365,6 +365,7 @@ function serializeParts(parts) {
             compGated++;
             match.needsReview = true;
             match.quarantinedAt = new Date().toISOString().slice(0, 10);
+            match.quarantineReason = 'bestbuy_comp_gated';
           } else {
             if (!existing) { matched++; matchTiers[matchTier] = (matchTiers[matchTier] || 0) + 1; }
             match.deals.bestbuy = incoming;

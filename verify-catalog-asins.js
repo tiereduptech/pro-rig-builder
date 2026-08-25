@@ -506,6 +506,10 @@ function applyFixes(parts, perProductFixes) {
     if (fix.needsReview) {
       p.needsReview = true;
       p.quarantinedAt = fix.quarantinedAt;
+      // The CAUSE, not just the fact. A quarantine with no recorded cause cannot be
+      // safely lifted by anything — which is why 385 rows that now price fine are
+      // still hidden, with nothing able to prove their hold is obsolete.
+      if (fix.quarantineReason) p.quarantineReason = fix.quarantineReason;
       productChanged = true;
     }
     if (productChanged) changed++;
@@ -846,6 +850,7 @@ if (IS_MAIN) (async () => {
           if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
           perProductFixes[entry.productId].needsReview = true;
           perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+          perProductFixes[entry.productId].quarantineReason = 'asin_repair_no_match';
         }
         continue;
       }
@@ -863,6 +868,7 @@ if (IS_MAIN) (async () => {
           if (!perProductFixes[entry.productId]) perProductFixes[entry.productId] = {};
           perProductFixes[entry.productId].needsReview = true;
           perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+          perProductFixes[entry.productId].quarantineReason = 'asin_repair_renewed_title';
         }
         continue;
       }
@@ -881,6 +887,7 @@ if (IS_MAIN) (async () => {
         } else {
           perProductFixes[entry.productId].needsReview = true;
           perProductFixes[entry.productId].quarantinedAt = new Date().toISOString().slice(0, 10);
+          perProductFixes[entry.productId].quarantineReason = 'asin_repair_price_unsane';
         }
       }
     }

@@ -294,9 +294,12 @@ for (let i = 0; i < limited.length; i++) {
       parts[idx].deals.amazon.url = `https://www.amazon.com/dp/${found.asin}?tag=tiereduptech-20`;
       if (found.price != null) parts[idx].deals.amazon.price = found.price;
       parts[idx].deals.amazon.inStock = true;
-      // Remove quarantine flag since we fixed it
+      // Remove quarantine flag since we fixed it. All three fields go together —
+      // a stale quarantineReason on an un-quarantined row is worse than none,
+      // because it reads as a live hold to anything that inspects the row later.
       delete parts[idx].needsReview;
       delete parts[idx].quarantinedAt;
+      delete parts[idx].quarantineReason;
     }
   }
 }
