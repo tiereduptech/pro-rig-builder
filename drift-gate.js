@@ -270,6 +270,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
       stored: storedPrice ?? null, amazon: null });
     fixes.needsReview = true;
     fixes.quarantinedAt = today();
+    fixes.quarantineReason = 'no_new_offer';
     return { issues, fixes };
   }
 
@@ -303,6 +304,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
         stored: storedPrice ?? null, amazon: azPrice });
       fixes.needsReview = true;
       fixes.quarantinedAt = today();
+      fixes.quarantineReason = 'price_3p_flagged';
       return { issues, fixes };
     }
   }
@@ -321,6 +323,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
         stored: storedPrice, amazon: azPrice });
       fixes.needsReview = true;
       fixes.quarantinedAt = today();
+      fixes.quarantineReason = 'implausible_price';
 
     // (2) Suspect upward spike — only the wrong-attach / gouge tail rises this
     //     far. Cross-retailer sanity gate decides: corroborated writes, else quarantine.
@@ -338,6 +341,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
           stored: storedPrice, amazon: azPrice });
         fixes.needsReview = true;
         fixes.quarantinedAt = today();
+        fixes.quarantineReason = 'price_drift_flagged';
       }
 
     // (3) A real move that is not a suspect upward spike: a drop of any size, or a
@@ -366,6 +370,7 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
         stored: null, amazon: azPrice });
       fixes.needsReview = true;
       fixes.quarantinedAt = today();
+      fixes.quarantineReason = 'price_attach_flagged';
     }
   }
 

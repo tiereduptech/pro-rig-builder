@@ -164,7 +164,8 @@ for (let bStart = 0; bStart < targets.length; bStart += BATCH_SIZE) {
       if (!result) {
         issues.push({ id: p.id, c: p.c, n: p.n, asin, issue: 'asin_not_found' });
         console.log(`  ✗ id=${p.id} ${asin} — ASIN returned no data`);
-        fixes[p.id] = { needsReview: true, quarantinedAt: new Date().toISOString().slice(0, 10) };
+        fixes[p.id] = { needsReview: true, quarantinedAt: new Date().toISOString().slice(0, 10),
+                        quarantineReason: 'asin_not_found' };
         continue;
       }
 
@@ -177,7 +178,8 @@ for (let bStart = 0; bStart < targets.length; bStart += BATCH_SIZE) {
 
       if (!titleMatch) {
         issues.push({ id: p.id, c: p.c, n: p.n, asin, issue: 'title_mismatch', amazonTitle: result.title });
-        fixes[p.id] = { needsReview: true, quarantinedAt: new Date().toISOString().slice(0, 10) };
+        fixes[p.id] = { needsReview: true, quarantinedAt: new Date().toISOString().slice(0, 10),
+                        quarantineReason: 'title_mismatch' };
         status = '✗';
         noteParts.push('TITLE_MISMATCH');
       }
@@ -224,6 +226,7 @@ if (AUTO_FIX && Object.keys(fixes).length > 0) {
     if (fix.needsReview) {
       p.needsReview = true;
       p.quarantinedAt = fix.quarantinedAt;
+      if (fix.quarantineReason) p.quarantineReason = fix.quarantineReason;
       fixCount++;
     }
     if (fix.newAmazonPrice != null && p.deals?.amazon) {
