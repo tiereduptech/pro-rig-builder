@@ -18,7 +18,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.786Z",
@@ -49,10 +49,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4BQYN6Z?tag=tiereduptech-20",
         "price": 59.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Focus Camera LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -85,8 +85,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -115,13 +115,13 @@ export default [
       "amazon": {
         "asin": "B0DQ2N7YPK",
         "url": "https://www.amazon.com/dp/B0DQ2N7YPK?tag=tiereduptech-20",
-        "price": 94.51,
+        "price": 108.19,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.788Z",
@@ -157,7 +157,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -191,10 +191,10 @@ export default [
         "price": 164.95,
         "url": "https://www.amazon.com/dp/B0D5B6MXJF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -244,10 +244,10 @@ export default [
         "price": 174.95,
         "url": "https://www.amazon.com/dp/B0FXGWKHND?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -296,10 +296,10 @@ export default [
         "price": 124.95,
         "url": "https://www.amazon.com/dp/B098XP1Y38?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -349,10 +349,10 @@ export default [
         "price": 100,
         "url": "https://www.amazon.com/dp/B07Y88BNYZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -385,7 +385,7 @@ export default [
         "price": 50,
         "url": "https://www.amazon.com/dp/B0BNL8ZM1T?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
@@ -429,10 +429,10 @@ export default [
         "price": 84.9,
         "url": "https://www.amazon.com/dp/B0CJY3DYQ3?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -483,10 +483,10 @@ export default [
         "price": 64.9,
         "url": "https://www.amazon.com/dp/B0D3NXLZ1T?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -542,7 +542,7 @@ export default [
     "fans_inc": 2,
     "rgb": false,
     "value": 68,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 75,
     "cfm": 132,
     "needsReview": true,
@@ -581,7 +581,7 @@ export default [
     "fans_inc": 2,
     "rgb": false,
     "value": 27,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 78,
     "cfm": 145,
     "needsReview": true,
@@ -616,7 +616,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CL8Z43L8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -671,10 +671,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0D93X1TKG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "fans_inc": 2,
@@ -717,7 +717,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -758,7 +758,7 @@ export default [
     "fans_inc": 3,
     "rgb": true,
     "value": 10,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 89,
     "height": 52,
     "cfm": 174,
@@ -798,7 +798,7 @@ export default [
     "fans_inc": 2,
     "rgb": true,
     "value": 30,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 64,
     "height": 52,
     "cfm": 116,
@@ -833,10 +833,10 @@ export default [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0F5SZK3WX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -873,10 +873,10 @@ export default [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0F5SGK5Q7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -913,10 +913,10 @@ export default [
         "price": 69.89,
         "url": "https://www.amazon.com/dp/B0DLWGG85P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -953,10 +953,10 @@ export default [
         "price": 76.99,
         "url": "https://www.amazon.com/dp/B0DLWFCVSD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -993,10 +993,10 @@ export default [
         "price": 76.99,
         "url": "https://www.amazon.com/dp/B0DLWFCVSD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1034,7 +1034,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0B7NTFMFD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "paapi"
@@ -1078,7 +1078,7 @@ export default [
     "fans_inc": 3,
     "rgb": false,
     "value": 30,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 86,
     "height": 52,
     "cfm": 180,
@@ -1146,7 +1146,7 @@ export default [
     "fans_inc": 3,
     "rgb": true,
     "value": 32,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bench": 95,
     "height": 52,
     "cfm": 180,
@@ -1171,10 +1171,10 @@ export default [
         "price": 37.9,
         "url": "https://www.amazon.com/dp/B0DWZ2JPTF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1253,8 +1253,8 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "discount": 28,
@@ -1325,7 +1325,7 @@ export default [
     "cfm": 60,
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80027,
@@ -1343,7 +1343,7 @@ export default [
         "price": 84.9,
         "url": "https://www.amazon.com/dp/B0CJY2QS2W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
@@ -1378,14 +1378,14 @@ export default [
     "reviews": 8106,
     "deals": {
       "amazon": {
-        "price": 29.99,
+        "price": 38.49,
         "url": "https://www.amazon.com/dp/B07H25DYM3?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       },
       "bestbuy": {
         "price": 29.99,
@@ -1441,8 +1441,8 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       },
       "bestbuy": {
         "price": 99.99,
@@ -1508,10 +1508,10 @@ export default [
         "price": 80.19,
         "url": "https://www.amazon.com/dp/B0DLWDJS8S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1568,10 +1568,10 @@ export default [
         "price": 33.21,
         "url": "https://www.amazon.com/dp/B09P4M4C7K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1614,10 +1614,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BNDTJVPL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -1656,10 +1656,10 @@ export default [
         "price": 39.9,
         "url": "https://www.amazon.com/dp/B0DP23NF7T?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "IHTP",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1714,7 +1714,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CCNS5NZ9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -1762,8 +1762,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1803,10 +1803,10 @@ export default [
         "price": 124.95,
         "url": "https://www.amazon.com/dp/B07Y87YHRH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1860,7 +1860,7 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DF7B7324?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1921,10 +1921,10 @@ export default [
         "price": 35.91,
         "url": "https://www.amazon.com/dp/B09P4KH7QK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -1964,10 +1964,10 @@ export default [
         "price": 19.99,
         "url": "https://www.amazon.com/dp/B07H22TC1N?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2023,10 +2023,10 @@ export default [
         "price": 249.99,
         "url": "https://www.amazon.com/dp/B0DQV2CBX1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "TRYX NA",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2085,10 +2085,10 @@ export default [
         "price": 81.89,
         "url": "https://www.amazon.com/dp/B0DPHQ1353?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2146,7 +2146,7 @@ export default [
         "price": 54.9,
         "url": "https://www.amazon.com/dp/B0CCNVFXWH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi",
@@ -2196,8 +2196,8 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Jungle Leopard",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -2239,7 +2239,7 @@ export default [
         "price": 39.9,
         "url": "https://www.amazon.com/dp/B0D93R3YY9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi",
@@ -2284,7 +2284,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -2361,7 +2361,9 @@ export default [
     "bench": 42,
     "fanSize": 92,
     "cfm": 35,
-    "mpn": "NH-U9S"
+    "mpn": "NH-U9S",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80047,
@@ -2416,7 +2418,9 @@ export default [
     "bench": 65,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75
+    "cfm": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80048,
@@ -2434,10 +2438,10 @@ export default [
         "price": 67.99,
         "url": "https://www.amazon.com/dp/B0C4C421RZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2498,7 +2502,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BDDZGLXL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -2547,7 +2551,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -2601,10 +2605,10 @@ export default [
         "price": 279.99,
         "url": "https://www.amazon.com/dp/B0D9GV78D8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2668,14 +2672,14 @@ export default [
     "reviews": 417,
     "deals": {
       "amazon": {
-        "price": 75.17,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B09464Z8G9?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -2762,7 +2766,9 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "mpn": "L-P360L-AM3M-G0K"
+    "mpn": "L-P360L-AM3M-G0K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80054,
@@ -2780,10 +2786,10 @@ export default [
         "price": 79.95,
         "url": "https://www.amazon.com/dp/B0CKVZ2NZ1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2832,13 +2838,13 @@ export default [
     "reviews": 236,
     "deals": {
       "amazon": {
-        "price": 96.9,
+        "price": 80.67,
         "url": "https://www.amazon.com/dp/B0F66J3QPC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "IHTP",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2894,10 +2900,10 @@ export default [
         "price": 54.9,
         "url": "https://www.amazon.com/dp/B0DWZF7K1Y?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -2939,8 +2945,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -3014,7 +3020,7 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28",
+    "quarantinedAt": "2026-08-25",
     "bestbuyRemovedDead": "2026-08-18"
   },
   {
@@ -3034,7 +3040,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BLS3372N?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -3081,8 +3087,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -3129,10 +3135,10 @@ export default [
         "price": 69.95,
         "url": "https://www.amazon.com/dp/B00VB3Y89E?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3184,10 +3190,10 @@ export default [
         "price": 74.95,
         "url": "https://www.amazon.com/dp/B08HH6G48J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3245,7 +3251,7 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 197.99,
@@ -3298,10 +3304,10 @@ export default [
         "price": 74.95,
         "url": "https://www.amazon.com/dp/B075SF5QQ8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3392,7 +3398,9 @@ export default [
     "radSize": "140",
     "fanSize": 140,
     "cfm": 75,
-    "mpn": "NH-D15S chromax.Black-"
+    "mpn": "NH-D15S chromax.Black-",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80066,
@@ -3450,7 +3458,9 @@ export default [
     "fanSize": 140,
     "cfm": 75,
     "neweggRemovedOutlier": "2026-06-28",
-    "mpn": "NH-U14S TR4-SP3"
+    "mpn": "NH-U14S TR4-SP3",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80067,
@@ -3468,10 +3478,10 @@ export default [
         "price": 53.59,
         "url": "https://www.amazon.com/dp/B0BDF5514F?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -3515,7 +3525,7 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DF7DH5Z5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -3576,10 +3586,10 @@ export default [
         "price": 99.95,
         "url": "https://www.amazon.com/dp/B09TB5KJ5V?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3633,7 +3643,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D1CGL7D1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -3712,7 +3722,9 @@ export default [
     "fanSize": 140,
     "cfm": 150,
     "upc": "00841501100420",
-    "mpn": "NH-D15 G2 LBC"
+    "mpn": "NH-D15 G2 LBC",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80072,
@@ -3731,7 +3743,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BLJHRVF5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -3772,8 +3784,8 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 219.99,
@@ -3831,7 +3843,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 159.99,
@@ -3897,7 +3909,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09S3BGN6M?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -3940,7 +3952,7 @@ export default [
         "price": 89.79,
         "url": "https://www.amazon.com/dp/B0DPHSLXSS?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -3991,7 +4003,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DCFMG8PB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo"
@@ -4062,7 +4074,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQFYBSD6?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -4105,10 +4117,10 @@ export default [
         "price": 259.99,
         "url": "https://www.amazon.com/dp/B0D9GWDTHZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -4176,10 +4188,10 @@ export default [
         "price": 339.99,
         "url": "https://www.amazon.com/dp/B0DPPBVSNC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4238,10 +4250,10 @@ export default [
         "price": 109.95,
         "url": "https://www.amazon.com/dp/B0CVKZ9T3Q?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4294,10 +4306,10 @@ export default [
         "price": 79.95,
         "url": "https://www.amazon.com/dp/B0CWH97GKV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4352,7 +4364,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -4396,10 +4408,10 @@ export default [
         "price": 54.99,
         "url": "https://www.amazon.com/dp/B0DF2K9VQY?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -4442,7 +4454,7 @@ export default [
         "price": 53.9,
         "url": "https://www.amazon.com/dp/B0DHX795DV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi",
@@ -4490,7 +4502,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CQQ4RWDF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -4534,7 +4546,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FD6WBGD9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -4582,7 +4594,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DMVY11QR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -4623,7 +4635,12 @@ export default [
       "amazon": {
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B0FPCS7VH2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4669,10 +4686,10 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0FLTCSL45?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -4751,10 +4768,10 @@ export default [
         "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FPCSSZPY?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "LIAN LI direct store",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4808,7 +4825,12 @@ export default [
       "amazon": {
         "price": 100.32,
         "url": "https://www.amazon.com/dp/B0FLTZ2SHM?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "N82E16835146176",
@@ -4868,10 +4890,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FVFJZZV6?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -4918,7 +4940,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -4955,11 +4977,11 @@ export default [
     "reviews": 52,
     "deals": {
       "amazon": {
-        "price": 53.9,
+        "price": 48.51,
         "url": "https://www.amazon.com/dp/B0F8HTLRND?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -5005,10 +5027,10 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B086BYYFG5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "My Quality Lifestyle",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -5050,10 +5072,10 @@ export default [
         "price": 44.9,
         "url": "https://www.amazon.com/dp/B0DWZBNGQW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -5093,7 +5115,7 @@ export default [
         "price": 49.95,
         "url": "https://www.amazon.com/dp/B009VCAJ7W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
@@ -5154,7 +5176,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "newegg": {
         "sku": "9SIBZT7KJ95174",
@@ -5208,7 +5230,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08PTXFDP6?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -5254,10 +5276,10 @@ export default [
         "price": 49.99,
         "url": "https://www.amazon.com/dp/B0C9PXRK1C?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Scythe Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5350,7 +5372,9 @@ export default [
     "bench": 46,
     "fanSize": 92,
     "cfm": 35,
-    "mpn": "NH-D9L"
+    "mpn": "NH-D9L",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80103,
@@ -5371,8 +5395,8 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 24.99,
@@ -5422,10 +5446,10 @@ export default [
         "price": 59.95,
         "url": "https://www.amazon.com/dp/B09HCHYMJM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5479,8 +5503,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg_openbox": {
@@ -5551,10 +5575,10 @@ export default [
         "price": 25.99,
         "url": "https://www.amazon.com/dp/B0CGJ1J5KL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -5594,10 +5618,10 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B0D86ZTKZX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "uphere global",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -5679,7 +5703,9 @@ export default [
     "mpn": "L-P360A-AS3M-G1K",
     "radiator": 360,
     "fanCount": 3,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80109,
@@ -5697,7 +5723,7 @@ export default [
         "price": 36.63,
         "url": "https://www.amazon.com/dp/B09VH4YDS9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -5742,10 +5768,10 @@ export default [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0DT5RDKZT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "TRYX NA",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5804,7 +5830,7 @@ export default [
         "price": 64.99,
         "url": "https://www.amazon.com/dp/B0CZMPHCPG?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "dataforseo",
@@ -5849,13 +5875,13 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 139,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0FGDHFMDN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -5922,7 +5948,7 @@ export default [
         "price": 119.9,
         "url": "https://www.amazon.com/dp/B0DWZQ7LKT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
@@ -5971,7 +5997,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DMVVGR2R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -6012,10 +6038,10 @@ export default [
         "price": 79.9,
         "url": "https://www.amazon.com/dp/B0D4PDPKX5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "SMART SAVERS GLOBAL",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6074,7 +6100,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-19"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 219.99,
@@ -6131,7 +6157,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CJBZXVGY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -6166,7 +6192,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DB861CFX?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -6205,11 +6231,11 @@ export default [
     "reviews": 123,
     "deals": {
       "amazon": {
-        "price": 66.49,
+        "price": 69.99,
         "url": "https://www.amazon.com/dp/B0CNR1YGH5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -6250,10 +6276,10 @@ export default [
         "price": 84.95,
         "url": "https://www.amazon.com/dp/B0CKVYP3PJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6303,13 +6329,13 @@ export default [
     "reviews": 166,
     "deals": {
       "amazon": {
-        "price": 75.23,
+        "price": 83.59,
         "url": "https://www.amazon.com/dp/B0D1K859GT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -6355,7 +6381,7 @@ export default [
         "price": 32.31,
         "url": "https://www.amazon.com/dp/B0DMVVK2YT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi",
@@ -6403,7 +6429,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CQQYJC5M?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -6485,7 +6511,9 @@ export default [
     "fanSize": 140,
     "cfm": 75,
     "upc": "00841501100451",
-    "mpn": "NH-U14S TR5-SP6"
+    "mpn": "NH-U14S TR5-SP6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80125,
@@ -6505,8 +6533,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6565,10 +6593,10 @@ export default [
         "price": 339.99,
         "url": "https://www.amazon.com/dp/B0DPNQS3Q5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6674,10 +6702,10 @@ export default [
         "price": 129.99,
         "url": "https://www.amazon.com/dp/B0GGRDL4NG?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "TRYX NA",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6731,7 +6759,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DHXCNXFF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -6773,10 +6801,10 @@ export default [
     "reviews": 10,
     "deals": {
       "amazon": {
-        "price": 79.9,
+        "price": 69.9,
         "url": "https://www.amazon.com/dp/B0G4WDCL6P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "IHTP",
         "priceResolvedVia": "dataforseo",
@@ -6835,8 +6863,8 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 29.99,
@@ -6906,7 +6934,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -6951,8 +6979,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -6991,7 +7019,7 @@ export default [
         "price": 89.95,
         "url": "https://www.amazon.com/dp/B00C9FLSLY?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
@@ -7126,7 +7154,9 @@ export default [
     "radSize": "140",
     "fanSize": 140,
     "cfm": 75,
-    "mpn": "NH-D15S"
+    "mpn": "NH-D15S",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80137,
@@ -7146,7 +7176,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -7203,11 +7233,13 @@ export default [
         "price": 199,
         "url": "https://www.amazon.com/dp/B0DF7CGGCW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "bestbuy": {
         "price": 199.99,
@@ -7294,7 +7326,7 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80140,
@@ -7312,10 +7344,10 @@ export default [
         "price": 74.95,
         "url": "https://www.amazon.com/dp/B01N9X2YYN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -7369,10 +7401,10 @@ export default [
         "price": 28.73,
         "url": "https://www.amazon.com/dp/B09VG6NBSJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -7415,7 +7447,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Platinum Micro, Inc.",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -7464,10 +7496,10 @@ export default [
         "price": 99.95,
         "url": "https://www.amazon.com/dp/B01NC06ZYT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -7521,7 +7553,7 @@ export default [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B099RSPC2H?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
@@ -7581,12 +7613,12 @@ export default [
     "reviews": 703,
     "deals": {
       "amazon": {
-        "price": 79.59,
+        "price": 64.19,
         "url": "https://www.amazon.com/dp/B0DLWGL38S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -7645,7 +7677,7 @@ export default [
         "price": 67.29,
         "url": "https://www.amazon.com/dp/B0DLWGB566?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -7707,8 +7739,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -7757,7 +7789,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -7806,7 +7838,7 @@ export default [
         "price": 71.59,
         "url": "https://www.amazon.com/dp/B0DPHRRN65?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -7858,8 +7890,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Focus Camera LLC",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -7906,7 +7938,7 @@ export default [
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B0CKMTJ2J9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -7959,7 +7991,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08B41TV7S?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "paapi"
@@ -8052,7 +8084,7 @@ export default [
         "price": 58.79,
         "url": "https://www.amazon.com/dp/B0DLWFBHSL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -8106,7 +8138,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -8150,7 +8182,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09S35X72H?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -8193,7 +8225,7 @@ export default [
         "price": 30.27,
         "url": "https://www.amazon.com/dp/B09VG62KBZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -8240,8 +8272,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -8286,10 +8318,10 @@ export default [
         "price": 145,
         "url": "https://www.amazon.com/dp/B0BN8XYP6W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "TITAN RIG",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -8351,7 +8383,7 @@ export default [
     "height": 52,
     "cfm": 180,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -8429,7 +8461,7 @@ export default [
     "value": 48,
     "bench": 40,
     "cfm": 65,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
@@ -8492,7 +8524,9 @@ export default [
     "radiator": 360,
     "fanCount": 3,
     "upc": "00840353046498",
-    "mpn": "HSLCD36SB"
+    "mpn": "HSLCD36SB",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80164,
@@ -8512,7 +8546,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "HYG Inc",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8568,8 +8602,8 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -8611,10 +8645,10 @@ export default [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0F5S84X8P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -8712,7 +8746,7 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80168,
@@ -8730,7 +8764,7 @@ export default [
         "price": 52.99,
         "url": "https://www.amazon.com/dp/B0FHW333V3?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ALTRATEK LIMITED",
         "priceResolvedVia": "dataforseo",
@@ -8780,7 +8814,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CCP7F5Z8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -8830,10 +8864,10 @@ export default [
         "price": 99.99,
         "url": "https://www.amazon.com/dp/B0CK57N22Q?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -8897,7 +8931,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -8979,7 +9013,9 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "mpn": "MLX-D36M-A24PK-R1"
+    "mpn": "MLX-D36M-A24PK-R1",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80173,
@@ -8997,10 +9033,10 @@ export default [
         "price": 58.86,
         "url": "https://www.amazon.com/dp/B0BX6JJHLJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Alakhras LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9096,7 +9132,7 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "bestbuyRemovedDead": "2026-08-18"
   },
   {
@@ -9115,10 +9151,10 @@ export default [
         "price": 104.99,
         "url": "https://www.amazon.com/dp/B0DP9PWX6M?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9176,7 +9212,7 @@ export default [
         "price": 84.99,
         "url": "https://www.amazon.com/dp/B0DP9S4CNX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -9243,7 +9279,7 @@ export default [
         "priceConfirmedAt": "2026-08-16",
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "newegg": {
         "sku": "9SIC7PTM0T3147",
@@ -9301,7 +9337,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CXXTMBG7?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -9347,10 +9383,10 @@ export default [
         "price": 53.9,
         "url": "https://www.amazon.com/dp/B0D73CDLK5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9395,7 +9431,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -9439,7 +9475,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -9477,13 +9513,13 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 58.92,
+        "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9534,13 +9570,13 @@ export default [
     "reviews": 128,
     "deals": {
       "amazon": {
-        "price": 63.9,
+        "price": 69.99,
         "url": "https://www.amazon.com/dp/B0DM4CBKFY?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
-        "priceSource": "3p",
-        "priceSeller": "GH Electronics (We Record SN#)",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9587,11 +9623,11 @@ export default [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "V+W Goods",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "discount": 7,
@@ -9640,7 +9676,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BLJGF79V?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -9680,7 +9716,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CS6DPJ6J?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Wangchi Online",
         "priceResolvedVia": "paapi"
@@ -9725,7 +9761,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D1JW9MVB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -9772,10 +9808,10 @@ export default [
         "price": 164.95,
         "url": "https://www.amazon.com/dp/B0D5B4KWMD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9829,7 +9865,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D1JZXJHH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -9875,10 +9911,10 @@ export default [
         "price": 43.11,
         "url": "https://www.amazon.com/dp/B0BLJGW838?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9916,8 +9952,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Hestia Delight",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -9960,7 +9996,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CBRFXRFZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -10026,7 +10062,7 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -10072,7 +10108,7 @@ export default [
     "radiator": 240,
     "fanCount": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -10093,11 +10129,13 @@ export default [
         "price": 51.19,
         "url": "https://www.amazon.com/dp/B0CDPKSTWP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-08-22",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -10140,7 +10178,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D3C7D72R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -10186,7 +10224,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D3D2V6M9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -10234,7 +10272,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "TR Direct Store",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -10327,7 +10365,7 @@ export default [
         "price": 45.9,
         "url": "https://www.amazon.com/dp/B0C8CTGYJX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi",
@@ -10410,7 +10448,9 @@ export default [
     "fanSize": 140,
     "cfm": 132,
     "upc": "00814256019279",
-    "mpn": "814256019279"
+    "mpn": "814256019279",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80202,
@@ -10481,7 +10521,9 @@ export default [
     "upc": "04710562748482",
     "mpn": "HyperFlow Silent 360 Black",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80203,
@@ -10500,7 +10542,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DRFQDSFS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -10544,7 +10586,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DBFSDPYY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -10586,10 +10628,10 @@ export default [
         "price": 369,
         "url": "https://www.amazon.com/dp/B0CLB6FPX1?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Skoodooh",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -10632,7 +10674,7 @@ export default [
         "price": 55.9,
         "url": "https://www.amazon.com/dp/B0D86H1VW2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi",
@@ -10680,7 +10722,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D83LB8PB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -10726,7 +10768,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DK6T8THN?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -10774,8 +10816,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Hestia Delight",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -10815,7 +10857,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CBRF7N3L?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -10859,10 +10901,10 @@ export default [
         "price": 214.65,
         "url": "https://www.amazon.com/dp/B0CBV7474S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -10902,10 +10944,10 @@ export default [
         "price": 87.67,
         "url": "https://www.amazon.com/dp/B0DBL8LJ15?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceSource": "3p",
+        "priceSeller": "Hestia Delight",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -10946,10 +10988,10 @@ export default [
         "price": 32.9,
         "url": "https://www.amazon.com/dp/B0D2VKHY1T?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -10989,10 +11031,10 @@ export default [
         "price": 27.99,
         "url": "https://www.amazon.com/dp/B0FJM5X4YX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -11038,7 +11080,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HYG Inc",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -11095,7 +11137,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D8VFCCK5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -11137,11 +11179,11 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 218.05,
+        "price": 192.24,
         "url": "https://www.amazon.com/dp/B0CD759GSY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "OneDealOutlet Online",
         "priceResolvedVia": "paapi"
@@ -11200,10 +11242,10 @@ export default [
         "price": 64.99,
         "url": "https://www.amazon.com/dp/B0DYDF5F4Y?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Hestia Delight",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -11244,10 +11286,10 @@ export default [
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0CBJQ4R9X?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11305,7 +11347,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DK3C8CWF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -11351,7 +11393,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CKMQWT9W?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
@@ -11387,7 +11429,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FCFMX5RN?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "SAMA Offical Store",
         "priceResolvedVia": "paapi"
@@ -11430,7 +11472,7 @@ export default [
         "price": 69.99,
         "url": "https://www.amazon.com/dp/B0D97QNVP5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi",
@@ -11472,13 +11514,13 @@ export default [
     "reviews": 40,
     "deals": {
       "amazon": {
-        "price": 80.63,
+        "price": 89.59,
         "url": "https://www.amazon.com/dp/B0DK3PRFN9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -11543,7 +11585,7 @@ export default [
     "fanSize": 140,
     "height": 52,
     "cfm": 220,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "needsReview": true,
     "reviewFlags": [
       "relink:no-price"
@@ -11567,7 +11609,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DHZ5LSNP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -11612,10 +11654,10 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B0DWDMHYYS?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11668,10 +11710,10 @@ export default [
         "price": 49.99,
         "url": "https://www.amazon.com/dp/B0FND8XGV1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "FlashDeal Store",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11730,7 +11772,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DMVZ3YQ7?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -11769,13 +11811,13 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 74.99,
         "url": "https://www.amazon.com/dp/B0DPY1WQMJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "3p",
+        "priceSeller": "CR Distributors (S/N Recorded)",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11830,13 +11872,13 @@ export default [
     "reviews": 35,
     "deals": {
       "amazon": {
-        "price": 179.99,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0FJL5GZCW?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11922,7 +11964,7 @@ export default [
     "radSize": "120",
     "cfm": 60,
     "needsReview": true,
-    "quarantinedAt": "2026-07-28",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -11946,7 +11988,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -11991,10 +12033,10 @@ export default [
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B0CL6FN52B?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -12052,10 +12094,10 @@ export default [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0F7KFWMM6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "RUIX GAMING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -12099,7 +12141,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -12144,7 +12186,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -12189,7 +12231,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DPWXPJQ7?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -12234,7 +12276,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CLB7LMCW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Bleepbox US",
         "priceResolvedVia": "paapi"
@@ -12278,7 +12320,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DK37XJWG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -12323,10 +12365,10 @@ export default [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0FX3RVVD3?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -12373,7 +12415,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -12455,7 +12497,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DK3D238Q?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -12538,7 +12580,9 @@ export default [
     "cfm": 132,
     "neweggRemovedOutlier": "2026-06-28",
     "upc": "00814256019385",
-    "mpn": "PA120-D-ARGB-W"
+    "mpn": "PA120-D-ARGB-W",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80246,
@@ -12557,7 +12601,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D3DQXMSB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -12596,8 +12640,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -12656,8 +12700,8 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
-        "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-22"
+        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-08-25"
       },
       "newegg": {
         "sku": "445839474182876879093444",
@@ -12718,7 +12762,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -12761,7 +12805,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DP6514B2?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -12807,10 +12851,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FMJYX5W1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Micro Center",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -12854,10 +12898,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CDV7148X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "OneDealOutlet Online",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -12972,7 +13016,7 @@ export default [
     "fanCount": 3,
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80255,
@@ -12993,7 +13037,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Amazon Japan",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -13039,8 +13083,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "msi": {
@@ -13110,7 +13154,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "additionalImages": [
@@ -13149,7 +13193,7 @@ export default [
         "price": 139.99,
         "url": "https://www.amazon.com/dp/B0FG7LGDDL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -13250,7 +13294,9 @@ export default [
     "fanSize": 120,
     "cfm": 60,
     "upc": "00841501100383",
-    "mpn": "NH-U12S DX-4677"
+    "mpn": "NH-U12S DX-4677",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 80260,
@@ -13268,7 +13314,7 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0D33GL96Z?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "LIAN LI direct store",
         "priceResolvedVia": "dataforseo",
@@ -13319,10 +13365,10 @@ export default [
         "price": 194.98,
         "url": "https://www.amazon.com/dp/B0DYJMJTY4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -13397,7 +13443,7 @@ export default [
         "price": 145.83,
         "url": "https://www.amazon.com/dp/B0DYJ8HNW8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "trippodoshop",
         "priceResolvedVia": "paapi",
@@ -13475,10 +13521,10 @@ export default [
         "price": 191.95,
         "url": "https://www.amazon.com/dp/B0CD77LBKP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "OneDealOutlet Online",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -13537,7 +13583,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FV8NH7TQ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -13580,7 +13626,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D3C6ZRQG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -13622,10 +13668,10 @@ export default [
         "price": 109.99,
         "url": "https://www.amazon.com/dp/B0FM1V3Q3F?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -15553,10 +15599,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FT526Y4Q?tag=tiereduptech-20",
         "price": 199.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Empowered PC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -15584,7 +15630,7 @@ export default [
         "price": 9.69,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "WSHAITE",
         "priceResolvedVia": "paapi"
@@ -15616,10 +15662,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0F5SCG6QC?tag=tiereduptech-20",
         "price": 149.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -15649,13 +15695,13 @@ export default [
       "amazon": {
         "asin": "B0D9GWQPDM",
         "url": "https://www.amazon.com/dp/B0D9GWQPDM?tag=tiereduptech-20",
-        "price": 259.99,
+        "price": 299.99,
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-08-06"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -15693,10 +15739,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0DM4BRSV5?tag=tiereduptech-20",
         "price": 89.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Alakhras LLC",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -15766,7 +15812,7 @@ export default [
     "noise": 20,
     "rpm": 2100,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100359,
@@ -15785,8 +15831,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -15822,7 +15868,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -15874,7 +15920,7 @@ export default [
         "price": 91.06,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi"
@@ -15929,10 +15975,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ5ND3XL?tag=tiereduptech-20",
         "price": 41.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -15966,7 +16012,7 @@ export default [
         "price": 37.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -16001,7 +16047,7 @@ export default [
         "price": 43.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "IHTP",
         "priceResolvedVia": "paapi"
@@ -16036,7 +16082,7 @@ export default [
         "price": 53.09,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -16070,7 +16116,7 @@ export default [
         "price": 38.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -16105,7 +16151,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -16289,7 +16335,7 @@ export default [
         "price": 134.88,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Only1deal",
         "priceResolvedVia": "paapi"
@@ -16326,8 +16372,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Dracaena",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -16355,7 +16401,7 @@ export default [
         "price": 14.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -16384,10 +16430,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09LHBFPJ6?tag=tiereduptech-20",
         "price": 17.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -16421,7 +16467,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HY-DIY",
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -16456,10 +16502,10 @@ export default [
         "price": 15.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Vetroo",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -16507,7 +16553,9 @@ export default [
     ],
     "airflow": 41,
     "noise": 29.5,
-    "rpm": 2400
+    "rpm": 2400,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100905,
@@ -16542,7 +16590,9 @@ export default [
     ],
     "airflow": 58,
     "noise": 27.2,
-    "rpm": 2000
+    "rpm": 2000,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100906,
@@ -16574,7 +16624,7 @@ export default [
     "noise": 29.8,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -16594,10 +16644,10 @@ export default [
         "url": "https://www.amazon.com/dp/B07MFMFL7R?tag=tiereduptech-20",
         "price": 9.97,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "DAEBAK",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "SupplierHubb",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -16639,7 +16689,7 @@ export default [
         "price": 16.89,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -16674,10 +16724,10 @@ export default [
         "price": 35.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -16722,7 +16772,7 @@ export default [
     "noise": 29,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:no-price"
     ]
@@ -16761,7 +16811,7 @@ export default [
     "noise": 22.3,
     "rpm": 1800,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100912,
@@ -16779,7 +16829,7 @@ export default [
         "price": 20.39,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -16813,7 +16863,7 @@ export default [
         "price": 18.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Ocypus",
         "priceResolvedVia": "paapi"
@@ -16847,7 +16897,7 @@ export default [
         "price": 22.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -16883,7 +16933,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -16932,7 +16982,7 @@ export default [
     "noise": 28.4,
     "rpm": 2150,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22",
+    "quarantinedAt": "2026-08-25",
     "reviewFlags": [
       "relink:mismatch"
     ]
@@ -16952,10 +17002,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09VH14935?tag=tiereduptech-20",
         "price": 30.54,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -16983,8 +17033,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17019,7 +17069,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Micro Center",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -17053,7 +17103,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CKXB56MS?tag=tiereduptech-20",
         "price": 29.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
@@ -17095,8 +17145,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17129,7 +17179,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DWZX4SSK?tag=tiereduptech-20",
         "price": 149.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
@@ -17164,7 +17214,7 @@ export default [
         "price": 109.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Geometric Future",
         "priceResolvedVia": "paapi"
@@ -17196,10 +17246,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CCX9MKRL?tag=tiereduptech-20",
         "price": 139.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "3p",
+        "priceSeller": "OneDealOutlet Online",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17230,7 +17280,7 @@ export default [
         "price": 85,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Enermax USA",
         "priceResolvedVia": "paapi"
@@ -17265,10 +17315,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CHN6MYZ4?tag=tiereduptech-20",
         "price": 196.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17299,8 +17349,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17344,7 +17394,7 @@ export default [
     "noise": 30.7,
     "rpm": 1800,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100929,
@@ -17361,10 +17411,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FDC4KZ46?tag=tiereduptech-20",
         "price": 259.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17396,7 +17446,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -17430,7 +17480,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPCT1SV4?tag=tiereduptech-20",
         "price": 179.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -17471,7 +17521,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -17524,7 +17574,7 @@ export default [
     "noise": 25.6,
     "rpm": 1550,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100934,
@@ -17543,8 +17593,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17577,7 +17627,7 @@ export default [
         "price": 35.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -17610,10 +17660,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BFPRYB5Y?tag=tiereduptech-20",
         "price": 39.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17646,7 +17696,7 @@ export default [
         "price": 26.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -17680,7 +17730,7 @@ export default [
         "price": 27.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -17712,10 +17762,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BT9122F7?tag=tiereduptech-20",
         "price": 19.39,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17745,7 +17795,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BNLB8VXS?tag=tiereduptech-20",
         "price": 59.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "dataforseo",
@@ -17791,7 +17841,7 @@ export default [
         "price": 22.29,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -17823,10 +17873,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09CGZKHGR?tag=tiereduptech-20",
         "price": 24.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -17860,7 +17910,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Jungle Leopard Direct",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -17897,7 +17947,7 @@ export default [
         "price": 29.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "UTLGAMENG",
         "priceResolvedVia": "paapi"
@@ -17946,10 +17996,10 @@ export default [
         "price": 32.59,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -17980,7 +18030,7 @@ export default [
         "price": 32.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "uphere global",
         "priceResolvedVia": "paapi"
@@ -18014,7 +18064,7 @@ export default [
         "price": 20.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -18044,12 +18094,12 @@ export default [
       "amazon": {
         "asin": "B0BRBW94VL",
         "url": "https://www.amazon.com/dp/B0BRBW94VL?tag=tiereduptech-20",
-        "price": 19.99,
+        "price": 22.15,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18085,7 +18135,7 @@ export default [
         "priceSeller": "My Secret Style",
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.792Z",
@@ -18118,7 +18168,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ITJTV",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -18149,10 +18199,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0DTHX5T88?tag=tiereduptech-20",
         "price": 103.17,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Amazon Global Store UK",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "SSSサポートストア",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18181,7 +18231,7 @@ export default [
         "price": 39.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -18218,7 +18268,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
@@ -18249,8 +18299,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18281,7 +18331,7 @@ export default [
         "price": 29.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -18328,7 +18378,9 @@ export default [
     "bench": 27,
     "airflow": 78.25,
     "noise": 29.85,
-    "rpm": 2000
+    "rpm": 2000,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 100957,
@@ -18370,10 +18422,10 @@ export default [
         "price": 51.73,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
@@ -18397,7 +18449,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D97Q33GW?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi",
@@ -18462,7 +18514,7 @@ export default [
         "price": 89.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -18502,7 +18554,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
@@ -18535,10 +18587,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0GKF2R7X1?tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18567,7 +18619,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T14:34:31.793Z",
@@ -18601,7 +18653,7 @@ export default [
         "price": 89.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -18640,7 +18692,7 @@ export default [
         "price": 18.29,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -18677,7 +18729,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -18708,10 +18760,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0DCFN8Q6G?tag=tiereduptech-20",
         "price": 219.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18751,7 +18803,7 @@ export default [
         "priceConfirmedAt": "2026-08-10",
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       },
       "newegg": {
         "sku": "4458315911533018610926929",
@@ -18792,10 +18844,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CDF6GYM1?tag=tiereduptech-20",
         "price": 189.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18829,10 +18881,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPCSG6J5?tag=tiereduptech-20",
         "price": 159.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "LIAN LI direct store",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -18865,7 +18917,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Jungle Leopard Direct",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -18904,7 +18956,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "KuFengKeJi store",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -18962,7 +19014,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPBR3WWH?tag=tiereduptech-20",
         "price": 134.91,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "❤️️ Shop 1-Click (SN Recorded)",
         "priceResolvedVia": "dataforseo",
@@ -19024,10 +19076,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09PWVN9TP?tag=tiereduptech-20",
         "price": 99.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Woot",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19062,10 +19114,10 @@ export default [
         "url": "https://www.amazon.com/dp/B07CRGC899?tag=tiereduptech-20",
         "price": 69.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19097,10 +19149,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09463GC4H?tag=tiereduptech-20",
         "price": 39.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Northwind Studio",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "RhodyRetail",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19134,10 +19186,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPBRVJP2?tag=tiereduptech-20",
         "price": 134,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19169,13 +19221,13 @@ export default [
       "amazon": {
         "asin": "B0FD3MRM1B",
         "url": "https://www.amazon.com/dp/B0FD3MRM1B?tag=tiereduptech-20",
-        "price": 200,
+        "price": 169.11,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "TopBella",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo"
+        "priceSeller": "Thermalright Direct 2",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
@@ -19212,7 +19264,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -19247,7 +19299,7 @@ export default [
         "price": 40.84,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Jungle Leopard",
         "priceResolvedVia": "paapi"
@@ -19274,8 +19326,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "IHTP",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19308,7 +19360,7 @@ export default [
         "price": 55.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
@@ -19345,7 +19397,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -19380,7 +19432,7 @@ export default [
         "price": 56.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -19417,7 +19469,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -19449,7 +19501,7 @@ export default [
         "price": 37.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -19482,10 +19534,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0D949MRNM?tag=tiereduptech-20",
         "price": 37.89,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19516,10 +19568,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BR8S1QG5?tag=tiereduptech-20",
         "price": 35.89,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19552,7 +19604,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -19586,7 +19638,7 @@ export default [
         "price": 35.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -19624,10 +19676,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0CYJ6SZ4R?tag=tiereduptech-20",
         "price": 57.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
-        "priceSource": "3p",
-        "priceSeller": "IHTP",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19662,7 +19714,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-08-22"
+        "priceConfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -19694,7 +19746,7 @@ export default [
         "price": 32.69,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -19725,10 +19777,10 @@ export default [
       "amazon": {
         "asin": "B0F8VX8L7W",
         "url": "https://www.amazon.com/dp/B0F8VX8L7W?tag=tiereduptech-20",
-        "price": 50.9,
+        "price": 45.81,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -19786,12 +19838,12 @@ export default [
       "amazon": {
         "asin": "B0D83M25X5",
         "url": "https://www.amazon.com/dp/B0D83M25X5?tag=tiereduptech-20",
-        "price": 163.13,
+        "price": 144.33,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -19836,8 +19888,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19892,7 +19944,7 @@ export default [
     "noise": 29.8,
     "rpm": 2000,
     "needsReview": true,
-    "quarantinedAt": "2026-08-22"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 101242,
@@ -19909,10 +19961,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0819NDVX4?tag=tiereduptech-20",
         "price": 89.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "Phanteks USA",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -19945,10 +19997,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0F4QGP9RX?tag=tiereduptech-20",
         "price": 129.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "dataforseo",
+        "priceSeller": "Byte-TechDirect",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20023,10 +20075,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0FX3P41R6?tag=tiereduptech-20",
         "price": 59.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20063,7 +20115,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20098,7 +20150,7 @@ export default [
         "price": 46.29,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -20131,12 +20183,12 @@ export default [
       "amazon": {
         "asin": "B0FL7CQX3D",
         "url": "https://www.amazon.com/dp/B0FL7CQX3D?tag=tiereduptech-20",
-        "price": 149,
+        "price": 129.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "KuFengKeJi store",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20172,7 +20224,7 @@ export default [
         "price": 74.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ID-COOLING",
         "priceResolvedVia": "paapi"
@@ -20211,7 +20263,7 @@ export default [
         "price": 46.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi"
@@ -20246,7 +20298,7 @@ export default [
         "price": 22.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -20283,7 +20335,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20315,10 +20367,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0G1BRDLX6?tag=tiereduptech-20",
         "price": 47.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "jonsbo",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20349,10 +20401,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 8.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20383,7 +20435,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BB88471Y?tag=tiereduptech-20",
         "price": 24.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -20445,7 +20497,7 @@ export default [
     "noise": 33.2,
     "rpm": 3000,
     "needsReview": true,
-    "quarantinedAt": "2026-08-05"
+    "quarantinedAt": "2026-08-25"
   },
   {
     "id": 101258,
@@ -20465,7 +20517,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Vetroo",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -20507,7 +20559,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20537,10 +20589,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09HCLB7M3?tag=tiereduptech-20",
         "price": 49.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -20584,7 +20636,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-22"
+        "priceUnconfirmedAt": "2026-08-25"
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -20619,8 +20671,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "jonsbo",
-        "priceConfirmedAt": "2026-08-22",
-        "priceResolvedVia": "dataforseo",
+        "priceConfirmedAt": "2026-08-25",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20653,7 +20705,7 @@ export default [
         "price": 35.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
         "priceResolvedVia": "paapi"
@@ -20694,7 +20746,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20751,10 +20803,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 8.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -20810,10 +20862,10 @@ export default [
         "url": "https://www.amazon.com/dp/B09SHV7LZ3?tag=tiereduptech-20",
         "price": 8.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-22",
+        "priceConfirmedAt": "2026-08-25",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
