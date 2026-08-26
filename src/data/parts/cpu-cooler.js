@@ -1867,7 +1867,7 @@ export default [
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2681,7 +2681,7 @@ export default [
     "reviews": 417,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 75.91,
         "url": "https://www.amazon.com/dp/B09464Z8G9?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -5588,7 +5588,7 @@ export default [
     "reviews": 393,
     "deals": {
       "amazon": {
-        "price": 25.99,
+        "price": 23.69,
         "url": "https://www.amazon.com/dp/B0CGJ1J5KL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
@@ -9541,8 +9541,8 @@ export default [
         "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Alakhras LLC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-26",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -17941,7 +17941,7 @@ export default [
       "amazon": {
         "asin": "B0GT94L8KJ",
         "url": "https://www.amazon.com/dp/B0GT94L8KJ?tag=tiereduptech-20",
-        "price": 249.99,
+        "price": 169.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
@@ -18952,7 +18952,7 @@ export default [
       "amazon": {
         "asin": "B0GT4QG179",
         "url": "https://www.amazon.com/dp/B0GT4QG179?tag=tiereduptech-20",
-        "price": 249.99,
+        "price": 169.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
@@ -19191,7 +19191,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "RhodyRetail",
+        "priceSeller": "UnrealDeals (SERIAL NUMBERS RECORDED)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

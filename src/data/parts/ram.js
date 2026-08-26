@@ -1016,7 +1016,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "Cyterus",
+        "priceSeller": "DiscTech (USA)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1346,8 +1346,8 @@ export default [
         "url": "https://www.amazon.com/dp/B09T97ZSVB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
-        "priceSource": "3p",
-        "priceSeller": "MobileMonster",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3077,16 +3077,14 @@ export default [
     "reviews": 2152,
     "deals": {
       "amazon": {
-        "price": 1266.89,
+        "price": 1089.99,
         "url": "https://www.amazon.com/dp/B0C1RGLVZ8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-15",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "Nutrend Automotive Inc",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-26"
+        "priceSeller": "Wazno Electronics",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445835514514661201458835",
@@ -3351,8 +3349,9 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-25",
-    "bestbuyRemovedDead": "2026-08-18"
+    "quarantinedAt": "2026-08-26",
+    "bestbuyRemovedDead": "2026-08-18",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 40120,
@@ -3467,7 +3466,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Giz-Promo",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-26"
       },
       "newegg": {
         "sku": "4458318334980112469129502",
@@ -4473,11 +4474,13 @@ export default [
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B07Z86WC1Z?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-26",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-26"
       }
     },
     "additionalImages": [
@@ -6211,8 +6214,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DCGFCHXF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
-        "priceSource": "3p",
-        "priceSeller": "QyTech",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -6266,7 +6269,7 @@ export default [
     "reviews": 67,
     "deals": {
       "amazon": {
-        "price": 515.51,
+        "price": 645.84,
         "url": "https://www.amazon.com/dp/B09T8WL54M?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
@@ -6997,10 +7000,10 @@ export default [
     "reviews": 44,
     "deals": {
       "amazon": {
-        "price": 829.99,
+        "price": 913.99,
         "url": "https://www.amazon.com/dp/B0CRSZCQNH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-15",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "BIWIN Tech",
         "priceResolvedVia": "paapi",
@@ -7098,7 +7101,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "KLEVV",
+        "priceSeller": "Micro Center",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9661,7 +9664,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "TrueSpec",
+        "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9688,7 +9691,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "MemoryMasters",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10288,7 +10291,7 @@ export default [
       "amazon": {
         "asin": "B0DSQMCV8B",
         "url": "https://www.amazon.com/dp/B0DSQMCV8B?tag=tiereduptech-20",
-        "price": 885.99,
+        "price": 1079.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
@@ -10606,7 +10609,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "MemoryMasters",
+        "priceSeller": "Joes Tech Shop Inc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10638,7 +10641,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "eStarDeals",
+        "priceSeller": "A-Tech Components",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -11272,7 +11275,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "Gear(4)Less",
+        "priceSeller": "ARF Tech",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

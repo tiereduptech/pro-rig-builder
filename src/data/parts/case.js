@@ -221,13 +221,11 @@ export default [
         "price": 164.99,
         "url": "https://www.amazon.com/dp/B0822Y6H34?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
-        "priceConfirmedAt": "2026-08-21",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-26",
+        "priceResolvedVia": "paapi"
       }
     },
     "tower": "Mid",
@@ -411,12 +409,12 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 94.56,
         "url": "https://www.amazon.com/dp/B0CB26ZFKV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
-        "priceSource": "3p",
-        "priceSeller": "SMART SAVERS GLOBAL",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2534,7 +2532,7 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DFWQDRW1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "FOIFKIN US",
         "priceResolvedVia": "paapi",
@@ -3000,7 +2998,7 @@ export default [
         "price": 59.99,
         "url": "https://www.amazon.com/dp/B0DQPMJ6MJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -4105,12 +4103,12 @@ export default [
     "reviews": 403,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 94.56,
         "url": "https://www.amazon.com/dp/B0CB26ZFKV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
-        "priceSource": "3p",
-        "priceSeller": "SMART SAVERS GLOBAL",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -5953,7 +5951,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-26"
       }
     },
     "discount": 13,
@@ -9810,13 +9810,11 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0DSBQTM92?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "FOIFKIN US",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-26"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -14043,7 +14041,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-26"
       },
       "newegg": {
         "sku": "445834702899530246337236",
@@ -14120,8 +14120,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ1V1H11?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -20106,7 +20106,7 @@ export default [
       "amazon": {
         "asin": "B0CS3T8BVF",
         "url": "https://www.amazon.com/dp/B0CS3T8BVF?tag=tiereduptech-20",
-        "price": 204.98,
+        "price": 184.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
@@ -20525,13 +20525,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0CX595GDJ?tag=tiereduptech-20",
         "price": 196.99,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-24",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-26",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "445831543320867645904502",
@@ -23177,15 +23175,13 @@ export default [
       "amazon": {
         "asin": "B0D8J9Q47Y",
         "url": "https://www.amazon.com/dp/B0D8J9Q47Y?tag=tiereduptech-20",
-        "price": 59.99,
+        "price": 79.99,
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "SAMA Offical Store",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-08-07",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-26"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-26"
       }
     },
     "needsReview": false,
