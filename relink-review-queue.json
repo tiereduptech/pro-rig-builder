@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-25T03:47:31.677Z",
+    "generatedAt": "2026-08-26T03:52:06.981Z",
     "policy": "REPORT ONLY — never auto-relinked"
   },
   "totals": {
-    "queued": 198,
-    "wrongProduct": 72,
+    "queued": 201,
+    "wrongProduct": 75,
     "closeButWrong": 126,
-    "live": 37,
-    "priceDivergent": 50
+    "live": 6,
+    "priceDivergent": 52
   },
   "queue": [
     {
@@ -633,6 +633,26 @@
     },
     {
       "class": "close-but-wrong",
+      "id": 80202,
+      "cat": "CPUCooler",
+      "asin": "B0DY2JT3W5",
+      "storedName": "HyperFlow Silent 360 Black – Ultra-Quiet AIO Liquid CPU Cooler, 3100RPM Pump, Triple Silent Fans",
+      "amazonTitle": "MONTECH HyperFlow Silent 360mm AIO CPU Cooler, Low-Noise, Non-RGB, Black",
+      "scoreStoredInAmazon": 0.43,
+      "scoreAmazonInStored": 0.5,
+      "gateScore": 0.43,
+      "capConflict": false,
+      "storedPrice": 64.99,
+      "amazonPrice": 89.18,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 37.2,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
       "id": 85005,
       "cat": "CaseFan",
       "asin": "B0D49Q4CGM",
@@ -847,6 +867,26 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -27.2,
+      "priceDivergent": true,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 50039,
+      "cat": "Storage",
+      "asin": "B0BHCL7HTL",
+      "storedName": "Micron 7450 Pro 1.92TB NVMe U.2 Gen4",
+      "amazonTitle": "Micron 7450 PRO 960 GB Solid State Drive - M.2 2280 Internal - PCI Express NVMe [PCI Express NVMe 4.0 x4] - Read Intensive - TAA Compliant",
+      "scoreStoredInAmazon": 0.67,
+      "scoreAmazonInStored": 0.25,
+      "gateScore": 0.67,
+      "capConflict": true,
+      "storedPrice": 595,
+      "amazonPrice": 749,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 25.9,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -1112,6 +1152,26 @@
       "needsReview": true
     },
     {
+      "class": "close-but-wrong",
+      "id": 80012,
+      "cat": "CPUCooler",
+      "asin": "B0DF7CZ9D8",
+      "storedName": "Corsair iCUE H150i Elite LCD XT",
+      "amazonTitle": "CORSAIR Titan 360 RX LCD Liquid CPU Cooler, 360mm AIO, Low-Noise FlowDrive Cooling Engine, Intel LGA 1851/1700 & AMD AM5/AM4, 3X RX120 RGB Fans, System Hub Included, Black",
+      "scoreStoredInAmazon": 0.4,
+      "scoreAmazonInStored": 0.07,
+      "gateScore": 0.4,
+      "capConflict": false,
+      "storedPrice": 195,
+      "amazonPrice": 219.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 12.8,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
       "class": "wrong-product",
       "id": 90002,
       "cat": "Monitor",
@@ -1192,6 +1252,26 @@
       "needsReview": true
     },
     {
+      "class": "close-but-wrong",
+      "id": 101067,
+      "cat": "Monitor",
+      "asin": "B0F1H325FN",
+      "storedName": "Dell 34 Plus USB-C Curved Monitor - S3425DW - 34-inch (3440 x 1440) up to 120 Hz 21:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, Integrated Speakers, 3000:1 Contrast Ratio",
+      "amazonTitle": "Dell 34 Monitor S3425DW, WQHD VA, 120Hz, FreeSync Premium, Eye Comfort",
+      "scoreStoredInAmazon": 0.23,
+      "scoreAmazonInStored": 0.56,
+      "gateScore": 0.23,
+      "capConflict": false,
+      "storedPrice": 379.99,
+      "amazonPrice": 419.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 10.5,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
       "class": "wrong-product",
       "id": 90005,
       "cat": "Monitor",
@@ -1247,6 +1327,26 @@
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -9.3,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 99006,
+      "cat": "OS",
+      "asin": "B09MYBD79G",
+      "storedName": "Microsoft Windows 11 Pro OEM DVD 64-bit (FQC-10529)",
+      "amazonTitle": "Microsoft OEM System Builder | Windоws 11 Pro | Intended use for new systems | Authorized by Microsoft",
+      "scoreStoredInAmazon": 0.38,
+      "scoreAmazonInStored": 0.25,
+      "gateScore": 0.38,
+      "capConflict": false,
+      "storedPrice": 147,
+      "amazonPrice": 159.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 8.8,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -1309,7 +1409,27 @@
       "priceDeltaPct": -8.4,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 100990,
+      "cat": "Monitor",
+      "asin": "B0F1GFD44G",
+      "storedName": "Dell 27 Plus 4K USB-C Monitor - S2725QC - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
+      "amazonTitle": "Dell 27 Monitor S2725QC, 4K UHD IPS, 120Hz, 99% sRGB, 4ms, FreeSync Premium",
+      "scoreStoredInAmazon": 0.32,
+      "scoreAmazonInStored": 0.7,
+      "gateScore": 0.32,
+      "capConflict": false,
+      "storedPrice": 314.99,
+      "amazonPrice": 289.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -7.9,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1413,6 +1533,26 @@
     },
     {
       "class": "close-but-wrong",
+      "id": 80058,
+      "cat": "CPUCooler",
+      "asin": "B0FPCQ2895",
+      "storedName": "Hydroshift II-S LCD 360TL ARGB Liquid CPU Cooler - 360mm AIO - 3.4\" IPS LCD Square Screen - Daisy-Chain - Low-Noise -...",
+      "amazonTitle": "Lian Li HydroShift II LCD-S-360 TL-Liquid CPU Cooler-Black-HS2LCDS36TB",
+      "scoreStoredInAmazon": 0.31,
+      "scoreAmazonInStored": 0.56,
+      "gateScore": 0.31,
+      "capConflict": false,
+      "storedPrice": 261.71,
+      "amazonPrice": 246.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -5.6,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
       "id": 90069,
       "cat": "Monitor",
       "asin": "B0FQJ2QJX3",
@@ -1469,24 +1609,24 @@
       "priceDeltaPct": -4.8,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
-      "id": 100990,
-      "cat": "Monitor",
-      "asin": "B0F1GFD44G",
-      "storedName": "Dell 27 Plus 4K USB-C Monitor - S2725QC - 27-inch 4K (3840 x 2160) 120Hz 16:9 Display, AMD FreeSync Premium, sRGB 99%, Integrated Speakers, 1500:1 Contrast Ratio, Comfortview - Ash White",
-      "amazonTitle": "Dell 27 Monitor S2725QC, 4K UHD IPS, 120Hz, 99% sRGB, 4ms, FreeSync Premium",
-      "scoreStoredInAmazon": 0.32,
-      "scoreAmazonInStored": 0.7,
-      "gateScore": 0.32,
+      "id": 85092,
+      "cat": "CaseFan",
+      "asin": "B0DJVMKDV1",
+      "storedName": "UNI Fan SL Wireless 120mm ARGB Fan - Triple Pack - 2.4 GHz Wireless Signal for RGB & Fans Control - Customizable Ligh...",
+      "amazonTitle": "Lian Li UNI Fan SL Wireless-120-Controller Included-White-12SL1W3W",
+      "scoreStoredInAmazon": 0.2,
+      "scoreAmazonInStored": 0.33,
+      "gateScore": 0.2,
       "capConflict": false,
-      "storedPrice": 314.99,
-      "amazonPrice": 299.99,
+      "storedPrice": 94.8,
+      "amazonPrice": 99.19,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -4.8,
+      "priceDeltaPct": 4.6,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -1529,7 +1669,7 @@
       "priceDeltaPct": -4.3,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1549,7 +1689,7 @@
       "priceDeltaPct": -4.3,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1564,6 +1704,26 @@
       "capConflict": false,
       "storedPrice": 72.99,
       "amazonPrice": 69.9,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": -4.2,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 50042,
+      "cat": "Storage",
+      "asin": "B08QBJ2YMG",
+      "storedName": "870 EVO SATA III SSD 1TB 2.5” Internal Solid State Drive, Upgrade PC or Laptop Memory and Storage for IT Pros, Creators",
+      "amazonTitle": "Samsung SSD 870 EVO SATA III 2.5” 1TB, Read Speeds Up to 560MB/s",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.6,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 327.62,
+      "amazonPrice": 313.97,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -4.2,
@@ -1592,24 +1752,24 @@
       "needsReview": true
     },
     {
-      "class": "close-but-wrong",
-      "id": 85092,
-      "cat": "CaseFan",
-      "asin": "B0DJVMKDV1",
-      "storedName": "UNI Fan SL Wireless 120mm ARGB Fan - Triple Pack - 2.4 GHz Wireless Signal for RGB & Fans Control - Customizable Ligh...",
-      "amazonTitle": "Lian Li UNI Fan SL Wireless-120-Controller Included-White-12SL1W3W",
-      "scoreStoredInAmazon": 0.2,
-      "scoreAmazonInStored": 0.33,
-      "gateScore": 0.2,
+      "class": "wrong-product",
+      "id": 100076,
+      "cat": "Microphone",
+      "asin": "B0DFXQDTDT",
+      "storedName": "RØDE Wireless Micro - Compact Wireless Microphone, Two Mics with Charge Case for Smartphone Content Creation - USB-C, Black",
+      "amazonTitle": "RØDE Wireless Micro (2 Mics + Charging Case), USB-C for iPhone & Android",
+      "scoreStoredInAmazon": 0.4,
+      "scoreAmazonInStored": 0.67,
+      "gateScore": 0.4,
       "capConflict": false,
-      "storedPrice": 94.8,
-      "amazonPrice": 98.16,
+      "storedPrice": 89,
+      "amazonPrice": 86,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 3.5,
+      "priceDeltaPct": -3.4,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": true
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -1669,7 +1829,7 @@
       "priceDeltaPct": -3,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -1729,7 +1889,7 @@
       "priceDeltaPct": 2.3,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -1783,7 +1943,7 @@
       "gateScore": 0.42,
       "capConflict": false,
       "storedPrice": 31.03,
-      "amazonPrice": 30.47,
+      "amazonPrice": 30.46,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -1.8,
@@ -1852,44 +2012,24 @@
       "needsReview": true
     },
     {
-      "class": "close-but-wrong",
-      "id": 50042,
-      "cat": "Storage",
-      "asin": "B08QBJ2YMG",
-      "storedName": "870 EVO SATA III SSD 1TB 2.5” Internal Solid State Drive, Upgrade PC or Laptop Memory and Storage for IT Pros, Creators",
-      "amazonTitle": "Samsung SSD 870 EVO SATA III 2.5” 1TB, Read Speeds Up to 560MB/s",
-      "scoreStoredInAmazon": 0.33,
-      "scoreAmazonInStored": 0.6,
-      "gateScore": 0.33,
+      "class": "wrong-product",
+      "id": 101782,
+      "cat": "Microphone",
+      "asin": "B0CKVD62NX",
+      "storedName": "RØDE NT1 Signature Series Large-Diaphragm Condenser Microphone with Shock Mount, Pop Filter and XLR Cable for Music Production, Vocal Recording, Streaming and Podcasting (Black)",
+      "amazonTitle": "RØDE NT1 Signature Series Studio Condenser Microphone, Black",
+      "scoreStoredInAmazon": 0.26,
+      "scoreAmazonInStored": 0.86,
+      "gateScore": 0.26,
       "capConflict": false,
-      "storedPrice": 327.62,
-      "amazonPrice": 324.56,
+      "storedPrice": 140.26,
+      "amazonPrice": 138.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -0.9,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 101067,
-      "cat": "Monitor",
-      "asin": "B0F1H325FN",
-      "storedName": "Dell 34 Plus USB-C Curved Monitor - S3425DW - 34-inch (3440 x 1440) up to 120 Hz 21:9 Display, VA Panel, AMD FreeSync Premium, 99% sRGB, 95% DCI-P3, Integrated Speakers, 3000:1 Contrast Ratio",
-      "amazonTitle": "Dell 34 Monitor S3425DW, WQHD VA, 120Hz, FreeSync Premium, Eye Comfort",
-      "scoreStoredInAmazon": 0.23,
-      "scoreAmazonInStored": 0.56,
-      "gateScore": 0.23,
-      "capConflict": false,
-      "storedPrice": 379.99,
-      "amazonPrice": 376.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -0.8,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": true
+      "needsReview": false
     },
     {
       "class": "close-but-wrong",
@@ -1973,26 +2113,6 @@
     },
     {
       "class": "close-but-wrong",
-      "id": 99006,
-      "cat": "OS",
-      "asin": "B09MYBD79G",
-      "storedName": "Microsoft Windows 11 Pro OEM DVD 64-bit (FQC-10529)",
-      "amazonTitle": "Microsoft OEM System Builder | Windоws 11 Pro | Intended use for new systems | Authorized by Microsoft",
-      "scoreStoredInAmazon": 0.38,
-      "scoreAmazonInStored": 0.25,
-      "gateScore": 0.38,
-      "capConflict": false,
-      "storedPrice": 147,
-      "amazonPrice": 146.76,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -0.2,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
       "id": 60009,
       "cat": "PSU",
       "asin": "B0FBXX1D17",
@@ -2010,26 +2130,6 @@
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 80202,
-      "cat": "CPUCooler",
-      "asin": "B0DY2JT3W5",
-      "storedName": "HyperFlow Silent 360 Black – Ultra-Quiet AIO Liquid CPU Cooler, 3100RPM Pump, Triple Silent Fans",
-      "amazonTitle": "MONTECH HyperFlow Silent 360mm AIO CPU Cooler, Low-Noise, Non-RGB, Black",
-      "scoreStoredInAmazon": 0.43,
-      "scoreAmazonInStored": 0.5,
-      "gateScore": 0.43,
-      "capConflict": false,
-      "storedPrice": 64.99,
-      "amazonPrice": 64.9,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": -0.1,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -2269,7 +2369,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -2289,7 +2389,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -2329,7 +2429,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "wrong-product",
@@ -2337,10 +2437,10 @@
       "cat": "Microphone",
       "asin": "B07MSCRCVK",
       "storedName": "RØDE PodMic Cardioid Dynamic Broadcast Microphone with Integrated Swing Mount for Podcasting, Streaming, Gaming, and Voice Recording, Black",
-      "amazonTitle": "RØDE PodMic Cardioid Dynamic Broadcast Microphone — XLR Output, Requires Audio Interface (RØDECaster, AI-1, or similar). For USB Plug-and-Play, see PodMic USB.",
-      "scoreStoredInAmazon": 0.41,
-      "scoreAmazonInStored": 0.39,
-      "gateScore": 0.41,
+      "amazonTitle": "RØDE PodMic Cardioid Dynamic Broadcast Microphone, XLR",
+      "scoreStoredInAmazon": 0.29,
+      "scoreAmazonInStored": 0.83,
+      "gateScore": 0.29,
       "capConflict": false,
       "storedPrice": 86,
       "amazonPrice": 86,
@@ -2350,6 +2450,26 @@
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
+    },
+    {
+      "class": "wrong-product",
+      "id": 101728,
+      "cat": "Microphone",
+      "asin": "B0BQHHZ1QQ",
+      "storedName": "RØDE NT1 5th Gen Large-Diaphragm Studio Condenser Microphone - XLR & USB Outputs - Shock Mount & Pop Filter Included - Music Production, Vocal Recording, Podcasting - Black - Professional Audio",
+      "amazonTitle": "RØDE NT1 5th Gen Studio Condenser Microphone, XLR + USB-C, Silver",
+      "scoreStoredInAmazon": 0.33,
+      "scoreAmazonInStored": 0.89,
+      "gateScore": 0.33,
+      "capConflict": false,
+      "storedPrice": 216.37,
+      "amazonPrice": null,
+      "priceSource": null,
+      "merchant": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "noOffer": true,
+      "needsReview": false
     },
     {
       "class": "wrong-product",
@@ -2603,26 +2723,6 @@
       "gateScore": 0.4,
       "capConflict": false,
       "storedPrice": 179.99,
-      "amazonPrice": 179.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 50039,
-      "cat": "Storage",
-      "asin": "B0BHCL7HTL",
-      "storedName": "Micron 7450 Pro 1.92TB NVMe U.2 Gen4",
-      "amazonTitle": "Micron 7450 PRO 960 GB Solid State Drive - M.2 2280 Internal - PCI Express NVMe [PCI Express NVMe 4.0 x4] - Read Intensive - TAA Compliant",
-      "scoreStoredInAmazon": 0.67,
-      "scoreAmazonInStored": 0.25,
-      "gateScore": 0.67,
-      "capConflict": true,
-      "storedPrice": 595,
       "amazonPrice": null,
       "priceSource": null,
       "merchant": null,
@@ -2683,12 +2783,12 @@
       "gateScore": 0.21,
       "capConflict": false,
       "storedPrice": 1369.99,
-      "amazonPrice": 1369.99,
-      "priceSource": "buybox",
+      "amazonPrice": null,
+      "priceSource": null,
       "merchant": null,
-      "priceDeltaPct": 0,
+      "priceDeltaPct": null,
       "priceDivergent": false,
-      "noOffer": false,
+      "noOffer": true,
       "needsReview": true
     },
     {
@@ -2753,26 +2853,6 @@
     },
     {
       "class": "close-but-wrong",
-      "id": 80012,
-      "cat": "CPUCooler",
-      "asin": "B0DF7CZ9D8",
-      "storedName": "Corsair iCUE H150i Elite LCD XT",
-      "amazonTitle": "CORSAIR Titan 360 RX LCD Liquid CPU Cooler, 360mm AIO, Low-Noise FlowDrive Cooling Engine, Intel LGA 1851/1700 & AMD AM5/AM4, 3X RX120 RGB Fans, System Hub Included, Black",
-      "scoreStoredInAmazon": 0.4,
-      "scoreAmazonInStored": 0.07,
-      "gateScore": 0.4,
-      "capConflict": false,
-      "storedPrice": 195,
-      "amazonPrice": null,
-      "priceSource": null,
-      "merchant": null,
-      "priceDeltaPct": null,
-      "priceDivergent": false,
-      "noOffer": true,
-      "needsReview": true
-    },
-    {
-      "class": "close-but-wrong",
       "id": 80022,
       "cat": "CPUCooler",
       "asin": "B0C1N56ZDC",
@@ -2809,7 +2889,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2824,26 +2904,6 @@
       "capConflict": false,
       "storedPrice": 249.99,
       "amazonPrice": 249.99,
-      "priceSource": "buybox",
-      "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
-    },
-    {
-      "class": "close-but-wrong",
-      "id": 80058,
-      "cat": "CPUCooler",
-      "asin": "B0FPCQ2895",
-      "storedName": "Hydroshift II-S LCD 360TL ARGB Liquid CPU Cooler - 360mm AIO - 3.4\" IPS LCD Square Screen - Daisy-Chain - Low-Noise -...",
-      "amazonTitle": "Lian Li HydroShift II LCD-S-360 TL-Liquid CPU Cooler-Black-HS2LCDS36TB",
-      "scoreStoredInAmazon": 0.31,
-      "scoreAmazonInStored": 0.56,
-      "gateScore": 0.31,
-      "capConflict": false,
-      "storedPrice": 261.71,
-      "amazonPrice": 261.72,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 0,
@@ -2869,7 +2929,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2889,7 +2949,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2909,7 +2969,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2929,7 +2989,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2969,7 +3029,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -2989,7 +3049,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3029,7 +3089,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3049,7 +3109,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3089,7 +3149,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3109,7 +3169,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3149,7 +3209,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3189,7 +3249,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3209,7 +3269,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3229,7 +3289,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3363,13 +3423,13 @@
       "gateScore": 0.38,
       "capConflict": false,
       "storedPrice": 109,
-      "amazonPrice": 109,
-      "priceSource": "buybox",
+      "amazonPrice": null,
+      "priceSource": null,
       "merchant": null,
-      "priceDeltaPct": 0,
+      "priceDeltaPct": null,
       "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
+      "noOffer": true,
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3389,7 +3449,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3409,7 +3469,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3429,7 +3489,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3449,7 +3509,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3469,7 +3529,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3489,7 +3549,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
@@ -3549,7 +3609,7 @@
       "priceDeltaPct": 0,
       "priceDivergent": false,
       "noOffer": false,
-      "needsReview": false
+      "needsReview": true
     },
     {
       "class": "close-but-wrong",
