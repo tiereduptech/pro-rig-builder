@@ -2835,14 +2835,15 @@ export default [
         "priceConfirmedAt": "2026-08-26"
       },
       "newegg": {
-        "sku": "4458313463473518584650814",
-        "itemNumber": "9SIAG1PKD21793",
-        "sellerClass": "marketplace",
-        "price": 124.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313463473518584650814&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1000-w-80-plus-gold-certified-power-supplies-black-pa-0g2bb-us%2Fp%2FN82E16817116052%3Fitem%3D9SIAG1PKD21793",
+        "sku": "4458311600472052411037826",
+        "itemNumber": "N82E16817116052",
+        "sellerClass": "official",
+        "price": 179.99,
+        "saleprice": 124.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311600472052411037826&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1000-w-80-plus-gold-certified-power-supplies-black-pa-0g2bb-us%2Fp%2FN82E16817116052%3Fitem%3DN82E16817116052",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-116-052-03.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:32.526Z",
+        "matchedAt": "2026-08-26T12:36:01.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -6670,14 +6671,15 @@ export default [
         "priceConfirmedAt": "2026-08-26"
       },
       "newegg": {
-        "sku": "445838469550643369371660",
-        "itemNumber": "9SIAG1PKBA5089",
-        "sellerClass": "marketplace",
-        "price": 329.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838469550643369371660&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1500-w-80-plus-platinum-certified-power-supplies-black-pa-5p1bb-us%2Fp%2F1HU-001J-000C6%3Fitem%3D9SIAG1PKBA5089",
+        "sku": "445838047709676169452910",
+        "itemNumber": "1HU-001J-000C6",
+        "sellerClass": "official",
+        "price": 369.99,
+        "saleprice": 329.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838047709676169452910&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx12v-v3-1-eps12v-v2-92-1500-w-80-plus-platinum-certified-power-supplies-black-pa-5p1bb-us%2Fp%2F1HU-001J-000C6%3Fitem%3D1HU-001J-000C6",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD2406040XWAF006.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:32.524Z",
+        "matchedAt": "2026-08-26T12:32:52.491Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -11429,15 +11431,17 @@ export default [
         "priceUnconfirmedAt": "2026-08-26"
       },
       "newegg": {
-        "sku": "N82E16817701031",
+        "sku": "445836169499807546455110",
+        "itemNumber": "N82E16817701031",
+        "sellerClass": "official",
         "price": 109.99,
-        "saleprice": null,
+        "saleprice": 84.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836169499807546455110&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-850-w-up-to-90-power-supplies-black-mpg-a850gs-pcie5%2Fp%2FN82E16817701031%3Fitem%3DN82E16817701031",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-031-02.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 1
+        "inStock": true,
+        "matchedAt": "2026-08-26T12:36:01.640Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -11446,7 +11450,9 @@ export default [
     "eff": "80+ Gold",
     "modular": "Full",
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "upc": "00824142376317",
+    "mpn": "MPG A850GS PCIE5"
   },
   {
     "id": 101204,

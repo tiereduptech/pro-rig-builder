@@ -9134,14 +9134,14 @@ export default [
         "matchScore": 1
       },
       "newegg": {
-        "sku": "445833883874125284850936",
-        "itemNumber": "9SIA4P0KG07810",
+        "sku": "4458311775180787009973573",
+        "itemNumber": "9SIA36ZKW23953",
         "sellerClass": "marketplace",
-        "price": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833883874125284850936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2425h-24-fhd-100-hz-ips-silver%2Fp%2F0JC-0004-00VJ1%3Fitem%3D9SIA4P0KG07810",
+        "price": 167.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311775180787009973573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2425h-24-fhd-100-hz-ips-silver%2Fp%2F0JC-0004-00VJ1%3Fitem%3D9SIA36ZKW23953",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-0004-00VJ1-02.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:40.249Z",
+        "matchedAt": "2026-08-26T12:33:00.086Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

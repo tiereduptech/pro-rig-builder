@@ -1656,16 +1656,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445835765490672375662029",
-        "itemNumber": "9SIC3DRKN77820",
+        "sku": "4458315277565300232382302",
+        "itemNumber": "9SIC6E1M4H6308",
         "sellerClass": "marketplace",
-        "price": 216.3,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835765490672375662029&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-5000-g-series-ryzen-7-5700g-cezanne-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113682%3Fitem%3D9SIC3DRKN77820",
+        "price": 181.88,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315277565300232382302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-5000-g-series-ryzen-7-5700g-cezanne-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113682%3Fitem%3D9SIC6E1M4H6308",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-682-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:32.132Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-26T12:35:51.938Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "upc": "00730143313377",
@@ -3655,11 +3655,11 @@ export default [
         "sku": "4458312670921379011556632",
         "itemNumber": "9SIA2W0GEU4684",
         "sellerClass": "marketplace",
-        "price": 349.99,
+        "price": 335.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312670921379011556632&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600k-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118347%3Fitem%3D9SIA2W0GEU4684",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-347-05.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:36.963Z",
+        "matchedAt": "2026-08-26T12:32:58.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7324,11 +7324,11 @@ export default [
         "sku": "445836655147968632470640",
         "itemNumber": "9SIC7VBM152513",
         "sellerClass": "marketplace",
-        "price": 172.8,
+        "price": 172,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836655147968632470640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5600gt-ryzen-5-5000-series-cezanne-zen-3-socket-am4%2Fp%2FN82E16819113816%3Fitem%3D9SIC7VBM152513",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-816-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:35.631Z",
+        "matchedAt": "2026-08-26T12:36:06.939Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7791,14 +7791,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458314889560687914682150",
-        "itemNumber": "9SIBZW0KFS7488",
+        "sku": "4458313271464877905896548",
+        "itemNumber": "9SIC7XKM1J9980",
         "sellerClass": "marketplace",
-        "price": 52.05,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314889560687914682150&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-7th-gen-core-i5-7400-kaby-lake-lga-1151-desktop-cpu-processor%2Fp%2FN82E16819117731%3Fitem%3D9SIBZW0KFS7488",
+        "price": 51.05,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313271464877905896548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-7th-gen-core-i5-7400-kaby-lake-lga-1151-desktop-cpu-processor%2Fp%2FN82E16819117731%3Fitem%3D9SIC7XKM1J9980",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-117-731-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:22.816Z",
+        "matchedAt": "2026-08-26T12:35:56.756Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -9091,11 +9091,11 @@ export default [
         "sku": "4458315948462096901383796",
         "itemNumber": "9SIC6E1M4J4193",
         "sellerClass": "marketplace",
-        "price": 124.16,
+        "price": 123.63,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315948462096901383796&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00222%3Fitem%3D9SIC6E1M4J4193",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502130GQNPU08.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:30:17.871Z",
+        "matchedAt": "2026-08-26T12:35:52.270Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

@@ -8655,6 +8655,19 @@ export default [
         "priceSeller": "RapidShip (S/N Recorder)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445831637357205552247095",
+        "itemNumber": "N82E16814500648",
+        "sellerClass": "official",
+        "price": 1899.99,
+        "saleprice": 1599.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831637357205552247095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fzotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-video-card-icestorm-3-0%2Fp%2FN82E16814500648%3Fitem%3DN82E16814500648",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-500-648-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-26T12:36:07.198Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -12677,6 +12690,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-26"
+      },
+      "newegg": {
+        "sku": "445831609502042468404093",
+        "itemNumber": "N82E16814932807",
+        "sellerClass": "official",
+        "price": 369.99,
+        "saleprice": 359.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831609502042468404093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9060xtgaming-oc-8gd-radeon-rx-9060-xt-8gb-graphics-card-triple-fans%2Fp%2FN82E16814932807%3Fitem%3DN82E16814932807",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-807-03.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-26T12:36:01.469Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "Radeon RX 9060 XT",
