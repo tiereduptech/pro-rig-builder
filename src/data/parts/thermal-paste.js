@@ -19,7 +19,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0F4M5DZK9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "PolarTronix",
         "priceResolvedVia": "paapi"
@@ -43,7 +43,7 @@ export default [
         "price": 16,
         "url": "https://www.amazon.com/dp/B08W3TK3KS?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "Performance-PCs",
         "priceResolvedVia": "paapi",
@@ -67,7 +67,7 @@ export default [
         "price": 4.99,
         "url": "https://www.amazon.com/dp/B07L9BDY3T?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "paapi",
@@ -96,7 +96,7 @@ export default [
         "price": 5.49,
         "url": "https://www.amazon.com/dp/B0795DP124?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "paapi",
@@ -120,7 +120,7 @@ export default [
         "price": 9,
         "url": "https://www.amazon.com/dp/B011F7W3LU?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "Black Eagle Retail",
         "priceResolvedVia": "paapi",
@@ -144,7 +144,7 @@ export default [
         "price": 24,
         "url": "https://www.amazon.com/dp/B00ZJSF5LM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "Retail storee",
         "priceResolvedVia": "paapi",
@@ -171,7 +171,8 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99405,
@@ -189,7 +190,7 @@ export default [
         "price": 7,
         "url": "https://www.amazon.com/dp/B07KQ1T158?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -213,7 +214,7 @@ export default [
         "price": 5.99,
         "url": "https://www.amazon.com/dp/B07LF66ZSV?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "paapi",
@@ -234,12 +235,12 @@ export default [
     "asin": "B09VDL3CW6",
     "deals": {
       "amazon": {
-        "price": 8.49,
+        "price": 9.99,
         "url": "https://www.amazon.com/dp/B09VDL3CW6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
-        "priceSeller": "Harborway",
+        "priceSeller": "CoolTech Store",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

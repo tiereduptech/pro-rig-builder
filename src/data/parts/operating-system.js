@@ -23,7 +23,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-24"
+        "priceUnconfirmedAt": "2026-08-26"
       },
       "newegg": {
         "sku": "44583520120264484301200",
@@ -105,10 +105,11 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24",
+    "quarantinedAt": "2026-08-26",
     "reviewFlags": [
       "relink:mismatch"
-    ]
+    ],
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99006,
@@ -133,9 +134,10 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24",
+    "quarantinedAt": "2026-08-26",
     "reviewFlags": [
       "relink:mismatch"
-    ]
+    ],
+    "quarantineReason": "asin_repair_no_match"
   }
 ];

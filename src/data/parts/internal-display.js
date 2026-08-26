@@ -61,7 +61,8 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 95022,
@@ -116,7 +117,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceResolvedVia": "paapi"
       }
     }
@@ -139,13 +140,13 @@ export default [
     "touch": true,
     "deals": {
       "amazon": {
-        "price": 39.99,
+        "price": 45.99,
         "url": "https://www.amazon.com/dp/B09XKC53NH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceResolvedVia": "paapi"
       }
     }
@@ -168,13 +169,13 @@ export default [
     "touch": true,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 52.99,
         "url": "https://www.amazon.com/dp/B0BKGCB18T?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceResolvedVia": "paapi"
       }
     }
@@ -200,7 +201,7 @@ export default [
         "price": 45.99,
         "url": "https://www.amazon.com/dp/B07FDYXPT7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "Elecrow",
         "priceResolvedVia": "paapi",
@@ -230,7 +231,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BJ9MQVBG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "WOWNOVA",
         "priceResolvedVia": "paapi"
@@ -266,7 +267,8 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 95047,
@@ -318,7 +320,7 @@ export default [
         "price": 30,
         "url": "https://www.amazon.com/dp/B0989WQCW8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "paapi",
@@ -348,7 +350,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FJRDDVKZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "ROADOM-US",
         "priceResolvedVia": "paapi"
@@ -376,7 +378,7 @@ export default [
         "price": 100,
         "url": "https://www.amazon.com/dp/B0D3CW311P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "HAGIBIS",
         "priceResolvedVia": "paapi",

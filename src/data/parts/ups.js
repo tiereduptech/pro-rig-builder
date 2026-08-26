@@ -16,7 +16,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
         "price": 199.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -54,7 +54,8 @@ export default [
     },
     "ff": "Tower",
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99931,
@@ -83,7 +84,8 @@ export default [
     },
     "ff": "Tower",
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99932,
@@ -107,7 +109,8 @@ export default [
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-08-26",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99702,
@@ -173,10 +176,10 @@ export default [
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       }
     },
     "needsReview": true,
@@ -229,7 +232,7 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B06VY6FXMM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -256,7 +259,7 @@ export default [
         "url": "https://www.amazon.com/dp/B000FBK3QK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "3p",
         "priceSeller": "1 Stop Computer Shop, Inc.",
         "priceResolvedVia": "paapi"
@@ -311,7 +314,7 @@ export default [
         "price": 120,
         "url": "https://www.amazon.com/dp/B00DBAA696?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-08-26",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
