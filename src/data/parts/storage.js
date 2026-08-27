@@ -7493,14 +7493,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458314191474722375930866",
-        "itemNumber": "9SIAPBJGVS7935",
+        "sku": "445837706555311665988409",
+        "itemNumber": "9SIC7XHM204130",
         "sellerClass": "marketplace",
-        "price": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314191474722375930866&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIAPBJGVS7935",
+        "price": 177.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837706555311665988409&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-4tb-st4000lm024%2Fp%2FN82E16822179105%3Fitem%3D9SIC7XHM204130",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-179-105-Z01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-23T12:26:10.163Z",
+        "matchedAt": "2026-08-27T21:32:36.165Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -7988,12 +7988,12 @@ export default [
         "sku": "44583410857826451709523",
         "itemNumber": "N82E16820156413R",
         "sellerClass": "official",
-        "price": 269.99,
-        "saleprice": 249.99,
+        "price": 299.99,
+        "saleprice": 223.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583410857826451709523&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-p310-nvme-2-0%2Fp%2FN82E16820156413R%3Fitem%3DN82E16820156413R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-411-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-26T12:36:02.265Z",
+        "matchedAt": "2026-08-27T21:32:41.027Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -10575,6 +10575,18 @@ export default [
         "priceSeller": "flashnoble",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445835608091919292485612",
+        "itemNumber": "9SIC7ABM469743",
+        "sellerClass": "marketplace",
+        "price": 285.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835608091919292485612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbestoss-2tb-gm-series%2Fp%2F0D9-0119-00022%3Fitem%3D9SIC7ABM469743",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C7ABS26081107F5UUEB.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:34.673Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -10597,7 +10609,8 @@ export default [
     "bench": 77,
     "read": 7300,
     "pcieGen": 4,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "upc": "00679065207275"
   },
   {
     "id": 50228,
@@ -13691,14 +13704,16 @@ export default [
         "priceUnconfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "N82E16820225425",
+        "sku": "445833292575230787406850",
+        "itemNumber": "N82E16820225425",
+        "sellerClass": "official",
         "price": 179.99,
-        "saleprice": 144.99,
+        "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833292575230787406850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-1tb-p320-nvme-1-3%2Fp%2FN82E16820225425%3Fitem%3DN82E16820225425",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-425-01.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:41.119Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -16524,10 +16539,11 @@ export default [
         "itemNumber": "0D9-0006-00663",
         "sellerClass": "official",
         "price": 189.99,
+        "saleprice": 179.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834692938817636055757&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0006-00663%3Fitem%3D0D9-0006-00663",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2510310GBFFJFE.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-25T12:29:06.714Z",
+        "matchedAt": "2026-08-27T21:30:14.324Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -20754,14 +20770,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458310358317428519251687",
-        "itemNumber": "9SIBFJRK8F8922",
+        "sku": "4458311934420455158802948",
+        "itemNumber": "9SIA12KK8E8151",
         "sellerClass": "marketplace",
-        "price": 828,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310358317428519251687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00CR1%3Fitem%3D9SIBFJRK8F8922",
+        "price": 827.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311934420455158802948&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00CR1%3Fitem%3D9SIA12KK8E8151",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS24011704Z5490C.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:16:58.186Z",
+        "matchedAt": "2026-08-27T21:30:17.131Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.75
       }
@@ -21736,11 +21752,11 @@ export default [
         "itemNumber": "N82E16820177078",
         "sellerClass": "official",
         "price": 174.99,
-        "saleprice": 159.99,
+        "saleprice": 149.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836648791639817075193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpny-1tb-cs900%2Fp%2FN82E16820177078%3Fitem%3DN82E16820177078",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-177-078-V09.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.422Z",
+        "matchedAt": "2026-08-27T21:32:41.066Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95
       }
@@ -25226,13 +25242,13 @@ export default [
         "itemNumber": "N82E16822183793",
         "sellerClass": "official",
         "price": 279.99,
-        "saleprice": 269.99,
+        "saleprice": 249.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835443742286411495518&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-barracuda-ne-st8000dm004-8tb-hard-drive-for-daily-computing-5400-rpm%2Fp%2FN82E16822183793%3Fitem%3DN82E16822183793",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-183-793-V06.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:48.454Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.75
+        "matchedAt": "2026-08-27T21:32:41.854Z",
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9
       }
     },
     "cap": 8000,
@@ -30149,10 +30165,11 @@ export default [
         "itemNumber": "N82E16820147921",
         "sellerClass": "official",
         "price": 3519.99,
+        "saleprice": 3510.44,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834370011264982551736&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-8tb-870-evo-series-sata%2Fp%2FN82E16820147921%3Fitem%3DN82E16820147921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS2603300QPATK0A.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.345Z",
+        "matchedAt": "2026-08-27T21:32:41.021Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -33913,11 +33930,12 @@ export default [
         "sku": "4458314584399923301590300",
         "itemNumber": "N82E16822149842",
         "sellerClass": "official",
-        "price": 499.99,
+        "price": 539.99,
+        "saleprice": 429.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314584399923301590300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftoshiba-hdwg51cuzsva-12tb%2Fp%2FN82E16822149842%3Fitem%3DN82E16822149842",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-149-842-07.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:48.369Z",
+        "matchedAt": "2026-08-27T21:32:41.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

@@ -869,7 +869,11 @@ export default [
     "value": 26,
     "rgb": false,
     "fans": 1,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-27",
+    "upc": "00840353040816",
+    "mpn": "SP750"
   },
   {
     "id": 60022,
@@ -6230,14 +6234,15 @@ export default [
         "priceConfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "N82E16817153447",
-        "price": 206.99,
-        "saleprice": null,
+        "sku": "445835259225599857100462",
+        "itemNumber": "N82E16817153447",
+        "sellerClass": "official",
+        "price": 196.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835259225599857100462&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf-a3-series-atx-atx-3-0-compatible-1200-w-80-plus-gold-certified-power-supply-black-ps-tpd-1200fnfagu-l%2Fp%2FN82E16817153447%3Fitem%3DN82E16817153447",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-447-07.jpg",
-        "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:40.493Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -11995,11 +12000,11 @@ export default [
         "itemNumber": "1HU-00RG-00278",
         "sellerClass": "official",
         "price": 339.99,
-        "saleprice": 295.99,
+        "saleprice": 291.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836741666656661893685&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-technology-atx-3-0-compatible-1200-w-cybenetics-platinum-power-supplies%2Fp%2F1HU-00RG-00278%3Fitem%3D1HU-00RG-00278",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A62VS2211230GAFJ632.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:39:48.658Z",
+        "matchedAt": "2026-08-27T21:30:15.056Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14941,12 +14946,12 @@ export default [
         "sku": "4458315765557139624053294",
         "itemNumber": "N82E16817701037",
         "sellerClass": "official",
-        "price": 179.99,
-        "saleprice": 149.99,
+        "price": 149.99,
+        "saleprice": 139.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315765557139624053294&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-atx12v-1250-w-80-plus-gold-certified-power-supply-black-mpg-a1250gs-pcie5-ii%2Fp%2FN82E16817701037%3Fitem%3DN82E16817701037",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-701-037-12.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:46.693Z",
+        "matchedAt": "2026-08-27T21:32:40.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -16247,11 +16252,12 @@ export default [
         "itemNumber": "N82E16817955033",
         "sellerClass": "official",
         "price": 144.99,
-        "saleprice": 143.99,
+        "saleprice": 142.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310859807915970224613&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx-3-1-1000-w-80-plus-gold-certified-power-supplies-pro-m1000g%2Fp%2FN82E16817955033%3Fitem%3DN82E16817955033",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-033-18.png",
-        "matchedAt": "2026-07-30",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:40.563Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

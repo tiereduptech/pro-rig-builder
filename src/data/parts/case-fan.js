@@ -13872,11 +13872,11 @@ export default [
         "itemNumber": "1YF-001G-004C0",
         "sellerClass": "official",
         "price": 67.99,
-        "saleprice": 53.99,
+        "saleprice": 49.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838575754441415643190&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-001G-004C0%3Fitem%3D1YF-001G-004C0",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8EFS2407120YG7M60F.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:39:48.732Z",
+        "matchedAt": "2026-08-27T21:30:15.145Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }

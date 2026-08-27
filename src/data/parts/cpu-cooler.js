@@ -196,14 +196,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445833218269696120695751",
-        "itemNumber": "9SIA4REJWR2200",
+        "sku": "44583415161469445755429",
+        "itemNumber": "9SIBTVCK8B0273",
         "sellerClass": "marketplace",
-        "price": 122.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833218269696120695751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIA4REJWR2200",
+        "price": 120.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583415161469445755429&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15%2Fp%2FN82E16835608045%3Fitem%3D9SIBTVCK8B0273",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-045-V02.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:41.330Z",
+        "matchedAt": "2026-08-27T21:32:09.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -214,7 +214,9 @@ export default [
     "bench": 90,
     "cfm": 165,
     "upc": "00842431012456",
-    "mpn": "NH-D15"
+    "mpn": "NH-D15",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-27"
   },
   {
     "id": 80001,
@@ -3606,16 +3608,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458313900724359036828864",
-        "itemNumber": "9SIA4REJUU9802",
+        "sku": "4458315734960284684089781",
+        "itemNumber": "9SIAADYH270112",
         "sellerClass": "marketplace",
-        "price": 101.85,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313900724359036828864&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIA4REJUU9802",
+        "price": 99.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315734960284684089781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIAADYH270112",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404YHWSh.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:41.254Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchedAt": "2026-08-27T21:31:17.759Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -5534,14 +5536,14 @@ export default [
         "matchScore": 1
       },
       "newegg": {
-        "sku": "445839811036610137058647",
-        "itemNumber": "9SIA6ZPKVY7892",
+        "sku": "445836300950830892679313",
+        "itemNumber": "9SIC80CM2Y1585",
         "sellerClass": "marketplace",
-        "price": 173.76,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811036610137058647&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIA6ZPKVY7892",
+        "price": 173.26,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836300950830892679313&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIC80CM2Y1585",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:49.312Z",
+        "matchedAt": "2026-08-27T21:32:37.141Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -10636,7 +10638,10 @@ export default [
     "bench": 59,
     "radSize": "140",
     "fanSize": 140,
-    "cfm": 75
+    "cfm": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-27",
+    "mpn": "Peerless Assassin 140 Digital Black"
   },
   {
     "id": 80205,
@@ -11218,11 +11223,11 @@ export default [
         "sku": "445831539943860035097788",
         "itemNumber": "9SIAD6HKKM2746",
         "sellerClass": "marketplace",
-        "price": 212.96,
+        "price": 209.39,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713e0EMY.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-26T12:34:37.454Z",
+        "matchedAt": "2026-08-27T21:31:35.255Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -12351,6 +12356,19 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 1",
         "priceResolvedVia": "paapi"
+      },
+      "newegg": {
+        "sku": "44583148829238748013356",
+        "itemNumber": "9SIBVHXM2Y1916",
+        "sellerClass": "marketplace",
+        "price": 159.9,
+        "saleprice": 139.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583148829238748013356&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-007N-00061%3Fitem%3D9SIBVHXM2Y1916",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS26082406ZO6CFC.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:09.479Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8333333333333334
       }
     },
     "additionalImages": [
@@ -12374,7 +12392,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "PEERLESS VISION 360 ARGB WHITE"
   },
   {
     "id": 80241,
@@ -14177,6 +14196,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-27"
+      },
+      "newegg": {
+        "sku": "4458311921909743608757588",
+        "itemNumber": "N82E16835106766",
+        "sellerClass": "official",
+        "price": 87.99,
+        "saleprice": 82.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311921909743608757588&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th120-v2-argb-snow%2Fp%2FN82E16835106766%3Fitem%3DN82E16835106766",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2404150CIB3R2D.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:42.738Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",

@@ -3027,14 +3027,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "445831745508966514051296",
-        "itemNumber": "9SIC6E1M5D8236",
+        "sku": "445832023787843455210690",
+        "itemNumber": "9SIB3T1KV53374",
         "sellerClass": "marketplace",
-        "price": 445.26,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831745508966514051296&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-32gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820156287%3Fitem%3D9SIC6E1M5D8236",
+        "price": 441.33,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832023787843455210690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-32gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820156287%3Fitem%3D9SIB3T1KV53374",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-287-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-26T12:35:52.931Z",
+        "matchedAt": "2026-08-27T21:32:00.991Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -3475,12 +3475,12 @@ export default [
         "sku": "4458318334980112469129502",
         "itemNumber": "N82E16820331634",
         "sellerClass": "official",
-        "price": 279.99,
-        "saleprice": 259.99,
+        "price": 259.99,
+        "saleprice": 239.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318334980112469129502&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820331634%3Fitem%3DN82E16820331634",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-634-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.774Z",
+        "matchedAt": "2026-08-27T21:32:41.339Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13862,11 +13862,11 @@ export default [
         "itemNumber": "N82E16820014170",
         "sellerClass": "official",
         "price": 210.99,
-        "saleprice": 209.99,
+        "saleprice": 204.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839903399433547526839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014170%3Fitem%3DN82E16820014170",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-170-S01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:47.107Z",
+        "matchedAt": "2026-08-27T21:32:40.843Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14821,11 +14821,12 @@ export default [
         "sku": "445839273489640649860774",
         "itemNumber": "N82E16820156326R",
         "sellerClass": "official",
-        "price": 229.99,
+        "price": 239.99,
+        "saleprice": 206.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839273489640649860774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-pro-32gb-2-x-16gb-ddr4-3200-pc4-25600-cas-latency-cl22-desktop-memory-black%2Fp%2FN82E16820156326R%3Fitem%3DN82E16820156326R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-326-06.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-26T12:36:02.257Z",
+        "matchedAt": "2026-08-27T21:32:41.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -17470,11 +17471,12 @@ export default [
         "itemNumber": "N82E16820236946",
         "sellerClass": "official",
         "price": 660,
-        "saleprice": 639.99,
+        "saleprice": 579.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315062706253441655709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820236946%3Fitem%3DN82E16820236946",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-946-01.jpg",
-        "matchedAt": "2026-07-24",
-        "matchMethod": "discovery",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:41.158Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },

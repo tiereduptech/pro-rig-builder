@@ -709,6 +709,18 @@ export default [
         "priceConfirmedAt": "2026-08-27",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445835917314568012731741",
+        "itemNumber": "9SIA8X5KW91267",
+        "sellerClass": "marketplace",
+        "price": 547.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835917314568012731741&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-001B-00095%3Fitem%3D9SIA8X5KW91267",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26050919UDYIBC.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:31:13.415Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3633,10 +3645,11 @@ export default [
         "itemNumber": "9SIC57KKTB7139",
         "sellerClass": "marketplace",
         "price": 299.99,
+        "saleprice": 259.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837927837759755370824&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B75%3Fitem%3D9SIC57KKTB7139",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25062611SDBJA7.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:34.329Z",
+        "matchedAt": "2026-08-27T21:32:30.484Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7272,14 +7285,14 @@ export default [
         "priceConfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "445838090153121165756011",
-        "itemNumber": "9SIA6ZPKA41764",
+        "sku": "44583989298600247966744",
+        "itemNumber": "9SIBW6VM519825",
         "sellerClass": "marketplace",
-        "price": 760.33,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838090153121165756011&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-geminos-24%2Fp%2FN82E16824640021%3Fitem%3D9SIA6ZPKA41764",
+        "price": 749.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583989298600247966744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-geminos-24%2Fp%2FN82E16824640021%3Fitem%3D9SIBW6VM519825",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-640-021-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:48.736Z",
+        "matchedAt": "2026-08-27T21:32:09.596Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -7700,14 +7713,15 @@ export default [
         "priceConfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "9SIBVN6K8U2677",
-        "price": 164.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834667036710802209026&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00021%3Fitem%3D9SIBVN6K8U2677",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VQKANDB.jpg",
+        "sku": "445835844225919386342313",
+        "itemNumber": "9SIA4P0KHK5979",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "price": 234.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835844225919386342313&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00021%3Fitem%3D9SIA4P0KHK5979",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VQKANDB.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:30:22.325Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -7834,14 +7848,15 @@ export default [
         "priceConfirmedAt": "2026-08-27"
       },
       "newegg": {
-        "sku": "445838765272002364047469",
-        "itemNumber": "9SIAFVFK864868",
+        "sku": "4458316243878138193270657",
+        "itemNumber": "9SIC57KKTB7148",
         "sellerClass": "marketplace",
-        "price": 427.82,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838765272002364047469&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-27%2Fp%2F0JC-0004-00V98%3Fitem%3D9SIAFVFK864868",
+        "price": 549.99,
+        "saleprice": 414.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316243878138193270657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-27%2Fp%2F0JC-0004-00V98%3Fitem%3D9SIC57KKTB7148",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2312050ECESY43.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:04.999Z",
+        "matchedAt": "2026-08-27T21:32:30.489Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -9975,6 +9990,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-27"
+      },
+      "newegg": {
+        "sku": "44583442034118287456946",
+        "itemNumber": "9SIA0ZXM0T4225",
+        "sellerClass": "marketplace",
+        "price": 956.05,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583442034118287456946&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-geminos-x-24-ips-75hz%2Fp%2FN82E16824640022%3Fitem%3D9SIA0ZXM0T4225",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-640-022-02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:30:16.676Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 23.8,
@@ -11288,6 +11315,18 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-27"
+      },
+      "newegg": {
+        "sku": "44583607044860868738404",
+        "itemNumber": "9SIBKFRM5F3348",
+        "sellerClass": "marketplace",
+        "price": 359.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583607044860868738404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-xeneon-edge-black%2Fp%2FN82E16811978035%3Fitem%3D9SIBKFRM5F3348",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-978-035-02.png",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:06.037Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 14.5,
@@ -11619,11 +11658,11 @@ export default [
         "itemNumber": "9SIC57KKTB7119",
         "sellerClass": "marketplace",
         "price": 349.99,
-        "saleprice": 329.99,
+        "saleprice": 289.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314400160117402379090&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B71%3Fitem%3D9SIC57KKTB7119",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25061114Y8WYEB.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:34.309Z",
+        "matchedAt": "2026-08-27T21:32:30.470Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -14575,6 +14614,18 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.471Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "newegg": {
+        "sku": "4458318419104548345768256",
+        "itemNumber": "9SIA24GM3P2973",
+        "sellerClass": "marketplace",
+        "price": 762.47,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318419104548345768256&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-271qr-qd-oled-x50-26-5-wqhd-500-hz-metallic-black-rgb%2Fp%2FN82E16824475540%3Fitem%3D9SIA24GM3P2973",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-540-10.png",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:30:19.184Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 27,
@@ -15333,13 +15384,13 @@ export default [
         "itemNumber": "9SIC57KKTB7155",
         "sellerClass": "marketplace",
         "price": 349.99,
-        "saleprice": 299.99,
+        "saleprice": 289.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310005776518352477110&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-00098%3Fitem%3D9SIC57KKTB7155",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2511261227CNA6.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:34.334Z",
-        "matchMethod": "sftp:name",
-        "matchScore": 0.7
+        "matchedAt": "2026-08-27T21:32:30.491Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
@@ -16817,13 +16868,27 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "445834601532875342075924",
+        "itemNumber": "9SIBSZRKYB7890",
+        "sellerClass": "marketplace",
+        "price": 225,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834601532875342075924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000D-000E1%3Fitem%3D9SIBSZRKYB7890",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2512061BX14AC4.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-27T21:32:08.553Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
     "source": "amazon-discovery",
     "resolution": "1080p",
     "refresh": 310,
-    "panel": "IPS"
+    "panel": "IPS",
+    "upc": "00197105984738",
+    "mpn": "VG259QMR5A"
   },
   {
     "id": 101049,
