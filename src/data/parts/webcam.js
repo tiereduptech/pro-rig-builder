@@ -600,7 +600,7 @@ export default [
         "sku": "4503702",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -625,7 +625,7 @@ export default [
         "sku": "5579380",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -650,7 +650,7 @@ export default [
         "sku": "5761912",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "4K",
@@ -699,7 +699,7 @@ export default [
         "sku": "6321794",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -724,7 +724,7 @@ export default [
         "sku": "6366565",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -773,7 +773,7 @@ export default [
         "sku": "6520150",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -798,7 +798,7 @@ export default [
         "sku": "6550199",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "1080p",
@@ -823,7 +823,7 @@ export default [
         "sku": "6571655",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "4K",
@@ -843,12 +843,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595407.p%3FskuId%3D6595407",
-        "price": 199.99,
+        "price": 159.99,
         "inStock": true,
         "sku": "6595407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "4K",
@@ -868,12 +868,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595408&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595408.p%3FskuId%3D6595408",
-        "price": 149.99,
+        "price": 119.99,
         "inStock": true,
         "sku": "6595408",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "4K",
@@ -898,7 +898,7 @@ export default [
         "sku": "9928354",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26"
+        "priceConfirmedAt": "2026-08-27"
       }
     },
     "resolution": "720p",
