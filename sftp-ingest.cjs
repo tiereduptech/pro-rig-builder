@@ -47,6 +47,10 @@ const FTP_USER = process.env.RAKUTEN_FTP_USER || 'rkp_4681679';
 const FTP_PASS = process.env.RAKUTEN_FTP_PASSWORD;
 const NEWEGG_MID = '44583';
 
+// Day-only, matching the priceConfirmedAt / priceUnconfirmedAt convention the
+// Amazon write paths and scripts/assert-retailer-freshness.cjs already use.
+const TODAY = new Date().toISOString().slice(0, 10);
+
 const args = new Set(process.argv.slice(2));
 const DRY_RUN = args.has('--dry-run');
 const DOWNLOAD_ONLY = args.has('--download-only');
@@ -466,6 +470,71 @@ function detectCondition(name) {
   return 'new';
 }
 
+// The lanes this file is the ONLY writer for. deals.newegg has its own
+// re-pricer (refresh-newegg-prices.cjs) which stamps refreshedAt daily; these
+// have nothing else, which is how 182 open-box rows reached 90 days with 171 of
+// them never once changing price while a scheduled job ran over them nightly.
+//
+// Confirmation stamping is deliberately LIMITED to these lanes. Stamping
+// deals.newegg here too would be defensible on its own terms — we did contact
+// the feed — but it would let a dead refresh-newegg-prices read as healthy on
+// this job's stamp, which is the exact failure the freshness gate exists to
+// catch. One retailer's job must never certify another's.
+const CONDITION_LANES = ['newegg_openbox', 'newegg_refurb', 'newegg_used'];
+const laneKey = (part, fieldKey) => `${part.id}::${fieldKey}`;
+
+// Every (row, lane) this run CONFIRMED — i.e. actually wrote a price to, from
+// a feed record. Read after the merchant loop to stamp the complement: rows we
+// hold a price for and the feed did not offer one for. See the absence sweep.
+const confirmedLanes = new Set();
+
+// ── Which listing do we keep? ────────────────────────────────────────────────
+// Exported and pure so the rule can be asserted on directly. It was previously
+// inline in applyMatchToPart, where the only way to exercise it was a live SFTP
+// pull of a 226MB feed.
+//
+// THE DISTINCTION THIS FUNCTION EXISTS TO MAKE: a feed carries several listings
+// for the same product, and picking between them is a SELECTION. Re-reading the
+// listing we already stored is a REPRICE. The old code had one branch for both,
+// so yesterday's stored price competed against today's price for the very same
+// listing — and won whenever today's was higher, because `newPrice < oldPrice`
+// is the only path that displaces a same-rank in-stock listing.
+//
+// A price RISE was therefore never written to any lane this file solely owns.
+// That is the #70 mechanism one layer down: the frozen low number is
+// disproportionately the cheapest, the cheapest wins BEST, and open-box is the
+// lane whose entire proposition is being cheaper. Measured on 2026-08-28: 180
+// open-box products tracked since 2026-05-30 took 10 price steps between them,
+// against 2,095 for deals.newegg over the same window. deals.newegg is not
+// better behaved — it has a re-pricer that overwrites this selector nightly.
+//
+// @param {object|null} existing   the listing already stored on the row
+// @param {object} incoming        {itemNumber, sku, price, saleprice, inStock}
+// @param {function} sellerRank    NEG.sellerRank — lower is better
+// @returns {{shouldReplace:boolean, sameListing:boolean}}
+function chooseListing(existing, incoming, sellerRank) {
+  const storedId = existing ? String(existing.itemNumber || existing.sku || '') : '';
+  // An empty stored id must never match an empty incoming one — that would make
+  // two unidentifiable listings "the same" and reprice one from the other.
+  const sameListing = !!existing && storedId !== '' &&
+    (storedId === String(incoming.itemNumber || '') || storedId === String(incoming.sku || ''));
+
+  if (!existing) return { shouldReplace: true, sameListing: false };
+  if (sameListing) return { shouldReplace: true, sameListing: true };
+
+  const newRank = sellerRank(incoming.itemNumber);
+  const oldRank = sellerRank(existing.itemNumber || existing.sku);
+  if (newRank !== oldRank) return { shouldReplace: newRank < oldRank, sameListing: false };
+
+  const newPrice = incoming.saleprice || incoming.price;
+  const oldPrice = existing.saleprice || existing.price;
+  let shouldReplace = false;
+  if (incoming.inStock && !existing.inStock) shouldReplace = true;
+  else if (existing.inStock && !incoming.inStock) shouldReplace = false;
+  else if (newPrice < oldPrice) shouldReplace = true;
+  return { shouldReplace, sameListing: false };
+}
+
 function applyMatchToPart(part, rec, match) {
   const pricing = priceFromRecord(rec);
   if (!pricing) return false;
@@ -505,20 +574,23 @@ function applyMatchToPart(part, rec, match) {
   // regardless of price; only within the same seller tier fall back to
   // in-stock-then-lowest-price. (B2: marketplace fix is price-independent.)
   const existing = part.deals[fieldKey];
-  let shouldReplace = !existing;
-  if (existing) {
-    const newRank = NEG.sellerRank(itemNumber);
-    const oldRank = NEG.sellerRank(existing.itemNumber || existing.sku);
-    if (newRank !== oldRank) {
-      shouldReplace = newRank < oldRank;          // first-party wins outright
-    } else {
-      const newPrice = pricing.saleprice || pricing.price;
-      const oldPrice = existing.saleprice || existing.price;
-      if (inStock && !existing.inStock) shouldReplace = true;
-      else if (existing.inStock && !inStock) shouldReplace = false;
-      else if (newPrice < oldPrice) shouldReplace = true;
-    }
-  }
+  // Selection vs reprice — see chooseListing() above for why that distinction is
+  // the whole bug. `let`, because the sanity gate below can still veto a write.
+  const choice = chooseListing(
+    existing,
+    { itemNumber, sku: rec.sku, price: pricing.price, saleprice: pricing.saleprice, inStock },
+    NEG.sellerRank,
+  );
+  const sameListing = choice.sameListing;
+  let shouldReplace = choice.shouldReplace;   // let: the sanity gate can veto
+
+  // matchedAt means "when this row was bound to this SKU", and re-reading the
+  // price of a listing we already hold does not re-bind anything. Carrying it
+  // keeps the field answering the question it is named for — which matters
+  // because scripts/assert-retailer-freshness.cjs counts matchedAt as a
+  // confirmation stamp, and letting it advance on every reprice would let this
+  // job satisfy that gate without priceConfirmedAt ever being written.
+  if (sameListing && existing.matchedAt) newListing.matchedAt = existing.matchedAt;
 
   // Sanity gate on the primary (new-condition) listing: never attach a price that's
   // a wild outlier vs the product's other retailers — flag for review instead.
@@ -531,6 +603,33 @@ function applyMatchToPart(part, rec, match) {
     }
   }
   if (shouldReplace) {
+    if (CONDITION_LANES.includes(fieldKey)) {
+      // ── The stamp that was never written ────────────────────────────────────
+      // This job has repriced these lanes nightly since it was built and left no
+      // trace that it had, because matchedAt is the only *At it wrote — and
+      // matchedAt records when a row was BOUND TO A SKU, not when its price was
+      // confirmed. src/price-freshness.js refuses it as a freshness stamp for
+      // that reason, correctly: all 182 open-box rows carry matchedAt and 0
+      // carry any price confirmation, so the render path could only read them as
+      // never-confirmed. The rows were not unrefreshed. They were unstamped.
+      newListing.priceConfirmedAt = TODAY;
+
+      // priceLastMovedAt advances only when the NUMBER moved, and must be
+      // carried across explicitly — newListing is a fresh object, so anything
+      // not copied here is erased and the row reads as never-moved forever
+      // after. Same reasoning and same hazard as the skuChanged branch in
+      // refresh-newegg-prices.cjs.
+      const newEff = pricing.saleprice || pricing.price;
+      const oldEff = existing ? (existing.saleprice || existing.price) : null;
+      const moved = existing != null && newEff !== oldEff;
+      const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
+      if (carried) newListing.priceLastMovedAt = carried;
+
+      // Confirmed lanes never keep a stale negative. newListing is fresh, so
+      // priceUnconfirmedAt is dropped by construction — recorded here so the
+      // absence sweep below and this line are read as the pair they are.
+      confirmedLanes.add(laneKey(part, fieldKey));
+    }
     part.deals[fieldKey] = newListing;
   }
 
@@ -560,7 +659,8 @@ function writeParts(parts) {
 // 32057560889 paid for that: ~1.3GB of duplicate downloads and a 535s/2973s
 // pair of feed pulls that contended with each other the whole way.
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex,
-                   DEFAULT_FIELD_ORDER, normUPC, normMPN };
+                   DEFAULT_FIELD_ORDER, normUPC, normMPN,
+                   chooseListing, detectCondition, CONDITION_LANES };
 
 if (require.main === module) (async () => {
   CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
@@ -631,6 +731,8 @@ if (require.main === module) (async () => {
     exclusivesStream = fs.createWriteStream(exclusivesJsonlPath, { encoding: 'utf8' });
   }
 
+  let fullNeweggFeedParsed = false;
+
   for (const dl of downloaded) {
     log(`\nâ”€â”€ Merchant ${dl.mid}: ${dl.fileName} â”€â”€`);
     
@@ -692,6 +794,12 @@ if (require.main === module) (async () => {
       continue;
     }
     
+    // A FULL feed for the Newegg MID is the only thing that licenses the absence
+    // sweep below. A delta carries only what CHANGED, so a row's absence from it
+    // means "unchanged", the exact opposite of "gone" — and `_deltatemplate`
+    // contains `_delta`, so it is excluded here too.
+    if (dl.mid === NEWEGG_MID && !/_delta/i.test(dl.fileName)) fullNeweggFeedParsed = true;
+
     log(`  Parsed ${parsed.recordCount} records (header has ${parsed.header.length} fields)`);
     if (parsed.trailerCount != null && parsed.trailerCount !== parsed.recordCount) {
       log(`  âš  Trailer count ${parsed.trailerCount} != parsed ${parsed.recordCount}`);
@@ -707,12 +815,63 @@ if (require.main === module) (async () => {
     summary.totals.exclusives += ms.exclusives;
   }
 
+  // ── The absence sweep: "we looked and it wasn't there" ──────────────────────
+  //
+  // Stamping only what the feed RETURNS can never clear a row the feed has
+  // stopped carrying. Those rows would simply keep the last price they were
+  // given and, with no negative stamp, would look no different from a row that
+  // was never due a refresh. That is the same hole #72 closed on the other side
+  // of this pipeline: a question never asked is not evidence about the answer,
+  // and silence is not an answer either.
+  //
+  // priceUnconfirmedAt is the existing vocabulary for this — the Amazon write
+  // paths write it, and scripts/assert-retailer-freshness.cjs already ranks a
+  // negative stamp NEWER than every positive one as "the most recent thing we
+  // know is that we could not confirm". Nothing new to teach the gate.
+  //
+  // GATED, because a wrong absence claim is worse than no claim:
+  //   - only when a FULL Newegg feed was parsed this run. Unchanged files are
+  //     skipped by the manifest and the job returns early on `downloaded.length
+  //     === 0`, so on a quiet day we look at nothing and must say nothing.
+  //   - only the lanes this file solely owns. deals.newegg is re-priced by
+  //     refresh-newegg-prices.cjs, which decides its own absences with a proven
+  //     streak and a breaker; a second opinion from here would fight it.
+  //
+  // What the stamp asserts is narrow and exactly what was observed: this run's
+  // full feed offered no BUYABLE listing for this row. It does not distinguish
+  // delisted from out-of-stock, because onRecord drops out-of-stock records
+  // before matching and so this job genuinely cannot tell them apart. Either
+  // way we could not confirm a price, which is what the stamp says.
+  let unconfirmed = 0;
+  if (fullNeweggFeedParsed) {
+    for (const p of parts) {
+      if (!p.deals) continue;
+      for (const lane of CONDITION_LANES) {
+        const d = p.deals[lane];
+        if (!d || typeof d !== 'object') continue;
+        if (confirmedLanes.has(laneKey(p, lane))) continue;
+        d.priceUnconfirmedAt = TODAY;
+        unconfirmed++;
+      }
+    }
+    log(`\nAbsence sweep: ${confirmedLanes.size} condition-lane rows confirmed, ${unconfirmed} stamped priceUnconfirmedAt`);
+  } else {
+    log('\nAbsence sweep SKIPPED — no full Newegg feed parsed this run (nothing was looked at, so nothing is absent)');
+  }
+  summary.totals.conditionLanesConfirmed = confirmedLanes.size;
+  summary.totals.conditionLanesUnconfirmed = unconfirmed;
+  summary.totals.absenceSweepRan = fullNeweggFeedParsed;
+
   // Write outputs
   if (DRY_RUN) {
     log('\n--dry-run: not writing parts.js or exclusives.json');
   } else {
-    if (summary.totals.updated > 0) {
-      log(`\nWriting ${parts.length} products to parts.js (${summary.totals.updated} updated)...`);
+    // `unconfirmed` counts too: an absence sweep that stamped rows changed the
+    // catalog even when not one price moved, and gating the write on `updated`
+    // alone would drop exactly the negative evidence this run went to the
+    // trouble of establishing.
+    if (summary.totals.updated > 0 || unconfirmed > 0) {
+      log(`\nWriting ${parts.length} products to parts.js (${summary.totals.updated} updated, ${unconfirmed} marked unconfirmed)...`);
       writeParts(parts);
     } else {
       log('\nNo parts updated, skipping parts.js write');
