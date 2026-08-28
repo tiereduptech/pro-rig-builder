@@ -131,12 +131,19 @@ if (r.examples.length) {
   }
 }
 
-console.log(`\n  threshold sweep — is 14 the right cut?\n`);
-console.log('    days'.padEnd(10) + 'badges lost'.padStart(14) + 'badge moves'.padStart(14) + 'badge gone'.padStart(13) + '% of today'.padStart(13));
+console.log(`\n  threshold sweep — is ${PRICE_STALE_AFTER_DAYS} the right cut?\n`);
+// "de-badged" is moves + gone, so this column reconciles with the TOTAL in the
+// by-retailer table above and with the number the issue quotes. It is NOT
+// badgedBefore - badgedAfter: that difference is `lostEntirely` by
+// construction (a product leaves badgedAfter exactly when nothing fresh and
+// in-stock remains), so printing it beside "badge gone" gave two columns that
+// are always equal and hid the figure a reader actually wants — a badge that
+// MOVES to a fresher retailer is still a row whose displayed price changes.
+console.log('    days'.padEnd(10) + 'de-badged'.padStart(14) + 'badge moves'.padStart(14) + 'badge gone'.padStart(13) + '% of today'.padStart(13));
 for (const cut of [7, 14, 21, 30, 45, 60, 90]) {
   const a = analyse(cut);
-  const lost = a.badgedBefore - a.badgedAfter;
-  console.log('    ' + String(cut).padEnd(8) + String(lost).padStart(14) + String(a.moved).padStart(14)
-    + String(a.lostEntirely).padStart(13) + ((lost / (a.badgedBefore || 1)) * 100).toFixed(1).padStart(12) + '%');
+  const deBadged = a.moved + a.lostEntirely;
+  console.log('    ' + String(cut).padEnd(8) + String(deBadged).padStart(14) + String(a.moved).padStart(14)
+    + String(a.lostEntirely).padStart(13) + ((deBadged / (a.badgedBefore || 1)) * 100).toFixed(1).padStart(12) + '%');
 }
 console.log('');
