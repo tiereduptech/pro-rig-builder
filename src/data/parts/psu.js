@@ -6088,9 +6088,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 109.99,
+        "price": 129.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1818&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GL&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "1818",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "44583105569546302473547",
@@ -6142,7 +6147,11 @@ export default [
       "msi": {
         "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1830&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750GL-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "1830",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445835106365202183666303",
@@ -6821,7 +6830,11 @@ export default [
       "msi": {
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2166&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GL-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2166",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16817701026",
@@ -7092,9 +7105,14 @@ export default [
         "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       },
       "msi": {
-        "price": 74.99,
+        "price": 84.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2308&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750BE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2308",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "watts": 750,
@@ -7131,9 +7149,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 64.99,
+        "price": 74.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2307&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650BE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2307",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "watts": 650,
@@ -7523,7 +7546,11 @@ export default [
       "msi": {
         "price": 769.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2459&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMEG-Ai1600T-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2459",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445835041996689809647170",
@@ -7573,9 +7600,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 149.99,
+        "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2463&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMPG-A850GS-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2463",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445836169499807546455110",
@@ -7673,9 +7705,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=681&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750GLS-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "681",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445833336803281533594229",
@@ -7725,9 +7762,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 89.99,
+        "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2744&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650GLS-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2744",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458311340336926252971290",
@@ -7777,9 +7819,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 139.99,
+        "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2745&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GLS-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2745",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458311608662683760792605",
@@ -7829,9 +7876,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 159.99,
+        "price": 129.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2746&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GLS-PCIE5&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2746",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445831311688280466672498",
@@ -7975,7 +8027,11 @@ export default [
       "msi": {
         "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2797&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A850GLS-MLG-EDITION&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2797",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445837630450229854934337",
@@ -8307,7 +8363,11 @@ export default [
       "msi": {
         "price": 59.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2924&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A650BN-PCIE5-III&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2924",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445837627044667285667296",
@@ -8357,9 +8417,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 69.99,
+        "price": 79.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2925&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A750BN-PCIE5-III&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2925",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458315778071062282904207",

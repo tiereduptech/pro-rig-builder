@@ -864,9 +864,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 459.99,
+        "price": 609.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2371&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-ACE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2371",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445833898142454558476006",
@@ -924,7 +929,11 @@ export default [
       "msi": {
         "price": 259.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2373&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z890-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2373",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445837049315549479513046",
@@ -1113,9 +1122,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 199.99,
+        "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1492&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z790-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": true,
+        "itemId": "1492",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144567",
@@ -1498,7 +1512,11 @@ export default [
       "msi": {
         "price": 219.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2958&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2958",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "9SIC7PTM0T3095",
@@ -2664,9 +2682,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 359.99,
+        "price": 429.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2314&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-CARBON-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2314",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312254027680150402743",
@@ -2733,9 +2756,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 179.99,
+        "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2450&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850-P-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2450",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144689",
@@ -3626,9 +3654,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 99.99,
+        "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1727&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B550M-VC-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "1727",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144548",
@@ -4107,9 +4140,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 114.99,
+        "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B760M-P-DDR4&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "1733",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445838383903823279406532",
@@ -5211,9 +5249,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 109.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1254&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-H610M-G-DDR4&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "1254",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144525",
@@ -6663,7 +6706,11 @@ export default [
       "msi": {
         "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1510&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650M-A-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "1510",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "additionalImages": [
@@ -6809,7 +6856,9 @@ export default [
       "msi": {
         "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1496&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z790-P-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "msi-dropped-item-from-catalog-feed"
       },
       "newegg": {
         "sku": "N82E16813144571",
@@ -7114,9 +7163,14 @@ export default [
         "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-24"
       },
       "msi": {
-        "price": 289.99,
+        "price": 329.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2453&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-EDGE-TI-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2453",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "discount": 12,
@@ -7229,7 +7283,11 @@ export default [
       "msi": {
         "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2333&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-X870-P-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2333",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458315202603794630866105",
@@ -7363,9 +7421,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 199.99,
+        "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2731&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI-V1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2731",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "discount": 9,
@@ -7545,9 +7608,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 169.99,
+        "price": 189.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2449&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2449",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144733",
@@ -7607,7 +7675,11 @@ export default [
       "msi": {
         "price": 64.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2730&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FA520M-A-PRO-V1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2730",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "additionalImages": [
@@ -7719,7 +7791,11 @@ export default [
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2367&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FZ890-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2367",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144671",
@@ -7897,7 +7973,11 @@ export default [
       "msi": {
         "price": 319.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2854&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-TOMAHAWK-MAX-WIFI-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2854",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144728",
@@ -8012,7 +8092,11 @@ export default [
       "msi": {
         "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2458&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B860M-A-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2458",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445835672671083126215705",
@@ -8146,9 +8230,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 239.99,
+        "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2735&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FX870E-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2735",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445839610158882651120089",
@@ -8257,9 +8346,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 149.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2830&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850-S-WIFI6E&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": true,
+        "itemId": "2830",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458316670049652437671586",
@@ -8433,9 +8527,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 149.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2873&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI6E&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2873",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458314442573143198691740",
@@ -9128,9 +9227,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 159.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1746&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB760-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "1746",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144600",
@@ -10407,9 +10511,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 129.99,
+        "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2970&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2FPRO-H610M-G-WIFI-DDR4-B1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2970",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445838576217321363566779",
@@ -12180,7 +12289,11 @@ export default [
       "msi": {
         "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2729&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650-S-WIFI-V1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2729",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "additionalImages": [
@@ -12330,9 +12443,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 249.99,
+        "price": 279.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2448&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-B850-EDGE-TI-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2448",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445838433908943316729718",
@@ -12965,9 +13083,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 219.99,
+        "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2709&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850M-MORTAR-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2709",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144715",
@@ -13238,9 +13361,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 149.99,
+        "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2451&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB840-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2451",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "44583666258594509728414",
@@ -13584,9 +13712,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 199.99,
+        "price": 189.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2732&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI-V1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2732",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "discount": 10,
@@ -13838,9 +13971,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 119.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2759&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B760M-P&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2759",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144709",
@@ -14061,7 +14199,11 @@ export default [
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2536&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-WHITE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2536",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458313614106753638784243",
@@ -14161,9 +14303,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 369.99,
+        "price": 339.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2369&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890-CARBON-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": true,
+        "itemId": "2369",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144674",
@@ -14791,7 +14938,11 @@ export default [
       "msi": {
         "price": 239.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2368&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-P-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2368",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445839599061238943619465",
@@ -14913,7 +15064,11 @@ export default [
       "msi": {
         "price": 179,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2456&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2456",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458318283260983177448133",
@@ -15059,7 +15214,9 @@ export default [
       "msi": {
         "price": 469.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2980&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2FPRO-B650M-A-WIFI-7800X3D&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "msi-dropped-item-from-catalog-feed"
       }
     },
     "additionalImages": [
@@ -15520,9 +15677,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 289.99,
+        "price": 259.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2715&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-B850I-EDGE-TI-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2715",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144710",
@@ -15806,9 +15968,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 249.99,
+        "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2588&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2588",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "44583661853340466791308",
@@ -15861,9 +16028,14 @@ export default [
         "inStock": true
       },
       "msi": {
-        "price": 209.99,
+        "price": 259.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2793&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-MLG-EDITION&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2793",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "discount": 8,
@@ -16266,9 +16438,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 89,
+        "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2728&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B650M-P-V1&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2728",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "discount": 38,
@@ -16797,9 +16974,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-24"
       },
       "msi": {
-        "price": 169.99,
+        "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2655&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-B860M-MORTAR-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2655",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458317233106780576906795",
@@ -17502,7 +17684,11 @@ export default [
       "msi": {
         "price": 1099.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2394&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-GODLIKE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2394",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312200895071169412040",
@@ -17644,7 +17830,11 @@ export default [
       "msi": {
         "price": 219.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2828&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850M-A-WIFI-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2828",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144721",
@@ -18063,7 +18253,11 @@ export default [
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2455&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2455",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144693",
@@ -18120,7 +18314,11 @@ export default [
       "msi": {
         "price": 139,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2467&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FB860M-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2467",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "additionalImages": [
@@ -18591,9 +18789,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 699.99,
+        "price": 399.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2377&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMEG-Z890-UNIFY-X&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2377",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445831908406744040252583",
@@ -18690,9 +18893,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 169.99,
+        "price": 189.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2829&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PRO-WIFI6E&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2829",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144727",
@@ -19317,7 +19525,11 @@ export default [
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2457&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-B860-P-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2457",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "44583532616740331115017",
@@ -19570,9 +19782,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 159.99,
+        "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2817&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-H810I-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2817",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144720",
@@ -19916,9 +20133,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 289.99,
+        "price": 259.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2936&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-GAMING-PLUS-MAX-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2936",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312935159453722822414",
@@ -19978,9 +20200,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-25"
       },
       "msi": {
-        "price": 399.99,
+        "price": 369.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2883&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870I-EDGE-TI-EVO-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2883",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16813144731",
@@ -20579,9 +20806,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 159.99,
+        "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1253&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B550-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "1253",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458313859387338508012904",
@@ -20846,9 +21078,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 169.99,
+        "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1985&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FZ790-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "1985",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458310139134443656397412",
@@ -21263,7 +21500,11 @@ export default [
       "msi": {
         "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2334&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2334",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445831810801084836112856",
@@ -21329,7 +21570,11 @@ export default [
       "msi": {
         "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2421&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FX870-GAMING-PLUS-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2421",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "socket": "AM5",
@@ -21377,9 +21622,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 259.99,
+        "price": 269.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2454&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2454",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445835598199868153940375",
@@ -21428,9 +21678,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 209.99,
+        "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2447&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2447",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445833838685106778999705",
@@ -21494,7 +21749,11 @@ export default [
       "msi": {
         "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=445&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB550M-PRO-VDH-WIFI&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "445",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458313890755728569624299",
@@ -21784,7 +22043,11 @@ export default [
       "msi": {
         "price": 249.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2733",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312196363374480429786",
@@ -21834,7 +22097,11 @@ export default [
       "msi": {
         "price": 299.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2415&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890I-EDGE-TI-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": true,
+        "itemId": "2415",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458317219569822534862076",
@@ -22074,7 +22341,11 @@ export default [
       "msi": {
         "price": 1299.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2973&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMEG-X870E-GODLIKE-MAX&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2973",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445838898098871767877202",
@@ -22125,7 +22396,11 @@ export default [
       "msi": {
         "price": 499.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2974&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-CARBON-MAX-WIFI&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2974",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "socket": "AM5",
@@ -22164,7 +22439,9 @@ export default [
       "msi": {
         "price": 2289.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=3038&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2F9950x3d-x870e-rtx5080-suprim-liquid-bundle&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "msi-dropped-item-from-catalog-feed"
       }
     },
     "socket": "AM5",
@@ -22205,9 +22482,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 259.99,
+        "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2976&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI-II&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2976",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458314434645358021712189",

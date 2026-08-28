@@ -13143,9 +13143,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 74.99,
+        "price": 59.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2824&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A12-240&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2824",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445836195230420002548038",
@@ -15146,9 +15151,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 119.99,
+        "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2309&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I240&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2309",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458316466367023259799271",
@@ -15206,7 +15216,11 @@ export default [
       "msi": {
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2304&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-I360&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2304",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445838845169899382605432",
@@ -15256,7 +15270,11 @@ export default [
       "msi": {
         "price": 69.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2407&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-Coreliquid-A13-240&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2407",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458376729058588809291",
@@ -15314,9 +15332,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 89.99,
+        "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2465&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMAG-CORELIQUID-A15-360&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2465",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458311315133555368667162",
@@ -15515,7 +15538,11 @@ export default [
       "msi": {
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2766&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FMPG-CORELIQUID-P13-360-WHITE&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2766",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445831320570467464369778",
@@ -15575,7 +15602,11 @@ export default [
       "msi": {
         "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2798&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FCPU-Coolers%2FCORELIQUID-A17-MLG-EDITION&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2798",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16835846079",

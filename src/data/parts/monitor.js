@@ -7980,7 +7980,11 @@ export default [
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1875&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPro-MP341CQW&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "1875",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "screenSize": 34,
@@ -8321,9 +8325,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 779.99,
+        "price": 749.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2097&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQP-QD-OLED&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2097",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 49,
@@ -8362,9 +8371,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 599.99,
+        "price": 579.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2098&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QRX-QD-OLED&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2098",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
         "sku": "4458315024948118250085806",
@@ -8453,9 +8467,14 @@ export default [
     "mpn": "MAG 321UPX QD-OLED",
     "deals": {
       "msi": {
-        "price": 799.99,
+        "price": 749.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2133&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMAG-321UPX-QD-OLED&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2133",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445833124119111439708329",
@@ -8838,9 +8857,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 149.99,
+        "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2151&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP275Q&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2151",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -9697,9 +9721,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 199.99,
+        "price": 279.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1734&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP341CQ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "1734",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 34,
@@ -9737,9 +9766,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 219.99,
+        "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2272&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273U&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2272",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312584059989015973190",
@@ -9791,9 +9825,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 89.99,
+        "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2300&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP251-E2&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2300",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 24.5,
@@ -10323,9 +10362,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 104.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2375&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP275W-E2&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2375",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -10366,7 +10410,11 @@ export default [
       "msi": {
         "price": 129.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2383&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP271A-E2&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2383",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -10660,9 +10708,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 749.99,
+        "price": 699.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2417&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%3Fproduct_id%3D2417&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2417",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
         "sku": "445837787663250306072650",
@@ -10714,9 +10767,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 999.99,
+        "price": 949.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2412&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQPX-QD-OLED&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2412",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458311883885365372818679",
@@ -10780,9 +10838,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 879.99,
+        "price": 849.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2426&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-321CURX-QD-OLED&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2426",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 32,
@@ -10834,7 +10897,11 @@ export default [
       "msi": {
         "price": 189.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2427&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273QW-E2&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2427",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -11361,9 +11428,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 279.99,
+        "price": 349.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2514&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FModern-MD272UPSW&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": false,
+        "itemId": "2514",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -11568,9 +11640,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2393&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP251W-E2&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2393",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 24.5,
@@ -11958,9 +12035,14 @@ export default [
         "matchScore": 1
       },
       "msi": {
-        "price": 899.99,
+        "price": 799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2491&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-272URX-QD-OLED&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2491",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -11999,9 +12081,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 289.99,
+        "price": 339.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2320&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FModern-MD342CQPW&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2320",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
         "sku": "445839017723804060127126",
@@ -13531,9 +13618,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 104.99,
+        "price": 129.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2800&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273L-E14&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2800",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458317782225816278286452",
@@ -13865,7 +13957,11 @@ export default [
       "msi": {
         "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2881&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273W-E14A&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2881",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312060354695130490027",
@@ -13916,9 +14012,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 94.99,
+        "price": 69.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2802&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FPortable-Monitors%2FPro-MP165-E6&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2802",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445837557893024845258852",
@@ -13967,9 +14068,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 119.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2872&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243W-E14&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2872",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458318124016705179246337",
@@ -14598,9 +14704,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 799.99,
+        "price": 679.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2887&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QR-QD-OLED-X50&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2887",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
         "sku": "4458316655664126969556551",
@@ -14664,9 +14775,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 119.99,
+        "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2928&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP242-E14C&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2928",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
         "sku": "4458317800182485437973920",
@@ -14720,7 +14836,11 @@ export default [
       "msi": {
         "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2929&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP272-E14C&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2929",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "screenSize": 27,
@@ -14759,9 +14879,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 79.99,
+        "price": 84.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2736&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243L-E14&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2736",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445834948720951732401025",

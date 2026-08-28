@@ -19783,7 +19783,11 @@ export default [
       "msi": {
         "price": 729.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2195&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FStorage-Devices%2FSPATIUM-M480-PRO-4TB&intsrc=APIG_16410",
-        "inStock": false
+        "inStock": false,
+        "itemId": "2195",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445837815318290565786902",

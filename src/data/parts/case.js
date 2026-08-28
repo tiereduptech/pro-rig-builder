@@ -10402,7 +10402,11 @@ export default [
       "msi": {
         "price": 89.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2028&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-M100R-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2028",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "N82E16811320057",
@@ -18693,7 +18697,11 @@ export default [
       "msi": {
         "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2656&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-100R-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2656",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445833477627041552227079",
@@ -18756,7 +18764,11 @@ export default [
       "msi": {
         "price": 99.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2633&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMAG-PANO-110R-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2633",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458312417820513135209302",
@@ -19050,9 +19062,14 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       },
       "msi": {
-        "price": 109.99,
+        "price": 119.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2629&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FMPG-VELOX-300R-AIRFLOW-PZ&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2629",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28",
+        "priceLastMovedAt": "2026-08-28"
       }
     },
     "tower": "Mid",
@@ -19587,7 +19604,11 @@ export default [
       "msi": {
         "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2799&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FComputer-Chassis%2FPANO-130R-MLG-EDITION&intsrc=APIG_16410",
-        "inStock": true
+        "inStock": true,
+        "itemId": "2799",
+        "priceSource": "1p",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445832522015952627062078",
