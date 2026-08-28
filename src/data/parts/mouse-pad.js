@@ -348,7 +348,9 @@ export default [
     },
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-28"
   },
   {
     "id": 100106,
