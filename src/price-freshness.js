@@ -33,7 +33,26 @@ export const PRICE_STALE_AFTER_DAYS = 14;
 // to a SKU, not when its price was last confirmed. Treating it as freshness
 // would certify the worst rows in the catalog — all 182 newegg_openbox rows
 // carry matchedAt and have never had a price confirmed even once.
-export const priceStampOf = (d) => (d && (d.refreshedAt || d.priceConfirmedAt)) || null;
+//
+// ── THIS IS THE PRICE VOCABULARY, NOT THE LANE VOCABULARY ───────────────────
+// scripts/assert-retailer-freshness.cjs keeps a DIFFERENT list that does
+// include matchedAt, and that is correct — it answers a different question.
+// It asks "has anything contacted this retailer lane recently", a question
+// about workflow health, and a SKU rebind is evidence of contact with the feed.
+// This file asks "do we stand behind THIS PRICE", and a rebind is not evidence
+// about a number.
+//
+// Exported as a list because a third caller needs the same answer this one
+// gives: record-price-snapshot.js decides whether a price value may be written
+// into price history, which is the price question, and it had been reaching for
+// the lane list. Anything asking "is this NUMBER confirmed" imports from here.
+export const PRICE_CONFIRMATION_STAMPS = ['refreshedAt', 'priceConfirmedAt'];
+
+export const priceStampOf = (d) => {
+  if (!d) return null;
+  for (const field of PRICE_CONFIRMATION_STAMPS) if (d[field]) return d[field];
+  return null;
+};
 
 // '2026-08-28T13:00:00Z' | '2026-08-28' -> '2026-08-28'; anything else -> null.
 //
