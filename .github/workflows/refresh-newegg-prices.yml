@@ -122,12 +122,26 @@ on:
         type: boolean
         default: true
       limit:
-        description: "Only process the first N products (blank = all)"
+        # BLANK BY DEFAULT, DELIBERATELY. This read `default: "50"` while its own
+        # description said "blank = all". Omitting -f limit= on a dispatch does
+        # not send an empty string — GitHub substitutes the declared default —
+        # so `if [ -n "${{ inputs.limit }}" ]` saw "50" and the job silently ran
+        # --limit=50. On 2026-08-28 a dispatch meant to reprice all 3,178 rows
+        # would have written 50 of them and reported success.
+        #
+        # An explicit empty default, matching refresh-bestbuy-prices.yml and
+        # refresh-msi-prices.yml, which both already read `default: ''` against
+        # the same "blank = all" wording. Omitting the input now sends "" and
+        # blank means blank, which is what the description has always claimed.
+        # A limited run is still one -f away; it is just no longer what you get
+        # by accident.
+        description: "Only process the first N products (blank = all 3,178; use for a smoke run)"
+        required: false
+        default: ""
         type: string
-        default: "50"
 
-# Repo-wide lock shared by every workflow that pushes to main. Schedule is
-# disabled (see above) but workflow_dispatch still writes parts.js.
+# Repo-wide lock shared by every workflow that pushes to main. Both the
+# schedule and workflow_dispatch write parts.js.
 concurrency:
   group: main-writer
   cancel-in-progress: false
