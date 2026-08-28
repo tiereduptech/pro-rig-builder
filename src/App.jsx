@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";;
 import PageMeta from "./PageMeta.jsx";
 import ProductPage from "./ProductPage.jsx";
 import { bundleH1, bundleLdName } from "./bundle-name.js";
+import { priceStampOf, isFresh, priceAgeDays } from "./price-freshness.js";
 // PARTS comes from parts-frontend.js, which dynamic-imports per-category
 // modules so Vite can ship them as separate chunks. The array starts empty
 // and is mutated in place as categories load — main.jsx awaits an initial
@@ -604,13 +605,22 @@ const dealPrice = d => {
   if (hasSale) return sale;
   return hasList ? list : null;
 };
+// ── PRICE FRESHNESS ──────────────────────────────────────────────────────────
+// The rule lives in src/price-freshness.js so that the report which measures
+// this gate's impact runs the same predicate the page runs. See that file for
+// why 14 days, why matchedAt does not count, and why a missing stamp is stale.
 const bestPrice = p => {
   if (!p.deals || typeof p.deals !== "object") return p.pr;
   const allRetailers = Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && dealPrice(p.deals[k]) != null);
   if (!allRetailers.length) return p.pr;
   // Prefer in-stock retailers; fall back to any retailer only if none are in stock
   const inStock = allRetailers.filter(k => p.deals[k].inStock !== false);
-  const keys = inStock.length ? inStock : allRetailers;
+  // Then prefer FRESH ones, with the same fall-back shape: a stale price is
+  // still the best information we have when it is the only information we have.
+  // What it must not do is out-rank a price we actually confirmed.
+  const stocked = inStock.length ? inStock : allRetailers;
+  const fresh = stocked.filter(k => isFresh(p.deals[k]));
+  const keys = fresh.length ? fresh : stocked;
   return Math.min(...keys.map(k => dealPrice(p.deals[k])));
 };
 const $ = p => bestPrice(p);
@@ -826,6 +836,7 @@ const retailers = p => {
       const url = info.url || info.linkurl;
       const rawPrice = dealPrice(info);
       return { name, displayName: retailerDisplayName(name), price: rawPrice, url, inStock: info.inStock !== false,
+        fresh: isFresh(info), priceStamp: priceStampOf(info), ageDays: priceAgeDays(info),
         sellerClass: neweggSellerClass(name, info) };
     })
     .filter(r => r.url && r.price > 0)
@@ -838,7 +849,19 @@ const retailers = p => {
     // Sink rather than filter: the row is still true and still worth showing with
     // its OOS tag ("Best Buy has this, they just can't sell it today"). What it
     // must not do is set the headline price or wear BEST.
-    .sort((a,b) => (b.inStock - a.inStock) || (a.price - b.price));
+    //
+    // STALE ROWS SINK FOR THE SAME REASON, and it is the same bug with a
+    // different predicate. Nothing here consulted the age of a price, so a
+    // frozen number won on price alone — and prices drift up more often than
+    // down, which makes the frozen one disproportionately the CHEAPEST. It
+    // sorted to index 0, set the headline, and wore BEST. The least trustworthy
+    // number on the card was the one the site endorsed. That is how a 93-day-old
+    // MSI price was shown as BEST.
+    //
+    // Order is stock, then freshness, then price. Freshness sits BELOW stock
+    // because a fresh price at a retailer who cannot sell it is still useless,
+    // and ABOVE price because being cheapest is a claim we have to stand behind.
+    .sort((a,b) => (b.inStock - a.inStock) || (b.fresh - a.fresh) || (a.price - b.price));
 };
 
 // The "Save $X at A vs B" line spans the cheapest and dearest offer a customer
@@ -847,8 +870,14 @@ const retailers = p => {
 // rows sink to the END, the last element can be a CHEAPER sold-out listing and
 // that subtraction goes negative. Span the buyable rows only — they are a
 // price-sorted prefix — and say nothing when there are fewer than two.
+//
+// Sinking stale rows re-opens exactly that hazard: `rr.filter(r => r.inStock)`
+// is no longer price-sorted, because in-stock STALE rows now sort after
+// in-stock fresh ones and may be cheaper than any of them. The quotable set —
+// in stock AND fresh — is the price-sorted prefix, so span that. A saving we
+// cannot stand behind is not a saving worth printing.
 const savingsSpan = rr => {
-  const live = rr.filter(r => r.inStock);
+  const live = rr.filter(r => r.inStock && r.fresh);
   return live.length > 1 ? { low: live[0], high: live[live.length - 1] } : null;
 };
 
@@ -950,11 +979,24 @@ function PriceCompare({part}) {
           <div style={{display:"flex",alignItems:"center",gap:6}}>
             <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)"}}>{r.displayName}</span>
             <SellerTag r={r}/>
-            {/* BEST is positional, and retailers() now sinks OOS rows, so index 0
-                is out of stock only when EVERY row is — and a "best price" nobody
-                can buy is not a best price. Badge the row or badge nothing. */}
-            {i===0 && r.inStock && <Tag color="var(--mint)">BEST</Tag>}
+            {/* BEST is positional, and retailers() now sinks OOS and STALE rows,
+                so index 0 fails either test only when EVERY row does — and a
+                "best price" nobody can buy, or that nobody has confirmed in
+                PRICE_STALE_AFTER_DAYS, is not a best price. Badge the row or
+                badge nothing. */}
+            {i===0 && r.inStock && r.fresh && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
+            {/* Say HOW stale, not just that it is. "UNCONFIRMED 93d" is a fact a
+                reader can act on; "UNCONFIRMED" alone reads as a disclaimer.
+
+                NOT --amber: this theme collapses --amber onto --mint (both
+                #FF8A3D dark, #cc5a17 light), so an amber tag renders in the
+                exact colour of the BEST badge beside it — the warning would be
+                indistinguishable from the endorsement it exists to withhold.
+                --dim is the muted text colour, which is the honest signal: we
+                are showing this price, not standing behind it. --rose is taken
+                by OOS, which is a harder failure than "nobody has checked". */}
+            {r.inStock && !r.fresh && <Tag color="var(--dim)">{r.ageDays == null ? "UNCONFIRMED" : `UNCONFIRMED ${r.ageDays}d`}</Tag>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
         </a>
@@ -2525,13 +2567,21 @@ function ComparePage({go}) {
 function ProductSchema({p}) {
   if (!p) return null;
 
-  const price = p.deals && typeof p.deals === "object"
-    ? Math.min(...Object.values(p.deals).filter(d => d && typeof d === "object" && dealPrice(d) != null).map(d => dealPrice(d)), p.pr || 9999)
-    : (p.pr || 0);
+  // Structured data is a price claim made to a search engine, and it was the
+  // least guarded number on the page: a bare Math.min over every deal, ignoring
+  // stock and age alike, while the card beside it already preferred in-stock.
+  // Quote what the page quotes — bestPrice() applies both gates and the same
+  // fall-backs — so the rendered price and the indexed price cannot disagree.
+  const price = p.deals && typeof p.deals === "object" ? bestPrice(p) : (p.pr || 0);
 
-  const retailers = p.deals && typeof p.deals === "object"
+  const allOffers = p.deals && typeof p.deals === "object"
     ? Object.entries(p.deals).filter(([_, d]) => d && typeof d === "object" && d.url && dealPrice(d) != null)
     : [];
+  // Offers we have actually confirmed, with the same fall-back as bestPrice.
+  // Omitting an offer we cannot stand behind is not a lie; asserting a price
+  // nobody has checked in PRICE_STALE_AFTER_DAYS to a search engine is.
+  const freshOffers = allOffers.filter(([_, d]) => isFresh(d));
+  const retailers = freshOffers.length ? freshOffers : allOffers;
 
   const schema = {
     "@context": "https://schema.org",

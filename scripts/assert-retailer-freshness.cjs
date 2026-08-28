@@ -126,8 +126,8 @@ const NEGATIVE_STAMP = 'priceUnconfirmedAt';
 // the gate fails. TWO, not one: a single miss is ordinary — a skipped run, a
 // rebase collision on the main-writer lock, a retry that lands after midnight.
 // Two consecutive misses is not jitter, it is a job that has stopped working.
-// Same reasoning, and the same answer, as PRICE_STALE_AFTER_DAYS in src/App.jsx:
-// weekly slowest tier x 2 missed cycles = the 14 days that file settled on.
+// Same reasoning, and the same answer, as PRICE_STALE_AFTER_DAYS in
+// src/price-freshness.js: weekly slowest tier x 2 missed cycles = 14 days.
 const MISSED_CYCLES_ALLOWED = 2;
 
 // Floor under the computed budget. Without it, a twice-daily job like

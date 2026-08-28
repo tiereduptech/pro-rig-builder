@@ -94,7 +94,7 @@ const ROOT = path.resolve(__dirname, '..');
 const MOVE_STAMP = 'priceLastMovedAt';
 
 // The window over which movement is counted. Same 14 days as the MSI quiet-days
-// assert and PRICE_STALE_AFTER_DAYS in src/App.jsx: the slowest weekly tier x
+// assert and PRICE_STALE_AFTER_DAYS in src/price-freshness.js: slowest weekly tier x
 // two missed cycles, which is the interval this codebase has already settled on
 // for "long enough that it is not jitter".
 const MOVEMENT_WINDOW_DAYS = 14;
