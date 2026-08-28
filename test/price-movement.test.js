@@ -221,3 +221,81 @@ test('malformed arguments throw rather than silently measuring nothing', () => {
   assert.throws(() => movement({ parts: [], retailer: '', today: TODAY }), /retailer/);
   assert.throws(() => movement({ parts: [], retailer: 'msi', today: 'yesterday' }), /YYYY-MM-DD/);
 });
+
+// ── partial runs ─────────────────────────────────────────────────────────────
+//
+// movedShare is a measurement only when its numerator and denominator cover the
+// same rows. A --limit run reprices the rows it sampled and no others, so
+// dividing those moves by the whole catalog is a ratio of two populations.
+// Newegg run 33184569537: 37 of 200 sampled rows moved (19.5%), reported as
+// 1.2% against 3,178 priced rows. The ceiling on a 200-row run is 6.3%, so it
+// could not clear the 10% floor even if every row it touched had moved.
+
+/** `n` rows with ids, the first `moved` of which moved today. */
+function idRows(n, moved, startId = 1) {
+  return Array.from({ length: n }, (_, i) => ({ ...row('msi', i < moved ? 0 : 300), id: startId + i }));
+}
+
+test('a limited run divides its own moves by its own rows, not the catalog', () => {
+  const parts = idRows(3178, 37);
+  const sampled = parts.slice(0, 200).map(p => p.id);
+
+  const whole = run(parts);
+  assert.strictEqual(whole.scope, 'catalog');
+  assert.strictEqual(whole.pricedRows, 3178);
+  assert.strictEqual(whole.movedShare, 0.0116); // the misleading figure
+
+  const scoped = run(parts, { scopeIds: sampled });
+  assert.strictEqual(scoped.scope, 'sample');
+  assert.strictEqual(scoped.pricedRows, 200);
+  assert.strictEqual(scoped.scopedRows, 200);
+  assert.strictEqual(scoped.catalogPricedRows, 3178, 'catalog size stays visible');
+  assert.strictEqual(scoped.movedInWindow, 37);
+  assert.strictEqual(scoped.movedShare, 0.185);
+});
+
+test('a sample cannot arm the share alarm, however low its share', () => {
+  // Every sampled row frozen: on the catalog denominator this would fire.
+  const parts = idRows(3178, 0);
+  const scoped = run(parts, { scopeIds: parts.slice(0, 200).map(p => p.id) });
+  assert.strictEqual(scoped.freezeAlarm, 0);
+  assert.strictEqual(scoped.freezeReason, null);
+  assert.match(scoped.note, /SAMPLE ONLY/);
+  assert.match(scoped.note, /200 of 3178/);
+});
+
+test('the max-shaped signal stays armed inside a sample', () => {
+  const parts = idRows(400, 0);
+  const scoped = run(parts, { scopeIds: parts.slice(0, 50).map(p => p.id) });
+  assert.strictEqual(scoped.daysSinceAnyPriceMoved, 300, 'a frozen sample is still reportable as frozen');
+});
+
+test('a full run is unchanged — no scopeIds, no sample labelling', () => {
+  // The scheduled crons pass no limit. This is the regression guard for them.
+  const parts = [...idRows(5, 5), ...idRows(95, 0, 100)];
+  const m = run(parts);
+  assert.strictEqual(m.scope, 'catalog');
+  assert.strictEqual(m.pricedRows, 100);
+  assert.strictEqual(m.catalogPricedRows, 100);
+  assert.strictEqual(m.movedShare, 0.05);
+  assert.strictEqual(m.freezeAlarm, 1, 'a real freeze still fires on a full run');
+  assert.ok(!/SAMPLE ONLY/.test(m.note || ''));
+});
+
+test('scopeIds accepts a Set as well as an array', () => {
+  const parts = idRows(100, 10);
+  const a = run(parts, { scopeIds: parts.slice(0, 20).map(p => p.id) });
+  const b = run(parts, { scopeIds: new Set(parts.slice(0, 20).map(p => p.id)) });
+  assert.deepStrictEqual(a, b);
+});
+
+test('the report block says SAMPLE ONLY on its first line', () => {
+  const { report } = require("../scripts/price-movement.cjs");
+  const parts = idRows(3178, 37);
+  const lines = report(run(parts, { scopeIds: parts.slice(0, 200).map(p => p.id) }));
+  assert.match(lines[0], /SAMPLE ONLY, not a catalog figure/);
+  assert.match(lines[1], /200 of 3178 in catalog/);
+  assert.match(lines[2], /of sample/);
+  assert.match(lines[2], /not applied/);
+  assert.ok(!report(run(parts)).some(l => /SAMPLE ONLY/.test(l)), 'a full run says nothing of the sort');
+});
