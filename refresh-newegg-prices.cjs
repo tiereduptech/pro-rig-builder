@@ -651,6 +651,10 @@ if (require.main !== module) return;
     parts, retailer: 'newegg',
     today: new Date().toISOString().slice(0, 10),
     apply: !DRY_RUN && !breakers.length,
+    // --limit means this run moved prices on `matched` and on nothing else.
+    // Scoping keeps movedShare a ratio of one population instead of two; see
+    // PARTIAL RUNS in scripts/price-movement.cjs. Full runs pass nothing.
+    ...(Number.isFinite(LIMIT) ? { scopeIds: matched.map(x => x.id) } : {}),
   });
   console.log('');
   for (const line of movementReport(priceMovement)) console.log(line);

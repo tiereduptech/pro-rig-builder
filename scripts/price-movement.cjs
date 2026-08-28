@@ -193,20 +193,44 @@ function movement(o) {
     windowDays = MOVEMENT_WINDOW_DAYS,
     minMovedShare = MIN_MOVED_SHARE,
     watchStartedAt = today,
+    // Ids of the products this run actually looked at. Omit on a full run.
+    // See PARTIAL RUNS below for why a limited run must pass it.
+    scopeIds = null,
   } = o;
 
   if (!Array.isArray(parts)) throw new Error('movement() needs a parts array');
   if (!retailer) throw new Error('movement() needs a retailer');
   if (!dayOnly(today)) throw new Error(`movement() needs today as YYYY-MM-DD, got ${JSON.stringify(today)}`);
 
+  // ── PARTIAL RUNS ───────────────────────────────────────────────────────────
+  // movedShare is only a measurement when its numerator and denominator cover
+  // the same rows. A run invoked with --limit moves prices on the rows it
+  // sampled and on no others, so dividing those moves by the WHOLE catalog
+  // produces a ratio of two different populations — one that reads as a
+  // catalog health figure and is not one.
+  //
+  // Newegg run 33184569537 is the worked example: 37 of the 200 sampled rows
+  // repriced — 19.5% of what it looked at, comfortably over the 10% floor — and
+  // it reported 1.2%, because it divided by all 3,178 priced rows. The ceiling
+  // on any 200-row run is 200/3178 = 6.3%, so a limited run could not clear the
+  // floor even if every single row it touched moved. Once warm-up ends that is
+  // not merely uninformative, it is a false PARTIAL FREEZE on a working feed.
+  //
+  // scopeIds narrows BOTH sides to the rows the run considered. The scheduled
+  // crons pass no limit and no scopeIds, so their behaviour is unchanged.
+  const scope = scopeIds == null ? null : (scopeIds instanceof Set ? scopeIds : new Set(scopeIds));
+
   let pricedRows = 0;
   let unpricedRows = 0;
+  let catalogPricedRows = 0;
   const ages = [];          // ages of rows that have ever moved (priced rows only)
   let movedInWindow = 0;
 
   for (const p of parts) {
     const d = p && p.deals && p.deals[retailer];
     if (!d || typeof d !== 'object') continue;
+    if (isPriced(d)) catalogPricedRows++;
+    if (scope && !scope.has(p && p.id)) continue;
     if (!isPriced(d)) { unpricedRows++; continue; }
     pricedRows++;
 
@@ -229,6 +253,12 @@ function movement(o) {
     retailer,
     windowDays,
     minMovedShare,
+    // 'catalog' when every priced row was considered, 'sample' when the run was
+    // limited. A consumer that treats a 'sample' share as a catalog figure is
+    // reading the wrong number; nothing downstream arms an alarm on one.
+    scope: scope ? 'sample' : 'catalog',
+    scopedRows: pricedRows,
+    catalogPricedRows,
     pricedRows,
     unpricedRows,
     everMoved,
@@ -253,6 +283,19 @@ function movement(o) {
     freezeAlarm: 0,
     freezeReason: null,
   };
+
+  // A sample cannot arm the share alarm. Suppressed for the same reason warm-up
+  // suppresses it — the number is real, it just is not evidence about the
+  // catalog — and stated in the same place, so a reader of the block is told
+  // why no alarm can fire here. daysSinceAnyPriceMoved stays armed: a total
+  // freeze is still a total freeze in any sample that finds no movement at all.
+  if (scope) {
+    m.note =
+      `SAMPLE ONLY — ${pricedRows} of ${catalogPricedRows} priced ${retailer} rows were ` +
+      `considered by this run (--limit). movedShare describes those rows, NOT the catalog, ` +
+      `and the share alarm cannot arm on it. Read the catalog figure from a full run.`;
+    return m;
+  }
 
   if (!warmedUp) {
     m.note =
@@ -293,9 +336,10 @@ function movementFor({ parts, retailer, today, apply = false, watchFile = DEFAUL
 function report(m) {
   const lines = [];
   const pct = (x) => `${(x * 100).toFixed(1)}%`;
-  lines.push(`  price movement (${m.retailer}, ${m.windowDays}d window)`);
-  lines.push(`      priced rows ................. ${m.pricedRows}${m.unpricedRows ? `  (+${m.unpricedRows} unpriced, not counted)` : ''}`);
-  lines.push(`      moved in window ............. ${m.movedInWindow}  (${pct(m.movedShare)}, floor ${pct(m.minMovedShare)})`);
+  const sampled = m.scope === 'sample';
+  lines.push(`  price movement (${m.retailer}, ${m.windowDays}d window)${sampled ? ' — SAMPLE ONLY, not a catalog figure' : ''}`);
+  lines.push(`      priced rows ................. ${m.pricedRows}${sampled ? ` of ${m.catalogPricedRows} in catalog` : ''}${m.unpricedRows ? `  (+${m.unpricedRows} unpriced, not counted)` : ''}`);
+  lines.push(`      moved in window ............. ${m.movedInWindow}  (${pct(m.movedShare)}${sampled ? ' of sample' : ''}, floor ${pct(m.minMovedShare)}${sampled ? ' — not applied' : ''})`);
   lines.push(`      never observed moving ....... ${m.neverMoved}`);
   lines.push(`      median / p90 age ............ ${m.medianAgeDays == null ? '-' : m.medianAgeDays + 'd'} / ${m.p90AgeDays == null ? '-' : m.p90AgeDays + 'd'}`);
   lines.push(`      newest move anywhere ........ ${m.everMoved ? m.daysSinceAnyPriceMoved + 'd' : 'never'}`);
