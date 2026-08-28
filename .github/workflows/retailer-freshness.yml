@@ -1,0 +1,131 @@
+name: Retailer freshness gate
+
+# Answers "is this actually working?" rather than "does it look like it should
+# be working?" for every retailer in parts.js.
+#
+# scripts/assert-retailer-freshness.cjs asserts two things per retailer:
+#   1. it has been confirmed against its retailer within a stated cadence, and
+#   2. the cron responsible for confirming it is still live.
+#
+# WHY IT EXISTS
+#   Best Buy prices froze for ~4 months and nothing noticed, because the signal
+#   being read was manufactured: record-price-snapshot.js reads parts.js and
+#   never contacts a retailer, so it appended a fresh dated point every day for
+#   retailers no job had touched. 139,080 Best Buy points across 1,591 series,
+#   exactly one of which ever changed value. Density was read as liveness.
+#
+#   The lesson is not "watch Best Buy". A frozen retailer is INVISIBLE unless
+#   something asserts the ABSENCE of confirmation, because every derived
+#   artifact downstream keeps looking healthy.
+#
+# WHY IT FAILS INSTEAD OF WARNING
+#   A warning is a signal with no consequence attached, and this codebase has
+#   demonstrated twice that it will route around one — refresh-newegg-prices
+#   reported "0 updated" on every run from 2026-07-06 and kept deleting; the
+#   Best Buy charts were visibly dead-flat in the UI for months. Both were
+#   observable, neither was actionable. Exit code 1 is the point of the file.
+#
+# IT LANDS RED, AND THAT IS THE CORRECT STATE
+#   Three retailers genuinely have no working confirmation path today:
+#     newegg              cron commented out 2026-07-20 (searchBySku is broken)
+#     newegg_openbox      no scheduled job has ever touched it
+#     newegg_marketplace  no scheduled job has ever touched it
+#   plus msi, which stays red until refresh-msi-prices.yml has had one
+#   successful apply run — a scheduled workflow is not the same as a confirmed
+#   price, and this gate is right to keep saying so until a stamp exists.
+#
+#   Turning those greens on is the work. Turning the gate off is not.
+#
+# WHY NOT IN `npm test`
+#   It is expected to be RED right now, and a known-red assertion in the shared
+#   suite turns every unrelated PR red — after which an always-red suite gets
+#   deleted or `|| true`-d within a week, which is the same
+#   signal-with-no-consequence failure this gate exists to replace.
+#   test/retailer-freshness.test.js is the half that belongs in `npm test`: it
+#   proves the gate DISCRIMINATES — firing on each of its defect classes and
+#   staying green on a healthy tree — and it is hermetic, so it never reads the
+#   live verdict.
+#
+# WHY IT DOES NOT PUSH TO MAIN
+#   Read-only by construction, so deliberately NOT in the `main-writer`
+#   concurrency group; test/main-writer-lock.test.js asserts that only
+#   main-pushers carry it.
+#
+# NOT INCLUDED HERE
+#   scripts/assert-workflow-outcomes.cjs — the companion gate that asks whether
+#   a scheduled workflow has actually SUCCEEDED, not merely been scheduled — is
+#   still on feat/admin-dashboard. It is a different question with a different
+#   dependency (it needs the Actions API, while this gate is pure and offline
+#   and runs on a laptop with no token), and it overlaps
+#   ingest-outcome-watch.yml, which already judges three writers that way. It
+#   wants its own change, not a ride on this one.
+#
+# SCHEDULING
+#   13:00 UTC, after every job that writes parts.js has had its slot for the day
+#   (refresh-bestbuy 01:00, refresh-msi 02:00, asin-identity-audit 03:00,
+#   prerender 06:00, price-history 07:00, verify-catalog 08/09/10/11,
+#   sftp-ingest 12:00 + up to 3h).
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch: {}
+  pull_request:
+    paths:
+      - 'src/data/parts.js'
+      - 'src/data/parts/**'
+      - 'scripts/assert-retailer-freshness.cjs'
+      - '.github/workflows/**'
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No npm ci — the gate depends only on node builtins. Keeping it
+      # dependency-free means a broken dependency tree can never be the reason
+      # the alarm fails to run.
+
+      # `set -o pipefail` keeps `node | tee` from masking a non-zero exit: without
+      # it the pipeline reports tee's status and a failing gate reads as green,
+      # which would be this file's own bug happening to this file.
+      - name: Retailer confirmation freshness
+        id: retailer
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/assert-retailer-freshness.cjs | tee retailer-freshness.txt
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Retailer freshness gate — ${{ steps.retailer.outcome }}"
+            echo ""
+            echo '```'
+            cat retailer-freshness.txt 2>/dev/null || echo "(gate crashed before reporting)"
+            echo '```'
+          } >> $GITHUB_STEP_SUMMARY
+
+      # Explicit rather than relying on continue-on-error semantics, so the
+      # reason a run is red is readable in the log.
+      - name: Fail if the gate failed
+        if: always()
+        run: |
+          R='${{ steps.retailer.outcome }}'
+          echo "retailer freshness: $R"
+          if [ "$R" != "success" ]; then
+            echo ""
+            echo "The gate is red. Something in the pipeline is publishing prices that nothing"
+            echo "refreshes. Fix the job, or drop the retailer. Those are the outcomes that pass —"
+            echo "a retailer whose price we show is a retailer we have to keep asking about."
+            exit 1
+          fi
