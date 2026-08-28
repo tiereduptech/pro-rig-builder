@@ -171,6 +171,19 @@ jobs:
         env:
           VITE_DATA_BASE: ${{ vars.VITE_DATA_BASE }}
 
+      # Gate the artifact that actually ships. tests.yml runs this same
+      # assertion on its own throwaway build to catch a regression at PR time;
+      # this run is the one that stands between a tree-shaken UI and
+      # production, because this job commits dist/ to main and both Railway and
+      # Epik serve that same dist/.
+      #
+      # Failing here costs a nightly prerender. Not failing here costs a
+      # silently missing price disclosure on every product page until someone
+      # reads one — which is how #73's UNCONFIRMED tag was absent from the
+      # shipped bundle while its logic ran correctly underneath.
+      - name: Assert badge markup survived the build
+        run: node scripts/assert-bundle-markers.cjs --dir dist/assets
+
       - name: Count indexable products
         id: count
         run: |
