@@ -384,9 +384,16 @@ if (require.main !== module) return;
           id: p.id, name: p.n, cat: p.c, ourSku: sku, ourItemNumber: p.deals.newegg.itemNumber || null,
           ourHeldSku: heldSku(p.deals.newegg), ourClass: NEG.sellerClass(heldSku(p.deals.newegg)),
           // Prices, so a dry run answers "what would this row show instead?"
-          // without a second feed call. ourPrice is what the page shows today;
-          // candidateEff is what we would write (saleprice when there is one).
+          // without a second feed call.
+          //
+          // BOTH sides carry list, sale and effective. 40 of the 103 matched
+          // rows in run 33184569537 hold a saleprice, so comparing a stored
+          // LIST price against candidateEff (which is the sale price when there
+          // is one) reports a move on 24 rows that did not move. Compare like
+          // with like: ourEff vs candidateEff, or ourPrice vs candidatePrice.
           ourPrice: Number(p.deals.newegg.price) || null,
+          ourSalePrice: Number(p.deals.newegg.saleprice) || null,
+          ourEff: effOf(p.deals.newegg) ?? null,
           candidateName: c.item.name, candidateSku: cSku,
           candidateClass: NEG.sellerClass(cSku),
           candidatePrice: c.item.price ?? null,
