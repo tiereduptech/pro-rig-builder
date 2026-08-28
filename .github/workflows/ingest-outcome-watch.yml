@@ -11,13 +11,15 @@ name: Ingest outcome watch (read-only)
 #  WHAT IS WATCHED
 #    sftp-ingest.yml             the Newegg catalog ingest (12:00 UTC)
 #    refresh-bestbuy-prices.yml  the daily Best Buy price refresh (01:00 UTC)
+#    refresh-msi-prices.yml      the daily MSI price refresh (02:00 UTC)
 #    the LIVE SITE               is it serving what main has committed?
 #
-#  The two writers are `main-writer` jobs on a daily cron, which is exactly the
+#  All three writers are `main-writer` jobs on a daily cron, which is exactly the
 #  shape that froze silently before: scheduled, cancellable, and grey when it
 #  loses the lock. A writer earns a step here when its cron goes on — the Best
-#  Buy refresh got one in the same PR that enabled its schedule, because a cron
-#  without a watcher is the original bug rebuilt.
+#  Buy refresh got one in the same PR that enabled its schedule, and MSI got one
+#  in the PR that gave it a schedule at all, because a cron without a watcher is
+#  the original bug rebuilt.
 #
 #  THE LIVE-SITE STEP IS A DIFFERENT KIND OF QUESTION, and it is here because the
 #  run-history rule above provably cannot answer it. deploy-pages.yml now deploys
@@ -104,10 +106,10 @@ jobs:
             --stale-days=${{ inputs.stale_days || '3' }} \
             --cancel-streak=${{ inputs.cancel_streak || '3' }}
 
-      # `always()` on purpose: these are two independent writers, and a red on
-      # the first must not skip the second. Step-level failure still fails the
-      # job, so a red on either one is still a notification — but a silent Best
-      # Buy freeze must not be hidden behind a noisy SFTP one.
+      # `always()` on purpose: these are independent writers, and a red on one
+      # must not skip the rest. Step-level failure still fails the job, so a red
+      # on any of them is still a notification — but a silent Best Buy or MSI
+      # freeze must not be hidden behind a noisy SFTP one.
       - name: Best Buy price refresh is still producing outcomes
         if: always()
         env:
@@ -116,6 +118,27 @@ jobs:
           node scripts/ingest-outcome-report.cjs \
             --workflow=refresh-bestbuy-prices.yml \
             --label="Refresh Best Buy Prices" \
+            --stale-days=${{ inputs.stale_days || '3' }} \
+            --cancel-streak=${{ inputs.cancel_streak || '3' }}
+
+      # MSI joined this list in the PR that gave it a cron, for the reason stated
+      # two paragraphs up: a writer earns a step here when its schedule goes on.
+      #
+      # This step answers "did our job get a turn?". It deliberately does NOT
+      # answer "is MSI still repricing?" — a frozen Impact feed produces a
+      # perfectly green run history. That question is asked inside the job, by
+      # the daysSinceAnyPriceMoved assertion in refresh-msi-prices.yml, against
+      # a stamp only a real price change can advance. The two are complementary
+      # and neither replaces the other; deals.msi sat still for three months
+      # precisely because nothing was asking the second question.
+      - name: MSI price refresh is still producing outcomes
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/ingest-outcome-report.cjs \
+            --workflow=refresh-msi-prices.yml \
+            --label="Refresh MSI Prices" \
             --stale-days=${{ inputs.stale_days || '3' }} \
             --cancel-streak=${{ inputs.cancel_streak || '3' }}
 

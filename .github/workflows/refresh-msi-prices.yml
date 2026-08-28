@@ -1,0 +1,218 @@
+name: Refresh MSI Prices
+
+# =============================================================================
+#  Re-reads every deals.msi row from the MSI catalog feed on Impact and writes
+#  back price + stock together. See refresh-msi-impact.mjs for the rules; this
+#  file only carries the schedule question and the alarm.
+#
+#  ── WHY THIS EXISTS ─────────────────────────────────────────────────────────
+#  deals.msi was written once, on 2026-05-27, and never re-read. 157 rows, none
+#  carrying a priceConfirmedAt, 93 days old on 2026-08-28. Because bestPrice()
+#  takes the minimum across priced retailers and the BEST badge is positional,
+#  a May price beats three daily-refreshed retailers by being stale rather than
+#  by being cheap — on 49 product pages today.
+#
+#  The retailer freshness gate's own commit (66aa31ea137) named this exact row:
+#  "unknown-retailer is the class that prevents a repeat: a retailer added to
+#  parts.js with no cadence entry fails the gate. That is exactly how deals.msi
+#  came to sit unrefreshed, unstamped, for four months." MSI had a link and no
+#  updater. This is the updater.
+#
+#  ── THE SLOT, MEASURED AGAINST THE OTHER `main-writer` JOBS ─────────────────
+#    01:00  refresh-bestbuy-prices     ~16 min  (finishes ~01:17)
+#    02:00  THIS JOB                   ~1 min   (157 rows, one paginated feed pull)
+#    03:00  asin-identity-audit        ~10 min
+#    06:00  prerender                  ~54 min
+#    07:00  price-history              ~3 min
+#    08:00  verify-catalog (alt days)  ~38 min
+#    12:00  sftp-ingest                ~52 min
+#    20:00  verify-catalog
+#
+#  02:00 sits in the hour after Best Buy finishes and the hour before the ASIN
+#  audit starts, so it neither waits on the `main-writer` lock nor holds it
+#  against anyone. It is also comfortably ahead of prerender at 06:00, so a
+#  price this job fixes at 02:00 reaches the static pages the same night rather
+#  than sitting in the data for a day.
+#
+#  This job is small — 157 rows against one feed, versus Best Buy's 1,040 skus
+#  against a per-sku API — so the slot has an enormous margin. If MSI coverage
+#  grows the pagination is already capped at 20 pages (10,000 items).
+#
+#  ── THE ALARM, AND WHY THERE ARE TWO OF THEM ────────────────────────────────
+#  A schedule without a watcher is what produced the 95-day freeze: a cancelled
+#  run is grey, not red, and GitHub does not notify on grey.
+#
+#    IN-JOB    assert-outcome.cjs, between the work and the commit. Catches "the
+#              step exited 0 having produced nothing". Cannot catch a cancelled
+#              run, because a killed runner runs no further steps.
+#
+#    OUTSIDE   ingest-outcome-watch.yml judges THIS workflow from its run
+#              history — red if no success in 3 days, or on 3 consecutive
+#              cancellations. That is the half an in-job assertion structurally
+#              cannot cover.
+#
+#  ── AND A THIRD THING, WHICH IS THE ONE THAT MATTERS HERE ───────────────────
+#  Both alarms above ask "did our job run?". Neither asks "is MSI still
+#  publishing?" — and for this retailer that is the more likely failure, because
+#  the feed has already been sitting still for three months while the site
+#  showed its numbers as current.
+#
+#  A frozen Impact feed would sail through both watchers: the job succeeds, joins
+#  all 157 rows, writes priceConfirmedAt=today, and reports green while serving
+#  May prices. That is record-price-snapshot.js's bug — inferring freshness from
+#  the fact that we asked — rebuilt one layer up.
+#
+#  So the refresher stamps `priceLastMovedAt` on a row only when a stored price
+#  actually CHANGED, and the assert below reads the oldest-newest of those
+#  stamps across the whole catalog. It cannot be advanced by re-reading a frozen
+#  feed. If MSI stops repricing for two weeks, this job goes red while still
+#  succeeding at everything it was asked to do — which is the correct report.
+#
+#  ── CREDENTIALS ─────────────────────────────────────────────────────────────
+#  IMPACT_ACCOUNT_SID and IMPACT_AUTH_TOKEN. Both are Impact Mediapartners API
+#  credentials for the account that owns catalog 16410 (campaign "MSI") — the
+#  same pair ingest-msi-impact-v2.cjs reads, which until now had only ever been
+#  supplied locally via `railway run`. Neither is currently a repository secret;
+#  the first scheduled run fails loudly and writes nothing until they are added.
+# =============================================================================
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # daily, 02:00 UTC — after Best Buy finishes, before prerender
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — read the feed, report, write and commit nothing'
+        type: boolean
+        default: true
+      n:
+        description: 'Limit to the first N rows (blank = all 157; use for a smoke run)'
+        required: false
+        default: ''
+        type: string
+      min_overlap:
+        description: 'Minimum feed-name/catalog-name token overlap before a price may be written'
+        required: false
+        default: '0.4'
+        type: string
+      quiet_days:
+        description: 'Go red if no MSI price anywhere has moved in this many days'
+        required: false
+        default: '14'
+        type: string
+
+# Repo-wide lock shared by every workflow that pushes to main.
+concurrency:
+  group: main-writer
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # No `npm ci`: the script imports node builtins, price-sanity.js,
+      # ingest-msi-impact-v2.cjs (for its exported name checks) and
+      # scripts/write-catalog.cjs, none of which have dependencies.
+
+      - name: Refresh MSI prices and stock
+        env:
+          IMPACT_ACCOUNT_SID: ${{ secrets.IMPACT_ACCOUNT_SID }}
+          IMPACT_AUTH_TOKEN: ${{ secrets.IMPACT_AUTH_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          N: ${{ inputs.n }}
+          MIN_OVERLAP: ${{ inputs.min_overlap }}
+        run: |
+          set -uo pipefail
+          MISSING=""
+          [ -z "${IMPACT_ACCOUNT_SID:-}" ] && MISSING="$MISSING IMPACT_ACCOUNT_SID"
+          [ -z "${IMPACT_AUTH_TOKEN:-}" ]  && MISSING="$MISSING IMPACT_AUTH_TOKEN"
+          if [ -n "$MISSING" ]; then
+            echo "::error::not set on this repository:$MISSING — Settings -> Secrets and variables -> Actions. Impact Mediapartners credentials for the account owning catalog 16410 (campaign MSI)."
+            exit 1
+          fi
+          echo "REFRESH_STARTED=$(date +%s)" >> "$GITHUB_ENV"
+          ARGS="--min-overlap=${MIN_OVERLAP:-0.4}"
+          # Dry is the script's default; --apply is the only thing that writes.
+          if [ "${DRY_RUN}" != "true" ]; then ARGS="$ARGS --apply"; fi
+          if [ -n "${N:-}" ] && [ "$N" != "0" ]; then ARGS="$ARGS --n $N"; fi
+          echo "Running: node refresh-msi-impact.mjs $ARGS"
+          node refresh-msi-impact.mjs $ARGS
+
+      # The step above exiting 0 does not mean it produced anything. Assert the
+      # outcome between the work and the commit, so a run that read nothing is
+      # red rather than a quiet green with no commit.
+      #
+      # `daysSinceAnyPriceMoved` is the one that watches MSI rather than
+      # watching us — see the header. It is a --require, not a --warn: a feed
+      # that has not repriced anything in a fortnight is the state this whole
+      # workflow was built to stop, so it must be a notification.
+      - name: Assert the refresh produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=catalog-build/msi-refresh-summary.json \
+            --label="MSI refresh" \
+            --newer-than-epoch="$REFRESH_STARTED" \
+            --require='totals.considered>0' \
+            --require='totals.joined>0' \
+            --require="totals.daysSinceAnyPriceMoved<=${{ inputs.quiet_days || '14' }}" \
+            --warn='totals.priceChanged>0' \
+            --warn='totals.unjoined==0' \
+            --warn='totals.heldNameMismatch==0'
+
+      - name: Upload the refresh summary
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: msi-refresh-summary
+          path: catalog-build/msi-refresh-summary.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      # A dry run must leave NOTHING behind. catalog-build/ and verify-reports/
+      # are gitignored, so the summaries do not count; anything else here is the
+      # script writing where it said it would not.
+      - name: Assert a dry run left the tree clean
+        if: ${{ inputs.dry_run == true }}
+        run: |
+          DIRTY=$(git status --porcelain)
+          if [ -n "$DIRTY" ]; then
+            echo "::error::a dry run modified the working tree"
+            echo "$DIRTY"
+            exit 1
+          fi
+          echo "Clean: the dry run wrote nothing to the repo."
+
+      # writeCatalog() already re-splits and verifies the barrel before it
+      # returns, so there is no separate re-split step here — if the chunks were
+      # stale the script would have thrown rather than reached this point.
+      - name: Commit and push if changed
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if [ ! -f catalog-build/msi-refresh-summary.json ]; then
+            echo "::error::no refresh summary at commit time — refusing to report success"
+            exit 1
+          fi
+          PRICES=$(node -e "console.log(require('./catalog-build/msi-refresh-summary.json').totals.priceChanged)")
+          FLIPS=$(node -e "console.log(require('./catalog-build/msi-refresh-summary.json').totals.stockChanged)")
+          HELD=$(node -e "const t=require('./catalog-build/msi-refresh-summary.json').totals;console.log(t.heldSanity+t.heldNameMismatch)")
+          DROPPED=$(node -e "console.log(require('./catalog-build/msi-refresh-summary.json').totals.unjoined)")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/parts.js src/data/parts/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(msi): daily refresh — $PRICES prices, $FLIPS stock flips, $HELD held, $DROPPED dropped"
+            # Not a bare `git push`. The main-writer lock serialises workflows
+            # against each other; it has no opinion about a person clicking
+            # Merge while this runs.
+            bash scripts/push-with-rebase.sh main
+          fi
