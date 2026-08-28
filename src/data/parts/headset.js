@@ -486,7 +486,7 @@ export default [
         "sku": "6577935",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -757,7 +757,7 @@ export default [
         "sku": "6420856",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1011,11 +1011,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6320789&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6320789.p%3FskuId%3D6320789",
         "price": 49.99,
-        "inStock": false,
+        "inStock": true,
         "sku": "6320789",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1128,7 +1128,7 @@ export default [
         "sku": "6577966",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1310,7 +1310,7 @@ export default [
         "sku": "6583838",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1462,7 +1462,7 @@ export default [
         "sku": "6423471",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1488,7 +1488,7 @@ export default [
         "sku": "6498042",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1514,7 +1514,7 @@ export default [
         "sku": "6557061",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1540,7 +1540,7 @@ export default [
         "sku": "6567072",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1596,7 +1596,7 @@ export default [
         "sku": "6641078",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1622,7 +1622,7 @@ export default [
         "sku": "6572603",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1648,7 +1648,7 @@ export default [
         "sku": "6641635",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1674,7 +1674,7 @@ export default [
         "sku": "6320787",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1725,12 +1725,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644061&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644061.p%3FskuId%3D6644061",
-        "price": 94.99,
+        "price": 93.99,
         "inStock": true,
         "sku": "6644061",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1756,7 +1756,7 @@ export default [
         "sku": "6506968",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1782,7 +1782,7 @@ export default [
         "sku": "6502762",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1808,7 +1808,7 @@ export default [
         "sku": "6510363",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1834,7 +1834,7 @@ export default [
         "sku": "6510365",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1860,7 +1860,7 @@ export default [
         "sku": "6594139",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1886,7 +1886,7 @@ export default [
         "sku": "6544740",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1912,7 +1912,7 @@ export default [
         "sku": "6562123",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1938,7 +1938,7 @@ export default [
         "sku": "6562124",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -1964,7 +1964,7 @@ export default [
         "sku": "6562867",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -1990,7 +1990,7 @@ export default [
         "sku": "6581760",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -2021,7 +2021,7 @@ export default [
         "sku": "6635946",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -2162,7 +2162,7 @@ export default [
         "sku": "6594136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2188,7 +2188,7 @@ export default [
         "sku": "6594142",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2209,12 +2209,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595014&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595014.p%3FskuId%3D6595014",
-        "price": 299.99,
+        "price": 259.99,
         "inStock": true,
         "sku": "6595014",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2267,12 +2267,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616893&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616893.p%3FskuId%3D6616893",
-        "price": 129.99,
+        "price": 105.99,
         "inStock": true,
         "sku": "6616893",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2293,12 +2293,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6618285&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6618285.p%3FskuId%3D6618285",
-        "price": 59.99,
+        "price": 79.99,
         "inStock": true,
         "sku": "6618285",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2319,12 +2319,12 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629016&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629016.p%3FskuId%3D6629016",
-        "price": 159.99,
+        "price": 129.99,
         "inStock": true,
         "sku": "6629016",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2350,7 +2350,7 @@ export default [
         "sku": "6632890",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2376,7 +2376,7 @@ export default [
         "sku": "6641368",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wired",
@@ -2402,7 +2402,7 @@ export default [
         "sku": "6642553",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",
@@ -2428,7 +2428,7 @@ export default [
         "sku": "6642944",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "hsType": "Wireless",

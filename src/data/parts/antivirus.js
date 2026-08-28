@@ -48,7 +48,7 @@ export default [
         "sku": "6643522",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-08-28"
       }
     },
     "needsReview": true,
