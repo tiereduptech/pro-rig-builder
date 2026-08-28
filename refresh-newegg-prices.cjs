@@ -310,7 +310,48 @@ function chooseCandidate(p, candidates) {
   return { pick, kind: 'rematch' };
 }
 
-module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, loadMatcher };
+// ── Feed health ──────────────────────────────────────────────────────────────
+// Exported and pure so the breaker's own arithmetic is testable. It decides
+// whether removals may run at all, and it was previously computed inline where
+// nothing could assert on it.
+//
+// FEED health, not MATCHER strictness. 'variant_rejected' means the feed
+// answered and we declined the variants it offered — a decision we made, not
+// a symptom of an unhealthy feed. Counting it here inflated the rate to 56%
+// and permanently tripped the breaker, which turns a diagnostic into noise.
+//
+// 'downgrade_blocked' deliberately STAYS in: it means the feed failed to
+// surface the official listing we already know exists, which is exactly the
+// feed defect this breaker is watching for.
+//
+// 'no_cat_mapping' comes out of BOTH sides. CAT_FILTER has no entry for the
+// row's category, so searchNewegg returns before issuing a single request —
+// we never asked Newegg anything, and a question never asked is not evidence
+// about the answer. Leaving it in the numerator counted our own coverage gap
+// as their outage; leaving it in the denominator would then dilute the real
+// rate by rows that could never have contributed to it either way.
+//
+// This is the same reasoning as isPriced() gating the movement population in
+// scripts/price-movement.cjs: a row that cannot be measured is not part of
+// the population being measured.
+//
+// It differs from 'variant_rejected', which is subtracted from the numerator
+// ONLY. Those rows were looked up and the feed answered — that answer is real
+// evidence the feed is alive, so they belong in the denominator. The
+// asymmetry is the point, not an oversight.
+//
+// On run 33189471054 this is 83 rows, 66 of them GPU. GPU is absent from
+// CAT_FILTER deliberately — Rakuten Product Search does not carry GPUs at all
+// (see fetch-newegg-via-rakuten.cjs:108, "awaiting SFTP feed") — so adding a
+// mapping would convert 83 no_cat_mapping into 83 no_results and spend ~400
+// requests a run doing it. The rows need a different source, not a filter.
+function feedHealth(stats, processed) {
+  const lookupable = processed - stats.noCatMapping;
+  const feedFailures = stats.lookupFailed - stats.variantRejected - stats.noCatMapping;
+  return { lookupable, feedFailures, failureRate: lookupable ? feedFailures / lookupable : 0 };
+}
+
+module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher };
 
 if (require.main !== module) return;
 
@@ -328,7 +369,7 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -351,6 +392,7 @@ if (require.main !== module) return;
     if (r.outcome === OUTCOME.LOOKUP_FAILED) {
       stats.lookupFailed++;
       if (r.reason === 'variant_rejected') stats.variantRejected++;
+      if (r.reason === 'no_cat_mapping') stats.noCatMapping++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount });
       console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
       await sleep(RATE_DELAY_MS);
@@ -577,20 +619,11 @@ if (require.main !== module) return;
 
   // ── Run-level circuit breakers ──────────────────────────────────────────────
   const processed = matched.length;
-  // FEED health, not MATCHER strictness. 'variant_rejected' means the feed
-  // answered and we declined the variants it offered — a decision we made, not
-  // a symptom of an unhealthy feed. Counting it here inflated the rate to 56%
-  // and permanently tripped the breaker, which turns a diagnostic into noise.
-  //
-  // 'downgrade_blocked' deliberately STAYS in: it means the feed failed to
-  // surface the official listing we already know exists, which is exactly the
-  // feed defect this breaker is watching for.
-  const feedFailures = stats.lookupFailed - stats.variantRejected;
-  const failureRate = processed ? feedFailures / processed : 0;
+  const { lookupable, feedFailures, failureRate } = feedHealth(stats, processed);
   const removalCap = Math.max(MAX_REMOVAL_FLOOR, Math.floor(processed * MAX_REMOVAL_RATE));
   const breakers = [];
   if (failureRate > MAX_LOOKUP_FAILURE_RATE)
-    breakers.push(`feed failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy (excludes ${stats.variantRejected} variant rejections)`);
+    breakers.push(`feed failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy (excludes ${stats.variantRejected} variant rejections, ${stats.noCatMapping} unmappable)`);
   if (stats.ok === 0 && processed > 0)
     breakers.push('zero successful lookups — cannot trust any absence signal');
   if (removalCandidates.length > removalCap)
@@ -614,7 +647,15 @@ if (require.main !== module) return;
   if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
   console.log(`  of which variant-rejected: ${stats.variantRejected}  (matcher decision — EXCLUDED from feed health)`);
-  console.log(`Feed failure rate:${(failureRate * 100).toFixed(1)}%  (${feedFailures}/${processed}, breaker at ${MAX_LOOKUP_FAILURE_RATE * 100}%)`);
+  console.log(`Feed failure rate:${(failureRate * 100).toFixed(1)}%  (${feedFailures}/${lookupable}, breaker at ${MAX_LOOKUP_FAILURE_RATE * 100}%)`);
+  if (stats.noCatMapping) {
+    // Loud, not netted away. These rows are not healthy — they are unreachable,
+    // and unreachable is worse: no refresher can ever reprice them, so whatever
+    // price they carry is the price they will carry forever. Excluding them
+    // from feed health is a statement about what the number MEASURES, never a
+    // statement that the rows are fine.
+    console.log(`  of which unmappable:${stats.noCatMapping}  (no CAT_FILTER entry — never queried, EXCLUDED from both sides)`);
+  }
   console.log(`Downgrade blocked:${stats.downgradeBlocked}  (seller rank protected, deal KEPT)`);
   console.log(`Weak match blocked:${stats.weakMatchBlocked}  (below ${NEG.MIN_MIGRATE_SIM} migrate floor, deal KEPT)`);
   console.log(`Confirmed absent: ${stats.confirmedAbsent}  (${removalCandidates.length} past removal threshold)`);
@@ -681,6 +722,10 @@ if (require.main !== module) return;
     // though it no longer moves the breaker.
     feedFailures,
     feedFailureRate: Number(failureRate.toFixed(3)),
+    // The denominator the rate is over, and the rows held out of it. Both are
+    // in the artifact so the figure can be recomputed rather than trusted.
+    lookupable,
+    unmappable: stats.noCatMapping,
     breakers,
     thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap, MIN_MIGRATE_SIM: NEG.MIN_MIGRATE_SIM },
     failures: failures.slice(0, 50),
