@@ -5,6 +5,7 @@ import PageMeta from "./PageMeta.jsx";
 import ProductPage from "./ProductPage.jsx";
 import { bundleH1, bundleLdName } from "./bundle-name.js";
 import { priceStampOf, isFresh, priceAgeDays } from "./price-freshness.js";
+import { showBestBadge, unconfirmedBadgeText } from "./retailer-badges.js";
 // PARTS comes from parts-frontend.js, which dynamic-imports per-category
 // modules so Vite can ship them as separate chunks. The array starts empty
 // and is mutated in place as categories load — main.jsx awaits an initial
@@ -964,45 +965,40 @@ const ic=p=>CAT[p.c]?.icon||"📦";
 const uvIn=(items,f,extract)=>{const rows=items.filter(p=>p[f]!=null);let vals;if(extract){vals=[];for(const p of rows){const v=extract(p);if(Array.isArray(v))vals.push(...v.filter(x=>x!=null&&x!==""));else if(v!=null&&v!=="")vals.push(v);}}else{vals=rows.map(p=>String(p[f]));}return [...new Set(vals)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));};
 const uv=(cat,f,extract)=>uvIn(P.filter(p=>p.c===cat),f,extract);
 
-/* ═══ RETAILER PRICE COMPARISON COMPONENT ═══ */
-function PriceCompare({part}) {
-  const rr = retailers(part);
-  if (rr.length <= 1) return null;
-  return (
-    <div style={{marginTop:6,paddingTop:6,borderTop:"1px solid var(--bdr)"}}>
-      <div style={{fontFamily:"var(--mono)",fontSize:8,color:"var(--dim)",letterSpacing:1,marginBottom:4}}>COMPARE PRICES</div>
-      {rr.map((r,i) => (
-        <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer"
-          style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"4px 6px",borderRadius:4,
-            background:i===0?"var(--mint3)":"transparent",textDecoration:"none",marginBottom:2,
-            border:i===0?"1px solid var(--mint)22":"1px solid transparent"}}>
-          <div style={{display:"flex",alignItems:"center",gap:6}}>
-            <span style={{fontFamily:"var(--ff)",fontSize:10,fontWeight:600,color:"var(--txt)"}}>{r.displayName}</span>
-            <SellerTag r={r}/>
-            {/* BEST is positional, and retailers() now sinks OOS and STALE rows,
-                so index 0 fails either test only when EVERY row does — and a
-                "best price" nobody can buy, or that nobody has confirmed in
-                PRICE_STALE_AFTER_DAYS, is not a best price. Badge the row or
-                badge nothing. */}
-            {i===0 && r.inStock && r.fresh && <Tag color="var(--mint)">BEST</Tag>}
-            {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
-            {/* Say HOW stale, not just that it is. "UNCONFIRMED 93d" is a fact a
-                reader can act on; "UNCONFIRMED" alone reads as a disclaimer.
-
-                NOT --amber: this theme collapses --amber onto --mint (both
-                #FF8A3D dark, #cc5a17 light), so an amber tag renders in the
-                exact colour of the BEST badge beside it — the warning would be
-                indistinguishable from the endorsement it exists to withhold.
-                --dim is the muted text colour, which is the honest signal: we
-                are showing this price, not standing behind it. --rose is taken
-                by OOS, which is a harder failure than "nobody has checked". */}
-            {r.inStock && !r.fresh && <Tag color="var(--dim)">{r.ageDays == null ? "UNCONFIRMED" : `UNCONFIRMED ${r.ageDays}d`}</Tag>}
-          </div>
-          <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
-        </a>
-      ))}
-    </div>
-  );
+/* ═══ RETAILER BADGE CLUSTER ═══ */
+// The badges that qualify one retailer row: who is selling it, whether we
+// endorse its price, and whether we have confirmed that price lately.
+//
+// ── WHY THERE IS ONE OF THESE NOW ───────────────────────────────────────────
+// There were two, and only one of them ran. #73 put the BEST freshness guard
+// and the UNCONFIRMED tag into PriceCompare, which — per
+// `git log -S"<PriceCompare"` — was never rendered anywhere, not once, in the
+// history of this repo. Rollup drops an unreferenced component, so the shipped
+// bundle contained the string "UNCONFIRMED" zero times while the two components
+// that actually render retailer rows kept the pre-#73 badge:
+//
+//     {ri===0 && r.inStock && rr.length>1 && <Tag>BEST</Tag>}
+//
+// Both call sites now render THIS, so the rule has one definition and cannot
+// ship to one surface and not the other. The predicates live in
+// src/retailer-badges.js so a unit test can exercise the decision, and
+// scripts/assert-bundle-markers.cjs checks the strings survive the build —
+// two different failure modes (wrong rule, unreachable rule), two checks.
+//
+// The colour of the staleness tag is load-bearing. NOT --amber: this theme
+// collapses --amber onto --mint (both #FF8A3D dark, #cc5a17 light), so an amber
+// tag renders in the exact colour of the BEST badge beside it, making the
+// warning indistinguishable from the endorsement it exists to withhold. --dim
+// is the muted text colour, which is the honest signal: we are showing this
+// price, not standing behind it. --rose is spoken for by out-of-stock, which is
+// a harder failure than "nobody has checked".
+function RetailerBadges({ r, isBest }) {
+  const unconfirmed = unconfirmedBadgeText(r);
+  return <>
+    <SellerTag r={r}/>
+    {showBestBadge(r, isBest) && <Tag color="var(--mint)">BEST</Tag>}
+    {unconfirmed && <Tag color="var(--dim)">{unconfirmed}</Tag>}
+  </>;
 }
 
 /* ═══ STYLES ═══ */
@@ -3849,8 +3845,7 @@ function MobileSearchPage({activeCat,initialQuery,th}){
                   <div style={{flex:1,minWidth:0}}>
                     <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}>
                       <span style={{fontFamily:"var(--ff)",fontSize:14,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span>
-                      <SellerTag r={r}/>
-                      {ri===0&&r.inStock&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}
+                      <RetailerBadges r={r} isBest={ri===0&&rr.length>1}/>
                     </div>
                     <div style={{fontFamily:"var(--ff)",fontSize:10,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                     {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
@@ -4289,7 +4284,7 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     {rr.length>0?rr.map((r,ri)=>{const histKey=p.id+":"+r.name;const histOpenHere=histOpen===histKey;return <React.Fragment key={r.name}>
                       <a key={r.name} href={r.url} target="_blank" rel="noopener noreferrer" style={{display:"flex",alignItems:"center",padding:"12px 14px",borderRadius:8,textDecoration:"none",gap:12,background:ri===0?"var(--mint3)":"var(--bg4)",border:`1px solid ${ri===0?"var(--mint)33":"var(--bdr)"}`}}>
                         <div style={{flex:1}}>
-                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><SellerTag r={r}/>{ri===0&&r.inStock&&rr.length>1&&<Tag color="var(--mint)">BEST</Tag>}</div>
+                          <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:2}}><span style={{fontFamily:"var(--ff)",fontSize:15,fontWeight:700,color:"var(--txt)"}}>{r.displayName}</span><RetailerBadges r={r} isBest={ri===0&&rr.length>1}/></div>
                           <div style={{fontFamily:"var(--ff)",fontSize:13,color:r.inStock?"var(--sky)":"var(--rose)"}}>{r.inStock?"✓ In Stock":"✗ Out of Stock"}</div>
                           {(r.name==="amazon"||r.name==="newegg"||r.name==="newegg_marketplace")&&<div style={{marginTop:4}}><ThirdPartyBadge deal={p.deals?.[r.name]} retailer={r.name==="amazon"?"Amazon":"Newegg"}/></div>}
                         </div>

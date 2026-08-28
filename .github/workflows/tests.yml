@@ -21,10 +21,24 @@ name: Tests
 #  request, so placeholder credentials are enough to exercise them, and they now
 #  set their own.
 #
-#  SCOPE. This job runs the suite. It does not build, prerender or deploy — the
-#  bundle is built and dist/ is committed by prerender.yml, and the deploy
-#  workflows ship what is committed (see deploy-pages.yml). Adding a build here
-#  would prove nothing that prerender.yml does not already prove nightly.
+#  SCOPE. This job runs the suite, and builds the bundle for exactly one
+#  assertion (see below). It does not prerender or deploy — dist/ is committed
+#  by prerender.yml, and the deploy workflows ship what is committed (see
+#  deploy-pages.yml).
+#
+#  This comment used to end "Adding a build here would prove nothing that
+#  prerender.yml does not already prove nightly." That was true until there was
+#  something only a build can prove. #73 added a freshness guard and an
+#  UNCONFIRMED tag to a component nothing renders; Rollup tree-shook it, and the
+#  shipped bundle contained the tag zero times while the source contained it in
+#  full. Every source-level test passed. REACHABILITY is a property of the
+#  artifact, so the check has to run after a build — and running it here rather
+#  than only in prerender.yml is the difference between catching it on the PR
+#  and catching it on the next nightly, after it has already deployed.
+#
+#  It builds to a temp directory, never dist/: `vite build` empties its outDir,
+#  and dist/ holds ~5.5k committed prerendered HTML files that nothing in this
+#  job would put back.
 # =============================================================================
 
 on:
@@ -66,6 +80,20 @@ jobs:
 
       - name: node --test
         run: npm test
+
+      # ~15s. Builds to a temp dir so dist/ — and its ~5.5k committed
+      # prerendered HTML files, which reference dist/assets/*.js by content
+      # hash — is left exactly as checked out. VITE_DATA_BASE is deliberately
+      # NOT set: prerender.yml is the only place that may set it (see the long
+      # note there), and this build is thrown away after the assertion.
+      - name: Assert badge markup survives the build
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: 'true'
+        run: |
+          set -euo pipefail
+          OUT="$(mktemp -d)/bundle"
+          npx vite build --outDir "$OUT" --emptyOutDir
+          node scripts/assert-bundle-markers.cjs --dir "$OUT/assets"
 
       # `npm test` is `node --test test/*.test.js`, which does not match the
       # .test.sh files. Three of the repo's truth tables are shell — the
