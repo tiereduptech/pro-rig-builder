@@ -53,17 +53,27 @@ if (require.main === module && (!CLIENT_ID || !CLIENT_SECRET || !SID)) {
   process.exit(1);
 }
 
-// 600ms was 100 req/min — Rakuten's documented ceiling EXACTLY
-// (x-ratelimit-limit-minute: 100), with nothing left for the token call or for
-// the fact that their minute boundary is not ours. Measured on the ingest path:
-// a rate at the ceiling draws 429s in bursts, and this file's own searchNewegg
-// correctly reports those as http_error / no_results — neither of which proves
-// absence, so a deal is never deleted for them. The exposure is therefore not
-// wrong deletions but a THROTTLED RUN LOOKING LIKE A SICK FEED: inflated lookup
-// failures trip the MAX_LOOKUP_FAILURE_RATE breaker and abort the run.
-// 720ms ≈ 83/min leaves real headroom.
-const RATE_DELAY_MS = 720;
-const sleep = ms => new Promise(r => setTimeout(r, ms));
+// Rakuten's ceiling is 100 REQUESTS per minute (x-ratelimit-limit-minute: 100).
+//
+// This was a 720ms sleep after each ROW, reasoned as "≈83/min leaves real
+// headroom". The unit was wrong. searchNewegg issues a ladder of up to six
+// queries per row and stops at the first non-empty response, so one row costs
+// one to six requests, and the row rate is not the request rate.
+//
+// Run 33189471054 is the measurement: 3,178 rows at 64.2 rows/min drew 362
+// http_errors — 11.4% of the catalog — in bursts of 10-27 a minute separated by
+// quiet minutes. The 200-row dry runs that same afternoon, identical pacing,
+// drew zero. Errors that track run LENGTH rather than the feed are throttling.
+// The old comment predicted this exactly ("a THROTTLED RUN LOOKING LIKE A SICK
+// FEED: inflated lookup failures trip the MAX_LOOKUP_FAILURE_RATE breaker") and
+// then counted rows instead of requests.
+//
+// 80/min against a ceiling of 100 leaves room for the token call and for the
+// fact that their minute boundary is not ours. The limiter paces at the request
+// itself, so a row that resolves on its first query is no longer made to wait
+// for a budget it never spent — which is why removing the per-row sleep does not
+// make the run slower in the common case.
+const REQ_PER_MIN = 80;
 
 // ── Safety thresholds ────────────────────────────────────────────────────────
 // A single confirmed absence means nothing; feeds flap. Deletion requires the
@@ -137,6 +147,22 @@ async function getToken() {
   return tokenCache.token;
 }
 
+// One limiter for the whole run — a per-call limiter would enforce nothing.
+// Built on first use, not at module load: NEG is populated by loadMatcher(),
+// and this file is require()d by tests that only want its pure decision
+// functions and never call it.
+let _acquire = null;
+const acquire = async () => {
+  if (!_acquire) _acquire = NEG.createRateLimiter({ perMinute: REQ_PER_MIN });
+  return _acquire();
+};
+
+// Run-wide tally of every non-2xx, keyed by status. Collected on EVERY lookup,
+// not just failed ones: a 429 on a row whose second query succeeded is still
+// budget we overspent, and leaving it out would understate the throttle.
+const httpStatusTally = {};
+let requestsIssued = 0;
+
 // ── The lookup ───────────────────────────────────────────────────────────────
 // Replaces the old searchBySku(). Uses the SAME matcher that ingest uses, so a
 // product that could be found at ingest time can be found again here.
@@ -146,14 +172,17 @@ async function lookupProduct(p) {
   let search;
   try {
     const token = await getToken();
-    search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID });
+    search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID, acquire });
   } catch (e) {
     // Token failure, network death, parser throw — all "we learned nothing".
-    return { outcome: OUTCOME.LOOKUP_FAILED, reason: `exception: ${e.message}`, candidates: [], rawCount: 0 };
+    return { outcome: OUTCOME.LOOKUP_FAILED, reason: `exception: ${e.message}`, candidates: [], rawCount: 0, httpStatuses: [] };
   }
 
+  requestsIssued += search.queriesTried || 0;
+  for (const st of search.httpStatuses || []) httpStatusTally[st] = (httpStatusTally[st] || 0) + 1;
+
   if (search.ok) {
-    return { outcome: OUTCOME.OK, reason: 'matched', candidates: search.candidates, rawCount: search.rawCount };
+    return { outcome: OUTCOME.OK, reason: 'matched', candidates: search.candidates, rawCount: search.rawCount, httpStatuses: search.httpStatuses || [] };
   }
 
   // ---- The critical branch. Absence must be PROVEN, not assumed. ----
@@ -166,9 +195,9 @@ async function lookupProduct(p) {
   // evidence the product EXISTS. Falling through to LOOKUP_FAILED below is the
   // whole point — a stricter guard must never widen the deletion path.
   if (search.reason === 'no_match' && search.rawCount >= MIN_HEALTHY_CANDIDATES) {
-    return { outcome: OUTCOME.CONFIRMED_ABSENT, reason: 'no_match', candidates: [], rawCount: search.rawCount };
+    return { outcome: OUTCOME.CONFIRMED_ABSENT, reason: 'no_match', candidates: [], rawCount: search.rawCount, httpStatuses: search.httpStatuses || [] };
   }
-  return { outcome: OUTCOME.LOOKUP_FAILED, reason: search.reason, candidates: [], rawCount: search.rawCount };
+  return { outcome: OUTCOME.LOOKUP_FAILED, reason: search.reason, candidates: [], rawCount: search.rawCount, httpStatuses: search.httpStatuses || [] };
 }
 
 // Take the first N in catalog order and you get whatever category happens to sit
@@ -393,9 +422,8 @@ if (require.main !== module) return;
       stats.lookupFailed++;
       if (r.reason === 'variant_rejected') stats.variantRejected++;
       if (r.reason === 'no_cat_mapping') stats.noCatMapping++;
-      failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount });
+      failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount, httpStatuses: r.httpStatuses });
       console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -411,7 +439,6 @@ if (require.main !== module) return;
       if (d.absentStreak >= MIN_ABSENT_STREAK && staleDays >= MIN_STALE_DAYS) {
         removalCandidates.push({ product: p, sku, streak: d.absentStreak, staleDays: Number(staleDays.toFixed(1)) });
       }
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -453,7 +480,6 @@ if (require.main !== module) return;
     if (!chosen) { // defensive: ok implies >=1 candidate, but never assume
       stats.lookupFailed++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: 'no_candidate_selected', rawCount: r.rawCount });
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -470,7 +496,6 @@ if (require.main !== module) return;
         floor: chosen.floor, candidateName: chosen.bestWeakName,
       });
       console.log(`  WEAK MATCH BLOCKED (no change): ${p.n} — best ${chosen.bestWeakScore.toFixed(2)} < ${chosen.floor}`);
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -485,7 +510,6 @@ if (require.main !== module) return;
         rawCount: r.rawCount, fromClass: chosen.fromClass, to: chosen.to, toClass: chosen.toClass,
       });
       console.log(`  DOWNGRADE BLOCKED (no change): ${p.n} — ${chosen.fromClass} ${chosen.from} -> ${chosen.toClass} ${chosen.to}`);
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -526,7 +550,6 @@ if (require.main !== module) return;
         changeRec.change = 'price-quarantined-3strikes';
       }
       changes.push(changeRec);
-      await sleep(RATE_DELAY_MS);
       continue;
     }
 
@@ -614,7 +637,6 @@ if (require.main !== module) return;
       stats.unchanged++;
     }
 
-    await sleep(RATE_DELAY_MS);
   }
 
   // ── Run-level circuit breakers ──────────────────────────────────────────────
@@ -678,6 +700,23 @@ if (require.main !== module) return;
     for (const [k, v] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`   ${v.toString().padStart(4)}  ${k}`);
   }
 
+  // The line that ends the argument about whether http_error means "throttled"
+  // or "Rakuten is down". 429 is us; 5xx is them; anything else is neither.
+  const httpTotal = Object.values(httpStatusTally).reduce((a, b) => a + b, 0);
+  console.log(`\nRequests issued:  ${requestsIssued}  (budget ${REQ_PER_MIN}/min)`);
+  if (httpTotal) {
+    console.log(`Non-2xx responses:${httpTotal}  (${(httpTotal / (requestsIssued || 1) * 100).toFixed(1)}% of requests)`);
+    for (const [k, v] of Object.entries(httpStatusTally).sort((a, b) => b[1] - a[1])) {
+      const gloss = k === '429' ? '  <- WE are over the rate limit'
+        : /^5/.test(k) ? '  <- Rakuten server-side'
+        : k === '401' || k === '403' ? '  <- auth, not rate'
+        : '';
+      console.log(`   ${v.toString().padStart(4)}  ${k}${gloss}`);
+    }
+  } else {
+    console.log('Non-2xx responses:0');
+  }
+
   // ── How much of Newegg is actually repricing? ──────────────────────────────
   // This job had no outcome assertion at all — its workflow reads the summary
   // inside `if [ -f ... ]`, which is the precise shape scripts/assert-outcome.cjs
@@ -726,6 +765,13 @@ if (require.main !== module) return;
     // in the artifact so the figure can be recomputed rather than trusted.
     lookupable,
     unmappable: stats.noCatMapping,
+    // Attribution for the http_error bucket. `rateLimited` is the number the
+    // pacing change is judged on: it should be 0, and if it is not, REQ_PER_MIN
+    // is still too high rather than the feed being sick.
+    requestsIssued,
+    reqPerMinBudget: REQ_PER_MIN,
+    httpStatuses: httpStatusTally,
+    rateLimited: httpStatusTally['429'] || 0,
     breakers,
     thresholds: { MIN_ABSENT_STREAK, MIN_STALE_DAYS, MIN_HEALTHY_CANDIDATES, MAX_LOOKUP_FAILURE_RATE, removalCap, MIN_MIGRATE_SIM: NEG.MIN_MIGRATE_SIM },
     failures: failures.slice(0, 50),

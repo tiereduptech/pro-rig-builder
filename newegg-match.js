@@ -909,29 +909,73 @@ export function selectWithFirstPartyPreference(scored) {
 // and refresh-newegg-prices.cjs treated the pair identically (mark stale -> delete
 // after 7d). That is what removed 1,655 deals on 2026-07-06. Callers MUST NOT
 // treat 'http_error' or 'no_results' as evidence of absence.
-export async function searchNewegg(product, { token, mid, fetchImpl = fetch }) {
+// ── Request pacing ───────────────────────────────────────────────────────────
+//
+// Rakuten's ceiling is 100 requests per minute (x-ratelimit-limit-minute: 100),
+// and it counts REQUESTS. The refresher used to pace with a per-ROW sleep,
+// which is a different unit: searchNewegg issues a LADDER of up to six queries
+// per row and stops at the first non-empty response, so a row costs anywhere
+// from one request to six.
+//
+// Measured on the full run 33189471054: 64.2 rows/min, which breaches 100/min
+// the moment the ladder averages more than 1.56 queries per row. With 276 rows
+// exhausting the ladder and 1,274 more missing on the first query, it was well
+// past that — 362 rows came back http_error, in bursts of 10-27 per minute
+// separated by quiet minutes, which is a token bucket refilling and not a sick
+// feed. The 200-row dry runs the same afternoon, same pacing constant, drew
+// ZERO http_errors: the errors track run LENGTH, not the feed.
+//
+// So the limit is enforced here, at the request, against a SLIDING window
+// rather than a wall-clock minute — "their minute boundary is not ours", and a
+// fixed-window counter permits a double burst across the seam.
+export function createRateLimiter({ perMinute, sleep: sleepImpl = null, now = () => Date.now() } = {}) {
+  if (!perMinute || perMinute <= 0) return async () => {};
+  const nap = sleepImpl || ((ms) => new Promise((r) => setTimeout(r, ms)));
+  const sent = []; // timestamps of the last `perMinute` requests, oldest first
+  return async function acquire() {
+    for (;;) {
+      const t = now();
+      while (sent.length && t - sent[0] >= 60000) sent.shift();
+      if (sent.length < perMinute) { sent.push(t); return; }
+      // +25ms so we wake fractionally AFTER the oldest slot expires rather than
+      // spinning on the boundary.
+      await nap(60000 - (t - sent[0]) + 25);
+    }
+  };
+}
+
+export async function searchNewegg(product, { token, mid, fetchImpl = fetch, acquire = null }) {
   const catFilter = CAT_FILTER[product.c];
-  if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [], rawCount: 0, httpErrors: 0, queriesTried: 0 };
+  if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [], rawCount: 0, httpErrors: 0, queriesTried: 0, httpStatuses: [] };
   const queries = buildQueries(product.n, product.b, { broaden: !NO_BROADEN_CATS.has(product.c) })
     .map((q) => ({ [q.mode]: q.q, cat: catFilter, mid, max: '20' }));
   let items = [];
   let httpErrors = 0;
   let queriesTried = 0;
+  // WHY the failure happened, not just that it did. This was `httpErrors++`
+  // with the status discarded, which made the single largest failure bucket
+  // unattributable: a 429 we caused and a 500 Rakuten caused were identical in
+  // every artifact, so the throttling above could only be inferred from run
+  // length. Statuses are strings ('429', '500', 'network') so a thrown fetch
+  // sits in the same tally as an HTTP response.
+  const httpStatuses = [];
   for (const params of queries) {
     const url = `https://api.linksynergy.com/productsearch/1.0?${new URLSearchParams(params)}`;
     queriesTried++;
     let res;
+    if (acquire) await acquire();
     try {
       res = await fetchImpl(url, { headers: { Authorization: `Bearer ${token}` } });
     } catch {
       httpErrors++; // network/DNS/timeout — a failure, never an absence
+      httpStatuses.push('network');
       continue;
     }
-    if (!res.ok) { httpErrors++; continue; }
+    if (!res.ok) { httpErrors++; httpStatuses.push(String(res.status)); continue; }
     items = parseItems(await res.text());
     if (items.length > 0) break;
   }
-  const base = { rawCount: items.length, httpErrors, queriesTried, variantRejects: 0, guardRejects: 0 };
+  const base = { rawCount: items.length, httpErrors, queriesTried, httpStatuses, variantRejects: 0, guardRejects: 0 };
   // Every query we issued errored — we learned nothing about this product.
   if (httpErrors === queriesTried) return { ok: false, reason: 'http_error', candidates: [], ...base };
   if (!items.length) return { ok: false, reason: 'no_results', candidates: [], ...base };
