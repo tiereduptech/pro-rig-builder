@@ -987,8 +987,16 @@ function PriceCompare({part}) {
             {i===0 && r.inStock && r.fresh && <Tag color="var(--mint)">BEST</Tag>}
             {!r.inStock && <Tag color="var(--rose)">OOS</Tag>}
             {/* Say HOW stale, not just that it is. "UNCONFIRMED 93d" is a fact a
-                reader can act on; "UNCONFIRMED" alone reads as a disclaimer. */}
-            {r.inStock && !r.fresh && <Tag color="var(--amber)">{r.ageDays == null ? "UNCONFIRMED" : `UNCONFIRMED ${r.ageDays}d`}</Tag>}
+                reader can act on; "UNCONFIRMED" alone reads as a disclaimer.
+
+                NOT --amber: this theme collapses --amber onto --mint (both
+                #FF8A3D dark, #cc5a17 light), so an amber tag renders in the
+                exact colour of the BEST badge beside it — the warning would be
+                indistinguishable from the endorsement it exists to withhold.
+                --dim is the muted text colour, which is the honest signal: we
+                are showing this price, not standing behind it. --rose is taken
+                by OOS, which is a harder failure than "nobody has checked". */}
+            {r.inStock && !r.fresh && <Tag color="var(--dim)">{r.ageDays == null ? "UNCONFIRMED" : `UNCONFIRMED ${r.ageDays}d`}</Tag>}
           </div>
           <span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:700,color:i===0?"var(--mint)":"var(--txt)"}}>${fmtPrice(r.price)}</span>
         </a>
