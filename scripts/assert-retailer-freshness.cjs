@@ -162,15 +162,20 @@ const CADENCE = {
   },
 
   newegg: {
-    confirmedBy: { workflow: 'refresh-newegg-prices.yml', cron: '0 6,18 * * *' },
+    confirmedBy: { workflow: 'refresh-newegg-prices.yml', cron: '0 4,16 * * *' },
     why:
       'refresh-newegg-prices.cjs is the designated re-pricer — its own header calls it the ' +
-      'daily Newegg re-price / re-match. Cited deliberately even though its cron is currently ' +
-      'commented out: it is the job that SHOULD confirm Newegg, so citing anything else would ' +
-      'paper over the gap. While it stays disabled this gate fails with schedule-disabled, ' +
-      'which is correct and is the alarm working. sftp-ingest.yml is not the right cite — it ' +
-      'stamps matchedAt only on newly attached deals (sftp-ingest.cjs:411), so it refreshes ' +
-      'nothing for a row already in the catalog.',
+      'daily Newegg re-price / re-match. Its cron was commented out on 2026-07-20 and this ' +
+      'gate correctly failed with schedule-disabled for 39 days, which is the alarm working. ' +
+      'Re-enabled 2026-08-28: the disable cited a broken SKU lookup that 058b6959700 fixed the ' +
+      'same day (searchNewegg by name/UPC, and a failed lookup no longer counts as absence), ' +
+      'verified on a 2026-08-17 live dry run that repriced 22 of 50 rows and removed none. ' +
+      'The hours moved from 6,18 to 4,16 because 06:00 is prerender\'s slot and both are in the ' +
+      'main-writer group; frequency is unchanged, so the budget this entry justifies is too. ' +
+      'sftp-ingest.yml is not the right cite — it stamps matchedAt only on newly attached deals ' +
+      '(sftp-ingest.cjs:411), so it refreshes nothing for a row already in the catalog. That ' +
+      'distinction is why this retailer read 1d newest against a 10d median while nothing had ' +
+      'repriced it at all: 0 of 3,178 rows carried refreshedAt on 2026-08-28.',
   },
 
   bestbuy: {
