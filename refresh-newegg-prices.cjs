@@ -46,7 +46,9 @@ const PARTS_PATH = (() => {
   return a ? path.resolve(a.split('=')[1]) : path.join(__dirname, 'src', 'data', 'parts.js');
 })();
 
-if (!CLIENT_ID || !CLIENT_SECRET || !SID) {
+// Guarded on require.main so the pure decision functions below can be unit
+// tested without credentials. Running the script still fails fast.
+if (require.main === module && (!CLIENT_ID || !CLIENT_SECRET || !SID)) {
   console.error('Missing required env vars (RAKUTEN_CLIENT_ID / _SECRET / _SID)');
   process.exit(1);
 }
@@ -115,6 +117,10 @@ const OUTCOME = {
 
 // Newegg matcher (shared ESM) — assigned at startup.
 let NEG = null;
+async function loadMatcher() {
+  NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
+  return NEG;
+}
 
 let tokenCache = { token: null, expiresAt: 0 };
 async function getToken() {
@@ -197,6 +203,42 @@ function effOf(item) {
   return (item.saleprice && item.saleprice > 0) ? item.saleprice : item.price;
 }
 
+// WHICH FIELD IDENTIFIES THE LISTING WE HOLD.
+//
+// deals.newegg.sku is NOT reliably a Newegg item number. On 2,108 of the 3,178
+// priced Newegg rows (66%) it holds a Rakuten affiliate link ID — a long digit
+// string beginning with the Newegg MID — and the real item number lives in
+// deals.newegg.itemNumber. sku === itemNumber on zero rows; the two fields are
+// either both-real-and-absent (1,070 rows, sku is the item number, no
+// itemNumber) or split (2,108 rows).
+//
+// Reading sku alone broke both halves of chooseCandidate() for that 66%:
+//
+//   exact  — matched feed item numbers against a link ID, so it never matched.
+//            The refresher could not recognise the listing it already holds,
+//            and every such row had to migrate or rematch; it could never
+//            simply reprice in place.
+//   rank   — sellerClass() reads a link ID as 'other' (rank 1). A row already
+//            showing a marketplace listing therefore scored BETTER than the
+//            marketplace candidate that was the same listing, and the downgrade
+//            guard blocked its own SKU as a downgrade.
+//
+// Run 33181385798 (200-row dry run): of 49 downgrade blocks, 40 were this bug —
+// 30 where the blocked candidate was byte-identical to the row's own
+// itemNumber, 10 a rank-equal marketplace-to-marketplace swap. All 40 already
+// carry sellerClass 'marketplace' and already render the 3RD-PARTY SELLER
+// badge, so nothing was being protected and no disclosure was at stake. The
+// remaining 9 are genuine official -> marketplace downgrades and still block.
+//
+// This changes what the guard READS, not what it permits. The split fields are
+// deliberately NOT collapsed here: a reprice-in-place leaves sku/itemNumber
+// exactly as found, so this PR carries no catalog migration. Rows only
+// normalise to a single real item number when a genuine SKU change rebuilds
+// deals.newegg, which is the behaviour that was already there.
+function heldSku(deal) {
+  return String((deal && (deal.itemNumber || deal.sku)) || '').trim();
+}
+
 // Choose which candidate to write. Keeps the first-party (N82E) preference:
 // a first-party listing wins even if we currently hold a different SKU.
 //
@@ -224,7 +266,7 @@ function applyMigrateFloor(candidates, currentSku) {
 }
 
 function chooseCandidate(p, candidates) {
-  const currentSku = String(p.deals.newegg.sku || '').trim();
+  const currentSku = heldSku(p.deals.newegg);
   const { eligible, weak } = applyMigrateFloor(candidates, currentSku);
   const exact = eligible.find(c => String(c.item.sku || '').trim() === currentSku);
   const best = NEG.selectWithFirstPartyPreference(eligible);
@@ -268,9 +310,13 @@ function chooseCandidate(p, candidates) {
   return { pick, kind: 'rematch' };
 }
 
+module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, loadMatcher };
+
+if (require.main !== module) return;
+
 (async () => {
   console.log(`Loading parts.js...${DRY_RUN ? '  [DRY RUN — no writes]' : ''}`);
-  NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
+  await loadMatcher();
   const partsModule = await import(`file://${PARTS_PATH.replace(/\\/g, '/')}?t=${Date.now()}`);
   const parts = partsModule.PARTS;
   const allMatched = parts.filter(p => p?.deals?.newegg?.sku);
@@ -335,9 +381,17 @@ function chooseCandidate(p, candidates) {
       for (const c of r.candidates) {
         const cSku = String(c.item.sku || '').trim();
         scoreSamples.push({
-          id: p.id, name: p.n, cat: p.c, ourSku: sku,
+          id: p.id, name: p.n, cat: p.c, ourSku: sku, ourItemNumber: p.deals.newegg.itemNumber || null,
+          ourHeldSku: heldSku(p.deals.newegg), ourClass: NEG.sellerClass(heldSku(p.deals.newegg)),
+          // Prices, so a dry run answers "what would this row show instead?"
+          // without a second feed call. ourPrice is what the page shows today;
+          // candidateEff is what we would write (saleprice when there is one).
+          ourPrice: Number(p.deals.newegg.price) || null,
           candidateName: c.item.name, candidateSku: cSku,
           candidateClass: NEG.sellerClass(cSku),
+          candidatePrice: c.item.price ?? null,
+          candidateSalePrice: c.item.saleprice ?? null,
+          candidateEff: effOf(c.item) ?? null,
           method: c.match.method, score: Number(c.match.score.toFixed(3)),
           selected: selSku != null && cSku === selSku,
           skuChanged: cSku !== String(sku).trim(),
@@ -449,7 +503,10 @@ function chooseCandidate(p, candidates) {
     const oldSale = Number(d.saleprice || 0);
     const newSale = item.saleprice && item.saleprice > 0 ? item.saleprice : null;
     const newLink = item.linkurl || d.linkurl;
-    const skuChanged = String(item.sku).trim() !== String(sku).trim();
+    // Compared against the listing we HOLD (itemNumber ?? sku), not against the
+    // affiliate link ID — otherwise a reprice of the very same item number reads
+    // as a SKU change and takes the wholesale-replace branch as a 'migrate'.
+    const skuChanged = String(item.sku).trim() !== heldSku(d);
     const priceChanged = item.price !== oldPrice || (newSale || 0) !== oldSale || newLink !== d.linkurl;
 
     // ── The stamp that cannot be manufactured ─────────────────────────────────
