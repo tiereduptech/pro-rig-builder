@@ -147,6 +147,28 @@ const MIN_BUDGET_DAYS = 3;
 //  this table fails the gate (see 'unknown-retailer'), which is what stops the
 //  next silently-added retailer from repeating msi's four months of nothing.
 // =============================================================================
+// newegg_marketplace was REMOVED from this table on 2026-08-28, together with
+// the 37 deals that fed it. It is not an omission and it must not be added back
+// as an empty entry: audit() reports a CADENCE entry with no rows in the catalog
+// as `phantom-retailer` and fails, which is the reverse direction of the
+// unknown-retailer check and exists so this table cannot quietly describe a
+// retailer that no longer ships.
+//
+// The rows are still guarded. dedupe-case-batch.cjs is a one-off script no
+// workflow invokes, but it still writes deals.newegg_marketplace — and if it is
+// ever run again those rows return to a catalog with no entry here, which fails
+// as `unknown-retailer`. Deleting the entry is what keeps the guard armed;
+// keeping a stale one is what would disarm it.
+//
+// Why dropped rather than refreshed: all 37 were Case, all 37 carried a
+// deals.newegg peer on the same row (the lane exists because dedupe-case-batch
+// preserved a cheaper 3P offer beside the 1P one), and 30 of those peers were
+// in stock and confirmed inside the freshness window — so no row lost its only
+// offer. The MKPL feed that would have refreshed them is deliberately not
+// ingested (886MB, measurably dead), and Rakuten Product Search reaches
+// marketplace listings only as a last resort behind first-party, so repricing
+// would have needed a dedicated request lane against the budget #71 had just
+// tightened. See drop-newegg-marketplace.cjs.
 const CADENCE = {
   amazon: {
     confirmedBy: { workflow: 'verify-catalog.yml', cron: '0 11 * * *' },
@@ -172,10 +194,16 @@ const CADENCE = {
       'verified on a 2026-08-17 live dry run that repriced 22 of 50 rows and removed none. ' +
       'The hours moved from 6,18 to 4,16 because 06:00 is prerender\'s slot and both are in the ' +
       'main-writer group; frequency is unchanged, so the budget this entry justifies is too. ' +
-      'sftp-ingest.yml is not the right cite — it stamps matchedAt only on newly attached deals ' +
-      '(sftp-ingest.cjs:411), so it refreshes nothing for a row already in the catalog. That ' +
-      'distinction is why this retailer read 1d newest against a 10d median while nothing had ' +
-      'repriced it at all: 0 of 3,178 rows carried refreshedAt on 2026-08-28.',
+      'sftp-ingest.yml is still not the right cite for THIS lane, but the reason has been ' +
+      'restated because the old one was wrong twice over. It read "stamps matchedAt only on ' +
+      'newly attached deals (sftp-ingest.cjs:411)": that line number now points into ' +
+      'matchRecord(), and the claim was never accurate either — applyMatchToPart() rewrites ' +
+      'matchedAt on every replacement, not only on first attachment. ' +
+      'The real reason is a policy one: sftp-ingest deliberately confirms ONLY the condition ' +
+      'lanes it alone writes (see newegg_openbox above). It does not stamp deals.newegg, ' +
+      'because a job certifying a lane that has its own re-pricer would let that re-pricer die ' +
+      'unnoticed. That is why this retailer read 1d newest against a 10d median while nothing ' +
+      'had repriced it at all: 0 of 3,178 rows carried refreshedAt on 2026-08-28.',
   },
 
   bestbuy: {
@@ -218,21 +246,29 @@ const CADENCE = {
   },
 
   newegg_openbox: {
-    unscheduled:
-      'Written only by one-off scripts (phase2-name-match-newegg.cjs, case-gate-audit.cjs, ' +
-      'dedupe-case-batch.cjs) — no scheduled job touches it. Newest matchedAt is 2026-05-15. ' +
-      'This is the most volatile inventory in the catalog: open-box listings are single-unit and ' +
-      'disappear fast, so a three-month-old open-box price is likelier to be wrong than any other ' +
-      'row here. Either bring these 60 rows into the Newegg re-pricer or drop them.',
+    confirmedBy: { workflow: 'sftp-ingest.yml', cron: '0 12 * * *' },
+    why:
+      'This entry previously read "written only by one-off scripts, no scheduled job touches it, ' +
+      'newest matchedAt is 2026-05-15, these 60 rows". Every one of those was wrong by ' +
+      '2026-08-28: 182 rows, newest matchedAt 2026-08-27, and sftp-ingest.yml had been writing ' +
+      'the lane nightly at 12:00 the whole time — 175 of the 182 rows carry matchMethod ' +
+      'sftp:upc. The lane was never unscheduled. It was UNSTAMPED. ' +
+      'sftp-ingest.cjs wrote matchedAt and nothing else, and matchedAt records when a row was ' +
+      'bound to a SKU rather than when its price was confirmed, so src/price-freshness.js ' +
+      'correctly refused it and the render path read all 182 rows as never-confirmed. It now ' +
+      'writes priceConfirmedAt on every condition-lane write, which is what this cite rests on. ' +
+      'Note the asymmetry with the newegg entry below, which deliberately does NOT cite this ' +
+      'workflow: deals.newegg has its own re-pricer, and letting this job certify that lane ' +
+      'would let a dead refresh-newegg-prices read as healthy. These lanes have nothing else, ' +
+      'so this job is their only possible cite. ' +
+      'Open-box is single-unit inventory and should move MORE than new, not less. It moved 5.1% ' +
+      'against deals.newegg\'s 27.1% over the same window, because the ingest\'s cross-run ' +
+      'selector only replaced a same-rank in-stock listing when the new price was LOWER — a rise ' +
+      'was never written. Same-listing repricing is now unconditional, and rows the full feed ' +
+      'stops offering get priceUnconfirmedAt from the absence sweep rather than keeping their ' +
+      'last price silently forever.',
   },
 
-  newegg_marketplace: {
-    unscheduled:
-      'Written only by dedupe-case-batch.cjs — no scheduled job. Newest stamp 2026-08-10, and its ' +
-      'price history begins 2026-08-12 with no value ever changing. Newest of the frozen retailers ' +
-      'and the cheapest to fix: 37 rows, and they share the Newegg feed, so folding them into the ' +
-      're-pricer alongside newegg is the natural home.',
-  },
 };
 
 // =============================================================================
