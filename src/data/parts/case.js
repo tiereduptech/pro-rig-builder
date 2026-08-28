@@ -895,7 +895,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 67.74,
+        "price": 71.88,
         "url": "https://www.amazon.com/dp/B0CZVN6KY5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -2542,7 +2542,7 @@ export default [
     "reviews": 647,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 84.99,
         "url": "https://www.amazon.com/dp/B0DFWQDRW1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -3335,11 +3335,11 @@ export default [
     "reviews": 1889,
     "deals": {
       "amazon": {
-        "price": 269.99,
+        "price": 289.99,
         "url": "https://www.amazon.com/dp/B094442NL5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-28",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
@@ -5998,7 +5998,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-28"
       }
     },
     "discount": 13,
@@ -8080,13 +8082,11 @@ export default [
         "price": 36.98,
         "url": "https://www.amazon.com/dp/B0DVBP1JL9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-27",
+        "priceConfirmedAt": "2026-08-28",
         "priceSource": "3p",
         "priceSeller": "ZalmanUSA",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-28"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -21834,7 +21834,7 @@ export default [
         "priceConfirmedAt": "2026-08-28"
       }
     },
-    "needsReview": false,
+    "needsReview": true,
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
@@ -21843,7 +21843,9 @@ export default [
       240
     ],
     "drive35": 6,
-    "maxCooler": 160
+    "maxCooler": 160,
+    "quarantinedAt": "2026-08-28",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 102778,

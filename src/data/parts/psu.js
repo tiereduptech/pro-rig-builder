@@ -1570,7 +1570,7 @@ export default [
     "reviews": 137,
     "deals": {
       "amazon": {
-        "price": 59.99,
+        "price": 49.97,
         "url": "https://www.amazon.com/dp/B0FFPQ38QV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -1638,7 +1638,7 @@ export default [
     "reviews": 124,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 66.47,
         "url": "https://www.amazon.com/dp/B0FFQC5VGM?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -1706,7 +1706,7 @@ export default [
     "reviews": 92,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 74.95,
         "url": "https://www.amazon.com/dp/B0FFQN6344?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -3194,12 +3194,12 @@ export default [
     "reviews": 152,
     "deals": {
       "amazon": {
-        "price": 97.91,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0D7ZD9MLV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Hestia Delight",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3833,7 +3833,7 @@ export default [
     "reviews": 1145,
     "deals": {
       "amazon": {
-        "price": 69.99,
+        "price": 59.99,
         "url": "https://www.amazon.com/dp/B0CQMJN49P?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
@@ -5795,7 +5795,10 @@ export default [
     "atx3": false,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-28",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 60125,
@@ -9103,11 +9106,11 @@ export default [
       "amazon": {
         "asin": "B0FXNTC1S8",
         "url": "https://www.amazon.com/dp/B0FXNTC1S8?tag=tiereduptech-20",
-        "price": 164.63,
+        "price": 133.6,
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "BeachAudio",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11441,11 +11444,11 @@ export default [
       "amazon": {
         "asin": "B0CT41F6FV",
         "url": "https://www.amazon.com/dp/B0CT41F6FV?tag=tiereduptech-20",
-        "price": 174.99,
+        "price": 184.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "WeShipTech (SN# Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },

@@ -290,7 +290,7 @@ export default [
     "reviews": 2201,
     "deals": {
       "amazon": {
-        "price": 499.99,
+        "price": 539.99,
         "url": "https://www.amazon.com/dp/B0BXHC74WD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -3086,7 +3086,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "The Deal Leader",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445835514514661201458835",
@@ -3146,7 +3148,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3968,7 +3970,7 @@ export default [
     "reviews": 504,
     "deals": {
       "amazon": {
-        "price": 444.99,
+        "price": 469.99,
         "url": "https://www.amazon.com/dp/B0D4NLSP87?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -5435,12 +5437,12 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 1236.66,
+        "price": 1149.99,
         "url": "https://www.amazon.com/dp/B0CYM412PY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Bow's Outlet (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -10174,11 +10176,11 @@ export default [
       "amazon": {
         "asin": "B0BMQSYM65",
         "url": "https://www.amazon.com/dp/B0BMQSYM65?tag=tiereduptech-20",
-        "price": 595.97,
+        "price": 549.98,
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "A Mark Store (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11786,11 +11788,11 @@ export default [
       "amazon": {
         "asin": "B0DCJNB51B",
         "url": "https://www.amazon.com/dp/B0DCJNB51B?tag=tiereduptech-20",
-        "price": 453.99,
+        "price": 429.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-28",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "Official Patriot Memory Store",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
