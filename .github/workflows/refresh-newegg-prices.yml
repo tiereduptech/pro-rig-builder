@@ -17,13 +17,51 @@ name: Refresh Newegg Prices
 #  not the streak) and CONFIRMED_ABSENT. The schedule was simply never turned
 #  back on.
 #
-#  "Verified against the live feed" is also met. Manual dry run 2026-08-17
-#  (run 32051310089), 50 rows:
+#  "Verified against the live feed" is also met. Current numbers, dry run
+#  2026-08-28 (run 33184569537), 200 rows, on the code that is now on main:
 #
-#    Matched OK ....... 38  (repriced 22, unchanged 15, migrated 4, rematched 1)
-#    Lookup failed .... 12  (no change written)
-#    Feed failure rate  12.0%  (breaker at 20%)
+#    Matched OK ...... 103  (repriced 37, unchanged 64, migrated 7, rematched 11)
+#    Lookup failed .... 96  (no change written)
+#    Feed failure rate  40.5%  (81/200, breaker at 20%)
 #    Removed ........... 0
+#
+#    failures:  36 no_cat_mapping   33 no_results        15 variant_rejected
+#                9 downgrade_blocked 1 weak_match_blocked 1 no_match
+#                1 guard_rejected
+#
+#  THE RATE IS 40.5%, NOT THE 12.0% THIS BLOCK USED TO CITE, AND THE FEED DID
+#  NOT GET WORSE. The 12.0% came from a 50-row sample (run 32051310089) whose
+#  category draw was Monitor/CPU/CaseFan/CPUCooler/Motherboard/PSU/Storage/RAM/
+#  Case and one ExternalStorage row — no GPU, no peripheral of any kind. Those
+#  are the categories with no entry in the category map at all, so every row in
+#  them fails no_cat_mapping 100% of the time. The 200-row draw includes 19 GPUs
+#  and 17 peripherals, and 36 of them fail for exactly that reason. The sample
+#  became representative; the number followed.
+#
+#  Why 40.5% is acceptable for a job that is allowed to run:
+#
+#    - A failure here is a NO-OP, not damage. LOOKUP_FAILED touches nothing:
+#      not the price, not staleSince, not the absent streak. 81 failures leave
+#      81 rows exactly as they were found.
+#    - The 20% breaker governs REMOVALS, and removals are hard-blocked at
+#      source regardless (REMOVALS_ENABLED = false, below). Nothing about this
+#      rate can delete a row. The breaker tripping is the system working.
+#    - The failures are dominated by rows the matcher never reaches — 36
+#      no_cat_mapping (no category mapping exists) and 33 no_results (the feed
+#      does not surface the item) — not by the matcher choosing wrongly. Of the
+#      103 rows it did reach, 39 carried a real price move, median 10.5%.
+#    - GPU coverage via this path is 0/19 and is a separate, known gap: it is a
+#      missing category mapping, not a matcher defect. Fixing it is what moves
+#      this number, and it is not a precondition for repricing the rest. Zero
+#      of the 36 rows in unmapped categories matched, which is what makes that
+#      count exactly 36. Most of the remainder is Monitor (2 of 19 matched) and
+#      RAM (1 of 18), where the feed answers but not with the listing we hold.
+#
+#  ac30a07b34f is what changed between the two runs. It made the downgrade guard
+#  read deals.newegg.itemNumber rather than deals.newegg.sku, which on 66% of
+#  rows holds a Rakuten affiliate link ID: 40 of 49 rows were being blocked as
+#  "downgrades" onto listings they already displayed. That took the rate from
+#  60.5% to 40.5% and matched rows from 63 to 103 in the same 200-row draw.
 #
 #  The cost of leaving it off is not theoretical. As of 2026-08-28 Newegg is
 #  3,178 priced rows and ZERO of them carry `refreshedAt` — no row has been
