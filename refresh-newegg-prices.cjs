@@ -650,7 +650,11 @@ if (require.main !== module) return;
   const priceMovement = movementFor({
     parts, retailer: 'newegg',
     today: new Date().toISOString().slice(0, 10),
-    apply: !DRY_RUN && !breakers.length,
+    // Deliberately NOT gated on `breakers`: this run wrote its stamps whether
+    // or not the feed-failure breaker tripped, so the epoch that dates them has
+    // to be recorded too. Gating it here is what kept the warm-up clock pinned
+    // at 0d across every unhealthy run. See movementFor in price-movement.cjs.
+    wroteStamps: !DRY_RUN,
     // --limit means this run moved prices on `matched` and on nothing else.
     // Scoping keeps movedShare a ratio of one population instead of two; see
     // PARTIAL RUNS in scripts/price-movement.cjs. Full runs pass nothing.

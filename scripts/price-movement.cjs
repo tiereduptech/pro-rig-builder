@@ -159,6 +159,9 @@ function readWatch(file = DEFAULT_WATCH_FILE) {
  * `write` is false on a dry run — a dry run that created the epoch would start
  * the warm-up clock without having written a single stamp, so the window would
  * arm fourteen days later over data that does not exist.
+ *
+ * `write` must be decided by ONE question only: did this run write stamps?
+ * Nothing else may gate it — see the note on movementFor's `wroteStamps`.
  */
 function watchEpoch(retailer, todayDay, { file = DEFAULT_WATCH_FILE, write = false } = {}) {
   const watch = readWatch(file);
@@ -326,9 +329,27 @@ function movement(o) {
   return m;
 }
 
-/** One block, ready to drop into a summary artifact under `movement`. */
-function movementFor({ parts, retailer, today, apply = false, watchFile = DEFAULT_WATCH_FILE, ...rest }) {
-  const watchStartedAt = watchEpoch(retailer, today, { file: watchFile, write: apply });
+/**
+ * One block, ready to drop into a summary artifact under `movement`.
+ *
+ * `wroteStamps` answers exactly one question: did this run persist
+ * priceLastMovedAt to the catalog? True on any live run, false on a dry run.
+ * It was called `apply`, and both refreshers read that name as "did this run
+ * apply cleanly" and passed `apply && !breakers.length`. That is the bug this
+ * parameter is now named to prevent:
+ *
+ *   A tripped breaker blocks REMOVALS. It does not block stamps — Newegg run
+ *   33189471054 tripped the 20% feed-failure breaker and still wrote 482
+ *   priceLastMovedAt stamps — but it did block the epoch. So the warm-up clock
+ *   restarted at 0d, and on the next run it restarted at 0d again. The alarm
+ *   that exists to detect an unhealthy feed could not start its clock while the
+ *   feed was unhealthy, which is the one condition it is for.
+ *
+ * The epoch is a timestamp recording that a live run happened. Health findings
+ * from that run must never decide whether it gets recorded.
+ */
+function movementFor({ parts, retailer, today, wroteStamps = false, watchFile = DEFAULT_WATCH_FILE, ...rest }) {
+  const watchStartedAt = watchEpoch(retailer, today, { file: watchFile, write: wroteStamps });
   return movement({ parts, retailer, today, watchStartedAt, ...rest });
 }
 
