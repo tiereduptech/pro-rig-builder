@@ -400,7 +400,12 @@ test("every retailer in the live catalog has a CADENCE entry, and vice versa", a
     "CADENCE is out of sync with parts.js — a retailer was added or removed without deciding " +
       "how it gets confirmed:\n" + bookkeeping.map((f) => `  ${f.kind}: ${f.retailer}`).join("\n")
   );
-  assert.ok(a.rows.length >= 6, `expected >=6 retailers, saw ${a.rows.length}`);
+  // 5, not 6: newegg_marketplace and its 37 deals were dropped on 2026-08-28
+  // (drop-newegg-marketplace.cjs). The floor exists to catch the audit silently
+  // seeing nothing — a catalog load returning [] would otherwise pass every
+  // assertion above it — so it tracks the real retailer count rather than
+  // ratcheting down whenever one is removed.
+  assert.ok(a.rows.length >= 5, `expected >=5 retailers, saw ${a.rows.length}`);
 });
 
 test("every live CADENCE entry states a reason a human can act on", async () => {

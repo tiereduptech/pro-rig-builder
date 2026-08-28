@@ -147,6 +147,28 @@ const MIN_BUDGET_DAYS = 3;
 //  this table fails the gate (see 'unknown-retailer'), which is what stops the
 //  next silently-added retailer from repeating msi's four months of nothing.
 // =============================================================================
+// newegg_marketplace was REMOVED from this table on 2026-08-28, together with
+// the 37 deals that fed it. It is not an omission and it must not be added back
+// as an empty entry: audit() reports a CADENCE entry with no rows in the catalog
+// as `phantom-retailer` and fails, which is the reverse direction of the
+// unknown-retailer check and exists so this table cannot quietly describe a
+// retailer that no longer ships.
+//
+// The rows are still guarded. dedupe-case-batch.cjs is a one-off script no
+// workflow invokes, but it still writes deals.newegg_marketplace — and if it is
+// ever run again those rows return to a catalog with no entry here, which fails
+// as `unknown-retailer`. Deleting the entry is what keeps the guard armed;
+// keeping a stale one is what would disarm it.
+//
+// Why dropped rather than refreshed: all 37 were Case, all 37 carried a
+// deals.newegg peer on the same row (the lane exists because dedupe-case-batch
+// preserved a cheaper 3P offer beside the 1P one), and 30 of those peers were
+// in stock and confirmed inside the freshness window — so no row lost its only
+// offer. The MKPL feed that would have refreshed them is deliberately not
+// ingested (886MB, measurably dead), and Rakuten Product Search reaches
+// marketplace listings only as a last resort behind first-party, so repricing
+// would have needed a dedicated request lane against the budget #71 had just
+// tightened. See drop-newegg-marketplace.cjs.
 const CADENCE = {
   amazon: {
     confirmedBy: { workflow: 'verify-catalog.yml', cron: '0 11 * * *' },
@@ -247,23 +269,6 @@ const CADENCE = {
       'last price silently forever.',
   },
 
-  newegg_marketplace: {
-    unscheduled:
-      'Written only by dedupe-case-batch.cjs, which is a one-off script no workflow invokes. ' +
-      'The 37 rows it had created were DROPPED on 2026-08-28 rather than given a refresher: all ' +
-      '37 were Case, all 37 carried a deals.newegg peer on the same row, and 30 of those peers ' +
-      'were in stock and confirmed inside the freshness window — so removing the lane cost no ' +
-      'row its only offer. The alternative was an extra per-row request lane in ' +
-      'refresh-newegg-prices, spent against the budget #71 had just tightened, to keep 37 ' +
-      'duplicate offers alive. ' +
-      'The entry stays after the drop deliberately. dedupe-case-batch.cjs still exists and still ' +
-      'writes this key, so if it is ever run again the rows come back — and they must come back ' +
-      'to a gate that fails them, not to silence. An empty retailer costs this table nothing: ' +
-      'the audit iterates the deal keys the catalog actually holds, so with 0 rows this entry ' +
-      'is inert until the day it is needed. ' +
-      'Also note the MKPL feed is deliberately not ingested at all (sftp-ingest.cjs skips it as ' +
-      '886MB and measurably dead), so there is no feed lane that could have refreshed these.',
-  },
 };
 
 // =============================================================================
