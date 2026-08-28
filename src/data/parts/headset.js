@@ -603,13 +603,13 @@ export default [
         "sku": "445836614629147546146248",
         "itemNumber": "9SIA4P0FCY8909",
         "sellerClass": "marketplace",
-        "price": 49,
+        "price": 59,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836614629147546146248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-audio-technica-ath-m20x-over-the-ear%2Fp%2F0TF-004U-00087%3Fitem%3D9SIA4P0FCY8909",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A49G_1_20140809590183739.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:39.667Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "hsType": "Wired",

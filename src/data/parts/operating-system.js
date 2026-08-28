@@ -76,8 +76,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-748-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "upc": "00889842966640"

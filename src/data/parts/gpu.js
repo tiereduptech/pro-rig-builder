@@ -973,13 +973,13 @@ export default [
         "itemNumber": "27N-0002-001K1",
         "sellerClass": "official",
         "price": 799.99,
-        "saleprice": 729.99,
+        "saleprice": 749.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310315983665494511596&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxfx-quicksilver-rx-97tqickba-radeon-rx-9070-xt-16gb-video-cards-triple-fans%2Fp%2F27N-0002-001K1%3Fitem%3D27N-0002-001K1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AD2CS2603310UEZ4L2E.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.661Z",
-        "matchMethod": "sftp:name",
-        "matchScore": 0.7
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "baseClock": 2400,
@@ -2235,7 +2235,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceUnconfirmedAt": "2026-08-28"
       }
     },
     "upc": "00727419314992",
@@ -2514,8 +2515,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-842-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.331Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cuda": 10752,
@@ -2597,14 +2598,14 @@ export default [
         "sku": "4458311597363573341270326",
         "itemNumber": "N82E16814932755",
         "sellerClass": "official",
-        "price": 1629.99,
-        "saleprice": 1599.99,
+        "price": 1899.99,
+        "saleprice": 1799.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311597363573341270326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5080aorus-m-16gd-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814932755%3Fitem%3DN82E16814932755",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-755-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.446Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "cuda": 10752,
@@ -4589,7 +4590,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceUnconfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "4458314583067850245555496",
@@ -4693,7 +4695,7 @@ export default [
         "itemNumber": "N82E16814126831",
         "sellerClass": "official",
         "price": 859.99,
-        "saleprice": 809.99,
+        "saleprice": 819.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837366143263438209558&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rx9070xt-o16g-white-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126831%3Fitem%3DN82E16814126831",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-831-02.png",
         "inStock": true,
@@ -8416,8 +8418,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-792-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.458Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8725,8 +8727,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-500-648-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:07.198Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -9358,7 +9360,7 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 279.97,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-877-01.png",
         "inStock": true,
         "matchedAt": "2026-08-23T12:27:09.616Z",
@@ -9771,7 +9773,8 @@ export default [
         "sku": "4458316526184115046836758",
         "itemNumber": "N82E16814126756",
         "sellerClass": "official",
-        "price": 1199.99,
+        "price": 1259.99,
+        "saleprice": 1229.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316526184115046836758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070ti-o16g-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126756%3Fitem%3DN82E16814126756",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-756-12.png",
         "inStock": true,
@@ -9824,7 +9827,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceUnconfirmedAt": "2026-08-28"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9861,7 +9865,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceUnconfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445836230308261329286521",
@@ -9922,7 +9927,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceUnconfirmedAt": "2026-08-28"
       },
       "newegg": {
         "sku": "445832601390906217617414",
@@ -10717,7 +10723,7 @@ export default [
         "itemNumber": "N82E16814932769",
         "sellerClass": "official",
         "price": 1199.99,
-        "saleprice": 1119.99,
+        "saleprice": 1189.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315112060008078983284&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507teagleoc-ice-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932769%3Fitem%3DN82E16814932769",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-769-02.jpg",
         "inStock": true,
@@ -10814,8 +10820,7 @@ export default [
         "sku": "445837104039445414289179",
         "itemNumber": "N82E16814932768",
         "sellerClass": "official",
-        "price": 1199.99,
-        "saleprice": 1087.99,
+        "price": 1249.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837104039445414289179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507tgaming-oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932768%3Fitem%3DN82E16814932768",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-768-19.png",
         "inStock": true,
