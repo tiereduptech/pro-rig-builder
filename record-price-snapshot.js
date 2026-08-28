@@ -77,10 +77,40 @@ const OUT_FILE = join(OUT_DIR, 'price-history.json');
 const RETENTION_DAYS = 90;
 const DRY_RUN = process.argv.includes('--dry-run');
 
-// The stamps a write path leaves when it actually talked to a retailer. Same
-// three, in the same order of authority, as scripts/assert-retailer-freshness.cjs
-// — the gate and the recorder must not disagree about what counts as contact.
-const CONFIRMATION_STAMPS = ['priceConfirmedAt', 'matchedAt', 'refreshedAt'];
+// The stamps a write path leaves when it actually confirmed a PRICE.
+//
+// ── THIS LIST USED TO BE THE WRONG ONE ──────────────────────────────────────
+// It read `['priceConfirmedAt', 'matchedAt', 'refreshedAt']`, copied from
+// scripts/assert-retailer-freshness.cjs, under a comment saying "the gate and
+// the recorder must not disagree about what counts as contact". The principle
+// was right and the sibling was wrong. There are two gates, and they answer
+// different questions:
+//
+//   assert-retailer-freshness.cjs  "has anything contacted this LANE lately?"
+//                                  — workflow health. A SKU rebind counts:
+//                                    it is evidence the feed was read.
+//
+//   src/price-freshness.js         "do we stand behind THIS PRICE?"
+//                                  — a claim about a number. A rebind is not
+//                                    evidence about a number.
+//
+// This file writes "on date D the price was P". That is the second question,
+// so it takes the second list, imported rather than restated. The repo had
+// already worked this out and written it down in assert-retailer-freshness.cjs:
+// "matchedAt records when a row was bound to a SKU rather than when its price
+// was confirmed, so src/price-freshness.js correctly refused it."
+//
+// MEASURED, 2026-08-28: matchedAt alone licensed 78 points/day that the price
+// vocabulary withholds — 76 Newegg, 2 newegg_openbox — or ~7,020 manufactured
+// points across the 90-day retention. Newegg is precisely the lane that should
+// not get the benefit of the doubt: 0 of 3,178 rows carry refreshedAt because
+// its re-pricer's cron has been off since 2026-07-20, so every one of those
+// points would be a flat line standing in for a re-pricer that is not running.
+//
+// This does NOT delete Newegg's real history. Rule 2 (MOVED) is untouched, and
+// a changed value still records without any stamp at all — which is how the
+// 1,186 Newegg series that demonstrably do move keep moving.
+import { PRICE_CONFIRMATION_STAMPS } from './src/price-freshness.js';
 
 // How old a confirmation may be and still license a point.
 //
@@ -136,10 +166,17 @@ const dayOnly = (t) => (t ? String(t).slice(0, 10) : null);
 const cutoffConfirm = new Date(Date.now() - CONFIRMATION_WINDOW_DAYS * 86400000)
   .toISOString().slice(0, 10);
 
-/** Newest confirmation stamp on a deal, as YYYY-MM-DD, or null. */
+/**
+ * Newest PRICE confirmation stamp on a deal, as YYYY-MM-DD, or null.
+ *
+ * Newest-of rather than first-of: priceStampOf() in src/price-freshness.js
+ * returns the first stamp present because the render path only needs to know
+ * whether the row is inside the window. Here the stamp is compared against a
+ * 1-day cutoff, so which of the two is newer decides admission.
+ */
 function newestStamp(deal) {
   let best = null;
-  for (const field of CONFIRMATION_STAMPS) {
+  for (const field of PRICE_CONFIRMATION_STAMPS) {
     const v = dayOnly(deal[field]);
     if (v && (best === null || v > best)) best = v;
   }
