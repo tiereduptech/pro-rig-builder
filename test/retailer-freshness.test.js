@@ -147,6 +147,84 @@ test("STALE fires at budget+1 and not at budget — the boundary is pinned", asy
   assert.deepEqual(kinds(await at("2026-08-13")), ["stale"], "one day past budget (4d) fails");
 });
 
+// ── the max shape, inside the gate that exists to catch the max shape ────────
+
+test("one confirmed row does not vouch for a frozen catalog", async () => {
+  // The Newegg shape on 2026-08-28: newest 1d, median 10d, p90 35d, because
+  // sftp-ingest stamps matchedAt on newly attached deals while the re-pricer
+  // has written nothing. A max reads that retailer as fresh.
+  const products = [
+    product("shop", { price: 1, priceConfirmedAt: "2026-08-17" }),
+    ...Array.from({ length: 99 }, () =>
+      product("shop", { price: 1, priceConfirmedAt: "2026-06-18" })), // 60d
+  ];
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture(products),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+
+  const r = rowFor(a, "shop");
+  assert.equal(r.ageDays, 0, "the newest stamp is today — the old check saw only this");
+  assert.equal(r.medianAgeDays, 60);
+  assert.equal(r.p90AgeDays, 60);
+  assert.deepEqual(kinds(a), ["stale"]);
+  assert.equal(r.verdict, "STALE");
+  assert.match(r.detail, /median confirmed row is 60d old/);
+  // The report must say why the old reading disagreed, not just that it failed.
+  assert.match(r.detail, /reading the newest\s+alone would have reported this retailer as fresh/);
+});
+
+test("one forgotten row does not condemn a healthy catalog", async () => {
+  // Robust in the other direction too: the median is not a max on either end.
+  const products = [
+    ...Array.from({ length: 99 }, () =>
+      product("shop", { price: 1, priceConfirmedAt: "2026-08-17" })),
+    product("shop", { price: 1, priceConfirmedAt: "2025-10-21" }), // 300d
+  ];
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture(products),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+  assert.deepEqual(a.failures, []);
+  assert.equal(rowFor(a, "shop").medianAgeDays, 0);
+  assert.equal(rowFor(a, "shop").p90AgeDays, 0);
+});
+
+test("the MEDIAN boundary is pinned at budget and budget+1", async () => {
+  // Half the rows fresh, half at `old` — median lands on the older half.
+  const at = async (old) =>
+    gate.audit({
+      now: NOW,
+      partsPath: partsFixture([
+        ...Array.from({ length: 50 }, () =>
+          product("shop", { price: 1, priceConfirmedAt: "2026-08-17" })),
+        ...Array.from({ length: 50 }, () =>
+          product("shop", { price: 1, priceConfirmedAt: old })),
+      ]),
+      wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+      cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+    });
+  assert.deepEqual((await at("2026-08-14")).failures, [], "median exactly at budget (3d) passes");
+  assert.deepEqual(kinds(await at("2026-08-13")), ["stale"], "median one day past budget fails");
+});
+
+test("quantiles are null with no stamps, so NEVER CONFIRMED still wins over stale", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1 })]),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+  const r = rowFor(a, "shop");
+  assert.equal(r.medianAgeDays, null, "no stamps must not read as age 0");
+  assert.equal(r.p90AgeDays, null);
+  assert.deepEqual(kinds(a), ["no-stamps"]);
+});
+
 test("SCHEDULE OFF: a commented-out cron fails even when the data is fresh", async () => {
   // The load-bearing case. Newegg's cron was commented out on 2026-07-20 and the
   // data took weeks to visibly rot — this check would have fired the same day.

@@ -22,6 +22,37 @@
 //  So this gate measures the only thing that cannot be faked by a derivation:
 //  the stamp a WRITE PATH leaves on a deal when it actually talked to a retailer.
 //
+//  ── AND IT MEASURES THE MEDIAN ROW, NOT THE NEWEST ──────────────────────────
+//  The staleness check originally read the age of the NEWEST stamp across a
+//  retailer's rows. That is a max, and a max is exactly the shape of the bug
+//  this file exists to catch: one row confirmed today reports the whole
+//  retailer as 0d old, no matter what the other three thousand are doing.
+//
+//  It is not theoretical. Measured against the live catalog on 2026-08-28:
+//
+//    retailer          rows   NEWEST   MEDIAN    P90
+//    newegg            3178       1d      10d    35d
+//    newegg_openbox     182       1d      10d   106d
+//
+//  Newegg's re-pricer has not written a single row since 2026-07-20 — 0 of
+//  3,178 rows carry `refreshedAt` — yet the gate read it as 1d fresh, because
+//  sftp-ingest stamps `matchedAt` on newly ATTACHED deals and a max picks those
+//  up. This gate's own CADENCE note already says sftp-ingest "refreshes nothing
+//  for a row already in the catalog"; the max was quietly counting it anyway.
+//
+//  Today that lie is harmless only by accident: both retailers fail on
+//  schedule-disabled and unscheduled instead. Re-enable Newegg's cron and this
+//  gate goes green while most rows sit stale.
+//
+//  So staleness is judged on the MEDIAN confirmed row. It asks "has the typical
+//  row been confirmed", which is the question the budget was always meant to
+//  answer, and it is robust in both directions: one active row cannot vouch for
+//  a catalog, and one forgotten row cannot condemn it. The newest stamp is
+//  still reported next to it, because the GAP between the two is the diagnostic.
+//
+//  Same reasoning as scripts/price-movement.cjs, which replaced the identical
+//  max in the MSI/Best Buy/Newegg refreshers.
+//
 //  ── WHY IT FAILS INSTEAD OF WARNING ─────────────────────────────────────────
 //  Twice in August a real signal was emitted and ignored. refresh-newegg-prices
 //  reported "0 updated" on every run from 2026-07-06 and kept deleting; the
@@ -295,6 +326,21 @@ function readSchedule(wfDir, file) {
 
 const dayOnly = (t) => (t ? String(t).slice(0, 10) : null);
 
+/**
+ * Age in days of the row at quantile `q` of a list of 'YYYY-MM-DD' stamps.
+ * Oldest first, so q=0.5 is the median row's age and q=0.9 is the age only a
+ * tenth of rows are worse than. Null for an empty list — "no rows" is a
+ * different verdict (NEVER CONFIRMED) and must not read as age 0.
+ */
+function quantileAgeDays(stamps, q, now) {
+  if (!stamps || !stamps.length) return null;
+  const ages = stamps
+    .map((s) => Math.floor((now - Date.parse(s + 'T00:00:00Z')) / DAY_MS))
+    .sort((a, b) => a - b);
+  const i = Math.min(ages.length - 1, Math.floor(ages.length * q));
+  return ages[i];
+}
+
 /** Per-retailer stamp rollup from parts.js. */
 async function readCatalog(partsPath) {
   if (!fs.existsSync(partsPath)) throw new Error(`parts.js not found at ${partsPath}`);
@@ -308,7 +354,7 @@ async function readCatalog(partsPath) {
     const deals = (p && p.deals) || {};
     for (const [name, d] of Object.entries(deals)) {
       if (!d || typeof d !== 'object') continue;
-      const r = (retailers[name] ??= { rows: 0, stamped: 0, negative: 0, newest: null, byStamp: {} });
+      const r = (retailers[name] ??= { rows: 0, stamped: 0, negative: 0, newest: null, ages: [], byStamp: {} });
       r.rows++;
 
       const found = [];
@@ -327,6 +373,10 @@ async function readCatalog(partsPath) {
       if (failedAt && failedAt > best) continue;
 
       r.stamped++;
+      // Every confirmed row's stamp, not just the winner. `newest` alone is a
+      // MAX, and a max cannot distinguish "this retailer is being confirmed"
+      // from "one row of this retailer was confirmed". See the header.
+      r.ages.push(best);
       if (!r.newest || best > r.newest) r.newest = best;
     }
   }
@@ -371,7 +421,11 @@ async function audit(opts = {}) {
       negative: r.negative,
       byStamp: r.byStamp,
       newest: r.newest,
+      // ageDays is the age of the NEWEST stamp — reported, never gated on. The
+      // gate reads medianAgeDays; see the header for why.
       ageDays: r.newest == null ? null : Math.floor((now - Date.parse(r.newest + 'T00:00:00Z')) / DAY_MS),
+      medianAgeDays: quantileAgeDays(r.ages, 0.5, now),
+      p90AgeDays: quantileAgeDays(r.ages, 0.9, now),
       budgetDays: null,
       cite: null,
       verdict: null,
@@ -452,12 +506,25 @@ async function audit(opts = {}) {
       continue;
     }
 
-    // 5. Staleness.
-    if (row.ageDays > row.budgetDays) {
+    // 5. Staleness — measured on the MEDIAN row, not the newest one.
+    //
+    //    `ageDays` (the newest stamp anywhere) is what this check used to read,
+    //    and it is a max: a single confirmed row reports the whole retailer as
+    //    fresh. That is the same failure this file was written about, rebuilt
+    //    inside the gate meant to catch it.
+    //
+    //    The median asks "has the TYPICAL row been confirmed", which is the
+    //    question the budget was always meant to answer, and it is robust in
+    //    both directions — one active row cannot vouch for the catalog, and one
+    //    forgotten row cannot condemn it.
+    if (row.medianAgeDays > row.budgetDays) {
       row.verdict = 'STALE';
       row.detail =
-        `newest confirmation ${row.newest} is ${row.ageDays}d old, over the ${row.budgetDays}d budget ` +
-        `(${workflow} [${cron}] x ${MISSED_CYCLES_ALLOWED} missed cycles) — the job is scheduled but not landing`;
+        `the median confirmed row is ${row.medianAgeDays}d old (p90 ${row.p90AgeDays}d), over the ` +
+        `${row.budgetDays}d budget (${workflow} [${cron}] x ${MISSED_CYCLES_ALLOWED} missed cycles) — ` +
+        `the job is scheduled but not landing across the catalog. ` +
+        `Newest stamp anywhere is ${row.newest} (${row.ageDays}d), which is why reading the newest ` +
+        `alone would have reported this retailer as fresh.`;
       failures.push({ retailer: name, kind: 'stale', detail: row.detail });
       rows.push(row);
       continue;
@@ -488,15 +555,20 @@ function report(a) {
   console.log(`policy: ${a.policy.MISSED_CYCLES_ALLOWED} missed cycles allowed, ${a.policy.MIN_BUDGET_DAYS}d floor`);
   console.log(`stamps: ${a.policy.CONFIRMATION_STAMPS.join(', ')}\n`);
 
+  // MEDIAN is the gated column; NEWEST/AGE are shown beside it because the gap
+  // between them is the whole point — a retailer reading 0d newest and 35d
+  // median is one where a handful of rows are carrying the report.
   console.log(
     pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('NEWEST', 13) +
-    padL('AGE', 6) + padL('BUDGET', 8) + '  VERDICT'
+    padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 8) + '  VERDICT'
   );
-  console.log('-'.repeat(88));
+  console.log('-'.repeat(103));
   for (const r of a.rows) {
     console.log(
       pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) + padL(r.newest, 13) +
       padL(r.ageDays == null ? '-' : r.ageDays + 'd', 6) +
+      padL(r.medianAgeDays == null ? '-' : r.medianAgeDays + 'd', 8) +
+      padL(r.p90AgeDays == null ? '-' : r.p90AgeDays + 'd', 7) +
       padL(r.budgetDays == null ? '-' : r.budgetDays + 'd', 8) + '  ' + r.verdict
     );
     if (r.cite) console.log(' '.repeat(20) + 'confirmed by: ' + r.cite);
