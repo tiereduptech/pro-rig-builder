@@ -1,16 +1,82 @@
 name: Refresh Newegg Prices
 
+# =============================================================================
+#  ── WHY THE SCHEDULE IS BACK ON ─────────────────────────────────────────────
+#  The cron was disabled on 2026-07-20 (ac86be5206b) with this reason:
+#
+#    "searchBySku looks up Newegg item numbers via productsearch/1.0 `keyword=`,
+#     which does not index SKUs. Every lookup misses, so the job stamps
+#     staleSince and deletes the deal 7 days later ... it can only delete, never
+#     repair. Re-enable ONLY after SKU lookup is fixed and verified against the
+#     live feed."
+#
+#  That condition was met the same day. 058b6959700, committed hours after the
+#  disable, replaced searchBySku() with newegg-match.js's searchNewegg() —
+#  name + UPC matching, the path ingest already uses successfully — and split
+#  outcomes into LOOKUP_FAILED (touches nothing: not the price, not staleSince,
+#  not the streak) and CONFIRMED_ABSENT. The schedule was simply never turned
+#  back on.
+#
+#  "Verified against the live feed" is also met. Manual dry run 2026-08-17
+#  (run 32051310089), 50 rows:
+#
+#    Matched OK ....... 38  (repriced 22, unchanged 15, migrated 4, rematched 1)
+#    Lookup failed .... 12  (no change written)
+#    Feed failure rate  12.0%  (breaker at 20%)
+#    Removed ........... 0
+#
+#  The cost of leaving it off is not theoretical. As of 2026-08-28 Newegg is
+#  3,178 priced rows and ZERO of them carry `refreshedAt` — no row has been
+#  repriced in 39 days. It is the largest priced retailer after Amazon, and it
+#  is in exactly the state deals.msi was in when refresh-msi-prices.yml was
+#  written, at twenty times the row count. Its apparent freshness came from
+#  sftp-ingest's matchedAt on newly ATTACHED deals, which refreshes nothing
+#  already in the catalog — the lie that scripts/assert-retailer-freshness.cjs
+#  now reports as a 10d median against a 1d newest.
+#
+#  ── WHAT IS STILL BLOCKED, AND WHY THAT IS NOT THIS ─────────────────────────
+#  REMOVALS_ENABLED = false, hard-coded at refresh-newegg-prices.cjs:107 with
+#  three stated conditions that are NOT met. It is deliberately not a CLI flag
+#  or workflow input, so no schedule and no dispatch can reach it. That is the
+#  gate on the 2026-07-06 incident (1,655 deletions, ~904 of them live), and it
+#  stays shut. Its own comment states the resulting posture exactly: "until then
+#  this script is a re-pricer that records absence evidence."
+#
+#  So what this schedule turns back on is repricing. Deletion is unreachable
+#  from here, by construction rather than by care.
+#
+#  ── THE SLOT ────────────────────────────────────────────────────────────────
+#  NOT the original '0 6,18 * * *'. 06:00 is prerender's slot, and prerender is
+#  in the same `main-writer` concurrency group and runs 45-49 min (measured:
+#  06:25->07:10, 16:58->17:47, 17:47->18:36). This job is the second-longest
+#  writer in the repo — ~1s/row against the Rakuten feed, so ~53 min over 3,178
+#  rows — so the two would have queued nose-to-tail into price-history at 07:00
+#  every single night.
+#
+#    01:00  refresh-bestbuy-prices     ~16 min
+#    02:00  refresh-msi-prices         ~1 min
+#    03:00  asin-identity-audit        ~10 min
+#    04:00  THIS JOB                   ~53 min  (finishes ~04:55)
+#    06:00  prerender                  ~49 min
+#    07:00  price-history              ~3 min
+#    12:00  sftp-ingest                ~52 min
+#    16:00  THIS JOB                   ~53 min  (finishes ~16:55)
+#    20:00  verify-catalog
+#
+#  04:00 sits after the ASIN audit and finishes an hour before prerender, so a
+#  price this job fixes reaches the static pages the same night rather than
+#  waiting a day — the same argument refresh-msi-prices.yml makes for 02:00.
+#  16:00 is clear of everything scheduled. Frequency is unchanged from what the
+#  CADENCE table already justifies; only the hours moved.
+#
+#  Note that this job's own commit touches src/data/parts/**, which triggers
+#  prerender on its own (behind a 4h burst guard). That is intended and is why
+#  the slot leaves prerender's scheduled run room rather than racing it.
+# =============================================================================
+
 on:
-  # DISABLED 2026-07-20 — searchBySku looks up Newegg item numbers via
-  # productsearch/1.0 `keyword=`, which does not index SKUs. Every lookup misses,
-  # so the job stamps staleSince and deletes the deal 7 days later. It has a 100%
-  # failure rate (0 of 5,428 products carry refreshedAt) and reported "0 updated"
-  # on every run since 2026-07-06 — it can only delete, never repair. This fuse
-  # already destroyed 1,655 deals on 7/06 (429 of them good first-party N82E
-  # listings) and was eating the surviving 62 twice a day.
-  # Re-enable ONLY after SKU lookup is fixed and verified against the live feed.
-  # schedule:
-  #   - cron: "0 6,18 * * *"
+  schedule:
+    - cron: "0 4,16 * * *"   # after the ASIN audit, clear of the 06:00 prerender
   workflow_dispatch:
     inputs:
       dry_run:
