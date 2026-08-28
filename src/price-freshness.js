@@ -14,11 +14,15 @@
 // refresh tier x two missed cycles, i.e. long enough that a gap is a real
 // outage rather than one skipped run.
 //
-// Both of those files already cite "PRICE_STALE_AFTER_DAYS in src/App.jsx" as
-// their justification. It had never been defined there. Two backend thresholds
-// were anchored to a frontend gate that did not exist, which is a large part of
-// why the gap stayed invisible for so long — the backend read as though the
-// frontend were enforcing something. Defining it makes those comments true.
+// Both of those files justified their own window by citing
+// "PRICE_STALE_AFTER_DAYS in src/App.jsx". It had never been defined there.
+// Two backend thresholds were anchored to a frontend gate that did not exist,
+// which is a large part of why the gap stayed invisible for so long — the
+// backend read as though the frontend were enforcing something.
+//
+// Both now cite THIS file, which is the one place the number exists. If it
+// moves again, move those two comments with it: a threshold whose stated
+// derivation points at the wrong file is how this started.
 //
 // Change this and you change what the site is willing to put its name on.
 export const PRICE_STALE_AFTER_DAYS = 14;
