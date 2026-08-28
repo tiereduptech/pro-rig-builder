@@ -4,11 +4,37 @@ on:
   # Nightly at 06:00 UTC (01:00 CT). Adjust if you want a different time.
   schedule:
     - cron: '0 6 * * *'
-  # Also run when parts.js changes on main (catches manual product edits + daily ingest commits).
+  # Also run when the catalog changes on main (manual product edits + the daily
+  # ingest and refresh commits).
+  #
+  # ── WHY parts/** AND NOT JUST parts.js ──────────────────────────────────────
+  # This trigger listed only 'src/data/parts.js' and had therefore fired ZERO
+  # times in the 14 days to 2026-08-28, while src/data/parts/ changed in 59
+  # commits over the same window.
+  #
+  # The path was correct when it was written and stopped being correct at the
+  # split (scripts/split-parts-by-cat.cjs). parts.js is now an auto-generated
+  # BARREL of per-category imports, and every writer goes through
+  # scripts/write-catalog.cjs, which writes the literal, re-splits into
+  # parts/<cat>.js, and regenerates the barrel — byte-identical unless a
+  # CATEGORY is added or removed. So the one file being watched is the one file
+  # a price change cannot touch. Every price fix has been waiting for the 06:00
+  # cron, silently, since the split.
+  #
+  # ── AND WHY THE INTERVAL GUARD BELOW IS PART OF THE SAME FIX ────────────────
+  # Turning this path on without one would be a regression, not a fix. The
+  # catalog changes ~4.2x/day in bursts (bestbuy 02:00, verify tiers 08/09/10/11
+  # and again 19-21, sftp 12:30), each run here costs ~50 min, and this workflow
+  # holds `main-writer`. GitHub keeps ONE running plus ONE pending run per
+  # concurrency group: a third arrival cancels the pending one. So a burst of
+  # hourly verify tiers behind a 50-minute prerender would start cancelling
+  # verify tiers — grey, unnotified, and the exact failure that let 55 of 64
+  # SFTP runs disappear. See the guard step in the job below.
   push:
     branches: [main]
     paths:
       - 'src/data/parts.js'
+      - 'src/data/parts/**'
   # Manual trigger from the Actions tab.
   workflow_dispatch:
 
@@ -24,7 +50,72 @@ permissions:
   contents: write  # needed to commit dist/ back to main
 
 jobs:
+  # A cheap job so the expensive one can be skipped WITHOUT holding `main-writer`
+  # for 50 minutes. Splitting it out rather than putting `if:` on nine steps: a
+  # step-level guard still checks out the repo and still occupies the lock for
+  # the life of the job, which is most of what we are trying not to spend.
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      # Reads this workflow's own run history. contents:read is not strictly
+      # required for the Actions API but keeps `gh` from 403-ing on a private
+      # repo; deliberately NOT contents:write — this job must never be able to
+      # push, which is half the reason it is separate from the one that does.
+      actions: read
+      contents: read
+    outputs:
+      skip: ${{ steps.guard.outputs.skip }}
+    steps:
+      # ── Burst guard ─────────────────────────────────────────────────────────
+      # Only for PUSH events. The nightly cron and a manual dispatch always run:
+      # the cron is the floor that guarantees the site is never more than a day
+      # behind, and a human clicking Run wants it run.
+      #
+      # A push-triggered prerender is SKIPPED when a successful prerender
+      # finished less than MIN_PUSH_INTERVAL_HOURS ago, because its output would
+      # be nearly identical and its real cost is 50 minutes of the `main-writer`
+      # lock taken from the writers queued behind it.
+      #
+      # 4 hours is chosen against the observed shape of the commits, not picked
+      # round: the bursts are the four verify tiers an hour apart (08-11 and
+      # 19-21). A 4h window collapses each burst to one render while still
+      # letting the 02:00 refreshes, the 12:30 ingest and the evening tiers each
+      # get their own. Worst case 6 runs/day, typical 3-4 — against a floor of 1
+      # today, and a worst case of ~9 with no guard at all.
+      #
+      # Net effect: a price fix reaches the static pages within ~4h instead of
+      # waiting up to 24h for the nightly.
+      - name: Skip if a prerender ran recently (push events only)
+        id: guard
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MIN_PUSH_INTERVAL_HOURS: '4'
+        run: |
+          set -euo pipefail
+          LAST=$(gh api \
+            "repos/${GITHUB_REPOSITORY}/actions/workflows/prerender.yml/runs?status=success&per_page=1" \
+            --jq '.workflow_runs[0].updated_at // empty' || true)
+          if [ -z "$LAST" ]; then
+            echo "No successful prerender on record — running."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          AGE=$(( ( $(date -u +%s) - $(date -u -d "$LAST" +%s) ) / 60 ))
+          echo "Last successful prerender: $LAST (${AGE} min ago), window $(( MIN_PUSH_INTERVAL_HOURS * 60 )) min."
+          if [ "$AGE" -lt "$(( MIN_PUSH_INTERVAL_HOURS * 60 ))" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Skipping — a prerender completed ${AGE} min ago. The 06:00 cron is the floor; the next push after the window will render."
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
   prerender:
+    needs: guard
+    # A push inside the window is skipped here. The cron and workflow_dispatch
+    # set no skip output at all, so the comparison is false and they always run.
+    if: needs.guard.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
 
