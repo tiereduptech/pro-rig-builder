@@ -505,32 +505,28 @@ if (APPLY && !breakers.length) {
   }
 }
 
-// ── How long has MSI itself been quiet? ──────────────────────────────────────
+// ── How much of MSI is actually repricing? ───────────────────────────────────
 // Read off priceLastMovedAt across every MSI deal in the catalog — the stamp
-// that only a real price change can advance. This is the number the workflow
-// asserts on, and the reason a frozen Impact feed cannot masquerade as a
-// healthy job: the run would still succeed, still join every row, still stamp
-// priceConfirmedAt — and this would keep climbing until it goes red.
+// that only a real price change can advance. This is what the workflow asserts
+// on, and the reason a frozen Impact feed cannot masquerade as a healthy job:
+// the run would still succeed, still join every row, still stamp
+// priceConfirmedAt — and these numbers would keep degrading until it goes red.
 //
-// 0 when no row carries the stamp yet. The first apply run establishes the
-// baseline (it has 93 days of drift to move), so "no evidence of staleness" is
-// the honest reading on run 1 rather than an instant false alarm.
-const MS_DAY = 86400000;
-const nowMs = Date.parse(today + 'T00:00:00Z');
-let newestMove = null;
-for (const p2 of parts) {
-  const stamp = p2.deals && p2.deals.msi && p2.deals.msi.priceLastMovedAt;
-  if (!stamp) continue;
-  const t = Date.parse(stamp + 'T00:00:00Z');
-  if (Number.isFinite(t) && (newestMove == null || t > newestMove)) newestMove = t;
-}
-const daysSinceAnyPriceMoved = newestMove == null ? 0 : Math.max(0, Math.round((nowMs - newestMove) / MS_DAY));
+// This used to be a single number: the age of the NEWEST stamp anywhere. That
+// is a max, and a max cannot see a PARTIAL freeze — one SKU repricing weekly
+// held it at 0 while the other 156 rows sat untouched. Best Buy hid for four
+// months in exactly that shape. scripts/price-movement.cjs replaces it with the
+// distribution across rows, and keeps the old max as one field of it.
+const { movementFor, report: movementReport } = require('./scripts/price-movement.cjs');
+const APPLIED = APPLY && !breakers.length;
+const priceMovement = movementFor({ parts, retailer: 'msi', today, apply: APPLIED });
+const daysSinceAnyPriceMoved = priceMovement.daysSinceAnyPriceMoved;
 
 // ── Summary artifact ─────────────────────────────────────────────────────────
 const movement = priceChanged + stockChanged;
 const summary = {
   ranAt: new Date().toISOString(),
-  apply: APPLY && !breakers.length,
+  apply: APPLIED,
   source: FROM_FEED ? { replayOf: path.relative(ROOT, path.resolve(FROM_FEED)) } : { api: 'impact-mediapartners', catalogId: CATALOG_ID },
   options: { sanityGate: !NO_SANITY, minOverlap: MIN_OVERLAP, limit: N || null },
   join: {
@@ -556,9 +552,14 @@ const summary = {
     comparable, cliffs,
     dealsWritten: written,
     // Watched by the workflow. See the block above for why this and not
-    // priceConfirmedAt.
+    // priceConfirmedAt. Kept at its old path so the assertion that has been
+    // running against it does not silently start reading `undefined`.
     daysSinceAnyPriceMoved,
   },
+  // The distribution the workflow's freeze alarm reads. `totals` above counts
+  // what THIS run did; this counts what MSI has been doing across the catalog,
+  // which is the question a frozen feed answers wrongly.
+  movement: priceMovement,
   // The observation the watcher reads. See NO_MOVEMENT_IS_SUSPICIOUS.
   movementObserved: movement > 0,
   breakers,
@@ -573,7 +574,8 @@ mkdirSync(path.join(ROOT, 'verify-reports'), { recursive: true });
 writeFileSync(path.join(ROOT, 'verify-reports', `msi-refresh-${today}.json`), JSON.stringify(summary, null, 2));
 console.log(`\n  Report: ${path.relative(ROOT, SUMMARY_OUT)}`);
 
-console.log(`  days since any MSI price moved .. ${newestMove == null ? 'no stamp yet — this run establishes the baseline' : daysSinceAnyPriceMoved}`);
+console.log('');
+for (const line of movementReport(priceMovement)) console.log(line);
 
 if (NO_MOVEMENT_IS_SUSPICIOUS && !movement && !breakers.length) {
   console.log('\n  ⚠ The feed joined but NOTHING moved — no price change, no stock flip.');

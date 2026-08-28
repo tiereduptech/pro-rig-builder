@@ -172,9 +172,13 @@ const CADENCE = {
       'catalog — the refresher only moves price and stock on rows whose identity is already ' +
       'settled, which is the same reason sftp-ingest.yml is not the right cite for newegg. ' +
       'Impact returns no per-item upstream timestamp, so MSI rows cannot get the 90-day upstream ' +
-      'hold Best Buy rows get. The compensating check is daysSinceAnyPriceMoved, asserted in the ' +
-      'workflow against a stamp only a real price change can advance, because a frozen Impact ' +
-      'feed would otherwise produce a green run and a fresh priceConfirmedAt on a May price.',
+      'hold Best Buy rows get. The compensating checks are daysSinceAnyPriceMoved and ' +
+      'movement.freezeAlarm, both asserted in the workflow against priceLastMovedAt — a stamp ' +
+      'only a real price change can advance — because a frozen Impact feed would otherwise ' +
+      'produce a green run and a fresh priceConfirmedAt on a May price. The second is a ' +
+      'distribution across rows rather than the age of the newest stamp anywhere: a max is held ' +
+      'at 0 by any single active SKU, which is how a partial freeze hides. See ' +
+      'scripts/price-movement.cjs.',
   },
 
   newegg_openbox: {
