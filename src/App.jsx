@@ -6,6 +6,7 @@ import ProductPage from "./ProductPage.jsx";
 import { bundleH1, bundleLdName } from "./bundle-name.js";
 import { priceStampOf, isFresh, priceAgeDays } from "./price-freshness.js";
 import { showBestBadge, unconfirmedBadgeText } from "./retailer-badges.js";
+import { msrpIsTrustworthy, featuredDealEligible } from "./deal-eligibility.js";
 // PARTS comes from parts-frontend.js, which dynamic-imports per-category
 // modules so Vite can ship them as separate chunks. The array starts empty
 // and is mutated in place as categories load — main.jsx awaits an initial
@@ -610,10 +611,19 @@ const dealPrice = d => {
 // The rule lives in src/price-freshness.js so that the report which measures
 // this gate's impact runs the same predicate the page runs. See that file for
 // why 14 days, why matchedAt does not count, and why a missing stamp is stale.
-const bestPrice = p => {
-  if (!p.deals || typeof p.deals !== "object") return p.pr;
-  const allRetailers = Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && dealPrice(p.deals[k]) != null);
-  if (!allRetailers.length) return p.pr;
+// The retailers on a row that carry a usable price.
+const pricedRetailers = p => (p && p.deals && typeof p.deals === "object")
+  ? Object.keys(p.deals).filter(k => typeof p.deals[k] === "object" && dealPrice(p.deals[k]) != null)
+  : [];
+
+// WHICH retailer sets the quoted price. Split out of bestPrice so callers can
+// ask about the winning row itself — whether it is confirmed, above all —
+// without re-deriving the selection and risking a second copy that drifts.
+// bestPrice used to end in Math.min over the same key set; picking the minimum
+// element instead of the minimum value is the same answer.
+const bestDealKey = p => {
+  const allRetailers = pricedRetailers(p);
+  if (!allRetailers.length) return null;
   // Prefer in-stock retailers; fall back to any retailer only if none are in stock
   const inStock = allRetailers.filter(k => p.deals[k].inStock !== false);
   // Then prefer FRESH ones, with the same fall-back shape: a stale price is
@@ -622,9 +632,41 @@ const bestPrice = p => {
   const stocked = inStock.length ? inStock : allRetailers;
   const fresh = stocked.filter(k => isFresh(p.deals[k]));
   const keys = fresh.length ? fresh : stocked;
-  return Math.min(...keys.map(k => dealPrice(p.deals[k])));
+  let best = keys[0];
+  for (const k of keys) if (dealPrice(p.deals[k]) < dealPrice(p.deals[best])) best = k;
+  return best;
+};
+const bestPrice = p => {
+  const k = bestDealKey(p);
+  return k === null ? p.pr : dealPrice(p.deals[k]);
 };
 const $ = p => bestPrice(p);
+
+// ── DEAL EVIDENCE ────────────────────────────────────────────────────────────
+// The inputs src/deal-eligibility.js needs. The POLICY — which questions get
+// asked, and the thresholds — lives in that module; this is only the plumbing,
+// the same split as src/price-freshness.js.
+//
+// `fresh` is about the row that SET the price, not "some row is fresh":
+// bestPrice falls back to a stale row when nothing fresher exists, and the
+// winning row is the one we would be standing behind.
+const dealEvidence = p => {
+  const k = bestDealKey(p);
+  let minMatchScore = null;
+  for (const d of Object.values((p && p.deals) || {})) {
+    if (d && typeof d.matchScore === "number" && (minMatchScore === null || d.matchScore < minMatchScore)) {
+      minMatchScore = d.matchScore;
+    }
+  }
+  return {
+    msrp: p.msrp ?? null,
+    pr: p.pr ?? null,
+    price: bestPrice(p),
+    fresh: k !== null && isFresh(p.deals[k]),
+    retailerCount: pricedRetailers(p).length,
+    minMatchScore,
+  };
+};
 const VALUE_DIVISORS={
   Mouse:15,Keyboard:15,Headset:15,Microphone:15,Webcam:15,MousePad:15,ExtensionCables:15,CaseFan:15,
   CPUCooler:18,
@@ -3406,8 +3448,17 @@ function HomePage({go,browse,th}){
   const totalParts=P.length;
   const totalDeals=P.filter(p=>isDeal(p)).length;
   const benchedCount=P.filter(p=>p.bench!=null).length;
-  // Featured deals — top 3 by savings, deduped by category
-  const featuredDeals=(()=>{const all=P.filter(p=>isDeal(p)).sort((a,b)=>dealSavings(b)-dealSavings(a));const seen=new Set();const out=[];for(const p of all){if(!seen.has(p.c)){seen.add(p.c);out.push(p);if(out.length>=3)break;}}return out;})();
+  // Featured deals — top 3 by savings, deduped by category, drawn ONLY from the
+  // pool that can support a savings claim (see src/deal-eligibility.js).
+  //
+  // The eligibility filter is the fix, not the sort. Sorting by savings over
+  // every row with msrp > price meant ranking did all the selection work, and a
+  // maximum over a noisy estimate returns the noise: the biggest gap and the
+  // worst data are the same rows. That is how "ASUS case, $399.99, was
+  // $1,206.66, save $807" reached the top of the front page. Ranking by savings
+  // is fine — once every candidate is already defensible, it can no longer
+  // manufacture the claim it is ranking on.
+  const featuredDeals=(()=>{const all=P.filter(p=>isDeal(p)&&featuredDealEligible(dealEvidence(p))).sort((a,b)=>dealSavings(b)-dealSavings(a));const seen=new Set();const out=[];for(const p of all){if(!seen.has(p.c)){seen.add(p.c);out.push(p);if(out.length>=3)break;}}return out;})();
   const updatedDate=new Date().toLocaleDateString('en-US',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
 
   return <div className="fade">
@@ -3545,7 +3596,10 @@ function HomePage({go,browse,th}){
               </div>
               <div style={{textAlign:"right"}}>
                 <div style={{fontFamily:"var(--ff-display)",fontSize:22,fontWeight:600,color:"var(--accent)",letterSpacing:"-0.02em",lineHeight:1}}>{"$"+price.toLocaleString()}</div>
-                <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through",marginTop:2}}>{"$"+p.msrp}</div>
+                {/* Formatted like the price above it. This printed a raw
+                    `p.msrp`, so a $4,999 reference rendered "$4999" directly
+                    under a price that had been through toLocaleString. */}
+                <div style={{fontFamily:"var(--mono)",fontSize:11,color:"var(--mute)",textDecoration:"line-through",marginTop:2}}>{"$"+Number(p.msrp).toLocaleString()}</div>
                 <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--accent)",marginTop:2,fontWeight:600}}>Save {"$"+savings.toLocaleString()}</div>
               </div>
             </button>;
@@ -4372,8 +4426,14 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                       ); return _f || <div style={{flex:1}}/>; })()}
                     </div>
                   </div>
-                  {!(p.msrp&&p.msrp>$(p))&&saveSpan&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</div>}
-                  {p.msrp&&p.msrp>$(p)&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{saveSpan&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
+                  {/* These two are complements and must stay so: the Below MSRP panel
+                      carries the cross-retailer saveSpan inside it, and this line shows
+                      that span when the panel is withheld. The gate is
+                      msrpIsTrustworthy, NOT p.msrp>price — msrp is the price we observed
+                      at ingest, so on 4,342 of 6,937 rows it equals p.pr and the panel
+                      was comparing our own number to itself. See src/deal-eligibility.js. */}
+                  {!msrpIsTrustworthy(dealEvidence(p))&&saveSpan&&<div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",marginTop:8}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</div>}
+                  {msrpIsTrustworthy(dealEvidence(p))&&<div style={{display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:6,background:"var(--bg4)",border:"1px solid var(--bdr)",marginTop:8,position:"relative"}}><span style={{fontSize:17}}>💰</span><div style={{flex:1}}><div style={{fontFamily:"var(--ff)",fontSize:13,fontWeight:600,color:"var(--txt)"}}>Below MSRP</div><div style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)"}}>Was <span style={{textDecoration:"line-through"}}>${fmtPrice(p.msrp)}</span> → ${fmtPrice($(p))}</div></div><div style={{position:"absolute",left:"50%",transform:"translateX(-50%)",display:"flex",justifyContent:"center",pointerEvents:"none"}}>{saveSpan&&<span style={{fontFamily:"var(--ff)",fontSize:13,color:"var(--dim)",textAlign:"center",whiteSpace:"nowrap"}}>Save <span style={{color:"var(--mint)",fontWeight:600}}>${(saveSpan.high.price-saveSpan.low.price).toFixed(2)}</span> at {saveSpan.low.name} vs {saveSpan.high.name}</span>}</div><span style={{fontFamily:"var(--ff)",fontSize:17,fontWeight:700,color:"var(--mint)"}}>{Math.round((1-$(p)/p.msrp)*100)}% off</span></div>}
                   {/* Product Image */}
                   {(p.used===true||p.condition==="used")&&<div style={{marginTop:14,background:"linear-gradient(90deg,#F59E0B 0%,#D97706 100%)",color:"#1A1A20",padding:"10px 14px",borderRadius:8,fontFamily:"var(--ff)",fontSize:13,fontWeight:700,display:"flex",alignItems:"center",gap:10,border:"1px solid #D97706"}}><span style={{fontFamily:"var(--mono)",fontSize:13,fontWeight:900,letterSpacing:1.5,background:"#1A1A20",color:"#F59E0B",padding:"3px 8px",borderRadius:4}}>USED</span><span>Pre-owned item — check seller rating, condition notes, and return policy before purchasing.</span></div>}{p.img&&<div style={{marginTop:14,background:"var(--bg4)",borderRadius:10,padding:16,display:"flex",alignItems:"center",justifyContent:"center"}}>
                     <img loading="lazy" decoding="async" src={p.img.replace('_AC_SL300_','_AC_SL500_')} alt={`${p.n}${p.c ? ' ' + p.c : ''}`} style={{maxWidth:"100%",maxHeight:220,objectFit:"contain",borderRadius:6}}/>
