@@ -184,11 +184,29 @@ test('movementFor threads the recorded epoch into the measurement', () => {
   const file = tmpWatch({ msi: '2026-01-01' });
   const m = movementFor({
     parts: Array.from({ length: 100 }, () => row('msi', 300)),
-    retailer: 'msi', today: TODAY, apply: false, watchFile: file,
+    retailer: 'msi', today: TODAY, wroteStamps: false, watchFile: file,
   });
   assert.strictEqual(m.watchStartedAt, '2026-01-01');
   assert.strictEqual(m.warmedUp, true);
   assert.strictEqual(m.freezeAlarm, 1);
+});
+
+// A live run seeds the epoch even when the run itself found the feed unhealthy.
+// The refreshers used to pass `apply && !breakers.length` here, so an unhealthy
+// feed could never start the clock on the alarm that watches for an unhealthy
+// feed. movementFor's only question is whether stamps were written.
+test('a live run seeds the epoch on the same call that reports a bad feed', () => {
+  const file = tmpWatch(null);
+  const m = movementFor({
+    parts: Array.from({ length: 100 }, () => row('newegg', 300)),
+    retailer: 'newegg', today: TODAY, wroteStamps: true, watchFile: file,
+  });
+  assert.strictEqual(m.watchStartedAt, TODAY);
+  assert.strictEqual(m.warmedUp, false, 'day one of the watch is not warmed up');
+  assert.deepStrictEqual(
+    JSON.parse(fs.readFileSync(file, 'utf8')), { newegg: TODAY },
+    'the epoch must be on disk after a live run, so the next run measures 1d not 0d',
+  );
 });
 
 // ── input handling ───────────────────────────────────────────────────────────

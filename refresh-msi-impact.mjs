@@ -519,7 +519,9 @@ if (APPLY && !breakers.length) {
 // distribution across rows, and keeps the old max as one field of it.
 const { movementFor, report: movementReport } = require('./scripts/price-movement.cjs');
 const APPLIED = APPLY && !breakers.length;
-const priceMovement = movementFor({ parts, retailer: 'msi', today, apply: APPLIED });
+// wroteStamps answers only "did this run persist priceLastMovedAt". It must
+// never be gated on breakers or health findings — see movementFor.
+const priceMovement = movementFor({ parts, retailer: 'msi', today, wroteStamps: APPLIED });
 const daysSinceAnyPriceMoved = priceMovement.daysSinceAnyPriceMoved;
 
 // ── Summary artifact ─────────────────────────────────────────────────────────

@@ -909,7 +909,10 @@ if (APPLY && !breakers.length) {
 // measured off eight days of THIS job's own summaries.
 const { movementFor, report: movementReport } = require('./scripts/price-movement.cjs');
 const priceMovement = movementFor({
-  parts, retailer: 'bestbuy', today, apply: APPLY && !breakers.length,
+  parts, retailer: 'bestbuy', today,
+  // Not gated on `breakers` — a tripped breaker blocks removals, not stamps,
+  // so it must not block the epoch that dates them. See movementFor.
+  wroteStamps: APPLY,
   // --n limits this run to the first N rows; scope movedShare to them so it
   // stays a ratio of one population. See PARTIAL RUNS in price-movement.cjs.
   ...(N ? { scopeIds: targets.map(x => x.id) } : {}),
