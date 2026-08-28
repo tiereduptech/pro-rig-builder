@@ -452,6 +452,20 @@ function chooseCandidate(p, candidates) {
     const skuChanged = String(item.sku).trim() !== String(sku).trim();
     const priceChanged = item.price !== oldPrice || (newSale || 0) !== oldSale || newLink !== d.linkurl;
 
+    // ── The stamp that cannot be manufactured ─────────────────────────────────
+    // refreshedAt below advances on every successful lookup, including the
+    // `unchanged` branch — so it proves the feed answered, never that the
+    // answer was new. That is the same gap that let Best Buy sit frozen for
+    // four months while every downstream artifact looked alive.
+    //
+    // priceLastMovedAt advances only when the NUMBER moved. Deliberately
+    // narrower than `priceChanged` above, which also trips on a link-only
+    // change: a new affiliate URL is not a reprice, and counting it as one
+    // would let a frozen feed keep the movement distribution looking healthy.
+    // scripts/price-movement.cjs reads these across the catalog.
+    const priceMoved = item.price !== oldPrice || (newSale || 0) !== oldSale;
+    const movedStamp = priceMoved ? new Date().toISOString().slice(0, 10) : d.priceLastMovedAt;
+
     if (skuChanged) {
       p.deals.newegg = {
         sku: item.sku,
@@ -464,6 +478,10 @@ function chooseCandidate(p, candidates) {
         matchMethod: pick.match.method,
         matchScore: Number(pick.match.score.toFixed(2)),
         refreshedAt: new Date().toISOString(),
+        // This branch REPLACES deals.newegg wholesale, so the stamp has to be
+        // carried across explicitly or a re-match would silently erase the
+        // row's movement history and read as never-moved forever after.
+        ...(movedStamp ? { priceLastMovedAt: movedStamp } : {}),
         ...(kind === 'migrate'
           ? { migratedAt: new Date().toISOString(), migratedFrom: sku }
           : { rematchedAt: new Date().toISOString(), rematchedFrom: sku }),
@@ -482,6 +500,7 @@ function chooseCandidate(p, candidates) {
       if (newSale) d.saleprice = newSale; else delete d.saleprice;
       d.linkurl = newLink;
       d.refreshedAt = new Date().toISOString();
+      if (priceMoved) d.priceLastMovedAt = movedStamp;
       stats.priced++;
       changes.push({ name: p.n, change: 'price-update', from: oldPrice, to: item.price, sku });
     } else {
@@ -554,10 +573,31 @@ function chooseCandidate(p, candidates) {
     for (const [k, v] of Object.entries(byReason).sort((a, b) => b[1] - a[1])) console.log(`   ${v.toString().padStart(4)}  ${k}`);
   }
 
+  // ── How much of Newegg is actually repricing? ──────────────────────────────
+  // This job had no outcome assertion at all — its workflow reads the summary
+  // inside `if [ -f ... ]`, which is the precise shape scripts/assert-outcome.cjs
+  // was written to kill. It also reported "0 updated" on every run from
+  // 2026-07-06 and kept going, because nothing had to be done about it.
+  //
+  // The distribution is what makes a partial freeze reportable: a max over the
+  // catalog is held at 0 by any handful of active SKUs. See
+  // scripts/price-movement.cjs for the threshold and the warm-up rule.
+  const { movementFor, report: movementReport } = require('./scripts/price-movement.cjs');
+  const priceMovement = movementFor({
+    parts, retailer: 'newegg',
+    today: new Date().toISOString().slice(0, 10),
+    apply: !DRY_RUN && !breakers.length,
+  });
+  console.log('');
+  for (const line of movementReport(priceMovement)) console.log(line);
+
   const report = {
     timestamp: new Date().toISOString(),
     dryRun: DRY_RUN,
     processed, ...stats,
+    // What Newegg has been doing across the catalog, as opposed to what this
+    // run did. A frozen feed answers the first question wrongly.
+    movement: priceMovement,
     // `updated` is read by .github/workflows/refresh-newegg-prices.yml for the
     // commit message; kept as an alias of the renamed `priced` counter.
     updated: stats.priced,

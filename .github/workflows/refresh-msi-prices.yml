@@ -63,10 +63,26 @@ name: Refresh MSI Prices
 #  the fact that we asked — rebuilt one layer up.
 #
 #  So the refresher stamps `priceLastMovedAt` on a row only when a stored price
-#  actually CHANGED, and the assert below reads the oldest-newest of those
-#  stamps across the whole catalog. It cannot be advanced by re-reading a frozen
-#  feed. If MSI stops repricing for two weeks, this job goes red while still
-#  succeeding at everything it was asked to do — which is the correct report.
+#  actually CHANGED. It cannot be advanced by re-reading a frozen feed. If MSI
+#  stops repricing, this job goes red while still succeeding at everything it
+#  was asked to do — which is the correct report.
+#
+#  ── AND A FOURTH: A MAX IS NOT A DISTRIBUTION ───────────────────────────────
+#  The first version of that alarm read the age of the NEWEST stamp anywhere in
+#  the catalog. That catches a TOTAL freeze and nothing else. One SKU repricing
+#  weekly holds the number at 0 while the other 156 rows sit untouched for
+#  months, and the job reports healthy throughout.
+#
+#  That is not a hypothetical failure — it is the shape of the Best Buy freeze,
+#  which stayed invisible for roughly four months because every signal anyone
+#  was reading kept looking alive. A single row is not evidence about a catalog.
+#
+#  scripts/price-movement.cjs measures the share of PRICED rows that moved
+#  inside a 14-day window, with the floor derived from eight days of Best Buy's
+#  own refresh summaries (193 of 874 distinct SKUs moved = 22%, against 0.11%
+#  for the one-SKU failure). `movement.freezeAlarm` is that check; the old max
+#  is kept alongside it as `totals.daysSinceAnyPriceMoved`, because it is armed
+#  from the first stamp while the window needs 14 days before it means anything.
 #
 #  ── CREDENTIALS ─────────────────────────────────────────────────────────────
 #  IMPACT_ACCOUNT_SID and IMPACT_AUTH_TOKEN. Both are Impact Mediapartners API
@@ -150,10 +166,19 @@ jobs:
       # outcome between the work and the commit, so a run that read nothing is
       # red rather than a quiet green with no commit.
       #
-      # `daysSinceAnyPriceMoved` is the one that watches MSI rather than
-      # watching us — see the header. It is a --require, not a --warn: a feed
-      # that has not repriced anything in a fortnight is the state this whole
+      # `daysSinceAnyPriceMoved` and `movement.freezeAlarm` are the two that
+      # watch MSI rather than watching us — see the header. Both are --require,
+      # not --warn: a feed that has stopped repricing is the state this whole
       # workflow was built to stop, so it must be a notification.
+      #
+      # They are not redundant. daysSinceAnyPriceMoved is a MAX, so it only sees
+      # a TOTAL freeze — one active SKU pins it at 0 while the other 156 rows sit
+      # untouched, which is how Best Buy hid for four months. freezeAlarm reads
+      # the distribution across rows and is the one that catches a partial
+      # freeze. The max is kept because it is armed immediately, while the
+      # distribution needs a full 14-day window of stamps before it can mean
+      # anything (scripts/price-movement.cjs suppresses it until then, and the
+      # run log says how many days remain).
       - name: Assert the refresh produced an outcome
         run: |
           node scripts/assert-outcome.cjs \
@@ -163,6 +188,8 @@ jobs:
             --require='totals.considered>0' \
             --require='totals.joined>0' \
             --require="totals.daysSinceAnyPriceMoved<=${{ inputs.quiet_days || '14' }}" \
+            --require='movement.freezeAlarm==0' \
+            --warn='movement.movedShare>=0.1' \
             --warn='totals.priceChanged>0' \
             --warn='totals.unjoined==0' \
             --warn='totals.heldNameMismatch==0'
@@ -206,7 +233,7 @@ jobs:
           DROPPED=$(node -e "console.log(require('./catalog-build/msi-refresh-summary.json').totals.unjoined)")
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/parts.js src/data/parts/
+          git add src/data/parts.js src/data/parts/ src/data/price-movement-watch.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

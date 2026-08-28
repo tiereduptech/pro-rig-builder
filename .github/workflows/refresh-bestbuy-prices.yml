@@ -158,6 +158,20 @@ jobs:
       # outcome between the work and the commit, so a run that read nothing is
       # red rather than a quiet green with no commit — the failure mode that let
       # 99 SFTP runs commit once.
+      #
+      # `movement.freezeAlarm` asks the other question, the one this job did not
+      # ask for its first four months: not "did we run?" but "is Best Buy still
+      # repricing?". Every check here before it — considered>0, refreshed>0,
+      # unknown==0 — passes cleanly against an API serving April's prices
+      # forever, which is exactly what happened. It is a --require because the
+      # two signals that WERE emitted during the freeze (dead-flat charts, "0
+      # updated") were both observable, both ignored, and neither had a
+      # consequence attached. Exit code 1 is the consequence.
+      #
+      # Deliberately a distribution and not a max: a max over the catalog reads
+      # 0 days as long as ANY single SKU still moves. See
+      # scripts/price-movement.cjs, whose floor was derived from eight days of
+      # this job's own summaries.
       - name: Assert the refresh produced an outcome
         run: |
           node scripts/assert-outcome.cjs \
@@ -165,6 +179,8 @@ jobs:
             --label="Best Buy refresh" \
             --newer-than-epoch="$REFRESH_STARTED" \
             --require='totals.considered>0' \
+            --require='movement.freezeAlarm==0' \
+            --warn='movement.movedShare>=0.1' \
             --warn='totals.refreshed>0' \
             --warn='totals.unknown==0'
 
@@ -206,7 +222,7 @@ jobs:
           HELD=$(node -e "const t=require('./catalog-build/bestbuy-refresh-summary.json').totals;console.log(t.heldStale+t.heldFlagged+(t.heldUnrefereedCliff||0))")
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/parts.js src/data/parts/
+          git add src/data/parts.js src/data/parts/ src/data/price-movement-watch.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

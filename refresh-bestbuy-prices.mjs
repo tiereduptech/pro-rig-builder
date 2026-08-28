@@ -847,6 +847,19 @@ function applyRow(r, { price, stock, confirm, unconfirmedReason }) {
   d.sku = r.sku;                                  // pin it; the url param is not a field
   if (stock !== undefined) d.inStock = stock;
   if (price != null) {
+    // ── The stamp that cannot be manufactured ─────────────────────────────────
+    // priceConfirmedAt below advances every night this job runs, whether or not
+    // Best Buy said anything new — so it proves we ASKED, never that the answer
+    // was current. Four months of frozen Best Buy prices looked healthy through
+    // exactly that gap.
+    //
+    // priceLastMovedAt advances only when the stored number actually changed,
+    // so it cannot be produced by re-reading a frozen API. Compared against the
+    // value already on the deal rather than against r.delta, so a row written
+    // by some other path still reads correctly here.
+    // scripts/price-movement.cjs turns these into the distribution the workflow
+    // asserts on.
+    if (d.price !== price) d.priceLastMovedAt = today;
     d.price = price;
     // Provenance is claimed only for a price this run actually wrote. A held
     // row keeps whatever wrote its price at ingest, and saying '1p' about it
@@ -883,6 +896,24 @@ if (APPLY && !breakers.length) {
   // UNKNOWN: untouched, by construction. Never let an API blip change data.
 }
 
+// ── How much of Best Buy is actually repricing? ──────────────────────────────
+// This job has always asserted that it RAN (considered>0) and warned that it
+// wrote something (refreshed>0). Neither asks whether Best Buy is still moving
+// prices, which is the failure that actually happened here: prices captured
+// once at merge time, refreshed by nothing, invisible for four months because
+// every derived artifact downstream kept looking alive.
+//
+// A max over the catalog would not have caught it either — a handful of active
+// SKUs hold "newest move" at 0 forever. scripts/price-movement.cjs measures the
+// distribution instead. See its header for the threshold derivation, which was
+// measured off eight days of THIS job's own summaries.
+const { movementFor, report: movementReport } = require('./scripts/price-movement.cjs');
+const priceMovement = movementFor({
+  parts, retailer: 'bestbuy', today, apply: APPLY && !breakers.length,
+});
+console.log('');
+for (const line of movementReport(priceMovement)) console.log(line);
+
 // ── Summary artifact ─────────────────────────────────────────────────────────
 const summary = {
   ranAt: new Date().toISOString(),
@@ -900,6 +931,9 @@ const summary = {
     comparable, cliffs, bulkChunkErrors: bulkErrors,
     dealsWritten: written,
   },
+  // `totals` counts what THIS run did; this counts what Best Buy has been doing
+  // across the catalog, which is the question a frozen API answers wrongly.
+  movement: priceMovement,
   breakers,
   // What the bulk pass actually did, so the next run does not have to guess:
   // which form was used, what the API said about each form it was asked, and

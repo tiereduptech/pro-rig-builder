@@ -46,11 +46,38 @@ jobs:
           RAKUTEN_SID: ${{ secrets.RAKUTEN_SID }}
           RAKUTEN_NEWEGG_MID: ${{ secrets.RAKUTEN_NEWEGG_MID }}
         run: |
+          echo "REFRESH_STARTED=$(date +%s)" >> "$GITHUB_ENV"
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit=${{ inputs.limit }}"; fi
           echo "Running: node refresh-newegg-prices.cjs$ARGS"
           node refresh-newegg-prices.cjs $ARGS
+
+      # This job had no outcome assertion at all. The commit step below reads
+      # its summary inside `if [ -f newegg-refresh-summary.json ]`, which is the
+      # precise shape scripts/assert-outcome.cjs was written to kill: when the
+      # summary is absent the body is skipped, the step exits 0, and the job
+      # reports SUCCESS having done nothing.
+      #
+      # `movement.freezeAlarm` is the second half — not "did we run?" but "is
+      # Newegg still repricing?". This job reported "0 updated" on every run
+      # from 2026-07-06 and kept deleting deals, and nothing was obliged to act
+      # on it. A distribution, not a max, because a max reads 0 days as long as
+      # any single SKU still moves; see scripts/price-movement.cjs.
+      #
+      # NOTE: this workflow's cron is still commented out (see the top of the
+      # file) and re-enabling it is a separate question with its own blocking
+      # bug. These assertions describe what must hold whenever it does run.
+      - name: Assert the refresh produced an outcome
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=newegg-refresh-summary.json \
+            --label="Newegg refresh" \
+            --newer-than-epoch="$REFRESH_STARTED" \
+            --require='processed>0' \
+            --require='movement.freezeAlarm==0' \
+            --warn='movement.movedShare>=0.1' \
+            --warn='updated>0'
 
       # The summary is the whole point of a dry run — keep it even though the
       # commit step below deletes it on real runs.
@@ -77,7 +104,7 @@ jobs:
             REMOVED=$(node -e "console.log(require('./newegg-refresh-summary.json').removed)")
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/parts.js src/data/parts/
+            git add src/data/parts.js src/data/parts/ src/data/price-movement-watch.json
             if git diff --cached --quiet; then
               echo "No changes"
             else
