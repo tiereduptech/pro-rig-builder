@@ -237,7 +237,7 @@ export default [
         "sku": "6562319",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458316594714719994191893",
@@ -367,7 +367,7 @@ export default [
         "sku": "6669244",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445835749512605623259902",
@@ -438,7 +438,7 @@ export default [
         "sku": "6669242",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458317951181358741495957",
@@ -777,7 +777,7 @@ export default [
         "sku": "6649398",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445833130990736808344286",
@@ -1684,7 +1684,7 @@ export default [
         "sku": "6457798",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445839241002637620242245",
@@ -2477,7 +2477,7 @@ export default [
         "sku": "6669246",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "additionalImages": [
@@ -2743,7 +2743,7 @@ export default [
         "sku": "6637757",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445831284010422222582994",
@@ -2905,7 +2905,7 @@ export default [
         "sku": "6496083",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445831846308112295877265",
@@ -2976,7 +2976,7 @@ export default [
         "sku": "6637756",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "additionalImages": [
@@ -5916,7 +5916,7 @@ export default [
         "sku": "6645751",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "additionalImages": [
@@ -8311,7 +8311,7 @@ export default [
         "sku": "6448611",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445838924976332608996715",
@@ -8362,7 +8362,7 @@ export default [
         "sku": "6449223",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445838199060494877778852",
@@ -8412,7 +8412,7 @@ export default [
         "sku": "6470356",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458318315804240578148613",
@@ -8503,7 +8503,7 @@ export default [
         "sku": "6542590",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445835637165874203267057",
@@ -8596,7 +8596,7 @@ export default [
         "sku": "6554930",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445836800986164123301204",
@@ -8647,7 +8647,7 @@ export default [
         "sku": "6562317",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458311545893267756925853",
@@ -8698,7 +8698,7 @@ export default [
         "sku": "6576369",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "9SIC3FZM0J3648",
@@ -8749,7 +8749,7 @@ export default [
         "sku": "6580806",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458312119486581860848701",
@@ -8800,7 +8800,7 @@ export default [
         "sku": "6580809",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458315829885020854166605",
@@ -8851,7 +8851,7 @@ export default [
         "sku": "6602236",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "44583583445794393242760",
@@ -8902,7 +8902,7 @@ export default [
         "sku": "6602237",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458314106380963906265577",
@@ -9004,7 +9004,7 @@ export default [
         "sku": "6608563",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -9055,7 +9055,7 @@ export default [
         "sku": "6608564",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445837384151701501811720",
@@ -9106,7 +9106,7 @@ export default [
         "sku": "6621674",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 32,
@@ -9144,7 +9144,7 @@ export default [
         "sku": "6637048",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 128,
@@ -9259,7 +9259,7 @@ export default [
         "sku": "6645747",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 96,
@@ -9302,7 +9302,7 @@ export default [
         "sku": "6645748",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 64,
@@ -9394,7 +9394,7 @@ export default [
         "sku": "6645752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445836017013525624514274",
@@ -9445,7 +9445,7 @@ export default [
         "sku": "6645754",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445832156532174368504792",
@@ -9498,7 +9498,7 @@ export default [
         "sku": "6649400",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458311065961183368136889",
@@ -9564,7 +9564,7 @@ export default [
         "sku": "6669179",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "4458310967131818657006547",
@@ -9616,7 +9616,7 @@ export default [
         "sku": "6672866",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 16,
@@ -9654,7 +9654,7 @@ export default [
         "sku": "6672867",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "cap": 16,

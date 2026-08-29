@@ -444,7 +444,7 @@ export default [
         "sku": "6361715",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -493,7 +493,7 @@ export default [
         "sku": "6483375",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "XLR",
@@ -518,7 +518,7 @@ export default [
         "sku": "6547472",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -543,7 +543,7 @@ export default [
         "sku": "6556755",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "pattern": "Supercardioid",
@@ -568,7 +568,7 @@ export default [
         "sku": "6570531",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "pattern": "Cardioid",
@@ -593,7 +593,7 @@ export default [
         "sku": "6576377",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -618,7 +618,7 @@ export default [
         "sku": "6601728",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -638,12 +638,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601911.p%3FskuId%3D6601911",
-        "price": 48.99,
+        "price": 56.99,
         "inStock": true,
         "sku": "6601911",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29",
+        "priceLastMovedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -663,12 +664,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622725&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622725.p%3FskuId%3D6622725",
-        "price": 57.99,
+        "price": 67.99,
         "inStock": true,
         "sku": "6622725",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29",
+        "priceLastMovedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -693,7 +695,7 @@ export default [
         "sku": "4758301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -718,7 +720,7 @@ export default [
         "sku": "6277346",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -777,7 +779,7 @@ export default [
         "sku": "6530807",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -798,11 +800,11 @@ export default [
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6540970&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6540970.p%3FskuId%3D6540970",
         "price": 230.99,
-        "inStock": true,
+        "inStock": false,
         "sku": "6540970",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "pattern": "Cardioid",
@@ -827,7 +829,7 @@ export default [
         "sku": "6556752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "pattern": "Cardioid",
@@ -852,7 +854,7 @@ export default [
         "sku": "6573619",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -877,7 +879,7 @@ export default [
         "sku": "6618286",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -897,12 +899,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6601910&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6601910.p%3FskuId%3D6601910",
-        "price": 42.99,
+        "price": 52.99,
         "inStock": true,
         "sku": "6601910",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29",
+        "priceLastMovedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -927,7 +930,7 @@ export default [
         "sku": "6622722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -952,7 +955,7 @@ export default [
         "sku": "6642761",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "USB",
@@ -977,7 +980,7 @@ export default [
         "sku": "9135241",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       }
     },
     "micType": "XLR",
