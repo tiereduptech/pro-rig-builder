@@ -763,7 +763,9 @@ export default [
     "rgb": false,
     "fans": 1,
     "upc": "00840006676331",
-    "mpn": "CP-9020284-NA"
+    "mpn": "CP-9020284-NA",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 60019,
@@ -2909,7 +2911,9 @@ export default [
     "fanSize": 135,
     "depth": 150,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 60063,
@@ -3439,7 +3443,9 @@ export default [
     "atx3": true,
     "fanSize": 92,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 60073,
@@ -3926,7 +3932,9 @@ export default [
     "atx3": true,
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 60083,
@@ -4740,7 +4748,9 @@ export default [
     "modular": "Non",
     "fanSize": 135,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 60100,
@@ -9113,7 +9123,9 @@ export default [
     "watts": 1000,
     "eff": "80+ Gold",
     "addedAt": "2026-05-15T13:17:14.416Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100467,
@@ -10476,7 +10488,9 @@ export default [
     "eff": "80+ Gold",
     "modular": "Full",
     "atx3": true,
-    "ff": "ATX"
+    "ff": "ATX",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100558,
@@ -10971,7 +10985,9 @@ export default [
     "modular": "Full",
     "atx3": true,
     "ff": "SFX",
-    "eff": "80+ Gold"
+    "eff": "80+ Gold",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100576,
@@ -11270,7 +11286,9 @@ export default [
     "atx3": true,
     "ff": "SFX",
     "eff": "80+ Platinum",
-    "modular": "Full"
+    "modular": "Full",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100584,
@@ -11541,7 +11559,9 @@ export default [
     "eff": "80+ Gold",
     "modular": "Full",
     "ff": "ATX",
-    "atx3": true
+    "atx3": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101200,

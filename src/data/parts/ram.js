@@ -1205,7 +1205,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 40063,
@@ -3127,7 +3129,9 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 40113,
@@ -7442,7 +7446,9 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Red",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 40213,
@@ -7687,7 +7693,9 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 40218,
@@ -9697,7 +9705,9 @@ export default [
     },
     "addedAt": "2026-05-15T13:17:14.409Z",
     "source": "amazon-discovery",
-    "sticks": 2
+    "sticks": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100347,
@@ -10767,7 +10777,9 @@ export default [
     "cl": 22,
     "memType": "DDR4",
     "formFactor": "UDIMM",
-    "sticks": 1
+    "sticks": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100754,
@@ -11247,7 +11259,9 @@ export default [
     "rgb": true,
     "upc": "00740617342956",
     "mpn": "KF560C30BBEA-16",
-    "sticks": 1
+    "sticks": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100770,

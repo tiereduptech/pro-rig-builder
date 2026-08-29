@@ -2185,7 +2185,9 @@ export default [
     "bench": 68,
     "upc": "04710483931512",
     "mpn": "B550 PHAN GAM 4 AC",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20047,
@@ -7269,7 +7271,9 @@ export default [
     "wifi": "None",
     "value": 76,
     "bench": 47,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20139,
@@ -10911,7 +10915,9 @@ export default [
     "wifi": "WiFi",
     "value": 57,
     "bench": 64,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20210,
@@ -11904,7 +11910,9 @@ export default [
     "wifi": "WiFi",
     "value": 43,
     "bench": 84,
-    "upc": "04710483949333"
+    "upc": "04710483949333",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20230,
@@ -12082,7 +12090,9 @@ export default [
     "wifi": "WiFi",
     "ff": "mATX",
     "value": 57,
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20234,
@@ -12251,7 +12261,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 16,
-    "bench": 89
+    "bench": 89,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20238,
@@ -12416,7 +12428,9 @@ export default [
     "wifi": "None",
     "ff": "ATX",
     "value": 70,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20242,
@@ -13990,7 +14004,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 46,
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20275,
@@ -14879,7 +14895,9 @@ export default [
     "ff": "ATX",
     "wifi": "None",
     "value": 26,
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20292,
@@ -15463,7 +15481,9 @@ export default [
     "ff": "mATX",
     "wifi": "WiFi",
     "value": 29,
-    "bench": 71
+    "bench": 71,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20303,
@@ -16290,7 +16310,9 @@ export default [
     "ff": "ATX",
     "wifi": "WiFi",
     "value": 33,
-    "bench": 88
+    "bench": 88,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 20319,
@@ -24628,7 +24650,9 @@ export default [
     "chipset": "B760",
     "ff": "mATX",
     "memType": "DDR5",
-    "wifi": "WiFi 6"
+    "wifi": "WiFi 6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100741,

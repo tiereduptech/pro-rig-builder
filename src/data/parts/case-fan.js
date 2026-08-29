@@ -477,7 +477,9 @@ export default [
     "rpm": 1100,
     "pwm": true,
     "bench": 77,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85010,
@@ -1888,7 +1890,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 70,
-    "mpn": "NF-P14s redux-1500 PWM"
+    "mpn": "NF-P14s redux-1500 PWM",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85039,
@@ -4849,7 +4853,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 40,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85101,
@@ -4904,7 +4910,9 @@ export default [
     "pack": 1,
     "bench": 65,
     "fanSize": 120,
-    "mpn": "NF-F12 PWM chromax.b"
+    "mpn": "NF-F12 PWM chromax.b",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85102,
@@ -5828,7 +5836,9 @@ export default [
     "rgbType": "ARGB",
     "pack": 1,
     "bench": 52,
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85121,
@@ -6563,7 +6573,9 @@ export default [
     "rgb": false,
     "pack": 3,
     "bench": 66,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85137,
@@ -7465,7 +7477,9 @@ export default [
     "pack": 1,
     "bench": 72,
     "mpn": "ACFAN00121A",
-    "fanSize": 120
+    "fanSize": 120,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85156,
@@ -8042,7 +8056,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "pwm": false,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85168,
@@ -8913,7 +8929,9 @@ export default [
     "rgb": false,
     "pack": 1,
     "bench": 61,
-    "fanSize": 140
+    "fanSize": 140,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 85185,
@@ -14987,7 +15005,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T14:34:31.808Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101132,
@@ -15042,7 +15062,9 @@ export default [
     "addedAt": "2026-05-15T14:34:31.808Z",
     "source": "amazon-discovery",
     "fanSize": 120,
-    "pwm": true
+    "pwm": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101134,

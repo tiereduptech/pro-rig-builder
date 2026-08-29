@@ -358,7 +358,9 @@ export default [
         "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-08-28"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 95053,

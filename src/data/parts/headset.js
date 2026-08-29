@@ -4293,7 +4293,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.634Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101705,
@@ -4543,7 +4545,9 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.636Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101715,

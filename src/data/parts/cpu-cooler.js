@@ -2159,7 +2159,9 @@ export default [
     "radiator": 420,
     "fanCount": 3,
     "mpn": "ACFRE00181A",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 80042,
@@ -4227,7 +4229,9 @@ export default [
     "cfm": 213,
     "mpn": "RL-KN36E-B2",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 80080,
@@ -10145,7 +10149,9 @@ export default [
     "height": 52,
     "cfm": 120,
     "radiator": 240,
-    "fanCount": 2
+    "fanCount": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 80193,
@@ -11462,7 +11468,9 @@ export default [
     "cfm": 120,
     "radiator": 240,
     "fanCount": 2,
-    "mpn": "ROG RYUJIN III 240 ARGB"
+    "mpn": "ROG RYUJIN III 240 ARGB",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 80220,
@@ -17344,7 +17352,9 @@ export default [
     ],
     "airflow": 71.89,
     "noise": 35.4,
-    "rpm": 2000
+    "rpm": 2000,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100920,
@@ -18239,7 +18249,9 @@ export default [
     "noise": 19,
     "rpm": 2100,
     "upc": "00795629699611",
-    "mpn": "MC75-8"
+    "mpn": "MC75-8",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100945,
@@ -18273,7 +18285,9 @@ export default [
     "airflow": 59,
     "noise": 26.1,
     "rpm": 1800,
-    "neweggRemovedOutlier": "2026-06-28"
+    "neweggRemovedOutlier": "2026-06-28",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100946,
@@ -18309,7 +18323,9 @@ export default [
       "AM3"
     ],
     "noise": 14.4,
-    "rpm": 1800
+    "rpm": 1800,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100947,
@@ -18869,7 +18885,9 @@ export default [
     "bench": 26,
     "airflow": 79.7,
     "noise": 33.9,
-    "rpm": 2500
+    "rpm": 2500,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100966,
@@ -19133,7 +19151,9 @@ export default [
     ],
     "airflow": 61.3,
     "noise": 35,
-    "rpm": 3200
+    "rpm": 3200,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100977,
@@ -20174,7 +20194,9 @@ export default [
       "AM4"
     ],
     "noise": 31,
-    "rpm": 2400
+    "rpm": 2400,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101238,
@@ -20516,7 +20538,9 @@ export default [
     ],
     "airflow": 58,
     "noise": 27,
-    "rpm": 2900
+    "rpm": 2900,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101251,

@@ -8119,7 +8119,9 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 43
+    "bench": 43,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 70135,
@@ -8239,7 +8241,9 @@ export default [
       240
     ],
     "bench": 71,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 70137,
@@ -9100,7 +9104,9 @@ export default [
     "rads": [
       120
     ],
-    "bench": 42
+    "bench": 42,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 70152,
@@ -20376,7 +20382,9 @@ export default [
     "source": "amazon-discovery",
     "ff": "Mid Tower",
     "rgb": true,
-    "drive35": 4
+    "drive35": 4,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100541,

@@ -986,7 +986,9 @@ export default [
     "boostClock": 2970,
     "upc": "00840191502958",
     "mpn": "RX-97TQICKBA",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 30029,
@@ -5071,7 +5073,9 @@ export default [
     "length": 260,
     "bench": 54,
     "pcie": "5.0 x16",
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 30129,
@@ -15761,7 +15765,9 @@ export default [
     "addedAt": "2026-05-15T13:17:14.412Z",
     "source": "amazon-discovery",
     "memType": "GDDR7",
-    "bench": 96
+    "bench": 96,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100403,
@@ -16120,7 +16126,9 @@ export default [
     "source": "amazon-discovery",
     "memType": "GDDR7",
     "bench": 61,
-    "slots": 2
+    "slots": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100416,
@@ -16445,7 +16453,9 @@ export default [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 67
+    "bench": 67,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100427,
@@ -16473,7 +16483,9 @@ export default [
     "addedAt": "2026-05-15T13:17:14.414Z",
     "source": "amazon-discovery",
     "memType": "GDDR6",
-    "bench": 72
+    "bench": 72,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100428,

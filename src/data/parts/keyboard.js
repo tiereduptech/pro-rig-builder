@@ -3385,7 +3385,9 @@ export default [
     "addedAt": "2026-05-15T17:05:43.617Z",
     "source": "amazon-discovery",
     "wireless": true,
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101528,

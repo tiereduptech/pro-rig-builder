@@ -686,7 +686,9 @@ export default [
     "response": "2 Milliseconds",
     "bench": 50,
     "ports": "1x HDMI, 1x DisplayPort",
-    "resolution": "1080p"
+    "resolution": "1080p",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 90018,
@@ -15819,7 +15821,9 @@ export default [
     },
     "addedAt": "2026-05-15T14:34:31.799Z",
     "source": "amazon-discovery",
-    "resolution": "4K"
+    "resolution": "4K",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101007,
@@ -16834,7 +16838,9 @@ export default [
     "screenSize": 27,
     "resolution": "1440p",
     "refresh": 240,
-    "panel": "IPS"
+    "panel": "IPS",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101041,
@@ -16905,7 +16911,9 @@ export default [
     "refresh": 360,
     "panel": "IPS",
     "upc": "00884116431428",
-    "mpn": "74398498"
+    "mpn": "74398498",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101043,
@@ -17679,7 +17687,9 @@ export default [
     "source": "amazon-discovery",
     "resolution": "1440p",
     "refresh": 100,
-    "screenSize": 34
+    "screenSize": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101069,
@@ -19003,7 +19013,9 @@ export default [
     "refresh": 200,
     "panel": "VA",
     "curved": true,
-    "screenSize": 34
+    "screenSize": 34,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 101114,

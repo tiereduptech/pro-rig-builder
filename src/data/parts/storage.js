@@ -2716,7 +2716,9 @@ export default [
     "value": 4,
     "bench": 45,
     "formFactor": "2.5\"",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50064,
@@ -5885,7 +5887,9 @@ export default [
     "dram": true,
     "value": 69,
     "bench": 100,
-    "pcieGen": 5
+    "pcieGen": 5,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50130,
@@ -10378,7 +10382,9 @@ export default [
     "bench": 37,
     "read": 2150,
     "pcieGen": 3,
-    "formFactor": "M.2 2280"
+    "formFactor": "M.2 2280",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50221,
@@ -11474,7 +11480,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 1,
-    "bench": 45
+    "bench": 45,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50244,
@@ -11780,7 +11788,9 @@ export default [
     "rpm": 7200,
     "value": 14,
     "bench": 10,
-    "formFactor": "3.5\""
+    "formFactor": "3.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50251,
@@ -12933,7 +12943,9 @@ export default [
     "nand": "TLC",
     "dram": false,
     "value": 8,
-    "bench": 45
+    "bench": 45,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50278,
@@ -17607,7 +17619,9 @@ export default [
     "nand": "TLC",
     "value": 60,
     "pcieGen": 3,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50372,
@@ -20571,7 +20585,9 @@ export default [
     "bench": 83,
     "pcieGen": 4,
     "formFactor": "M.2",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 50438,
@@ -26301,7 +26317,9 @@ export default [
     "cap": 1000,
     "storageType": "SSD",
     "interface": "SATA",
-    "ff": "2.5\""
+    "ff": "2.5\"",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100799,

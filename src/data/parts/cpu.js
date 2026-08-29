@@ -6764,7 +6764,9 @@ export default [
     "memType": "DDR4",
     "igpu": true,
     "upc": "00735858999748",
-    "mpn": "i5-11500-0"
+    "mpn": "i5-11500-0",
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 10195,
@@ -7976,7 +7978,9 @@ export default [
     "cores": 10,
     "boostClock": 4.9,
     "igpu": true,
-    "bench": 39
+    "bench": 39,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-29"
   },
   {
     "id": 100334,
