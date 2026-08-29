@@ -19930,7 +19930,7 @@ export default [
         "itemId": "2195",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445837815318290565786902",
