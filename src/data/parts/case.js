@@ -616,7 +616,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 322.64,
+        "price": 302.98,
         "url": "https://www.amazon.com/dp/B0BDXRBW6P?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
@@ -2542,7 +2542,7 @@ export default [
     "reviews": 647,
     "deals": {
       "amazon": {
-        "price": 84.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0DFWQDRW1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
@@ -2736,7 +2736,7 @@ export default [
     "reviews": 344,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 49.99,
         "url": "https://www.amazon.com/dp/B0C3H3QR8Q?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
@@ -5997,13 +5997,11 @@ export default [
         "price": 119.9,
         "url": "https://www.amazon.com/dp/B0CN95G1YL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-28",
+        "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-29"
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 13,
@@ -20439,8 +20437,8 @@ export default [
         "url": "https://www.amazon.com/dp/B093S1H4G2?tag=tiereduptech-20",
         "price": 69.9,
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-29",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -21028,11 +21026,13 @@ export default [
       "amazon": {
         "asin": "B0FDQYCZNM",
         "url": "https://www.amazon.com/dp/B0FDQYCZNM?tag=tiereduptech-20",
-        "price": 104,
+        "price": 89.99,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-29"
+        "priceConfidence": "confirmed",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-08-29",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "44583143060866372391241",

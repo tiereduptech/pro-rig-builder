@@ -1671,13 +1671,11 @@ export default [
         "price": 229.95,
         "url": "https://www.amazon.com/dp/B08SQRF8MJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Assurant Technologies",
-        "priceConfirmedAt": "2026-08-23",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-29",
+        "priceResolvedVia": "paapi"
       },
       "bestbuy": {
         "price": 279.99,
@@ -2365,7 +2363,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "kooldeal68",
+        "priceSeller": "TrueFulfillment (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3152,7 +3150,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -7752,7 +7750,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Micom Pro",
+        "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9821,7 +9819,7 @@ export default [
         "price": 459.99,
         "inStock": true,
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-29"
       }
     },
@@ -11394,7 +11392,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "MemoryMasters",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

@@ -3204,12 +3204,12 @@ export default [
     "reviews": 152,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 98.08,
         "url": "https://www.amazon.com/dp/B0D7ZD9MLV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
-        "priceSource": "3p",
-        "priceSeller": "Hestia Delight",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8896,7 +8896,7 @@ export default [
       "amazon": {
         "asin": "B0D68TLYKR",
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
-        "price": 74.98,
+        "price": 91.85,
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "1p",
@@ -9149,7 +9149,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "BeachAudio",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

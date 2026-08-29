@@ -5653,8 +5653,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CGJ1J5KL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "2EazyEnterprises",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9640,8 +9640,8 @@ export default [
         "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceConfirmedAt": "2026-08-29",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -19443,7 +19443,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "UnrealDeals (SERIAL NUMBERS RECORDED)",
+        "priceSeller": "North To South (Serial Number Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
