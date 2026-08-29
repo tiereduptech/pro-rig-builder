@@ -1087,13 +1087,14 @@ export default [
     },
     "color": "Black",
     "value": 42,
-    "quarantinedAt": "2026-08-25",
+    "quarantinedAt": "2026-08-29",
     "rgb": false,
     "fans": 1,
     "needsReview": true,
     "reviewFlags": [
       "relink:mismatch"
-    ]
+    ],
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 60028,
@@ -9139,8 +9140,8 @@ export default [
         "price": 133.6,
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

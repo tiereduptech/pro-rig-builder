@@ -625,7 +625,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CL8Z43L8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-28",
+        "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct",
         "priceResolvedVia": "paapi"
@@ -9749,8 +9749,8 @@ export default [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "V+W Goods",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
         "priceConfirmedAt": "2026-08-29"
@@ -11326,7 +11326,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "OneDealOutlet Online",
+        "priceSeller": "Triplenet Pricing INC",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -19482,7 +19482,7 @@ export default [
       "amazon": {
         "asin": "B0FPBRVJP2",
         "url": "https://www.amazon.com/dp/B0FPBRVJP2?tag=tiereduptech-20",
-        "price": 134,
+        "price": 165.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "1p",

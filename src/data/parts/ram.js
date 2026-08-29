@@ -167,7 +167,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-29"
       },
       "newegg": {
         "sku": "445837549669031244055233",
@@ -1016,7 +1018,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Cyterus",
+        "priceSeller": "DiscTech (USA)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2100,7 +2102,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Stokvane (S/N Recorded)",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -7750,7 +7752,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9902,11 +9904,11 @@ export default [
       "amazon": {
         "asin": "B0DZ935RX9",
         "url": "https://www.amazon.com/dp/B0DZ935RX9?tag=tiereduptech-20",
-        "price": 524.95,
+        "price": 493.95,
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "The Deal Leader",
+        "priceSeller": "Assurant Technologies",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11393,7 +11395,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11587,10 +11589,10 @@ export default [
         "price": 224.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "paapi"
       },
       "newegg": {
         "sku": "0RN-002U-004U3",
@@ -11815,11 +11817,11 @@ export default [
       "amazon": {
         "asin": "B0DCJNB51B",
         "url": "https://www.amazon.com/dp/B0DCJNB51B?tag=tiereduptech-20",
-        "price": 429.99,
+        "price": 453.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-29",
         "priceSource": "3p",
-        "priceSeller": "Official Patriot Memory Store",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
