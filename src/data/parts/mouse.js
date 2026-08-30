@@ -499,7 +499,7 @@ export default [
         "sku": "6420867",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -631,12 +631,13 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6476689&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6476689.p%3FskuId%3D6476689",
-        "price": 24.99,
+        "price": 20.99,
         "inStock": true,
         "sku": "6476689",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30",
+        "priceLastMovedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -877,7 +878,7 @@ export default [
         "sku": "6333840",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Hero 25K",
@@ -1047,7 +1048,7 @@ export default [
         "sku": "6460407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1373,7 +1374,7 @@ export default [
         "sku": "6265132",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1404,7 +1405,7 @@ export default [
         "sku": "6316173",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1430,7 +1431,7 @@ export default [
         "sku": "6333838",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       },
       "newegg": {
         "sku": "4458310538121367208229815",
@@ -1471,7 +1472,7 @@ export default [
         "sku": "6333839",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1497,7 +1498,7 @@ export default [
         "sku": "6337071",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1608,7 +1609,7 @@ export default [
         "sku": "6393997",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1629,12 +1630,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6394002&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6394002.p%3FskuId%3D6394002",
-        "price": 79.99,
+        "price": 75.99,
         "inStock": true,
         "sku": "6394002",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30",
+        "priceLastMovedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1690,7 +1692,7 @@ export default [
         "sku": "6459644",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1716,7 +1718,7 @@ export default [
         "sku": "6485231",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1742,7 +1744,7 @@ export default [
         "sku": "6485744",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1768,7 +1770,7 @@ export default [
         "sku": "6501463",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1856,7 +1858,7 @@ export default [
         "sku": "6519203",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1887,7 +1889,7 @@ export default [
         "sku": "6521085",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1913,7 +1915,7 @@ export default [
         "sku": "6529371",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1939,7 +1941,7 @@ export default [
         "sku": "6537579",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -1963,9 +1965,10 @@ export default [
         "price": 64.99,
         "inStock": false,
         "sku": "6547950",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-29",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-01"
       }
     },
     "sensor": "Optical",
@@ -1996,7 +1999,7 @@ export default [
         "sku": "6548181",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2022,7 +2025,7 @@ export default [
         "sku": "6548182",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2053,7 +2056,7 @@ export default [
         "sku": "6556754",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "HERO 2",
@@ -2079,7 +2082,7 @@ export default [
         "sku": "6558788",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2105,7 +2108,7 @@ export default [
         "sku": "6573602",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2161,7 +2164,7 @@ export default [
         "sku": "6586068",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "HERO 25K",
@@ -2187,7 +2190,7 @@ export default [
         "sku": "6595182",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "HERO 2",
@@ -2213,7 +2216,7 @@ export default [
         "sku": "6595185",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "HERO 44K",
@@ -2239,7 +2242,7 @@ export default [
         "sku": "6604495",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2265,7 +2268,7 @@ export default [
         "sku": "6621764",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2291,7 +2294,7 @@ export default [
         "sku": "6622827",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2317,7 +2320,7 @@ export default [
         "sku": "6623863",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2343,7 +2346,7 @@ export default [
         "sku": "6636035",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2369,7 +2372,7 @@ export default [
         "sku": "6636038",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2395,7 +2398,7 @@ export default [
         "sku": "6637500",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2421,7 +2424,7 @@ export default [
         "sku": "6642549",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "HERO 2",
@@ -2447,7 +2450,7 @@ export default [
         "sku": "6666378",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "sensor": "Optical",
@@ -2787,7 +2790,7 @@ export default [
         "sku": "6491145",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-29"
+        "priceConfirmedAt": "2026-08-30"
       }
     },
     "addedAt": "2026-05-15T16:31:54.595Z",
