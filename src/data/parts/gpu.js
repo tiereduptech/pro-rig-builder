@@ -2461,7 +2461,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "RapidShip (S/N Recorder)",
+        "priceSeller": "TC Prime Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2680,7 +2680,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "M-X-C Tech",
+        "priceSeller": "GH Electronics (We Record SN#)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6129,7 +6129,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "TekDepo(We Record SN#)",
+        "priceSeller": "Everlast Computers",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6169,16 +6169,14 @@ export default [
     "reviews": 157,
     "deals": {
       "amazon": {
-        "price": 749.99,
+        "price": 899.99,
         "url": "https://www.amazon.com/dp/B0DZCYPFVT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-09",
+        "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "Digital Dreams (SN Recorded)",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceSeller": "Empowered PC",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       },
       "msi": {
         "price": 789.99,
@@ -15509,7 +15507,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "Vagari LLC (Serial Number Recorded)",
+        "priceSeller": "peanutwarrior",
         "priceResolvedVia": "paapi"
       }
     },
@@ -15645,7 +15643,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "M-X-C Tech",
+        "priceSeller": "Dorm Supply LLC",
         "priceConfirmedAt": "2026-08-30",
         "priceResolvedVia": "paapi"
       }
@@ -15704,7 +15702,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-25",
         "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-08-30"
       }
     },
@@ -15932,11 +15930,11 @@ export default [
       "amazon": {
         "asin": "B0DS6WTXGP",
         "url": "https://www.amazon.com/dp/B0DS6WTXGP?tag=tiereduptech-20",
-        "price": 1427.87,
+        "price": 1289.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
-        "priceSource": "3p",
-        "priceSeller": "Safety Logistics (Serial # Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -17767,7 +17765,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "NEXT_INNOVATION",
+        "priceSeller": "T.L.D.K import",
         "priceResolvedVia": "paapi"
       }
     },

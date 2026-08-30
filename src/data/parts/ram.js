@@ -295,13 +295,11 @@ export default [
         "price": 539.99,
         "url": "https://www.amazon.com/dp/B0BXHC74WD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-29",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-30",
+        "priceResolvedVia": "paapi"
       },
       "newegg": {
         "sku": "445838901026564144549112",
@@ -1015,12 +1013,12 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 73.99,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "Bridging Associates",
+        "priceSeller": "DiscTech (USA)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1958,7 +1956,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "RACERSPEED INC.",
+        "priceSeller": "TheTechGroup",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7756,7 +7754,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10646,11 +10644,11 @@ export default [
       "amazon": {
         "asin": "B08C53LL9J",
         "url": "https://www.amazon.com/dp/B08C53LL9J?tag=tiereduptech-20",
-        "price": 127,
+        "price": 117.49,
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "eStarDeals",
+        "priceSeller": "Blue Orbit Commerce Group",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11401,7 +11399,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11428,11 +11426,11 @@ export default [
       "amazon": {
         "asin": "B0BRTJGQML",
         "url": "https://www.amazon.com/dp/B0BRTJGQML?tag=tiereduptech-20",
-        "price": 519.95,
+        "price": 559.51,
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
-        "priceSource": "3p",
-        "priceSeller": "A Mark Store (S/N Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

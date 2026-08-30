@@ -6037,7 +6037,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-30"
       }
     },
     "discount": 13,
@@ -6379,12 +6381,12 @@ export default [
     "reviews": 299,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CQJGG4JT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Hestia Delight",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6765,7 +6767,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
         "priceSource": "3p",
-        "priceSeller": "Pro Gamersware",
+        "priceSeller": "Pro Gamersware USA",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -15320,7 +15322,7 @@ export default [
     "reviews": 6,
     "deals": {
       "amazon": {
-        "price": 444.26,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B0GJ13NDWD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
@@ -20774,11 +20776,13 @@ export default [
         "url": "https://www.amazon.com/dp/B0CX595GDJ?tag=tiereduptech-20",
         "price": 196.99,
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-30",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-30"
       },
       "newegg": {
         "sku": "445831543320867645904502",

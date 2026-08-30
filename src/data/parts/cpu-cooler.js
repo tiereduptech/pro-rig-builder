@@ -725,7 +725,7 @@ export default [
     "height": 155,
     "deals": {
       "amazon": {
-        "price": 17.99,
+        "price": 18.99,
         "url": "https://www.amazon.com/dp/B0FX3HVG7X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -8989,8 +8989,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CK57N22Q?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -9656,8 +9656,8 @@ export default [
         "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceConfirmedAt": "2026-08-30",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -10305,7 +10305,10 @@ export default [
     "height": 52,
     "cfm": 132,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-30",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 80196,
@@ -11987,12 +11990,12 @@ export default [
     "reviews": 38,
     "deals": {
       "amazon": {
-        "price": 74.99,
+        "price": 79.99,
         "url": "https://www.amazon.com/dp/B0DPY1WQMJ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-30",
-        "priceSource": "3p",
-        "priceSeller": "CR Distributors (S/N Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
