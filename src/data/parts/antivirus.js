@@ -45,13 +45,14 @@ export default [
     "off": 65,
     "deals": {
       "bestbuy": {
-        "price": 54.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6643522&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fbitdefender-total-security-individual-5-device-1-year-windows-apple-ios-mac-os-android-linux-digital%2FJ3LXGJL7RS&intsrc=APIG_28060",
         "inStock": false,
         "sku": "6643522",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31",
+        "priceLastMovedAt": "2026-08-31"
       }
     },
     "needsReview": true,
