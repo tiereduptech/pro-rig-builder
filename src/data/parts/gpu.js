@@ -2242,7 +2242,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "upc": "00727419314992",
@@ -4589,7 +4589,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "4458314583067850245555496",
@@ -9829,7 +9829,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9867,7 +9867,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "445836230308261329286521",
@@ -9930,7 +9930,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "445832601390906217617414",
@@ -10611,6 +10611,19 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-08-31"
+      },
+      "newegg": {
+        "sku": "4458315790428698873753349",
+        "itemNumber": "N82E16814932751",
+        "sellerClass": "official",
+        "price": 749.99,
+        "saleprice": 739.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315790428698873753349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9070xtgaming-oc-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932751%3Fitem%3DN82E16814932751",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-751-07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-31T18:40:58.701Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "model": "Radeon RX 9070 XT",

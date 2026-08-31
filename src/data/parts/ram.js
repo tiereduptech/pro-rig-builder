@@ -176,7 +176,7 @@ export default [
         "itemNumber": "N82E16820236991",
         "sellerClass": "official",
         "price": 530,
-        "saleprice": 489.99,
+        "saleprice": 499.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837549669031244055233&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820236991%3Fitem%3DN82E16820236991",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
@@ -247,7 +247,7 @@ export default [
         "itemNumber": "N82E16820982058",
         "sellerClass": "official",
         "price": 530,
-        "saleprice": 489.99,
+        "saleprice": 499.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316594714719994191893&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982058%3Fitem%3DN82E16820982058",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-058-01.jpg",
         "inStock": true,
@@ -974,13 +974,12 @@ export default [
         "sellerClass": "marketplace",
         "price": 229.99,
         "saleprice": 183.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583617561959053761099&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpuskill-killblade-32gb-ddr4-3200-pc4-25600-cas-latency-cl16-memory-desktop-memory-black%2Fp%2F0RN-00WR-00041%3Fitem%3D9SIBBJ0M1F0556",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583617561959053761099&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpuskill-killblade-32gb-ddr4-3200-pc4-25600-cas-latency-cl16-memory-desktop-memory-black%2Fp%2F0RN-00WR-00041%3Fitem%3D9SIBBJ0M1F0556",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BBJ0S2607160EP8RU45.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:57.510Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:54:30.628Z"
+        "matchScore": 1
       }
     },
     "discount": 9,
@@ -1702,18 +1701,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839241002637620242245&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820236708%3Fitem%3DN82E16820236708",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839241002637620242245&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820236708%3Fitem%3DN82E16820236708",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-708-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-30T19:32:01.344Z",
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-08-31T10:54:32.638Z",
-        "priceSuspectValue": 309.99,
-        "priceSuspectClass": "OK",
-        "priceSuspectStreak": 1
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2185,13 +2178,12 @@ export default [
         "itemNumber": "9SIA56XKRB9924",
         "sellerClass": "marketplace",
         "price": 111.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834481459073975204131&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0RN-00A3-001M5%3Fitem%3D9SIA56XKRB9924",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834481459073975204131&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0RN-00A3-001M5%3Fitem%3D9SIA56XKRB9924",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A56XS25123107NBB270.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:43.134Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-08-31T10:54:33.493Z"
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -3851,15 +3843,14 @@ export default [
         "sku": "4458311909541356568796984",
         "itemNumber": "N82E16820225310",
         "sellerClass": "official",
-        "price": 409.99,
-        "saleprice": 404.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311909541356568796984&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-matte-black%2Fp%2FN82E16820225310%3Fitem%3DN82E16820225310",
+        "price": 419.99,
+        "saleprice": 409.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311909541356568796984&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-matte-black%2Fp%2FN82E16820225310%3Fitem%3DN82E16820225310",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-310-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-24T12:32:43.071Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:54:38.217Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8680,7 +8671,7 @@ export default [
         "itemNumber": "N82E16820236994",
         "sellerClass": "official",
         "price": 520,
-        "saleprice": 479.99,
+        "saleprice": 489.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311545893267756925853&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820236994%3Fitem%3DN82E16820236994",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-828-V01.jpg",
         "inStock": true,
@@ -8783,7 +8774,7 @@ export default [
         "itemNumber": "N82E16820982113",
         "sellerClass": "official",
         "price": 530,
-        "saleprice": 489.99,
+        "saleprice": 499.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312119486581860848701&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982113%3Fitem%3DN82E16820982113",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-113-01.png",
         "inStock": true,
@@ -9378,13 +9369,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583602460974355416427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820982101%3Fitem%3DN82E16820982101",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583602460974355416427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820982101%3Fitem%3DN82E16820982101",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-101-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:55:37.207Z"
+        "matchScore": 1
       }
     },
     "cap": 64,
@@ -9554,7 +9544,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-28",
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "cap": 32,
@@ -9602,14 +9592,13 @@ export default [
         "itemNumber": "N82E16820982322",
         "sellerClass": "official",
         "price": 300,
-        "saleprice": 264.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310967131818657006547&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200-pc5-41600-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982322%3Fitem%3DN82E16820982322",
+        "saleprice": 284.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310967131818657006547&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200-pc5-41600-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982322%3Fitem%3DN82E16820982322",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-322-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:55:38.054Z"
+        "matchScore": 1
       }
     },
     "cap": 16,
@@ -10903,13 +10892,12 @@ export default [
         "itemNumber": "9SIAWKTKZY0970",
         "sellerClass": "marketplace",
         "price": 62.5,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836033501367060234895&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0RN-001H-020K8%3Fitem%3D9SIAWKTKZY0970",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836033501367060234895&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0RN-001H-020K8%3Fitem%3D9SIAWKTKZY0970",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AJ7WD210308MSAN0.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:50.445Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:55:38.759Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",
@@ -11986,13 +11974,12 @@ export default [
         "sellerClass": "official",
         "price": 73.99,
         "saleprice": 52.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836312670681205015551&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-8gb-240-pin-ddr3-sdram%2Fp%2F0DF-006A-00003%3Fitem%3D0DF-006A-00003",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836312670681205015551&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-8gb-240-pin-ddr3-sdram%2Fp%2F0DF-006A-00003%3Fitem%3D0DF-006A-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFK6_1_20200412453662058.jpg",
         "inStock": true,
         "matchedAt": "2026-08-21T12:43:54.492Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:25.074Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12026,13 +12013,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316230687994656767964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5200-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00669%3Fitem%3D0RM-001W-00669",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316230687994656767964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5200-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00669%3Fitem%3D0RM-001W-00669",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD250712066LCY19.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:25.380Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12066,13 +12052,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839082840476244005808&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2F0RM-001W-00676%3Fitem%3D0RM-001W-00676",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839082840476244005808&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2F0RM-001W-00676%3Fitem%3D0RM-001W-00676",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2307170T3Z96CC.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:25.845Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12106,13 +12091,12 @@ export default [
         "sellerClass": "official",
         "price": 319.99,
         "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313103088077254315729&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00679%3Fitem%3D0RM-001W-00679",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313103088077254315729&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00679%3Fitem%3D0RM-001W-00679",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2309010V5L3973.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:26.075Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12146,13 +12130,12 @@ export default [
         "sellerClass": "official",
         "price": 679.99,
         "saleprice": 629.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315941810995974295449&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00680%3Fitem%3D0RM-001W-00680",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315941810995974295449&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RM-001W-00680%3Fitem%3D0RM-001W-00680",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-737-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:26.290Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12186,13 +12169,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831433291576027492204&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-2-x-32gb-ddr5-5200-pc5-41600-cas-latency-cl40-memory-notebook-memory-white%2Fp%2F0RM-001W-006N3%3Fitem%3D0RM-001W-006N3",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831433291576027492204&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-2-x-32gb-ddr5-5200-pc5-41600-cas-latency-cl40-memory-notebook-memory-white%2Fp%2F0RM-001W-006N3%3Fitem%3D0RM-001W-006N3",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006N3-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:26.418Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12267,13 +12249,12 @@ export default [
         "sellerClass": "official",
         "price": 2599.99,
         "saleprice": 2399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835895582408320341659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-128gb-ddr5-5200-cas-latency-cl40-memory-white%2Fp%2F0RM-001W-006R2%3Fitem%3D0RM-001W-006R2",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835895582408320341659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-128gb-ddr5-5200-cas-latency-cl40-memory-white%2Fp%2F0RM-001W-006R2%3Fitem%3D0RM-001W-006R2",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006R2-07.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.694Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:26.643Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12307,13 +12288,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313603377409605594731&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl36-memory-white%2Fp%2F0RM-001W-006Y2%3Fitem%3D0RM-001W-006Y2",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313603377409605594731&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl36-memory-white%2Fp%2F0RM-001W-006Y2%3Fitem%3D0RM-001W-006Y2",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006Y2-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.694Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:26.846Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12345,13 +12325,12 @@ export default [
         "itemNumber": "0RN-000F-002Z9",
         "sellerClass": "official",
         "price": 173.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314596261969690162915&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-16gb%2Fp%2F0RN-000F-002Z9%3Fitem%3D0RN-000F-002Z9",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314596261969690162915&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-16gb%2Fp%2F0RN-000F-002Z9%3Fitem%3D0RN-000F-002Z9",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V009D210531AF95V.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.722Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:27.828Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12384,13 +12363,12 @@ export default [
         "sellerClass": "official",
         "price": 159.99,
         "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836885689305061473025&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-001J-00ZV8%3Fitem%3D0RN-001J-00ZV8",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836885689305061473025&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-001J-00ZV8%3Fitem%3D0RN-001J-00ZV8",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-001J-00ZV8-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:28.063Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12424,14 +12402,13 @@ export default [
         "itemNumber": "0RN-001J-01055",
         "sellerClass": "official",
         "price": 299.99,
-        "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832037836433740269836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-001J-01055%3Fitem%3D0RN-001J-01055",
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832037836433740269836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-001J-01055%3Fitem%3D0RN-001J-01055",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD240419188JA526.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:28.165Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12465,13 +12442,12 @@ export default [
         "sellerClass": "official",
         "price": 1039.99,
         "saleprice": 1024.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316294331224618948452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3600-cas-latency-cl18-memory-black%2Fp%2F0RN-001J-01081%3Fitem%3D0RN-001J-01081",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316294331224618948452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3600-cas-latency-cl18-memory-black%2Fp%2F0RN-001J-01081%3Fitem%3D0RN-001J-01081",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD2109168MQXJ.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:28.256Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12505,13 +12481,12 @@ export default [
         "sellerClass": "official",
         "price": 1249.99,
         "saleprice": 1169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832366044401565323657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-64gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RN-001J-013M9%3Fitem%3D0RN-001J-013M9",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832366044401565323657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-64gb-ddr5-5600-cas-latency-cl40-memory-black%2Fp%2F0RN-001J-013M9%3Fitem%3D0RN-001J-013M9",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-001J-013M9-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:28.544Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12584,13 +12559,12 @@ export default [
         "sellerClass": "official",
         "price": 319.99,
         "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316514504459222022743&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-kf556c36bbeak2-16-16gb-ddr5-5600-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J0%3Fitem%3D0RN-001J-014J0",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316514504459222022743&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-kf556c36bbeak2-16-16gb-ddr5-5600-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J0%3Fitem%3D0RN-001J-014J0",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD24041014R4RS71.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:28.923Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12624,13 +12598,12 @@ export default [
         "sellerClass": "official",
         "price": 339.99,
         "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836197237795781551416&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J1%3Fitem%3D0RN-001J-014J1",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836197237795781551416&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J1%3Fitem%3D0RN-001J-014J1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-001J-014J1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:29.636Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12664,13 +12637,12 @@ export default [
         "sellerClass": "official",
         "price": 349.99,
         "saleprice": 319.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831273243370407909900&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J2%3Fitem%3D0RN-001J-014J2",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831273243370407909900&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-014J2%3Fitem%3D0RN-001J-014J2",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD230130110EKB7F.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:25:03.633Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.212Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12704,13 +12676,12 @@ export default [
         "sellerClass": "official",
         "price": 1049.99,
         "saleprice": 1034.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314270230494271604807&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3600-cas-latency-cl18-memory-black%2Fp%2F0RN-001J-014S3%3Fitem%3D0RN-001J-014S3",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314270230494271604807&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3600-cas-latency-cl18-memory-black%2Fp%2F0RN-001J-014S3%3Fitem%3D0RN-001J-014S3",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A12KS23120206UXZ5BE.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.433Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12744,13 +12715,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 549.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313713391656613064877&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-32gb-ddr5-6000%2Fp%2F0RN-001J-01570%3Fitem%3D0RN-001J-01570",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313713391656613064877&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-32gb-ddr5-6000%2Fp%2F0RN-001J-01570%3Fitem%3D0RN-001J-01570",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006X1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.565Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12784,13 +12754,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 549.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583964207582650396610&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-01571%3Fitem%3D0RN-001J-01571",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583964207582650396610&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-01571%3Fitem%3D0RN-001J-01571",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2409040WVUXY21.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.703Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12824,13 +12793,12 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318007005289108066201&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-white%2Fp%2F0RN-001J-01573%3Fitem%3D0RN-001J-01573",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318007005289108066201&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-white%2Fp%2F0RN-001J-01573%3Fitem%3D0RN-001J-01573",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2409040WW1VK47.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.814Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12864,13 +12832,12 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314240103342418521758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-01574%3Fitem%3D0RN-001J-01574",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314240103342418521758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2F0RN-001J-01574%3Fitem%3D0RN-001J-01574",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-001J-01574-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:30.926Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -12903,13 +12870,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312884686974798173908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-pc5-44800-cas-latency-cl36-memory-desktop-memory-black%2Fp%2F0RN-001J-015E9%3Fitem%3D0RN-001J-015E9",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312884686974798173908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-pc5-44800-cas-latency-cl36-memory-desktop-memory-black%2Fp%2F0RN-001J-015E9%3Fitem%3D0RN-001J-015E9",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD25061909H7QNBF.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.734Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:31.038Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13177,13 +13143,12 @@ export default [
         "itemNumber": "0RN-004W-00057",
         "sellerClass": "official",
         "price": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315398406423633703991&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flexar-32gb-ddr3-3200-pc3-25600-cas-latency-cl22-memory-desktop-memory-%2Fp%2F0RN-004W-00057%3Fitem%3D0RN-004W-00057",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315398406423633703991&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flexar-32gb-ddr3-3200-pc3-25600-cas-latency-cl22-memory-desktop-memory-%2Fp%2F0RN-004W-00057%3Fitem%3D0RN-004W-00057",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BF6XD2209230U4O898C.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.751Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:32.486Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13215,13 +13180,12 @@ export default [
         "itemNumber": "0RN-006Y-00031",
         "sellerClass": "official",
         "price": 77.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836786362631158935932&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-8gb%2Fp%2F0RN-006Y-00031%3Fitem%3D0RN-006Y-00031",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836786362631158935932&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftotal-micro-8gb%2Fp%2F0RN-006Y-00031%3Fitem%3D0RN-006Y-00031",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-006Y-00031-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.751Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:32.714Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13333,13 +13297,12 @@ export default [
         "sellerClass": "official",
         "price": 249.99,
         "saleprice": 229.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313265527690693357136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigastone-corporation-gst-game-pro-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-00YA-00022%3Fitem%3D0RN-00YA-00022",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313265527690693357136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigastone-corporation-gst-game-pro-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-00YA-00022%3Fitem%3D0RN-00YA-00022",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AGDFS23110706AXCG9D.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.877Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:33.374Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "4458317598992882782520053",
@@ -13353,7 +13316,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.877Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "needsReview": false,
@@ -13385,13 +13348,12 @@ export default [
         "itemNumber": "0TH-02NV-00001",
         "sellerClass": "official",
         "price": 84.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836004180732367865419&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-02NV-00001%3Fitem%3D0TH-02NV-00001",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836004180732367865419&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-02NV-00001%3Fitem%3D0TH-02NV-00001",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZX_1_2018062711320531.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.897Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:33.630Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13464,13 +13426,12 @@ export default [
         "sellerClass": "official",
         "price": 268.99,
         "saleprice": 258.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313589205490304993373&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014132%3Fitem%3DN82E16820014132",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313589205490304993373&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014132%3Fitem%3DN82E16820014132",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-132-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:14.079Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:35.803Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13503,13 +13464,12 @@ export default [
         "itemNumber": "N82E16820014133",
         "sellerClass": "official",
         "price": 258.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831132869552385660722&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014133%3Fitem%3DN82E16820014133",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831132869552385660722&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014133%3Fitem%3DN82E16820014133",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-133-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.026Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:36.034Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13543,13 +13503,12 @@ export default [
         "sellerClass": "official",
         "price": 285.99,
         "saleprice": 284.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833729679464551233077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014134%3Fitem%3DN82E16820014134",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833729679464551233077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014134%3Fitem%3DN82E16820014134",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-134-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:14.079Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:36.325Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13583,13 +13542,12 @@ export default [
         "sellerClass": "official",
         "price": 264.99,
         "saleprice": 261.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839289860640351086938&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014135%3Fitem%3DN82E16820014135",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839289860640351086938&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014135%3Fitem%3DN82E16820014135",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-135-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:01.927Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:36.587Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13622,13 +13580,12 @@ export default [
         "itemNumber": "N82E16820014137",
         "sellerClass": "official",
         "price": 263.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838387955817558755585&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014137%3Fitem%3DN82E16820014137",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838387955817558755585&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014137%3Fitem%3DN82E16820014137",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-137-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.030Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:36.796Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13660,13 +13617,12 @@ export default [
         "itemNumber": "N82E16820014139",
         "sellerClass": "official",
         "price": 138.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583909009716369394447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014139%3Fitem%3DN82E16820014139",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583909009716369394447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014139%3Fitem%3DN82E16820014139",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-139-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.034Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:37.106Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13698,13 +13654,12 @@ export default [
         "itemNumber": "N82E16820014141",
         "sellerClass": "official",
         "price": 133.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314373862014482251471&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014141%3Fitem%3DN82E16820014141",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314373862014482251471&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014141%3Fitem%3DN82E16820014141",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-141-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.038Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:37.368Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13736,13 +13691,12 @@ export default [
         "itemNumber": "N82E16820014143",
         "sellerClass": "official",
         "price": 137.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833746433104893533844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014143%3Fitem%3DN82E16820014143",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833746433104893533844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014143%3Fitem%3DN82E16820014143",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-143-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.041Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:37.625Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13775,13 +13729,12 @@ export default [
         "sellerClass": "official",
         "price": 140.99,
         "saleprice": 137.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313594947652515963132&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014145%3Fitem%3DN82E16820014145",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313594947652515963132&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014145%3Fitem%3DN82E16820014145",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-145-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.044Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:37.877Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13814,13 +13767,12 @@ export default [
         "sellerClass": "official",
         "price": 149.99,
         "saleprice": 140.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832359044480285692077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014150%3Fitem%3DN82E16820014150",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832359044480285692077&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014150%3Fitem%3DN82E16820014150",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-150-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.059Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:38.107Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13853,13 +13805,12 @@ export default [
         "itemNumber": "N82E16820014152",
         "sellerClass": "official",
         "price": 157.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315292311336395403510&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014152%3Fitem%3DN82E16820014152",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315292311336395403510&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014152%3Fitem%3DN82E16820014152",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-152-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.063Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:38.329Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13893,13 +13844,12 @@ export default [
         "sellerClass": "official",
         "price": 191.99,
         "saleprice": 190.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837428538727873490841&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014153%3Fitem%3DN82E16820014153",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837428538727873490841&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014153%3Fitem%3DN82E16820014153",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-153-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.063Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:38.568Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13932,13 +13882,12 @@ export default [
         "itemNumber": "N82E16820014167",
         "sellerClass": "official",
         "price": 191.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316283944982264406717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014167%3Fitem%3DN82E16820014167",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316283944982264406717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014167%3Fitem%3DN82E16820014167",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-167-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.100Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:38.833Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -13972,13 +13921,12 @@ export default [
         "sellerClass": "official",
         "price": 210.99,
         "saleprice": 204.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839903399433547526839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014170%3Fitem%3DN82E16820014170",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839903399433547526839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014170%3Fitem%3DN82E16820014170",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-170-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:40.843Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:39.079Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14011,13 +13959,12 @@ export default [
         "itemNumber": "N82E16820014172",
         "sellerClass": "official",
         "price": 204.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839073564710655693548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014172%3Fitem%3DN82E16820014172",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839073564710655693548&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014172%3Fitem%3DN82E16820014172",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-172-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.111Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:56:39.336Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14050,13 +13997,12 @@ export default [
         "sellerClass": "official",
         "price": 85.99,
         "saleprice": 82.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313048414922962047920&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014177%3Fitem%3DN82E16820014177",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313048414922962047920&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014177%3Fitem%3DN82E16820014177",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-177-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.124Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:24.954Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14088,13 +14034,12 @@ export default [
         "itemNumber": "N82E16820014180",
         "sellerClass": "official",
         "price": 101.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311892616190416048374&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014180%3Fitem%3DN82E16820014180",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311892616190416048374&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014180%3Fitem%3DN82E16820014180",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-180-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.130Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:25.378Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14126,13 +14071,12 @@ export default [
         "itemNumber": "N82E16820014183",
         "sellerClass": "official",
         "price": 97.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316330462933553852354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014183%3Fitem%3DN82E16820014183",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316330462933553852354&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014183%3Fitem%3DN82E16820014183",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-183-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.134Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:26.093Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14165,13 +14109,12 @@ export default [
         "itemNumber": "N82E16820014218",
         "sellerClass": "official",
         "price": 257.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836304458662646349863&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014218%3Fitem%3DN82E16820014218",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836304458662646349863&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014218%3Fitem%3DN82E16820014218",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-218-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.216Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:26.302Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14203,13 +14146,12 @@ export default [
         "itemNumber": "N82E16820014227",
         "sellerClass": "official",
         "price": 315.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837033878326396358225&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014227%3Fitem%3DN82E16820014227",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837033878326396358225&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014227%3Fitem%3DN82E16820014227",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-227-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.234Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:26.560Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14242,13 +14184,12 @@ export default [
         "itemNumber": "N82E16820014230",
         "sellerClass": "official",
         "price": 365.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583652630438603710043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014230%3Fitem%3DN82E16820014230",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583652630438603710043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014230%3Fitem%3DN82E16820014230",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-230-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.240Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:26.850Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14281,13 +14222,12 @@ export default [
         "itemNumber": "N82E16820014231",
         "sellerClass": "official",
         "price": 390.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313411956442147291444&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014231%3Fitem%3DN82E16820014231",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313411956442147291444&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb%2Fp%2FN82E16820014231%3Fitem%3DN82E16820014231",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-231-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.240Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:27.843Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14319,13 +14259,12 @@ export default [
         "itemNumber": "N82E16820014237",
         "sellerClass": "official",
         "price": 466.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833851741515583618908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014237%3Fitem%3DN82E16820014237",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833851741515583618908&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014237%3Fitem%3DN82E16820014237",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-237-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.249Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:28.224Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14357,13 +14296,12 @@ export default [
         "itemNumber": "N82E16820014241",
         "sellerClass": "official",
         "price": 543.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839684450619499169938&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014241%3Fitem%3DN82E16820014241",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839684450619499169938&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014241%3Fitem%3DN82E16820014241",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-241-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.258Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:28.589Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14395,13 +14333,12 @@ export default [
         "itemNumber": "N82E16820014244",
         "sellerClass": "official",
         "price": 618.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835663447770961758670&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014244%3Fitem%3DN82E16820014244",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835663447770961758670&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014244%3Fitem%3DN82E16820014244",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-244-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.264Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:28.857Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14433,13 +14370,12 @@ export default [
         "itemNumber": "N82E16820014245",
         "sellerClass": "official",
         "price": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318282036148790367905&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014245%3Fitem%3DN82E16820014245",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318282036148790367905&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-32gb%2Fp%2FN82E16820014245%3Fitem%3DN82E16820014245",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-245-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.264Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:29.686Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14472,13 +14408,12 @@ export default [
         "sellerClass": "official",
         "price": 142.99,
         "saleprice": 138.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313410785012956522901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014246%3Fitem%3DN82E16820014246",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313410785012956522901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014246%3Fitem%3DN82E16820014246",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-246-01.png",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:02.158Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:30.517Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14511,13 +14446,12 @@ export default [
         "sellerClass": "official",
         "price": 177.99,
         "saleprice": 176.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312204665455395268524&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014255%3Fitem%3DN82E16820014255",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312204665455395268524&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014255%3Fitem%3DN82E16820014255",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-255-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.272Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:30.761Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14550,13 +14484,12 @@ export default [
         "sellerClass": "official",
         "price": 168.99,
         "saleprice": 167.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310808822322759621270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014258%3Fitem%3DN82E16820014258",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310808822322759621270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014258%3Fitem%3DN82E16820014258",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-258-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.275Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:31.006Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14589,13 +14522,12 @@ export default [
         "sellerClass": "official",
         "price": 204.99,
         "saleprice": 203.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832679336236723799545&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014259%3Fitem%3DN82E16820014259",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832679336236723799545&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014259%3Fitem%3DN82E16820014259",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-259-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.275Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:31.251Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14629,13 +14561,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316050525893878862384&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101093%3Fitem%3DN82E16820101093",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316050525893878862384&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101093%3Fitem%3DN82E16820101093",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-093-01.png",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-08-31T10:57:31.376Z"
+        "matchScore": 0.95
       }
     },
     "needsReview": false,
@@ -14668,13 +14599,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316340279010752951095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101094%3Fitem%3DN82E16820101094",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316340279010752951095&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101094%3Fitem%3DN82E16820101094",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-094-01.png",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-08-31T10:57:31.503Z"
+        "matchScore": 0.95
       }
     },
     "needsReview": false,
@@ -14745,13 +14675,12 @@ export default [
         "sellerClass": "official",
         "price": 499.99,
         "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831603390835044635500&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101096%3Fitem%3DN82E16820101096",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831603390835044635500&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101096%3Fitem%3DN82E16820101096",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-096-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.284Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:31.718Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14785,13 +14714,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311925049625904735505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101103%3Fitem%3DN82E16820101103",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311925049625904735505&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101103%3Fitem%3DN82E16820101103",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-103-01.png",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:02.183Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:31.840Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14825,13 +14753,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311026201779294192662&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101104%3Fitem%3DN82E16820101104",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311026201779294192662&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820101104%3Fitem%3DN82E16820101104",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-104-01.png",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:31.965Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -14863,15 +14790,14 @@ export default [
         "sku": "4458317408436650570421276",
         "itemNumber": "N82E16820101113",
         "sellerClass": "official",
-        "price": 499.99,
-        "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317408436650570421276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101113%3Fitem%3DN82E16820101113",
+        "price": 469.99,
+        "saleprice": 449.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317408436650570421276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101113%3Fitem%3DN82E16820101113",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-113-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.285Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-08-31T10:57:32.058Z"
+        "matchScore": 0.95
       }
     },
     "needsReview": false,
@@ -14942,13 +14868,12 @@ export default [
         "sellerClass": "official",
         "price": 239.99,
         "saleprice": 229.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836164378607259223926&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-pro-32gb-ddr4-3200-cas-latency-cl22-desktop-memory-black%2Fp%2FN82E16820156326%3Fitem%3DN82E16820156326",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836164378607259223926&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-pro-32gb-ddr4-3200-cas-latency-cl22-desktop-memory-black%2Fp%2FN82E16820156326%3Fitem%3DN82E16820156326",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-326-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.355Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:32.511Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "445839273489640649860774",
@@ -14962,7 +14887,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:41.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "needsReview": false,
@@ -15033,13 +14958,12 @@ export default [
         "itemNumber": "N82E16820220694",
         "sellerClass": "official",
         "price": 54.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837477393679399540391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-3-16gb-ddr3-1866-cas-latency-cl10-desktop-memory-black%2Fp%2FN82E16820220694%3Fitem%3DN82E16820220694",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837477393679399540391&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-3-16gb-ddr3-1866-cas-latency-cl10-desktop-memory-black%2Fp%2FN82E16820220694%3Fitem%3DN82E16820220694",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-220-694-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:32.735Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15072,13 +14996,12 @@ export default [
         "sellerClass": "official",
         "price": 149.99,
         "saleprice": 102.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311788728606422380033&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-steel-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gunmetal-grey%2Fp%2FN82E16820225169%3Fitem%3DN82E16820225169",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311788728606422380033&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-steel-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gunmetal-grey%2Fp%2FN82E16820225169%3Fitem%3DN82E16820225169",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-169-V07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:09.023Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:32.839Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15149,13 +15072,12 @@ export default [
         "itemNumber": "N82E16820225309",
         "sellerClass": "official",
         "price": 409.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313051857119659314492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-5600-cas-latency-cl36-desktop-memory-matte-black%2Fp%2FN82E16820225309%3Fitem%3DN82E16820225309",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313051857119659314492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-5600-cas-latency-cl36-desktop-memory-matte-black%2Fp%2FN82E16820225309%3Fitem%3DN82E16820225309",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-309-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:33.234Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15342,13 +15264,12 @@ export default [
         "sellerClass": "official",
         "price": 449.99,
         "saleprice": 439.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839493929087554896714&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-matte-black%2Fp%2FN82E16820225336%3Fitem%3DN82E16820225336",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839493929087554896714&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-venom-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-matte-black%2Fp%2FN82E16820225336%3Fitem%3DN82E16820225336",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-310-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:35.450Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15495,13 +15416,12 @@ export default [
         "sellerClass": "official",
         "price": 499.99,
         "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837222218686723425673&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-ultra-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-matte-black%2Fp%2FN82E16820225350%3Fitem%3DN82E16820225350",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837222218686723425673&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-ultra-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-matte-black%2Fp%2FN82E16820225350%3Fitem%3DN82E16820225350",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-349-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:36.450Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15535,13 +15455,12 @@ export default [
         "sellerClass": "official",
         "price": 1599.99,
         "saleprice": 1499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310429861708642526674&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-ultra-64gb-ddr5-6000-cas-latency-cl28-desktop-memory-matte-black%2Fp%2FN82E16820225352%3Fitem%3DN82E16820225352",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310429861708642526674&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-ultra-64gb-ddr5-6000-cas-latency-cl28-desktop-memory-matte-black%2Fp%2FN82E16820225352%3Fitem%3DN82E16820225352",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-349-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:36.967Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15614,13 +15533,12 @@ export default [
         "sellerClass": "official",
         "price": 469.99,
         "saleprice": 449.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315994197431486424277&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820225387%3Fitem%3DN82E16820225387",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315994197431486424277&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820225387%3Fitem%3DN82E16820225387",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-386-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:37.389Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15692,13 +15610,12 @@ export default [
         "sellerClass": "official",
         "price": 429.99,
         "saleprice": 419.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317073322529898954258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-xtreme-5-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl32-memory-desktop-memory-black%2Fp%2FN82E16820225412%3Fitem%3DN82E16820225412",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317073322529898954258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-xtreme-5-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl32-memory-desktop-memory-black%2Fp%2FN82E16820225412%3Fitem%3DN82E16820225412",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-412-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-25T12:31:36.217Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:37.752Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15732,13 +15649,12 @@ export default [
         "sellerClass": "official",
         "price": 449.99,
         "saleprice": 429.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315651598521265941593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820225427%3Fitem%3DN82E16820225427",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315651598521265941593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpatriot-memory-viper-elite-5-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820225427%3Fitem%3DN82E16820225427",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-225-427-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.465Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:37.858Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15810,13 +15726,12 @@ export default [
         "sellerClass": "official",
         "price": 99.99,
         "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837511774185196526318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-16gb-ddr3-1600-cas-latency-cl11-desktop-memory%2Fp%2FN82E16820231746%3Fitem%3DN82E16820231746",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837511774185196526318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-16gb-ddr3-1600-cas-latency-cl11-desktop-memory%2Fp%2FN82E16820231746%3Fitem%3DN82E16820231746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-746-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:38.477Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15850,13 +15765,12 @@ export default [
         "sellerClass": "official",
         "price": 119.99,
         "saleprice": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838898037169573172439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-2133-cas-latency-cl11-desktop-memory-red%2Fp%2FN82E16820231755%3Fitem%3DN82E16820231755",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838898037169573172439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-2133-cas-latency-cl11-desktop-memory-red%2Fp%2FN82E16820231755%3Fitem%3DN82E16820231755",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-755-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:38.738Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15890,13 +15804,12 @@ export default [
         "sellerClass": "official",
         "price": 119.99,
         "saleprice": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310374072523055772812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-x-series-16gb-ddr3-2133-cas-latency-cl11-desktop-memory-red%2Fp%2FN82E16820231757%3Fitem%3DN82E16820231757",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310374072523055772812&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-x-series-16gb-ddr3-2133-cas-latency-cl11-desktop-memory-red%2Fp%2FN82E16820231757%3Fitem%3DN82E16820231757",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-757-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:38.997Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15930,13 +15843,12 @@ export default [
         "sellerClass": "official",
         "price": 109.99,
         "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583911242141500159021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-1600-cas-latency-cl9-low-profile-extreme-performance-memory-blue%2Fp%2FN82E16820231847%3Fitem%3DN82E16820231847",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583911242141500159021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-1600-cas-latency-cl9-low-profile-extreme-performance-memory-blue%2Fp%2FN82E16820231847%3Fitem%3DN82E16820231847",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-847-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:39.880Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -15970,13 +15882,12 @@ export default [
         "sellerClass": "official",
         "price": 109.99,
         "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314375032076842674508&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-1600-cas-latency-cl10-memory-n-a%2Fp%2FN82E16820231848%3Fitem%3DN82E16820231848",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314375032076842674508&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ares-series-16gb-ddr3-1600-cas-latency-cl10-memory-n-a%2Fp%2FN82E16820231848%3Fitem%3DN82E16820231848",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-848-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:40.176Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16010,13 +15921,12 @@ export default [
         "sellerClass": "official",
         "price": 149.99,
         "saleprice": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313617325614093445006&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820231941%3Fitem%3DN82E16820231941",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313617325614093445006&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820231941%3Fitem%3DN82E16820231941",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-231-941-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.475Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:40.441Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16049,13 +15959,12 @@ export default [
         "sellerClass": "official",
         "price": 139.99,
         "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318004808607001151432&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232090%3Fitem%3DN82E16820232090",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318004808607001151432&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232090%3Fitem%3DN82E16820232090",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-090-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.475Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:40.685Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16129,13 +16038,12 @@ export default [
         "sellerClass": "official",
         "price": 159.99,
         "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317450069054259518912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232476%3Fitem%3DN82E16820232476",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317450069054259518912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232476%3Fitem%3DN82E16820232476",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-476-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:57:41.186Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16169,13 +16077,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 229.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311561929906210563492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-2666-cas-latency-cl19-desktop-memory-black-red%2Fp%2FN82E16820232765%3Fitem%3DN82E16820232765",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311561929906210563492&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-2666-cas-latency-cl19-desktop-memory-black-red%2Fp%2FN82E16820232765%3Fitem%3DN82E16820232765",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-765-Z01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:25.331Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16209,13 +16116,12 @@ export default [
         "sellerClass": "official",
         "price": 169.99,
         "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313150803023703221784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory%2Fp%2FN82E16820232852%3Fitem%3DN82E16820232852",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313150803023703221784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-16gb-ddr4-3200-cas-latency-cl16-desktop-memory%2Fp%2FN82E16820232852%3Fitem%3DN82E16820232852",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-852-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:02.403Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:25.936Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16249,13 +16155,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583869469553852172859&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232861%3Fitem%3DN82E16820232861",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583869469553852172859&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232861%3Fitem%3DN82E16820232861",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-861-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:26.365Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16289,13 +16194,12 @@ export default [
         "sellerClass": "official",
         "price": 149.99,
         "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833690423582304642627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232882%3Fitem%3DN82E16820232882",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833690423582304642627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-16gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232882%3Fitem%3DN82E16820232882",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-882-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:26.601Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16329,13 +16233,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 219.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835253386529294874736&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-3200-cas-latency-cl16-memory-kit-black-red%2Fp%2FN82E16820232886%3Fitem%3DN82E16820232886",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835253386529294874736&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-3200-cas-latency-cl16-memory-kit-black-red%2Fp%2FN82E16820232886%3Fitem%3DN82E16820232886",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-886-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:26.896Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16369,13 +16272,12 @@ export default [
         "sellerClass": "official",
         "price": 269.99,
         "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837479946347077877340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232906%3Fitem%3DN82E16820232906",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837479946347077877340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232906%3Fitem%3DN82E16820232906",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-906-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:27.884Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16409,13 +16311,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315339356179447537971&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232907%3Fitem%3DN82E16820232907",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315339356179447537971&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820232907%3Fitem%3DN82E16820232907",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-907-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:28.255Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16449,13 +16350,12 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834704042132881580590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232920%3Fitem%3DN82E16820232920",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834704042132881580590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-tridentz-rgb-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232920%3Fitem%3DN82E16820232920",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-920-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:28.675Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16489,13 +16389,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313180235574968983112&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232928%3Fitem%3DN82E16820232928",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313180235574968983112&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820232928%3Fitem%3DN82E16820232928",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-928-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:28.915Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16529,13 +16428,12 @@ export default [
         "sellerClass": "official",
         "price": 290,
         "saleprice": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831747906058732263595&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black%2Fp%2FN82E16820233853%3Fitem%3DN82E16820233853",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831747906058732263595&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-2666-cas-latency-cl16-memory-kit-black%2Fp%2FN82E16820233853%3Fitem%3DN82E16820233853",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-233-853-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.493Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:29.094Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16569,13 +16467,12 @@ export default [
         "sellerClass": "official",
         "price": 160,
         "saleprice": 144.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314480671552540695044&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236540%3Fitem%3DN82E16820236540",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314480671552540695044&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236540%3Fitem%3DN82E16820236540",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-540-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.500Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:29.716Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16609,13 +16506,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833877076706120157459&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236570%3Fitem%3DN82E16820236570",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833877076706120157459&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236570%3Fitem%3DN82E16820236570",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-570-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.500Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:30.282Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16649,13 +16545,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835246776547981201163&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236699%3Fitem%3DN82E16820236699",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835246776547981201163&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236699%3Fitem%3DN82E16820236699",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-699-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:30.485Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16689,13 +16584,12 @@ export default [
         "sellerClass": "official",
         "price": 180,
         "saleprice": 164.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833473787211172029463&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236703%3Fitem%3DN82E16820236703",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833473787211172029463&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236703%3Fitem%3DN82E16820236703",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-703-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:30.674Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16768,13 +16662,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835468949485012613668&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820236707%3Fitem%3DN82E16820236707",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835468949485012613668&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820236707%3Fitem%3DN82E16820236707",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-707-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:30.905Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16808,13 +16701,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 289.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833679702914813278250&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236709%3Fitem%3DN82E16820236709",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833679702914813278250&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820236709%3Fitem%3DN82E16820236709",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-709-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.054Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16848,13 +16740,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 289.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832555331456364915246&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236710%3Fitem%3DN82E16820236710",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832555331456364915246&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-sl-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236710%3Fitem%3DN82E16820236710",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-710-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.161Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16888,13 +16779,12 @@ export default [
         "sellerClass": "official",
         "price": 170,
         "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583427941592044484188&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236736%3Fitem%3DN82E16820236736",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583427941592044484188&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236736%3Fitem%3DN82E16820236736",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-736-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.255Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16928,13 +16818,12 @@ export default [
         "sellerClass": "official",
         "price": 330,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313176993896389568819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236737%3Fitem%3DN82E16820236737",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313176993896389568819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-lpx-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820236737%3Fitem%3DN82E16820236737",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-737-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.381Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -16968,13 +16857,12 @@ export default [
         "sellerClass": "official",
         "price": 470,
         "saleprice": 439.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839704448527068280573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236826%3Fitem%3DN82E16820236826",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839704448527068280573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236826%3Fitem%3DN82E16820236826",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-826-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.505Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.528Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17008,13 +16896,12 @@ export default [
         "sellerClass": "official",
         "price": 500,
         "saleprice": 484.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833856044706069801362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236827%3Fitem%3DN82E16820236827",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833856044706069801362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236827%3Fitem%3DN82E16820236827",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-827-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.505Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:31.679Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "4458312533516882614671370",
@@ -17027,7 +16914,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:09.059Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "needsReview": false,
@@ -17217,13 +17104,12 @@ export default [
         "sellerClass": "official",
         "price": 930,
         "saleprice": 899.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836094331947458060917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236875%3Fitem%3DN82E16820236875",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836094331947458060917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236875%3Fitem%3DN82E16820236875",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-875-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.526Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:32.265Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17257,13 +17143,12 @@ export default [
         "sellerClass": "official",
         "price": 610,
         "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834939654714272555315&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6200-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820236882%3Fitem%3DN82E16820236882",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834939654714272555315&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6200-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820236882%3Fitem%3DN82E16820236882",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-882-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:32.400Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17375,13 +17260,12 @@ export default [
         "sellerClass": "official",
         "price": 950,
         "saleprice": 927.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317619999474593423969&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236889%3Fitem%3DN82E16820236889",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317619999474593423969&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236889%3Fitem%3DN82E16820236889",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:32.814Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17415,13 +17299,12 @@ export default [
         "sellerClass": "official",
         "price": 500,
         "saleprice": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316492289654039310437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820236890%3Fitem%3DN82E16820236890",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316492289654039310437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820236890%3Fitem%3DN82E16820236890",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-914-10.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:32.941Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17533,13 +17416,12 @@ export default [
         "sellerClass": "official",
         "price": 660,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310853529798635058184&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820236932%3Fitem%3DN82E16820236932",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310853529798635058184&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820236932%3Fitem%3DN82E16820236932",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-932-08.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:33.263Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17573,13 +17455,12 @@ export default [
         "sellerClass": "official",
         "price": 660,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317100089015715834427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820236936%3Fitem%3DN82E16820236936",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317100089015715834427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820236936%3Fitem%3DN82E16820236936",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.533Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:33.407Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17613,13 +17494,12 @@ export default [
         "sellerClass": "official",
         "price": 650,
         "saleprice": 625.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310854521045224135849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820236945%3Fitem%3DN82E16820236945",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310854521045224135849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820236945%3Fitem%3DN82E16820236945",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.533Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:33.549Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17653,13 +17533,12 @@ export default [
         "sellerClass": "official",
         "price": 660,
         "saleprice": 579.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315062706253441655709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820236946%3Fitem%3DN82E16820236946",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315062706253441655709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820236946%3Fitem%3DN82E16820236946",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-946-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:41.158Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:33.650Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17771,13 +17650,12 @@ export default [
         "sellerClass": "official",
         "price": 290,
         "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311259555061662048922&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236993%3Fitem%3DN82E16820236993",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311259555061662048922&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236993%3Fitem%3DN82E16820236993",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-828-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:35.728Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17811,13 +17689,12 @@ export default [
         "sellerClass": "official",
         "price": 540,
         "saleprice": 519.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831375019001177873650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6200-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820236995%3Fitem%3DN82E16820236995",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831375019001177873650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6200-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820236995%3Fitem%3DN82E16820236995",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-828-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:35.828Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17851,13 +17728,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833035310132207974638&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820242769%3Fitem%3DN82E16820242769",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833035310132207974638&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820242769%3Fitem%3DN82E16820242769",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2307170T3Z96CC.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:35.984Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17891,13 +17767,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834213438914222844650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2FN82E16820242770%3Fitem%3DN82E16820242770",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834213438914222844650&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl36-memory-black%2Fp%2FN82E16820242770%3Fitem%3DN82E16820242770",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-770-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:36.085Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17931,13 +17806,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313066390575419770304&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242798%3Fitem%3DN82E16820242798",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313066390575419770304&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242798%3Fitem%3DN82E16820242798",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-794-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-22T12:25:06.756Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:36.586Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -17971,13 +17845,12 @@ export default [
         "sellerClass": "official",
         "price": 449.99,
         "saleprice": 399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315099412866731201248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242800%3Fitem%3DN82E16820242800",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315099412866731201248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242800%3Fitem%3DN82E16820242800",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-794-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:07.226Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:37.116Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18011,13 +17884,12 @@ export default [
         "sellerClass": "official",
         "price": 1049.99,
         "saleprice": 1029.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836836202360960068744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242806%3Fitem%3DN82E16820242806",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836836202360960068744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr4-3200-cas-latency-cl16-desktop-memory-midnight-black%2Fp%2FN82E16820242806%3Fitem%3DN82E16820242806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-794-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:37.448Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18130,13 +18002,12 @@ export default [
         "sellerClass": "official",
         "price": 699.99,
         "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835593585160555940368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242862%3Fitem%3DN82E16820242862",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835593585160555940368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242862%3Fitem%3DN82E16820242862",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006Y2-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:37.783Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18170,13 +18041,12 @@ export default [
         "sellerClass": "official",
         "price": 699.99,
         "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318342638667445704063&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242863%3Fitem%3DN82E16820242863",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318342638667445704063&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242863%3Fitem%3DN82E16820242863",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006X1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:37.886Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18249,13 +18119,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833922823935038198819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242866%3Fitem%3DN82E16820242866",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833922823935038198819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242866%3Fitem%3DN82E16820242866",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006Y2-01.png",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:02.457Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.183Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18289,13 +18158,12 @@ export default [
         "sellerClass": "official",
         "price": 1399.99,
         "saleprice": 1259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839610372829945875276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242867%3Fitem%3DN82E16820242867",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839610372829945875276&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl30-memory-white%2Fp%2FN82E16820242867%3Fitem%3DN82E16820242867",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006X1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.289Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18329,13 +18197,12 @@ export default [
         "sellerClass": "official",
         "price": 699.99,
         "saleprice": 679.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317135395951775914822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242870%3Fitem%3DN82E16820242870",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317135395951775914822&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242870%3Fitem%3DN82E16820242870",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006Y2-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.559Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.388Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18369,13 +18236,12 @@ export default [
         "sellerClass": "official",
         "price": 719.99,
         "saleprice": 699.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836837426765323977769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242871%3Fitem%3DN82E16820242871",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836837426765323977769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-32gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242871%3Fitem%3DN82E16820242871",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006X1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.559Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.610Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18409,13 +18275,12 @@ export default [
         "sellerClass": "official",
         "price": 1399.99,
         "saleprice": 1249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310817052913483531637&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242874%3Fitem%3DN82E16820242874",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310817052913483531637&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242874%3Fitem%3DN82E16820242874",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006Y2-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.560Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.685Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18449,13 +18314,12 @@ export default [
         "sellerClass": "official",
         "price": 1399.99,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832680671944636701210&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242875%3Fitem%3DN82E16820242875",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832680671944636701210&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-ddr5-6400-cas-latency-cl32-memory-white%2Fp%2FN82E16820242875%3Fitem%3DN82E16820242875",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RM-001W-006X1-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.560Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.876Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18489,13 +18353,12 @@ export default [
         "sellerClass": "official",
         "price": 1399.99,
         "saleprice": 1199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836742507999843092709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl36-memory-desktop-memory-black%2Fp%2FN82E16820242976%3Fitem%3DN82E16820242976",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836742507999843092709&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl36-memory-desktop-memory-black%2Fp%2FN82E16820242976%3Fitem%3DN82E16820242976",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-242-737-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:38.983Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18566,15 +18429,14 @@ export default [
         "sku": "4458316125439481686082517",
         "itemNumber": "N82E16820246064",
         "sellerClass": "official",
-        "price": 459.99,
-        "saleprice": 429.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316125439481686082517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-lancer-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820246064%3Fitem%3DN82E16820246064",
+        "price": 449.99,
+        "saleprice": 419.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316125439481686082517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-lancer-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820246064%3Fitem%3DN82E16820246064",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-246-063-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:40.029Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18608,13 +18470,12 @@ export default [
         "sellerClass": "official",
         "price": 239.99,
         "saleprice": 219.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832886917031477849841&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-spectra-d35-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2FN82E16820246082%3Fitem%3DN82E16820246082",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832886917031477849841&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-spectra-d35-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2FN82E16820246082%3Fitem%3DN82E16820246082",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-246-082-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:40.193Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18647,13 +18508,12 @@ export default [
         "itemNumber": "N82E16820246108",
         "sellerClass": "official",
         "price": 399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583296127362010117344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-novakey-32gb-2-x-16gb-ddr5-5600-pc5-44800-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820246108%3Fitem%3DN82E16820246108",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583296127362010117344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-novakey-32gb-2-x-16gb-ddr5-5600-pc5-44800-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820246108%3Fitem%3DN82E16820246108",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-246-108-17.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.578Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:40.323Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18725,13 +18585,12 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831638254458281241945&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820331514%3Fitem%3DN82E16820331514",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831638254458281241945&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-black%2Fp%2FN82E16820331514%3Fitem%3DN82E16820331514",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-514-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:40.874Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18765,13 +18624,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311930724815254254134&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820331515%3Fitem%3DN82E16820331515",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311930724815254254134&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820331515%3Fitem%3DN82E16820331515",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-515-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:58:41.106Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18805,13 +18663,12 @@ export default [
         "sellerClass": "official",
         "price": 159.99,
         "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583899869574208387213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3600-cas-latency-cl18-desktop-memory-gray%2Fp%2FN82E16820331542%3Fitem%3DN82E16820331542",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583899869574208387213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3600-cas-latency-cl18-desktop-memory-gray%2Fp%2FN82E16820331542%3Fitem%3DN82E16820331542",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-542-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:25.079Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18845,13 +18702,12 @@ export default [
         "sellerClass": "official",
         "price": 309.99,
         "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839450820652112053989&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-gray%2Fp%2FN82E16820331544%3Fitem%3DN82E16820331544",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839450820652112053989&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-gray%2Fp%2FN82E16820331544%3Fitem%3DN82E16820331544",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-544-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:25.484Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18885,13 +18741,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315839539140688542033&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331618%3Fitem%3DN82E16820331618",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315839539140688542033&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331618%3Fitem%3DN82E16820331618",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-618-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:26.172Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18925,13 +18780,12 @@ export default [
         "sellerClass": "official",
         "price": 529.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838164614182823903014&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820331748%3Fitem%3DN82E16820331748",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838164614182823903014&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820331748%3Fitem%3DN82E16820331748",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:26.499Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -18965,13 +18819,12 @@ export default [
         "sellerClass": "official",
         "price": 529.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314006412447199715401&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-white%2Fp%2FN82E16820331749%3Fitem%3DN82E16820331749",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314006412447199715401&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-white%2Fp%2FN82E16820331749%3Fitem%3DN82E16820331749",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-811-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:26.772Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19005,13 +18858,12 @@ export default [
         "sellerClass": "official",
         "price": 449.99,
         "saleprice": 429.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314181620980511430992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820331810%3Fitem%3DN82E16820331810",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314181620980511430992&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820331810%3Fitem%3DN82E16820331810",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.777Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:27.189Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19085,13 +18937,12 @@ export default [
         "sellerClass": "official",
         "price": 569.99,
         "saleprice": 559.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316001280710653414532&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820331846%3Fitem%3DN82E16820331846",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316001280710653414532&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820331846%3Fitem%3DN82E16820331846",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-811-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:28.386Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19125,13 +18976,12 @@ export default [
         "sellerClass": "official",
         "price": 179.99,
         "saleprice": 164.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317443553305884049287&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820331858%3Fitem%3DN82E16820331858",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317443553305884049287&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-black%2Fp%2FN82E16820331858%3Fitem%3DN82E16820331858",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-858-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:28.851Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19165,13 +19015,12 @@ export default [
         "sellerClass": "official",
         "price": 179.99,
         "saleprice": 164.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834701124631382745320&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820331859%3Fitem%3DN82E16820331859",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834701124631382745320&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820331859%3Fitem%3DN82E16820331859",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-859-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:29.088Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19205,13 +19054,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833492385149378138538&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-16gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820331865%3Fitem%3DN82E16820331865",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833492385149378138538&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-16gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820331865%3Fitem%3DN82E16820331865",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-865-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:30.321Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19245,13 +19093,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832037710097345225498&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331998%3Fitem%3DN82E16820331998",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832037710097345225498&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331998%3Fitem%3DN82E16820331998",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-997-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.792Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:30.693Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19284,13 +19131,12 @@ export default [
         "sellerClass": "official",
         "price": 319.99,
         "saleprice": 309.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583656429028319883027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-value-series-32gb-ddr4-2666-cas-latency-cl19-desktop-memory%2Fp%2FN82E16820374109%3Fitem%3DN82E16820374109",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583656429028319883027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-value-series-32gb-ddr4-2666-cas-latency-cl19-desktop-memory%2Fp%2FN82E16820374109%3Fitem%3DN82E16820374109",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-109-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.815Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:30.909Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19324,13 +19170,12 @@ export default [
         "sellerClass": "official",
         "price": 79.99,
         "saleprice": 59.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583921968102935692196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-8gb-ddr4-3200-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820374299%3Fitem%3DN82E16820374299",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583921968102935692196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-8gb-ddr4-3200-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820374299%3Fitem%3DN82E16820374299",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-299-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:31.208Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19404,13 +19249,12 @@ export default [
         "sellerClass": "official",
         "price": 499.99,
         "saleprice": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314897794511292777627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374330%3Fitem%3DN82E16820374330",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314897794511292777627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374330%3Fitem%3DN82E16820374330",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-330-V03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:31.728Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19482,13 +19326,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 492.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839878051791843179439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374333%3Fitem%3DN82E16820374333",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839878051791843179439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374333%3Fitem%3DN82E16820374333",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:32.213Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19522,13 +19365,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 492.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313073767929098640040&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374334%3Fitem%3DN82E16820374334",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313073767929098640040&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374334%3Fitem%3DN82E16820374334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-334-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:32.443Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19796,13 +19638,12 @@ export default [
         "sellerClass": "official",
         "price": 529.99,
         "saleprice": 519.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831530783885851730783&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374351%3Fitem%3DN82E16820374351",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831530783885851730783&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374351%3Fitem%3DN82E16820374351",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-351-10.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.820Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:35.868Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19914,13 +19755,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316330026807859027769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374359%3Fitem%3DN82E16820374359",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316330026807859027769&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374359%3Fitem%3DN82E16820374359",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-359-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.824Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:37.586Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -19954,13 +19794,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 949.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312432801211153732417&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374368%3Fitem%3DN82E16820374368",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312432801211153732417&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374368%3Fitem%3DN82E16820374368",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-368-V03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.828Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:37.824Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20033,13 +19872,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 589.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313613428335919251781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374371%3Fitem%3DN82E16820374371",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313613428335919251781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374371%3Fitem%3DN82E16820374371",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:21:11.030Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:38.332Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20073,13 +19911,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 589.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318106412344292916849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820374372%3Fitem%3DN82E16820374372",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318106412344292916849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820374372%3Fitem%3DN82E16820374372",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-372-V03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.834Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:38.643Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20230,13 +20067,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832568791721344924779&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374380%3Fitem%3DN82E16820374380",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832568791721344924779&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6000-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374380%3Fitem%3DN82E16820374380",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-380-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.840Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:40.351Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20270,13 +20106,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 604.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310414682766189601540&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374381%3Fitem%3DN82E16820374381",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310414682766189601540&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374381%3Fitem%3DN82E16820374381",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-381-V03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.840Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:40.613Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20349,13 +20184,12 @@ export default [
         "sellerClass": "official",
         "price": 1349.99,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836374543942388884056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374384%3Fitem%3DN82E16820374384",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836374543942388884056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374384%3Fitem%3DN82E16820374384",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-384-24.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.846Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T10:59:41.142Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20389,13 +20223,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311443936149602682105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374419%3Fitem%3DN82E16820374419",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311443936149602682105&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374419%3Fitem%3DN82E16820374419",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-419-08.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:25.108Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20429,13 +20262,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 604.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315267607481968858300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374422%3Fitem%3DN82E16820374422",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315267607481968858300&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374422%3Fitem%3DN82E16820374422",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-422-11.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:25.529Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20469,13 +20301,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 504.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836680392743209298644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374424%3Fitem%3DN82E16820374424",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836680392743209298644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374424%3Fitem%3DN82E16820374424",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-424-13.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:26.196Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20509,13 +20340,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831954561310179038688&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374427%3Fitem%3DN82E16820374427",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831954561310179038688&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374427%3Fitem%3DN82E16820374427",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-427-13.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:26.577Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20549,13 +20379,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837199723073147295726&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374429%3Fitem%3DN82E16820374429",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837199723073147295726&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374429%3Fitem%3DN82E16820374429",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-429-13.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:26.780Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20589,13 +20418,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838326100011809621482&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374430%3Fitem%3DN82E16820374430",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838326100011809621482&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374430%3Fitem%3DN82E16820374430",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:27.208Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20629,13 +20457,12 @@ export default [
         "sellerClass": "official",
         "price": 2099.99,
         "saleprice": 1999.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313880783887257213573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374431%3Fitem%3DN82E16820374431",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313880783887257213573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820374431%3Fitem%3DN82E16820374431",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-431-10.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:28.172Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20708,13 +20535,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318219534444199820162&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374436%3Fitem%3DN82E16820374436",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318219534444199820162&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374436%3Fitem%3DN82E16820374436",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-436-07.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:28.831Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20787,13 +20613,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 949.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318222884274469753635&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374441%3Fitem%3DN82E16820374441",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318222884274469753635&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-5600-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374441%3Fitem%3DN82E16820374441",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-441-09.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:30.483Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20911,13 +20736,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312109556114593587758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374451%3Fitem%3DN82E16820374451",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312109556114593587758&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374451%3Fitem%3DN82E16820374451",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:31.222Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20951,13 +20775,12 @@ export default [
         "sellerClass": "official",
         "price": 2099.99,
         "saleprice": 1979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310698142919386858281&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374456%3Fitem%3DN82E16820374456",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310698142919386858281&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820374456%3Fitem%3DN82E16820374456",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:31.477Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -20991,13 +20814,12 @@ export default [
         "sellerClass": "official",
         "price": 1299.99,
         "saleprice": 1259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831277201647332381232&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374468%3Fitem%3DN82E16820374468",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831277201647332381232&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374468%3Fitem%3DN82E16820374468",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.870Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:31.720Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21070,13 +20892,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317679738315343126639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374473%3Fitem%3DN82E16820374473",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317679738315343126639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374473%3Fitem%3DN82E16820374473",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-460-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.870Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:32.239Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21187,13 +21008,12 @@ export default [
         "sellerClass": "official",
         "price": 969.99,
         "saleprice": 959.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317727936693926178064&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374497%3Fitem%3DN82E16820374497",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317727936693926178064&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374497%3Fitem%3DN82E16820374497",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:32.946Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21227,13 +21047,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834987844834381405037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6800-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374502%3Fitem%3DN82E16820374502",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834987844834381405037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-s5-series-32gb-ddr5-6800-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374502%3Fitem%3DN82E16820374502",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-451-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:33.189Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21345,13 +21164,12 @@ export default [
         "sellerClass": "official",
         "price": 649.99,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836900884524085061144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374523%3Fitem%3DN82E16820374523",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836900884524085061144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374523%3Fitem%3DN82E16820374523",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-523-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:35.507Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21385,13 +21203,12 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317280065521809483082&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820374528%3Fitem%3DN82E16820374528",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317280065521809483082&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-v-series-32gb-ddr4-3600-cas-latency-cl18-desktop-memory-white%2Fp%2FN82E16820374528%3Fitem%3DN82E16820374528",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-528-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:35.878Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21425,13 +21242,12 @@ export default [
         "sellerClass": "official",
         "price": 949.99,
         "saleprice": 929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318416881978383048687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374546%3Fitem%3DN82E16820374546",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318416881978383048687&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374546%3Fitem%3DN82E16820374546",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-544-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:36.164Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21465,13 +21281,12 @@ export default [
         "sellerClass": "official",
         "price": 949.99,
         "saleprice": 929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835529193472595574912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374547%3Fitem%3DN82E16820374547",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835529193472595574912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-64gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374547%3Fitem%3DN82E16820374547",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:37.160Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21543,13 +21358,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 609.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312356910937972698850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374556%3Fitem%3DN82E16820374556",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312356910937972698850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374556%3Fitem%3DN82E16820374556",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-544-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.892Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:37.875Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21583,13 +21397,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 609.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831752706992723931533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374557%3Fitem%3DN82E16820374557",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831752706992723931533&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374557%3Fitem%3DN82E16820374557",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.892Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:38.095Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21623,13 +21436,12 @@ export default [
         "sellerClass": "official",
         "price": 699.99,
         "saleprice": 679.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315730697802521005794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-48gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374584%3Fitem%3DN82E16820374584",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315730697802521005794&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-48gb-ddr5-5200-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820374584%3Fitem%3DN82E16820374584",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-544-04.png",
         "inStock": true,
         "matchedAt": "2026-08-22T12:25:07.112Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:38.355Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21663,13 +21475,12 @@ export default [
         "sellerClass": "official",
         "price": 699.99,
         "saleprice": 679.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837593322892359569805&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-48gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374585%3Fitem%3DN82E16820374585",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837593322892359569805&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-48gb-ddr5-5200-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374585%3Fitem%3DN82E16820374585",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:07.240Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:38.673Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21703,13 +21514,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1079.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316112135561911968341&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-silver%2Fp%2FN82E16820374614%3Fitem%3DN82E16820374614",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316112135561911968341&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-silver%2Fp%2FN82E16820374614%3Fitem%3DN82E16820374614",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-614-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.904Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:38.920Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21743,13 +21553,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1079.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837833872272582835514&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gold%2Fp%2FN82E16820374615%3Fitem%3DN82E16820374615",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837833872272582835514&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gold%2Fp%2FN82E16820374615%3Fitem%3DN82E16820374615",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-615-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.904Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:39.149Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21822,13 +21631,12 @@ export default [
         "sellerClass": "official",
         "price": 979.99,
         "saleprice": 969.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316196850669431627631&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374619%3Fitem%3DN82E16820374619",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316196850669431627631&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374619%3Fitem%3DN82E16820374619",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-506-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.909Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:40.444Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21862,13 +21670,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 989.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836445360112689082225&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374620%3Fitem%3DN82E16820374620",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836445360112689082225&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374620%3Fitem%3DN82E16820374620",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-620-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:40.740Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21902,13 +21709,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 989.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316887593024319303710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374621%3Fitem%3DN82E16820374621",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316887593024319303710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374621%3Fitem%3DN82E16820374621",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-621-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:40.945Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21942,13 +21748,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315431145472965873945&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374626%3Fitem%3DN82E16820374626",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315431145472965873945&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374626%3Fitem%3DN82E16820374626",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-568-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:00:41.197Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -21982,13 +21787,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837280136635749322358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-gold%2Fp%2FN82E16820374627%3Fitem%3DN82E16820374627",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837280136635749322358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-gold%2Fp%2FN82E16820374627%3Fitem%3DN82E16820374627",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-604-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:25.202Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22022,13 +21826,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312597416801976144663&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374628%3Fitem%3DN82E16820374628",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312597416801976144663&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-silver%2Fp%2FN82E16820374628%3Fitem%3DN82E16820374628",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-628-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:25.481Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22062,13 +21865,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832160970705963060344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-gold%2Fp%2FN82E16820374629%3Fitem%3DN82E16820374629",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832160970705963060344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-gold%2Fp%2FN82E16820374629%3Fitem%3DN82E16820374629",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-629-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:26.224Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22102,13 +21904,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833593096908784130010&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374640%3Fitem%3DN82E16820374640",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833593096908784130010&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374640%3Fitem%3DN82E16820374640",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-544-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:26.499Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22142,13 +21943,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314220406980662622081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374642%3Fitem%3DN82E16820374642",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314220406980662622081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-neo-rgb-series-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374642%3Fitem%3DN82E16820374642",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-642-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.916Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:26.798Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22182,13 +21982,12 @@ export default [
         "sellerClass": "official",
         "price": 969.99,
         "saleprice": 959.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316888695247461079231&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374656%3Fitem%3DN82E16820374656",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316888695247461079231&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374656%3Fitem%3DN82E16820374656",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-656-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:27.253Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22340,13 +22139,12 @@ export default [
         "sellerClass": "official",
         "price": 999.99,
         "saleprice": 979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833107907068848728751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820374661%3Fitem%3DN82E16820374661",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833107907068848728751&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820374661%3Fitem%3DN82E16820374661",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-661-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:29.108Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22380,13 +22178,12 @@ export default [
         "sellerClass": "official",
         "price": 969.99,
         "saleprice": 949.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311850506431573300423&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-48gb-ddr5-8000-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374667%3Fitem%3DN82E16820374667",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311850506431573300423&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-series-48gb-ddr5-8000-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374667%3Fitem%3DN82E16820374667",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-667-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:30.362Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22465,13 +22262,12 @@ export default [
         "sellerClass": "official",
         "price": 2499.99,
         "saleprice": 2399.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317568876247095624103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-64gb-ddr5-6000-cas-latency-cl26-desktop-memory-silver%2Fp%2FN82E16820374707%3Fitem%3DN82E16820374707",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317568876247095624103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-royal-series-64gb-ddr5-6000-cas-latency-cl26-desktop-memory-silver%2Fp%2FN82E16820374707%3Fitem%3DN82E16820374707",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-707-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.968Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:30.965Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22543,13 +22339,12 @@ export default [
         "sellerClass": "official",
         "price": 639.99,
         "saleprice": 599.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310574779011692710464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6800-cas-latency-cl34-desktop-memory-white%2Fp%2FN82E16820374755%3Fitem%3DN82E16820374755",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310574779011692710464&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-32gb-ddr5-6800-cas-latency-cl34-desktop-memory-white%2Fp%2FN82E16820374755%3Fitem%3DN82E16820374755",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:15.056Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:31.483Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22621,13 +22416,12 @@ export default [
         "sellerClass": "official",
         "price": 3499.99,
         "saleprice": 3449.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836016838378730485840&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-128gb-2-x-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374762%3Fitem%3DN82E16820374762",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836016838378730485840&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-128gb-2-x-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374762%3Fitem%3DN82E16820374762",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-762-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.011Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:32.032Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22661,13 +22455,12 @@ export default [
         "sellerClass": "official",
         "price": 3499.99,
         "saleprice": 3449.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316189972399315068735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-128gb-2-x-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374763%3Fitem%3DN82E16820374763",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316189972399315068735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-128gb-2-x-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374763%3Fitem%3DN82E16820374763",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-351-10.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.011Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:32.268Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22818,13 +22611,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 264.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837829481433490297896&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374781%3Fitem%3DN82E16820374781",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837829481433490297896&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374781%3Fitem%3DN82E16820374781",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-781-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.034Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:33.216Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22858,13 +22650,12 @@ export default [
         "sellerClass": "official",
         "price": 619.99,
         "saleprice": 595.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310962836497747948659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374783%3Fitem%3DN82E16820374783",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310962836497747948659&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374783%3Fitem%3DN82E16820374783",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-783-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.039Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:33.480Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22897,13 +22688,12 @@ export default [
         "sellerClass": "official",
         "price": 1899.99,
         "saleprice": 1799.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835826917452417348911&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374786%3Fitem%3DN82E16820374786",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835826917452417348911&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-rgb-series-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374786%3Fitem%3DN82E16820374786",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-786-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:33.717Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22937,13 +22727,12 @@ export default [
         "sellerClass": "official",
         "price": 1899.99,
         "saleprice": 1799.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316425492276026501696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374787%3Fitem%3DN82E16820374787",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316425492276026501696&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z-neo-series-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374787%3Fitem%3DN82E16820374787",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-787-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:35.497Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -22977,13 +22766,12 @@ export default [
         "sellerClass": "official",
         "price": 269.99,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311170722476859205710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374789%3Fitem%3DN82E16820374789",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311170722476859205710&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374789%3Fitem%3DN82E16820374789",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-789-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:35.929Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23017,13 +22805,12 @@ export default [
         "sellerClass": "official",
         "price": 139.99,
         "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310043258951203764810&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374790%3Fitem%3DN82E16820374790",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310043258951203764810&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-8gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374790%3Fitem%3DN82E16820374790",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-790-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:36.215Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23057,13 +22844,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839215742089017661969&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374792%3Fitem%3DN82E16820374792",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839215742089017661969&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374792%3Fitem%3DN82E16820374792",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-792-01.png",
         "inStock": true,
         "matchedAt": "2026-08-24T12:32:43.639Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:37.176Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23097,13 +22883,12 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312335880021333462627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374801%3Fitem%3DN82E16820374801",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312335880021333462627&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374801%3Fitem%3DN82E16820374801",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-801-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:37.631Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23138,13 +22923,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317049400502024712535&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374802%3Fitem%3DN82E16820374802",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317049400502024712535&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neo-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374802%3Fitem%3DN82E16820374802",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-802-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:37.858Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23178,13 +22962,12 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 529.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310901913873384992612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374806%3Fitem%3DN82E16820374806",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310901913873384992612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374806%3Fitem%3DN82E16820374806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-806-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:38.172Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23256,13 +23039,12 @@ export default [
         "sellerClass": "official",
         "price": 1049.99,
         "saleprice": 1029.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317275265229211741546&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-black%2Fp%2FN82E16820374808%3Fitem%3DN82E16820374808",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317275265229211741546&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-black%2Fp%2FN82E16820374808%3Fitem%3DN82E16820374808",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-808-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:38.746Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23334,13 +23116,12 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 529.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835545880202688389121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820374810%3Fitem%3DN82E16820374810",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835545880202688389121&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820374810%3Fitem%3DN82E16820374810",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-810-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:39.189Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23374,13 +23155,12 @@ export default [
         "sellerClass": "official",
         "price": 649.99,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318435661096287977326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820374811%3Fitem%3DN82E16820374811",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318435661096287977326&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820374811%3Fitem%3DN82E16820374811",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-811-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:40.099Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23414,13 +23194,12 @@ export default [
         "sellerClass": "official",
         "price": 1049.99,
         "saleprice": 1029.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313290926237202268250&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820374812%3Fitem%3DN82E16820374812",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313290926237202268250&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820374812%3Fitem%3DN82E16820374812",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-812-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:40.507Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23454,13 +23233,12 @@ export default [
         "sellerClass": "official",
         "price": 1179.99,
         "saleprice": 1149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583818694436379369269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl26-desktop-memory-gray%2Fp%2FN82E16820374813%3Fitem%3DN82E16820374813",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583818694436379369269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl26-desktop-memory-gray%2Fp%2FN82E16820374813%3Fitem%3DN82E16820374813",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-813-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:40.722Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23494,13 +23272,12 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 529.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833973915594869423666&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374814%3Fitem%3DN82E16820374814",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833973915594869423666&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374814%3Fitem%3DN82E16820374814",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-814-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:40.978Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23534,13 +23311,12 @@ export default [
         "sellerClass": "official",
         "price": 649.99,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839513963699123315037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374815%3Fitem%3DN82E16820374815",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839513963699123315037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374815%3Fitem%3DN82E16820374815",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-815-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:01:41.225Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23574,13 +23350,12 @@ export default [
         "sellerClass": "official",
         "price": 1049.99,
         "saleprice": 1029.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314096857797275885161&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820374816%3Fitem%3DN82E16820374816",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314096857797275885161&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820374816%3Fitem%3DN82E16820374816",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-816-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:25.260Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23614,13 +23389,12 @@ export default [
         "sellerClass": "official",
         "price": 1179.99,
         "saleprice": 1149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838109951331108929798&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl26-desktop-memory-white%2Fp%2FN82E16820374817%3Fitem%3DN82E16820374817",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838109951331108929798&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-trident-z5-neox-rgb-series-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl26-desktop-memory-white%2Fp%2FN82E16820374817%3Fitem%3DN82E16820374817",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-817-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:25.536Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23654,13 +23428,12 @@ export default [
         "sellerClass": "official",
         "price": 1280,
         "saleprice": 1259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583805307844034251175&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-64gb-ddr5-6600-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982006%3Fitem%3DN82E16820982006",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583805307844034251175&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-64gb-ddr5-6600-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982006%3Fitem%3DN82E16820982006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-825-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.166Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:25.994Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23694,13 +23467,12 @@ export default [
         "sellerClass": "official",
         "price": 640,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838347551570143873961&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982008%3Fitem%3DN82E16820982008",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838347551570143873961&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982008%3Fitem%3DN82E16820982008",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-909-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.167Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:26.250Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23772,13 +23544,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1297.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310897287913755097590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982013%3Fitem%3DN82E16820982013",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310897287913755097590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-platinum-rgb-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982013%3Fitem%3DN82E16820982013",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-840-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:07.245Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:26.627Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23812,13 +23583,12 @@ export default [
         "sellerClass": "official",
         "price": 1150,
         "saleprice": 1127.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312339943184807172337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982014%3Fitem%3DN82E16820982014",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312339943184807172337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982014%3Fitem%3DN82E16820982014",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-014-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.167Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:26.739Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23890,13 +23660,12 @@ export default [
         "sellerClass": "official",
         "price": 1220,
         "saleprice": 1199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314586091481822854071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982031%3Fitem%3DN82E16820982031",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314586091481822854071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982031%3Fitem%3DN82E16820982031",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-828-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.177Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:27.003Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -23969,13 +23738,12 @@ export default [
         "sellerClass": "official",
         "price": 640,
         "saleprice": 619.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310230547489305750562&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982045%3Fitem%3DN82E16820982045",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310230547489305750562&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982045%3Fitem%3DN82E16820982045",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-045-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:27.972Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24009,13 +23777,12 @@ export default [
         "sellerClass": "official",
         "price": 710,
         "saleprice": 694.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313276384312037244521&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820982070%3Fitem%3DN82E16820982070",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313276384312037244521&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7200-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820982070%3Fitem%3DN82E16820982070",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-097-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:28.243Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24087,13 +23854,12 @@ export default [
         "sellerClass": "official",
         "price": 700,
         "saleprice": 685.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314118770212727890010&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820982074%3Fitem%3DN82E16820982074",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314118770212727890010&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820982074%3Fitem%3DN82E16820982074",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-097-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:28.476Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24127,13 +23893,12 @@ export default [
         "sellerClass": "official",
         "price": 700,
         "saleprice": 685.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838124984153862340405&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-white%2Fp%2FN82E16820982075%3Fitem%3DN82E16820982075",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838124984153862340405&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-7000-cas-latency-cl34-desktop-memory-white%2Fp%2FN82E16820982075%3Fitem%3DN82E16820982075",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-098-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:28.688Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24282,13 +24047,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312115094660549819695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982087%3Fitem%3DN82E16820982087",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312115094660549819695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982087%3Fitem%3DN82E16820982087",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-098-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:29.811Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24322,13 +24086,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837204149732010860622&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982088%3Fitem%3DN82E16820982088",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837204149732010860622&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982088%3Fitem%3DN82E16820982088",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-088-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:30.383Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24362,13 +24125,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315047657465126387489&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982089%3Fitem%3DN82E16820982089",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315047657465126387489&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982089%3Fitem%3DN82E16820982089",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-089-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:30.632Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24402,13 +24164,12 @@ export default [
         "sellerClass": "official",
         "price": 670,
         "saleprice": 659.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313885361368157515045&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982090%3Fitem%3DN82E16820982090",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313885361368157515045&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982090%3Fitem%3DN82E16820982090",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-097-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:30.764Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24442,13 +24203,12 @@ export default [
         "sellerClass": "official",
         "price": 670,
         "saleprice": 659.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838330808454886371914&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982091%3Fitem%3DN82E16820982091",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838330808454886371914&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982091%3Fitem%3DN82E16820982091",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-098-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:30.932Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24482,13 +24242,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833762336165776412030&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982092%3Fitem%3DN82E16820982092",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833762336165776412030&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982092%3Fitem%3DN82E16820982092",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-097-02.png",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:15.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.044Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24522,13 +24281,12 @@ export default [
         "sellerClass": "official",
         "price": 1320,
         "saleprice": 1299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839734755380752421393&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982093%3Fitem%3DN82E16820982093",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839734755380752421393&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982093%3Fitem%3DN82E16820982093",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-098-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.146Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24562,13 +24320,12 @@ export default [
         "sellerClass": "official",
         "price": 670,
         "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318214826241643334690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982097%3Fitem%3DN82E16820982097",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318214826241643334690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982097%3Fitem%3DN82E16820982097",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-097-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.257Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24641,13 +24398,12 @@ export default [
         "sellerClass": "official",
         "price": 1300,
         "saleprice": 1279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839528910028649270828&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982099%3Fitem%3DN82E16820982099",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839528910028649270828&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982099%3Fitem%3DN82E16820982099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-088-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.542Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24681,13 +24437,12 @@ export default [
         "sellerClass": "official",
         "price": 1300,
         "saleprice": 1279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313506879872309058052&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982100%3Fitem%3DN82E16820982100",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313506879872309058052&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982100%3Fitem%3DN82E16820982100",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-089-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.710Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24721,13 +24476,12 @@ export default [
         "sellerClass": "official",
         "price": 670,
         "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835761834527942670943&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820982102%3Fitem%3DN82E16820982102",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835761834527942670943&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-gray%2Fp%2FN82E16820982102%3Fitem%3DN82E16820982102",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-102-14.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:31.818Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24800,13 +24554,12 @@ export default [
         "sellerClass": "official",
         "price": 950,
         "saleprice": 929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839730214750380522243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820982107%3Fitem%3DN82E16820982107",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839730214750380522243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820982107%3Fitem%3DN82E16820982107",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-107-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.088Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24878,13 +24631,12 @@ export default [
         "sellerClass": "official",
         "price": 500,
         "saleprice": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318446137253087623437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982109%3Fitem%3DN82E16820982109",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318446137253087623437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982109%3Fitem%3DN82E16820982109",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-109-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.348Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24918,13 +24670,12 @@ export default [
         "sellerClass": "official",
         "price": 515,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836680287962928608358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982111%3Fitem%3DN82E16820982111",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836680287962928608358&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982111%3Fitem%3DN82E16820982111",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-111-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.468Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24958,13 +24709,12 @@ export default [
         "sellerClass": "official",
         "price": 515,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831954382380488362834&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982112%3Fitem%3DN82E16820982112",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831954382380488362834&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-5600-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982112%3Fitem%3DN82E16820982112",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-887-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.559Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -24997,14 +24747,13 @@ export default [
         "itemNumber": "N82E16820982114",
         "sellerClass": "official",
         "price": 520,
-        "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310685821152087340346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982114%3Fitem%3DN82E16820982114",
+        "saleprice": 489.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310685821152087340346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982114%3Fitem%3DN82E16820982114",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-114-01.jpg",
         "inStock": true,
         "matchedAt": "2026-07-24",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.682Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25038,13 +24787,12 @@ export default [
         "sellerClass": "official",
         "price": 1280,
         "saleprice": 1259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315735136950477338946&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982125%3Fitem%3DN82E16820982125",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315735136950477338946&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982125%3Fitem%3DN82E16820982125",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-882-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:32.751Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25117,13 +24865,12 @@ export default [
         "sellerClass": "official",
         "price": 510,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836210229952860838679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982129%3Fitem%3DN82E16820982129",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836210229952860838679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982129%3Fitem%3DN82E16820982129",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-828-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:33.016Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25157,13 +24904,12 @@ export default [
         "sellerClass": "official",
         "price": 1240,
         "saleprice": 1219.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834438678535793841952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982134%3Fitem%3DN82E16820982134",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834438678535793841952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982134%3Fitem%3DN82E16820982134",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:33.109Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25236,13 +24982,12 @@ export default [
         "sellerClass": "official",
         "price": 570,
         "saleprice": 534.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837182856003332305087&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982185%3Fitem%3DN82E16820982185",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837182856003332305087&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982185%3Fitem%3DN82E16820982185",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:33.363Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25315,13 +25060,12 @@ export default [
         "sellerClass": "official",
         "price": 650,
         "saleprice": 629.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583995215769241047103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820982208%3Fitem%3DN82E16820982208",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583995215769241047103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820982208%3Fitem%3DN82E16820982208",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-208-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:33.680Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25394,13 +25138,12 @@ export default [
         "sellerClass": "official",
         "price": 660,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312576101725971455316&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820982210%3Fitem%3DN82E16820982210",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312576101725971455316&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-gray%2Fp%2FN82E16820982210%3Fitem%3DN82E16820982210",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-210-01.png",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:15.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:34.799Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25434,13 +25177,12 @@ export default [
         "sellerClass": "official",
         "price": 1370,
         "saleprice": 1349.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312049650195433336344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-7000-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982222%3Fitem%3DN82E16820982222",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312049650195433336344&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-7000-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982222%3Fitem%3DN82E16820982222",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:35.517Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25513,13 +25255,12 @@ export default [
         "sellerClass": "official",
         "price": 530,
         "saleprice": 519.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834264631402676215369&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982237%3Fitem%3DN82E16820982237",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834264631402676215369&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982237%3Fitem%3DN82E16820982237",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-237-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:35.932Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25553,13 +25294,12 @@ export default [
         "sellerClass": "official",
         "price": 620,
         "saleprice": 604.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834889345074647571527&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982239%3Fitem%3DN82E16820982239",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834889345074647571527&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982239%3Fitem%3DN82E16820982239",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-239-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:36.094Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25593,13 +25333,12 @@ export default [
         "sellerClass": "official",
         "price": 520,
         "saleprice": 505.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834256879195359655656&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982240%3Fitem%3DN82E16820982240",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834256879195359655656&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982240%3Fitem%3DN82E16820982240",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-240-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:36.230Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25633,13 +25372,12 @@ export default [
         "sellerClass": "official",
         "price": 1260,
         "saleprice": 1239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314958511843686553267&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982242%3Fitem%3DN82E16820982242",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314958511843686553267&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982242%3Fitem%3DN82E16820982242",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-058-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:36.691Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25673,13 +25411,12 @@ export default [
         "sellerClass": "official",
         "price": 570,
         "saleprice": 534.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838987218906503334364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982243%3Fitem%3DN82E16820982243",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838987218906503334364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-ddr5-6400-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982243%3Fitem%3DN82E16820982243",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-058-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-25T12:31:36.772Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:37.220Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25752,13 +25489,12 @@ export default [
         "sellerClass": "official",
         "price": 650,
         "saleprice": 629.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838068762238048618469&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982250%3Fitem%3DN82E16820982250",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838068762238048618469&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820982250%3Fitem%3DN82E16820982250",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-250-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:37.628Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25792,13 +25528,12 @@ export default [
         "sellerClass": "official",
         "price": 1260,
         "saleprice": 1239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312034902140310865593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982255%3Fitem%3DN82E16820982255",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312034902140310865593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820982255%3Fitem%3DN82E16820982255",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:37.765Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -25832,13 +25567,12 @@ export default [
         "sellerClass": "official",
         "price": 670,
         "saleprice": 649.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310978517537530575747&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982258%3Fitem%3DN82E16820982258",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310978517537530575747&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-dominator-titanium-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820982258%3Fitem%3DN82E16820982258",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-258-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-08-31T11:02:37.882Z"
+        "matchScore": 0.95
       }
     },
     "needsReview": false,
@@ -25871,13 +25605,12 @@ export default [
         "sellerClass": "official",
         "price": 640,
         "saleprice": 615.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316794285519747353281&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982264%3Fitem%3DN82E16820982264",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316794285519747353281&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820982264%3Fitem%3DN82E16820982264",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-264-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.206Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-30T19:40:10.748Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26144,13 +25877,12 @@ export default [
         "sellerClass": "official",
         "price": 940,
         "saleprice": 919.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833594408432524763593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982302%3Fitem%3DN82E16820982302",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833594408432524763593&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982302%3Fitem%3DN82E16820982302",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-302-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.230Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:38.976Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26184,13 +25916,12 @@ export default [
         "sellerClass": "official",
         "price": 950,
         "saleprice": 929.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839425941467398536870&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982303%3Fitem%3DN82E16820982303",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839425941467398536870&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982303%3Fitem%3DN82E16820982303",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-303-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.230Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:39.082Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26224,13 +25955,12 @@ export default [
         "sellerClass": "official",
         "price": 940,
         "saleprice": 909.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313741910452517035937&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-4800-pc5-38400-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982304%3Fitem%3DN82E16820982304",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313741910452517035937&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-4800-pc5-38400-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820982304%3Fitem%3DN82E16820982304",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-879-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:39.187Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26303,13 +26033,12 @@ export default [
         "sellerClass": "official",
         "price": 300,
         "saleprice": 287.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833106737133088939196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-2-x-8gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982323%3Fitem%3DN82E16820982323",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833106737133088939196&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-2-x-8gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982323%3Fitem%3DN82E16820982323",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-323-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.133Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26343,13 +26072,12 @@ export default [
         "sellerClass": "official",
         "price": 300,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831686564641446084027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982324%3Fitem%3DN82E16820982324",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831686564641446084027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982324%3Fitem%3DN82E16820982324",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-324-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.406Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26383,13 +26111,12 @@ export default [
         "sellerClass": "official",
         "price": 310,
         "saleprice": 297.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311838183470138909396&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982325%3Fitem%3DN82E16820982325",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311838183470138909396&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5600-pc5-44800-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982325%3Fitem%3DN82E16820982325",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-325-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.516Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26422,14 +26149,13 @@ export default [
         "itemNumber": "N82E16820982326",
         "sellerClass": "official",
         "price": 310,
-        "saleprice": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316421205940186914272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982326%3Fitem%3DN82E16820982326",
+        "saleprice": 259.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316421205940186914272&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982326%3Fitem%3DN82E16820982326",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-326-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.643Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26463,13 +26189,12 @@ export default [
         "sellerClass": "official",
         "price": 180,
         "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834061784577960514181&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-2-x-16gb-ddr4-3200-pc4-25600-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820982330%3Fitem%3DN82E16820982330",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834061784577960514181&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-pro-32gb-2-x-16gb-ddr4-3200-pc4-25600-cas-latency-cl16-desktop-memory-white%2Fp%2FN82E16820982330%3Fitem%3DN82E16820982330",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-330-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.773Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26503,13 +26228,12 @@ export default [
         "sellerClass": "official",
         "price": 500,
         "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314761231511785026270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982332%3Fitem%3DN82E16820982332",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314761231511785026270&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820982332%3Fitem%3DN82E16820982332",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-332-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.881Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26543,13 +26267,12 @@ export default [
         "sellerClass": "official",
         "price": 290,
         "saleprice": 277.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839220031050524716465&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200-pc5-41600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820982333%3Fitem%3DN82E16820982333",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839220031050524716465&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200-pc5-41600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820982333%3Fitem%3DN82E16820982333",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-333-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:40.980Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26582,14 +26305,13 @@ export default [
         "itemNumber": "N82E16820982334",
         "sellerClass": "official",
         "price": 310,
-        "saleprice": 269.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834867995413081246902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982334%3Fitem%3DN82E16820982334",
+        "saleprice": 296.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834867995413081246902&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-gray%2Fp%2FN82E16820982334%3Fitem%3DN82E16820982334",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-334-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:41.108Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26661,14 +26383,13 @@ export default [
         "itemNumber": "N82E16820982337",
         "sellerClass": "official",
         "price": 530,
-        "saleprice": 484.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583298612931293590402&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982337%3Fitem%3DN82E16820982337",
+        "saleprice": 499.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583298612931293590402&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820982337%3Fitem%3DN82E16820982337",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-337-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:02:41.332Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26701,14 +26422,13 @@ export default [
         "itemNumber": "N82E16820982338",
         "sellerClass": "official",
         "price": 960,
-        "saleprice": 939.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314987940545821781731&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982338%3Fitem%3DN82E16820982338",
+        "saleprice": 947.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314987940545821781731&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982338%3Fitem%3DN82E16820982338",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-338-11.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:25.270Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26820,13 +26540,12 @@ export default [
         "sellerClass": "official",
         "price": 510,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317337924041595648888&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982342%3Fitem%3DN82E16820982342",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317337924041595648888&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982342%3Fitem%3DN82E16820982342",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-342-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:26.049Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26860,13 +26579,12 @@ export default [
         "sellerClass": "official",
         "price": 510,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834878210592904848407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982343%3Fitem%3DN82E16820982343",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834878210592904848407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982343%3Fitem%3DN82E16820982343",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-343-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:26.232Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26900,13 +26618,12 @@ export default [
         "sellerClass": "official",
         "price": 520,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839207710444746999056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982344%3Fitem%3DN82E16820982344",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839207710444746999056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-rgb-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820982344%3Fitem%3DN82E16820982344",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-344-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:26.454Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -26979,13 +26696,12 @@ export default [
         "sellerClass": "official",
         "price": 510,
         "saleprice": 469.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310037518112289203531&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-gray%2Fp%2FN82E16820982346%3Fitem%3DN82E16820982346",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310037518112289203531&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-gray%2Fp%2FN82E16820982346%3Fitem%3DN82E16820982346",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-346-08.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:26.768Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27057,7 +26773,7 @@ export default [
         "itemNumber": "N82E16820982348",
         "sellerClass": "official",
         "price": 520,
-        "saleprice": 479.99,
+        "saleprice": 489.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317562102652200642373&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-desktop-memory-gray%2Fp%2FN82E16820982348%3Fitem%3DN82E16820982348",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-348-01.png",
         "inStock": true,
@@ -27136,13 +26852,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312547176974129859816&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985004%3Fitem%3DN82E16820985004",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312547176974129859816&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985004%3Fitem%3DN82E16820985004",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-077-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:28.276Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27176,13 +26891,12 @@ export default [
         "sellerClass": "official",
         "price": 1199.99,
         "saleprice": 1039.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832093833274196480903&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-64gb-ddr5-6000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820985005%3Fitem%3DN82E16820985005",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832093833274196480903&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-64gb-ddr5-6000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820985005%3Fitem%3DN82E16820985005",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-077-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:28.509Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27254,13 +26968,12 @@ export default [
         "sellerClass": "official",
         "price": 899.99,
         "saleprice": 879.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316828540117351101404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-classic-64gb-ddr5-6000-cas-latency-cl48-desktop-memory-black%2Fp%2FN82E16820985007%3Fitem%3DN82E16820985007",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316828540117351101404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-classic-64gb-ddr5-6000-cas-latency-cl48-desktop-memory-black%2Fp%2FN82E16820985007%3Fitem%3DN82E16820985007",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-008-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:03.129Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:29.220Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27294,13 +27007,12 @@ export default [
         "sellerClass": "official",
         "price": 469.99,
         "saleprice": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832472971490726342333&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-classic-32gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820985008%3Fitem%3DN82E16820985008",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832472971490726342333&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-classic-32gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820985008%3Fitem%3DN82E16820985008",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-008-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:30.378Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27334,13 +27046,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 574.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839305921536503532407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820985067%3Fitem%3DN82E16820985067",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839305921536503532407&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820985067%3Fitem%3DN82E16820985067",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-064-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:30.692Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27374,13 +27085,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 509.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316840795922010676093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820985070%3Fitem%3DN82E16820985070",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316840795922010676093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820985070%3Fitem%3DN82E16820985070",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-064-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:30.815Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27414,13 +27124,12 @@ export default [
         "sellerClass": "official",
         "price": 599.99,
         "saleprice": 574.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837413614902239356181&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985076%3Fitem%3DN82E16820985076",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837413614902239356181&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985076%3Fitem%3DN82E16820985076",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-076-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:30.924Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27454,13 +27163,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 614.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834090937716419029912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985153%3Fitem%3DN82E16820985153",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834090937716419029912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985153%3Fitem%3DN82E16820985153",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.294Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:31.178Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27494,13 +27202,12 @@ export default [
         "sellerClass": "official",
         "price": 629.99,
         "saleprice": 614.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583342088033338641055&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820985154%3Fitem%3DN82E16820985154",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583342088033338641055&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-white%2Fp%2FN82E16820985154%3Fitem%3DN82E16820985154",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-811-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.294Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:31.405Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27534,13 +27241,12 @@ export default [
         "sellerClass": "official",
         "price": 519.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583625852397627720742&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985218%3Fitem%3DN82E16820985218",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583625852397627720742&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985218%3Fitem%3DN82E16820985218",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:31.671Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27613,13 +27319,12 @@ export default [
         "sellerClass": "official",
         "price": 509.99,
         "saleprice": 499.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315687306578770889875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985241%3Fitem%3DN82E16820985241",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315687306578770889875&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-create-expert-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985241%3Fitem%3DN82E16820985241",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-077-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:32.234Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27653,13 +27358,12 @@ export default [
         "sellerClass": "official",
         "price": 579.99,
         "saleprice": 549.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311701549969168585376&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-xtreem-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985245%3Fitem%3DN82E16820985245",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311701549969168585376&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-xtreem-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-black%2Fp%2FN82E16820985245%3Fitem%3DN82E16820985245",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-111-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:32.485Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27693,13 +27397,12 @@ export default [
         "sellerClass": "official",
         "price": 679.99,
         "saleprice": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313301660954367389653&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-black%2Fp%2FN82E16820985264%3Fitem%3DN82E16820985264",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313301660954367389653&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-black%2Fp%2FN82E16820985264%3Fitem%3DN82E16820985264",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:32.692Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27733,13 +27436,12 @@ export default [
         "sellerClass": "official",
         "price": 689.99,
         "saleprice": 669.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583844058344613687482&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820985265%3Fitem%3DN82E16820985265",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583844058344613687482&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl28-desktop-memory-white%2Fp%2FN82E16820985265%3Fitem%3DN82E16820985265",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-811-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:32.905Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27773,13 +27475,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312383770130574172652&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985277%3Fitem%3DN82E16820985277",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312383770130574172652&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985277%3Fitem%3DN82E16820985277",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-277-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:33.005Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27813,13 +27514,12 @@ export default [
         "sellerClass": "official",
         "price": 539.99,
         "saleprice": 519.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315217258009305949154&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-eco-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820985279%3Fitem%3DN82E16820985279",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315217258009305949154&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-eco-32gb-ddr5-6400-cas-latency-cl32-desktop-memory-silver%2Fp%2FN82E16820985279%3Fitem%3DN82E16820985279",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-279-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:33.287Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27853,13 +27553,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312148143116249056641&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985307%3Fitem%3DN82E16820985307",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312148143116249056641&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985307%3Fitem%3DN82E16820985307",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-307-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:33.386Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27893,13 +27592,12 @@ export default [
         "sellerClass": "official",
         "price": 279.99,
         "saleprice": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837155623496240322784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-white%2Fp%2FN82E16820985308%3Fitem%3DN82E16820985308",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837155623496240322784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-white%2Fp%2FN82E16820985308%3Fitem%3DN82E16820985308",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-308-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:33.475Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27931,15 +27629,14 @@ export default [
         "sku": "4458315016035894135129999",
         "itemNumber": "N82E16820985309",
         "sellerClass": "official",
-        "price": 499.99,
-        "saleprice": 479.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315016035894135129999&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985309%3Fitem%3DN82E16820985309",
+        "price": 599.99,
+        "saleprice": 569.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315016035894135129999&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl38-desktop-memory-black%2Fp%2FN82E16820985309%3Fitem%3DN82E16820985309",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
         "inStock": true,
         "matchedAt": "2026-08-24T12:32:43.881Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:33.815Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -27973,13 +27670,12 @@ export default [
         "sellerClass": "official",
         "price": 469.99,
         "saleprice": 419.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831982966796626621007&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-eco-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl38-desktop-memory-silver%2Fp%2FN82E16820985371%3Fitem%3DN82E16820985371",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831982966796626621007&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-eco-32gb-2-x-16gb-ddr5-6400-pc5-51200-cas-latency-cl38-desktop-memory-silver%2Fp%2FN82E16820985371%3Fitem%3DN82E16820985371",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-262-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.339Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:35.565Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -28013,13 +27709,12 @@ export default [
         "sellerClass": "official",
         "price": 259.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315238605476153979667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985374%3Fitem%3DN82E16820985374",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315238605476153979667&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985374%3Fitem%3DN82E16820985374",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-374-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.339Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:35.831Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -28052,13 +27747,12 @@ export default [
         "sellerClass": "official",
         "price": 249.99,
         "saleprice": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314079415332397330517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985383%3Fitem%3DN82E16820985383",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314079415332397330517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-16gb-ddr5-6000-pc5-48000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985383%3Fitem%3DN82E16820985383",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-383-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.351Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:36.114Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -28092,13 +27786,12 @@ export default [
         "sellerClass": "official",
         "price": 229.99,
         "saleprice": 209.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835581417211168440891&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeil-orion-32gb-2-x-16gb-ddr4-3200-pc4-25600-cas-latency-cl18-desktop-memory-titanium-gray%2Fp%2FN82E16820991076%3Fitem%3DN82E16820991076",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835581417211168440891&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeil-orion-32gb-2-x-16gb-ddr4-3200-pc4-25600-cas-latency-cl18-desktop-memory-titanium-gray%2Fp%2FN82E16820991076%3Fitem%3DN82E16820991076",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-991-076-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.355Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:36.232Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,
@@ -28130,15 +27823,14 @@ export default [
         "sku": "445833855186539640455221",
         "itemNumber": "N82E16820991078",
         "sellerClass": "official",
-        "price": 149.99,
-        "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833855186539640455221&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeil-orion-rgb-16gb-2-x-8gb-ddr4-3200-pc4-25600-cas-latency-cl18-desktop-memory-titanium-gray%2Fp%2FN82E16820991078%3Fitem%3DN82E16820991078",
+        "price": 169.99,
+        "saleprice": 149.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833855186539640455221&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgeil-orion-rgb-16gb-2-x-8gb-ddr4-3200-pc4-25600-cas-latency-cl18-desktop-memory-titanium-gray%2Fp%2FN82E16820991078%3Fitem%3DN82E16820991078",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-991-078-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-23T12:27:11.502Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:03:36.723Z"
+        "matchScore": 1
       }
     },
     "needsReview": false,

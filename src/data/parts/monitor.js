@@ -717,13 +717,12 @@ export default [
         "itemNumber": "9SIA8X5KW91267",
         "sellerClass": "marketplace",
         "price": 547.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835917314568012731741&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-001B-00095%3Fitem%3D9SIA8X5KW91267",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835917314568012731741&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-001B-00095%3Fitem%3D9SIA8X5KW91267",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S26050919UDYIBC.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:13.415Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:27:42.023Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -828,7 +827,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.114Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "additionalImages": [
@@ -2441,7 +2440,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       },
       "bestbuy": {
         "price": 1099.99,
@@ -2589,7 +2588,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.212Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "additionalImages": [
@@ -3484,18 +3483,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA24GK474817",
-        "price": 368.43,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833177867401998997877&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-4k-32%2Fp%2FN82E16824117168%3Fitem%3D9SIA24GK474817",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-168-01.jpg",
+        "sku": "445839178871217832592241",
+        "itemNumber": "9SIAN7GK233136",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-08-30T15:50:06.011Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:31.607Z",
-        "priceLastMovedAt": "2026-08-30",
-        "rematchedAt": "2026-08-30T20:05:59.461Z",
-        "rematchedFrom": "445839178871217832592241"
+        "price": 229.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839178871217832592241&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-2k-32-qhd%2Fp%2FN82E16824117167%3Fitem%3D9SIAN7GK233136",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-167-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-31T18:40:08.013Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "additionalImages": [
@@ -4971,6 +4968,20 @@ export default [
         "matchedAt": "2026-08-30T15:49:51.789Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
+      },
+      "newegg_openbox": {
+        "sku": "4458350014384485281379",
+        "itemNumber": "N82E16824281013R",
+        "sellerClass": "official",
+        "price": 179.99,
+        "saleprice": 159.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458350014384485281379&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-mb16ace-15-6-full-hd%2Fp%2FN82E16824281013R%3Fitem%3DN82E16824281013R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-013-S01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-31T18:41:00.742Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 15.6,
@@ -7015,13 +7026,13 @@ export default [
         "sellerClass": "official",
         "price": 219.99,
         "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317788330031794290581&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-be279qsk-27-full-hd%2Fp%2FN82E16824281136R%3Fitem%3DN82E16824281136R",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317788330031794290581&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-be279qsk-27-full-hd%2Fp%2FN82E16824281136R%3Fitem%3DN82E16824281136R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-136-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.118Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 27,
@@ -7381,13 +7392,12 @@ export default [
         "itemNumber": "9SIA1CZKT21601",
         "sellerClass": "marketplace",
         "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837784267191468712159&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-101-1009p01-15-6%2Fp%2FN82E16824640020%3Fitem%3D9SIA1CZKT21601",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837784267191468712159&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmobile-pixels-101-1009p01-15-6%2Fp%2FN82E16824640020%3Fitem%3D9SIA1CZKT21601",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-640-020-06.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:36.657Z"
+        "matchScore": 1
       }
     },
     "screenSize": 16,
@@ -7735,13 +7745,12 @@ export default [
         "itemNumber": "9SIA4P0KHK5979",
         "sellerClass": "marketplace",
         "price": 234.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835844225919386342313&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00021%3Fitem%3D9SIA4P0KHK5979",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835844225919386342313&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00021%3Fitem%3D9SIA4P0KHK5979",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VQKANDB.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:30:22.325Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:38.584Z"
+        "matchScore": 1
       }
     },
     "screenSize": 13.3,
@@ -8020,7 +8029,8 @@ export default [
         "matchedAt": "2026-08-28T21:46:32.412Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-30",
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 34,
@@ -8099,13 +8109,12 @@ export default [
         "itemNumber": "9SIC0T2KU74468",
         "sellerClass": "marketplace",
         "price": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833636707460554737857&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02H28%3Fitem%3D9SIC0T2KU74468",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833636707460554737857&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02H28%3Fitem%3D9SIC0T2KU74468",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRKF389.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:39.781Z"
+        "matchScore": 1
       }
     },
     "screenSize": 23.8,
@@ -8146,13 +8155,12 @@ export default [
         "itemNumber": "9SIC0T2M110917",
         "sellerClass": "marketplace",
         "price": 184.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316382594507982126661&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02H30%3Fitem%3D9SIC0T2M110917",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316382594507982126661&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02H30%3Fitem%3D9SIC0T2M110917",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRRB479.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:39.889Z"
+        "matchScore": 1
       }
     },
     "screenSize": 27,
@@ -8278,13 +8286,12 @@ export default [
         "itemNumber": "9SIA0ZXK866662",
         "sellerClass": "marketplace",
         "price": 313.03,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312597161732011220848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00022%3Fitem%3D9SIA0ZXK866662",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312597161732011220848&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-00HZ-00022%3Fitem%3D9SIA0ZXK866662",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD2405130VRYU229.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:28:40.393Z"
+        "matchScore": 1
       }
     },
     "screenSize": 15.6,
@@ -8433,7 +8440,7 @@ export default [
         "matchedAt": "2026-08-22T12:25:08.384Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 27,
@@ -8921,7 +8928,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:49.706Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 27,
@@ -9228,7 +9235,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "4458311775180787009973573",
@@ -9916,7 +9923,7 @@ export default [
         "matchedAt": "2026-08-28T21:46:32.430Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 24.5,
@@ -10817,7 +10824,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.402Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 32,
@@ -10870,13 +10877,12 @@ export default [
         "itemNumber": "9SIA57XKDJ7578",
         "sellerClass": "marketplace",
         "price": 1029,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311883885365372818679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqpx-qd-oled-49-dqhd-240-hz-metallic-black%2Fp%2FN82E16824475437%3Fitem%3D9SIA57XKDJ7578",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311883885365372818679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqpx-qd-oled-49-dqhd-240-hz-metallic-black%2Fp%2FN82E16824475437%3Fitem%3D9SIA57XKDJ7578",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-437-105.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:43.178Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:29:32.701Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "445838916882314961340236",
@@ -10890,7 +10896,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.402Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 49,
@@ -10984,7 +10990,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
         "price": 189.99,
@@ -11972,7 +11978,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.186Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 27,
@@ -12128,7 +12134,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
         "price": 799.99,
@@ -12198,7 +12204,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.386Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 34,
@@ -13069,7 +13075,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 34,
@@ -13120,7 +13126,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.245Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 32,
@@ -13203,14 +13209,15 @@ export default [
         "priceConfirmedAt": "2026-08-31"
       },
       "newegg": {
-        "sku": "445836049390726275197788",
-        "itemNumber": "9SIAFVFKNG3401",
+        "sku": "445835862101508443831410",
+        "itemNumber": "9SIC57KKTB7134",
         "sellerClass": "marketplace",
-        "price": 562.82,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836049390726275197788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B83%3Fitem%3D9SIAFVFKNG3401",
+        "price": 724.99,
+        "saleprice": 579.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835862101508443831410&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B83%3Fitem%3D9SIC57KKTB7134",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4P0D2511150H1ZPJ95.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-29T15:57:54.777Z",
+        "matchedAt": "2026-08-31T18:40:47.537Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13295,14 +13302,15 @@ export default [
         "priceConfirmedAt": "2026-08-31"
       },
       "newegg": {
-        "sku": "4458315570524873219771339",
-        "itemNumber": "9SIAFVFKJP6019",
+        "sku": "445833479691399594440597",
+        "itemNumber": "9SIC57KKTB7166",
         "sellerClass": "marketplace",
-        "price": 335.81,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315570524873219771339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIAFVFKJP6019",
+        "price": 424.99,
+        "saleprice": 339.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833479691399594440597&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIC57KKTB7166",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-260-955-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-21T12:45:05.085Z",
+        "matchedAt": "2026-08-31T18:40:47.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -13480,7 +13488,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.855Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 27,
@@ -13523,14 +13531,13 @@ export default [
         "sku": "44583181741035400026639",
         "itemNumber": "9SIA4P0KPS1372",
         "sellerClass": "marketplace",
-        "price": 1099.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583181741035400026639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-000W-00DF9%3Fitem%3D9SIA4P0KPS1372",
+        "price": 1299.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583181741035400026639&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-000W-00DF9%3Fitem%3D9SIA4P0KPS1372",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/15Z-000W-00DF9-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:29:42.086Z"
+        "matchScore": 1
       }
     },
     "screenSize": 31.5,
@@ -14060,7 +14067,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
         "price": 109.99,
@@ -14411,13 +14418,12 @@ export default [
         "itemNumber": "9SIC0T2KWF7872",
         "sellerClass": "marketplace",
         "price": 131.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833144978447888031302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-000A7%3Fitem%3D9SIC0T2KWF7872",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833144978447888031302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000V-000A7%3Fitem%3D9SIC0T2KWF7872",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S26051211PKC061.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:30:30.926Z"
+        "matchScore": 1
       }
     },
     "screenSize": 24,
@@ -14632,13 +14638,12 @@ export default [
         "itemNumber": "9SIAFJ8KTT4426",
         "sellerClass": "marketplace",
         "price": 156.58,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317438505231675126698&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YA3%3Fitem%3D9SIAFJ8KTT4426",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317438505231675126698&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YA3%3Fitem%3D9SIAFJ8KTT4426",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2511010C2HM87E.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:30:32.708Z"
+        "matchScore": 1
       }
     },
     "screenSize": 15.6,
@@ -14676,28 +14681,28 @@ export default [
         "itemNumber": "0JC-0006-00YC3R",
         "sellerClass": "official",
         "price": 299.99,
-        "saleprice": 197.99,
+        "saleprice": 188.09,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314398753134933535920&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC3R%3Fitem%3D0JC-0006-00YC3R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD260105152DAS2B.jpg",
         "inStock": true,
         "matchedAt": "2026-08-24T12:29:28.731Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31",
+        "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
-        "sku": "9SIACVBKUR6061",
-        "price": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312014632131557242959&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y97%3Fitem%3D9SIACVBKUR6061",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2510140C2LFL60.jpg",
+        "sku": "445831931944325232073721",
+        "itemNumber": "9SIAHRCM141279",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-08-30T15:49:55.823Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:30:32.935Z",
-        "priceLastMovedAt": "2026-08-30",
-        "rematchedAt": "2026-08-30T20:08:00.016Z",
-        "rematchedFrom": "445831931944325232073721"
+        "price": 370,
+        "saleprice": 207,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831931944325232073721&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC3%3Fitem%3D9SIAHRCM141279",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2607221BTN3Z2B.jpg",
+        "inStock": true,
+        "matchedAt": "2026-08-31T18:39:59.296Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "screenSize": 15.6,
@@ -14842,7 +14847,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.471Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "4458318419104548345768256",
@@ -14914,7 +14919,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 24,
@@ -15031,7 +15036,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.426Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "screenSize": 24,
@@ -17123,13 +17128,12 @@ export default [
         "itemNumber": "9SIBSZRM5K2254",
         "sellerClass": "marketplace",
         "price": 220,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837690277680044419269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000D-000E1%3Fitem%3D9SIBSZRM5K2254",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837690277680044419269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F3D4-000D-000E1%3Fitem%3D9SIBSZRM5K2254",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A8X5S2512061BX14AC4.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:08.553Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-08-31T11:30:35.171Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
