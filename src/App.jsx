@@ -5061,6 +5061,10 @@ function BuilerPartPickerRouter(props){
 
 /* === BUY YOUR BUILD — affiliate checkout section === */
 function BuyYourBuild({build, multiParts}){
+  // How far through the build the shopper has got. See the stepper at the
+  // bottom of this component for why opening the whole list at once is not
+  // something a browser will do.
+  const [openedCount,setOpenedCount]=useState(0);
   const coreParts = Object.values(build || {}).filter(Boolean);
   const multiList = Object.values(multiParts || {}).flat().filter(Boolean);
   const allParts = [...coreParts, ...multiList];
@@ -5073,6 +5077,10 @@ function BuyYourBuild({build, multiParts}){
   });
   const buyable = rows.filter(r => r.best);
   const grandTotal = buyable.reduce((s,r) => s + r.best.price, 0);
+  // Clamp rather than reset: editing the build changes buyable.length under a
+  // count that was correct for the old list.
+  const opened = Math.min(openedCount, buyable.length);
+  const nextRow = buyable[opened] || null;
 
   return <div style={{marginTop:24,border:"1px solid var(--bdr)",background:"var(--bg2)"}}>
     <div style={{padding:"16px 20px",borderBottom:"1px solid var(--bdr)",display:"flex",alignItems:"center",gap:8}}>
@@ -5106,13 +5114,33 @@ function BuyYourBuild({build, multiParts}){
         <div style={{fontFamily:"var(--mono)",fontSize:10,color:"var(--dim)",letterSpacing:"0.08em"}}>BUILD TOTAL ({buyable.length} {buyable.length===1?"part":"parts"})</div>
         <div style={{fontFamily:"var(--mono)",fontSize:24,fontWeight:700,color:"var(--mint)"}}>{"$" + fmtPrice(grandTotal)}</div>
       </div>
-      <button onClick={()=>{
-        buyable.forEach((r,idx) => {
-          setTimeout(()=>{ try{ window.open(r.best.url,"_blank","noopener"); }catch(e){} }, idx*300);
-        });
-      }} style={{display:"inline-flex",alignItems:"center",gap:6,fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"12px 24px",background:"var(--accent)",color:"var(--bg)",border:"none",cursor:"pointer"}}>
-        <ShoppingCart size={16} strokeWidth={2.5}/> Open All Links
-      </button>
+      {/* ONE CLICK OPENS ONE TAB, because that is all a browser will do.
+          This was "Open All Links": a forEach of window.open on staggered
+          setTimeouts. Browsers grant a single popup per user gesture and
+          consume it on the first call, so it opened exactly one tab of N and
+          dropped the rest — the empty catch swallowed any trace. Measured in
+          Chrome 147 with the popup blocker on: 1 of 12, identically for
+          staggered window.open, synchronous window.open, and programmatic
+          anchor.click(). There is no arrangement of code that opens the list.
+          (Headless Chrome shows a clean 12/12 only because Puppeteer passes
+          --disable-popup-blocking by default. That number is a harness
+          artifact; do not trust it if you re-test this.)
+
+          A button promising every link and delivering one is worse than no
+          button, so the promise is now one the browser keeps: the shopper
+          steps through the build, one real anchor click at a time. Each step
+          being an anchor, GA4's enhanced measurement counts all of them with
+          no custom-event plumbing. */}
+      {buyable.length===0 ? null : nextRow
+        ? <a href={nextRow.best.url} target="_blank" rel="noopener noreferrer sponsored" onClick={()=>setOpenedCount(n=>n+1)} style={{display:"inline-flex",alignItems:"center",gap:6,fontFamily:"var(--ff)",fontSize:14,fontWeight:600,padding:"12px 24px",background:"var(--accent)",color:"var(--bg)",textDecoration:"none",cursor:"pointer"}}>
+            <ShoppingCart size={16} strokeWidth={2.5}/> Open next part ({opened+1} of {buyable.length})
+          </a>
+        : <div style={{display:"flex",alignItems:"center",gap:12,flexWrap:"wrap"}}>
+            <span style={{display:"inline-flex",alignItems:"center",gap:6,fontFamily:"var(--ff)",fontSize:14,fontWeight:600,color:"var(--mint)"}}>
+              <CircleCheck size={16} strokeWidth={2.5}/> All {buyable.length} {buyable.length===1?"link":"links"} opened
+            </span>
+            <button onClick={()=>setOpenedCount(0)} style={{fontFamily:"var(--ff)",fontSize:12,fontWeight:600,padding:"8px 16px",background:"transparent",color:"var(--dim)",border:"1px solid var(--bdr)",cursor:"pointer"}}>Start over</button>
+          </div>}
     </div>
     <div style={{padding:"10px 20px",borderTop:"1px solid var(--bdr)",fontFamily:"var(--ff)",fontSize:11,color:"var(--mute)",lineHeight:1.5}}>
       Pro Rig Builder may earn a commission on purchases made through these links, at no extra cost to you. Prices and availability are checked regularly but may change at the retailer.
