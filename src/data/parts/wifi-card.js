@@ -20,7 +20,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07X462KRK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
         "priceSeller": "OK Networking",
         "priceResolvedVia": "paapi"
@@ -52,7 +52,7 @@ export default [
         "price": 149.98,
         "url": "https://www.amazon.com/dp/B09PRB1MZM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -82,10 +82,10 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 14.99,
+        "price": 12.96,
         "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -108,12 +108,12 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 30.99,
+        "price": 32.99,
         "url": "https://www.amazon.com/dp/B0B5YPK9L1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
-        "priceSource": "3p",
-        "priceSeller": "EliteValue Tech",
+        "priceConfirmedAt": "2026-08-31",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -174,7 +174,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-30",
+    "quarantinedAt": "2026-08-31",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -195,7 +195,7 @@ export default [
         "price": 21.03,
         "url": "https://www.amazon.com/dp/B07V4R3QHW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
         "priceSeller": "nineplus99",
         "priceResolvedVia": "paapi",
@@ -221,7 +221,7 @@ export default [
         "price": 17.99,
         "url": "https://www.amazon.com/dp/B07P6N2TZH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -247,7 +247,7 @@ export default [
         "price": 27.99,
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
         "priceSeller": "BrosTrend",
         "priceResolvedVia": "paapi",
@@ -276,7 +276,7 @@ export default [
         "price": 28.84,
         "url": "https://www.amazon.com/dp/B07ZV2CJL2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -300,10 +300,10 @@ export default [
     "bluetooth": true,
     "deals": {
       "amazon": {
-        "price": 22.99,
+        "price": 16.09,
         "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -346,7 +346,7 @@ export default [
         "price": 22.9,
         "url": "https://www.amazon.com/dp/B07XM6XZ1F?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-30",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
         "priceSeller": "Ubit Store",
         "priceResolvedVia": "paapi",
