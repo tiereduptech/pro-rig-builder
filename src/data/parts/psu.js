@@ -1893,7 +1893,7 @@ export default [
     "reviews": 676,
     "deals": {
       "amazon": {
-        "price": 88.68,
+        "price": 79.95,
         "url": "https://www.amazon.com/dp/B0CKY88GMT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
@@ -2423,16 +2423,14 @@ export default [
     "reviews": 1565,
     "deals": {
       "amazon": {
-        "price": 169.99,
+        "price": 234,
         "url": "https://www.amazon.com/dp/B0BP8B6M7Y?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-31"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -5837,8 +5835,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FJYN9HP1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },

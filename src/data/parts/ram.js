@@ -296,11 +296,13 @@ export default [
         "price": 539.99,
         "url": "https://www.amazon.com/dp/B0BXHC74WD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-08-31",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-31"
       },
       "newegg": {
         "sku": "445838901026564144549112",
@@ -769,7 +771,7 @@ export default [
     "reviews": 484,
     "deals": {
       "amazon": {
-        "price": 509.95,
+        "price": 482.99,
         "url": "https://www.amazon.com/dp/B0FQNB9WBD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
@@ -838,12 +840,12 @@ export default [
     "reviews": 3497,
     "deals": {
       "amazon": {
-        "price": 509.99,
+        "price": 452.32,
         "url": "https://www.amazon.com/dp/B0CTHXMYL8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
-        "priceSeller": "Micom Pro",
+        "priceSeller": "A-Tech Components",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2167,13 +2169,11 @@ export default [
         "price": 113.99,
         "url": "https://www.amazon.com/dp/B09T2LCVL7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-28",
+        "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
         "priceSeller": "Timetec International Inc",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-31"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445834481459073975204131",
@@ -3386,9 +3386,11 @@ export default [
         "price": 309.82,
         "url": "https://www.amazon.com/dp/B088KSRW4S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-31"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-08-31",
+        "priceSource": "3p",
+        "priceSeller": "MemoryC",
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -4208,7 +4210,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
-        "priceSeller": "A-Tech Components",
+        "priceSeller": "Stokvane (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -6420,7 +6422,10 @@ export default [
     "height": 45,
     "form": "DIMM",
     "color": "White",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-08-31",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 40189,
@@ -10663,11 +10668,11 @@ export default [
       "amazon": {
         "asin": "B08C53LL9J",
         "url": "https://www.amazon.com/dp/B08C53LL9J?tag=tiereduptech-20",
-        "price": 117.49,
+        "price": 127,
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
-        "priceSeller": "Blue Orbit Commerce Group",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

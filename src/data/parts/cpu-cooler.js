@@ -157,7 +157,9 @@ export default [
         "priceSeller": "Triplenet Pricing INC",
         "priceConfirmedAt": "2026-08-31",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-08-31"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -925,12 +927,12 @@ export default [
     "radSize": 360,
     "deals": {
       "amazon": {
-        "price": 79.99,
+        "price": 69.89,
         "url": "https://www.amazon.com/dp/B0DLWGG85P?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8999,8 +9001,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CK57N22Q?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
-        "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -9663,7 +9665,7 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 50.5,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -18072,11 +18074,11 @@ export default [
       "amazon": {
         "asin": "B0BT9122F7",
         "url": "https://www.amazon.com/dp/B0BT9122F7?tag=tiereduptech-20",
-        "price": 17.45,
+        "price": 19.39,
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
         "priceSource": "3p",
-        "priceSeller": "Thermalright Direct",
+        "priceSeller": "Thermalright Direct 2",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -18421,7 +18423,7 @@ export default [
       "amazon": {
         "asin": "B0BRBW94VL",
         "url": "https://www.amazon.com/dp/B0BRBW94VL?tag=tiereduptech-20",
-        "price": 25.59,
+        "price": 26.99,
         "inStock": true,
         "priceConfirmedAt": "2026-08-31",
         "priceSource": "1p",
@@ -20255,12 +20257,12 @@ export default [
       "amazon": {
         "asin": "B0F8ZSWJ74",
         "url": "https://www.amazon.com/dp/B0F8ZSWJ74?tag=tiereduptech-20",
-        "price": 41.99,
+        "price": 49.49,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-08-19",
+        "priceConfirmedAt": "2026-08-31",
         "priceResolvedVia": "paapi"
       }
     },
