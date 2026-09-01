@@ -44,8 +44,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.759Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:04:56.582Z"
+        "matchScore": 0.9
       }
     },
     "igpu": true,
@@ -194,8 +193,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.756Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:04:57.109Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "445832308571150527735018",
@@ -203,13 +201,13 @@ export default [
         "sellerClass": "official",
         "price": 279,
         "saleprice": 144,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832308571150527735018&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-9000-series-ryzen-5-9600x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113844R%3Fitem%3DN82E16819113844R",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832308571150527735018&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-9000-series-ryzen-5-9600x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113844R%3Fitem%3DN82E16819113844R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-844R-11.png",
         "inStock": true,
         "matchedAt": "2026-08-31T18:40:58.920Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "igpu": true,
@@ -401,18 +399,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIC0X3KKG0802",
-        "price": 273,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312336849104258494142&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-8700g-ryzen-7-8000-g-series-phoenix-zen-4-socket-am5%2Fp%2FN82E16819113811%3Fitem%3D9SIC0X3KKG0802",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-811-01.jpg",
+        "sku": "445831961054646993745624",
+        "itemNumber": "9SIA2W0KMT6712",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-08-31T18:38:21.665Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:04:57.768Z",
-        "priceLastMovedAt": "2026-08-31",
-        "rematchedAt": "2026-08-31T21:15:50.495Z",
-        "rematchedFrom": "445831961054646993745624"
+        "price": 265.59,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831961054646993745624&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00243%3Fitem%3D9SIA2W0KMT6712",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2509231BGH9Y05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-01T15:50:28.398Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "upc": "00730143317696",
@@ -462,8 +458,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.609Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:04:57.900Z"
+        "matchScore": 1
       }
     },
     "upc": "00730143316163",
@@ -513,8 +508,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.768Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:04:58.034Z"
+        "matchScore": 1
       }
     },
     "upc": "00730143316439",
@@ -809,8 +803,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:41:38.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:04:58.892Z"
+        "matchScore": 1
       }
     },
     "upc": "00730143314466",
@@ -910,8 +903,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.750Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:04:59.174Z"
+        "matchScore": 0.9
       }
     },
     "bestbuyRemovedComp": "2026-06-28",
@@ -1278,8 +1270,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.772Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:05:00.007Z"
+        "matchScore": 0.9
       }
     },
     "igpu": false,
@@ -1359,7 +1350,7 @@ export default [
         "sellerClass": "official",
         "price": 299,
         "saleprice": 209,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837533901031861757310&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-5000-series-ryzen-7-5700x-vermeer-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113735%3Fitem%3DN82E16819113735",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837533901031861757310&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-5000-series-ryzen-7-5700x-vermeer-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113735%3Fitem%3DN82E16819113735",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-735-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.745Z",
@@ -1414,8 +1405,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-22T12:24:56.615Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:00.303Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -1517,8 +1507,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:13.818Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:05:00.600Z"
+        "matchScore": 0.9
       }
     },
     "igpu": false,
@@ -1724,8 +1713,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-30T15:54:12.632Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:01.167Z"
+        "matchScore": 1
       }
     },
     "upc": "00730143313377",
@@ -1811,20 +1799,19 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-31"
+        "priceUnconfirmedAt": "2026-09-01"
       },
       "newegg": {
-        "sku": "4458311640650092267663894",
-        "itemNumber": "9SIA12KKT72894",
+        "sku": "4458312192056414374361640",
+        "itemNumber": "9SIBSWCM0Z4436",
         "sellerClass": "marketplace",
-        "price": 335.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311640650092267663894&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265kf-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118507%3Fitem%3D9SIA12KKT72894",
+        "price": 335.85,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312192056414374361640&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265kf-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118507%3Fitem%3D9SIBSWCM0Z4436",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-507-07.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-30T15:47:54.582Z",
+        "matchedAt": "2026-09-01T15:52:47.719Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:01.324Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -1877,8 +1864,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.788Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:01.465Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -1931,8 +1917,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:40.602Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:01.610Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -1976,16 +1961,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16819118485",
-        "price": 584.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583995176247738451799&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900f-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118485%3Fitem%3DN82E16819118485",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2510200HJH7672.jpg",
+        "sku": "445832201293737272559982",
+        "itemNumber": "N82E16819118496",
         "sellerClass": "official",
-        "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.75,
-        "refreshedAt": "2026-09-01T09:05:01.887Z",
-        "priceLastMovedAt": "2026-09-01"
+        "price": 729.99,
+        "saleprice": 599.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832201293737272559982&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900ks-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118496%3Fitem%3DN82E16819118496",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-496-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-01T15:53:29.921Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.75
       }
     },
     "upc": "00735858503181",
@@ -2035,9 +2021,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:02.016Z",
-        "priceLastMovedAt": "2026-09-01"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -2135,8 +2119,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.784Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:05:02.322Z"
+        "matchScore": 0.9
       }
     },
     "upc": "00735858503129",
@@ -2187,8 +2170,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:13.845Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:02.455Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -2241,8 +2223,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:02.591Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -2348,8 +2329,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:28.031Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:02.884Z"
+        "matchScore": 1
       }
     },
     "upc": "00735858547611",
@@ -2455,8 +2435,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:03.182Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -2491,18 +2470,16 @@ export default [
     "bench": 22,
     "deals": {
       "newegg": {
-        "sku": "N82E16819118483",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839411228361991436607&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-14th-gen-core-i3-14100-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118483%3Fitem%3DN82E16819118483",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-483-01.jpg",
+        "sku": "4458313354280244322606200",
+        "itemNumber": "N82E16819118223",
         "sellerClass": "official",
-        "matchedAt": "2026-08-31T18:40:58.930Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:03.308Z",
-        "priceLastMovedAt": "2026-08-31",
-        "migratedAt": "2026-08-31T21:15:54.757Z",
-        "migratedFrom": "4458313354280244322606200"
+        "price": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313354280244322606200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i3-10th-gen-core-i3-10100f-comet-lake-lga-1200-desktop-cpu-processor%2Fp%2FN82E16819118223%3Fitem%3DN82E16819118223",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-223-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-01T15:53:29.915Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.75
       }
     },
     "amazonRemovedAnomaly": "2026-06-28",
@@ -2554,8 +2531,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.787Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:03.441Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -2625,7 +2601,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.778Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-08-31"
+        "priceUnconfirmedAt": "2026-09-01"
       }
     },
     "upc": "00735858526616",
@@ -2773,18 +2749,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445833524806465386683700",
-        "itemNumber": "9SIC7XKM1G2834",
+        "sku": "445834877766318714698666",
+        "itemNumber": "9SIBZW0KFP0222",
         "sellerClass": "marketplace",
-        "price": 340,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833524806465386683700&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13600k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118416%3Fitem%3D9SIC7XKM1G2834",
+        "price": 305.9,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834877766318714698666&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-13th-gen-core-i5-13600k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118416%3Fitem%3D9SIBZW0KFP0222",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-416-V01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-31T18:40:53.888Z",
+        "matchedAt": "2026-09-01T15:53:10.418Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:03.713Z",
-        "priceLastMovedAt": "2026-09-01"
+        "matchScore": 1
       }
     },
     "upc": "00735858526715",
@@ -3153,8 +3127,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:04.545Z"
+        "matchScore": 1
       }
     },
     "upc": "00735858499613",
@@ -3206,9 +3179,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.774Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:04.686Z",
-        "priceLastMovedAt": "2026-09-01"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -3263,8 +3234,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.546Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:05:04.818Z"
+        "matchScore": 0.9
       }
     },
     "upc": "00735858989633",
@@ -3315,8 +3285,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:40.599Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:04.968Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -3373,15 +3342,15 @@ export default [
         "sku": "4458316036654074603276712",
         "itemNumber": "N82E16819118349R",
         "sellerClass": "official",
-        "price": 299.99,
+        "price": 193.99,
         "saleprice": 142.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316036654074603276712&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118349R%3Fitem%3DN82E16819118349R",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316036654074603276712&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118349R%3Fitem%3DN82E16819118349R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-349-05.jpg",
         "inStock": true,
         "matchedAt": "2026-08-31T18:40:58.931Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "igpu": false,
@@ -3435,8 +3404,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.883Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:05.233Z"
+        "matchScore": 1
       }
     },
     "upc": "00735858503020",
@@ -3486,8 +3454,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:33.049Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:05.393Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -3595,8 +3562,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:33.047Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:05.666Z"
+        "matchScore": 1
       }
     },
     "igpu": false,
@@ -3646,8 +3612,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.769Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:06.198Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3782,8 +3747,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-26T12:32:58.887Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:06.583Z"
+        "matchScore": 1
       }
     },
     "discount": 14,
@@ -3867,7 +3831,7 @@ export default [
         "itemNumber": "9SIC3U3M4A8545",
         "sellerClass": "marketplace",
         "price": 194.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311929404610012485884&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-processor%2Fp%2FN82E16819118402%3Fitem%3D9SIC3U3M4A8545",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311929404610012485884&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i5-12th-gen-core-i5-12600kf-alder-lake-lga-1700-desktop-processor%2Fp%2FN82E16819118402%3Fitem%3D9SIC3U3M4A8545",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-402-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:33.072Z",
@@ -4090,7 +4054,7 @@ export default [
         "itemNumber": "9SIAGBAM0V3552",
         "sellerClass": "marketplace",
         "price": 294.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313454989095723178437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-8700f-ryzen-7-8000-series-phoenix-zen-4-socket-am5%2Fp%2FN82E16819113825%3Fitem%3D9SIAGBAM0V3552",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313454989095723178437&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-8700f-ryzen-7-8000-series-phoenix-zen-4-socket-am5%2Fp%2FN82E16819113825%3Fitem%3D9SIAGBAM0V3552",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-825-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:33.934Z",
@@ -4453,8 +4417,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.903Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:58.905Z"
+        "matchScore": 1
       }
     },
     "upc": "730143318167",
@@ -5206,7 +5169,7 @@ export default [
         "sellerClass": "official",
         "price": 159,
         "saleprice": 99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311243796421013472549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5000-series-ryzen-5-5500-cezanne-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113737%3Fitem%3DN82E16819113737",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311243796421013472549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5000-series-ryzen-5-5500-cezanne-socket-am4-desktop-cpu-processor%2Fp%2FN82E16819113737%3Fitem%3DN82E16819113737",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-737-V03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.745Z",
@@ -5252,8 +5215,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.750Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:05:59.726Z"
+        "matchScore": 1
       }
     },
     "cores": 12,
@@ -5290,14 +5252,12 @@ export default [
         "sellerClass": "official",
         "price": 299,
         "saleprice": 199,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836993541884332506771&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-7600x-ryzen-5-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113770%3Fitem%3DN82E16819113770",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836993541884332506771&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-7600x-ryzen-5-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113770%3Fitem%3DN82E16819113770",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-770-02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:40.586Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "absentStreak": 2,
-        "staleSince": "2026-08-31T21:16:52.537Z"
+        "matchScore": 1
       }
     },
     "cores": 6,
@@ -5333,14 +5293,12 @@ export default [
         "itemNumber": "N82E16819113793",
         "sellerClass": "official",
         "price": 449,
-        "saleprice": 389,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836785218245808493291&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-7800x3d-ryzen-7-7000-series-raphael-zen-4-socket-am5%2Fp%2FN82E16819113793%3Fitem%3DN82E16819113793",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-793-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.750Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:00.507Z"
+        "matchScore": 1
       }
     },
     "cores": 8,
@@ -5392,8 +5350,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:00.811Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "445832020534847213899738",
@@ -5401,13 +5358,13 @@ export default [
         "sellerClass": "official",
         "price": 599,
         "saleprice": 392,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832020534847213899738&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118462R%3Fitem%3DN82E16819118462R",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832020534847213899738&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-i9-14th-gen-core-i9-14900k-raptor-lake-lga-1700-desktop-cpu-processor%2Fp%2FN82E16819118462R%3Fitem%3DN82E16819118462R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-462-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-31T18:40:58.934Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "cores": 24,
@@ -5468,8 +5425,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.783Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:01.068Z"
+        "matchScore": 1
       }
     },
     "cores": 20,
@@ -5609,8 +5565,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.756Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:01.760Z"
+        "matchScore": 1
       }
     },
     "cores": 16,
@@ -5655,7 +5610,7 @@ export default [
         "sellerClass": "official",
         "price": 649,
         "saleprice": 549,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317919762205493445447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9950x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113841%3Fitem%3DN82E16819113841",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317919762205493445447&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-9-9000-series-ryzen-9-9950x-granite-ridge-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113841%3Fitem%3DN82E16819113841",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-841-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.755Z",
@@ -5674,7 +5629,7 @@ export default [
         "matchedAt": "2026-08-31T18:40:58.919Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "cores": 16,
@@ -5725,8 +5680,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.755Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:02.623Z"
+        "matchScore": 1
       }
     },
     "cores": 12,
@@ -5777,8 +5731,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.755Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:03.052Z"
+        "matchScore": 1
       }
     },
     "cores": 8,
@@ -5868,22 +5821,22 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.788Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:03.352Z"
+        "matchScore": 1
       },
       "newegg_openbox": {
         "sku": "445834191833753504320321",
         "itemNumber": "N82E16819118508R",
         "sellerClass": "official",
         "price": 329.99,
-        "saleprice": 193.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834191833753504320321&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-5-245k-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118508R%3Fitem%3DN82E16819118508R",
+        "saleprice": 175.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834191833753504320321&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-5-245k-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118508R%3Fitem%3DN82E16819118508R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-508-15.jpg",
         "inStock": true,
         "matchedAt": "2026-08-22T12:25:06.031Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       }
     },
     "cores": 14,
@@ -5966,17 +5919,16 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "newegg": {
-        "sku": "4458317331894585249506626",
-        "itemNumber": "9SIC7PTM0S9956",
-        "sellerClass": "marketplace",
-        "price": 325.55,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317331894585249506626&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265k-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118506%3Fitem%3D9SIC7PTM0S9956",
+        "sku": "445837299268243703955023",
+        "itemNumber": "N82E16819118506",
+        "sellerClass": "official",
+        "price": 357.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837299268243703955023&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fintel-core-ultra-7-265k-arrow-lake-lga-1851-desktop-cpu-processor%2Fp%2FN82E16819118506%3Fitem%3DN82E16819118506",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-118-506-06.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:40.160Z",
+        "matchedAt": "2026-09-01T15:53:29.921Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:03.626Z"
+        "matchScore": 1
       }
     },
     "cores": 20,
@@ -6022,7 +5974,7 @@ export default [
         "sellerClass": "official",
         "price": 479,
         "saleprice": 469,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839998193130166726200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113877%3Fitem%3DN82E16819113877",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839998193130166726200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor%2Fp%2FN82E16819113877%3Fitem%3DN82E16819113877",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-877-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.757Z",
@@ -6077,8 +6029,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.757Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:04.476Z"
+        "matchScore": 1
       }
     },
     "cores": 12,
@@ -6430,8 +6381,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:04.942Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-01T09:06:06.020Z"
+        "matchScore": 0.9
       }
     },
     "socket": "LGA1700",
@@ -6843,17 +6793,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458317901509828354083043",
-        "itemNumber": "9SIBZW0KFS7554",
+        "sku": "445832049111952883961573",
+        "itemNumber": "9SIC7XKM1H7774",
         "sellerClass": "marketplace",
-        "price": 318.39,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317901509828354083043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00850%3Fitem%3D9SIBZW0KFS7554",
+        "price": 306.87,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832049111952883961573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2MN-0004-00850%3Fitem%3D9SIC7XKM1H7774",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AKVHD22013008UMB86E.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-24T12:32:47.565Z",
+        "matchedAt": "2026-09-01T15:53:23.792Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:07.069Z"
+        "matchScore": 1
       }
     },
     "socket": "LGA1200",
@@ -7032,17 +6981,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458312183620721913992362",
-        "itemNumber": "9SIBZW0KFT4932",
+        "sku": "4458314709323003410962571",
+        "itemNumber": "9SIC3U3KPK3026",
         "sellerClass": "marketplace",
-        "price": 135,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312183620721913992362&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01N71%3Fitem%3D9SIBZW0KFT4932",
+        "price": 145,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314709323003410962571&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000A-01N71%3Fitem%3D9SIC3U3KPK3026",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AYTVD2203210IOGO409.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-28T21:46:11.237Z",
+        "matchedAt": "2026-09-01T15:53:15.535Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:07.335Z"
+        "matchScore": 1
       }
     },
     "socket": "LGA1200",
@@ -7356,8 +7304,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.770Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:06:07.996Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.405Z",
@@ -7511,14 +7458,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458310969368440743998974",
-        "itemNumber": "9SIC3U3KN45552",
+        "sku": "44583468106308122420290",
+        "itemNumber": "9SIC70UM3H9376",
         "sellerClass": "marketplace",
-        "price": 174.16,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310969368440743998974&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5600gt-ryzen-5-5000-series-cezanne-zen-3-socket-am4%2Fp%2FN82E16819113816%3Fitem%3D9SIC3U3KN45552",
+        "price": 172,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583468106308122420290&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-ryzen-5-5600gt-ryzen-5-5000-series-cezanne-zen-3-socket-am4%2Fp%2FN82E16819113816%3Fitem%3D9SIC70UM3H9376",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/19-113-816-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-31T18:43:35.206Z",
+        "matchedAt": "2026-09-01T15:53:20.972Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1
       }
@@ -9286,18 +9233,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA4REKHN1050",
-        "price": 144.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831685404593456090496&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00222%3Fitem%3D9SIA4REKHN1050",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502130GQNPU08.jpg",
+        "sku": "4458310981224316636056716",
+        "itemNumber": "9SIC7XKM1R4056",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-08-31T18:43:38.480Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:07:00.161Z",
-        "priceLastMovedAt": "2026-08-31",
-        "rematchedAt": "2026-08-31T21:17:52.459Z",
-        "rematchedFrom": "4458315948462096901383796"
+        "price": 123.98,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310981224316636056716&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F274-000M-00222%3Fitem%3D9SIC7XKM1R4056",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ASGMS2502130GQNPU08.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-01T15:53:24.181Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.770Z",
@@ -10373,8 +10318,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-24T12:32:47.948Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:07:04.380Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T14:34:31.771Z",
