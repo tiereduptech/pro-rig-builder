@@ -8014,13 +8014,14 @@ export default [
         "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
-        "price": 209.99,
+        "price": 289.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1875&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPro-MP341CQW&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "1875",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445832307348827516898466",
@@ -8388,7 +8389,7 @@ export default [
         "itemId": "2097",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -8435,7 +8436,7 @@ export default [
         "itemId": "2098",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -8532,7 +8533,7 @@ export default [
         "itemId": "2133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8918,14 +8919,14 @@ export default [
         "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "msi": {
-        "price": 119.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2151&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP275Q&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2151",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458310493234757327318003",
@@ -9809,14 +9810,14 @@ export default [
         "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
-        "price": 279.99,
+        "price": 199.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1734&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP341CQ&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "1734",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       }
     },
     "screenSize": 34,
@@ -9861,7 +9862,7 @@ export default [
         "itemId": "2272",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -9920,7 +9921,7 @@ export default [
         "itemId": "2300",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -10472,7 +10473,7 @@ export default [
         "itemId": "2375",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -10518,7 +10519,7 @@ export default [
         "itemId": "2383",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "screenSize": 27,
@@ -10822,7 +10823,7 @@ export default [
         "itemId": "2417",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -10883,7 +10884,7 @@ export default [
         "itemId": "2412",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10957,7 +10958,7 @@ export default [
         "itemId": "2426",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -11015,7 +11016,7 @@ export default [
         "itemId": "2427",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "screenSize": 27,
@@ -11550,7 +11551,7 @@ export default [
         "itemId": "2514",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -11763,7 +11764,7 @@ export default [
         "itemId": "2393",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -12156,14 +12157,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
-        "price": 799.99,
+        "price": 899.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2491&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-272URX-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2491",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       }
     },
     "screenSize": 27,
@@ -12208,7 +12209,7 @@ export default [
         "itemId": "2320",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -13758,7 +13759,7 @@ export default [
         "itemId": "2800",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14092,13 +14093,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
-        "price": 109.99,
+        "price": 139.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2881&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP273W-E14A&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2881",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312060354695130490027",
@@ -14150,14 +14152,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 69.99,
+        "price": 94.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2802&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FPortable-Monitors%2FPro-MP165-E6&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2802",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445837557893024845258852",
@@ -14207,14 +14209,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 89.99,
+        "price": 94.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2872&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243W-E14&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2872",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458318124016705179246337",
@@ -14854,14 +14856,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 679.99,
+        "price": 729.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2887&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QR-QD-OLED-X50&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2887",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458316655664126969556551",
@@ -14933,7 +14935,7 @@ export default [
         "itemId": "2928",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -14993,7 +14995,7 @@ export default [
         "itemId": "2929",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "screenSize": 27,
@@ -15039,7 +15041,7 @@ export default [
         "itemId": "2736",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {

@@ -889,7 +889,7 @@ export default [
         "itemId": "2371",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -955,7 +955,7 @@ export default [
         "itemId": "2373",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445837049315549479513046",
@@ -1148,11 +1148,11 @@ export default [
       "msi": {
         "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1492&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMAG-Z790-TOMAHAWK-WIFI&intsrc=APIG_16410",
-        "inStock": true,
+        "inStock": false,
         "itemId": "1492",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -1545,7 +1545,7 @@ export default [
         "itemId": "2958",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "9SIC7PTM0T3095",
@@ -2754,14 +2754,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
-        "price": 429.99,
+        "price": 389.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2314&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMPG-X870E-CARBON-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2314",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312254027680150402743",
@@ -2835,7 +2835,7 @@ export default [
         "itemId": "2450",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -3736,7 +3736,7 @@ export default [
         "itemId": "1727",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -4245,7 +4245,7 @@ export default [
         "itemId": "1733",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -5408,7 +5408,7 @@ export default [
         "itemId": "1254",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -6907,7 +6907,7 @@ export default [
         "itemId": "1510",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "additionalImages": [
@@ -7369,7 +7369,7 @@ export default [
         "itemId": "2453",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -7481,13 +7481,14 @@ export default [
         "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
-        "price": 169.99,
+        "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2333&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-X870-P-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2333",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458315202603794630866105",
@@ -7630,7 +7631,7 @@ export default [
         "itemId": "2731",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -7817,7 +7818,7 @@ export default [
         "itemId": "2449",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -7885,7 +7886,7 @@ export default [
         "itemId": "2730",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "additionalImages": [
@@ -8003,7 +8004,7 @@ export default [
         "itemId": "2367",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813144759",
@@ -8191,7 +8192,7 @@ export default [
         "itemId": "2854",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813144728",
@@ -8328,7 +8329,7 @@ export default [
         "itemId": "2458",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445835672671083126215705",
@@ -8472,7 +8473,7 @@ export default [
         "itemId": "2735",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8583,14 +8584,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 139.99,
+        "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2830&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FPRO-B850-S-WIFI6E&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2830",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458316670049652437671586",
@@ -8766,14 +8767,14 @@ export default [
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
-        "price": 139.99,
+        "price": 179.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2873&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI6E&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2873",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458314442573143198691740",
@@ -9488,7 +9489,7 @@ export default [
         "itemId": "1746",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10788,7 +10789,7 @@ export default [
         "itemId": "2970",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12615,7 +12616,7 @@ export default [
         "itemId": "2729",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "additionalImages": [
@@ -12772,7 +12773,7 @@ export default [
         "itemId": "2448",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13413,14 +13414,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 199.99,
+        "price": 239.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2709&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850M-MORTAR-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2709",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813144715",
@@ -13699,7 +13700,7 @@ export default [
         "itemId": "2451",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14051,7 +14052,7 @@ export default [
         "itemId": "2732",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -14313,7 +14314,7 @@ export default [
         "itemId": "2759",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14540,13 +14541,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 199.99,
+        "price": 169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2536&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FPRO-Z890-S-WIFI-WHITE&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2536",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458313614106753638784243",
@@ -14653,7 +14655,7 @@ export default [
         "itemId": "2369",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -15299,7 +15301,7 @@ export default [
         "itemId": "2368",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445839599061238943619465",
@@ -15433,7 +15435,7 @@ export default [
         "itemId": "2456",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458318283260983177448133",
@@ -16054,7 +16056,7 @@ export default [
         "itemId": "2715",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -16347,7 +16349,7 @@ export default [
         "itemId": "2588",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -16410,7 +16412,7 @@ export default [
         "itemId": "2793",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -16821,7 +16823,7 @@ export default [
         "itemId": "2728",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -17369,7 +17371,7 @@ export default [
         "itemId": "2655",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -18082,7 +18084,7 @@ export default [
         "itemId": "2394",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312200895071169412040",
@@ -18229,7 +18231,7 @@ export default [
         "itemId": "2828",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813144721",
@@ -18663,7 +18665,7 @@ export default [
         "itemId": "2455",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813144693",
@@ -18724,7 +18726,7 @@ export default [
         "itemId": "2467",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "additionalImages": [
@@ -19205,9 +19207,10 @@ export default [
         "inStock": true,
         "itemId": "2377",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceLastMovedAt": "2026-08-28",
+        "priceUnconfirmedReason": "msi-price-suspect_high-vs-median"
       },
       "newegg": {
         "sku": "445831908406744040252583",
@@ -19311,7 +19314,7 @@ export default [
         "itemId": "2829",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -19954,7 +19957,7 @@ export default [
         "itemId": "2457",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "44583532616740331115017",
@@ -20216,7 +20219,7 @@ export default [
         "itemId": "2817",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -20576,7 +20579,7 @@ export default [
         "itemId": "2936",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -20644,7 +20647,7 @@ export default [
         "itemId": "2883",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -21252,14 +21255,14 @@ export default [
         "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
-        "price": 149.99,
+        "price": 159.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=1253&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B550-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "1253",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458313859387338508012904",
@@ -21539,7 +21542,7 @@ export default [
         "itemId": "1985",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -21973,7 +21976,7 @@ export default [
         "itemId": "2334",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831810801084836112856",
@@ -22044,7 +22047,7 @@ export default [
         "itemId": "2421",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM5",
@@ -22096,14 +22099,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "msi": {
-        "price": 269.99,
+        "price": 289.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2454&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-X870E-TOMAHAWK-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2454",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445835598199868153940375",
@@ -22153,14 +22156,14 @@ export default [
         "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
-        "price": 229.99,
+        "price": 209.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2447&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FMAG-B850-TOMAHAWK-MAX-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2447",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445833838685106778999705",
@@ -22230,7 +22233,7 @@ export default [
         "itemId": "445",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458313890755728569624299",
@@ -22523,13 +22526,14 @@ export default [
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
-        "price": 249.99,
+        "price": 229.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2733&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FAMD-Platform-Motherboard%2FB850-GAMING-PLUS-WIFI-PZ&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2733",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312196363374480429786",
@@ -22579,13 +22583,14 @@ export default [
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
-        "price": 299.99,
+        "price": 279.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2415&u=https%3A%2F%2Fus-store.msi.com%2FMotherboards%2FIntel-Platform-Motherboard%2FMPG-Z890I-EDGE-TI-WIFI&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2415",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458317219569822534862076",
@@ -22838,7 +22843,7 @@ export default [
         "itemId": "2973",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445838898098871767877202",
@@ -22894,7 +22899,7 @@ export default [
         "itemId": "2974",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM5",
@@ -22933,9 +22938,10 @@ export default [
       "msi": {
         "price": 2289.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=3038&u=https%3A%2F%2Fus-store.msi.com%2FSale%2Fpromotions%2FCombo-Deals%2F9950x3d-x870e-rtx5080-suprim-liquid-bundle&intsrc=APIG_16410",
-        "inStock": false,
+        "inStock": true,
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "msi-dropped-item-from-catalog-feed"
+        "priceUnconfirmedReason": "msi-price-suspect_pair-vs-pair",
+        "itemId": "3038"
       }
     },
     "socket": "AM5",
@@ -22983,7 +22989,7 @@ export default [
         "itemId": "2976",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
