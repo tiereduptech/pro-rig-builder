@@ -775,7 +775,7 @@ export default [
     "fans_inc": 3,
     "rgb": true,
     "value": 10,
-    "quarantinedAt": "2026-08-26",
+    "quarantinedAt": "2026-09-01",
     "bench": 89,
     "height": 52,
     "cfm": 174,
@@ -1898,7 +1898,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445839219722962354274099",
@@ -2234,7 +2236,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "KuFengKeJi store",
+        "priceSeller": "Jungle Leopard",
         "priceConfirmedAt": "2026-09-01",
         "priceResolvedVia": "paapi"
       }
@@ -9664,7 +9666,7 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 53.99,
+        "price": 48.46,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -11073,7 +11075,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-01"
       }
     },
     "additionalImages": [
@@ -17561,11 +17565,11 @@ export default [
       "amazon": {
         "asin": "B0CCX9MKRL",
         "url": "https://www.amazon.com/dp/B0CCX9MKRL?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 96.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "OneDealOutlet Online",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -17630,7 +17634,7 @@ export default [
       "amazon": {
         "asin": "B0CHN6MYZ4",
         "url": "https://www.amazon.com/dp/B0CHN6MYZ4?tag=tiereduptech-20",
-        "price": 196.99,
+        "price": 140.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
@@ -17662,15 +17666,13 @@ export default [
       "amazon": {
         "asin": "B0CCXDLFZZ",
         "url": "https://www.amazon.com/dp/B0CCXDLFZZ?tag=tiereduptech-20",
-        "price": 169.99,
+        "price": 149.99,
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Thermaltake Official Store",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -18428,7 +18430,7 @@ export default [
       "amazon": {
         "asin": "B0BRBW94VL",
         "url": "https://www.amazon.com/dp/B0BRBW94VL?tag=tiereduptech-20",
-        "price": 26.99,
+        "price": 24.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
@@ -19455,8 +19457,8 @@ export default [
         "price": 69.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "My Secret Style",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -19636,7 +19638,7 @@ export default [
       "amazon": {
         "asin": "B0FJ27YMV5",
         "url": "https://www.amazon.com/dp/B0FJ27YMV5?tag=tiereduptech-20",
-        "price": 49.99,
+        "price": 38.79,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-01",

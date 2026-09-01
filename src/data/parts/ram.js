@@ -160,16 +160,14 @@ export default [
     "reviews": 3759,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B0BZHTVHN5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-29",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445837549669031244055233",
@@ -426,16 +424,14 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 449.99,
+        "price": 489.99,
         "url": "https://www.amazon.com/dp/B0G5Q1XTKM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-26",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-30"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 489.99,
@@ -893,7 +889,7 @@ export default [
     "color": "Black",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-08-31",
+    "quarantinedAt": "2026-09-01",
     "quarantineReason": "price_3p_flagged"
   },
   {
@@ -2114,7 +2110,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Stokvane (S/N Recorded)",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2374,8 +2370,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CYHC58P6?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "TrueFulfillment (S/N Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -4791,7 +4787,7 @@ export default [
         "price": 922.99,
         "url": "https://www.amazon.com/dp/B0GGJ4NMS4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-28",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -6240,8 +6236,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DCGFCHXF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "QyTech",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -10677,11 +10673,11 @@ export default [
       "amazon": {
         "asin": "B08C53LL9J",
         "url": "https://www.amazon.com/dp/B08C53LL9J?tag=tiereduptech-20",
-        "price": 117.49,
+        "price": 127,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Blue Orbit Commerce Group",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11462,8 +11458,8 @@ export default [
         "price": 559.51,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "A Mark Store (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

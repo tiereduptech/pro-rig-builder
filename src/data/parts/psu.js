@@ -506,7 +506,10 @@ export default [
     "color": "Black",
     "value": 22,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-01",
+    "quarantineReason": "price_3p_flagged"
   },
   {
     "id": 60013,
@@ -2427,13 +2430,13 @@ export default [
     "reviews": 1565,
     "deals": {
       "amazon": {
-        "price": 234,
+        "price": 169.99,
         "url": "https://www.amazon.com/dp/B0BP8B6M7Y?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2927,12 +2930,14 @@ export default [
     "reviews": 61,
     "deals": {
       "amazon": {
-        "price": 71.38,
+        "price": 86.49,
         "url": "https://www.amazon.com/dp/B0CWLTQD5K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceConfirmedAt": "2026-09-01",
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -4475,7 +4480,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "eshopiga",
+        "priceSeller": "BDNストア",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4979,7 +4984,7 @@ export default [
         "priceSeller": "Game Power Pc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-01"
       },
       "newegg": {
@@ -5031,13 +5036,11 @@ export default [
         "price": 399.9,
         "url": "https://www.amazon.com/dp/B0C6FYQC81?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
         "priceSeller": "StormVentureGear",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445833237672345245385565",
@@ -9017,7 +9020,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0C6FY4JXF?tag=tiereduptech-20",
         "price": 507.83,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
         "priceSeller": "StormVentureGear",
         "priceResolvedVia": "paapi",
@@ -10797,7 +10800,7 @@ export default [
       "amazon": {
         "asin": "B01ER29BKG",
         "url": "https://www.amazon.com/dp/B01ER29BKG?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 43.76,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",

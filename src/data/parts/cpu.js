@@ -28,8 +28,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0D6NNRBGP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Giz-Promo",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -343,8 +343,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DKFMSMYK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "TheTechGroup",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -447,8 +447,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CQ4GYTTX?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "ALL4YOU.",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1214,8 +1214,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0815XFSGK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "TheTechGroup",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1313,8 +1313,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0815XFSGK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "TheTechGroup",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1450,7 +1450,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "prime bay",
+        "priceSeller": "Giz-Promo",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -1916,7 +1916,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Empowered PC",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2222,7 +2222,7 @@ export default [
     "bench": 55,
     "deals": {
       "amazon": {
-        "price": 235.95,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CGJ4MLC8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
@@ -2278,7 +2278,7 @@ export default [
     "bench": 51,
     "deals": {
       "amazon": {
-        "price": 235.95,
+        "price": 209.99,
         "url": "https://www.amazon.com/dp/B0CGJ4MLC8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
@@ -2335,7 +2335,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Mega Micro Devices Inc",
+        "priceSeller": "1ComputerOutlet",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2388,7 +2388,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "antonline",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3187,8 +3187,8 @@ export default [
         "url": "https://www.amazon.com/dp/B09FWYK5M9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "MBM Sales",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3351,7 +3351,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "OfficeNation, Inc.",
+        "priceSeller": "Gear(4)Less",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -3912,7 +3912,7 @@ export default [
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4289,7 +4289,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "electrolert",
+        "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4440,7 +4440,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Perfect Stock",
+        "priceSeller": "HAF Shop",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -5503,8 +5503,8 @@ export default [
         "price": 277.3,
         "url": "https://www.amazon.com/dp/B0CGJ9STNF?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Amber World Wide",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-01",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -6388,7 +6388,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Super Marketplace (S/N Recorded)",
+        "priceSeller": "DC-Deals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7130,7 +7130,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
+        "priceSeller": "MobileMonster",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7504,11 +7504,11 @@ export default [
       "amazon": {
         "asin": "B0CQ4DTJYX",
         "url": "https://www.amazon.com/dp/B0CQ4DTJYX?tag=tiereduptech-20",
-        "price": 179.99,
+        "price": 164.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Tech universal",
+        "priceSeller": "Spray and Pray LLC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -7548,7 +7548,7 @@ export default [
       "amazon": {
         "asin": "B0BMQJWBDM",
         "url": "https://www.amazon.com/dp/B0BMQJWBDM?tag=tiereduptech-20",
-        "price": 206.99,
+        "price": 229,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
@@ -7797,7 +7797,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Prime Merchant LLC (SN Recorded)",
+        "priceSeller": "Tech Depots(We Record SN)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8167,7 +8167,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Better Deals Online",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8196,13 +8196,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0GMLFFHS1?tag=tiereduptech-20",
         "price": 199.99,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-08-25",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-01",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "paapi"
       }
     },
     "cores": 16,
@@ -8261,8 +8259,8 @@ export default [
         "price": 379.3,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "VERLINE ( S N Recorded )",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8552,7 +8550,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-01"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -9351,11 +9351,11 @@ export default [
       "amazon": {
         "asin": "B0B2X1KDNS",
         "url": "https://www.amazon.com/dp/B0B2X1KDNS?tag=tiereduptech-20",
-        "price": 182.5,
+        "price": 202.55,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "MemoryC",
+        "priceSeller": "Business Premium Desktops Laptops (SN Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9564,7 +9564,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
-        "priceSeller": "Wholesale Laptop Center",
+        "priceSeller": "Emma's Market (Made in USA)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10225,8 +10225,8 @@ export default [
         "price": 1119.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-01",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -10457,7 +10457,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08V5J11BD?tag=tiereduptech-20",
         "price": 529.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-25",
+        "priceConfirmedAt": "2026-09-01",
         "priceSource": "3p",
         "priceSeller": "XPC Technologies",
         "priceResolvedVia": "paapi",
