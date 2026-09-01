@@ -4293,7 +4293,13 @@ function SearchPage({activeCat,initialQuery,th,singleProductId}){
                     {isDeal(p)&&<div style={{fontFamily:"var(--ff)",fontSize:10,color:"var(--mute)",textDecoration:"line-through"}}>${fmtPrice(p.msrp||p.pr)}</div>}
                     <div style={{fontFamily:"var(--ff)",fontSize:18,fontWeight:800,color:"var(--mint)"}}>${fmtPrice($(p))}</div>
                   </div>
-                  {rr.length>0&&<button onClick={e=>{e.stopPropagation();window.open(rr[0].url,"_blank","noopener,noreferrer");}} style={{background:"var(--accent)",color:"#fff",border:"none",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,cursor:"pointer"}}>Buy →</button>}
+                  {/* An <a>, not a button firing window.open. GA4's enhanced measurement
+                      only raises outbound-click events for real anchors, so as a button
+                      this — the Buy control on every browse card — was invisible in
+                      analytics while the identical control elsewhere was counted.
+                      stopPropagation still has to stay: the card itself is clickable and
+                      would otherwise expand behind the new tab. */}
+                  {rr.length>0&&<a href={rr[0].url} target="_blank" rel="noopener noreferrer sponsored" onClick={e=>e.stopPropagation()} style={{display:"inline-block",background:"var(--accent)",color:"#fff",borderRadius:6,padding:"6px 12px",fontFamily:"var(--ff)",fontSize:12,fontWeight:700,cursor:"pointer",textDecoration:"none"}}>Buy →</a>}
                 </div>
               </div>;
             })}
