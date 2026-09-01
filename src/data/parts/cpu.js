@@ -3631,7 +3631,7 @@ export default [
         "sku": "6669037",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445833682930110779287158",
@@ -5442,7 +5442,7 @@ export default [
         "sku": "6560420",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "amazon": {
         "price": 549.99,
@@ -5544,7 +5544,7 @@ export default [
         "sku": "6589129",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458316089146151768131296",
@@ -5586,13 +5586,14 @@ export default [
     "mpn": "100-100001581WOF",
     "deals": {
       "bestbuy": {
-        "price": 349,
+        "price": 311,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-5900xt-16-core-32-thread-3-3-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH589C&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6589133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445839475304564512464244",
@@ -5636,13 +5637,14 @@ export default [
     "mpn": "100-100001277WOF",
     "deals": {
       "bestbuy": {
-        "price": 649,
+        "price": 549,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589134&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589134.p%3FskuId%3D6589134",
         "inStock": true,
         "sku": "6589134",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458317919762205493445447",
@@ -5700,13 +5702,14 @@ export default [
     "mpn": "100-100000662WOF",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 439.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589135&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589135.p%3FskuId%3D6589135",
         "inStock": true,
         "sku": "6589135",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458313764603694254374003",
@@ -5751,13 +5754,14 @@ export default [
     "mpn": "100-100001404WOF",
     "deals": {
       "bestbuy": {
-        "price": 359,
+        "price": 339,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589136.p%3FskuId%3D6589136",
         "inStock": true,
         "sku": "6589136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "44583877074514623128348",
@@ -5808,7 +5812,7 @@ export default [
         "sku": "6589140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "cores": 6,
@@ -6007,7 +6011,7 @@ export default [
         "sku": "6606318",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445839998193130166726200",
@@ -6058,7 +6062,7 @@ export default [
         "sku": "6621940",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831552058699300246294",
@@ -6268,7 +6272,7 @@ export default [
         "sku": "6644817",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "cores": 64,

@@ -1414,7 +1414,7 @@ export default [
         "sku": "6611986",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16817139341",
@@ -1909,7 +1909,7 @@ export default [
         "sku": "6574591",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458315948600433859544499",
@@ -2034,7 +2034,7 @@ export default [
         "sku": "6611987",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445835122627792300596320",
@@ -2203,7 +2203,7 @@ export default [
         "sku": "6648892",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445837495019903605701086",
@@ -2710,7 +2710,7 @@ export default [
         "sku": "6544995",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458310742503989471895625",
@@ -2871,7 +2871,7 @@ export default [
         "sku": "6586154",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458311600472052411037826",
@@ -3150,7 +3150,7 @@ export default [
         "sku": "6586151",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445836086915651720370393",
@@ -3258,7 +3258,7 @@ export default [
         "sku": "6569210",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458316758397877777061880",
@@ -5841,14 +5841,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 79.99,
+        "price": 83.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6641924&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-cx-m-series-cx750m-semi-modular-low-noise-atx-3-1-power-supply-black%2FJ39TSCHZXC&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6641924",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458310364418083688461725",
@@ -6031,7 +6031,7 @@ export default [
         "sku": "6339087",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -6066,7 +6066,7 @@ export default [
         "sku": "6510212",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6112,9 +6112,10 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6535780&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6535780.p%3FskuId%3D6535780",
         "inStock": false,
         "sku": "6535780",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-08-31",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-02"
       },
       "newegg": {
         "sku": "9SIB0ASKJV3623",
@@ -6166,7 +6167,7 @@ export default [
         "sku": "6562432",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 129.99,
@@ -6223,7 +6224,7 @@ export default [
         "sku": "6562433",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 109.99,
@@ -6280,7 +6281,7 @@ export default [
         "sku": "6566239",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6326,7 +6327,7 @@ export default [
         "sku": "6566251",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6372,7 +6373,7 @@ export default [
         "sku": "6566259",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6418,7 +6419,7 @@ export default [
         "sku": "6569207",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6466,7 +6467,7 @@ export default [
         "sku": "6569208",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312626880584533682380",
@@ -6508,14 +6509,14 @@ export default [
     "mpn": "PS-TPD-0750FNFAGU-P",
     "deals": {
       "bestbuy": {
-        "price": 84.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6574592&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6574592.p%3FskuId%3D6574592",
         "inStock": true,
         "sku": "6574592",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445837960819492298267356",
@@ -6600,7 +6601,7 @@ export default [
         "sku": "6586150",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458316669895036760590262",
@@ -6646,7 +6647,7 @@ export default [
         "sku": "6586152",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "watts": 1200,
@@ -6684,7 +6685,7 @@ export default [
         "sku": "6586155",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458311600472052411037826",
@@ -6730,7 +6731,7 @@ export default [
         "sku": "6586156",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831428603569642743789",
@@ -6776,7 +6777,7 @@ export default [
         "sku": "6586157",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445838047709676169452910",
@@ -6823,7 +6824,7 @@ export default [
         "sku": "6587607",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458353269413137818452",
@@ -6871,7 +6872,7 @@ export default [
         "sku": "6587623",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -6973,7 +6974,7 @@ export default [
         "sku": "6611985",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445834603320988662210158",
@@ -7020,7 +7021,7 @@ export default [
         "sku": "6615249",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831892074402699255329",
@@ -7104,7 +7105,7 @@ export default [
         "sku": "6618663",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458336374622721887221",
@@ -7152,7 +7153,7 @@ export default [
         "sku": "6618664",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445834394250909023333106",
@@ -7242,7 +7243,7 @@ export default [
         "sku": "6620062",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 74.99,
@@ -7286,7 +7287,7 @@ export default [
         "sku": "6621913",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312947697440119198874",
@@ -7333,7 +7334,7 @@ export default [
         "sku": "6621914",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458317583474413979691950",
@@ -7376,11 +7377,11 @@ export default [
       "bestbuy": {
         "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621974&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6621974.p%3FskuId%3D6621974",
-        "inStock": false,
+        "inStock": true,
         "sku": "6621974",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445835128263448220316865",
@@ -7421,13 +7422,14 @@ export default [
     "mpn": "PS-STP-0850FNFAPU-1",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626429&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626429.p%3FskuId%3D6626429",
         "inStock": false,
         "sku": "6626429",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445835908786805764340699",
@@ -7512,7 +7514,7 @@ export default [
         "sku": "6626436",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "watts": 700,
@@ -7540,13 +7542,14 @@ export default [
     "mpn": "PS-TPD-1050FNFAGU-N",
     "deals": {
       "bestbuy": {
-        "price": 119.99,
+        "price": 169.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6626440&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6626440.p%3FskuId%3D6626440",
         "inStock": true,
         "sku": "6626440",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458311043805826938937374",
@@ -7593,7 +7596,7 @@ export default [
         "sku": "6626444",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831561131287933011183",
@@ -7640,7 +7643,7 @@ export default [
         "sku": "6629565",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-30"
       },
       "msi": {
@@ -7758,7 +7761,7 @@ export default [
         "sku": "6641923",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -7807,7 +7810,7 @@ export default [
         "sku": "6645320",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 89.99,
@@ -7859,14 +7862,14 @@ export default [
     "mpn": "MAG A650GLS PCIE5",
     "deals": {
       "bestbuy": {
-        "price": 109.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645321&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645321.p%3FskuId%3D6645321",
         "inStock": true,
         "sku": "6645321",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 109.99,
@@ -7918,14 +7921,14 @@ export default [
     "mpn": "MAG A850GLS PCIE5",
     "deals": {
       "bestbuy": {
-        "price": 139.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645322&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645322.p%3FskuId%3D6645322",
         "inStock": false,
         "sku": "6645322",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 109.99,
@@ -7976,14 +7979,14 @@ export default [
     "mpn": "MAG A1000GLS PCIE5",
     "deals": {
       "bestbuy": {
-        "price": 159.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645324&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645324.p%3FskuId%3D6645324",
         "inStock": false,
         "sku": "6645324",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 129.99,
@@ -8041,7 +8044,7 @@ export default [
         "sku": "6648893",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458315793530544953829041",
@@ -8084,11 +8087,11 @@ export default [
       "bestbuy": {
         "price": 114.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6648922&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6648922.p%3FskuId%3D6648922",
-        "inStock": true,
+        "inStock": false,
         "sku": "6648922",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458311806351903704507583",
@@ -8135,7 +8138,7 @@ export default [
         "sku": "6649233",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 159.99,
@@ -8185,13 +8188,14 @@ export default [
     "mpn": "PS-TPT-1000FNFAGU-W",
     "deals": {
       "bestbuy": {
-        "price": 104.99,
+        "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665520&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665520.p%3FskuId%3D6665520",
         "inStock": true,
         "sku": "6665520",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458313098454978105611705",
@@ -8233,14 +8237,14 @@ export default [
     "mpn": "PS-TPT-0850FNFAGU-3",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665522&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665522.p%3FskuId%3D6665522",
-        "inStock": false,
+        "inStock": true,
         "sku": "6665522",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458315485478305864622799",
@@ -8282,14 +8286,14 @@ export default [
     "mpn": "PS-TPT-0750FNFAGU-3",
     "deals": {
       "bestbuy": {
-        "price": 94.99,
+        "price": 79.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665527&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fthermaltake-toughpower-gt-750w-80-gold-atx-3-1-power-supply-black%2FJ39ZPC63Z5&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6665527",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-30"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445832106635818576789422",
@@ -8331,13 +8335,14 @@ export default [
     "mpn": "PS-TPT-0850FNFAGU-W",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665528&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665528.p%3FskuId%3D6665528",
         "inStock": true,
         "sku": "6665528",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458314850563574088190858",
@@ -8379,13 +8384,14 @@ export default [
     "mpn": "PS-TPT-1000FNFAGU-3",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 109.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665529&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665529.p%3FskuId%3D6665529",
         "inStock": true,
         "sku": "6665529",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445834702665317517506018",
@@ -8433,7 +8439,7 @@ export default [
         "sku": "6665530",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "44583498003834963610326",
@@ -8475,14 +8481,14 @@ export default [
     "mpn": "MAG A650BN PCIE5 III",
     "deals": {
       "bestbuy": {
-        "price": 69.99,
+        "price": 59.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676830&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-a650bn-pcie5-iii-650w-80-plus-bronze-non-modular-atx-3-1-pcie-5-1-ready-power-supply-black%2FJ3P7TXQT55&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6676830",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 59.99,
@@ -8539,7 +8545,7 @@ export default [
         "sku": "6676834",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 79.99,
@@ -8596,7 +8602,7 @@ export default [
         "sku": "6677351",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831222404312764201936",

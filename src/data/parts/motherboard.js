@@ -2464,7 +2464,7 @@ export default [
         "sku": "6582203",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -2524,13 +2524,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 209.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619031&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619031.p%3FskuId%3D6619031",
         "inStock": true,
         "sku": "6619031",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831766867961009617944",
@@ -2608,8 +2609,9 @@ export default [
         "inStock": true,
         "sku": "6523178",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-31",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "4458310259276761697147752",
@@ -2737,7 +2739,7 @@ export default [
         "sku": "6604429",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458311437381739544407579",
@@ -2822,8 +2824,9 @@ export default [
         "inStock": true,
         "sku": "6616912",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-31",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "msi": {
         "price": 169.99,
@@ -2889,13 +2892,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 179.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637469&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637469.p%3FskuId%3D6637469",
         "inStock": false,
         "sku": "6637469",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458317375802073692873553",
@@ -3723,7 +3727,7 @@ export default [
         "sku": "6629572",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 119.99,
@@ -4159,13 +4163,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 139.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582206&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582206.p%3FskuId%3D6582206",
         "inStock": true,
         "sku": "6582206",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458315701803246439010235",
@@ -4300,13 +4305,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 231.99,
+        "price": 202.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612912&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612912.p%3FskuId%3D6612912",
         "inStock": true,
         "sku": "6612912",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831023774427875439972",
@@ -4426,8 +4432,9 @@ export default [
         "inStock": true,
         "sku": "6602645",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-31",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg_openbox": {
         "sku": "445838498309357532532497",
@@ -4572,13 +4579,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 94.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637463&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637463.p%3FskuId%3D6637463",
         "inStock": true,
         "sku": "6637463",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445831318952534734441792",
@@ -4680,13 +4688,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 239.99,
+        "price": 319.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602647&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602647.p%3FskuId%3D6602647",
         "inStock": true,
         "sku": "6602647",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445832385068078830075420",
@@ -4758,13 +4767,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 209.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619029&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619029.p%3FskuId%3D6619029",
         "inStock": false,
         "sku": "6619029",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458312370088221308642167",
@@ -4822,13 +4832,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 189.99,
+        "price": 254.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602648&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602648.p%3FskuId%3D6602648",
         "inStock": true,
         "sku": "6602648",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445832652076351950017195",
@@ -4899,13 +4910,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 289.99,
+        "price": 354.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6635871&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6635871.p%3FskuId%3D6635871",
         "inStock": false,
         "sku": "6635871",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "44583972083718504275037",
@@ -4977,13 +4989,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 179.99,
+        "price": 199.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619030&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619030.p%3FskuId%3D6619030",
         "inStock": true,
         "sku": "6619030",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458310733319817326943821",
@@ -5096,13 +5109,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 170.99,
+        "price": 132.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6625649&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6625649.p%3FskuId%3D6625649",
         "inStock": true,
         "sku": "6625649",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458317373425715565760486",
@@ -5560,13 +5574,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 319.99,
+        "price": 394.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6602646&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6602646.p%3FskuId%3D6602646",
         "inStock": true,
         "sku": "6602646",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458310164938802597074852",
@@ -5964,13 +5979,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 239.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6612911&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6612911.p%3FskuId%3D6612911",
         "inStock": true,
         "sku": "6612911",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813119702",
@@ -6026,13 +6042,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 159.99,
+        "price": 179.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6619033&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6619033.p%3FskuId%3D6619033",
         "inStock": true,
         "sku": "6619033",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445839552939258034506825",
@@ -6189,13 +6206,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 159.99,
+        "price": 164.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637462&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fgigabyte-b850m-eagle-wifi6e-ice-socket-am5-amd-b850-micro-atx-ddr5-wi-fi-6e-motherboard-white%2FJ3ZW9X7X9X&intsrc=APIG_28060",
-        "inStock": false,
+        "inStock": true,
         "sku": "6637462",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "4458311064365352754977786",
@@ -6272,7 +6290,7 @@ export default [
         "sku": "6604420",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813145525",
@@ -6457,13 +6475,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 149.99,
+        "price": 164.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637465&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6637465.p%3FskuId%3D6637465",
         "inStock": true,
         "sku": "6637465",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445838859729724394443297",
@@ -7459,7 +7478,7 @@ export default [
         "sku": "6604425",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 169.99,
@@ -7533,7 +7552,7 @@ export default [
         "sku": "6602851",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458314608383159277316240",
@@ -7789,7 +7808,7 @@ export default [
         "sku": "6616915",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 189.99,
@@ -8106,7 +8125,7 @@ export default [
         "sku": "6637467",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -8437,13 +8456,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 199.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6636989&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-x870e-gaming-plus-wifi-socket-am5-amd-x870e-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TXQ3WF&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6636989",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 199.99,
@@ -8553,14 +8573,14 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 149.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6665011&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6665011.p%3FskuId%3D6665011",
         "inStock": true,
         "sku": "6665011",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 139.99,
@@ -8742,7 +8762,7 @@ export default [
         "sku": "6665014",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
@@ -9049,7 +9069,7 @@ export default [
         "sku": "6571645",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "N82E16813119618",
@@ -12255,7 +12275,7 @@ export default [
         "sku": "6601254",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445831548556914003983745",
@@ -12731,7 +12751,7 @@ export default [
         "sku": "6629578",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445835264071978261618615",
@@ -14697,13 +14717,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "bestbuy": {
-        "price": 249.99,
+        "price": 289.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604423&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604423.p%3FskuId%3D6604423",
         "inStock": false,
         "sku": "6604423",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "445833999457754832239495",
@@ -15257,7 +15278,7 @@ export default [
         "sku": "6604430",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445836975818745100032353",
@@ -16024,7 +16045,7 @@ export default [
         "sku": "6641933",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 259.99,
@@ -16317,7 +16338,7 @@ export default [
         "sku": "6629579",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 229.99,
@@ -16497,7 +16518,7 @@ export default [
         "sku": "6601252",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -18051,7 +18072,7 @@ export default [
         "sku": "6641934",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
@@ -19565,13 +19586,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-31"
       },
       "bestbuy": {
-        "price": 169.99,
+        "price": 209.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582205&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582205.p%3FskuId%3D6582205",
         "inStock": true,
         "sku": "6582205",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
         "sku": "4458311689305419135439240",
@@ -21192,7 +21214,7 @@ export default [
         "sku": "6424047",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM4",
@@ -21227,7 +21249,7 @@ export default [
         "sku": "6504286",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 149.99,
@@ -21316,7 +21338,7 @@ export default [
         "sku": "6523722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM5",
@@ -21354,7 +21376,7 @@ export default [
         "sku": "6528249",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM5",
@@ -21487,13 +21509,14 @@ export default [
     "mpn": "Z790 GAMING PLUS WIFI",
     "deals": {
       "bestbuy": {
-        "price": 179.99,
+        "price": 219.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6571301&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-z790-gaming-plus-wifi-socket-lga-1700-intel-z790-atx-ddr5-wi-fi-6e-motherboard-black%2FJ3P7TXYPZF&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6571301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "44583681349671910000113",
@@ -21563,7 +21586,7 @@ export default [
         "sku": "6571302",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "LGA1700",
@@ -21592,13 +21615,14 @@ export default [
     "mpn": "Z790 AORUS ELITE AX",
     "deals": {
       "bestbuy": {
-        "price": 189.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6582204&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6582204.p%3FskuId%3D6582204",
         "inStock": true,
         "sku": "6582204",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445831194301229569670529",
@@ -21657,7 +21681,7 @@ export default [
         "sku": "6601251",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -21719,7 +21743,7 @@ export default [
         "sku": "6601255",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445832971064703428752423",
@@ -21834,7 +21858,7 @@ export default [
         "sku": "6601434",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -21869,7 +21893,7 @@ export default [
         "sku": "6601461",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "LGA1851",
@@ -21904,7 +21928,7 @@ export default [
         "sku": "6604422",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "LGA1851",
@@ -21933,13 +21957,14 @@ export default [
     "mpn": "MAG X870 TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 229.99,
+        "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604428&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmsi-mag-x870-tomahawk-wifi-socket-am5-amd-x870-atx-ddr5-wi-fi-7-motherboard-black%2FJ3P7TX9LKV&intsrc=APIG_28060",
         "inStock": false,
         "sku": "6604428",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 229.99,
@@ -22049,13 +22074,14 @@ export default [
     "mpn": "MAG X870E TOMAHAWK WIFI",
     "deals": {
       "bestbuy": {
-        "price": 269.99,
+        "price": 329.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6616917&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6616917.p%3FskuId%3D6616917",
         "inStock": true,
         "sku": "6616917",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
         "sku": "445837307446262959603190",
@@ -22124,7 +22150,7 @@ export default [
         "sku": "6616918",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       },
       "msi": {
         "price": 229.99,
@@ -22188,13 +22214,14 @@ export default [
     "mpn": "B550M PRO-VDH WIFI",
     "deals": {
       "bestbuy": {
-        "price": 90.99,
+        "price": 89.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6629564&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6629564.p%3FskuId%3D6629564",
         "inStock": true,
         "sku": "6629564",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 99.99,
@@ -22325,7 +22352,7 @@ export default [
         "sku": "6635872",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01"
       }
     },
     "socket": "AM5",
@@ -22385,8 +22412,9 @@ export default [
         "inStock": true,
         "sku": "6637466",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-08-31",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "4458310263742488896385658",
@@ -22491,7 +22519,7 @@ export default [
         "sku": "6641931",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
@@ -22547,7 +22575,7 @@ export default [
         "sku": "6641932",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
@@ -22800,7 +22828,7 @@ export default [
         "sku": "6676831",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-08-31"
       },
       "msi": {
@@ -22852,12 +22880,12 @@ export default [
       "bestbuy": {
         "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676836&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676836.p%3FskuId%3D6676836",
-        "inStock": false,
+        "inStock": true,
         "sku": "6676836",
         "priceSource": "1p",
         "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-08-25",
-        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-27"
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-04-13"
       },
       "msi": {
         "price": 499.99,
@@ -22939,14 +22967,14 @@ export default [
     "mpn": "MAG B850 TOMAHAWK MAX WIFI II",
     "deals": {
       "bestbuy": {
-        "price": 269.99,
+        "price": 239.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6676840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6676840.p%3FskuId%3D6676840",
         "inStock": false,
         "sku": "6676840",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-31",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-01",
+        "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
         "price": 229.99,
