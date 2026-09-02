@@ -475,13 +475,55 @@ function detectCondition(name) {
 // have nothing else, which is how 182 open-box rows reached 90 days with 171 of
 // them never once changing price while a scheduled job ran over them nightly.
 //
-// Confirmation stamping is deliberately LIMITED to these lanes. Stamping
-// deals.newegg here too would be defensible on its own terms — we did contact
-// the feed — but it would let a dead refresh-newegg-prices read as healthy on
-// this job's stamp, which is the exact failure the freshness gate exists to
+// Confirmation stamping is limited to lanes this job SOLELY OWNS. Stamping
+// deals.newegg wholesale would let a dead refresh-newegg-prices read as healthy
+// on this job's stamp, which is the exact failure the freshness gate exists to
 // catch. One retailer's job must never certify another's.
+//
+// "Solely owns" is now decided per ROW rather than per lane — see
+// lanesSolelyOwned() below. The rule is unchanged; what changed is noticing
+// that for a row the re-pricer structurally cannot reach, there is no other
+// job, and the choice is not between two certifiers but between one and none.
 const CONDITION_LANES = ['newegg_openbox', 'newegg_refurb', 'newegg_used'];
 const laneKey = (part, fieldKey) => `${part.id}::${fieldKey}`;
+
+/**
+ * The lanes this job is the SOLE writer for — FOR THIS PART.
+ *
+ * CONDITION_LANES is the fixed half: nothing else ever writes them.
+ *
+ * deals.newegg is the conditional half, and the condition is per ROW rather
+ * than per lane. refresh-newegg-prices.cjs owns that lane — but it can only
+ * reach a row whose category has a CAT_FILTER entry, because searchNewegg()
+ * returns 'no_cat_mapping' before issuing a single request otherwise. For a row
+ * in an unmapped category there is no re-pricer to protect and no second
+ * opinion to fight: this job is its only writer, which is precisely the
+ * condition that earns a lane a stamp.
+ *
+ * That is not a hypothetical carve-out. 85 rows sit in unmapped categories — 68
+ * GPU plus 17 peripherals — and on 2026-09-02 every one of them carried zero
+ * confirmation of any kind while the freshness gate counted them in Newegg's
+ * stale tail. All 85 are matched from this feed (84 via sftp:*), 79 are
+ * first-party, and their prices demonstrably move: 6 of the 68 GPUs repriced
+ * between the 09-01 and 09-02 ingests, one by $190. The data was arriving
+ * nightly and being thrown away unstamped. See [[unstamped-is-not-unscheduled]]
+ * in spirit: the rows were not unrefreshed, they were uncertified.
+ *
+ * GPU is the reason this exists and is deliberately NOT named here. The rule is
+ * DERIVED from CAT_FILTER, so the moment GPU gains an entry the re-pricer
+ * starts reaching those rows and this job stops certifying them, on the same
+ * commit, with no second list to remember to update. A hardcoded category list
+ * here would be a transcribed schedule by another name.
+ *
+ * The safety property is unchanged for every row that matters to it: for the
+ * 3,104 rows the re-pricer CAN reach, this job still mints nothing, so a dead
+ * refresh-newegg-prices still drives the median stale and still fails the gate.
+ */
+function lanesSolelyOwned(part) {
+  const lanes = [...CONDITION_LANES];
+  if (!NEG.CAT_FILTER[part.c]) lanes.push('newegg');
+  return lanes;
+}
 
 // Every (row, lane) this run CONFIRMED — i.e. actually wrote a price to, from
 // a feed record. Read after the merchant loop to stamp the complement: rows we
@@ -666,7 +708,7 @@ function applyMatchToPart(part, rec, match) {
     const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
     if (carried) newListing.priceLastMovedAt = carried;
 
-    if (CONDITION_LANES.includes(fieldKey)) {
+    if (lanesSolelyOwned(part).includes(fieldKey)) {
       // ── The stamp that was never written ────────────────────────────────────
       // This job has repriced these lanes nightly since it was built and left no
       // trace that it had, because matchedAt is the only *At it wrote — and
@@ -722,7 +764,7 @@ async function loadDeps() {
 
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
-                   chooseListing, detectCondition, CONDITION_LANES,
+                   chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
                    // Exported so the stamp-carry rules above can be asserted directly.
                    // They were previously reachable only through a live SFTP pull, which
                    // is why a wholesale assignment could erase 1,739 stamps a night
@@ -899,9 +941,12 @@ if (require.main === module) (async () => {
   //   - only when a FULL Newegg feed was parsed this run. Unchanged files are
   //     skipped by the manifest and the job returns early on `downloaded.length
   //     === 0`, so on a quiet day we look at nothing and must say nothing.
-  //   - only the lanes this file solely owns. deals.newegg is re-priced by
-  //     refresh-newegg-prices.cjs, which decides its own absences with a proven
-  //     streak and a breaker; a second opinion from here would fight it.
+  //   - only the lanes this file solely owns. For a row the re-pricer can
+  //     reach, deals.newegg is its business: it decides absence with a proven
+  //     streak and a breaker, and a second opinion from here would fight it.
+  //     For a row in a category with no CAT_FILTER entry the re-pricer never
+  //     issues a request at all, so there is no opinion to fight and silence
+  //     from this feed is the only evidence that will ever exist.
   //
   // What the stamp asserts is narrow and exactly what was observed: this run's
   // full feed offered no BUYABLE listing for this row. It does not distinguish
@@ -912,7 +957,13 @@ if (require.main === module) (async () => {
   if (fullNeweggFeedParsed) {
     for (const p of parts) {
       if (!p.deals) continue;
-      for (const lane of CONDITION_LANES) {
+      // Symmetric with the confirmation above, and it has to be: a lane this
+      // job may certify is a lane it must also be able to say nothing about.
+      // Stamping only what the feed returns can never clear a row the feed has
+      // stopped carrying, so an unmappable row that fell out of the feed would
+      // keep its last price forever with no negative stamp — the same hole this
+      // sweep was built to close for the condition lanes.
+      for (const lane of lanesSolelyOwned(p)) {
         const d = p.deals[lane];
         if (!d || typeof d !== 'object') continue;
         if (confirmedLanes.has(laneKey(p, lane))) continue;
