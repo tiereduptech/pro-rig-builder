@@ -2246,7 +2246,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       }
     },
     "upc": "00727419314992",
@@ -4008,7 +4008,8 @@ export default [
         "sku": "4458317883389884691797587",
         "itemNumber": "N82E16814932824",
         "sellerClass": "official",
-        "price": 549.99,
+        "price": 679.99,
+        "saleprice": 649.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317883389884691797587&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r906xgamingocice-16gd-radeon-rx-9060-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932824%3Fitem%3DN82E16814932824",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-824-07.jpg",
         "inStock": true,
@@ -4598,7 +4599,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "4458314583067850245555496",
@@ -9842,7 +9843,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -9880,7 +9881,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "445836230308261329286521",
@@ -9943,14 +9944,14 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "445832601390906217617414",
         "itemNumber": "N82E16814126761",
         "sellerClass": "official",
         "price": 1099.99,
-        "saleprice": 819.99,
+        "saleprice": 849.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832601390906217617414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070-12g-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814126761%3Fitem%3DN82E16814126761",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-761-01.png",
         "inStock": true,
@@ -10106,8 +10107,8 @@ export default [
         "sku": "445838676784629540102766",
         "itemNumber": "N82E16814932749",
         "sellerClass": "official",
-        "price": 219.99,
-        "saleprice": 209.99,
+        "price": 269.99,
+        "saleprice": 249.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838676784629540102766&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n3050wf2ocv2-6gd-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814932749%3Fitem%3DN82E16814932749",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-749-02.jpg",
         "inStock": true,
@@ -10148,6 +10149,7 @@ export default [
         "itemNumber": "N82E16814932753",
         "sellerClass": "official",
         "price": 1699.99,
+        "saleprice": 1599.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833433688408193519454&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5080gaming-oc-16gd-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814932753%3Fitem%3DN82E16814932753",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-753-03.png",
         "inStock": true,
@@ -10630,8 +10632,8 @@ export default [
         "sku": "4458315790428698873753349",
         "itemNumber": "N82E16814932751",
         "sellerClass": "official",
-        "price": 749.99,
-        "saleprice": 739.99,
+        "price": 959.99,
+        "saleprice": 929.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315790428698873753349&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9070xtgaming-oc-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932751%3Fitem%3DN82E16814932751",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-751-07.jpg",
         "inStock": true,
@@ -12877,8 +12879,8 @@ export default [
         "sku": "445831609502042468404093",
         "itemNumber": "N82E16814932807",
         "sellerClass": "official",
-        "price": 369.99,
-        "saleprice": 359.99,
+        "price": 479.99,
+        "saleprice": 459.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831609502042468404093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9060xtgaming-oc-8gd-radeon-rx-9060-xt-8gb-graphics-card-triple-fans%2Fp%2FN82E16814932807%3Fitem%3DN82E16814932807",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-807-03.jpg",
         "inStock": true,

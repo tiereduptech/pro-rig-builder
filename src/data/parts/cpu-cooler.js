@@ -266,8 +266,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-28T21:44:42.800Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:19:39.759Z"
+        "matchScore": 0.9
       }
     },
     "fans_inc": 2,
@@ -320,8 +319,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.651Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:39.901Z"
+        "matchScore": 1
       }
     },
     "fans_inc": 2,
@@ -455,8 +453,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.009Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:40.037Z"
+        "matchScore": 1
       }
     },
     "fans_inc": 2,
@@ -1492,8 +1489,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.090Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:40.796Z"
+        "matchScore": 1
       }
     },
     "discount": 23,
@@ -1554,8 +1550,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.657Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:41.070Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1704,8 +1699,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.085Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:41.484Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -1842,18 +1836,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA4REKHM8164",
-        "price": 149.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313289607910193816241&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIA4REKHM8164",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-01T15:52:38.833Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:41.639Z",
-        "priceLastMovedAt": "2026-09-01",
-        "rematchedAt": "2026-09-01T20:08:47.895Z",
-        "rematchedFrom": "4458315887140650144449529"
+        "price": 109,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-02T15:39:52.127Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7
       }
     },
     "additionalImages": [
@@ -1912,8 +1905,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.087Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:19:42.056Z"
+        "matchScore": 0.9
       }
     },
     "discount": 18,
@@ -2017,8 +2009,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:16.625Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:42.196Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2077,8 +2068,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.489Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:19:42.446Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -2568,8 +2558,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-30T15:50:24.395Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T09:19:43.654Z"
+        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -2630,8 +2619,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.085Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:20:32.025Z"
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -2697,8 +2685,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.031Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:32.792Z"
+        "matchScore": 1
       }
     },
     "discount": 13,
@@ -2872,8 +2859,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.447Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:20:33.196Z"
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -3223,8 +3209,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.355Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:34.007Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3279,8 +3264,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.672Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:34.157Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3393,8 +3377,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.304Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:34.299Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -3681,8 +3664,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:17.759Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:35.166Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4354,8 +4336,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.765Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:37.222Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4411,8 +4392,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.765Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:37.376Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -4801,7 +4781,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "4458315448780282110771242",
@@ -4814,8 +4794,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.041Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:37.519Z"
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -4876,8 +4855,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:31.352Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:37.808Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -5562,8 +5540,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.175Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:38.792Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -5618,21 +5595,19 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "9SIA6ZPKVY7892",
-        "price": 173.76,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811036610137058647&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIA6ZPKVY7892",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
+        "sku": "445839811036610137058647",
+        "itemNumber": "9SIA6ZPKVY7892",
         "sellerClass": "marketplace",
+        "price": 173.76,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839811036610137058647&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIA6ZPKVY7892",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
+        "inStock": true,
         "matchedAt": "2026-08-27T21:32:37.141Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:39.074Z",
-        "priceLastMovedAt": "2026-09-01",
-        "rematchedAt": "2026-09-01T20:09:45.602Z",
-        "rematchedFrom": "445832483312698143932734"
+        "matchMethod": "sftp:upc",
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -5891,8 +5866,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.490Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:39.333Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6167,8 +6141,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:35.886Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:39.926Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6408,8 +6381,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.450Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:40.068Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -6782,8 +6754,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.781Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:41.237Z"
+        "matchScore": 1
       }
     },
     "discount": 37,
@@ -6840,8 +6811,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.065Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:41.372Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -7490,8 +7460,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.596Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:42.097Z"
+        "matchScore": 1
       }
     },
     "discount": 18,
@@ -7643,8 +7612,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.596Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T09:20:42.229Z"
+        "matchScore": 0.95
       }
     },
     "discount": 15,
@@ -8141,8 +8109,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.670Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:20:43.163Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -8808,8 +8775,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.033Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:32.356Z"
+        "matchScore": 1
       }
     },
     "discount": 33,
@@ -9308,14 +9274,13 @@ export default [
         "itemNumber": "37B-009H-00003",
         "sellerClass": "official",
         "price": 130.99,
-        "saleprice": 116.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583416016821467543414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00003%3Fitem%3D37B-009H-00003",
+        "saleprice": 114.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583416016821467543414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F37B-009H-00003%3Fitem%3D37B-009H-00003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS25031303HRXVF4.jpg",
         "inStock": true,
         "matchedAt": "2026-08-31T18:38:16.552Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:34.531Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9685,8 +9650,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.778Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:34.940Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -9978,8 +9942,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.773Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:35.077Z"
+        "matchScore": 1
       }
     },
     "additionalImages": [
@@ -10482,8 +10445,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:31.279Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:21:35.199Z"
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -10649,7 +10611,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-01"
+        "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "4458315165269356823080327",
@@ -11370,9 +11332,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:35.255Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:36.825Z",
-        "priceLastMovedAt": "2026-09-01"
+        "matchScore": 1
       }
     },
     "discount": 6,
@@ -11967,8 +11927,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-28T21:45:49.682Z",
         "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T09:21:37.556Z"
+        "matchScore": 0.95
       }
     },
     "additionalImages": [
@@ -12086,8 +12045,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:27:05.111Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:38.247Z"
+        "matchScore": 1
       }
     },
     "discount": 30,
@@ -12871,8 +12829,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-07-22",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:39.829Z"
+        "matchScore": 1
       }
     },
     "discount": 12,
@@ -12923,18 +12880,17 @@ export default [
         "priceConfirmedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "N82E16835103380",
-        "price": 241.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314182246207624086000&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-394-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103380%3Fitem%3DN82E16835103380",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-380-01.png",
+        "sku": "445833482764238409179563",
+        "itemNumber": "N82E16835103382",
         "sellerClass": "official",
-        "matchedAt": "2026-09-01T15:53:32.609Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:39.966Z",
-        "priceLastMovedAt": "2026-09-01",
-        "migratedAt": "2026-09-01T20:10:46.427Z",
-        "migratedFrom": "445833482764238409179563"
+        "price": 219.99,
+        "saleprice": 199.98,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833482764238409179563&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-277-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-black%2Fp%2FN82E16835103382%3Fitem%3DN82E16835103382",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-382-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-02T15:40:45.751Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8125
       }
     },
     "discount": 10,
@@ -13171,8 +13127,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:31.363Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T09:21:40.117Z"
+        "matchScore": 0.9
       }
     },
     "additionalImages": [
@@ -13330,8 +13285,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.437Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:40.252Z"
+        "matchScore": 1
       }
     },
     "discount": 10,
@@ -13967,8 +13921,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:45.710Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:41.518Z"
+        "matchScore": 1
       }
     },
     "coolerType": "Air",
@@ -14017,8 +13970,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.820Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:41.998Z"
+        "matchScore": 1
       }
     },
     "coolerType": "Air",
@@ -14245,8 +14197,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:37.576Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:21:43.193Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14399,8 +14350,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:42.738Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:32.418Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14488,14 +14438,13 @@ export default [
         "itemNumber": "N82E16835106752",
         "sellerClass": "official",
         "price": 144.99,
-        "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832564914943307493488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3DN82E16835106752",
+        "saleprice": 135.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832564914943307493488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3DN82E16835106752",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A96G0F.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:32.973Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14550,8 +14499,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:33.517Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -14606,8 +14554,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:33.928Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -15001,8 +14948,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:02.108Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:35.625Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -15239,8 +15185,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-23T12:27:13.042Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-01T20:11:43.433Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -15694,8 +15639,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.108Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:39.564Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -15749,8 +15693,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.437Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:39.841Z"
+        "matchScore": 1
       }
     },
     "coolerType": "AIO",
@@ -16056,8 +15999,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.429Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:41.457Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -16492,18 +16434,16 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 98.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-01T15:50:28.449Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:22:41.881Z",
-        "priceLastMovedAt": "2026-09-01",
-        "rematchedAt": "2026-09-01T20:11:48.142Z",
-        "rematchedFrom": "445833795822587653180041"
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-02T15:37:43.315Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -20955,8 +20895,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.695Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-02T09:23:32.553Z"
+        "matchScore": 1
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
