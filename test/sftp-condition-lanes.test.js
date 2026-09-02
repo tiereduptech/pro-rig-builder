@@ -24,7 +24,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { sellerRank } from '../newegg-match.js';
+import { sellerRank, CAT_FILTER } from '../newegg-match.js';
 
 const require = createRequire(import.meta.url);
 const { chooseListing, detectCondition, CONDITION_LANES } = require('../sftp-ingest.cjs');
@@ -243,7 +243,12 @@ test('re-pricer provenance survives', () => {
 test('CARRIED, NEVER MINTED: this job still writes no confirmation for deals.newegg', () => {
   // The property that keeps a dead re-pricer detectable. If this job could mint
   // a stamp, refresh-newegg-prices could die and the gate would stay green.
-  const p = part({ itemNumber: OFFICIAL, sku: 'RK-1', price: 599.99, inStock: true });
+  //
+  // Asserted on a MAPPED category. GPU rows have no re-pricer to protect and are
+  // stamped deliberately (see lanesSolelyOwned); the property being guarded here
+  // is about the 3,104 rows that DO have one.
+  const p = part({ itemNumber: OFFICIAL, sku: 'RK-1', price: 599.99, inStock: true },
+                 { c: 'CPU', n: 'AMD Ryzen 9 9950X' });
   applyMatchToPart(p, rec({ retail_price: '649.99' }), { method: 'upc', confidence: 0.95 });
   assert.equal(p.deals.newegg.refreshedAt, undefined,
     'a row the re-pricer has never reached must not gain a confirmation from the ingest');
@@ -270,4 +275,72 @@ test('the condition lanes still get their own minted confirmation', () => {
   applyMatchToPart(p, rec({ product_name: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G (Open Box)' }),
     { method: 'upc', confidence: 0.95 });
   assert.equal(p.deals.newegg_openbox.priceConfirmedAt, TODAY);
+});
+
+// =============================================================================
+//  LANE OWNERSHIP IS PER ROW, NOT PER LANE
+//
+//  85 Newegg rows sit in categories with no CAT_FILTER entry — 68 GPU plus 17
+//  peripherals. searchNewegg() returns 'no_cat_mapping' for them before issuing
+//  a single request, so refresh-newegg-prices can never reach them: they were
+//  0 of 85 confirmed on 2026-09-02 while the freshness gate counted all 85 in
+//  Newegg's stale tail.
+//
+//  They were not unrefreshed. This feed carries them — 84 of 85 matched sftp:*,
+//  79 first-party — and their prices move: 6 of the 68 GPUs repriced between the
+//  09-01 and 09-02 ingests, one by $190. The data arrived nightly and was thrown
+//  away unstamped.
+//
+//  So "the lanes this job solely owns" is decided per row. The rule did not
+//  change; what changed is that for a row with no re-pricer the choice is not
+//  between two certifiers but between one and none.
+// =============================================================================
+
+const { lanesSolelyOwned } = require('../sftp-ingest.cjs');
+
+test('an unmappable row has no re-pricer, so this job owns its newegg lane', () => {
+  // GPU is absent from CAT_FILTER: Rakuten Product Search does not carry GPUs.
+  assert.ok(lanesSolelyOwned({ c: 'GPU' }).includes('newegg'));
+  for (const c of ['ExternalStorage', 'Headset', 'Mouse', 'OS', 'Keyboard', 'Webcam']) {
+    assert.ok(lanesSolelyOwned({ c }).includes('newegg'), c);
+  }
+});
+
+test('a MAPPED row keeps its re-pricer, and this job still certifies nothing', () => {
+  // The safety property. 3,104 of 3,189 rows are here, and for every one of them
+  // a dead refresh-newegg-prices must still show up as a stale median.
+  for (const c of ['CPU', 'Motherboard', 'RAM', 'Storage', 'PSU', 'Case', 'CPUCooler', 'CaseFan', 'Monitor']) {
+    assert.ok(!lanesSolelyOwned({ c }).includes('newegg'), c);
+  }
+});
+
+test('the condition lanes are owned regardless of category', () => {
+  for (const c of ['GPU', 'CPU']) {
+    for (const lane of CONDITION_LANES) assert.ok(lanesSolelyOwned({ c }).includes(lane), `${c}/${lane}`);
+  }
+});
+
+test('ownership is DERIVED from CAT_FILTER, not a second category list', () => {
+  // The property that keeps this from rotting. Adding GPU to CAT_FILTER must
+  // hand the lane back to the re-pricer on the same commit — a hardcoded list
+  // here would be a transcribed schedule by another name.
+  const mapped = Object.keys(CAT_FILTER);
+  for (const c of mapped) assert.ok(!lanesSolelyOwned({ c }).includes('newegg'), c);
+  assert.equal(mapped.includes('GPU'), false,
+    'GPU is deliberately unmapped; if this fails, the exception above is now dead code');
+});
+
+test('an unmappable row GETS a confirmation stamp from this job', () => {
+  const p = { id: 'g1', c: 'GPU', n: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G', deals: {} };
+  applyMatchToPart(p, rec(), { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.priceConfirmedAt, TODAY,
+    'nothing else will ever confirm this row');
+});
+
+test('a MAPPED row still gets none — the regression that would matter most', () => {
+  const p = { id: 'c1', c: 'CPU', n: 'AMD Ryzen 9 9950X', deals: {} };
+  applyMatchToPart(p, { ...rec(), product_name: 'AMD Ryzen 9 9950X' },
+    { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.priceConfirmedAt, undefined,
+    'certifying a lane with a live re-pricer would let that re-pricer die unnoticed');
 });

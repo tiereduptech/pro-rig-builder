@@ -258,11 +258,20 @@ const CADENCE = {
       'newly attached deals (sftp-ingest.cjs:411)": that line number now points into ' +
       'matchRecord(), and the claim was never accurate either — applyMatchToPart() rewrites ' +
       'matchedAt on every replacement, not only on first attachment. ' +
-      'The real reason is a policy one: sftp-ingest deliberately confirms ONLY the condition ' +
-      'lanes it alone writes (see newegg_openbox above). It does not stamp deals.newegg, ' +
-      'because a job certifying a lane that has its own re-pricer would let that re-pricer die ' +
-      'unnoticed. That is why this retailer read 1d newest against a 10d median while nothing ' +
-      'had repriced it at all: 0 of 3,178 rows carried refreshedAt on 2026-08-28.',
+      'The real reason is a policy one: sftp-ingest confirms only the lanes it ALONE writes ' +
+      '(see newegg_openbox above). A job certifying a lane that has its own re-pricer would let ' +
+      'that re-pricer die unnoticed. That is why this retailer read 1d newest against a 10d ' +
+      'median while nothing had repriced it at all: 0 of 3,178 rows carried refreshedAt on ' +
+      '2026-08-28. ' +
+      'ONE EXCEPTION, and it is the same rule rather than a hole in it: 85 rows sit in ' +
+      'categories with no CAT_FILTER entry — 68 GPU plus 17 peripherals — and searchNewegg ' +
+      'returns no_cat_mapping for them before issuing a request, so THIS cite can never reach ' +
+      'them. sftp-ingest is their only writer, exactly as it is for the condition lanes, and it ' +
+      'now stamps them (sftp-ingest.cjs lanesSolelyOwned). Derived from CAT_FILTER, not a ' +
+      'category list: add GPU to CAT_FILTER and the re-pricer starts reaching those rows while ' +
+      'the ingest stops certifying them, on the same commit. The safety property is untouched ' +
+      'for the 3,104 rows that have a re-pricer — this job still mints nothing for them, so a ' +
+      'dead refresh-newegg-prices still drives the median stale and still fails this gate.',
   },
 
   bestbuy: {
