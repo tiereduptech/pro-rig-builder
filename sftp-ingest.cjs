@@ -530,6 +530,79 @@ function lanesSolelyOwned(part) {
 // hold a price for and the feed did not offer one for. See the absence sweep.
 const confirmedLanes = new Set();
 
+// Every (row, lane) whose row this run's feed POSITIVELY IDENTIFIED with a
+// usable price — independent of whether we then chose to write it.
+//
+// ── WHY THIS IS SEPARATE FROM confirmedLanes ────────────────────────────────
+// confirmedLanes answers "what did we write?". This answers "what could we
+// have?", and the two differ by every row where chooseListing declined or the
+// sanity gate vetoed. Only the second one can size a coverage question.
+//
+// ── WHY IT EXISTS AT ALL ────────────────────────────────────────────────────
+// 979 deals.newegg rows are reached by NOTHING: refresh-newegg-prices searches
+// by name/UPC and cannot address the itemNumber we store, so it declines or
+// comes back empty on the same fixed set every run. 765 of those 979 are
+// user-visible (488 the only offer on their row, 277 the cheapest), at a median
+// 15d and p90 43d since last confirmation.
+//
+// The obvious next move is "let this feed confirm them — it is keyed by
+// newegg_item_number, which is exactly what the re-pricer cannot query". That
+// may be right and it may be worthless, and NOTHING IN THE REPO CAN SAY WHICH,
+// because this job stamps nothing on mapped newegg rows and so leaves no trace
+// of what it saw. The only coverage figure that exists anywhere is the
+// condition-lane absence sweep — 83 of 205 confirmed, 122 not — and
+// extrapolating single-unit open-box inventory to new-condition stock is a
+// guess, not a measurement.
+//
+// So this counts, and only counts. One nightly run answers whether the feed
+// carries 90% of that tail or 40%, which is the difference between a cheap fix
+// and an expensive one, BEFORE either is built. Measuring first is the whole
+// lesson of the 12.0%-vs-40.5% failure rate: the earlier number was not wrong
+// arithmetic, it was a sample nobody had checked was representative.
+//
+// READ-ONLY BY CONSTRUCTION. This set is never consulted by a write path. It
+// cannot become a confirmation stamp for deals.newegg by accident, because
+// nothing downstream of it writes — asserted in test/sftp-coverage-census.test.js.
+const feedOffered = new Set();
+
+/**
+ * Read-only coverage census over deals.newegg. Pure, exported, and asserted on
+ * directly — the 12.0%-vs-40.5% episode is what happens to a number computed
+ * inline where nothing can check it.
+ *
+ * Splits the lane by whether refresh-newegg-prices has EVER reached the row,
+ * then asks what share of each side this run's feed offered.
+ *
+ * `refreshedAt` absence is the split, not a staleness threshold. The re-pricer
+ * writes it on every successful lookup INCLUDING the unchanged case, and this
+ * job now carries it across rather than erasing it, so a row without one has
+ * never once been reached — a fact about reachability, not a date comparison.
+ * Deliberately no budget constant: transcribing the gate's policy here is how
+ * two numbers drift apart, and this file has no business holding an opinion
+ * about how stale is too stale.
+ */
+function coverageCensus(parts, offered) {
+  const c = {
+    rows: 0, offered: 0,
+    neverRepriced: 0, neverRepricedOffered: 0,
+    repriced: 0, repricedOffered: 0,
+  };
+  for (const p of parts) {
+    const d = p && p.deals && p.deals.newegg;
+    if (!d || typeof d !== 'object') continue;
+    c.rows++;
+    const seen = offered.has(laneKey(p, 'newegg'));
+    if (seen) c.offered++;
+    if (d.refreshedAt) { c.repriced++; if (seen) c.repricedOffered++; }
+    else { c.neverRepriced++; if (seen) c.neverRepricedOffered++; }
+  }
+  // THE NUMBER THIS WHOLE THING EXISTS FOR: of the rows nothing reprices, what
+  // share does this feed carry? That is the difference between "let the feed
+  // confirm them" and "build a SKU-keyed lookup", and it has never been measured.
+  c.rescuableShare = c.neverRepriced ? c.neverRepricedOffered / c.neverRepriced : 0;
+  return c;
+}
+
 // ── Which listing do we keep? ────────────────────────────────────────────────
 // Exported and pure so the rule can be asserted on directly. It was previously
 // inline in applyMatchToPart, where the only way to exercise it was a live SFTP
@@ -592,6 +665,13 @@ function applyMatchToPart(part, rec, match) {
   const inStock = !/out-of-stock|unavailable|no/i.test(rec.availability || '');
   const condition = detectCondition(rec.product_name);
   const fieldKey = condition === 'new' ? 'newegg' : 'newegg_' + condition;
+
+  // Census point. Deliberately HERE: past pricing and the capacity guard, so a
+  // counted row is one the feed could actually have confirmed — but before
+  // chooseListing and the sanity gate, so a row we merely declined to overwrite
+  // still counts as covered. Putting it after those would measure our own
+  // selection rules again, which is the thing already measured everywhere else.
+  feedOffered.add(laneKey(part, fieldKey));
 
   part.deals = part.deals || {};
   // The Newegg item number (col `newegg_item_number`, NOT `sku`) is what carries the
@@ -765,6 +845,7 @@ async function loadDeps() {
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
+                   coverageCensus, laneKey,
                    // Exported so the stamp-carry rules above can be asserted directly.
                    // They were previously reachable only through a live SFTP pull, which
                    // is why a wholesale assignment could erase 1,739 stamps a night
@@ -972,8 +1053,28 @@ if (require.main === module) (async () => {
       }
     }
     log(`\nAbsence sweep: ${confirmedLanes.size} condition-lane rows confirmed, ${unconfirmed} stamped priceUnconfirmedAt`);
+
+    // ── COVERAGE CENSUS — deals.newegg, READ-ONLY ─────────────────────────────
+    // Nothing below writes. Gated on the same fullNeweggFeedParsed as the sweep
+    // above and for the same reason: on a quiet day the manifest skips the feed,
+    // so "the feed did not offer this row" would mean "we did not look", and a
+    // coverage number built on that is worse than none.
+    const census = coverageCensus(parts, feedOffered);
+    const pct = (n, d) => (d ? (100 * n / d).toFixed(1) : '0.0') + '%';
+    log('\nCoverage census — deals.newegg (READ-ONLY, nothing stamped here)');
+    log(`  rows ................................. ${census.rows}`);
+    log(`  this run's feed offered a listing .... ${census.offered}  (${pct(census.offered, census.rows)})`);
+    log(`  reached by refresh-newegg-prices ..... ${census.repriced}`);
+    log(`     of which this feed also offered ... ${census.repricedOffered}  (${pct(census.repricedOffered, census.repriced)})`);
+    log(`  NEVER reached by the re-pricer ....... ${census.neverRepriced}`);
+    log(`     of which this feed offered ........ ${census.neverRepricedOffered}  (${pct(census.neverRepricedOffered, census.neverRepriced)})  <- rescuable`);
+    log('  A high rescuable share means the tail can be confirmed from this feed.');
+    log('  A low one means it needs a lookup keyed on the itemNumber we store.');
+    summary.totals.coverageCensus = census;
   } else {
     log('\nAbsence sweep SKIPPED — no full Newegg feed parsed this run (nothing was looked at, so nothing is absent)');
+    log('Coverage census SKIPPED for the same reason — an unlooked-at row is not an uncovered one');
+    summary.totals.coverageCensus = null;
   }
   summary.totals.conditionLanesConfirmed = confirmedLanes.size;
   summary.totals.conditionLanesUnconfirmed = unconfirmed;
