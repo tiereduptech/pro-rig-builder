@@ -31,15 +31,20 @@ const require = createRequire(import.meta.url);
 const { coverageCensus, laneKey } = require('../sftp-ingest.cjs');
 
 const row = (id, deal) => ({ id, c: 'Case', n: `P${id}`, deals: { newegg: deal } });
-const PRICED = { itemNumber: 'N82E1', price: 100 };
-const REPRICED = { ...PRICED, refreshedAt: '2026-09-02T09:20:00.000Z' };
+// FACTORIES, not shared objects. As literals these were one object reused across
+// every test, so a census that DID write would pollute the fixture in test 1 and
+// the read-only assertion in test 8 would compare an already-stamped `before`
+// against an already-stamped `after` and pass. Caught by deliberately breaking
+// the census and finding that only one of the two guards fired.
+const PRICED = () => ({ itemNumber: 'N82E1', price: 100 });
+const REPRICED = () => ({ ...PRICED(), refreshedAt: '2026-09-02T09:20:00.000Z' });
 
 /** Set of lane keys, built the same way the ingest builds them. */
 const offeredSet = (...parts) => new Set(parts.map((p) => laneKey(p, 'newegg')));
 
 test('the rescuable share is the share of NEVER-repriced rows the feed offered', () => {
   // The number the whole census exists to produce.
-  const a = row('a', PRICED), b = row('b', PRICED), c = row('c', PRICED);
+  const a = row('a', PRICED()), b = row('b', PRICED()), c = row('c', PRICED());
   const census = coverageCensus([a, b, c], offeredSet(a, b));
   assert.equal(census.neverRepriced, 3);
   assert.equal(census.neverRepricedOffered, 2);
@@ -49,7 +54,7 @@ test('the rescuable share is the share of NEVER-repriced rows the feed offered',
 test('a row the re-pricer HAS reached is not part of the rescuable question', () => {
   // It already has a confirmer. Counting it would inflate the answer with rows
   // that were never the problem — the same dilution #72 removed from feedHealth.
-  const reached = row('a', REPRICED), tail = row('b', PRICED);
+  const reached = row('a', REPRICED()), tail = row('b', PRICED());
   const census = coverageCensus([reached, tail], offeredSet(reached, tail));
   assert.equal(census.repriced, 1);
   assert.equal(census.repricedOffered, 1);
@@ -59,14 +64,14 @@ test('a row the re-pricer HAS reached is not part of the rescuable question', ()
 });
 
 test('THE ANSWER THAT MEANS "BUILD THE LOOKUP": feed covers none of the tail', () => {
-  const reached = row('a', REPRICED), t1 = row('b', PRICED), t2 = row('c', PRICED);
+  const reached = row('a', REPRICED()), t1 = row('b', PRICED()), t2 = row('c', PRICED());
   const census = coverageCensus([reached, t1, t2], offeredSet(reached));
   assert.equal(census.rescuableShare, 0,
     'the feed carries the rows that least need it and none that do');
 });
 
 test('THE ANSWER THAT MEANS "LET THE FEED CONFIRM": feed covers all of it', () => {
-  const t1 = row('a', PRICED), t2 = row('b', PRICED);
+  const t1 = row('a', PRICED()), t2 = row('b', PRICED());
   const census = coverageCensus([t1, t2], offeredSet(t1, t2));
   assert.equal(census.rescuableShare, 1);
 });
@@ -76,7 +81,7 @@ test('rows with no newegg deal are not counted at all', () => {
     { id: 'x', c: 'GPU', n: 'x', deals: { amazon: { price: 1 } } },
     { id: 'y', c: 'GPU', n: 'y', deals: {} },
     { id: 'z', c: 'GPU', n: 'z' },
-    row('a', PRICED),
+    row('a', PRICED()),
   ];
   assert.equal(coverageCensus(parts, new Set()).rows, 1);
 });
@@ -93,7 +98,7 @@ test('the split reads refreshedAt PRESENCE, not a staleness threshold', () => {
   // unchanged case, and sftp-ingest carries it across rather than erasing it, so
   // its absence is a hard fact about reachability. A budget constant here would
   // transcribe the freshness gate's policy into a second place to drift.
-  const ancient = row('a', { ...PRICED, refreshedAt: '2020-01-01T00:00:00.000Z' });
+  const ancient = row('a', { ...PRICED(), refreshedAt: '2020-01-01T00:00:00.000Z' });
   const census = coverageCensus([ancient], new Set());
   assert.equal(census.repriced, 1, 'reached long ago is still reached');
   assert.equal(census.neverRepriced, 0);
@@ -103,7 +108,7 @@ test('READ-ONLY: the census mutates neither the parts nor the offered set', () =
   // The property that keeps this a measurement. If it could write, it would
   // become a second confirmer for deals.newegg — the exact thing CONDITION_LANES
   // exists to prevent, arrived at by accident.
-  const parts = [row('a', { ...PRICED }), row('b', { ...REPRICED })];
+  const parts = [row('a', PRICED()), row('b', REPRICED())];
   const before = JSON.stringify(parts);
   const offered = offeredSet(parts[0]);
   const offeredBefore = [...offered].sort();
@@ -116,7 +121,7 @@ test('the census writes no confirmation stamp of any kind', () => {
   // Stated separately from the deep-equal above because THIS is the regression
   // that would matter: a stamp here would let a dead refresh-newegg-prices read
   // as healthy on this job's evidence.
-  const parts = [row('a', { ...PRICED })];
+  const parts = [row('a', PRICED())];
   coverageCensus(parts, offeredSet(parts[0]));
   for (const f of ['priceConfirmedAt', 'refreshedAt', 'priceUnconfirmedAt', 'matchedAt']) {
     assert.equal(parts[0].deals.newegg[f], undefined, f);
