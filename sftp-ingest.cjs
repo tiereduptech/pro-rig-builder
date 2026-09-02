@@ -592,6 +592,46 @@ function applyMatchToPart(part, rec, match) {
   // job satisfy that gate without priceConfirmedAt ever being written.
   if (sameListing && existing.matchedAt) newListing.matchedAt = existing.matchedAt;
 
+  // ── STAMPS THIS JOB MUST NOT DESTROY ────────────────────────────────────────
+  //
+  // newListing is built from the feed record and then assigned over
+  // part.deals[fieldKey] wholesale, so every field not named above is erased.
+  // For the condition lanes that is harmless — this job is their only writer.
+  // For deals.newegg it is not: refresh-newegg-prices.cjs writes that lane twice
+  // a day and its stamps were being wiped by this assignment every night.
+  //
+  // Measured across the 2026-09-02 ingest (6147e809174 -> 14c2aae18ba), one run:
+  //
+  //   refreshedAt       2125 -> 386    (-1739)
+  //   priceLastMovedAt   703 -> 601     (-102)
+  //   rematchedAt         70 ->  43      (-27)
+  //   migratedAt          56 ->  29      (-27)
+  //
+  // The effect was an exact inversion of what the two jobs are for. matchedAt is
+  // carried above deliberately, so the row KEPT a 15-day-old binding stamp and
+  // LOST the 0-day-old confirmation the re-pricer had just written — which is
+  // how assert-retailer-freshness read newegg at a 15d median six hours after
+  // the same catalog measured 0d and passed. The re-pricer was landing on 2,102
+  // of 3,189 rows every run the whole time; this line is what hid it.
+  //
+  // CARRIED, NOT WRITTEN. This job must never mint a confirmation for
+  // deals.newegg. The CADENCE table in assert-retailer-freshness.cjs cites
+  // refresh-newegg-prices.yml for that lane and deliberately not this workflow,
+  // because a job certifying a lane that has its own re-pricer would let that
+  // re-pricer die unnoticed — the same reason the CONDITION_LANES block below
+  // writes priceConfirmedAt only for lanes this job solely owns. Preserving a
+  // stamp another job wrote keeps that property exactly: with the re-pricer
+  // dead these fields stop advancing and the lane goes stale on schedule.
+  //
+  // Gated on sameListing for the same reason matchedAt is. On a genuine
+  // replacement these attest to a listing the row no longer holds, and carrying
+  // them would vouch for a price nothing has confirmed.
+  if (sameListing) {
+    for (const f of ['refreshedAt', 'migratedAt', 'migratedFrom', 'rematchedAt', 'rematchedFrom']) {
+      if (existing[f] != null) newListing[f] = existing[f];
+    }
+  }
+
   // Sanity gate on the primary (new-condition) listing: never attach a price that's
   // a wild outlier vs the product's other retailers — flag for review instead.
   if (shouldReplace && fieldKey === 'newegg') {
@@ -603,6 +643,29 @@ function applyMatchToPart(part, rec, match) {
     }
   }
   if (shouldReplace) {
+    // priceLastMovedAt advances only when the NUMBER moved, and must be carried
+    // across explicitly — newListing is a fresh object, so anything not copied
+    // here is erased and the row reads as never-moved forever after. Same
+    // reasoning and same hazard as the skuChanged branch in
+    // refresh-newegg-prices.cjs.
+    //
+    // HOISTED OUT OF THE CONDITION-LANE BLOCK. It used to sit below, so
+    // deals.newegg — the largest lane, and the one scripts/price-movement.cjs
+    // actually reports on — was the single lane whose movement history this job
+    // erased: -102 rows on the 2026-09-02 ingest alone. That erasure feeds
+    // straight back into the re-pricer's own movement assertion, which warned at
+    // movedShare 0.0988 against a 0.1 floor on run 33607979228 while this job
+    // was deleting the evidence between runs.
+    //
+    // Unlike priceConfirmedAt below, this is safe on every lane: it is not in
+    // CONFIRMATION_STAMPS, so advancing it cannot let this job satisfy the
+    // freshness gate on a lane it must not certify.
+    const newEff = pricing.saleprice || pricing.price;
+    const oldEff = existing ? (existing.saleprice || existing.price) : null;
+    const moved = existing != null && newEff !== oldEff;
+    const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
+    if (carried) newListing.priceLastMovedAt = carried;
+
     if (CONDITION_LANES.includes(fieldKey)) {
       // ── The stamp that was never written ────────────────────────────────────
       // This job has repriced these lanes nightly since it was built and left no
@@ -613,17 +676,6 @@ function applyMatchToPart(part, rec, match) {
       // carry any price confirmation, so the render path could only read them as
       // never-confirmed. The rows were not unrefreshed. They were unstamped.
       newListing.priceConfirmedAt = TODAY;
-
-      // priceLastMovedAt advances only when the NUMBER moved, and must be
-      // carried across explicitly — newListing is a fresh object, so anything
-      // not copied here is erased and the row reads as never-moved forever
-      // after. Same reasoning and same hazard as the skuChanged branch in
-      // refresh-newegg-prices.cjs.
-      const newEff = pricing.saleprice || pricing.price;
-      const oldEff = existing ? (existing.saleprice || existing.price) : null;
-      const moved = existing != null && newEff !== oldEff;
-      const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
-      if (carried) newListing.priceLastMovedAt = carried;
 
       // Confirmed lanes never keep a stale negative. newListing is fresh, so
       // priceUnconfirmedAt is dropped by construction — recorded here so the
@@ -658,13 +710,27 @@ function writeParts(parts) {
 // completion, a write to parts.js from a job declared read-only. Run
 // 32057560889 paid for that: ~1.3GB of duplicate downloads and a 535s/2973s
 // pair of feed pulls that contended with each other the whole way.
-module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex,
+// The two ESM deps applyMatchToPart reaches through. Previously inlined in the
+// main block, which meant nothing but a live SFTP pull could load them and so
+// nothing but a live SFTP pull could exercise the write path. Same shape, and
+// the same reason, as loadMatcher() in refresh-newegg-prices.cjs.
+async function loadDeps() {
+  const root = __dirname.replace(/\\/g, '/');
+  if (!CAP) CAP = await import('file://' + root + '/normalize-product-name.js');
+  if (!NEG) NEG = await import('file://' + root + '/newegg-match.js');
+}
+
+module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
-                   chooseListing, detectCondition, CONDITION_LANES };
+                   chooseListing, detectCondition, CONDITION_LANES,
+                   // Exported so the stamp-carry rules above can be asserted directly.
+                   // They were previously reachable only through a live SFTP pull, which
+                   // is why a wholesale assignment could erase 1,739 stamps a night
+                   // without a single test noticing.
+                   applyMatchToPart };
 
 if (require.main === module) (async () => {
-  CAP = await import('file://' + process.cwd().replace(/\\/g, '/') + '/normalize-product-name.js');
-  NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
+  await loadDeps();
 
   const summary = {
     startedAt: new Date().toISOString(),
