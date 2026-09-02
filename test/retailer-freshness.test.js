@@ -504,3 +504,53 @@ test("one forgotten row still does not condemn a healthy catalog", async () => {
   // property that makes the tail check safe to fail on.
   assert.deepEqual((await withTail(99, 1, "2026-01-01")).failures, []);
 });
+
+// =============================================================================
+//  THE GATE'S OWN TRIGGER
+//
+//  This gate reads committed state, so its verdict depends on where in the daily
+//  pipeline it samples. That ordering was expressed as a clock time — 13:00, one
+//  hour after sftp-ingest's 12:00 — and Actions queue delay measured 0.2h to
+//  9.6h on the ingest against 3.9h to 6.3h here. A one-hour nominal gap orders
+//  nothing under that variance, and when it inverted this gate spent 5
+//  consecutive days sampling the ~4h window in which sftp-ingest had erased the
+//  re-pricer's stamps, reporting a failure the same catalog did not have six
+//  hours either side.
+//
+//  The ordering is now stated as workflow_run. This test is what stops the
+//  watched list drifting from the table that justifies it — the same rule the
+//  gate applies to every OTHER workflow's schedule, finally applied to its own.
+// =============================================================================
+
+test("the gate watches exactly the workflows CADENCE cites", () => {
+  const wf = fs.readFileSync(
+    path.join(gate.DEFAULT_WF_DIR, "retailer-freshness.yml"), "utf8");
+
+  // The display names, read from each cited workflow rather than transcribed —
+  // workflow_run matches on `name:`, not on filename, so a renamed workflow
+  // silently stops triggering this gate.
+  const cited = [...new Set(Object.values(gate.CADENCE)
+    .filter((s) => s.confirmedBy)
+    .map((s) => s.confirmedBy.workflow))];
+
+  const wfDir = gate.DEFAULT_WF_DIR;
+  for (const file of cited) {
+    const name = (fs.readFileSync(path.join(wfDir, file), "utf8").match(/^name:\s*(.+)$/m) || [])[1];
+    assert.ok(name, `${file} has no name:`);
+    assert.ok(
+      new RegExp(`^\\s+- ${name.trim()}\\s*(#.*)?$`, "m").test(wf),
+      `${file} is cited in CADENCE but '${name.trim()}' is not in retailer-freshness.yml's ` +
+      `workflow_run list — the gate would not re-check after it writes`);
+  }
+});
+
+test("the cron survives as the absence backstop", () => {
+  // workflow_run cannot fire when NO writer runs, and that is the exact failure
+  // this gate was written for: Best Buy froze for four months and every derived
+  // artifact stayed healthy. Losing the cron would blind the gate to the one
+  // case it cannot afford to miss.
+  const wf = fs.readFileSync(
+    path.join(gate.DEFAULT_WF_DIR, "retailer-freshness.yml"), "utf8");
+  assert.match(wf, /^\s+schedule:$/m);
+  assert.match(wf, /^\s+- cron: '[^']+'$/m);
+});
