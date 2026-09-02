@@ -44,7 +44,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:37.477Z",
+        "refreshedAt": "2026-09-02T21:00:34.699Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -106,17 +106,19 @@ export default [
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
-        "sku": "445831510368650970144944",
-        "itemNumber": "N82E16813119755",
+        "sku": "N82E16813119682",
+        "price": 499.99,
+        "saleprice": 399.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310534690769170361383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119682%3Fitem%3DN82E16813119682",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-682-16.jpg",
         "sellerClass": "official",
-        "price": 399.99,
-        "saleprice": 388.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831510368650970144944&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-h-gaming-wifi7-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119755%3Fitem%3DN82E16813119755",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-755-02.png",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:42.290Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:34.915Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:00:34.915Z",
+        "migratedFrom": "445831510368650970144944"
       }
     },
     "value": 9,
@@ -209,7 +211,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:37.796Z",
+        "refreshedAt": "2026-09-02T21:00:35.078Z",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -253,7 +255,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.140Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "refreshedAt": "2026-09-02T21:00:35.261Z"
       }
     },
     "value": 17,
@@ -335,20 +338,15 @@ export default [
         "sku": "44583498671282949337832",
         "itemNumber": "9SIC3DRKN75687",
         "sellerClass": "marketplace",
-        "price": 215.06,
+        "price": 230.06,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583498671282949337832&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650m-mortar-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144558%3Fitem%3D9SIC3DRKN75687",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-558-09.jpg",
         "inStock": true,
         "matchedAt": "2026-08-29T15:58:37.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:07:06.467Z",
-        "priceLastMovedAt": "2026-09-01",
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:20:38.348Z",
-        "priceSuspectValue": 268,
-        "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 2
+        "refreshedAt": "2026-09-02T21:00:35.863Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "value": 32,
@@ -443,7 +441,12 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.715Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-02T21:00:36.050Z",
+        "priceSuspectValue": 329.99,
+        "priceSuspectClass": "SUSPECT_PAIR",
+        "priceSuspectStreak": 1
       }
     },
     "value": 67,
@@ -499,10 +502,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-01T19:10:45.493Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:20:38.636Z",
+        "priceSuspectAt": "2026-09-02T21:00:36.226Z",
         "priceSuspectValue": 212.09,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 1
+        "priceSuspectStreak": 2
       }
     },
     "value": 76,
@@ -593,7 +596,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:32.528Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:36.400Z"
       }
     },
     "value": 93,
@@ -646,7 +650,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.654Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:36.580Z"
       }
     },
     "value": 61,
@@ -904,7 +909,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-25T12:31:35.128Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:36.741Z"
       }
     },
     "value": 0,
@@ -1012,17 +1018,19 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445838082438829531923635",
-        "itemNumber": "N82E16813145525",
+        "sku": "N82E16813145526",
+        "price": 289.99,
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833999457754832239495&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-wf7-ice-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145526%3Fitem%3DN82E16813145526",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-526-05.jpg",
         "sellerClass": "official",
-        "price": 329.99,
-        "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838082438829531923635&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-x-ice-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145525%3Fitem%3DN82E16813145525",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-525-05.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:42.519Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:37.086Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:00:37.086Z",
+        "migratedFrom": "445838082438829531923635"
       }
     },
     "value": 22,
@@ -1162,7 +1170,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:39.513Z",
+        "refreshedAt": "2026-09-02T21:00:37.246Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -1218,7 +1226,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:39.628Z",
+        "refreshedAt": "2026-09-02T21:00:37.423Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -1270,7 +1278,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:37.447Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:39.762Z",
+        "refreshedAt": "2026-09-02T21:00:37.660Z",
         "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-08-28T16:22:28.168Z",
         "rematchedFrom": "445839687874364739217508"
@@ -1608,7 +1616,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.720Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:00:38.342Z"
       },
       "newegg_openbox": {
         "sku": "445837014807153555392749",
@@ -1674,7 +1683,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:20:40.476Z"
+        "refreshedAt": "2026-09-02T21:00:38.616Z"
       }
     },
     "value": 17,
@@ -1717,17 +1726,19 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445839858375610514091719",
-        "itemNumber": "N82E16813162195",
+        "sku": "N82E16813162196",
+        "price": 159.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314944498871885550067&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-pro-rs-wifi-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162196%3Fitem%3DN82E16813162196",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-196-11.jpg",
         "sellerClass": "official",
-        "price": 149.99,
-        "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839858375610514091719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-pro-rs-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162195%3Fitem%3DN82E16813162195",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-195-11.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:42.648Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:23.717Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:01:23.717Z",
+        "migratedFrom": "445839858375610514091719"
       },
       "newegg_openbox": {
         "sku": "445839347850900693740142",
@@ -1939,10 +1950,10 @@ export default [
         "rematchedAt": "2026-08-28T16:22:34.065Z",
         "rematchedFrom": "9SIC4RPKRD3367",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:21:29.035Z",
-        "priceSuspectValue": 323.86,
+        "priceSuspectAt": "2026-09-02T21:01:24.204Z",
+        "priceSuspectValue": 301.46,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 6
+        "priceSuspectStreak": 7
       }
     },
     "value": 40,
@@ -1986,15 +1997,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIBTK0KAU9685",
-        "price": 164.39,
+        "price": 159.45,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311114972006874991433&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b660m-a-d4-micro-atx-intel-motherboard-intel-b660-lga-1700-dedicated-lga1700-mounting-bracket-is-required%2Fp%2FN82E16813119541%3Fitem%3D9SIBTK0KAU9685",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-541-V01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-22T12:24:56.259Z",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:29.248Z",
-        "priceLastMovedAt": "2026-09-01",
+        "refreshedAt": "2026-09-02T21:01:24.453Z",
+        "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-08-30T19:01:54.106Z",
         "rematchedFrom": "4458312778853782507858912"
       }
@@ -2049,7 +2060,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:46.341Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:29.460Z",
+        "refreshedAt": "2026-09-02T21:01:24.639Z",
         "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-09-01T09:07:57.736Z",
         "rematchedFrom": "44583102601238600036477"
@@ -2182,7 +2193,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:09.330Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:29.657Z",
+        "refreshedAt": "2026-09-02T21:01:24.817Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 79.99
       }
@@ -2408,7 +2419,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.064Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:25.400Z"
       }
     },
     "discount": 17,
@@ -2474,7 +2486,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:25.565Z"
       }
     },
     "discount": 36,
@@ -2539,7 +2552,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.048Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:26.243Z"
       },
       "newegg_openbox": {
         "sku": "445837461092090051650720",
@@ -2619,7 +2633,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.977Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:31.136Z"
+        "refreshedAt": "2026-09-02T21:01:26.649Z"
       }
     },
     "discount": 39,
@@ -2676,7 +2690,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.712Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:26.813Z"
       }
     },
     "additionalImages": [
@@ -2913,7 +2928,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:28.103Z"
       }
     },
     "discount": 14,
@@ -3665,7 +3681,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.657Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:29.093Z"
       }
     },
     "discount": 20,
@@ -3792,7 +3809,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.974Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:30.220Z"
       }
     },
     "discount": 31,
@@ -3860,7 +3878,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:39.934Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:30.392Z"
       }
     },
     "discount": 27,
@@ -3916,7 +3935,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.704Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:30.566Z"
       },
       "newegg_openbox": {
         "sku": "4458316936697237953121019",
@@ -4104,7 +4124,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:31.457Z"
       }
     },
     "additionalImages": [
@@ -4168,7 +4189,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.010Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:31.632Z"
       }
     },
     "additionalImages": [
@@ -4244,7 +4266,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.873Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:32.169Z"
       }
     },
     "additionalImages": [
@@ -4309,7 +4332,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:12.954Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:32.361Z"
       }
     },
     "discount": 21,
@@ -4364,7 +4388,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-09-02T15:37:46.510Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:32.721Z"
       }
     },
     "discount": 13,
@@ -4443,7 +4468,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.026Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:33.108Z"
       }
     },
     "additionalImages": [
@@ -4499,7 +4525,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-25T12:31:35.024Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:33.292Z"
       },
       "newegg_openbox": {
         "sku": "4458310630390469176105399",
@@ -4709,7 +4736,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.026Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:37.283Z"
+        "refreshedAt": "2026-09-02T21:01:34.381Z"
       }
     },
     "additionalImages": [
@@ -4776,7 +4803,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.048Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:34.734Z"
       }
     },
     "discount": 10,
@@ -4852,7 +4880,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.028Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:35.131Z"
       }
     },
     "discount": 33,
@@ -4931,7 +4960,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:35.493Z"
       }
     },
     "additionalImages": [
@@ -4995,7 +5025,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.055Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:35.841Z"
       }
     },
     "discount": 15,
@@ -5048,7 +5079,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:34.131Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:36.036Z"
       }
     },
     "discount": 7,
@@ -5127,7 +5159,12 @@ export default [
         "matchedAt": "2026-08-18T14:14:49.015Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:38.648Z"
+        "refreshedAt": "2026-09-02T08:21:38.648Z",
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-02T21:01:36.264Z",
+        "priceSuspectValue": 188.96,
+        "priceSuspectClass": "SUSPECT_HIGH",
+        "priceSuspectStreak": 1
       }
     },
     "discount": 5,
@@ -5198,7 +5235,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.746Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:36.412Z"
       }
     },
     "discount": 17,
@@ -5341,7 +5379,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:47.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:39.257Z"
+        "refreshedAt": "2026-09-02T21:01:36.987Z"
       }
     },
     "additionalImages": [
@@ -5402,7 +5440,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:39.695Z",
+        "refreshedAt": "2026-09-02T21:01:37.539Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 89.99
       }
@@ -5462,7 +5500,7 @@ export default [
         "matchedAt": "2026-08-21T12:45:44.937Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:21:40.139Z",
+        "refreshedAt": "2026-09-02T21:01:38.031Z",
         "priceLastMovedAt": "2026-08-30"
       }
     },
@@ -5577,7 +5615,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:01:38.393Z"
       }
     },
     "additionalImages": [
@@ -5789,7 +5828,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:22:29.283Z",
+        "refreshedAt": "2026-09-02T21:02:24.445Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 169.99
       }
@@ -5914,7 +5953,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-07-22",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:25.014Z"
       }
     },
     "discount": 9,
@@ -6043,7 +6083,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.056Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:25.958Z"
       }
     },
     "discount": 17,
@@ -6218,7 +6259,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:27.385Z"
       }
     },
     "discount": 8,
@@ -6281,7 +6323,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-02T08:22:32.026Z",
+        "refreshedAt": "2026-09-02T21:02:27.783Z",
         "priceLastMovedAt": "2026-09-01",
         "migratedAt": "2026-08-28T16:23:20.401Z",
         "migratedFrom": "445839560756206244701416"
@@ -6338,7 +6380,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.717Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:27.936Z"
       }
     },
     "discount": 8,
@@ -6394,7 +6437,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.177Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:28.441Z"
       },
       "newegg_openbox": {
         "sku": "4458310913196296134050163",
@@ -6472,7 +6516,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:29.115Z"
       },
       "newegg_openbox": {
         "sku": "4458311946438470901518940",
@@ -6671,7 +6716,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:12.992Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:29.446Z"
       }
     },
     "additionalImages": [
@@ -6767,16 +6813,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445836082570715603974345",
-        "itemNumber": "9SIA6ZPKAC2078",
+        "sku": "9SIA6KXKUU9018",
+        "price": 122.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312900457541245305774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-a520m-plus-wifi-micro-atx-amd-motherboard-amd-a520-am4%2Fp%2FN82E16813119489%3Fitem%3D9SIA6KXKUU9018",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-489-01.jpg",
         "sellerClass": "marketplace",
-        "price": 122.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836082570715603974345&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd%2Fp%2F2MG-000B-00688%3Fitem%3D9SIA6ZPKAC2078",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AGBAS2403030HWL4Q96.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:37:53.074Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:30.048Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:02:30.048Z",
+        "rematchedFrom": "445836082570715603974345"
       }
     },
     "additionalImages": [
@@ -6830,7 +6878,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.177Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:30.571Z"
       }
     },
     "additionalImages": [
@@ -7224,7 +7273,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-09-01T15:53:29.357Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:31.841Z"
       }
     },
     "discount": 5,
@@ -7394,13 +7444,15 @@ export default [
         "itemNumber": "N82E16813119572",
         "sellerClass": "official",
         "price": 130.99,
-        "saleprice": 118.99,
+        "saleprice": 119.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318395621824905590843&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-h610i-plus-d4-csm-mini-itx-intel-motherboard-intel-h610-lga-1700%2Fp%2FN82E16813119572%3Fitem%3DN82E16813119572",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-572-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:32.945Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "discount": 13,
@@ -7538,7 +7590,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:33.851Z"
       },
       "newegg_openbox": {
         "sku": "445836455049627148463440",
@@ -7801,7 +7854,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:22:37.207Z",
+        "refreshedAt": "2026-09-02T21:02:34.244Z",
         "priceLastMovedAt": "2026-08-31",
         "migratedAt": "2026-08-28T16:23:34.994Z",
         "migratedFrom": "N82E16813144733"
@@ -7924,7 +7977,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:02.954Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:34.595Z"
       }
     },
     "additionalImages": [
@@ -7985,7 +8039,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.93,
-        "refreshedAt": "2026-09-02T08:22:37.741Z",
+        "refreshedAt": "2026-09-02T21:02:34.911Z",
         "priceLastMovedAt": "2026-09-01",
         "migratedAt": "2026-08-28T16:23:36.859Z",
         "migratedFrom": "N82E16813144671"
@@ -8105,12 +8159,13 @@ export default [
         "sellerClass": "official",
         "price": 309.99,
         "saleprice": 301.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458382426790421679122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870-a-stealth-ice-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813145580%3Fitem%3DN82E16813145580",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458382426790421679122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870-a-stealth-ice-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813145580%3Fitem%3DN82E16813145580",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-580-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:36.496Z"
       }
     },
     "discount": 8,
@@ -8173,7 +8228,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:22:38.743Z",
+        "refreshedAt": "2026-09-02T21:02:36.876Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -8230,7 +8285,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.751Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:37.457Z"
       },
       "newegg_openbox": {
         "sku": "445831783444987982708634",
@@ -8310,7 +8366,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.967Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "refreshedAt": "2026-09-02T21:02:37.939Z"
       }
     },
     "additionalImages": [
@@ -8363,7 +8420,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.717Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:38.150Z"
       },
       "newegg_openbox": {
         "sku": "4458312433693676396016764",
@@ -8572,7 +8630,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.919Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:02:39.254Z"
       },
       "newegg_openbox": {
         "sku": "445833139511408924854758",
@@ -8679,7 +8738,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.115Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:24.086Z"
       }
     },
     "additionalImages": [
@@ -8752,7 +8812,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.924Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:24.521Z"
       }
     },
     "discount": 17,
@@ -8917,7 +8978,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:42.164Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:29.422Z",
+        "refreshedAt": "2026-09-02T21:03:25.052Z",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -9039,14 +9100,14 @@ export default [
       "newegg": {
         "sku": "N82E16813119618",
         "price": 249.99,
-        "saleprice": 244.99,
+        "saleprice": 241.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315410271543705938672&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-z790-plus-wifi-atx-motherboards-intel-intel-z790-lga-1700%2Fp%2FN82E16813119618%3Fitem%3DN82E16813119618",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-618-V01.jpg",
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:29.564Z",
+        "refreshedAt": "2026-09-02T21:03:25.218Z",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -9103,7 +9164,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-28T21:45:48.537Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:25.790Z"
       }
     },
     "discount": 5,
@@ -9154,7 +9216,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:30.470Z",
+        "refreshedAt": "2026-09-02T21:03:26.271Z",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -9211,10 +9273,10 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.92,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:23:30.760Z",
+        "priceSuspectAt": "2026-09-02T21:03:26.723Z",
         "priceSuspectValue": 329.99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 10
+        "priceSuspectStreak": 11
       }
     },
     "additionalImages": [
@@ -9271,10 +9333,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:23:31.195Z",
+        "priceSuspectAt": "2026-09-02T21:03:27.263Z",
         "priceSuspectValue": 218.22,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 10
+        "priceSuspectStreak": 11
       }
     },
     "additionalImages": [
@@ -9405,7 +9467,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.971Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:27.809Z"
       }
     },
     "additionalImages": [
@@ -9465,7 +9528,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:32.031Z",
+        "refreshedAt": "2026-09-02T21:03:28.327Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 139.99
       }
@@ -9601,7 +9664,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:41.836Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:32.442Z",
+        "refreshedAt": "2026-09-02T21:03:28.848Z",
         "priceLastMovedAt": "2026-08-30"
       }
     },
@@ -9958,15 +10021,15 @@ export default [
         "sku": "445835312868237171891057",
         "itemNumber": "9SIC6E1M4N0440",
         "sellerClass": "marketplace",
-        "price": 303.97,
+        "price": 302.57,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835312868237171891057&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-z790-a-wifi-atx-motherboards-intel-intel-z790-lga-1700%2Fp%2FN82E16813119601%3Fitem%3D9SIC6E1M4N0440",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-601-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-22T12:24:56.741Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:32.590Z",
-        "priceLastMovedAt": "2026-09-01"
+        "refreshedAt": "2026-09-02T21:03:29.139Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "additionalImages": [
@@ -10137,7 +10200,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.869Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:29.656Z"
       }
     },
     "additionalImages": [
@@ -10230,7 +10294,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:42.127Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:30.286Z"
       }
     },
     "additionalImages": [
@@ -10332,13 +10397,15 @@ export default [
         "sku": "445835581609381304292343",
         "itemNumber": "9SIAD6HJME1424",
         "sellerClass": "marketplace",
-        "price": 328.11,
+        "price": 331.1,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835581609381304292343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b760-tomahawk-wifi-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813144585%3Fitem%3D9SIAD6HJME1424",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-585-03.png",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:34.678Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "refreshedAt": "2026-09-02T21:03:31.459Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "discount": 9,
@@ -10425,15 +10492,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC7VBM4W2184",
-        "price": 148.33,
+        "price": 137.53,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315598859881955747160&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01AD6%3Fitem%3D9SIC7VBM4W2184",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506260GWYY0F3.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-18T14:17:04.247Z",
         "matchMethod": "name",
         "matchScore": 0.93,
-        "refreshedAt": "2026-09-01T19:13:42.226Z",
-        "priceLastMovedAt": "2026-09-01",
+        "refreshedAt": "2026-09-02T21:03:31.655Z",
+        "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-08-31T21:20:54.724Z",
         "rematchedFrom": "9SIC6E1M4H6662"
       }
@@ -10493,10 +10560,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:23:34.981Z",
-        "priceSuspectValue": 438.35,
+        "priceSuspectAt": "2026-09-02T21:03:31.864Z",
+        "priceSuspectValue": 435.25,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 11
+        "priceSuspectStreak": 12
       }
     },
     "additionalImages": [
@@ -10653,7 +10720,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.76,
-        "refreshedAt": "2026-09-02T08:23:35.254Z"
+        "refreshedAt": "2026-09-02T21:03:32.205Z"
       }
     },
     "discount": 12,
@@ -10765,7 +10832,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.871Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:32.760Z"
       }
     },
     "discount": 5,
@@ -10904,7 +10972,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.015Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:35.828Z"
+        "refreshedAt": "2026-09-02T21:03:32.953Z"
       },
       "newegg_openbox": {
         "sku": "4458311215258932331729804",
@@ -10970,13 +11038,15 @@ export default [
         "sku": "445838461351614216990738",
         "itemNumber": "9SIC6E1M4J9429",
         "sellerClass": "marketplace",
-        "price": 253.26,
+        "price": 249.41,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838461351614216990738&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b650i-edge-wifi-mini-itx-motherboard-amd-b650-am5%2Fp%2FN82E16813144556%3Fitem%3D9SIC6E1M4J9429",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-556-16.jpg",
         "inStock": true,
         "matchedAt": "2026-08-30T15:54:17.417Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:33.507Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "discount": 15,
@@ -11030,7 +11100,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:01.786Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:34.062Z"
       }
     },
     "additionalImages": [
@@ -11154,7 +11225,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-21T12:45:05.041Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:34.586Z"
       }
     },
     "additionalImages": [
@@ -11263,7 +11335,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.197Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:35.726Z"
       }
     },
     "discount": 5,
@@ -11585,7 +11658,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.77,
-        "refreshedAt": "2026-09-02T08:23:38.776Z",
+        "refreshedAt": "2026-09-02T21:03:36.876Z",
         "priceLastMovedAt": "2026-08-30"
       }
     },
@@ -11641,10 +11714,10 @@ export default [
         "refreshedAt": "2026-08-28T16:24:14.397Z",
         "priceLastMovedAt": "2026-08-28",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:23:39.197Z",
-        "priceSuspectValue": 174.9,
+        "priceSuspectAt": "2026-09-02T21:03:37.661Z",
+        "priceSuspectValue": 183.53,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 10
+        "priceSuspectStreak": 11
       }
     },
     "additionalImages": [
@@ -11699,7 +11772,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:41.834Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:38.354Z"
       }
     },
     "discount": 7,
@@ -11798,7 +11872,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-31T18:43:38.254Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:03:39.132Z"
       }
     },
     "discount": 37,
@@ -11843,15 +11918,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC6E1M4K7610",
-        "price": 858.15,
+        "price": 855.35,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835616368854168121836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-meg-z690-ace-extended-atx-intel-motherboard-intel-z690-lga-1700%2Fp%2FN82E16813144505%3Fitem%3D9SIC6E1M4K7610",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-505-V01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:23:40.491Z",
-        "priceLastMovedAt": "2026-09-01",
+        "refreshedAt": "2026-09-02T21:04:23.882Z",
+        "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-08-28T16:24:17.340Z",
         "rematchedFrom": "9SIC4RPKRD3294"
       }
@@ -11910,7 +11985,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.179Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:28.872Z",
+        "refreshedAt": "2026-09-02T21:04:24.518Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -11957,17 +12032,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458314050656686274579309",
-        "itemNumber": "9SIC6BPKYP0571",
-        "sellerClass": "marketplace",
-        "price": 195.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314050656686274579309&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01A65%3Fitem%3D9SIC6BPKYP0571",
+        "sku": "9SIC7VBM5U5954",
+        "price": 195.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313771000571686868912&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01A65%3Fitem%3D9SIC7VBM5U5954",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506200FFFA3CF.jpg",
-        "inStock": true,
+        "sellerClass": "marketplace",
         "matchedAt": "2026-08-23T12:30:17.832Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:29.514Z"
+        "refreshedAt": "2026-09-02T21:04:25.085Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:04:25.085Z",
+        "rematchedFrom": "4458314050656686274579309"
       }
     },
     "additionalImages": [
@@ -12261,7 +12337,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:29.635Z",
+        "refreshedAt": "2026-09-02T21:04:25.240Z",
         "saleprice": 383.99,
         "priceLastMovedAt": "2026-09-01"
       }
@@ -12319,7 +12395,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:30.215Z"
+        "refreshedAt": "2026-09-02T21:04:25.819Z"
       }
     },
     "additionalImages": [
@@ -12519,7 +12595,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.200Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:26.534Z"
       }
     },
     "discount": 7,
@@ -12978,7 +13055,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.977Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:28.180Z"
       },
       "newegg_openbox": {
         "sku": "445833230701027882906663",
@@ -13037,20 +13115,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAK14KZP8023",
-        "price": 849.99,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313780943622245303522&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-maximus-z890-extreme-extended-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119689%3Fitem%3D9SIAK14KZP8023",
+        "sku": "9SIBTK0KPJ0863",
+        "price": 1370,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313333770606716774426&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-maximus-z890-extreme-extended-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119689%3Fitem%3D9SIBTK0KPJ0863",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-689-25.png",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:24:32.051Z",
-        "priceSuspectValue": 1386.67,
-        "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 11
+        "refreshedAt": "2026-09-02T21:04:28.401Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:04:28.401Z",
+        "rematchedFrom": "9SIAK14KZP8023"
       }
     },
     "additionalImages": [
@@ -13144,7 +13220,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:13.400Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:28.937Z"
       }
     },
     "additionalImages": [
@@ -13390,7 +13467,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:32.989Z",
+        "refreshedAt": "2026-09-02T21:04:29.700Z",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -13670,7 +13747,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.900Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:30.524Z"
       }
     },
     "discount": 12,
@@ -14208,7 +14286,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-31T18:43:38.422Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:31.595Z"
       }
     },
     "discount": 23,
@@ -14402,7 +14481,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:35.413Z",
+        "refreshedAt": "2026-09-02T21:04:32.462Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -14512,7 +14591,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:48.879Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:32.780Z"
       }
     },
     "additionalImages": [
@@ -14619,7 +14699,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:36.113Z",
+        "refreshedAt": "2026-09-02T21:04:33.361Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -14690,7 +14770,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:33.738Z"
       }
     },
     "additionalImages": [
@@ -14743,7 +14824,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.042Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:34.246Z"
       },
       "newegg_openbox": {
         "sku": "445836849610351065884042",
@@ -14857,7 +14939,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:36.975Z",
+        "refreshedAt": "2026-09-02T21:04:34.479Z",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -14945,18 +15027,19 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAFVFKKG8380",
-        "price": 219.84,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317421318016209785978&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b850-plus-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813119752%3Fitem%3D9SIAFVFKKG8380",
+        "sku": "N82E16813119752",
+        "price": 189.99,
+        "saleprice": 187.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832922643900338176439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b850-plus-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813119752%3Fitem%3DN82E16813119752",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-752-04.png",
-        "sellerClass": "marketplace",
+        "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-08-29T19:10:28.849Z",
-        "priceLastMovedAt": "2026-08-29",
-        "rematchedAt": "2026-08-29T00:25:45.490Z",
-        "rematchedFrom": "9SIAFJ8KTR7948"
+        "refreshedAt": "2026-09-02T21:04:34.659Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:04:34.659Z",
+        "migratedFrom": "9SIAFVFKKG8380"
       }
     },
     "discount": 10,
@@ -15043,7 +15126,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.467Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:35.196Z"
       }
     },
     "additionalImages": [
@@ -15095,7 +15179,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:37.803Z",
+        "refreshedAt": "2026-09-02T21:04:35.379Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -15309,16 +15393,18 @@ export default [
         "priceUnconfirmedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "4458312384773213114982308",
-        "itemNumber": "9SIC7XKM1N2293",
+        "sku": "9SIC7VBM4K6630",
+        "price": 347.18,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311263818327607605734&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z790-pg-lightning-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813162084%3Fitem%3D9SIC7VBM4K6630",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-084-02.jpg",
         "sellerClass": "marketplace",
-        "price": 319.87,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312384773213114982308&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-z790-pg-riptide-atx-motherboard-intel-z790-lga-1700%2Fp%2FN82E16813162086%3Fitem%3D9SIC7XKM1N2293",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-086-08.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-01T15:53:24.077Z",
-        "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:36.922Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:04:36.922Z",
+        "rematchedFrom": "4458312384773213114982308"
       }
     },
     "additionalImages": [
@@ -15396,7 +15482,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.900Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:04:37.281Z"
       }
     },
     "discount": 24,
@@ -15639,7 +15726,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:36.217Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:39.852Z"
+        "refreshedAt": "2026-09-02T21:04:38.385Z"
       }
     },
     "additionalImages": [
@@ -15738,7 +15825,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:32.477Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:24:40.043Z"
+        "refreshedAt": "2026-09-02T21:04:38.561Z"
       }
     },
     "additionalImages": [
@@ -15943,7 +16030,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.681Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "refreshedAt": "2026-09-02T21:04:39.401Z"
       }
     },
     "additionalImages": [
@@ -16069,7 +16157,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:01.128Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:24.769Z"
       }
     },
     "discount": 9,
@@ -16164,7 +16253,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.725Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:24.936Z"
       }
     },
     "discount": 19,
@@ -16230,7 +16320,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:29.674Z",
+        "refreshedAt": "2026-09-02T21:05:25.101Z",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -16308,7 +16398,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-01T09:11:58.371Z"
+        "refreshedAt": "2026-09-02T21:05:25.420Z"
       }
     },
     "discount": 16,
@@ -16572,7 +16662,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:30.832Z",
+        "refreshedAt": "2026-09-02T21:05:26.523Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 79.99
       }
@@ -16822,7 +16912,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.063Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:26.719Z"
       }
     },
     "discount": 9,
@@ -17063,7 +17154,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-22T12:25:05.436Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:28.418Z"
       }
     },
     "additionalImages": [
@@ -17114,7 +17206,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:13.251Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:28.597Z"
       }
     },
     "discount": 6,
@@ -17210,7 +17303,12 @@ export default [
         "refreshedAt": "2026-09-01T09:12:01.307Z",
         "priceLastMovedAt": "2026-08-31",
         "rematchedAt": "2026-08-31T21:22:53.433Z",
-        "rematchedFrom": "44583475603051404815479"
+        "rematchedFrom": "44583475603051404815479",
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-02T21:05:29.182Z",
+        "priceSuspectValue": 264.35,
+        "priceSuspectClass": "SUSPECT_PAIR",
+        "priceSuspectStreak": 1
       }
     },
     "mpn": "B550M PRO SE",
@@ -17250,16 +17348,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "44583848416670250185249",
-        "itemNumber": "N82E16813145556",
+        "sku": "N82E16813145555",
+        "price": 179.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835506869485173198101&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860-eagle-wifi6e-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145555%3Fitem%3DN82E16813145555",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-555-01.jpg",
         "sellerClass": "official",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583848416670250185249&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860-ds3h-wifi6e-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145556%3Fitem%3DN82E16813145556",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-556-01.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:42.540Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:29.361Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:05:29.361Z",
+        "migratedFrom": "44583848416670250185249"
       }
     },
     "discount": 17,
@@ -17325,7 +17425,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:34.167Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:33.388Z",
+        "refreshedAt": "2026-09-02T21:05:29.718Z",
         "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-09-02T08:25:33.388Z",
         "rematchedFrom": "9SIC7VBM5T7307"
@@ -17387,7 +17487,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.056Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:29.901Z"
       }
     },
     "discount": 16,
@@ -17435,7 +17536,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:33.803Z",
+        "refreshedAt": "2026-09-02T21:05:30.377Z",
         "priceLastMovedAt": "2026-09-02",
         "migratedAt": "2026-09-02T08:25:33.803Z",
         "migratedFrom": "N82E16813145558"
@@ -17492,7 +17593,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:19.152Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:30.695Z"
       }
     },
     "additionalImages": [
@@ -17545,7 +17647,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.75,
-        "refreshedAt": "2026-09-02T08:25:34.359Z"
+        "refreshedAt": "2026-09-02T21:05:31.091Z"
       }
     },
     "additionalImages": [
@@ -17664,7 +17766,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:31.451Z"
       }
     },
     "discount": 29,
@@ -18186,7 +18289,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:36.293Z"
+        "refreshedAt": "2026-09-02T21:05:33.789Z"
       }
     },
     "additionalImages": [
@@ -18242,7 +18345,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.236Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:34.305Z"
       }
     },
     "additionalImages": [
@@ -18294,7 +18398,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:36.990Z",
+        "refreshedAt": "2026-09-02T21:05:34.673Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -18437,16 +18541,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445833705662615218370021",
-        "itemNumber": "9SIC7VBM5U5958",
+        "sku": "9SIAD7HKKN4523",
+        "price": 279.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583532616740331115017&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b860-p-wifi-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813144694%3Fitem%3D9SIAD7HKKN4523",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-694-12.png",
         "sellerClass": "marketplace",
-        "price": 339.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833705662615218370021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-001M-00NZ4%3Fitem%3D9SIC7VBM5U5958",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AET8D2605071EG3P4D3.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:35.807Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchMethod": "name",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:35.395Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:05:35.395Z",
+        "rematchedFrom": "445833705662615218370021"
       }
     },
     "additionalImages": [
@@ -18493,13 +18599,15 @@ export default [
         "sku": "445838495702251258638439",
         "itemNumber": "9SIA0ZXKDF5940",
         "sellerClass": "marketplace",
-        "price": 145.6,
+        "price": 145.53,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838495702251258638439&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-h810m-a-wifi-csm-micro-atx-motherboard-intel-h810-lga-1851%2Fp%2FN82E16813119715%3Fitem%3D9SIA0ZXKDF5940",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-715-02.png",
         "inStock": true,
         "matchedAt": "2026-08-29T15:56:28.310Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:35.577Z",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "additionalImages": [
@@ -18553,7 +18661,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.767Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:35.755Z"
       }
     },
     "additionalImages": [
@@ -18760,7 +18869,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-26T12:35:52.231Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:36.764Z"
       }
     },
     "discount": 6,
@@ -18815,7 +18925,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.725Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:36.924Z"
       }
     },
     "additionalImages": [
@@ -18868,7 +18979,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:25:38.969Z"
+        "refreshedAt": "2026-09-02T21:05:37.274Z"
       }
     },
     "additionalImages": [
@@ -18962,7 +19073,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.179Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:38.195Z"
       }
     },
     "additionalImages": [
@@ -19148,17 +19260,19 @@ export default [
         "priceUnconfirmedReason": "msi-price-suspect_high-vs-median"
       },
       "newegg": {
-        "sku": "44583748233631049934817",
-        "itemNumber": "N82E16813144674",
+        "sku": "N82E16813144683",
+        "price": 699.99,
+        "saleprice": 399.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831908406744040252583&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-meg-z890-unify-x-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144683%3Fitem%3DN82E16813144683",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-683-20.jpg",
         "sellerClass": "official",
-        "price": 369.99,
-        "saleprice": 339.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583748233631049934817&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-z890-carbon-wifi-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813144674%3Fitem%3DN82E16813144674",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-674-07.png",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:40:42.401Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:05:38.550Z",
+        "priceLastMovedAt": "2026-09-02",
+        "migratedAt": "2026-09-02T21:05:38.550Z",
+        "migratedFrom": "44583748233631049934817"
       }
     },
     "additionalImages": [
@@ -19260,7 +19374,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.89,
-        "refreshedAt": "2026-09-02T08:25:40.265Z",
+        "refreshedAt": "2026-09-02T21:05:39.603Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 149.99
       }
@@ -19401,16 +19515,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445832648798521357816387",
-        "itemNumber": "9SIA6KXKUY6530",
+        "sku": "9SIC7VBM160033",
+        "price": 216.3,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316791617924526188503&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860m-gaming-x-wifi6e-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145559%3Fitem%3D9SIC7VBM160033",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-559-01.jpg",
         "sellerClass": "marketplace",
-        "price": 179,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832648798521357816387&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860m-ds3h-wifi6e-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145561%3Fitem%3D9SIA6KXKUY6530",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-561-01.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-02T15:37:52.720Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:24.976Z",
+        "priceLastMovedAt": "2026-09-02",
+        "rematchedAt": "2026-09-02T21:06:24.976Z",
+        "rematchedFrom": "445832648798521357816387"
       }
     },
     "discount": 6,
@@ -19737,7 +19853,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-24T12:32:45.998Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:27.688Z"
       }
     },
     "additionalImages": [
@@ -19899,7 +20016,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:19.159Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:28.078Z"
       }
     },
     "discount": 9,
@@ -20010,7 +20128,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-29T15:56:30.980Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:28.603Z"
       }
     },
     "additionalImages": [
@@ -20265,7 +20384,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:19.156Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:31.112Z"
       }
     },
     "additionalImages": [
@@ -20310,15 +20430,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC6E1M518920",
-        "price": 73.58,
+        "price": 72.18,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834031272185327636310&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-000J-00EP1%3Fitem%3D9SIC6E1M518920",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S25080215MWNAD7.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:26:34.383Z",
-        "priceLastMovedAt": "2026-09-01",
+        "refreshedAt": "2026-09-02T21:06:31.447Z",
+        "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-09-01T19:16:41.982Z",
         "rematchedFrom": "9SIC7VBM5B1931"
       }
@@ -20518,7 +20638,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.928Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:32.427Z"
       }
     },
     "discount": 17,
@@ -20584,7 +20705,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:26:35.466Z",
+        "refreshedAt": "2026-09-02T21:06:32.756Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -20681,7 +20802,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:26:35.900Z"
+        "refreshedAt": "2026-09-02T21:06:33.279Z"
       }
     },
     "additionalImages": [
@@ -20857,7 +20978,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:21:08.926Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:34.158Z"
       }
     },
     "additionalImages": [
@@ -20950,7 +21072,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.115Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:34.766Z"
       },
       "newegg_openbox": {
         "sku": "445831460845599308698610",
@@ -21346,10 +21469,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-01T19:16:44.955Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T08:26:37.976Z",
+        "priceSuspectAt": "2026-09-02T21:06:35.971Z",
         "priceSuspectValue": 212.09,
         "priceSuspectClass": "SUSPECT_VS_LIST",
-        "priceSuspectStreak": 1
+        "priceSuspectStreak": 2
       },
       "newegg_openbox": {
         "sku": "4458314998564266834703572",
@@ -21401,7 +21524,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:33.963Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:36.428Z"
       },
       "newegg_openbox": {
         "sku": "4458310464599046477709961",
@@ -21487,7 +21611,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.880Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:36.739Z"
       }
     },
     "socket": "LGA1700",
@@ -21582,7 +21707,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.982Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:37.132Z"
       }
     },
     "socket": "LGA1700",
@@ -21623,13 +21749,15 @@ export default [
         "itemNumber": "N82E16813119691",
         "sellerClass": "official",
         "price": 449.99,
-        "saleprice": 433.99,
+        "saleprice": 428.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839327445260093841950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-maximus-z890-hero-atx-motherboard-intel-z890-lga-1851%2Fp%2FN82E16813119691%3Fitem%3DN82E16813119691",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-691-12.png",
         "inStock": true,
         "matchedAt": "2026-08-23T12:30:32.569Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:37.748Z",
+        "priceLastMovedAt": "2026-09-02"
       },
       "newegg_openbox": {
         "sku": "4458316737099123737472662",
@@ -21704,7 +21832,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:39.939Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:38.226Z"
       }
     },
     "socket": "LGA1851",
@@ -21740,7 +21869,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.696Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:06:38.616Z"
       },
       "newegg_openbox": {
         "sku": "4458315514337437533193053",
@@ -22047,7 +22177,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:24.121Z"
       }
     },
     "socket": "AM5",
@@ -22104,7 +22235,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:24.481Z"
       },
       "newegg_openbox": {
         "sku": "445832154062028964097722",
@@ -22176,7 +22308,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.868Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:24.774Z"
       }
     },
     "socket": "AM4",
@@ -22417,7 +22550,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:25.677Z"
       }
     },
     "socket": "AM5",
@@ -22474,7 +22608,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.916Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:26.080Z"
       }
     },
     "socket": "AM5",
@@ -22531,7 +22666,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.895Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:26.573Z"
       },
       "newegg_openbox": {
         "sku": "445835350451232681606106",
@@ -22596,7 +22732,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.738Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:26.987Z"
       }
     },
     "socket": "AM5",
@@ -22672,7 +22809,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.733Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:27.365Z"
       },
       "newegg_openbox": {
         "sku": "4458311166770362855035680",
@@ -22724,7 +22862,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.123Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:27.709Z"
       }
     },
     "socket": "AM5",
@@ -22780,7 +22919,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.932Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:28.103Z"
       }
     },
     "socket": "AM5",
@@ -22927,7 +23067,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.932Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:28.429Z"
       }
     },
     "socket": "AM5",
@@ -23759,7 +23900,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:45.762Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:28.598Z"
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
@@ -24128,7 +24270,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:27:32.245Z",
+        "refreshedAt": "2026-09-02T21:07:28.778Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -24395,7 +24537,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.424Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-02T21:07:28.933Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
