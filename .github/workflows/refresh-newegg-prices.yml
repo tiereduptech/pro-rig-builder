@@ -231,7 +231,11 @@ jobs:
               echo "No changes"
             else
               git commit -m "chore(newegg): refresh prices — $UPDATED updated, $REMOVED removed"
-              git push
+              # Not a bare `git push`. The main-writer lock serialises workflows
+              # against each other; it has no opinion about a person clicking
+              # Merge while this runs. Run 159 lost a 70-minute refresh that way
+              # — 130 rows repriced, committed, rejected, thrown away.
+              bash scripts/push-with-rebase.sh main
             fi
             rm -f newegg-refresh-summary.json
           fi
