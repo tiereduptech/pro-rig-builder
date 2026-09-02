@@ -444,7 +444,7 @@ export default [
         "sku": "6361715",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -493,7 +493,7 @@ export default [
         "sku": "6483375",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "XLR",
@@ -518,7 +518,7 @@ export default [
         "sku": "6547472",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -544,7 +544,7 @@ export default [
         "sku": "6556755",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "pattern": "Supercardioid",
@@ -569,7 +569,7 @@ export default [
         "sku": "6570531",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -595,7 +595,7 @@ export default [
         "sku": "6576377",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -620,7 +620,7 @@ export default [
         "sku": "6601728",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -645,7 +645,7 @@ export default [
         "sku": "6601911",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -671,7 +671,7 @@ export default [
         "sku": "6622725",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -697,7 +697,7 @@ export default [
         "sku": "4758301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -722,7 +722,7 @@ export default [
         "sku": "6277346",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -781,7 +781,7 @@ export default [
         "sku": "6530807",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -805,8 +805,9 @@ export default [
         "inStock": false,
         "sku": "6540970",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-01",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-03"
       }
     },
     "pattern": "Cardioid",
@@ -831,7 +832,7 @@ export default [
         "sku": "6556752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -857,7 +858,7 @@ export default [
         "sku": "6573619",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -882,7 +883,7 @@ export default [
         "sku": "6618286",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-30"
       }
     },
@@ -908,7 +909,7 @@ export default [
         "sku": "6601910",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -934,7 +935,7 @@ export default [
         "sku": "6622722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -959,7 +960,7 @@ export default [
         "sku": "6642761",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "USB",
@@ -984,7 +985,7 @@ export default [
         "sku": "9135241",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "micType": "XLR",
