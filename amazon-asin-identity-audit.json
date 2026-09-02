@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-09-01T08:12:01.834Z",
+    "generatedAt": "2026-09-02T07:34:35.284Z",
     "mode": "READ-ONLY audit — no catalog writes, no relinks, no DataForSEO calls",
     "rowsAudited": 3742,
     "uniqueAsinsQueried": 3653,
     "apiCalls": 366,
-    "elapsedSec": 432,
+    "elapsedSec": 456,
     "throttle429": 0,
     "apiBatchErrors": 0,
     "priceDivergenceThresholdPct": 15,
@@ -13,18 +13,18 @@
     "gate": "titleMatches() from drift-gate.js, unmodified, + bidirectional containment for classification"
   },
   "totals": {
-    "clean": 3192,
-    "deadAsin": 344,
+    "clean": 3186,
+    "deadAsin": 349,
     "wrongProduct": 77,
-    "closeButWrong": 129,
+    "closeButWrong": 130,
     "titleVerbosity": 0,
-    "realDefects": 550,
+    "realDefects": 556,
     "noOffer": 487,
-    "noOfferOrphaned": 351,
-    "noOfferAlreadyQuarantined": 303,
-    "realDefectRatePct": 14.7,
-    "rawGateFlagRatePct": 14.7,
-    "priceDivergentDefects": 55
+    "noOfferOrphaned": 347,
+    "noOfferAlreadyQuarantined": 307,
+    "realDefectRatePct": 14.86,
+    "rawGateFlagRatePct": 14.86,
+    "priceDivergentDefects": 56
   },
   "perCategory": {
     "CPU": {
@@ -38,21 +38,21 @@
     },
     "Motherboard": {
       "total": 409,
-      "dead": 47,
+      "dead": 48,
       "wrong": 1,
       "close": 1,
       "verbosity": 0,
-      "clean": 360,
+      "clean": 359,
       "priceFlag": 0
     },
     "GPU": {
       "total": 305,
-      "dead": 10,
+      "dead": 14,
       "wrong": 9,
       "close": 1,
       "verbosity": 0,
-      "clean": 285,
-      "priceFlag": 4
+      "clean": 281,
+      "priceFlag": 5
     },
     "Case": {
       "total": 340,
@@ -97,7 +97,7 @@
       "close": 13,
       "verbosity": 0,
       "clean": 168,
-      "priceFlag": 4
+      "priceFlag": 3
     },
     "UPS": {
       "total": 11,
@@ -115,7 +115,7 @@
       "close": 25,
       "verbosity": 0,
       "clean": 321,
-      "priceFlag": 5
+      "priceFlag": 6
     },
     "CaseFan": {
       "total": 264,
@@ -148,9 +148,9 @@
       "total": 138,
       "dead": 14,
       "wrong": 5,
-      "close": 4,
+      "close": 5,
       "verbosity": 0,
-      "clean": 115,
+      "clean": 114,
       "priceFlag": 5
     },
     "Mouse": {
@@ -1124,6 +1124,23 @@
     },
     {
       "class": "dead-asin",
+      "id": 20407,
+      "cat": "Motherboard",
+      "asin": "B0FH4LPLGQ",
+      "storedName": "H810M K Motherboard - Intel Core Ultra (Series 2) CPUs, 3+1+2 Phases VRM, up to 6400MHz DDR5",
+      "amazonTitle": null,
+      "scoreStoredInAmazon": null,
+      "scoreAmazonInStored": null,
+      "gateScore": null,
+      "storedPrice": 111.02,
+      "amazonPrice": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "capConflict": false,
+      "needsReview": true
+    },
+    {
+      "class": "dead-asin",
       "id": 20461,
       "cat": "Motherboard",
       "asin": "B0C2C96LDL",
@@ -1253,12 +1270,12 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 649,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 549.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
-      "priceDivergent": false,
-      "noOffer": true,
+      "priceDeltaPct": -15.3,
+      "priceDivergent": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -1279,6 +1296,23 @@
       "priceDeltaPct": -16.4,
       "priceDivergent": true,
       "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "dead-asin",
+      "id": 30087,
+      "cat": "GPU",
+      "asin": "B0F8PR9L3X",
+      "storedName": "ASUS Dual RTX 4060 OC",
+      "amazonTitle": null,
+      "scoreStoredInAmazon": null,
+      "scoreAmazonInStored": null,
+      "gateScore": null,
+      "storedPrice": 469.99,
+      "amazonPrice": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "capConflict": false,
       "needsReview": true
     },
     {
@@ -1474,6 +1508,23 @@
     },
     {
       "class": "dead-asin",
+      "id": 100413,
+      "cat": "GPU",
+      "asin": "B0FRC51HMF",
+      "storedName": "ASUS Dual GeForce RTX™ 5060 8GB GDDR7 White OC Edition Graphics Card, NVIDIA, Desktop (PCIe 5.0, DLSS 4, HDMI 2.1b, DisplayPort 2.1b, 2.5-Slot, Axial-tech Fan, 0dB Technology, Dual BIOS)",
+      "amazonTitle": null,
+      "scoreStoredInAmazon": null,
+      "scoreAmazonInStored": null,
+      "gateScore": null,
+      "storedPrice": 479.99,
+      "amazonPrice": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "capConflict": false,
+      "needsReview": true
+    },
+    {
+      "class": "dead-asin",
       "id": 100415,
       "cat": "GPU",
       "asin": "B0F68R4M2Y",
@@ -1483,6 +1534,23 @@
       "scoreAmazonInStored": null,
       "gateScore": null,
       "storedPrice": 399.99,
+      "amazonPrice": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "capConflict": false,
+      "needsReview": true
+    },
+    {
+      "class": "dead-asin",
+      "id": 100416,
+      "cat": "GPU",
+      "asin": "B0F77GW9RK",
+      "storedName": "ASUS TUF GeForce RTX™ 5060 8GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.1-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
+      "amazonTitle": null,
+      "scoreStoredInAmazon": null,
+      "scoreAmazonInStored": null,
+      "gateScore": null,
+      "storedPrice": 549.99,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -1571,6 +1639,23 @@
       "scoreAmazonInStored": null,
       "gateScore": null,
       "storedPrice": 59.99,
+      "amazonPrice": null,
+      "priceDeltaPct": null,
+      "priceDivergent": false,
+      "capConflict": false,
+      "needsReview": true
+    },
+    {
+      "class": "dead-asin",
+      "id": 100719,
+      "cat": "GPU",
+      "asin": "B0FSNZ686T",
+      "storedName": "ASUS The GeForce RTX™ 5060 LP BRK 8GB GDDR7 OC Edition Graphics Card (PCIe® 5.0, 8GB GDDR7, HDMI®/DP 2.1, Low-Profile Design, IP5X Dust Resistance)",
+      "amazonTitle": null,
+      "scoreStoredInAmazon": null,
+      "scoreAmazonInStored": null,
+      "gateScore": null,
+      "storedPrice": 502.41,
       "amazonPrice": null,
       "priceDeltaPct": null,
       "priceDivergent": false,
@@ -2967,10 +3052,10 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 327.62,
-      "amazonPrice": 316.49,
+      "amazonPrice": 324,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -3.4,
+      "priceDeltaPct": -1.1,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -3651,10 +3736,10 @@
       "gateScore": 0.46,
       "capConflict": false,
       "storedPrice": 383.49,
-      "amazonPrice": 389.35,
+      "amazonPrice": 391.88,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 1.5,
+      "priceDeltaPct": 2.2,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -3708,10 +3793,10 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 149,
-      "amazonPrice": 157.1,
+      "amazonPrice": 159.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 5.4,
+      "priceDeltaPct": 7.4,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -3919,11 +4004,11 @@
       "gateScore": 0.38,
       "capConflict": false,
       "storedPrice": 129.99,
-      "amazonPrice": 169.99,
+      "amazonPrice": 139.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 30.8,
-      "priceDivergent": true,
+      "priceDeltaPct": 7.7,
+      "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
     },
@@ -3979,10 +4064,10 @@
       "gateScore": 0.07,
       "capConflict": false,
       "storedPrice": 179.99,
-      "amazonPrice": 159.99,
+      "amazonPrice": 174.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -11.1,
+      "priceDeltaPct": -2.8,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -4599,12 +4684,12 @@
       "gateScore": 0.4,
       "capConflict": false,
       "storedPrice": 195,
-      "amazonPrice": null,
-      "priceSource": null,
+      "amazonPrice": 219.99,
+      "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": null,
+      "priceDeltaPct": 12.8,
       "priceDivergent": false,
-      "noOffer": true,
+      "noOffer": false,
       "needsReview": true
     },
     {
@@ -4753,10 +4838,10 @@
       "gateScore": 0.31,
       "capConflict": false,
       "storedPrice": 261.71,
-      "amazonPrice": 246.99,
+      "amazonPrice": 264.23,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": -5.6,
+      "priceDeltaPct": 1,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -5546,11 +5631,11 @@
       "gateScore": 0.26,
       "capConflict": false,
       "storedPrice": 109.99,
-      "amazonPrice": 109.99,
+      "amazonPrice": 134.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 0,
-      "priceDivergent": false,
+      "priceDeltaPct": 22.7,
+      "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
     },
@@ -6441,10 +6526,10 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 94.8,
-      "amazonPrice": 106.14,
+      "amazonPrice": 105.58,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 12,
+      "priceDeltaPct": 11.4,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -7633,7 +7718,7 @@
       "gateScore": 0.14,
       "capConflict": false,
       "storedPrice": 799,
-      "amazonPrice": 945.24,
+      "amazonPrice": 944.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 18.3,
@@ -7653,10 +7738,10 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 249,
-      "amazonPrice": 945.24,
+      "amazonPrice": 944.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 279.6,
+      "priceDeltaPct": 279.5,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -7673,10 +7758,10 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 329,
-      "amazonPrice": 945.24,
+      "amazonPrice": 944.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 187.3,
+      "priceDeltaPct": 187.2,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -7693,7 +7778,7 @@
       "gateScore": 0.2,
       "capConflict": false,
       "storedPrice": 999,
-      "amazonPrice": 945.24,
+      "amazonPrice": 944.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": -5.4,
@@ -7713,7 +7798,7 @@
       "gateScore": 0.17,
       "capConflict": false,
       "storedPrice": 299,
-      "amazonPrice": 945.24,
+      "amazonPrice": 944.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 216.1,
@@ -8399,10 +8484,10 @@
       "gateScore": 0.3,
       "capConflict": false,
       "storedPrice": 199,
-      "amazonPrice": 229,
+      "amazonPrice": 236.21,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 15.1,
+      "priceDeltaPct": 18.7,
       "priceDivergent": true,
       "noOffer": false,
       "needsReview": true
@@ -8804,6 +8889,26 @@
       "capConflict": false,
       "storedPrice": 69.99,
       "amazonPrice": 69.99,
+      "priceSource": "buybox",
+      "merchant": null,
+      "priceDeltaPct": 0,
+      "priceDivergent": false,
+      "noOffer": false,
+      "needsReview": true
+    },
+    {
+      "class": "close-but-wrong",
+      "id": 101601,
+      "cat": "Keyboard",
+      "asin": "B0DDR3YLQS",
+      "storedName": "Glorious Gaming GMMK 3 PRO Wireless Mechanical Keyboard: 75% TKL, Bluetooth & 2.4GHz, Hotswappable MX Switches, Aluminum Body, Gasket System, Doubleshot Keycaps, US QWERTY Layout (Silver)",
+      "amazonTitle": "GLORIOUS GMMK 3 Pro Wireless 75% Custom Gaming Keyboard - Pre-Built, ANSI (US), Fox Switches, Silver",
+      "scoreStoredInAmazon": 0.38,
+      "scoreAmazonInStored": 0.62,
+      "gateScore": 0.38,
+      "capConflict": false,
+      "storedPrice": 349.99,
+      "amazonPrice": 349.99,
       "priceSource": "buybox",
       "merchant": null,
       "priceDeltaPct": 0,
@@ -9339,10 +9444,10 @@
       "gateScore": 0.19,
       "capConflict": false,
       "storedPrice": 39.99,
-      "amazonPrice": 39.99,
+      "amazonPrice": 35.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 0,
+      "priceDeltaPct": -10,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -9359,10 +9464,10 @@
       "gateScore": 0.19,
       "capConflict": false,
       "storedPrice": 39.99,
-      "amazonPrice": 39.99,
+      "amazonPrice": 35.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 0,
+      "priceDeltaPct": -10,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -9379,13 +9484,13 @@
       "gateScore": 0.33,
       "capConflict": false,
       "storedPrice": 216.37,
-      "amazonPrice": 214,
-      "priceSource": "buybox",
+      "amazonPrice": null,
+      "priceSource": null,
       "merchant": null,
-      "priceDeltaPct": -1.1,
+      "priceDeltaPct": null,
       "priceDivergent": false,
-      "noOffer": false,
-      "needsReview": false
+      "noOffer": true,
+      "needsReview": true
     },
     {
       "class": "dead-asin",
@@ -9852,10 +9957,10 @@
       "gateScore": 0.43,
       "capConflict": false,
       "storedPrice": 212,
-      "amazonPrice": 228.05,
+      "amazonPrice": 205.99,
       "priceSource": "buybox",
       "merchant": null,
-      "priceDeltaPct": 7.6,
+      "priceDeltaPct": -2.8,
       "priceDivergent": false,
       "noOffer": false,
       "needsReview": true
@@ -10308,6 +10413,19 @@
       "orphaned": false
     },
     {
+      "id": 10062,
+      "cat": "CPU",
+      "asin": "B0CQ1M1YXM",
+      "storedName": "Intel Core i5-14400",
+      "storedPrice": 218.46,
+      "amazonTitle": "Intel® Core™ i5-14400 Desktop Processor 10 cores (6 P-cores + 4 E-cores) 4.7 GHz",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 10067,
       "cat": "CPU",
       "asin": "B0BCFM3CJ4",
@@ -10371,6 +10489,20 @@
       "orphaned": false
     },
     {
+      "id": 10082,
+      "cat": "CPU",
+      "asin": "B09FXFJW2F",
+      "storedName": "Intel Core i5-12600KF",
+      "storedPrice": 198.33,
+      "amazonTitle": "Intel Core i5-12600KF Desktop Processor 10 (6P+4E) Cores up to 4.9 GHz Unlocked LGA1700 600 Series Chipset 125W",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg",
+        "newegg_openbox"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 10124,
       "cat": "CPU",
       "asin": "B09GYHXDHH",
@@ -10390,19 +10522,6 @@
       "storedName": "Core i5-12600KF processor 20 MB Smart Cache Box",
       "storedPrice": 250,
       "amazonTitle": "Intel Core i5-12600KF processor 20 MB Smart Cache Box",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 10127,
-      "cat": "CPU",
-      "asin": "B0D2JD6P86",
-      "storedName": "Ryzen™ 5 8400F",
-      "storedPrice": 149,
-      "amazonTitle": "AMD Ryzen™ 5 8400F",
       "needsReview": false,
       "otherRetailers": [
         "newegg"
@@ -10489,28 +10608,6 @@
       "orphaned": true
     },
     {
-      "id": 10209,
-      "cat": "CPU",
-      "asin": "B0D1CJW6MK",
-      "storedName": "Ryzen 5 4600G - 3.7 GHz - 6 Cores - 12 Threads - 8 MB Cache Memory - Socket AM4 - OEM",
-      "storedPrice": 268,
-      "amazonTitle": "AMD Ryzen 5 4600G - 3.7 GHz - 6 Cores - 12 Threads - 8 MB Cache Memory - Socket AM4 - OEM",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 100338,
-      "cat": "CPU",
-      "asin": "B0GMLFFHS1",
-      "storedName": "Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
-      "storedPrice": 199.99,
-      "amazonTitle": "Intel® Core™ Ultra 5 Processor 250KF Plus 18 cores (6 P-cores + 12 E-cores) up to 5.3 GHz",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 100586,
       "cat": "CPU",
       "asin": "B0876Y2TMZ",
@@ -10528,6 +10625,17 @@
       "storedName": "Intel Celeron G4930 Desktop Processor 2 Core 3.2 GHz LGA1151 300 Series 54W",
       "storedPrice": 14.99,
       "amazonTitle": "Intel Celeron G4930 Desktop Processor 2 Core 3.2 GHz LGA1151 300 Series 54W",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 100605,
+      "cat": "CPU",
+      "asin": "B07S8DWC81",
+      "storedName": "Intel Core i3-9300 Desktop Processor 4 Cores up to 4.3 GHz LGA1151 300 Series 62W",
+      "storedPrice": 80,
+      "amazonTitle": "Intel Core i3-9300 Desktop Processor 4 Cores up to 4.3 GHz LGA1151 300 Series 62W",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -10583,17 +10691,6 @@
       "storedName": "INTEL XEON W9-3475X Processor 36 CORES, Box",
       "storedPrice": 4599.99,
       "amazonTitle": "INTEL XEON W9-3475X Processor 36 CORES, Box",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 20007,
-      "cat": "Motherboard",
-      "asin": "B0BHMTYZKZ",
-      "storedName": "ASUS ROG Strix B650E-F Gaming WiFi",
-      "storedPrice": 289.99,
-      "amazonTitle": "ASUS ROG Strix B650E-F Gaming WiFi AMD B650 AM5 Ryzen™ Desktop 9000 8000 & 7000 ATX Motherboard, 12+2 Power Stages, DDR5, 3X M.2 Slot, PCIe® 5.0, WiFi 6E, 2.5G LAN, USB 3.2 Gen 2x2 Type-C®, Aura Sync",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -10727,7 +10824,7 @@
       "cat": "Motherboard",
       "asin": "B0DQB38PL5",
       "storedName": "PRO B850-P WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5 - DDR5 Memory Boost (8200+ MT/...",
-      "storedPrice": 169.99,
+      "storedPrice": 179.99,
       "amazonTitle": "MSI PRO B850-P WiFi Motherboard, ATX - Supports AMD Ryzen 9000/8000 / 7000 Processors, AM5 - DDR5 Memory Boost (8200+ MT/s OC), PCIe 5.0 x16 & 4.0 x16, M.2 Gen5, Wi-Fi 7, 5G LAN",
       "needsReview": false,
       "otherRetailers": [
@@ -10756,17 +10853,6 @@
       "storedPrice": 449.99,
       "amazonTitle": "MICRO CENTER CPU Motherboard Combo - 14600K 14(6P+8E) Cores up to 5.3 GHz Unlocked Desktop Processor with GIGABYTE B760M DS3H AX DDR4 lga1700 Micro ATX Motherboard",
       "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 20075,
-      "cat": "Motherboard",
-      "asin": "B089D1YG11",
-      "storedName": "B550M PRO-VDH WiFi ProSeries Motherboard (AMD Ryzen 5000, AM4, DDR4",
-      "storedPrice": 89.99,
-      "amazonTitle": "MSI B550M PRO-VDH WiFi ProSeries Motherboard (AMD Ryzen 5000, AM4, DDR4, PCIe 4.0, SATA 6Gb/s, M.2, USB 3.2 Gen 1, Wi-Fi, Bluetooth, D-SUB/HDMI/DP, Micro-ATX)",
-      "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -10822,12 +10908,49 @@
       "orphaned": true
     },
     {
+      "id": 20102,
+      "cat": "Motherboard",
+      "asin": "B089VZFWHB",
+      "storedName": "B550 Phantom Gaming 4 AC Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™ Processors Motherboard",
+      "storedPrice": 79.99,
+      "amazonTitle": "ASRock B550 Phantom Gaming 4 AC Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™ Processors Motherboard",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 20104,
       "cat": "Motherboard",
       "asin": "B0CJSJ9TB3",
       "storedName": "PRO Z790-A MAX WiFi ProSeries Motherboard (Supports 12th/13th/14th Gen Intel Processors, LGA 1700, DDR5",
       "storedPrice": 309.99,
       "amazonTitle": "MSI PRO Z790-A MAX WiFi ProSeries Motherboard (Supports 12th/13th/14th Gen Intel Processors, LGA 1700, DDR5, PCIe 5.0, M.2, SATA 6G, 2.5Gbps LAN, USB 3.2 Gen2, Wi-Fi 7, Bluetooth 5.4, ATX)",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 20116,
+      "cat": "Motherboard",
+      "asin": "B0DDZY6HTW",
+      "storedName": "Prime X870-P WiFi AMD AM5 X870 ATX Motherboard 14+2+1 80A DrMOS Power Stages, DDR5, PCIe 5.0",
+      "storedPrice": 250.95,
+      "amazonTitle": "ASUS Prime X870-P WiFi AMD AM5 X870 ATX Motherboard 14+2+1 80A DrMOS Power Stages, DDR5, PCIe 5.0, PCIe 5.0 x16, Q-Release, 4X M.2, Wi-Fi 7, Q-Antenna, 2.5Gb LAN, USB4®, USB Type-C®, BIOS Flashback™",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 20117,
+      "cat": "Motherboard",
+      "asin": "B0DRTVR12D",
+      "storedName": "AMD B850i Lightning WiFi 6E Socket AM5 Ryzen 9000/8000/7000 Series DDR5 8200+ (OC) MHz 128GB Mini ITX Motherboard M.2...",
+      "storedPrice": 172.99,
+      "amazonTitle": "ASRock AMD B850i Lightning WiFi 6E Socket AM5 Ryzen 9000/8000/7000 Series DDR5 8200+ (OC) MHz 128GB Mini ITX Motherboard M.2 SATA3 6.0 Gb/s PCIe 5.0 B850 BIOS Flashback",
       "needsReview": true,
       "otherRetailers": [
         "newegg"
@@ -10859,20 +10982,6 @@
       "orphaned": true
     },
     {
-      "id": 20149,
-      "cat": "Motherboard",
-      "asin": "B0FH319HHD",
-      "storedName": "B850M-X R2.0 Micro-ATX AM5 Motherboard, AMD Ryzen 9000/8000/7000 Support, DDR5 8200+ OC",
-      "storedPrice": 135.61,
-      "amazonTitle": "ASRock B850M-X R2.0 Micro-ATX AM5 Motherboard, AMD Ryzen 9000/8000/7000 Support, DDR5 8200+ OC, PCIe 5.0, 2.5G LAN, 6+1+1 Power Phase, BIOS Flashback",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg",
-        "newegg_openbox"
-      ],
-      "orphaned": false
-    },
-    {
       "id": 20160,
       "cat": "Motherboard",
       "asin": "B0BG625W1W",
@@ -10895,6 +11004,17 @@
       "orphaned": true
     },
     {
+      "id": 20181,
+      "cat": "Motherboard",
+      "asin": "B08QTYSJ14",
+      "storedName": "MPG B550 GAMING PLUS Desktop Motherboard - AMD B550 Chipset - Socket AM4 - ATX",
+      "storedPrice": 98.77,
+      "amazonTitle": "MSI MPG B550 GAMING PLUS Desktop Motherboard - AMD B550 Chipset - Socket AM4 - ATX",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 20187,
       "cat": "Motherboard",
       "asin": "B0BYB3PGQW",
@@ -10904,6 +11024,19 @@
       "needsReview": true,
       "otherRetailers": [
         "bestbuy"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 20188,
+      "cat": "Motherboard",
+      "asin": "B0BG6NVPVG",
+      "storedName": "Prime Z790-A WiFi 6E LGA 1700(Intel 14th,13th&12th) ATX Motherboard (16+1 DrMOS, PCIe 5.0",
+      "storedPrice": 429.99,
+      "amazonTitle": "ASUS Prime Z790-A WiFi 6E LGA 1700(Intel 14th,13th&12th) ATX Motherboard (16+1 DrMOS, PCIe 5.0,DDR5,4X M.2 Slots,2.5 Gb LAN,USB 3.2 Gen 2 Front Panel Type-C, Thunderbolt 4/USB4, DP)",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg"
       ],
       "orphaned": false
     },
@@ -10967,6 +11100,17 @@
       "orphaned": true
     },
     {
+      "id": 20208,
+      "cat": "Motherboard",
+      "asin": "B0DQM8GPR7",
+      "storedName": "B850 AORUS Elite WIFI7 Motherboard - AMD Ryzen 9000 Series CPUs, 14+2+2 Phases Digital VRM, up to 8200MHz DDR5 (OC)",
+      "storedPrice": 246.96,
+      "amazonTitle": "GIGABYTE B850 AORUS Elite WIFI7 Motherboard - AMD Ryzen 9000 Series CPUs, 14+2+2 Phases Digital VRM, up to 8200MHz DDR5 (OC), 1xPCIe 5.0 + 2xPCIe 4.0 M.2, 2.5 LAN, WiFi 7, USB 3.2 Gen 2x2",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 20210,
       "cat": "Motherboard",
       "asin": "B0BHCRX6K7",
@@ -10991,17 +11135,6 @@
         "newegg"
       ],
       "orphaned": false
-    },
-    {
-      "id": 20217,
-      "cat": "Motherboard",
-      "asin": "B0BFNXBLFF",
-      "storedName": "AORUS Elite AX AMD X670 Socket AM5 ATX DDR5 Motherboard",
-      "storedPrice": 234.35,
-      "amazonTitle": "Gigabyte AORUS Elite AX AMD X670 Socket AM5 ATX DDR5 Motherboard",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
     },
     {
       "id": 20224,
@@ -11032,7 +11165,7 @@
       "cat": "Motherboard",
       "asin": "B0DFYZCPYW",
       "storedName": "X870 Eagle WIFI7 Motherboard - Supports AMD Ryzen 9000 CPUs, 14+2+2 Phases VRM, up to 8000MHz DDR5 (OC)",
-      "storedPrice": 189.99,
+      "storedPrice": 225.99,
       "amazonTitle": "GIGABYTE X870 Eagle WIFI7 Motherboard - Supports AMD Ryzen 9000 CPUs, 14+2+2 Phases VRM, up to 8000MHz DDR5 (OC), 1xPCIe 5.0, Wi-Fi 7, 2.5GbE LAN, USB 4",
       "needsReview": false,
       "otherRetailers": [],
@@ -11217,7 +11350,7 @@
       "cat": "Motherboard",
       "asin": "B0FDXJZH66",
       "storedName": "PRO X870-P WiFi V1 ProSeries Motherboard (AMD Ryzen 9000/8000/7000 Series Processors, AM5, DDR5",
-      "storedPrice": 169.99,
+      "storedPrice": 179.99,
       "amazonTitle": "MSI PRO X870-P WiFi V1 ProSeries Motherboard (AMD Ryzen 9000/8000/7000 Series Processors, AM5, DDR5, PCIe 5.0, M.2 Gen5, SATA 6Gb/s, USB 40Gbps, HDMI/DP, Wi-Fi 7, Bluetooth 5.4, 5Gbps LAN, ATX)",
       "needsReview": false,
       "otherRetailers": [],
@@ -11247,19 +11380,6 @@
       "otherRetailers": [
         "newegg",
         "msi"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 20340,
-      "cat": "Motherboard",
-      "asin": "B0DQLLLHYY",
-      "storedName": "B860 Gaming X WIFI6E Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5",
-      "storedPrice": 149.99,
-      "amazonTitle": "GIGABYTE B860 Gaming X WIFI6E Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5, 3X M.2, PCIe 5.0, USB-C, WIFI6E, 2.5GbE LAN, EZ-Latch",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
       ],
       "orphaned": false
     },
@@ -11316,20 +11436,6 @@
       "orphaned": false
     },
     {
-      "id": 20383,
-      "cat": "Motherboard",
-      "asin": "B0DJP8W3BY",
-      "storedName": "Z890 UD WIFI6E Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5",
-      "storedPrice": 199.99,
-      "amazonTitle": "GIGABYTE Z890 UD WIFI6E Intel Core Ultra (Series 2) LGA 1851 Motherboard, ATX, DDR5, 3X M.2, PCIe 5.0, Front USB Type-C, WIFI6E, 2.5GbE LAN, EZ-Latch",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg",
-        "newegg_openbox"
-      ],
-      "orphaned": false
-    },
-    {
       "id": 20384,
       "cat": "Motherboard",
       "asin": "B083TZK14Z",
@@ -11365,19 +11471,6 @@
       "otherRetailers": [
         "newegg",
         "msi"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 20392,
-      "cat": "Motherboard",
-      "asin": "B0FNQHJXDR",
-      "storedName": "ROG Strix X870E-H Gaming WIFI7 AMD X870E-H ATX Motherboard with 16+2+1 Power Stages, Dynamic OC Switcher, Core Flex",
-      "storedPrice": 330.99,
-      "amazonTitle": "ASUS ROG Strix X870E-H Gaming WIFI7 AMD X870E-H ATX Motherboard with 16+2+1 Power Stages, Dynamic OC Switcher, Core Flex, DDR5 AEMP, 4X M.2, PCIe 5.0, Q-Release, Dual USB4 Ports and USB 10Gbps Type-C",
-      "needsReview": true,
-      "otherRetailers": [
-        "newegg_openbox"
       ],
       "orphaned": false
     },
@@ -11453,17 +11546,6 @@
       "orphaned": true
     },
     {
-      "id": 100379,
-      "cat": "Motherboard",
-      "asin": "B0DGWTQWL3",
-      "storedName": "ASUS PRIME Z890-P WIFI Z890 LGA 1851 ATX motherboard, Intel® Core™ Ultra Series 2 Ready, Advanced AI PC-ready, 14+1+1+2 power stage, DDR5, PCIe® 5.0, Thunderbolt™ 4 USB Type-C®, 4x M.2, Wi-Fi 7, 2.5Gb",
-      "storedPrice": 198.5,
-      "amazonTitle": "ASUS PRIME Z890-P WIFI Z890 LGA 1851 ATX motherboard, Intel® Core™ Ultra Series 2 Ready, Advanced AI PC-ready, 14+1+1+2 power stage, DDR5, PCIe® 5.0, Thunderbolt™ 4 USB Type-C®, 4x M.2, Wi-Fi 7, 2.5Gb",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 100382,
       "cat": "Motherboard",
       "asin": "B0BG6LGNDB",
@@ -11525,18 +11607,18 @@
       "storedName": "ASRock Rack X570D4U Socket AM4/ AMD X570/ DDR4/ SATA3&USB 3.2/ Micro-ATX Server Motherboard",
       "storedPrice": 444.35,
       "amazonTitle": "ASRock Rack X570D4U Socket AM4/ AMD X570/ DDR4/ SATA3&USB 3.2/ Micro-ATX Server Motherboard",
-      "needsReview": false,
+      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
     {
-      "id": 100745,
+      "id": 100746,
       "cat": "Motherboard",
-      "asin": "B0BZ1T3V6F",
-      "storedName": "Pro WS W680-ACE Intel W680 LGA 1700 ATX Workstation Motherboard,2xPCIe 5.0x16 Slot,DDR5,ECC Memory,2x2.5 Gb LAN,3X M.2 Slots,USB 3.2 Gen 2x2 Front Panel,SlimSAS,BMC Header,Thunderbolt 4Header,ACCE.",
-      "storedPrice": 318.99,
-      "amazonTitle": "Pro WS W680-ACE Intel W680 LGA 1700 ATX Workstation Motherboard,2xPCIe 5.0x16 Slot,DDR5,ECC Memory,2x2.5 Gb LAN,3X M.2 Slots,USB 3.2 Gen 2x2 Front Panel,SlimSAS,BMC Header,Thunderbolt 4Header,ACCE.",
-      "needsReview": false,
+      "asin": "B0GJ2XQ4QY",
+      "storedName": "ASRock Rack Server Motherboard W880D4U Micro-ATX Single Socket LGA 1851 Intel® Core™ Ultra Desktop Processors (Series 2)",
+      "storedPrice": 399,
+      "amazonTitle": "ASRock Rack Server Motherboard W880D4U Micro-ATX Single Socket LGA 1851 Intel® Core™ Ultra Desktop Processors (Series 2)",
+      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -11580,28 +11662,6 @@
       "storedName": "NVIDIA GeForce RTX 3060 12GB",
       "storedPrice": 520,
       "amazonTitle": "MSI Gaming GeForce RTX 3060 12GB 15 Gbps GDRR6 192-Bit HDMI/DP PCIe 4 Torx Twin Fan Ampere OC Graphics Card",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 30030,
-      "cat": "GPU",
-      "asin": "B0F91KM1CK",
-      "storedName": "AMD Radeon RX 9060 XT",
-      "storedPrice": 535,
-      "amazonTitle": "GIGABYTE Radeon RX 9060 XT Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6, GV-R9060XTGAMING OC-16GD Video Card",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 30031,
-      "cat": "GPU",
-      "asin": "B0F91KM1CK",
-      "storedName": "AMD Radeon RX 9060",
-      "storedPrice": 535,
-      "amazonTitle": "GIGABYTE Radeon RX 9060 XT Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6, GV-R9060XTGAMING OC-16GD Video Card",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -11651,17 +11711,6 @@
       "orphaned": true
     },
     {
-      "id": 30041,
-      "cat": "GPU",
-      "asin": "B0F91KM1CK",
-      "storedName": "AMD Radeon RX 6800 XT",
-      "storedPrice": 649,
-      "amazonTitle": "GIGABYTE Radeon RX 9060 XT Gaming OC 16G Graphics Card, PCIe 5.0, 16GB GDDR6, GV-R9060XTGAMING OC-16GD Video Card",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 30042,
       "cat": "GPU",
       "asin": "B0DFMMF59C",
@@ -11684,13 +11733,13 @@
       "orphaned": true
     },
     {
-      "id": 30046,
+      "id": 30049,
       "cat": "GPU",
-      "asin": "B09LFLTXW9",
-      "storedName": "AMD Radeon RX 6600 XT",
-      "storedPrice": 319.99,
-      "amazonTitle": "Sapphire Technology Pulse AMD Radeon RX 6600 XT Gaming Graphics Card with 8GB GDDR6, AMD RDNA 2 (11309-03-20G) (Renewed)",
-      "needsReview": true,
+      "asin": "B0DQYM2MHX",
+      "storedName": "Intel Arc B570",
+      "storedPrice": 260,
+      "amazonTitle": "ASRock Intel Arc B570 Challenger 10GB OC GDDR6 Graphics Card, 2600 MHz GPU, 19 Gbps Memory, Dual Fan, Metal Backplate, HDMI 2.1a, DisplayPort 2.1, 0dB Cooling",
+      "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -11992,6 +12041,19 @@
       "orphaned": true
     },
     {
+      "id": 30154,
+      "cat": "GPU",
+      "asin": "B0DZCYPFVT",
+      "storedName": "GeForce RTX 5070 12G Shadow 2X OC",
+      "storedPrice": 899.99,
+      "amazonTitle": "MSI GeForce RTX 5070 12G Shadow 2X OC",
+      "needsReview": true,
+      "otherRetailers": [
+        "msi"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 30164,
       "cat": "GPU",
       "asin": "B0DT9Y2B49",
@@ -12050,6 +12112,17 @@
       "orphaned": true
     },
     {
+      "id": 30175,
+      "cat": "GPU",
+      "asin": "B0DT6S77JK",
+      "storedName": "NVIDIA GeForce RTX 5090 32G Ventus 3X OC Gaming Graphics Card GDDR7 512-bit, Boost Frequency up to 2452 MHz, PCIe Gen 5",
+      "storedPrice": 5299.99,
+      "amazonTitle": "MSI NVIDIA GeForce RTX 5090 32G Ventus 3X OC Gaming Graphics Card GDDR7 512-bit, Boost Frequency up to 2452 MHz, PCIe Gen 5, DLSS 4, DP 2.1 x 3, HDMI 2.1 x 1, ATX",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 30180,
       "cat": "GPU",
       "asin": "B0DT7KGND2",
@@ -12061,26 +12134,17 @@
       "orphaned": true
     },
     {
-      "id": 30185,
+      "id": 30190,
       "cat": "GPU",
-      "asin": "B0DVCBDJBJ",
-      "storedName": "GeForce RTX 5090 WINDFORCE OC 32G Graphics Card - 32GB GDDR7, 512 Bits, PCI-E 5.0",
-      "storedPrice": 5299.99,
-      "amazonTitle": "Gigabyte GeForce RTX 5090 WINDFORCE OC 32G Graphics Card - 32GB GDDR7, 512 Bits, PCI-E 5.0, 2467MHz Core Frequency, 3 x DP 2.1a, 1x HDMI 2.1b, NVIDIA DLSS 4, GV-N5090WF3OC-32GD",
+      "asin": "B0F4YRNHSJ",
+      "storedName": "NVIDIA GeForce RTX™ 5060 Ti OC Dual Fan, Graphics Card (8GB GDDR7, 128-bit",
+      "storedPrice": 499.97,
+      "amazonTitle": "PNY NVIDIA GeForce RTX™ 5060 Ti 8GB OC Dual-Fan Graphics Card",
       "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 30187,
-      "cat": "GPU",
-      "asin": "B0C24443VV",
-      "storedName": "ROG Astral GeForce RTX 5080 16GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design...",
-      "storedPrice": 2264.99,
-      "amazonTitle": "ASUS ROG Astral GeForce RTX 5080 16GB GDDR7 White OC Edition Gaming Quad Fan Graphics Card (NVIDIA DLSS 4, 3.8-Slot Design, PCIe 5.0, 3X DP 2.1b, 2X HDMI 2.1b, White, ROG-ASTRAL-RTX5080-O16G-WHITE)",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
+      "otherRetailers": [
+        "bestbuy"
+      ],
+      "orphaned": false
     },
     {
       "id": 30192,
@@ -12243,12 +12307,23 @@
       "orphaned": true
     },
     {
-      "id": 30358,
+      "id": 30385,
       "cat": "GPU",
-      "asin": "B08467SHQ7",
-      "storedName": "MSI Gaming GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 Ventus 8G), 1620 Mhz (Renewed)",
-      "storedPrice": 218.34,
-      "amazonTitle": "MSI Gaming GeForce RTX 2070 8GB GDRR6 256-bit HDMI/DP/USB Ray Tracing Turing Architecture HDCP Graphics Card (RTX 2070 Ventus 8G), 1620 Mhz (Renewed)",
+      "asin": "B0D1RGP56Y",
+      "storedName": "Sparkle Intel Arc A770 ROC OC Edition, 16GB GDDR6, 2X DBB 100mm Fan, 2.5-Slot, Metal Backplate, SA770R-16GOC",
+      "storedPrice": 508.9,
+      "amazonTitle": "Sparkle Intel Arc A770 ROC OC Edition, 16GB GDDR6, 2X DBB 100mm Fan, 2.5-Slot, Metal Backplate, SA770R-16GOC",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 30386,
+      "cat": "GPU",
+      "asin": "B0C74VLBH6",
+      "storedName": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC",
+      "storedPrice": 319.69,
+      "amazonTitle": "Sparkle Intel Arc A750 Titan OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA750T-8GOC",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -12276,24 +12351,13 @@
       "orphaned": true
     },
     {
-      "id": 100395,
+      "id": 100398,
       "cat": "GPU",
-      "asin": "B0DT7GBNWQ",
-      "storedName": "GIGABYTE GeForce RTX 5090 Gaming OC 32G Graphics Card, WINDFORCE Cooling System, 32GB 512-bit GDDR7, by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5090GAMING OC-32GD Video Card",
-      "storedPrice": 5099.95,
-      "amazonTitle": "GIGABYTE GeForce RTX 5090 Gaming OC 32G Graphics Card, WINDFORCE Cooling System, 32GB 512-bit GDDR7, by NVIDIA, DisplayPort & HDMI - Video Output Interface, GV-N5090GAMING OC-32GD Video Card",
+      "asin": "B0DT7JS6BG",
+      "storedName": "msi Gaming RTX 5090 32G Ventus 3X OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2452 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
+      "storedPrice": 5299.99,
+      "amazonTitle": "msi Gaming RTX 5090 32G Ventus 3X OC Graphics Card (32GB GDDR7, 512-bit, Extreme Performance: 2452 MHz, DisplayPort x3 2.1a, HDMI 2.1b, NVIDIA Blackwell Architecture)",
       "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 100397,
-      "cat": "GPU",
-      "asin": "B0FFQFN2CT",
-      "storedName": "GIGABYTE AORUS GeForce RTX 5090 Stealth ICE 32G Graphics Card, 32GB 512-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Versatile VGA Holder, GV-N5090AORUSST ICE-32GDVideo Card",
-      "storedPrice": 4498.46,
-      "amazonTitle": "GIGABYTE AORUS GeForce RTX 5090 Stealth ICE 32G Graphics Card, 32GB 512-bit GDDR7, PCIe 5.0, WINDFORCE Cooling System, Versatile VGA Holder, GV-N5090AORUSST ICE-32GDVideo Card",
-      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -12320,6 +12384,17 @@
       "orphaned": true
     },
     {
+      "id": 100405,
+      "cat": "GPU",
+      "asin": "B0DS6V1YSY",
+      "storedName": "ASUS The SFF-Ready Prime GeForce RTX™ 5070 Graphics Card, NVIDIA (PCIe® 5.0, 12GB GDDR7, HDMI®/DP 2.1, 2.5-Slot, Axial-tech Fans, Dual BIOS)",
+      "storedPrice": 819.99,
+      "amazonTitle": "ASUS SFF-Ready Prime NVIDIA GeForce RTX 5070 Graphics Card (PCIe 5.0, 12GB GDDR7, HDMI/DP 2.1, 2.5-Slot, Axial-tech Fans, Dual BIOS), 3 Year Warranty",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 100406,
       "cat": "GPU",
       "asin": "B0DYGDT9YD",
@@ -12338,6 +12413,17 @@
       "storedPrice": 799.99,
       "amazonTitle": "PNY NVIDIA GeForce RTX™ 5070 OC Triple-Fan Graphics Card",
       "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 100408,
+      "cat": "GPU",
+      "asin": "B0DS6WTXGP",
+      "storedName": "ASUS TUF GeForce RTX™ 5070 Ti 16GB GDDR7 OC Edition Graphics Card, NVIDIA, Desktop (PCIe® 5.0, HDMI®/DP 2.1, 3.125-Slot, Military-Grade Components, Protective PCB Coating, Axial-tech Fans)",
+      "storedPrice": 1289.99,
+      "amazonTitle": "ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Graphics Card",
+      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -12423,7 +12509,7 @@
       "cat": "GPU",
       "asin": "B0C8BT71H5",
       "storedName": "ASUS TUF Gaming NVIDIA GeForce RTX™ 4070 Ti OC Edition Gaming Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)",
-      "storedPrice": 799.99,
+      "storedPrice": 739.49,
       "amazonTitle": "ASUS TUF Gaming NVIDIA GeForce RTX™ 4070 Ti OC Edition Gaming Graphics Card (PCIe 4.0, 12GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a) (Renewed)",
       "needsReview": true,
       "otherRetailers": [],
@@ -12485,6 +12571,17 @@
       "orphaned": true
     },
     {
+      "id": 100437,
+      "cat": "GPU",
+      "asin": "B0BMWSRM7W",
+      "storedName": "PowerColor Hellhound AMD Radeon RX 7900 XTX Graphics Card",
+      "storedPrice": 1495,
+      "amazonTitle": "PowerColor Hellhound AMD Radeon RX 7900 XTX Graphics Card",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 100439,
       "cat": "GPU",
       "asin": "B0DSJTPCZY",
@@ -12540,17 +12637,6 @@
       "orphaned": true
     },
     {
-      "id": 100661,
-      "cat": "GPU",
-      "asin": "B081SPGMBD",
-      "storedName": "ASUS TUF Gaming GeForce GTX 1660 Super Overclocked 6GB Edition HDMI DP DVI Gaming Graphics Card (TUF-GTX1660S-O6G-GAMING)",
-      "storedPrice": 229.22,
-      "amazonTitle": "ASUS TUF Gaming GeForce GTX 1660 Super Overclocked 6GB Edition HDMI DP DVI Gaming Graphics Card, 3 Year Warranty",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 100674,
       "cat": "GPU",
       "asin": "B09H3PY14M",
@@ -12579,6 +12665,17 @@
       "storedName": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV (Renewed)",
       "storedPrice": 374.97,
       "amazonTitle": "XFX Speedster SWFT309 AMD Radeon RX 6700 XT CORE Gaming Graphics Card with 12GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-67XTYJFDV (Renewed)",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 100687,
+      "cat": "GPU",
+      "asin": "B0C6HTVV52",
+      "storedName": "ASRock AMD Radeon RX 7600 Steel Legend 8GB OC GDDR6 128-bit 0dB Silent Cooling Graphics Card DisplayPort 7680 x 4320 HDMI 18 Gbps 3 Fans PCI Express 4",
+      "storedPrice": 452.85,
+      "amazonTitle": "ASRock AMD Radeon RX 7600 Steel Legend 8GB GDDR6 OC Graphics Card, 2725 MHz Boost, 18 Gbps Memory, Triple Fan Cooling, 2.25-Slot Design (303mm), Metal Backplate, DP 2.1, HDMI 2.1, RDNA 3",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -12624,17 +12721,6 @@
       "storedPrice": 344.98,
       "amazonTitle": "ASUS Dual GeForce RTX 4060 Ti V2 OC Edition 8GB GDDR6 SFF Compatible with Axial-tech Fan/DUAL-RTX4060TI-O8G-V2 (Renewed)",
       "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 100711,
-      "cat": "GPU",
-      "asin": "B0C7YPGFFW",
-      "storedName": "ASUS Dual GeForce RTX™ 4060 OC Edition 8GB GDDR6 (PCIe 4.0, 8GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, 2.5-Slot Design, Axial-tech Fan Design, 0dB Technology, and More)",
-      "storedPrice": 569.99,
-      "amazonTitle": "ASUS Dual GeForce RTX 4060 OC Edition 8GB GDDR6 (PCIe 4.0, 8GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, 2.5-Slot Design, Axial-tech Fan Design, 0dB Technology), 3 Year Warranty",
-      "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -12707,6 +12793,17 @@
       "orphaned": true
     },
     {
+      "id": 70012,
+      "cat": "Case",
+      "asin": "B0BDXRBW6P",
+      "storedName": "Thermaltake Core P3 TG Pro",
+      "storedPrice": 302.98,
+      "amazonTitle": "Thermaltake Core P3 TG Pro Open Frame ATX Compatible PC Case CA-1G4-00M1WN-09 CS8593",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 70020,
       "cat": "Case",
       "asin": "B0BMPD1CVP",
@@ -12773,6 +12870,19 @@
       "orphaned": true
     },
     {
+      "id": 70057,
+      "cat": "Case",
+      "asin": "B094442NL5",
+      "storedName": "7000D Airflow Full-Tower ATX PC Case – High-Airflow Front Panel – Spacious Interior – Easy Cable Management – 3X 140m...",
+      "storedPrice": 289.99,
+      "amazonTitle": "CORSAIR 7000D Airflow Full-Tower ATX PC Case – High-Airflow Front Panel – Spacious Interior – Easy Cable Management – 3X 140mm AirGuide Fans with PWM Repeater Included – Black",
+      "needsReview": true,
+      "otherRetailers": [
+        "bestbuy"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 70066,
       "cat": "Case",
       "asin": "B0BQBGRDQB",
@@ -12830,17 +12940,6 @@
       "storedName": "4000D Frame Modular Mid-Tower ATX PC Case – High Airflow, InfiniRail™ Fan Mounting System, Dual 360mm Radiator Support",
       "storedPrice": 84.99,
       "amazonTitle": "CORSAIR 4000D Frame Modular Mid-Tower ATX PC Case – High Airflow, InfiniRail™ Fan Mounting System, Dual 360mm Radiator Support, ASUS BTF, MSI Project Zero, Gigabyte Project Stealth – Black",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 70099,
-      "cat": "Case",
-      "asin": "B0CN95G1YL",
-      "storedName": "King 95 PRO Dual-Chamber ATX Mid-Tower PC Gaming Case, High-Airflow, Toolless Panels",
-      "storedPrice": 119.9,
-      "amazonTitle": "MONTECH King 95 PRO Dual-Chamber ATX Mid-Tower PC Gaming Case, High-Airflow, Toolless Panels, Sturdy Curved Tempered Glass Front, 6 ARGB PWM Fan Pre-Installed with Fan Hub, Black",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -12940,19 +13039,6 @@
       "orphaned": true
     },
     {
-      "id": 70153,
-      "cat": "Case",
-      "asin": "B0DJT8L32B",
-      "storedName": "O11 Vision Compact ATX Mid-Tower Gaming PC Case - Aluminium & Tempered Glass White PC Case",
-      "storedPrice": 195.02,
-      "amazonTitle": "Lian Li O11 Vision Compact ATX Mid-Tower Gaming PC Case - Aluminium & Tempered Glass White PC Case",
-      "needsReview": true,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
-    },
-    {
       "id": 70157,
       "cat": "Case",
       "asin": "B08BWZP4WZ",
@@ -13014,6 +13100,19 @@
       "orphaned": false
     },
     {
+      "id": 70171,
+      "cat": "Case",
+      "asin": "B0BQD5J39S",
+      "storedName": "TUF Gaming GT502 White ATX Full Tower PC Case, Tempered Glass, Tool-Free Panel",
+      "storedPrice": 161.99,
+      "amazonTitle": "ASUS TUF Gaming GT502 White ATX Full Tower PC Case, Dual Chamber, Tool-Free Panel, Modular Design, 2- Way GPU Mounting Compatible, 360mm and 280mm Radiator Compatible, 2 Year Warranty",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 70174,
       "cat": "Case",
       "asin": "B0CPRPMG8D",
@@ -13052,17 +13151,6 @@
       "orphaned": true
     },
     {
-      "id": 70203,
-      "cat": "Case",
-      "asin": "B0DN7TRZGZ",
-      "storedName": "Gaming PC Case, Type-C ATX Computer Case with 6 PWM ARGB Fans Pre-Installed, Full Tower PC Case Full-View Dual Temper...",
-      "storedPrice": 79.99,
-      "amazonTitle": "Gaming PC Case, Type-C ATX Computer Case with 6 PWM ARGB Fans Pre-Installed, Full Tower PC Case Full-View Dual Tempered Glass, Black(H2)",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 70219,
       "cat": "Case",
       "asin": "B0FX2SK9BP",
@@ -13091,33 +13179,6 @@
       "storedName": "Lian-Li O11 Vision Tempered Glass E-ATX Tower Computer Case - Black",
       "storedPrice": 114.99,
       "amazonTitle": "Lian-Li O11 Vision Tempered Glass E-ATX Tower Computer Case - Black",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 70246,
-      "cat": "Case",
-      "asin": "B0FNQBGJZ2",
-      "storedName": "View 600 TG; Full Tower; 420mm Radiator Support; 480mm GPU Clearance; Hidden Connector Support; Rotatable PCIe Slots;...",
-      "storedPrice": 143.66,
-      "amazonTitle": "Thermaltake View 600 TG; Full Tower; 420mm Radiator Support; 480mm GPU Clearance; Hidden Connector Support; Rotatable PCIe Slots; 220mm PSU Clearance; Black; CA-11H-00F1WN-00",
-      "needsReview": true,
-      "otherRetailers": [
-        "newegg",
-        "bestbuy"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 100536,
-      "cat": "Case",
-      "asin": "B0CP3MZXVH",
-      "storedName": "Antec C8, Fans not Included, RTX 40 Compatible, Dual-Chamber, tooless Design, Type-C, 360mm Radiator Support, Seamless Tempered Glass Front & Side Panels, High Airflow Full-Tower E-ATX PC Case",
-      "storedPrice": 104.99,
-      "amazonTitle": "Antec C8 Full-Tower E-ATX PC Case, Dual-Chamber, No Fans, Black",
       "needsReview": false,
       "otherRetailers": [
         "newegg"
@@ -13230,17 +13291,6 @@
       "orphaned": true
     },
     {
-      "id": 102800,
-      "cat": "Case",
-      "asin": "B0F8PCK2Y3",
-      "storedName": "DIYPC ARGB-N3-BK Black USB3.0/ Type C Tempered Glass ATX Gaming Computer Case w/ 3 x Tempered Glass Panel and 4 x ARGB PWM Fans (Pre-Installed). Support BTF Back Plug MB",
-      "storedPrice": 74.94,
-      "amazonTitle": "DIYPC ARGB-N3-BK Black USB3.0/ Type C Tempered Glass ATX Gaming Computer Case w/ 3 x Tempered Glass Panel and 4 x ARGB PWM Fans (Pre-Installed). Support BTF Back Plug MB",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 102802,
       "cat": "Case",
       "asin": "B0GBY5RGHM",
@@ -13318,19 +13368,6 @@
       "orphaned": true
     },
     {
-      "id": 40037,
-      "cat": "RAM",
-      "asin": "B0BZHTVHN5",
-      "storedName": "Vengence RGB DDR5 RAM 32GB (2x16GB) 6000MHz CL36-44-44-96 1.35V Intel XMP 3.0 Computer Memory – Black (CMH32GX5M2E600...",
-      "storedPrice": 449.99,
-      "amazonTitle": "CORSAIR Vengeance RGB DDR5 RAM 32GB (2x16GB) Up to 6000MHz CL36-44-44-96 1.35V Intel XMP 3.0 Computer Memory – Black (CMH32GX5M2E6000C36)",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
-    },
-    {
       "id": 40041,
       "cat": "RAM",
       "asin": "B0BXHC74WD",
@@ -13340,20 +13377,6 @@
       "needsReview": false,
       "otherRetailers": [
         "newegg"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 40044,
-      "cat": "RAM",
-      "asin": "B0G5Q1XTKM",
-      "storedName": "Vengeance DDR5 32GB (2 x 16GB) 6000MHz CL38-44-44-96 1.35V Intel XMP 3.0 AMD EXPO Computer Desktop Memory – Gray",
-      "storedPrice": 449.99,
-      "amazonTitle": "CORSAIR Vengeance DDR5 32GB (2 x 16GB) Up to 6000MHz AMD Intel RAM",
-      "needsReview": true,
-      "otherRetailers": [
-        "newegg",
-        "bestbuy"
       ],
       "orphaned": false
     },
@@ -13405,6 +13428,19 @@
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
+    },
+    {
+      "id": 40098,
+      "cat": "RAM",
+      "asin": "B08C56GZGK",
+      "storedName": "16GB DDR4 RAM, 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin",
+      "storedPrice": 109,
+      "amazonTitle": "Crucial 16GB DDR4 RAM, 3200MHz (PC4-25600) CL22 Desktop Memory, UDIMM 288-Pin, Downclockable to 2933/2666MHz, Compatible with Intel and AMD Ryzen - CT16G4DFRA32A",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
     },
     {
       "id": 40100,
@@ -13544,17 +13580,6 @@
       "orphaned": true
     },
     {
-      "id": 40153,
-      "cat": "RAM",
-      "asin": "B0GGJ4NMS4",
-      "storedName": "Vengeance RGB RS DDR5 RAM 64GB (2x32GB) 5200MHz CL40-40-40-77 1.25V AMD EXPO Intel XMP Computer Desktop Memory – Gray...",
-      "storedPrice": 922.99,
-      "amazonTitle": "Corsair Vengeance RGB RS DDR5 64GB (2 x 32GB) Up to 5200MHz AMD Intel RAM",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 40159,
       "cat": "RAM",
       "asin": "B0CJ8XQBHY",
@@ -13649,19 +13674,6 @@
       "orphaned": false
     },
     {
-      "id": 40185,
-      "cat": "RAM",
-      "asin": "B09T8WL54M",
-      "storedName": "FURY Beast 32GB 5600MT/s DDR5 CL40 Desktop Memory | Intel XMP 3.0 | Single Module | KF556C40BB-32",
-      "storedPrice": 575.99,
-      "amazonTitle": "Kingston FURY Beast 32GB 5600MT/s DDR5 CL40 Desktop Memory | Intel XMP 3.0 | Single Module | KF556C40BB-32",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
-    },
-    {
       "id": 40188,
       "cat": "RAM",
       "asin": "B0BZJBGNDF",
@@ -13690,7 +13702,7 @@
       "storedName": "Patriot Viper Elite 5 DDR5 RAM 32GB (2X16GB) 6000MT/s CL30 1.35v UDIMM Desktop Gaming Memory KitCompatible with Intel...",
       "storedPrice": 410.49,
       "amazonTitle": "Patriot Viper Elite 5 DDR5 RAM 32GB (2X16GB) 6000MT/s CL30 Desktop Memory",
-      "needsReview": false,
+      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -13815,17 +13827,6 @@
       "storedName": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4 DRAM 3600MHz C18 AMD Ryzen Memory Kit - Black",
       "storedPrice": 459.99,
       "amazonTitle": "Corsair Vengeance LPX 32GB (2 x 16GB) DDR4 DRAM 3600MHz C18 AMD Ryzen Memory Kit - Black",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 100499,
-      "cat": "RAM",
-      "asin": "B0B3HGJ4V7",
-      "storedName": "TEAMGROUP T-Force Delta RGB DDR5 Ram 32GB (2x16GB) 6000MHz PC5-48000 CL30 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram White FF4D532G6000HC30DC01",
-      "storedPrice": 559.99,
-      "amazonTitle": "TEAMGROUP T-Force Delta RGB DDR5 Ram 32GB (2x16GB) 6000MHz PC5-48000 CL30 Intel XMP 3.0 & AMD Expo Compatible Desktop Memory Module Ram White FF4D532G6000HC30DC01",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -14018,6 +14019,19 @@
       "orphaned": true
     },
     {
+      "id": 50060,
+      "cat": "Storage",
+      "asin": "B0F4R3YCL6",
+      "storedName": "Western Digital 10TB WD Red Plus NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 GB/s, CMR",
+      "storedPrice": 404.99,
+      "amazonTitle": "Western Digital 10TB WD Red Plus NAS Internal Hard Drive HDD - 7200 RPM, SATA 6 GB/s, CMR, 512 MB Cache, 3.5\" - WD100EFGX",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 50088,
       "cat": "Storage",
       "asin": "B0FGPJ2BRF",
@@ -14064,6 +14078,32 @@
       "orphaned": true
     },
     {
+      "id": 50120,
+      "cat": "Storage",
+      "asin": "B0D61Z8R1W",
+      "storedName": "P310 1TB M.2 2230 SSD, PCIe Gen4 NVMe, Up to 7",
+      "storedPrice": 239.49,
+      "amazonTitle": "Crucial P310 1TB M.2 2230 SSD, PCIe Gen4 NVMe, Up to 7,100MB/s, Internal Solid State Drive, Ideal for Steam Deck, ASUS ROG Ally, MSI Claw, Mini PCs & Ultrabooks - CT1000P310SSD2",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 50134,
+      "cat": "Storage",
+      "asin": "B0B25ML2FH",
+      "storedName": "P3 Plus PCIe Gen4 NVMe 2TB SSD, Up to 5,000MB/s Read",
+      "storedPrice": 303.67,
+      "amazonTitle": "Crucial P3 Plus PCIe Gen4 NVMe 2TB SSD, Up to 5,000MB/s Read, Laptop & Desktop (PC) Compatible, Solid State Drive – CT2000P3SSD8",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 50135,
       "cat": "Storage",
       "asin": "B0B25NXWC7",
@@ -14073,19 +14113,6 @@
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
-    },
-    {
-      "id": 50138,
-      "cat": "Storage",
-      "asin": "B0DBR6TRZQ",
-      "storedName": "NV3 2TB M.2 2280 NVMe SSD | PCIe 4.0 Gen 4x4 | Up to 6000 MB/s | SNV3S/2000G",
-      "storedPrice": 269.99,
-      "amazonTitle": "Kingston NV3 2TB M.2 2280 NVMe SSD | PCIe 4.0 Gen 4x4 | Up to 6000 MB/s | SNV3S/2000G",
-      "needsReview": true,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
     },
     {
       "id": 50165,
@@ -14195,6 +14222,19 @@
       "orphaned": false
     },
     {
+      "id": 50281,
+      "cat": "Storage",
+      "asin": "B0DGHB9V34",
+      "storedName": "MZ-V9S2T0BW 990 EVO Plus SSD Internal 2TB PCIe Gen 4.0 x4 / 5.0 x2 NVMe 2.0 Memory Designed for Professional and Casu...",
+      "storedPrice": 392.99,
+      "amazonTitle": "Samsung MZ-V9S2T0BW 990 EVO Plus SSD Internal 2TB PCIe Gen 4.0 x4 / 5.0 x2 NVMe 2.0 Memory Designed for Professional and Casual Gamers PC Compatible",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 50283,
       "cat": "Storage",
       "asin": "B0D7MLB76V",
@@ -14282,6 +14322,19 @@
       "orphaned": false
     },
     {
+      "id": 50401,
+      "cat": "Storage",
+      "asin": "B0BXX1JJH8",
+      "storedName": "Samsung 990 PRO 2TB, 3-bit TLC V-NAND, M.2 (2280)",
+      "storedPrice": 399.85,
+      "amazonTitle": "SAMSUNG Samsung 990 PRO 2TB, 3-bit TLC V-NAND, M.2 (2280), NVMe 2.0, R/W(Max) 7,450MB/s/6,900MB/s, 1,400K/1,550K IOPS, 1200TBW, 5 Years Warranty",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 50403,
       "cat": "Storage",
       "asin": "B0F527H5T3",
@@ -14302,19 +14355,6 @@
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
-    },
-    {
-      "id": 50414,
-      "cat": "Storage",
-      "asin": "B0D8778W1Y",
-      "storedName": "Internal SSD 4TB WD Blue SN5000 (Read Up to 5,500MB/sec) M.2-2280 NVMe WDS400T4B0E-EC",
-      "storedPrice": 484.99,
-      "amazonTitle": "Western Digital Internal SSD 4TB WD Blue SN5000 (Read Up to 5,500MB/sec) M.2-2280 NVMe WDS400T4B0E-EC",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
     },
     {
       "id": 50429,
@@ -14361,6 +14401,17 @@
       "orphaned": true
     },
     {
+      "id": 100526,
+      "cat": "Storage",
+      "asin": "B0CMQ8XBBR",
+      "storedName": "Western Digital 8TB WD Blue PC Internal Hard Drive HDD - 5640 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5\" - WD80EAAZ",
+      "storedPrice": 324.99,
+      "amazonTitle": "Western Digital 8TB WD Blue PC Internal Hard Drive HDD - 5640 RPM, SATA 6 Gb/s, 256 MB Cache, 3.5\" - WD80EAAZ",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 100531,
       "cat": "Storage",
       "asin": "B0GN498RPM",
@@ -14378,6 +14429,30 @@
       "storedName": "Patriot P210 512GB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S512G25",
       "storedPrice": 70.99,
       "amazonTitle": "Patriot P210 512GB Internal SSD - SATA 3 2.5\" - Solid State Drive - P210S512G25",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 100814,
+      "cat": "Storage",
+      "asin": "B0D9WT512W",
+      "storedName": "WD_Black SN850X 8TB NVMe SSD - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2X0E",
+      "storedPrice": 1499.95,
+      "amazonTitle": "WD_Black SN850X 8TB NVMe SSD - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2X0E",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 100816,
+      "cat": "Storage",
+      "asin": "B0D9WTM2TH",
+      "storedName": "WD_Black SN850X 8TB NVMe SSD with Heatsink - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2XHE",
+      "storedPrice": 1479.99,
+      "amazonTitle": "WD_Black SN850X 8TB NVMe SSD with Heatsink - M.2 2280, Up to 7,300 MB/s Read speeds, Up to 6,300 MB/s Write speeds, Gaming Expansion, High Performance Internal Solid State Drive - WDS800T2XHE",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -14453,17 +14528,6 @@
       "orphaned": true
     },
     {
-      "id": 101291,
-      "cat": "Storage",
-      "asin": "B0CDP24LW9",
-      "storedName": "GIGABYTE AORUS Gen5 12000 SSD 1TB PCIe 5.0 NVMe M.2 Internal Solid State Hard Drive with Read Speed Up to 11700MB/s, Write Speed Up to 9500MB/s, AG512K1TB",
-      "storedPrice": 249,
-      "amazonTitle": "GIGABYTE AORUS Gen5 12000 SSD 1TB PCIe 5.0 NVMe M.2 Internal Solid State Hard Drive with Read Speed Up to 11700MB/s, Write Speed Up to 9500MB/s, AG512K1TB",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 101414,
       "cat": "Storage",
       "asin": "B0CJRN3LLX",
@@ -14481,17 +14545,6 @@
       "storedName": "Corsair MP600 PRO LPX 8TB M.2 NVMe PCIe x4 Gen4 SSD - Optimised for PS5 (Up to 7,000MB/sec Sequential Read & 6,100MB/sec Sequential Write Speeds, High-Speed Interface, Compact Form Factor) Black",
       "storedPrice": 1699.99,
       "amazonTitle": "Corsair MP600 PRO LPX 8TB M.2 NVMe PCIe x4 Gen4 SSD - Optimised for PS5 (Up to 7,000MB/sec Sequential Read & 6,100MB/sec Sequential Write Speeds, High-Speed Interface, Compact Form Factor) Black",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 50057,
-      "cat": "ExternalStorage",
-      "asin": "B08Y1Q2KSZ",
-      "storedName": "Game Drive for Xbox 2 TB External Hard Drive Portable HDD - USB 3.2 Gen 1, Black with built-in green LED bar, Xbox Ce...",
-      "storedPrice": 139.99,
-      "amazonTitle": "Seagate 2TB Game Drive for Xbox | USB 3.0 (STKX2000400)",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -14543,17 +14596,6 @@
       "orphaned": false
     },
     {
-      "id": 100870,
-      "cat": "ExternalStorage",
-      "asin": "B08GTXVG9P",
-      "storedName": "SANDISK 500GB Extreme Portable SSD (Old Model) - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-500G-G25",
-      "storedPrice": 219.95,
-      "amazonTitle": "Sandisk 500GB Extreme Portable SSD, Up to 1050MB/s Read Speeds (Old Model)",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 101289,
       "cat": "ExternalStorage",
       "asin": "B0DN6DK3X4",
@@ -14576,12 +14618,23 @@
       "orphaned": true
     },
     {
-      "id": 60012,
+      "id": 60004,
       "cat": "PSU",
-      "asin": "B010HWDOH6",
-      "storedName": "EVGA SuperNOVA 850 G7",
-      "storedPrice": 379,
-      "amazonTitle": "EVGA SuperNOVA 850 P2, 80+ PLATINUM 850W , Fully Modular , EVGA ECO Mode, 10 Year Warranty , Includes FREE Power On Self Tester, Power Supply 220-P2-0850-X1,Black",
+      "asin": "B0C572JWW9",
+      "storedName": "Seasonic PRIME TX-1600 ATX 3.0",
+      "storedPrice": 519.99,
+      "amazonTitle": "Seasonic Prime TX-1300 | 1300W | 80+ Titanium| ATX 3.0 & PCIe 5.0 Ready| Full Modular | ATX Form Factor | Premium Japanese Capacitor | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-1300TR2)",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 60005,
+      "cat": "PSU",
+      "asin": "B0C572JWW9",
+      "storedName": "Seasonic PRIME TX-1300 ATX 3.0",
+      "storedPrice": 519.99,
+      "amazonTitle": "Seasonic Prime TX-1300 | 1300W | 80+ Titanium| ATX 3.0 & PCIe 5.0 Ready| Full Modular | ATX Form Factor | Premium Japanese Capacitor | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-1300TR2)",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -14593,6 +14646,17 @@
       "storedName": "EVGA SuperNOVA 650 G7",
       "storedPrice": 239.99,
       "amazonTitle": "EVGA Supernova 1300 G+, 80+ Gold 1300W, Fully Modular, 10 Year Warranty, Includes Free Power On Self Tester, Power Supply 220-GP-1300-X1",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 60022,
+      "cat": "PSU",
+      "asin": "B0C572JWW9",
+      "storedName": "Seasonic PRIME TX-1000",
+      "storedPrice": 519.99,
+      "amazonTitle": "Seasonic Prime TX-1300 | 1300W | 80+ Titanium| ATX 3.0 & PCIe 5.0 Ready| Full Modular | ATX Form Factor | Premium Japanese Capacitor | Nvidia RTX 30/40 Super & AMD GPU Compatible (Ref. SSR-1300TR2)",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
@@ -14631,11 +14695,38 @@
       "orphaned": true
     },
     {
+      "id": 60049,
+      "cat": "PSU",
+      "asin": "B0FQ69SSM9",
+      "storedName": "C850 Gold Core - 850W ATX 3.1 Power Supply - 80 Plus Gold - Cybenetics Platinum - Fully Modular - PCIe 5.1 600W 12V-2...",
+      "storedPrice": 108.24,
+      "amazonTitle": "NZXT C850 Gold Core - 850W ATX 3.1 Power Supply, 80+ Gold",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg",
+        "bestbuy"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 60054,
+      "cat": "PSU",
+      "asin": "B0BP8B6M7Y",
+      "storedName": "RM1000x Shift Fully Modular ATX Power Supply - Modular Side Interface - ATX 3.1 & PCIe 5.1 Compliant - Zero RPM Fan M...",
+      "storedPrice": 169.99,
+      "amazonTitle": "CORSAIR RM1000x Shift (2023) ATX 3.1 PCIe 5.1 Power Supply – Black",
+      "needsReview": false,
+      "otherRetailers": [
+        "newegg"
+      ],
+      "orphaned": false
+    },
+    {
       "id": 60063,
       "cat": "PSU",
       "asin": "B0CWLTQD5K",
       "storedName": "RM750x Shift Fully Modular ATX Power Supply - 80 Plus Gold - ATX 3.1 - PCIe 5.1 - Zero RPM - Side Interface - White",
-      "storedPrice": 71.38,
+      "storedPrice": 86.49,
       "amazonTitle": "CORSAIR RM750x Shift Fully Modular ATX Power Supply - 80 Plus Gold - ATX 3.1 - PCIe 5.1 - Zero RPM - Side Interface - White",
       "needsReview": true,
       "otherRetailers": [],
@@ -14662,19 +14753,6 @@
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
-    },
-    {
-      "id": 60090,
-      "cat": "PSU",
-      "asin": "B071HHSY2M",
-      "storedName": "Technology 550 Watt 80 Plus Bronze ATX PSU with Flat Black Cables ET550-B Power Supply, SST-ET550-B",
-      "storedPrice": 68.25,
-      "amazonTitle": "Silverstone Technology 550 Watt 80 Plus Bronze ATX PSU with Flat Black Cables ET550-B Power Supply, SST-ET550-B",
-      "needsReview": false,
-      "otherRetailers": [
-        "newegg"
-      ],
-      "orphaned": false
     },
     {
       "id": 60105,
@@ -14850,17 +14928,6 @@
       "orphaned": true
     },
     {
-      "id": 99705,
-      "cat": "UPS",
-      "asin": "B07RWMLKFM",
-      "storedName": "UPS Battery Backup & Surge Protector, 1500VA/900W, 10 Outlets, Line Interactive Uninterruptible Powe",
-      "storedPrice": 167,
-      "amazonTitle": "Amazon Basics UPS Battery Backup & Surge Protector, 1500VA/900W, 10 Outlets, Line Interactive Uninterruptible Power Supply with Sinewave Technology, Black",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 101213,
       "cat": "CPUCooler",
       "asin": "B0FNMP513T",
@@ -14868,17 +14935,6 @@
       "storedPrice": 105.37,
       "amazonTitle": "Be Quiet BW028US 280 mm Pure Loop 3 Black CPU Liquid Cooler for Heavily Overclocked Systems & 2X Pure Wings 3 PWM High-Speed Fan",
       "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 80012,
-      "cat": "CPUCooler",
-      "asin": "B0DF7CZ9D8",
-      "storedName": "Corsair iCUE H150i Elite LCD XT",
-      "storedPrice": 195,
-      "amazonTitle": "CORSAIR Titan 360 RX LCD Liquid CPU Cooler, 360mm AIO, Low-Noise FlowDrive Cooling Engine, Intel LGA 1851/1700 & AMD AM5/AM4, 3X RX120 RGB Fans, System Hub Included, Black",
-      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -15001,6 +15057,17 @@
       "orphaned": false
     },
     {
+      "id": 80211,
+      "cat": "CPUCooler",
+      "asin": "B0CBV7474S",
+      "storedName": "Lian LIANLI Water Cooling Kit \"Galahad\" Series II Trinity 240 Black 1.1 inch (27 mm) Thick Radiator with ARGB Fan",
+      "storedPrice": 214.65,
+      "amazonTitle": "Lian LIANLI Water Cooling Kit \"Galahad\" Series II Trinity 240 Black 1.1 inch (27 mm) Thick Radiator with ARGB Fan",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 80225,
       "cat": "CPUCooler",
       "asin": "B0B8TN9MR7",
@@ -15073,7 +15140,7 @@
       "cat": "CPUCooler",
       "asin": "B0FF4PD4P2",
       "storedName": "CPU Cooler, Dual-Tower, 6×6mm Heat Pipes CPU Cooling, Dual 120mm ARGB PWM Fans, 2000RPM Speed, for AMD AM4/AM5/; Intel LGA 115X/1200/1700/1851, PC Cooler, 265W TDP",
-      "storedPrice": 21.99,
+      "storedPrice": 26.99,
       "amazonTitle": "Kalemax CPU Cooler, Dual-Tower, 6×6mm Heat Pipes CPU Cooling, Dual 120mm ARGB PWM Fans, 2000RPM Speed, for AMD AM4/AM5/; Intel LGA 115X/1200/1700/1851, PC Cooler, 265W TDP",
       "needsReview": true,
       "otherRetailers": [],
@@ -15098,17 +15165,6 @@
       "storedPrice": 31.99,
       "amazonTitle": "Ocypus Delta A62 ARGB BK CPU Cooler,6 Copper Heat Pipes,TDP 260W Air Cooler,Hydraulic Bearing Silence PWM Fans,Computer Cooling Fan for AMD AM4/AM5,Intel LGA 115X/1200/1700/1851",
       "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
-      "id": 100927,
-      "cat": "CPUCooler",
-      "asin": "B0CCXDLFZZ",
-      "storedName": "Thermaltake TH420 V2 Ultra ARGB Sync/AlO Liquid Cooler/ARGB Fan 140 * 3/PWM 500~1800rpm/Water Block 2.1\" LCD/Black, CL-W386-PL14SW-A",
-      "storedPrice": 169.99,
-      "amazonTitle": "Thermaltake TH420 V2 Ultra ARGB Sync/AlO Liquid Cooler/ARGB Fan 140 * 3/PWM 500~1800rpm/Water Block 2.1\" LCD/Black, CL-W386-PL14SW-A",
-      "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -15205,6 +15261,31 @@
       "orphaned": false
     },
     {
+      "id": 85070,
+      "cat": "CaseFan",
+      "asin": "B0CSSQ4MX2",
+      "storedName": "iCUE Link RX120 RGB 120mm PWM Fan - Magnetic Dome Bearing - Single Fan - Black",
+      "storedPrice": 29.99,
+      "amazonTitle": "CORSAIR iCUE Link RX120 RGB 120mm PWM Fan - Magnetic Dome Bearing - Single Fan - Black",
+      "needsReview": true,
+      "otherRetailers": [
+        "newegg",
+        "bestbuy"
+      ],
+      "orphaned": false
+    },
+    {
+      "id": 85095,
+      "cat": "CaseFan",
+      "asin": "B0DJD9M5YH",
+      "storedName": "P12 Pro PST (White) - Powerful Premium Fan, 120 mm PWM Fan with Y-Cable Splitter, 600-3000 RPM",
+      "storedPrice": 6.79,
+      "amazonTitle": "ARCTIC P12 Pro PST - Powerful Premium Fan, 120 mm PWM Fan, 600-3000 RPM",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 85123,
       "cat": "CaseFan",
       "asin": "B0CM6XNXP6",
@@ -15227,17 +15308,6 @@
         "newegg"
       ],
       "orphaned": false
-    },
-    {
-      "id": 85152,
-      "cat": "CaseFan",
-      "asin": "B07WZPZJRB",
-      "storedName": "Shadow Wings 2 140mm PWM Low Noise Cooling Fan | White | BL091",
-      "storedPrice": 9.9,
-      "amazonTitle": "be quiet! Shadow Wings 2 140mm PWM Low Noise Cooling Fan | White | BL091",
-      "needsReview": false,
-      "otherRetailers": [],
-      "orphaned": true
     },
     {
       "id": 85165,
@@ -15312,6 +15382,17 @@
       "orphaned": true
     },
     {
+      "id": 97008,
+      "cat": "Headset",
+      "asin": "B0011UB9CQ",
+      "storedName": "Beyerdynamic DT 900 Pro X",
+      "storedPrice": 199.99,
+      "amazonTitle": "beyerdynamic DT 990 Pro (250 Ohm), Open-Back Studio Headphones, Black",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 100041,
       "cat": "Headset",
       "asin": "B081415GCS",
@@ -15319,19 +15400,6 @@
       "storedPrice": 119.99,
       "amazonTitle": "Logitech G733 Lightspeed Wireless Gaming Headset - Black",
       "needsReview": false,
-      "otherRetailers": [
-        "bestbuy"
-      ],
-      "orphaned": false
-    },
-    {
-      "id": 100047,
-      "cat": "Headset",
-      "asin": "B08BTHXJFN",
-      "storedName": "HyperX HHSS1C-KB-WT/G Cloud Stinger Core – Wireless Gaming Headset, for PS4, PS5, PC, Lightweight, Durable Steel Sliders, Noise-Cancelling Microphone - White",
-      "storedPrice": 64,
-      "amazonTitle": "HyperX HHSS1C-KB-WT/G Cloud Stinger Core – Wireless Gaming Headset, for PS4, PS5, PC, Lightweight, Durable Steel Sliders, Noise-Cancelling Microphone - White",
-      "needsReview": true,
       "otherRetailers": [
         "bestbuy"
       ],
@@ -15355,7 +15423,7 @@
       "cat": "Headset",
       "asin": "B08R8DT7X6",
       "storedName": "Logitech G435 Lightspeed & Bluetooth Wireless Gaming Headset - Lightweight Over-Ear Headphones, Built-in mics, 18h Battery, Dolby Atmos, PC, PS4, PS5, Nintendo Switch/Switch 2, Mobile - Black",
-      "storedPrice": 60.47,
+      "storedPrice": 79.99,
       "amazonTitle": "Logitech G435 Lightspeed Wireless Gaming Headset - Black",
       "needsReview": true,
       "otherRetailers": [],
@@ -15382,6 +15450,28 @@
       "storedPrice": 123.99,
       "amazonTitle": "Corsair HS60 Haptic Stereo Gaming Headset with Haptic Bass, Memory Foam Earcups, Removable Microphone, Windows Sonic Compatible, Discord-Certified for PC - Arctic Camo",
       "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 101623,
+      "cat": "Headset",
+      "asin": "B0G12HGD6R",
+      "storedName": "Logitech G325 Lightspeed Wireless Bluetooth Gaming Headset, All-Day Comfort, Built-in Mic with Noise Reduction, 24-Bit Audio, 24+ Hr Battery Life, for PC, PlayStation, Switch, Mobile – Black",
+      "storedPrice": 69.99,
+      "amazonTitle": "Logitech G325 Lightspeed Wireless Gaming Headset - Black",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 101625,
+      "cat": "Headset",
+      "asin": "B0FFM18D66",
+      "storedName": "Logitech G321 Lightspeed Wireless Bluetooth Gaming Headset, Dynamic Comfort and fit, 16 kHz Boom mic, 20+ hrs Battery, PC, PS4, PS5, Nintendo Switch, Mobile - Black",
+      "storedPrice": 59.99,
+      "amazonTitle": "Logitech G321 Lightspeed Wireless Gaming Headset - Black",
+      "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -15425,7 +15515,7 @@
       "storedName": "EPOS H6Pro - Closed Acoustic Gaming Headset with Mic – Lightweight Over-Ear Design – Lift-to-Mute – Compatible with Xbox, PS4, PS5 & PC – Black",
       "storedPrice": 109.99,
       "amazonTitle": "EPOS H6Pro - Closed Acoustic Gaming Headset with Mic – Lightweight Over-Ear Design – Lift-to-Mute – Compatible with Xbox, PS4, PS5 & PC – Black",
-      "needsReview": false,
+      "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
     },
@@ -15639,23 +15729,23 @@
       "orphaned": true
     },
     {
-      "id": 101167,
-      "cat": "Keyboard",
-      "asin": "B08HR68MQZ",
-      "storedName": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
-      "storedPrice": 299.99,
-      "amazonTitle": "Corsair K100 RGB Mechanical Gaming Keyboard - Cherry MX Speed RGB Silver Keyswitches - PBT Double-Shot Keycaps - Elgato Stream Deck and iCUE Compatible - QWERTY NA Layout - Black",
-      "needsReview": true,
-      "otherRetailers": [],
-      "orphaned": true
-    },
-    {
       "id": 101539,
       "cat": "Keyboard",
       "asin": "B0DDBYZG2M",
       "storedName": "Redragon K709 PRO 65% Wireless Gasket RGB Gaming Keyboard, 68 Keys Hot-Swap Compact Mechanical Keyboard w/Free-Mod Socket, 5-Layer Noise Dampening & Round PBT Keycaps, Quiet Custom Linear Switch",
       "storedPrice": 49.99,
       "amazonTitle": "Redragon K709 PRO 65% Wireless Gasket RGB Gaming Keyboard, 68 Keys Hot-Swap Compact Mechanical Keyboard w/Free-Mod Socket, 5-Layer Noise Dampening & Round PBT Keycaps, Quiet Custom Linear Switch",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 101548,
+      "cat": "Keyboard",
+      "asin": "B07WS7KSGT",
+      "storedName": "Keychron K4 96% Layout 100 Keys Wireless Bluetooth 5.1/Wired USB Mechanical Gaming Keyboard with Keychron Super Brown Switch White LED Backlight N-Key Rollover for Mac Windows PC-Version 2",
+      "storedPrice": 79.99,
+      "amazonTitle": "Keychron K4 96% Layout 100 Keys Wireless Bluetooth 5.1/Wired USB Mechanical Gaming Keyboard with Keychron Super Brown Switch White LED Backlight N-Key Rollover for Mac Windows PC-Version 2",
       "needsReview": true,
       "otherRetailers": [],
       "orphaned": true
@@ -15716,6 +15806,17 @@
       "orphaned": true
     },
     {
+      "id": 101728,
+      "cat": "Microphone",
+      "asin": "B0BQHHZ1QQ",
+      "storedName": "RØDE NT1 5th Gen Large-Diaphragm Studio Condenser Microphone - XLR & USB Outputs - Shock Mount & Pop Filter Included - Music Production, Vocal Recording, Podcasting - Black - Professional Audio",
+      "storedPrice": 216.37,
+      "amazonTitle": "RØDE NT1 5th Gen Studio Condenser Microphone, XLR + USB-C, Silver",
+      "needsReview": true,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
       "id": 101776,
       "cat": "Microphone",
       "asin": "B09GPQZW2R",
@@ -15755,6 +15856,17 @@
       "storedName": "Shure PGA58 Dynamic Microphone - Handheld Mic for Vocals with Cardioid Pick-up Pattern, Discrete On/Off Switch, Stand Adapter and Zipper Pouch (PGA58-XLR)",
       "storedPrice": 78,
       "amazonTitle": "Shure PGA58 Dynamic Microphone - Handheld Mic for Vocals with Cardioid Pick-up Pattern, Discrete On/Off Switch, Stand Adapter and Zipper Pouch (PGA58-XLR)",
+      "needsReview": false,
+      "otherRetailers": [],
+      "orphaned": true
+    },
+    {
+      "id": 101818,
+      "cat": "Microphone",
+      "asin": "B01MSKI46R",
+      "storedName": "Purple Panda Wired Lavalier Microphone Omnidirectional – Attachable Lapel Mic Compatible with GoPro, DJI, Insta360, Tablet, iPad, DSLR, Camera, Ideal for Social Media Content Creators",
+      "storedPrice": 35.99,
+      "amazonTitle": "Purple Panda Lavalier Microphone for GoPro, DJI, Insta360 Mic Adapters",
       "needsReview": false,
       "otherRetailers": [],
       "orphaned": true
