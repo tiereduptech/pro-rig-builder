@@ -29,7 +29,7 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const { countRefreshStamps, stampIntegrity, loadNeweggReach, stampedShareFloor } =
+const { countRepricerStamps, stampIntegrity, loadNeweggReach, stampedShareFloor } =
   require('../sftp-ingest.cjs');
 
 import fs from 'node:fs';
@@ -46,19 +46,36 @@ function reachFile(body) {
 
 const PRICED = () => ({ itemNumber: 'N82E1', price: 100 });
 const REPRICED = () => ({ ...PRICED(), refreshedAt: '2026-09-02T09:20:00.000Z' });
+const MOVED = () => ({ ...PRICED(), priceLastMovedAt: '2026-09-02' });
+const BOTH = () => ({ ...REPRICED(), priceLastMovedAt: '2026-09-02' });
 const row = (id, deal) => ({ id, c: 'Case', n: `P${id}`, deals: { newegg: deal } });
 
-// A catalog whose stamps are intact: comfortably above the plausibility floor.
-const healthy = { before: 2102, after: 2102, stamped: 2102, reachable: 3104 };
+// A stamp tally in the shape countRepricerStamps() hands back. The movement
+// count defaults to a value that holds steady across before/after, so a case
+// written about refreshedAt does not accidentally assert something about the
+// other stamp — every priceLastMovedAt claim below is made deliberately.
+const tally = (refreshedAt, priceLastMovedAt = 281) => ({ refreshedAt, priceLastMovedAt });
 
-test('countRefreshStamps counts only deals.newegg rows carrying refreshedAt', () => {
-  const parts = [row('a', REPRICED()), row('b', PRICED()), row('c', REPRICED())];
-  assert.equal(countRefreshStamps(parts), 2);
+// A catalog whose stamps are intact: comfortably above the plausibility floor.
+const healthy = { before: tally(2102), after: tally(2102), stamped: 2102, reachable: 3104 };
+
+test('countRepricerStamps tallies refreshedAt and priceLastMovedAt separately', () => {
+  const parts = [row('a', BOTH()), row('b', PRICED()), row('c', REPRICED()), row('d', MOVED())];
+  assert.deepEqual(countRepricerStamps(parts), { refreshedAt: 2, priceLastMovedAt: 2 });
 });
 
-test('countRefreshStamps ignores rows with no newegg deal at all', () => {
-  const parts = [row('a', REPRICED()), { id: 'b', c: 'Case', deals: {} }, { id: 'c', c: 'Case' }];
-  assert.equal(countRefreshStamps(parts), 1);
+test('countRepricerStamps does not conflate the two stamps into one number', () => {
+  // The bug this shape exists to prevent. A single total would read 2 here and
+  // 2 for a catalog with two refreshedAt and no movement history at all, so a
+  // run that ate every priceLastMovedAt while writing one refreshedAt would
+  // balance to zero net loss and pass.
+  const parts = [row('a', REPRICED()), row('b', MOVED())];
+  assert.deepEqual(countRepricerStamps(parts), { refreshedAt: 1, priceLastMovedAt: 1 });
+});
+
+test('countRepricerStamps ignores rows with no newegg deal at all', () => {
+  const parts = [row('a', BOTH()), { id: 'b', c: 'Case', deals: {} }, { id: 'c', c: 'Case' }];
+  assert.deepEqual(countRepricerStamps(parts), { refreshedAt: 1, priceLastMovedAt: 1 });
 });
 
 test('an intact catalog publishes: no loss, share well above the floor', () => {
@@ -71,7 +88,7 @@ test('an intact catalog publishes: no loss, share well above the floor', () => {
 test('THE #81 REGRESSION: unexplained in-run loss voids the census', () => {
   // The exact shape of the 2026-09-02 erasure, one run: 2125 -> 386, with no
   // listing swaps to account for any of it.
-  const v = stampIntegrity({ before: 2125, after: 386, stamped: 386, reachable: 3104 });
+  const v = stampIntegrity({ before: tally(2125), after: tally(386), stamped: 386, reachable: 3104 });
   assert.equal(v.intact, false);
   assert.equal(v.lostThisRun, 1739);
   assert.equal(v.unexplainedLoss, 1739);
@@ -82,7 +99,7 @@ test('ONE unexplained stamp is enough — no tolerable amount of unaccounted era
   // Deliberately not a threshold. A stamp that vanished with no swap behind it
   // is a bug by definition, and the row it left behind skews the share upward.
   const v = stampIntegrity({
-    before: 2103, after: 2102, stamped: 2102, reachable: 3104, droppedOnReplacement: 0,
+    before: tally(2103), after: tally(2102), stamped: 2102, reachable: 3104, droppedOnReplacement: 0,
   });
   assert.equal(v.intact, false);
   assert.equal(v.unexplainedLoss, 1);
@@ -94,7 +111,7 @@ test('A HEALTHY NIGHT STILL PUBLISHES: swaps explain the loss exactly', () => {
   // withheld the number every single night, which is the same outcome as not
   // having built the census at all.
   const v = stampIntegrity({
-    before: 2102, after: 2085, stamped: 2085, reachable: 3104, droppedOnReplacement: 17,
+    before: tally(2102), after: tally(2085), stamped: 2085, reachable: 3104, droppedOnReplacement: 17,
   });
   assert.equal(v.lostThisRun, 17);
   assert.equal(v.unexplainedLoss, 0);
@@ -103,7 +120,7 @@ test('A HEALTHY NIGHT STILL PUBLISHES: swaps explain the loss exactly', () => {
 
 test('swaps explain SOME of it — the remainder still voids', () => {
   const v = stampIntegrity({
-    before: 2102, after: 1500, stamped: 1500, reachable: 3104, droppedOnReplacement: 17,
+    before: tally(2102), after: tally(1500), stamped: 1500, reachable: 3104, droppedOnReplacement: 17,
   });
   assert.equal(v.unexplainedLoss, 585);
   assert.equal(v.intact, false);
@@ -113,7 +130,7 @@ test('the by-design drop count is carried out for disclosure', () => {
   // Those rows WERE reached by the re-pricer and are counted as never-repriced
   // anyway, so the share is overstated by exactly this many. Stated, not hidden.
   const v = stampIntegrity({
-    before: 2102, after: 2085, stamped: 2085, reachable: 3104, droppedOnReplacement: 17,
+    before: tally(2102), after: tally(2085), stamped: 2085, reachable: 3104, droppedOnReplacement: 17,
   });
   assert.equal(v.droppedOnReplacement, 17);
 });
@@ -122,7 +139,7 @@ test('THE UNHEALED TREE: no loss this run, but no re-pricer run represented', ()
   // What the catalog looked like the morning after #81 merged — the ingest is
   // now well-behaved and destroys nothing, yet 1,739 stamps are still gone.
   // Check (1) sees a clean run; only check (2) catches this.
-  const v = stampIntegrity({ before: 386, after: 386, stamped: 386, reachable: 3104 });
+  const v = stampIntegrity({ before: tally(386), after: tally(386), stamped: 386, reachable: 3104 });
   assert.equal(v.lostThisRun, 0, 'this run really did destroy nothing');
   assert.equal(v.intact, false, 'but the evidence is still missing');
   assert.match(v.reasons.join(' '), /no completed re-pricer run is represented/);
@@ -132,7 +149,7 @@ test('the floor is a collapse detector, not a staleness policy', () => {
   // A merely mediocre night — the re-pricer reached fewer rows than usual —
   // must still publish. The guard fires on evidence that is GONE, and holds no
   // opinion about how old a stamp is or how many rows are due a refresh.
-  const v = stampIntegrity({ before: 1200, after: 1200, stamped: 1200, reachable: 3104 });
+  const v = stampIntegrity({ before: tally(1200), after: tally(1200), stamped: 1200, reachable: 3104 });
   assert.equal(v.intact, true, '38.7% is thin but is a real re-pricer run');
 });
 
@@ -145,19 +162,95 @@ test('unreachable rows are not in the denominator', () => {
 });
 
 test('an empty lane does not divide by zero and does not cry damage', () => {
-  const v = stampIntegrity({ before: 0, after: 0, stamped: 0, reachable: 0 });
+  const v = stampIntegrity({ before: tally(0, 0), after: tally(0, 0), stamped: 0, reachable: 0 });
   assert.equal(v.stampedShare, 0);
   assert.equal(v.intact, true, 'no reachable rows is not evidence of erasure');
 });
 
 test('both failures can fire at once and both are reported', () => {
-  const v = stampIntegrity({ before: 2125, after: 300, stamped: 300, reachable: 3104 });
+  const v = stampIntegrity({ before: tally(2125), after: tally(300), stamped: 300, reachable: 3104 });
   assert.equal(v.intact, false);
   assert.equal(v.reasons.length, 2);
 });
 
+// ── THE STAMP THE GUARD USED TO MISS ─────────────────────────────────────────
+//
+// #81 restored two carries and armed a regression guard over one of them. These
+// cover the other. The measured shape is the 2026-09-02 ingest, where
+// deals.newegg went 315 -> 202 priceLastMovedAt (-113) in the same run that took
+// refreshedAt 2125 -> 386 — and where the loss surfaced not here but in
+// refresh-newegg-prices' movement report, ten days later, as movedShare 0.0881
+// against a 0.1 floor with Newegg's name on it.
+
+test('THE MISATTRIBUTION: priceLastMovedAt erasure is caught here, not by the freeze alarm', () => {
+  const v = stampIntegrity({
+    before: tally(2125, 315), after: tally(2125, 202), stamped: 2125, reachable: 3104,
+  });
+  assert.equal(v.intact, false);
+  assert.equal(v.movedLostThisRun, 113);
+  assert.equal(v.lostThisRun, 0, 'refreshedAt was untouched — the old guard saw nothing');
+  assert.match(v.reasons.join(' '), /destroyed 113 priceLastMovedAt/);
+});
+
+test('the reason names the alarm that would otherwise blame the retailer', () => {
+  // The point of the wording. A run that reads this must not go looking at
+  // Newegg's feed, which is where the last two days went.
+  const v = stampIntegrity({
+    before: tally(2125, 315), after: tally(2125, 202), stamped: 2125, reachable: 3104,
+  });
+  const why = v.reasons.join(' ');
+  assert.match(why, /price-movement/);
+  assert.match(why, /numerator/);
+});
+
+test('ONE lost movement stamp is enough — there is no by-design drop to net off', () => {
+  // Deliberately asymmetric with refreshedAt. droppedOnReplacement exists
+  // because a listing swap legitimately drops refreshedAt; the movement carry
+  // sits under `shouldReplace` instead, so a swap KEEPS it and no allowance is
+  // owed. Passing a swap count must not buy tolerance here.
+  const v = stampIntegrity({
+    before: tally(2102, 282), after: tally(2102, 281), stamped: 2102, reachable: 3104,
+    droppedOnReplacement: 17,
+  });
+  assert.equal(v.intact, false);
+  assert.equal(v.movedLostThisRun, 1);
+});
+
+test('a movement stamp GAINED is not a loss', () => {
+  // The ordinary healthy night: prices moved, so the count goes up.
+  const v = stampIntegrity({
+    before: tally(2102, 281), after: tally(2102, 421), stamped: 2102, reachable: 3104,
+  });
+  assert.equal(v.movedLostThisRun, 0);
+  assert.equal(v.intact, true);
+});
+
+test('the movement stamp is NOT added to the plausibility floor denominator', () => {
+  // Only a fraction of rows carry priceLastMovedAt even when everything works,
+  // because most prices did not move. Folding it into `stamped` would make a
+  // healthy catalog clear the floor for the wrong reason — and a collapsed one
+  // clear it on movement history alone.
+  const v = stampIntegrity({
+    before: tally(386, 281), after: tally(386, 281), stamped: 386, reachable: 3104,
+  });
+  assert.equal(v.intact, false);
+  assert.match(v.reasons.join(' '), /no completed re-pricer run is represented/);
+});
+
+test('a bare number is refused rather than read as a refreshedAt-only tally', () => {
+  // The half-measurement this shape exists to prevent. A caller still passing
+  // the old scalar has not been taught about the second stamp, and silently
+  // treating it as {refreshedAt: n} would reinstate the blind spot exactly.
+  assert.throws(
+    () => stampIntegrity({ before: 2125, after: 386, stamped: 386, reachable: 3104 }),
+    /countRepricerStamps\(\) tally/);
+  assert.throws(
+    () => stampIntegrity({ before: tally(2125), after: 386, stamped: 386, reachable: 3104 }),
+    /`after`/);
+});
+
 test('the verdict carries the numbers a human needs to act on it', () => {
-  const v = stampIntegrity({ before: 2125, after: 386, stamped: 386, reachable: 3104 });
+  const v = stampIntegrity({ before: tally(2125), after: tally(386), stamped: 386, reachable: 3104 });
   assert.equal(v.stamped, 386);
   assert.equal(v.reachable, 3104);
   assert.ok(Math.abs(v.stampedShare - 386 / 3104) < 1e-9);
@@ -223,7 +316,7 @@ test('the committed observation on disk is usable and in range', () => {
 
 test('the verdict states the floor it was judged against and where it came from', () => {
   const v = stampIntegrity({
-    before: 386, after: 386, stamped: 386, reachable: 3104,
+    before: tally(386), after: tally(386), stamped: 386, reachable: 3104,
     floor: stampedShareFloor({ reach: 0.6543, stamped: 2031, lookupable: 3104, observedAt: '2026-09-02T20:18:32Z' }),
   });
   assert.equal(v.intact, false);
@@ -234,7 +327,7 @@ test('the verdict states the floor it was judged against and where it came from'
 
 test('an injected floor governs the verdict, both ways', () => {
   // 38.7% stamped: intact under the derived floor, void under a stricter one.
-  const args = { before: 1200, after: 1200, stamped: 1200, reachable: 3104 };
+  const args = { before: tally(1200), after: tally(1200), stamped: 1200, reachable: 3104 };
   assert.equal(stampIntegrity({ ...args, floor: stampedShareFloor(null) }).intact, true);
   assert.equal(stampIntegrity({ ...args, floor: { value: 0.5, source: 'test', derived: true } }).intact, false);
 });

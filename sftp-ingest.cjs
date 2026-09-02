@@ -565,7 +565,12 @@ const confirmedLanes = new Set();
 // nothing downstream of it writes — asserted in test/sftp-coverage-census.test.js.
 const feedOffered = new Set();
 
-// Stamps this run dropped ON PURPOSE. A genuine listing swap must not carry
+// refreshedAt stamps this run dropped ON PURPOSE, and only refreshedAt: it is
+// the one re-pricer stamp with a legitimate reason to go missing.
+// priceLastMovedAt is carried across replacements too, so it has no counterpart
+// here and stampIntegrity() nets nothing off it.
+//
+// A genuine listing swap must not carry
 // refreshedAt across: the stamp attests to a price on a listing the row no
 // longer holds, and vouching for it would be a lie about a different product.
 // So a healthy night legitimately loses some, and "any loss at all" would void
@@ -708,16 +713,75 @@ function stampedShareFloor(reach = loadNeweggReach()) {
 }
 
 /**
- * Count deals.newegg rows carrying a re-pricer stamp. Pure and exported so the
- * before/after pair below is a measurement rather than an assumption.
+ * Count deals.newegg rows carrying each stamp the re-pricer writes and this job
+ * must not destroy. Pure and exported so the before/after pair below is a
+ * measurement rather than an assumption.
+ *
+ * TWO STAMPS, TALLIED SEPARATELY, because they go missing under different rules
+ * and only one of them is ever allowed to:
+ *
+ *   refreshedAt       carried only under `sameListing`. A genuine listing swap
+ *                     drops it BY DESIGN — the stamp attests to a price on a
+ *                     listing the row no longer holds — so a healthy night
+ *                     loses some, and stampIntegrity() subtracts
+ *                     droppedOnReplacement to isolate the rest.
+ *   priceLastMovedAt  carried on every branch that writes, replacement
+ *                     included (see the carry under `shouldReplace`). Nothing
+ *                     drops it on purpose, so it needs no allowance and no
+ *                     threshold: ANY loss is a bug.
+ *
+ * ── WHY IT COUNTS BOTH, AS OF 2026-09-03 ────────────────────────────────────
+ * It counted refreshedAt alone, and that asymmetry was a hole of exactly the
+ * shape this file keeps re-learning. #81 restored both carries in the same
+ * commit, but armed a regression guard over only one of them — and the carry it
+ * left unwatched is four lines that nothing downstream would miss, because a
+ * dropped priceLastMovedAt does not change the census, the catalog write, or
+ * the job's exit code. It surfaces days later somewhere else entirely.
+ *
+ * That elsewhere is scripts/price-movement.cjs, whose `movedShare` divides rows
+ * that moved price in 14 days by all priced rows. Erasing the stamp drains the
+ * numerator only, so the alarm fires on the retailer rather than on the job
+ * that ate the evidence: measured on the 2026-09-02 ingest, newegg went 315 ->
+ * 202 priceLastMovedAt in one run (-113), and the re-pricer then reported
+ * movedShare 0.0881 against a 0.1 floor with no row on the lane carrying a
+ * stamp older than 5 days. That number was never about Newegg's prices.
+ *
+ * Newegg's movement warm-up ends 2026-09-12, at which point the suppressed
+ * share alarm arms. A guard that measures the adjacent stamp would let the
+ * regression through to that date and then blame the wrong job for it — which
+ * is the same misattribution the freshness gate's max-vs-median rewrite and the
+ * 12.0%-vs-40.5% sample both turned out to be. Measure the stamp the alarm
+ * actually reads.
  */
-function countRefreshStamps(parts) {
-  let n = 0;
+function countRepricerStamps(parts) {
+  const n = { refreshedAt: 0, priceLastMovedAt: 0 };
   for (const p of parts) {
     const d = p && p.deals && p.deals.newegg;
-    if (d && typeof d === 'object' && d.refreshedAt) n++;
+    if (!d || typeof d !== 'object') continue;
+    if (d.refreshedAt) n.refreshedAt++;
+    if (d.priceLastMovedAt) n.priceLastMovedAt++;
   }
   return n;
+}
+
+/**
+ * Accept a tally from countRepricerStamps() and refuse anything else.
+ *
+ * Deliberately NOT tolerant of a bare number. This function used to take one —
+ * the refreshedAt count — and coercing that shape into `{refreshedAt: n}` would
+ * let a caller that has not been updated keep passing a half-measurement that
+ * reads as a whole one, silently reinstating the exact blind spot the tally
+ * exists to close. A caller that has not been taught about the second stamp
+ * should fail loudly here, not measure one stamp and report on two.
+ */
+function asTally(v, which) {
+  if (!v || typeof v !== 'object' || typeof v.refreshedAt !== 'number' ||
+      typeof v.priceLastMovedAt !== 'number') {
+    throw new Error(
+      `stampIntegrity needs \`${which}\` as a countRepricerStamps() tally ` +
+      `{refreshedAt, priceLastMovedAt}, got ${JSON.stringify(v)}`);
+  }
+  return v;
 }
 
 /**
@@ -728,6 +792,13 @@ function countRefreshStamps(parts) {
  * 1. THIS RUN destroyed it, and nothing accounts for that. `before` is counted
  *    as the catalog loads and `after` once the merchant loop is done, so the
  *    total loss is a direct observation rather than an inference.
+ *
+ *    BOTH RE-PRICER STAMPS ARE JUDGED HERE, under different rules, because #81
+ *    restored two carries and this guard originally watched one. refreshedAt
+ *    gets the allowance described below; priceLastMovedAt gets none, since no
+ *    branch drops it deliberately. See countRepricerStamps() for why the second
+ *    one is the stamp an unwatched regression surfaces through — it feeds
+ *    scripts/price-movement.cjs, days later, as an alarm naming the wrong job.
  *
  *    NOT ALL OF IT IS DAMAGE. A genuine listing swap drops refreshedAt by
  *    design — the stamp attests to a price on a listing the row no longer
@@ -780,17 +851,40 @@ function countRefreshStamps(parts) {
  */
 function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacement = 0,
                           floor = stampedShareFloor() }) {
-  const lostThisRun = Math.max(0, before - after);
+  const b = asTally(before, 'before');
+  const a = asTally(after, 'after');
+
+  // refreshedAt. Some loss is by design, so the allowance is subtracted and the
+  // REMAINDER is what convicts. See droppedOnReplacement.
+  const lostThisRun = Math.max(0, b.refreshedAt - a.refreshedAt);
   const unexplainedLoss = lostThisRun - droppedOnReplacement;
+
+  // priceLastMovedAt. No allowance and no threshold, because there is no branch
+  // that drops it on purpose: the carry sits under `shouldReplace` rather than
+  // under `sameListing`, so a swapped listing keeps its movement history, and a
+  // row we decline to replace is never rewritten at all. Every path that can
+  // touch the stamp preserves it, which makes any shortfall a defect by
+  // construction rather than by policy.
+  const movedLostThisRun = Math.max(0, b.priceLastMovedAt - a.priceLastMovedAt);
+
   const stampedShare = reachable > 0 ? stamped / reachable : 0;
   const collapsed = reachable > 0 && stampedShare < floor.value;
 
   const reasons = [];
   if (unexplainedLoss > 0) {
     reasons.push(
-      `this run destroyed ${lostThisRun} refreshedAt stamp(s) (${before} -> ${after}) and only ` +
+      `this run destroyed ${lostThisRun} refreshedAt stamp(s) ` +
+      `(${b.refreshedAt} -> ${a.refreshedAt}) and only ` +
       `${droppedOnReplacement} are explained by a listing swap — ${unexplainedLoss} vanished with ` +
       `nothing to account for them, which means the #81 carry is not holding`);
+  }
+  if (movedLostThisRun > 0) {
+    reasons.push(
+      `this run destroyed ${movedLostThisRun} priceLastMovedAt stamp(s) ` +
+      `(${b.priceLastMovedAt} -> ${a.priceLastMovedAt}). Nothing drops this stamp on purpose, so ` +
+      `there is no legitimate loss to net off and the #81 carry is not holding. ` +
+      `This is the stamp scripts/price-movement.cjs divides by: erasing it drains movedShare's ` +
+      `numerator and the freeze alarm then fires on the retailer instead of on this job`);
   }
   if (collapsed) {
     reasons.push(
@@ -802,6 +896,7 @@ function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacemen
   return {
     intact: reasons.length === 0,
     lostThisRun, droppedOnReplacement, unexplainedLoss,
+    movedLostThisRun,
     stamped, reachable, stampedShare, reasons,
     // Carried so a void states the floor it was judged against and where that
     // floor came from, rather than leaving the reader to go looking.
@@ -1055,7 +1150,7 @@ async function loadDeps() {
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
-                   coverageCensus, laneKey, countRefreshStamps, stampIntegrity,
+                   coverageCensus, laneKey, countRepricerStamps, stampIntegrity,
                    loadNeweggReach, stampedShareFloor, REACH_FILE,
                    // Exported so the stamp-carry rules above can be asserted directly.
                    // They were previously reachable only through a live SFTP pull, which
@@ -1119,8 +1214,9 @@ if (require.main === module) (async () => {
   // Counted BEFORE anything mutates the catalog: half of the stamp-integrity
   // check below is a before/after pair, and "before" has to mean before the
   // merchant loop, not before the census. See stampIntegrity().
-  const refreshStampsAtLoad = countRefreshStamps(parts);
-  log(`Re-pricer stamps on deals.newegg at load: ${refreshStampsAtLoad}`);
+  const refreshStampsAtLoad = countRepricerStamps(parts);
+  log(`Re-pricer stamps on deals.newegg at load: ${refreshStampsAtLoad.refreshedAt} refreshedAt, ` +
+      `${refreshStampsAtLoad.priceLastMovedAt} priceLastMovedAt`);
 
   const idx = buildCatalogIndex(parts);
   log(`Indexed: ${idx.byUPC.size} UPCs, ${idx.byMPN.size} MPNs, ${idx.bySKU.size} existing Newegg SKUs`);
@@ -1287,11 +1383,17 @@ if (require.main === module) (async () => {
     // One count, used as both halves: "how many stamps survive this run" and
     // "how many stamps exist at all" are the same question asked of the same
     // catalog at the same moment.
-    const refreshStampsNow = countRefreshStamps(parts);
+    const refreshStampsNow = countRepricerStamps(parts);
     const integrity = stampIntegrity({
       before: refreshStampsAtLoad,
       after: refreshStampsNow,
-      stamped: refreshStampsNow,
+      // The collapse check is a refreshedAt question specifically — it asks
+      // whether a completed re-pricer run is represented in this catalog, and
+      // refreshedAt is the stamp written on EVERY successful lookup. Only a
+      // fraction of rows ever carry priceLastMovedAt even when everything is
+      // healthy, because most prices simply did not move, so it has no
+      // plausibility floor to be judged against and must not be summed in here.
+      stamped: refreshStampsNow.refreshedAt,
       droppedOnReplacement: stampsDroppedOnReplacement,
       reachable: parts.reduce((n, p) => {
         const d = p && p.deals && p.deals.newegg;
@@ -1326,7 +1428,7 @@ if (require.main === module) (async () => {
       }
       summary.totals.coverageCensus = census;
     } else {
-      log('\n  ** CENSUS VOID — the refreshedAt evidence this split reads is not intact **');
+      log('\n  ** CENSUS VOID — the re-pricer stamp evidence is not intact **');
       for (const r of integrity.reasons) log(`     - ${r}`);
       log(`     stamped ${integrity.stamped} of ${integrity.reachable} re-pricer-reachable rows ` +
           `(${(100 * integrity.stampedShare).toFixed(1)}%, floor ${(100 * integrity.floor).toFixed(1)}%)`);
