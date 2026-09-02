@@ -8024,7 +8024,7 @@ export default [
         "itemId": "1875",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
@@ -8387,14 +8387,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 749.99,
+        "price": 799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2097&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQP-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2097",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "screenSize": 49,
@@ -8434,14 +8434,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 579.99,
+        "price": 629.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2098&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-271QRX-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2098",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       },
       "newegg_openbox": {
         "sku": "4458315024948118250085806",
@@ -8531,14 +8531,14 @@ export default [
     "mpn": "MAG 321UPX QD-OLED",
     "deals": {
       "msi": {
-        "price": 749.99,
+        "price": 799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2133&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMAG-321UPX-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "445833124119111439708329",
@@ -8929,7 +8929,7 @@ export default [
         "itemId": "2151",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
@@ -9821,7 +9821,7 @@ export default [
         "itemId": "1734",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
@@ -9881,7 +9881,7 @@ export default [
         "itemId": "2272",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -9940,7 +9940,7 @@ export default [
         "itemId": "2300",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -10493,7 +10493,7 @@ export default [
         "itemId": "2375",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -10539,7 +10539,7 @@ export default [
         "itemId": "2383",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "screenSize": 27,
@@ -10843,7 +10843,7 @@ export default [
         "itemId": "2417",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -10911,14 +10911,14 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "msi": {
-        "price": 949.99,
+        "price": 999.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2412&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-491CQPX-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2412",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "4458311883885365372818679",
@@ -10986,14 +10986,14 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
-        "price": 849.99,
+        "price": 899.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2426&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FGaming-Monitors%2FMPG-321CURX-QD-OLED&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2426",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "screenSize": 32,
@@ -11050,7 +11050,7 @@ export default [
         "itemId": "2427",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02"
       }
     },
     "screenSize": 27,
@@ -11585,7 +11585,7 @@ export default [
         "itemId": "2514",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -11798,7 +11798,7 @@ export default [
         "itemId": "2393",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -12197,7 +12197,7 @@ export default [
         "itemId": "2491",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -12255,7 +12255,7 @@ export default [
         "itemId": "2320",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -13810,7 +13810,7 @@ export default [
         "itemId": "2800",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14152,7 +14152,7 @@ export default [
         "itemId": "2881",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -14211,7 +14211,7 @@ export default [
         "itemId": "2802",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -14268,7 +14268,7 @@ export default [
         "itemId": "2872",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -14915,7 +14915,7 @@ export default [
         "itemId": "2887",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg_openbox": {
@@ -14988,7 +14988,7 @@ export default [
         "itemId": "2928",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-02",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg_openbox": {
@@ -15043,13 +15043,14 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "msi": {
-        "price": 139.99,
+        "price": 109.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2929&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP272-E14C&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2929",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "screenSize": 27,
@@ -15089,14 +15090,14 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "msi": {
-        "price": 84.99,
+        "price": 79.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2736&u=https%3A%2F%2Fus-store.msi.com%2FMonitors%2FBUSINESS-PRODUCTIVITY-Monitor%2FPRO-MP243L-E14&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2736",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-02",
+        "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
         "sku": "445834948720951732401025",
