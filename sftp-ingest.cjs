@@ -565,6 +565,17 @@ const confirmedLanes = new Set();
 // nothing downstream of it writes — asserted in test/sftp-coverage-census.test.js.
 const feedOffered = new Set();
 
+// Stamps this run dropped ON PURPOSE. A genuine listing swap must not carry
+// refreshedAt across: the stamp attests to a price on a listing the row no
+// longer holds, and vouching for it would be a lie about a different product.
+// So a healthy night legitimately loses some, and "any loss at all" would void
+// the census every time it ran — see stampIntegrity(), which subtracts these to
+// isolate the loss NOTHING accounts for.
+//
+// Counted from the OUTCOME (`existing` had one, `newListing` will not) rather
+// than from the carry rule, so it still measures the truth if that rule changes.
+let stampsDroppedOnReplacement = 0;
+
 /**
  * Read-only coverage census over deals.newegg. Pure, exported, and asserted on
  * directly — the 12.0%-vs-40.5% episode is what happens to a number computed
@@ -601,6 +612,126 @@ function coverageCensus(parts, offered) {
   // confirm them" and "build a SKU-keyed lookup", and it has never been measured.
   c.rescuableShare = c.neverRepriced ? c.neverRepricedOffered / c.neverRepriced : 0;
   return c;
+}
+
+// ── IS THE EVIDENCE THE CENSUS SPLITS ON ACTUALLY THERE? ─────────────────────
+//
+// coverageCensus() reads "no refreshedAt" as "the re-pricer has never reached
+// this row". That is only true while every stamp the re-pricer wrote is still
+// on the row it wrote it to. THIS JOB IS THE ONLY THING THAT CAN DESTROY ONE:
+// applyMatchToPart assigns a freshly built listing over part.deals[fieldKey]
+// wholesale, so every field it does not name is gone.
+//
+// It has already happened once, on the 2026-09-02 ingest, before the carry
+// above existed: refreshedAt 2125 -> 386 in a single run (-1739). #81 stopped
+// the bleeding but restored nothing, and a deleted stamp is indistinguishable
+// from a stamp that was never written. Had the census run against that tree it
+// would have put 2,803 rows in neverRepriced when roughly 1,064 belonged there.
+//
+// AND THE ERROR HAS A DIRECTION. feedOffered.add() and the wholesale assignment
+// are the same code path in applyMatchToPart, so every row that loses a stamp
+// is BY CONSTRUCTION a row the feed offered. Erased rows land in the numerator
+// AND the denominator of rescuableShare at ~100% coverage, dragging it upward.
+// A true 40% prints as roughly 77% — "the feed covers the tail, do the cheap
+// fix", which is the expensive mistake this census was built to prevent.
+//
+// The existing gate asks "did we look at the feed?" and says nothing when the
+// answer is no. This is the same question one level down — "is the other side
+// of the split still intact?" — and it has to have the same answer shape: no
+// number at all, rather than a confident wrong one.
+const MIN_STAMPED_SHARE_OF_REACHABLE = 1 / 3;
+
+/**
+ * Count deals.newegg rows carrying a re-pricer stamp. Pure and exported so the
+ * before/after pair below is a measurement rather than an assumption.
+ */
+function countRefreshStamps(parts) {
+  let n = 0;
+  for (const p of parts) {
+    const d = p && p.deals && p.deals.newegg;
+    if (d && typeof d === 'object' && d.refreshedAt) n++;
+  }
+  return n;
+}
+
+/**
+ * Verdict on whether coverageCensus() is entitled to publish a number.
+ *
+ * TWO INDEPENDENT FAILURES, because there are two ways a stamp goes missing.
+ *
+ * 1. THIS RUN destroyed it, and nothing accounts for that. `before` is counted
+ *    as the catalog loads and `after` once the merchant loop is done, so the
+ *    total loss is a direct observation rather than an inference.
+ *
+ *    NOT ALL OF IT IS DAMAGE. A genuine listing swap drops refreshedAt by
+ *    design — the stamp attests to a price on a listing the row no longer
+ *    holds — so a healthy night loses some, and voiding on any loss at all
+ *    would mean the census never publishes. `droppedOnReplacement` counts
+ *    those as they happen, and what matters is the REMAINDER: stamps that
+ *    vanished with no swap to explain them. That figure should be exactly
+ *    zero, so it needs no threshold, and any excess is a bug by definition.
+ *
+ *    This is the permanent regression guard on the #81 carry. That fix is four
+ *    lines inside an `if (sameListing)` and nothing downstream would notice it
+ *    being dropped — the catalog would still be written, the job would still
+ *    report success, and only the census would quietly skew.
+ *
+ *    The by-design drops are disclosed, not fatal. They do contaminate the
+ *    split — a swapped row was reached by the re-pricer and will now read as
+ *    never-repriced — but the count is exact and printed, so it is a caveat of
+ *    known size rather than the hidden bias this guard exists to prevent.
+ *
+ * 2. AN EARLIER RUN destroyed it and no re-pricer run has replaced it yet.
+ *    Nothing in this process saw that happen, so it cannot be measured the way
+ *    (1) is; it can only be recognised by its shape. A re-pricer that has
+ *    completed a run leaves stamps across the bulk of the rows it can address —
+ *    it writes refreshedAt on EVERY successful lookup including the unchanged
+ *    case — so a catalog where almost none of the reachable rows carry one is
+ *    not a catalog whose tail is genuinely unreached. It is a catalog whose
+ *    evidence has been eaten.
+ *
+ * `reachable` is DERIVED, not transcribed: it is the rows whose category has a
+ * CAT_FILTER entry, the same source #84's lanesSolelyOwned() reads, because
+ * searchNewegg() returns 'no_cat_mapping' without issuing a request otherwise.
+ * A row the re-pricer structurally cannot address is not evidence of anything
+ * when it has no stamp, and must not sit in this denominator.
+ *
+ * MIN_STAMPED_SHARE_OF_REACHABLE is the one judgment call here and is
+ * deliberately loose. Healthy is ~68% (2,102 of 3,104 reachable rows stamped);
+ * the erased tree was ~12%. A third sits far below anything a working
+ * re-pricer produces and far above the damage, so it fires on a collapse and
+ * not on an ordinary bad night. It is a plausibility floor, NOT a staleness
+ * policy — it holds no opinion about how old a stamp may be, and the census
+ * still refuses to own that question. It is a constant only because the
+ * re-pricer's own reach is not readable here: it writes that number to
+ * newegg-refresh-summary.json, which the workflow uploads as an artifact and
+ * then deletes. Commit that one figure and this floor can be derived from it.
+ */
+function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacement = 0 }) {
+  const lostThisRun = Math.max(0, before - after);
+  const unexplainedLoss = lostThisRun - droppedOnReplacement;
+  const stampedShare = reachable > 0 ? stamped / reachable : 0;
+  const collapsed = reachable > 0 && stampedShare < MIN_STAMPED_SHARE_OF_REACHABLE;
+
+  const reasons = [];
+  if (unexplainedLoss > 0) {
+    reasons.push(
+      `this run destroyed ${lostThisRun} refreshedAt stamp(s) (${before} -> ${after}) and only ` +
+      `${droppedOnReplacement} are explained by a listing swap — ${unexplainedLoss} vanished with ` +
+      `nothing to account for them, which means the #81 carry is not holding`);
+  }
+  if (collapsed) {
+    reasons.push(
+      `only ${stamped} of ${reachable} re-pricer-reachable rows carry refreshedAt ` +
+      `(${(100 * stampedShare).toFixed(1)}%, floor ${(100 * MIN_STAMPED_SHARE_OF_REACHABLE).toFixed(1)}%) — ` +
+      `no completed re-pricer run is represented in this catalog`);
+  }
+
+  return {
+    intact: reasons.length === 0,
+    lostThisRun, droppedOnReplacement, unexplainedLoss,
+    stamped, reachable, stampedShare, reasons,
+  };
 }
 
 // ── Which listing do we keep? ────────────────────────────────────────────────
@@ -765,6 +896,10 @@ function applyMatchToPart(part, rec, match) {
     }
   }
   if (shouldReplace) {
+    // Counted here and not at the carry above, because only this branch writes:
+    // a row we decline to replace keeps its stamp untouched.
+    if (existing && existing.refreshedAt && !newListing.refreshedAt) stampsDroppedOnReplacement++;
+
     // priceLastMovedAt advances only when the NUMBER moved, and must be carried
     // across explicitly — newListing is a fresh object, so anything not copied
     // here is erased and the row reads as never-moved forever after. Same
@@ -845,7 +980,7 @@ async function loadDeps() {
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
-                   coverageCensus, laneKey,
+                   coverageCensus, laneKey, countRefreshStamps, stampIntegrity,
                    // Exported so the stamp-carry rules above can be asserted directly.
                    // They were previously reachable only through a live SFTP pull, which
                    // is why a wholesale assignment could erase 1,739 stamps a night
@@ -905,6 +1040,12 @@ if (require.main === module) (async () => {
   const parts = partsModule.PARTS;
   log(`Loaded ${parts.length} products`);
   
+  // Counted BEFORE anything mutates the catalog: half of the stamp-integrity
+  // check below is a before/after pair, and "before" has to mean before the
+  // merchant loop, not before the census. See stampIntegrity().
+  const refreshStampsAtLoad = countRefreshStamps(parts);
+  log(`Re-pricer stamps on deals.newegg at load: ${refreshStampsAtLoad}`);
+
   const idx = buildCatalogIndex(parts);
   log(`Indexed: ${idx.byUPC.size} UPCs, ${idx.byMPN.size} MPNs, ${idx.bySKU.size} existing Newegg SKUs`);
 
@@ -1059,6 +1200,30 @@ if (require.main === module) (async () => {
     // above and for the same reason: on a quiet day the manifest skips the feed,
     // so "the feed did not offer this row" would mean "we did not look", and a
     // coverage number built on that is worse than none.
+    //
+    // ...and gated a second time on the evidence the split itself reads. The
+    // gate above asks whether we looked at the feed; this one asks whether the
+    // re-pricer's side of the comparison survived to be counted. A census with
+    // erased stamps is not a weaker measurement, it is a WRONG one, and biased
+    // toward the cheaper conclusion — see stampIntegrity() for why the error
+    // only ever points one way.
+    //
+    // One count, used as both halves: "how many stamps survive this run" and
+    // "how many stamps exist at all" are the same question asked of the same
+    // catalog at the same moment.
+    const refreshStampsNow = countRefreshStamps(parts);
+    const integrity = stampIntegrity({
+      before: refreshStampsAtLoad,
+      after: refreshStampsNow,
+      stamped: refreshStampsNow,
+      droppedOnReplacement: stampsDroppedOnReplacement,
+      reachable: parts.reduce((n, p) => {
+        const d = p && p.deals && p.deals.newegg;
+        return n + (d && typeof d === 'object' && NEG.CAT_FILTER[p.c] ? 1 : 0);
+      }, 0),
+    });
+    summary.totals.stampIntegrity = integrity;
+
     const census = coverageCensus(parts, feedOffered);
     const pct = (n, d) => (d ? (100 * n / d).toFixed(1) : '0.0') + '%';
     log('\nCoverage census — deals.newegg (READ-ONLY, nothing stamped here)');
@@ -1068,13 +1233,39 @@ if (require.main === module) (async () => {
     log(`     of which this feed also offered ... ${census.repricedOffered}  (${pct(census.repricedOffered, census.repriced)})`);
     log(`  NEVER reached by the re-pricer ....... ${census.neverRepriced}`);
     log(`     of which this feed offered ........ ${census.neverRepricedOffered}  (${pct(census.neverRepricedOffered, census.neverRepriced)})  <- rescuable`);
-    log('  A high rescuable share means the tail can be confirmed from this feed.');
-    log('  A low one means it needs a lookup keyed on the itemNumber we store.');
-    summary.totals.coverageCensus = census;
+
+    // The counts above are printed either way — they are what a human needs to
+    // SEE the damage. The share is not, because the share is the thing that
+    // gets acted on.
+    if (integrity.intact) {
+      log(`  rescuable share ...................... ${pct(census.neverRepricedOffered, census.neverRepriced)}`);
+      log('  A high rescuable share means the tail can be confirmed from this feed.');
+      log('  A low one means it needs a lookup keyed on the itemNumber we store.');
+      // Disclosed even when clean: these rows were reached by the re-pricer and
+      // are counted on the never-repriced side anyway, so the share is high by
+      // this much. Exact and stated, rather than silently baked in.
+      if (integrity.droppedOnReplacement > 0) {
+        log(`  CAVEAT: ${integrity.droppedOnReplacement} row(s) lost a stamp to a listing swap this run and`);
+        log('  are counted as never-repriced. The share above is overstated by that many rows.');
+      }
+      summary.totals.coverageCensus = census;
+    } else {
+      log('\n  ** CENSUS VOID — the refreshedAt evidence this split reads is not intact **');
+      for (const r of integrity.reasons) log(`     - ${r}`);
+      log(`     stamped ${integrity.stamped} of ${integrity.reachable} re-pricer-reachable rows ` +
+          `(${(100 * integrity.stampedShare).toFixed(1)}%)`);
+      log('     The rescuable share is NOT reported. Rows whose stamp was destroyed are');
+      log('     rows the feed offered, so they inflate it toward "the feed covers the');
+      log('     tail" — the cheap conclusion — and a number that is wrong in a known');
+      log('     direction is worse than no number. Let a full refresh-newegg-prices run');
+      log('     land, then read the next nightly.');
+      summary.totals.coverageCensus = null;
+    }
   } else {
     log('\nAbsence sweep SKIPPED — no full Newegg feed parsed this run (nothing was looked at, so nothing is absent)');
     log('Coverage census SKIPPED for the same reason — an unlooked-at row is not an uncovered one');
     summary.totals.coverageCensus = null;
+    summary.totals.stampIntegrity = null;
   }
   summary.totals.conditionLanesConfirmed = confirmedLanes.size;
   summary.totals.conditionLanesUnconfirmed = unconfirmed;
