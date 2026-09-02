@@ -427,7 +427,83 @@ function feedHealth(stats, processed) {
   };
 }
 
-module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher };
+// ── WHAT ONE COMPLETED RUN LEAVES BEHIND ─────────────────────────────────────
+//
+// sftp-ingest.cjs's stampIntegrity() refuses to publish the coverage census
+// when almost none of the re-pricer-reachable rows carry a refreshedAt stamp —
+// a catalog in that state has had its evidence eaten, not its tail unreached.
+// Deciding "almost none" needs a number, and that number is a fact about THIS
+// script: how much of what it can address does a completed run actually stamp?
+//
+// It was a hand-picked 1/3 over there, with a comment saying so, because the
+// figure lives here and was thrown away — written to newegg-refresh-summary.json,
+// uploaded as an artifact, then `rm -f`'d by the workflow. This commits it, for
+// the same reason #84 derives its unreachable lanes from CAT_FILTER rather than
+// listing categories: a judgment constant that nothing recomputes is how the
+// price ceilings went stale.
+//
+// A HIGH-WATER MARK, NOT THE LAST RUN, and that asymmetry is the whole design.
+// If the floor tracked the most recent run, a run that reached fewer rows would
+// LOWER the floor, and the gate would go slack exactly when the re-pricer is in
+// trouble — least sensitive at the moment it matters most. A maximum is
+// monotone: degradation can only make the census MORE likely to withhold a
+// number, never less. The cost is the opposite error — a genuine, permanent
+// drop in reach leaves the floor too high and the census over-refuses — and
+// that is the direction this whole subsystem already chooses, out loud: no
+// number rather than a confident wrong one.
+//
+// It is also self-consistent with the commit that carries it. This file is
+// staged alongside src/data/parts/ in the same commit as the stamps it
+// describes, so a push that fails takes both with it. The mark cannot come to
+// claim a reach whose stamps never reached the catalog the census reads.
+//
+// WHAT IS EXCLUDED, and why each one would corrupt the mark:
+//   --limit=N   the ratio is over a small subsample; one lucky draw sets a
+//               spuriously high mark that then over-refuses forever.
+//   --dry-run   probes the feed and writes no stamps. The mark describes what a
+//               run LEAVES IN THE CATALOG, so a run that leaves nothing has not
+//               demonstrated anything about it.
+//   --parts=    a fixture catalog is not the population the census counts.
+//
+// COUNT WHAT THE CENSUS READS, NOT WHAT THIS RUN MATCHED. The numerator is
+// `stats.stamped`, incremented at each of the three sites that actually write
+// refreshedAt — NOT `stats.ok`. Those differ by exactly the price-suspect rows:
+// a suspect price is withheld and the branch `continue`s before any stamp, so
+// on run 33671549392 stats.ok was 2094 while only 2031 rows carried a stamp
+// afterwards. Using the match count would have claimed a reach 63 rows higher
+// than the catalog can show, and the floor derived from it would then void a
+// census over stamps that were never written in the first place.
+const REACH_FILE = path.join(__dirname, 'src', 'data', 'newegg-reach.json');
+
+function recordReach({ stamped, lookupable, dryRun, limited, fixture, counterSound = true,
+                      file = REACH_FILE }) {
+  if (!counterSound) return { recorded: false, why: 'stamp counter drifted from priced+unchanged — the numerator is not trustworthy' };
+  if (dryRun) return { recorded: false, why: 'dry run — no stamps written, nothing demonstrated' };
+  if (limited) return { recorded: false, why: '--limit run — reach over a subsample is not the catalog figure' };
+  if (fixture) return { recorded: false, why: '--parts= fixture — not the population the census counts' };
+  if (!lookupable) return { recorded: false, why: 'no lookupable rows — the ratio is undefined' };
+
+  const reach = stamped / lookupable;
+  let prev = null;
+  try { prev = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* first observation */ }
+  const prevReach = prev && Number.isFinite(prev.reach) ? prev.reach : -Infinity;
+  if (reach <= prevReach) {
+    return { recorded: false, reach, previous: prevReach,
+             why: `below the standing mark (${(100 * reach).toFixed(1)}% <= ${(100 * prevReach).toFixed(1)}%) — the mark only moves up` };
+  }
+
+  const next = {
+    note: (prev && prev.note) || 'High-water mark of what one completed refresh-newegg-prices run leaves behind.',
+    reach: Number(reach.toFixed(4)),
+    stamped, lookupable,
+    observedAt: new Date().toISOString(),
+    run: process.env.GITHUB_RUN_ID || 'local',
+  };
+  fs.writeFileSync(file, JSON.stringify(next, null, 2) + '\n');
+  return { recorded: true, reach, previous: prevReach === -Infinity ? null : prevReach };
+}
+
+module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher, recordReach, REACH_FILE };
 
 if (require.main !== module) return;
 
@@ -445,7 +521,7 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -668,6 +744,7 @@ if (require.main !== module) return;
           ? { migratedAt: new Date().toISOString(), migratedFrom: sku }
           : { rematchedAt: new Date().toISOString(), rematchedFrom: sku }),
       };
+      stats.stamped++;
       if (kind === 'migrate') stats.migrated++; else stats.rematched++;
       stats.priced++;
       changes.push({
@@ -682,11 +759,13 @@ if (require.main !== module) return;
       if (newSale) d.saleprice = newSale; else delete d.saleprice;
       d.linkurl = newLink;
       d.refreshedAt = new Date().toISOString();
+      stats.stamped++;
       if (priceMoved) d.priceLastMovedAt = movedStamp;
       stats.priced++;
       changes.push({ name: p.n, change: 'price-update', from: oldPrice, to: item.price, sku });
     } else {
       d.refreshedAt = new Date().toISOString();
+      stats.stamped++;
       stats.unchanged++;
     }
 
@@ -799,6 +878,33 @@ if (require.main !== module) return;
   console.log('');
   for (const line of movementReport(priceMovement)) console.log(line);
 
+  // Drift guard on the counter above. Every branch that writes refreshedAt also
+  // lands in exactly one of priced/unchanged, so these must agree; if a fourth
+  // outcome is ever added and forgets stats.stamped++, the mark would quietly
+  // start understating reach and lowering the census floor. Loud, not silent.
+  const stampCounterSound = stats.stamped === stats.priced + stats.unchanged;
+  if (!stampCounterSound) {
+    console.log(`\n!! STAMP COUNTER DRIFT: stats.stamped=${stats.stamped} but priced+unchanged=${stats.priced + stats.unchanged}.`);
+    console.log('   A refreshedAt write site is missing stats.stamped++. The reach mark is NOT recorded.');
+  }
+
+  // Commit the one figure sftp-ingest.cjs needs to stop guessing. See
+  // recordReach() for why this is a high-water mark and what is excluded.
+  const reachRecord = recordReach({
+    stamped: stats.stamped, lookupable,
+    dryRun: DRY_RUN, limited: Number.isFinite(LIMIT), fixture: USING_FIXTURE,
+    counterSound: stampCounterSound,
+  });
+  if (reachRecord.recorded) {
+    console.log(`\nRe-pricer reach:  ${(100 * reachRecord.reach).toFixed(1)}%  (${stats.stamped}/${lookupable} reachable rows stamped)` +
+      (reachRecord.previous === null
+        ? '  <- first committed observation'
+        : `  <- NEW HIGH, was ${(100 * reachRecord.previous).toFixed(1)}%`));
+    console.log(`  -> ${path.relative(__dirname, REACH_FILE)}; the census stamp floor derives from half of it.`);
+  } else {
+    console.log(`\nRe-pricer reach:  not recorded — ${reachRecord.why}`);
+  }
+
   const report = {
     timestamp: new Date().toISOString(),
     dryRun: DRY_RUN,
@@ -820,6 +926,10 @@ if (require.main !== module) return;
     // The denominator the rate is over, and the rows held out of it. Both are
     // in the artifact so the figure can be recomputed rather than trusted.
     lookupable,
+    // The numerator of the committed reach mark. `ok` counts matches; this
+    // counts rows that actually came out carrying refreshedAt, and the two
+    // differ by priceSuspect. See recordReach().
+    stamped: stats.stamped,
     unmappable: stats.noCatMapping,
     ourDecisions,
     guardRejected: stats.guardRejected,

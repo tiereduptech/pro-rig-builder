@@ -222,7 +222,11 @@ jobs:
             REMOVED=$(node -e "console.log(require('./newegg-refresh-summary.json').removed)")
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add src/data/parts.js src/data/parts/ src/data/price-movement-watch.json
+            # newegg-reach.json is the figure sftp-ingest.cjs derives the census
+            # stamp floor from, and it is staged HERE, in the same commit as the
+            # stamps it describes, deliberately: a push that fails takes both, so
+            # the mark can never claim a reach whose stamps are not in the tree.
+            git add src/data/parts.js src/data/parts/ src/data/price-movement-watch.json src/data/newegg-reach.json
             if git diff --cached --quiet; then
               echo "No changes"
             else
