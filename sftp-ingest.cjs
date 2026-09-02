@@ -639,7 +639,73 @@ function coverageCensus(parts, offered) {
 // answer is no. This is the same question one level down — "is the other side
 // of the split still intact?" — and it has to have the same answer shape: no
 // number at all, rather than a confident wrong one.
-const MIN_STAMPED_SHARE_OF_REACHABLE = 1 / 3;
+
+// ── THE FLOOR, DERIVED ───────────────────────────────────────────────────────
+//
+// The floor the plausibility check uses, DERIVED from the re-pricer's own
+// measured reach rather than picked. refresh-newegg-prices.cjs commits one
+// figure to src/data/newegg-reach.json — the high-water share of reachable rows
+// a completed run leaves stamped — and the floor is HALF of it.
+//
+// WHY HALF. The floor has to separate two states: "a completed run is in this
+// catalog" and "the evidence has been eaten". The first leaves `reach` of the
+// reachable rows stamped; the second leaves the residue. Half of reach says a
+// catalog holding less than half of what a single run writes cannot contain a
+// completed run — which is the claim the check actually wants to make, stated
+// in terms of the run rather than in terms of a number someone liked.
+//
+// It also lands almost exactly where the hand-picked constant was. The seeded
+// observation is 2,031 of 3,104 (65.4%), so the floor is 32.7% against the old
+// 33.3%. That agreement is the point: the constant was a good guess, and it has
+// stopped being a guess. It now moves on its own — add GPU to CAT_FILTER and
+// both `reachable` here and `lookupable` there grow from the same rule, and the
+// floor follows the behaviour instead of being left behind by it.
+//
+// The numerator is the re-pricer's `stats.stamped`, not its `stats.ok`. They
+// differ by the price-suspect rows, which match and then withhold the write —
+// 63 of them on the seeded run. This side counts rows carrying refreshedAt, so
+// the other side has to measure the same thing or the floor is calibrated
+// against a population the census cannot see.
+//
+// FALLBACK. Until a run has committed an observation the file is absent, and
+// the floor is the historical 1/3 — the same number, so the transition changes
+// no verdict. A malformed or out-of-range value falls back the same way rather
+// than letting a corrupt file quietly relax the gate. Both cases say which one
+// they used in the void message, because a floor whose provenance is invisible
+// is the thing this change exists to remove.
+const HISTORICAL_MIN_STAMPED_SHARE = 1 / 3;
+const REACH_FILE = path.join(__dirname, 'src', 'data', 'newegg-reach.json');
+
+/**
+ * The committed reach observation, or null when there is not a usable one.
+ * Exported so the derivation can be tested against a fixture file.
+ */
+function loadNeweggReach(file = REACH_FILE) {
+  let raw;
+  try { raw = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { return null; }
+  // A reach of 0 is not an observation of a working re-pricer, and >1 is not a
+  // share at all. Either means the file is wrong, and a wrong file must not be
+  // able to move this floor.
+  if (!raw || !Number.isFinite(raw.reach) || raw.reach <= 0 || raw.reach > 1) return null;
+  return raw;
+}
+
+/**
+ * floor = reach / 2, with provenance so the message can say where it came from.
+ */
+function stampedShareFloor(reach = loadNeweggReach()) {
+  if (!reach) {
+    return {
+      value: HISTORICAL_MIN_STAMPED_SHARE, derived: false, reach: null, observedAt: null,
+      source: 'no committed reach observation (src/data/newegg-reach.json) — historical constant',
+    };
+  }
+  return {
+    value: reach.reach / 2, derived: true, reach: reach.reach, observedAt: reach.observedAt,
+    source: `half the ${(100 * reach.reach).toFixed(1)}% reach the re-pricer demonstrated ` +
+            `(${reach.stamped}/${reach.lookupable} on ${String(reach.observedAt).slice(0, 10)})`,
+  };
+}
 
 /**
  * Count deals.newegg rows carrying a re-pricer stamp. Pure and exported so the
@@ -696,22 +762,28 @@ function countRefreshStamps(parts) {
  * A row the re-pricer structurally cannot address is not evidence of anything
  * when it has no stamp, and must not sit in this denominator.
  *
- * MIN_STAMPED_SHARE_OF_REACHABLE is the one judgment call here and is
- * deliberately loose. Healthy is ~68% (2,102 of 3,104 reachable rows stamped);
- * the erased tree was ~12%. A third sits far below anything a working
- * re-pricer produces and far above the damage, so it fires on a collapse and
- * not on an ordinary bad night. It is a plausibility floor, NOT a staleness
- * policy — it holds no opinion about how old a stamp may be, and the census
- * still refuses to own that question. It is a constant only because the
- * re-pricer's own reach is not readable here: it writes that number to
- * newegg-refresh-summary.json, which the workflow uploads as an artifact and
- * then deletes. Commit that one figure and this floor can be derived from it.
+ * The floor is DERIVED the same way, and from the same kind of source: half of
+ * the reach refresh-newegg-prices.cjs has demonstrated, committed to
+ * src/data/newegg-reach.json by the run that demonstrated it. See
+ * stampedShareFloor() for why half, and recordReach() over there for why it is
+ * a high-water mark. Healthy is ~65% (2,031 of 3,104 reachable rows stamped);
+ * the erased tree was ~12%; the derived floor sits at ~33%, far below anything
+ * a working re-pricer produces and far above the damage, so it fires on a
+ * collapse and not on an ordinary bad night.
+ *
+ * It remains a plausibility floor, NOT a staleness policy — it holds no opinion
+ * about how old a stamp may be, and the census still refuses to own that
+ * question. Deriving it changes what it is calibrated against, not what it
+ * claims: `floor` is injectable so a caller can state one explicitly, and the
+ * verdict carries the provenance so a void is readable without going and
+ * finding out where the number came from.
  */
-function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacement = 0 }) {
+function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacement = 0,
+                          floor = stampedShareFloor() }) {
   const lostThisRun = Math.max(0, before - after);
   const unexplainedLoss = lostThisRun - droppedOnReplacement;
   const stampedShare = reachable > 0 ? stamped / reachable : 0;
-  const collapsed = reachable > 0 && stampedShare < MIN_STAMPED_SHARE_OF_REACHABLE;
+  const collapsed = reachable > 0 && stampedShare < floor.value;
 
   const reasons = [];
   if (unexplainedLoss > 0) {
@@ -723,7 +795,7 @@ function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacemen
   if (collapsed) {
     reasons.push(
       `only ${stamped} of ${reachable} re-pricer-reachable rows carry refreshedAt ` +
-      `(${(100 * stampedShare).toFixed(1)}%, floor ${(100 * MIN_STAMPED_SHARE_OF_REACHABLE).toFixed(1)}%) — ` +
+      `(${(100 * stampedShare).toFixed(1)}%, floor ${(100 * floor.value).toFixed(1)}% = ${floor.source}) — ` +
       `no completed re-pricer run is represented in this catalog`);
   }
 
@@ -731,6 +803,9 @@ function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacemen
     intact: reasons.length === 0,
     lostThisRun, droppedOnReplacement, unexplainedLoss,
     stamped, reachable, stampedShare, reasons,
+    // Carried so a void states the floor it was judged against and where that
+    // floor came from, rather than leaving the reader to go looking.
+    floor: floor.value, floorSource: floor.source, floorDerived: floor.derived,
   };
 }
 
@@ -981,6 +1056,7 @@ module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, 
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
                    coverageCensus, laneKey, countRefreshStamps, stampIntegrity,
+                   loadNeweggReach, stampedShareFloor, REACH_FILE,
                    // Exported so the stamp-carry rules above can be asserted directly.
                    // They were previously reachable only through a live SFTP pull, which
                    // is why a wholesale assignment could erase 1,739 stamps a night
@@ -1253,7 +1329,8 @@ if (require.main === module) (async () => {
       log('\n  ** CENSUS VOID — the refreshedAt evidence this split reads is not intact **');
       for (const r of integrity.reasons) log(`     - ${r}`);
       log(`     stamped ${integrity.stamped} of ${integrity.reachable} re-pricer-reachable rows ` +
-          `(${(100 * integrity.stampedShare).toFixed(1)}%)`);
+          `(${(100 * integrity.stampedShare).toFixed(1)}%, floor ${(100 * integrity.floor).toFixed(1)}%)`);
+      log(`     floor: ${integrity.floorSource}`);
       log('     The rescuable share is NOT reported. Rows whose stamp was destroyed are');
       log('     rows the feed offered, so they inflate it toward "the feed covers the');
       log('     tail" — the cheap conclusion — and a number that is wrong in a known');

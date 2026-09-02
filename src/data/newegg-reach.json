@@ -1,0 +1,9 @@
+{
+  "note": "High-water mark of what one completed refresh-newegg-prices run leaves behind: the share of re-pricer-reachable deals.newegg rows it leaves carrying refreshedAt. Written by refresh-newegg-prices.cjs on full, non-dry runs and only ever upward. Read by sftp-ingest.cjs, which derives the census's stamp-plausibility floor from it (floor = reach / 2). Do not hand-edit: a lowered mark relaxes that gate.",
+  "reach": 0.6543,
+  "stamped": 2031,
+  "lookupable": 3104,
+  "observedAt": "2026-09-02T20:18:32Z",
+  "run": "33671549392",
+  "seededFrom": "The first observation predates the writer below it. Run 33671549392 measured 2094 matched of 3104 lookupable on main (ba9770fa90c), of which 63 were price-suspect and returned before any stamp was written, leaving 2031 rows stamped. The run then FAILED to push, because PR #86 landed on main mid-run and the fast-forward was rejected; the measurement is unaffected, since reach is counted when the merchant loop ends, long before the commit step. Transcribed from the run log rather than invented, and the next full run that pushes overwrites this file through the normal path."
+}

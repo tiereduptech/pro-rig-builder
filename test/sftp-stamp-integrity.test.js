@@ -29,7 +29,20 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 
 const require = createRequire(import.meta.url);
-const { countRefreshStamps, stampIntegrity } = require('../sftp-ingest.cjs');
+const { countRefreshStamps, stampIntegrity, loadNeweggReach, stampedShareFloor } =
+  require('../sftp-ingest.cjs');
+
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+
+// A reach file on disk, so the derivation is exercised through the same read
+// the ingest performs rather than through an injected object.
+function reachFile(body) {
+  const f = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'reach-')), 'newegg-reach.json');
+  fs.writeFileSync(f, typeof body === 'string' ? body : JSON.stringify(body));
+  return f;
+}
 
 const PRICED = () => ({ itemNumber: 'N82E1', price: 100 });
 const REPRICED = () => ({ ...PRICED(), refreshedAt: '2026-09-02T09:20:00.000Z' });
@@ -148,4 +161,80 @@ test('the verdict carries the numbers a human needs to act on it', () => {
   assert.equal(v.stamped, 386);
   assert.equal(v.reachable, 3104);
   assert.ok(Math.abs(v.stampedShare - 386 / 3104) < 1e-9);
+});
+
+// ── THE FLOOR IS DERIVED, NOT PICKED ─────────────────────────────────────────
+//
+// The plausibility floor used to be a literal 1/3 whose own comment admitted it
+// was a judgment call, and said exactly why it had to be one: the re-pricer's
+// reach was written to an artifact the workflow then deleted. Committing that
+// one figure is what these cover — the floor now moves when the re-pricer's
+// behaviour moves, and says so when it cannot.
+
+test('the floor is half the reach the re-pricer demonstrated', () => {
+  const f = stampedShareFloor({ reach: 0.6543, stamped: 2031, lookupable: 3104, observedAt: '2026-09-02T20:18:32Z' });
+  assert.equal(f.derived, true);
+  assert.ok(Math.abs(f.value - 0.32715) < 1e-9);
+});
+
+test('DERIVED LANDS WHERE THE CONSTANT WAS — the guess was good, and is no longer a guess', () => {
+  // The whole justification for changing this is that it does not change a
+  // verdict today: 32.72% against the old 33.33%. If these diverged materially
+  // the derivation would be relitigating the threshold under cover of a
+  // refactor, which is the thing that must not happen silently.
+  const derived = stampedShareFloor({ reach: 0.6543, stamped: 2031, lookupable: 3104, observedAt: 'x' }).value;
+  assert.ok(Math.abs(derived - 1 / 3) < 0.01, `derived ${derived} must stay within a point of the historical 1/3`);
+});
+
+test('THE FLOOR TRACKS THE RE-PRICER: better reach raises it', () => {
+  // Add GPU to CAT_FILTER and both populations grow from the same rule. The
+  // floor is supposed to follow, which is what a constant could never do.
+  const before = stampedShareFloor({ reach: 0.6543, stamped: 2031, lookupable: 3104, observedAt: 'x' }).value;
+  const after = stampedShareFloor({ reach: 0.90, stamped: 2800, lookupable: 3111, observedAt: 'y' }).value;
+  assert.ok(after > before);
+  assert.equal(after, 0.45);
+});
+
+test('NO OBSERVATION YET: falls back to the historical constant and says so', () => {
+  const f = stampedShareFloor(null);
+  assert.equal(f.derived, false);
+  assert.equal(f.value, 1 / 3);
+  assert.match(f.source, /historical constant/);
+});
+
+test('a corrupt or out-of-range file cannot relax the gate', () => {
+  // A file that is wrong must fall back, not be believed. Zero and >1 are not
+  // shares; a lowered floor is the one failure mode that makes the census
+  // publish a number it should have withheld.
+  assert.equal(loadNeweggReach(reachFile('{ not json')), null);
+  assert.equal(loadNeweggReach(reachFile({ reach: 0 })), null);
+  assert.equal(loadNeweggReach(reachFile({ reach: 1.4 })), null);
+  assert.equal(loadNeweggReach(reachFile({ ok: 1, lookupable: 2 })), null);
+  assert.equal(loadNeweggReach(reachFile('/nonexistent/newegg-reach.json')), null);
+});
+
+test('the committed observation on disk is usable and in range', () => {
+  // Guards the seeded file itself: a hand-edit that breaks it would otherwise
+  // only show up as the gate silently reverting to the constant.
+  const r = loadNeweggReach();
+  assert.ok(r, 'src/data/newegg-reach.json must parse and be in range');
+  assert.ok(Math.abs(r.reach - r.stamped / r.lookupable) < 5e-4, 'reach must match stamped/lookupable');
+});
+
+test('the verdict states the floor it was judged against and where it came from', () => {
+  const v = stampIntegrity({
+    before: 386, after: 386, stamped: 386, reachable: 3104,
+    floor: stampedShareFloor({ reach: 0.6543, stamped: 2031, lookupable: 3104, observedAt: '2026-09-02T20:18:32Z' }),
+  });
+  assert.equal(v.intact, false);
+  assert.equal(v.floorDerived, true);
+  assert.match(v.reasons.join(' '), /floor 32\.7% = half the 65\.4% reach/);
+  assert.match(v.reasons.join(' '), /2031\/3104 on 2026-09-02/);
+});
+
+test('an injected floor governs the verdict, both ways', () => {
+  // 38.7% stamped: intact under the derived floor, void under a stricter one.
+  const args = { before: 1200, after: 1200, stamped: 1200, reachable: 3104 };
+  assert.equal(stampIntegrity({ ...args, floor: stampedShareFloor(null) }).intact, true);
+  assert.equal(stampIntegrity({ ...args, floor: { value: 0.5, source: 'test', derived: true } }).intact, false);
 });
