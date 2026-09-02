@@ -106,3 +106,75 @@ test('an unmappable row can never satisfy the absence condition', async () => {
   assert.ok(!(r.reason === 'no_match' && r.rawCount >= MIN_HEALTHY_CANDIDATES),
     'no_cat_mapping must never read as confirmed absence');
 });
+
+// =============================================================================
+//  A BREAKER THAT IS ALWAYS TRIPPED IS NOT A BREAKER
+//
+//  The rate ran 23.0-23.2% against a 20% threshold on every run measured
+//  (33607979228, 33547739235, 33490323017, 33440406391), so the breaker tripped
+//  every single time it was evaluated. It could not distinguish a sick feed from
+//  a healthy one, which is the only thing it is for.
+//
+//  The cause was the exclusion rule being applied to ONE outcome instead of to
+//  every outcome that meets it. 'variant_rejected' was subtracted because the
+//  feed answered and we declined what it offered. 'guard_rejected' (208 rows)
+//  and 'weak_match_blocked' (32) are the same thing — newegg-match.js says so
+//  outright: "A guard reject is ALSO evidence of presence, not absence."
+//
+//  The threshold is untouched. Charging our own matcher's strictness to Newegg's
+//  uptime is what moved the number.
+// =============================================================================
+
+test('every decision of OURS leaves the numerator, not just variant rejections', () => {
+  const v = feedHealth(stats({ lookupFailed: 300, variantRejected: 100, guardRejected: 100, weakMatchBlocked: 100 }), 1000);
+  assert.equal(v.feedFailures, 0, 'three classes of our own decision, zero feed failures');
+  assert.equal(v.ourDecisions, 300);
+  assert.equal(v.lookupable, 1000, 'all three stay in the denominator — the feed answered');
+});
+
+test('reproduces run 33607979228 and clears the breaker on consistency alone', () => {
+  const r = feedHealth(stats({
+    lookupFailed: 1066, variantRejected: 268, guardRejected: 208,
+    weakMatchBlocked: 32, noCatMapping: 85,
+  }), 3189);
+  assert.equal(r.lookupable, 3104, '3189 rows less the 85 never queried');
+  // no_results 318 + no_match 19 + downgrade_blocked 136
+  assert.equal(r.feedFailures, 473);
+  assert.ok(Math.abs(r.failureRate - 0.1524) < 0.001, `got ${r.failureRate}`);
+  assert.ok(r.failureRate < 0.20, 'under the untouched 20% breaker, with headroom');
+});
+
+test('the OLD arithmetic on the same run tripped the breaker', () => {
+  // Pinning what was actually wrong, so a regression reads as a regression.
+  const old = (s, processed) => {
+    const lookupable = processed - s.noCatMapping;
+    return (s.lookupFailed - s.variantRejected - s.noCatMapping) / lookupable;
+  };
+  const rate = old({ lookupFailed: 1066, variantRejected: 268, noCatMapping: 85 }, 3189);
+  assert.ok(Math.abs(rate - 0.2297) < 0.001, `got ${rate}`);
+  assert.ok(rate > 0.20, 'this is the 23.0% that tripped on every run');
+});
+
+test('downgrade_blocked deliberately STAYS a feed failure', () => {
+  // The distinction that makes the rule a rule rather than "subtract until it
+  // passes": these rows are the feed failing to surface an official listing we
+  // already know exists. That is the defect the breaker watches for.
+  const r = feedHealth(stats({ lookupFailed: 136 }), 1000);
+  assert.equal(r.feedFailures, 136, 'not excluded — nothing here subtracts it');
+});
+
+test('a genuinely sick feed still trips the breaker', () => {
+  // The direction that matters. Consistency must not have bought the pass by
+  // making the breaker unable to fire.
+  const r = feedHealth(stats({ lookupFailed: 900, variantRejected: 50, guardRejected: 50 }), 1000);
+  assert.ok(r.failureRate > 0.20, `800/1000 unanswered must still trip; got ${r.failureRate}`);
+});
+
+test('a caller predating the new counters does not silently pass the breaker', () => {
+  // An absent field must read as 0, not NaN — NaN > 0.20 is false, which would
+  // disable the breaker rather than trip it.
+  const r = feedHealth({ lookupFailed: 500, variantRejected: 0, noCatMapping: 0 }, 1000);
+  assert.equal(r.feedFailures, 500);
+  assert.ok(!Number.isNaN(r.failureRate));
+  assert.ok(r.failureRate > 0.20);
+});
