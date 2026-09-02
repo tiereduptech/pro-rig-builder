@@ -66,9 +66,60 @@ name: Retailer freshness gate
 #   prerender 06:00, price-history 07:00, verify-catalog 08/09/10/11,
 #   sftp-ingest 12:00 + up to 3h).
 
+# =============================================================================
+#  WHEN THIS SAMPLES, AND WHY IT IS NOT A CLOCK TIME
+#
+#  This gate reads committed state on main, so its verdict depends on WHERE in
+#  the daily pipeline it samples. That ordering used to be expressed as a clock
+#  time — '0 13 * * *', one hour after sftp-ingest's '0 12 * * *' — and a clock
+#  time cannot express ordering on GitHub Actions.
+#
+#  Measured lag between the scheduled slot and the actual start:
+#
+#    workflow                due    actual span        min    median   max
+#    retailer-freshness    13:00    16:54 - 19:18     3.9h     4.1h    6.3h
+#    sftp-ingest           12:00    12:14 - 21:33     0.2h     3.5h    9.6h
+#
+#  A one-hour nominal gap orders nothing when the two queue delays vary
+#  independently by up to 9.4 hours. The order was never guaranteed; it held
+#  while delays were small (08-20 to 08-26, ingest at ~12:20) and inverted the
+#  moment they were not.
+#
+#  It inverted into the worst possible window. sftp-ingest was erasing
+#  refresh-newegg-prices' stamps on every run, so deals.newegg looked dead for
+#  roughly four hours a day and healthy for the other twenty — and this gate
+#  sampled inside that window on 5 consecutive days, reporting a failure that
+#  the same catalog did not have six hours earlier or six hours later. The
+#  erasure is fixed separately; the reason it stayed invisible for five days is
+#  this trigger, and that is fixed here.
+#
+#  So the ordering is now STATED rather than implied by arithmetic on two
+#  crons: workflow_run fires this gate when a writer it cites has finished, so
+#  it reads settled state by construction. The cron stays as the backstop that
+#  fires when NO writer runs at all — the absence case a workflow_run trigger
+#  can never cover, and the one that froze Best Buy for four months.
+#
+#  The watched list is not hand-maintained. It is exactly the set of workflows
+#  the CADENCE table cites, and test/retailer-freshness.test.js asserts the two
+#  agree — so a retailer added to CADENCE with a new cite cannot be left
+#  unwatched here, which is the same "no transcribed schedules" rule the gate
+#  already applies to everything except itself.
+# =============================================================================
 on:
   schedule:
+    # BACKSTOP ONLY. Not an ordering claim — see above. Its job is to fire on a
+    # day when no writer runs, which is precisely the failure this gate exists
+    # for and the one workflow_run cannot see.
     - cron: '0 13 * * *'
+  workflow_run:
+    # Every workflow named in the CADENCE table, asserted by the test suite.
+    workflows:
+      - Catalog Verification          # amazon
+      - Refresh Best Buy Prices       # bestbuy
+      - Refresh MSI Prices            # msi
+      - Refresh Newegg Prices         # newegg
+      - SFTP Ingest Newegg Catalog    # newegg_openbox
+    types: [completed]
   workflow_dispatch: {}
   pull_request:
     paths:
