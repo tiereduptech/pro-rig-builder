@@ -153,3 +153,121 @@ test('condition detection maps feed names onto those lane keys', () => {
     if (cond !== 'new') assert.ok(CONDITION_LANES.includes(lane), lane);
   }
 });
+
+// =============================================================================
+//  STAMP CARRY-OVER
+//
+//  applyMatchToPart() assigns a freshly-built object over part.deals[fieldKey],
+//  so every field it does not name is erased. For the condition lanes that is
+//  harmless — this job is their only writer. For deals.newegg it destroyed the
+//  re-pricer's work nightly: 1,739 refreshedAt, 102 priceLastMovedAt, 27
+//  migratedAt and 27 rematchedAt gone in the single 2026-09-02 ingest
+//  (6147e809174 -> 14c2aae18ba).
+//
+//  The inversion is what made it invisible. matchedAt IS carried, deliberately,
+//  so a row kept its 15-day-old binding stamp and lost the 0-day-old
+//  confirmation refresh-newegg-prices had written hours earlier — and the
+//  freshness gate read a 15d median over a catalog that had measured 0d and
+//  PASSED six hours before.
+// =============================================================================
+
+const { applyMatchToPart, loadDeps } = require('../sftp-ingest.cjs');
+
+const TODAY = new Date().toISOString().slice(0, 10);
+
+test('load the ESM deps applyMatchToPart reaches through', async () => {
+  await loadDeps();
+});
+
+const rec = (over = {}) => ({
+  product_name: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G',
+  sku: 'RK-1', newegg_item_number: OFFICIAL,
+  retail_price: '599.99', sale_price: '',
+  product_url: 'https://newegg.com/p/1', image_url: 'https://img/1.jpg',
+  availability: 'in-stock', ...over,
+});
+
+// A GPU: no `cap`, so the capacity guard passes, and peer-free so neweggSanity
+// has nothing to contradict. Mirrors the 68 real GPU rows, all sftp-matched.
+const part = (deal, over = {}) => ({
+  id: 'p1', c: 'GPU', n: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G',
+  deals: { newegg: deal }, ...over,
+});
+
+const STAMPED = {
+  itemNumber: OFFICIAL, sku: 'RK-1', price: 599.99, inStock: true,
+  matchedAt: '2026-08-18T14:17:46.759Z',
+  refreshedAt: '2026-09-02T09:20:00.000Z',
+  priceLastMovedAt: '2026-08-30',
+  migratedAt: '2026-08-29T00:00:00.000Z', migratedFrom: 'OLD-SKU',
+};
+
+test('THE BUG: repricing the listing we hold does not erase refreshedAt', () => {
+  const p = part({ ...STAMPED });
+  assert.equal(applyMatchToPart(p, rec({ retail_price: '649.99' }), { method: 'upc', confidence: 0.95 }), true);
+  assert.equal(p.deals.newegg.price, 649.99, 'the reprice must still land');
+  assert.equal(p.deals.newegg.refreshedAt, STAMPED.refreshedAt,
+    'the re-pricer confirmed this row hours ago; this job must not delete that');
+});
+
+test('the movement history survives a reprice, and advances when the price moves', () => {
+  const p = part({ ...STAMPED });
+  applyMatchToPart(p, rec({ retail_price: '649.99' }), { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.priceLastMovedAt, TODAY,
+    'a real price move must advance the stamp scripts/price-movement.cjs reads');
+});
+
+test('an unchanged price CARRIES priceLastMovedAt rather than advancing it', () => {
+  // The distinction the whole freeze alarm rests on: re-reading the same number
+  // is not the number moving.
+  const p = part({ ...STAMPED });
+  applyMatchToPart(p, rec(), { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.priceLastMovedAt, '2026-08-30');
+});
+
+test('deals.newegg movement is carried too — not just the condition lanes', () => {
+  // The hoist. This lane is the largest, and the only one price-movement.cjs
+  // actually reports on, yet it was the one lane excluded from the carry.
+  const p = part({ ...STAMPED });
+  applyMatchToPart(p, rec(), { method: 'upc', confidence: 0.95 });
+  assert.ok(p.deals.newegg.priceLastMovedAt, 'the primary lane must keep its movement history');
+});
+
+test('re-pricer provenance survives', () => {
+  const p = part({ ...STAMPED });
+  applyMatchToPart(p, rec(), { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.migratedAt, STAMPED.migratedAt);
+  assert.equal(p.deals.newegg.migratedFrom, 'OLD-SKU');
+});
+
+test('CARRIED, NEVER MINTED: this job still writes no confirmation for deals.newegg', () => {
+  // The property that keeps a dead re-pricer detectable. If this job could mint
+  // a stamp, refresh-newegg-prices could die and the gate would stay green.
+  const p = part({ itemNumber: OFFICIAL, sku: 'RK-1', price: 599.99, inStock: true });
+  applyMatchToPart(p, rec({ retail_price: '649.99' }), { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.refreshedAt, undefined,
+    'a row the re-pricer has never reached must not gain a confirmation from the ingest');
+  assert.equal(p.deals.newegg.priceConfirmedAt, undefined,
+    'deals.newegg is not a lane this job may certify — see CONDITION_LANES');
+});
+
+test('a DIFFERENT listing does not inherit the old one\'s confirmation', () => {
+  // Carrying here would vouch for a price nothing has confirmed. Same gate, and
+  // same reason, as matchedAt's.
+  const p = part({ ...STAMPED });
+  applyMatchToPart(p, rec({ newegg_item_number: OFFICIAL2, retail_price: '449.99' }),
+    { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg.itemNumber, OFFICIAL2, 'the replacement must land');
+  assert.equal(p.deals.newegg.refreshedAt, undefined,
+    'the old refreshedAt attests to a listing this row no longer holds');
+  assert.equal(p.deals.newegg.migratedAt, undefined);
+});
+
+test('the condition lanes still get their own minted confirmation', () => {
+  // The asymmetry is the design: this job solely owns these, so it may certify
+  // them. Guarding it here so the hoist above cannot quietly level the two.
+  const p = { id: 'p2', c: 'GPU', n: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G', deals: {} };
+  applyMatchToPart(p, rec({ product_name: 'GIGABYTE GeForce RTX 5070 GAMING OC 12G (Open Box)' }),
+    { method: 'upc', confidence: 0.95 });
+  assert.equal(p.deals.newegg_openbox.priceConfirmedAt, TODAY);
+});

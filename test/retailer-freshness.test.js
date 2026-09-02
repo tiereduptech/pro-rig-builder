@@ -418,3 +418,89 @@ test("every live CADENCE entry states a reason a human can act on", async () => 
     }
   }
 });
+
+// =============================================================================
+//  THE TAIL
+//
+//  The median replaced the newest stamp because a max is held at 0d by one
+//  active row. The median has the mirror weakness one quantile up: it is held at
+//  0d by any MAJORITY. A retailer whose sweep reaches two thirds of its rows and
+//  never touches the other third reports 0d forever.
+//
+//  Not hypothetical. refresh-newegg-prices reaches 2,102 of 3,189 rows on every
+//  run and the other 1,064 are reached by nothing — a strictly nested set, not a
+//  rate: comparing consecutive runs, zero rows reached by the earlier one were
+//  missed by the later one. deals.newegg only read STALE because a later job was
+//  erasing the re-pricer's stamps; with that fixed the median goes to 0d and this
+//  gate would have gone green over all 1,064.
+// =============================================================================
+
+const tailCadence = { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } };
+
+/** `fresh` rows confirmed today, `stale` rows confirmed on `old`. */
+const withTail = async (fresh, stale, old) =>
+  gate.audit({
+    now: NOW,
+    partsPath: partsFixture([
+      ...Array.from({ length: fresh }, () =>
+        product("shop", { price: 1, priceConfirmedAt: "2026-08-17" })),
+      ...Array.from({ length: stale }, () =>
+        product("shop", { price: 1, priceConfirmedAt: old })),
+    ]),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: tailCadence,
+  });
+
+test("THE BUG: a healthy median does not vouch for an unreachable third", async () => {
+  // The exact shape of newegg on 2026-09-02, scaled: 66% reached every run, 34%
+  // reached by nothing. Median 0d, and before this check that was a PASS.
+  const a = await withTail(66, 34, "2026-07-01");
+  const r = rowFor(a, "shop");
+  assert.equal(r.medianAgeDays, 0, "the median is genuinely fine — that is the point");
+  assert.ok(r.p90AgeDays > r.p90BudgetDays);
+  assert.deepEqual(kinds(a), ["stale-tail"]);
+  assert.equal(r.verdict, "STALE TAIL");
+});
+
+test("the tail is reported as a COUNT, not only a quantile", async () => {
+  // 'p90 47d' describes 4 forgotten rows and 1,064 unreachable ones identically.
+  const a = await withTail(66, 34, "2026-07-01");
+  assert.equal(rowFor(a, "shop").staleRows, 34, "the number someone has to go and fix");
+});
+
+test("STALE TAIL is a DISTINCT failure from STALE", async () => {
+  // Different defect, different fix. STALE means the job is not keeping up;
+  // STALE TAIL means something is permanently outside its reach — an unmapped
+  // category, a query the feed never answers. "Run it more often" fixes one.
+  const a = await withTail(10, 90, "2026-07-01");
+  assert.deepEqual(kinds(a), ["stale"], "a majority past budget is ordinary staleness");
+  assert.equal(rowFor(a, "shop").verdict, "STALE");
+});
+
+test("the P90 boundary is pinned at the tail budget and one day past it", async () => {
+  // Budget 3d (daily cron, floored), so the tail budget is 12d.
+  // 85/15 so the MEDIAN stays fresh and the p90 check is what is being pinned.
+  const at = async (old) => withTail(85, 15, old);
+  assert.deepEqual((await at("2026-08-05")).failures, [], "p90 exactly at 12d passes");
+  assert.deepEqual(kinds(await at("2026-08-04")), ["stale-tail"], "p90 one day past fails");
+});
+
+test("the tail budget derives from the cite's cron, not a hand-written number", async () => {
+  // Same property the median budget has: a schedule change cannot silently
+  // invalidate the threshold it justified.
+  const a = await withTail(66, 34, "2026-07-01");
+  const r = rowFor(a, "shop");
+  assert.equal(r.p90BudgetDays, r.budgetDays * gate.P90_BUDGET_MULTIPLE);
+});
+
+test("a genuinely healthy catalog still passes both quantiles", async () => {
+  // The false-alarm direction. An alarm that cries wolf is one that gets
+  // commented out, which is what this whole file exists to prevent.
+  assert.deepEqual((await withTail(90, 10, "2026-08-15")).failures, []);
+});
+
+test("one forgotten row still does not condemn a healthy catalog", async () => {
+  // p90 is a quantile, so a handful of stragglers cannot reach it. This is the
+  // property that makes the tail check safe to fail on.
+  assert.deepEqual((await withTail(99, 1, "2026-01-01")).failures, []);
+});

@@ -53,6 +53,27 @@
 //  Same reasoning as scripts/price-movement.cjs, which replaced the identical
 //  max in the MSI/Best Buy/Newegg refreshers.
 //
+//  ── AND THE TAIL, NOT ONLY THE MEDIAN ───────────────────────────────────────
+//  The median fixed the max's weakness and inherited its mirror image: a max is
+//  held at 0d by one active row, a median by any MAJORITY. A retailer whose
+//  sweep reaches two thirds of its rows and never touches the rest reports a
+//  healthy 0d median forever.
+//
+//  Measured 2026-09-02: refresh-newegg-prices reaches 2,102 of 3,189 rows on
+//  every run and 1,064 are reached by nothing — a fixed, strictly nested set,
+//  not a rate. Consecutive runs reach the same 2,100 rows and zero rows reached
+//  by the earlier run are missed by the later one. deals.newegg only read STALE
+//  at all because sftp-ingest was erasing the re-pricer's stamps between runs;
+//  the moment that was fixed the median went to 0d and this gate would have
+//  gone GREEN over all 1,064.
+//
+//  So the p90 is gated too, against a wider budget, and reported as a row COUNT
+//  beside the quantile — 'p90 23d' describes 4 forgotten rows and 1,064
+//  unreachable ones identically. STALE and STALE TAIL are deliberately distinct
+//  verdicts: one means the job is not keeping up with the catalog, the other
+//  means something is permanently outside its reach, and "run it more often"
+//  fixes only the first. See P90_BUDGET_MULTIPLE.
+//
 //  ── WHY IT FAILS INSTEAD OF WARNING ─────────────────────────────────────────
 //  Twice in August a real signal was emitted and ignored. refresh-newegg-prices
 //  reported "0 updated" on every run from 2026-07-06 and kept deleting; the
@@ -137,6 +158,44 @@ const MISSED_CYCLES_ALLOWED = 2;
 // crying wolf — and an alarm that cries wolf is an alarm that gets commented out,
 // which is the specific outcome this whole file exists to prevent.
 const MIN_BUDGET_DAYS = 3;
+
+// How many times the typical row's budget the SLOWEST DECILE may take.
+//
+// ── WHY A SECOND QUANTILE EXISTS ────────────────────────────────────────────
+// The median replaced the newest stamp because a max is held at 0d by one
+// active row. The median has the mirror weakness one quantile up: it is held at
+// 0d by any MAJORITY, so a retailer whose sweep reaches two thirds of its rows
+// and never touches the other third reports a perfectly healthy 0d median
+// forever. That is not hypothetical and it is not small. Measured on
+// 2026-09-02, refresh-newegg-prices reaches 2,102 of 3,189 rows on every run
+// and the remaining 1,064 are reached by nothing:
+//
+//   run          processed   matched OK   lookup failed   no_cat_mapping
+//   33607979228       3189         2102            1066               85
+//   33547739235       3189         2097            1071               85
+//   33490323017       3185         2097            1073               85
+//
+// and the set is fixed, not a rate — comparing the rows actually reached by
+// consecutive runs, 2,100 of 2,125 are the same rows and ZERO rows reached by
+// the earlier run were missed by the later one. It is a strictly nested,
+// permanently unreachable tail.
+//
+// This gate could not see it. deals.newegg read STALE only because a later job
+// was erasing the re-pricer's stamps (see sftp-ingest.cjs applyMatchToPart);
+// with those carried across, the median goes to 0d and this gate goes GREEN
+// over 1,064 rows nothing has ever confirmed. The stamp fix and this threshold
+// ship together for exactly that reason: alone, the first one's only visible
+// effect would have been to silence the alarm that found the second.
+//
+// FOUR, applied to the budget rather than to the cron: the tail decile is by
+// construction the last thing a partial sweep reaches, so it earns real slack —
+// but a row unconfirmed for four consecutive full budgets is not lagging behind
+// the sweep, it is outside it. Multiplying the BUDGET rather than the interval
+// keeps MIN_BUDGET_DAYS' weekend-backlog protection proportional instead of
+// letting the floor collapse the two thresholds together (a twice-daily cron
+// floors to a 3d median budget but computes a 4d p90 budget, which would make
+// the tail check very nearly the median check again).
+const P90_BUDGET_MULTIPLE = 4;
 
 // =============================================================================
 //  THE TABLE
@@ -382,6 +441,19 @@ function quantileAgeDays(stamps, q, now) {
   return ages[i];
 }
 
+/**
+ * How many confirmed rows are older than `days`.
+ *
+ * The quantiles say where the distribution sits; this says how big the problem
+ * is. A p90 of 23d against a 3d budget is the same number whether it describes
+ * 4 forgotten rows or 1,064 unreachable ones, and those are different defects
+ * with different fixes.
+ */
+function countOlderThan(stamps, days, now) {
+  if (!stamps || !stamps.length) return 0;
+  return stamps.filter((s) => Math.floor((now - Date.parse(s + 'T00:00:00Z')) / DAY_MS) > days).length;
+}
+
 /** Per-retailer stamp rollup from parts.js. */
 async function readCatalog(partsPath) {
   if (!fs.existsSync(partsPath)) throw new Error(`parts.js not found at ${partsPath}`);
@@ -468,6 +540,12 @@ async function audit(opts = {}) {
       medianAgeDays: quantileAgeDays(r.ages, 0.5, now),
       p90AgeDays: quantileAgeDays(r.ages, 0.9, now),
       budgetDays: null,
+      p90BudgetDays: null,
+      // The tail as a COUNT, not a quantile. 'p90 23d' says a tenth of rows are
+      // worse than 23 days; it does not say how many rows are unconfirmed, and
+      // that number is what someone has to go and fix. Filled in once the budget
+      // is known.
+      staleRows: null,
       cite: null,
       verdict: null,
       detail: null,
@@ -535,6 +613,8 @@ async function audit(opts = {}) {
     }
 
     row.budgetDays = budgetDaysFor(cronIntervalDays(cron));
+    row.p90BudgetDays = row.budgetDays * P90_BUDGET_MULTIPLE;
+    row.staleRows = countOlderThan(r.ages, row.budgetDays, now);
 
     // 4. No confirmation at all, despite having a live scheduled job. Distinct
     //    from staleness: there is no age to report, and the job has never once
@@ -571,11 +651,41 @@ async function audit(opts = {}) {
       continue;
     }
 
+    // 6. The TAIL — rows the sweep never reaches, which a healthy median hides.
+    //
+    //    Checked after the median and reported as a distinct verdict because it
+    //    is a distinct defect. STALE means the job is not keeping up with the
+    //    catalog; STALE TAIL means the job is keeping up with the part of the
+    //    catalog it can see, and something else is permanently out of its reach
+    //    — an unmapped category, a query shape the feed never answers, a guard
+    //    that declines every candidate. Those are fixed by different work than
+    //    "make the job run more often", so they must not report as the same
+    //    thing.
+    //
+    //    This is the check that stops the sftp-ingest stamp-carry fix shipping
+    //    alongside it from turning a 15d median into a green light over 1,064
+    //    rows nothing reaches. See P90_BUDGET_MULTIPLE.
+    if (row.p90AgeDays > row.p90BudgetDays) {
+      row.verdict = 'STALE TAIL';
+      row.detail =
+        `the median row is fine (${row.medianAgeDays}d, budget ${row.budgetDays}d) but the slowest ` +
+        `decile is ${row.p90AgeDays}d old, over the ${row.p90BudgetDays}d tail budget ` +
+        `(${row.budgetDays}d x ${P90_BUDGET_MULTIPLE}) — ${row.staleRows} of ${row.rows} rows are past ` +
+        `the ${row.budgetDays}d budget. ${workflow} [${cron}] is landing across most of the catalog ` +
+        `and never reaching these. A median alone would have reported this retailer as healthy.`;
+      failures.push({ retailer: name, kind: 'stale-tail', detail: row.detail });
+      rows.push(row);
+      continue;
+    }
+
     row.verdict = 'OK';
     rows.push(row);
   }
 
-  return { total, rows, failures, policy: { MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS, CONFIRMATION_STAMPS } };
+  return {
+    total, rows, failures,
+    policy: { MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS, P90_BUDGET_MULTIPLE, CONFIRMATION_STAMPS },
+  };
 }
 
 // =============================================================================
@@ -593,24 +703,32 @@ function report(a) {
   const padL = (s, n) => String(s == null ? '-' : s).padStart(n);
 
   console.log(`RETAILER CONFIRMATION FRESHNESS — ${a.total} products`);
-  console.log(`policy: ${a.policy.MISSED_CYCLES_ALLOWED} missed cycles allowed, ${a.policy.MIN_BUDGET_DAYS}d floor`);
+  console.log(
+    `policy: ${a.policy.MISSED_CYCLES_ALLOWED} missed cycles allowed, ${a.policy.MIN_BUDGET_DAYS}d floor, ` +
+    `tail budget = ${a.policy.P90_BUDGET_MULTIPLE}x`
+  );
   console.log(`stamps: ${a.policy.CONFIRMATION_STAMPS.join(', ')}\n`);
 
   // MEDIAN is the gated column; NEWEST/AGE are shown beside it because the gap
   // between them is the whole point — a retailer reading 0d newest and 35d
   // median is one where a handful of rows are carrying the report.
+  // PAST is the tail as a count — the number someone has to go and fix. It sits
+  // beside the quantiles because 'p90 23d' describes 4 forgotten rows and 1,064
+  // unreachable ones identically, and only one of those is worth a morning.
   console.log(
     pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('NEWEST', 13) +
-    padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 8) + '  VERDICT'
+    padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 10) +
+    padL('PAST', 7) + '  VERDICT'
   );
-  console.log('-'.repeat(103));
+  console.log('-'.repeat(115));
   for (const r of a.rows) {
     console.log(
       pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) + padL(r.newest, 13) +
       padL(r.ageDays == null ? '-' : r.ageDays + 'd', 6) +
       padL(r.medianAgeDays == null ? '-' : r.medianAgeDays + 'd', 8) +
       padL(r.p90AgeDays == null ? '-' : r.p90AgeDays + 'd', 7) +
-      padL(r.budgetDays == null ? '-' : r.budgetDays + 'd', 8) + '  ' + r.verdict
+      padL(r.budgetDays == null ? '-' : `${r.budgetDays}d/${r.p90BudgetDays}d`, 10) +
+      padL(r.staleRows == null ? '-' : r.staleRows, 7) + '  ' + r.verdict
     );
     if (r.cite) console.log(' '.repeat(20) + 'confirmed by: ' + r.cite);
   }
@@ -646,6 +764,7 @@ function wrap(text, width) {
 module.exports = {
   audit, report, cronIntervalDays, budgetDaysFor, readSchedule, readCatalog,
   CADENCE, CONFIRMATION_STAMPS, NEGATIVE_STAMP, MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS,
+  P90_BUDGET_MULTIPLE, countOlderThan,
   DEFAULT_WF_DIR, DEFAULT_PARTS,
 };
 
