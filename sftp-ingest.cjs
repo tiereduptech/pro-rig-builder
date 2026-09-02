@@ -870,16 +870,21 @@ function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacemen
   const stampedShare = reachable > 0 ? stamped / reachable : 0;
   const collapsed = reachable > 0 && stampedShare < floor.value;
 
-  const reasons = [];
+  // Damage THIS RUN did, and evidence that was already gone when it started.
+  // Kept apart because they carry different consequences: the first is a defect
+  // in this job and it stops, the second is a fact about the catalog and only
+  // withholds the census. See damagedThisRun below.
+  const damage = [];
+  const missing = [];
   if (unexplainedLoss > 0) {
-    reasons.push(
+    damage.push(
       `this run destroyed ${lostThisRun} refreshedAt stamp(s) ` +
       `(${b.refreshedAt} -> ${a.refreshedAt}) and only ` +
       `${droppedOnReplacement} are explained by a listing swap — ${unexplainedLoss} vanished with ` +
       `nothing to account for them, which means the #81 carry is not holding`);
   }
   if (movedLostThisRun > 0) {
-    reasons.push(
+    damage.push(
       `this run destroyed ${movedLostThisRun} priceLastMovedAt stamp(s) ` +
       `(${b.priceLastMovedAt} -> ${a.priceLastMovedAt}). Nothing drops this stamp on purpose, so ` +
       `there is no legitimate loss to net off and the #81 carry is not holding. ` +
@@ -887,17 +892,26 @@ function stampIntegrity({ before, after, stamped, reachable, droppedOnReplacemen
       `numerator and the freeze alarm then fires on the retailer instead of on this job`);
   }
   if (collapsed) {
-    reasons.push(
+    missing.push(
       `only ${stamped} of ${reachable} re-pricer-reachable rows carry refreshedAt ` +
       `(${(100 * stampedShare).toFixed(1)}%, floor ${(100 * floor.value).toFixed(1)}% = ${floor.source}) — ` +
       `no completed re-pricer run is represented in this catalog`);
   }
 
   return {
-    intact: reasons.length === 0,
+    // Nothing is wrong at all: safe to publish the census.
+    intact: damage.length === 0 && missing.length === 0,
+    // THIS RUN ate evidence. A strictly stronger statement than !intact, and
+    // the one with teeth: the caller stops the ingest on it rather than merely
+    // withholding a number. Kept separate from `intact` on purpose — the
+    // collapse reason describes a catalog an EARLIER run damaged, and refusing
+    // to write because somebody else broke something would block this job's
+    // legitimate work for a condition that heals itself the next time the
+    // re-pricer lands.
+    damagedThisRun: damage.length > 0,
     lostThisRun, droppedOnReplacement, unexplainedLoss,
     movedLostThisRun,
-    stamped, reachable, stampedShare, reasons,
+    stamped, reachable, stampedShare, reasons: [...damage, ...missing],
     // Carried so a void states the floor it was judged against and where that
     // floor came from, rather than leaving the reader to go looking.
     floor: floor.value, floorSource: floor.source, floorDerived: floor.derived,
@@ -1347,6 +1361,46 @@ if (require.main === module) (async () => {
   // delisted from out-of-stock, because onRecord drops out-of-stock records
   // before matching and so this job genuinely cannot tell them apart. Either
   // way we could not confirm a price, which is what the stamp says.
+  // ── STAMP INTEGRITY — measured on EVERY run, not only a full-feed night ────
+  //
+  // Counted here, straight after the merchant loop, because that loop holds the
+  // only line in this file that can destroy a stamp: applyMatchToPart's
+  // wholesale `part.deals[fieldKey] = newListing`. Nothing below replaces a
+  // deal object — the absence sweep assigns one property onto the object that
+  // is already there — so this is the moment the damage is complete.
+  //
+  // DELIBERATELY OUTSIDE `fullNeweggFeedParsed`. It used to sit inside the
+  // census block, which armed it only on nights the full Newegg feed parsed. A
+  // Newegg DELTA feed is matched and applied to deals.newegg exactly like a
+  // full one and leaves that flag false, so it could erase stamps with nothing
+  // measuring it. The census genuinely needs the whole feed to ask its question
+  // — "what share of these rows did this feed offer" is meaningless over a
+  // partial one — but a before/after stamp count needs nothing of the kind, and
+  // a gate that arms only on some nights is not a gate.
+  //
+  // One count, used as both halves: "how many stamps survive this run" and
+  // "how many stamps exist at all" are the same question asked of the same
+  // catalog at the same moment.
+  const refreshStampsNow = countRepricerStamps(parts);
+  const integrity = stampIntegrity({
+    before: refreshStampsAtLoad,
+    after: refreshStampsNow,
+    // The collapse check is a refreshedAt question specifically — it asks
+    // whether a completed re-pricer run is represented in this catalog, and
+    // refreshedAt is the stamp written on EVERY successful lookup. Only a
+    // fraction of rows ever carry priceLastMovedAt even when everything is
+    // healthy, because most prices simply did not move, so it has no
+    // plausibility floor to be judged against and must not be summed in here.
+    stamped: refreshStampsNow.refreshedAt,
+    droppedOnReplacement: stampsDroppedOnReplacement,
+    reachable: parts.reduce((n, p) => {
+      const d = p && p.deals && p.deals.newegg;
+      return n + (d && typeof d === 'object' && NEG.CAT_FILTER[p.c] ? 1 : 0);
+    }, 0),
+  });
+  summary.totals.stampIntegrity = integrity;
+
+
   let unconfirmed = 0;
   if (fullNeweggFeedParsed) {
     for (const p of parts) {
@@ -1378,29 +1432,8 @@ if (require.main === module) (async () => {
     // re-pricer's side of the comparison survived to be counted. A census with
     // erased stamps is not a weaker measurement, it is a WRONG one, and biased
     // toward the cheaper conclusion — see stampIntegrity() for why the error
-    // only ever points one way.
-    //
-    // One count, used as both halves: "how many stamps survive this run" and
-    // "how many stamps exist at all" are the same question asked of the same
-    // catalog at the same moment.
-    const refreshStampsNow = countRepricerStamps(parts);
-    const integrity = stampIntegrity({
-      before: refreshStampsAtLoad,
-      after: refreshStampsNow,
-      // The collapse check is a refreshedAt question specifically — it asks
-      // whether a completed re-pricer run is represented in this catalog, and
-      // refreshedAt is the stamp written on EVERY successful lookup. Only a
-      // fraction of rows ever carry priceLastMovedAt even when everything is
-      // healthy, because most prices simply did not move, so it has no
-      // plausibility floor to be judged against and must not be summed in here.
-      stamped: refreshStampsNow.refreshedAt,
-      droppedOnReplacement: stampsDroppedOnReplacement,
-      reachable: parts.reduce((n, p) => {
-        const d = p && p.deals && p.deals.newegg;
-        return n + (d && typeof d === 'object' && NEG.CAT_FILTER[p.c] ? 1 : 0);
-      }, 0),
-    });
-    summary.totals.stampIntegrity = integrity;
+    // only ever points one way. `integrity` is computed above the sweep, on
+    // every run; this block only READS it, and publishes on `intact`.
 
     const census = coverageCensus(parts, feedOffered);
     const pct = (n, d) => (d ? (100 * n / d).toFixed(1) : '0.0') + '%';
@@ -1443,8 +1476,8 @@ if (require.main === module) (async () => {
   } else {
     log('\nAbsence sweep SKIPPED — no full Newegg feed parsed this run (nothing was looked at, so nothing is absent)');
     log('Coverage census SKIPPED for the same reason — an unlooked-at row is not an uncovered one');
+    log('Stamp integrity was still checked — it does not depend on the feed being whole.');
     summary.totals.coverageCensus = null;
-    summary.totals.stampIntegrity = null;
   }
   summary.totals.conditionLanesConfirmed = confirmedLanes.size;
   summary.totals.conditionLanesUnconfirmed = unconfirmed;
@@ -1453,6 +1486,27 @@ if (require.main === module) (async () => {
   // Write outputs
   if (DRY_RUN) {
     log('\n--dry-run: not writing parts.js or exclusives.json');
+  } else if (integrity.damagedThisRun) {
+    // -- THE CATALOG IS NOT WRITTEN --------------------------------------------
+    // This run destroyed re-pricer stamps that nothing accounts for, so `parts`
+    // in memory is the damaged version and writing it is what makes the loss
+    // permanent. Keeping yesterday's catalog costs one night of price updates;
+    // writing this one costs the stamps themselves, and those do not come back
+    // -- you cannot reconstruct WHEN a price last moved once the record of it
+    // is gone. The next run re-reads the feed and redoes the updates. Nothing
+    // redoes the history.
+    //
+    // The workflow's own steps stop here too, because the process exits
+    // non-zero below and no step is marked `if: always()`. This branch is not
+    // redundant with that: it is what keeps a manual or local run from leaving
+    // a damaged parts.js on disk, and what makes the refusal legible in the log
+    // rather than inferable from an exit code.
+    log('\n** parts.js NOT WRITTEN -- this run destroyed re-pricer stamps **');
+    for (const r of integrity.reasons) log(`     - ${r}`);
+    log('     The in-memory catalog carries the loss, so committing it would make');
+    log('     the erasure permanent. Yesterday\'s catalog stands. Fix the carry in');
+    log('     applyMatchToPart, then re-run -- the price updates come back, the');
+    log('     stamps would not have.');
   } else {
     // `unconfirmed` counts too: an absence sweep that stamped rows changed the
     // catalog even when not one price moved, and gating the write on `updated`
@@ -1486,6 +1540,28 @@ if (require.main === module) (async () => {
   log(`Matched/updated: ${summary.totals.updated}`);
   log(`Exclusives:      ${summary.totals.exclusives}`);
   log(`Errors:          ${summary.totals.errors}`);
+
+  // -- AND THE RUN FAILS -------------------------------------------------------
+  //
+  // Voiding the census was the whole consequence of stamp damage until now: the
+  // job logged a void, exited 0, and the workflow committed and went green. An
+  // ingest that ate evidence handed a hole to something downstream and told
+  // nobody, which is the shape of every bug this file has a paragraph about. A
+  // job that destroys another job's evidence has not partially succeeded.
+  //
+  // Set AFTER the summary is on disk so the artifact carries the diagnosis: a
+  // throw here would lose summary.totals.stampIntegrity, which is the only
+  // record of what was destroyed and how much of it a listing swap explained.
+  //
+  // Only `damagedThisRun` fails. The collapse reason -- a catalog whose stamps
+  // an EARLIER run ate -- still voids the census and still exits 0, because
+  // refusing to ingest until somebody else's damage heals would block this
+  // job's work over a condition that clears on its own the next time
+  // refresh-newegg-prices lands.
+  if (integrity.damagedThisRun) {
+    log('\nFAILED -- this run destroyed re-pricer stamps; parts.js was not written');
+    process.exitCode = 1;
+  }
 })().catch(e => {
   console.error('\nâœ— FATAL:', e.stack || e.message);
   process.exit(1);

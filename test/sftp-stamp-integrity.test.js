@@ -237,6 +237,63 @@ test('the movement stamp is NOT added to the plausibility floor denominator', ()
   assert.match(v.reasons.join(' '), /no completed re-pricer run is represented/);
 });
 
+// ── WHO CAUSED IT DECIDES WHAT HAPPENS ───────────────────────────────────────
+//
+// `intact` governs the census. `damagedThisRun` governs whether the ingest is
+// allowed to finish at all, and it is deliberately the narrower of the two: the
+// collapse reason describes a catalog an EARLIER run damaged, and stopping this
+// job over that would block its work for a condition that heals itself the next
+// time refresh-newegg-prices lands.
+
+test('damage this run did stops the ingest', () => {
+  const v = stampIntegrity({ before: tally(2125), after: tally(386), stamped: 386, reachable: 3104 });
+  assert.equal(v.damagedThisRun, true);
+});
+
+test('a movement-only regression also stops the ingest', () => {
+  // The case PR #89 taught the guard to see. It must now also be the case that
+  // stops the run, or seeing it changes nothing.
+  const v = stampIntegrity({
+    before: tally(2122, 281), after: tally(2122, 168), stamped: 2122, reachable: 3104,
+  });
+  assert.equal(v.damagedThisRun, true);
+  assert.equal(v.lostThisRun, 0, 'refreshedAt untouched — only the movement carry broke');
+});
+
+test('THE ASYMMETRY: an unhealed tree voids the census but does NOT stop the ingest', () => {
+  // This run destroyed nothing; the stamps were already gone when it started.
+  // Refusing to write here would strand the ingest behind another job's bug,
+  // and the next re-pricer run clears it without anyone intervening.
+  const v = stampIntegrity({ before: tally(386), after: tally(386), stamped: 386, reachable: 3104 });
+  assert.equal(v.intact, false, 'the census still must not publish');
+  assert.equal(v.damagedThisRun, false, 'but the run is not at fault and must not be stopped');
+});
+
+test('a by-design listing swap stops nothing', () => {
+  const v = stampIntegrity({
+    before: tally(2102), after: tally(2085), stamped: 2085, reachable: 3104, droppedOnReplacement: 17,
+  });
+  assert.equal(v.damagedThisRun, false);
+  assert.equal(v.intact, true);
+});
+
+test('a clean run is neither damaged nor void', () => {
+  const v = stampIntegrity(healthy);
+  assert.equal(v.damagedThisRun, false);
+  assert.equal(v.intact, true);
+});
+
+test('damage is reported before missing evidence', () => {
+  // Both fire together on a catalog this run just gutted. The reason a human
+  // must act on — THIS run is broken — has to be the first line they read, not
+  // the third.
+  const v = stampIntegrity({ before: tally(2125, 315), after: tally(300, 202), stamped: 300, reachable: 3104 });
+  assert.equal(v.reasons.length, 3);
+  assert.match(v.reasons[0], /destroyed 1825 refreshedAt/);
+  assert.match(v.reasons[1], /destroyed 113 priceLastMovedAt/);
+  assert.match(v.reasons[2], /no completed re-pricer run is represented/);
+});
+
 test('a bare number is refused rather than read as a refreshedAt-only tally', () => {
   // The half-measurement this shape exists to prevent. A caller still passing
   // the old scalar has not been taught about the second stamp, and silently
