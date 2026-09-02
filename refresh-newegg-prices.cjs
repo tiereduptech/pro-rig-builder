@@ -369,6 +369,45 @@ function chooseCandidate(p, candidates) {
 // evidence the feed is alive, so they belong in the denominator. The
 // asymmetry is the point, not an oversight.
 //
+// ── THE RULE, APPLIED TO EVERY OUTCOME THAT MEETS IT ────────────────────────
+// 'variant_rejected' was the only decision-of-ours ever subtracted, and it was
+// not the only one. Two more meet the identical test — the feed answered, and
+// WE declined what it offered:
+//
+//   guard_rejected      208 rows on run 33607979228. newegg-match.js says it
+//                       outright: "A guard reject is ALSO evidence of presence,
+//                       not absence: the capacity gate only fires on a candidate
+//                       that got far enough to have a capacity compared."
+//   weak_match_blocked   32 rows. Candidates scored below MIN_MIGRATE_SIM. The
+//                       feed surfaced them; our floor turned them down.
+//
+// Leaving those in charged our own matcher's strictness to Newegg's uptime,
+// which is precisely the error the variant_rejected exclusion was written to
+// correct. The rate was 23.0% against a 20% breaker on EVERY run — 33607979228,
+// 33547739235, 33490323017 and 33440406391 all landed 23.0-23.2% — so the
+// breaker tripped every single time it was evaluated. A breaker that is always
+// tripped conveys nothing: it cannot distinguish a sick feed from a healthy one,
+// and this codebase has twice demonstrated it routes around a signal with no
+// discrimination in it. Consistency here is what makes the number mean
+// something again, not a threshold that was tuned until it went quiet.
+//
+// 'downgrade_blocked' deliberately STAYS in, and the distinction is the whole
+// point of the rule rather than an exception to it: those 136 rows are not us
+// declining an answer, they are the feed FAILING TO SURFACE the official
+// listing we already know exists. That is a feed defect, and it is exactly what
+// this breaker watches for.
+//
+// Recomputed on run 33607979228 with the rule applied consistently:
+//
+//   lookupable    3189 - 85                              = 3104
+//   feedFailures  1066 - 268 - 85 - 208 - 32             =  473
+//                 (no_results 318 + no_match 19 + downgrade_blocked 136)
+//   rate          473 / 3104                             = 15.2%   (was 23.0%)
+//
+// Under the 20% breaker with real headroom, and every row still counted
+// somewhere — nothing is hidden, it is attributed to whichever side actually
+// caused it. The threshold is untouched.
+//
 // On run 33189471054 this is 83 rows, 66 of them GPU. GPU is absent from
 // CAT_FILTER deliberately — Rakuten Product Search does not carry GPUs at all
 // (see fetch-newegg-via-rakuten.cjs:108, "awaiting SFTP feed") — so adding a
@@ -376,8 +415,16 @@ function chooseCandidate(p, candidates) {
 // requests a run doing it. The rows need a different source, not a filter.
 function feedHealth(stats, processed) {
   const lookupable = processed - stats.noCatMapping;
-  const feedFailures = stats.lookupFailed - stats.variantRejected - stats.noCatMapping;
-  return { lookupable, feedFailures, failureRate: lookupable ? feedFailures / lookupable : 0 };
+  // Every outcome where the feed ANSWERED and we declined it. Defaulted so a
+  // caller built before these were counted still computes, rather than turning
+  // an absent field into NaN and a silently-passing breaker.
+  const ourDecisions =
+    (stats.variantRejected || 0) + (stats.guardRejected || 0) + (stats.weakMatchBlocked || 0);
+  const feedFailures = stats.lookupFailed - ourDecisions - stats.noCatMapping;
+  return {
+    lookupable, feedFailures, ourDecisions,
+    failureRate: lookupable ? feedFailures / lookupable : 0,
+  };
 }
 
 module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher };
@@ -398,7 +445,7 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -422,6 +469,12 @@ if (require.main !== module) return;
       stats.lookupFailed++;
       if (r.reason === 'variant_rejected') stats.variantRejected++;
       if (r.reason === 'no_cat_mapping') stats.noCatMapping++;
+      // Counted for the same reason variant_rejected is: feedHealth subtracts it,
+      // and a number the breaker depends on must be countable. It was reaching
+      // the printed reason breakdown (208 rows on run 33607979228) and nothing
+      // else, so the arithmetic could not see the largest single class of
+      // outcome the feed answered.
+      if (r.reason === 'guard_rejected') stats.guardRejected++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount, httpStatuses: r.httpStatuses });
       console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
       continue;
@@ -641,11 +694,11 @@ if (require.main !== module) return;
 
   // ── Run-level circuit breakers ──────────────────────────────────────────────
   const processed = matched.length;
-  const { lookupable, feedFailures, failureRate } = feedHealth(stats, processed);
+  const { lookupable, feedFailures, failureRate, ourDecisions } = feedHealth(stats, processed);
   const removalCap = Math.max(MAX_REMOVAL_FLOOR, Math.floor(processed * MAX_REMOVAL_RATE));
   const breakers = [];
   if (failureRate > MAX_LOOKUP_FAILURE_RATE)
-    breakers.push(`feed failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy (excludes ${stats.variantRejected} variant rejections, ${stats.noCatMapping} unmappable)`);
+    breakers.push(`feed failure rate ${(failureRate * 100).toFixed(1)}% > ${(MAX_LOOKUP_FAILURE_RATE * 100)}% — feed unhealthy (excludes ${ourDecisions} of our own decisions, ${stats.noCatMapping} unmappable)`);
   if (stats.ok === 0 && processed > 0)
     breakers.push('zero successful lookups — cannot trust any absence signal');
   if (removalCandidates.length > removalCap)
@@ -668,7 +721,10 @@ if (require.main !== module) return;
   console.log(`Price quarantined:${stats.priceQuarantined}  (${PRICE_SUSPECT_QUARANTINE_STREAK}+ consecutive strikes -> needsReview, price KEPT)`);
   if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
-  console.log(`  of which variant-rejected: ${stats.variantRejected}  (matcher decision — EXCLUDED from feed health)`);
+  // Broken out rather than summed, because 'we declined it' and 'the feed did
+  // not have it' are the two halves this breaker exists to tell apart.
+  console.log(`  of which OUR decisions:    ${ourDecisions}  (EXCLUDED from feed health — ` +
+    `${stats.variantRejected} variant, ${stats.guardRejected} guard, ${stats.weakMatchBlocked} weak-match)`);
   console.log(`Feed failure rate:${(failureRate * 100).toFixed(1)}%  (${feedFailures}/${lookupable}, breaker at ${MAX_LOOKUP_FAILURE_RATE * 100}%)`);
   if (stats.noCatMapping) {
     // Loud, not netted away. These rows are not healthy — they are unreachable,
@@ -765,6 +821,8 @@ if (require.main !== module) return;
     // in the artifact so the figure can be recomputed rather than trusted.
     lookupable,
     unmappable: stats.noCatMapping,
+    ourDecisions,
+    guardRejected: stats.guardRejected,
     // Attribution for the http_error bucket. `rateLimited` is the number the
     // pacing change is judged on: it should be 0, and if it is not, REQ_PER_MIN
     // is still too high rather than the feed being sick.
