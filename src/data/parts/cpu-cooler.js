@@ -157,7 +157,9 @@ export default [
         "priceSeller": "Triplenet Pricing INC",
         "priceConfirmedAt": "2026-09-03",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -1897,7 +1899,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
@@ -2002,7 +2004,7 @@ export default [
         "priceConfirmedAt": "2026-09-03",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3920,7 +3922,7 @@ export default [
     "reviews": 288,
     "deals": {
       "amazon": {
-        "price": 152.74,
+        "price": 167.33,
         "url": "https://www.amazon.com/dp/B0FGDMTHY4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -6982,7 +6984,7 @@ export default [
     "reviews": 12,
     "deals": {
       "amazon": {
-        "price": 26.99,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0FXJZG91W?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -11831,8 +11833,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DWDMHYYS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-03",
-        "priceSource": "3p",
-        "priceSeller": "JMBO Sales",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -16042,8 +16044,8 @@ export default [
         "price": 89.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-03",
-        "priceSource": "3p",
-        "priceSeller": "Alakhras LLC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },

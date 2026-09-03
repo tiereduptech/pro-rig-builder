@@ -6057,13 +6057,11 @@ export default [
         "price": 159.9,
         "url": "https://www.amazon.com/dp/B0CN95G1YL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-03"
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 13,
@@ -14220,7 +14218,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "445834702899530246337236",
@@ -14299,8 +14299,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ1V1H11?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-03",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -20788,9 +20788,9 @@ export default [
       "amazon": {
         "asin": "B0CXF8MWLR",
         "url": "https://www.amazon.com/dp/B0CXF8MWLR?tag=tiereduptech-20",
-        "price": 898.98,
+        "price": 999.98,
         "inStock": true,
-        "priceConfirmedAt": "2026-08-26",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -20966,8 +20966,8 @@ export default [
     "deals": {
       "amazon": {
         "asin": "B0FGGNR82S",
-        "url": "https://www.amazon.com/dp/B0FGGNR82S?tag=tiereduptech-20",
-        "price": 138.99,
+        "url": "https://www.amazon.com/dp/B0FGGL2KZQ?tag=tiereduptech-20",
+        "price": 149.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "1p",
@@ -21002,7 +21002,8 @@ export default [
       360
     ],
     "upc": "00199291006539",
-    "mpn": "AP202 ARGB CASE BLACK"
+    "mpn": "AP202 ARGB CASE BLACK",
+    "dealChangedAt": "2026-09-03"
   },
   {
     "id": 100888,
@@ -21017,7 +21018,7 @@ export default [
       "amazon": {
         "asin": "B0DFJ9PKK4",
         "url": "https://www.amazon.com/dp/B0DFJ9PKK4?tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 94.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-03",
@@ -23349,7 +23350,7 @@ export default [
         "priceSeller": "OneDealOutlet Online",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "4458313573577816812949180",
