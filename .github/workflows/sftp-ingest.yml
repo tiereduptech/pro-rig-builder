@@ -38,13 +38,25 @@ jobs:
           node-version: "24"
       - name: Install dependencies
         run: npm ci
-      - name: Restore manifest cache
-        uses: actions/cache@v4
-        with:
-          path: catalog-build/sftp-manifest.json
-          key: sftp-manifest-${{ github.run_id }}
-          restore-keys: |
-            sftp-manifest-
+      # ── NO MANIFEST CACHE. The manifest is COMMITTED now. ────────────────
+      #
+      # actions/cache carried this file because .gitignore's `catalog-build/*`
+      # made the commit step's `git add` of it a silent no-op. With that negated
+      # the checkout above already provides it, and keeping the cache would be
+      # actively harmful rather than merely redundant: the restore OVERWRITES
+      # the checked-out file, so a cache entry older than main -- from a run
+      # whose commit landed but whose cache save did not, or one cancelled
+      # before its post step -- would silently roll the hold streaks backwards.
+      # A second source of truth that wins over git is how an alarm forgets.
+      #
+      # The key was `sftp-manifest-${{ github.run_id }}`: unique per run, so it
+      # never hit on the exact key, always restored by the `sftp-manifest-`
+      # prefix, and always wrote a new entry. One cache entry per run, for a
+      # ~500-byte file that git holds for free.
+      #
+      # ONE-TIME COST: main carries no manifest yet (0 commits have ever touched
+      # it), so the first run after this re-downloads every feed and commits the
+      # record. Every run after that reads it from the checkout.
       - name: Run SFTP ingestion
         env:
           RAKUTEN_FTP_PASSWORD: ${{ secrets.RAKUTEN_FTP_PASSWORD }}
@@ -119,8 +131,30 @@ jobs:
           HELD=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.heldFeeds || 0)")
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
-          git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
+
+          # ── STAGE LOUDLY ───────────────────────────────────────────────────
+          #
+          # This was one `git add` of four paths ending in `2>/dev/null || true`.
+          # Two of those paths were gitignored, so the command exited 1 every
+          # single run and the swallow hid it: the manifest and the exclusives
+          # meta have NEVER been committed, and nothing said so. `|| true` on a
+          # command whose failure is the thing you would want to know about is
+          # how a step reports success for work it did not do.
+          #
+          # Per path, because the paths are not equivalent: parts.js and parts/
+          # are always present, while the exclusives meta is only written when
+          # the run got as far as flushing exclusives. Absence is a notice;
+          # failing to stage a file that IS there is an error.
+          for p in src/data/parts.js src/data/parts catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json; do
+            if [ ! -e "$p" ]; then
+              echo "::notice::$p not present this run — nothing to stage"
+              continue
+            fi
+            if ! git add -- "$p"; then
+              echo "::error::git add $p failed — refusing to report a partial commit as success"
+              exit 1
+            fi
+          done
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
@@ -180,4 +214,5 @@ jobs:
             --label="SFTP ingest" \
             --newer-than-epoch="$INGEST_STARTED" \
             --require='totals.errors==0' \
-            --warn='totals.feedRecords>0'
+            --warn='totals.feedRecords>0' \
+            --warn='manifest.source==disk'

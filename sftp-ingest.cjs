@@ -65,13 +65,54 @@ ensureDir(FEED_DIR);
 
 function log(msg) { console.log(`[${new Date().toISOString().substring(11,19)}] ${msg}`); }
 
-function loadManifest() {
-  if (!fs.existsSync(MANIFEST_PATH)) return { files: {} };
-  try { return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch { return { files: {} }; }
+// ── A MANIFEST THAT CAME BACK EMPTY IS NOT A FIRST RUN ───────────────────────
+//
+// This used to be `return { files: {} }` on BOTH the missing and the
+// unparseable path, silently. So a corrupt or vanished manifest was
+// indistinguishable from the first run this job ever made -- and the only
+// visible consequence was that every feed got re-downloaded, which reads as
+// "the feeds changed", which is not alarming at all.
+//
+// That silence is expensive now. Since #93 the manifest is where a parse hold's
+// AGE lives: parseFailStreak, parseFailedFirstAt, parseFailVersions. Lose the
+// file and an escalated hold -- one the run had been shouting about for five
+// nights -- silently reopens at attempt 1 and the alarm starts its clock over.
+// An alarm that forgets is the exact failure #92 and #93 were built to remove,
+// and it would arrive without a single line of output saying it had happened.
+//
+// So the classification is separated from the read, and the caller says which
+// of the three it got. It is still not an ERROR -- a genuine first run has to
+// work -- but it is never again a silence.
+
+/**
+ * Classify a manifest read. Pure over the raw file contents (null = no file),
+ * so the three outcomes can be asserted without a filesystem.
+ */
+function parseManifest(raw) {
+  const empty = { files: {} };
+  if (raw == null) return { manifest: empty, source: 'absent' };
+  let m;
+  try { m = JSON.parse(raw); }
+  catch (e) { return { manifest: empty, source: 'unreadable', error: e.message }; }
+  // A JSON document that parses but has no `files` map is not a manifest. It
+  // would otherwise sail through and every lookup against it would miss, which
+  // is 'absent' wearing a costume.
+  if (!m || typeof m !== 'object' || Array.isArray(m) || !m.files || typeof m.files !== 'object') {
+    return { manifest: empty, source: 'malformed' };
+  }
+  return { manifest: m, source: 'disk' };
 }
+
+function loadManifest() {
+  const raw = fs.existsSync(MANIFEST_PATH) ? fs.readFileSync(MANIFEST_PATH, 'utf8') : null;
+  return parseManifest(raw);
+}
+
 function saveManifest(m) {
   ensureDir(path.dirname(MANIFEST_PATH));
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(m, null, 2));
+  // `files` only. parseManifest's diagnostics live beside the manifest, never
+  // on it, so nothing this job reasons about can leak into the committed file.
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify({ files: m.files || {} }, null, 2));
 }
 
 // ── WHAT AN ENTRY IN THE MANIFEST CLAIMS ─────────────────────────────────────
@@ -1439,7 +1480,7 @@ module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, 
                    // ever looked at again, and was reachable only through a
                    // live SFTP pull.
                    onRecordAsProcessed, mintFeedEntry, markFeedParseFailed, clearFeedParseFailed,
-                   holdVerdict, HOLD_ESCALATE_AFTER, commitVerdict };
+                   holdVerdict, HOLD_ESCALATE_AFTER, commitVerdict, parseManifest };
 
 if (require.main === module) (async () => {
   await loadDeps();
@@ -1467,7 +1508,32 @@ if (require.main === module) (async () => {
   summary.commit = commitVerdict({ dryRun: DRY_RUN, damaged: false });
 
   let downloaded = [];
-  const manifest = loadManifest();
+  const { manifest, source: manifestSource, error: manifestError } = loadManifest();
+  const feedsOnRecord = Object.keys(manifest.files).length;
+  const holdsOnRecord = Object.values(manifest.files).filter(f => f && f.parseFailedAt).length;
+  summary.manifest = { source: manifestSource, feedsOnRecord, heldFeeds: holdsOnRecord };
+
+  if (manifestSource === 'disk') {
+    log(`Manifest loaded: ${feedsOnRecord} feed file(s) on record` +
+        (holdsOnRecord ? `, ${holdsOnRecord} of them held from a previous run` : ''));
+    for (const [p, f] of Object.entries(manifest.files)) {
+      if (!f || !f.parseFailedAt) continue;
+      const v = holdVerdict(f);
+      log(`  held: ${path.basename(p)} — attempt ${v.streak}, ${v.days} day(s) since ${String(v.firstAt).slice(0, 10)}` +
+          (v.escalated ? '  ** ESCALATED **' : ''));
+    }
+  } else {
+    // Not fatal: the first run this job ever makes lands here legitimately, and
+    // so does the first run after the manifest became a committed file. But it
+    // is never quiet, because the other way to land here is that a run's memory
+    // of an escalated hold has just been destroyed.
+    log(`\n** NO USABLE MANIFEST (${manifestSource}${manifestError ? ': ' + manifestError : ''}) **`);
+    log('   Every feed will be re-downloaded and re-parsed, which is correct but not free.');
+    log('   More to the point: any parse hold is starting over. A feed this job had been');
+    log('   escalating about for days reopens at attempt 1 with its clock reset, and the');
+    log('   only evidence that happened is this line. See parseManifest().');
+    log('   Legitimate on a genuine first run. Anything else means the record was lost.');
+  }
 
   // PHASE 1: Download
   if (!SKIP_DOWNLOAD) {
