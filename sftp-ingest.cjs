@@ -1195,7 +1195,9 @@ if (require.main === module) (async () => {
       await sftp.connect({ host: FTP_HOST, port: 22, username: FTP_USER, password: FTP_PASS });
       log(`Connected to ${FTP_HOST} as ${FTP_USER}`);
       downloaded = await walkAndDownload(sftp, manifest);
-      saveManifest(manifest);
+      // NOT saved here. walkAndDownload has filled in manifest.files for what it
+      // pulled, but the record is only written once the run has done something
+      // with them -- see "THE MANIFEST IS EARNED" at the write-outputs block.
       log(`Downloaded ${downloaded.length} new/changed files`);
       summary.downloaded = downloaded.map(d => ({ mid: d.mid, file: d.fileName }));
     } finally {
@@ -1213,6 +1215,11 @@ if (require.main === module) (async () => {
   }
 
   if (DOWNLOAD_ONLY || downloaded.length === 0) {
+    // --download-only earns the record: fetching IS the declared work in that
+    // mode, and --skip-download reads manifest.files to find what was left on
+    // disk, so the two flags only compose if this writes. The other side of the
+    // `||` downloaded nothing, so there is nothing new in the manifest to write.
+    if (DOWNLOAD_ONLY && downloaded.length > 0) saveManifest(manifest);
     log(DOWNLOAD_ONLY ? 'Download-only mode, done.' : 'Nothing new to process, done.');
     fs.writeFileSync(SUMMARY_PATH, JSON.stringify(summary, null, 2));
     return;
@@ -1486,6 +1493,8 @@ if (require.main === module) (async () => {
   // Write outputs
   if (DRY_RUN) {
     log('\n--dry-run: not writing parts.js or exclusives.json');
+    log('  ...nor the manifest: a dry run applied nothing, and a manifest saying');
+    log('  otherwise would make the next real run skip these feeds as already seen.');
   } else if (integrity.damagedThisRun) {
     // -- THE CATALOG IS NOT WRITTEN --------------------------------------------
     // This run destroyed re-pricer stamps that nothing accounts for, so `parts`
@@ -1507,6 +1516,8 @@ if (require.main === module) (async () => {
     log('     the erasure permanent. Yesterday\'s catalog stands. Fix the carry in');
     log('     applyMatchToPart, then re-run -- the price updates come back, the');
     log('     stamps would not have.');
+    log('     The manifest is not saved either, so the next run re-reads these feeds');
+    log('     instead of skipping them as unchanged and idling on an empty download.');
   } else {
     // `unconfirmed` counts too: an absence sweep that stamped rows changed the
     // catalog even when not one price moved, and gating the write on `updated`
@@ -1530,6 +1541,37 @@ if (require.main === module) (async () => {
       }, null, 2));
       log(`Wrote ${exclusivesCount} exclusives to ${path.relative(ROOT, exclusivesJsonlPath)} (JSONL streamed) + meta`);
     }
+
+    // -- THE MANIFEST IS EARNED, NOT FETCHED -----------------------------------
+    //
+    // Written here, at the far end of the run, because the manifest is a record
+    // of what has been PROCESSED. Its only reader is walkAndDownload's
+    // unchanged-file skip, so every file it names is a file the next run will
+    // decline to look at. It used to be written the instant the download
+    // finished, which made it a record of what had been FETCHED -- the same
+    // thing only on a run that goes on to succeed.
+    //
+    // On a run that does not, the difference costs a second night. #90 made
+    // this ingest hard-fail and withhold parts.js when it eats re-pricer
+    // stamps; that guard fails closed, so it will fire more often than the bug
+    // it guards against. A red run used to leave the manifest behind it: the
+    // feed is on record as seen, the next nightly skips it as unchanged,
+    // `downloaded` comes back empty, and the job returns at "Nothing new to
+    // process, done." having ingested nothing -- green, quiet, and idle. That
+    // is the same shape as the 95-day freeze, where the work never ran and the
+    // check never went red.
+    //
+    // The cost of withholding it is one re-download of an unchanged feed (~4
+    // min at the measured streamed rate), and only after a failure. The cost of
+    // saving it early is a night of prices plus the silence about it.
+    //
+    // So the manifest is written exactly where parts.js is: not on --dry-run,
+    // not when the stamp guard withheld the catalog, and not on the fatal path
+    // -- a throw from anywhere above lands in the .catch() below without
+    // passing here, which is the point. A parse error on ONE feed still saves
+    // the whole manifest, including that feed's entry; see the PR.
+    saveManifest(manifest);
+    log(`Manifest saved: ${Object.keys(manifest.files || {}).length} feed file(s) on record as processed`);
   }
   
   summary.finishedAt = new Date().toISOString();
