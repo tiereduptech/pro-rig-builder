@@ -71,6 +71,89 @@ function saveManifest(m) {
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(m, null, 2));
 }
 
+// ── WHAT AN ENTRY IN THE MANIFEST CLAIMS ─────────────────────────────────────
+//
+// One entry per remote feed file, and its only reader is the unchanged-file
+// skip in walkAndDownload: every file named here is a file the next run will
+// decline to look at. #91 fixed WHEN the manifest is written -- after the work,
+// not after the download. This fixes WHAT is in it on a run that did some of
+// the work and not the rest.
+//
+// A feed whose parse throws part-way is counted in totals.errors and
+// `continue`d past, but its entry was minted by walkAndDownload at download
+// time and rode out with the rest of the manifest at the end of the run. So it
+// went on record as processed on the strength of having been FETCHED -- the
+// exact substitution #91 removed, surviving at the granularity of one feed.
+//
+// It escapes by CACHE, not by git, and the second night is the quiet one.
+// sftp-ingest.yml asserts totals.errors==0 between the run and the commit, so
+// the red run never commits the manifest -- but actions/cache saves in its post
+// step, which runs on a failed job (unlike a cancelled one), and the next run
+// restores it by prefix. Night one is red and loud. Night two skips the feed as
+// unchanged, downloads nothing, returns at "Nothing new to process, done." with
+// errors==0 -- and the assertion passes, because feedRecords>0 is a --warn, not
+// a --require. Green, quiet, nothing ingested, and it stays that way until the
+// feed's size or mtime happens to move on the server. One bad parse, one loud
+// night and then an unbounded silent one: the 95-day freeze again, entered
+// through a door #91 left open.
+//
+// So a feed that did not finish parsing is MARKED rather than trusted, and the
+// mark is what the skip consults. The price is one re-fetch of an unchanged
+// feed (~4 min streamed) and only after a failure -- what #91 already paid for
+// the same silence.
+
+/** Hold a feed off the skip list: it was fetched, but nothing read it through. */
+function markFeedParseFailed(manifest, remotePath, err) {
+  const prev = (manifest.files || {})[remotePath];
+  // No entry is already "not on record", which is the state we are asking for.
+  // Minting one here would invent a size/mtime pair nothing measured.
+  if (!prev) return null;
+  prev.parseFailedAt = new Date().toISOString();
+  prev.parseError = String((err && err.message) || err || 'unknown');
+  return prev;
+}
+
+/**
+ * The manifest entry for a file that has just finished downloading.
+ *
+ * The hold is CARRIED, not re-minted. A completed download proves the bytes are
+ * on disk, not that anything read them, so it is not the event that clears a
+ * parse failure -- the next successful parse is. Returning a clean entry here
+ * instead would let `--download-only` (which saves the manifest and never
+ * parses) quietly promote a held feed to processed: this same bug, wearing the
+ * other flag.
+ */
+function mintFeedEntry(prev, { size, mtime, mid, localPath }) {
+  const entry = { size, mtime, mid, localPath, downloadedAt: new Date().toISOString() };
+  if (prev && prev.parseFailedAt) {
+    entry.parseFailedAt = prev.parseFailedAt;
+    entry.parseError = prev.parseError;
+  }
+  return entry;
+}
+
+/** Release the hold. Only a parse that ran to the end may call this. */
+function clearFeedParseFailed(manifest, remotePath) {
+  const prev = (manifest.files || {})[remotePath];
+  if (!prev || !prev.parseFailedAt) return false;
+  delete prev.parseFailedAt;
+  delete prev.parseError;
+  return true;
+}
+
+// The skip decision itself, pure and exported so it can be asserted without a
+// live SFTP pull -- the same reason applyMatchToPart is exported below.
+//
+// Unchanged is necessary but not sufficient. The size/mtime pair says the bytes
+// are the ones we already have; parseFailedAt says we never got through them.
+// Skipping on the first without consulting the second is what put a feed
+// permanently out of reach.
+function onRecordAsProcessed(prev, remoteSize, remoteMTime) {
+  if (!prev) return false;
+  if (prev.parseFailedAt) return false;
+  return prev.size === remoteSize && prev.mtime === remoteMTime;
+}
+
 // â”€â”€â”€ PHASE 1: SFTP DISCOVERY + DOWNLOAD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Only walk these top-level dirs - skip the 200+ locale folders
 const WALK_ROOTS = ['/', '/ADDITIONAL', '/GLOBAL/EN-US_USD'];
@@ -125,9 +208,17 @@ async function walkAndDownload(sftp, manifest) {
         const remoteSize = entry.size;
         const remoteMTime = entry.modifyTime;
         
-        if (prev && prev.size === remoteSize && prev.mtime === remoteMTime) {
+        if (onRecordAsProcessed(prev, remoteSize, remoteMTime)) {
           log(`  â­  ${entry.name} (unchanged, ${(remoteSize/1024/1024).toFixed(1)}MB)`);
           continue;
+        }
+
+        // Unchanged bytes we already hold, but the last run did not get
+        // through them. Re-fetched rather than re-read from disk: a truncated
+        // or corrupt download is one of the likelier ways a parse throws
+        // mid-stream, and that is the case where the local copy is the problem.
+        if (prev && prev.parseFailedAt && prev.size === remoteSize && prev.mtime === remoteMTime) {
+          log(`  ↻  ${entry.name} (unchanged, but last run failed to parse it: ${prev.parseError || 'unknown'})`);
         }
 
         const localDir = path.join(FEED_DIR, mid);
@@ -141,7 +232,8 @@ async function walkAndDownload(sftp, manifest) {
         // sequential stream measures at MB/s (full feed in ~4 min). See the
         // 2026-07-23 measurement (300k records parsed in 72s via a streamed read).
         await sftp.get(fullPath, localPath);
-        manifest.files[key] = { size: remoteSize, mtime: remoteMTime, mid, localPath, downloadedAt: new Date().toISOString() };
+        // Carries a parse hold across the re-download -- see mintFeedEntry.
+        manifest.files[key] = mintFeedEntry(prev, { size: remoteSize, mtime: remoteMTime, mid, localPath });
         downloaded.push({ mid, localPath, remotePath: fullPath, fileName: entry.name });
       }
     }
@@ -1170,7 +1262,11 @@ module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, 
                    // They were previously reachable only through a live SFTP pull, which
                    // is why a wholesale assignment could erase 1,739 stamps a night
                    // without a single test noticing.
-                   applyMatchToPart };
+                   applyMatchToPart,
+                   // Same reason: the manifest skip decided whether a feed is
+                   // ever looked at again, and was reachable only through a
+                   // live SFTP pull.
+                   onRecordAsProcessed, mintFeedEntry, markFeedParseFailed, clearFeedParseFailed };
 
 if (require.main === module) (async () => {
   await loadDeps();
@@ -1180,6 +1276,10 @@ if (require.main === module) (async () => {
     dryRun: DRY_RUN,
     downloaded: [],
     perMerchant: {},
+    // Named, not just counted. totals.errors is what sftp-ingest.yml asserts on;
+    // this is what tells whoever opens the artifact WHICH feed did not land and
+    // is therefore being held for a re-fetch.
+    parseFailures: [],
     totals: { feedRecords: 0, matched: 0, updated: 0, exclusives: 0, errors: 0 }
   };
 
@@ -1314,7 +1414,30 @@ if (require.main === module) (async () => {
     } catch (e) {
       log(`  âœ— Parse error: ${e.message}`);
       summary.totals.errors++;
+      summary.parseFailures.push({ mid: dl.mid, file: dl.fileName, remotePath: dl.remotePath, error: e.message });
+
+      // This feed does not go on record as processed. Its manifest entry was
+      // minted at download time and, without this, would ride out with the rest
+      // at the end of the run -- and the next run would skip it as unchanged and
+      // never look at it again. See "WHAT AN ENTRY IN THE MANIFEST CLAIMS".
+      //
+      // MARKED, not deleted. --skip-download rebuilds its work list from
+      // manifest.files, so dropping the entry would strand the one feed an
+      // operator re-runs to debug the parse, and would throw away the localPath
+      // pointing at the copy already on disk. The entry stays readable; the skip
+      // is what refuses it.
+      if (markFeedParseFailed(manifest, dl.remotePath, e)) {
+        log(`    held: manifest entry marked unprocessed, next run re-fetches ${dl.fileName}`);
+      }
       continue;
+    }
+
+    // Parsed end to end -- the only event that earns the release. Ordered after
+    // the catch and before anything reads `parsed` so the two paths are
+    // exhaustive: every feed in `downloaded` leaves this block either held or
+    // released, never in whatever state the last run left it.
+    if (clearFeedParseFailed(manifest, dl.remotePath)) {
+      log(`  ✓ Parsed after a previous failure — hold released on ${dl.fileName}`);
     }
     
     // A FULL feed for the Newegg MID is the only thing that licenses the absence
@@ -1568,10 +1691,18 @@ if (require.main === module) (async () => {
     // So the manifest is written exactly where parts.js is: not on --dry-run,
     // not when the stamp guard withheld the catalog, and not on the fatal path
     // -- a throw from anywhere above lands in the .catch() below without
-    // passing here, which is the point. A parse error on ONE feed still saves
-    // the whole manifest, including that feed's entry; see the PR.
+    // passing here, which is the point.
+    //
+    // A parse error on ONE feed does not reach that .catch(): the merchant loop
+    // counts it and moves on, and the rest of the run is real work that has
+    // earned its record. So the manifest still saves -- with that one feed's
+    // entry marked parseFailedAt, which onRecordAsProcessed refuses to skip.
+    // Whole manifest written, one feed held back.
+    const held = Object.values(manifest.files || {}).filter(f => f && f.parseFailedAt).length;
+    const onRecord = Object.keys(manifest.files || {}).length - held;
     saveManifest(manifest);
-    log(`Manifest saved: ${Object.keys(manifest.files || {}).length} feed file(s) on record as processed`);
+    log(`Manifest saved: ${onRecord} feed file(s) on record as processed` +
+        (held ? `, ${held} held for re-fetch (parse failed)` : ''));
   }
   
   summary.finishedAt = new Date().toISOString();
