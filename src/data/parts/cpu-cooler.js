@@ -1840,18 +1840,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA4REKHM8164",
-        "price": 149.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313289607910193816241&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIA4REKHM8164",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:39:52.127Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T09:28:14.176Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:58:40.317Z",
-        "rematchedFrom": "4458315887140650144449529"
+        "price": 109,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:11.578Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -4801,7 +4801,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "4458315448780282110771242",
@@ -5618,7 +5618,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "445839811036610137058647",
@@ -10648,7 +10648,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "4458315165269356823080327",
@@ -11837,18 +11837,20 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA1K6KS87476",
+        "sku": "445831501802986156908340",
+        "itemNumber": "9SIA1K6KS87476",
+        "sellerClass": "marketplace",
         "price": 43.92,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831501802986156908340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA1K6KS87476",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
-        "sellerClass": "marketplace",
+        "inStock": true,
         "matchedAt": "2026-09-01T15:53:33.659Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-03T09:30:08.296Z",
-        "priceLastMovedAt": "2026-09-03",
         "rematchedAt": "2026-09-03T09:30:08.296Z",
-        "rematchedFrom": "9SIA2W0KPW8659"
+        "rematchedFrom": "9SIA2W0KPW8659",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -12922,18 +12924,17 @@ export default [
         "priceConfirmedAt": "2026-09-03"
       },
       "newegg": {
-        "sku": "N82E16835103380",
-        "price": 241.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314182246207624086000&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-394-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835103380%3Fitem%3DN82E16835103380",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-380-01.png",
+        "sku": "445838646692992724754079",
+        "itemNumber": "N82E16835103381",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:45.751Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T09:30:11.889Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T22:00:38.057Z",
-        "migratedFrom": "445833482764238409179563"
+        "price": 219.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838646692992724754079&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-aio-radiator-size-394-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2FN82E16835103381%3Fitem%3DN82E16835103381",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-103-381-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:32:02.925Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8125,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "discount": 10,
@@ -12961,7 +12962,9 @@ export default [
     "mpn": "MLX-D36M-A25SZ-L1",
     "radiator": 360,
     "fanCount": 3,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-03"
   },
   {
     "id": 80249,
@@ -16492,18 +16495,17 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 98.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:37:43.315Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T09:31:14.286Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T22:01:40.417Z",
-        "rematchedFrom": "445833795822587653180041"
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:29:07.827Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",

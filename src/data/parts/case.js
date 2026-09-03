@@ -1173,7 +1173,7 @@ export default [
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
         "priceConfirmedAt": "2026-08-30",
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -2138,8 +2138,8 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2508070L2KC64C.jpg",
         "inStock": true,
         "matchedAt": "2026-09-02T15:37:36.634Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85,
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9,
         "refreshedAt": "2026-09-03T08:37:08.262Z"
       }
     },
@@ -2656,18 +2656,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBGX1KGP9788",
-        "price": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833221582238169262488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdarkrock-e-atx-mid-tower-chassis-cases-black%2Fp%2F2AM-05K6-00018%3Fitem%3D9SIBGX1KGP9788",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S25122705B7EFB5.jpg",
+        "sku": "4458317878828037768757604",
+        "itemNumber": "9SIBGX1KEC6859",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:39:56.639Z",
-        "matchMethod": "name",
-        "matchScore": 0.84,
-        "refreshedAt": "2026-09-03T08:37:10.789Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:07:36.429Z",
-        "rematchedFrom": "4458317878828037768757604"
+        "price": 99.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317878828037768757604&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fe-atx-full-tower-case-darkrock-storage-master-series-metal-plastic-cases-black-classico-max%2Fp%2F2AM-05K6-00010%3Fitem%3D9SIBGX1KEC6859",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGX1S2412160JSK0QF5.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:16.088Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -3321,7 +3321,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.764Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "N82E16811146377",
@@ -3635,7 +3635,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.338Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "discount": 18,
@@ -4809,19 +4809,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAY3SKE12691",
-        "price": 139.99,
-        "saleprice": 76.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316513934076665088551&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fjonsbo-micro-atx-d32-series-spcc-tempered-glass-cases-d32-pro-black%2Fp%2F2AM-006A-000G7%3Fitem%3D9SIAY3SKE12691",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2502240O3Q5L45.jpg",
+        "sku": "4458316749021524131066054",
+        "itemNumber": "9SIAY3SKFX5826",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:39:48.817Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:38:03.444Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:08:29.454Z",
-        "rematchedFrom": "4458316749021524131066054"
+        "price": 129.99,
+        "saleprice": 74.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316749021524131066054&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fjonsbo-micro-atx-d32-series-spcc-tempered-glass-cases-d32-pro-black%2Fp%2F2AM-006A-000H2%3Fitem%3D9SIAY3SKFX5826",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2506030FT1QC80.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:08.403Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -5026,12 +5025,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:40.493Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-09-03T08:38:03.817Z",
-        "priceSuspectValue": 268.99,
-        "priceSuspectClass": "SUSPECT_HIGH",
-        "priceSuspectStreak": 2
+        "matchScore": 1
       }
     },
     "discount": 33,
@@ -5269,13 +5263,14 @@ export default [
         "itemNumber": "2AM-006F-001M4",
         "sellerClass": "official",
         "price": 247.99,
-        "saleprice": 235.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836315056901595139036&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-technology-atx-cases-steel-plastic-cases-computer-cases-atx-form-white-sst-flp02w%2Fp%2F2AM-006F-001M4%3Fitem%3D2AM-006F-001M4",
+        "saleprice": 234.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836315056901595139036&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-technology-atx-cases-steel-plastic-cases-computer-cases-atx-form-white-sst-flp02w%2Fp%2F2AM-006F-001M4%3Fitem%3D2AM-006F-001M4",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BF8AS2511110QVDXL55.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.890Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -13654,7 +13649,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.900Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       },
       "newegg": {
         "sku": "445836794165288006843162",
@@ -14098,7 +14093,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.487Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "discount": 15,
@@ -14247,7 +14242,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:07.748Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -14982,7 +14977,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "additionalImages": [
@@ -15934,8 +15929,8 @@ export default [
         "matchedAt": "2026-08-29T15:58:46.610Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-08-31"
+        "priceLastMovedAt": "2026-08-31",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -16676,7 +16671,7 @@ export default [
         "matchedAt": "2026-08-21T12:45:46.292Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -16924,7 +16919,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.338Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -16996,7 +16991,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.338Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -17277,17 +17272,18 @@ export default [
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
-        "sku": "N82E16811352203",
-        "price": 154.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836984036006496262830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-steel-case-charcoal-black-fd-c-nor1c-01%2Fp%2FN82E16811352203%3Fitem%3DN82E16811352203",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-203-V01.jpg",
+        "sku": "445836671800084043660201",
+        "itemNumber": "N82E16811352204",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:41.967Z",
-        "matchMethod": "name",
-        "matchScore": 0.84,
-        "refreshedAt": "2026-09-03T08:40:13.845Z",
-        "migratedAt": "2026-09-02T21:11:24.324Z",
-        "migratedFrom": "445836671800084043660201"
+        "price": 154.99,
+        "saleprice": 154.97,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836671800084043660201&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-north-steel-case-charcoal-black-fd-c-nor1c-02%2Fp%2FN82E16811352204%3Fitem%3DN82E16811352204",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-204-21.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:58.990Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -17565,18 +17561,20 @@ export default [
         "priceUnconfirmedReason": "bestbuy:price-stamp-2025-12-18"
       },
       "newegg": {
-        "sku": "2AM-000X-00341",
+        "sku": "4458318368421785340985947",
+        "itemNumber": "2AM-000X-00341",
+        "sellerClass": "official",
         "price": 179.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318368421785340985947&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-atx-mid-tower-tower-600-spcc-cases-matcha-green-ca-1z1-00mewn-00%2Fp%2F2AM-000X-00341%3Fitem%3D2AM-000X-00341",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2AM-000X-00341-20.png",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-09-01T15:50:21.732Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-03T08:41:00.655Z",
-        "priceLastMovedAt": "2026-09-03",
         "migratedAt": "2026-09-03T08:41:00.655Z",
-        "migratedFrom": "2AM-000X-00337"
+        "migratedFrom": "2AM-000X-00337",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -18175,7 +18173,8 @@ export default [
         "itemNumber": "N82E16811352206",
         "sellerClass": "official",
         "price": 154.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312110962818515688434&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-steel-case-chalk-white-fd-c-nor1c-04%2Fp%2FN82E16811352206%3Fitem%3DN82E16811352206",
+        "saleprice": 154.97,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312110962818515688434&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-steel-case-chalk-white-fd-c-nor1c-04%2Fp%2FN82E16811352206%3Fitem%3DN82E16811352206",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-206-21.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:12.638Z",
@@ -19205,19 +19204,18 @@ export default [
         "priceConfirmedAt": "2026-09-03"
       },
       "newegg": {
-        "sku": "2AM-000T-00205",
-        "price": 299.99,
-        "saleprice": 268.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838454142025225437511&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-atx-mid-tower-cases-black%2Fp%2F2AM-000T-00205%3Fitem%3D2AM-000T-00205",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25052003MKOM96.jpg",
+        "sku": "4458313206006472432105318",
+        "itemNumber": "N82E16811146374",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:41.007Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:41:13.158Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T21:11:38.737Z",
-        "migratedFrom": "4458313206006472432105318"
+        "price": 289.99,
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313206006472432105318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-mid-tower-tinted-tempered-glass-case-black-cm-h92fb-p1%2Fp%2FN82E16811146374%3Fitem%3DN82E16811146374",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-146-374-13.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:58.050Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "tower": "Mid",
@@ -20349,8 +20347,8 @@ export default [
         "itemNumber": "N82E16811129306",
         "sellerClass": "official",
         "price": 119.99,
-        "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311190781417742920238&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fantec-e-atx-full-tower-case-steel-plastic-tempered-glass-computer-case-black-c8%2Fp%2FN82E16811129306%3Fitem%3DN82E16811129306",
+        "saleprice": 99.97,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311190781417742920238&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fantec-e-atx-full-tower-case-steel-plastic-tempered-glass-computer-case-black-c8%2Fp%2FN82E16811129306%3Fitem%3DN82E16811129306",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-129-306-37.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:38.824Z",
@@ -20859,13 +20857,14 @@ export default [
         "itemNumber": "N82E16811737017",
         "sellerClass": "official",
         "price": 219.99,
-        "saleprice": 196.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831543320867645904502&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fatx-mid-tower-abs-steel-tempered-glass-computer-case-black-cs-hyte-y70-b%2Fp%2FN82E16811737017%3Fitem%3DN82E16811737017",
+        "saleprice": 196.97,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831543320867645904502&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fatx-mid-tower-abs-steel-tempered-glass-computer-case-black-cs-hyte-y70-b%2Fp%2FN82E16811737017%3Fitem%3DN82E16811737017",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-737-017-08.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:39.816Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "addedAt": "2026-05-15T14:34:31.789Z",
@@ -25167,14 +25166,15 @@ export default [
         "itemNumber": "2AM-001H-00251",
         "sellerClass": "official",
         "price": 105,
-        "saleprice": 100.99,
+        "saleprice": 101.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315432876958193708178&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-tower-computer-cases-cases-computer-cases-atx-form-%2Fp%2F2AM-001H-00251%3Fitem%3D2AM-001H-00251",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2510070CFGKVF5.jpg",
         "inStock": true,
         "matchedAt": "2026-08-10",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:43:03.944Z"
+        "refreshedAt": "2026-09-03T08:43:03.944Z",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -25515,7 +25515,8 @@ export default [
         "matchedAt": "2026-09-02T15:37:36.766Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-02",
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -25639,7 +25640,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.900Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -25738,19 +25739,18 @@ export default [
     "mpn": "SG16W",
     "deals": {
       "newegg": {
-        "sku": "2KH-003M-00034",
-        "price": 102.99,
-        "saleprice": 95.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838102563679576629898&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2KH-003M-00034%3Fitem%3D2KH-003M-00034",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A62VD2202010S4EK0CB.jpg",
+        "sku": "4458314077225503119572453",
+        "itemNumber": "2KH-003M-00035",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:37:36.929Z",
-        "matchMethod": "name",
+        "price": 109.99,
+        "saleprice": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314077225503119572453&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsilverstone-sugo-16%2Fp%2F2KH-003M-00035%3Fitem%3D2KH-003M-00035",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2KH-003M-00035-16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:29:01.744Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:43:08.168Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T21:13:33.966Z",
-        "migratedFrom": "4458314077225503119572453"
+        "priceLastMovedAt": "2026-09-02"
       }
     },
     "source": "newegg-case-discovery",
@@ -25979,7 +25979,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.942Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -26336,13 +26336,13 @@ export default [
         "itemNumber": "2AM-001H-00240",
         "sellerClass": "official",
         "price": 124.99,
-        "saleprice": 122.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833597147946774545136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fin-win-micro-atx-cases%2Fp%2F2AM-001H-00240%3Fitem%3D2AM-001H-00240",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2603260H4MQY23.jpg",
         "inStock": true,
         "matchedAt": "2026-08-22T12:21:53.707Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -26463,7 +26463,7 @@ export default [
         "matchedAt": "2026-08-27T21:30:15.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -29515,8 +29515,8 @@ export default [
         "itemNumber": "N82E16811173051",
         "sellerClass": "official",
         "price": 189.99,
-        "saleprice": 185.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831825732100514784307&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx-mid-tower-steel-plastic-tempered-glass-computer-case-black-gt502-tuf-gaming-case-blk%2Fp%2FN82E16811173051%3Fitem%3DN82E16811173051",
+        "saleprice": 185.97,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831825732100514784307&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx-mid-tower-steel-plastic-tempered-glass-computer-case-black-gt502-tuf-gaming-case-blk%2Fp%2FN82E16811173051%3Fitem%3DN82E16811173051",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-173-051-01.png",
         "inStock": true,
         "matchedAt": "2026-08-10",
@@ -29742,9 +29742,7 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:44.309Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "absentStreak": 2,
-        "staleSince": "2026-09-02T21:15:39.588Z"
+        "matchScore": 1
       }
     },
     "source": "newegg-case-discovery",
@@ -29982,18 +29980,17 @@ export default [
     "mpn": "COR-ACC-ME03857",
     "deals": {
       "newegg": {
-        "sku": "9SIA7ABKP06201",
-        "price": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317150407759742610098&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-05K9-00018%3Fitem%3D9SIA7ABKP06201",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A7ABS2512091D7315EB.jpg",
+        "sku": "4458315258824577381203501",
+        "itemNumber": "9SIA7ABM467389",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:37:53.540Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:45:59.681Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:16:26.220Z",
-        "rematchedFrom": "4458315258824577381203501"
+        "price": 169.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315258824577381203501&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-atx-mid-tower-icue-220t-rgb-airflow-steel-plastic-tempered-glass-computer-case-black-cc-9011173-ww%2Fp%2FN82E16811139142%3Fitem%3D9SIA7ABM467389",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-139-142-02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:29:17.808Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7272727272727273,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -34295,13 +34292,14 @@ export default [
         "sku": "4458313121062411731361735",
         "itemNumber": "9SIAD6HKHD8087",
         "sellerClass": "marketplace",
-        "price": 208.8,
+        "price": 210.7,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313121062411731361735&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fxpg-atx-mid-tower-invader-x-spcc-3mm-tempered-glass-computer-case-white-invaderxmt-whcww%2Fp%2FN82E16811858005%3Fitem%3D9SIAD6HKHD8087",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-858-005-01.png",
         "inStock": true,
         "matchedAt": "2026-08-10",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -36040,7 +36038,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -36814,19 +36812,18 @@ export default [
     "mpn": "Z20 ORANGE/BLACK",
     "deals": {
       "newegg": {
-        "sku": "9SIAY3SK817133",
-        "price": 189,
-        "saleprice": 104,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583644385010184645876&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fjonsplus-micro-atx-mini-itx-spcc-steel-plate-tempered-glass-cases-z20-white%2Fp%2F2AM-05GF-00013%3Fitem%3D9SIAY3SK817133",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2405080LACW53D.jpg",
+        "sku": "445839933982260197116346",
+        "itemNumber": "9SIAY3SK4G1031",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:39:48.705Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:49:01.386Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:19:27.074Z",
-        "rematchedFrom": "445839933982260197116346"
+        "price": 179,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839933982260197116346&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fjonsplus-micro-atx-mini-itx-spcc-steel-plate-tempered-glass-cases-z20-black%2Fp%2F2AM-05GF-00010%3Fitem%3D9SIAY3SK4G1031",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AY3SS2401310ON787D2.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:08.293Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -38167,7 +38164,7 @@ export default [
         "itemNumber": "9SIB2TBK147037",
         "sellerClass": "marketplace",
         "price": 79.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318065497447325580644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fazza-micro-atx-mid-tower-steel-tempered-glass-cases-black-xander-150%2Fp%2F2AM-004W-00092%3Fitem%3D9SIB2TBK147037",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318065497447325580644&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fazza-micro-atx-mid-tower-steel-tempered-glass-cases-black-xander-150%2Fp%2F2AM-004W-00092%3Fitem%3D9SIB2TBK147037",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B2TBS23092208EUTJ90.jpg",
         "inStock": true,
         "matchedAt": "2026-08-10",
@@ -38623,7 +38620,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:52.271Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -45309,7 +45306,7 @@ export default [
         "sku": "445838503834152162363725",
         "itemNumber": "9SIC6E1M4H8738",
         "sellerClass": "marketplace",
-        "price": 1159.57,
+        "price": 1168.32,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838503834152162363725&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000S1%3Fitem%3D9SIC6E1M4H8738",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2605280MIP8Y59.jpg",
         "inStock": true,
@@ -45343,18 +45340,17 @@ export default [
     "mpn": "GX601S MIKU/GN/TG",
     "deals": {
       "newegg": {
-        "sku": "9SIBTK0M5K4775",
-        "price": 1199,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836737411751300466291&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000Z0%3Fitem%3D9SIBTK0M5K4775",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2608280FOFLIC2.jpg",
+        "sku": "4458316379972340716953289",
+        "itemNumber": "9SIC6E1M4J8316",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-02T15:40:31.780Z",
-        "matchMethod": "name",
+        "price": 975.43,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316379972340716953289&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000S5%3Fitem%3D9SIC6E1M4J8316",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2608280RHPB259.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:49.493Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:52:14.730Z",
-        "priceLastMovedAt": "2026-09-02",
-        "rematchedAt": "2026-09-02T21:22:40.059Z",
-        "rematchedFrom": "4458316379972340716953289"
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -50946,7 +50942,7 @@ export default [
         "sku": "44583672325432676820497",
         "itemNumber": "9SIC6E1M4H8005",
         "sellerClass": "marketplace",
-        "price": 245.94,
+        "price": 254.69,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583672325432676820497&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx-mid-tower-gt301-tuf-gaming-case-pink-handle-steel-tempered-glass-abs-plastic-computer-case-demon-slayer-edition-90dc0046-b40000%2Fp%2FN82E16811173048%3Fitem%3D9SIC6E1M4H8005",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-173-048-01.jpg",
         "inStock": true,
@@ -50983,7 +50979,7 @@ export default [
         "sku": "4458312858179859228948192",
         "itemNumber": "9SIC6E1M4H9280",
         "sellerClass": "marketplace",
-        "price": 1151.06,
+        "price": 1159.81,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312858179859228948192&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2AM-0033-000R4%3Fitem%3D9SIC6E1M4H9280",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BTK0S2603060MPPSL59.jpg",
         "inStock": true,
@@ -53373,13 +53369,13 @@ export default [
         "itemNumber": "N82E16811139260",
         "sellerClass": "official",
         "price": 139.99,
+        "saleprice": 119.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832274456178137653624&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-atx-mid-tower-steel-tempered-glass-solid-wood-computer-case-frame-4000x-rs-black%2Fp%2FN82E16811139260%3Fitem%3DN82E16811139260",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-139-260-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:44.328Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "saleprice": 119.99,
         "refreshedAt": "2026-09-03T08:58:05.829Z",
         "priceLastMovedAt": "2026-09-02"
       }
@@ -53652,7 +53648,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.346Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -53711,7 +53707,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.354Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -53935,7 +53931,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.459Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -53986,7 +53982,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.459Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -54074,7 +54070,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.460Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -54199,7 +54195,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.460Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -54250,7 +54246,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:44.497Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -54372,7 +54368,7 @@ export default [
         "matchedAt": "2026-08-31T18:40:57.699Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -55230,7 +55226,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-28",
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -55953,7 +55949,7 @@ export default [
         "itemNumber": "N82E16811352118",
         "sellerClass": "official",
         "price": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314200658947432013484&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-full-tower-define-7-xl-steel-computer-case-black-fd-c-def7x-01%2Fp%2FN82E16811352118%3Fitem%3DN82E16811352118",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314200658947432013484&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-full-tower-define-7-xl-steel-computer-case-black-fd-c-def7x-01%2Fp%2FN82E16811352118%3Fitem%3DN82E16811352118",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-118-V21.jpg",
         "inStock": true,
         "matchedAt": "2026-08-10",
@@ -56057,18 +56053,17 @@ export default [
     "mpn": "FD-C-MES2A-01",
     "deals": {
       "newegg": {
-        "sku": "N82E16811352133",
-        "price": 174.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315910072719684730852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-meshify-2-steel-computer-case-black-fd-c-mes2a-03%2Fp%2FN82E16811352133%3Fitem%3DN82E16811352133",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-133-21.jpg",
+        "sku": "4458317673266193767995827",
+        "itemNumber": "N82E16811352224",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:42.004Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:59:06.305Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T21:29:31.494Z",
-        "migratedFrom": "4458317673266193767995827"
+        "price": 154.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317673266193767995827&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-meshify-3-steel-pc-case-black-fd-c-mes3a-01%2Fp%2FN82E16811352224%3Fitem%3DN82E16811352224",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-224-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:59.027Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -56525,18 +56520,17 @@ export default [
     "mpn": "FD-C-TOR1A-07",
     "deals": {
       "newegg": {
-        "sku": "N82E16811352207",
-        "price": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831962588923581432989&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-torrent-steel-case-white-fd-c-tor1a-07%2Fp%2FN82E16811352207%3Fitem%3DN82E16811352207",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-207-21.jpg",
+        "sku": "445836493308152398404193",
+        "itemNumber": "N82E16811352170",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:41.945Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:59:09.584Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T21:29:34.455Z",
-        "migratedFrom": "445836493308152398404193"
+        "price": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836493308152398404193&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-pop-air-rgb-steel-tempered-glass-computer-case-white-fd-c-por1a-01%2Fp%2FN82E16811352170%3Fitem%3DN82E16811352170",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-170-V01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:58.969Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -56814,18 +56808,17 @@ export default [
     "mpn": "FD-C-EPO1A-05",
     "deals": {
       "newegg": {
-        "sku": "N82E16811352243",
-        "price": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311642102851629645855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-epoch-steel-cases-computer-cases-atx-form-white-fd-c-epo1a-05%2Fp%2FN82E16811352243%3Fitem%3DN82E16811352243",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-243-18.jpg",
+        "sku": "4458317688018714213118226",
+        "itemNumber": "N82E16811352253",
         "sellerClass": "official",
-        "matchedAt": "2026-09-02T15:40:42.038Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-03T08:59:10.991Z",
-        "priceLastMovedAt": "2026-09-02",
-        "migratedAt": "2026-09-02T21:29:36.004Z",
-        "migratedFrom": "4458317688018714213118226"
+        "price": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317688018714213118226&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ffractal-design-atx-mid-tower-pop-2-air-steel-computer-case-black-fd-c-poa2a-01%2Fp%2FN82E16811352253%3Fitem%3DN82E16811352253",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-352-253-15.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-03T15:31:59.059Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7619047619047619,
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57239,7 +57232,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-31",
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57327,8 +57320,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.412Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-09-01"
+        "priceLastMovedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57417,7 +57410,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.412Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57470,7 +57463,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:07.755Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57632,7 +57625,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:07.755Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57866,7 +57859,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.481Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -57954,7 +57947,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:07.164Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -58043,7 +58036,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-28",
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -58535,7 +58528,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:39.823Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -59464,7 +59457,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:39.868Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -59731,7 +59724,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -60030,8 +60023,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-09-02"
+        "priceLastMovedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -60074,14 +60067,14 @@ export default [
         "sellerClass": "official",
         "price": 75,
         "saleprice": 54.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313013658556623429860&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811970028R%3Fitem%3DN82E16811970028R",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313013658556623429860&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16811970028R%3Fitem%3DN82E16811970028R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/11-970-028-01.png",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:39.868Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-09-02"
+        "priceLastMovedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -60130,8 +60123,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-09-02"
+        "priceLastMovedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -60325,7 +60318,8 @@ export default [
         "matchedAt": "2026-09-02T15:40:42.166Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-02",
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",
@@ -60375,7 +60369,7 @@ export default [
         "matchedAt": "2026-09-02T15:40:42.166Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "source": "newegg-case-discovery",

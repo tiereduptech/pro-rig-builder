@@ -35,7 +35,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "upc": "00889842966169"
@@ -77,7 +78,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "upc": "00889842966640"

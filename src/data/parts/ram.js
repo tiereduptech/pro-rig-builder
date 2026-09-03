@@ -4645,7 +4645,7 @@ export default [
         "itemNumber": "9SIB0ASKKS1762",
         "sellerClass": "marketplace",
         "price": 278.39,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316472641298539134629&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-3200-cas-latency-cl16-memory-kit-black-red%2Fp%2FN82E16820232885%3Fitem%3D9SIB0ASKKS1762",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316472641298539134629&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-aegis-32gb-ddr4-3200-cas-latency-cl16-memory-kit-black-red%2Fp%2FN82E16820232885%3Fitem%3D9SIB0ASKKS1762",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-232-885-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:51.455Z",
@@ -6914,7 +6914,9 @@ export default [
     "height": 44,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-03"
   },
   {
     "id": 40201,
@@ -9555,7 +9557,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-28",
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "cap": 32,
@@ -13352,8 +13354,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.877Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02",
-        "priceLastMovedAt": "2026-09-02"
+        "priceLastMovedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -14962,7 +14964,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:41.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -17030,7 +17032,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:09.059Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-02"
+        "priceUnconfirmedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -21518,8 +21520,9 @@ export default [
         "saleprice": 1399.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833769186271761957518&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-96gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374549%3Fitem%3DN82E16820374549",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
+        "inStock": true,
         "matchedAt": "2026-07-24",
-        "matchMethod": "discovery",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-03T09:07:12.866Z",
         "priceLastMovedAt": "2026-09-03"
@@ -23569,7 +23572,7 @@ export default [
         "sellerClass": "official",
         "price": 649.99,
         "saleprice": 639.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839513963699123315037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374815%3Fitem%3DN82E16820374815",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839513963699123315037&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-white%2Fp%2FN82E16820374815%3Fitem%3DN82E16820374815",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-815-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
