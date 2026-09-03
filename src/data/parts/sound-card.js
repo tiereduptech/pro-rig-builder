@@ -72,7 +72,7 @@ export default [
         "price": 38,
         "url": "https://www.amazon.com/dp/B002LM0U2S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -117,7 +117,7 @@ export default [
         "price": 35.88,
         "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "KART IT",
         "priceResolvedVia": "paapi",
@@ -144,7 +144,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BFHFSX4C?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "Hifi Made Fun",
         "priceResolvedVia": "paapi"
@@ -173,7 +173,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-02",
+    "quarantinedAt": "2026-09-03",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -198,7 +198,7 @@ export default [
         "price": 65,
         "url": "https://www.amazon.com/dp/B07TW2JQNN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "HIFI College",
         "priceResolvedVia": "paapi",
@@ -224,7 +224,7 @@ export default [
         "price": 218.02,
         "url": "https://www.amazon.com/dp/B018JUPY3A?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "iT Hardware",
         "priceResolvedVia": "paapi",
@@ -249,7 +249,7 @@ export default [
         "price": 149.99,
         "url": "https://www.amazon.com/dp/B08ZD59L8H?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "3p",
         "priceSeller": "Melodi Books",
         "priceResolvedVia": "paapi",
@@ -278,7 +278,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-02",
+    "quarantinedAt": "2026-09-03",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -303,7 +303,7 @@ export default [
         "url": "https://www.amazon.com/dp/B00F7120TQ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-03",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
