@@ -9,6 +9,16 @@ pchw-scanner/bin/
 pchw-scanner/obj/
 catalog-build/*
 !catalog-build/price-history.json
+# The sftp ingest's record of which feed files it has PROCESSED, and -- since
+# #93 -- how many consecutive runs each held feed has failed for. The commit
+# step in sftp-ingest.yml has named both of these in its `git add` since it was
+# written, and `catalog-build/*` above silently made that a no-op: 0 commits
+# ever touched either file. They existed only on the runner and in
+# actions/cache, so a cache eviction reset an escalated hold to attempt 1 and
+# the alarm started its clock over with nobody told. An alarm that forgets is
+# the failure mode #92 and #93 exist to remove.
+!catalog-build/sftp-manifest.json
+!catalog-build/newegg-exclusives.meta.json
 verify-reports/
 public/downloads/
 dist/downloads/
