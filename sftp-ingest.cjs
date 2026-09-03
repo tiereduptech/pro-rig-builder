@@ -27,6 +27,9 @@ const path = require('path');
 const zlib = require('zlib');
 const readline = require('readline');
 const SftpClient = require('ssh2-sftp-client');
+// The sanctioned catalog writer. See the replacement of this file's own
+// writeParts() below for why the local one is gone.
+const { writeCatalog } = require('./scripts/write-catalog.cjs');
 
 // Capacity guard (shared, ESM) — loaded at startup. Retailer-agnostic guard that
 // blocks attaching a deal of a different storage capacity than the product.
@@ -1328,11 +1331,31 @@ function applyMatchToPart(part, rec, match) {
   return true;
 }
 
-function writeParts(parts) {
-  const header = '// Auto-merged catalog. Edit with care.\n';
-  const body = 'export const PARTS = ' + JSON.stringify(parts, null, 2) + ';\n\nexport default PARTS;\n';
-  fs.writeFileSync(PARTS_PATH, header + body, 'utf8');
-}
+// -- THERE IS NO writeParts() HERE ANY MORE ----------------------------------
+//
+// It was a bare fs.writeFileSync of a JSON literal over src/data/parts.js: no
+// size brake, no temp-and-rename, no check that the result parsed, and a
+// SEPARATE workflow step responsible for re-splitting the literal back into the
+// per-category chunks the frontend actually imports.
+//
+// That arrangement is the one scripts/write-catalog.cjs exists to abolish. Its
+// header says it plainly -- the re-split "used to live in YAML, so nothing
+// stopped a literal write from being the last thing that happened", and on
+// 2026-06-27 that is exactly what went wrong: parts.js ended up with a literal
+// PARTS *and* a stray spread barrel, a hard SyntaxError that broke prerender and
+// the sitemap until it was repaired by hand. Around 30 scripts write the catalog
+// through writeCatalog(), refresh-newegg-prices.cjs among them. This file was
+// the holdout, which also made prerender.yml's comment ("every writer goes
+// through scripts/write-catalog.cjs") untrue about the single largest writer.
+//
+// It matters more now than it did. The commit step is moving to run on a
+// partially-failed run, so the bytes on disk have to be self-verifying rather
+// than merely probably-fine: writeCatalog() does literal -> verify -> atomic
+// same-filesystem promote -> re-split -> assertBarrelShape(), keeps a rolling
+// pre-write backup of the barrel AND every chunk, and refuses a catastrophic
+// shrink or growth. This ingest only ever mutates existing rows -- it never
+// pushes or splices `parts` -- so those brakes cannot fire on it, and they cost
+// nothing to carry.
 
 // â”€â”€â”€ MAIN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Exported so other jobs can share the parser instead of copying it, and so
@@ -1440,6 +1463,11 @@ if (require.main === module) (async () => {
   log('Loading catalog...');
   const partsModule = await import('file://' + PARTS_PATH.replace(/\\/g, '/') + '?t=' + Date.now());
   const parts = partsModule.PARTS;
+  // Taken at load and passed to writeCatalog() at the far end of the run, where
+  // it is the reference for the shrink/growth brakes. Read here rather than at
+  // the write because `parts` is mutated in between, and a brake that compares
+  // the array against itself is not a brake.
+  const loadedCount = parts.length;
   log(`Loaded ${parts.length} products`);
   
   // Counted BEFORE anything mutates the catalog: half of the stamp-integrity
@@ -1809,7 +1837,12 @@ if (require.main === module) (async () => {
     // trouble of establishing.
     if (summary.totals.updated > 0 || unconfirmed > 0) {
       log(`\nWriting ${parts.length} products to parts.js (${summary.totals.updated} updated, ${unconfirmed} marked unconfirmed)...`);
-      writeParts(parts);
+      // loadedCount is the count taken at load, before the merchant loop -- the
+      // shrink/growth brakes compare against it. Throws rather than returning on
+      // any failure, and the throw lands in the .catch() below without reaching
+      // the manifest save, which is the same rule every other refusal here obeys.
+      const written = await writeCatalog(parts, { loadedCount, reason: 'sftp newegg ingest' });
+      log(`  parts.js + ${written.chunks} chunk(s) written and verified; backup at ${path.relative(ROOT, written.backup)}`);
     } else {
       log('\nNo parts updated, skipping parts.js write');
     }

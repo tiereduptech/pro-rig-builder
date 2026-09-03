@@ -96,11 +96,14 @@ jobs:
             --newer-than-epoch="$INGEST_STARTED" \
             --require='totals.errors==0' \
             --warn='totals.feedRecords>0'
-      # Re-emit the per-category chunk barrel so the frontend (which loads
-      # src/data/parts/<cat>.js, not the literal) never goes stale. Runs after
-      # the literal write, before the commit, so parts.js + chunks commit atomically.
-      - name: Re-split catalog into per-category chunks
-        run: node scripts/split-parts-by-cat.cjs
+      # NO RE-SPLIT STEP. The ingest now writes through scripts/write-catalog.cjs,
+      # which re-splits into src/data/parts/<cat>.js, regenerates the barrel and
+      # verifies the result (assertBarrelShape) as part of the write itself. A
+      # step here would re-run split-parts-by-cat.cjs over an already-split
+      # catalog -- harmless, but it would also re-establish the arrangement
+      # write-catalog.cjs was built to abolish: the re-split living in YAML,
+      # where nothing stops a literal write from being the last thing that
+      # happened. That is the 2026-06-27 dual-export corruption.
       - name: Commit and push if changed
         run: |
           # Not `if [ -f ... ]`. A missing summary here means the ingest died
