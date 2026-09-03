@@ -53,7 +53,33 @@ jobs:
           echo "INGEST_STARTED=$(date +%s)" >> "$GITHUB_ENV"
           node sftp-ingest.cjs
 
-      # The step above exiting 0 does not mean it produced anything, and the
+      # ── ESCALATION, ORDERED FIRST ON PURPOSE ─────────────────────────────
+      #
+      # A held feed makes totals.errors non-zero, so the outcome assertion below
+      # fails on night one and would keep failing, from the same step, with the
+      # same annotation, for as long as the hold lasts. That is precisely how
+      # epik-watchdog.yml's schedule ended up commented out: red so regularly
+      # that the red stopped being information. #92 fixed the silence and traded
+      # it for a repetition, which is a quieter version of the same problem.
+      #
+      # This step fails ONLY once a hold has survived HOLD_ESCALATE_AFTER
+      # consecutive attempts, and it runs BEFORE the outcome assertion so that
+      # it is the step that fails when it fires. The failing step name and the
+      # --label are what a human sees in the notification and the run summary,
+      # so night two arrives as "did the ingest produce an outcome" and night
+      # five arrives as this: a different sentence about a different fact.
+      #
+      # It cannot fire on a healthy run. totals.escalatedHolds is initialised to
+      # 0 in the summary literal, including on the quiet early return.
+      - name: Escalate a feed held past the retry threshold
+        run: |
+          node scripts/assert-outcome.cjs \
+            --artifact=catalog-build/sftp-ingest-summary.json \
+            --label="SFTP ingest — a feed has been unreadable for days, not minutes" \
+            --newer-than-epoch="$INGEST_STARTED" \
+            --require='totals.escalatedHolds==0'
+
+      # The INGEST step exiting 0 does not mean it produced anything, and the
       # commit step below cannot tell the difference: with no summary on disk it
       # skips its body and the job goes green having ingested nothing. That is
       # how 99 runs committed once. Assert the outcome here, between the work

@@ -102,15 +102,104 @@ function saveManifest(m) {
 // feed (~4 min streamed) and only after a failure -- what #91 already paid for
 // the same silence.
 
+// ── A HOLD MUST AGE ──────────────────────────────────────────────────────────
+//
+// #92 made a feed that threw mid-parse come back the next night instead of
+// being skipped forever. It left this behind: a DETERMINISTIC failure now comes
+// back every night, fails identically every night, and reports itself in
+// exactly the same words every night.
+//
+// That is how epik-watchdog.yml earned its mute. Its own header was written
+// against passive signals, and it still went red every 30 minutes until the red
+// stopped carrying information and the schedule was commented out. An alarm
+// that repeats is an alarm that gets turned off, and a turned-off alarm is the
+// 95-day freeze with extra steps.
+//
+// So the hold accumulates. The manifest carries how many consecutive runs it
+// has survived, when it started, and how many distinct versions of the file
+// have been fetched and refused -- and past HOLD_ESCALATE_AFTER the run stops
+// reporting a parse error and starts reporting a stale catalog. Different
+// claim, different remedy, different failing step, so the notification itself
+// changes: night two says "this may be a bad transfer", night five says "these
+// rows have not reached the catalog in five days".
+//
+// The counters survive red nights by the same route the hold does -- the
+// manifest is written at the end of this process and actions/cache saves it in
+// a post step that runs on a failed job. See "WHAT AN ENTRY IN THE MANIFEST
+// CLAIMS" above; escalation is only possible because that path exists.
+
+// Consecutive failed attempts before a hold stops being a parse error. Stated,
+// not magic: night one can be a truncated transfer, night two re-fetches the
+// file and rules that out, and by night three the failure is deterministic and
+// the merchant's rows have been missing from every ingest for three days.
+const HOLD_ESCALATE_AFTER = 3;
+
 /** Hold a feed off the skip list: it was fetched, but nothing read it through. */
-function markFeedParseFailed(manifest, remotePath, err) {
+function markFeedParseFailed(manifest, remotePath, err, now = new Date()) {
   const prev = (manifest.files || {})[remotePath];
   // No entry is already "not on record", which is the state we are asking for.
   // Minting one here would invent a size/mtime pair nothing measured.
   if (!prev) return null;
-  prev.parseFailedAt = new Date().toISOString();
+
+  const stamp = now.toISOString();
+  const bytes = `${prev.size}:${prev.mtime}`;
+  // parseFailedAt alone means a hold written before this counter existed (#92).
+  // It is a hold in progress, not a fresh one, so it continues at the count it
+  // implies rather than resetting the clock a cached manifest already started.
+  const continuing = !!prev.parseFailedAt;
+  // Read BEFORE the overwrite below. A #92-era entry records the failure but not
+  // its age, and its parseFailedAt is the only evidence of when the hold began;
+  // taking the fallback after the assignment would silently restart the clock at
+  // now, every run, and an age that resets every run never reaches a threshold.
+  const previouslyFailedAt = prev.parseFailedAt;
+
+  prev.parseFailedAt = stamp;
   prev.parseError = String((err && err.message) || err || 'unknown');
+
+  if (!continuing) {
+    prev.parseFailedFirstAt = stamp;
+    prev.parseFailStreak = 1;
+    prev.parseFailVersions = 1;
+  } else {
+    prev.parseFailedFirstAt = prev.parseFailedFirstAt || previouslyFailedAt;
+    prev.parseFailStreak = (prev.parseFailStreak || 1) + 1;
+    // A REPUBLISHED feed that still will not parse does not reset the streak.
+    // It is a worse signal, not a fresh start -- the merchant is publishing
+    // broken files rather than one transfer having gone wrong -- and the streak
+    // measures how long these rows have been missing from the catalog, which is
+    // a clock that does not care whose fault it is. Counted separately so the
+    // escalation can say which of the two it is looking at.
+    if (prev.parseFailBytes !== bytes) prev.parseFailVersions = (prev.parseFailVersions || 1) + 1;
+  }
+  prev.parseFailBytes = bytes;
   return prev;
+}
+
+/**
+ * How old is this hold, and has it stopped being a parse error?
+ *
+ * Pure and exported: the decision to escalate is the kind of rule that must be
+ * assertable without a live SFTP pull and a calendar.
+ */
+function holdVerdict(entry, now = new Date()) {
+  if (!entry || !entry.parseFailedAt) return { held: false };
+  // Defaults cover an entry marked by the #92-era code, which recorded the
+  // failure but not its age. One failure, starting whenever it was recorded.
+  const streak = entry.parseFailStreak || 1;
+  const firstAt = entry.parseFailedFirstAt || entry.parseFailedAt;
+  const started = Date.parse(firstAt);
+  const days = Number.isFinite(started)
+    ? Math.max(0, Math.floor((now.getTime() - started) / 86400000))
+    : 0;
+  return {
+    held: true,
+    streak,
+    firstAt,
+    days,
+    versions: entry.parseFailVersions || 1,
+    error: entry.parseError || 'unknown',
+    escalated: streak >= HOLD_ESCALATE_AFTER,
+  };
 }
 
 /**
@@ -128,6 +217,13 @@ function mintFeedEntry(prev, { size, mtime, mid, localPath }) {
   if (prev && prev.parseFailedAt) {
     entry.parseFailedAt = prev.parseFailedAt;
     entry.parseError = prev.parseError;
+    // The age travels with the hold. Dropping it here would restart the streak
+    // on every re-download, which is every run -- an escalation that can never
+    // reach its own threshold.
+    entry.parseFailedFirstAt = prev.parseFailedFirstAt;
+    entry.parseFailStreak = prev.parseFailStreak;
+    entry.parseFailVersions = prev.parseFailVersions;
+    entry.parseFailBytes = prev.parseFailBytes;
   }
   return entry;
 }
@@ -136,8 +232,15 @@ function mintFeedEntry(prev, { size, mtime, mid, localPath }) {
 function clearFeedParseFailed(manifest, remotePath) {
   const prev = (manifest.files || {})[remotePath];
   if (!prev || !prev.parseFailedAt) return false;
+  // Every field of the hold, not just the flag the skip reads. A surviving
+  // streak would make the NEXT hold on this feed open at someone else's count
+  // and escalate on its first night.
   delete prev.parseFailedAt;
   delete prev.parseError;
+  delete prev.parseFailedFirstAt;
+  delete prev.parseFailStreak;
+  delete prev.parseFailVersions;
+  delete prev.parseFailBytes;
   return true;
 }
 
@@ -1266,7 +1369,8 @@ module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, 
                    // Same reason: the manifest skip decided whether a feed is
                    // ever looked at again, and was reachable only through a
                    // live SFTP pull.
-                   onRecordAsProcessed, mintFeedEntry, markFeedParseFailed, clearFeedParseFailed };
+                   onRecordAsProcessed, mintFeedEntry, markFeedParseFailed, clearFeedParseFailed,
+                   holdVerdict, HOLD_ESCALATE_AFTER };
 
 if (require.main === module) (async () => {
   await loadDeps();
@@ -1280,7 +1384,13 @@ if (require.main === module) (async () => {
     // this is what tells whoever opens the artifact WHICH feed did not land and
     // is therefore being held for a re-fetch.
     parseFailures: [],
-    totals: { feedRecords: 0, matched: 0, updated: 0, exclusives: 0, errors: 0 }
+    totals: { feedRecords: 0, matched: 0, updated: 0, exclusives: 0, errors: 0,
+              // Zero here, not merely absent. The quiet early return below
+              // ("Nothing new to process, done.") writes this summary too, and
+              // sftp-ingest.yml asserts escalatedHolds==0 on every run -- a
+              // missing path is an assertion failure, which would turn every
+              // legitimately quiet night red.
+              heldFeeds: 0, escalatedHolds: 0 }
   };
 
   let downloaded = [];
@@ -1426,8 +1536,10 @@ if (require.main === module) (async () => {
       // operator re-runs to debug the parse, and would throw away the localPath
       // pointing at the copy already on disk. The entry stays readable; the skip
       // is what refuses it.
-      if (markFeedParseFailed(manifest, dl.remotePath, e)) {
-        log(`    held: manifest entry marked unprocessed, next run re-fetches ${dl.fileName}`);
+      const heldEntry = markFeedParseFailed(manifest, dl.remotePath, e);
+      if (heldEntry) {
+        log(`    held: manifest entry marked unprocessed, next run re-fetches ${dl.fileName}` +
+            ` (attempt ${heldEntry.parseFailStreak} of this hold)`);
       }
       continue;
     }
@@ -1436,8 +1548,10 @@ if (require.main === module) (async () => {
     // the catch and before anything reads `parsed` so the two paths are
     // exhaustive: every feed in `downloaded` leaves this block either held or
     // released, never in whatever state the last run left it.
+    const endedHold = holdVerdict((manifest.files || {})[dl.remotePath]);
     if (clearFeedParseFailed(manifest, dl.remotePath)) {
-      log(`  ✓ Parsed after a previous failure — hold released on ${dl.fileName}`);
+      log(`  ✓ Parsed after a previous failure — hold released on ${dl.fileName}` +
+          ` (had failed ${endedHold.streak} attempt(s) over ${endedHold.days} day(s))`);
     }
     
     // A FULL feed for the Newegg MID is the only thing that licenses the absence
@@ -1459,6 +1573,53 @@ if (require.main === module) (async () => {
     summary.totals.matched += ms.matched;
     summary.totals.updated += ms.updated;
     summary.totals.exclusives += ms.exclusives;
+  }
+
+  // ── HOW LONG HAS EACH HELD FEED BEEN OUT OF THE CATALOG? ────────────────────
+  //
+  // Built from this run's OWN failures, not from every hold in the manifest. A
+  // feed held by an earlier run that `--merchant=` filtered out of this one was
+  // not looked at, and a run that did not look must not report a verdict -- the
+  // same rule the absence sweep below obeys for the same reason.
+  const holds = summary.parseFailures.map(f => ({ ...f, ...holdVerdict((manifest.files || {})[f.remotePath]) }));
+  const escalatedHolds = holds.filter(h => h.escalated);
+  summary.parseFailures = holds;
+  summary.totals.heldFeeds = holds.length;
+  summary.totals.escalatedHolds = escalatedHolds.length;
+
+  if (holds.length) {
+    log(`\n── Feeds held off the skip list: ${holds.length} ──`);
+    for (const h of holds) {
+      log(`  ${h.file} (merchant ${h.mid}) — ${h.error}`);
+      log(`      attempt ${h.streak} of this hold, ${h.days} day(s) since ${String(h.firstAt).slice(0, 10)}` +
+          (h.versions > 1 ? `, across ${h.versions} versions of the file` : ''));
+    }
+  }
+
+  if (escalatedHolds.length) {
+    // The words change here, and that is the entire point of the block. Up to
+    // the threshold this is a parse error and a retry is a reasonable thing to
+    // be doing. Past it, the retry is not working and the fact that matters is
+    // no longer about parsing: it is that a merchant's rows have been missing
+    // from every ingest for N days. sftp-ingest.yml fails this at its own
+    // named step so the notification says so too.
+    log('\n** HOLD ESCALATED — this has stopped being a parse error **');
+    for (const h of escalatedHolds) {
+      log(`   ${h.file} (merchant ${h.mid}) has failed ${h.streak} consecutive attempts,`);
+      log(`   first on ${String(h.firstAt).slice(0, 10)} — ${h.days} day(s) in which no ingest has`);
+      log(`   carried this feed's rows. Last error: ${h.error}`);
+      if (h.versions > 1) {
+        log(`   ${h.versions} DIFFERENT versions of this file have been fetched and none parsed,`);
+        log('   so the feed is being published broken. Re-fetching is not the remedy and');
+        log('   nothing on this side will become the remedy by waiting.');
+      } else {
+        log('   The same bytes have failed every attempt, so the ~4 min re-fetch this run');
+        log('   just paid bought nothing and the next one will not either.');
+      }
+    }
+    log(`   Threshold: ${HOLD_ESCALATE_AFTER} consecutive attempts (HOLD_ESCALATE_AFTER).`);
+    log('   The feed is still re-fetched every run. #92 chose that deliberately and this');
+    log('   does not revisit it — a feed nobody fetches is a feed nobody notices.');
   }
 
   // ── The absence sweep: "we looked and it wasn't there" ──────────────────────
