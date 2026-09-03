@@ -178,6 +178,52 @@ function markFeedParseFailed(manifest, remotePath, err, now = new Date()) {
   return prev;
 }
 
+// ── MAY THIS RUN'S WORK BE COMMITTED? ────────────────────────────────────────
+//
+// Until now the answer was decided by step ORDER in sftp-ingest.yml, not by
+// anything in this file: `assert-outcome --require=totals.errors==0` sat between
+// the work and the commit, and no later step was `if: always()`, so one held
+// feed withheld EVERYTHING. Not the other feeds' prices, not the absence stamps,
+// not even the manifest carrying the hold's own escalation streak. #92 and #93
+// made a deterministic parse failure hold a feed indefinitely, so "indefinitely"
+// was also how long the healthy feeds stayed stranded.
+//
+// The thing that makes this cheap is that the write already happened. parts.js,
+// the exclusives flush and the manifest all sit in the `else` branch of the
+// write-outputs block below, which is gated on DRY_RUN and damagedThisRun --
+// never on totals.errors. A parse-error run has ALWAYS written a full catalog to
+// disk and then thrown it away at the workflow layer. There is no partial write
+// to invent here; there is a commit to authorise.
+//
+// AND THE HELD FEED'S ROWS STAY. They are not junk: a truncated .gz yields valid
+// records up to the cut, and each one passed priceFromRecord, the capacity
+// guard, chooseListing and the Newegg sanity gate before it landed. Every claim
+// that needs the feed to be WHOLE is already suppressed by fullNeweggFeedParsed
+// -- the absence sweep and the coverage census both. What is left is per-row
+// evidence that is true. Rolling it back would mean restoring deals pre-images,
+// feedOffered, confirmedLanes, needsReview, the upc/mpn backfills and the
+// exclusives stream offset, in recovery code that runs only on the rare path
+// nobody exercises -- every step of it a chance to mis-restore a stamp, which is
+// the #90 failure class exactly. Keep the rows; disclose the partialness.
+function commitVerdict({ dryRun, damaged, heldFeeds = 0, wroteParts = false }) {
+  // Both refusals mean the same thing: this run deliberately wrote no catalog,
+  // so there is nothing of its to commit. They are NOT the same as a held feed,
+  // which wrote a real catalog that is merely missing one feed's rows.
+  if (dryRun) return { safe: false, partial: false, heldFeeds, wroteParts: false,
+                       reason: 'dry run — nothing was written' };
+  if (damaged) return { safe: false, partial: false, heldFeeds, wroteParts: false,
+                        reason: 'the stamp-integrity guard withheld the catalog' };
+  return {
+    safe: true,
+    partial: heldFeeds > 0,
+    heldFeeds,
+    wroteParts,
+    reason: heldFeeds > 0
+      ? `${heldFeeds} feed(s) held; what the feeds that DID parse produced is on disk and is committable`
+      : 'clean run',
+  };
+}
+
 /**
  * How old is this hold, and has it stopped being a parse error?
  *
@@ -1393,7 +1439,7 @@ module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, 
                    // ever looked at again, and was reachable only through a
                    // live SFTP pull.
                    onRecordAsProcessed, mintFeedEntry, markFeedParseFailed, clearFeedParseFailed,
-                   holdVerdict, HOLD_ESCALATE_AFTER };
+                   holdVerdict, HOLD_ESCALATE_AFTER, commitVerdict };
 
 if (require.main === module) (async () => {
   await loadDeps();
@@ -1415,6 +1461,10 @@ if (require.main === module) (async () => {
               // legitimately quiet night red.
               heldFeeds: 0, escalatedHolds: 0 }
   };
+  // Set on every path that writes the summary, never left to a default: the
+  // commit step reads `commit.safe` and a missing path is an assertion failure
+  // there, which is the safe direction but a confusing one to debug.
+  summary.commit = commitVerdict({ dryRun: DRY_RUN, damaged: false });
 
   let downloaded = [];
   const manifest = loadManifest();
@@ -1803,6 +1853,7 @@ if (require.main === module) (async () => {
   summary.totals.absenceSweepRan = fullNeweggFeedParsed;
 
   // Write outputs
+  let wroteParts = false;
   if (DRY_RUN) {
     log('\n--dry-run: not writing parts.js or exclusives.json');
     log('  ...nor the manifest: a dry run applied nothing, and a manifest saying');
@@ -1842,6 +1893,7 @@ if (require.main === module) (async () => {
       // any failure, and the throw lands in the .catch() below without reaching
       // the manifest save, which is the same rule every other refusal here obeys.
       const written = await writeCatalog(parts, { loadedCount, reason: 'sftp newegg ingest' });
+      wroteParts = true;
       log(`  parts.js + ${written.chunks} chunk(s) written and verified; backup at ${path.relative(ROOT, written.backup)}`);
     } else {
       log('\nNo parts updated, skipping parts.js write');
@@ -1853,6 +1905,19 @@ if (require.main === module) (async () => {
       fs.writeFileSync(exclusivesMetaPath, JSON.stringify({
         generatedAt: new Date().toISOString(),
         count: exclusivesCount,
+        // `count` is a WHOLE-FEED claim, and this is the one artifact here that
+        // cannot tell the truth by itself. A held feed stops contributing
+        // exclusives at the byte it threw on, so the number is a floor, not a
+        // census, and nothing else in the file says so.
+        //
+        // This file is currently gitignored (`catalog-build/*`, with only
+        // price-history.json and reviews.json negated), so the workflow's
+        // `git add` of it has always been a silent no-op -- 0 commits have ever
+        // touched it. Stamped anyway: the artifact is real on the runner, it is
+        // what an operator opens after a red run, and the day it does get
+        // committed is not the day to start wondering what `count` meant.
+        partial: holds.length > 0,
+        heldFeeds: holds.length,
         format: 'jsonl',
         dataFile: path.basename(exclusivesJsonlPath),
       }, null, 2));
@@ -1899,6 +1964,18 @@ if (require.main === module) (async () => {
         (held ? `, ${held} held for re-fetch (parse failed)` : ''));
   }
   
+  // Computed here because this is the first point that knows all four inputs:
+  // the mode, whether the stamp guard fired, how many feeds are held, and
+  // whether a catalog was actually written. See commitVerdict().
+  summary.commit = commitVerdict({
+    dryRun: DRY_RUN,
+    damaged: integrity.damagedThisRun,
+    heldFeeds: holds.length,
+    wroteParts,
+  });
+  log(`Commit verdict: ${summary.commit.safe ? 'COMMITTABLE' : 'WITHHELD'}` +
+      `${summary.commit.partial ? ' (PARTIAL)' : ''} — ${summary.commit.reason}`);
+
   summary.finishedAt = new Date().toISOString();
   fs.writeFileSync(SUMMARY_PATH, JSON.stringify(summary, null, 2));
   
