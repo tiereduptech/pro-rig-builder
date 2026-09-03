@@ -1,8 +1,8 @@
 {
   "note": "High-water mark of what one completed refresh-newegg-prices run leaves behind: the share of re-pricer-reachable deals.newegg rows it leaves carrying refreshedAt. Written by refresh-newegg-prices.cjs on full, non-dry runs and only ever upward. Read by sftp-ingest.cjs, which derives the census's stamp-plausibility floor from it (floor = reach / 2). Do not hand-edit: a lowered mark relaxes that gate.",
-  "reach": 0.6563,
-  "stamped": 2037,
+  "reach": 0.6575,
+  "stamped": 2041,
   "lookupable": 3104,
-  "observedAt": "2026-09-02T22:07:39.796Z",
-  "run": "33682405673"
+  "observedAt": "2026-09-03T09:37:14.208Z",
+  "run": "33733463263"
 }

@@ -980,7 +980,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:57.510Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:31:32.092Z"
+        "refreshedAt": "2026-09-03T09:01:06.273Z"
       }
     },
     "discount": 9,
@@ -1710,7 +1710,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:31:34.952Z"
+        "refreshedAt": "2026-09-03T09:01:09.459Z"
       }
     },
     "additionalImages": [
@@ -2186,7 +2186,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:43.134Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-02T21:31:36.310Z"
+        "refreshedAt": "2026-09-03T09:01:10.701Z"
       }
     },
     "additionalImages": [
@@ -3856,7 +3856,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:43.071Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:32:26.254Z"
+        "refreshedAt": "2026-09-03T09:02:00.018Z"
       }
     },
     "additionalImages": [
@@ -9385,7 +9385,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:32:39.067Z"
+        "refreshedAt": "2026-09-03T09:02:13.895Z"
       }
     },
     "cap": 64,
@@ -9610,7 +9610,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:26.039Z"
+        "refreshedAt": "2026-09-03T09:02:15.208Z"
       }
     },
     "cap": 16,
@@ -10908,7 +10908,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:50.445Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:27.073Z"
+        "refreshedAt": "2026-09-03T09:03:00.892Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",
@@ -11991,7 +11991,7 @@ export default [
         "matchedAt": "2026-08-21T12:43:54.492Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:28.255Z"
+        "refreshedAt": "2026-09-03T09:03:02.306Z"
       }
     },
     "needsReview": false,
@@ -12031,7 +12031,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:28.447Z"
+        "refreshedAt": "2026-09-03T09:03:02.503Z"
       }
     },
     "needsReview": false,
@@ -12071,7 +12071,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:28.623Z"
+        "refreshedAt": "2026-09-03T09:03:02.861Z"
       }
     },
     "needsReview": false,
@@ -12111,7 +12111,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:28.815Z"
+        "refreshedAt": "2026-09-03T09:03:03.051Z"
       }
     },
     "needsReview": false,
@@ -12151,7 +12151,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:29.002Z"
+        "refreshedAt": "2026-09-03T09:03:03.235Z"
       }
     },
     "needsReview": false,
@@ -12191,7 +12191,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.693Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:29.183Z"
+        "refreshedAt": "2026-09-03T09:03:03.385Z"
       }
     },
     "needsReview": false,
@@ -12272,7 +12272,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.694Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:29.503Z"
+        "refreshedAt": "2026-09-03T09:03:03.762Z"
       }
     },
     "needsReview": false,
@@ -12312,7 +12312,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.694Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:29.789Z"
+        "refreshedAt": "2026-09-03T09:03:03.969Z"
       }
     },
     "needsReview": false,
@@ -12350,7 +12350,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.722Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:30.114Z"
+        "refreshedAt": "2026-09-03T09:03:04.314Z"
       }
     },
     "needsReview": false,
@@ -12389,7 +12389,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:30.315Z"
+        "refreshedAt": "2026-09-03T09:03:04.493Z"
       }
     },
     "needsReview": false,
@@ -12430,7 +12430,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:30.516Z"
+        "refreshedAt": "2026-09-03T09:03:04.690Z"
       }
     },
     "needsReview": false,
@@ -12470,7 +12470,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:30.694Z"
+        "refreshedAt": "2026-09-03T09:03:04.905Z"
       }
     },
     "needsReview": false,
@@ -12510,7 +12510,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:30.867Z"
+        "refreshedAt": "2026-09-03T09:03:05.086Z"
       }
     },
     "needsReview": false,
@@ -12589,7 +12589,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:31.198Z"
+        "refreshedAt": "2026-09-03T09:03:05.442Z"
       }
     },
     "needsReview": false,
@@ -12629,7 +12629,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.729Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:31.357Z"
+        "refreshedAt": "2026-09-03T09:03:05.671Z"
       }
     },
     "needsReview": false,
@@ -12669,7 +12669,7 @@ export default [
         "matchedAt": "2026-08-19T12:25:03.633Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:31.518Z"
+        "refreshedAt": "2026-09-03T09:03:05.843Z"
       }
     },
     "needsReview": false,
@@ -12709,7 +12709,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:31.704Z"
+        "refreshedAt": "2026-09-03T09:03:06.031Z"
       }
     },
     "needsReview": false,
@@ -12749,7 +12749,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:31.861Z"
+        "refreshedAt": "2026-09-03T09:03:06.224Z"
       }
     },
     "needsReview": false,
@@ -12789,7 +12789,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:32.059Z"
+        "refreshedAt": "2026-09-03T09:03:06.390Z"
       }
     },
     "needsReview": false,
@@ -12829,7 +12829,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:32.227Z"
+        "refreshedAt": "2026-09-03T09:03:06.572Z"
       }
     },
     "needsReview": false,
@@ -12869,7 +12869,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:32.357Z"
+        "refreshedAt": "2026-09-03T09:03:06.761Z"
       }
     },
     "needsReview": false,
@@ -12908,7 +12908,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.734Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:32.535Z"
+        "refreshedAt": "2026-09-03T09:03:06.944Z"
       }
     },
     "needsReview": false,
@@ -13182,7 +13182,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.751Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:34.601Z"
+        "refreshedAt": "2026-09-03T09:03:08.943Z"
       }
     },
     "needsReview": false,
@@ -13220,7 +13220,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.751Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:34.948Z"
+        "refreshedAt": "2026-09-03T09:03:09.315Z"
       }
     },
     "needsReview": false,
@@ -13338,7 +13338,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.877Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:35.789Z"
+        "refreshedAt": "2026-09-03T09:03:10.214Z"
       },
       "newegg_openbox": {
         "sku": "4458317598992882782520053",
@@ -13391,7 +13391,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.897Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:36.160Z"
+        "refreshedAt": "2026-09-03T09:03:10.566Z"
       }
     },
     "needsReview": false,
@@ -13470,7 +13470,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:14.079Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:36.830Z"
+        "refreshedAt": "2026-09-03T09:03:11.567Z"
       }
     },
     "needsReview": false,
@@ -13509,7 +13509,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.026Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:37.299Z"
+        "refreshedAt": "2026-09-03T09:03:11.942Z"
       }
     },
     "needsReview": false,
@@ -13549,7 +13549,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:14.079Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:37.655Z"
+        "refreshedAt": "2026-09-03T09:03:12.277Z"
       }
     },
     "needsReview": false,
@@ -13589,7 +13589,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:01.927Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:37.982Z"
+        "refreshedAt": "2026-09-03T09:03:12.608Z"
       }
     },
     "needsReview": false,
@@ -13628,7 +13628,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.030Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:38.358Z"
+        "refreshedAt": "2026-09-03T09:03:12.993Z"
       }
     },
     "needsReview": false,
@@ -13666,7 +13666,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.034Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:38.766Z"
+        "refreshedAt": "2026-09-03T09:03:13.516Z"
       }
     },
     "needsReview": false,
@@ -13704,7 +13704,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.038Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:39.154Z"
+        "refreshedAt": "2026-09-03T09:03:13.970Z"
       }
     },
     "needsReview": false,
@@ -13742,7 +13742,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.041Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:39.927Z"
+        "refreshedAt": "2026-09-03T09:03:14.299Z"
       }
     },
     "needsReview": false,
@@ -13781,7 +13781,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.044Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:33:40.338Z"
+        "refreshedAt": "2026-09-03T09:03:14.748Z"
       }
     },
     "needsReview": false,
@@ -13820,7 +13820,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.059Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:25.947Z"
+        "refreshedAt": "2026-09-03T09:03:15.103Z"
       }
     },
     "needsReview": false,
@@ -13859,7 +13859,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.063Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:26.316Z"
+        "refreshedAt": "2026-09-03T09:03:59.937Z"
       }
     },
     "needsReview": false,
@@ -13899,7 +13899,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.063Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:26.633Z"
+        "refreshedAt": "2026-09-03T09:04:00.310Z"
       }
     },
     "needsReview": false,
@@ -13938,7 +13938,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.100Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:26.971Z"
+        "refreshedAt": "2026-09-03T09:04:00.766Z"
       }
     },
     "needsReview": false,
@@ -13978,7 +13978,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:40.843Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:27.305Z"
+        "refreshedAt": "2026-09-03T09:04:01.197Z"
       }
     },
     "needsReview": false,
@@ -14017,7 +14017,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.111Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:27.648Z"
+        "refreshedAt": "2026-09-03T09:04:01.568Z"
       }
     },
     "needsReview": false,
@@ -14056,7 +14056,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.124Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:27.969Z"
+        "refreshedAt": "2026-09-03T09:04:02.148Z"
       }
     },
     "needsReview": false,
@@ -14094,7 +14094,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.130Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:28.324Z"
+        "refreshedAt": "2026-09-03T09:04:02.488Z"
       }
     },
     "needsReview": false,
@@ -14132,7 +14132,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.134Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:28.673Z"
+        "refreshedAt": "2026-09-03T09:04:02.863Z"
       }
     },
     "needsReview": false,
@@ -14171,7 +14171,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.216Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:28.851Z"
+        "refreshedAt": "2026-09-03T09:04:03.043Z"
       }
     },
     "needsReview": false,
@@ -14209,7 +14209,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.234Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:29.237Z"
+        "refreshedAt": "2026-09-03T09:04:03.539Z"
       }
     },
     "needsReview": false,
@@ -14248,7 +14248,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.240Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:29.584Z"
+        "refreshedAt": "2026-09-03T09:04:03.880Z"
       }
     },
     "needsReview": false,
@@ -14287,7 +14287,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.240Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:30.006Z"
+        "refreshedAt": "2026-09-03T09:04:04.222Z"
       }
     },
     "needsReview": false,
@@ -14325,7 +14325,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.249Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:30.356Z"
+        "refreshedAt": "2026-09-03T09:04:04.565Z"
       }
     },
     "needsReview": false,
@@ -14363,7 +14363,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.258Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:30.710Z"
+        "refreshedAt": "2026-09-03T09:04:04.923Z"
       }
     },
     "needsReview": false,
@@ -14401,7 +14401,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.264Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:31.085Z"
+        "refreshedAt": "2026-09-03T09:04:05.317Z"
       }
     },
     "needsReview": false,
@@ -14439,7 +14439,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.264Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:31.427Z"
+        "refreshedAt": "2026-09-03T09:04:05.850Z"
       }
     },
     "needsReview": false,
@@ -14478,7 +14478,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:02.158Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:31.762Z"
+        "refreshedAt": "2026-09-03T09:04:06.190Z"
       }
     },
     "needsReview": false,
@@ -14517,7 +14517,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.272Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:32.073Z"
+        "refreshedAt": "2026-09-03T09:04:06.541Z"
       }
     },
     "needsReview": false,
@@ -14556,7 +14556,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.275Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:32.431Z"
+        "refreshedAt": "2026-09-03T09:04:06.897Z"
       }
     },
     "needsReview": false,
@@ -14595,7 +14595,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.275Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:32.758Z"
+        "refreshedAt": "2026-09-03T09:04:07.258Z"
       }
     },
     "needsReview": false,
@@ -14635,7 +14635,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T21:34:32.938Z"
+        "refreshedAt": "2026-09-03T09:04:07.431Z"
       }
     },
     "needsReview": false,
@@ -14674,7 +14674,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T21:34:33.086Z"
+        "refreshedAt": "2026-09-03T09:04:07.599Z"
       }
     },
     "needsReview": false,
@@ -14751,7 +14751,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.284Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:33.443Z"
+        "refreshedAt": "2026-09-03T09:04:08.009Z"
       }
     },
     "needsReview": false,
@@ -14791,7 +14791,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:02.183Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:33.755Z"
+        "refreshedAt": "2026-09-03T09:04:08.172Z"
       }
     },
     "needsReview": false,
@@ -14831,7 +14831,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.906Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:33.922Z"
+        "refreshedAt": "2026-09-03T09:04:08.332Z"
       }
     },
     "needsReview": false,
@@ -14871,7 +14871,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.285Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T21:34:34.103Z"
+        "refreshedAt": "2026-09-03T09:04:08.513Z"
       }
     },
     "needsReview": false,
@@ -14948,7 +14948,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.355Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:34.624Z"
+        "refreshedAt": "2026-09-03T09:04:09.027Z"
       },
       "newegg_openbox": {
         "sku": "445839273489640649860774",
@@ -15001,7 +15001,7 @@ export default [
         "matchedAt": "2026-07-24",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:34.807Z"
+        "refreshedAt": "2026-09-03T09:04:09.202Z"
       }
     },
     "needsReview": false,
@@ -15040,7 +15040,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:34.964Z"
+        "refreshedAt": "2026-09-03T09:04:09.381Z"
       }
     },
     "needsReview": false,
@@ -15079,7 +15079,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:09.023Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:35.157Z"
+        "refreshedAt": "2026-09-03T09:04:09.563Z"
       }
     },
     "needsReview": false,
@@ -15156,7 +15156,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:35.672Z"
+        "refreshedAt": "2026-09-03T09:04:10.132Z"
       }
     },
     "needsReview": false,
@@ -15349,7 +15349,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:36.550Z"
+        "refreshedAt": "2026-09-03T09:04:11.047Z"
       }
     },
     "needsReview": false,
@@ -15502,7 +15502,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:37.313Z"
+        "refreshedAt": "2026-09-03T09:04:11.954Z"
       }
     },
     "needsReview": false,
@@ -15542,7 +15542,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:37.502Z"
+        "refreshedAt": "2026-09-03T09:04:12.130Z"
       }
     },
     "needsReview": false,
@@ -15621,7 +15621,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.454Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:37.852Z"
+        "refreshedAt": "2026-09-03T09:04:12.469Z"
       }
     },
     "needsReview": false,
@@ -15699,7 +15699,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:36.217Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:38.394Z"
+        "refreshedAt": "2026-09-03T09:04:13.033Z"
       }
     },
     "needsReview": false,
@@ -15738,7 +15738,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.465Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:38.529Z"
+        "refreshedAt": "2026-09-03T09:04:13.315Z"
       }
     },
     "needsReview": false,
@@ -15816,7 +15816,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:39.346Z"
+        "refreshedAt": "2026-09-03T09:04:14.172Z"
       }
     },
     "needsReview": false,
@@ -15856,7 +15856,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:34:40.137Z"
+        "refreshedAt": "2026-09-03T09:04:14.543Z"
       }
     },
     "needsReview": false,
@@ -15896,7 +15896,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:25.762Z"
+        "refreshedAt": "2026-09-03T09:04:14.984Z"
       }
     },
     "needsReview": false,
@@ -15936,7 +15936,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:26.133Z"
+        "refreshedAt": "2026-09-03T09:04:15.342Z"
       }
     },
     "needsReview": false,
@@ -15976,7 +15976,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:26.517Z"
+        "refreshedAt": "2026-09-03T09:05:00.228Z"
       }
     },
     "needsReview": false,
@@ -16016,7 +16016,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.475Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:26.883Z"
+        "refreshedAt": "2026-09-03T09:05:00.592Z"
       }
     },
     "needsReview": false,
@@ -16055,7 +16055,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.475Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:27.244Z"
+        "refreshedAt": "2026-09-03T09:05:01.036Z"
       }
     },
     "needsReview": false,
@@ -16096,7 +16096,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:27.609Z"
+        "refreshedAt": "2026-09-03T09:05:01.395Z"
       }
     },
     "needsReview": false,
@@ -16136,7 +16136,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:27.951Z"
+        "refreshedAt": "2026-09-03T09:05:01.790Z"
       }
     },
     "needsReview": false,
@@ -16176,7 +16176,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:28.297Z"
+        "refreshedAt": "2026-09-03T09:05:02.336Z"
       }
     },
     "needsReview": false,
@@ -16216,7 +16216,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:02.403Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:28.636Z"
+        "refreshedAt": "2026-09-03T09:05:02.712Z"
       }
     },
     "needsReview": false,
@@ -16256,7 +16256,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:28.996Z"
+        "refreshedAt": "2026-09-03T09:05:03.052Z"
       }
     },
     "needsReview": false,
@@ -16296,7 +16296,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:29.351Z"
+        "refreshedAt": "2026-09-03T09:05:03.465Z"
       }
     },
     "needsReview": false,
@@ -16336,7 +16336,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:29.686Z"
+        "refreshedAt": "2026-09-03T09:05:03.925Z"
       }
     },
     "needsReview": false,
@@ -16376,7 +16376,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:30.023Z"
+        "refreshedAt": "2026-09-03T09:05:04.294Z"
       }
     },
     "needsReview": false,
@@ -16416,7 +16416,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:30.385Z"
+        "refreshedAt": "2026-09-03T09:05:04.640Z"
       }
     },
     "needsReview": false,
@@ -16456,7 +16456,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:30.693Z",
+        "refreshedAt": "2026-09-03T09:05:05.003Z",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -16497,7 +16497,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.480Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.107Z"
+        "refreshedAt": "2026-09-03T09:05:05.353Z"
       }
     },
     "needsReview": false,
@@ -16537,7 +16537,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.293Z"
+        "refreshedAt": "2026-09-03T09:05:05.542Z"
       }
     },
     "needsReview": false,
@@ -16577,7 +16577,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.500Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.477Z"
+        "refreshedAt": "2026-09-03T09:05:05.887Z"
       }
     },
     "needsReview": false,
@@ -16617,7 +16617,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.500Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.633Z"
+        "refreshedAt": "2026-09-03T09:05:06.068Z"
       }
     },
     "needsReview": false,
@@ -16657,7 +16657,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.797Z"
+        "refreshedAt": "2026-09-03T09:05:06.306Z"
       }
     },
     "needsReview": false,
@@ -16697,7 +16697,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:31.979Z"
+        "refreshedAt": "2026-09-03T09:05:06.486Z"
       }
     },
     "needsReview": false,
@@ -16737,7 +16737,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:32.139Z"
+        "refreshedAt": "2026-09-03T09:05:06.665Z"
       }
     },
     "needsReview": false,
@@ -16777,7 +16777,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:32.332Z"
+        "refreshedAt": "2026-09-03T09:05:06.840Z"
       }
     },
     "needsReview": false,
@@ -16817,7 +16817,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:32.519Z"
+        "refreshedAt": "2026-09-03T09:05:07.024Z"
       }
     },
     "needsReview": false,
@@ -16857,7 +16857,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:32.665Z"
+        "refreshedAt": "2026-09-03T09:05:07.203Z"
       }
     },
     "needsReview": false,
@@ -16897,7 +16897,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:32.831Z"
+        "refreshedAt": "2026-09-03T09:05:07.403Z"
       }
     },
     "needsReview": false,
@@ -16937,7 +16937,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:33.022Z"
+        "refreshedAt": "2026-09-03T09:05:07.576Z"
       }
     },
     "needsReview": false,
@@ -16977,7 +16977,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.505Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:33.215Z"
+        "refreshedAt": "2026-09-03T09:05:07.783Z"
       }
     },
     "needsReview": false,
@@ -17017,7 +17017,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.505Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:33.382Z"
+        "refreshedAt": "2026-09-03T09:05:07.985Z"
       },
       "newegg_openbox": {
         "sku": "4458312533516882614671370",
@@ -17226,7 +17226,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.526Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:34.314Z"
+        "refreshedAt": "2026-09-03T09:05:08.893Z"
       }
     },
     "needsReview": false,
@@ -17266,7 +17266,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:34.514Z"
+        "refreshedAt": "2026-09-03T09:05:09.104Z"
       }
     },
     "needsReview": false,
@@ -17384,7 +17384,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:35.098Z"
+        "refreshedAt": "2026-09-03T09:05:09.677Z"
       }
     },
     "needsReview": false,
@@ -17424,7 +17424,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:35.264Z"
+        "refreshedAt": "2026-09-03T09:05:09.856Z"
       }
     },
     "needsReview": false,
@@ -17503,7 +17503,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:35.643Z"
+        "refreshedAt": "2026-09-03T09:05:10.232Z"
       }
     },
     "needsReview": false,
@@ -17543,7 +17543,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.532Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:35.815Z"
+        "refreshedAt": "2026-09-03T09:05:10.401Z"
       }
     },
     "needsReview": false,
@@ -17583,7 +17583,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.533Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:36.007Z"
+        "refreshedAt": "2026-09-03T09:05:10.587Z"
       }
     },
     "needsReview": false,
@@ -17623,7 +17623,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.533Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:36.190Z"
+        "refreshedAt": "2026-09-03T09:05:10.772Z"
       }
     },
     "needsReview": false,
@@ -17663,7 +17663,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:41.158Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:36.327Z"
+        "refreshedAt": "2026-09-03T09:05:10.950Z"
       }
     },
     "needsReview": false,
@@ -17781,7 +17781,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:36.854Z"
+        "refreshedAt": "2026-09-03T09:05:11.483Z"
       }
     },
     "needsReview": false,
@@ -17821,7 +17821,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:37.004Z"
+        "refreshedAt": "2026-09-03T09:05:11.655Z"
       }
     },
     "needsReview": false,
@@ -17901,7 +17901,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.550Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:37.376Z"
+        "refreshedAt": "2026-09-03T09:05:12.045Z"
       }
     },
     "needsReview": false,
@@ -17941,7 +17941,7 @@ export default [
         "matchedAt": "2026-08-22T12:25:06.756Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:37.548Z"
+        "refreshedAt": "2026-09-03T09:05:12.226Z"
       }
     },
     "needsReview": false,
@@ -17981,7 +17981,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:07.226Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:37.749Z"
+        "refreshedAt": "2026-09-03T09:05:12.436Z"
       }
     },
     "needsReview": false,
@@ -18021,7 +18021,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:37.947Z"
+        "refreshedAt": "2026-09-03T09:05:12.612Z"
       }
     },
     "needsReview": false,
@@ -18140,7 +18140,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:38.446Z"
+        "refreshedAt": "2026-09-03T09:05:13.156Z"
       }
     },
     "needsReview": false,
@@ -18180,7 +18180,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:38.665Z"
+        "refreshedAt": "2026-09-03T09:05:13.359Z"
       }
     },
     "needsReview": false,
@@ -18259,7 +18259,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:02.457Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:39.013Z"
+        "refreshedAt": "2026-09-03T09:05:13.739Z"
       }
     },
     "needsReview": false,
@@ -18299,7 +18299,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.554Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:39.184Z"
+        "refreshedAt": "2026-09-03T09:05:13.991Z"
       }
     },
     "needsReview": false,
@@ -18339,7 +18339,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.559Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:39.331Z"
+        "refreshedAt": "2026-09-03T09:05:14.194Z"
       }
     },
     "needsReview": false,
@@ -18379,7 +18379,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.559Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:39.951Z"
+        "refreshedAt": "2026-09-03T09:05:14.371Z"
       }
     },
     "needsReview": false,
@@ -18459,7 +18459,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.560Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:35:40.363Z"
+        "refreshedAt": "2026-09-03T09:05:14.822Z"
       }
     },
     "needsReview": false,
@@ -18499,7 +18499,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:25.788Z"
+        "refreshedAt": "2026-09-03T09:05:14.999Z"
       }
     },
     "needsReview": false,
@@ -18578,7 +18578,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:26.338Z"
+        "refreshedAt": "2026-09-03T09:06:00.022Z"
       }
     },
     "needsReview": false,
@@ -18618,7 +18618,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.564Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:26.508Z"
+        "refreshedAt": "2026-09-03T09:06:00.255Z"
       }
     },
     "needsReview": false,
@@ -18657,7 +18657,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.578Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:26.713Z"
+        "refreshedAt": "2026-09-03T09:06:00.416Z"
       }
     },
     "needsReview": false,
@@ -18735,7 +18735,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:27.470Z"
+        "refreshedAt": "2026-09-03T09:06:01.252Z"
       }
     },
     "needsReview": false,
@@ -18775,7 +18775,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:27.804Z"
+        "refreshedAt": "2026-09-03T09:06:01.605Z"
       }
     },
     "needsReview": false,
@@ -18815,7 +18815,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:28.151Z"
+        "refreshedAt": "2026-09-03T09:06:02.054Z"
       }
     },
     "needsReview": false,
@@ -18855,7 +18855,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:28.493Z"
+        "refreshedAt": "2026-09-03T09:06:02.539Z"
       }
     },
     "needsReview": false,
@@ -18895,7 +18895,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:28.854Z"
+        "refreshedAt": "2026-09-03T09:06:02.901Z"
       }
     },
     "needsReview": false,
@@ -18935,7 +18935,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:29.215Z"
+        "refreshedAt": "2026-09-03T09:06:03.315Z"
       }
     },
     "needsReview": false,
@@ -18975,7 +18975,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.774Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:29.560Z"
+        "refreshedAt": "2026-09-03T09:06:03.755Z"
       }
     },
     "needsReview": false,
@@ -19015,7 +19015,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.777Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:29.875Z"
+        "refreshedAt": "2026-09-03T09:06:04.203Z"
       }
     },
     "needsReview": false,
@@ -19095,7 +19095,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:30.618Z"
+        "refreshedAt": "2026-09-03T09:06:04.932Z"
       }
     },
     "needsReview": false,
@@ -19135,7 +19135,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:30.983Z"
+        "refreshedAt": "2026-09-03T09:06:05.307Z"
       }
     },
     "needsReview": false,
@@ -19175,7 +19175,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:31.312Z"
+        "refreshedAt": "2026-09-03T09:06:05.641Z"
       }
     },
     "needsReview": false,
@@ -19215,7 +19215,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.787Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:31.652Z"
+        "refreshedAt": "2026-09-03T09:06:06.290Z"
       }
     },
     "needsReview": false,
@@ -19255,7 +19255,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.792Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:32.009Z"
+        "refreshedAt": "2026-09-03T09:06:06.643Z"
       }
     },
     "needsReview": false,
@@ -19294,7 +19294,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.815Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:32.334Z"
+        "refreshedAt": "2026-09-03T09:06:06.997Z"
       }
     },
     "needsReview": false,
@@ -19334,7 +19334,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:32.761Z"
+        "refreshedAt": "2026-09-03T09:06:07.366Z"
       }
     },
     "needsReview": false,
@@ -19414,7 +19414,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:33.488Z"
+        "refreshedAt": "2026-09-03T09:06:08.109Z"
       }
     },
     "needsReview": false,
@@ -19454,7 +19454,7 @@ export default [
         "matchedAt": "2026-07-24",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:33.843Z"
+        "refreshedAt": "2026-09-03T09:06:08.472Z"
       }
     },
     "needsReview": false,
@@ -19494,7 +19494,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:34.176Z"
+        "refreshedAt": "2026-09-03T09:06:08.801Z"
       }
     },
     "needsReview": false,
@@ -19534,7 +19534,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.819Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:34.612Z"
+        "refreshedAt": "2026-09-03T09:06:09.157Z"
       }
     },
     "needsReview": false,
@@ -19691,7 +19691,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.820Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:36.046Z"
+        "refreshedAt": "2026-09-03T09:06:10.576Z"
       }
     },
     "needsReview": false,
@@ -19809,7 +19809,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.820Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:37.095Z"
+        "refreshedAt": "2026-09-03T09:06:11.704Z"
       }
     },
     "needsReview": false,
@@ -19927,7 +19927,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.824Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:38.174Z"
+        "refreshedAt": "2026-09-03T09:06:12.810Z"
       }
     },
     "needsReview": false,
@@ -19967,7 +19967,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.828Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T08:56:39.359Z"
+        "refreshedAt": "2026-09-03T09:06:13.170Z"
       }
     },
     "needsReview": false,
@@ -20046,7 +20046,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:11.030Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:36:39.191Z"
+        "refreshedAt": "2026-09-03T09:06:14.003Z"
       }
     },
     "needsReview": false,
@@ -20243,7 +20243,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.840Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:26.725Z"
+        "refreshedAt": "2026-09-03T09:07:00.492Z"
       }
     },
     "needsReview": false,
@@ -20283,7 +20283,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.840Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:27.081Z"
+        "refreshedAt": "2026-09-03T09:07:00.795Z"
       }
     },
     "needsReview": false,
@@ -20362,7 +20362,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.846Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:27.860Z"
+        "refreshedAt": "2026-09-03T09:07:01.648Z"
       }
     },
     "needsReview": false,
@@ -20402,7 +20402,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:28.167Z"
+        "refreshedAt": "2026-09-03T09:07:02.240Z"
       }
     },
     "needsReview": false,
@@ -20442,7 +20442,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:28.523Z"
+        "refreshedAt": "2026-09-03T09:07:02.625Z"
       }
     },
     "needsReview": false,
@@ -20482,7 +20482,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:28.858Z"
+        "refreshedAt": "2026-09-03T09:07:02.985Z"
       }
     },
     "needsReview": false,
@@ -20522,7 +20522,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:29.215Z"
+        "refreshedAt": "2026-09-03T09:07:03.349Z"
       }
     },
     "needsReview": false,
@@ -20562,7 +20562,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:29.593Z"
+        "refreshedAt": "2026-09-03T09:07:03.784Z"
       }
     },
     "needsReview": false,
@@ -20602,7 +20602,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:29.970Z"
+        "refreshedAt": "2026-09-03T09:07:04.148Z"
       }
     },
     "needsReview": false,
@@ -20642,7 +20642,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:30.302Z"
+        "refreshedAt": "2026-09-03T09:07:04.615Z"
       }
     },
     "needsReview": false,
@@ -20721,7 +20721,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.863Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:31.027Z"
+        "refreshedAt": "2026-09-03T09:07:05.292Z"
       }
     },
     "needsReview": false,
@@ -20924,7 +20924,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:32.730Z"
+        "refreshedAt": "2026-09-03T09:07:07.376Z"
       }
     },
     "needsReview": false,
@@ -20964,7 +20964,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:33.156Z"
+        "refreshedAt": "2026-09-03T09:07:07.761Z"
       }
     },
     "needsReview": false,
@@ -21004,7 +21004,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.870Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:33.521Z"
+        "refreshedAt": "2026-09-03T09:07:08.104Z"
       }
     },
     "needsReview": false,
@@ -21044,7 +21044,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.870Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:33.881Z"
+        "refreshedAt": "2026-09-03T09:07:08.503Z"
       }
     },
     "needsReview": false,
@@ -21084,7 +21084,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.870Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:34.203Z"
+        "refreshedAt": "2026-09-03T09:07:08.866Z"
       }
     },
     "needsReview": false,
@@ -21163,7 +21163,7 @@ export default [
         "matchedAt": "2026-07-24",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:34.999Z"
+        "refreshedAt": "2026-09-03T09:07:09.615Z"
       }
     },
     "needsReview": false,
@@ -21203,7 +21203,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:35.319Z"
+        "refreshedAt": "2026-09-03T09:07:09.961Z"
       }
     },
     "needsReview": false,
@@ -21322,7 +21322,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:36.397Z"
+        "refreshedAt": "2026-09-03T09:07:11.013Z"
       }
     },
     "needsReview": false,
@@ -21362,7 +21362,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:36.814Z"
+        "refreshedAt": "2026-09-03T09:07:11.396Z"
       }
     },
     "needsReview": false,
@@ -21402,7 +21402,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:37.155Z"
+        "refreshedAt": "2026-09-03T09:07:11.742Z"
       }
     },
     "needsReview": false,
@@ -21442,7 +21442,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:37.518Z"
+        "refreshedAt": "2026-09-03T09:07:12.122Z"
       }
     },
     "needsReview": false,
@@ -21482,7 +21482,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:37.855Z"
+        "refreshedAt": "2026-09-03T09:07:12.449Z"
       }
     },
     "needsReview": false,
@@ -21514,13 +21514,15 @@ export default [
         "sku": "445833769186271761957518",
         "itemNumber": "N82E16820374549",
         "sellerClass": "official",
-        "price": 1349.99,
-        "saleprice": 1329.99,
+        "price": 1419.99,
+        "saleprice": 1399.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833769186271761957518&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-ripjaws-m5-rgb-series-96gb-ddr5-5600-cas-latency-cl40-desktop-memory-white%2Fp%2FN82E16820374549%3Fitem%3DN82E16820374549",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-545-03.png",
         "matchedAt": "2026-07-24",
         "matchMethod": "discovery",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-03T09:07:12.866Z",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -21560,7 +21562,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.892Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:38.614Z"
+        "refreshedAt": "2026-09-03T09:07:13.204Z"
       }
     },
     "needsReview": false,
@@ -21600,7 +21602,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.892Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:38.967Z"
+        "refreshedAt": "2026-09-03T09:07:13.610Z"
       }
     },
     "needsReview": false,
@@ -21640,7 +21642,7 @@ export default [
         "matchedAt": "2026-08-22T12:25:07.112Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:39.343Z"
+        "refreshedAt": "2026-09-03T09:07:14.042Z"
       }
     },
     "needsReview": false,
@@ -21680,7 +21682,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:07.240Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:37:40.006Z"
+        "refreshedAt": "2026-09-03T09:07:14.428Z"
       }
     },
     "needsReview": false,
@@ -21759,7 +21761,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.904Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:26.067Z"
+        "refreshedAt": "2026-09-03T09:07:15.230Z"
       }
     },
     "needsReview": false,
@@ -21838,7 +21840,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.909Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:27.138Z"
+        "refreshedAt": "2026-09-03T09:08:00.743Z"
       }
     },
     "needsReview": false,
@@ -21878,7 +21880,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:27.544Z"
+        "refreshedAt": "2026-09-03T09:08:01.109Z"
       }
     },
     "needsReview": false,
@@ -21918,7 +21920,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:27.850Z"
+        "refreshedAt": "2026-09-03T09:08:01.441Z"
       }
     },
     "needsReview": false,
@@ -21958,7 +21960,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:28.221Z"
+        "refreshedAt": "2026-09-03T09:08:01.859Z"
       }
     },
     "needsReview": false,
@@ -21998,7 +22000,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:28.545Z"
+        "refreshedAt": "2026-09-03T09:08:02.239Z"
       }
     },
     "needsReview": false,
@@ -22038,7 +22040,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:29.042Z"
+        "refreshedAt": "2026-09-03T09:08:02.582Z"
       }
     },
     "needsReview": false,
@@ -22078,7 +22080,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:29.377Z"
+        "refreshedAt": "2026-09-03T09:08:03.188Z"
       }
     },
     "needsReview": false,
@@ -22118,7 +22120,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.910Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:29.743Z"
+        "refreshedAt": "2026-09-03T09:08:03.650Z"
       }
     },
     "needsReview": false,
@@ -22158,7 +22160,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.916Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:30.105Z"
+        "refreshedAt": "2026-09-03T09:08:03.973Z"
       }
     },
     "needsReview": false,
@@ -22198,7 +22200,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:30.412Z"
+        "refreshedAt": "2026-09-03T09:08:04.364Z"
       }
     },
     "needsReview": false,
@@ -22356,7 +22358,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:31.808Z"
+        "refreshedAt": "2026-09-03T09:08:05.850Z"
       }
     },
     "needsReview": false,
@@ -22396,7 +22398,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.925Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:32.154Z"
+        "refreshedAt": "2026-09-03T09:08:06.218Z"
       }
     },
     "needsReview": false,
@@ -22437,10 +22439,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:38:32.505Z",
+        "priceSuspectAt": "2026-09-03T09:08:06.671Z",
         "priceSuspectValue": 1399.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 12
+        "priceSuspectStreak": 13
       }
     },
     "needsReview": true,
@@ -22482,10 +22484,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:38:32.839Z",
+        "priceSuspectAt": "2026-09-03T09:08:07.084Z",
         "priceSuspectValue": 2599.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "needsReview": true,
@@ -22564,7 +22566,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:15.056Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:33.453Z"
+        "refreshedAt": "2026-09-03T09:08:07.747Z"
       }
     },
     "needsReview": false,
@@ -22682,7 +22684,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.011Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:34.456Z"
+        "refreshedAt": "2026-09-03T09:08:08.868Z"
       }
     },
     "needsReview": false,
@@ -22714,14 +22716,16 @@ export default [
         "sku": "4458315912606661360289336",
         "itemNumber": "N82E16820374764",
         "sellerClass": "official",
-        "price": 6699.99,
-        "saleprice": 6499.99,
+        "price": 7799.99,
+        "saleprice": 7499.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315912606661360289336&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-256gb-4-x-64gb-ddr5-6000-pc5-48000-cas-latency-cl34-desktop-memory-black%2Fp%2FN82E16820374764%3Fitem%3DN82E16820374764",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-764-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.011Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-03T09:08:09.217Z",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -22800,7 +22804,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.020Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:35.490Z"
+        "refreshedAt": "2026-09-03T09:08:09.995Z"
       }
     },
     "needsReview": false,
@@ -22840,7 +22844,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.034Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:35.830Z"
+        "refreshedAt": "2026-09-03T09:08:10.360Z"
       }
     },
     "needsReview": false,
@@ -22880,7 +22884,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.039Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:36.129Z"
+        "refreshedAt": "2026-09-03T09:08:10.694Z"
       }
     },
     "needsReview": false,
@@ -22919,7 +22923,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:36.510Z"
+        "refreshedAt": "2026-09-03T09:08:11.024Z"
       }
     },
     "needsReview": false,
@@ -22959,7 +22963,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:36.877Z"
+        "refreshedAt": "2026-09-03T09:08:11.394Z"
       }
     },
     "needsReview": false,
@@ -22999,7 +23003,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:37.241Z"
+        "refreshedAt": "2026-09-03T09:08:11.786Z"
       }
     },
     "needsReview": false,
@@ -23039,7 +23043,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:37.604Z"
+        "refreshedAt": "2026-09-03T09:08:12.133Z"
       }
     },
     "needsReview": false,
@@ -23079,7 +23083,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:43.639Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:37.967Z"
+        "refreshedAt": "2026-09-03T09:08:12.465Z"
       }
     },
     "needsReview": false,
@@ -23119,7 +23123,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:38.321Z"
+        "refreshedAt": "2026-09-03T09:08:12.864Z"
       }
     },
     "needsReview": false,
@@ -23160,7 +23164,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.047Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:38.670Z"
+        "refreshedAt": "2026-09-03T09:08:13.228Z"
       }
     },
     "needsReview": false,
@@ -23200,7 +23204,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:38:39.005Z"
+        "refreshedAt": "2026-09-03T09:08:13.622Z"
       }
     },
     "needsReview": false,
@@ -23279,10 +23283,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:38:40.030Z",
+        "priceSuspectAt": "2026-09-03T09:08:14.462Z",
         "priceSuspectValue": 1349.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "needsReview": true,
@@ -23361,7 +23365,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:26.128Z"
+        "refreshedAt": "2026-09-03T09:08:15.236Z"
       }
     },
     "needsReview": false,
@@ -23401,7 +23405,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:26.617Z"
+        "refreshedAt": "2026-09-03T09:09:00.184Z"
       }
     },
     "needsReview": false,
@@ -23442,10 +23446,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:39:26.932Z",
+        "priceSuspectAt": "2026-09-03T09:09:00.747Z",
         "priceSuspectValue": 1349.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "needsReview": true,
@@ -23487,10 +23491,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:39:27.569Z",
+        "priceSuspectAt": "2026-09-03T09:09:01.114Z",
         "priceSuspectValue": 1399.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "needsReview": true,
@@ -23531,7 +23535,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:27.942Z"
+        "refreshedAt": "2026-09-03T09:09:01.443Z"
       }
     },
     "needsReview": false,
@@ -23571,7 +23575,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:28.228Z"
+        "refreshedAt": "2026-09-03T09:09:01.810Z"
       }
     },
     "needsReview": false,
@@ -23613,10 +23617,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-01T19:48:49.007Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:39:28.577Z",
+        "priceSuspectAt": "2026-09-03T09:09:02.360Z",
         "priceSuspectValue": 1349.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 2
+        "priceSuspectStreak": 3
       }
     },
     "needsReview": true,
@@ -23658,10 +23662,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-02T21:39:28.910Z",
+        "priceSuspectAt": "2026-09-03T09:09:02.705Z",
         "priceSuspectValue": 1399.99,
         "priceSuspectClass": "ABSOLUTE_CEILING",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "needsReview": true,
@@ -23702,7 +23706,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.166Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:29.220Z"
+        "refreshedAt": "2026-09-03T09:09:03.000Z"
       }
     },
     "needsReview": false,
@@ -23820,7 +23824,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:07.245Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:29.824Z"
+        "refreshedAt": "2026-09-03T09:09:03.700Z"
       }
     },
     "needsReview": false,
@@ -23860,7 +23864,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.167Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:30.009Z"
+        "refreshedAt": "2026-09-03T09:09:03.861Z"
       }
     },
     "needsReview": false,
@@ -23938,7 +23942,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.177Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:30.354Z"
+        "refreshedAt": "2026-09-03T09:09:04.299Z"
       }
     },
     "needsReview": false,
@@ -24017,7 +24021,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:30.659Z"
+        "refreshedAt": "2026-09-03T09:09:04.651Z"
       }
     },
     "needsReview": false,
@@ -24057,7 +24061,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:30.922Z"
+        "refreshedAt": "2026-09-03T09:09:04.851Z"
       }
     },
     "needsReview": false,
@@ -24135,7 +24139,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:31.295Z"
+        "refreshedAt": "2026-09-03T09:09:05.243Z"
       }
     },
     "needsReview": false,
@@ -24175,7 +24179,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:31.483Z"
+        "refreshedAt": "2026-09-03T09:09:05.448Z"
       }
     },
     "needsReview": false,
@@ -24330,7 +24334,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.147Z"
+        "refreshedAt": "2026-09-03T09:09:06.179Z"
       }
     },
     "needsReview": false,
@@ -24370,7 +24374,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.330Z"
+        "refreshedAt": "2026-09-03T09:09:06.403Z"
       }
     },
     "needsReview": false,
@@ -24410,7 +24414,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.188Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.509Z"
+        "refreshedAt": "2026-09-03T09:09:06.602Z"
       }
     },
     "needsReview": false,
@@ -24450,7 +24454,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.648Z"
+        "refreshedAt": "2026-09-03T09:09:06.787Z"
       }
     },
     "needsReview": false,
@@ -24490,7 +24494,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.828Z"
+        "refreshedAt": "2026-09-03T09:09:06.946Z"
       }
     },
     "needsReview": false,
@@ -24530,7 +24534,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:15.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:32.987Z"
+        "refreshedAt": "2026-09-03T09:09:07.107Z"
       }
     },
     "needsReview": false,
@@ -24570,7 +24574,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.172Z"
+        "refreshedAt": "2026-09-03T09:09:07.283Z"
       }
     },
     "needsReview": false,
@@ -24610,7 +24614,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.331Z"
+        "refreshedAt": "2026-09-03T09:09:07.450Z"
       }
     },
     "needsReview": false,
@@ -24650,7 +24654,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:11.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.497Z"
+        "refreshedAt": "2026-09-03T09:09:07.615Z"
       }
     },
     "needsReview": false,
@@ -24690,7 +24694,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.638Z"
+        "refreshedAt": "2026-09-03T09:09:07.748Z"
       }
     },
     "needsReview": false,
@@ -24730,7 +24734,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.821Z"
+        "refreshedAt": "2026-09-03T09:09:07.955Z"
       }
     },
     "needsReview": false,
@@ -24770,7 +24774,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:33.985Z"
+        "refreshedAt": "2026-09-03T09:09:08.149Z"
       }
     },
     "needsReview": false,
@@ -24927,7 +24931,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:34.650Z"
+        "refreshedAt": "2026-09-03T09:09:08.897Z"
       }
     },
     "needsReview": false,
@@ -24967,7 +24971,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:34.826Z"
+        "refreshedAt": "2026-09-03T09:09:09.091Z"
       }
     },
     "needsReview": false,
@@ -25007,7 +25011,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.189Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:35.003Z"
+        "refreshedAt": "2026-09-03T09:09:09.292Z"
       }
     },
     "needsReview": false,
@@ -25047,7 +25051,7 @@ export default [
         "matchedAt": "2026-07-24",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:35.162Z"
+        "refreshedAt": "2026-09-03T09:09:09.474Z"
       }
     },
     "needsReview": false,
@@ -25087,7 +25091,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:35.357Z"
+        "refreshedAt": "2026-09-03T09:09:09.659Z"
       }
     },
     "needsReview": false,
@@ -25166,7 +25170,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:35.697Z"
+        "refreshedAt": "2026-09-03T09:09:10.014Z"
       }
     },
     "needsReview": false,
@@ -25206,7 +25210,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.193Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:35.886Z"
+        "refreshedAt": "2026-09-03T09:09:10.180Z"
       }
     },
     "needsReview": false,
@@ -25285,7 +25289,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:36.234Z"
+        "refreshedAt": "2026-09-03T09:09:10.556Z"
       }
     },
     "needsReview": false,
@@ -25364,7 +25368,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:36.534Z"
+        "refreshedAt": "2026-09-03T09:09:10.899Z"
       }
     },
     "needsReview": false,
@@ -25443,7 +25447,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:15.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:36.879Z"
+        "refreshedAt": "2026-09-03T09:09:11.235Z"
       }
     },
     "needsReview": false,
@@ -25483,7 +25487,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:37.081Z"
+        "refreshedAt": "2026-09-03T09:09:11.399Z"
       }
     },
     "needsReview": false,
@@ -25562,7 +25566,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:37.402Z"
+        "refreshedAt": "2026-09-03T09:09:11.775Z"
       }
     },
     "needsReview": false,
@@ -25602,7 +25606,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:37.576Z"
+        "refreshedAt": "2026-09-03T09:09:11.988Z"
       }
     },
     "needsReview": false,
@@ -25642,7 +25646,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:37.755Z"
+        "refreshedAt": "2026-09-03T09:09:12.160Z"
       }
     },
     "needsReview": false,
@@ -25682,7 +25686,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:37.925Z"
+        "refreshedAt": "2026-09-03T09:09:12.324Z"
       }
     },
     "needsReview": false,
@@ -25722,7 +25726,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:36.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:38.096Z"
+        "refreshedAt": "2026-09-03T09:09:12.528Z"
       }
     },
     "needsReview": false,
@@ -25761,7 +25765,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-03T09:09:12.703Z"
       }
     },
     "needsReview": false,
@@ -25801,7 +25806,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:38.452Z"
+        "refreshedAt": "2026-09-03T09:09:12.877Z"
       }
     },
     "needsReview": false,
@@ -25841,7 +25846,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:38.610Z"
+        "refreshedAt": "2026-09-03T09:09:13.080Z"
       }
     },
     "needsReview": false,
@@ -25881,7 +25886,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.201Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-02T21:39:38.779Z"
+        "refreshedAt": "2026-09-03T09:09:13.244Z"
       }
     },
     "needsReview": false,
@@ -25920,7 +25925,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.206Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:38.957Z"
+        "refreshedAt": "2026-09-03T09:09:13.448Z"
       }
     },
     "needsReview": false,
@@ -26193,7 +26198,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.230Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:39:40.481Z"
+        "refreshedAt": "2026-09-03T09:09:14.891Z"
       }
     },
     "needsReview": false,
@@ -26233,7 +26238,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.230Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:26.081Z"
+        "refreshedAt": "2026-09-03T09:09:15.053Z"
       }
     },
     "needsReview": false,
@@ -26273,7 +26278,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:26.302Z"
+        "refreshedAt": "2026-09-03T09:09:15.276Z"
       }
     },
     "needsReview": false,
@@ -26352,7 +26357,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:26.650Z"
+        "refreshedAt": "2026-09-03T09:10:00.278Z"
       }
     },
     "needsReview": false,
@@ -26392,7 +26397,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:26.831Z"
+        "refreshedAt": "2026-09-03T09:10:00.451Z"
       }
     },
     "needsReview": false,
@@ -26432,7 +26437,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:27.027Z"
+        "refreshedAt": "2026-09-03T09:10:00.800Z"
       }
     },
     "needsReview": false,
@@ -26472,7 +26477,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:27.379Z"
+        "refreshedAt": "2026-09-03T09:10:00.979Z"
       }
     },
     "needsReview": false,
@@ -26512,7 +26517,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:27.559Z"
+        "refreshedAt": "2026-09-03T09:10:01.156Z"
       }
     },
     "needsReview": false,
@@ -26552,7 +26557,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:27.778Z"
+        "refreshedAt": "2026-09-03T09:10:01.341Z"
       }
     },
     "needsReview": false,
@@ -26592,7 +26597,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:27.944Z"
+        "refreshedAt": "2026-09-03T09:10:01.495Z"
       }
     },
     "needsReview": false,
@@ -26672,7 +26677,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.242Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:28.276Z"
+        "refreshedAt": "2026-09-03T09:10:01.838Z"
       }
     },
     "needsReview": false,
@@ -26751,7 +26756,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:28.626Z"
+        "refreshedAt": "2026-09-03T09:10:02.300Z"
       }
     },
     "needsReview": false,
@@ -26829,7 +26834,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:43.816Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:28.968Z"
+        "refreshedAt": "2026-09-03T09:10:02.756Z"
       }
     },
     "needsReview": false,
@@ -26869,7 +26874,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:29.293Z"
+        "refreshedAt": "2026-09-03T09:10:02.928Z"
       }
     },
     "needsReview": false,
@@ -26909,7 +26914,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:29.462Z"
+        "refreshedAt": "2026-09-03T09:10:03.215Z"
       }
     },
     "needsReview": false,
@@ -26949,7 +26954,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:29.639Z"
+        "refreshedAt": "2026-09-03T09:10:03.370Z"
       }
     },
     "needsReview": false,
@@ -27028,7 +27033,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.243Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:30.034Z"
+        "refreshedAt": "2026-09-03T09:10:03.879Z"
       }
     },
     "needsReview": false,
@@ -27185,7 +27190,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:30.899Z"
+        "refreshedAt": "2026-09-03T09:10:04.862Z"
       }
     },
     "needsReview": false,
@@ -27225,7 +27230,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:31.280Z"
+        "refreshedAt": "2026-09-03T09:10:05.218Z"
       }
     },
     "needsReview": false,
@@ -27303,7 +27308,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:03.129Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:32.037Z"
+        "refreshedAt": "2026-09-03T09:10:06.011Z"
       }
     },
     "needsReview": false,
@@ -27343,7 +27348,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.254Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:32.383Z"
+        "refreshedAt": "2026-09-03T09:10:06.376Z"
       }
     },
     "needsReview": false,
@@ -27383,7 +27388,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:32.566Z"
+        "refreshedAt": "2026-09-03T09:10:06.615Z"
       }
     },
     "needsReview": false,
@@ -27423,7 +27428,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:32.749Z"
+        "refreshedAt": "2026-09-03T09:10:06.790Z"
       }
     },
     "needsReview": false,
@@ -27463,7 +27468,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.255Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:32.931Z"
+        "refreshedAt": "2026-09-03T09:10:06.977Z"
       }
     },
     "needsReview": false,
@@ -27503,7 +27508,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.294Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:33.304Z"
+        "refreshedAt": "2026-09-03T09:10:07.310Z"
       }
     },
     "needsReview": false,
@@ -27543,7 +27548,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.294Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:33.623Z"
+        "refreshedAt": "2026-09-03T09:10:07.637Z"
       }
     },
     "needsReview": false,
@@ -27583,7 +27588,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:33.972Z"
+        "refreshedAt": "2026-09-03T09:10:08.010Z"
       }
     },
     "needsReview": false,
@@ -27623,7 +27628,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:34.287Z"
+        "refreshedAt": "2026-09-03T09:10:08.338Z"
       }
     },
     "needsReview": false,
@@ -27663,7 +27668,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:34.626Z"
+        "refreshedAt": "2026-09-03T09:10:08.757Z"
       }
     },
     "needsReview": false,
@@ -27703,7 +27708,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.310Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:34.983Z"
+        "refreshedAt": "2026-09-03T09:10:09.108Z"
       }
     },
     "needsReview": false,
@@ -27743,7 +27748,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:35.309Z"
+        "refreshedAt": "2026-09-03T09:10:09.497Z"
       }
     },
     "needsReview": false,
@@ -27783,7 +27788,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:35.638Z"
+        "refreshedAt": "2026-09-03T09:10:09.864Z"
       }
     },
     "needsReview": false,
@@ -27823,7 +27828,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:35.825Z"
+        "refreshedAt": "2026-09-03T09:10:10.030Z"
       }
     },
     "needsReview": false,
@@ -27863,7 +27868,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:36.172Z"
+        "refreshedAt": "2026-09-03T09:10:10.384Z"
       }
     },
     "needsReview": false,
@@ -27896,14 +27901,15 @@ export default [
         "itemNumber": "N82E16820985307",
         "sellerClass": "official",
         "price": 279.99,
-        "saleprice": 259.99,
+        "saleprice": 265.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312148143116249056641&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-black%2Fp%2FN82E16820985307%3Fitem%3DN82E16820985307",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-307-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:36.336Z"
+        "refreshedAt": "2026-09-03T09:10:10.562Z",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -27936,14 +27942,15 @@ export default [
         "itemNumber": "N82E16820985308",
         "sellerClass": "official",
         "price": 279.99,
-        "saleprice": 259.99,
+        "saleprice": 265.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837155623496240322784&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-16gb-ddr5-6000-cas-latency-cl38-memory-white%2Fp%2FN82E16820985308%3Fitem%3DN82E16820985308",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-308-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:36.496Z"
+        "refreshedAt": "2026-09-03T09:10:10.698Z",
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "needsReview": false,
@@ -27983,7 +27990,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:43.881Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:36.836Z"
+        "refreshedAt": "2026-09-03T09:10:11.089Z"
       }
     },
     "needsReview": false,
@@ -28023,7 +28030,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.339Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:37.206Z"
+        "refreshedAt": "2026-09-03T09:10:11.477Z"
       }
     },
     "needsReview": false,
@@ -28063,7 +28070,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.339Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:37.395Z"
+        "refreshedAt": "2026-09-03T09:10:11.629Z"
       }
     },
     "needsReview": false,
@@ -28102,7 +28109,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.351Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:37.731Z"
+        "refreshedAt": "2026-09-03T09:10:12.024Z"
       }
     },
     "needsReview": false,
@@ -28142,7 +28149,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.355Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:37.891Z"
+        "refreshedAt": "2026-09-03T09:10:12.205Z"
       }
     },
     "needsReview": false,
@@ -28182,7 +28189,7 @@ export default [
         "matchedAt": "2026-08-23T12:27:11.502Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-02T21:40:38.044Z"
+        "refreshedAt": "2026-09-03T09:10:12.379Z"
       }
     },
     "needsReview": false,
