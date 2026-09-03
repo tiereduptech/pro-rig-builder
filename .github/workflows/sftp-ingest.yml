@@ -53,7 +53,92 @@ jobs:
           echo "INGEST_STARTED=$(date +%s)" >> "$GITHUB_ENV"
           node sftp-ingest.cjs
 
-      # ── ESCALATION, ORDERED FIRST ON PURPOSE ─────────────────────────────
+      # NO RE-SPLIT STEP. The ingest now writes through scripts/write-catalog.cjs,
+      # which re-splits into src/data/parts/<cat>.js, regenerates the barrel and
+      # verifies the result (assertBarrelShape) as part of the write itself. A
+      # step here would re-run split-parts-by-cat.cjs over an already-split
+      # catalog -- harmless, but it would also re-establish the arrangement
+      # write-catalog.cjs was built to abolish: the re-split living in YAML,
+      # where nothing stops a literal write from being the last thing that
+      # happened. That is the 2026-06-27 dual-export corruption.
+      # ── COMMIT BEFORE THE ASSERTIONS, GATED ON THE INGEST'S OWN VERDICT ──
+      #
+      # `!cancelled()` and NOT `always()`, which is the usual reflex here and is
+      # wrong: always() also fires when the job is CANCELLED, and cancellation is
+      # this workflow's most common failure by far -- 55 of 64 runs at one point,
+      # killed mid-parse by the main-writer group. A cancelled run's catalog is
+      # whatever the parse had got through when the runner was killed, which is
+      # the one state that must never be committed. This runs on success and on
+      # failure, and not on that. The whole point is to run on a red run. One held
+      # feed used to withhold EVERYTHING -- the other feeds' prices, the absence
+      # stamps, and the manifest carrying the hold's own escalation streak --
+      # because assert-outcome sat here and nothing after a failed step runs.
+      # #92 and #93 made a deterministic parse failure hold a feed indefinitely,
+      # so indefinitely was also how long the healthy feeds stayed stranded.
+      #
+      # This is not "commit anyway". The protection the old ordering gave is
+      # kept and moved INSIDE the step, which is strictly stronger: it is now
+      # enforced by the same tested code path that authorises the commit, rather
+      # than by a step that merely happened to precede it. assert-outcome is
+      # used here as a PREDICATE, so it checks, in one call:
+      #   - the summary EXISTS               (absence is the crash signature)
+      #   - it is NEWER than this run's start (a stale summary from a previous
+      #     attempt must never authorise a commit -- this is the check that
+      #     replaces "the assertion ran first")
+      #   - it PARSES                        (a truncated write is a dead job)
+      #   - commit.safe == true              (the ingest's own verdict: false on
+      #     --dry-run and when the stamp guard withheld the catalog)
+      #
+      # A held feed does NOT make commit.safe false. That is the change.
+      - name: Commit and push if changed
+        if: ${{ !cancelled() }}
+        run: |
+          # INGEST_STARTED is written to $GITHUB_ENV by the ingest step. If it is
+          # missing, --newer-than-epoch= is empty, assert-outcome treats the flag
+          # as absent, and the freshness check -- the one that replaces "the
+          # assertion ran first" -- silently does not happen. An unprovable
+          # summary must not authorise a commit, so this refuses loudly instead.
+          if [ -z "${INGEST_STARTED:-}" ]; then
+            echo "::error::INGEST_STARTED is unset — cannot prove the summary belongs to this run; refusing to commit"
+            exit 1
+          fi
+          if ! node scripts/assert-outcome.cjs \
+                 --artifact=catalog-build/sftp-ingest-summary.json \
+                 --label="SFTP ingest — may this run's work be committed?" \
+                 --newer-than-epoch="$INGEST_STARTED" \
+                 --require='commit.safe==true'; then
+            # Not an error annotation and not a non-zero exit: withholding is a
+            # legitimate outcome (--dry-run, the stamp guard), and the run is
+            # already going red at the assertions below if something is wrong.
+            # Failing here too would just double-report one problem.
+            echo "::notice::nothing committed — see the assertion above for which rule withheld it"
+            exit 0
+          fi
+          UPDATED=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.updated)")
+          EXCLUSIVES=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.exclusives)")
+          HELD=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.heldFeeds || 0)")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
+          git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            MSG="chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
+            # A partial ingest must say so in the subject line. `git log` is how
+            # anyone reconstructs which nights a feed was missing from, and a
+            # commit that looks exactly like a clean one cannot be read that way.
+            if [ "$HELD" != "0" ]; then MSG="$MSG, $HELD feed(s) HELD"; fi
+            git commit -m "$MSG"
+            # Not a bare `git push`. This job runs for ~an hour, and anyone
+            # merging a PR in that window moves main underneath it. Run
+            # 32136198527 built "16935 updated, 3171688 exclusives" and then lost
+            # the lot to `! [rejected] main -> main (fetch first)`. The
+            # main-writer lock serialises workflows against each other; it has no
+            # opinion about a person clicking Merge.
+            bash scripts/push-with-rebase.sh main
+          fi
+      # ── ESCALATION, ORDERED FIRST AMONG THE ASSERTIONS ───────────────────
       #
       # A held feed makes totals.errors non-zero, so the outcome assertion below
       # fails on night one and would keep failing, from the same step, with the
@@ -79,11 +164,11 @@ jobs:
             --newer-than-epoch="$INGEST_STARTED" \
             --require='totals.escalatedHolds==0'
 
-      # The INGEST step exiting 0 does not mean it produced anything, and the
-      # commit step below cannot tell the difference: with no summary on disk it
-      # skips its body and the job goes green having ingested nothing. That is
-      # how 99 runs committed once. Assert the outcome here, between the work
-      # and the commit, so a dead run is red instead of quiet.
+      # The INGEST step exiting 0 does not mean it produced anything. This used
+      # to sit between the work and the commit so a dead run could not commit;
+      # that guarantee now lives INSIDE the commit step, which re-runs the same
+      # assert-outcome existence/freshness/parse checks as a predicate before it
+      # stages anything. This step's remaining job is to make the RUN RED.
       #
       # errors==0 fails the run: a feed that would not parse is a defect.
       # feedRecords>0 only warns, because the manifest cache legitimately skips
@@ -96,38 +181,3 @@ jobs:
             --newer-than-epoch="$INGEST_STARTED" \
             --require='totals.errors==0' \
             --warn='totals.feedRecords>0'
-      # NO RE-SPLIT STEP. The ingest now writes through scripts/write-catalog.cjs,
-      # which re-splits into src/data/parts/<cat>.js, regenerates the barrel and
-      # verifies the result (assertBarrelShape) as part of the write itself. A
-      # step here would re-run split-parts-by-cat.cjs over an already-split
-      # catalog -- harmless, but it would also re-establish the arrangement
-      # write-catalog.cjs was built to abolish: the re-split living in YAML,
-      # where nothing stops a literal write from being the last thing that
-      # happened. That is the 2026-06-27 dual-export corruption.
-      - name: Commit and push if changed
-        run: |
-          # Not `if [ -f ... ]`. A missing summary here means the ingest died
-          # after the assertion somehow; either way it is a failure to report,
-          # never a branch to skip past on the way to a green check.
-          if [ ! -f catalog-build/sftp-ingest-summary.json ]; then
-            echo "::error::no ingest summary at commit time — refusing to report success"
-            exit 1
-          fi
-          UPDATED=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.updated)")
-          EXCLUSIVES=$(node -e "console.log(require('./catalog-build/sftp-ingest-summary.json').totals.exclusives)")
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Commit parts.js (catalog updates) and exclusives meta (small summary file, not the 500MB jsonl)
-          git add src/data/parts.js src/data/parts/ catalog-build/newegg-exclusives.meta.json catalog-build/sftp-manifest.json 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore(sftp): newegg catalog ingest - $UPDATED updated, $EXCLUSIVES exclusives"
-            # Not a bare `git push`. This job runs for ~an hour, and anyone
-            # merging a PR in that window moves main underneath it. Run
-            # 32136198527 built "16935 updated, 3171688 exclusives" and then lost
-            # the lot to `! [rejected] main -> main (fetch first)`. The
-            # main-writer lock serialises workflows against each other; it has no
-            # opinion about a person clicking Merge.
-            bash scripts/push-with-rebase.sh main
-          fi
