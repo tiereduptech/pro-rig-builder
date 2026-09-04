@@ -1841,18 +1841,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUK937606",
-        "price": 179.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835132121409274655910&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIAZTUK937606",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-03T15:31:11.578Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-04T09:25:13.286Z",
-        "priceLastMovedAt": "2026-09-03",
-        "rematchedAt": "2026-09-03T20:01:35.153Z",
-        "rematchedFrom": "4458315887140650144449529"
+        "price": 109,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-04T15:24:59.062Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7,
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "additionalImages": [
@@ -1902,18 +1902,20 @@ export default [
         "priceUnconfirmedAt": "2026-09-04"
       },
       "newegg": {
-        "sku": "N82E16835181474",
+        "sku": "445834866614674005417524",
+        "itemNumber": "N82E16835181474",
+        "sellerClass": "official",
         "price": 109.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834866614674005417524&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4-black%2Fp%2FN82E16835181474%3Fitem%3DN82E16835181474",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-474-01.png",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.087Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-04T09:25:13.634Z",
-        "priceLastMovedAt": "2026-09-04",
         "migratedAt": "2026-09-04T09:25:13.634Z",
-        "migratedFrom": "445839219722962354274099"
+        "migratedFrom": "445839219722962354274099",
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "discount": 18,
@@ -2919,14 +2921,15 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBVHXKW52676",
+        "sku": "445832443305015796527693",
+        "itemNumber": "9SIBVHXKW52676",
+        "sellerClass": "marketplace",
         "price": 89.9,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832443305015796527693&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-007N-00037%3Fitem%3D9SIBVHXKW52676",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2505280FVI5Y7C.jpg",
-        "sellerClass": "marketplace",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1
       }
     },
@@ -2953,7 +2956,8 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "mpn": "FW360-SE-ARGB-B-V2"
   },
   {
     "id": 80056,
@@ -3676,17 +3680,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458315734960284684089781",
-        "itemNumber": "9SIAADYH270112",
+        "sku": "4458318287779890278886719",
+        "itemNumber": "9SIBZT7KJ95187",
         "sellerClass": "marketplace",
-        "price": 99.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315734960284684089781&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIAADYH270112",
+        "price": 99.19,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318287779890278886719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIBZT7KJ95187",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404YHWSh.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-27T21:31:17.759Z",
+        "matchedAt": "2026-09-04T15:25:27.260Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-04T09:25:17.390Z"
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "additionalImages": [
@@ -4807,7 +4811,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-03"
+        "priceUnconfirmedAt": "2026-09-04"
       },
       "newegg": {
         "sku": "4458315448780282110771242",
@@ -5624,7 +5628,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-03"
+        "priceUnconfirmedAt": "2026-09-04"
       },
       "newegg": {
         "sku": "445839811036610137058647",
@@ -10654,7 +10658,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-03"
+        "priceUnconfirmedAt": "2026-09-04"
       },
       "newegg": {
         "sku": "4458315165269356823080327",
@@ -11843,18 +11847,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA2W0KPW8659",
-        "price": 43.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832150892608202230575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA2W0KPW8659",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
+        "sku": "445831501802986156908340",
+        "itemNumber": "9SIA1K6KS87476",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-01T15:53:33.659Z",
-        "matchMethod": "upc",
+        "price": 43.85,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831501802986156908340&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA1K6KS87476",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-04T15:22:54.274Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-04T09:26:19.473Z",
-        "priceLastMovedAt": "2026-09-03",
-        "rematchedAt": "2026-09-03T20:03:29.464Z",
-        "rematchedFrom": "445831501802986156908340"
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "additionalImages": [
@@ -16507,18 +16510,17 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 98.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-03T15:29:07.827Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-04T09:28:13.922Z",
-        "priceLastMovedAt": "2026-09-03",
-        "rematchedAt": "2026-09-03T20:04:35.810Z",
-        "rematchedFrom": "445833795822587653180041"
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-04T15:22:56.429Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",

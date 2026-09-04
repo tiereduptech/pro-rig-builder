@@ -610,7 +610,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:39.667Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-03"
+        "priceConfirmedAt": "2026-09-04"
       }
     },
     "hsType": "Wired",
@@ -827,7 +827,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:15.097Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-03"
+        "priceConfirmedAt": "2026-09-04"
       }
     },
     "hsType": "Wired",
