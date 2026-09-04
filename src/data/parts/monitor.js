@@ -3504,7 +3504,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:04.269Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:08:28.642Z",
+        "refreshedAt": "2026-09-04T09:31:18.864Z",
         "priceLastMovedAt": "2026-09-03",
         "rematchedAt": "2026-09-03T20:08:28.642Z",
         "rematchedFrom": "445839178871217832592241"
@@ -7416,7 +7416,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:08:33.960Z"
+        "refreshedAt": "2026-09-04T09:32:12.871Z"
       }
     },
     "screenSize": 16,
@@ -7771,10 +7771,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-03T20:08:35.237Z",
+        "priceSuspectAt": "2026-09-04T09:32:13.662Z",
         "priceSuspectValue": 99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 3
+        "priceSuspectStreak": 4
       }
     },
     "screenSize": 13.3,
@@ -8142,7 +8142,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:08:36.845Z"
+        "refreshedAt": "2026-09-04T09:32:14.707Z"
       }
     },
     "screenSize": 23.8,
@@ -8189,7 +8189,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:09:21.638Z"
+        "refreshedAt": "2026-09-04T09:32:14.800Z"
       }
     },
     "screenSize": 27,
@@ -8274,7 +8274,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:09:22.320Z"
+        "refreshedAt": "2026-09-04T09:32:15.009Z"
       }
     },
     "screenSize": 27,
@@ -8321,7 +8321,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:09:22.654Z"
+        "refreshedAt": "2026-09-04T09:32:15.125Z"
       }
     },
     "screenSize": 15.6,
@@ -10949,7 +10949,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:43.178Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:09:29.850Z"
+        "refreshedAt": "2026-09-04T09:32:19.711Z"
       },
       "newegg_openbox": {
         "sku": "445838916882314961340236",
@@ -13628,7 +13628,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:25.216Z"
+        "refreshedAt": "2026-09-04T09:33:16.826Z"
       }
     },
     "screenSize": 31.5,
@@ -14080,7 +14080,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.667Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:27.581Z"
+        "refreshedAt": "2026-09-04T09:33:18.332Z"
       }
     },
     "screenSize": 16,
@@ -14522,7 +14522,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:29.043Z"
+        "refreshedAt": "2026-09-04T09:33:19.118Z"
       }
     },
     "screenSize": 24,
@@ -14745,7 +14745,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:30.537Z"
+        "refreshedAt": "2026-09-04T09:33:19.993Z"
       }
     },
     "screenSize": 15.6,
@@ -14802,7 +14802,7 @@ export default [
         "matchedAt": "2026-09-03T15:30:54.308Z",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:30.711Z",
+        "refreshedAt": "2026-09-04T09:33:20.100Z",
         "priceLastMovedAt": "2026-09-03",
         "rematchedAt": "2026-09-03T20:10:30.711Z",
         "rematchedFrom": "445831931944325232073721"
@@ -17242,7 +17242,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:08.553Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-03T20:10:33.750Z"
+        "refreshedAt": "2026-09-04T09:34:12.697Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.802Z",
@@ -18467,15 +18467,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIA4P0KGE2799",
-        "price": 289.99,
-        "saleprice": null,
+        "price": 269.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583235780913884196165&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-xg27acs-27-qhd-180-hz-rog-strix-fast-ips%2Fp%2FN82E16824281306%3Fitem%3D9SIA4P0KGE2799",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-306-01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.96,
-        "refreshedAt": "2026-09-03T20:10:34.558Z"
+        "refreshedAt": "2026-09-04T09:34:13.226Z",
+        "priceLastMovedAt": "2026-09-04"
       }
     },
     "addedAt": "2026-05-15T14:34:31.805Z",
