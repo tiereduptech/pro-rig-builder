@@ -1405,7 +1405,7 @@ export default [
     "reviews": 8106,
     "deals": {
       "amazon": {
-        "price": 38.49,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B07H25DYM3?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -2238,7 +2238,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Jungle Leopard",
+        "priceSeller": "KuFengKeJi store",
         "priceConfirmedAt": "2026-09-04",
         "priceResolvedVia": "paapi"
       }
@@ -2492,8 +2492,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4C421RZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-04",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Focus Camera LLC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -5687,12 +5687,12 @@ export default [
     "reviews": 393,
     "deals": {
       "amazon": {
-        "price": 23.69,
+        "price": 25.99,
         "url": "https://www.amazon.com/dp/B0CGJ1J5KL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-04",
         "priceSource": "3p",
-        "priceSeller": "2EazyEnterprises",
+        "priceSeller": "Direct Express LLC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9790,8 +9790,8 @@ export default [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "MBM Sales",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
         "priceConfirmedAt": "2026-09-04"
@@ -19440,7 +19440,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-04",
         "priceSource": "3p",
-        "priceSeller": "Smoove Sales LLC (Serial Numbers Recorded)",
+        "priceSeller": "Woot",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -20327,7 +20327,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-04",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "Phanteks USA",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
