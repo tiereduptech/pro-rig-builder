@@ -124,7 +124,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:02.447Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceConfirmedAt": "2026-09-04"
+        "priceConfirmedAt": "2026-09-05"
       }
     },
     "resolution": "1080p",
