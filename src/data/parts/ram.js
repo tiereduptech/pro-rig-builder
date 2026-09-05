@@ -168,7 +168,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-05"
       },
       "newegg": {
@@ -362,7 +362,7 @@ export default [
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -1020,12 +1020,12 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 89.99,
+        "price": 73.99,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "Bridging Associates",
+        "priceSeller": "DiscTech (USA)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2116,7 +2116,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "Stokvane (S/N Recorded)",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3844,12 +3844,14 @@ export default [
     "reviews": 618,
     "deals": {
       "amazon": {
-        "price": 399.99,
+        "price": 449.99,
         "url": "https://www.amazon.com/dp/B09XZ6VVY9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-05"
+        "priceConfidence": "confirmed",
+        "priceSource": "3p",
+        "priceSeller": "Official Patriot Memory Store",
+        "priceConfirmedAt": "2026-09-05",
+        "priceResolvedVia": "paapi"
       },
       "newegg": {
         "sku": "4458311909541356568796984",
@@ -4840,12 +4842,12 @@ export default [
     "reviews": 257,
     "deals": {
       "amazon": {
-        "price": 529.99,
+        "price": 621.48,
         "url": "https://www.amazon.com/dp/B0B72BM63Q?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
-        "priceSource": "3p",
-        "priceSeller": "SS Product Supply",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -9938,11 +9940,11 @@ export default [
       "amazon": {
         "asin": "B0DZ935RX9",
         "url": "https://www.amazon.com/dp/B0DZ935RX9?tag=tiereduptech-20",
-        "price": 493.95,
+        "price": 524.95,
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "The Deal Leader",
+        "priceSeller": "Joes Tech Shop Inc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10074,7 +10076,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "MobileMonster",
+        "priceSeller": "Joes Tech Shop Inc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10174,7 +10176,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Amazon Global Store UK",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10463,7 +10465,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11429,7 +11431,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "Adorama",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11462,7 +11464,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "A Mark Store (S/N Recorded)",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.778Z",

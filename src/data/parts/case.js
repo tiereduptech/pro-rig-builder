@@ -6016,11 +6016,13 @@ export default [
         "price": 84.99,
         "url": "https://www.amazon.com/dp/B0DFHQ5HVL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-05"
       }
     },
     "additionalImages": [
@@ -22480,7 +22482,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-02"
+        "priceConfirmedAt": "2026-09-05"
       }
     },
     "needsReview": true,
@@ -22908,10 +22910,8 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-04",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-05"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-05"
       }
     },
     "needsReview": false,

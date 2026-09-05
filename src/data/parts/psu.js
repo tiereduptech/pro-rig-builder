@@ -2496,7 +2496,7 @@ export default [
     "reviews": 1155,
     "deals": {
       "amazon": {
-        "price": 254.9,
+        "price": 289.9,
         "url": "https://www.amazon.com/dp/B0CC8JMDVH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
@@ -4499,7 +4499,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "a.s.t.k",
+        "priceSeller": "OHOhagi83",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

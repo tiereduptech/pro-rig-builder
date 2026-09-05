@@ -1899,7 +1899,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-05"
       },
       "newegg": {
         "sku": "N82E16835181474",
@@ -2490,8 +2492,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0C4C421RZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
-        "priceSource": "3p",
-        "priceSeller": "Focus Camera LLC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -9792,7 +9794,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "MBM Sales",
+        "priceSeller": "JMBO Sales",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
         "priceConfirmedAt": "2026-09-05"
@@ -13610,12 +13612,12 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 150,
+        "price": 193.47,
         "url": "https://www.amazon.com/dp/B0DYJMJTY4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "trippodoshop",
+        "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -16066,8 +16068,8 @@ export default [
         "price": 89.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -17665,7 +17667,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-05"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -19518,7 +19522,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "North To South (Serial Number Recorded)",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
