@@ -20,7 +20,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07X462KRK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "OK Networking",
         "priceResolvedVia": "paapi"
@@ -49,10 +49,10 @@ export default [
     "cardHeight": 1,
     "deals": {
       "amazon": {
-        "price": 149.98,
+        "price": 195.29,
         "url": "https://www.amazon.com/dp/B09PRB1MZM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -82,10 +82,10 @@ export default [
     "interface": "USB",
     "deals": {
       "amazon": {
-        "price": 12.96,
+        "price": 14.99,
         "url": "https://www.amazon.com/dp/B07P5PRK7J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -111,7 +111,7 @@ export default [
         "price": 32.99,
         "url": "https://www.amazon.com/dp/B0B5YPK9L1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -141,7 +141,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-09-04"
+        "priceConfirmedAt": "2026-09-05"
       }
     },
     "needsReview": true,
@@ -174,7 +174,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-04",
+    "quarantinedAt": "2026-09-05",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -195,7 +195,7 @@ export default [
         "price": 21.03,
         "url": "https://www.amazon.com/dp/B07V4R3QHW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "nineplus99",
         "priceResolvedVia": "paapi",
@@ -218,10 +218,10 @@ export default [
     "interface": "USB 3.0",
     "deals": {
       "amazon": {
-        "price": 15.96,
+        "price": 17.99,
         "url": "https://www.amazon.com/dp/B07P6N2TZH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -247,7 +247,7 @@ export default [
         "price": 27.99,
         "url": "https://www.amazon.com/dp/B01IEU7UZ0?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "BrosTrend",
         "priceResolvedVia": "paapi",
@@ -276,7 +276,7 @@ export default [
         "price": 28.84,
         "url": "https://www.amazon.com/dp/B07ZV2CJL2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -303,7 +303,7 @@ export default [
         "price": 16.09,
         "url": "https://www.amazon.com/dp/B084JPFKQ5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -346,7 +346,7 @@ export default [
         "price": 22.9,
         "url": "https://www.amazon.com/dp/B07XM6XZ1F?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "Ubit Store",
         "priceResolvedVia": "paapi",

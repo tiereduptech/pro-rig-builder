@@ -20,7 +20,7 @@ export default [
     },
     "storageType": "DVD Writer",
     "needsReview": true,
-    "quarantinedAt": "2026-09-04",
+    "quarantinedAt": "2026-09-05",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -41,12 +41,12 @@ export default [
     "connection": "USB-C",
     "deals": {
       "amazon": {
-        "price": 25.49,
+        "price": 28.99,
         "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
-        "priceSeller": "AmiCool",
+        "priceSeller": "MENGLONGDA TECHNOLOGY",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -70,7 +70,7 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B09BC44T8K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "ORIGBELIE Direct - US",
         "priceResolvedVia": "paapi",
@@ -96,7 +96,7 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B0C394HFCF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "bdzhuoyue",
         "priceResolvedVia": "paapi",
@@ -130,7 +130,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-04",
+    "quarantinedAt": "2026-09-05",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -153,7 +153,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-04"
+        "priceUnconfirmedAt": "2026-09-05"
       }
     }
   },
@@ -175,7 +175,7 @@ export default [
         "price": 36.99,
         "url": "https://www.amazon.com/dp/B076CM5SZN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -201,7 +201,7 @@ export default [
         "price": 136,
         "url": "https://www.amazon.com/dp/B07BC9F98J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "3p",
         "priceSeller": "Seatech Inc.",
         "priceResolvedVia": "paapi",
@@ -227,7 +227,7 @@ export default [
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B0B6D8XB74?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-05",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
