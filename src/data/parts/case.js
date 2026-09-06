@@ -764,7 +764,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 334.14,
+        "price": 317.41,
         "url": "https://www.amazon.com/dp/B09CF4YGJ8?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
@@ -10104,8 +10104,8 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-06",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
         "priceResolvedVia": "paapi"
       },
       "newegg": {
@@ -14328,8 +14328,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQ1V1H11?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -20645,7 +20645,10 @@ export default [
     ],
     "tg": true,
     "rgb": true,
-    "drive35": 2
+    "drive35": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-06",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100873,
@@ -20665,7 +20668,7 @@ export default [
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -22918,8 +22921,10 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-06"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-06",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-06"
       }
     },
     "needsReview": false,

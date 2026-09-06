@@ -769,12 +769,12 @@ export default [
     "reviews": 484,
     "deals": {
       "amazon": {
-        "price": 509.99,
+        "price": 482.99,
         "url": "https://www.amazon.com/dp/B0FQNB9WBD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "RapidShip (S/N Recorder)",
+        "priceSeller": "QyTech",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2685,8 +2685,8 @@ export default [
         "url": "https://www.amazon.com/dp/B07T637L7T?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -4502,13 +4502,11 @@ export default [
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B07Z86WC1Z?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-26",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-06"
+        "priceConfirmedAt": "2026-09-06",
+        "priceResolvedVia": "paapi"
       }
     },
     "additionalImages": [
@@ -7232,7 +7230,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "AztekC",
+        "priceSeller": "IPC-STORE✅",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -10173,11 +10171,11 @@ export default [
       "amazon": {
         "asin": "B0DSR14511",
         "url": "https://www.amazon.com/dp/B0DSR14511?tag=tiereduptech-20",
-        "price": 1099.99,
+        "price": 1025.96,
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "Amazon Global Store UK",
+        "priceSeller": "Amazon Germany",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11466,7 +11464,7 @@ export default [
         "priceSeller": "A Mark Store (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-06"
       }
     },

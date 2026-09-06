@@ -2444,7 +2444,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-06"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -2557,7 +2559,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "Vetroo",
+        "priceSeller": "VETROO USA",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4499,7 +4501,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "a.s.t.k",
+        "priceSeller": "OHOhagi83",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -5257,7 +5259,7 @@ export default [
         "price": 55.99,
         "url": "https://www.amazon.com/dp/B0G2VGK5CP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-21",
+        "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
         "priceResolvedVia": "paapi",
@@ -9035,11 +9037,11 @@ export default [
       "amazon": {
         "asin": "B0C6FY4JXF",
         "url": "https://www.amazon.com/dp/B0C6FY4JXF?tag=tiereduptech-20",
-        "price": 507.83,
+        "price": 472.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-06",
         "priceSource": "3p",
-        "priceSeller": "AztekC",
+        "priceSeller": "Signature Mart",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
