@@ -471,7 +471,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:15.711Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-05"
+        "priceUnconfirmedAt": "2026-09-06"
       }
     },
     "switches": "Hall Effect",
