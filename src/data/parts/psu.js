@@ -6200,7 +6200,7 @@ export default [
         "itemId": "1818",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -6257,7 +6257,7 @@ export default [
         "itemId": "1830",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -6950,11 +6950,11 @@ export default [
       "msi": {
         "price": 149.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2166&u=https%3A%2F%2Fus-store.msi.com%2FPC-Components%2FPower-Supply%2FMAG-A1000GL-PCIE5&intsrc=APIG_16410",
-        "inStock": true,
+        "inStock": false,
         "itemId": "2166",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05"
+        "priceConfirmedAt": "2026-09-06"
       },
       "newegg": {
         "sku": "N82E16817701026",
@@ -7235,7 +7235,7 @@ export default [
         "itemId": "2308",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -7279,7 +7279,7 @@ export default [
         "itemId": "2307",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -7684,7 +7684,7 @@ export default [
         "itemId": "2459",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05"
+        "priceConfirmedAt": "2026-09-06"
       },
       "newegg": {
         "sku": "445835041996689809647170",
@@ -7742,7 +7742,7 @@ export default [
         "itemId": "2463",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-29"
       },
       "newegg": {
@@ -7850,7 +7850,7 @@ export default [
         "itemId": "681",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -7909,7 +7909,7 @@ export default [
         "itemId": "2744",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -7968,7 +7968,7 @@ export default [
         "itemId": "2745",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8026,7 +8026,7 @@ export default [
         "itemId": "2746",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8178,7 +8178,7 @@ export default [
         "itemId": "2797",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05"
+        "priceConfirmedAt": "2026-09-06"
       },
       "newegg": {
         "sku": "445837630450229854934337",
@@ -8527,7 +8527,7 @@ export default [
         "itemId": "2924",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -8585,7 +8585,7 @@ export default [
         "itemId": "2925",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-05",
+        "priceConfirmedAt": "2026-09-06",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
