@@ -174,12 +174,12 @@ export default [
     "bench": 75,
     "deals": {
       "amazon": {
-        "price": 799.99,
+        "price": 849.59,
         "url": "https://www.amazon.com/dp/B0DTQMLX4F?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Empowered PC",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1100,11 +1100,13 @@ export default [
         "price": 599.99,
         "url": "https://www.amazon.com/dp/B0F91KM1CK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "prime bay",
         "priceConfirmedAt": "2026-09-07",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-07"
       }
     }
   },
@@ -1912,7 +1914,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Hcir Equipment",
+        "priceSeller": "IT Electronix",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2021,7 +2023,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Hard2FindParts",
+        "priceSeller": "CorteseInc",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2364,7 +2366,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Galaxy Tech Shop (S/N Recorded)✅",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-07"
       }
     },
     "cuda": 21760,
@@ -2733,12 +2737,12 @@ export default [
     "segment": "gaming",
     "deals": {
       "amazon": {
-        "price": 799.99,
+        "price": 849.59,
         "url": "https://www.amazon.com/dp/B0DTQMLX4F?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Empowered PC",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3870,16 +3874,14 @@ export default [
     "segment": "gaming",
     "deals": {
       "amazon": {
-        "price": 299.99,
+        "price": 329.99,
         "url": "https://www.amazon.com/dp/B0C626FFG2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-24",
+        "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "TheKeyKey",
+        "priceSeller": "ASRock USA",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceConfidence": "confirmed"
       }
     },
     "sp": 2048,
@@ -4237,7 +4239,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Galaxy Tech Shop (S/N Recorded)✅",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-07"
       },
       "newegg": {
         "sku": "44583510508037670625616",
@@ -7511,7 +7515,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Grandis Goods",
+        "priceSeller": "IT Electronix",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7619,7 +7623,10 @@ export default [
     "boostClock": 2407,
     "pcie": "5.0 x16",
     "slots": 3.5,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-07",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 30186,
@@ -7806,13 +7813,11 @@ export default [
         "price": 499.97,
         "url": "https://www.amazon.com/dp/B0F4YRNHSJ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-06",
+        "priceConfirmedAt": "2026-09-07",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 499.99,
@@ -16801,10 +16806,10 @@ export default [
       "amazon": {
         "asin": "B0C8BT71H5",
         "url": "https://www.amazon.com/dp/B0C8BT71H5?tag=tiereduptech-20",
-        "price": 879.99,
+        "price": 949.99,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "Renewed Technology Group",
+        "priceSeller": "UltraParts Renewed",
         "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
@@ -16872,7 +16877,7 @@ export default [
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-07"
       }
     },
@@ -17613,13 +17618,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0CTJZCJH1?tag=tiereduptech-20",
         "price": 219.99,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-05",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-07",
+        "priceResolvedVia": "paapi"
       }
     },
     "addedAt": "2026-05-15T14:34:31.771Z",
@@ -19020,7 +19023,7 @@ export default [
       "amazon": {
         "asin": "B0CHN5KQS8",
         "url": "https://www.amazon.com/dp/B0CHN5KQS8?tag=tiereduptech-20",
-        "price": 315.91,
+        "price": 364.5,
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",

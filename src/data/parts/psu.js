@@ -2441,13 +2441,11 @@ export default [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0BP8B6M7Y?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-06",
+        "priceConfirmedAt": "2026-09-07",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -4506,7 +4504,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "OHOhagi83",
+        "priceSeller": "MARU3-SHOP",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -8908,7 +8906,10 @@ export default [
     "ff": "ATX",
     "eff": "80+ Gold",
     "upc": "00810162140595",
-    "mpn": "GP-UD850GM-A PG5"
+    "mpn": "GP-UD850GM-A PG5",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-07",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100460,
@@ -8952,7 +8953,7 @@ export default [
       "amazon": {
         "asin": "B0D68TLYKR",
         "url": "https://www.amazon.com/dp/B0D68TLYKR?tag=tiereduptech-20",
-        "price": 96.06,
+        "price": 74.98,
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "1p",
@@ -9980,7 +9981,10 @@ export default [
     "addedAt": "2026-05-15T13:17:14.418Z",
     "source": "amazon-discovery",
     "modular": "Full",
-    "condition": "refurbished"
+    "condition": "refurbished",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-07",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100491,

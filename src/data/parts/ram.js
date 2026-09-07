@@ -1737,7 +1737,7 @@ export default [
     "color": "White",
     "ecc": false,
     "needsReview": true,
-    "quarantinedAt": "2026-09-06",
+    "quarantinedAt": "2026-09-07",
     "quarantineReason": "price_3p_flagged"
   },
   {
@@ -2116,7 +2116,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "Stokvane (S/N Recorded)",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2230,12 +2230,12 @@ export default [
     "reviews": 764,
     "deals": {
       "amazon": {
-        "price": 388.8,
+        "price": 489.99,
         "url": "https://www.amazon.com/dp/B0BNTRRLYP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "JeeRy",
+        "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2575,13 +2575,11 @@ export default [
         "price": 109,
         "url": "https://www.amazon.com/dp/B08C56GZGK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-01",
-        "priceSource": "3p",
-        "priceSeller": "eStarDeals",
+        "priceConfirmedAt": "2026-09-07",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "44583142255459532483160",
@@ -7144,7 +7142,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "KLEVV",
+        "priceSeller": "Micro Center",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -7781,7 +7779,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9767,7 +9765,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "DEVECHO INC",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10685,7 +10683,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
         "priceSource": "3p",
-        "priceSeller": "gogreendeals",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

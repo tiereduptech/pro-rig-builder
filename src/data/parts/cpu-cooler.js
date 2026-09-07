@@ -1275,7 +1275,7 @@ export default [
     "reviews": 286,
     "deals": {
       "amazon": {
-        "price": 139.5,
+        "price": 125.91,
         "url": "https://www.amazon.com/dp/B0DWZJNH28?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -1414,7 +1414,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "OneDealOutlet Online",
         "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi"
       },
@@ -1839,8 +1839,8 @@ export default [
         "url": "https://www.amazon.com/dp/B07Y87YHRH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
-        "priceSource": "3p",
-        "priceSeller": "Noctua Cooling Solutions",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2242,7 +2242,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Jungle Leopard",
+        "priceSeller": "KuFengKeJi store",
         "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi"
       }
@@ -9748,8 +9748,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DM4CBKFY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
-        "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9797,8 +9797,8 @@ export default [
         "price": 119,
         "url": "https://www.amazon.com/dp/B0DQ2LJ9VH?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "JMBO Sales",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
         "priceConfirmedAt": "2026-09-07"
@@ -11267,7 +11267,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Altius Tech",
+        "priceSeller": "vCloud Choice",
         "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi"
       },
@@ -16987,8 +16987,8 @@ export default [
         "price": 9.97,
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "DAEBAK",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -17145,7 +17145,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "DARKROCK",
-        "priceConfirmedAt": "2026-09-06",
+        "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi"
       }
     },
@@ -20573,7 +20573,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Jungle Leopard",
+        "priceSeller": "KuFengKeJi store",
         "priceConfirmedAt": "2026-09-07",
         "priceResolvedVia": "paapi"
       }

@@ -411,7 +411,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 118.82,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CB26ZFKV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
@@ -4194,7 +4194,7 @@ export default [
     "reviews": 403,
     "deals": {
       "amazon": {
-        "price": 118.82,
+        "price": 89.99,
         "url": "https://www.amazon.com/dp/B0CB26ZFKV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
@@ -5846,12 +5846,12 @@ export default [
     "reviews": 739,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 99.99,
         "url": "https://www.amazon.com/dp/B0CWSV3JQR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "FlashDeal Store",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -7310,7 +7310,7 @@ export default [
     "reviews": 116,
     "deals": {
       "amazon": {
-        "price": 189.99,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0F3XNXCMV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-07",
@@ -20389,7 +20389,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-07"
       },
       "newegg": {
         "sku": "4458311190781417742920238",
@@ -23025,7 +23027,7 @@ export default [
         "priceSeller": "Hashtag PC Gear",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-27"
+        "priceConfirmedAt": "2026-09-07"
       }
     },
     "needsReview": true,
