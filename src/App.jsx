@@ -6,6 +6,7 @@ import ProductPage from "./ProductPage.jsx";
 import { bundleH1, bundleLdName } from "./bundle-name.js";
 import { priceStampOf, isFresh, priceAgeDays } from "./price-freshness.js";
 import { showBestBadge, unconfirmedBadgeText } from "./retailer-badges.js";
+import { dealPrice, confirmedOffers, offerLinkOf } from "./offer-schema.js";
 import { msrpIsTrustworthy, featuredDealEligible } from "./deal-eligibility.js";
 // PARTS comes from parts-frontend.js, which dynamic-imports per-category
 // modules so Vite can ship them as separate chunks. The array starts empty
@@ -591,22 +592,10 @@ let P = SEED_PARTS
   .filter(isAvailable);
 
 // ── Price helpers — handles new multi-retailer deals structure ──
-// What a customer actually pays at one retailer. The Newegg feed carries BOTH
-// `price` (list) and `saleprice` (current), so reading `price` alone quotes the
-// pre-sale number and makes our listing look worse than the retailer's own page.
-// Take the LOWER of the two rather than preferring saleprice outright: 19 rows
-// carry a saleprice ABOVE price (bad feed data), and preferring it there would
-// overstate instead of understate. A missing/null/zero saleprice falls back to price.
-const dealPrice = d => {
-  if (!d || typeof d !== "object") return null;
-  const list = Number(d.price);
-  const sale = Number(d.saleprice);
-  const hasList = Number.isFinite(list) && list > 0;
-  const hasSale = Number.isFinite(sale) && sale > 0;
-  if (hasList && hasSale) return Math.min(list, sale);
-  if (hasSale) return sale;
-  return hasList ? list : null;
-};
+// dealPrice() — what a customer actually pays at one retailer — moved to
+// src/offer-schema.js, imported above. It publishes the Offer price as well as
+// setting the page price, and one definition is the point: see that file for
+// why the LOWER of `price` and `saleprice` is the right read.
 // ── PRICE FRESHNESS ──────────────────────────────────────────────────────────
 // The rule lives in src/price-freshness.js so that the report which measures
 // this gate's impact runs the same predicate the page runs. See that file for
@@ -2608,18 +2597,19 @@ function ProductSchema({p}) {
   // Structured data is a price claim made to a search engine, and it was the
   // least guarded number on the page: a bare Math.min over every deal, ignoring
   // stock and age alike, while the card beside it already preferred in-stock.
-  // Quote what the page quotes — bestPrice() applies both gates and the same
-  // fall-backs — so the rendered price and the indexed price cannot disagree.
-  const price = p.deals && typeof p.deals === "object" ? bestPrice(p) : (p.pr || 0);
-
-  const allOffers = p.deals && typeof p.deals === "object"
-    ? Object.entries(p.deals).filter(([_, d]) => d && typeof d === "object" && d.url && dealPrice(d) != null)
-    : [];
-  // Offers we have actually confirmed, with the same fall-back as bestPrice.
-  // Omitting an offer we cannot stand behind is not a lie; asserting a price
-  // nobody has checked in PRICE_STALE_AFTER_DAYS to a search engine is.
-  const freshOffers = allOffers.filter(([_, d]) => isFresh(d));
-  const retailers = freshOffers.length ? freshOffers : allOffers;
+  //
+  // The whole decision now lives in src/offer-schema.js, which is tested
+  // against the live catalog. Two things it fixes, both of which made this
+  // block publish prices it had already declined to stand behind:
+  //
+  //   the candidate filter read `d.url`, and every one of the 3,198 Newegg
+  //   deals carries `linkurl` instead — so the freshness check ran on a set
+  //   that could not contain them;
+  //
+  //   and it ended `freshOffers.length ? freshOffers : allOffers`, which
+  //   republished the unconfirmed prices whenever NOTHING was confirmed, i.e.
+  //   exactly when the check had something to say.
+  const retailers = confirmedOffers(p.deals);
 
   const schema = {
     "@context": "https://schema.org",
@@ -2629,16 +2619,18 @@ function ProductSchema({p}) {
     "category": p.c,
     ...(p.img ? {"image": p.img} : {}),
     ...(p.r ? {"aggregateRating": {"@type": "AggregateRating", "ratingValue": p.r, "reviewCount": 10, "bestRating": 5}} : {}),
-    "offers": retailers.length > 0
-      ? retailers.map(([retailer, d]) => ({
+    // No confirmed offer means no `offers` key at all. The removed fall-back
+    // published p.pr — a catalog reference price no retailer ever confirmed —
+    // as an InStock Offer, which is the strongest claim on the page resting on
+    // the weakest evidence in it.
+    ...(retailers.length > 0 ? {"offers": retailers.map(([retailer, d]) => ({
           "@type": "Offer",
-          "url": d.url,
+          "url": offerLinkOf(d),
           "price": dealPrice(d),
           "priceCurrency": "USD",
           "availability": d.inStock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
           "seller": {"@type": "Organization", "name": retailer.charAt(0).toUpperCase() + retailer.slice(1)}
-        }))
-      : (price > 0 ? {"@type": "Offer", "price": price, "priceCurrency": "USD", "availability": "https://schema.org/InStock"} : undefined)
+        }))} : {})
   };
 
   return (

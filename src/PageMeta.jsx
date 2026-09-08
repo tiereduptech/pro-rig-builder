@@ -24,6 +24,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { bundleH1, bundleTitle, bundleLdName } from "./bundle-name.js";
+import { confirmedPrimaryOffer } from "./offer-schema.js";
 
 const SITE = "https://prorigbuilder.com";
 const BRAND = "Pro Rig Builder";
@@ -578,23 +579,21 @@ function buildPrimaryLd({ page, product, category, url, title, desc }) {
     // retailers. Pick the offer first — buyable ahead of not, in the precedence
     // this has always used — then read price, url and availability off that same
     // deal, so the three can never describe different listings.
-    const OFFER_ORDER = [
-      ['amazon',  (d) => d?.price],
-      ['bestbuy', (d) => d?.price],
-      ['newegg',  (d) => d?.saleprice || d?.price],
-      ['msi',     (d) => d?.price],
-    ];
-    const priced = OFFER_ORDER
-      .map(([key, priceOf]) => {
-        const deal = product?.deals?.[key];
-        return { deal, price: priceOf(deal), url: deal?.url || deal?.linkurl };
-      })
-      .filter((o) => typeof o.price === "number" && o.price > 0);
-    const offer = priced.find((o) => o.deal.inStock !== false) || priced[0] || null;
-    const price = offer ? offer.price : product.pr;
+    //
+    // ── AND ONLY OFFERS WE HAVE CONFIRMED ───────────────────────────────────
+    // This block is the Product schema that SHIPS. src/App.jsx has a second one
+    // (ProductSchema) which grew a freshness guard while this one did not, and
+    // that guard has never reached a crawler: ProductSchema renders only behind
+    // `isExp`, so it is absent from all 4,605 prerendered product pages, 4,596
+    // of which carry the Offer built right here. Same shape as #73 — the guard
+    // went into the component nobody renders — which is why the selection now
+    // lives in src/offer-schema.js, where a test can run it.
+    //
+    // A price we cannot stand behind is not published at all. Not downgraded to
+    // OutOfStock, which is a different claim and also unevidenced: omitted.
+    const offer = confirmedPrimaryOffer(product?.deals);
+    const price = offer ? offer.price : null;
     const offerUrl = offer?.url || url;
-    // No priced deal at all leaves no evidence either way; the pre-existing
-    // default (InStock) stands rather than inventing an OutOfStock claim.
     const inStock = offer ? offer.deal.inStock !== false : true;
     const image = product?.deals?.amazon?.image || product.img
       || product?.deals?.newegg?.imageurl || DEFAULT_OG_IMAGE;
