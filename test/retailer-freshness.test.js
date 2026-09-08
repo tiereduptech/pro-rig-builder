@@ -117,6 +117,108 @@ test("any of the three confirmation stamps counts, including refreshedAt", async
   }
 });
 
+// =============================================================================
+//  A LANE MAY HAVE MORE THAN ONE WRITER
+//
+//  deals.newegg has two: refresh-newegg-prices confirms the rows it can address
+//  by name/UPC, and sftp-ingest confirms the rows it structurally cannot, which
+//  are keyed by newegg_item_number (see lanesSolelyOwned() in sftp-ingest.cjs).
+//
+//  Citing only the busier one would rebuild this file's own bug one level up:
+//  the second job's schedule would go unwatched, and a cron commented out — the
+//  exact thing that happened to refresh-newegg-prices on 2026-07-20 — would
+//  leave the gate citing a live workflow while the rows that job confirms froze.
+// =============================================================================
+
+const twoCites = (a, b) => ({ shop: { confirmedBy: [a, b], why: "x" } });
+
+test("both cites are checked, not just the first", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1, priceConfirmedAt: "2026-08-16" })]),
+    wfDir: wfFixture({
+      "fast.yml": wfWithCron("0 7 * * *"),
+      "slow.yml": wfWithDisabledCron("0 12 * * *"),
+    }),
+    cadence: twoCites({ workflow: "fast.yml", cron: "0 7 * * *" },
+                      { workflow: "slow.yml", cron: "0 12 * * *" }),
+  });
+  assert.deepEqual(kinds(a), ["schedule-disabled"],
+    "the SECOND writer's cron is off — a gate reading only the first would call this green");
+  assert.equal(rowFor(a, "shop").verdict, "SCHEDULE OFF");
+});
+
+test("a drifted cite fails even when the other cite is live", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1, priceConfirmedAt: "2026-08-16" })]),
+    wfDir: wfFixture({
+      "fast.yml": wfWithCron("0 7 * * *"),
+      "slow.yml": wfWithCron("0 12 * * *"),
+    }),
+    cadence: twoCites({ workflow: "fast.yml", cron: "0 7 * * *" },
+                      { workflow: "slow.yml", cron: "0 13 * * *" }),
+  });
+  assert.deepEqual(kinds(a), ["cite-drift"]);
+});
+
+test("the budget comes from the SLOWEST writer, not the fastest", async () => {
+  // Taking the fastest would compute a budget no single writer's rows are held
+  // to. Same rule the amazon entry already states for its four tiers.
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1, priceConfirmedAt: "2026-08-16" })]),
+    wfDir: wfFixture({
+      "fast.yml": wfWithCron("0 7 * * *"),      // daily      -> 3d (floored)
+      "slow.yml": wfWithCron("0 10 * * 1"),     // weekly     -> 14d
+    }),
+    cadence: twoCites({ workflow: "fast.yml", cron: "0 7 * * *" },
+                      { workflow: "slow.yml", cron: "0 10 * * 1" }),
+  });
+  assert.equal(rowFor(a, "shop").budgetDays, 14, "the weekly writer sets it");
+  assert.equal(gate.slowestIntervalDays([{ cron: "0 7 * * *" }, { cron: "0 10 * * 1" }]), 7);
+});
+
+test("both cites are named in the report, so the reader knows who to chase", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1, priceConfirmedAt: "2026-08-16" })]),
+    wfDir: wfFixture({
+      "fast.yml": wfWithCron("0 7 * * *"),
+      "slow.yml": wfWithCron("0 12 * * *"),
+    }),
+    cadence: twoCites({ workflow: "fast.yml", cron: "0 7 * * *" },
+                      { workflow: "slow.yml", cron: "0 12 * * *" }),
+  });
+  const cite = rowFor(a, "shop").cite;
+  assert.match(cite, /fast\.yml/);
+  assert.match(cite, /slow\.yml/);
+});
+
+test("a bare confirmedBy object still works — every other entry is unchanged", async () => {
+  assert.deepEqual(gate.citesFor({ confirmedBy: { workflow: "s.yml", cron: "0 7 * * *" } }),
+    [{ workflow: "s.yml", cron: "0 7 * * *" }]);
+});
+
+test("MALFORMED: an incomplete cite in a list fails like a bare one", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([product("shop", { price: 1, priceConfirmedAt: "2026-08-16" })]),
+    wfDir: wfFixture({ "fast.yml": wfWithCron("0 7 * * *") }),
+    cadence: twoCites({ workflow: "fast.yml", cron: "0 7 * * *" }, { workflow: "slow.yml" }),
+  });
+  assert.deepEqual(kinds(a), ["malformed-entry"]);
+});
+
+test("the live newegg entry names BOTH of its writers", () => {
+  // The regression that matters on the real table: sftp-ingest now certifies the
+  // rows the re-pricer never reaches, so dropping it from this cite would leave
+  // its schedule unwatched for this lane.
+  const cites = gate.citesFor(gate.CADENCE.newegg).map((c) => c.workflow);
+  assert.ok(cites.includes("refresh-newegg-prices.yml"), "the re-pricer");
+  assert.ok(cites.includes("sftp-ingest.yml"), "the writer for the rows it cannot reach");
+});
+
 // ── each failure class ──────────────────────────────────────────────────────
 
 test("STALE: newest confirmation past the budget fails", async () => {
@@ -413,8 +515,12 @@ test("every live CADENCE entry states a reason a human can act on", async () => 
     const text = spec.unscheduled || spec.why;
     assert.ok(text && text.length > 60, `${name}: needs a real justification, not a label`);
     if (spec.confirmedBy) {
-      assert.ok(spec.confirmedBy.workflow.endsWith(".yml"), `${name}: workflow must be a .yml filename`);
-      assert.doesNotThrow(() => gate.cronIntervalDays(spec.confirmedBy.cron), `${name}: cited cron must parse`);
+      // A lane may name more than one writer (deals.newegg has two); every cite
+      // has to stand on its own, so they are all checked rather than the first.
+      for (const c of gate.citesFor(spec)) {
+        assert.ok(c.workflow.endsWith(".yml"), `${name}: workflow must be a .yml filename`);
+        assert.doesNotThrow(() => gate.cronIntervalDays(c.cron), `${name}: cited cron must parse`);
+      }
     }
   }
 });
@@ -531,7 +637,7 @@ test("the gate watches exactly the workflows CADENCE cites", () => {
   // silently stops triggering this gate.
   const cited = [...new Set(Object.values(gate.CADENCE)
     .filter((s) => s.confirmedBy)
-    .map((s) => s.confirmedBy.workflow))];
+    .flatMap((s) => gate.citesFor(s).map((c) => c.workflow)))];
 
   const wfDir = gate.DEFAULT_WF_DIR;
   for (const file of cited) {
