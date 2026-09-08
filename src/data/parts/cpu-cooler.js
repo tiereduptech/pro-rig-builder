@@ -1842,8 +1842,8 @@ export default [
         "url": "https://www.amazon.com/dp/B07Y87YHRH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -3375,7 +3375,10 @@ export default [
     "cfm": 180,
     "mpn": "CW-9061026-WW",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-08",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 80064,
@@ -3684,8 +3687,8 @@ export default [
         "url": "https://www.amazon.com/dp/B09TB5KJ5V?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
-        "priceSource": "3p",
-        "priceSeller": "Noctua Cooling Solutions",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -5145,7 +5148,7 @@ export default [
         "price": 89.99,
         "url": "https://www.amazon.com/dp/B086BYYFG5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
         "priceSeller": "My Quality Lifestyle",
         "priceResolvedVia": "paapi",
@@ -6170,7 +6173,7 @@ export default [
     "reviews": 199,
     "deals": {
       "amazon": {
-        "price": 90.9,
+        "price": 80.9,
         "url": "https://www.amazon.com/dp/B0D4PDPKX5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
@@ -13301,7 +13304,7 @@ export default [
     "reviews": 14,
     "deals": {
       "amazon": {
-        "price": 255.59,
+        "price": 294.4,
         "url": "https://www.amazon.com/dp/B0CDV74MB9?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -20382,7 +20385,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
-        "priceSeller": "Phanteks USA",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -20418,7 +20421,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

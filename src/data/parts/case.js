@@ -3408,7 +3408,7 @@ export default [
         "url": "https://www.amazon.com/dp/B094442NL5?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-01",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
@@ -4414,7 +4414,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "4458312041267863630094807",
@@ -5849,7 +5851,7 @@ export default [
     "reviews": 739,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 99.97,
         "url": "https://www.amazon.com/dp/B0CWSV3JQR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-08",
@@ -9225,9 +9227,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0GQDC3QVC?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-08-24",
+        "priceSource": "3p",
+        "priceSeller": "SMART SAVERS GLOBAL",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi"
       }
     },
@@ -10377,7 +10379,7 @@ export default [
         "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -20703,7 +20705,7 @@ export default [
         "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -22966,12 +22968,14 @@ export default [
         "priceUnconfirmedAt": "2026-09-08"
       }
     },
-    "needsReview": false,
+    "needsReview": true,
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
     "addedAt": "2026-08-07T16:04:24.713Z",
-    "drive35": 6
+    "drive35": 6,
+    "quarantinedAt": "2026-09-08",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 102802,
@@ -23787,7 +23791,7 @@ export default [
         "priceSeller": "ESGAMING PC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-07"
+        "priceConfirmedAt": "2026-09-08"
       }
     },
     "needsReview": true,
