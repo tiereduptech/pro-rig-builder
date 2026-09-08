@@ -944,7 +944,59 @@ export function createRateLimiter({ perMinute, sleep: sleepImpl = null, now = ()
   };
 }
 
-export async function searchNewegg(product, { token, mid, fetchImpl = fetch, acquire = null }) {
+// ── Identity beats similarity, when we hold the identity ─────────────────────
+//
+// scoreMatch() decides whether a candidate IS our product using UPC, then name
+// similarity behind a variant/brand/capacity gate. That whole apparatus is a
+// PROXY for identity, and it is the right proxy when identity is unknown. For a
+// row we already hold a Newegg item number for, identity is not unknown: if the
+// feed returns a listing whose sku IS that item number, that listing is our
+// listing. There is nothing left to infer.
+//
+// This is not a new principle in this codebase. applyMigrateFloor() in
+// refresh-newegg-prices.cjs already says it outright — "repricing the held SKU
+// is exempt: identity is settled by the SKU, and a low name score there only
+// reflects a truncated catalog title" — it just says it one stage too late.
+// scoreMatch() runs FIRST and drops the candidate, so the exempt case never
+// reaches the code that would have exempted it.
+//
+// THE COST OF THAT ORDERING, measured on run 34204759944: 294 rows came back
+// variant_rejected and 202 guard_rejected — 496 rows where the feed answered
+// with candidates and we rejected every one. Each of those is a row that then
+// carries no refreshedAt, which is exactly the population the freshness gate
+// reports as Newegg's stale tail. How many of the 496 had our own item number
+// sitting in the rejected set is NOT known: searchNewegg discards the raw items
+// on the reject path, and refresh-newegg-prices only records candidates after
+// stats.ok++, so a declined candidate leaves no trace anywhere. This function is
+// what makes the answer observable — the counter it feeds is the measurement.
+//
+// LENGTH FLOOR, not a format check. Item numbers are N82E…/9SI…/dashed, but
+// gating on those shapes would silently stop rescuing a row the day Newegg adds
+// a fourth prefix. Exact string equality IS the evidence; the floor only refuses
+// to let a degenerate stored value ('-', 'n/a', '') match a degenerate feed one.
+const MIN_ITEM_KEY_LEN = 8;
+
+const normItemKey = (v) => String(v == null ? '' : v).trim().toUpperCase();
+
+/**
+ * The returned listing that IS the one we hold, or null.
+ *
+ * Pure and exported so the rule is asserted directly rather than through a
+ * network path — searchNewegg() is not reachable from a test without a fetch
+ * stub, and a rule only ever exercised through a stub is a rule nobody has read.
+ */
+export function findHeldListing(items, heldSku) {
+  const key = normItemKey(heldSku);
+  if (key.length < MIN_ITEM_KEY_LEN) return null;
+  for (const it of items || []) {
+    if (normItemKey(it && it.sku) === key) {
+      return { item: it, match: { method: 'itemnumber', score: 1 } };
+    }
+  }
+  return null;
+}
+
+export async function searchNewegg(product, { token, mid, fetchImpl = fetch, acquire = null, heldSku = null }) {
   const catFilter = CAT_FILTER[product.c];
   if (!catFilter) return { ok: false, reason: 'no_cat_mapping', candidates: [], rawCount: 0, httpErrors: 0, queriesTried: 0, httpStatuses: [] };
   const queries = buildQueries(product.n, product.b, { broaden: !NO_BROADEN_CATS.has(product.c) })
@@ -1008,6 +1060,29 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch, acq
     // gate only fires on a candidate that got far enough to have a capacity
     // compared. Ranked below variant so an explicit variant rejection still
     // reads as one, but either must keep the deletion clock from starting.
+    // ── IDENTITY RESCUE ───────────────────────────────────────────────────────
+    // Every candidate failed the similarity proxy. Before reporting that we
+    // learned nothing, ask the question the proxy exists to approximate: is our
+    // own listing in what came back? See findHeldListing().
+    //
+    // ONLY ON THE EMPTY PATH, deliberately. On a row where something already
+    // matched, injecting the held listing would change which candidate wins and
+    // could suppress a legitimate migration onto a first-party listing — a
+    // different question, on rows that are working today, and not this one's to
+    // reopen. Scoped here, this can only ever turn "we learned nothing" into "we
+    // found the exact listing we hold", so no currently-succeeding row changes
+    // behaviour at all.
+    //
+    // It cannot manufacture an absence either: no hit falls through to exactly
+    // the reason this function returned before. Nothing here can start a
+    // deletion clock, which is the invariant the 2026-07-06 removals were about.
+    const rescued = findHeldListing(items, heldSku);
+    if (rescued) {
+      return {
+        ok: true, candidates: [rescued], ...base,
+        variantRejects, guardRejects, identityRescued: true,
+      };
+    }
     return {
       ok: false,
       reason: variantRejects ? 'variant_rejected' : guardRejects ? 'guard_rejected' : 'no_match',

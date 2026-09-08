@@ -172,7 +172,12 @@ async function lookupProduct(p) {
   let search;
   try {
     const token = await getToken();
-    search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID, acquire });
+    // heldSku is the item number this row already carries. It lets the matcher
+    // recognise our own listing in a candidate set its similarity gates would
+    // otherwise reject wholesale — see findHeldListing() in newegg-match.js.
+    // Resolved here rather than inside the matcher so the matcher stays free of
+    // any opinion about the shape of a deal object.
+    search = await NEG.searchNewegg(p, { token, mid: NEWEGG_MID, acquire, heldSku: heldSku(p.deals.newegg) });
   } catch (e) {
     // Token failure, network death, parser throw — all "we learned nothing".
     return { outcome: OUTCOME.LOOKUP_FAILED, reason: `exception: ${e.message}`, candidates: [], rawCount: 0, httpStatuses: [] };
@@ -182,7 +187,14 @@ async function lookupProduct(p) {
   for (const st of search.httpStatuses || []) httpStatusTally[st] = (httpStatusTally[st] || 0) + 1;
 
   if (search.ok) {
-    return { outcome: OUTCOME.OK, reason: 'matched', candidates: search.candidates, rawCount: search.rawCount, httpStatuses: search.httpStatuses || [] };
+    // identityRescued marks a row every similarity gate rejected, saved by the
+    // item number we already hold. Carried through so the run can REPORT how
+    // many rows that is: the size of this population has never been observable
+    // (declined candidates were discarded unrecorded), and it is what decides
+    // whether the Newegg stale tail is a matcher problem or a coverage one.
+    return { outcome: OUTCOME.OK, reason: search.identityRescued ? 'matched:itemnumber' : 'matched',
+             identityRescued: !!search.identityRescued,
+             candidates: search.candidates, rawCount: search.rawCount, httpStatuses: search.httpStatuses || [] };
   }
 
   // ---- The critical branch. Absence must be PROVEN, not assumed. ----
@@ -521,7 +533,7 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0 };
+  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0, identityRescued: 0 };
   const changes = [];
   const failures = [];
   const removalCandidates = [];
@@ -573,6 +585,11 @@ if (require.main !== module) return;
 
     // ── OK: we have a real, gated match. ──────────────────────────────────────
     stats.ok++;
+    // Counted BESIDE ok, not instead of it: a rescued row is a fully gated match
+    // that then goes through the same sanity gate and stamp as any other. The
+    // separate tally is what makes the rescue's size readable in the summary
+    // instead of vanishing into `ok`.
+    if (r.identityRescued) stats.identityRescued++;
     const chosen = chooseCandidate(p, r.candidates);
     {
       const selSku = chosen && chosen.pick ? String(chosen.pick.item.sku).trim() : null;
@@ -796,6 +813,11 @@ if (require.main !== module) return;
   console.log(`\n=== SUMMARY ${DRY_RUN ? '(DRY RUN)' : ''} ===`);
   console.log(`Processed:        ${processed}`);
   console.log(`Matched OK:       ${stats.ok}  (repriced ${stats.priced}, unchanged ${stats.unchanged}, migrated ${stats.migrated}, rematched ${stats.rematched})`);
+  // Printed unconditionally, including the zero. A rescue count that only
+  // appears when it is non-zero cannot tell you the difference between "the
+  // matcher is not losing our listings" and "the counter was never wired up".
+  console.log(`  of which IDENTITY-RESCUED: ${stats.identityRescued}  (every similarity gate rejected the ` +
+              `candidate set; our own item number was in it — see findHeldListing)`);
   console.log(`Price suspect:    ${stats.priceSuspect}  (bad price withheld, last good price KEPT)`);
   console.log(`Price quarantined:${stats.priceQuarantined}  (${PRICE_SUSPECT_QUARANTINE_STREAK}+ consecutive strikes -> needsReview, price KEPT)`);
   if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
@@ -932,6 +954,7 @@ if (require.main !== module) return;
     stamped: stats.stamped,
     unmappable: stats.noCatMapping,
     ourDecisions,
+    identityRescued: stats.identityRescued,
     guardRejected: stats.guardRejected,
     // Attribution for the http_error bucket. `rateLimited` is the number the
     // pacing change is judged on: it should be 0, and if it is not, REQ_PER_MIN
