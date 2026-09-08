@@ -74,6 +74,43 @@
 //  means something is permanently outside its reach, and "run it more often"
 //  fixes only the first. See P90_BUDGET_MULTIPLE.
 //
+//  ── AND A ROW WE FAILED TO CONFIRM IS STALE, NOT ABSENT ─────────────────────
+//  The negative stamp used to `continue` — a row whose priceUnconfirmedAt was
+//  newer than every positive stamp was skipped entirely, landing in neither
+//  `stamped` nor `ages`. That does not make the row read as stale. It DELETES
+//  the row from the quantiles, and the effect is backwards: stamping "we could
+//  not confirm this" made a retailer's numbers BETTER.
+//
+//  Measured on the live catalog 2026-09-08:
+//
+//    lane              rows   dropped   p90 as measured   p90 counting them
+//    newegg_openbox     225       143               0d                117d
+//    amazon            3755       215              12d                 14d
+//    newegg            3198        21              21d                 21d
+//
+//  newegg_openbox read OK on 82 of 225 rows because the other 143 were
+//  invisible, while its median row had gone 6 days unconfirmed and its tail
+//  117. That is the same shape as the Best Buy freeze this file was written
+//  for: a green light produced by not looking.
+//
+//  So the precedence rule now decides only what it was ever about — whether the
+//  row counts as CONFIRMED — and the row is measured regardless, at the age of
+//  its last real confirmation. That is a fact about the row that a later
+//  failure does not erase: `best` is still the last day anything vouched for
+//  this price, and the age since it is still exactly how stale it is.
+//
+//  This is the same precedence rule as priceFreshness() in src/App.jsx, and the
+//  copy was where it went wrong: there the precedence decides how to LABEL a
+//  row, and a labelled row is still on the page. Here it decided whether the
+//  row exists at all. `stamped` and `unconfirmed` are reported side by side so
+//  the two populations stay separable.
+//
+//  STILL OPEN, deliberately not fixed here: a row carrying no positive stamp of
+//  any kind is dropped one line earlier, by `if (!found.length) continue`, and
+//  532 rows are in that state today (amazon 374, bestbuy 144, msi 14). Those
+//  have no age to report, so counting them honestly needs a threshold of its
+//  own rather than a quantile, and that is a different change.
+//
 //  ── WHY IT FAILS INSTEAD OF WARNING ─────────────────────────────────────────
 //  Twice in August a real signal was emitted and ignored. refresh-newegg-prices
 //  reported "0 updated" on every run from 2026-07-06 and kept deleting; the
@@ -527,7 +564,9 @@ async function readCatalog(partsPath) {
     const deals = (p && p.deals) || {};
     for (const [name, d] of Object.entries(deals)) {
       if (!d || typeof d !== 'object') continue;
-      const r = (retailers[name] ??= { rows: 0, stamped: 0, negative: 0, newest: null, ages: [], byStamp: {} });
+      const r = (retailers[name] ??= {
+        rows: 0, stamped: 0, unconfirmed: 0, negative: 0, newest: null, ages: [], byStamp: {},
+      });
       r.rows++;
 
       const found = [];
@@ -541,16 +580,27 @@ async function readCatalog(partsPath) {
       const best = found.sort()[found.length - 1];
 
       // A negative stamp newer than every positive one means the newest thing we
-      // know is a failure to confirm. It must not count as confirmation.
+      // know is a failure to confirm. It must not count as CONFIRMATION — and it
+      // must not remove the row from the MEASUREMENT either. See the header.
       const failedAt = dayOnly(d[NEGATIVE_STAMP]);
-      if (failedAt && failedAt > best) continue;
+      const unconfirmed = !!(failedAt && failedAt > best);
 
-      r.stamped++;
-      // Every confirmed row's stamp, not just the winner. `newest` alone is a
-      // MAX, and a max cannot distinguish "this retailer is being confirmed"
-      // from "one row of this retailer was confirmed". See the header.
+      if (unconfirmed) {
+        r.unconfirmed++;
+      } else {
+        r.stamped++;
+        // `newest` stays confirmed-only: it is the "is anything alive here at
+        // all" diagnostic, and a row whose latest news is a failure must not be
+        // the thing that makes a retailer look recently touched.
+        if (!r.newest || best > r.newest) r.newest = best;
+      }
+
+      // Every row that has EVER been confirmed, whether or not its latest news is
+      // a failure — `best` is a real past confirmation date either way, and the
+      // age since it is exactly how stale the row is. `newest` alone is a MAX,
+      // and a max cannot distinguish "this retailer is being confirmed" from
+      // "one row of this retailer was confirmed". See the header.
       r.ages.push(best);
-      if (!r.newest || best > r.newest) r.newest = best;
     }
   }
   return { total: parts.length, retailers };
@@ -591,6 +641,13 @@ async function audit(opts = {}) {
       retailer: name,
       rows: r.rows,
       stamped: r.stamped,
+      // Rows measured but NOT confirmed: something vouched for this price once,
+      // and the newest thing we know is that we tried again and could not. They
+      // are in `ages` and therefore in every quantile below.
+      unconfirmed: r.unconfirmed,
+      // Rows behind the quantiles: stamped + unconfirmed. Deliberately reported,
+      // because it is the number that used to silently differ from `rows`.
+      measured: r.ages.length,
       negative: r.negative,
       byStamp: r.byStamp,
       newest: r.newest,
@@ -693,7 +750,12 @@ async function audit(opts = {}) {
     //    demonstrably worked.
     if (r.stamped === 0) {
       row.verdict = 'NEVER CONFIRMED';
-      row.detail = `${r.rows} rows, zero confirmation stamps, though ${row.cite} is scheduled — the job runs but is not confirming anything`;
+      // `unconfirmed` distinguishes "nothing has ever confirmed these" from
+      // "everything that once confirmed them has since failed". Both mean the
+      // job is not confirming anything today; only the second says it used to.
+      row.detail = `${r.rows} rows, zero confirmation stamps` +
+        (r.unconfirmed ? ` (${r.unconfirmed} were confirmed once and have since failed to re-confirm)` : '') +
+        `, though ${row.cite} is scheduled — the job runs but is not confirming anything`;
       failures.push({ retailer: name, kind: 'no-stamps', detail: row.detail });
       rows.push(row);
       continue;
@@ -713,7 +775,9 @@ async function audit(opts = {}) {
     if (row.medianAgeDays > row.budgetDays) {
       row.verdict = 'STALE';
       row.detail =
-        `the median confirmed row is ${row.medianAgeDays}d old (p90 ${row.p90AgeDays}d), over the ` +
+        `the median measured row is ${row.medianAgeDays}d old (p90 ${row.p90AgeDays}d` +
+        (row.unconfirmed ? `, ${row.unconfirmed} of ${row.measured} explicitly unconfirmed` : '') +
+        `), over the ` +
         `${row.budgetDays}d budget (${row.cite} x ${MISSED_CYCLES_ALLOWED} missed cycles) — ` +
         `the job is scheduled but not landing across the catalog. ` +
         `Newest stamp anywhere is ${row.newest} (${row.ageDays}d), which is why reading the newest ` +
@@ -742,8 +806,10 @@ async function audit(opts = {}) {
       row.detail =
         `the median row is fine (${row.medianAgeDays}d, budget ${row.budgetDays}d) but the slowest ` +
         `decile is ${row.p90AgeDays}d old, over the ${row.p90BudgetDays}d tail budget ` +
-        `(${row.budgetDays}d x ${P90_BUDGET_MULTIPLE}) — ${row.staleRows} of ${row.rows} rows are past ` +
-        `the ${row.budgetDays}d budget. ${row.cite} is landing across most of the catalog ` +
+        `(${row.budgetDays}d x ${P90_BUDGET_MULTIPLE}) — ${row.staleRows} of ${row.measured} measured rows ` +
+        `are past the ${row.budgetDays}d budget` +
+        (row.unconfirmed ? `, ${row.unconfirmed} of them explicitly unconfirmed` : '') +
+        `. ${row.cite} is landing across most of the catalog ` +
         `and never reaching these. A median alone would have reported this retailer as healthy.`;
       failures.push({ retailer: name, kind: 'stale-tail', detail: row.detail });
       rows.push(row);
@@ -788,14 +854,16 @@ function report(a) {
   // beside the quantiles because 'p90 23d' describes 4 forgotten rows and 1,064
   // unreachable ones identically, and only one of those is worth a morning.
   console.log(
-    pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('NEWEST', 13) +
+    pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('UNCONF', 8) +
+    padL('NEWEST', 13) +
     padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 10) +
     padL('PAST', 7) + '  VERDICT'
   );
-  console.log('-'.repeat(115));
+  console.log('-'.repeat(123));
   for (const r of a.rows) {
     console.log(
-      pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) + padL(r.newest, 13) +
+      pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) +
+      padL(r.unconfirmed == null ? '-' : r.unconfirmed, 8) + padL(r.newest, 13) +
       padL(r.ageDays == null ? '-' : r.ageDays + 'd', 6) +
       padL(r.medianAgeDays == null ? '-' : r.medianAgeDays + 'd', 8) +
       padL(r.p90AgeDays == null ? '-' : r.p90AgeDays + 'd', 7) +

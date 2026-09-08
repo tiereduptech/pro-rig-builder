@@ -273,7 +273,7 @@ test("one confirmed row does not vouch for a frozen catalog", async () => {
   assert.equal(r.p90AgeDays, 60);
   assert.deepEqual(kinds(a), ["stale"]);
   assert.equal(r.verdict, "STALE");
-  assert.match(r.detail, /median confirmed row is 60d old/);
+  assert.match(r.detail, /median measured row is 60d old/);
   // The report must say why the old reading disagreed, not just that it failed.
   assert.match(r.detail, /reading the newest\s+alone would have reported this retailer as fresh/);
 });
@@ -441,6 +441,69 @@ test("a priceUnconfirmedAt NEWER than the last success does not count as confirm
   const olderFailure = await mk({ price: 1, priceConfirmedAt: "2026-08-16", priceUnconfirmedAt: "2026-08-10" });
   assert.deepEqual(olderFailure.failures, [], "a stale failure does not invalidate a newer success");
   assert.equal(rowFor(olderFailure, "shop").stamped, 1);
+});
+
+// The test above passes on the BROKEN behaviour too, and that is the point worth
+// keeping: with one row in the lane, dropping it takes `stamped` to 0 and the
+// NEVER CONFIRMED verdict fires anyway, so the row has nowhere to hide. The
+// defect only appears once there are confirmed rows to hide BEHIND — which is
+// every real lane. newegg_openbox read OK on 82 of 225 rows for exactly this
+// reason while its true p90 was 117 days.
+test("an unconfirmed row is counted as stale, not deleted from the quantiles", async () => {
+  const shop = (deal) => product("shop", deal);
+  const a = await gate.audit({
+    now: NOW, // 2026-08-17
+    partsPath: partsFixture([
+      // Nine rows confirmed today: on their own, a spotless 0d median and p90.
+      ...Array.from({ length: 9 }, () => shop({ price: 1, priceConfirmedAt: "2026-08-17" })),
+      // One row last confirmed 100 days ago, which we then TRIED to re-confirm
+      // today and could not. Under the old rule this row vanished and the lane
+      // read p90 0d — stamping the failure made the numbers better.
+      shop({ price: 1, priceConfirmedAt: "2026-05-09", priceUnconfirmedAt: "2026-08-17" }),
+    ]),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+
+  const r = rowFor(a, "shop");
+  assert.equal(r.rows, 10);
+  assert.equal(r.stamped, 9, "the failed row is not CONFIRMED");
+  assert.equal(r.unconfirmed, 1, "but it is counted, and reported separately");
+  assert.equal(r.measured, 10, "and it is behind the quantiles");
+  assert.equal(r.p90AgeDays, 100, "measured at its last real confirmation, not deleted");
+  assert.equal(r.staleRows, 1);
+  assert.deepEqual(kinds(a), ["stale-tail"], "the lane goes red instead of reading OK");
+
+  // The negative stamp must not be able to IMPROVE the lane. Same catalog with
+  // the failure never recorded: identical age, so the verdict is identical too.
+  const unstamped = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([
+      ...Array.from({ length: 9 }, () => shop({ price: 1, priceConfirmedAt: "2026-08-17" })),
+      shop({ price: 1, priceConfirmedAt: "2026-05-09" }),
+    ]),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+  assert.equal(rowFor(unstamped, "shop").p90AgeDays, r.p90AgeDays,
+    "recording a failed confirmation attempt cannot make a retailer look fresher");
+  assert.deepEqual(kinds(unstamped), kinds(a));
+});
+
+test("`newest` stays confirmed-only — a failed row cannot make a lane look touched", async () => {
+  const a = await gate.audit({
+    now: NOW,
+    partsPath: partsFixture([
+      product("shop", { price: 1, priceConfirmedAt: "2026-08-01" }),
+      // Confirmed more recently than the row above, but its latest news is a
+      // failure. It must not become the retailer's `newest`.
+      product("shop", { price: 1, priceConfirmedAt: "2026-08-15", priceUnconfirmedAt: "2026-08-17" }),
+    ]),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
+  });
+  assert.equal(rowFor(a, "shop").newest, "2026-08-01");
+  assert.equal(rowFor(a, "shop").measured, 2, "still measured, just not the newest");
 });
 
 // ── multiple retailers, and the report ──────────────────────────────────────
