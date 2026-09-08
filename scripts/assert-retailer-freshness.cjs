@@ -243,7 +243,11 @@ const CADENCE = {
   },
 
   newegg: {
-    confirmedBy: { workflow: 'refresh-newegg-prices.yml', cron: '0 4,16 * * *' },
+    // TWO writers, because this lane genuinely has two. See citesFor().
+    confirmedBy: [
+      { workflow: 'refresh-newegg-prices.yml', cron: '0 4,16 * * *' },
+      { workflow: 'sftp-ingest.yml', cron: '0 12 * * *' },
+    ],
     why:
       'refresh-newegg-prices.cjs is the designated re-pricer — its own header calls it the ' +
       'daily Newegg re-price / re-match. Its cron was commented out on 2026-07-20 and this ' +
@@ -253,25 +257,36 @@ const CADENCE = {
       'verified on a 2026-08-17 live dry run that repriced 22 of 50 rows and removed none. ' +
       'The hours moved from 6,18 to 4,16 because 06:00 is prerender\'s slot and both are in the ' +
       'main-writer group; frequency is unchanged, so the budget this entry justifies is too. ' +
-      'sftp-ingest.yml is still not the right cite for THIS lane, but the reason has been ' +
-      'restated because the old one was wrong twice over. It read "stamps matchedAt only on ' +
-      'newly attached deals (sftp-ingest.cjs:411)": that line number now points into ' +
+      'sftp-ingest.yml IS a cite for this lane now, and the reason it was not has been ' +
+      'restated twice because the old wording was wrong twice over. It read "stamps matchedAt ' +
+      'only on newly attached deals (sftp-ingest.cjs:411)": that line number now points into ' +
       'matchRecord(), and the claim was never accurate either — applyMatchToPart() rewrites ' +
       'matchedAt on every replacement, not only on first attachment. ' +
-      'The real reason is a policy one: sftp-ingest confirms only the lanes it ALONE writes ' +
-      '(see newegg_openbox above). A job certifying a lane that has its own re-pricer would let ' +
-      'that re-pricer die unnoticed. That is why this retailer read 1d newest against a 10d ' +
-      'median while nothing had repriced it at all: 0 of 3,178 rows carried refreshedAt on ' +
-      '2026-08-28. ' +
-      'ONE EXCEPTION, and it is the same rule rather than a hole in it: 85 rows sit in ' +
-      'categories with no CAT_FILTER entry — 68 GPU plus 17 peripherals — and searchNewegg ' +
-      'returns no_cat_mapping for them before issuing a request, so THIS cite can never reach ' +
-      'them. sftp-ingest is their only writer, exactly as it is for the condition lanes, and it ' +
-      'now stamps them (sftp-ingest.cjs lanesSolelyOwned). Derived from CAT_FILTER, not a ' +
-      'category list: add GPU to CAT_FILTER and the re-pricer starts reaching those rows while ' +
-      'the ingest stops certifying them, on the same commit. The safety property is untouched ' +
-      'for the 3,104 rows that have a re-pricer — this job still mints nothing for them, so a ' +
-      'dead refresh-newegg-prices still drives the median stale and still fails this gate.',
+      'The policy it was really protecting stands, unchanged: sftp-ingest confirms only the rows ' +
+      'it ALONE writes, because a job certifying a lane that has its own re-pricer would let that ' +
+      're-pricer die unnoticed. That is why this retailer read 1d newest against a 10d median ' +
+      'while nothing had repriced it at all: 0 of 3,178 rows carried refreshedAt on 2026-08-28. ' +
+      'WHAT CHANGED IS THE GRANULARITY OF "ALONE", not the rule. It was per CATEGORY — 85 rows ' +
+      'in categories with no CAT_FILTER entry, where searchNewegg returns no_cat_mapping before ' +
+      'issuing a request. But CAT_FILTER answers "may the re-pricer ask about this row", and the ' +
+      'question that matters is "will it ever confirm it". searchNewegg queries by name and UPC ' +
+      'while the feed is keyed by newegg_item_number, so a mapped row whose name never matches is ' +
+      'asked about every run and confirmed by nothing. Measured on main 2026-09-08, that gap IS ' +
+      'the tail and is nothing else: of 3,198 rows, all 860 past the 12d tail budget carry no ' +
+      'refreshedAt at all — not one is a row the re-pricer reaches and is merely behind on. ' +
+      'So sftp-ingest now certifies deals.newegg for a row the re-pricer has NEVER reached, ' +
+      'stated as refreshedAt being absent (sftp-ingest.cjs lanesSolelyOwned). ' +
+      'THE SAFETY PROPERTY IS UNTOUCHED, and it is load-bearing: this job carries refreshedAt, it ' +
+      'never mints one, so a row the re-pricer has ever confirmed can never enter that set. The ' +
+      '~2,100 rows it does reach stay under its own liveness, and a dead refresh-newegg-prices ' +
+      'still drives them stale and still fails this gate on the MEDIAN. Both crons are checked ' +
+      'here, and the budget comes from the slower of the two. ' +
+      'EXPECT THIS TO STAY RED, SMALLER. The feed offers ~60% of the never-reached rows (five ' +
+      'consecutive nightly censuses: 60.1/60.2/60.3/61.4/60.8%), and breakeven for p90 <= 12d is ' +
+      '~54% — but the unreached set is fixed rather than random, so the ~400 rows the feed does ' +
+      'not carry stay stale against a ~320-row p90 allowance. Those need an itemNumber-keyed ' +
+      'lookup and are deliberately not in this change. Feed absence is NOT death: 19.7% of rows ' +
+      'the re-pricer confirms ALIVE are also absent from the feed, so they must not be dropped.',
   },
 
   bestbuy: {
@@ -404,6 +419,42 @@ function hoursPerDayFactor(hour, expr) {
 /** The stated policy, applied. */
 function budgetDaysFor(intervalDays) {
   return Math.max(MIN_BUDGET_DAYS, Math.ceil(intervalDays * MISSED_CYCLES_ALLOWED));
+}
+
+/**
+ * The cites for one retailer, always as a list.
+ *
+ * ── WHY A LANE MAY NAME MORE THAN ONE JOB ───────────────────────────────────
+ * `confirmedBy` was one {workflow, cron} because one lane had one writer. That
+ * stopped being true for deals.newegg: refresh-newegg-prices confirms the rows
+ * it can address, and sftp-ingest confirms the rows it structurally cannot (see
+ * lanesSolelyOwned() in sftp-ingest.cjs). Both are real confirmation paths for
+ * the same lane and the gate has to know about both.
+ *
+ * Writing only the busier one would be the failure this file exists to prevent,
+ * one level up: the SECOND job's schedule would go unchecked, and if its cron
+ * were commented out — the precise thing that happened to refresh-newegg-prices
+ * on 2026-07-20 — this gate would keep citing a live workflow while the rows it
+ * actually confirms quietly froze. A cite that does not cover every writer is a
+ * transcribed schedule with extra steps.
+ *
+ * Accepts a bare object so every single-writer entry stays exactly as it was.
+ */
+function citesFor(spec) {
+  const c = spec.confirmedBy;
+  return Array.isArray(c) ? c : [c];
+}
+
+/**
+ * The budget for a lane with several writers is set by the SLOWEST of them.
+ *
+ * Same rule the amazon entry already states for its four tiers — "the SLOWEST
+ * tier sets the budget for every Amazon row" — and the conservative direction:
+ * taking the fastest cron would compute a budget no single writer's rows are
+ * held to, which is how a threshold ends up defensible to nobody.
+ */
+function slowestIntervalDays(cites) {
+  return Math.max(...cites.map((c) => cronIntervalDays(c.cron)));
 }
 
 // =============================================================================
@@ -582,7 +633,8 @@ async function audit(opts = {}) {
       continue;
     }
 
-    if (!spec.confirmedBy || !spec.confirmedBy.workflow || !spec.confirmedBy.cron) {
+    const citesRaw = spec.confirmedBy ? citesFor(spec) : [];
+    if (!citesRaw.length || !citesRaw.every((c) => c && c.workflow && c.cron)) {
       row.verdict = 'MALFORMED';
       row.detail = `CADENCE entry for '${name}' has neither unscheduled nor a complete confirmedBy {workflow, cron}`;
       failures.push({ retailer: name, kind: 'malformed-entry', detail: row.detail });
@@ -590,38 +642,49 @@ async function audit(opts = {}) {
       continue;
     }
 
-    const { workflow, cron } = spec.confirmedBy;
-    row.cite = `${workflow} [${cron}]`;
-    const sched = readSchedule(wfDir, workflow);
+    const cites = citesRaw;
+    row.cite = cites.map((c) => `${c.workflow} [${c.cron}]`).join(' + ');
 
     // 3. Provenance. Checked BEFORE staleness, because it is the earlier and
     //    more actionable signal: a disabled cron is detectable the day it is
     //    commented out, whereas the data it stops refreshing takes weeks to
     //    visibly rot. Newegg's cron was disabled 2026-07-20; this is the check
     //    that would have said so on 2026-07-20.
-    if (!sched) {
-      row.verdict = 'NO WORKFLOW';
-      row.detail = `${workflow} does not exist in ${path.relative(ROOT, wfDir) || wfDir}`;
-      failures.push({ retailer: name, kind: 'missing-workflow', detail: row.detail });
-      rows.push(row);
-      continue;
+    //
+    //    EVERY cite is checked, not just the first. A lane with two writers has
+    //    two schedules that can go off independently, and the one that fails
+    //    silently is by definition the one nobody was watching.
+    let provenanceFailed = false;
+    for (const { workflow, cron } of cites) {
+      const sched = readSchedule(wfDir, workflow);
+      if (!sched) {
+        row.verdict = 'NO WORKFLOW';
+        row.detail = `${workflow} does not exist in ${path.relative(ROOT, wfDir) || wfDir}`;
+        failures.push({ retailer: name, kind: 'missing-workflow', detail: row.detail });
+        provenanceFailed = true;
+        break;
+      }
+      if (!sched.live.includes(cron)) {
+        const why = sched.disabled.includes(cron)
+          ? `cron '${cron}' in ${workflow} is COMMENTED OUT — the schedule that justifies this retailer's budget is not running`
+          : `cron '${cron}' is not present in ${workflow} (live crons: ${sched.live.join(', ') || 'none'}) — the citation drifted from the workflow`;
+        row.verdict = sched.disabled.includes(cron) ? 'SCHEDULE OFF' : 'CITE DRIFT';
+        row.detail = why;
+        failures.push({
+          retailer: name,
+          kind: sched.disabled.includes(cron) ? 'schedule-disabled' : 'cite-drift',
+          detail: why,
+        });
+        provenanceFailed = true;
+        break;
+      }
     }
-    if (!sched.live.includes(cron)) {
-      const why = sched.disabled.includes(cron)
-        ? `cron '${cron}' in ${workflow} is COMMENTED OUT — the schedule that justifies this retailer's budget is not running`
-        : `cron '${cron}' is not present in ${workflow} (live crons: ${sched.live.join(', ') || 'none'}) — the citation drifted from the workflow`;
-      row.verdict = sched.disabled.includes(cron) ? 'SCHEDULE OFF' : 'CITE DRIFT';
-      row.detail = why;
-      failures.push({
-        retailer: name,
-        kind: sched.disabled.includes(cron) ? 'schedule-disabled' : 'cite-drift',
-        detail: why,
-      });
+    if (provenanceFailed) {
       rows.push(row);
       continue;
     }
 
-    row.budgetDays = budgetDaysFor(cronIntervalDays(cron));
+    row.budgetDays = budgetDaysFor(slowestIntervalDays(cites));
     row.p90BudgetDays = row.budgetDays * P90_BUDGET_MULTIPLE;
     row.staleRows = countOlderThan(r.ages, row.budgetDays, now);
 
@@ -630,7 +693,7 @@ async function audit(opts = {}) {
     //    demonstrably worked.
     if (r.stamped === 0) {
       row.verdict = 'NEVER CONFIRMED';
-      row.detail = `${r.rows} rows, zero confirmation stamps, though ${workflow} [${cron}] is scheduled — the job runs but is not confirming anything`;
+      row.detail = `${r.rows} rows, zero confirmation stamps, though ${row.cite} is scheduled — the job runs but is not confirming anything`;
       failures.push({ retailer: name, kind: 'no-stamps', detail: row.detail });
       rows.push(row);
       continue;
@@ -651,7 +714,7 @@ async function audit(opts = {}) {
       row.verdict = 'STALE';
       row.detail =
         `the median confirmed row is ${row.medianAgeDays}d old (p90 ${row.p90AgeDays}d), over the ` +
-        `${row.budgetDays}d budget (${workflow} [${cron}] x ${MISSED_CYCLES_ALLOWED} missed cycles) — ` +
+        `${row.budgetDays}d budget (${row.cite} x ${MISSED_CYCLES_ALLOWED} missed cycles) — ` +
         `the job is scheduled but not landing across the catalog. ` +
         `Newest stamp anywhere is ${row.newest} (${row.ageDays}d), which is why reading the newest ` +
         `alone would have reported this retailer as fresh.`;
@@ -680,7 +743,7 @@ async function audit(opts = {}) {
         `the median row is fine (${row.medianAgeDays}d, budget ${row.budgetDays}d) but the slowest ` +
         `decile is ${row.p90AgeDays}d old, over the ${row.p90BudgetDays}d tail budget ` +
         `(${row.budgetDays}d x ${P90_BUDGET_MULTIPLE}) — ${row.staleRows} of ${row.rows} rows are past ` +
-        `the ${row.budgetDays}d budget. ${workflow} [${cron}] is landing across most of the catalog ` +
+        `the ${row.budgetDays}d budget. ${row.cite} is landing across most of the catalog ` +
         `and never reaching these. A median alone would have reported this retailer as healthy.`;
       failures.push({ retailer: name, kind: 'stale-tail', detail: row.detail });
       rows.push(row);
@@ -772,6 +835,7 @@ function wrap(text, width) {
 
 module.exports = {
   audit, report, cronIntervalDays, budgetDaysFor, readSchedule, readCatalog,
+  citesFor, slowestIntervalDays,
   CADENCE, CONFIRMATION_STAMPS, NEGATIVE_STAMP, MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS,
   P90_BUDGET_MULTIPLE, countOlderThan,
   DEFAULT_WF_DIR, DEFAULT_PARTS,

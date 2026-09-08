@@ -240,20 +240,21 @@ test('re-pricer provenance survives', () => {
   assert.equal(p.deals.newegg.migratedFrom, 'OLD-SKU');
 });
 
-test('CARRIED, NEVER MINTED: this job still writes no confirmation for deals.newegg', () => {
-  // The property that keeps a dead re-pricer detectable. If this job could mint
-  // a stamp, refresh-newegg-prices could die and the gate would stay green.
+test('CARRIED, NEVER MINTED: this job never writes a refreshedAt of its own', () => {
+  // THE property that keeps a dead re-pricer detectable, and the one the
+  // row-granular ownership rule rests on. refreshedAt is how "has the re-pricer
+  // ever reached this row" is stated, so if this job could MINT one it would be
+  // manufacturing its own evidence of the other job's reach — and every row
+  // would drift into the set this job is allowed to certify.
   //
-  // Asserted on a MAPPED category. GPU rows have no re-pricer to protect and are
-  // stamped deliberately (see lanesSolelyOwned); the property being guarded here
-  // is about the 3,104 rows that DO have one.
-  const p = part({ itemNumber: OFFICIAL, sku: 'RK-1', price: 599.99, inStock: true },
-                 { c: 'CPU', n: 'AMD Ryzen 9 9950X' });
+  // Asserted on a MAPPED category with a live re-pricer stamp: the row this
+  // property is about.
+  const p = part({ ...STAMPED }, { c: 'CPU', n: 'AMD Ryzen 9 9950X' });
   applyMatchToPart(p, rec({ retail_price: '649.99' }), { method: 'upc', confidence: 0.95 });
-  assert.equal(p.deals.newegg.refreshedAt, undefined,
-    'a row the re-pricer has never reached must not gain a confirmation from the ingest');
+  assert.equal(p.deals.newegg.refreshedAt, STAMPED.refreshedAt,
+    'carried, unchanged — this job may preserve the re-pricer\'s stamp but never write one');
   assert.equal(p.deals.newegg.priceConfirmedAt, undefined,
-    'deals.newegg is not a lane this job may certify — see CONDITION_LANES');
+    'a row the re-pricer DOES reach is not this job\'s to certify');
 });
 
 test('a DIFFERENT listing does not inherit the old one\'s confirmation', () => {
@@ -337,10 +338,167 @@ test('an unmappable row GETS a confirmation stamp from this job', () => {
     'nothing else will ever confirm this row');
 });
 
-test('a MAPPED row still gets none — the regression that would matter most', () => {
+test('a MAPPED row still gets none without a snapshot — the safe fallback', () => {
+  // No snapshot has been taken in this process, so lanesSolelyOwned() falls back
+  // to the category rule. That fallback certifies STRICTLY LESS, which is the
+  // only direction a missing snapshot is allowed to err in.
   const p = { id: 'c1', c: 'CPU', n: 'AMD Ryzen 9 9950X', deals: {} };
   applyMatchToPart(p, { ...rec(), product_name: 'AMD Ryzen 9 9950X' },
     { method: 'upc', confidence: 0.95 });
   assert.equal(p.deals.newegg.priceConfirmedAt, undefined,
-    'certifying a lane with a live re-pricer would let that re-pricer die unnoticed');
+    'absent the snapshot the gate stays shut — a missing input must never mint a stamp');
+});
+
+// =============================================================================
+//  AND OWNERSHIP IS PER ROW WITHIN A MAPPED CATEGORY TOO
+//
+//  CAT_FILTER answers "may the re-pricer issue a request for this row", and that
+//  was read as "will it ever confirm this row". They are different questions and
+//  the gap between them IS the Newegg stale tail: searchNewegg queries by name
+//  and UPC while the feed is keyed by newegg_item_number, so a mapped row whose
+//  name never matches is asked about every run and confirmed by nothing.
+//
+//  Measured on main 2026-09-08: of 3,198 deals.newegg rows, ALL 860 past the
+//  gate's 12d tail budget carry no refreshedAt whatsoever. Not one is a row the
+//  re-pricer reaches and is merely behind on. The re-pricer's logs agree from the
+//  other side — 2,102 of 3,189 matched, and across consecutive runs zero rows
+//  reached by the earlier were missed by the later. A fixed, nested set.
+//
+//  refreshedAt is what states the condition, and it can only do so because this
+//  job carries that stamp and never mints one (asserted above).
+// =============================================================================
+
+const { repricerNeverReachedAtLoad } = require('../sftp-ingest.cjs');
+
+const neverReached = (...parts) => repricerNeverReachedAtLoad(parts);
+
+test('the snapshot names exactly the rows carrying no refreshedAt', () => {
+  const reached  = { id: 'a', c: 'CPU', deals: { newegg: { refreshedAt: '2026-09-08T00:00:00Z' } } };
+  const notYet   = { id: 'b', c: 'CPU', deals: { newegg: { matchedAt: '2026-09-08T00:00:00Z' } } };
+  const noLane   = { id: 'c', c: 'CPU', deals: {} };
+  const s = neverReached(reached, notYet, noLane);
+  assert.equal(s.has('a'), false, 'the re-pricer has confirmed this row; it stays the re-pricer\'s');
+  assert.equal(s.has('b'), true, 'matchedAt is not confirmation — see CONFIRMATION_STAMPS');
+  assert.equal(s.has('c'), true, 'a row with no lane yet has no re-pricer history by construction');
+});
+
+test('a MAPPED row the re-pricer has NEVER reached is this job\'s to certify', () => {
+  // The tail. Mapped, so the old category rule said "not yours"; unreached, so
+  // nothing else was ever going to confirm it.
+  const p = { id: 'c1', c: 'CPU', n: 'AMD Ryzen 9 9950X', deals: {} };
+  assert.ok(lanesSolelyOwned(p, neverReached(p)).includes('newegg'));
+});
+
+test('THE SAFETY PROPERTY: a mapped row WITH refreshedAt is never this job\'s', () => {
+  // The whole reason the old rule existed, and it has to survive intact: a job
+  // certifying a lane that has its own re-pricer lets that re-pricer die
+  // unnoticed. A row the re-pricer has confirmed even once can never enter the
+  // set, so its liveness keeps driving the median.
+  const p = { id: 'c2', c: 'CPU', n: 'AMD Ryzen 9 9950X',
+              deals: { newegg: { refreshedAt: '2026-09-08T09:00:00Z' } } };
+  assert.equal(lanesSolelyOwned(p, neverReached(p)).includes('newegg'), false);
+});
+
+test('a STALE refreshedAt is still refreshedAt — reach is not freshness', () => {
+  // The tempting bug: "it has not been repriced in 90 days, so treat it as
+  // unreached and stamp it". That would hand the ingest exactly the rows a
+  // BROKEN re-pricer stops touching, which is the failure being guarded against.
+  // Reachability is the question here; how stale is the gate's business, and a
+  // budget transcribed into the ingest is a second copy of that policy.
+  const p = { id: 'c3', c: 'CPU', n: 'AMD Ryzen 9 9950X',
+              deals: { newegg: { refreshedAt: '2026-01-01T00:00:00Z' } } };
+  assert.equal(lanesSolelyOwned(p, neverReached(p)).includes('newegg'), false,
+    'an ancient stamp still proves the re-pricer reaches this row');
+});
+
+test('a mapped, never-reached row GETS the stamp through applyMatchToPart', () => {
+  const p = { id: 'c4', c: 'CPU', n: 'AMD Ryzen 9 9950X', deals: {} };
+  applyMatchToPart(p, { ...rec(), product_name: 'AMD Ryzen 9 9950X' },
+    { method: 'upc', confidence: 0.95 }, neverReached(p));
+  assert.equal(p.deals.newegg.priceConfirmedAt, TODAY,
+    'nothing else will ever confirm this row — the tail, stamped');
+});
+
+// =============================================================================
+//  THE SWEEP IS NARROWER THAN THE CERTIFICATION, ON PURPOSE
+//
+//  assert-retailer-freshness.cjs drops a row from `stamped` and `ages` when the
+//  negative stamp is newer than every positive one:
+//
+//      if (failedAt && failedAt > best) continue;
+//
+//  A priceUnconfirmedAt therefore does not make a row read as STALE — it removes
+//  the row from the distribution the gate measures. Simulated against the live
+//  catalog at the census's measured 59% feed coverage:
+//
+//      sweep excludes newegg   3,186 stamped, p90 16d   RED
+//      sweep includes newegg   2,793 stamped, p90  0d   GREEN, 405 rows dropped
+//
+//  So widening the sweep would green the gate by deleting the rows nothing
+//  confirms out of its view, while the site kept quoting their prices. That is
+//  the outcome this change was chosen INSTEAD of, and these tests are what stop
+//  it being reintroduced as a tidy-looking symmetry fix.
+// =============================================================================
+
+const { lanesSweptForAbsence } = require('../sftp-ingest.cjs');
+
+test('the sweep does NOT reach a mapped row the re-pricer never reached', () => {
+  const p = { id: 's1', c: 'CPU', n: 'AMD Ryzen 9 9950X', deals: { newegg: {} } };
+  const snap = neverReached(p);
+  assert.ok(lanesSolelyOwned(p, snap).includes('newegg'),
+    'this job may CERTIFY it — nothing else reaches it');
+  assert.equal(lanesSweptForAbsence(p).includes('newegg'), false,
+    'but it may not stamp it unconfirmed: that would hide it from the gate, not flag it');
+});
+
+test('the sweep still reaches the lanes it always did', () => {
+  // The narrowing must not quietly drop the coverage the sweep already had.
+  const gpu = { id: 's2', c: 'GPU', deals: { newegg: {} } };
+  assert.ok(lanesSweptForAbsence(gpu).includes('newegg'),
+    'an unmappable row has no re-pricer at all — the original case, unchanged');
+  for (const lane of CONDITION_LANES) {
+    assert.ok(lanesSweptForAbsence({ id: 's3', c: 'CPU' }).includes(lane), lane);
+  }
+});
+
+test('the two rules differ ONLY on mapped, never-reached rows', () => {
+  // Pins the exact size of the deliberate asymmetry, so widening either one
+  // shows up here rather than in the gate's verdict six weeks later.
+  const cases = [
+    { c: 'GPU', refreshedAt: null,  certify: true,  sweep: true  },  // unmappable
+    { c: 'GPU', refreshedAt: 'x',   certify: true,  sweep: true  },  // still unmappable
+    { c: 'CPU', refreshedAt: null,  certify: true,  sweep: false },  // THE TAIL
+    { c: 'CPU', refreshedAt: 'x',   certify: false, sweep: false },  // the re-pricer's
+  ];
+  for (const { c, refreshedAt, certify, sweep } of cases) {
+    const p = { id: `k-${c}-${refreshedAt}`, c,
+                deals: { newegg: refreshedAt ? { refreshedAt: '2026-09-08T00:00:00Z' } : {} } };
+    assert.equal(lanesSolelyOwned(p, neverReached(p)).includes('newegg'), certify,
+      `certify ${c}/${refreshedAt}`);
+    assert.equal(lanesSweptForAbsence(p).includes('newegg'), sweep, `sweep ${c}/${refreshedAt}`);
+  }
+});
+
+test('THE MID-RUN SWAP: ownership is read from the snapshot, not from live state', () => {
+  // The bug this design exists to prevent. applyMatchToPart() consults ownership
+  // BEFORE the wholesale assignment and the absence sweep consults it AFTER, and
+  // a genuine listing swap drops refreshedAt in between. A live read would call
+  // this row "re-priced" at the first site and "never re-priced" at the second,
+  // and the sweep would stamp priceUnconfirmedAt over a price just confirmed.
+  const p = part({ ...STAMPED }, { c: 'CPU', n: 'AMD Ryzen 9 9950X' });
+  const snap = neverReached(p);
+  assert.equal(snap.has(p.id), false, 'at load this row carried the re-pricer\'s stamp');
+
+  // The swap: a different listing lands, and refreshedAt legitimately does not
+  // carry across to it.
+  applyMatchToPart(p, rec({ newegg_item_number: OFFICIAL2, retail_price: '449.99' }),
+    { method: 'upc', confidence: 0.95 }, snap);
+  assert.equal(p.deals.newegg.itemNumber, OFFICIAL2, 'the replacement must land');
+  assert.equal(p.deals.newegg.refreshedAt, undefined, 'and it must not inherit the old stamp');
+
+  // A live read here would now say "never reached". The snapshot does not.
+  assert.equal(lanesSolelyOwned(p, snap).includes('newegg'), false,
+    'the sweep must see the same answer applyMatchToPart saw, or it stamps over a fresh price');
+  assert.equal(repricerNeverReachedAtLoad([p]).has(p.id), true,
+    'and this is the live read that would have disagreed — the reason the snapshot exists');
 });

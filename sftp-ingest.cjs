@@ -772,6 +772,11 @@ function detectCondition(name) {
 const CONDITION_LANES = ['newegg_openbox', 'newegg_refurb', 'newegg_used'];
 const laneKey = (part, fieldKey) => `${part.id}::${fieldKey}`;
 
+// Assigned once, at load, from repricerNeverReachedAtLoad(). Null until then, so
+// a caller that runs before the snapshot exists gets the category-only rule
+// rather than a wrong answer. See lanesSolelyOwned().
+let repricerNeverReached = null;
+
 /**
  * The lanes this job is the SOLE writer for — FOR THIS PART.
  *
@@ -801,14 +806,128 @@ const laneKey = (part, fieldKey) => `${part.id}::${fieldKey}`;
  * here would be a transcribed schedule by another name.
  *
  * The safety property is unchanged for every row that matters to it: for the
- * 3,104 rows the re-pricer CAN reach, this job still mints nothing, so a dead
+ * rows the re-pricer DOES reach, this job still mints nothing, so a dead
  * refresh-newegg-prices still drives the median stale and still fails the gate.
+ *
+ * ── THE SECOND CONDITION: CATEGORY REACH IS NOT ROW REACH ───────────────────
+ * CAT_FILTER answers "may the re-pricer issue a request for this row?", and for
+ * a long time that was read as "will it ever confirm this row?". Those are
+ * different questions and the gap between them is the entire Newegg stale tail.
+ * searchNewegg() queries by NAME and UPC; the feed is keyed by
+ * newegg_item_number. For a row whose name never matches, the re-pricer issues
+ * a request, gets nothing, and declines — every run, forever. It is mapped and
+ * it is unreachable.
+ *
+ * The tail is exactly that population and nothing else. Measured on main
+ * 2026-09-08: of 3,198 deals.newegg rows, ALL 860 rows past the gate's 12d tail
+ * budget carry no refreshedAt at all — not one is a row the re-pricer reaches
+ * and is merely behind on. The re-pricer's own logs say the same from the other
+ * side: 2,102 of 3,189 matched, and comparing consecutive runs, zero rows
+ * reached by the earlier one were missed by the later one. A strictly nested,
+ * permanently unreachable set, not a rate.
+ *
+ * So the condition is per ROW, and refreshedAt is what states it: the re-pricer
+ * writes it on EVERY successful lookup including the unchanged case, and this
+ * job carries it across rather than erasing it (#89/#90), so a row without one
+ * has never once been reached. That is a fact about reachability, not a
+ * staleness threshold — deliberately no age comparison here, because a budget
+ * transcribed into this file is a second copy of the gate's policy waiting to
+ * drift from the first.
+ *
+ * ── WHY THIS DOES NOT REOPEN THE HOLE IT WAS CLOSING ────────────────────────
+ * The fear is precise and it still holds: a job certifying a lane that has its
+ * own re-pricer lets that re-pricer die unnoticed. It does not apply here,
+ * because a row that has EVER carried refreshedAt keeps it — this file only
+ * ever carries that stamp, it never mints one (asserted in
+ * test/sftp-stamp-integrity.test.js). So the ~2,100 rows the re-pricer actually
+ * confirms can never enter this set, and a dead refresh-newegg-prices drives
+ * every one of them stale and still fails the gate on the median. What this
+ * hands over is only the rows where the choice was never between two certifiers
+ * — it was between one and none.
+ *
+ * ── DECIDED ONCE, AT LOAD, AGAINST THE PRISTINE CATALOG ─────────────────────
+ * `neverReached` is a snapshot taken before the merchant loop mutates anything,
+ * NOT a live read of part.deals. It has to be. applyMatchToPart() consults this
+ * before the wholesale assignment and the absence sweep consults it after, and
+ * a genuine listing swap legitimately drops refreshedAt in between — so a live
+ * read would call the same row "re-priced" at the first call site and "never
+ * re-priced" at the second, and the sweep would stamp priceUnconfirmedAt on a
+ * row this run had just confirmed from the feed. Same class of bug as reading
+ * `parts.length` at the write instead of at the load.
+ *
+ * Absent a snapshot the rule falls back to category alone, which certifies
+ * STRICTLY LESS. That is the safe direction on purpose: a missing snapshot can
+ * only ever withhold a stamp, never mint one.
  */
-function lanesSolelyOwned(part) {
+function lanesSolelyOwned(part, neverReached = repricerNeverReached) {
+  const lanes = [...CONDITION_LANES];
+  if (!NEG.CAT_FILTER[part.c] || (neverReached && neverReached.has(part.id))) lanes.push('newegg');
+  return lanes;
+}
+
+/**
+ * Part ids whose deals.newegg the re-pricer has never once confirmed.
+ *
+ * Rows with no deals.newegg at all are included: the feed may attach one this
+ * run, and a freshly attached listing has no re-pricer history by construction.
+ * Rows without the lane are simply never asked about it downstream.
+ */
+/**
+ * The lanes the absence sweep may stamp priceUnconfirmedAt on.
+ *
+ * DELIBERATELY THE OLD CATEGORY RULE, and not lanesSolelyOwned(). The sweep and
+ * the certification were symmetric on purpose — "a lane this job may certify is
+ * a lane it must also be able to say nothing about" — and this is a considered
+ * break in that symmetry, not an oversight.
+ *
+ * ── WHY, AND IT IS THE WHOLE POINT OF THE CHANGE ────────────────────────────
+ * assert-retailer-freshness.cjs drops a row from `stamped` and from `ages`
+ * entirely when the negative stamp is newer than every positive one:
+ *
+ *     if (failedAt && failedAt > best) continue;
+ *
+ * So a priceUnconfirmedAt does not make a row read as STALE. It removes the row
+ * from the distribution the gate measures. Simulated against the live catalog
+ * with the census's measured 59% feed coverage:
+ *
+ *     sweep does NOT cover newegg   3,186 stamped, p90 16d   RED
+ *     sweep DOES cover newegg       2,793 stamped, p90  0d   GREEN, 405 dropped
+ *
+ * Widening the sweep would therefore GREEN THIS GATE by deleting the 405 rows
+ * nothing confirms out of its field of view, while the site keeps quoting their
+ * prices. That is precisely the "teach the alarm to stop mentioning it" outcome
+ * this change was chosen INSTEAD of. The stamp that shrinks the tail ships; the
+ * stamp that hides the remainder does not.
+ *
+ * The rows are not left unprotected by holding it back. Their last real stamp
+ * simply keeps ageing, which is what the gate reads and what keeps them in the
+ * red — visible, counted, and still someone's problem.
+ *
+ * ── THE UNDERLYING HOLE IS THE GATE'S, AND IT IS NOT FIXED HERE ─────────────
+ * "explicit failure" and "no measurement" must not collapse to the same value,
+ * and in that precedence rule they do. Fixing it means deciding what a negative
+ * stamp should do to a quantile — most likely count as maximally stale rather
+ * than vanish — and that changes amazon's numbers too (777 rows carry one). It
+ * is a different question with a different blast radius and it wants its own
+ * change. Until then this function is the reason that hole cannot be reached
+ * from the Newegg lane.
+ */
+function lanesSweptForAbsence(part) {
   const lanes = [...CONDITION_LANES];
   if (!NEG.CAT_FILTER[part.c]) lanes.push('newegg');
   return lanes;
 }
+
+function repricerNeverReachedAtLoad(parts) {
+  const s = new Set();
+  for (const p of parts) {
+    if (!p || p.id == null) continue;
+    const d = p.deals && p.deals.newegg;
+    if (!d || typeof d !== 'object' || !d.refreshedAt) s.add(p.id);
+  }
+  return s;
+}
+
 
 // Every (row, lane) this run CONFIRMED — i.e. actually wrote a price to, from
 // a feed record. Read after the merchant loop to stamp the complement: rows we
@@ -1250,7 +1369,9 @@ function chooseListing(existing, incoming, sellerRank) {
   return { shouldReplace, sameListing: false };
 }
 
-function applyMatchToPart(part, rec, match) {
+// `neverReached` defaults to the run's load-time snapshot; it is a parameter so
+// the ownership rule can be exercised directly rather than through module state.
+function applyMatchToPart(part, rec, match, neverReached = repricerNeverReached) {
   const pricing = priceFromRecord(rec);
   if (!pricing) return false;
 
@@ -1392,7 +1513,7 @@ function applyMatchToPart(part, rec, match) {
     const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
     if (carried) newListing.priceLastMovedAt = carried;
 
-    if (lanesSolelyOwned(part).includes(fieldKey)) {
+    if (lanesSolelyOwned(part, neverReached).includes(fieldKey)) {
       // ── The stamp that was never written ────────────────────────────────────
       // This job has repriced these lanes nightly since it was built and left no
       // trace that it had, because matchedAt is the only *At it wrote — and
@@ -1469,6 +1590,7 @@ async function loadDeps() {
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
+                   lanesSweptForAbsence, repricerNeverReachedAtLoad,
                    coverageCensus, laneKey, countRepricerStamps, stampIntegrity,
                    loadNeweggReach, stampedShareFloor, REACH_FILE,
                    // Exported so the stamp-carry rules above can be asserted directly.
@@ -1592,6 +1714,15 @@ if (require.main === module) (async () => {
   const refreshStampsAtLoad = countRepricerStamps(parts);
   log(`Re-pricer stamps on deals.newegg at load: ${refreshStampsAtLoad.refreshedAt} refreshedAt, ` +
       `${refreshStampsAtLoad.priceLastMovedAt} priceLastMovedAt`);
+
+  // Which rows the re-pricer has never once reached — snapshotted HERE, before
+  // the merchant loop, for the reason spelled out on lanesSolelyOwned(): a
+  // listing swap drops refreshedAt mid-run, so the two call sites would
+  // otherwise disagree about the same row and the absence sweep would stamp
+  // priceUnconfirmedAt over a price this run had just confirmed.
+  repricerNeverReached = repricerNeverReachedAtLoad(parts);
+  log(`Rows the re-pricer has never confirmed: ${repricerNeverReached.size} ` +
+      `(this job may certify their deals.newegg; every other newegg row stays the re-pricer's)`);
 
   const idx = buildCatalogIndex(parts);
   log(`Indexed: ${idx.byUPC.size} UPCs, ${idx.byMPN.size} MPNs, ${idx.bySKU.size} existing Newegg SKUs`);
@@ -1840,13 +1971,20 @@ if (require.main === module) (async () => {
   if (fullNeweggFeedParsed) {
     for (const p of parts) {
       if (!p.deals) continue;
-      // Symmetric with the confirmation above, and it has to be: a lane this
-      // job may certify is a lane it must also be able to say nothing about.
-      // Stamping only what the feed returns can never clear a row the feed has
-      // stopped carrying, so an unmappable row that fell out of the feed would
-      // keep its last price forever with no negative stamp — the same hole this
-      // sweep was built to close for the condition lanes.
-      for (const lane of lanesSolelyOwned(p)) {
+      // This WAS symmetric with the confirmation above — a lane this job may
+      // certify is a lane it must also be able to say nothing about — and for
+      // the condition lanes and the unmappable rows it still is: stamping only
+      // what the feed returns can never clear a row the feed has stopped
+      // carrying, so one that fell out would keep its last price forever with
+      // no negative stamp.
+      //
+      // The symmetry is now DELIBERATELY BROKEN for the rows the re-pricer
+      // merely never reaches. lanesSweptForAbsence() carries the full argument;
+      // the short version is that a negative stamp does not make a row read as
+      // stale to the freshness gate, it removes the row from the gate's
+      // measurement — so extending it here would have silenced the alarm this
+      // change exists to keep audible.
+      for (const lane of lanesSweptForAbsence(p)) {
         const d = p.deals[lane];
         if (!d || typeof d !== 'object') continue;
         if (confirmedLanes.has(laneKey(p, lane))) continue;
@@ -1854,7 +1992,7 @@ if (require.main === module) (async () => {
         unconfirmed++;
       }
     }
-    log(`\nAbsence sweep: ${confirmedLanes.size} condition-lane rows confirmed, ${unconfirmed} stamped priceUnconfirmedAt`);
+    log(`\nAbsence sweep: ${confirmedLanes.size} solely-owned rows confirmed, ${unconfirmed} stamped priceUnconfirmedAt`);
 
     // ── COVERAGE CENSUS — deals.newegg, READ-ONLY ─────────────────────────────
     // Nothing below writes. Gated on the same fullNeweggFeedParsed as the sweep
