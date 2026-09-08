@@ -17,9 +17,9 @@ export default [
         "price": 219.99,
         "url": "https://www.amazon.com/dp/B07VS8QCXC?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceSource": "3p",
+        "priceSeller": "Sales For You",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -71,7 +71,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -122,7 +122,7 @@ export default [
         "priceConfirmedAt": "2026-08-29",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceUnconfirmedAt": "2026-09-08"
       }
     },
     "additionalImages": [
@@ -281,7 +281,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Amazon Germany",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -321,7 +321,7 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0C3B18PKT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
         "priceSeller": "Transcend Information, Inc",
         "priceResolvedVia": "paapi",
@@ -361,7 +361,7 @@ export default [
         "price": 334.99,
         "url": "https://www.amazon.com/dp/B0D3GXP8NB?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
         "priceSeller": "Goldunya",
         "priceResolvedVia": "paapi",
@@ -417,7 +417,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Tech Finds Today",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -458,7 +458,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Amazon Global Store UK",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -498,7 +498,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BFT9B5ZG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
         "priceSeller": "OneDealOutlet Online",
         "priceResolvedVia": "paapi"
@@ -552,7 +552,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Amazon Global Store UK",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -610,7 +610,7 @@ export default [
         "priceSeller": "Amazon Global Store UK",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceUnconfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "445833051914370546844471",
@@ -820,11 +820,11 @@ export default [
       "amazon": {
         "asin": "B0DLK38TR9",
         "url": "https://www.amazon.com/dp/B0DLK38TR9?tag=tiereduptech-20",
-        "price": 999,
+        "price": 839.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
-        "priceSource": "3p",
-        "priceSeller": "True Modern Electronics",
+        "priceConfirmedAt": "2026-09-08",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -852,7 +852,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FH5NGWNY?tag=tiereduptech-20",
         "price": 269.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -882,7 +882,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -922,7 +922,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Amazon Germany",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -948,9 +948,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0713WPGLL?tag=tiereduptech-20",
         "price": 184,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
-        "priceSeller": "TEKTURN®",
+        "priceSeller": "Sales For You",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -976,7 +976,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08KTRKB6S?tag=tiereduptech-20",
         "price": 687.48,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1004,7 +1004,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09VCXWPQG?tag=tiereduptech-20",
         "price": 749,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1046,7 +1046,7 @@ export default [
     "storageType": "SSD",
     "interface": "SATA",
     "needsReview": true,
-    "quarantinedAt": "2026-09-07",
+    "quarantinedAt": "2026-09-08",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -1065,7 +1065,7 @@ export default [
         "price": 179.65,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
         "priceSeller": "Audio Are Us",
         "priceResolvedVia": "paapi"
@@ -1095,7 +1095,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0GMWYYRQL?tag=tiereduptech-20",
         "price": 269.47,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1139,7 +1139,7 @@ export default [
     "read": 2000,
     "pcieGen": 2,
     "needsReview": true,
-    "quarantinedAt": "2026-09-07",
+    "quarantinedAt": "2026-09-08",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -1163,7 +1163,7 @@ export default [
         "priceSeller": "True Modern Electronics",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-07"
+        "priceUnconfirmedAt": "2026-09-08"
       }
     },
     "addedAt": "2026-05-15T16:31:54.671Z",
@@ -1207,9 +1207,9 @@ export default [
         "price": 216,
         "url": "https://www.amazon.com/dp/B07VP5X239?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
-        "priceSeller": "Perfect Stock",
+        "priceSeller": "Sales For You",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1236,7 +1236,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1260,7 +1260,7 @@ export default [
         "price": 227.89,
         "url": "https://www.amazon.com/dp/B07VSH3ML6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1286,11 +1286,13 @@ export default [
         "price": 199,
         "url": "https://www.amazon.com/dp/B08GTYFC37?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "Sab Computer",
         "priceConfirmedAt": "2026-09-07",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-08"
       }
     }
   },
@@ -1314,7 +1316,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1346,7 +1348,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-04",
+    "quarantinedAt": "2026-09-08",
     "quarantineReason": "price_3p_flagged"
   },
   {
@@ -1367,9 +1369,9 @@ export default [
         "price": 247.8,
         "url": "https://www.amazon.com/dp/B0874XN4D8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceSource": "3p",
-        "priceSeller": "Electronics Club",
+        "priceSeller": "Stavvy Sales",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1401,7 +1403,7 @@ export default [
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-07",
+    "quarantinedAt": "2026-09-08",
     "quarantineReason": "asin_repair_no_match"
   },
   {
