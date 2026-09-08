@@ -13338,7 +13338,7 @@ export default [
         "itemId": "2824",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -15375,7 +15375,7 @@ export default [
         "itemId": "2309",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -15441,7 +15441,7 @@ export default [
         "itemId": "2304",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "445838845169899382605432",
@@ -15495,7 +15495,7 @@ export default [
         "itemId": "2407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "4458376729058588809291",
@@ -15560,7 +15560,7 @@ export default [
         "itemId": "2465",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -15768,7 +15768,7 @@ export default [
         "itemId": "2766",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "445831320570467464369778",
@@ -15834,7 +15834,7 @@ export default [
         "itemId": "2798",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "N82E16835846079",

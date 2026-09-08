@@ -6209,7 +6209,7 @@ export default [
         "itemId": "1818",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -6266,7 +6266,7 @@ export default [
         "itemId": "1830",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -6964,7 +6964,7 @@ export default [
         "itemId": "2166",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "N82E16817701026",
@@ -7245,7 +7245,7 @@ export default [
         "itemId": "2308",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -7289,7 +7289,7 @@ export default [
         "itemId": "2307",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -7694,7 +7694,7 @@ export default [
         "itemId": "2459",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "445835041996689809647170",
@@ -7752,7 +7752,7 @@ export default [
         "itemId": "2463",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-29"
       },
       "newegg": {
@@ -7860,7 +7860,7 @@ export default [
         "itemId": "681",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -7919,7 +7919,7 @@ export default [
         "itemId": "2744",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -7978,7 +7978,7 @@ export default [
         "itemId": "2745",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8036,7 +8036,7 @@ export default [
         "itemId": "2746",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8188,7 +8188,7 @@ export default [
         "itemId": "2797",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07"
+        "priceConfirmedAt": "2026-09-08"
       },
       "newegg": {
         "sku": "445837630450229854934337",
@@ -8537,7 +8537,7 @@ export default [
         "itemId": "2924",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -8595,7 +8595,7 @@ export default [
         "itemId": "2925",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-08",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
