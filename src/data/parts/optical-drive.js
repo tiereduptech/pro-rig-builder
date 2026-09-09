@@ -80,7 +80,7 @@ export default [
         "sku": "2691169",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "storageType": "DVD/CD",
