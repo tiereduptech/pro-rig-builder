@@ -364,7 +364,7 @@ export default [
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2767,7 +2767,7 @@ export default [
         "priceSeller": "Nutrend Automotive Inc",
         "priceConfirmedAt": "2026-08-15",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-09"
       },
       "bestbuy": {
@@ -2926,7 +2926,7 @@ export default [
     "reviews": 3930,
     "deals": {
       "amazon": {
-        "price": 909.98,
+        "price": 1024.84,
         "url": "https://www.amazon.com/dp/B09R7S7PXC?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -4825,7 +4825,7 @@ export default [
         "price": 922.99,
         "url": "https://www.amazon.com/dp/B0GGJ4NMS4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-09",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -6277,16 +6277,14 @@ export default [
     "reviews": 68,
     "deals": {
       "amazon": {
-        "price": 307.37,
+        "price": 326.43,
         "url": "https://www.amazon.com/dp/B0DCGFCHXF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-08",
-        "priceSource": "3p",
-        "priceSeller": "QyTech",
+        "priceConfirmedAt": "2026-09-09",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-09"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458310294482326960108433",
@@ -7823,7 +7821,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "Micom Pro",
+        "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10143,7 +10141,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DHFD5625?tag=tiereduptech-20",
         "price": 509,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-08",
+        "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
         "priceSeller": "Joes Tech Shop Inc",
         "priceResolvedVia": "paapi",
@@ -10398,7 +10396,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0GGJ9YH2D?tag=tiereduptech-20",
         "price": 961.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-02",
+        "priceConfirmedAt": "2026-09-09",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -10754,7 +10752,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "DEVECHO INC",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11504,7 +11502,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -11811,11 +11809,13 @@ export default [
         "url": "https://www.amazon.com/dp/B0DKQS389Z?tag=tiereduptech-20",
         "price": 449.99,
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",

@@ -1947,7 +1947,10 @@ export default [
     "cfm": 180,
     "mpn": "CW-9060089-WW",
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-09",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 80038,
@@ -5626,7 +5629,7 @@ export default [
     "reviews": 486,
     "deals": {
       "amazon": {
-        "price": 226.1,
+        "price": 207.05,
         "url": "https://www.amazon.com/dp/B0BTS2FFWK?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -9697,7 +9700,7 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 46,
+        "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -17712,8 +17715,8 @@ export default [
         "price": 212.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -20391,7 +20394,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "Phanteks USA",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }

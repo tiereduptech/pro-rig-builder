@@ -4510,7 +4510,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "BDNストア",
+        "priceSeller": "OHOhagi83",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -5704,12 +5704,12 @@ export default [
     "reviews": 11,
     "deals": {
       "amazon": {
-        "price": 71.15,
+        "price": 66.92,
         "url": "https://www.amazon.com/dp/B07SBL6NC3?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
-        "priceSeller": "KART IT",
+        "priceSeller": "Bestofbulk USA",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9225,7 +9225,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FXNTC1S8?tag=tiereduptech-20",
         "price": 114.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-08",
+        "priceConfirmedAt": "2026-09-09",
         "priceSource": "3p",
         "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "paapi",
