@@ -125,7 +125,7 @@ export default [
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "resolution": "1080p",

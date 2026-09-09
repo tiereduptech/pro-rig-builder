@@ -1372,7 +1372,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.620Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -1615,7 +1615,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.604Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "discount": 17,
@@ -1684,7 +1684,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.610Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "discount": 13,
@@ -1740,7 +1740,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.610Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       },
       "newegg": {
         "sku": "4458316094050296447977173",
@@ -1857,7 +1857,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.610Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       },
       "newegg": {
         "sku": "445837815928741026732474",
@@ -2522,7 +2522,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.326Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "discount": 8,
@@ -3067,7 +3067,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.618Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -3188,7 +3188,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.544Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "discount": 17,
@@ -3519,7 +3519,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.610Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "discount": 20,
@@ -4138,7 +4138,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:15.294Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -4340,7 +4340,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -4566,7 +4566,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.638Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -4974,7 +4974,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.614Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -5085,7 +5085,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:45.998Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -6342,7 +6342,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.577Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 850,
@@ -6389,7 +6389,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:40.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 1200,
@@ -6436,7 +6436,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.577Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 1050,
@@ -6664,7 +6664,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.544Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 850,
@@ -6749,7 +6749,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:47.835Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 1200,
@@ -7215,13 +7215,13 @@ export default [
         "sellerClass": "official",
         "price": 344.99,
         "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834394250909023333106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hx1200i-atx-3-1-compatible-1200-w-up-to-92-efficiency-power-supplies-black%2Fp%2FN82E16817139344%3Fitem%3DN82E16817139344",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834394250909023333106&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-hx1200i-atx-3-1-compatible-1200-w-up-to-92-efficiency-power-supplies-black%2Fp%2FN82E16817139344%3Fitem%3DN82E16817139344",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-344-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.556Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 1200,
@@ -7356,7 +7356,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.556Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 1000,
@@ -7397,14 +7397,15 @@ export default [
         "itemNumber": "N82E16817139341",
         "sellerClass": "official",
         "price": 154.99,
-        "saleprice": 134.99,
+        "saleprice": 124.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317583474413979691950&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-white-rm850e%2Fp%2FN82E16817139341%3Fitem%3DN82E16817139341",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-139-341-08.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.556Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceLastMovedAt": "2026-09-09",
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "watts": 850,
@@ -9566,19 +9567,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16817320047",
-        "price": 239.99,
-        "saleprice": 226.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836337655032526529397&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx12v-1200-w-80-plus-gold-certified-power-supplies-tuf-gaming-1200g%2Fp%2FN82E16817320047%3Fitem%3DN82E16817320047",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-047-14.png",
+        "sku": "445835163683945762036176",
+        "itemNumber": "N82E16817320029",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.691Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:29:29.760Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:45:58.006Z",
-        "migratedFrom": "445835163683945762036176"
+        "price": 184.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835163683945762036176&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-atx-3-0-compatible-atx12v-1000-w-80-plus-gold-certified-power-supply-tuf-gaming-1000g%2Fp%2FN82E16817320029%3Fitem%3DN82E16817320029",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-320-029-06.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.267Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "watts": 1200,
@@ -9960,7 +9959,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.802Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "watts": 550,
@@ -10231,8 +10230,8 @@ export default [
         "sku": "4458316145964272746125094",
         "itemNumber": "9SIA0ZXK9P2123",
         "sellerClass": "marketplace",
-        "price": 68.53,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316145964272746125094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00D9-001K4%3Fitem%3D9SIA0ZXK9P2123",
+        "price": 68.5,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316145964272746125094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HU-00D9-001K4%3Fitem%3D9SIA0ZXK9P2123",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2407250I54FY96.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:47.382Z",
@@ -11179,7 +11178,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.802Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -11241,7 +11240,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.519Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -11605,7 +11604,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.792Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -12268,7 +12267,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -12394,19 +12393,17 @@ export default [
     "atx3": true,
     "deals": {
       "newegg": {
-        "sku": "1HU-01PP-00034",
-        "price": 184.99,
-        "saleprice": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836361877818465018487&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-spp-series-atx-atx-3-1-compatible-850w-80-plus-platinum-power-supplies-white%2Fp%2F1HU-01PP-00034%3Fitem%3D1HU-01PP-00034",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2605050B7NNN9E.jpg",
+        "sku": "445837220210585871565680",
+        "itemNumber": "1HU-01PP-00033",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:09:19.833Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:30:26.169Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:46:55.402Z",
-        "migratedFrom": "445837220210585871565680"
+        "price": 164.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837220210585871565680&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-spp-series-atx-atx-3-1-compatible-750w-80-plus-platinum-power-supplies-black%2Fp%2F1HU-01PP-00033%3Fitem%3D1HU-01PP-00033",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2605050B60I373.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:33:07.148Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -12901,7 +12898,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-31",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -13429,18 +13426,17 @@ export default [
     "watts": 850,
     "deals": {
       "newegg": {
-        "sku": "N82E16817151271",
-        "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839472945470075913427&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-focus-gx-atx-3-atx-3-1-850-w-80-plus-gold-certified-power-supplies-gx-850%2Fp%2FN82E16817151271%3Fitem%3DN82E16817151271",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-271-12.jpg",
+        "sku": "4458314185445330000198631",
+        "itemNumber": "N82E16817151272",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.622Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:30:32.369Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:47:00.412Z",
-        "migratedFrom": "4458314185445330000198631"
+        "price": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314185445330000198631&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseasonic-usa-focus-gx-atx-3-atx-3-1-750-w-80-plus-gold-certified-power-supplies-gx-750%2Fp%2FN82E16817151272%3Fitem%3DN82E16817151272",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-151-272-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.199Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -13626,18 +13622,18 @@ export default [
     "atx3": true,
     "deals": {
       "newegg": {
-        "sku": "N82E16817153437",
-        "price": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838411112244311707400&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-atx-atx-3-0-compatible-1000-w-80-plus-gold-certified-power-supply-ps-tpd-1000fnfagu-4%2Fp%2FN82E16817153437%3Fitem%3DN82E16817153437",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-437-15.png",
+        "sku": "4458313790435892450906729",
+        "itemNumber": "N82E16817153438",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.631Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:30:33.517Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:47:01.704Z",
-        "migratedFrom": "4458313790435892450906729"
+        "price": 129.99,
+        "saleprice": 123.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313790435892450906729&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-toughpower-gf3-series-atx-12v-v3-0-eps-v2-93-850-w-80-plus-gold-certified-power-supply-ps-tpd-0850fnfagu-4%2Fp%2FN82E16817153438%3Fitem%3DN82E16817153438",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-153-438-13.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.208Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -14065,19 +14061,18 @@ export default [
     "atx3": true,
     "deals": {
       "newegg": {
-        "sku": "N82E16817182454",
-        "price": 139.99,
-        "saleprice": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312543443339530057623&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-0-compatible-atx-3-1-compatible-1200-w-80-plus-gold-certified-power-supplies-cmg1200g5%2Fp%2FN82E16817182454%3Fitem%3DN82E16817182454",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-454-09.jpg",
+        "sku": "4458310550238682743641744",
+        "itemNumber": "N82E16817182453",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.658Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:31:24.905Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:47:54.327Z",
-        "migratedFrom": "4458310550238682743641744"
+        "price": 119.99,
+        "saleprice": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310550238682743641744&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Frosewill-atx-3-0-compatible-atx-3-1-compatible-1000-w-80-plus-gold-certified-power-supplies-cmg1000g5%2Fp%2FN82E16817182453%3Fitem%3DN82E16817182453",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-182-453-10.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.233Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -14191,7 +14186,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-31",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -14237,7 +14232,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.611Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -14496,19 +14491,21 @@ export default [
     "watts": 850,
     "deals": {
       "newegg": {
-        "sku": "N82E16817233043",
+        "sku": "445834015276782144526522",
+        "itemNumber": "N82E16817233043",
+        "sellerClass": "official",
         "price": 149.99,
         "saleprice": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834015276782144526522&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-atx12v-850-w-80-plus-gold-certified-power-supplies-gp-ud850gm-pg5w%2Fp%2FN82E16817233043%3Fitem%3DN82E16817233043",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834015276782144526522&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-atx12v-850-w-80-plus-gold-certified-power-supplies-gp-ud850gm-pg5w%2Fp%2FN82E16817233043%3Fitem%3DN82E16817233043",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-233-043-07.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-09-04T15:25:47.796Z",
-        "matchMethod": "name",
-        "matchScore": 0.83,
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8333333333333334,
         "refreshedAt": "2026-09-09T09:31:27.730Z",
-        "priceLastMovedAt": "2026-09-09",
         "migratedAt": "2026-09-09T09:31:27.730Z",
-        "migratedFrom": "N82E16817233050"
+        "migratedFrom": "N82E16817233050",
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -15191,19 +15188,18 @@ export default [
     "watts": 1200,
     "deals": {
       "newegg": {
-        "sku": "N82E16817426009",
-        "price": 79.99,
-        "saleprice": 65.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831466586226981312213&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817426009%3Fitem%3DN82E16817426009",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-426-009-01.png",
+        "sku": "445837831529668911224027",
+        "itemNumber": "N82E16817426007",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.709Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:31:31.491Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:48:00.622Z",
-        "migratedFrom": "445837831529668911224027"
+        "price": 73.99,
+        "saleprice": 51.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837831529668911224027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16817426007%3Fitem%3DN82E16817426007",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-426-007-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.286Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.75,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -15772,13 +15768,13 @@ export default [
         "sellerClass": "official",
         "price": 349.99,
         "saleprice": 199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837750206182518715122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-1600-w-cybenetics-gold-power-supply-black-pg-1600g%2Fp%2FN82E16817955003%3Fitem%3DN82E16817955003",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837750206182518715122&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-1600-w-cybenetics-gold-power-supply-black-pg-1600g%2Fp%2FN82E16817955003%3Fitem%3DN82E16817955003",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-003-20.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.699Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       },
       "newegg_openbox": {
         "sku": "445833616561638046225314",
@@ -15792,7 +15788,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.699Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -15840,7 +15836,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -15888,7 +15884,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-08",
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -15937,7 +15934,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-08",
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16018,7 +16016,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.517Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16067,7 +16065,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-02",
         "priceConfirmedAt": "2026-09-03",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16148,7 +16146,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-02",
         "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16227,7 +16225,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-02",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16272,7 +16270,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.704Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16320,7 +16318,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16367,7 +16365,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.519Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16515,7 +16513,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
         "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16562,7 +16560,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.704Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16750,19 +16748,18 @@ export default [
     "watts": 850,
     "deals": {
       "newegg": {
-        "sku": "N82E16817955032",
-        "price": 169.99,
-        "saleprice": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832709906372908433034&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx-3-1-1000-w-80-plus-platinum-certified-power-supply-black-pg-1000psf%2Fp%2FN82E16817955032%3Fitem%3DN82E16817955032",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-032-09.png",
+        "sku": "445834568685113784697855",
+        "itemNumber": "N82E16817955013",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.720Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:32:30.863Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:48:59.927Z",
-        "migratedFrom": "445834568685113784697855"
+        "price": 149.99,
+        "saleprice": 84.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834568685113784697855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-atx3-1-pcie5-1-850-w-80-plus-gold-certified-power-supply-white-sl-850w%2Fp%2FN82E16817955013%3Fitem%3DN82E16817955013",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-955-013-22.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.296Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8333333333333334,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -16904,7 +16901,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-29",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": true,
@@ -16927,18 +16924,17 @@ export default [
     "watts": 1050,
     "deals": {
       "newegg": {
-        "sku": "N82E16817959009",
-        "price": 109.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317322402871225476959&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-1050-w-80-plus-gold-certified-power-supply-silver-century-ii-1050%2Fp%2FN82E16817959009%3Fitem%3DN82E16817959009",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-009-08.png",
+        "sku": "445834849186148385208368",
+        "itemNumber": "N82E16817959008",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.725Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:32:31.923Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:49:01.028Z",
-        "migratedFrom": "445834849186148385208368"
+        "price": 89.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834849186148385208368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-850-w-80-plus-gold-certified-power-supply-silver-century-ii-850%2Fp%2FN82E16817959008%3Fitem%3DN82E16817959008",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-008-08.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.302Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-09"
       },
       "newegg_openbox": {
         "sku": "445834589007193647686877",
@@ -16952,7 +16948,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.711Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -17004,7 +17000,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-28",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "needsReview": true,
@@ -17029,33 +17025,32 @@ export default [
     "atx3": true,
     "deals": {
       "newegg": {
-        "sku": "N82E16817959016",
-        "price": 59.9,
-        "saleprice": 49.9,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838023108124917304115&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-650-w-80-plus-bronze-certified-power-supplies-beta-2-650w%2Fp%2FN82E16817959016%3Fitem%3DN82E16817959016",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-016-09.png",
+        "sku": "445832953715656611656711",
+        "itemNumber": "N82E16817959015",
         "sellerClass": "official",
-        "matchedAt": "2026-09-08T21:12:19.733Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-09T09:32:32.157Z",
-        "priceLastMovedAt": "2026-09-08",
-        "migratedAt": "2026-09-08T23:49:01.277Z",
-        "migratedFrom": "445832953715656611656711"
+        "price": 49.9,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832953715656611656711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-550-w-80-plus-bronze-certified-power-supplies-black-beta-2-550w%2Fp%2FN82E16817959015%3Fitem%3DN82E16817959015",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-015-13.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.309Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-08"
       },
       "newegg_openbox": {
         "sku": "445833224703545623587671",
         "itemNumber": "N82E16817959016R",
         "sellerClass": "official",
         "price": 59.9,
-        "saleprice": 42.9,
+        "saleprice": 44.9,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833224703545623587671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-650-w-80-plus-bronze-certified-power-supplies-beta-2-650w%2Fp%2FN82E16817959016R%3Fitem%3DN82E16817959016R",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-016-09.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.717Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceLastMovedAt": "2026-09-09",
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -17171,7 +17166,7 @@ export default [
         "matchedAt": "2026-08-28T21:46:30.072Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -17208,6 +17203,19 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-09T09:32:32.729Z",
         "priceLastMovedAt": "2026-09-08"
+      },
+      "newegg_openbox": {
+        "sku": "445835880173623600501932",
+        "itemNumber": "N82E16817959021R",
+        "sellerClass": "official",
+        "price": 69.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835880173623600501932&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-atx-3-1-pcie-5-1-750-w-80-plus-gold-certified-power-supplies-silver-century-ii-750w%2Fp%2FN82E16817959021R%3Fitem%3DN82E16817959021R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-959-021-03.png",
+        "inStock": true,
+        "matchedAt": "2026-09-09T15:36:05.316Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -17414,7 +17422,7 @@ export default [
         "sellerClass": "official",
         "price": 179.99,
         "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312803351792806075610&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-intel-atx-3-1-pcie-gen5-1-750-w-80-plus-platinum-certified-power-supply-white-ph-p750gh-bk01%2Fp%2FN82E16817987031%3Fitem%3DN82E16817987031",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312803351792806075610&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fphanteks-intel-atx-3-1-pcie-gen5-1-750-w-80-plus-platinum-certified-power-supply-white-ph-p750gh-bk01%2Fp%2FN82E16817987031%3Fitem%3DN82E16817987031",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/17-987-031-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.733Z",

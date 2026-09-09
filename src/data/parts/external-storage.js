@@ -34,7 +34,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.182Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -378,7 +378,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.627Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -508,14 +508,14 @@ export default [
         "itemNumber": "9SIAD6HKHA3761",
         "sellerClass": "marketplace",
         "price": 230.8,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-089-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:35.069Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -561,14 +561,14 @@ export default [
         "itemNumber": "9SIAD6HGTT8851",
         "sellerClass": "marketplace",
         "price": 293.29,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831880744134662176081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stkl5000400-5tb%2Fp%2FN82E16822184962%3Fitem%3D9SIAD6HGTT8851",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831880744134662176081&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stkl5000400-5tb%2Fp%2FN82E16822184962%3Fitem%3D9SIAD6HGTT8851",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-962-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:34.612Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -623,7 +623,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.463Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "additionalImages": [
@@ -675,7 +675,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.495Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08"
+        "priceConfirmedAt": "2026-09-09"
       }
     },
     "cap": 2000,
@@ -750,7 +750,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "cap": 4000,
@@ -795,7 +795,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "cap": 2000,
@@ -896,7 +896,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.73,
         "sellerClass": "other",
-        "priceUnconfirmedAt": "2026-09-08"
+        "priceUnconfirmedAt": "2026-09-09"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
