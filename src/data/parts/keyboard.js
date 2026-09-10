@@ -926,16 +926,18 @@ export default [
     "r": 4.5,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3NDk0NTc5NDA5MDE4ODg1OjE3NzcxMzA1NDQ6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTE3MzMxNDg1NDUwMjo6Mjo6&url=%2FRedragon-S107KS-Wireless-Lightweight-Anti-Ghosting%2Fdp%2FB0FDVZ5X38%2Fref%3Dsxin_34_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D0KPP2ZUHHNW7%26cv_ct_cx%3DSteelSeries%2BApex%26keywords%3DSteelSeries%2BApex%26pd_rd_i%3DB0FDVZ5X38%26pd_rd_r%3D96835ff9-4849-4118-a91b-331c4f8f5387%26pd_rd_w%3DVutEy%26pd_rd_wg%3DY6Rtc%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DKQ7CWW05QBQFWRTJ6GSR%26qid%3D1777130544%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BApex%252Caps%252C242%26sr%3D1-19-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DyoLZoFkWW7hUz%26aref%3D9rSWFW0GKU%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=9rSWFW0GKU&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0FDVZ5X38?tag=tiereduptech-20",
         "price": 54.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0FDVZ5X38"
       }
     },
     "wireless": true,
     "rgb": true,
     "switches": "Membrane",
     "layout": "Full-Size",
-    "bench": 29
+    "bench": 29,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100025,

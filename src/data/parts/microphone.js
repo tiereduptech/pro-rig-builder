@@ -336,15 +336,17 @@ export default [
     "r": 4.5,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NDQwOTcxNzQwNTU4MjQwOjE3NzcxMzA2ODE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTI1NTM1ODIyMTUwMjo6Mzo6&url=%2FMicrophone-MAONO-Condenser-Professional-Recording%2Fdp%2FB07GQT8879%2Fref%3Dsxin_17_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.4600b4a8-9f88-405c-a63c-4789cd161cf0%253Aamzn1.sym.4600b4a8-9f88-405c-a63c-4789cd161cf0%26crid%3DWBXKM21UZ0SK%26cv_ct_cx%3DShure%2BMV6%26keywords%3DShure%2BMV6%26pd_rd_i%3DB07GQT8879%26pd_rd_r%3D8f4c6a59-0ce8-46d9-a34b-156c56563679%26pd_rd_w%3DcjKDi%26pd_rd_wg%3DBKH6C%26pf_rd_p%3D4600b4a8-9f88-405c-a63c-4789cd161cf0%26pf_rd_r%3D3HSQWJ7RVHHNFY7ZYPDR%26qid%3D1777130681%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DShure%252BMV6%252Caps%252C197%26sr%3D1-4-38f1b294-ceac-4b0f-b4a4-629ab102646f-spons%26aref%3DwGxsyKPKUM%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=wGxsyKPKUM&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B07GQT8879?tag=tiereduptech-20",
         "price": 48.96,
-        "inStock": true
+        "inStock": true,
+        "asin": "B07GQT8879"
       }
     },
     "micType": "USB",
     "pattern": "Cardioid",
     "sampleRate": 192,
-    "bench": 68
+    "bench": 68,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100074,
