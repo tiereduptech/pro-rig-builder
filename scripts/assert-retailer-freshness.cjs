@@ -105,11 +105,21 @@
 //  row exists at all. `stamped` and `unconfirmed` are reported side by side so
 //  the two populations stay separable.
 //
-//  STILL OPEN, deliberately not fixed here: a row carrying no positive stamp of
-//  any kind is dropped one line earlier, by `if (!found.length) continue`, and
-//  532 rows are in that state today (amazon 374, bestbuy 144, msi 14). Those
-//  have no age to report, so counting them honestly needs a threshold of its
-//  own rather than a quantile, and that is a different change.
+//  ── AND A ROW NOTHING EVER CONFIRMED IS THE STALEST ROW, NOT ABSENT ─────────
+//  The same hole, one line earlier: a row carrying no positive stamp of any kind
+//  was dropped by `if (!found.length) continue`. On main 2026-09-10 that was 50
+//  published amazon rows, 70 bestbuy and 10 msi — prices the site shows under an
+//  UNCONFIRMED tag — and 13 of the amazon ones were sponsored-ad redirect links
+//  with no /dp/ASIN in them: rows the verifier cannot even SELECT, so nothing had
+//  ever asked about them and nothing ever would. A row no check can reach is
+//  invisible to every check, and this gate was one of them.
+//
+//  The note that stood here said such rows "need a threshold of their own rather
+//  than a quantile". They do not. A row never confirmed is at least as stale as
+//  the stalest confirmed row, so it enters the quantiles as MAXIMALLY stale — age
+//  Infinity, printed 'never'. That keeps the quantiles' own robustness: a handful
+//  cannot condemn a healthy lane, a tenth of them fails it. `never` is reported
+//  beside `unconfirmed` so the three populations stay separable.
 //
 //  ── AND A HIDDEN ROW IS COUNTED SEPARATELY, NOT DROPPED ─────────────────────
 //  The quantiles used to measure every row in a lane, including products the
@@ -571,7 +581,7 @@ const dayOnly = (t) => (t ? String(t).slice(0, 10) : null);
 function quantileAgeDays(stamps, q, now) {
   if (!stamps || !stamps.length) return null;
   const ages = stamps
-    .map((s) => Math.floor((now - Date.parse(s + 'T00:00:00Z')) / DAY_MS))
+    .map((s) => ageOf(s, now))
     .sort((a, b) => a - b);
   const i = Math.min(ages.length - 1, Math.floor(ages.length * q));
   return ages[i];
@@ -587,8 +597,20 @@ function quantileAgeDays(stamps, q, now) {
  */
 function countOlderThan(stamps, days, now) {
   if (!stamps || !stamps.length) return 0;
-  return stamps.filter((s) => Math.floor((now - Date.parse(s + 'T00:00:00Z')) / DAY_MS) > days).length;
+  return stamps.filter((s) => ageOf(s, now) > days).length;
 }
+
+// Stands in the stamp list for a row nothing has EVER confirmed. It is not a date
+// and must never be parsed as one: its age is Infinity, which sorts it to the
+// stale end of every quantile and past every budget. See the header.
+const NEVER = 'never';
+
+function ageOf(stamp, now) {
+  return stamp === NEVER ? Infinity : Math.floor((now - Date.parse(stamp + 'T00:00:00Z')) / DAY_MS);
+}
+
+/** An age for a human: '12d', 'never' for a row nothing ever confirmed, '-' for no rows. */
+const fmtAge = (days) => (days == null ? '-' : days === Infinity ? 'never' : `${days}d`);
 
 /** Per-retailer stamp rollup from parts.js. */
 async function readCatalog(partsPath) {
@@ -604,7 +626,7 @@ async function readCatalog(partsPath) {
     for (const [name, d] of Object.entries(deals)) {
       if (!d || typeof d !== 'object') continue;
       const r = (retailers[name] ??= {
-        rows: 0, stamped: 0, unconfirmed: 0, negative: 0, newest: null, ages: [], byStamp: {},
+        rows: 0, stamped: 0, unconfirmed: 0, never: 0, negative: 0, newest: null, ages: [], byStamp: {},
         hidden: 0, hiddenAges: [], hiddenNever: 0,
       });
       r.rows++;
@@ -622,11 +644,18 @@ async function readCatalog(partsPath) {
       if (p.needsReview) {
         r.hidden++;
         if (found.length) r.hiddenAges.push(found.sort()[found.length - 1]);
-        else r.hiddenNever++;
+        else { r.hiddenNever++; r.hiddenAges.push(NEVER); }
         continue;
       }
 
-      if (!found.length) continue;
+      // Nothing has ever confirmed this row. Measured as maximally stale rather
+      // than skipped — skipping it is how a row no job can reach stayed out of
+      // every alarm. See the header.
+      if (!found.length) {
+        r.never++;
+        r.ages.push(NEVER);
+        continue;
+      }
       const best = found.sort()[found.length - 1];
 
       // A negative stamp newer than every positive one means the newest thing we
@@ -695,8 +724,12 @@ async function audit(opts = {}) {
       // and the newest thing we know is that we tried again and could not. They
       // are in `ages` and therefore in every quantile below.
       unconfirmed: r.unconfirmed,
-      // Rows behind the quantiles: stamped + unconfirmed. Deliberately reported,
-      // because it is the number that used to silently differ from `rows`.
+      // Published rows nothing has EVER confirmed. In the quantiles at age
+      // Infinity — the stalest a row can be, not absent. See the header.
+      never: r.never,
+      // Rows behind the quantiles: stamped + unconfirmed + never — every
+      // published row. Deliberately reported, because it is the number that
+      // used to silently differ from `rows`.
       measured: r.ages.length,
       negative: r.negative,
       byStamp: r.byStamp,
@@ -817,7 +850,7 @@ async function audit(opts = {}) {
       row.hiddenDetail =
         `${row.hiddenStaleRows} quarantined (needsReview) rows are past the ${row.p90BudgetDays}d tail budget, ` +
         `over an allowance of ${row.hiddenAllowance} (${HIDDEN_TAIL_SHARE * 100}% of the lane's ${r.rows} rows)` +
-        (r.hiddenNever ? `; ${r.hiddenNever} more hidden rows carry no confirmation at all and are not in that count` : '') +
+        (r.hiddenNever ? `; ${r.hiddenNever} of the ${r.hidden} hidden rows have never been confirmed at all` : '') +
         `. The site does not show these, so no visitor sees a stale price. It is a quarantine nothing ` +
         `re-checks, which is exactly where a stale row would go to stop counting against the alarm.`;
       failures.push({ retailer: name, kind: 'hidden-tail', detail: row.hiddenDetail });
@@ -855,8 +888,9 @@ async function audit(opts = {}) {
     if (row.medianAgeDays > row.budgetDays) {
       row.verdict = 'STALE';
       row.detail =
-        `the median measured row is ${row.medianAgeDays}d old (p90 ${row.p90AgeDays}d` +
+        `the median measured row is ${fmtAge(row.medianAgeDays)} old (p90 ${fmtAge(row.p90AgeDays)}` +
         (row.unconfirmed ? `, ${row.unconfirmed} of ${row.measured} explicitly unconfirmed` : '') +
+        (row.never ? `, ${row.never} of ${row.measured} never confirmed at all` : '') +
         `), over the ` +
         `${row.budgetDays}d budget (${row.cite} x ${MISSED_CYCLES_ALLOWED} missed cycles) — ` +
         `the job is scheduled but not landing across the catalog. ` +
@@ -885,10 +919,11 @@ async function audit(opts = {}) {
       row.verdict = 'STALE TAIL';
       row.detail =
         `the median row is fine (${row.medianAgeDays}d, budget ${row.budgetDays}d) but the slowest ` +
-        `decile is ${row.p90AgeDays}d old, over the ${row.p90BudgetDays}d tail budget ` +
+        `decile is ${fmtAge(row.p90AgeDays)} old, over the ${row.p90BudgetDays}d tail budget ` +
         `(${row.budgetDays}d x ${P90_BUDGET_MULTIPLE}) — ${row.staleRows} of ${row.measured} measured rows ` +
         `are past the ${row.budgetDays}d budget` +
         (row.unconfirmed ? `, ${row.unconfirmed} of them explicitly unconfirmed` : '') +
+        (row.never ? `, ${row.never} of them never confirmed at all` : '') +
         `. ${row.cite} is landing across most of the catalog ` +
         `and never reaching these. A median alone would have reported this retailer as healthy.`;
       failures.push({ retailer: name, kind: 'stale-tail', detail: row.detail });
@@ -936,19 +971,20 @@ function report(a) {
   // beside the quantiles because 'p90 23d' describes 4 forgotten rows and 1,064
   // unreachable ones identically, and only one of those is worth a morning.
   console.log(
-    pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('UNCONF', 8) +
+    pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('UNCONF', 8) + padL('NEVER', 7) +
     padL('NEWEST', 13) +
     padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 10) +
     padL('PAST', 7) + padL('HIDDEN', 8) + padL('H-PAST', 10) + '  VERDICT'
   );
-  console.log('-'.repeat(141));
+  console.log('-'.repeat(148));
   for (const r of a.rows) {
     console.log(
       pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) +
-      padL(r.unconfirmed == null ? '-' : r.unconfirmed, 8) + padL(r.newest, 13) +
-      padL(r.ageDays == null ? '-' : r.ageDays + 'd', 6) +
-      padL(r.medianAgeDays == null ? '-' : r.medianAgeDays + 'd', 8) +
-      padL(r.p90AgeDays == null ? '-' : r.p90AgeDays + 'd', 7) +
+      padL(r.unconfirmed == null ? '-' : r.unconfirmed, 8) + padL(r.never == null ? '-' : r.never, 7) +
+      padL(r.newest, 13) +
+      padL(fmtAge(r.ageDays), 6) +
+      padL(fmtAge(r.medianAgeDays), 8) +
+      padL(fmtAge(r.p90AgeDays), 7) +
       padL(r.budgetDays == null ? '-' : `${r.budgetDays}d/${r.p90BudgetDays}d`, 10) +
       padL(r.staleRows == null ? '-' : r.staleRows, 7) +
       padL(r.hidden == null ? '-' : r.hidden, 8) +
@@ -980,6 +1016,15 @@ function report(a) {
   return 1;
 }
 
+/**
+ * The --json tally. JSON has no Infinity — JSON.stringify writes it as null,
+ * and null already means "no rows" here. A never-confirmed quantile must not
+ * read as an empty lane, so it is written as 'never', the word the table uses.
+ */
+function toJson(a) {
+  return JSON.stringify(a, (k, v) => (v === Infinity ? NEVER : v), 2);
+}
+
 function wrap(text, width) {
   const words = String(text).split(/\s+/);
   const out = [];
@@ -993,7 +1038,7 @@ function wrap(text, width) {
 }
 
 module.exports = {
-  audit, report, cronIntervalDays, budgetDaysFor, readSchedule, readCatalog,
+  audit, report, toJson, cronIntervalDays, budgetDaysFor, readSchedule, readCatalog,
   citesFor, slowestIntervalDays,
   CADENCE, CONFIRMATION_STAMPS, NEGATIVE_STAMP, MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS,
   P90_BUDGET_MULTIPLE, HIDDEN_TAIL_SHARE, TAIL_QUANTILE, countOlderThan,
@@ -1004,7 +1049,7 @@ if (require.main === module) {
   audit()
     .then((a) => {
       if (process.argv.includes('--json')) {
-        console.log(JSON.stringify(a, null, 2));
+        console.log(toJson(a));
         return a.failures.length ? 1 : 0;
       }
       return report(a);

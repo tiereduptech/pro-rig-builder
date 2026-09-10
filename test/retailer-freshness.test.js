@@ -314,7 +314,7 @@ test("the MEDIAN boundary is pinned at budget and budget+1", async () => {
   assert.deepEqual(kinds(await at("2026-08-13")), ["stale"], "median one day past budget fails");
 });
 
-test("quantiles are null with no stamps, so NEVER CONFIRMED still wins over stale", async () => {
+test("a row with no stamps reads as maximally stale, and NEVER CONFIRMED still wins over stale", async () => {
   const a = await gate.audit({
     now: NOW,
     partsPath: partsFixture([product("shop", { price: 1 })]),
@@ -322,8 +322,9 @@ test("quantiles are null with no stamps, so NEVER CONFIRMED still wins over stal
     cadence: { shop: { confirmedBy: { workflow: "shop.yml", cron: "0 7 * * *" }, why: "x" } },
   });
   const r = rowFor(a, "shop");
-  assert.equal(r.medianAgeDays, null, "no stamps must not read as age 0");
-  assert.equal(r.p90AgeDays, null);
+  assert.equal(r.medianAgeDays, Infinity, "no stamps must never read as age 0 — it is the stalest a row can be");
+  assert.equal(r.p90AgeDays, Infinity);
+  assert.equal(r.never, 1);
   assert.deepEqual(kinds(a), ["no-stamps"]);
 });
 
@@ -817,12 +818,14 @@ test("a lane with nothing published is not NEVER CONFIRMED", async () => {
   assert.deepEqual(kinds(await laneOf(n(5, () => shopRow(july(), true)))), ["hidden-tail"]);
 });
 
-test("a hidden row with no confirmation at all is reported, not silently absent", async () => {
+test("a hidden row with no confirmation at all counts against the hidden allowance", async () => {
   const a = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1 }, true)]);
   const r = rowFor(a, "shop");
   assert.equal(r.hidden, 1);
   assert.equal(r.hiddenNever, 1);
-  assert.equal(r.hiddenMeasured, 0);
+  assert.equal(r.hiddenMeasured, 1, "measured as maximally stale, not left out");
+  assert.equal(r.hiddenStaleRows, 1);
+  assert.deepEqual(a.failures, [], "1 of 10 is inside the allowance");
 });
 
 test("report() prints the hidden verdict beside the published one", async () => {
@@ -839,6 +842,48 @@ test("report() prints the hidden verdict beside the published one", async () => 
   assert.ok(lines.some((l) => l.includes("[hidden-tail] shop")));
   assert.ok(!lines.some((l) => l.includes("publishing prices nothing is refreshing")),
     "a hidden-only failure must not claim the site is publishing stale prices");
+});
+
+// ── rows nothing has ever confirmed ─────────────────────────────────────────
+// Dropped by `if (!found.length) continue` until 2026-09-10, which is how 13
+// sponsored-ad links the verifier cannot even select stayed out of every alarm.
+
+test("THE HOLE: a row nothing ever confirmed is maximally stale, not absent", async () => {
+  // Nine rows confirmed today and one never confirmed. Dropped, the lane read a
+  // spotless p90 of 0d; measured, the never-confirmed row IS the slowest decile.
+  const a = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1 })]);
+  const r = rowFor(a, "shop");
+  assert.equal(r.never, 1);
+  assert.equal(r.measured, 10, "every published row is behind the quantiles");
+  assert.equal(r.p90AgeDays, Infinity);
+  assert.equal(r.staleRows, 1);
+  assert.deepEqual(kinds(a), ["stale-tail"]);
+});
+
+test("never confirming a row cannot make a lane look fresher than confirming it once", async () => {
+  const never = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1 })]);
+  const ancient = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1, priceConfirmedAt: "2021-01-01" })]);
+  assert.ok(rowFor(never, "shop").p90AgeDays >= rowFor(ancient, "shop").p90AgeDays);
+  assert.deepEqual(kinds(never), kinds(ancient));
+});
+
+test("a handful of never-confirmed rows do not condemn a healthy lane", async () => {
+  // Still a quantile: robustness in the false-alarm direction is unchanged.
+  assert.deepEqual((await laneOf([...n(99, () => shopRow(today())), shopRow({ price: 1 })])).failures, []);
+});
+
+test("a never-confirmed age prints as 'never' — not 'Infinityd', and not null in JSON", async () => {
+  const a = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1 })]);
+  const lines = [];
+  const log = console.log;
+  console.log = (s = "") => lines.push(String(s));
+  try { gate.report(a); } finally { console.log = log; }
+  assert.ok(!lines.some((l) => l.includes("Infinity")), "the report must not print Infinity");
+  assert.ok(lines.some((l) => /\bnever\b/.test(l)));
+
+  // JSON.stringify writes Infinity as null, and null means "no rows at all".
+  const json = JSON.parse(gate.toJson(a));
+  assert.equal(json.rows.find((x) => x.retailer === "shop").p90AgeDays, "never");
 });
 
 test("the live catalog: every row is either published or hidden — none leave the count", async () => {
