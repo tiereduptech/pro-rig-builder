@@ -3524,7 +3524,7 @@ export default [
         "matchedAt": "2026-09-08T21:12:23.680Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:41:38.901Z",
+        "refreshedAt": "2026-09-10T20:00:03.124Z",
         "rematchedAt": "2026-09-08T23:56:01.365Z",
         "rematchedFrom": "445832188836211182385527",
         "priceLastMovedAt": "2026-09-10"
@@ -7452,7 +7452,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:32.902Z"
+        "refreshedAt": "2026-09-10T20:00:47.500Z"
       }
     },
     "screenSize": 16,
@@ -7810,10 +7810,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-10T09:42:33.659Z",
+        "priceSuspectAt": "2026-09-10T20:00:49.620Z",
         "priceSuspectValue": 99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 17
+        "priceSuspectStreak": 18
       }
     },
     "screenSize": 13.3,
@@ -8185,7 +8185,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:34.926Z"
+        "refreshedAt": "2026-09-10T20:00:56.114Z"
       }
     },
     "screenSize": 23.8,
@@ -8232,7 +8232,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:35.013Z"
+        "refreshedAt": "2026-09-10T20:00:56.547Z"
       }
     },
     "screenSize": 27,
@@ -8317,7 +8317,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:35.250Z"
+        "refreshedAt": "2026-09-10T20:00:56.847Z"
       }
     },
     "screenSize": 27,
@@ -8364,7 +8364,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:35.359Z",
+        "refreshedAt": "2026-09-10T20:00:57.007Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -11026,7 +11026,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:43.178Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:42:39.911Z"
+        "refreshedAt": "2026-09-10T20:01:43.990Z"
       },
       "newegg_openbox": {
         "sku": "445838916882314961340236",
@@ -13729,7 +13729,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:43:37.243Z",
+        "refreshedAt": "2026-09-10T20:01:59.968Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -14625,7 +14625,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:43:39.295Z"
+        "refreshedAt": "2026-09-10T20:02:41.419Z"
       }
     },
     "screenSize": 24,
@@ -14866,7 +14866,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:44:31.271Z"
+        "refreshedAt": "2026-09-10T20:02:44.842Z"
       }
     },
     "screenSize": 15.6,
@@ -14915,18 +14915,18 @@ export default [
         "priceConfirmedAt": "2026-09-10"
       },
       "newegg": {
-        "sku": "445831931944325232073721",
-        "itemNumber": "9SIAHRCM141279",
+        "sku": "9SIACVBKUR6061",
+        "price": 259.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312014632131557242959&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y97%3Fitem%3D9SIACVBKUR6061",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2510140C2LFL60.jpg",
         "sellerClass": "marketplace",
-        "price": 370,
-        "saleprice": 207,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831931944325232073721&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC3%3Fitem%3D9SIAHRCM141279",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2607221BTN3Z2B.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-10T15:56:49.997Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "name",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-10"
+        "refreshedAt": "2026-09-10T20:02:44.979Z",
+        "priceLastMovedAt": "2026-09-10",
+        "rematchedAt": "2026-09-10T20:02:44.979Z",
+        "rematchedFrom": "445831931944325232073721"
       }
     },
     "screenSize": 15.6,
@@ -18599,7 +18599,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.96,
-        "refreshedAt": "2026-09-10T09:44:33.755Z",
+        "refreshedAt": "2026-09-10T20:02:49.729Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
