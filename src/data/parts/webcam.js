@@ -431,15 +431,17 @@ export default [
     "r": 4.4,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNzc2MTU5NjM1MTA1NTEzOjE3NzcxMzA3Mzc6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAyNTUxODczMjE3MDI6OjI6Og&url=%2FOBSBOT-Lite-Tracking-Streaming-Microphones%2Fdp%2FB0CZ6XY78Y%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.85495479-a15b-4d81-9693-02a40ca2aee3%253Aamzn1.sym.85495479-a15b-4d81-9693-02a40ca2aee3%26crid%3DFSN84WU0UR66%26cv_ct_cx%3DInsta360%2Bwebcam%26keywords%3DInsta360%2Bwebcam%26pd_rd_i%3DB0CZ6XY78Y%26pd_rd_r%3Dbb300cc3-f4b7-4237-a965-9052a560aa67%26pd_rd_w%3DJuj0W%26pd_rd_wg%3DJchq2%26pf_rd_p%3D85495479-a15b-4d81-9693-02a40ca2aee3%26pf_rd_r%3DGP6DCNHR6YKTQP14971H%26qid%3D1777130736%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DInsta360%252Bwebcam%252Caps%252C156%26sr%3D1-3-1bea8d9f-7730-4703-a6c3-7636b0f722a4-spons%26aref%3DqPSLHifwnC%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=qPSLHifwnC&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0CZ6XY78Y?tag=tiereduptech-20",
         "price": 119,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0CZ6XY78Y"
       }
     },
     "resolution": "4K",
     "fps": 60,
     "autofocus": true,
-    "bench": 93
+    "bench": 93,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100090,

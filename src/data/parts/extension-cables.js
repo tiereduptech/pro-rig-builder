@@ -401,12 +401,14 @@ export default [
     "r": 4.6,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MToyNTE1MzAwODY3OTUyMzcyOjE3NzcxMzEyNjE6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA3NDUyMTQ4MDcwMjo6NDo6&url=%2FAsiaHorse-Extension-Transparent-Connector-Combs-Bright%2Fdp%2FB09Z9M4N7J%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DGSM9GP4QVL6I%26cv_ct_cx%3DPCIe%2Bextension%2Bcable%26keywords%3DPCIe%2Bextension%2Bcable%26pd_rd_i%3DB09Z9M4N7J%26pd_rd_r%3Ddaaecbe2-af7f-4478-93c5-5101207bd02e%26pd_rd_w%3DlDfBI%26pd_rd_wg%3Df72Ju%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DX2XE1CSKM8VMF7DP24S0%26qid%3D1777131261%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DPCIe%252Bextension%252Bcable%252Caps%252C141%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DIru0BnAWEJWvn%26aref%3Dt9PUGlIiOE%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=t9PUGlIiOE&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B09Z9M4N7J?tag=tiereduptech-20",
         "price": 35.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B09Z9M4N7J"
       }
     },
-    "cableType": "Full Kit"
+    "cableType": "Full Kit",
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100123,
@@ -554,12 +556,14 @@ export default [
     "r": 4.6,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MToxOTYwNTI4MDQwNzE2OTY6MTc3NzEzMTI2MDpzcF9zZWFyY2hfdGhlbWF0aWM6MzAxMjQ3MTg1NDY4MTAyOjowOjo&url=%2FFormulaMod-Sleeve-Extension-PCI-E8-P-Motherboard%2Fdp%2FB083SCRYT2%2Fref%3Dsxin_17_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.cdeaf89b-0b83-4151-b82a-07a08dc40e89%253Aamzn1.sym.cdeaf89b-0b83-4151-b82a-07a08dc40e89%26crid%3DUQE6ILYTQZ1Y%26cv_ct_cx%3Dcable%2Bextension%2Bkit%2BPSU%26keywords%3Dcable%2Bextension%2Bkit%2BPSU%26pd_rd_i%3DB083SCRYT2%26pd_rd_r%3D7064dd3b-bdc6-47dc-935b-19b211abf5df%26pd_rd_w%3DlScAt%26pd_rd_wg%3DiEFzE%26pf_rd_p%3Dcdeaf89b-0b83-4151-b82a-07a08dc40e89%26pf_rd_r%3D6W893A26EXCG5X00XNQB%26qid%3D1777131260%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dcable%252Bextension%252Bkit%252BPSU%252Caps%252C113%26sr%3D1-1-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons%26aref%3DIapspUhhsP%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=IapspUhhsP&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B083SCRYT2?tag=tiereduptech-20",
         "price": 20.39,
-        "inStock": true
+        "inStock": true,
+        "asin": "B083SCRYT2"
       }
     },
-    "cableType": "Full Kit"
+    "cableType": "Full Kit",
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100130,
@@ -667,11 +671,13 @@ export default [
     "r": 4.6,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3NjQ3MDA0NTM4NjMxODAxOjE3NzcxMzEyNjQ6c3Bfc2VhcmNoX3RoZW1hdGljX2J0ZjozMDAwOTUxOTkzNzI4MDI6OjM6Og&url=%2FFrienda-Connectors-Disconnect-Automotive-Motorcycles%2Fdp%2FB09CTVLZLN%2Fref%3Dsxbs_pa_sp_search_thematic_btf_sspa%3Fcontent-id%3Damzn1.sym.19965c16-2655-4a15-b57b-e942a2302fca%253Aamzn1.sym.19965c16-2655-4a15-b57b-e942a2302fca%26crid%3D4KACUMWFZEUW%26cv_ct_cx%3DEPS%2B8-pin%2Bextension%2Bcable%26keywords%3DEPS%2B8-pin%2Bextension%2Bcable%26pd_rd_i%3DB09CTVLZLN%26pd_rd_r%3D23c1e2e6-dc91-49b3-8278-e5630f25fdac%26pd_rd_w%3DlPYtn%26pd_rd_wg%3DorlLg%26pf_rd_p%3D19965c16-2655-4a15-b57b-e942a2302fca%26pf_rd_r%3DJ40YFRQYB3SFB7RKFTR9%26qid%3D1777131264%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DEPS%252B8pin%252Bextension%252Bcable%252Caps%252C170%26sr%3D1-4-19848dd4-d197-4a53-a445-4045457584e9-spons%26aref%3DPp95Ui8dG7%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm%26psc%3D1&aref=Pp95Ui8dG7&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B09CTVLZLN?tag=tiereduptech-20",
         "price": 14.95,
-        "inStock": true
+        "inStock": true,
+        "asin": "B09CTVLZLN"
       }
     },
-    "cableType": "PSU Kit"
+    "cableType": "PSU Kit",
+    "dealChangedAt": "2026-09-10"
   }
 ];

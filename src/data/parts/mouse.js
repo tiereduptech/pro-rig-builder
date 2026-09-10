@@ -770,16 +770,18 @@ export default [
     "r": 4.4,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2MzM0MDMwNzQyNjEwMzY3OjE3NzcxMzA0MzA6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDIyNTQ5Mjg3OTcwMjo6NDo6&url=%2FLogitech-Vertical-Wireless-Mouse-Rechargeable%2Fdp%2FB07FNJB8TT%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DR4B2XJC8OTZX%26cv_ct_cx%3DLogitech%2BG%2BPro%2Bmouse%26keywords%3DLogitech%2BG%2BPro%2Bmouse%26pd_rd_i%3DB07FNJB8TT%26pd_rd_r%3D934d1a67-5e63-40ca-acb3-5e3c17087bba%26pd_rd_w%3Dmyxlt%26pd_rd_wg%3D5T7R2%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DHJWQHX4VDD2VRKN3P9XA%26qid%3D1777130430%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DLogitech%252BG%252BPro%252Bmouse%252Caps%252C150%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DR0jtZpMReOJWB%26aref%3DezR6iWgjvw%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=ezR6iWgjvw&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B07FNJB8TT?tag=tiereduptech-20",
         "price": 74.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B07FNJB8TT"
       }
     },
     "mouseType": "Wireless",
     "sensor": "Optical",
     "dpi": 4000,
     "weight": 135,
-    "bench": 39
+    "bench": 39,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 99985,
@@ -1012,16 +1014,18 @@ export default [
     "r": 4.5,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MToyODc2NzQzMzM1OTU0MDg1OjE3NzcxMzA0MzM6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTE1ODA1NjQ3NDYwMjo6MTo6&url=%2FTECKNET-Bluetooth-Rechargeable-Adjustable-Compatibility%2Fdp%2FB0FB9BR23C%2Fref%3Dsxin_33_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DQZ5UBXHDXVLG%26cv_ct_cx%3DSteelSeries%2BAerox%26keywords%3DSteelSeries%2BAerox%26pd_rd_i%3DB0FB9BR23C%26pd_rd_r%3D248c8582-a1a5-4c1d-a8e0-94fa2a9d963b%26pd_rd_w%3D43HbS%26pd_rd_wg%3DUlvL2%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DBEW72CVPJQ26RWBSB4FT%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BAerox%252Caps%252C205%26sr%3D1-18-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DTkP7p709e64hc%26aref%3D1MyWMJ7ynL%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=1MyWMJ7ynL&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0FB9BR23C?tag=tiereduptech-20",
         "price": 19.73,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0FB9BR23C"
       }
     },
     "sensor": "Optical",
     "mouseType": "Wireless",
     "dpi": 2000,
     "weight": 86,
-    "bench": 27
+    "bench": 27,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 99994,
@@ -1192,16 +1196,18 @@ export default [
     "r": 4.5,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0NjQyMDk4MDA4MzM5OTY1OjE3NzcxMzA0MzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDM1MDc4NjMzMzQwMjo6NDo6&url=%2FLenovo-Yoga-Pro-Mouse-Tidal%2Fdp%2FB0D2JGKRMM%2Fref%3Dsxin_14_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D11MMTAURU8VJ%26cv_ct_cx%3DSteelSeries%2BRival%26keywords%3DSteelSeries%2BRival%26pd_rd_i%3DB0D2JGKRMM%26pd_rd_r%3Df2c1bcf2-be6e-48e0-ab90-ce8b6f96425b%26pd_rd_w%3Dlnh2L%26pd_rd_wg%3DGpqxj%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DN1VZSCF2A8FR49JVYTGE%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DSteelSeries%252BRival%252Caps%252C168%26sr%3D1-21-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DmwhGp0uzOPGaO%26aref%3DdOrbGMvSMf%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=dOrbGMvSMf&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0D2JGKRMM?tag=tiereduptech-20",
         "price": 31.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0D2JGKRMM"
       }
     },
     "sensor": "Optical",
     "dpi": 4000,
     "weight": 96,
     "mouseType": "Wireless",
-    "bench": 32
+    "bench": 32,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100001,
@@ -1327,16 +1333,18 @@ export default [
     "r": 4.6,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo2NTc0MzMzNzAzNjI4Mzk0OjE3NzcxMzA0MzI6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMTIzNjg4Mjc3ODkwMjo6MDo6&url=%2FLogitech-Trackball-Rechargeable-Ergonomic-Programmable%2Fdp%2FB0D6PTR6MP%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3D2X20LR4QSAIK%26cv_ct_cx%3DLogitech%2BG502%26keywords%3DLogitech%2BG502%26pd_rd_i%3DB0D6PTR6MP%26pd_rd_r%3D76fd09f1-a5a7-49cc-be63-ba76b43cc9d0%26pd_rd_w%3DCVvBa%26pd_rd_wg%3DfEAbx%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3DYPS5BRNJ4YPS57303QQA%26qid%3D1777130432%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DLogitech%252BG502%252Caps%252C106%26sr%3D1-17-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DgPmMGAgJJSaUi%26aref%3D0jjECO7nQO%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=0jjECO7nQO&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0D6PTR6MP?tag=tiereduptech-20",
         "price": 119.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0D6PTR6MP"
       }
     },
     "mouseType": "Wireless",
     "sensor": "Optical",
     "dpi": 512,
     "weight": 259,
-    "bench": 36
+    "bench": 36,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100006,

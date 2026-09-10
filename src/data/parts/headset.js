@@ -1067,16 +1067,18 @@ export default [
     "r": 4.2,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4OTc1MzM5NzkzNjkxMTg4OjE3NzcxMzA2NDE6c3Bfc2VhcmNoX3RoZW1hdGljOjIwMDA1NjYxMjIwOTk5ODo6Mzo6&url=%2FSony-WH-1000XM5-Canceling-Headphones-Hands-Free%2Fdp%2FB09XSDMT4F%2Fref%3Dsxin_15_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%253Aamzn1.sym.8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26crid%3DKKN57TL45GS4%26cv_ct_cx%3DDrop%2Bheadphones%26keywords%3DDrop%2Bheadphones%26pd_rd_i%3DB09XSDMT4F%26pd_rd_r%3Decb6d7e0-39b5-42fd-ae84-ab621898b7f3%26pd_rd_w%3Dd5g6F%26pd_rd_wg%3D2CYPr%26pf_rd_p%3D8bcdb8d4-0b28-499b-b7b9-7b13106055c3%26pf_rd_r%3D2XM0GTQAT58ZZACNXTXY%26qid%3D1777130641%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DDrop%252Bheadphones%252Caps%252C136%26sr%3D1-20-2b0dcb9c-4970-41e1-afd4-521d96ec266f-spons%26xpid%3DvqvvJ6rB0CC5o%26aref%3DqhHoxGh2qc%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=qhHoxGh2qc&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B09XSDMT4F?tag=tiereduptech-20",
         "price": 248,
-        "inStock": true
+        "inStock": true,
+        "asin": "B09XSDMT4F"
       }
     },
     "anc": true,
     "hsType": "Wireless",
     "driver": 30,
     "mic": true,
-    "bench": 81
+    "bench": 81,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100052,
@@ -1368,16 +1370,18 @@ export default [
     "r": 4.2,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo3MDY0NDI0MjQ5NjI4NjoxNzc3MTMwNjM1OnNwX3NlYXJjaF90aGVtYXRpYzozMDExODM5OTMyMzg3MDI6OjA6Og&url=%2FHyperX-Cloud-Alpha-Wireless-Noise-canceling%2Fdp%2FB09TRW57WB%2Fref%3Dsxin_18_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.3859b1f1-8b34-4d43-bd56-696bede8aa56%253Aamzn1.sym.3859b1f1-8b34-4d43-bd56-696bede8aa56%26crid%3DMRVPSPTMXZV3%26cv_ct_cx%3Dwireless%2Bgaming%2Bheadset%26keywords%3Dwireless%2Bgaming%2Bheadset%26pd_rd_i%3DB09TRW57WB%26pd_rd_r%3D77d6e864-1009-4bf1-bedf-92c9890adfc0%26pd_rd_w%3D1LrII%26pd_rd_wg%3DEg3PG%26pf_rd_p%3D3859b1f1-8b34-4d43-bd56-696bede8aa56%26pf_rd_r%3DXNV4CW8HFMW7S37B49GZ%26qid%3D1777130635%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3Dwireless%252Bgaming%252Bheadset%252Caps%252C130%26sr%3D1-1-383bc08e-f3b5-4928-b079-a9607486ab19-spons%26aref%3DeFWXUBz2vF%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=eFWXUBz2vF&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B09TRW57WB?tag=tiereduptech-20",
         "price": 119.99,
-        "inStock": true
+        "inStock": true,
+        "asin": "B09TRW57WB"
       }
     },
     "hsType": "Wireless",
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 72
+    "bench": 72,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100062,
@@ -1417,16 +1421,18 @@ export default [
     "r": 4.3,
     "deals": {
       "amazon": {
-        "url": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNDM1NTkzMTY4Njg1Mzk1OjE3NzcxMzA2MzU6c3Bfc2VhcmNoX3RoZW1hdGljOjMwMDA1NTQ5NDY1MzUwMjo6Mjo6&url=%2FFIFINE-Detachable-Microphone-Headphones-Black-AmpliGame%2Fdp%2FB0C4ND25FT%2Fref%3Dsxin_28_pa_sp_search_thematic_sspa%3Fcontent-id%3Damzn1.sym.296ab4d4-7e8d-4537-a041-04c6d3c0401d%253Aamzn1.sym.296ab4d4-7e8d-4537-a041-04c6d3c0401d%26crid%3DX2H1PUODU33K%26cv_ct_cx%3DHyperX%2BCloud%2BIII%26keywords%3DHyperX%2BCloud%2BIII%26pd_rd_i%3DB0C4ND25FT%26pd_rd_r%3D5e94a2fe-dc83-4f38-9dc7-e87c8a12eb68%26pd_rd_w%3DJxJI2%26pd_rd_wg%3DWAXBE%26pf_rd_p%3D296ab4d4-7e8d-4537-a041-04c6d3c0401d%26pf_rd_r%3D8RM6PH0H5BTTXCZYGMNF%26qid%3D1777130634%26sbo%3DRZvfv%252F%252FHxDF%252BO5021pAnSA%253D%253D%26sprefix%3DHyperX%252BCloud%252BIII%252Caps%252C215%26sr%3D1-3-7ca77689-fea2-4d18-a31c-8e756e3a3e87-spons%26aref%3D85zBVlfamI%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM%26psc%3D1&aref=85zBVlfamI&tag=tiereduptech-20",
+        "url": "https://www.amazon.com/dp/B0C4ND25FT?tag=tiereduptech-20",
         "price": 32.29,
-        "inStock": true
+        "inStock": true,
+        "asin": "B0C4ND25FT"
       }
     },
     "hsType": "Wired",
     "mic": true,
     "driver": 50,
     "anc": false,
-    "bench": 41
+    "bench": 41,
+    "dealChangedAt": "2026-09-10"
   },
   {
     "id": 100064,
