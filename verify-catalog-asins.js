@@ -223,22 +223,23 @@ function tierCategoryCount(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
   return parts.filter(p => cats.includes(p.c)).length;
 }
-function selectProducts(parts, tier) {
+export function selectProducts(parts, tier) {
   const cats = tier === 'all' ? Object.values(TIERS).flat() : (TIERS[tier] || []);
-  const candidates = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id)
+  const products = parts.filter(p => cats.includes(p.c) && extractASIN(p.deals?.amazon?.url) && !EXCLUDE_IDS.has(p.id)
     && (!ONLY_IDS || ONLY_IDS.has(p.id)));
-  // Skip rows a human verified whose deal has NOT changed since (see
-  // linkVerificationCurrent in drift-gate.js — it invalidates the moment the deal's
-  // link identity changes, so this is not a permanent bypass). REPORT-ONLY, never
-  // silent: an over-used or stuck marker must be visible, not quietly shrink coverage.
-  const skipped = candidates.filter(linkVerificationCurrent);
-  if (skipped.length) {
-    console.log(`\nLink-verified skip: ${skipped.length} row(s) (human-verified, deal unchanged since verification):`);
-    for (const p of skipped) {
+  // Rows a human link-verified are SELECTED like any other. The marker vouches for
+  // the link's IDENTITY — analyzeResult will not let the title matcher overrule it
+  // — and never for the PRICE. It used to drop these rows here, which exempted a
+  // price from ever being confirmed because someone once checked the link: 11 rows
+  // on 2026-09-10, 2 of them on the site with no confirmed price at all. See the
+  // marker's note in drift-gate.js. Listed so the population stays visible.
+  const identityTrusted = products.filter(linkVerificationCurrent);
+  if (identityTrusted.length) {
+    console.log(`\nLink-verified: ${identityTrusted.length} row(s) — identity trusted (human-verified, deal unchanged since), price still verified:`);
+    for (const p of identityTrusted) {
       console.log(`  #${p.id}  linkVerifiedAt=${p.linkVerifiedAt}  dealChanged<=${lastDealChangedAt(p)}  "${(p.n || '').slice(0, 48)}"`);
     }
   }
-  const products = candidates.filter(p => !linkVerificationCurrent(p));
   return flags.limit ? products.slice(0, flags.limit) : products;
 }
 
