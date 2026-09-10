@@ -602,7 +602,7 @@ export default [
         "sku": "4503702",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "1080p",
@@ -627,7 +627,7 @@ export default [
         "sku": "5579380",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "1080p",
@@ -652,7 +652,7 @@ export default [
         "sku": "5761912",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "4K",
@@ -701,7 +701,7 @@ export default [
         "sku": "6321794",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09",
+        "priceConfirmedAt": "2026-09-10",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -727,7 +727,7 @@ export default [
         "sku": "6366565",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "1080p",
@@ -776,7 +776,7 @@ export default [
         "sku": "6520150",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "1080p",
@@ -801,7 +801,7 @@ export default [
         "sku": "6550199",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09",
+        "priceConfirmedAt": "2026-09-10",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -827,7 +827,7 @@ export default [
         "sku": "6571655",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "4K",
@@ -852,7 +852,7 @@ export default [
         "sku": "6595407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "4K",
@@ -877,7 +877,7 @@ export default [
         "sku": "6595408",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "4K",
@@ -902,7 +902,7 @@ export default [
         "sku": "9928354",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-10"
       }
     },
     "resolution": "720p",
