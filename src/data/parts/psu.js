@@ -395,7 +395,10 @@ export default [
       "amazon": {
         "price": 140,
         "url": "https://www.amazon.com/dp/B0FBXX1D17?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "color": "Black",
@@ -467,7 +470,10 @@ export default [
       "amazon": {
         "price": 149,
         "url": "https://www.amazon.com/dp/B0BZWZYTWJ?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "color": "Black",
@@ -798,7 +804,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "color": "Black",
@@ -1189,7 +1197,10 @@ export default [
       "amazon": {
         "price": 43,
         "url": "https://www.amazon.com/dp/B014W3EMAO?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "color": "Black",
@@ -1220,7 +1231,10 @@ export default [
       "amazon": {
         "price": 105,
         "url": "https://www.amazon.com/dp/B0FLG4M8S2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "color": "Black",
@@ -1416,7 +1430,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "GH Electronics (We Record SN#)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "bestbuy": {
         "price": 144.99,
@@ -1981,7 +1997,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "9SIA25VKK42501",
@@ -2040,7 +2058,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "GH Electronics (We Record SN#)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "bestbuy": {
         "price": 189.99,
@@ -2109,7 +2129,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "N82E16817139344",
@@ -2398,7 +2420,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "discount": 11,
@@ -2506,7 +2530,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-10",
         "priceSource": "3p",
-        "priceSeller": "be-quiet-official",
+        "priceSeller": "Signature Mart",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -2606,7 +2630,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "1HU-01PP-00017",
@@ -3232,7 +3258,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Hestia Delight",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "discount": 12,
@@ -3563,7 +3591,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "additionalImages": [
@@ -4508,7 +4538,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-10",
         "priceSource": "3p",
-        "priceSeller": "OHOhagi83",
+        "priceSeller": "a.s.t.k",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4834,7 +4864,10 @@ export default [
       "amazon": {
         "price": 73.9,
         "url": "https://www.amazon.com/dp/B0FBGRW29R?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "discount": 16,
@@ -4877,7 +4910,10 @@ export default [
       "amazon": {
         "price": 66.98,
         "url": "https://www.amazon.com/dp/B0FBGTGMK4?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "discount": 11,
@@ -9227,8 +9263,8 @@ export default [
         "price": 114.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-10",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -9935,7 +9971,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "445832953715656611656711",
@@ -10659,7 +10697,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "FSP GROUP USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "445833769087765636741646",
@@ -11156,7 +11196,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       },
       "newegg": {
         "sku": "445831703130929266837821",
@@ -11549,7 +11591,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-10"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
