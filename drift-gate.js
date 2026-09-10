@@ -247,6 +247,24 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
       issues.push({ type: 'title_mismatch', severity: 'high',
         msg: `Title mismatch (score=${tm.score})`, stored: product.n, amazon: azTitle });
     }
+    // ── EVERY VERDICT ON A LISTING WE READ ENDS IN AN OUTCOME ─────────────────
+    // There are three: CONFIRMED (priceConfirmedAt), QUARANTINED (needsReview),
+    // and UNCONFIRMED (price kept, tagged with why, priceUnconfirmedAt stamped).
+    // This branch used to return with none of them. A capacity conflict neither
+    // confirmed nor quarantined, so the row stayed on the site carrying its old
+    // price with nothing recording that the listing had disagreed — #100767
+    // re-read a 48GB kit against a stored 24GB every run and wrote nothing, run
+    // after run. A title mismatch only escaped the same fate because --fix-asins
+    // happens to follow it on the cron.
+    //
+    // UNCONFIRMED is the honest one: the check may be wrong (a per-stick capacity
+    // against a kit listing, a renamed title), so hiding the product would punish
+    // it for our matcher, and confirming a price on a listing we doubt is the
+    // thing this file exists to prevent. The tag makes the site stop calling the
+    // price fresh and puts the row in front of the freshness gate. ASIN repair,
+    // when it runs, still overrides this with a new link or a quarantine.
+    fixes.priceConfidence = 'unconfirmed';
+    fixes.priceUnconfirmedReason = tm.capConflict ? 'capacity_mismatch' : 'title_mismatch';
     return { issues, fixes };
   }
 
