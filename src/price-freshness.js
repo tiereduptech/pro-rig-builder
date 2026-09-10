@@ -66,6 +66,53 @@ function dayOnly(v) {
   return m ? m[1] : null;
 }
 
+// The stamp that means "we asked the retailer and could NOT confirm this price".
+//
+// ── A FAILED CONFIRMATION IS NOT A FRESH PRICE ──────────────────────────────
+// isFresh used to judge age alone, so a price confirmed on the 4th that failed
+// verification on the 10th read as 6 days fresh on the 10th. The site quoted it
+// as a price we stand behind, let it set the headline and wear BEST, and
+// published it as a schema.org Offer — on the same day verify-catalog reported
+// it could not confirm it. Measured on main 2026-09-10: 53 visible products were
+// quoting an Amazon price in exactly that state. Nothing under src/ read this
+// field at all.
+//
+// The rule is the freshness gate's precedence rule
+// (scripts/assert-retailer-freshness.cjs): a failure newer than every
+// confirmation means the newest thing we know about this price is that we could
+// not confirm it. It changes only the VERDICT. priceAgeDays still reports the
+// age of the last real confirmation, because that is still true, and it is what
+// the "UNCONFIRMED 6d" tag should say.
+//
+// A TIE COUNTS AS FAILED (>=, where the gate uses >). Every writer that confirms
+// a lane also clears its negative stamp — verify-catalog's applyFixes deletes
+// it, sftp-ingest's absence sweep skips lanes it confirmed that run, and the two
+// Amazon discovery ingests write one stamp or the other, never both. So a
+// negative stamp sharing a day with a positive one was written AFTER it. Stamps
+// are day-only, which makes the tie the one place the order is not visible in
+// the values themselves.
+export const PRICE_UNCONFIRMED_STAMP = 'priceUnconfirmedAt';
+
+// The newest confirmation of any kind, as a day. Newest rather than
+// priceStampOf's first-found, because the question is whether the failure came
+// after EVERY confirmation, not after one of them.
+function lastConfirmedDay(d) {
+  let newest = null;
+  for (const field of PRICE_CONFIRMATION_STAMPS) {
+    const day = dayOnly(d[field]);
+    if (day && (!newest || day > newest)) newest = day;
+  }
+  return newest;
+}
+
+export function failedSinceConfirmation(d) {
+  if (!d || typeof d !== 'object') return false;
+  const failed = dayOnly(d[PRICE_UNCONFIRMED_STAMP]);
+  if (!failed) return false;
+  const confirmed = lastConfirmedDay(d);
+  return !confirmed || failed >= confirmed;
+}
+
 // A row with NO stamp is STALE, not fresh.
 //
 // That is the majority case for some retailers — 1,093 Newegg rows and every
@@ -73,6 +120,7 @@ function dayOnly(v) {
 // default that favoured the unstamped row would exempt precisely the rows with
 // the least evidence behind them.
 export function isFresh(d, now = Date.now()) {
+  if (failedSinceConfirmation(d)) return false;
   const age = priceAgeDays(d, now);
   return age != null && age <= PRICE_STALE_AFTER_DAYS;
 }
