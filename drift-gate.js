@@ -48,8 +48,17 @@ export const PRICE_REFRESH_MIN = 0.05;
 // ── Link-verification marker (mirrors asin-overrides "source: verified" / verifiedAt) ──
 //
 // A human-verified deal LINK carries `linkVerifiedAt` (YYYY-MM-DD) and, by the
-// asin-overrides vocabulary, `linkVerifiedSource: 'verified'`. The nightly SKIPS
-// re-verifying such a row — but ONLY while the verification is still current.
+// asin-overrides vocabulary, `linkVerifiedSource: 'verified'`. While the
+// verification is current, analyzeResult trusts the link's IDENTITY — it does not
+// let the title matcher overrule a person who had the listing open.
+//
+// IDENTITY ONLY, NEVER PRICE. The marker used to make the nightly skip the row
+// entirely, so a person confirming "this ASIN is this product" exempted its price
+// from ever being checked again. On main 2026-09-10 that was 11 rows — 2 visible,
+// none of which had a confirmed price at all, and 6 hidden whose last confirmation
+// was the week before they were marked. It is the matchedAt confusion again:
+// knowing WHICH listing is not knowing what it COSTS. Linked rows are selected,
+// priced and stamped like any other; only the identity check defers to the person.
 //
 // CURRENCY RULE (the whole point): the marker INVALIDATES the moment the deal's
 // link identity changes. It is compared against lastDealChangedAt(), never trusted
@@ -217,7 +226,18 @@ export function analyzeResult(product, amazonData, paapiItem = null) {
   const azTitle = amazonData.title || amazonData.product_title;
   const tm = titleMatches(product.n, azTitle, product.cap, product.b);
 
-  if (!tm.match) {
+  // A current human link verification settles IDENTITY, so a matcher
+  // disagreement is recorded rather than acted on — and the row goes on to be
+  // priced below, exactly like a matched one. The marker invalidates the moment
+  // the deal's link changes (linkVerificationCurrent), so this cannot shield a
+  // listing an ingest later swapped. It never shields the price: every verdict
+  // below still applies. See the marker's note above.
+  if (!tm.match && linkVerificationCurrent(product)) {
+    issues.push({ type: 'identity_human_verified', severity: 'low',
+      msg: `Title matcher disagrees (score=${tm.score}${tm.capConflict ? ', capacity conflict' : ''}) but the link ` +
+           `was human-verified ${String(product.linkVerifiedAt).slice(0, 10)} and is unchanged since — pricing it`,
+      stored: product.n, amazon: azTitle });
+  } else if (!tm.match) {
     // A capacity conflict is a wrong-product attach, not just a renamed listing.
     if (tm.capConflict) {
       issues.push({ type: 'capacity_mismatch', severity: 'high',

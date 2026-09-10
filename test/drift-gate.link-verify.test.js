@@ -66,10 +66,12 @@ test('markLinkVerified establishes a baseline only when none exists', () => {
   assert.strictEqual(withBase.dealChangedAt, undefined);
 });
 
-test('gate scenario: verified-current is skipped, verified-then-swapped is re-checked', () => {
+test('gate scenario: verified-current trusts identity, verified-then-swapped trusts nothing', () => {
+  // The marker no longer decides whether a row is VERIFIED — every row is priced
+  // (see test/link-verified-price.test.js). It decides only whether the title
+  // matcher may overrule a person on identity, and a swapped deal loses that.
   const verifiedCurrent = { id: 1, linkVerifiedAt: '2026-07-29', addedAt: '2026-05-15', deals: { amazon: { url: 'a' } } };
   const verifiedStale   = { id: 2, linkVerifiedAt: '2026-07-22', dealChangedAt: '2026-07-29', deals: { amazon: { url: 'b' } } };
-  const rows = [verifiedCurrent, verifiedStale];
-  const wouldVerify = rows.filter(p => !linkVerificationCurrent(p));
-  assert.deepStrictEqual(wouldVerify.map(p => p.id), [2]);   // stale one goes back through the gate
+  const identityTrusted = [verifiedCurrent, verifiedStale].filter(linkVerificationCurrent);
+  assert.deepStrictEqual(identityTrusted.map(p => p.id), [1]);   // the swapped one is back to the matcher
 });
