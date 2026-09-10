@@ -723,3 +723,128 @@ test("the cron survives as the absence backstop", () => {
   assert.match(wf, /^\s+schedule:$/m);
   assert.match(wf, /^\s+- cron: '[^']+'$/m);
 });
+
+// =============================================================================
+//  HIDDEN ROWS
+//
+//  A quarantined product (needsReview) is shown nowhere, and verify-catalog
+//  deliberately stops paying to re-check it, so it ages into the tail by
+//  construction. On main 2026-09-10, 559 of amazon's 655 rows past budget were
+//  hidden. The quantiles now measure what the site PUBLISHES, and hidden rows get
+//  their own count and alarm — they are not dropped, because dropping them would
+//  let quarantine delete a stale row from the gate, the negative-stamp hole in a
+//  different hat.
+// =============================================================================
+
+const shopRow = (deal, hidden = false) =>
+  hidden ? { ...product("shop", deal), needsReview: true } : product("shop", deal);
+const today = () => ({ price: 1, priceConfirmedAt: "2026-08-17" });
+const july = () => ({ price: 1, priceConfirmedAt: "2026-07-01" });
+const n = (k, f) => Array.from({ length: k }, f);
+const laneOf = (rows) =>
+  gate.audit({
+    now: NOW,
+    partsPath: partsFixture(rows),
+    wfDir: wfFixture({ "shop.yml": wfWithCron("0 7 * * *") }),
+    cadence: tailCadence,
+  });
+
+test("a hidden row is outside the published quantiles, and still counted", async () => {
+  const a = await laneOf([...n(90, () => shopRow(today())), ...n(10, () => shopRow(july(), true))]);
+  const r = rowFor(a, "shop");
+  assert.equal(r.rows, 100, "the lane's row count is unchanged");
+  assert.equal(r.published, 90);
+  assert.equal(r.hidden, 10);
+  assert.equal(r.measured, 90, "only published rows are behind the quantiles");
+  assert.equal(r.p90AgeDays, 0);
+  assert.equal(r.hiddenStaleRows, 10);
+  assert.equal(r.hiddenAllowance, 10);
+  assert.deepEqual(a.failures, [], "10 of 100 is inside the allowance");
+});
+
+test("THE HOLE: quarantining the stale rows cannot green the lane", async () => {
+  // The exact move this alarm exists to catch. Same 34 stale rows, first
+  // published, then quarantined — the failure changes NAME, it does not go away.
+  const shown = await laneOf([...n(66, () => shopRow(today())), ...n(34, () => shopRow(july()))]);
+  assert.deepEqual(kinds(shown), ["stale-tail"]);
+
+  const hidden = await laneOf([...n(66, () => shopRow(today())), ...n(34, () => shopRow(july(), true))]);
+  assert.deepEqual(kinds(hidden), ["hidden-tail"], "quarantine moved the rows to the other alarm");
+  assert.equal(rowFor(hidden, "shop").verdict, "OK", "what the site publishes really is fine");
+  assert.equal(rowFor(hidden, "shop").hiddenVerdict, "HIDDEN TAIL");
+  assert.equal(rowFor(hidden, "shop").hiddenStaleRows, rowFor(shown, "shop").staleRows);
+});
+
+test("the hidden allowance is fixed by LANE size — boundary pinned", async () => {
+  // 10% of 100 rows. Quarantining more rows must not raise the allowance, which
+  // is why the denominator is the whole lane and not the hidden population.
+  const at = await laneOf([...n(90, () => shopRow(today())), ...n(10, () => shopRow(july(), true))]);
+  assert.deepEqual(at.failures, [], "exactly at the allowance passes");
+  const over = await laneOf([...n(89, () => shopRow(today())), ...n(11, () => shopRow(july(), true))]);
+  assert.deepEqual(kinds(over), ["hidden-tail"], "one row over fails");
+  assert.equal(rowFor(over, "shop").hiddenAllowance, 10);
+});
+
+test("hidden rows are judged against the TAIL budget, not the median one", async () => {
+  // 5 days is past the 3d budget but inside the 12d tail budget: a quarantine
+  // that is merely a few days behind is not a backlog nothing re-checks.
+  const a = await laneOf([
+    ...n(50, () => shopRow(today())),
+    ...n(50, () => shopRow({ price: 1, priceConfirmedAt: "2026-08-12" }, true)),
+  ]);
+  assert.equal(rowFor(a, "shop").hiddenStaleRows, 0);
+  assert.deepEqual(a.failures, []);
+});
+
+test("neither alarm masks the other", async () => {
+  // 120 rows -> allowance 12. The published side is STALE TAIL on its own and the
+  // hidden side is over its allowance on its own; both must be reported.
+  const a = await laneOf([
+    ...n(66, () => shopRow(today())),
+    ...n(34, () => shopRow(july())),
+    ...n(20, () => shopRow(july(), true)),
+  ]);
+  assert.deepEqual(kinds(a), ["hidden-tail", "stale-tail"]);
+  assert.equal(rowFor(a, "shop").verdict, "STALE TAIL");
+  assert.equal(rowFor(a, "shop").hiddenVerdict, "HIDDEN TAIL");
+});
+
+test("a lane with nothing published is not NEVER CONFIRMED", async () => {
+  // Every row hidden and recently confirmed: nothing is published stale, and
+  // nothing hidden is past the tail budget.
+  assert.deepEqual((await laneOf(n(5, () => shopRow(today(), true)))).failures, []);
+  // Every row hidden and old: the hidden alarm is what fires, and only it.
+  assert.deepEqual(kinds(await laneOf(n(5, () => shopRow(july(), true)))), ["hidden-tail"]);
+});
+
+test("a hidden row with no confirmation at all is reported, not silently absent", async () => {
+  const a = await laneOf([...n(9, () => shopRow(today())), shopRow({ price: 1 }, true)]);
+  const r = rowFor(a, "shop");
+  assert.equal(r.hidden, 1);
+  assert.equal(r.hiddenNever, 1);
+  assert.equal(r.hiddenMeasured, 0);
+});
+
+test("report() prints the hidden verdict beside the published one", async () => {
+  const a = await laneOf([...n(66, () => shopRow(today())), ...n(34, () => shopRow(july(), true))]);
+  const lines = [];
+  const log = console.log;
+  console.log = (s = "") => lines.push(String(s));
+  try {
+    assert.equal(gate.report(a), 1);
+  } finally {
+    console.log = log;
+  }
+  assert.ok(lines.some((l) => /\bOK \+ HIDDEN TAIL\b/.test(l)), "the table row names both verdicts");
+  assert.ok(lines.some((l) => l.includes("[hidden-tail] shop")));
+  assert.ok(!lines.some((l) => l.includes("publishing prices nothing is refreshing")),
+    "a hidden-only failure must not claim the site is publishing stale prices");
+});
+
+test("the live catalog: every row is either published or hidden — none leave the count", async () => {
+  const a = await gate.audit({});
+  for (const r of a.rows) {
+    assert.equal(r.published + r.hidden, r.rows, `${r.retailer}: published + hidden must equal rows`);
+  }
+  assert.ok(a.rows.some((r) => r.hidden > 0), "no hidden rows at all would mean needsReview is not being read");
+});

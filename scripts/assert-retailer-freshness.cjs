@@ -111,6 +111,27 @@
 //  have no age to report, so counting them honestly needs a threshold of its
 //  own rather than a quantile, and that is a different change.
 //
+//  ── AND A HIDDEN ROW IS COUNTED SEPARATELY, NOT DROPPED ─────────────────────
+//  The quantiles used to measure every row in a lane, including products the
+//  site does not show. A quarantined product (needsReview) is filtered out of
+//  App.jsx, prerender and the sitemap, so its price is published nowhere. It is
+//  also the population verify-catalog deliberately stopped paying to re-check
+//  (785d4ce2444), so every quarantined Amazon row PA API cannot confirm ages
+//  into the tail by construction. Measured on main 2026-09-10:
+//
+//    amazon   655 rows past budget   559 of them hidden   96 published
+//
+//  The verdict was reading the quarantine backlog as the verifier failing, and
+//  Amazon's STALE TAIL mostly described rows no visitor could see.
+//
+//  So the quantiles now measure PUBLISHED rows — this gate's question has always
+//  been "is a retailer publishing prices nothing refreshes". Hidden rows are NOT
+//  dropped, because that is the negative-stamp hole above wearing a different
+//  hat: quarantining a stale row would delete it from the alarm. They get their
+//  own count and their own failure, HIDDEN TAIL, whose allowance is fixed by the
+//  lane's TOTAL size (see HIDDEN_TAIL_SHARE). A row that moves from published to
+//  hidden moves from one alarm to the other and buys no slack.
+//
 //  ── WHY IT FAILS INSTEAD OF WARNING ─────────────────────────────────────────
 //  Twice in August a real signal was emitted and ignored. refresh-newegg-prices
 //  reported "0 updated" on every run from 2026-07-06 and kept deleting; the
@@ -233,6 +254,24 @@ const MIN_BUDGET_DAYS = 3;
 // floors to a 3d median budget but computes a 4d p90 budget, which would make
 // the tail check very nearly the median check again).
 const P90_BUDGET_MULTIPLE = 4;
+
+// How many HIDDEN (needsReview) rows may sit past the tail budget, as a share of
+// ALL of the lane's rows.
+//
+// ── WHY A SHARE OF THE WHOLE LANE ───────────────────────────────────────────
+// Hidden rows are measured apart from the published quantiles (see the header),
+// and the one property their alarm must have is that quarantining cannot green
+// the gate. A share of the HIDDEN population would not have it: every stale row
+// quarantined grows the denominator along with the numerator. A share of the
+// whole lane is fixed by lane size, so a row that leaves the published tail for
+// the hidden one is charged against an allowance that did not move.
+//
+// Not a new number. It is the slack the published tail already gets — the p90
+// check tolerates the slowest tenth of rows — measured against the same tail
+// budget (budget x P90_BUDGET_MULTIPLE). TAIL_QUANTILE is derived from it rather
+// than restated, so the two cannot drift apart.
+const HIDDEN_TAIL_SHARE = 0.1;
+const TAIL_QUANTILE = 1 - HIDDEN_TAIL_SHARE;
 
 // =============================================================================
 //  THE TABLE
@@ -566,6 +605,7 @@ async function readCatalog(partsPath) {
       if (!d || typeof d !== 'object') continue;
       const r = (retailers[name] ??= {
         rows: 0, stamped: 0, unconfirmed: 0, negative: 0, newest: null, ages: [], byStamp: {},
+        hidden: 0, hiddenAges: [], hiddenNever: 0,
       });
       r.rows++;
 
@@ -575,6 +615,16 @@ async function readCatalog(partsPath) {
         if (v) { found.push(v); r.byStamp[field] = (r.byStamp[field] || 0) + 1; }
       }
       if (d[NEGATIVE_STAMP]) r.negative++;
+
+      // A product the site does not show is measured apart, never dropped — see
+      // the header. Its age is the same fact as a published row's: days since
+      // anything last confirmed it, whatever its latest news is.
+      if (p.needsReview) {
+        r.hidden++;
+        if (found.length) r.hiddenAges.push(found.sort()[found.length - 1]);
+        else r.hiddenNever++;
+        continue;
+      }
 
       if (!found.length) continue;
       const best = found.sort()[found.length - 1];
@@ -655,7 +705,7 @@ async function audit(opts = {}) {
       // gate reads medianAgeDays; see the header for why.
       ageDays: r.newest == null ? null : Math.floor((now - Date.parse(r.newest + 'T00:00:00Z')) / DAY_MS),
       medianAgeDays: quantileAgeDays(r.ages, 0.5, now),
-      p90AgeDays: quantileAgeDays(r.ages, 0.9, now),
+      p90AgeDays: quantileAgeDays(r.ages, TAIL_QUANTILE, now),
       budgetDays: null,
       p90BudgetDays: null,
       // The tail as a COUNT, not a quantile. 'p90 23d' says a tenth of rows are
@@ -663,6 +713,17 @@ async function audit(opts = {}) {
       // that number is what someone has to go and fix. Filled in once the budget
       // is known.
       staleRows: null,
+      // Everything above describes PUBLISHED rows. Hidden (needsReview) rows are
+      // counted here instead, with their own verdict — see HIDDEN_TAIL_SHARE.
+      // published + hidden === rows, always: nothing leaves the lane's count.
+      published: r.rows - r.hidden,
+      hidden: r.hidden,
+      hiddenMeasured: r.hiddenAges.length,
+      hiddenNever: r.hiddenNever,
+      hiddenStaleRows: null,
+      hiddenAllowance: null,
+      hiddenVerdict: null,
+      hiddenDetail: null,
       cite: null,
       verdict: null,
       detail: null,
@@ -745,15 +806,34 @@ async function audit(opts = {}) {
     row.p90BudgetDays = row.budgetDays * P90_BUDGET_MULTIPLE;
     row.staleRows = countOlderThan(r.ages, row.budgetDays, now);
 
+    // 3b. HIDDEN rows — their own count and their own failure. Checked BEFORE the
+    //     published verdicts below, because those end in `continue`: a lane can be
+    //     STALE on what it publishes AND carry a hidden backlog, and each must be
+    //     reported without the other masking it.
+    row.hiddenStaleRows = countOlderThan(r.hiddenAges, row.p90BudgetDays, now);
+    row.hiddenAllowance = Math.floor(r.rows * HIDDEN_TAIL_SHARE);
+    if (row.hiddenStaleRows > row.hiddenAllowance) {
+      row.hiddenVerdict = 'HIDDEN TAIL';
+      row.hiddenDetail =
+        `${row.hiddenStaleRows} quarantined (needsReview) rows are past the ${row.p90BudgetDays}d tail budget, ` +
+        `over an allowance of ${row.hiddenAllowance} (${HIDDEN_TAIL_SHARE * 100}% of the lane's ${r.rows} rows)` +
+        (r.hiddenNever ? `; ${r.hiddenNever} more hidden rows carry no confirmation at all and are not in that count` : '') +
+        `. The site does not show these, so no visitor sees a stale price. It is a quarantine nothing ` +
+        `re-checks, which is exactly where a stale row would go to stop counting against the alarm.`;
+      failures.push({ retailer: name, kind: 'hidden-tail', detail: row.hiddenDetail });
+    }
+
     // 4. No confirmation at all, despite having a live scheduled job. Distinct
     //    from staleness: there is no age to report, and the job has never once
     //    demonstrably worked.
-    if (r.stamped === 0) {
+    //    A lane with nothing published has nothing this check can fail on; its
+    //    rows, if any, are judged by 3b.
+    if (row.published > 0 && r.stamped === 0) {
       row.verdict = 'NEVER CONFIRMED';
       // `unconfirmed` distinguishes "nothing has ever confirmed these" from
       // "everything that once confirmed them has since failed". Both mean the
       // job is not confirming anything today; only the second says it used to.
-      row.detail = `${r.rows} rows, zero confirmation stamps` +
+      row.detail = `${row.published} published rows, zero confirmation stamps` +
         (r.unconfirmed ? ` (${r.unconfirmed} were confirmed once and have since failed to re-confirm)` : '') +
         `, though ${row.cite} is scheduled — the job runs but is not confirming anything`;
       failures.push({ retailer: name, kind: 'no-stamps', detail: row.detail });
@@ -822,7 +902,7 @@ async function audit(opts = {}) {
 
   return {
     total, rows, failures,
-    policy: { MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS, P90_BUDGET_MULTIPLE, CONFIRMATION_STAMPS },
+    policy: { MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS, P90_BUDGET_MULTIPLE, HIDDEN_TAIL_SHARE, CONFIRMATION_STAMPS },
   };
 }
 
@@ -843,8 +923,10 @@ function report(a) {
   console.log(`RETAILER CONFIRMATION FRESHNESS — ${a.total} products`);
   console.log(
     `policy: ${a.policy.MISSED_CYCLES_ALLOWED} missed cycles allowed, ${a.policy.MIN_BUDGET_DAYS}d floor, ` +
-    `tail budget = ${a.policy.P90_BUDGET_MULTIPLE}x`
+    `tail budget = ${a.policy.P90_BUDGET_MULTIPLE}x, ` +
+    `hidden rows past it <= ${a.policy.HIDDEN_TAIL_SHARE * 100}% of the lane`
   );
+  console.log('quantiles measure PUBLISHED rows; HIDDEN = needsReview rows, H-PAST = hidden past tail budget / allowance');
   console.log(`stamps: ${a.policy.CONFIRMATION_STAMPS.join(', ')}\n`);
 
   // MEDIAN is the gated column; NEWEST/AGE are shown beside it because the gap
@@ -857,9 +939,9 @@ function report(a) {
     pad('RETAILER', 20) + padL('ROWS', 6) + padL('CONFIRMED', 11) + padL('UNCONF', 8) +
     padL('NEWEST', 13) +
     padL('AGE', 6) + padL('MEDIAN', 8) + padL('P90', 7) + padL('BUDGET', 10) +
-    padL('PAST', 7) + '  VERDICT'
+    padL('PAST', 7) + padL('HIDDEN', 8) + padL('H-PAST', 10) + '  VERDICT'
   );
-  console.log('-'.repeat(123));
+  console.log('-'.repeat(141));
   for (const r of a.rows) {
     console.log(
       pad(r.retailer, 20) + padL(r.rows, 6) + padL(r.stamped, 11) +
@@ -868,7 +950,10 @@ function report(a) {
       padL(r.medianAgeDays == null ? '-' : r.medianAgeDays + 'd', 8) +
       padL(r.p90AgeDays == null ? '-' : r.p90AgeDays + 'd', 7) +
       padL(r.budgetDays == null ? '-' : `${r.budgetDays}d/${r.p90BudgetDays}d`, 10) +
-      padL(r.staleRows == null ? '-' : r.staleRows, 7) + '  ' + r.verdict
+      padL(r.staleRows == null ? '-' : r.staleRows, 7) +
+      padL(r.hidden == null ? '-' : r.hidden, 8) +
+      padL(r.hiddenStaleRows == null ? '-' : `${r.hiddenStaleRows}/${r.hiddenAllowance}`, 10) +
+      '  ' + r.verdict + (r.hiddenVerdict ? ' + ' + r.hiddenVerdict : '')
     );
     if (r.cite) console.log(' '.repeat(20) + 'confirmed by: ' + r.cite);
   }
@@ -884,8 +969,14 @@ function report(a) {
     for (const line of wrap(f.detail, 92)) console.log(`      ${line}`);
     console.log('');
   }
-  console.log('A retailer here is publishing prices nothing is refreshing. Fix the job, or');
-  console.log('drop the retailer — those are the only two outcomes that make this pass.');
+  if (a.failures.some((f) => f.kind !== 'hidden-tail')) {
+    console.log('A retailer here is publishing prices nothing is refreshing. Fix the job, or');
+    console.log('drop the retailer — those are the only two outcomes that make this pass.');
+  }
+  if (a.failures.some((f) => f.kind === 'hidden-tail')) {
+    console.log('HIDDEN TAIL is not a price in front of a visitor. It is a quarantine nothing');
+    console.log('re-checks: lift the rows that recover, drop the ones that will not, or re-check them.');
+  }
   return 1;
 }
 
@@ -905,7 +996,7 @@ module.exports = {
   audit, report, cronIntervalDays, budgetDaysFor, readSchedule, readCatalog,
   citesFor, slowestIntervalDays,
   CADENCE, CONFIRMATION_STAMPS, NEGATIVE_STAMP, MISSED_CYCLES_ALLOWED, MIN_BUDGET_DAYS,
-  P90_BUDGET_MULTIPLE, countOlderThan,
+  P90_BUDGET_MULTIPLE, HIDDEN_TAIL_SHARE, TAIL_QUANTILE, countOlderThan,
   DEFAULT_WF_DIR, DEFAULT_PARTS,
 };
 
