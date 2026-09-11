@@ -128,3 +128,74 @@ test('the mark carries the counts it was computed from, so it can be recomputed'
   assert.ok(w.observedAt, 'and when it was observed');
   assert.ok(w.run, 'and which run observed it');
 });
+
+// =============================================================================
+//  EVERY RUN IS RECORDED BESIDE THE MARK
+//
+//  The mark only moving up is right for the floor and was wrong as the repo's
+//  only record of reach. From 2026-08-29 to 2026-09-08 matched rows fell
+//  2133 -> 2057 and every one of those runs wrote nothing, so the committed
+//  figure said "stable" the whole time. `last` and `history` record the drop;
+//  the mark, and the floor derived from it, still cannot move down.
+// =============================================================================
+
+const { loadNeweggReach, stampedShareFloor } = require('../sftp-ingest.cjs');
+
+test('A WORSE RUN IS ON RECORD: written as last, the mark untouched', () => {
+  const f = tmp();
+  recordReach({ stamped: 2031, lookupable: 3104, ...full, file: f });
+  const r = recordReach({ stamped: 1400, lookupable: 3104, ...full, file: f });
+  const w = read(f);
+  assert.equal(r.recorded, false, '`recorded` still means the mark moved');
+  assert.equal(w.reach, 0.6543, 'the mark did not move');
+  assert.equal(w.stamped, 2031);
+  assert.equal(w.last.stamped, 1400, 'but the run that fell short is on record');
+  assert.deepEqual(w.history.map((h) => h.stamped), [2031, 1400]);
+  assert.equal(r.rowsBelowMark, Math.round((0.6543 - 1400 / 3104) * 3104), 'and the drop is stated in rows');
+  assert.equal(r.previousRun.stamped, 2031);
+});
+
+test('the census floor still reads only the mark, however far a run drops', () => {
+  // The property the monotone mark existed for. Recording a drop must not be a
+  // way to relax the floor: a catalog with a quarter of its stamps would then
+  // publish a census built on evidence that had been eaten.
+  const f = tmp();
+  recordReach({ stamped: 2031, lookupable: 3104, ...full, file: f });
+  recordReach({ stamped: 700, lookupable: 3104, ...full, file: f });
+  const floor = stampedShareFloor(loadNeweggReach(f));
+  assert.equal(floor.value, 0.6543 / 2);
+  assert.equal(floor.reach, 0.6543);
+});
+
+test('a better run moves the mark and is also the last run', () => {
+  const f = tmp();
+  recordReach({ stamped: 2031, lookupable: 3104, ...full, file: f });
+  recordReach({ stamped: 2166, lookupable: 3107, ...full, file: f });
+  const w = read(f);
+  assert.equal(w.reach, w.last.reach);
+  assert.equal(w.history.length, 2);
+});
+
+test('history is bounded, oldest dropped first', () => {
+  const f = tmp();
+  const t0 = Date.parse('2026-09-01T04:00:00Z');
+  for (let i = 0; i < 65; i++) {
+    recordReach({ stamped: 2000 + i, lookupable: 3104, ...full, file: f, now: new Date(t0 + i * 43200000), run: `r${i}` });
+  }
+  const w = read(f);
+  assert.equal(w.history.length, 60);
+  assert.equal(w.history[0].run, 'r5');
+  assert.equal(w.history.at(-1).run, 'r64');
+  assert.equal(w.last.run, 'r64');
+});
+
+test('an excluded run records nothing — not even last', () => {
+  // A --limit draw is not the catalog figure in either half of the file.
+  const f = tmp();
+  recordReach({ stamped: 2031, lookupable: 3104, ...full, file: f });
+  const before = fs.readFileSync(f, 'utf8');
+  for (const extra of [{ limited: true }, { dryRun: true }, { fixture: true }, { counterSound: false }]) {
+    recordReach({ stamped: 40, lookupable: 40, ...full, ...extra, file: f });
+  }
+  assert.equal(fs.readFileSync(f, 'utf8'), before);
+});
