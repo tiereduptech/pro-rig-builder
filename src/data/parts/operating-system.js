@@ -23,7 +23,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-10"
+        "priceUnconfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "44583520120264484301200",
@@ -103,11 +103,14 @@ export default [
       "amazon": {
         "price": 120,
         "url": "https://www.amazon.com/dp/B09MYJ1R6L?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -132,11 +135,14 @@ export default [
       "amazon": {
         "price": 147,
         "url": "https://www.amazon.com/dp/B09MYBD79G?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "reviewFlags": [
       "relink:mismatch"
     ],

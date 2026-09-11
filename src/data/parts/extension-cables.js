@@ -18,7 +18,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0799F4XWF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "CableMod USA",
         "priceResolvedVia": "paapi"
@@ -42,7 +42,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08KD9T7SG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -66,7 +66,7 @@ export default [
         "price": 70,
         "url": "https://www.amazon.com/dp/B0DJVRVGS1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -94,7 +94,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     },
@@ -118,7 +118,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0D9KNVWTW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
@@ -151,7 +151,7 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0G45235WP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -211,7 +211,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       }
     },
     "cableType": "24-pin ATX",
@@ -234,7 +234,7 @@ export default [
         "price": 21.98,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -258,7 +258,7 @@ export default [
         "price": 29.98,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -281,7 +281,7 @@ export default [
         "price": 29.98,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -303,7 +303,7 @@ export default [
         "url": "https://www.amazon.com/ASIAHORSE-Extension-Sleeved-Braided-11-8Inch/dp/B08HLYM54P/ref=sr_1_21?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-21&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20",
         "price": 22.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi",
@@ -327,7 +327,7 @@ export default [
         "url": "https://www.amazon.com/Asiahorse-Extension-1x24-PIN-2x8-PORT-3x8-PORT/dp/B08KCSZHDX/ref=sr_1_25?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-25&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20",
         "price": 31.65,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi",
@@ -352,7 +352,7 @@ export default [
         "price": 31.69,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi"
@@ -376,7 +376,7 @@ export default [
         "price": 9.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Cable Matters",
         "priceResolvedVia": "paapi"
@@ -404,7 +404,12 @@ export default [
         "url": "https://www.amazon.com/dp/B09Z9M4N7J?tag=tiereduptech-20",
         "price": 35.99,
         "inStock": true,
-        "asin": "B09Z9M4N7J"
+        "asin": "B09Z9M4N7J",
+        "priceConfirmedAt": "2026-09-11",
+        "priceSource": "3p",
+        "priceSeller": "Asiahorse",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "cableType": "Full Kit",
@@ -424,7 +429,7 @@ export default [
         "url": "https://www.amazon.com/Asiahorse-Extension-1x24-PIN-2x8-PORT-Black-Mix/dp/B08KDHGLT6/ref=sr_1_24?crid=XO9QGYMQCZGQ&dib=eyJ2IjoiMSJ9.j8Bym_2wym3qVxBgXMaRxC-yasaw-3eBUTr0cH0stujgomgoVE-T5-14O2Q4F67T3qQ8KX1WDD1WD5X179OFcg6eKhc214013k7QFKOQGYDuAc2BdETXx10LajN6YxBm9hGRUcgGm5jkMBf-xIuo_hdTXqPjglspU-fDegbH7y8cDlpd4zehGc7xrb0D_azwF7sIGf4DN8FlHYRomzcvOYR1-uvW0-Q7gscu6kPK4R0.t6_3ziX2tQbNg4Dr37SJhfgSLnIpHgTXYgURLcv0eDw&dib_tag=se&keywords=CableMod+extension&qid=1777131268&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=CableMod%2Bextension%2Caps%2C266&sr=8-24&xpid=8S58R4a-w5vOn&tag=tiereduptech-20",
         "price": 34.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Asiahorse",
         "priceResolvedVia": "paapi",
@@ -447,11 +452,14 @@ export default [
       "amazon": {
         "url": "https://www.amazon.com/Lian-Li-Edge-Serie-EG1200G-WH/dp/B0DN1492LG/ref=sr_1_36?crid=CZA0MJCVW2ZX&dib=eyJ2IjoiMSJ9.D7pG7AUwrLBLkphnF4ZE4nXWbOBIpETKybR5QRPia4x9vcRo0xmhAu8_nyC5EYuAoGMjW8Wz-Hkpjtlle2yCv9cvimxiqJopCD_I8nuyO4QFmmMrMtRK3B4XdRSKaL9rzTQ5VUaQGGKyAP8K6RasGvk3rnoeJZyo2Nnep56kw01vCcEkM9xiViJZd4ZYw88hHtEZGYEp3Iw-D1vnBls-Q_XI14fBZYx1L8DNfbgEsIM.QjSHiPkk_mBXXqLJbmCWybxexLCFcuIvkFPCwUkACQA&dib_tag=se&keywords=Lian+Li+PCIe+riser&qid=1777131266&sprefix=Lian%2BLi%2BPCIe%2Briser%2Caps%2C119&sr=8-36&xpid=K46Nfk_2PZL2I&tag=tiereduptech-20",
         "price": 172.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -468,7 +476,7 @@ export default [
         "url": "https://www.amazon.com/JOYJOM-12VHPWR-Degree-Adapter-8Pin/dp/B0C4TP4CVW/ref=sr_1_4?crid=CLGNG5F6BXH4&dib=eyJ2IjoiMSJ9.WV1idXYvKqNSzSLa3dXG6kfjJI1BO4JG_LVR-peNGhXmidQ1zg7_Z7RY8qlkUzBSk5OpZWo7ThDXBfGO1ynCu90MtFjjCGRWOeH_MWTweAi6Jb5iyCAi_ffupwlRYiKnA7JaguM39hZRhH7P0YlJVFLBuNDp6LdexXluTpK_1vQdiKJKMHpWpPv-ex3MNAJPb5OAXDfRlZbO6x779Vbt80QFFbh4qOl7xxvqmFUgZLY.bE5PMy9Z17Gdwvrk6ojAqCPGpmzORqZ-zxmwLeU0JlQ&dib_tag=se&keywords=12VHPWR+adapter+cable&qid=1777131261&sprefix=12VHPWR%2Badapter%2Bcable%2Caps%2C190&sr=8-4&tag=tiereduptech-20",
         "price": 15.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "JOYJOM",
         "priceResolvedVia": "paapi",
@@ -511,7 +519,7 @@ export default [
         "url": "https://www.amazon.com/Cable-Matters-Graphics-Compatible-Corsair/dp/B0DBY23265/ref=sr_1_10?crid=T2ZT0PZSZ4TM&dib=eyJ2IjoiMSJ9.W6XZF_eSpkEo0LmXeJsORPwtBvVCI3VTUTndD4GbI6CSUMKagBq69cYPmzYanvfibFlj4xE32f3Q5ykctGx418XC8AATpRXGMRBipUyyAiBwyMdzAm3MEnF85ZALuxnCY18rURxF4psLSy60ux_eznGzKt3-3qmVxy39tGjlJ-BOmXaaPXuT7Ytkt8i7cEWdVZac5AEOXcN441S94xqYx_S0mDjzTGbS_ifbDlwmbhM.8sTXjUjOPjWXbWiXkJgCG3Gm1Rf35vRlHOxYrNV4fR0&dib_tag=se&keywords=GPU+power+extension+cable&qid=1777131262&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=GPU%2Bpower%2Bextension%2Bcable%2Caps%2C281&sr=8-10&tag=tiereduptech-20",
         "price": 9.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Cable Matters",
         "priceResolvedVia": "paapi",
@@ -533,13 +541,16 @@ export default [
       "amazon": {
         "url": "https://www.amazon.com/EZDIY-FAB-Extension-Sleeved-Braided-4PIN-30CM/dp/B082WVQP5T/ref=sr_1_23?crid=GSM9GP4QVL6I&dib=eyJ2IjoiMSJ9.aQmBy6_wwHBiAEI4TAnp082bV_ltyQJw8fjj0KmBAJOiYs3P20xmUy-fVID5SaEBl65MtjBzP8oWUu0OX7UkujWTuI-kvMBf8LX_tPS9fTxAhH66iPV8l3mBI8N9_fOUYJkzVMlWbj9oTq2I0z9j0kjY9_IK9Yo_HGSAIrNvwlNqUqVUhazN4PF76olSTkEwH2g2JpRX-XkXr_rZYUIHi-Nv8Un4Ppa8r15zI33KDDY.OoHmaHm6yMrbFyItUyxHmllC-Ss_Hh047vg1P19iJdU&dib_tag=se&keywords=PCIe+extension+cable&qid=1777131261&sprefix=PCIe%2Bextension%2Bcable%2Caps%2C141&sr=8-23&xpid=Iru0BnAWEJWvn&tag=tiereduptech-20",
         "price": 19.99,
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "cableType": "Full Kit",
     "cableLength": "30cm",
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -557,9 +568,14 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/dp/B083SCRYT2?tag=tiereduptech-20",
-        "price": 20.39,
+        "price": 23.99,
         "inStock": true,
-        "asin": "B083SCRYT2"
+        "asin": "B083SCRYT2",
+        "priceSource": "3p",
+        "priceSeller": "Formulamod",
+        "priceConfirmedAt": "2026-09-11",
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "cableType": "Full Kit",
@@ -582,7 +598,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Formulamod",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     },
@@ -602,7 +618,7 @@ export default [
         "url": "https://www.amazon.com/Cable-Matters-Motherboard-Power-Extension/dp/B01DV1Z66C/ref=sr_1_1?crid=NPQVP2EL3P65&dib=eyJ2IjoiMSJ9.w76yfHXa3XpGXM18mBYMUoL-XUe_NpH0FHHBh_4cq0nmZbIHkymPccWsvi1KT92bRfBn_p-fP8Dw3hQIddC1kF4RGj_rotTqPJyb4gDKzLJlwyRT0kBfBnKrf1rp9emgCrljXpwO7lCJRg25pa2Uf5_HSz4zHPf6WfyJsykCG6eUZYnIHjTZSqgeEH7nhoOM93inTNKR7wA9MpU064H45G4HWmm7PbVxPabQYhf9Rzs.qsZqnBsTqX2WtQ-jZZdfdVSP64tt4bToRfBF7Jt-t7E&dib_tag=se&keywords=24-pin+ATX+extension+cable&qid=1777131320&sprefix=24pin%2BATX%2Bextension%2Bcable%2Caps%2C140&sr=8-1&tag=tiereduptech-20",
         "price": 12.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Cable Matters",
         "priceResolvedVia": "paapi",
@@ -627,7 +643,7 @@ export default [
         "price": 6.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Cable Matters",
         "priceResolvedVia": "paapi"
@@ -650,7 +666,7 @@ export default [
         "url": "https://www.amazon.com/Fasgear-PCI-12VHPWR-Extension-Cable/dp/B0BWND5FFG/ref=sr_1_3?crid=CLGNG5F6BXH4&dib=eyJ2IjoiMSJ9.WV1idXYvKqNSzSLa3dXG6kfjJI1BO4JG_LVR-peNGhXmidQ1zg7_Z7RY8qlkUzBSk5OpZWo7ThDXBfGO1ynCu90MtFjjCGRWOeH_MWTweAi6Jb5iyCAi_ffupwlRYiKnA7JaguM39hZRhH7P0YlJVFLBuNDp6LdexXluTpK_1vQdiKJKMHpWpPv-ex3MNAJPb5OAXDfRlZbO6x779Vbt80QFFbh4qOl7xxvqmFUgZLY.bE5PMy9Z17Gdwvrk6ojAqCPGpmzORqZ-zxmwLeU0JlQ&dib_tag=se&keywords=12VHPWR+adapter+cable&qid=1777131261&sprefix=12VHPWR%2Badapter%2Bcable%2Caps%2C190&sr=8-3&tag=tiereduptech-20",
         "price": 21.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Fasgear",
         "priceResolvedVia": "paapi",
@@ -674,10 +690,16 @@ export default [
         "url": "https://www.amazon.com/dp/B09CTVLZLN?tag=tiereduptech-20",
         "price": 14.95,
         "inStock": true,
-        "asin": "B09CTVLZLN"
+        "asin": "B09CTVLZLN",
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "cableType": "PSU Kit",
-    "dealChangedAt": "2026-09-10"
+    "dealChangedAt": "2026-09-10",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-11",
+    "quarantineReason": "asin_repair_no_match"
   }
 ];

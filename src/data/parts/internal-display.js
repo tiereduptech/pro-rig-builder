@@ -25,7 +25,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "LONCEVON",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     },
@@ -57,11 +57,13 @@ export default [
         "priceSeller": "FEELWORLD Official Store-US",
         "priceConfirmedAt": "2026-08-12",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -84,11 +86,14 @@ export default [
       "amazon": {
         "price": 37.99,
         "url": "https://www.amazon.com/dp/B013JECYF2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -118,7 +123,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     }
@@ -147,7 +152,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     }
@@ -176,7 +181,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceResolvedVia": "paapi"
       }
     }
@@ -202,7 +207,7 @@ export default [
         "price": 45.99,
         "url": "https://www.amazon.com/dp/B07FDYXPT7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Elecrow",
         "priceResolvedVia": "paapi",
@@ -232,7 +237,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BJ9MQVBG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "WOWNOVA",
         "priceResolvedVia": "paapi"
@@ -264,11 +269,13 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -321,7 +328,7 @@ export default [
         "price": 30,
         "url": "https://www.amazon.com/dp/B0989WQCW8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "paapi",
@@ -383,7 +390,7 @@ export default [
         "price": 100,
         "url": "https://www.amazon.com/dp/B0D3CW311P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "HAGIBIS",
         "priceResolvedVia": "paapi",

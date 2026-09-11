@@ -16,7 +16,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BCMLLSHL?tag=tiereduptech-20",
         "price": 199.95,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -49,12 +49,14 @@ export default [
         "priceSource": "3p",
         "priceSeller": "BeachAudio",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "ff": "Tower",
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -75,7 +77,7 @@ export default [
         "price": 239.95,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -104,12 +106,15 @@ export default [
       "amazon": {
         "price": 64,
         "url": "https://www.amazon.com/dp/B00429N19W?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "ff": "Compact",
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -134,11 +139,13 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-10",
+    "quarantinedAt": "2026-09-11",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -177,7 +184,7 @@ export default [
         "url": "https://www.amazon.com/dp/B073Q48YGF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-08-26",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi"
@@ -233,7 +240,7 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B06VY6FXMM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -260,7 +267,7 @@ export default [
         "url": "https://www.amazon.com/dp/B000FBK3QK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "1 Stop Computer Shop, Inc.",
         "priceResolvedVia": "paapi"
@@ -291,11 +298,14 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-08-24"
+    "quarantinedAt": "2026-09-11",
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99709,
@@ -315,7 +325,7 @@ export default [
         "price": 120,
         "url": "https://www.amazon.com/dp/B00DBAA696?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
