@@ -772,10 +772,10 @@ function detectCondition(name) {
 const CONDITION_LANES = ['newegg_openbox', 'newegg_refurb', 'newegg_used'];
 const laneKey = (part, fieldKey) => `${part.id}::${fieldKey}`;
 
-// Assigned once, at load, from repricerNeverReachedAtLoad(). Null until then, so
+// Assigned once, at load, from repricerNotReachingAtLoad(). Null until then, so
 // a caller that runs before the snapshot exists gets the category-only rule
 // rather than a wrong answer. See lanesSolelyOwned().
-let repricerNeverReached = null;
+let repricerNotReaching = null;
 
 /**
  * The lanes this job is the SOLE writer for — FOR THIS PART.
@@ -837,16 +837,19 @@ let repricerNeverReached = null;
  * ── WHY THIS DOES NOT REOPEN THE HOLE IT WAS CLOSING ────────────────────────
  * The fear is precise and it still holds: a job certifying a lane that has its
  * own re-pricer lets that re-pricer die unnoticed. It does not apply here,
- * because a row that has EVER carried refreshedAt keeps it — this file only
- * ever carries that stamp, it never mints one (asserted in
- * test/sftp-stamp-integrity.test.js). So the ~2,100 rows the re-pricer actually
- * confirms can never enter this set, and a dead refresh-newegg-prices drives
- * every one of them stale and still fails the gate on the median. What this
- * hands over is only the rows where the choice was never between two certifiers
- * — it was between one and none.
+ * because this file only ever CARRIES the re-pricer's stamps — refreshedAt and
+ * refreshMissedAt — and never mints either (both asserted in
+ * test/sftp-condition-lanes.test.js, "CARRIED, NEVER MINTED"). A row the
+ * re-pricer confirms enters this set only when the re-pricer itself says it has
+ * lost the row, and only a run of it that demonstrably worked can say so
+ * (refresh-newegg-prices.cjs missesTrusted). A dead or broken
+ * refresh-newegg-prices writes no misses, so the rows it reaches keep their
+ * last refreshedAt, go stale, and still fail the gate on the median. What this
+ * hands over is only the rows where the choice was never between two
+ * certifiers — it was between one and none.
  *
  * ── DECIDED ONCE, AT LOAD, AGAINST THE PRISTINE CATALOG ─────────────────────
- * `neverReached` is a snapshot taken before the merchant loop mutates anything,
+ * `notReaching` is a snapshot taken before the merchant loop mutates anything,
  * NOT a live read of part.deals. It has to be. applyMatchToPart() consults this
  * before the wholesale assignment and the absence sweep consults it after, and
  * a genuine listing swap legitimately drops refreshedAt in between — so a live
@@ -859,19 +862,12 @@ let repricerNeverReached = null;
  * STRICTLY LESS. That is the safe direction on purpose: a missing snapshot can
  * only ever withhold a stamp, never mint one.
  */
-function lanesSolelyOwned(part, neverReached = repricerNeverReached) {
+function lanesSolelyOwned(part, notReaching = repricerNotReaching) {
   const lanes = [...CONDITION_LANES];
-  if (!NEG.CAT_FILTER[part.c] || (neverReached && neverReached.has(part.id))) lanes.push('newegg');
+  if (!NEG.CAT_FILTER[part.c] || (notReaching && notReaching.has(part.id))) lanes.push('newegg');
   return lanes;
 }
 
-/**
- * Part ids whose deals.newegg the re-pricer has never once confirmed.
- *
- * Rows with no deals.newegg at all are included: the feed may attach one this
- * run, and a freshly attached listing has no re-pricer history by construction.
- * Rows without the lane are simply never asked about it downstream.
- */
 /**
  * The lanes the absence sweep may stamp priceUnconfirmedAt on.
  *
@@ -918,12 +914,52 @@ function lanesSweptForAbsence(part) {
   return lanes;
 }
 
-function repricerNeverReachedAtLoad(parts) {
+/**
+ * Part ids whose deals.newegg the re-pricer is NOT CONFIRMING — this job's to
+ * certify. Two populations, one question: what is the re-pricer's latest word
+ * on this row?
+ *
+ *   never reached   no refreshedAt at all. Includes rows with no deals.newegg
+ *                   yet: the feed may attach one this run, and a freshly
+ *                   attached listing has no re-pricer history by construction.
+ *   lost            refreshMissedAt NEWER than refreshedAt. The re-pricer
+ *                   confirmed the row once, and then consecutive trusted runs
+ *                   of it — MISSED_CYCLES_ALLOWED of them, the freshness gate's
+ *                   own threshold — looked the row up and could not
+ *                   (variant_rejected, no_results, a blocked downgrade, ...).
+ *                   One miss is jitter and writes no refreshMissedAt.
+ *
+ * ── WHY "LOST" HAD TO EXIST ──────────────────────────────────────────────────
+ * "Never reached" assumed the reached set was fixed, and it is not. The
+ * re-pricer's matched count fell 2133 -> 2057 between 2026-08-29 and
+ * 2026-09-08, and on 2026-09-11 139 rows it had once confirmed (97 of them on
+ * the site) had not been confirmed in over 3 days. Each still carried the
+ * refreshedAt from its last success, so this rule kept them the re-pricer's
+ * while the re-pricer was no longer confirming them. Nothing was, and nothing
+ * could: they aged into the freshness gate's tail at ~12 a day, none returning.
+ *
+ * ── WHY IT IS A STAMP, NOT AN AGE ────────────────────────────────────────────
+ * "refreshedAt older than N days" would hand this job exactly the rows a DEAD
+ * re-pricer stops touching — see "a STALE refreshedAt is still refreshedAt" in
+ * test/sftp-condition-lanes.test.js. A miss is different: only a re-pricer RUN
+ * writes one, and only a run that was full, unbroken and above the census floor
+ * (refresh-newegg-prices.cjs missesTrusted). A dead re-pricer writes no misses,
+ * and neither does a broken one — every lookup failing, or its reach collapsed.
+ * Either way the rows it used to confirm keep their last refreshedAt, stay the
+ * re-pricer's, and go stale in front of the gate: the safety property intact.
+ * This job carries refreshMissedAt across a same-listing write and never mints
+ * one, exactly as it treats refreshedAt.
+ */
+function repricerNotReachingAtLoad(parts) {
   const s = new Set();
   for (const p of parts) {
     if (!p || p.id == null) continue;
     const d = p.deals && p.deals.newegg;
-    if (!d || typeof d !== 'object' || !d.refreshedAt) s.add(p.id);
+    if (!d || typeof d !== 'object' || !d.refreshedAt) { s.add(p.id); continue; }
+    // Unparseable on either side compares false: a malformed stamp can only
+    // withhold certification, never grant it.
+    const missed = Date.parse(d.refreshMissedAt);
+    if (Number.isFinite(missed) && missed > Date.parse(d.refreshedAt)) s.add(p.id);
   }
   return s;
 }
@@ -1369,9 +1405,9 @@ function chooseListing(existing, incoming, sellerRank) {
   return { shouldReplace, sameListing: false };
 }
 
-// `neverReached` defaults to the run's load-time snapshot; it is a parameter so
+// `notReaching` defaults to the run's load-time snapshot; it is a parameter so
 // the ownership rule can be exercised directly rather than through module state.
-function applyMatchToPart(part, rec, match, neverReached = repricerNeverReached) {
+function applyMatchToPart(part, rec, match, notReaching = repricerNotReaching) {
   const pricing = priceFromRecord(rec);
   if (!pricing) return false;
 
@@ -1469,8 +1505,18 @@ function applyMatchToPart(part, rec, match, neverReached = repricerNeverReached)
   // Gated on sameListing for the same reason matchedAt is. On a genuine
   // replacement these attest to a listing the row no longer holds, and carrying
   // them would vouch for a price nothing has confirmed.
+  //
+  // refreshMissedAt/refreshMissReason/refreshMissStreak ride with refreshedAt
+  // for the same reason: together they are the re-pricer's latest word on THIS
+  // listing. Erasing the miss would hand a lost row back to "reached" until the
+  // re-pricer said it again, and erasing the streak — this job rewrites every
+  // row the feed carries, nightly, between the re-pricer's two runs — would
+  // mean a feed-carried row could never string two misses together at all.
+  // Carrying any of them onto a different listing would vouch for a loss nobody
+  // observed. See repricerNotReachingAtLoad().
   if (sameListing) {
-    for (const f of ['refreshedAt', 'migratedAt', 'migratedFrom', 'rematchedAt', 'rematchedFrom']) {
+    for (const f of ['refreshedAt', 'refreshMissedAt', 'refreshMissReason', 'refreshMissStreak',
+                     'migratedAt', 'migratedFrom', 'rematchedAt', 'rematchedFrom']) {
       if (existing[f] != null) newListing[f] = existing[f];
     }
   }
@@ -1513,7 +1559,7 @@ function applyMatchToPart(part, rec, match, neverReached = repricerNeverReached)
     const carried = moved ? TODAY : existing && existing.priceLastMovedAt;
     if (carried) newListing.priceLastMovedAt = carried;
 
-    if (lanesSolelyOwned(part, neverReached).includes(fieldKey)) {
+    if (lanesSolelyOwned(part, notReaching).includes(fieldKey)) {
       // ── The stamp that was never written ────────────────────────────────────
       // This job has repriced these lanes nightly since it was built and left no
       // trace that it had, because matchedAt is the only *At it wrote — and
@@ -1590,7 +1636,7 @@ async function loadDeps() {
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
-                   lanesSweptForAbsence, repricerNeverReachedAtLoad,
+                   lanesSweptForAbsence, repricerNotReachingAtLoad,
                    coverageCensus, laneKey, countRepricerStamps, stampIntegrity,
                    loadNeweggReach, stampedShareFloor, REACH_FILE,
                    // Exported so the stamp-carry rules above can be asserted directly.
@@ -1720,9 +1766,16 @@ if (require.main === module) (async () => {
   // listing swap drops refreshedAt mid-run, so the two call sites would
   // otherwise disagree about the same row and the absence sweep would stamp
   // priceUnconfirmedAt over a price this run had just confirmed.
-  repricerNeverReached = repricerNeverReachedAtLoad(parts);
-  log(`Rows the re-pricer has never confirmed: ${repricerNeverReached.size} ` +
-      `(this job may certify their deals.newegg; every other newegg row stays the re-pricer's)`);
+  repricerNotReaching = repricerNotReachingAtLoad(parts);
+  {
+    // Split in the log because the two halves mean different things: "never
+    // reached" is the fixed tail, "lost" is the re-pricer's reach shrinking.
+    const lost = parts.filter((p) => repricerNotReaching.has(p.id) && p.deals && p.deals.newegg &&
+                                     p.deals.newegg.refreshedAt).length;
+    log(`Rows the re-pricer is not confirming: ${repricerNotReaching.size} ` +
+        `(${repricerNotReaching.size - lost} never reached, ${lost} lost — its latest word is a miss). ` +
+        `This job may certify their deals.newegg; every other newegg row stays the re-pricer's.`);
+  }
 
   const idx = buildCatalogIndex(parts);
   log(`Indexed: ${idx.byUPC.size} UPCs, ${idx.byMPN.size} MPNs, ${idx.bySKU.size} existing Newegg SKUs`);

@@ -515,7 +515,110 @@ function recordReach({ stamped, lookupable, dryRun, limited, fixture, counterSou
   return { recorded: true, reach, previous: prevReach === -Infinity ? null : prevReach };
 }
 
-module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher, recordReach, REACH_FILE };
+// ── THE RE-PRICER'S "I COULD NOT" ───────────────────────────────────────────
+//
+// sftp-ingest.cjs certifies deals.newegg only for rows this job is not
+// confirming, and until this existed "not confirming" could only be read as
+// "has never carried refreshedAt". That assumed the rows this job reaches are a
+// fixed set, and they are not: matched rows fell 2133 -> 2057 between
+// 2026-08-29 and 2026-09-08, and on 2026-09-11 139 rows it had once confirmed
+// had gone over 3 days without it — each barred from the feed for good by the
+// refreshedAt from its last success, and ageing into the freshness gate's tail.
+//
+// A MISS is this job saying so: refreshMissedAt, on a row it looked up and
+// could not confirm. sftp-ingest reads a miss newer than refreshedAt as "lost"
+// and may certify the row from the feed. The next time this job confirms the
+// row, the success path clears the miss and the row is back under this job's
+// liveness.
+//
+// ── ONLY A RUN THAT WORKED MAY SAY IT ───────────────────────────────────────
+// The never-reached rule existed so a dead re-pricer could not hand its rows to
+// the feed and read as healthy. A miss keeps that property only if a run that
+// is not working cannot write one. A dead run writes nothing by construction. A
+// BROKEN run — the July shape, every lookup failing — is the dangerous one,
+// because it would write a miss on every row. So misses are collected in the
+// loop and stamped after it, and only when missesTrusted() says the run was
+// full, tripped no breaker, and stamped at least the census floor of reachable
+// rows: the same half-of-the-mark floor sftp-ingest uses to recognise "a
+// completed re-pricer run is represented". Below it, a run is not evidence of
+// anything — least of all of which rows it cannot reach.
+//
+// ── ONLY "THE FEED ANSWERED AND WE COULD NOT CONFIRM" IS A MISS ─────────────
+// An allowlist, so a reason added later is not a miss until someone names it.
+// http_error (throttling, or Rakuten down) and no_cat_mapping (never asked) say
+// nothing about whether this job can reach the row.
+const MISS_REASONS = new Set([
+  'no_results', 'no_match', 'variant_rejected', 'guard_rejected', 'weak_match_blocked', 'downgrade_blocked',
+]);
+
+// The census floor, derived exactly as sftp-ingest.cjs stampedShareFloor()
+// derives it, from the same committed mark. Restated rather than imported
+// because sftp-ingest loads an SFTP client at require time;
+// test/newegg-miss-stamp.test.js asserts the two agree on the same file.
+function missFloor(file = REACH_FILE) {
+  let mark = null;
+  try { mark = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* no mark yet */ }
+  if (!mark || !Number.isFinite(mark.reach) || mark.reach <= 0 || mark.reach > 1) {
+    return { value: 1 / 3, derived: false, source: 'no usable reach mark — historical 1/3' };
+  }
+  return { value: mark.reach / 2, derived: true, source: `half the ${(100 * mark.reach).toFixed(1)}% reach mark` };
+}
+
+/** May this run's misses be written? Pure. See the block above. */
+function missesTrusted({ breakers, dryRun, limited, fixture, stamped, lookupable, floor }) {
+  if (dryRun) return { trusted: false, why: 'dry run — nothing is written' };
+  if (limited) return { trusted: false, why: '--limit run — a subsample cannot say what this job reaches' };
+  if (fixture) return { trusted: false, why: '--parts= fixture — not the catalog' };
+  if (breakers && breakers.length) return { trusted: false, why: `circuit breaker tripped: ${breakers[0]}` };
+  if (!lookupable) return { trusted: false, why: 'no lookupable rows' };
+  const share = stamped / lookupable;
+  if (share < floor.value) {
+    return {
+      trusted: false, share,
+      why: `this run stamped ${(100 * share).toFixed(1)}% of reachable rows, under the ` +
+           `${(100 * floor.value).toFixed(1)}% census floor (${floor.source}) — not a run that demonstrably worked`,
+    };
+  }
+  return { trusted: true, share };
+}
+
+// ── ONE MISS IS JITTER ──────────────────────────────────────────────────────
+// A row this job fails on once and finds again next run is not lost, and
+// handing it to the feed for the hours in between would have one job certifying
+// another's lane for nothing. So a miss is COUNTED on every trusted run
+// (refreshMissStreak), and the row is called lost — refreshMissedAt written —
+// only once the streak reaches MISSED_CYCLES_ALLOWED: the freshness gate's own
+// statement that "two consecutive misses is not jitter". Imported, not
+// restated. Measured on the 2026-09-10 18:52 and 2026-09-11 08:28 runs: 246
+// rows carrying refreshedAt missed the later run, 27 of them for the first
+// time. A success clears all three fields.
+const { MISSED_CYCLES_ALLOWED } = require('./scripts/assert-retailer-freshness.cjs');
+
+/**
+ * Count the collected misses, and call a row lost once its streak reaches
+ * MISSED_CYCLES_ALLOWED. Writes refreshMissStreak, refreshMissedAt and
+ * refreshMissReason and nothing else — not the price, not staleSince or
+ * absentStreak, which removals are gated on.
+ */
+function stampMisses(missed, { at }) {
+  let counted = 0;
+  let lost = 0;
+  for (const { p, reason } of missed) {
+    const d = p && p.deals && p.deals.newegg;
+    if (!d || typeof d !== 'object' || !MISS_REASONS.has(reason)) continue;
+    d.refreshMissStreak = (d.refreshMissStreak || 0) + 1;
+    counted++;
+    if (d.refreshMissStreak >= MISSED_CYCLES_ALLOWED) {
+      d.refreshMissedAt = at;
+      d.refreshMissReason = reason;
+      lost++;
+    }
+  }
+  return { counted, lost };
+}
+
+module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher, recordReach, REACH_FILE,
+                   MISS_REASONS, missFloor, missesTrusted, stampMisses };
 
 if (require.main !== module) return;
 
@@ -533,9 +636,16 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0, identityRescued: 0 };
+  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0, identityRescued: 0, missStamped: 0, missCleared: 0 };
   const changes = [];
   const failures = [];
+  // Rows this run looked up and could not confirm. COLLECTED, not stamped: a
+  // miss is written only after the loop, once the run has shown it worked (see
+  // missesTrusted). Inside the loop a failed lookup still touches nothing.
+  const missed = [];
+  // One timestamp for every miss this run writes, so "newer than refreshedAt"
+  // is a statement about this run, not about when the loop reached the row.
+  const RUN_AT = new Date().toISOString();
   const removalCandidates = [];
   // Every gated candidate we scored, selected or not. This is what the accept
   // floor is calibrated against — without it the artifact only carried scores
@@ -564,6 +674,9 @@ if (require.main !== module) return;
       // outcome the feed answered.
       if (r.reason === 'guard_rejected') stats.guardRejected++;
       failures.push({ id: p.id, name: p.n, cat: p.c, sku, reason: r.reason, rawCount: r.rawCount, httpStatuses: r.httpStatuses });
+      // Collected for the post-loop miss stamp, which only a run that worked may
+      // write and only for reasons in MISS_REASONS. Nothing is touched here.
+      missed.push({ p, reason: r.reason });
       console.log(`  LOOKUP FAILED (no change): ${p.n} — ${r.reason}`);
       continue;
     }
@@ -641,6 +754,7 @@ if (require.main !== module) return;
         rawCount: r.rawCount, bestScore: Number(chosen.bestWeakScore.toFixed(3)),
         floor: chosen.floor, candidateName: chosen.bestWeakName,
       });
+      missed.push({ p, reason: 'weak_match_blocked' });
       console.log(`  WEAK MATCH BLOCKED (no change): ${p.n} — best ${chosen.bestWeakScore.toFixed(2)} < ${chosen.floor}`);
       continue;
     }
@@ -655,6 +769,7 @@ if (require.main !== module) return;
         id: p.id, name: p.n, cat: p.c, sku, reason: 'downgrade_blocked',
         rawCount: r.rawCount, fromClass: chosen.fromClass, to: chosen.to, toClass: chosen.toClass,
       });
+      missed.push({ p, reason: 'downgrade_blocked' });
       console.log(`  DOWNGRADE BLOCKED (no change): ${p.n} — ${chosen.fromClass} ${chosen.from} -> ${chosen.toClass} ${chosen.to}`);
       continue;
     }
@@ -663,6 +778,17 @@ if (require.main !== module) return;
     const item = pick.item;
     const eff = effOf(item);
     const d = p.deals.newegg;
+
+    // Reached. Whatever this run decides about the PRICE below, the row is not
+    // lost, so a miss from an earlier run no longer describes it. Cleared before
+    // the sanity gate on purpose: a price-suspect row was reached, and its hold
+    // is a verdict about the number that the feed has no business overruling.
+    if (d.refreshMissedAt || d.refreshMissReason || d.refreshMissStreak) {
+      delete d.refreshMissedAt;
+      delete d.refreshMissReason;
+      delete d.refreshMissStreak;
+      stats.missCleared++;
+    }
 
     // Capacity/compatibility guards already ran inside scoreMatch(). This is the
     // cross-retailer price sanity gate.
@@ -809,6 +935,23 @@ if (require.main !== module) return;
     }
   }
 
+  // ── Misses: written only now, and only if this run demonstrably worked ──────
+  // See missesTrusted(). A miss is how sftp-ingest learns this job has LOST a
+  // row it once confirmed; a run that is not working must not be able to say
+  // that about every row it failed on. Read against the STANDING mark, before
+  // recordReach() below can move it.
+  const missTrust = missesTrusted({
+    breakers, dryRun: DRY_RUN, limited: Number.isFinite(LIMIT), fixture: USING_FIXTURE,
+    stamped: stats.stamped, lookupable, floor: missFloor(),
+  });
+  if (missTrust.trusted) {
+    const m = stampMisses(missed, { at: RUN_AT });
+    stats.missStamped = m.counted;
+    // Carried on missTrust so the summary artifact reports it beside the verdict
+    // that allowed it.
+    missTrust.lost = m.lost;
+  }
+
   // ── Report ──────────────────────────────────────────────────────────────────
   console.log(`\n=== SUMMARY ${DRY_RUN ? '(DRY RUN)' : ''} ===`);
   console.log(`Processed:        ${processed}`);
@@ -849,6 +992,12 @@ if (require.main !== module) return;
     console.log(`   be fixed (SKU-keyed lookup + a test proving it) before re-enabling.`);
   }
   console.log(`Removed:          ${removed}${DRY_RUN && removalCandidates.length ? ` (dry run — ${removalCandidates.length} would have been evaluated)` : ''}`);
+  // The way back in for rows this job has lost. Printed on every run, trusted or
+  // not, so "no misses written" always says why.
+  console.log(missTrust.trusted
+    ? `Misses counted:   ${stats.missStamped}  of which LOST: ${missTrust.lost}  (${MISSED_CYCLES_ALLOWED}+ consecutive ` +
+      `misses; sftp-ingest may certify the ones the feed carries)  cleared: ${stats.missCleared}`
+    : `Misses NOT counted — ${missTrust.why}  (cleared: ${stats.missCleared})`);
 
   if (failures.length) {
     console.log(`\nLookup failures by reason:`);
@@ -956,6 +1105,11 @@ if (require.main !== module) return;
     ourDecisions,
     identityRescued: stats.identityRescued,
     guardRejected: stats.guardRejected,
+    // The way back in for lost rows: misses this run wrote, earlier misses it
+    // cleared by reaching the row again, and — when it wrote none — why.
+    missStamped: stats.missStamped,
+    missCleared: stats.missCleared,
+    missTrust,
     // Attribution for the http_error bucket. `rateLimited` is the number the
     // pacing change is judged on: it should be 0, and if it is not, REQ_PER_MIN
     // is still too high rather than the feed being sick.
@@ -974,7 +1128,10 @@ if (require.main !== module) return;
 
   if (DRY_RUN) { console.log('DRY RUN — parts.js not written.'); return; }
 
-  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed;
+  // Misses count as changes: a run whose only news is "these rows are lost" must
+  // still write it, or sftp-ingest never learns it may certify them.
+  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed +
+    stats.missStamped + stats.missCleared;
   if (mutating === 0) { console.log('No changes to write.'); return; }
 
   // Route through the shared writer so the re-split is part of the write
