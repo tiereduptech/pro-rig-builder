@@ -120,7 +120,7 @@ test('every lifter clears the reason along with the flag', () => {
   // A stale quarantineReason on an un-quarantined row is worse than none: it reads
   // as a live hold to anything inspecting the row later, which is exactly the
   // confusion this field exists to remove.
-  const LIFTERS = ['repair-broken-asins.js'];
+  const LIFTERS = ['repair-broken-asins.js', 'lift-quarantine.mjs'];
   for (const file of LIFTERS) {
     const src = readFileSync(file, 'utf8');
     const lines = src.split('\n');
