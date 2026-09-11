@@ -3939,7 +3939,9 @@ export default [
     "bench": 39,
     "boostClock": 4900,
     "memType": "DDR5",
-    "igpu": false
+    "igpu": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-11"
   },
   {
     "id": 10127,
