@@ -243,7 +243,7 @@ export default [
         "sku": "6562319",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -379,7 +379,7 @@ export default [
         "sku": "6669244",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-09-03"
       },
       "newegg": {
@@ -451,7 +451,7 @@ export default [
         "sku": "6669242",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -1715,7 +1715,7 @@ export default [
         "sku": "6457798",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -2513,7 +2513,7 @@ export default [
         "sku": "6669246",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       }
     },
     "additionalImages": [
@@ -2775,13 +2775,14 @@ export default [
         "priceUnconfirmedAt": "2026-09-10"
       },
       "bestbuy": {
-        "price": 1239.99,
+        "price": 1276.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6637757&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-rgb-64gb-2-x-32gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-gray%2FJ39QHTC75V&intsrc=APIG_28060",
-        "inStock": true,
+        "inStock": false,
         "sku": "6637757",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445831284010422222582994",
@@ -2941,13 +2942,14 @@ export default [
         "priceResolvedVia": "paapi"
       },
       "bestbuy": {
-        "price": 919.99,
+        "price": 993.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6496083&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-5200mhz-c40-udimm-desktop-memory-black%2FJ39QHTJGVZ&intsrc=APIG_28060",
-        "inStock": true,
+        "inStock": false,
         "sku": "6496083",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445831846308112295877265",
@@ -3018,7 +3020,7 @@ export default [
         "sku": "6637756",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       }
     },
     "additionalImages": [
@@ -5972,13 +5974,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 1366.99,
+        "price": 1421.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645751&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645751.p%3FskuId%3D6645751",
         "inStock": false,
         "sku": "6645751",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       }
     },
     "additionalImages": [
@@ -8397,7 +8400,7 @@ export default [
         "sku": "6448611",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445838924976332608996715",
@@ -8449,7 +8452,7 @@ export default [
         "sku": "6449223",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -8589,13 +8592,14 @@ export default [
     "mpn": "CMK64GX5M2B6400C32",
     "deals": {
       "bestbuy": {
-        "price": 1255.99,
+        "price": 1292.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6542590&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-64gb-2x32gb-ddr5-6400mhz-c32-udimm-desktop-memory-black%2FJ39QHTJL46&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6542590",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445835637165874203267057",
@@ -8689,7 +8693,7 @@ export default [
         "sku": "6554930",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-09-10"
       },
       "newegg": {
@@ -8743,7 +8747,7 @@ export default [
         "sku": "6562317",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -8790,13 +8794,14 @@ export default [
     "mpn": "CMH64GX5M2Y6400C32",
     "deals": {
       "bestbuy": {
-        "price": 1264.99,
+        "price": 1301.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6576369&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6576369.p%3FskuId%3D6576369",
         "inStock": true,
         "sku": "6576369",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "9SIC3FZM0J3648",
@@ -8847,7 +8852,7 @@ export default [
         "sku": "6580806",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -8901,7 +8906,7 @@ export default [
         "sku": "6580809",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "4458315829885020854166605",
@@ -8953,7 +8958,7 @@ export default [
         "sku": "6602236",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -9007,7 +9012,7 @@ export default [
         "sku": "6602237",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "4458314106380963906265577",
@@ -9111,7 +9116,7 @@ export default [
         "sku": "6608563",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -9164,7 +9169,7 @@ export default [
         "sku": "6608564",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445837384151701501811720",
@@ -9217,7 +9222,7 @@ export default [
         "sku": "6621674",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-09-09"
       }
     },
@@ -9256,7 +9261,7 @@ export default [
         "sku": "6637048",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       }
     },
     "cap": 128,
@@ -9365,13 +9370,14 @@ export default [
     "mpn": "CMH96GX5M2E6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 1377.99,
+        "price": 1432.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645747&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6645747.p%3FskuId%3D6645747",
         "inStock": false,
         "sku": "6645747",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       }
     },
     "cap": 96,
@@ -9414,7 +9420,7 @@ export default [
         "sku": "6645748",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       }
     },
     "cap": 64,
@@ -9501,13 +9507,14 @@ export default [
     "mpn": "CMP64GX5M2B6000Z30W",
     "deals": {
       "bestbuy": {
-        "price": 1310.99,
+        "price": 1347.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6645752&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-dominator-titanium-64gb-2-x-32gb-ddr5-6000-cl30-36-36-76-1-40v-intel-xmp-amd-expo-white%2FJ39TSCP5Y6&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6645752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11",
+        "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445836017013525624514274",
@@ -9560,7 +9567,7 @@ export default [
         "sku": "6645754",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-11"
       },
       "newegg": {
         "sku": "445832156532174368504792",
@@ -9681,7 +9688,7 @@ export default [
         "sku": "6669179",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -9735,7 +9742,7 @@ export default [
         "sku": "6672866",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -9774,7 +9781,7 @@ export default [
         "sku": "6672867",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-11",
         "priceLastMovedAt": "2026-08-31"
       }
     },
