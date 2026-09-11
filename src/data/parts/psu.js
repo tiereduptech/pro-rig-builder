@@ -713,12 +713,15 @@ export default [
       "amazon": {
         "price": 66,
         "url": "https://www.amazon.com/dp/B0CQMQY2V2?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "color": "Black",
     "value": 43,
-    "quarantinedAt": "2026-09-08",
+    "quarantinedAt": "2026-09-11",
     "rgb": false,
     "fans": 1,
     "needsReview": true,
@@ -745,13 +748,13 @@ export default [
     "depth": 100,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 199,
         "url": "https://www.amazon.com/dp/B0D45QCZHX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-29",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1342,7 +1345,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
-        "priceSeller": "BeachAudio",
+        "priceSeller": "Altius Tech",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1929,7 +1932,7 @@ export default [
         "priceConfirmedAt": "2026-09-11",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2886,8 +2889,9 @@ export default [
     "fans": 1,
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
-    "quarantinedAt": "2026-08-18",
-    "upc": "06940526107286"
+    "quarantinedAt": "2026-09-11",
+    "upc": "06940526107286",
+    "quarantineReason": "price_3p_flagged"
   },
   {
     "id": 60062,
@@ -4406,7 +4410,7 @@ export default [
         "price": 139.9,
         "url": "https://www.amazon.com/dp/B07ZTW7TSW?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-27",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
         "priceResolvedVia": "paapi",
@@ -4492,13 +4496,11 @@ export default [
         "price": 84.99,
         "url": "https://www.amazon.com/dp/B0CLMJ9CR1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-09",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "KWI-Kingwin",
-        "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-08-25"
+        "priceResolvedVia": "paapi",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4538,7 +4540,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
-        "priceSeller": "OHOhagi83",
+        "priceSeller": "a.s.t.k",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -4788,10 +4790,10 @@ export default [
         "price": 79.99,
         "url": "https://www.amazon.com/dp/B0BTK87TBN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-29",
+        "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "dataforseo",
+        "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
     },
@@ -5744,7 +5746,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-11",
         "priceSource": "3p",
-        "priceSeller": "Bestofbulk USA",
+        "priceSeller": "KART IT",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -10252,7 +10254,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-11"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -11018,8 +11022,8 @@ export default [
         "price": 84.43,
         "inStock": true,
         "priceConfirmedAt": "2026-09-11",
-        "priceSource": "3p",
-        "priceSeller": "Redragon Shop",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
