@@ -3517,17 +3517,17 @@ export default [
         "sku": "4458310851110962993448964",
         "itemNumber": "9SIAD6HKHA5958",
         "sellerClass": "marketplace",
-        "price": 410.21,
+        "price": 407.55,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310851110962993448964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-4k-32%2Fp%2FN82E16824117168%3Fitem%3D9SIAD6HKHA5958",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-168-01.jpg",
         "inStock": true,
         "matchedAt": "2026-09-08T21:12:23.680Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:03.124Z",
+        "refreshedAt": "2026-09-11T09:36:08.505Z",
         "rematchedAt": "2026-09-08T23:56:01.365Z",
         "rematchedFrom": "445832188836211182385527",
-        "priceLastMovedAt": "2026-09-10"
+        "priceLastMovedAt": "2026-09-11"
       }
     },
     "additionalImages": [
@@ -7452,7 +7452,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:47.500Z"
+        "refreshedAt": "2026-09-11T09:36:57.214Z"
       }
     },
     "screenSize": 16,
@@ -7811,10 +7811,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-10T20:00:49.620Z",
+        "priceSuspectAt": "2026-09-11T09:36:58.554Z",
         "priceSuspectValue": 99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 18
+        "priceSuspectStreak": 19
       }
     },
     "screenSize": 13.3,
@@ -8188,7 +8188,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:56.114Z"
+        "refreshedAt": "2026-09-11T09:37:00.467Z"
       }
     },
     "screenSize": 23.8,
@@ -8235,7 +8235,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:56.547Z"
+        "refreshedAt": "2026-09-11T09:37:00.663Z"
       }
     },
     "screenSize": 27,
@@ -8320,7 +8320,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:56.847Z"
+        "refreshedAt": "2026-09-11T09:37:01.103Z"
       }
     },
     "screenSize": 27,
@@ -8367,7 +8367,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:00:57.007Z",
+        "refreshedAt": "2026-09-11T09:37:01.302Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -13741,7 +13741,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:01:59.968Z",
+        "refreshedAt": "2026-09-11T09:38:05.496Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -14637,7 +14637,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:02:41.419Z"
+        "refreshedAt": "2026-09-11T09:38:09.187Z"
       }
     },
     "screenSize": 24,
@@ -14878,7 +14878,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:02:44.842Z"
+        "refreshedAt": "2026-09-11T09:38:54.049Z"
       }
     },
     "screenSize": 15.6,
@@ -14935,7 +14935,7 @@ export default [
         "matchedAt": "2026-09-10T15:56:49.997Z",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:02:44.979Z",
+        "refreshedAt": "2026-09-11T09:38:54.253Z",
         "priceLastMovedAt": "2026-09-10",
         "rematchedAt": "2026-09-10T20:02:44.979Z",
         "rematchedFrom": "445831931944325232073721"
@@ -18611,7 +18611,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.96,
-        "refreshedAt": "2026-09-10T20:02:49.729Z",
+        "refreshedAt": "2026-09-11T09:38:58.605Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
