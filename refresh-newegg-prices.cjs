@@ -487,8 +487,39 @@ function feedHealth(stats, processed) {
 // census over stamps that were never written in the first place.
 const REACH_FILE = path.join(__dirname, 'src', 'data', 'newegg-reach.json');
 
+// ── AND EVERY RUN, NOT ONLY THE HIGHS ───────────────────────────────────────
+//
+// The mark answers one question — "what does a completed run demonstrably
+// reach?" — and a monotone answer is the right one for the floor that reads it.
+// It is the wrong answer to "is the re-pricer's reach holding?", and for a while
+// it was the only answer the repo kept. A run below the mark wrote nothing, so
+// the committed figure could only ever say "stable or better". From 2026-08-29
+// to 2026-09-08 matched rows fell 2133 -> 2057, about 8 a day, and every one of
+// those runs logged "not recorded — below the standing mark" and left no trace
+// in the tree. Each row that fell out of reach then aged into the freshness
+// gate's tail on its own schedule, ~12 a day with none returning, and the one
+// figure that could have said why was the one that refused to move.
+//
+// So every full, sound run also writes `last` and appends to `history`, and the
+// mark fields beside them change only when a run beats them. The floor still
+// reads only the mark (sftp-ingest.cjs loadNeweggReach reads `reach`), so
+// recording a drop can never relax the census — which was the whole reason the
+// mark refused to move down. The exclusions above apply to both halves: a
+// --limit, --dry-run, --parts= or drifted-counter run writes nothing at all.
+//
+// `recorded` in the return value still means THE MARK MOVED.
+const REACH_HISTORY_KEEP = 60;   // ~30 days at the twice-daily cron: long enough to
+                                 // show a slow leak across the gate's 12d tail budget
+
+const REACH_NOTE =
+  'reach/stamped/lookupable/observedAt/run: the HIGH-WATER MARK of what one completed refresh-newegg-prices ' +
+  'run leaves behind (the share of re-pricer-reachable deals.newegg rows carrying refreshedAt). It only ever ' +
+  'moves up. sftp-ingest.cjs derives the census stamp-plausibility floor from it (floor = reach / 2). ' +
+  'last/history: EVERY full run, including the ones below the mark, so a drop in reach is on record; nothing ' +
+  'derives a floor from them. Do not hand-edit: a lowered mark relaxes the census gate.';
+
 function recordReach({ stamped, lookupable, dryRun, limited, fixture, counterSound = true,
-                      file = REACH_FILE }) {
+                      file = REACH_FILE, now = new Date(), run = process.env.GITHUB_RUN_ID || 'local' }) {
   if (!counterSound) return { recorded: false, why: 'stamp counter drifted from priced+unchanged — the numerator is not trustworthy' };
   if (dryRun) return { recorded: false, why: 'dry run — no stamps written, nothing demonstrated' };
   if (limited) return { recorded: false, why: '--limit run — reach over a subsample is not the catalog figure' };
@@ -499,20 +530,25 @@ function recordReach({ stamped, lookupable, dryRun, limited, fixture, counterSou
   let prev = null;
   try { prev = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* first observation */ }
   const prevReach = prev && Number.isFinite(prev.reach) ? prev.reach : -Infinity;
-  if (reach <= prevReach) {
-    return { recorded: false, reach, previous: prevReach,
-             why: `below the standing mark (${(100 * reach).toFixed(1)}% <= ${(100 * prevReach).toFixed(1)}%) — the mark only moves up` };
-  }
+  const raised = reach > prevReach;
 
-  const next = {
-    note: (prev && prev.note) || 'High-water mark of what one completed refresh-newegg-prices run leaves behind.',
-    reach: Number(reach.toFixed(4)),
-    stamped, lookupable,
-    observedAt: new Date().toISOString(),
-    run: process.env.GITHUB_RUN_ID || 'local',
+  const obs = { reach: Number(reach.toFixed(4)), stamped, lookupable, observedAt: now.toISOString(), run };
+  const history = [...(prev && Array.isArray(prev.history) ? prev.history : []), obs].slice(-REACH_HISTORY_KEEP);
+  const mark = raised ? obs : {
+    reach: prev.reach, stamped: prev.stamped, lookupable: prev.lookupable, observedAt: prev.observedAt, run: prev.run,
   };
-  fs.writeFileSync(file, JSON.stringify(next, null, 2) + '\n');
-  return { recorded: true, reach, previous: prevReach === -Infinity ? null : prevReach };
+  fs.writeFileSync(file, JSON.stringify({ note: REACH_NOTE, ...mark, last: obs, history }, null, 2) + '\n');
+
+  const previousRun = history.length > 1 ? history[history.length - 2] : null;
+  if (raised) return { recorded: true, reach, previous: prevReach === -Infinity ? null : prevReach, previousRun };
+  return {
+    recorded: false, reach, previous: prevReach, previousRun, mark,
+    // Rows, not only points: 0.5pp of ~3,100 lookupable rows is 16 rows that
+    // have fallen out of reach and are now ageing toward the tail.
+    rowsBelowMark: Math.round((prevReach - reach) * lookupable),
+    why: `below the standing mark (${(100 * reach).toFixed(1)}% <= ${(100 * prevReach).toFixed(1)}%) — ` +
+         'the mark only moves up; this run is recorded as `last`',
+  };
 }
 
 module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher, recordReach, REACH_FILE };
@@ -910,19 +946,29 @@ if (require.main !== module) return;
     console.log('   A refreshedAt write site is missing stats.stamped++. The reach mark is NOT recorded.');
   }
 
-  // Commit the one figure sftp-ingest.cjs needs to stop guessing. See
-  // recordReach() for why this is a high-water mark and what is excluded.
+  // Commit the figure sftp-ingest.cjs derives its floor from and — because the
+  // mark alone could only ever say "stable or better" — this run's own reach
+  // beside it. See recordReach() for both halves and what is excluded.
   const reachRecord = recordReach({
     stamped: stats.stamped, lookupable,
     dryRun: DRY_RUN, limited: Number.isFinite(LIMIT), fixture: USING_FIXTURE,
     counterSound: stampCounterSound,
   });
+  const pct = (x) => `${(100 * x).toFixed(1)}%`;
+  const vsPrevRun = reachRecord.previousRun ? `; previous run ${pct(reachRecord.previousRun.reach)}` : '';
   if (reachRecord.recorded) {
-    console.log(`\nRe-pricer reach:  ${(100 * reachRecord.reach).toFixed(1)}%  (${stats.stamped}/${lookupable} reachable rows stamped)` +
+    console.log(`\nRe-pricer reach:  ${pct(reachRecord.reach)}  (${stats.stamped}/${lookupable} reachable rows stamped)` +
       (reachRecord.previous === null
         ? '  <- first committed observation'
-        : `  <- NEW HIGH, was ${(100 * reachRecord.previous).toFixed(1)}%`));
+        : `  <- NEW HIGH, was ${pct(reachRecord.previous)}`) + vsPrevRun);
     console.log(`  -> ${path.relative(__dirname, REACH_FILE)}; the census stamp floor derives from half of it.`);
+  } else if (reachRecord.mark) {
+    // Printed as a DROP, in rows. "not recorded" is how a shrinking reach read
+    // as a stable one for ten days.
+    console.log(`\nRe-pricer reach:  ${pct(reachRecord.reach)}  (${stats.stamped}/${lookupable} reachable rows stamped)  ` +
+      `${reachRecord.rowsBelowMark} rows below the mark of ${pct(reachRecord.mark.reach)} ` +
+      `set ${String(reachRecord.mark.observedAt).slice(0, 10)}${vsPrevRun}`);
+    console.log(`  -> recorded as \`last\` in ${path.relative(__dirname, REACH_FILE)}; the mark and the census floor are unchanged.`);
   } else {
     console.log(`\nRe-pricer reach:  not recorded — ${reachRecord.why}`);
   }
@@ -952,6 +998,14 @@ if (require.main !== module) return;
     // counts rows that actually came out carrying refreshedAt, and the two
     // differ by priceSuspect. See recordReach().
     stamped: stats.stamped,
+    // This run against the standing mark, so a drop is in the artifact and not
+    // only in a log line. thisRun is null on a run recordReach excluded.
+    reachVsMark: {
+      thisRun: reachRecord.reach ?? null,
+      mark: reachRecord.recorded ? reachRecord.reach : (reachRecord.mark ? reachRecord.mark.reach : null),
+      rowsBelowMark: reachRecord.rowsBelowMark ?? 0,
+      markMoved: !!reachRecord.recorded,
+    },
     unmappable: stats.noCatMapping,
     ourDecisions,
     identityRescued: stats.identityRescued,
