@@ -104,6 +104,18 @@ test('no quarantine writer hides outside the known files', () => {
     `quarantine written in unlisted file(s) — add to WRITER_FILES and record a reason: ${unexpected.join(', ')}`);
 });
 
+test('verdict writers record a quarantine through recordQuarantine, never over the cause', () => {
+  // lift-quarantine.mjs is keyed on quarantineReason, so a verdict landing on a
+  // row that is ALREADY hidden must not replace the cause it was hidden for.
+  // These two apply verdicts to rows loaded from the catalog, hidden or not.
+  for (const file of ['verify-catalog-asins.js', 'verify-new-products.js']) {
+    const src = readFileSync(file, 'utf8');
+    assert.match(src, /recordQuarantine\(/, `${file} applies quarantine verdicts without recordQuarantine()`);
+    const direct = src.split('\n').filter((l) => !IS_COMMENT(l) && /\bp\.quarantineReason\s*=/.test(l));
+    assert.deepEqual(direct, [], `${file} assigns p.quarantineReason directly`);
+  }
+});
+
 test('every lifter clears the reason along with the flag', () => {
   // A stale quarantineReason on an un-quarantined row is worse than none: it reads
   // as a live hold to anything inspecting the row later, which is exactly the
