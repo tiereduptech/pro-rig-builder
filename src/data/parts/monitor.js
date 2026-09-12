@@ -3565,17 +3565,17 @@ export default [
         "sku": "4458310851110962993448964",
         "itemNumber": "9SIAD6HKHA5958",
         "sellerClass": "marketplace",
-        "price": 407.55,
+        "price": 402.49,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310851110962993448964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-4k-32%2Fp%2FN82E16824117168%3Fitem%3D9SIAD6HKHA5958",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-168-01.jpg",
         "inStock": true,
         "matchedAt": "2026-09-08T21:12:23.680Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:02.196Z",
+        "refreshedAt": "2026-09-12T09:24:22.563Z",
         "rematchedAt": "2026-09-08T23:56:01.365Z",
         "rematchedFrom": "445832188836211182385527",
-        "priceLastMovedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -7502,7 +7502,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:54.194Z"
+        "refreshedAt": "2026-09-12T09:25:15.787Z"
       }
     },
     "screenSize": 16,
@@ -7909,7 +7909,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-07T20:40:20.196Z",
+        "refreshedAt": "2026-09-12T09:25:16.862Z",
         "priceLastMovedAt": "2026-08-28",
         "rematchedAt": "2026-08-28T17:08:40.910Z",
         "rematchedFrom": "9SIBVN6K8U1327"
@@ -8238,7 +8238,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:56.628Z"
+        "refreshedAt": "2026-09-12T09:25:17.711Z"
       }
     },
     "screenSize": 23.8,
@@ -8285,7 +8285,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:56.769Z"
+        "refreshedAt": "2026-09-12T09:25:17.883Z"
       }
     },
     "screenSize": 27,
@@ -8370,7 +8370,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:57.063Z"
+        "refreshedAt": "2026-09-12T09:25:18.192Z"
       }
     },
     "screenSize": 27,
@@ -8417,7 +8417,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:03:57.421Z",
+        "refreshedAt": "2026-09-12T09:25:18.315Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -11074,17 +11074,19 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "4458311883885365372818679",
-        "itemNumber": "9SIA57XKDJ7578",
-        "sellerClass": "marketplace",
-        "price": 1029,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311883885365372818679&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqpx-qd-oled-49-dqhd-240-hz-metallic-black%2Fp%2FN82E16824475437%3Fitem%3D9SIA57XKDJ7578",
+        "sku": "N82E16824475437",
+        "price": 1099.99,
+        "saleprice": 999.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838062213234680758102&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqpx-qd-oled-49-dqhd-240-hz-metallic-black%2Fp%2FN82E16824475437%3Fitem%3DN82E16824475437",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-437-105.png",
-        "inStock": true,
+        "sellerClass": "official",
         "matchedAt": "2026-08-18T14:14:43.178Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T20:01:43.990Z"
+        "refreshedAt": "2026-09-12T09:25:23.572Z",
+        "priceLastMovedAt": "2026-09-12",
+        "migratedAt": "2026-09-12T09:25:23.572Z",
+        "migratedFrom": "4458311883885365372818679"
       },
       "newegg_openbox": {
         "sku": "445838916882314961340236",
@@ -13732,7 +13734,8 @@ export default [
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshedAt": "2026-09-12T09:26:20.171Z"
       },
       "newegg_openbox": {
         "sku": "4458310064523773875750484",
@@ -13797,7 +13800,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:04:59.499Z",
+        "refreshedAt": "2026-09-12T09:26:20.457Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -14693,7 +14696,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:05:02.620Z"
+        "refreshedAt": "2026-09-12T09:26:22.976Z"
       }
     },
     "screenSize": 24,
@@ -14934,7 +14937,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:05:44.606Z"
+        "refreshedAt": "2026-09-12T09:26:24.440Z"
       }
     },
     "screenSize": 15.6,
@@ -14991,7 +14994,7 @@ export default [
         "matchedAt": "2026-09-11T15:29:24.010Z",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:05:47.956Z",
+        "refreshedAt": "2026-09-12T09:26:24.569Z",
         "priceLastMovedAt": "2026-09-11",
         "rematchedAt": "2026-09-11T20:05:47.956Z",
         "rematchedFrom": "445831931944325232073721"
@@ -18696,7 +18699,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.96,
-        "refreshedAt": "2026-09-11T20:05:55.441Z",
+        "refreshedAt": "2026-09-12T09:27:16.710Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
