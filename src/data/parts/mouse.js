@@ -568,7 +568,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.607Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "sensor": "Hero 25K",
@@ -1517,7 +1517,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.607Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "sensor": "Optical",

@@ -852,15 +852,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "N82E16824281097",
+        "sku": "4458315734784616700352134",
+        "itemNumber": "N82E16824281097",
+        "sellerClass": "official",
         "price": 299.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315734784616700352134&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-vg34vql1b-34-uwqhd-165-hz-tuf-gaming-va-black%2Fp%2FN82E16824281097%3Fitem%3DN82E16824281097",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-097-02.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       },
       "newegg_openbox": {
         "sku": "4458312343033750093235215",
@@ -876,7 +878,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
         "priceConfirmedAt": "2026-09-09",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -1549,7 +1551,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:46.319Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 17,
@@ -2102,7 +2104,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-06",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 5,
@@ -2510,7 +2512,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-31",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "bestbuy": {
         "price": 1099.99,
@@ -2519,6 +2521,21 @@ export default [
         "sku": "6668647",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445838053908062320885888",
+        "itemNumber": "N82E16824281395",
+        "sellerClass": "official",
+        "price": 1099.99,
+        "saleprice": 1099,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838053908062320885888&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-pg27aqwp-w-26-5-woled-540-hz-rog-swift%2Fp%2FN82E16824281395%3Fitem%3DN82E16824281395",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-395-15.png",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.213Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -2658,7 +2675,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.212Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -2843,7 +2860,7 @@ export default [
         "matchedAt": "2026-08-28T21:45:45.228Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -2899,7 +2916,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:46.380Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 13,
@@ -3097,7 +3114,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:46.256Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -3569,19 +3586,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458310851110962993448964",
-        "itemNumber": "9SIAD6HKHA5958",
+        "sku": "445832188836211182385527",
+        "itemNumber": "9SIAD6HK123310",
         "sellerClass": "marketplace",
-        "price": 402.49,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310851110962993448964&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-4k-32%2Fp%2FN82E16824117168%3Fitem%3D9SIAD6HKHA5958",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-168-01.jpg",
+        "price": 319.72,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832188836211182385527&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vx3267u-2k-32-qhd%2Fp%2FN82E16824117167%3Fitem%3D9SIAD6HK123310",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-167-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-08T21:12:23.680Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:24:22.563Z",
-        "rematchedAt": "2026-09-08T23:56:01.365Z",
-        "rematchedFrom": "445832188836211182385527",
+        "matchedAt": "2026-09-12T14:42:12.046Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -3753,7 +3767,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4157,7 +4171,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:45.502Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -4221,6 +4235,20 @@ export default [
         "sku": "6325590",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445839124663496125747814",
+        "itemNumber": "N82E16824014647",
+        "sellerClass": "official",
+        "price": 109.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839124663496125747814&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbenq-gw2283-21-5-full-hd%2Fp%2FN82E16824014647%3Fitem%3DN82E16824014647",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-014-647-54.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:32.816Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -5078,7 +5106,7 @@ export default [
         "matchedAt": "2026-08-31T18:41:00.742Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 15.6,
@@ -5738,15 +5766,17 @@ export default [
     "mpn": "VG2756-4K",
     "deals": {
       "newegg": {
-        "sku": "N82E16824116994",
+        "sku": "445833553591362477799643",
+        "itemNumber": "N82E16824116994",
+        "sellerClass": "official",
         "price": 449.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833553591362477799643&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vg2756-4k-27-uhd%2Fp%2FN82E16824116994%3Fitem%3DN82E16824116994",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-116-994-V01.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -5904,7 +5934,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -6341,7 +6371,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:49.631Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 14,
@@ -6696,7 +6726,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24,
@@ -6947,15 +6977,17 @@ export default [
         "priceConfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "N82E16824276858",
+        "sku": "4458312380349496782041368",
+        "itemNumber": "N82E16824276858",
+        "sellerClass": "official",
         "price": 323.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312380349496782041368&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-e24mv-g4-23-8-full-hd%2Fp%2FN82E16824276858%3Fitem%3DN82E16824276858",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-276-858-S01.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -7064,7 +7096,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:46.113Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -7090,15 +7122,17 @@ export default [
     "mpn": "VG2448A",
     "deals": {
       "newegg": {
-        "sku": "N82E16824117082",
+        "sku": "4458311713764424910506868",
+        "itemNumber": "N82E16824117082",
+        "sellerClass": "official",
         "price": 159.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311713764424910506868&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fviewsonic-vg2448a-24-full-hd%2Fp%2FN82E16824117082%3Fitem%3DN82E16824117082",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-117-082-S10.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -7138,7 +7172,22 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.118Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458317260129135641882079",
+        "itemNumber": "N82E16824281136",
+        "sellerClass": "official",
+        "price": 219.99,
+        "saleprice": 219,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317260129135641882079&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-be279qsk-27-full-hd%2Fp%2FN82E16824281136%3Fitem%3DN82E16824281136",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-136-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.121Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -7260,15 +7309,18 @@ export default [
     "mpn": "6N4D6AA#ABA",
     "deals": {
       "newegg": {
-        "sku": "0JC-0019-02F10",
+        "sku": "445831877552568684647614",
+        "itemNumber": "0JC-0019-02F10",
+        "sellerClass": "official",
         "price": 674.99,
         "saleprice": 621.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831877552568684647614&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-32%2Fp%2F0JC-0019-02F10%3Fitem%3D0JC-0019-02F10",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2303220Z4WMYE0.jpg",
+        "inStock": true,
         "matchedAt": "2026-06-27",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "sellerClass": "other"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -7342,7 +7394,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -7432,7 +7484,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24,
@@ -7608,15 +7660,18 @@ export default [
     "mpn": "27GR83Q-B",
     "deals": {
       "newegg": {
-        "sku": "9SIABMTKRN3097",
-        "price": 315.49,
-        "saleprice": null,
+        "sku": "4458317492876265457320953",
+        "itemNumber": "9SIABMTKRN3097",
+        "sellerClass": "marketplace",
+        "price": 338.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317492876265457320953&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27gr83q-b-27-qhd-240-hz-ultragear-ips-black%2Fp%2FN82E16824026379%3Fitem%3D9SIABMTKRN3097",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-379-06.jpg",
-        "sellerClass": "marketplace",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
-        "matchScore": 1
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -7775,7 +7830,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.499Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -7822,7 +7877,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 14.1,
@@ -7968,7 +8023,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:34.331Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 37.5,
@@ -8008,15 +8063,15 @@ export default [
         "sku": "44583652007751542340700",
         "itemNumber": "9SIAET8M1G0789",
         "sellerClass": "marketplace",
-        "price": 422.37,
+        "price": 384.06,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583652007751542340700&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-27%2Fp%2F0JC-0004-00V98%3Fitem%3D9SIAET8M1G0789",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2312050ECESY43.jpg",
         "inStock": true,
         "matchedAt": "2026-09-02T15:39:29.605Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -8160,7 +8215,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-08-30",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34,
@@ -8472,7 +8527,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.499Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -8518,6 +8573,20 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceLastMovedAt": "2026-09-02"
+      },
+      "newegg": {
+        "sku": "44583671296057472522723",
+        "itemNumber": "N82E16824475356",
+        "sellerClass": "official",
+        "price": 849.99,
+        "saleprice": 798.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583671296057472522723&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqp-qd-oled-49-dqhd-144-hz%2Fp%2FN82E16824475356%3Fitem%3DN82E16824475356",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-356-11.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.273Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 49,
@@ -8578,7 +8647,21 @@ export default [
         "matchedAt": "2026-08-22T12:25:08.384Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458314018529512865858690",
+        "itemNumber": "N82E16824475359",
+        "sellerClass": "official",
+        "price": 629.99,
+        "saleprice": 628.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314018529512865858690&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-271qrx-qd-oled-27-wqhd-360-hz%2Fp%2FN82E16824475359%3Fitem%3DN82E16824475359",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-359-10.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.276Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -8627,7 +8710,7 @@ export default [
         "matchedAt": "2026-08-20T12:39:54.281Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -8665,17 +8748,19 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "445833124119111439708329",
-        "itemNumber": "9SIA57XK8E1811",
-        "sellerClass": "marketplace",
-        "price": 799,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833124119111439708329&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-321upx-qd-oled-32-uhd-240-hz-metallic-black%2Fp%2FN82E16824475358%3Fitem%3D9SIA57XK8E1811",
+        "sku": "445838189126249127631853",
+        "itemNumber": "N82E16824475358",
+        "sellerClass": "official",
+        "price": 799.99,
+        "saleprice": 776.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838189126249127631853&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-321upx-qd-oled-32-uhd-240-hz-metallic-black%2Fp%2FN82E16824475358%3Fitem%3DN82E16824475358",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-358-59.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:14:43.168Z",
+        "matchedAt": "2026-09-12T14:43:33.276Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 32,
@@ -8824,6 +8909,19 @@ export default [
         "sku": "6578248",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445832705585047082542806",
+        "itemNumber": "9SIA4P0K723448",
+        "sellerClass": "marketplace",
+        "price": 99.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832705585047082542806&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbenq-gw2490-23-8-fhd%2Fp%2FN82E16824014951%3Fitem%3D9SIA4P0K723448",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-014-951-18.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:43.911Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -9073,7 +9171,22 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-04",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445834589265771242330005",
+        "itemNumber": "N82E16824475369",
+        "sellerClass": "official",
+        "price": 179.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834589265771242330005&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp275q-27-qhd%2Fp%2FN82E16824475369%3Fitem%3DN82E16824475369",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-369-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.280Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -9306,7 +9419,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34,
@@ -9345,7 +9458,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.355Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -9383,19 +9496,22 @@ export default [
         "matchedAt": "2026-05-14T20:09:02.123Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "4458311775180787009973573",
-        "itemNumber": "9SIA36ZKW23953",
-        "sellerClass": "marketplace",
-        "price": 167.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311775180787009973573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2425h-24-fhd-100-hz-ips-silver%2Fp%2F0JC-0004-00VJ1%3Fitem%3D9SIA36ZKW23953",
+        "sku": "4458313653725348192085936",
+        "itemNumber": "0JC-0004-00VJ1",
+        "sellerClass": "official",
+        "price": 184.99,
+        "saleprice": 168.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313653725348192085936&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2425h-24-fhd-100-hz-ips-silver%2Fp%2F0JC-0004-00VJ1%3Fitem%3D0JC-0004-00VJ1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0JC-0004-00VJ1-02.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-26T12:33:00.086Z",
+        "matchedAt": "2026-09-12T14:40:35.048Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -9494,7 +9610,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:40.633Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 21.5,
@@ -9543,7 +9659,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:34.334Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24,
@@ -9810,7 +9926,7 @@ export default [
         "matchedAt": "2026-08-28T21:43:30.341Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 28.2,
@@ -9974,7 +10090,8 @@ export default [
         "matchedAt": "2026-09-01T15:53:32.245Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-11",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34,
@@ -10094,7 +10211,21 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-09",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445836413698624649064736",
+        "itemNumber": "N82E16824475408",
+        "sellerClass": "official",
+        "price": 109.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836413698624649064736&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp251-e2-24-5-fhd%2Fp%2FN82E16824475408%3Fitem%3DN82E16824475408",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-408-07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.294Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24.5,
@@ -10305,7 +10436,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -10352,7 +10483,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.825Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -10385,6 +10516,19 @@ export default [
         "sku": "6600070",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458310177376316030207366",
+        "itemNumber": "9SIA6ZPKAG1667",
+        "sellerClass": "marketplace",
+        "price": 163.72,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310177376316030207366&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbenq-gw2790t-27-fhd%2Fp%2FN82E16824014962%3Fitem%3D9SIA6ZPKAG1667",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-014-962-04.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:50.989Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -10432,7 +10576,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.825Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -10644,13 +10788,13 @@ export default [
         "itemNumber": "9SIA25VKEH9705",
         "sellerClass": "marketplace",
         "price": 189.66,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313033638662864147791&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp275w-e2-27-fhd-120-hz-ips-matte-white%2Fp%2FN82E16824475428%3Fitem%3D9SIA25VKEH9705",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313033638662864147791&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp275w-e2-27-fhd-120-hz-ips-matte-white%2Fp%2FN82E16824475428%3Fitem%3D9SIA25VKEH9705",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-428-03.jpg",
         "inStock": true,
         "matchedAt": "2026-09-06T14:57:53.186Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -10695,6 +10839,19 @@ export default [
         "itemId": "2383",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458317579038703188283143",
+        "itemNumber": "N82E16824475422",
+        "sellerClass": "official",
+        "price": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317579038703188283143&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp271a-e2-27-fhd-120-hz-ips-matte-black%2Fp%2FN82E16824475422%3Fitem%3DN82E16824475422",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-422-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.297Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -10918,6 +11075,19 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceLastMovedAt": "2026-08-31"
+      },
+      "newegg": {
+        "sku": "4458316209429015701759595",
+        "itemNumber": "N82E16824027358",
+        "sellerClass": "official",
+        "price": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316209429015701759595&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsamsung-s3-27-fhd-100-hz-va-black%2Fp%2FN82E16824027358%3Fitem%3DN82E16824027358",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-027-358-27.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:32.908Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -11018,20 +11188,21 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
         "priceConfirmedAt": "2026-09-03",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "445833732007588827727905",
-        "itemNumber": "9SIA0ZXKCS1910",
+        "sku": "4458316722841988603616364",
+        "itemNumber": "9SIA6ZPKDK0753",
         "sellerClass": "marketplace",
-        "price": 765.98,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833732007588827727905&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-321cup-qd-oled-32-uhd-165-hz-metallic-black%2Fp%2FN82E16824475452%3Fitem%3D9SIA0ZXKCS1910",
+        "price": 726.48,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316722841988603616364&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-321cup-qd-oled-32-uhd-165-hz-metallic-black%2Fp%2FN82E16824475452%3Fitem%3D9SIA6ZPKDK0753",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-452-08.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-07T16:52:41.927Z",
+        "matchedAt": "2026-09-12T14:40:51.081Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-07"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 32,
@@ -11081,19 +11252,21 @@ export default [
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
-        "sku": "N82E16824475437",
+        "sku": "445838062213234680758102",
+        "itemNumber": "N82E16824475437",
+        "sellerClass": "official",
         "price": 1099.99,
         "saleprice": 999.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838062213234680758102&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-491cqpx-qd-oled-49-dqhd-240-hz-metallic-black%2Fp%2FN82E16824475437%3Fitem%3DN82E16824475437",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-437-105.png",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-08-18T14:14:43.178Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-12T09:25:23.572Z",
-        "priceLastMovedAt": "2026-09-12",
         "migratedAt": "2026-09-12T09:25:23.572Z",
-        "migratedFrom": "4458311883885365372818679"
+        "migratedFrom": "4458311883885365372818679",
+        "priceLastMovedAt": "2026-09-12"
       },
       "newegg_openbox": {
         "sku": "445838916882314961340236",
@@ -11109,7 +11282,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
         "priceConfirmedAt": "2026-09-06",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 49,
@@ -11157,6 +11330,20 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceLastMovedAt": "2026-09-02"
+      },
+      "newegg": {
+        "sku": "445839807137590191241621",
+        "itemNumber": "N82E16824475451",
+        "sellerClass": "official",
+        "price": 899.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839807137590191241621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-321curx-qd-oled-32-uhd-240-hz-metallic-black-rgb%2Fp%2FN82E16824475451%3Fitem%3DN82E16824475451",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-451-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.303Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 32,
@@ -11204,7 +11391,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "msi": {
         "price": 189.99,
@@ -11347,6 +11534,20 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445833458231947090243310",
+        "itemNumber": "N82E16824014973",
+        "sellerClass": "official",
+        "price": 699.99,
+        "saleprice": 649.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833458231947090243310&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824014973%3Fitem%3DN82E16824014973",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-014-973-04.png",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:32.821Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -11391,7 +11592,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-23T12:24:05.649Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -11708,7 +11910,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:06.037Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 14.5,
@@ -11964,6 +12166,20 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceLastMovedAt": "2026-08-28"
+      },
+      "newegg": {
+        "sku": "4458315910356044983705657",
+        "itemNumber": "N82E16824475436",
+        "sellerClass": "official",
+        "price": 119.99,
+        "saleprice": 89.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315910356044983705657&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp251w-e2-24-5-fhd-120-hz-ips-matte-white%2Fp%2FN82E16824475436%3Fitem%3DN82E16824475436",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-436-02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.303Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24.5,
@@ -12047,18 +12263,19 @@ export default [
         "priceConfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "4458318361458130369920177",
-        "itemNumber": "9SIC0T2KG23513",
+        "sku": "4458314400160117402379090",
+        "itemNumber": "9SIC57KKTB7119",
         "sellerClass": "marketplace",
-        "price": 331,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318361458130369920177&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B71%3Fitem%3D9SIC0T2KG23513",
+        "price": 349.99,
+        "saleprice": 299.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314400160117402379090&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F15Z-0006-00B71%3Fitem%3D9SIC57KKTB7119",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C0T2S25061114Y8WYEB.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-08T15:50:15.697Z",
+        "matchedAt": "2026-09-12T14:43:16.665Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -12107,7 +12324,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:35.332Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -12184,7 +12401,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.186Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       },
       "newegg_openbox": {
         "sku": "4458316548007699654219488",
@@ -12199,7 +12416,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -12310,7 +12527,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.726Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -12357,7 +12574,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.782Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "msi": {
         "price": 899.99,
@@ -12439,7 +12656,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.386Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34,
@@ -12474,6 +12691,20 @@ export default [
         "sku": "6624221",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458314012689170930493190",
+        "itemNumber": "0JC-0019-02HD9",
+        "sellerClass": "official",
+        "price": 764.99,
+        "saleprice": 733.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314012689170930493190&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-27%2Fp%2F0JC-0019-02HD9%3Fitem%3D0JC-0019-02HD9",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD2406071CHZG2E7.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:35.170Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -12559,6 +12790,20 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458313114378343558667768",
+        "itemNumber": "0JC-0019-02HU3",
+        "sellerClass": "official",
+        "price": 410.99,
+        "saleprice": 393.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313114378343558667768&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02HU3%3Fitem%3D0JC-0019-02HU3",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2501070EHAI864.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:35.172Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -12595,7 +12840,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:45.590Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -12830,7 +13075,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:34.329Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -12867,17 +13112,18 @@ export default [
         "priceConfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "445838831376097866899339",
-        "itemNumber": "9SIAA65KWG6479",
+        "sku": "445839770646371027869760",
+        "itemNumber": "9SIA36ZM6G0811",
         "sellerClass": "marketplace",
-        "price": 849,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838831376097866899339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-u3225qe-32-31-5-viewable-uhd-120-hz-ultrasharp-ips-silver%2Fp%2F15Z-0006-00B74%3Fitem%3D9SIAA65KWG6479",
+        "price": 839.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839770646371027869760&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-u3225qe-32-31-5-viewable-uhd-120-hz-ultrasharp-ips-silver%2Fp%2F15Z-0006-00B74%3Fitem%3D9SIA36ZM6G0811",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A22FD2511150NDQEP01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:15:53.725Z",
+        "matchedAt": "2026-09-12T14:40:42.440Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -12928,7 +13174,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -13161,6 +13407,20 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458313771261449007834059",
+        "itemNumber": "0JC-0019-02HX5",
+        "sellerClass": "official",
+        "price": 699.99,
+        "saleprice": 605.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313771261449007834059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0019-02HX5%3Fitem%3D0JC-0019-02HX5",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2503120C1HLK97.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:35.174Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -13189,18 +13449,18 @@ export default [
     "mpn": "8Y2K9AAABA",
     "deals": {
       "newegg": {
-        "sku": "4458313920266882151391269",
-        "itemNumber": "9SIA0ZXK720747",
+        "sku": "445836957138536845070102",
+        "itemNumber": "9SIA24GKA97290",
         "sellerClass": "marketplace",
-        "price": 1025.66,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313920266882151391269&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-31-5%2Fp%2F0JC-0019-02GG0%3Fitem%3D9SIA0ZXK720747",
+        "price": 998.64,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836957138536845070102&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fhp-31-5%2Fp%2F0JC-0019-02GG0%3Fitem%3D9SIA24GKA97290",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A0ZXD24040614CGFAA1.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-20T12:39:49.742Z",
+        "matchedAt": "2026-09-12T14:40:40.375Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -13243,14 +13503,14 @@ export default [
         "itemNumber": "9SIABMTKHN5288",
         "sellerClass": "marketplace",
         "price": 450.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316586794418285984265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725qe-27-uhd-100hz-pro-ips-black%2Fp%2F0JC-0004-00WB3%3Fitem%3D9SIABMTKHN5288",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316586794418285984265&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725qe-27-uhd-100hz-pro-ips-black%2Fp%2F0JC-0004-00WB3%3Fitem%3D9SIABMTKHN5288",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AVC6D2602160VSUWFAC.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:15.095Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-11",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -13288,7 +13548,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:53.721Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -13330,7 +13590,21 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445836537666724368843747",
+        "itemNumber": "N82E16824026503",
+        "sellerClass": "official",
+        "price": 299.99,
+        "saleprice": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836537666724368843747&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824026503%3Fitem%3DN82E16824026503",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-503-12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:32.864Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34,
@@ -13381,9 +13655,21 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.245Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-01",
         "priceLastMovedAt": "2026-09-01",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458314963338902492598742",
+        "itemNumber": "N82E16824281387",
+        "sellerClass": "official",
+        "price": 1299,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314963338902492598742&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-proart-display-6k-pa32qcv-31-5-inches-ips-60-hz%2Fp%2FN82E16824281387%3Fitem%3DN82E16824281387",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-281-387-03.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.206Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 32,
@@ -13431,7 +13717,7 @@ export default [
         "matchedAt": "2026-08-30T15:49:51.940Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -13479,7 +13765,7 @@ export default [
         "matchedAt": "2026-09-02T15:37:45.646Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 31.5,
@@ -13564,18 +13850,18 @@ export default [
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
-        "sku": "445833479691399594440597",
-        "itemNumber": "9SIC57KKTB7166",
+        "sku": "4458318275637725962757803",
+        "itemNumber": "9SIAET8M6A0206",
         "sellerClass": "marketplace",
-        "price": 424.99,
-        "saleprice": 319.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833479691399594440597&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIC57KKTB7166",
+        "price": 308.68,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318275637725962757803&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdell-p2725d-27-qhd-100-hz-pro-27-plus-ips-black%2Fp%2FN82E16824260955%3Fitem%3D9SIAET8M6A0206",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-260-955-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-31T18:40:47.554Z",
+        "matchedAt": "2026-09-12T14:42:22.601Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -13612,18 +13898,18 @@ export default [
         "priceLastMovedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "4458316305397092411526076",
-        "itemNumber": "9SIC57KKTB7142",
+        "sku": "445838471619737034382788",
+        "itemNumber": "9SIAETUKW70356",
         "sellerClass": "marketplace",
-        "price": 124.99,
-        "saleprice": 94.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316305397092411526076&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0004-00WE4%3Fitem%3D9SIC57KKTB7142",
+        "price": 89.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838471619737034382788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0004-00WE4%3Fitem%3D9SIAETUKW70356",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A22FD2510150SJL8SF7.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:34.331Z",
+        "matchedAt": "2026-09-12T14:42:22.605Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 21.5,
@@ -13672,7 +13958,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.114Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 34.1,
@@ -13733,14 +14019,15 @@ export default [
     "mpn": "27US550-W",
     "deals": {
       "newegg": {
-        "sku": "N82E16824026451",
+        "sku": "44583333709281605084623",
+        "itemNumber": "N82E16824026451",
+        "sellerClass": "official",
         "price": 299.99,
-        "saleprice": null,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583333709281605084623&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flg-27us550-w-27-4k-60hz-ultrafine-ips-silver%2Fp%2FN82E16824026451%3Fitem%3DN82E16824026451",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-026-451-01.jpg",
-        "sellerClass": "official",
+        "inStock": true,
         "matchedAt": "2026-07-22",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-12T09:26:20.171Z"
       },
@@ -13757,7 +14044,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-01",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -14014,16 +14301,18 @@ export default [
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
-        "sku": "4458317782225816278286452",
-        "itemNumber": "9SIC85KM4R4851",
-        "sellerClass": "marketplace",
-        "price": 125.88,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317782225816278286452&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp273l-e14-27-fhd-144-hz-pro-series-ips-matte-black%2Fp%2FN82E16824475500%3Fitem%3D9SIC85KM4R4851",
+        "sku": "4458310495760606213873805",
+        "itemNumber": "N82E16824475500",
+        "sellerClass": "official",
+        "price": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310495760606213873805&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp273l-e14-27-fhd-144-hz-pro-series-ips-matte-black%2Fp%2FN82E16824475500%3Fitem%3DN82E16824475500",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-500-09.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:43.216Z",
+        "matchedAt": "2026-09-12T14:43:33.326Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -14103,7 +14392,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:17.667Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -14182,6 +14471,19 @@ export default [
         "sku": "6645727",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "445832562975220009564605",
+        "itemNumber": "0JC-0006-00Y88",
+        "sellerClass": "official",
+        "price": 125.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832562975220009564605&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y88%3Fitem%3D0JC-0006-00Y88",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2509110C2DMT70.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:35.059Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
         "priceConfirmedAt": "2026-09-12"
       }
     },
@@ -14343,7 +14645,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.783Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "msi": {
         "price": 139.99,
@@ -14356,16 +14658,18 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
-        "sku": "4458312060354695130490027",
-        "itemNumber": "9SIC879M4M6418",
-        "sellerClass": "marketplace",
-        "price": 106.88,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312060354695130490027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp273w-e14a-27-fhd-144-hz-ips-white%2Fp%2FN82E16824475537%3Fitem%3D9SIC879M4M6418",
+        "sku": "445835830293937452159645",
+        "itemNumber": "N82E16824475537",
+        "sellerClass": "official",
+        "price": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835830293937452159645&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp273w-e14a-27-fhd-144-hz-ips-white%2Fp%2FN82E16824475537%3Fitem%3DN82E16824475537",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-537-08.png",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:43.236Z",
+        "matchedAt": "2026-09-12T14:43:33.358Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -14472,16 +14776,19 @@ export default [
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
-        "sku": "4458318124016705179246337",
-        "itemNumber": "9SIAFVFKNC0358",
-        "sellerClass": "marketplace",
-        "price": 102.81,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318124016705179246337&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824475520%3Fitem%3D9SIAFVFKNC0358",
+        "sku": "445834069738442958520983",
+        "itemNumber": "N82E16824475520",
+        "sellerClass": "official",
+        "price": 119.99,
+        "saleprice": 94.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834069738442958520983&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16824475520%3Fitem%3DN82E16824475520",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-520-03.png",
         "inStock": true,
-        "matchedAt": "2026-08-22T12:23:53.305Z",
+        "matchedAt": "2026-09-12T14:43:33.342Z",
         "matchMethod": "sftp:upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -14752,7 +15059,7 @@ export default [
         "matchedAt": "2026-08-19T12:27:57.368Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -14794,14 +15101,14 @@ export default [
         "itemNumber": "9SIAFJ8KTT3901",
         "sellerClass": "marketplace",
         "price": 235.43,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311493248721502207897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC5%3Fitem%3D9SIAFJ8KTT3901",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2602040JQJ0733.jpg",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311493248721502207897&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC5%3Fitem%3D9SIAFJ8KTT3901",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/V1DSD2608110YI4TE33.jpg",
         "inStock": true,
         "matchedAt": "2026-09-06T14:59:37.096Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-06",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -14887,17 +15194,19 @@ export default [
         "priceLastMovedAt": "2026-09-03"
       },
       "newegg": {
-        "sku": "4458311511450042694228590",
-        "itemNumber": "9SIACVBM013155",
-        "sellerClass": "marketplace",
-        "price": 109.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311511450042694228590&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y92%3Fitem%3D9SIACVBM013155",
+        "sku": "445838384942392234644621",
+        "itemNumber": "0JC-0006-00Y92",
+        "sellerClass": "official",
+        "price": 126,
+        "saleprice": 114.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838384942392234644621&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y92%3Fitem%3D0JC-0006-00Y92",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2509300CCLYCAD.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-05T14:13:47.122Z",
+        "matchedAt": "2026-09-12T14:40:35.059Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 21.5,
@@ -14990,21 +15299,21 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "9SIACVBKUR6061",
-        "price": 259.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312014632131557242959&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00Y97%3Fitem%3D9SIACVBKUR6061",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2510140C2LFL60.jpg",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-09-11T15:29:24.010Z",
-        "matchMethod": "name",
+        "sku": "4458311483807201441686901",
+        "itemNumber": "0JC-0006-00YC3",
+        "sellerClass": "official",
+        "price": 370,
+        "saleprice": 293.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311483807201441686901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0JC-0006-00YC3%3Fitem%3D0JC-0006-00YC3",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD2607221BTN3Z2B.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:35.063Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:26:24.569Z",
-        "priceLastMovedAt": "2026-09-11",
-        "rematchedAt": "2026-09-11T20:05:47.956Z",
-        "rematchedFrom": "445831931944325232073721"
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "screenSize": 15.6,
@@ -15092,7 +15401,7 @@ export default [
         "matchedAt": "2026-08-19T12:27:01.335Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 23.8,
@@ -15152,20 +15461,22 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "4458318419104548345768256",
-        "itemNumber": "9SIA24GM3P2973",
-        "sellerClass": "marketplace",
-        "price": 762.47,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318419104548345768256&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-271qr-qd-oled-x50-26-5-wqhd-500-hz-metallic-black-rgb%2Fp%2FN82E16824475540%3Fitem%3D9SIA24GM3P2973",
+        "sku": "445835824605447124384316",
+        "itemNumber": "N82E16824475540",
+        "sellerClass": "official",
+        "price": 729.99,
+        "saleprice": 711.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835824605447124384316&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-271qr-qd-oled-x50-26-5-wqhd-500-hz-metallic-black-rgb%2Fp%2FN82E16824475540%3Fitem%3DN82E16824475540",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-540-10.png",
         "inStock": true,
-        "matchedAt": "2026-08-27T21:30:19.184Z",
+        "matchedAt": "2026-09-12T14:43:33.363Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -15225,7 +15536,21 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.474Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
+      },
+      "newegg": {
+        "sku": "4458312066446059798906458",
+        "itemNumber": "N82E16824475548",
+        "sellerClass": "official",
+        "price": 119.99,
+        "saleprice": 89.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312066446059798906458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp242-e14c-23-8-fhd-144hz-ips-black%2Fp%2FN82E16824475548%3Fitem%3DN82E16824475548",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-548-04.png",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.368Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24,
@@ -15273,6 +15598,20 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceLastMovedAt": "2026-09-02"
+      },
+      "newegg": {
+        "sku": "445837831652713305725755",
+        "itemNumber": "N82E16824475547",
+        "sellerClass": "official",
+        "price": 139.99,
+        "saleprice": 109.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837831652713305725755&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-mp272-e14c-27-ips-144-hz%2Fp%2FN82E16824475547%3Fitem%3DN82E16824475547",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/24-475-547-03.png",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:43:33.368Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 27,
@@ -15346,7 +15685,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.426Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "screenSize": 24,
@@ -15956,7 +16295,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:30.491Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.799Z",

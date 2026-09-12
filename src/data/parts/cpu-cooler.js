@@ -512,7 +512,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.184Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "fans_inc": 1,
@@ -1859,18 +1859,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUK937606",
-        "price": 179.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835132121409274655910&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIAZTUK937606",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-11T15:29:39.649Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:18:16.679Z",
-        "priceLastMovedAt": "2026-09-11",
-        "rematchedAt": "2026-09-11T19:56:55.099Z",
-        "rematchedFrom": "4458315887140650144449529"
+        "price": 109,
+        "saleprice": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:42:42.610Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7,
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4340,15 +4340,15 @@ export default [
         "itemNumber": "N82E16835101119",
         "sellerClass": "official",
         "price": 399.99,
-        "saleprice": 376.99,
+        "saleprice": 369.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839322218313316671549&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-aio-90rc0131-m0aay0-amd-socket-am4-amd-socket-am5-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2FN82E16835101119%3Fitem%3DN82E16835101119",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-119-08.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 11,
@@ -4400,17 +4400,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458318193414561346725550",
-        "itemNumber": "9SIA4REK842920",
+        "sku": "4458317307517172578121862",
+        "itemNumber": "9SIAADYK916921",
         "sellerClass": "marketplace",
-        "price": 119.17,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318193414561346725550&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIA4REK842920",
+        "price": 109.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:15:54.765Z",
+        "matchedAt": "2026-09-12T14:41:50.950Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:18:22.810Z"
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4858,7 +4858,7 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458315448780282110771242",
@@ -5684,21 +5684,20 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.795Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
-        "sku": "9SIA6ZPKVY7892",
+        "sku": "445839811036610137058647",
+        "itemNumber": "9SIA6ZPKVY7892",
+        "sellerClass": "marketplace",
         "price": 222.61,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839811036610137058647&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3D9SIA6ZPKVY7892",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
-        "sellerClass": "marketplace",
-        "matchedAt": "2026-09-10T15:57:49.666Z",
-        "matchMethod": "upc",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:51.309Z",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:18:24.464Z",
-        "priceLastMovedAt": "2026-09-12",
-        "rematchedAt": "2026-09-12T09:18:24.464Z",
-        "rematchedFrom": "445832592308156619728697"
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "discount": 10,
@@ -6803,7 +6802,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 10,
@@ -10751,7 +10750,7 @@ export default [
         "matchedAt": "2026-05-14T22:20:57.916Z",
         "matchMethod": "phase2:name-match",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458315165269356823080327",
@@ -11942,18 +11941,20 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIA2W0KPW8659",
+        "sku": "445832150892608202230575",
+        "itemNumber": "9SIA2W0KPW8659",
+        "sellerClass": "marketplace",
         "price": 43.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832150892608202230575&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcooler-master-rr-h410-25pk-r1-411-nano%2Fp%2F13C-000X-004J1%3Fitem%3D9SIA2W0KPW8659",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C27FD2510170Z7I9MF2.jpg",
-        "sellerClass": "marketplace",
+        "inStock": true,
         "matchedAt": "2026-09-11T15:30:31.266Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-12T09:19:22.969Z",
-        "priceLastMovedAt": "2026-09-11",
         "rematchedAt": "2026-09-11T19:58:02.191Z",
-        "rematchedFrom": "445831501802986156908340"
+        "rematchedFrom": "445831501802986156908340",
+        "priceLastMovedAt": "2026-09-11"
       }
     },
     "additionalImages": [
@@ -12010,7 +12011,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.122Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -12132,7 +12133,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.434Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 30,
@@ -12356,7 +12357,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "discount": 15,
@@ -12651,7 +12652,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:09.479Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -12983,6 +12984,7 @@ export default [
         "itemNumber": "17Z-007W-002Z1",
         "sellerClass": "official",
         "price": 124.99,
+        "saleprice": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312748831353618156523&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F17Z-007W-002Z1%3Fitem%3D17Z-007W-002Z1",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2505300CBFMN91.jpg",
         "inStock": true,
@@ -12990,7 +12992,6 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-12T09:20:14.607Z",
-        "saleprice": 99.99,
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -14332,7 +14333,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -14367,18 +14368,20 @@ export default [
     "mpn": "RL-KN280-B1",
     "deals": {
       "newegg": {
-        "sku": "9SIA6KXK0Y3514",
+        "sku": "4458310512255067987617056",
+        "itemNumber": "9SIA6KXK0Y3514",
+        "sellerClass": "marketplace",
         "price": 189.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310512255067987617056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-315-mm-intel-socket-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-black%2Fp%2FN82E16835146119%3Fitem%3D9SIA6KXK0Y3514",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-119-10.jpg",
-        "sellerClass": "marketplace",
+        "inStock": true,
         "matchedAt": "2026-08-18T14:17:37.576Z",
-        "matchMethod": "upc",
+        "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-12T09:20:18.071Z",
-        "priceLastMovedAt": "2026-09-12",
         "rematchedAt": "2026-09-12T09:20:18.071Z",
-        "rematchedFrom": "4458314304829086519122432"
+        "rematchedFrom": "4458314304829086519122432",
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -15242,7 +15245,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.484Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -15564,14 +15567,15 @@ export default [
         "itemNumber": "N82E16835846063",
         "sellerClass": "official",
         "price": 149.99,
-        "saleprice": 125.99,
+        "saleprice": 126.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838845169899382605432&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-liquid-cooling-system-mag-series-radiator-size-394-x-119-2-x-27mm-intel-lga1150-1151-1155-1156-1200-1700-amd-am5-am4-black%2Fp%2FN82E16835846063%3Fitem%3DN82E16835846063",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-063-05.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -15626,7 +15630,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -15693,7 +15697,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.434Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "coolerType": "AIO",
@@ -16644,18 +16648,17 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 98.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-11T15:27:39.956Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-12T09:21:16.743Z",
-        "priceLastMovedAt": "2026-09-11",
-        "rematchedAt": "2026-09-11T19:59:55.426Z",
-        "rematchedFrom": "445833795822587653180041"
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-12T14:40:42.103Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -19321,7 +19324,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:27.291Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.795Z",
