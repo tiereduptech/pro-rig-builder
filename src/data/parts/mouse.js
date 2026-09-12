@@ -25,7 +25,7 @@ export default [
           "price": 46.99,
           "inStock": true
         },
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -56,13 +56,13 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 30,
     "bench": 92,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -94,13 +94,13 @@ export default [
         },
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 0,
     "bench": 88,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -132,13 +132,13 @@ export default [
         },
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 12,
     "bench": 85,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -170,13 +170,13 @@ export default [
         },
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 7,
     "bench": 81,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -203,13 +203,13 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 3,
     "bench": 53,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -239,7 +239,7 @@ export default [
           "price": 36.99,
           "inStock": true
         },
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -269,14 +269,14 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 11,
     "mouseType": "USB",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -305,7 +305,7 @@ export default [
           "price": 59.99,
           "inStock": true
         },
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -358,14 +358,14 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 70,
     "mouseType": "Wireless",
     "bench": 100,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -391,14 +391,14 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "value": 40,
     "mouseType": "Wireless",
     "bench": 90,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -420,7 +420,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -445,7 +445,7 @@ export default [
         "url": "https://www.amazon.com/Logitech-LIGHTSPEED-Wireless-Gaming-Mouse/dp/B07CMS5Q6N/ref=sr_1_15?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-15&tag=tiereduptech-20",
         "price": 36,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -484,7 +484,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "sensor": "Laser",
@@ -493,7 +493,7 @@ export default [
     "weight": 134,
     "bench": 30,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -515,7 +515,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -551,9 +551,9 @@ export default [
         "url": "https://www.amazon.com/Logitech-Lightspeed-PowerPlay-Compatible-Lightsync/dp/B07L4BM851/ref=sr_1_20_mod_primary_new?crid=IV29V2MB51EP&dib=eyJ2IjoiMSJ9.C8nOIcZFACVH26Sr4pdsY5LnNovz1_PHMC9qMvK1Bqb_uxdeHTDK2UC1v3DNcuqEspFw1byZz-wYM61vEzRXZUibvDn5qND0SDKO7Wd5W1OcqUt_6DEbd-zrl106mpt9MBMg77-SoGwm9gNKmobx2EUFK9aNoxukxWeBhRhDg8QP95VuwWB5BRHBBNIbz1Ar4T6dCe2UZMO8RYlOfE62C9uvvUCxufpk899QejgKsMQ.2TgkbcjSGKKPl3aKq4d8MM9SOh8yslsSWxAJTnAveA8&dib_tag=se&keywords=lightweight+gaming+mouse&qid=1777130429&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightweight%2Bgaming%2Bmouse%2Caps%2C177&sr=8-20&xpid=mwUOBLs-tm-BS&tag=tiereduptech-20",
         "price": 109,
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceSource": "3p",
+        "priceSeller": "Electronics Club",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -595,7 +595,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "General King",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -627,7 +627,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "sensor": "Optical",
@@ -636,7 +636,7 @@ export default [
     "weight": 110,
     "bench": 41,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -656,7 +656,7 @@ export default [
         "url": "https://www.amazon.com/Razer-DeathAdder-Essential-Gaming-Mouse/dp/B094Q1GJSD/ref=sr_1_13?crid=V39H6QEF8NT1&dib=eyJ2IjoiMSJ9.qzSxRfgEb8GXM0VPkAEOEViyDp_oN__bDzhVWqVvrzRDyJTwxJeKkk6B6DPdl0cBxwXMvJOzGF9p5GdCSSPQLOx5AE_u8yZGPVnCrmKMDQXjVtyyal_wiMH0hURuFGkOek52LJY9wL-t59j2GXGTRaJQdScgJ-VlXflBEo5Ry8EBAhUpA2mMYw3ovQLXcscFNhazFnRD11zgv06IXjmL3AJquALR_RzbLpR0sISjjIw.utxJFYZ5KmvGiGBG-ZSNePYh57DW5nxvzHjomQLUKMA&dib_tag=se&keywords=Endgame+Gear+mouse&qid=1777130427&sprefix=Endgame%2BGear%2Bmouse%2Caps%2C234&sr=8-13&tag=tiereduptech-20",
         "price": 20.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -695,7 +695,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -720,7 +720,7 @@ export default [
         "url": "https://www.amazon.com/Razer-Basilisk-Customizable-Ergonomic-Gaming/dp/B09C13PZX7/ref=sr_1_42?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.kH4hRlqItMsY8tinVjKoCRsegpm45gct3uvJEuVz7D5cwAM_eBFS02iXxFhbVK1MtsJwGsQG5CNKhE_Vu6rJEyrj3PglT5NTYJT7V3luAkua0pZoNI4tw2-JXxLle26pvyMS-NyfpapI2Fb0DwZfTBb86802uqLAUXQHX6REcmvpxJ6NfwbqBiXcGryVdSEdTYvm2G8MSXb3jLFqNmgsQAAAl_4zrgDkGa1Q9Sb9lnw.Rr36DS6-DSjiftWjvd-5t-g6zYjHrcTRZjhg3fR-Q2A&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130432&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-42&xpid=R0jtZpMReOJWB&tag=tiereduptech-20",
         "price": 33.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -753,7 +753,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "dpi": 1000,
@@ -762,7 +762,7 @@ export default [
     "weight": 135,
     "bench": 35,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -781,7 +781,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -804,12 +804,12 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/dp/B07FNJB8TT?tag=tiereduptech-20",
-        "price": 82.99,
+        "price": 77.95,
         "inStock": true,
         "asin": "B07FNJB8TT",
         "priceSource": "3p",
-        "priceSeller": "Discover Savings",
-        "priceConfirmedAt": "2026-09-11",
+        "priceSeller": "Electronics Club",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -835,9 +835,9 @@ export default [
         "url": "https://www.amazon.com/Logitech-Vertical-Ergonomic-Bluetooth-Compatible/dp/B09J1TB35S/ref=sr_1_35?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-35&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20",
         "price": 64.38,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Discover Savings",
+        "priceSeller": "Electronics Basket",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -862,7 +862,7 @@ export default [
         "url": "https://www.amazon.com/Logitech-MX-Vertical-Mini-White/dp/B098JK6G5N/ref=sr_1_21?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.2StnkTC2A_vAmVyIBNH9w1c9bje9FOAfopm4Ki_10DpDM5VyqWhx1QePBo8hfldu00Z66WJ3rVyP72QxHOpLInj2IUXHtiPR71h1LfNdsXc6RkUos7uTgVORqr3H80N3gbX2IZhdZkNuteaiB-gZAa_Acbf-27vELuFrJAYuJ1s_DdbZxonyZNN-kU_fLeMuu4RmS22XLu06Q-z996-N_zPH3fjArLxKMMOqf5AnOMI.q5djaVxzXNUPQSC-7jD9zA9aExeYT7vEn7QFE8nPqRc&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130442&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-21&xpid=nNAcQmdnGDW_m&tag=tiereduptech-20",
         "price": 66.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Abe's Electronics Center",
         "priceResolvedVia": "paapi",
@@ -909,7 +909,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       },
@@ -946,7 +946,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "sensor": "Optical",
@@ -955,7 +955,7 @@ export default [
     "weight": 158,
     "bench": 39,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -975,7 +975,7 @@ export default [
         "url": "https://www.amazon.com/Redragon-M810-Wireless-Buttons-Capacity/dp/B09ZY348SY/ref=sr_1_5?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-5&tag=tiereduptech-20",
         "price": 27.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
         "priceResolvedVia": "paapi",
@@ -1008,7 +1008,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Redragon Official",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1033,7 +1033,7 @@ export default [
         "url": "https://www.amazon.com/Redragon-Wireless-Backlit-Rechargeable-Programmable/dp/B08M9FZWN9/ref=sr_1_16?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gqhgWBpv6izOCyfMRtq9_xF0J_JYj8GX7tu_WeG3lIpKn9LYGbrRtHBCk9hjqKueCKzxE2w6ne3LzD8Lr3IbMSg3537Y_IYhT42Q9NVgVNUuC2Tjz7XrXoaULCps0KzMgcV0klXG-w7sTY4dJ4xjV7ZhSmbUrgos7Mc3jWeJT3R_sOvrV2rhm-Fj_HcbKCPmdtvg95p62rXYwLcpaNyfd6-hxArAdRlRhaysj0XMbwA.pbUVV5NN12YOKVY3A_2ettxOIbc_Y4WhV8XUHgw54co&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130428&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-16&tag=tiereduptech-20",
         "price": 27.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Redragon Official",
         "priceResolvedVia": "paapi",
@@ -1060,7 +1060,7 @@ export default [
         "price": 19.73,
         "inStock": true,
         "asin": "B0FB9BR23C",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TECHBLUE OCEAN",
         "priceResolvedVia": "paapi",
@@ -1092,7 +1092,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6460407&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6460407.p%3FskuId%3D6460407",
@@ -1128,7 +1128,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1162,7 +1162,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "TRENDY-TECH (We Record Serial Numbers)",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1187,7 +1187,7 @@ export default [
         "url": "https://www.amazon.com/Logitech-Superlight-Wireless-Pro-Grade-Programmable/dp/B09NBWL8J5/ref=sr_1_5?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.UmsocjleeheWsQ4hrxqG662ywKjHvwfHFEECvF3lyCOuSeDbXR9V0azQarIlD49N47gCs5u2fIABUcvifBz6rutHUxdeBGeQAbq8YAvMzSa6LIR6_zGzt66DhMdVM0LzolQtU0kVC6W9WVl3odv07emU6pTSUdCaOZh5tJ6rv-5YkBklk1U_HjySywxttToCMtcFSA1Va43VRKAEXrMiMvYzCzozApPenzcOOiosgf8.rowg1Xka1E1u3lgVfJ-gRxQeCAqQdnw5fgi4B58kFNw&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130428&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-5&tag=tiereduptech-20",
         "price": 149.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TRENDY-TECH (We Record Serial Numbers)",
         "priceResolvedVia": "paapi",
@@ -1212,15 +1212,13 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/Logitech-Scrolling-Any-Surface-Programmable-Bluetooth/dp/B0BPY4ZQXG/ref=sr_1_16?crid=AI171H1RXE1E&dib=eyJ2IjoiMSJ9.fJpmc6iSsthd__AZttTmLtwq0-q1xtKL-sXtIyyfRl2SscfbMnd1HcYuIE5grtAIytoq7zukXlTgu-OWssizRr6ECNR8-JfUUnUlx6WB5UY_mSkNifbzOOHsbEZO89CylqGUR2Aidx1KZ6c29hgCs-oqVlFaTLtIVGjBupYuzoO_EW9_FGq4kyPiJEdcow7KVacmv-ZBo3h8gyS_zHS1J3-2JZq9TR-jv24SrHND3T8.Xz-yovMtaME6O_FwvAh1x7SYdBIlXsh37WfXVct1iCI&dib_tag=se&keywords=Logitech+MX+Master&qid=1777130436&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Logitech%2BMX%2BMaster%2Caps%2C109&sr=8-16&tag=tiereduptech-20",
-        "price": 79.99,
+        "price": 89.99,
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-07",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-09"
+        "priceConfidence": "confirmed"
       }
     },
     "mouseType": "Wireless",
@@ -1247,7 +1245,7 @@ export default [
         "price": 31.99,
         "inStock": true,
         "asin": "B0D2JGKRMM",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1275,7 +1273,7 @@ export default [
         "url": "https://www.amazon.com/Razer-Basilisk-HyperSpeed-Customizable-Wireless/dp/B0BXBC26X8/ref=sr_1_30?crid=R4B2XJC8OTZX&dib=eyJ2IjoiMSJ9.HNY0rtCuUyvNZwpqWY9HM0X0_2ecbGJO-h20E5yEF7uEUgxaZXNi4fo-sZhBvmQHbxaRRO9HCMz_9pcKvLU9AZYtj1p7ky2SGG3ZnKRWLTFwrzFFuFyvQDVKv9jFNhxtZpzGwJbUnc83Po7792eYQMUy5IyeUOBC26OeoyYLdk2tVYqutkH0QlRQXaH4s8MPFbotkY_y2KAuZJmIk7gikLcopAu0X-4u3DEE8LadIU8.XkEQq1FqOJCS55Upg_Db_WLxQ1GTEyQMliViWVnW5oM&dib_tag=se&keywords=Logitech+G+Pro+mouse&qid=1777130430&sprefix=Logitech%2BG%2BPro%2Bmouse%2Caps%2C150&sr=8-30&xpid=R0jtZpMReOJWB&tag=tiereduptech-20",
         "price": 48.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1303,8 +1301,8 @@ export default [
         "price": 110.99,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "PNR Sales",
-        "priceConfirmedAt": "2026-09-11",
+        "priceSeller": "Raw Innovation LLC",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1336,7 +1334,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1361,7 +1359,7 @@ export default [
         "url": "https://www.amazon.com/Razer-Basilisk-Customizable-Wireless-Gaming/dp/B0B6Y3XYFG/ref=sr_1_24?crid=OB7AC3XQPE5T&dib=eyJ2IjoiMSJ9.gA4-awrBjBMmGG_4qLwYlpJTdBnQj5NT1MxEGSmPUUBr2ymHQlgzlC4qAo-m8ys2qO2B0vY5cBTfJe4m5kjNO-xCdAwUnK_h60eAIc31D3SbCQUxeWH8rrD4pKSGjZr0nMOX-KqSXI8ONHLQn4owc5HaoI1j_uvuVAtjpOh469pD8cedIexUBNv54rQ7e3Sn0mNU_8gAy23axkVyY0kP_2Wian_NEBk08prhqLaCeck.kx_mZK-nb050ktbQK2etdFzfYg_ykL-GZEz7qEbwMWQ&dib_tag=se&keywords=wireless+gaming+mouse&qid=1777130429&sprefix=wireless%2Bgaming%2Bmouse%2Caps%2C126&sr=8-24&xpid=aOcyGxvfvyWP6&tag=tiereduptech-20",
         "price": 99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -1391,7 +1389,7 @@ export default [
         "asin": "B0D6PTR6MP",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -1419,7 +1417,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "NewEase Tech Gadget Store",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2617,7 +2615,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0G1CPTN1F?tag=tiereduptech-20",
         "price": 69.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -2642,9 +2640,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0BSKX9V7C?tag=tiereduptech-20",
         "price": 84.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-09-12",
+        "priceSource": "3p",
+        "priceSeller": "Mobile Advance",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2669,7 +2667,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2694,7 +2692,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2722,8 +2720,8 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
-        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-09-12",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -2745,7 +2743,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FLH3LP3W?tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -2772,7 +2770,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Only1deal",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -2830,7 +2828,7 @@ export default [
         "price": 59.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Only1deal",
         "priceResolvedVia": "paapi"
@@ -2964,7 +2962,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07CMS5Q6P?tag=tiereduptech-20",
         "price": 29.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -2991,7 +2989,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3019,7 +3017,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FC5SJNQX?tag=tiereduptech-20",
         "price": 119.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -3048,7 +3046,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T17:05:43.603Z",
@@ -3072,7 +3070,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0B66RHD7B?tag=tiereduptech-20",
         "price": 28.49,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -3133,7 +3131,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3204,7 +3202,7 @@ export default [
         "url": "https://www.amazon.com/dp/B01MECR863?tag=tiereduptech-20",
         "price": 69.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Nationwide Tech Biz",
         "priceResolvedVia": "paapi",
@@ -3358,7 +3356,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Evenr",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi"
       }
     },
@@ -3489,9 +3487,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0DVD5RTZ5?tag=tiereduptech-20",
         "price": 99.99,
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceSource": "3p",
+        "priceSeller": "Advent Prime",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3516,13 +3514,13 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T17:05:43.612Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -3540,10 +3538,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0BBPFCXSZ?tag=tiereduptech-20",
         "price": 39.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3567,7 +3565,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3592,7 +3590,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Abe's Electronics Center",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3615,9 +3613,9 @@ export default [
         "url": "https://www.amazon.com/dp/B0CJ5W7G41?tag=tiereduptech-20",
         "price": 97.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
-        "priceSource": "3p",
-        "priceSeller": "Rogaland Retail Central",
+        "priceConfirmedAt": "2026-09-12",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3640,7 +3638,7 @@ export default [
         "url": "https://www.amazon.com/dp/B08288178X?tag=tiereduptech-20",
         "price": 39.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-06",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Digital P",
         "priceResolvedVia": "paapi",
@@ -3668,7 +3666,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FCXYT2PV?tag=tiereduptech-20",
         "price": 129.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Pro Gamersware USA",
         "priceResolvedVia": "paapi",
@@ -3696,7 +3694,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi"
       }
     },
@@ -3721,7 +3719,7 @@ export default [
         "price": 38.69,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
         "priceResolvedVia": "paapi"
@@ -3747,13 +3745,13 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T17:05:43.615Z",
     "source": "amazon-discovery",
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -3776,7 +3774,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -3799,7 +3797,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09WD7XYBC?tag=tiereduptech-20",
         "price": 79.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -3822,9 +3820,9 @@ export default [
       "amazon": {
         "asin": "B00EO2ECUY",
         "url": "https://www.amazon.com/dp/B00EO2ECUY?tag=tiereduptech-20",
-        "price": 158.04,
+        "price": 149,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Toy Mine",
         "priceResolvedVia": "paapi",
@@ -3853,7 +3851,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "paapi",
-        "priceConfirmedAt": "2026-09-11"
+        "priceConfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T17:05:43.616Z",
