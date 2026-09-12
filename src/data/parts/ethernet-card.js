@@ -24,7 +24,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "lanSpeed": "10GbE",
@@ -36,7 +36,7 @@ export default [
     "vlan": false,
     "pxe": false,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -58,7 +58,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "lanSpeed": "10GbE",
@@ -70,7 +70,7 @@ export default [
     "vlan": false,
     "pxe": false,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -91,7 +91,10 @@ export default [
       "amazon": {
         "price": 299,
         "url": "https://www.amazon.com/dp/B01D3ZE0FY?tag=tiereduptech-20",
-        "inStock": true
+        "inStock": true,
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "title_mismatch",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "lanSpeed": "10GbE",
@@ -104,10 +107,11 @@ export default [
     "pxe": true,
     "connector": "RJ45",
     "needsReview": true,
-    "quarantinedAt": "2026-08-24",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
-    ]
+    ],
+    "quarantineReason": "asin_repair_no_match"
   },
   {
     "id": 99103,
@@ -127,7 +131,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "lanSpeed": "10GbE",
@@ -140,7 +144,7 @@ export default [
     "vlan": true,
     "pxe": true,
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "reviewFlags": [
       "relink:mismatch"
     ],
@@ -163,7 +167,7 @@ export default [
         "url": "https://www.amazon.com/dp/B076P9PPWN?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "10Gtek",
         "priceResolvedVia": "paapi"
@@ -195,10 +199,10 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 22.46,
+        "price": 27.99,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -227,7 +231,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "BrosTrend",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceConfidence": "confirmed"
       }
@@ -252,7 +256,7 @@ export default [
         "price": 18.99,
         "url": "https://www.amazon.com/dp/B08V1HG47H?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ULANSeN",
         "priceResolvedVia": "paapi",
@@ -279,7 +283,7 @@ export default [
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -306,7 +310,7 @@ export default [
         "price": 19.99,
         "url": "https://www.amazon.com/dp/B07SNQ2NQ1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -333,7 +337,7 @@ export default [
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
@@ -366,11 +370,11 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "title_mismatch",
-        "priceUnconfirmedAt": "2026-09-11"
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "needsReview": true,
-    "quarantinedAt": "2026-09-11",
+    "quarantinedAt": "2026-09-12",
     "quarantineReason": "asin_repair_no_match"
   },
   {
@@ -395,7 +399,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ULANSeN",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi"
       }
     }
@@ -420,7 +424,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0FM2DH49B?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "NICGIGA-US",
         "priceResolvedVia": "paapi"
@@ -473,7 +477,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0GGBC1VKT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "NICGIGA-US",
         "priceResolvedVia": "paapi"
@@ -503,7 +507,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09HGRK5XB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "NICGIGA-US",
         "priceResolvedVia": "paapi"
