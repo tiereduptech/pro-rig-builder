@@ -166,13 +166,11 @@ export default [
         "price": 499.99,
         "url": "https://www.amazon.com/dp/B0BZHTVHN5?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-12"
+        "priceConfirmedAt": "2026-09-12",
+        "priceSource": "3p",
+        "priceSeller": "Assurant Technologies",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445837549669031244055233",
@@ -233,7 +231,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -301,13 +299,11 @@ export default [
         "price": 539.99,
         "url": "https://www.amazon.com/dp/B0BXHC74WD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-10",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-12"
+        "priceConfirmedAt": "2026-09-12",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "445838901026564144549112",
@@ -369,7 +365,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Renewed Global",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -600,7 +596,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -663,7 +659,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -726,7 +722,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -788,8 +784,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "QyTech",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Sysmel",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -980,7 +976,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "PUSKILL-US",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "44583617561959053761099",
@@ -1034,13 +1032,13 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 73.99,
+        "price": 79,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Cyterus",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "DiscTech (USA)",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1101,7 +1099,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "OLOy Memory",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -1144,8 +1144,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Square Four (SN recorded)",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1253,7 +1253,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "35 Crscn",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1312,7 +1312,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "San Antonio Inventory",
+        "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1376,7 +1376,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1431,13 +1431,13 @@ export default [
     "reviews": 450,
     "deals": {
       "amazon": {
-        "price": 569.93,
+        "price": 599,
         "url": "https://www.amazon.com/dp/B0CYM58GFS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Perfect Stock",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1610,7 +1610,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Silicon Power USA Inc",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 8,
@@ -1657,7 +1659,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Silicon Power USA Inc",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 9,
@@ -1777,7 +1781,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Perfect Stock",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1837,7 +1841,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1988,7 +1992,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 5,
@@ -2035,7 +2041,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2128,13 +2134,13 @@ export default [
     "reviews": 880,
     "deals": {
       "amazon": {
-        "price": 379.99,
+        "price": 359.99,
         "url": "https://www.amazon.com/dp/B0C79S2CHW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "STOCKYFY",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Stokvane (S/N Recorded)",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2195,7 +2201,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Timetec International Inc",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2366,7 +2372,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Gigastone  America",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 10,
@@ -2413,7 +2421,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "STOCKYFY",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2723,7 +2731,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2907,7 +2915,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3215,7 +3223,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458313259524782540986056",
@@ -3340,7 +3350,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "trippodoshop",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3497,7 +3507,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Perfect Stock",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3541,13 +3551,11 @@ export default [
         "price": 246,
         "url": "https://www.amazon.com/dp/B08PV1QQJX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-04",
+        "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Giz-Promo",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-12"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458318334980112469129502",
@@ -3609,7 +3617,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3657,7 +3665,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -3753,7 +3763,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "i77e",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3800,7 +3810,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3859,7 +3869,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Stokvane (S/N Recorded)",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -3906,7 +3916,7 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
         "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "4458311909541356568796984",
@@ -4055,7 +4065,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       }
     },
     "additionalImages": [
@@ -4100,7 +4110,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4183,7 +4193,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4228,7 +4240,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4274,8 +4286,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "SalesPeak",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Stokvane (S/N Recorded)",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4322,7 +4334,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "prime bay",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4370,7 +4382,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Amazon Japan",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4516,7 +4530,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Neobits_",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -4609,7 +4625,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4657,7 +4673,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4704,7 +4720,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458316472641298539134629",
@@ -4810,7 +4828,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4906,7 +4924,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5015,7 +5033,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5107,7 +5127,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5346,7 +5368,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5487,7 +5511,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -5533,7 +5557,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5596,7 +5620,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5693,7 +5717,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6058,7 +6082,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -6151,7 +6175,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6212,7 +6236,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -6313,13 +6339,13 @@ export default [
     "reviews": 68,
     "deals": {
       "amazon": {
-        "price": 347.03,
+        "price": 299.99,
         "url": "https://www.amazon.com/dp/B0DCGFCHXF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "AztekC",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Neutron USA",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -6529,7 +6555,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -6668,7 +6694,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -6713,7 +6741,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Silicon Power USA Inc",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -6831,7 +6861,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "KLEVV",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -6877,7 +6907,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Silicon Power USA Inc",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "0RN-002K-000K5",
@@ -7176,7 +7208,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "BIWIN Tech",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -7223,7 +7255,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Micro Center",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -7411,7 +7443,7 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -7582,7 +7614,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -7861,8 +7895,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Micom Pro",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -7903,7 +7937,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -7999,7 +8035,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "QyTech",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -8205,7 +8241,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "QyTech",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -8299,8 +8335,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Platinum Micro, Inc.",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9881,7 +9917,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "eStarDeals",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9950,7 +9986,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Gigastone  America",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -9980,7 +10018,10 @@ export default [
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
     "source": "amazon-discovery",
-    "sticks": 2
+    "sticks": 2,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-12",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100352,
@@ -10002,7 +10043,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Gigastone  America",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -10029,7 +10072,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "YISAVE TECHNOLOGY (HK)",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "speed": 6000,
@@ -10056,12 +10101,12 @@ export default [
       "amazon": {
         "asin": "B0DZ935RX9",
         "url": "https://www.amazon.com/dp/B0DZ935RX9?tag=tiereduptech-20",
-        "price": 559.95,
+        "price": 519.95,
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Joes Tech Shop Inc",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Assurant Technologies",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10093,8 +10138,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "MobileMonster",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10160,7 +10205,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "YISAVE TECHNOLOGY (HK)",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10228,7 +10273,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "speed": 6400,
@@ -10260,7 +10307,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10325,7 +10372,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10358,7 +10405,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10482,8 +10529,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "Vaya Electronics",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10585,7 +10632,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Ironleaf Partners",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10648,7 +10695,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "speed": 3600,
@@ -10736,7 +10785,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10802,7 +10851,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "eStarDeals",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10834,7 +10883,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "eStarDeals",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -10879,7 +10928,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "eStarDeals",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -10960,7 +11009,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Gigastone  America",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",
@@ -10988,12 +11039,12 @@ export default [
       "amazon": {
         "asin": "B08C4QF5N4",
         "url": "https://www.amazon.com/dp/B08C4QF5N4?tag=tiereduptech-20",
-        "price": 67.1,
+        "price": 57.5,
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "AllSavings",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "eStarDeals",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11025,7 +11076,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "A-Tech Components",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11072,7 +11123,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.778Z",
@@ -11198,7 +11251,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KLEVV",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.778Z",
@@ -11268,7 +11323,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.778Z",
@@ -11298,8 +11355,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11330,7 +11387,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11442,7 +11499,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11475,7 +11532,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "A-Tech Components",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11557,7 +11614,7 @@ export default [
         "priceSeller": "Vaya Electronics",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-12"
       }
     },
@@ -11623,7 +11680,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11689,7 +11746,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ARF Tech",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11721,7 +11778,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11902,7 +11959,7 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Official Patriot Memory Store",
         "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -12055,7 +12112,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },

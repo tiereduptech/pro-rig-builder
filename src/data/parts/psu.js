@@ -126,7 +126,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -159,7 +159,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -301,7 +301,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -350,7 +350,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -546,7 +546,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "GeekTown (we record product serial number)",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       }
     },
     "color": "Black",
@@ -970,7 +970,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1038,7 +1038,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1071,7 +1071,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1175,7 +1175,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1350,7 +1350,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "BeachAudio",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1378,7 +1378,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1570,7 +1570,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Segotep Inc.",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -1611,7 +1611,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1680,7 +1680,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -1749,7 +1749,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg_openbox": {
@@ -1866,7 +1866,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg_openbox": {
@@ -2199,7 +2199,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -2239,7 +2239,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -2305,7 +2305,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -2345,7 +2345,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ARESGAME",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -2387,7 +2387,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 26,
@@ -2479,7 +2481,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -2537,8 +2541,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Signature Mart",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "be-quiet-official",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2595,7 +2599,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "VETROO USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -2696,7 +2700,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "LIAN LI direct store",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -2754,7 +2758,7 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
         "price": 234.99,
@@ -3032,7 +3036,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458311613567672493520306",
@@ -3087,7 +3093,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3199,7 +3205,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -3313,7 +3319,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -3529,7 +3535,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -3840,7 +3846,7 @@ export default [
         "priceSeller": "ARESGAME PC",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "unlabeled_buybox",
         "priceUnconfirmedAt": "2026-09-12"
       }
     },
@@ -3884,7 +3890,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ARESGAME PC",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -3923,7 +3931,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4027,7 +4035,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "445836436137136875053349",
@@ -4076,13 +4086,13 @@ export default [
     "reviews": 327,
     "deals": {
       "amazon": {
-        "price": 151.49,
+        "price": 161.97,
         "url": "https://www.amazon.com/dp/B0F9YY3R57?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "IPC-STORE✅",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4119,7 +4129,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4162,7 +4172,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ZalmanUSA",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "445837060404712836920709",
@@ -4321,7 +4333,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "GeekTown (we record product serial number)",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4365,7 +4377,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "KART IT",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458316909674234559455735",
@@ -4548,8 +4562,8 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
-        "priceSeller": "OHOhagi83",
-        "priceResolvedVia": "paapi",
+        "priceSeller": "MARU3-SHOP",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -4590,7 +4604,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -4706,7 +4720,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Redragon Shop",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "discount": 30,
@@ -4746,7 +4762,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5004,7 +5020,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5060,7 +5076,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Game Power Pc",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5115,7 +5131,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -5171,7 +5187,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "TFGJ",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -5364,7 +5380,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "CPS GAMING",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -5406,7 +5422,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Ptcliss",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5447,7 +5465,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "445832124794238139752234",
@@ -5536,7 +5556,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Ptcliss",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5576,7 +5598,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Raidmax Tech",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       },
       "newegg": {
         "sku": "4458313807534458740664034",
@@ -5632,7 +5656,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MOAIPLAY",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5716,7 +5742,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ESGAMING PC",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -5755,7 +5783,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Bestofbulk USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -5919,7 +5947,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
@@ -5987,7 +6015,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -6030,7 +6058,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "additionalImages": [
@@ -8804,12 +8834,12 @@ export default [
       "amazon": {
         "asin": "B0DJHCTJFC",
         "url": "https://www.amazon.com/dp/B0DJHCTJFC?tag=tiereduptech-20",
-        "price": 175.9,
+        "price": 159.94,
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -8918,7 +8948,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -8999,7 +9029,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9078,7 +9108,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9156,7 +9186,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9200,7 +9230,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9306,7 +9336,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9333,9 +9363,9 @@ export default [
         "price": 159.9,
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceSource": "3p",
+        "priceSeller": "Newegg Business",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9365,7 +9395,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9395,7 +9425,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9424,7 +9454,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9453,7 +9483,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9483,7 +9513,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "eff": "80+ Platinum",
@@ -9547,7 +9579,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9609,7 +9641,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9657,7 +9689,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9702,7 +9734,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9732,7 +9764,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9761,7 +9793,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -9808,7 +9840,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9837,7 +9869,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -9921,7 +9953,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "S V I",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10099,7 +10131,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10178,7 +10210,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.762Z",
@@ -10204,7 +10238,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10445,7 +10479,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10475,7 +10509,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10532,9 +10566,9 @@ export default [
         "price": 96.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-12",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceSource": "3p",
+        "priceSeller": "Provantage LLC",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -10579,7 +10613,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10655,7 +10689,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.764Z",
@@ -10683,7 +10719,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10812,7 +10848,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ESGAMING",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.765Z",
@@ -10840,7 +10878,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.765Z",
@@ -10867,7 +10907,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10895,7 +10935,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -10924,7 +10964,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.767Z",
@@ -10949,7 +10991,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "be-quiet-official",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11010,7 +11052,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "CABLEKINGDOM",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
@@ -11035,7 +11079,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11065,7 +11109,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Lirealar",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11153,7 +11197,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11182,7 +11226,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Apevia",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11274,7 +11318,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11458,7 +11502,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Amazon Global Store UK",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T14:34:31.769Z",
@@ -11640,7 +11686,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
       "newegg": {
@@ -11781,7 +11827,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11859,7 +11905,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Noctua Cooling Solutions",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T16:31:54.658Z",
@@ -11888,7 +11936,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "Neobits_",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -11919,7 +11967,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Apevia",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
@@ -11947,7 +11997,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Aukuoy",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T16:31:54.661Z",
@@ -11972,7 +12024,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "GinTai",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-12"
       }
     },
     "addedAt": "2026-05-15T16:31:54.662Z",
