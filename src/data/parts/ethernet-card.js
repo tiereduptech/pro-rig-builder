@@ -167,10 +167,10 @@ export default [
         "url": "https://www.amazon.com/dp/B076P9PPWN?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
         "priceSeller": "10Gtek",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "dataforseo"
       }
     },
     "lanSpeed": "10GbE",
@@ -202,10 +202,10 @@ export default [
         "price": 27.99,
         "url": "https://www.amazon.com/dp/B0BG685PKM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -231,8 +231,8 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "BrosTrend",
-        "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
+        "priceConfirmedAt": "2026-09-13",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -260,7 +260,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ULANSeN",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   },
@@ -283,10 +285,10 @@ export default [
         "price": 62.99,
         "url": "https://www.amazon.com/dp/B01N5AOWW6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -307,13 +309,13 @@ export default [
     "connector": "RJ45",
     "deals": {
       "amazon": {
-        "price": 19.99,
+        "price": 24.99,
         "url": "https://www.amazon.com/dp/B07SNQ2NQ1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -334,13 +336,13 @@ export default [
     "connector": "SFP+",
     "deals": {
       "amazon": {
-        "price": 62.99,
+        "price": 70.03,
         "url": "https://www.amazon.com/dp/B01N4FYWUN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -396,11 +398,13 @@ export default [
         "price": 28.49,
         "url": "https://www.amazon.com/dp/B09D3JL14S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "ULANSeN",
         "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   },
@@ -506,11 +510,13 @@ export default [
         "price": 22.49,
         "url": "https://www.amazon.com/dp/B09HGRK5XB?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "NICGIGA-US",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   }
