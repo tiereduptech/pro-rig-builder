@@ -159,7 +159,9 @@ export default [
         "priceSeller": "Byte-TechDirect",
         "priceConfirmedAt": "2026-09-13",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -10968,8 +10970,8 @@ export default [
         "price": 369,
         "url": "https://www.amazon.com/dp/B0CLB6FPX1?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Skoodooh",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-13",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
@@ -19840,7 +19842,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

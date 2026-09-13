@@ -4242,7 +4242,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       },
       "newegg": {
         "sku": "4458311877948065611765576",
@@ -9701,7 +9703,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "Adorama",
+        "priceSeller": "RGDEALS",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

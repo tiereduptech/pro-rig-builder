@@ -134,7 +134,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-13"
       },
       "bestbuy": {
         "price": 1179.99,
@@ -2561,7 +2563,10 @@ export default [
     "baseClock": 2295,
     "boostClock": 2617,
     "upc": "00199291609358",
-    "mpn": "TUF-RTX5080-O16G-BTF-GAMING"
+    "mpn": "TUF-RTX5080-O16G-BTF-GAMING",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-13",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 30071,
@@ -2809,7 +2814,7 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Skoodooh",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-13"
       },
       "newegg": {
@@ -4343,8 +4348,8 @@ export default [
         "price": 1649.99,
         "url": "https://www.amazon.com/dp/B0DTJDR3V9?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Fast and Precise by Staples",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-09-13"
@@ -4669,13 +4674,11 @@ export default [
         "price": 2005.99,
         "url": "https://www.amazon.com/dp/B0DQSD7YQC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-13"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 2099.99,
@@ -4747,12 +4750,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 2079.99,
+        "price": 1899.99,
         "url": "https://www.amazon.com/dp/B0DYVCGVK4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "Grandis Goods",
+        "priceSeller": "Custom Hardware",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4886,7 +4889,10 @@ export default [
     "boostClock": 2617,
     "pcie": "5.0 x16",
     "slots": 3,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-13",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 30123,
@@ -6016,7 +6022,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "S & L Business (We record S/N)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     },
     "additionalImages": [
@@ -6361,7 +6369,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "Computer Nation Store",
+        "priceSeller": "Yasin Retailers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -9133,7 +9141,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "MrReliable-USA",
+        "priceSeller": "SuperE, LLC (S/N Recorded; Ship Next Business Day)",
         "priceConfirmedAt": "2026-09-13",
         "priceResolvedVia": "dataforseo"
       }
@@ -16599,7 +16607,7 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-08-07",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-13"
       }
     },

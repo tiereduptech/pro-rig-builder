@@ -2464,8 +2464,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0BHMW8R6S?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
-        "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6158,8 +6158,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQLHLVLK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
-        "priceSource": "3p",
-        "priceSeller": "HighlandRe",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8710,8 +8710,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FR6948FR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceConfirmedAt": "2026-09-13",
         "priceResolvedVia": "dataforseo"
       },
@@ -9883,7 +9883,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "The Legacy Commerce Group",
+        "priceSeller": "STC Distributors (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11171,7 +11171,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
-        "priceSeller": "Quik-Mart",
+        "priceSeller": "Sanaa Direct (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -11279,7 +11279,7 @@ export default [
     "reviews": 205,
     "deals": {
       "amazon": {
-        "price": 220.96,
+        "price": 205,
         "url": "https://www.amazon.com/dp/B0BSHC2ZD4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
@@ -18952,8 +18952,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQB8VZ2R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-13",
-        "priceSource": "3p",
-        "priceSeller": "BBDW",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
