@@ -105,11 +105,13 @@ export default [
         "price": 189.87,
         "url": "https://www.amazon.com/dp/B07Q3TGL7M?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   },
@@ -129,10 +131,10 @@ export default [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0BR3NXTKK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-13",
         "priceSource": "3p",
         "priceSeller": "Tribesigns-Way to Origin",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     }
@@ -153,11 +155,13 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B0BJNNF81W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   },
@@ -177,11 +181,13 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B07MMDD779?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   },
@@ -288,11 +294,13 @@ export default [
         "price": 159.95,
         "url": "https://www.amazon.com/dp/B0DDT9Y99Z?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
         "priceSource": "3p",
         "priceSeller": "LVB Furniture",
-        "priceResolvedVia": "paapi"
+        "priceResolvedVia": "paapi",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-13"
       }
     }
   }
