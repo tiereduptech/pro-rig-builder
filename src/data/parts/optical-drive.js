@@ -79,8 +79,9 @@ export default [
         "inStock": false,
         "sku": "2691169",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-12"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-12",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-15"
       }
     },
     "storageType": "DVD/CD",
