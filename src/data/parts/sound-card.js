@@ -72,7 +72,7 @@ export default [
         "price": 38,
         "url": "https://www.amazon.com/dp/B002LM0U2S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -117,9 +117,9 @@ export default [
         "price": 35.88,
         "url": "https://www.amazon.com/dp/B07XJ89KV6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "KART IT",
+        "priceSeller": "Huzzatek",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -149,7 +149,7 @@ export default [
         "priceSeller": "Hifi Made Fun",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-13"
+        "priceUnconfirmedAt": "2026-09-14"
       }
     }
   },
@@ -203,7 +203,7 @@ export default [
         "price": 65,
         "url": "https://www.amazon.com/dp/B07TW2JQNN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "HIFI College",
         "priceResolvedVia": "dataforseo",
@@ -229,7 +229,7 @@ export default [
         "price": 218.02,
         "url": "https://www.amazon.com/dp/B018JUPY3A?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "iT Hardware",
         "priceResolvedVia": "dataforseo",
@@ -258,7 +258,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Melodi Books",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     }
   },
@@ -308,7 +310,7 @@ export default [
         "url": "https://www.amazon.com/dp/B00F7120TQ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo"

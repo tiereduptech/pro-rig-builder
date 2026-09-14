@@ -47,9 +47,9 @@ export default [
         "price": 28.99,
         "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "MENGLONGDA TECHNOLOGY",
+        "priceSeller": "AmiCool",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -73,7 +73,7 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B09BC44T8K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "ORIGBELIE Direct - US",
         "priceResolvedVia": "dataforseo",
@@ -99,7 +99,7 @@ export default [
         "price": 25.64,
         "url": "https://www.amazon.com/dp/B0C394HFCF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "bdzhuoyue",
         "priceResolvedVia": "dataforseo",
@@ -158,7 +158,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-13"
+        "priceUnconfirmedAt": "2026-09-14"
       }
     }
   },
@@ -180,7 +180,7 @@ export default [
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B076CM5SZN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -206,7 +206,7 @@ export default [
         "price": 136,
         "url": "https://www.amazon.com/dp/B07BC9F98J?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "Seatech Inc.",
         "priceResolvedVia": "dataforseo",
@@ -232,7 +232,7 @@ export default [
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B0B6D8XB74?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
