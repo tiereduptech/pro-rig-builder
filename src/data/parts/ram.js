@@ -302,11 +302,13 @@ export default [
         "price": 539.99,
         "url": "https://www.amazon.com/dp/B0BXHC74WD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "NorthStar Collective",
         "priceConfirmedAt": "2026-09-14",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "445838901026564144549112",
@@ -369,7 +371,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Renewed Global",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "bestbuy": {
         "price": 294.99,
@@ -787,7 +791,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "kooldeal68",
+        "priceSeller": "XPC Technologies",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1035,7 +1039,7 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 79,
+        "price": 89,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -3222,13 +3226,11 @@ export default [
         "price": 535.65,
         "url": "https://www.amazon.com/dp/B0C3RYHZJQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "Platinum Micro, Inc.",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458313259524782540986056",
@@ -4293,7 +4295,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Stokvane (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     },
     "additionalImages": [
@@ -7902,7 +7906,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -10798,7 +10802,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     },
     "speed": 6000,
@@ -11367,7 +11373,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11623,7 +11629,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "AsanteEnterprise",
+        "priceSeller": "1ComputerOutlet",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11757,7 +11763,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ARF Tech",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",
@@ -11963,7 +11971,7 @@ export default [
       "amazon": {
         "asin": "B0C3WBCLTM",
         "url": "https://www.amazon.com/dp/B0C3WBCLTM?tag=tiereduptech-20",
-        "price": 849.99,
+        "price": 799.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",

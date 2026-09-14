@@ -159,7 +159,9 @@ export default [
         "priceSeller": "Byte-TechDirect",
         "priceConfirmedAt": "2026-09-14",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -2217,13 +2219,11 @@ export default [
         "price": 54.9,
         "url": "https://www.amazon.com/dp/B0CCNVFXWH?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4357,7 +4357,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "445839322218313316671549",
@@ -5777,12 +5779,12 @@ export default [
     "reviews": 393,
     "deals": {
       "amazon": {
-        "price": 25.99,
+        "price": 23.69,
         "url": "https://www.amazon.com/dp/B0CGJ1J5KL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Direct Express LLC",
+        "priceSeller": "2EazyEnterprises",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -9812,7 +9814,7 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 52.53,
+        "price": 46.49,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -11421,7 +11423,7 @@ export default [
     "reviews": 49,
     "deals": {
       "amazon": {
-        "price": 181.99,
+        "price": 160.26,
         "url": "https://www.amazon.com/dp/B0DYZLRXSB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -12062,7 +12064,10 @@ export default [
     "bench": 31,
     "cfm": 65,
     "neweggRemovedOutlier": "2026-06-28",
-    "mpn": "RR-H410-25PK-R1"
+    "mpn": "RR-H410-25PK-R1",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-14",
+    "quarantineReason": "price_3p_flagged"
   },
   {
     "id": 80228,
@@ -12081,8 +12086,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FND8XGV1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "FlashDeal Store",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -12428,8 +12433,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CL6FN52B?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "3p",
-        "priceSeller": "Triplenet Pricing INC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -17944,7 +17949,7 @@ export default [
       "amazon": {
         "asin": "B0CHN6MYZ4",
         "url": "https://www.amazon.com/dp/B0CHN6MYZ4?tag=tiereduptech-20",
-        "price": 149.99,
+        "price": 189.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
@@ -18060,7 +18065,10 @@ export default [
     "fanCount": 3,
     "airflow": 244.8,
     "noise": 25,
-    "rpm": 2000
+    "rpm": 2000,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-14",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100930,
@@ -19842,7 +19850,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

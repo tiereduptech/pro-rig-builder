@@ -134,7 +134,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "bestbuy": {
         "price": 1179.99,
@@ -896,7 +898,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Bonbon YM Distributor (S/N Recorded)",
+        "priceSeller": "Sanaa Direct (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1850,7 +1852,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "TELeasy",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2809,7 +2811,7 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Skoodooh",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
@@ -4045,13 +4047,11 @@ export default [
         "price": 549.99,
         "url": "https://www.amazon.com/dp/B0G2GMZTCN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 549.99,
@@ -4751,12 +4751,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 1899.99,
+        "price": 2079.99,
         "url": "https://www.amazon.com/dp/B0DYVCGVK4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Custom Hardware",
+        "priceSeller": "Grandis Goods",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5755,7 +5755,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "MrReliable-USA",
+        "priceSeller": "Computer Nation Store",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5823,12 +5823,12 @@ export default [
     "reviews": 253,
     "deals": {
       "amazon": {
-        "price": 1499.95,
+        "price": 1689,
         "url": "https://www.amazon.com/dp/B0BL668N1X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "TekDepo(We Record SN#)",
+        "priceSeller": "Techno Sphere",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -6016,16 +6016,14 @@ export default [
     "reviews": 204,
     "deals": {
       "amazon": {
-        "price": 569.87,
+        "price": 609.87,
         "url": "https://www.amazon.com/dp/B0BRYMYSMZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
         "priceSeller": "S & L Business (We record S/N)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6265,7 +6263,7 @@ export default [
     "reviews": 148,
     "deals": {
       "amazon": {
-        "price": 3699,
+        "price": 4399,
         "url": "https://www.amazon.com/dp/B0BH8MK76C?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -7434,7 +7432,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "ARF Tech",
+        "priceSeller": "Empowered PC",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -7899,7 +7897,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "Triplenet Pricing INC",
+        "priceSeller": "M-X-C Tech",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -7986,7 +7984,7 @@ export default [
         "priceSeller": "AsanteEnterprise",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-14"
       },
       "bestbuy": {
@@ -8495,16 +8493,14 @@ export default [
     "reviews": 16,
     "deals": {
       "amazon": {
-        "price": 430.99,
+        "price": 529.49,
         "url": "https://www.amazon.com/dp/B0F4LZ5YG7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-13",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-09-14",
+        "priceSource": "3p",
+        "priceSeller": "Nutrend Automotive Inc",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 489.99,
@@ -9635,7 +9631,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       }
     },
     "model": "Arc",
@@ -16965,7 +16963,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "ASRock USA",
+        "priceSeller": "prime bay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -19406,7 +19404,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "TekDepo(We Record SN#)",
+        "priceSeller": "NextGen PC",
         "priceResolvedVia": "dataforseo"
       }
     },

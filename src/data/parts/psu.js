@@ -4602,7 +4602,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "4458317030905002238415229",
@@ -10569,7 +10571,7 @@ export default [
       "amazon": {
         "asin": "B0CGFZVGF9",
         "url": "https://www.amazon.com/dp/B0CGFZVGF9?tag=tiereduptech-20",
-        "price": 86.47,
+        "price": 79.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
@@ -11084,8 +11086,8 @@ export default [
         "price": 84.43,
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Redragon Shop",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11691,8 +11693,8 @@ export default [
         "price": 184.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "3p",
-        "priceSeller": "Square Four (SN recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

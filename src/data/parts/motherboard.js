@@ -3915,7 +3915,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "PriceWhack",
+        "priceSeller": "HighlandRe",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -4446,13 +4446,11 @@ export default [
         "price": 75,
         "url": "https://www.amazon.com/dp/B07MWGKHR9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "CoverZip | Same Day Shipping",
-        "priceConfirmedAt": "2026-09-05",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-14",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "445838156805265236903315",
@@ -4501,12 +4499,12 @@ export default [
     "reviews": 373,
     "deals": {
       "amazon": {
-        "price": 189,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B0DGVC3DDW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "GTS AMERICA INC",
+        "priceSeller": "Choice Electronics(Serial Numbers Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -5016,7 +5014,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "NorthStar Collective",
+        "priceSeller": "Giz-Promo",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6165,8 +6163,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQLHLVLK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "3p",
-        "priceSeller": "HighlandRe",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6323,12 +6321,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 148.96,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FFQM1JXG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "3p",
-        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -9292,7 +9290,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
         "priceSource": "3p",
-        "priceSeller": "RaoNEE Shop",
+        "priceSeller": "us-company",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -12009,12 +12007,12 @@ export default [
     "reviews": 133,
     "deals": {
       "amazon": {
-        "price": 249.99,
+        "price": 199.99,
         "url": "https://www.amazon.com/dp/B0CTNXBRJV?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "TheTechGroup",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -18791,7 +18789,7 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 271.38,
+        "price": 245.85,
         "url": "https://www.amazon.com/dp/B0DQQCFFHT?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -18960,8 +18958,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQB8VZ2R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "BBDW",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -19117,7 +19115,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "4458313324008114755693902",
@@ -19322,7 +19322,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "4458311237618428809245116",
@@ -19675,7 +19677,7 @@ export default [
     "reviews": 6,
     "deals": {
       "amazon": {
-        "price": 395.26,
+        "price": 374.75,
         "url": "https://www.amazon.com/dp/B0FH5T5DM3?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -20218,13 +20220,11 @@ export default [
         "price": 235.02,
         "url": "https://www.amazon.com/dp/B0DKFPPGPR?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-31",
-        "priceSource": "3p",
-        "priceSeller": "Neobits_",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-14",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 17,

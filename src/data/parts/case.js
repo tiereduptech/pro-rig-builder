@@ -7448,7 +7448,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-14"
       },
       "newegg": {
         "sku": "445835874307855657479424",
@@ -10597,7 +10599,7 @@ export default [
     "reviews": 156,
     "deals": {
       "amazon": {
-        "price": 109.24,
+        "price": 114.99,
         "url": "https://www.amazon.com/dp/B0B5THCD6R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -12784,7 +12786,7 @@ export default [
     "reviews": 40,
     "deals": {
       "amazon": {
-        "price": 129.99,
+        "price": 189,
         "url": "https://www.amazon.com/dp/B0FJ2V6VVP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-14",
@@ -20587,13 +20589,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0CP3MZXVH?tag=tiereduptech-20",
         "price": 104.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-14",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458311190781417742920238",
@@ -21109,11 +21109,11 @@ export default [
       "amazon": {
         "asin": "B0CX595GDJ",
         "url": "https://www.amazon.com/dp/B0CX595GDJ?tag=tiereduptech-20",
-        "price": 208.99,
+        "price": 219.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Adorama",
         "priceConfirmedAt": "2026-09-14",
         "priceResolvedVia": "dataforseo"
       },
