@@ -2555,7 +2555,7 @@ export default [
         "matchedAt": "2026-09-12T14:43:33.213Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:35:29.027Z",
+        "refreshedAt": "2026-09-14T10:36:08.228Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -3620,7 +3620,7 @@ export default [
         "matchedAt": "2026-09-13T15:20:22.757Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:15.681Z",
+        "refreshedAt": "2026-09-14T10:36:10.459Z",
         "priceLastMovedAt": "2026-09-13",
         "rematchedAt": "2026-09-13T19:36:15.681Z",
         "rematchedFrom": "445832188836211182385527"
@@ -7592,7 +7592,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:33.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:21.972Z"
+        "refreshedAt": "2026-09-14T10:36:16.708Z"
       }
     },
     "screenSize": 16,
@@ -8002,7 +8002,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:23.657Z",
+        "refreshedAt": "2026-09-14T10:36:18.553Z",
         "priceLastMovedAt": "2026-08-28",
         "rematchedAt": "2026-08-28T17:08:40.910Z",
         "rematchedFrom": "9SIBVN6K8U1327"
@@ -8331,7 +8331,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:25.035Z"
+        "refreshedAt": "2026-09-14T10:36:24.583Z"
       }
     },
     "screenSize": 23.8,
@@ -8378,7 +8378,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.387Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:25.227Z"
+        "refreshedAt": "2026-09-14T10:36:24.768Z"
       }
     },
     "screenSize": 27,
@@ -8463,7 +8463,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:25.544Z"
+        "refreshedAt": "2026-09-14T10:36:25.166Z"
       }
     },
     "screenSize": 27,
@@ -8510,7 +8510,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.970Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:25.766Z",
+        "refreshedAt": "2026-09-14T10:36:25.412Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -8617,7 +8617,7 @@ export default [
         "matchedAt": "2026-09-12T14:43:33.273Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:36:26.547Z"
+        "refreshedAt": "2026-09-14T10:36:26.169Z"
       }
     },
     "screenSize": 49,
@@ -11295,7 +11295,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:43.178Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:37:21.272Z",
+        "refreshedAt": "2026-09-14T10:37:16.059Z",
         "migratedAt": "2026-09-12T09:25:23.572Z",
         "migratedFrom": "4458311883885365372818679",
         "priceLastMovedAt": "2026-09-12"
@@ -11374,7 +11374,7 @@ export default [
         "matchedAt": "2026-09-12T14:43:33.303Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:37:21.628Z",
+        "refreshedAt": "2026-09-14T10:37:16.405Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -13704,7 +13704,7 @@ export default [
         "matchedAt": "2026-09-12T14:43:33.206Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:38:16.554Z"
+        "refreshedAt": "2026-09-14T10:38:11.269Z"
       }
     },
     "screenSize": 32,
@@ -14065,7 +14065,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:38:19.244Z"
+        "refreshedAt": "2026-09-14T10:38:14.027Z"
       },
       "newegg_openbox": {
         "sku": "4458310064523773875750484",
@@ -14130,7 +14130,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:39.417Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:38:19.713Z",
+        "refreshedAt": "2026-09-14T10:38:14.416Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -15047,7 +15047,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:29.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:38:23.866Z"
+        "refreshedAt": "2026-09-14T10:38:18.630Z"
       }
     },
     "screenSize": 24,
@@ -15290,7 +15290,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:30.891Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-13T19:38:25.521Z"
+        "refreshedAt": "2026-09-14T10:38:25.066Z"
       }
     },
     "screenSize": 15.6,
@@ -19100,7 +19100,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.96,
-        "refreshedAt": "2026-09-13T19:38:30.663Z",
+        "refreshedAt": "2026-09-14T10:39:09.964Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
