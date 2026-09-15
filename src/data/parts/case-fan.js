@@ -191,7 +191,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.437Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "color": "Black",
@@ -478,7 +479,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:11:38.202Z"
+        "refreshedAt": "2026-09-15T20:30:49.704Z"
       }
     },
     "color": "Black",
@@ -754,10 +755,10 @@ export default [
         "refreshedAt": "2026-09-03T09:32:02.838Z",
         "priceLastMovedAt": "2026-09-02",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:11:38.325Z",
-        "priceSuspectValue": 97.13,
+        "priceSuspectAt": "2026-09-15T20:30:49.922Z",
+        "priceSuspectValue": 101.45,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 25
+        "priceSuspectStreak": 26
       }
     },
     "additionalImages": [
@@ -818,7 +819,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.751Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-06T09:21:21.878Z"
+        "refreshedAt": "2026-09-06T09:21:21.878Z",
+        "refreshMissStreak": 1
       }
     },
     "discount": 39,
@@ -877,7 +879,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.620Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:27.440Z"
+        "refreshedAt": "2026-09-15T20:30:50.857Z"
       }
     },
     "additionalImages": [
@@ -932,7 +934,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:59.135Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:27.641Z"
+        "refreshedAt": "2026-09-15T20:30:50.999Z"
       }
     },
     "additionalImages": [
@@ -1031,7 +1033,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.624Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-15T10:12:27.790Z"
+        "refreshedAt": "2026-09-15T20:30:51.219Z"
       }
     },
     "additionalImages": [
@@ -1086,7 +1088,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:36.894Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:28.253Z"
+        "refreshedAt": "2026-09-15T20:30:51.690Z"
       }
     },
     "discount": 18,
@@ -1144,7 +1146,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:28.666Z"
+        "refreshedAt": "2026-09-15T20:30:52.153Z"
       }
     },
     "discount": 15,
@@ -1290,7 +1292,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:28.932Z",
+        "refreshedAt": "2026-09-15T20:30:52.419Z",
         "rematchedAt": "2026-09-14T21:11:44.914Z",
         "rematchedFrom": "9SIAADYKHE0816"
       }
@@ -1382,7 +1384,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:51.213Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:29.377Z",
+        "refreshedAt": "2026-09-15T20:30:52.944Z",
         "priceLastMovedAt": "2026-09-12",
         "rematchedAt": "2026-09-12T09:21:21.399Z",
         "rematchedFrom": "445837796021418415952663"
@@ -1445,7 +1447,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:59.147Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:29.509Z"
+        "refreshedAt": "2026-09-15T20:30:53.125Z"
       }
     },
     "additionalImages": [
@@ -1590,7 +1592,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:29.649Z"
+        "refreshedAt": "2026-09-15T20:30:53.243Z"
       }
     },
     "additionalImages": [
@@ -1646,7 +1648,7 @@ export default [
         "matchedAt": "2026-09-14T17:18:14.053Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:29.799Z",
+        "refreshedAt": "2026-09-15T20:30:53.378Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -1751,7 +1753,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.930Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-15T10:12:30.214Z"
+        "refreshedAt": "2026-09-15T20:30:53.832Z"
       }
     },
     "additionalImages": [
@@ -1856,7 +1858,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:30.325Z"
+        "refreshedAt": "2026-09-15T20:30:53.966Z"
       }
     },
     "additionalImages": [
@@ -1911,7 +1913,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.555Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:30.457Z"
+        "refreshedAt": "2026-09-15T20:30:54.090Z"
       }
     },
     "additionalImages": [
@@ -1957,17 +1959,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458316100302463623067380",
-        "itemNumber": "9SIA4REK2R0288",
+        "sku": "9SIAADY4B02521",
+        "price": 24.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837877117047404496486&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-pwm-case-fan%2Fp%2FN82E16835608044%3Fitem%3D9SIAADY4B02521",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211108UB13c.jpg",
         "sellerClass": "marketplace",
-        "price": 19.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316100302463623067380&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-flx-case-fan%2Fp%2FN82E16835608034%3Fitem%3D9SIA4REK2R0288",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-034-V02.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-15T16:30:51.267Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "priceLastMovedAt": "2026-09-15"
+        "matchMethod": "name",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-15T20:30:54.226Z",
+        "priceLastMovedAt": "2026-09-15",
+        "rematchedAt": "2026-09-15T20:30:54.226Z",
+        "rematchedFrom": "4458316100302463623067380"
       }
     },
     "additionalImages": [
@@ -2067,7 +2070,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.571Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-15T10:12:30.735Z"
+        "refreshedAt": "2026-09-15T20:30:54.400Z"
       }
     },
     "additionalImages": [
@@ -2111,17 +2114,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445839143345394541995529",
-        "itemNumber": "9SIAADY5SE4696",
+        "sku": "9SIBZT7KVE7193",
+        "price": 34.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835953195234573208088&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-pwm-case-fan%2Fp%2F1YF-000T-00091%3Fitem%3D9SIBZT7KVE7193",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400894271333793ToAzLLNl9U.jpg",
         "sellerClass": "marketplace",
-        "price": 23.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839143345394541995529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-flx-case-fan%2Fp%2F1YF-000T-00090%3Fitem%3D9SIAADY5SE4696",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400886376265271NL23kh0SsU.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-15T16:31:57.094Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "priceLastMovedAt": "2026-09-15"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-15T20:30:54.579Z",
+        "priceLastMovedAt": "2026-09-15",
+        "rematchedAt": "2026-09-15T20:30:54.579Z",
+        "rematchedFrom": "445839143345394541995529"
       }
     },
     "additionalImages": [
@@ -2273,7 +2277,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:10.817Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:31.129Z",
+        "refreshedAt": "2026-09-15T20:30:54.924Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -2443,7 +2447,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:31.264Z"
+        "refreshedAt": "2026-09-15T20:30:55.065Z"
       }
     },
     "additionalImages": [
@@ -2634,7 +2638,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:31.726Z",
+        "refreshedAt": "2026-09-15T20:30:55.540Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -2697,7 +2701,8 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.555Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -2877,7 +2882,8 @@ export default [
         "refreshedAt": "2026-09-01T20:12:45.263Z",
         "priceLastMovedAt": "2026-08-29",
         "rematchedAt": "2026-08-29T11:42:31.462Z",
-        "rematchedFrom": "9SIC6EGM109720"
+        "rematchedFrom": "9SIC6EGM109720",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -2945,7 +2951,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-01T10:09:07.083Z",
-        "priceLastMovedAt": "2026-08-28"
+        "priceLastMovedAt": "2026-08-28",
+        "refreshMissStreak": 1
       }
     },
     "discount": 25,
@@ -3091,7 +3098,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:32.931Z",
+        "refreshedAt": "2026-09-15T20:30:56.952Z",
         "priceLastMovedAt": "2026-08-28",
         "rematchedAt": "2026-08-28T17:06:25.595Z",
         "rematchedFrom": "9SIAZTUKPX3838"
@@ -3231,15 +3238,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIBZT7KJ95150",
-        "price": 27.54,
+        "price": 27.49,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834902039109586570339&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-f12-pwm-case-fan%2Fp%2FN82E16835608026%3Fitem%3D9SIBZT7KJ95150",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-026-V01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:33.076Z",
-        "priceLastMovedAt": "2026-09-14",
+        "refreshedAt": "2026-09-15T20:30:57.120Z",
+        "priceLastMovedAt": "2026-09-15",
         "rematchedAt": "2026-08-28T17:06:26.440Z",
         "rematchedFrom": "9SIAZTUKBH5607"
       }
@@ -3516,7 +3523,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-02T09:23:39.447Z",
-        "priceLastMovedAt": "2026-09-01"
+        "priceLastMovedAt": "2026-09-01",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -3576,7 +3584,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:33.768Z"
+        "refreshedAt": "2026-09-15T20:30:57.789Z"
       }
     },
     "additionalImages": [
@@ -3932,7 +3940,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.784Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:33.908Z"
+        "refreshedAt": "2026-09-15T20:30:57.958Z"
       }
     },
     "additionalImages": [
@@ -4070,7 +4078,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:34.067Z"
+        "refreshedAt": "2026-09-15T20:30:58.083Z"
       }
     },
     "additionalImages": [
@@ -4208,7 +4216,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.81,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -4400,7 +4409,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:34.760Z"
+        "refreshedAt": "2026-09-15T20:30:58.884Z"
       }
     },
     "additionalImages": [
@@ -4503,10 +4512,10 @@ export default [
         "rematchedAt": "2026-09-10T19:57:49.286Z",
         "rematchedFrom": "9SIA2W0JT87485",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:12:35.203Z",
+        "priceSuspectAt": "2026-09-15T20:30:59.283Z",
         "priceSuspectValue": 40.99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 9
+        "priceSuspectStreak": 10
       }
     },
     "discount": 5,
@@ -4554,15 +4563,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIAD6HKKM1744",
-        "price": 121.86,
+        "price": 112.63,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314405135583458023043&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-005G-000H7%3Fitem%3D9SIAD6HKKM1744",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS241017yRUwS.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:35.380Z",
-        "priceLastMovedAt": "2026-09-13"
+        "refreshedAt": "2026-09-15T20:30:59.447Z",
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "discount": 15,
@@ -4887,7 +4896,8 @@ export default [
         "matchedAt": "2026-06-27",
         "matchMethod": "name",
         "matchScore": 0.65,
-        "sellerClass": "other"
+        "sellerClass": "other",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -4984,7 +4994,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.618Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:35.926Z"
+        "refreshedAt": "2026-09-15T20:31:00.040Z"
       }
     },
     "additionalImages": [
@@ -5041,7 +5051,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.620Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:36.067Z"
+        "refreshedAt": "2026-09-15T20:31:00.181Z"
       }
     },
     "additionalImages": [
@@ -5085,17 +5095,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445833492211039337319431",
-        "itemNumber": "9SIAADY4B02823",
+        "sku": "9SIAZTUKBH5685",
+        "price": 25.14,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836393843753914217753&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-s12a-pwm-case-fan%2Fp%2FN82E16835608038%3Fitem%3D9SIAZTUKBH5685",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812KJH2a.jpg",
         "sellerClass": "marketplace",
-        "price": 21.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833492211039337319431&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-s12a-flx-case-fan-120-mm-non-led%2Fp%2FN82E16835608037%3Fitem%3D9SIAADY4B02823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812QrhRf.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-15T16:31:57.080Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "priceLastMovedAt": "2026-09-15"
+        "matchMethod": "name",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-15T20:31:00.339Z",
+        "priceLastMovedAt": "2026-09-15",
+        "rematchedAt": "2026-09-15T20:31:00.339Z",
+        "rematchedFrom": "445833492211039337319431"
       }
     },
     "additionalImages": [
@@ -5151,10 +5162,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:12:36.577Z",
+        "priceSuspectAt": "2026-09-15T20:31:00.757Z",
         "priceSuspectValue": 61.88,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 25
+        "priceSuspectStreak": 26
       }
     },
     "additionalImages": [
@@ -5271,10 +5282,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-09T09:37:27.484Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:12:36.835Z",
+        "priceSuspectAt": "2026-09-15T20:31:01.048Z",
         "priceSuspectValue": 39,
         "priceSuspectClass": "SUSPECT_HIGH",
-        "priceSuspectStreak": 7
+        "priceSuspectStreak": 8
       },
       "newegg_openbox": {
         "sku": "4458313971636860022901117",
@@ -5574,7 +5585,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.630Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:36.963Z"
+        "refreshedAt": "2026-09-15T20:31:01.180Z"
       }
     },
     "additionalImages": [
@@ -5671,7 +5682,8 @@ export default [
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshMissStreak": 1
       }
     },
     "discount": 32,
@@ -6302,7 +6314,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.500Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:37.429Z"
+        "refreshedAt": "2026-09-15T20:31:01.603Z"
       }
     },
     "additionalImages": [
@@ -6403,7 +6415,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.772Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-11T20:00:57.861Z"
+        "refreshedAt": "2026-09-11T20:00:57.861Z",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -6582,7 +6595,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:38.225Z",
+        "refreshedAt": "2026-09-15T20:31:49.788Z",
         "priceLastMovedAt": "2026-09-12",
         "saleprice": 12.69
       },
@@ -6803,7 +6816,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:27.060Z"
+        "refreshedAt": "2026-09-15T20:31:50.542Z"
       }
     },
     "additionalImages": [
@@ -6855,7 +6868,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:27.168Z"
+        "refreshedAt": "2026-09-15T20:31:50.704Z"
       }
     },
     "discount": 8,
@@ -7090,7 +7103,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:27.812Z"
+        "refreshedAt": "2026-09-15T20:31:51.250Z"
       }
     },
     "discount": 7,
@@ -7144,7 +7157,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.036Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-10"
+        "priceConfirmedAt": "2026-09-10",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -7264,7 +7278,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.447Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:28.125Z"
+        "refreshedAt": "2026-09-15T20:31:51.535Z"
       }
     },
     "additionalImages": [
@@ -7527,17 +7541,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445834493452684552483168",
-        "itemNumber": "9SIA4REK842984",
+        "sku": "9SIBZT7KT41881",
+        "price": 22.79,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831554204625661025458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200%2Fp%2FN82E16835608063%3Fitem%3D9SIBZT7KT41881",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-063-V07.jpg",
         "sellerClass": "marketplace",
-        "price": 17.19,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834493452684552483168&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200-pwm%2Fp%2FN82E16835608064%3Fitem%3D9SIA4REK842984",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-064-V12.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-15T16:30:51.296Z",
-        "matchMethod": "sftp:mpn",
-        "matchScore": 0.95,
-        "priceLastMovedAt": "2026-09-15"
+        "matchMethod": "name",
+        "matchScore": 0.71,
+        "refreshedAt": "2026-09-15T20:31:51.678Z",
+        "priceLastMovedAt": "2026-09-15",
+        "rematchedAt": "2026-09-15T20:31:51.678Z",
+        "rematchedFrom": "445834493452684552483168"
       }
     },
     "additionalImages": [
@@ -7593,10 +7608,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-07T09:54:48.275Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:13:28.688Z",
+        "priceSuspectAt": "2026-09-15T20:31:52.178Z",
         "priceSuspectValue": 21.98,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 17
+        "priceSuspectStreak": 18
       }
     },
     "discount": 17,
@@ -7744,7 +7759,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.574Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-15T10:13:28.959Z"
+        "refreshedAt": "2026-09-15T20:31:52.471Z"
       }
     },
     "additionalImages": [
@@ -7940,7 +7955,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:29.101Z",
+        "refreshedAt": "2026-09-15T20:31:52.639Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -7994,7 +8009,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:29.546Z"
+        "refreshedAt": "2026-09-15T20:31:53.106Z"
       }
     },
     "discount": 29,
@@ -8050,7 +8065,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.623Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:29.685Z"
+        "refreshedAt": "2026-09-15T20:31:53.295Z"
       }
     },
     "additionalImages": [
@@ -8103,7 +8118,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:51.432Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8333333333333334,
-        "refreshedAt": "2026-09-15T10:13:30.058Z"
+        "refreshedAt": "2026-09-15T20:31:53.749Z"
       }
     },
     "additionalImages": [
@@ -8373,7 +8388,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:37.217Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:30.373Z"
+        "refreshedAt": "2026-09-15T20:31:54.051Z"
       }
     },
     "additionalImages": [
@@ -8440,7 +8455,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:30.477Z",
+        "refreshedAt": "2026-09-15T20:31:54.186Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -8502,7 +8517,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.504Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-14T21:12:46.539Z"
+        "refreshedAt": "2026-09-14T21:12:46.539Z",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -8597,7 +8613,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.051Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:31.211Z"
+        "refreshedAt": "2026-09-15T20:31:54.934Z"
       }
     },
     "discount": 15,
@@ -8651,7 +8667,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.576Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:31.346Z"
+        "refreshedAt": "2026-09-15T20:31:55.075Z"
       }
     },
     "additionalImages": [
@@ -8702,7 +8718,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:31.489Z"
+        "refreshedAt": "2026-09-15T20:31:55.231Z"
       }
     },
     "additionalImages": [
@@ -8755,7 +8771,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.624Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:31.627Z"
+        "refreshedAt": "2026-09-15T20:31:55.345Z"
       }
     },
     "additionalImages": [
@@ -8809,10 +8825,10 @@ export default [
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.7142857142857143,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:13:32.030Z",
-        "priceSuspectValue": 41.57,
+        "priceSuspectAt": "2026-09-15T20:31:55.896Z",
+        "priceSuspectValue": 41.1,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 20
+        "priceSuspectStreak": 21
       }
     },
     "additionalImages": [
@@ -8872,7 +8888,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.035Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:32.438Z"
+        "refreshedAt": "2026-09-15T20:31:56.467Z"
       }
     },
     "discount": 53,
@@ -8935,10 +8951,10 @@ export default [
         "matchScore": 0.9,
         "refreshedAt": "2026-09-10T19:58:45.288Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:13:32.579Z",
+        "priceSuspectAt": "2026-09-15T20:31:56.598Z",
         "priceSuspectValue": 149,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 7
+        "priceSuspectStreak": 8
       }
     },
     "additionalImages": [
@@ -9030,7 +9046,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.572Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:32.694Z",
+        "refreshedAt": "2026-09-15T20:31:56.753Z",
         "priceLastMovedAt": "2026-08-28",
         "rematchedAt": "2026-08-28T17:07:09.171Z",
         "rematchedFrom": "445833065382251515654514"
@@ -9213,7 +9229,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.849Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:32.828Z"
+        "refreshedAt": "2026-09-15T20:31:56.893Z"
       }
     },
     "additionalImages": [
@@ -9355,7 +9371,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:32.964Z"
+        "refreshedAt": "2026-09-15T20:31:57.052Z"
       }
     },
     "additionalImages": [
@@ -9793,7 +9809,7 @@ export default [
         "matchedAt": "2026-08-22T12:21:53.440Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:33.225Z",
+        "refreshedAt": "2026-09-15T20:31:57.314Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
@@ -9842,7 +9858,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "sellerClass": "other",
-        "refreshedAt": "2026-09-15T10:13:33.374Z",
+        "refreshedAt": "2026-09-15T20:31:57.458Z",
         "priceLastMovedAt": "2026-09-14",
         "saleprice": 24.99
       }
@@ -9901,7 +9917,7 @@ export default [
         "matchedAt": "2026-08-24T12:29:29.683Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:33.510Z",
+        "refreshedAt": "2026-09-15T20:31:57.603Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -9957,7 +9973,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:33.650Z",
+        "refreshedAt": "2026-09-15T20:31:57.741Z",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -10093,7 +10109,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.697Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:33.788Z"
+        "refreshedAt": "2026-09-15T20:31:57.939Z"
       }
     },
     "additionalImages": [
@@ -10184,10 +10200,10 @@ export default [
         "refreshedAt": "2026-09-08T09:35:45.043Z",
         "priceLastMovedAt": "2026-09-01",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:13:33.926Z",
+        "priceSuspectAt": "2026-09-15T20:31:58.082Z",
         "priceSuspectValue": 29.9,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 15
+        "priceSuspectStreak": 16
       }
     },
     "discount": 5,
@@ -10335,7 +10351,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:50.065Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.028Z"
+        "refreshedAt": "2026-09-15T20:31:58.236Z"
       }
     },
     "discount": 9,
@@ -10436,7 +10452,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.229Z"
+        "refreshedAt": "2026-09-15T20:31:58.363Z"
       }
     },
     "additionalImages": [
@@ -10575,7 +10591,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.785Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.369Z"
+        "refreshedAt": "2026-09-15T20:31:58.496Z"
       }
     },
     "additionalImages": [
@@ -10718,7 +10734,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.477Z"
+        "refreshedAt": "2026-09-15T20:31:58.644Z"
       }
     },
     "additionalImages": [
@@ -10800,7 +10816,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.640Z"
+        "refreshedAt": "2026-09-15T20:31:58.767Z"
       }
     },
     "additionalImages": [
@@ -10898,7 +10914,8 @@ export default [
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -10957,7 +10974,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:34.921Z"
+        "refreshedAt": "2026-09-15T20:31:59.049Z"
       }
     },
     "additionalImages": [
@@ -11043,7 +11060,8 @@ export default [
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -11100,7 +11118,7 @@ export default [
         "matchedAt": "2026-08-19T12:27:20.703Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-15T10:13:35.729Z"
+        "refreshedAt": "2026-09-15T20:31:59.888Z"
       }
     },
     "discount": 10,
@@ -11194,7 +11212,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.92,
-        "refreshedAt": "2026-09-15T10:13:36.290Z"
+        "refreshedAt": "2026-09-15T20:32:00.271Z"
       }
     },
     "additionalImages": [
@@ -11664,7 +11682,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:36.413Z"
+        "refreshedAt": "2026-09-15T20:32:00.384Z"
       }
     },
     "additionalImages": [
@@ -12003,7 +12021,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:36.553Z"
+        "refreshedAt": "2026-09-15T20:32:00.522Z"
       }
     },
     "additionalImages": [
@@ -12134,7 +12152,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.887Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:36.813Z"
+        "refreshedAt": "2026-09-15T20:32:00.849Z"
       }
     },
     "cfm": 40.6,
@@ -12221,7 +12239,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.894Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-15T10:13:37.070Z"
+        "refreshedAt": "2026-09-15T20:32:01.231Z"
       }
     },
     "cfm": 129,
@@ -12307,7 +12325,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.849Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:37.507Z"
+        "refreshedAt": "2026-09-15T20:32:01.675Z"
       }
     },
     "cfm": 81.6,
@@ -12354,7 +12372,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:38.873Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:37.774Z"
+        "refreshedAt": "2026-09-15T20:32:01.981Z"
       }
     },
     "cfm": 57.06,
@@ -12400,7 +12418,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:39.323Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:13:38.092Z"
+        "refreshedAt": "2026-09-15T20:32:02.290Z"
       }
     },
     "cfm": 57.06,
@@ -12448,7 +12466,8 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.848Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 57.06,
@@ -12499,7 +12518,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 63.1,
@@ -12574,7 +12594,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.045Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 50.18,
@@ -12626,7 +12647,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.483Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-04T09:30:16.723Z"
+        "refreshedAt": "2026-09-04T09:30:16.723Z",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 84.75,
@@ -12704,7 +12726,8 @@ export default [
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.046Z",
         "matchMethod": "sftp:sku",
-        "matchScore": 0.9
+        "matchScore": 0.9,
+        "refreshMissStreak": 1
       }
     },
     "cfm": 50.18,
@@ -12755,7 +12778,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:48.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:28.411Z"
+        "refreshedAt": "2026-09-15T20:32:51.849Z"
       }
     },
     "cfm": 48.58,
@@ -12915,16 +12938,16 @@ export default [
         "sku": "445835834071920721049772",
         "itemNumber": "N82E16835181410",
         "sellerClass": "official",
-        "price": 104.99,
-        "saleprice": 84.99,
+        "price": 99.99,
+        "saleprice": 79.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835834071920721049772&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-rx120-case-fan-120-mm-rgb-led%2Fp%2FN82E16835181410%3Fitem%3DN82E16835181410",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-410-19.png",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:16.892Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:28.682Z",
-        "priceLastMovedAt": "2026-09-07"
+        "refreshedAt": "2026-09-15T20:32:52.198Z",
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "cfm": 74.2,
@@ -12976,7 +12999,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 74.2,
@@ -13024,7 +13048,8 @@ export default [
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshMissStreak": 1
       }
     },
     "cfm": 69.9,
@@ -13074,7 +13099,8 @@ export default [
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
-        "matchScore": 1
+        "matchScore": 1,
+        "refreshMissStreak": 1
       }
     },
     "cfm": 69.9,
@@ -13128,10 +13154,10 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-08T09:35:57.270Z",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-15T10:14:29.864Z",
+        "priceSuspectAt": "2026-09-15T20:32:53.772Z",
         "priceSuspectValue": 39.99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 15
+        "priceSuspectStreak": 16
       }
     },
     "cfm": 72.8,
@@ -13181,7 +13207,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 69.9,
@@ -13230,7 +13257,7 @@ export default [
         "matchedAt": "2026-09-02T15:37:37.796Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:30.569Z",
+        "refreshedAt": "2026-09-15T20:32:54.525Z",
         "priceLastMovedAt": "2026-09-06",
         "rematchedAt": "2026-09-06T19:02:33.512Z",
         "rematchedFrom": "445839070617391616470554"
@@ -13284,7 +13311,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:30.838Z",
+        "refreshedAt": "2026-09-15T20:32:54.813Z",
         "priceLastMovedAt": "2026-09-03"
       }
     },
@@ -13337,7 +13364,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.028Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-10T09:40:39.455Z"
+        "refreshedAt": "2026-09-10T09:40:39.455Z",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 75.12,
@@ -13403,7 +13431,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-01T10:11:05.364Z",
-        "priceLastMovedAt": "2026-09-01"
+        "priceLastMovedAt": "2026-09-01",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 98.61,
@@ -13470,7 +13499,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.028Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:31.702Z"
+        "refreshedAt": "2026-09-15T20:32:55.741Z"
       }
     },
     "cfm": 75.12,
@@ -13520,7 +13549,7 @@ export default [
         "matchedAt": "2026-08-30T15:51:08.053Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:31.966Z"
+        "refreshedAt": "2026-09-15T20:32:56.155Z"
       }
     },
     "cfm": 75.12,
@@ -13568,7 +13597,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.050Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:32.219Z",
+        "refreshedAt": "2026-09-15T20:32:56.463Z",
         "priceLastMovedAt": "2026-09-01",
         "migratedAt": "2026-08-28T17:07:49.164Z",
         "migratedFrom": "4458314302113585525179244"
@@ -13623,7 +13652,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.028Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:32.471Z",
+        "refreshedAt": "2026-09-15T20:32:56.763Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -13676,7 +13705,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-15T10:14:32.579Z",
-        "priceLastMovedAt": "2026-09-07"
+        "priceLastMovedAt": "2026-09-07",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 66.7,
@@ -13725,7 +13755,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:32.703Z"
+        "refreshedAt": "2026-09-15T20:32:57.024Z"
       }
     },
     "cfm": 66.7,
@@ -13817,7 +13847,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:46.003Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:32.974Z"
+        "refreshedAt": "2026-09-15T20:32:57.343Z"
       }
     },
     "cfm": 131.6,
@@ -13945,7 +13975,8 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 68,
@@ -13994,7 +14025,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:33.166Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 68,
@@ -14045,7 +14077,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.853Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:33.801Z",
+        "refreshedAt": "2026-09-15T20:32:58.216Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -14094,7 +14126,8 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 68,
@@ -14144,7 +14177,8 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 68,
@@ -14229,7 +14263,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.924Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:34.649Z"
+        "refreshedAt": "2026-09-15T20:32:59.080Z"
       }
     },
     "cfm": 68,
@@ -14317,7 +14351,7 @@ export default [
         "matchedAt": "2026-08-27T21:30:15.145Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:34.959Z"
+        "refreshedAt": "2026-09-15T20:32:59.392Z"
       }
     },
     "cfm": 68,
@@ -14406,7 +14440,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-11T20:02:55.296Z",
-        "priceLastMovedAt": "2026-09-09"
+        "priceLastMovedAt": "2026-09-09",
+        "refreshMissStreak": 1
       }
     },
     "cfm": 65.82,
@@ -14457,7 +14492,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.483Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:35.700Z"
+        "refreshedAt": "2026-09-15T20:33:00.105Z"
       },
       "newegg_openbox": {
         "sku": "445836033134440619406095",
@@ -14521,7 +14556,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.483Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:35.952Z"
+        "refreshedAt": "2026-09-15T20:33:00.409Z"
       }
     },
     "cfm": 98.61,
@@ -14570,7 +14605,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.534Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:36.436Z"
+        "refreshedAt": "2026-09-15T20:33:00.730Z"
       }
     },
     "cfm": 104,
@@ -14619,7 +14654,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.536Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:36.701Z"
+        "refreshedAt": "2026-09-15T20:33:01.027Z"
       }
     },
     "cfm": 104,
@@ -14668,7 +14703,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.536Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:36.978Z"
+        "refreshedAt": "2026-09-15T20:33:01.443Z"
       }
     },
     "cfm": 104,
@@ -14717,7 +14752,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.536Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:37.257Z"
+        "refreshedAt": "2026-09-15T20:33:01.747Z"
       }
     },
     "cfm": 104,
@@ -14766,7 +14801,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.534Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:37.516Z"
+        "refreshedAt": "2026-09-15T20:33:01.992Z"
       }
     },
     "cfm": 104,
@@ -14815,7 +14850,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.536Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:37.792Z"
+        "refreshedAt": "2026-09-15T20:33:02.281Z"
       }
     },
     "cfm": 104,
@@ -14864,7 +14899,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:32.534Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:38.119Z"
+        "refreshedAt": "2026-09-15T20:33:50.115Z"
       }
     },
     "cfm": 104,
@@ -14914,7 +14949,7 @@ export default [
         "matchedAt": "2026-08-28T21:43:38.948Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:14:38.390Z"
+        "refreshedAt": "2026-09-15T20:33:50.602Z"
       }
     },
     "cfm": 59.34,
