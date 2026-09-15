@@ -5181,7 +5181,8 @@ export default [
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
     "quarantinedAt": "2026-09-04",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 85105,
@@ -8962,7 +8963,8 @@ export default [
     "fanSize": 140,
     "needsReview": true,
     "quarantinedAt": "2026-09-13",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 85182,
