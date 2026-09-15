@@ -8594,9 +8594,8 @@ export default [
     "socket": "AM4",
     "tdp": 65,
     "bench": 38,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-03",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100586,

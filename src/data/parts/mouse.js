@@ -1232,9 +1232,8 @@ export default [
     "dpi": 8000,
     "weight": 99,
     "bench": 55,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-10",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100000,

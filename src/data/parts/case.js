@@ -10100,9 +10100,8 @@ export default [
     ],
     "color": "Wood",
     "bench": 58,
-    "needsReview": true,
-    "quarantinedAt": "2026-08-28",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 70166,
@@ -20849,9 +20848,8 @@ export default [
     "tg": true,
     "rgb": true,
     "drive35": 2,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-06",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100873,
@@ -22307,7 +22305,6 @@ export default [
         "priceConfirmedAt": "2026-09-12"
       }
     },
-    "needsReview": true,
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
@@ -22317,8 +22314,8 @@ export default [
     ],
     "drive35": 6,
     "maxCooler": 160,
-    "quarantinedAt": "2026-08-28",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 102778,
@@ -23692,7 +23689,6 @@ export default [
         "priceLastMovedAt": "2026-09-14"
       }
     },
-    "needsReview": true,
     "source": "amazon-case-discovery",
     "batchId": "amazon-case-2026-08-07",
     "discoveredAt": "2026-08-07",
@@ -23705,8 +23701,8 @@ export default [
       360
     ],
     "drive35": 7,
-    "quarantinedAt": "2026-09-02",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 102816,

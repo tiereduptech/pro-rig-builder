@@ -2845,9 +2845,8 @@ export default [
     "bench": 59,
     "ports": "1x HDMI, 1x DisplayPort",
     "resolution": "1440p",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-06",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 90065,

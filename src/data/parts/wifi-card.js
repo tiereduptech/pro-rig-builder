@@ -148,9 +148,8 @@ export default [
         "priceConfirmedAt": "2026-09-12"
       }
     },
-    "needsReview": true,
-    "quarantinedAt": "2026-08-28",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 96015,

@@ -5477,9 +5477,8 @@ export default [
     "boostClock": 2430,
     "pcie": "4.0 x16",
     "memType": "GDDR6",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-05",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 30135,
@@ -8137,9 +8136,8 @@ export default [
     "pcie": "5.0 x8",
     "slots": 2.5,
     "memType": "GDDR7",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-11",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 30195,
@@ -15987,9 +15985,8 @@ export default [
     "vram": 8,
     "length": 247,
     "memType": "GDDR6",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-01",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 30387,

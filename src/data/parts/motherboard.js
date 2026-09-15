@@ -25239,9 +25239,8 @@ export default [
     "ff": "mATX",
     "memType": "DDR4",
     "wifi": "None",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-07",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100744,
