@@ -360,13 +360,18 @@ const CADENCE = {
       'asked about every run and confirmed by nothing. Measured on main 2026-09-08, that gap IS ' +
       'the tail and is nothing else: of 3,198 rows, all 860 past the 12d tail budget carry no ' +
       'refreshedAt at all — not one is a row the re-pricer reaches and is merely behind on. ' +
-      'So sftp-ingest now certifies deals.newegg for a row the re-pricer has NEVER reached, ' +
-      'stated as refreshedAt being absent (sftp-ingest.cjs lanesSolelyOwned). ' +
-      'THE SAFETY PROPERTY IS UNTOUCHED, and it is load-bearing: this job carries refreshedAt, it ' +
-      'never mints one, so a row the re-pricer has ever confirmed can never enter that set. The ' +
-      '~2,100 rows it does reach stay under its own liveness, and a dead refresh-newegg-prices ' +
-      'still drives them stale and still fails this gate on the MEDIAN. Both crons are checked ' +
-      'here, and the budget comes from the slower of the two. ' +
+      'So sftp-ingest certifies deals.newegg for a row the re-pricer is NOT CONFIRMING: one it has ' +
+      'never reached (no refreshedAt), or one it has LOST — its latest word on the row is a miss, ' +
+      'refreshMissedAt newer than refreshedAt, written by a run that demonstrably worked ' +
+      '(sftp-ingest.cjs repricerNotReachingAtLoad, refresh-newegg-prices.cjs missesTrusted). "Lost" ' +
+      'exists because the reached set turned out not to be fixed: on 2026-09-11, 139 rows the ' +
+      're-pricer had once confirmed had gone over 3 days without it, each barred from the feed for ' +
+      'good by the refreshedAt from its last success. ' +
+      'THE SAFETY PROPERTY IS UNTOUCHED, and it is load-bearing: this job carries refreshedAt and ' +
+      'refreshMissedAt and never mints either, and only a full, unbroken re-pricer run above the ' +
+      'census floor writes a miss. A dead or broken refresh-newegg-prices writes none, so the rows ' +
+      'it reaches stay under its own liveness, go stale, and still fail this gate on the MEDIAN. ' +
+      'Both crons are checked here, and the budget comes from the slower of the two. ' +
       'EXPECT THIS TO STAY RED, SMALLER. The feed offers ~60% of the never-reached rows (five ' +
       'consecutive nightly censuses: 60.1/60.2/60.3/61.4/60.8%), and breakeven for p90 <= 12d is ' +
       '~54% — but the unreached set is fixed rather than random, so the ~400 rows the feed does ' +
