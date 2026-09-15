@@ -325,15 +325,16 @@ export async function getVariations(asin, {
 // ---- configuration preflight -------------------------------------------
 // A misconfigured second opinion (no creds wired) is OUR bug and must never look
 // like a healthy run; an eligibility gate (403 AssociateNotEligible) is AMAZON's
-// gate and is expected right now. Same log line for both is exactly the failure
+// gate — not our bug, but not a healthy run either. Same log line for both is exactly the failure
 // this module exists to prevent, so the preflight maps every disabledReason onto
 // ONE of four policy states the caller branches on:
 //
 //   'ok'       creds valid, Amazon reachable            -> use PA API
 //   'our_bug'  not_configured | credentials_rejected    -> FAIL the job loudly
-//   'gated'    associate_not_eligible | unauthorized    -> WARN, fall back to DataForSEO
+//   'gated'    associate_not_eligible | unauthorized    -> fall back to DataForSEO, END RED
+//              (verify-catalog: scripts/assert-paapi-outcome.mjs, after the commit)
 //   'degraded' token_failed | network | anything else   -> WARN, transient, fall back
-function classifyReason(reason) {
+export function classifyReason(reason) {
   if (reason === 'not_configured' || reason === 'credentials_rejected') return 'our_bug';
   if (reason === 'associate_not_eligible' || reason === 'unauthorized')  return 'gated';
   return 'degraded';

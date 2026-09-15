@@ -106,7 +106,8 @@ jobs:
           DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
           # PA API (Amazon Creators) — the buy-box second opinion (PASS 2). Without
           # these the verifier's config gate FAILS the job loudly (not_configured =
-          # our bug); a 403 AssociateNotEligible warns and continues on DataForSEO.
+          # our bug); a 403 AssociateNotEligible continues on DataForSEO, commits,
+          # and then goes red at "Assert PA API served this run" below.
           AMAZON_CREATORS_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
           AMAZON_CREATORS_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CLIENT_SECRET }}
         run: |
@@ -219,6 +220,17 @@ jobs:
 
           echo "All push attempts failed"
           exit 1
+
+      # A run PA API could not serve ends RED here — AFTER the commit above, so
+      # the DataForSEO fallback's prices still land. From 2026-09-12 22:01 UTC an
+      # associate_not_eligible run warned and ended green: three days of runs PA
+      # confirmed 0 rows on, with hidden (needsReview) rows getting no check at
+      # all, and nothing looked wrong. An empty $REPORT fails too, since "no
+      # report" is not "PA was fine". See scripts/assert-paapi-outcome.mjs.
+      - name: Assert PA API served this run
+        run: |
+          REPORT=$(ls -t verify-reports/report-*.json 2>/dev/null | head -1)
+          node scripts/assert-paapi-outcome.mjs "$REPORT"
 
       - name: Job summary
         if: always()

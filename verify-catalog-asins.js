@@ -581,8 +581,12 @@ async function hardExit(code) {
 //
 //   our_bug (not_configured / bad creds) -> FAIL THE JOB. Runs BEFORE postTasks,
 //     so it fails for $0 without billing a single DataForSEO task.
-//   gated (403 AssociateNotEligible)     -> WARN and continue on DataForSEO. This
-//     is expected until the Associates account clears the sales threshold.
+//   gated (403 AssociateNotEligible)     -> continue on DataForSEO so published
+//     rows keep their paid refresh, commit, and END RED: the workflow's "Assert
+//     PA API served this run" step (scripts/assert-paapi-outcome.mjs) fails the
+//     job after the commit. This branch used to warn and end green, and from
+//     2026-09-12 22:01 UTC that hid three days of runs PA confirmed 0 rows on,
+//     while the needsReview rows only PA re-checks got no check at all.
 //
 // `fatal` is false only in --dry-run, where nothing is verified or committed
 // anyway: there it downgrades to an informational warning that names what a real
@@ -615,14 +619,15 @@ async function runPaapiGate(probeAsins, { fatal, force }) {
   }
 
   if (pf.state === 'gated') {
-    console.log(`::warning title=PA API gated by Amazon (AssociateNotEligible)::${pf.reason} — continuing on DataForSEO; buy-box confirmation (PASS 2) skipped this run`);
+    console.log(`::warning title=PA API gated by Amazon (AssociateNotEligible)::${pf.reason} — continuing on DataForSEO so published rows keep their price; this run will commit and then FAIL`);
     console.warn('\n\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
     console.warn('\x1b[43m\x1b[30m  ⚠  PA API gated by Amazon: AssociateNotEligible (HTTP 403)' + ' '.repeat(13) + '\x1b[0m');
     console.warn('\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
-    console.warn(`\x1b[33m  This is EXPECTED right now — the Associates account is below the`);
-    console.warn('  qualifying-sales threshold, so Amazon has revoked PA API access.');
-    console.warn('  Amazon\'s gate, NOT our bug. Continuing the run on DataForSEO alone;');
-    console.warn('  buy-box confirmation (PASS 2) is skipped. Rechecks automatically next run.\x1b[0m');
+    console.warn(`\x1b[33m  Amazon has revoked PA API access (Associates eligibility follows`);
+    console.warn('  trailing-30-day qualifying sales). Amazon\'s gate, NOT our bug — and NOT');
+    console.warn('  healthy either: needsReview rows get no check at all while it lasts.');
+    console.warn('  Continuing on DataForSEO so published rows keep their price; the workflow');
+    console.warn('  FAILS this run after the commit. Rechecks automatically next run.\x1b[0m');
     console.warn('\x1b[33m' + '─'.repeat(72) + '\x1b[0m');
     return pf;
   }
