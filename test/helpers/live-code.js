@@ -20,7 +20,12 @@ import path from 'node:path';
 export const IS_COMMENT = (line) => /^\s*(\/\/|\*|\/\*)/.test(line);
 
 // A line that HIDES a row / a line that UN-HIDES one.
-export const HIDES = /needsReview\s*[=:]\s*true/;
+//
+// HIDES is any needsReview assignment that is not a falsy literal and not a copy
+// of another needsReview (report rows). A literal-`true` detector missed
+// `needsReview: HELD.has(CATEGORY)` in a scheduled writer, which inserted CPU and
+// GPU rows hidden with no cause and no date. `(?!=)` keeps comparisons out.
+export const HIDES = /needsReview\s*[=:](?!=)(?!\s*(false|undefined|null)\b)(?![^,;]*needsReview)/;
 export const UNHIDES = /delete\s+[\w.[\]'"]*\.needsReview\b|needsReview\s*[=:]\s*(false|undefined|null)\b/;
 
 const read = (f) => readFileSync(f, 'utf8');

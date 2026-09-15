@@ -55,6 +55,8 @@ let LOADED_COUNT = 0;
 // (shared ESM, dynamic-imported at startup). newegg-match.js owns the capacity
 // gate internally, so this file no longer needs its own CAP handle.
 let NEG = null;
+// drift-gate.js — recordQuarantine(); loaded by initNEG() alongside the matcher.
+let DRIFT = null;
 
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
@@ -393,6 +395,8 @@ function saveProgress(p) {
 // findNeweggMatch/getToken without triggering this file's own ingest run.
 async function initNEG() {
   if (!NEG) NEG = await import('file://' + process.cwd().replace(/\\/g, '/') + '/newegg-match.js');
+  // drift-gate.js — recordQuarantine(), the sanctioned way to hide a row.
+  if (!DRIFT) DRIFT = await import('file://' + process.cwd().replace(/\\/g, '/') + '/drift-gate.js');
   return NEG;
 }
 
@@ -525,8 +529,7 @@ async function main() {
           // attach; flag for review (mirrors the Amazon attach gate). The first-party
           // selection still happened; only the WRITE is withheld.
           flagged++;
-          p.needsReview = true;
-          p.quarantinedAt = new Date().toISOString().slice(0, 10);
+          DRIFT.recordQuarantine(p, { at: new Date().toISOString().slice(0, 10), reason: NEG.NEWEGG_ATTACH_FLAGGED_REASON });
           console.log(`⚠ flag ${sanity.cls}${sanity.dispConflict ? ` ${sanity.spread.toFixed(2)}x` : ''} (${sClass})`);
         } else {
           p.deals = p.deals || {};

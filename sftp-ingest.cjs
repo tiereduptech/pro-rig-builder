@@ -1628,8 +1628,9 @@ function applyMatchToPart(part, rec, match, notReaching = repricerNotReaching) {
   if (shouldReplace && fieldKey === 'newegg') {
     const effPrice = pricing.saleprice || pricing.price;
     if (!NEG.neweggSanity(part, effPrice).pass) {
-      part.needsReview = true;
-      part.quarantinedAt = new Date().toISOString().slice(0, 10);
+      // With its cause, through recordQuarantine(): on a row already hidden for
+      // something else, this goes beside that cause rather than over it.
+      DRIFT.recordQuarantine(part, { at: new Date().toISOString().slice(0, 10), reason: NEG.NEWEGG_ATTACH_FLAGGED_REASON });
       shouldReplace = false;
     }
   }
