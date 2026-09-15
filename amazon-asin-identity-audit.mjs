@@ -64,9 +64,17 @@ async function hardExit(code) {
   process.exit(code);
 }
 
-// Two states, made to look NOTHING alike in the log (red ::error:: + exit 1 vs
-// yellow ::warning:: + graceful exit 0) — so "our secret is missing" is never
-// mistaken for "Amazon is gating us right now".
+// Two states, made to look NOTHING alike in the log (different ::error::
+// titles, different banners), so "our secret is missing" is never mistaken for
+// "Amazon is gating us right now". Both end RED.
+//
+// The gate used to warn in yellow and exit 0: "a clean no-op, job stays green".
+// A gated run checks 0 ASINs, so it counts no dead-ASIN strike, quarantines
+// nothing and measures no attach rate, and on a green job that reads exactly
+// like a night that checked every link and found nothing wrong. It is the shape
+// verify-catalog had until #110: PA lapsed on 2026-09-12 and every run stayed
+// green. This audit has no fallback and writes nothing before the gate, so
+// there is no commit to protect and it goes red right here.
 async function failNotConfigured(detail) {
   console.log(`::error title=PA API not configured::${detail}`);
   console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
@@ -80,21 +88,22 @@ async function failNotConfigured(detail) {
   console.error('\x1b[91m' + '━'.repeat(72) + '\x1b[0m');
   await hardExit(1);
 }
-async function degradeGated(httpStatus) {
-  console.log(`::warning title=PA API gated by Amazon (AssociateNotEligible)::HTTP ${httpStatus} — audit degraded to a clean no-op, nothing quarantined, job stays green`);
-  console.warn('\n\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
-  console.warn(`\x1b[43m\x1b[30m  ⚠  PA API gated by Amazon: AssociateNotEligible (HTTP ${httpStatus})` + ' '.repeat(11) + '\x1b[0m');
-  console.warn('\x1b[43m\x1b[30m' + '─'.repeat(72) + '\x1b[0m');
-  console.warn('\x1b[33m  EXPECTED right now — the Associates account is below the qualifying-sales');
-  console.warn('  threshold, so Amazon revoked Creators/PA API access. Amazon\'s gate, NOT our');
-  console.warn('  bug. This audit has no DataForSEO fallback, so it degrades to a clean no-op:');
-  console.warn('  nothing quarantined, nothing written, job stays green. Rechecks next run.\x1b[0m');
-  console.warn('\x1b[33m' + '─'.repeat(72) + '\x1b[0m');
+async function failGated(httpStatus) {
+  console.log(`::error title=PA API gated by Amazon (AssociateNotEligible)::HTTP ${httpStatus} — the audit checked 0 ASINs: no dead-ASIN strike counted, nothing quarantined, no attach rate measured. Red until eligibility returns; check Associates Central.`);
+  console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+  console.error(`\x1b[41m\x1b[97m  ✗  PA API GATED BY AMAZON: AssociateNotEligible (HTTP ${httpStatus})` + ' '.repeat(12) + '\x1b[0m');
+  console.error('\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
+  console.error('\x1b[91m  Amazon\'s gate, NOT our bug: the Associates account has lost Creators/PA');
+  console.error('  API eligibility. This audit has no DataForSEO fallback, so it checked');
+  console.error('  nothing: no strikes, no quarantines, no attach rate. Nothing was written.');
+  console.error('  FAILING so a night that checked nothing never passes for a night that');
+  console.error('  found nothing. Rechecks next run.\x1b[0m');
+  console.error('\x1b[91m' + '━'.repeat(72) + '\x1b[0m');
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT,
       'degraded=true\ndegraded_reason=associate_not_eligible\nquarantined=0\nqueue=0\nalert=false\n');
   }
-  await hardExit(0);
+  await hardExit(1);
 }
 
 // ---- creds --------------------------------------------------------------
@@ -273,10 +282,10 @@ async function loadCatalog() {
     await ensureToken(creds);
     console.log('token acquired\n');
   } catch (e) {
-    // 403 / AssociateNotEligible at the token endpoint -> Amazon's gate: warn and
-    // degrade to a no-op (exit 0). A 401 (rejected secret) or any other token
+    // 403 / AssociateNotEligible at the token endpoint -> Amazon's gate: red,
+    // under its own title (failGated). A 401 (rejected secret) or any other token
     // failure is our problem -> fail loudly and cleanly, never with a raw stack.
-    if (e.eligibility) await degradeGated(e.httpStatus || 403);
+    if (e.eligibility) await failGated(e.httpStatus || 403);
     console.log(`::error title=PA API token request failed::${e.message}`);
     console.error('\n\x1b[41m\x1b[97m' + '━'.repeat(72) + '\x1b[0m');
     console.error('\x1b[41m\x1b[97m  ✗✗✗  PA API TOKEN REQUEST FAILED — creds rejected or endpoint down  ✗✗✗\x1b[0m');
@@ -305,8 +314,8 @@ async function loadCatalog() {
       apiErrors.push({ batch: b, status: r.status, body: (r.raw || '').slice(0, 200) });
       // Token issued but the data call is gated (eligibility can surface here rather
       // than at the token endpoint). No point hammering 360 more batches that will
-      // all 403 — degrade to the same clean no-op and stop.
-      if (isEligibilityError(r.status, r.raw)) await degradeGated(r.status);
+      // all 403 — stop, red, exactly as a gate at the token endpoint does.
+      if (isEligibilityError(r.status, r.raw)) await failGated(r.status);
     }
     const got = itemsOf(r.json);
     for (const it of got) {
