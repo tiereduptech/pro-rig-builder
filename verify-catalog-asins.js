@@ -32,7 +32,7 @@ import { selectNewOffer, lowestAnyConditionPrice, amazonPriceSanity, normalizeOf
 // analyzeResult are imported — never re-declared here (see drift-gate.js).
 import { STORAGE_CATS, titleMatches, analyzeResult,
          driftGateStaleness, DRIFT_GRADED_TYPES, DRIFT_FLAGGED_TYPES,
-         linkVerificationCurrent, lastDealChangedAt, stampDealChange } from './drift-gate.js';
+         linkVerificationCurrent, lastDealChangedAt, stampDealChange, recordQuarantine } from './drift-gate.js';
 import { isRenewedTitle } from './condition.cjs';
 // Spend guards (dollar ceiling + scoped exact-count + full-tier band) live in ONE
 // pure, unit-tested module — never re-declared here. See verify-spend-guard.js.
@@ -450,7 +450,7 @@ export function partitionPaidPass(unconfirmed) {
   return { needDfs, quarantineSkipped };
 }
 
-function applyFixes(parts, perProductFixes) {
+export function applyFixes(parts, perProductFixes) {
   let changed = 0;
   for (const p of parts) {
     const fix = perProductFixes[p.id];
@@ -505,12 +505,12 @@ function applyFixes(parts, perProductFixes) {
       productChanged = true;
     }
     if (fix.needsReview) {
-      p.needsReview = true;
-      p.quarantinedAt = fix.quarantinedAt;
       // The CAUSE, not just the fact. A quarantine with no recorded cause cannot be
       // safely lifted by anything — which is why 385 rows that now price fine are
-      // still hidden, with nothing able to prove their hold is obsolete.
-      if (fix.quarantineReason) p.quarantineReason = fix.quarantineReason;
+      // still hidden, with nothing able to prove their hold is obsolete. And on a
+      // row that is already hidden, the cause it was hidden FOR: lift-quarantine.mjs
+      // is keyed on it, so a later verdict goes beside it, never over it.
+      recordQuarantine(p, { at: fix.quarantinedAt, reason: fix.quarantineReason });
       productChanged = true;
     }
     if (productChanged) changed++;

@@ -121,6 +121,41 @@ export function markLinkVerified(product, { at, by } = {}) {
   return product;
 }
 
+// ── RECORDING A QUARANTINE ──────────────────────────────────────────────────
+// quarantineReason is what lift-quarantine.mjs keys on, so it has to stay the
+// cause the row was HIDDEN for. Both verdict writers used to overwrite it on
+// every quarantine verdict, including on rows already hidden: a row held for
+// asin_repair_no_match that later read a used-only listing became no_new_offer,
+// and a lift that trusts the field would put it back on the site the day Amazon
+// showed a New buy box, with an ASIN nothing ever validated. A row hidden with
+// no recorded cause acquired one the same way.
+//
+// So a verdict on a row that is ALREADY hidden:
+//   same cause        refreshes quarantinedAt — the date of the latest verdict
+//                     for that cause, which a lifting confirmation must beat
+//   different cause   is added to quarantineAlso and changes nothing else; the
+//                     row is now held for two things and a lift must answer both
+//   no cause on file  is added to quarantineAlso; the original stays unknown
+//                     rather than being replaced by whatever came next
+export function recordQuarantine(p, { at, reason } = {}) {
+  if (!p) return p;
+  if (!p.needsReview) {
+    p.needsReview = true;
+    p.quarantinedAt = at;
+    if (reason) p.quarantineReason = reason;
+    else delete p.quarantineReason;
+    delete p.quarantineAlso;
+    return p;
+  }
+  if (!reason) return p;
+  if (p.quarantineReason === reason) {
+    p.quarantinedAt = at;
+    return p;
+  }
+  if (!(p.quarantineAlso || []).includes(reason)) p.quarantineAlso = [...(p.quarantineAlso || []), reason];
+  return p;
+}
+
 export function normalize(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }

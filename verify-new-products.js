@@ -19,6 +19,7 @@
 
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync, existsSync } from 'node:fs';
 import { extractCPUModel, extractGPUModel } from './src/data/product-specs.js';
+import { recordQuarantine } from './drift-gate.js';
 
 const LOGIN = process.env.DATAFORSEO_LOGIN;
 const PASSWORD = process.env.DATAFORSEO_PASSWORD;
@@ -224,9 +225,9 @@ if (AUTO_FIX && Object.keys(fixes).length > 0) {
     const fix = fixes[p.id];
     if (!fix) continue;
     if (fix.needsReview) {
-      p.needsReview = true;
-      p.quarantinedAt = fix.quarantinedAt;
-      if (fix.quarantineReason) p.quarantineReason = fix.quarantineReason;
+      // Never over the cause an already-hidden row was hidden for — see
+      // recordQuarantine() in drift-gate.js.
+      recordQuarantine(p, { at: fix.quarantinedAt, reason: fix.quarantineReason });
       fixCount++;
     }
     if (fix.newAmazonPrice != null && p.deals?.amazon) {
