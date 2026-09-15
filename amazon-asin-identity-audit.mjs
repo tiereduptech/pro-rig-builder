@@ -19,7 +19,7 @@
 // Run: node amazon-asin-identity-audit.mjs [--limit N]
 
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'node:fs';
-import { titleMatches } from './drift-gate.js';
+import { titleMatches, recordQuarantine } from './drift-gate.js';
 
 const CREDS_PATH  = process.env.PRORIG_AMAZON_CREDS || 'C:\\rigfinder\\PRB-credentials.csv';
 const PARTNER_TAG = 'tiereduptech-20';
@@ -46,6 +46,8 @@ const APPLY   = process.argv.includes('--apply');
 const STATE_PATH = 'amazon-asin-audit-state.json';
 const QUEUE_PATH = 'relink-review-queue.json';
 const DEAD_STRIKES = 2;
+// The cause recorded on a row hidden for a confirmed-dead ASIN.
+const DEAD_ASIN_REASON = 'identity_audit_dead_asin';
 // Alert when the wrong-link ATTACH rate rises this many percentage points above
 // the trailing median. Dead ASINs are excluded — those are link decay, which
 // drifts up slowly; a jump in wrong/close means an ingest started mis-attaching.
@@ -549,7 +551,7 @@ async function loadCatalog() {
     const stamp = today();
     for (const p of parts) {
       if (!ids.has(p.id)) continue;
-      p.needsReview = true; p.quarantinedAt = stamp; quarantined++;
+      recordQuarantine(p, { at: stamp, reason: DEAD_ASIN_REASON }); quarantined++;
     }
     if (quarantined !== ids.size) {
       console.log(`  ! id mismatch (${quarantined}/${ids.size}) — aborting write`);

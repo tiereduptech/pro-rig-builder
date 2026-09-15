@@ -7,10 +7,12 @@
  * approved insert shape, and writes them via scripts/write-catalog.cjs (atomic
  * promote + mandatory re-split + shrink/GROWTH brakes).
  *
- * Quarantine policy: CPU/GPU insert needsReview:true (held until bench/cpuMark
- * backfill); every other category goes live (needsReview:false) once past its
- * min-viable-spec bar. Every inserted row is tagged source:'newegg-discovery' +
- * batchId + discoveredAt, so rollback-discovery.cjs can remove one run exactly.
+ * Quarantine policy: CPU/GPU insert hidden, for newegg_discovery_awaiting_bench
+ * (held until bench/cpuMark backfill); every other category goes live
+ * (no needsReview) once past its min-viable-spec bar. Every hold goes through
+ * drift-gate.js recordQuarantine() with its cause on the row. Every inserted
+ * row is tagged source:'newegg-discovery' + batchId + discoveredAt, so
+ * rollback-discovery.cjs can remove one run exactly.
  *
  * DEDUP (approved): UPC then MPN — both authoritative and variant-distinguishing.
  * Name-based dedup is deliberately NOT used intra-batch: the feed's "identical"
@@ -69,6 +71,11 @@ const log = (m) => console.log(`[${new Date().toISOString().substring(11, 19)}] 
 
 // Categories HELD for bench/cpuMark backfill; everything else goes live.
 const HELD = new Set(['CPU', 'GPU']);
+// The causes a discovered row is inserted hidden for. The hold used to be a bare
+// `needsReview: HELD.has(CATEGORY)` in the row literal: hidden, with no cause
+// and no quarantinedAt, so nothing could later tell it from any other hold.
+const HELD_REASON = 'newegg_discovery_awaiting_bench';
+const PRICE_GATE_REASON = 'newegg_discovery_price_gate';
 
 const FIELD_ORDER = [
   'sku', 'product_name', 'newegg_item_number', 'primary_category',
@@ -152,7 +159,7 @@ function buildRow(rec, id, NEG) {
         matchedAt: TODAY, matchMethod: 'discovery', matchScore: 1.0,
       },
     },
-    needsReview: HELD.has(CATEGORY),   // CPU/GPU held; others live
+    // No needsReview here: CPU/GPU are hidden after build, with a cause, by hold().
     upc: rec.upc || undefined,
     mpn: rec.mpn || undefined,
     source: 'newegg-discovery',
@@ -173,6 +180,10 @@ function buildRow(rec, id, NEG) {
   if (!leaf || !bar) throw new Error(`Category ${CATEGORY} not configured`);
   const NEG = await import('file://' + ROOT.replace(/\\/g, '/') + '/newegg-match.js');
   const CAP = await import('file://' + ROOT.replace(/\\/g, '/') + '/normalize-product-name.js');
+  const DRIFT = await import('file://' + ROOT.replace(/\\/g, '/') + '/drift-gate.js');
+  // CPU/GPU rows are inserted hidden until bench backfill. Applied before the
+  // price gate so a held row the gate also fails carries both causes.
+  const hold = (r) => (HELD.has(CATEGORY) ? DRIFT.recordQuarantine(r, { at: TODAY, reason: HELD_REASON }) : r);
 
   log(`Apply ${CATEGORY}  (${DRY_RUN ? 'DRY RUN' : 'LIVE WRITE'})  limit=${LIMIT || '∞'}  batch=${BATCH_ID}`);
   const partsMod = await import('file://' + PARTS_PATH.replace(/\\/g, '/') + '?t=' + Date.now());
@@ -332,14 +343,13 @@ function buildRow(rec, id, NEG) {
     return out;
   };
   const selected = strideSample(pooled, LIMIT);
-  const liveRows = selected.map((rec) => buildRow(rec, allocId(), NEG));
+  const liveRows = selected.map((rec) => hold(buildRow(rec, allocId(), NEG)));
   // Quarantined discoveries: inserted HELD, and NEVER sampled away — the safety
-  // net must not silently drop rows. Stamped with the same needsReview/quarantinedAt
-  // convention the rest of the catalog uses, plus the failing price verdict.
+  // net must not silently drop rows. Hidden through recordQuarantine() with the
+  // cause, like the rest of the catalog, plus the failing price verdict.
   const quarantineRows = quarantinedRecs.map(({ rec, verdict }) => {
-    const r = buildRow(rec, allocId(), NEG);
-    r.needsReview = true;
-    r.quarantinedAt = TODAY;
+    const r = hold(buildRow(rec, allocId(), NEG));
+    DRIFT.recordQuarantine(r, { at: TODAY, reason: PRICE_GATE_REASON });
     r.priceQuarantine = { reason: verdict.reason, ppu: verdict.ppu, unit: verdict.unit, floor: verdict.floor, ceiling: verdict.ceiling };
     return r;
   });

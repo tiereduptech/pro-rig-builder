@@ -1092,6 +1092,14 @@ export async function searchNewegg(product, { token, mid, fetchImpl = fetch, acq
   return { ok: true, candidates: scored, ...base, variantRejects, guardRejects };
 }
 
+// The cause a row is hidden for when neweggSanity() refuses the price a match
+// would attach. sftp-ingest.cjs and fetch-newegg-via-rakuten.cjs both apply this
+// gate on attach and quarantine on a fail, so they record the same cause. Named
+// apart from the re-pricer's price_suspect_3strikes on purpose: that hold is
+// three strikes on a listing we already carry, and recoverPriceHold() lifts it
+// on a good price. This one is a single refusal of a listing never attached.
+export const NEWEGG_ATTACH_FLAGGED_REASON = 'newegg_price_attach_flagged';
+
 // ── Cross-retailer sanity gate for a candidate Newegg price (peers: amazon, bestbuy)
 export function neweggSanity(product, candidatePrice) {
   // Absolute per-type band FIRST — floor AND ceiling. A systematically inflated
