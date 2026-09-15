@@ -37,6 +37,8 @@ const STORAGE_CATS = new Set(['Storage', 'ExternalStorage']);
 let CAP = null;
 // Newegg first-party-preference + sanity gate (shared ESM, dynamic-imported at startup).
 let NEG = null;
+// drift-gate.js — for recordQuarantine(), the one sanctioned way to hide a row.
+let DRIFT = null;
 
 const ROOT = __dirname;
 const FEED_DIR = path.join(ROOT, 'catalog-build', 'feeds');
@@ -914,6 +916,106 @@ function lanesSweptForAbsence(part) {
   return lanes;
 }
 
+// ── THE OPENBOX EXIT ────────────────────────────────────────────────────────
+// Open-box is single-unit inventory. A unit that sells leaves the feed and, in
+// this lane's own history, mostly never comes back. From 2026-08-27 to 09-14
+// the lane grew 182 -> 238 rows and removed 0: 183 rows went absent, 35
+// returned, and 81 were never confirmed at all after stamping began on 08-28.
+// The absence sweep stamps priceUnconfirmedAt, which is a stamp, not an exit,
+// so every sold unit stayed in the catalog for good and aged into the
+// freshness gate's tail. A lane with inflow and no exit is a leak, not a floor.
+//
+// The exit: a deal the FULL feed has not carried on OPENBOX_ABSENT_NIGHTS
+// consecutive full-feed nights is deleted. Decided 2026-09-15: three nights. A
+// single-unit listing that sold is not owed a longer benefit of the doubt.
+//
+// Same rule as purge-dead-bestbuy-links.mjs:
+//   - the DEAL goes, never the product. The product is stamped
+//     neweggOpenboxRemovedAbsent with the date.
+//   - a product left with no other priced deal is quarantined (hidden, not
+//     dropped) with a recorded cause, through recordQuarantine(), so a row
+//     already hidden keeps the cause it was hidden for.
+//
+// What counts as a night:
+//   - only a run that parsed a FULL Newegg feed can say "absent". A delta-only
+//     or quiet run neither advances a streak nor drops anything.
+//   - one increment per calendar day (feedAbsentLastAt), so a same-day re-run
+//     over the same feed is not a second observation.
+//   - ANY confirmation, full feed or delta, clears the streak. The listing was
+//     offered, so it had not sold.
+//   - BREAKER: a full feed that confirms under OPENBOX_MIN_CONFIRMED_SHARE of
+//     the lane has lost open-box; it is not a night on which 90% of single
+//     units sold at once. It advances nothing, drops nothing, and says so in
+//     the summary rather than skipping quietly.
+const OPENBOX_LANE = 'newegg_openbox';
+const OPENBOX_ABSENT_NIGHTS = 3;
+const OPENBOX_MIN_CONFIRMED_SHARE = 0.10;
+const OPENBOX_ORPHAN_REASON = 'newegg_openbox_absent_orphan';
+
+function hasOtherPricedDeal(part, lane) {
+  return Object.entries(part.deals || {}).some(([k, d]) =>
+    k !== lane && d && typeof d === 'object' && Number(d.saleprice || d.price) > 0);
+}
+
+/**
+ * Advance, clear, or act on each open-box deal's run of full-feed absences.
+ * Mutates `parts`; returns what it did. `counted` is false, with a `reason`,
+ * whenever this run could not count as a night, so "nothing dropped because
+ * nothing was absent" never looks like "nothing dropped because we never looked".
+ */
+function settleOpenboxAbsence(parts, { confirmed, fullFeed, today, recordQuarantine }) {
+  if (typeof recordQuarantine !== 'function') {
+    throw new TypeError('settleOpenboxAbsence needs recordQuarantine: an orphaned product must be hidden with a cause, never left bare');
+  }
+  const out = { counted: false, reason: null, laneRows: 0, confirmed: 0, cleared: 0, streaking: 0,
+                dropped: [], orphansQuarantined: [] };
+  const unconfirmedRows = [];
+  for (const p of parts) {
+    const d = p && p.deals && p.deals[OPENBOX_LANE];
+    if (!d || typeof d !== 'object') continue;
+    out.laneRows++;
+    if (confirmed.has(laneKey(p, OPENBOX_LANE))) {
+      out.confirmed++;
+      if (d.feedAbsentStreak != null) out.cleared++;
+      delete d.feedAbsentStreak;
+      delete d.feedAbsentLastAt;
+    } else {
+      unconfirmedRows.push(p);
+    }
+  }
+
+  if (!fullFeed) {
+    out.reason = 'no full Newegg feed parsed this run: nothing was looked at, so nothing is absent';
+    return out;
+  }
+  if (out.laneRows && out.confirmed / out.laneRows < OPENBOX_MIN_CONFIRMED_SHARE) {
+    out.reason = `BREAKER: the full feed confirmed ${out.confirmed} of ${out.laneRows} open-box rows, under ` +
+                 `${OPENBOX_MIN_CONFIRMED_SHARE * 100}%. That is a feed that lost open-box, not a night of sales. ` +
+                 'No streak advanced, nothing dropped.';
+    return out;
+  }
+
+  out.counted = true;
+  for (const p of unconfirmedRows) {
+    const d = p.deals[OPENBOX_LANE];
+    if (d.feedAbsentLastAt !== today) {
+      d.feedAbsentStreak = (d.feedAbsentStreak || 0) + 1;
+      d.feedAbsentLastAt = today;
+    }
+    if (d.feedAbsentStreak < OPENBOX_ABSENT_NIGHTS) { out.streaking++; continue; }
+
+    const orphan = !hasOtherPricedDeal(p, OPENBOX_LANE);
+    delete p.deals[OPENBOX_LANE];
+    p.neweggOpenboxRemovedAbsent = today;
+    out.dropped.push(p.id);
+    if (orphan) {
+      recordQuarantine(p, { at: today, reason: OPENBOX_ORPHAN_REASON });
+      out.orphansQuarantined.push(p.id);
+    }
+  }
+  return out;
+}
+
 /**
  * Part ids whose deals.newegg the re-pricer is NOT CONFIRMING — this job's to
  * certify. Two populations, one question: what is the re-pricer's latest word
@@ -1631,12 +1733,15 @@ async function loadDeps() {
   const root = __dirname.replace(/\\/g, '/');
   if (!CAP) CAP = await import('file://' + root + '/normalize-product-name.js');
   if (!NEG) NEG = await import('file://' + root + '/newegg-match.js');
+  if (!DRIFT) DRIFT = await import('file://' + root + '/drift-gate.js');
 }
 
 module.exports = { streamTxtFeed, parseTxtFeed, matchRecord, buildCatalogIndex, loadDeps,
                    DEFAULT_FIELD_ORDER, normUPC, normMPN,
                    chooseListing, detectCondition, CONDITION_LANES, lanesSolelyOwned,
                    lanesSweptForAbsence, repricerNotReachingAtLoad,
+                   settleOpenboxAbsence, OPENBOX_ABSENT_NIGHTS, OPENBOX_MIN_CONFIRMED_SHARE,
+                   OPENBOX_ORPHAN_REASON,
                    coverageCensus, laneKey, countRepricerStamps, stampIntegrity,
                    loadNeweggReach, stampedShareFloor, REACH_FILE,
                    // Exported so the stamp-carry rules above can be asserted directly.
@@ -2108,6 +2213,25 @@ if (require.main === module) (async () => {
   summary.totals.conditionLanesConfirmed = confirmedLanes.size;
   summary.totals.conditionLanesUnconfirmed = unconfirmed;
   summary.totals.absenceSweepRan = fullNeweggFeedParsed;
+
+  // ── OPENBOX EXIT — see settleOpenboxAbsence() ─────────────────────────────
+  // Outside the fullNeweggFeedParsed gate on purpose: a delta feed that offers
+  // the listing still clears its streak. Whether the night COUNTS is decided
+  // inside, and recorded either way.
+  const openbox = settleOpenboxAbsence(parts, {
+    confirmed: confirmedLanes, fullFeed: fullNeweggFeedParsed, today: TODAY,
+    recordQuarantine: DRIFT.recordQuarantine,
+  });
+  summary.totals.openboxAbsence = openbox;
+  if (openbox.counted) {
+    log(`\nOpen-box exit: ${openbox.dropped.length} deal(s) dropped after ${OPENBOX_ABSENT_NIGHTS} absent full-feed nights ` +
+        `(${openbox.orphansQuarantined.length} product(s) left with no priced deal, quarantined), ` +
+        `${openbox.streaking} absent and counting, ${openbox.cleared} streak(s) cleared by a confirmation`);
+  } else if (/^BREAKER/.test(openbox.reason)) {
+    console.log(`::warning title=Open-box absence breaker::${openbox.reason}`);
+  } else {
+    log(`\nOpen-box exit: not a counted night (${openbox.reason}); ${openbox.cleared} streak(s) cleared by a confirmation`);
+  }
 
   // Write outputs
   let wroteParts = false;
