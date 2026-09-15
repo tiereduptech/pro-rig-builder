@@ -191,7 +191,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.437Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "color": "Black",
@@ -1646,8 +1646,8 @@ export default [
         "matchedAt": "2026-09-14T17:18:14.053Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-14",
-        "refreshedAt": "2026-09-15T10:12:29.799Z"
+        "refreshedAt": "2026-09-15T10:12:29.799Z",
+        "priceLastMovedAt": "2026-09-14"
       }
     },
     "additionalImages": [
@@ -1957,18 +1957,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAADY4B02521",
-        "price": 24.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837877117047404496486&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-pwm-case-fan%2Fp%2FN82E16835608044%3Fitem%3D9SIAADY4B02521",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211108UB13c.jpg",
+        "sku": "4458316100302463623067380",
+        "itemNumber": "9SIA4REK2R0288",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-14T17:16:21.706Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:30.602Z",
-        "priceLastMovedAt": "2026-09-14",
-        "rematchedAt": "2026-09-14T21:11:46.407Z",
-        "rematchedFrom": "4458316100302463623067380"
+        "price": 19.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316100302463623067380&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a14-flx-case-fan%2Fp%2FN82E16835608034%3Fitem%3D9SIA4REK2R0288",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-034-V02.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-15T16:30:51.267Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -2112,18 +2111,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KVE7193",
-        "price": 34.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835953195234573208088&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-pwm-case-fan%2Fp%2F1YF-000T-00091%3Fitem%3D9SIBZT7KVE7193",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400894271333793ToAzLLNl9U.jpg",
+        "sku": "445839143345394541995529",
+        "itemNumber": "9SIAADY5SE4696",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-14T17:17:19.217Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:30.881Z",
-        "priceLastMovedAt": "2026-09-14",
-        "rematchedAt": "2026-09-14T21:11:46.682Z",
-        "rematchedFrom": "445839143345394541995529"
+        "price": 23.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839143345394541995529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-a12x15-flx-case-fan%2Fp%2F1YF-000T-00090%3Fitem%3D9SIAADY5SE4696",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131400886376265271NL23kh0SsU.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-15T16:31:57.094Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -2341,7 +2339,9 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -2697,7 +2697,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.555Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -5085,18 +5085,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KJ95158",
-        "price": 25.14,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312945049094923251717&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-s12a-pwm-case-fan%2Fp%2FN82E16835608038%3Fitem%3D9SIBZT7KJ95158",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812KJH2a.jpg",
+        "sku": "445833492211039337319431",
+        "itemNumber": "9SIAADY4B02823",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-14T17:17:19.204Z",
-        "matchMethod": "name",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-15T10:12:36.182Z",
-        "priceLastMovedAt": "2026-09-14",
-        "rematchedAt": "2026-09-14T21:11:51.826Z",
-        "rematchedFrom": "445833492211039337319431"
+        "price": 21.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833492211039337319431&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-s12a-flx-case-fan-120-mm-non-led%2Fp%2FN82E16835608037%3Fitem%3D9SIAADY4B02823",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200812QrhRf.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-15T16:31:57.080Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -5288,7 +5287,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -6596,7 +6597,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.745Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       }
     },
     "discount": 13,
@@ -7198,7 +7201,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.069Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -7521,18 +7526,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIBZT7KT41881",
-        "price": 22.79,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831554204625661025458&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200%2Fp%2FN82E16835608063%3Fitem%3D9SIBZT7KT41881",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-063-V07.jpg",
+        "sku": "445834493452684552483168",
+        "itemNumber": "9SIA4REK842984",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-14T17:16:21.726Z",
-        "matchMethod": "name",
-        "matchScore": 0.71,
-        "refreshedAt": "2026-09-15T10:13:28.259Z",
-        "priceLastMovedAt": "2026-09-14",
-        "rematchedAt": "2026-09-14T21:12:44.258Z",
-        "rematchedFrom": "445834493452684552483168"
+        "price": 17.19,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834493452684552483168&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nf-p14s-redux-1200-pwm%2Fp%2FN82E16835608064%3Fitem%3D9SIA4REK842984",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-064-V12.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-15T16:30:51.296Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -12442,7 +12446,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.848Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 57.06,
@@ -12493,7 +12497,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-07",
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 63.1,
@@ -12568,7 +12572,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.045Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 50.18,
@@ -12788,7 +12792,9 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       }
     },
     "cfm": 78.86,
@@ -12968,7 +12974,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 74.2,
@@ -13173,7 +13179,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.993Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 69.9,
@@ -13378,7 +13384,9 @@ export default [
         "matchedAt": "2026-05-14T20:09:05.796Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-15"
       },
       "newegg": {
         "sku": "4458314742999893006302559",
@@ -13446,7 +13454,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-03",
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       },
       "newegg": {
         "sku": "4458317357736248792030296",
@@ -13935,7 +13943,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 68,
@@ -13984,7 +13992,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:33.166Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 68,
@@ -14084,7 +14092,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 68,
@@ -14134,7 +14142,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.976Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 68,
@@ -14461,7 +14469,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.483Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "cfm": 98.61,
