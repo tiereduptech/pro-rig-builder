@@ -16618,7 +16618,8 @@ export default [
     "bundle": false,
     "needsReview": true,
     "quarantinedAt": "2026-08-29",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 70276,
@@ -20741,7 +20742,8 @@ export default [
     "drive35": 1,
     "needsReview": true,
     "quarantinedAt": "2026-09-05",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 100540,

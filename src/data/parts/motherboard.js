@@ -10577,7 +10577,8 @@ export default [
     "neweggRemovedOutlier": "2026-06-28",
     "needsReview": true,
     "quarantinedAt": "2026-09-05",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 20197,
@@ -21808,7 +21809,8 @@ export default [
     "bestbuyRemovedDead": "2026-08-18",
     "needsReview": true,
     "quarantinedAt": "2026-09-03",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 20421,

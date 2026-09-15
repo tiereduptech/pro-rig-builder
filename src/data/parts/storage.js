@@ -4811,7 +4811,8 @@ export default [
     "bench": 50,
     "needsReview": true,
     "quarantinedAt": "2026-09-11",
-    "priceQuarantined": true
+    "priceQuarantined": true,
+    "quarantineReason": "price_suspect_3strikes"
   },
   {
     "id": 50103,
