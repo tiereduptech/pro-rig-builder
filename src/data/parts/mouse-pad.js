@@ -1877,8 +1877,7 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-03",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   }
 ];

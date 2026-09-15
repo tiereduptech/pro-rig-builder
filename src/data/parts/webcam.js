@@ -990,9 +990,8 @@ export default [
     },
     "addedAt": "2026-05-15T16:31:54.650Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-08",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 101837,

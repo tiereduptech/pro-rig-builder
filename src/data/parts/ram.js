@@ -494,9 +494,8 @@ export default [
     "form": "DIMM",
     "color": "Gray",
     "ecc": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-08-31",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 40045,
@@ -6687,9 +6686,8 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-01",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 40192,
@@ -8235,9 +8233,8 @@ export default [
     "form": "DIMM",
     "color": "Black",
     "ecc": false,
-    "needsReview": true,
-    "quarantinedAt": "2026-08-29",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 40230,

@@ -1943,9 +1943,8 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.639Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-11",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 101762,
@@ -3264,9 +3263,8 @@ export default [
     },
     "addedAt": "2026-05-15T17:05:43.649Z",
     "source": "amazon-discovery",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-05",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 101820,

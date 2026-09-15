@@ -11373,9 +11373,8 @@ export default [
     "upc": "04711378431056",
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-11",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 50236,
@@ -26304,9 +26303,8 @@ export default [
     "read": 7250,
     "pcieGen": 4,
     "formFactor": "M.2",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-03",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100519,
@@ -27533,9 +27531,8 @@ export default [
     "read": 6200,
     "pcieGen": 4,
     "formFactor": "M.2 2280",
-    "needsReview": true,
-    "quarantinedAt": "2026-09-08",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100819,

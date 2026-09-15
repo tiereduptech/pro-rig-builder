@@ -1459,8 +1459,7 @@ export default [
         "priceResolvedVia": "paapi"
       }
     },
-    "needsReview": true,
-    "quarantinedAt": "2026-08-29",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   }
 ];

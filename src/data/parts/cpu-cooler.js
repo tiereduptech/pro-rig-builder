@@ -665,9 +665,8 @@ export default [
     "cfm": 132,
     "upc": "00619419139340",
     "mpn": "ETEIZUpcm10y9rB09LGY38L4",
-    "needsReview": true,
-    "quarantinedAt": "2026-08-28",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 80010,
@@ -5240,9 +5239,8 @@ export default [
     "fanSize": 120,
     "height": 52,
     "cfm": 120,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-05",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 80097,
@@ -10199,9 +10197,8 @@ export default [
     "cfm": 180,
     "radiator": 360,
     "fanCount": 3,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-09",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 80190,
@@ -18912,9 +18909,8 @@ export default [
     "airflow": 78.25,
     "noise": 29.85,
     "rpm": 1800,
-    "needsReview": true,
-    "quarantinedAt": "2026-08-26",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 100953,
@@ -20225,9 +20221,8 @@ export default [
     "airflow": 66.17,
     "noise": 35,
     "rpm": 1500,
-    "needsReview": true,
-    "quarantinedAt": "2026-09-05",
-    "quarantineReason": "no_new_offer"
+    "quarantineLiftedAt": "2026-09-15",
+    "quarantineLiftedFrom": "no_new_offer"
   },
   {
     "id": 101227,
