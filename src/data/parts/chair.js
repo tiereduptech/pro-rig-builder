@@ -96,7 +96,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15"
       }
     }
   },
@@ -116,13 +116,11 @@ export default [
         "price": 199.99,
         "url": "https://www.amazon.com/dp/B07BDFW1Y7?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "SIHOO",
-        "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-15",
+        "priceResolvedVia": "dataforseo"
       }
     }
   },
@@ -144,7 +142,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Holludle",
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-15",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -195,7 +193,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "TRALT",
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-15",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -223,7 +221,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15"
       }
     }
   },
@@ -244,7 +242,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09D33BXHL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
         "priceSeller": "XISHE CHAIR",
         "priceResolvedVia": "dataforseo"
@@ -264,12 +262,12 @@ export default [
     "asin": "B0BD7Z94ZQ",
     "deals": {
       "amazon": {
-        "price": 177.99,
+        "price": 158.78,
         "url": "https://www.amazon.com/dp/B0BD7Z94ZQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-15",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -297,7 +295,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-14"
+        "priceUnconfirmedAt": "2026-09-15"
       }
     }
   }
