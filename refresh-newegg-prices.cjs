@@ -85,6 +85,9 @@ const MIN_STALE_DAYS = 14;
 // price, but after this many CONSECUTIVE failed repricings the price is genuinely
 // wrong (not a feed blip) — quarantine the product. Reset on any good price.
 const PRICE_SUSPECT_QUARANTINE_STREAK = 3;
+// The cause this job records when it hides a row for price, and the ONLY cause
+// a recovered price may answer. See recoverPriceHold().
+const PRICE_HOLD_REASON = 'price_suspect_3strikes';
 // "The feed answered, with a healthy result set, and our product wasn't in it."
 // Fewer than this many raw candidates back means the QUERY is weak, not that the
 // product is gone — treated as a lookup failure.
@@ -127,8 +130,12 @@ const OUTCOME = {
 
 // Newegg matcher (shared ESM) — assigned at startup.
 let NEG = null;
+// drift-gate.js — recordQuarantine() / resolveQuarantineCause(), the sanctioned
+// way to hide a row and the only way this job may un-hide one.
+let DRIFT = null;
 async function loadMatcher() {
   NEG = await import(`file://${path.join(__dirname, 'newegg-match.js').replace(/\\/g, '/')}`);
+  DRIFT = await import(`file://${path.join(__dirname, 'drift-gate.js').replace(/\\/g, '/')}`);
   return NEG;
 }
 
@@ -653,8 +660,31 @@ function stampMisses(missed, { at }) {
   return { counted, lost };
 }
 
+// ── A RECOVERED PRICE ANSWERS ONE CAUSE ─────────────────────────────────────
+// This job hides a row after three suspect prices and marks it priceQuarantined.
+// When the price recovers it used to lift every row carrying that marker:
+//
+//     if (p.priceQuarantined) { delete p.needsReview; delete p.quarantinedAt; ... }
+//
+// It never asked whether anything ELSE had hidden the row since. A wrong-ASIN
+// hold or an identity mismatch landing on a price-held row was erased the day
+// the price came back, and the product returned to the site still wrong. The
+// hold now records its cause (PRICE_HOLD_REASON), and a recovery answers that
+// cause through drift-gate.js's resolveQuarantineCause(), which lifts only when
+// it was the row's LAST recorded cause.
+//
+// The marker goes when the price hold itself is answered: lifted, answered with
+// another cause still standing, or the row was not hidden at all. It stays
+// when nothing was answered. A legacy hold with no recorded cause (8 rows on
+// 2026-09-15) is not lifted by anything until it has a reason.
+function recoverPriceHold(p, at, drift = DRIFT) {
+  const outcome = drift.resolveQuarantineCause(p, { cause: PRICE_HOLD_REASON, at });
+  if (outcome === 'lifted' || outcome === 'still-hidden' || outcome === 'not-hidden') delete p.priceQuarantined;
+  return outcome;
+}
+
 module.exports = { heldSku, chooseCandidate, applyMigrateFloor, effOf, feedHealth, loadMatcher, recordReach, REACH_FILE,
-                   MISS_REASONS, missFloor, missesTrusted, stampMisses };
+                   MISS_REASONS, missFloor, missesTrusted, stampMisses, recoverPriceHold, PRICE_HOLD_REASON };
 
 if (require.main !== module) return;
 
@@ -672,7 +702,7 @@ if (require.main !== module) return;
     console.log(`Sample by category: ${Object.entries(byCat).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
 
-  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0, identityRescued: 0, missStamped: 0, missCleared: 0 };
+  const stats = { ok: 0, stamped: 0, priced: 0, unchanged: 0, migrated: 0, rematched: 0, priceSuspect: 0, priceQuarantined: 0, priceUnquarantined: 0, priceHoldAnswered: 0, priceHoldKept: 0, lookupFailed: 0, variantRejected: 0, guardRejected: 0, noCatMapping: 0, downgradeBlocked: 0, weakMatchBlocked: 0, confirmedAbsent: 0, identityRescued: 0, missStamped: 0, missCleared: 0 };
   const changes = [];
   const failures = [];
   // Rows this run looked up and could not confirm. COLLECTED, not stamped: a
@@ -848,11 +878,11 @@ if (require.main !== module) return;
       d.priceSuspectStreak = (d.priceSuspectStreak || 0) + 1;
       const changeRec = { name: p.n, change: 'price-suspect-flagged', kept: d.price, rejected: eff, cls: sanity.cls, streak: d.priceSuspectStreak, sku };
       if (d.priceSuspectStreak >= PRICE_SUSPECT_QUARANTINE_STREAK && !p.needsReview) {
-        // Three strikes — quarantine the product. Mark WHY (priceQuarantined) so a
-        // later recovery only lifts a price-quarantine, never one set for another
-        // reason (bench backfill, category audit, …).
-        p.needsReview = true;
-        p.quarantinedAt = new Date().toISOString().slice(0, 10);
+        // Three strikes — quarantine the product, with its CAUSE on the row, so a
+        // later recovery can answer this hold and only this one. See
+        // recoverPriceHold(). priceQuarantined stays as the marker lift-quarantine.mjs
+        // already refuses on.
+        DRIFT.recordQuarantine(p, { at: new Date().toISOString().slice(0, 10), reason: PRICE_HOLD_REASON });
         p.priceQuarantined = true;
         stats.priceQuarantined++;
         changeRec.change = 'price-quarantined-3strikes';
@@ -862,8 +892,8 @@ if (require.main !== module) return;
     }
 
     // Confirmed live: clear any prior absence evidence and suspicion, and reset the
-    // consecutive-failure streak. Only lift a quarantine WE set for price (never
-    // un-hide a product quarantined for some other reason).
+    // consecutive-failure streak. A recovered price answers the price hold and
+    // nothing else — see recoverPriceHold().
     delete d.staleSince;
     delete d.absentStreak;
     delete d.priceSuspect;
@@ -872,11 +902,19 @@ if (require.main !== module) return;
     delete d.priceSuspectClass;
     delete d.priceSuspectStreak;
     if (p.priceQuarantined) {
-      delete p.needsReview;
-      delete p.quarantinedAt;
-      delete p.priceQuarantined;
-      stats.priceUnquarantined++;
-      changes.push({ name: p.n, change: 'price-unquarantined-recovered', price: eff, sku });
+      const outcome = recoverPriceHold(p, new Date().toISOString().slice(0, 10));
+      if (outcome === 'lifted') {
+        stats.priceUnquarantined++;
+        changes.push({ name: p.n, change: 'price-unquarantined-recovered', price: eff, sku });
+      } else if (outcome === 'still-hidden' || outcome === 'not-hidden') {
+        stats.priceHoldAnswered++;
+        changes.push({ name: p.n, change: `price-recovered-${outcome}`, price: eff, sku, holdingFor: p.quarantineReason || null });
+      } else {
+        // no-recorded-cause / different-cause / review-flags: the price came back,
+        // but the row is held for something a price cannot answer.
+        stats.priceHoldKept++;
+        changes.push({ name: p.n, change: `price-recovered-held:${outcome}`, price: eff, sku });
+      }
     }
 
     const oldPrice = Number(d.price);
@@ -999,7 +1037,9 @@ if (require.main !== module) return;
               `candidate set; our own item number was in it — see findHeldListing)`);
   console.log(`Price suspect:    ${stats.priceSuspect}  (bad price withheld, last good price KEPT)`);
   console.log(`Price quarantined:${stats.priceQuarantined}  (${PRICE_SUSPECT_QUARANTINE_STREAK}+ consecutive strikes -> needsReview, price KEPT)`);
-  if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price -> quarantine lifted)`);
+  if (stats.priceUnquarantined) console.log(`Price recovered:  ${stats.priceUnquarantined}  (good price, and price was the row's last cause -> quarantine lifted)`);
+  if (stats.priceHoldAnswered) console.log(`Price hold answered, row still hidden: ${stats.priceHoldAnswered}  (another recorded cause stands)`);
+  if (stats.priceHoldKept) console.log(`Price recovered, NOT lifted: ${stats.priceHoldKept}  (no recorded cause, a different cause, or a review flag)`);
   console.log(`Lookup failed:    ${stats.lookupFailed}  (no change written)`);
   // Broken out rather than summed, because 'we declined it' and 'the feed did
   // not have it' are the two halves this breaker exists to tell apart.
@@ -1184,7 +1224,7 @@ if (require.main !== module) return;
 
   // Misses count as changes: a run whose only news is "these rows are lost" must
   // still write it, or sftp-ingest never learns it may certify them.
-  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.confirmedAbsent + removed +
+  const mutating = stats.priced + stats.priceSuspect + stats.priceUnquarantined + stats.priceHoldAnswered + stats.confirmedAbsent + removed +
     stats.missStamped + stats.missCleared;
   if (mutating === 0) { console.log('No changes to write.'); return; }
 

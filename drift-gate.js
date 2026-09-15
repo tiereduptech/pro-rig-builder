@@ -156,6 +156,58 @@ export function recordQuarantine(p, { at, reason } = {}) {
   return p;
 }
 
+// ── RESOLVING A QUARANTINE — the one way scheduled code un-hides a row ───────
+// Evidence answers ONE cause. A recovered price says nothing about identity: a
+// row hidden for a wrong ASIN whose price comes back is still the wrong
+// product, and un-hiding it puts that product back on the site with the
+// identity problem unresolved. refresh-newegg-prices.cjs did exactly that. It
+// lifted any row carrying its priceQuarantined marker, whatever else had
+// hidden the row since.
+//
+// So a lift names the cause its evidence answers, and this decides:
+//   not-hidden         nothing to un-hide
+//   no-recorded-cause  hidden for a reason nobody wrote down, so no evidence
+//                      can answer it. It stays hidden: it needs a reason
+//                      before it needs a path.
+//   different-cause    hidden, but not for this. Untouched.
+//   still-hidden       this cause is answered and taken off the row, but
+//                      another recorded cause remains. The next one in
+//                      quarantineAlso becomes quarantineReason.
+//   review-flags       this is the row's only recorded cause, but a person
+//                      flagged it too (reviewFlags). Untouched: a flag is not
+//                      a cause this can answer.
+//   lifted             this was the row's last cause. Un-hidden, and stamped
+//                      the way lift-quarantine.mjs stamps, so a row that
+//                      bounces back is recognisable.
+export const RESOLVE_OUTCOMES = ['not-hidden', 'no-recorded-cause', 'different-cause', 'still-hidden', 'review-flags', 'lifted'];
+
+export function resolveQuarantineCause(p, { cause, at } = {}) {
+  if (!cause) throw new TypeError('resolveQuarantineCause needs the cause its evidence answers');
+  if (!p || !p.needsReview) return 'not-hidden';
+  if (!p.quarantineReason) return 'no-recorded-cause';
+  const also = p.quarantineAlso || [];
+  if (p.quarantineReason !== cause && !also.includes(cause)) return 'different-cause';
+
+  if (p.quarantineReason !== cause) {
+    const rest = also.filter((c) => c !== cause);
+    if (rest.length) p.quarantineAlso = rest; else delete p.quarantineAlso;
+    return 'still-hidden';
+  }
+  if (also.length) {
+    p.quarantineReason = also[0];
+    if (also.length > 1) p.quarantineAlso = also.slice(1); else delete p.quarantineAlso;
+    return 'still-hidden';
+  }
+  if ((p.reviewFlags || []).length) return 'review-flags';
+
+  delete p.needsReview;
+  delete p.quarantinedAt;
+  delete p.quarantineReason;
+  p.quarantineLiftedAt = at;
+  p.quarantineLiftedFrom = cause;
+  return 'lifted';
+}
+
 export function normalize(s) {
   return String(s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }
