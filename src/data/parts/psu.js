@@ -291,7 +291,7 @@ export default [
     "depth": 140,
     "deals": {
       "amazon": {
-        "price": 155.62,
+        "price": 164.16,
         "url": "https://www.amazon.com/dp/B0DLFM4YNM?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
@@ -536,7 +536,7 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 314.99,
+        "price": 299,
         "url": "https://www.amazon.com/dp/B08DZY15CW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -1345,7 +1345,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "BeachAudio",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2474,13 +2474,11 @@ export default [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0BP8B6M7Y?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfirmedAt": "2026-09-15",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -8961,10 +8959,10 @@ export default [
         "url": "https://www.amazon.com/dp/B0F3XW1J16?tag=tiereduptech-20",
         "price": 89.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },

@@ -266,7 +266,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-15"
       }
     },
     "baseClock": 2400,
@@ -365,12 +367,12 @@ export default [
     "bench": 90,
     "deals": {
       "amazon": {
-        "price": 1679.99,
+        "price": 1899,
         "url": "https://www.amazon.com/dp/B0BMZ9TGH1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "Sysmel",
+        "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2108,7 +2110,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "Everlast Computers",
+        "priceSeller": "BestBuyBay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2139,12 +2141,12 @@ export default [
     "bench": 58,
     "deals": {
       "amazon": {
-        "price": 1148.96,
+        "price": 1299,
         "url": "https://www.amazon.com/dp/B09G21MBW2?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "BestBuyBay",
+        "priceSeller": "Computer Nation Store",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2211,12 +2213,12 @@ export default [
     "bench": 72,
     "deals": {
       "amazon": {
-        "price": 2370.1,
+        "price": 2499,
         "url": "https://www.amazon.com/dp/B0C5DLBMTP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
-        "priceSource": "3p",
-        "priceSeller": "vCloud Choice",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4514,7 +4516,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-15"
       },
       "newegg": {
         "sku": "4458318436758363980138017",
@@ -4684,13 +4688,11 @@ export default [
         "price": 2005.99,
         "url": "https://www.amazon.com/dp/B0DQSD7YQC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-13",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-09-15",
+        "priceSource": "3p",
+        "priceSeller": "ARF Tech",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 2099.99,
@@ -5456,13 +5458,13 @@ export default [
     "reviews": 413,
     "deals": {
       "amazon": {
-        "price": 921.87,
+        "price": 979.87,
         "url": "https://www.amazon.com/dp/B0CGHQ32S2?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
         "priceSeller": "S & L Business (We record S/N)",
-        "priceResolvedVia": "paapi",
+        "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
     },
@@ -6283,7 +6285,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -7909,8 +7913,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0F4YRNHSJ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
-        "priceSource": "3p",
-        "priceSeller": "M-X-C Tech",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8121,7 +8125,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Micom Pro",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -8408,12 +8414,12 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 2673.9,
+        "price": 2499,
         "url": "https://www.amazon.com/dp/B08KHKDTSJ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "DM-PC",
+        "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8457,7 +8463,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "GH Electronics (We Record SN#)",
+        "priceSeller": "Fast & Precise Electronics (All SN are recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8780,7 +8786,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "IT Electronix",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-15"
       }
     },
     "additionalImages": [
@@ -16012,7 +16020,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MemoryC",
         "priceResolvedVia": "paapi",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-15"
       }
     },
     "tdp": 225,
@@ -16333,11 +16343,11 @@ export default [
       "amazon": {
         "asin": "B0FQM4N5RP",
         "url": "https://www.amazon.com/dp/B0FQM4N5RP?tag=tiereduptech-20",
-        "price": 2199,
+        "price": 2399.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "QyTech",
+        "priceSeller": "BBDW",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -16640,15 +16650,13 @@ export default [
       "amazon": {
         "asin": "B0F4Z2DNH2",
         "url": "https://www.amazon.com/dp/B0F4Z2DNH2?tag=tiereduptech-20",
-        "price": 349.99,
+        "price": 439.99,
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
-        "priceConfidence": "unconfirmed",
+        "priceSource": "3p",
+        "priceSeller": "prime bay",
+        "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-08-07",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-15"
       }
     },
     "vram": 8,
@@ -18845,11 +18853,11 @@ export default [
       "amazon": {
         "asin": "B09SK8NCGL",
         "url": "https://www.amazon.com/dp/B09SK8NCGL?tag=tiereduptech-20",
-        "price": 199.99,
+        "price": 159.78,
         "inStock": true,
         "priceConfirmedAt": "2026-09-15",
         "priceSource": "3p",
-        "priceSeller": "VisionTek Products",
+        "priceSeller": "SpaceBound",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
