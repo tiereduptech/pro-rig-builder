@@ -3691,7 +3691,7 @@ export default [
         "sku": "6669037",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       },
       "newegg": {
         "sku": "445833682930110779287158",
@@ -5575,7 +5575,7 @@ export default [
         "sku": "6560420",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       },
       "amazon": {
         "price": 549.99,
@@ -5679,7 +5679,7 @@ export default [
         "sku": "6589129",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       },
       "newegg": {
         "sku": "4458316089146151768131296",
@@ -5728,7 +5728,7 @@ export default [
         "sku": "6589133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-16",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -5779,7 +5779,7 @@ export default [
         "sku": "6589134",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-16",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -5849,7 +5849,7 @@ export default [
         "sku": "6589135",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-16",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -5902,7 +5902,7 @@ export default [
         "sku": "6589136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-16",
         "priceLastMovedAt": "2026-09-01"
       },
       "newegg": {
@@ -5954,7 +5954,7 @@ export default [
         "sku": "6589140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "cores": 6,
@@ -6160,7 +6160,7 @@ export default [
         "sku": "6606318",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       },
       "newegg": {
         "sku": "445839998193130166726200",
@@ -6212,7 +6212,7 @@ export default [
         "sku": "6621940",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       },
       "newegg": {
         "sku": "445831552058699300246294",
@@ -6363,7 +6363,7 @@ export default [
       "bestbuy": {
         "price": 2499,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6644816&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6644816.p%3FskuId%3D6644816",
-        "inStock": false,
+        "inStock": true,
         "sku": "6644816",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
@@ -6424,7 +6424,7 @@ export default [
         "sku": "6644817",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "cores": 64,
