@@ -9862,7 +9862,7 @@ export default [
     "reviews": 134,
     "deals": {
       "amazon": {
-        "price": 46.49,
+        "price": 53.99,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "1p",
@@ -11023,8 +11023,8 @@ export default [
         "price": 369,
         "url": "https://www.amazon.com/dp/B0CLB6FPX1?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Skoodooh",
         "priceConfirmedAt": "2026-09-16",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
@@ -11301,12 +11301,12 @@ export default [
     "reviews": 58,
     "deals": {
       "amazon": {
-        "price": 214.65,
+        "price": 176,
         "url": "https://www.amazon.com/dp/B0CBV7474S?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "MemoryC",
+        "priceSeller": "trippodoshop",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11485,7 +11485,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "vCloudTech",
+        "priceSeller": "TELeasy",
         "priceConfirmedAt": "2026-09-16",
         "priceResolvedVia": "dataforseo"
       },
@@ -11791,7 +11791,10 @@ export default [
     "height": 52,
     "cfm": 180,
     "radiator": 360,
-    "fanCount": 3
+    "fanCount": 3,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-16",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 80221,
@@ -19976,7 +19979,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

@@ -1344,12 +1344,12 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 68.86,
+        "price": 86.06,
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "BeachAudio",
+        "priceSeller": "IPC-STORE✅",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2488,7 +2488,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-16"
       },
       "newegg": {
         "sku": "445831423764191614485964",
@@ -4394,7 +4396,10 @@ export default [
     "depth": 180,
     "atx3": true,
     "rgb": false,
-    "fans": 1
+    "fans": 1,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-16",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 60090,

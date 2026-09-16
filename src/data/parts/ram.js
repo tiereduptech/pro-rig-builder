@@ -238,7 +238,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-16"
       },
       "bestbuy": {
         "price": 499.99,
@@ -380,7 +382,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-16"
       },
       "bestbuy": {
         "price": 294.99,
@@ -2759,16 +2763,14 @@ export default [
     "reviews": 11553,
     "deals": {
       "amazon": {
-        "price": 434.25,
+        "price": 403.85,
         "url": "https://www.amazon.com/dp/B082DGZJ9C?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Amazon Japan",
-        "priceConfirmedAt": "2026-08-19",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceSeller": "Sanaa Direct (Serial Number Recorded)",
+        "priceConfirmedAt": "2026-09-16",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "additionalImages": [
@@ -3797,7 +3799,10 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-16",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 40125,
@@ -6489,7 +6494,7 @@ export default [
         "priceSeller": "BeachAudio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-16"
       },
       "newegg": {
@@ -8066,7 +8071,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8505,12 +8510,12 @@ export default [
     "reviews": 6,
     "deals": {
       "amazon": {
-        "price": 599.99,
+        "price": 549.95,
         "url": "https://www.amazon.com/dp/B0CGQ3LLD4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "MEMORY n MORE",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10371,11 +10376,11 @@ export default [
       "amazon": {
         "asin": "B0D7LY1NC5",
         "url": "https://www.amazon.com/dp/B0D7LY1NC5?tag=tiereduptech-20",
-        "price": 449.99,
+        "price": 479,
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "StarEdge Electronics",
+        "priceSeller": "MobileMonster",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -10642,8 +10647,8 @@ export default [
         "price": 624.88,
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Stokvane (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11167,11 +11172,11 @@ export default [
       "amazon": {
         "asin": "B0736W5BH2",
         "url": "https://www.amazon.com/dp/B0736W5BH2?tag=tiereduptech-20",
-        "price": 188,
+        "price": 232.75,
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "eStarDeals",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -11602,7 +11607,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "SiliconValleySeller  (SN# Recorded)",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11747,8 +11752,8 @@ export default [
         "price": 590.83,
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
-        "priceSource": "3p",
-        "priceSeller": "PrimePicksHub4",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11781,7 +11786,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-16",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "A-Tech Components",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
