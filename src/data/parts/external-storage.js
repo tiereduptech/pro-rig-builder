@@ -30,13 +30,13 @@ export default [
         "itemNumber": "2WA-000W-00755",
         "sellerClass": "official",
         "price": 219.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314815512502418047155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stgx5000500-5tb%2Fp%2F2WA-000W-00755%3Fitem%3D2WA-000W-00755",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314815512502418047155&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stgx5000500-5tb%2Fp%2F2WA-000W-00755%3Fitem%3D2WA-000W-00755",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2WA-000W-00755-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:31.182Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -330,18 +330,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458315147218620320702878",
-        "itemNumber": "9SIA0ZXKR26559",
+        "sku": "44583149000880521605227",
+        "itemNumber": "9SIA4YUJU60794",
         "sellerClass": "marketplace",
-        "price": 98.85,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315147218620320702878&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1E8-001S-000Z4%3Fitem%3D9SIA0ZXKR26559",
+        "price": 88.49,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583149000880521605227&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1E8-001S-000Z4%3Fitem%3D9SIA4YUJU60794",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A4YUD23050516W356CA.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-12T14:40:37.494Z",
+        "matchedAt": "2026-09-16T16:00:00.950Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-15"
+        "priceLastMovedAt": "2026-09-16",
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -388,13 +388,13 @@ export default [
         "itemNumber": "N82E16822234570",
         "sellerClass": "official",
         "price": 334.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835462068887842472819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbz7d0060bbk-wesn-6tb-usb-3-2-gen-1-usb-2-0%2Fp%2FN82E16822234570%3Fitem%3DN82E16822234570",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835462068887842472819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbz7d0060bbk-wesn-6tb-usb-3-2-gen-1-usb-2-0%2Fp%2FN82E16822234570%3Fitem%3DN82E16822234570",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-570-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.627Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -525,15 +525,15 @@ export default [
         "sku": "4458310086512752069796021",
         "itemNumber": "9SIAD6HKHA3761",
         "sellerClass": "marketplace",
-        "price": 218.16,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
+        "price": 215.72,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-089-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:35.069Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-15"
+        "priceLastMovedAt": "2026-09-16",
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -587,7 +587,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
         "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceUnconfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -645,7 +645,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceUnconfirmedAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -691,13 +691,13 @@ export default [
         "itemNumber": "N82E16822234355",
         "sellerClass": "official",
         "price": 179.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312166774662900272271&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbkyj0020bsl-wesn-2tb-external%2Fp%2FN82E16822234355%3Fitem%3DN82E16822234355",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312166774662900272271&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbkyj0020bsl-wesn-2tb-external%2Fp%2FN82E16822234355%3Fitem%3DN82E16822234355",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-355-V04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.495Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-16"
       }
     },
     "cap": 2000,
@@ -772,7 +772,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceUnconfirmedAt": "2026-09-16"
       }
     },
     "cap": 4000,
@@ -817,7 +817,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceUnconfirmedAt": "2026-09-16"
       }
     },
     "cap": 2000,
@@ -923,7 +923,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.73,
         "sellerClass": "other",
-        "priceUnconfirmedAt": "2026-09-15"
+        "priceUnconfirmedAt": "2026-09-16"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
