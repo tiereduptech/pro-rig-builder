@@ -4242,7 +4242,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-17"
       },
       "newegg": {
         "sku": "4458311877948065611765576",
@@ -9762,7 +9764,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-17",
         "priceSource": "3p",
-        "priceSeller": "Adorama",
+        "priceSeller": "RGDEALS",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10591,7 +10593,7 @@ export default [
     "reviews": 136,
     "deals": {
       "amazon": {
-        "price": 149.99,
+        "price": 158.99,
         "url": "https://www.amazon.com/dp/B0CT2LSSHK?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-17",
@@ -12426,7 +12428,10 @@ export default [
     ],
     "color": "Black",
     "bench": 76,
-    "upc": "06974433740045"
+    "upc": "06974433740045",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-17",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 70205,
@@ -13752,7 +13757,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ARCTIC Inc",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "discount": 25,
@@ -20787,11 +20794,11 @@ export default [
       "amazon": {
         "asin": "B0CS3T8BVF",
         "url": "https://www.amazon.com/dp/B0CS3T8BVF?tag=tiereduptech-20",
-        "price": 184.99,
+        "price": 197.7,
         "inStock": true,
         "priceConfirmedAt": "2026-09-17",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
