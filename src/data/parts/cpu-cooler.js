@@ -210,7 +210,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:09.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:51.885Z",
+        "refreshedAt": "2026-09-17T20:29:49.449Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -261,13 +261,13 @@ export default [
         "itemNumber": "9SIAADYKB59138",
         "sellerClass": "marketplace",
         "price": 159.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838524361210619545839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-lbc-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00357%3Fitem%3D9SIAADYKB59138",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838524361210619545839&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-g2-lbc-140mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851%2Fp%2F13C-0005-00357%3Fitem%3D9SIAADYKB59138",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J9FJXFA.jpg",
         "inStock": true,
         "matchedAt": "2026-08-28T21:44:42.800Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:06:52.070Z"
+        "refreshedAt": "2026-09-17T20:29:49.691Z"
       }
     },
     "fans_inc": 2,
@@ -315,13 +315,13 @@ export default [
         "itemNumber": "9SIAADY90E6829",
         "sellerClass": "marketplace",
         "price": 109.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836911504703286597093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIAADY90E6829",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836911504703286597093&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12a%2Fp%2F13C-0005-00187%3Fitem%3D9SIAADY90E6829",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200826CTPyq.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.651Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:52.206Z"
+        "refreshedAt": "2026-09-17T20:29:49.890Z"
       }
     },
     "fans_inc": 2,
@@ -450,13 +450,13 @@ export default [
         "sellerClass": "official",
         "price": 89.9,
         "saleprice": 84.81,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831146887239297320844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-dark-rock-pro-5%2Fp%2F13C-001F-00070%3Fitem%3D13C-001F-00070",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831146887239297320844&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fbe-quiet-dark-rock-pro-5%2Fp%2F13C-001F-00070%3Fitem%3D13C-001F-00070",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A68VS23101719JCQRFD.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.009Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:52.366Z",
+        "refreshedAt": "2026-09-17T20:29:50.069Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -512,9 +512,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.184Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -652,13 +652,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 49.9,
         "saleprice": 47.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310269821976016004255&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000J2%3Fitem%3D9SIBVHXK8D7529",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310269821976016004255&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000J2%3Fitem%3D9SIBVHXK8D7529",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS24052407KAKNB6.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.072Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:06:53.099Z",
+        "refreshedAt": "2026-09-17T20:29:51.244Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -1508,13 +1508,13 @@ export default [
         "itemNumber": "N82E16835181478",
         "sellerClass": "official",
         "price": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314985996934103841889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4%2Fp%2FN82E16835181478%3Fitem%3DN82E16835181478",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314985996934103841889&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-series-radiator-size-396-mm-intel-lga-1851-1700-amd-am5-am4%2Fp%2FN82E16835181478%3Fitem%3DN82E16835181478",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-478-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.090Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:53.245Z"
+        "refreshedAt": "2026-09-17T20:29:51.545Z"
       }
     },
     "discount": 23,
@@ -1570,13 +1570,13 @@ export default [
         "itemNumber": "9SIA2W0KER9641",
         "sellerClass": "marketplace",
         "price": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834278197751878776852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00080%3Fitem%3D9SIA2W0KER9641",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834278197751878776852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00080%3Fitem%3D9SIA2W0KER9641",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25040809FH7I08.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:37.657Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:53.696Z"
+        "refreshedAt": "2026-09-17T20:29:51.937Z"
       }
     },
     "additionalImages": [
@@ -1724,13 +1724,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 49.9,
         "saleprice": 47.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837869230979864655309&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M3%3Fitem%3D9SIBVHXKCK2083",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837869230979864655309&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000M3%3Fitem%3D9SIBVHXKCK2083",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2412020GA34X56.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.085Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:54.166Z"
+        "refreshedAt": "2026-09-17T20:29:52.529Z"
       }
     },
     "additionalImages": [
@@ -1869,17 +1869,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458315887140650144449529",
-        "itemNumber": "9SIB5YAKWT3179",
+        "sku": "9SIAZTUK937606",
+        "price": 179.8,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835132121409274655910&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIAZTUK937606",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
         "sellerClass": "marketplace",
-        "price": 99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-17T16:09:26.209Z",
-        "matchMethod": "sftp:name",
-        "matchScore": 0.7,
-        "priceLastMovedAt": "2026-09-17"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-17T20:29:52.828Z",
+        "priceLastMovedAt": "2026-09-17",
+        "rematchedAt": "2026-09-17T20:29:52.828Z",
+        "rematchedFrom": "4458315887140650144449529"
       }
     },
     "additionalImages": [
@@ -1937,7 +1938,7 @@ export default [
         "matchedAt": "2026-09-05T14:15:11.125Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.7058823529411765,
-        "refreshedAt": "2026-09-17T10:06:54.808Z",
+        "refreshedAt": "2026-09-17T20:30:36.944Z",
         "migratedAt": "2026-09-09T09:33:26.419Z",
         "migratedFrom": "445834866614674005417524",
         "priceLastMovedAt": "2026-09-14",
@@ -2050,8 +2051,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-13T19:29:23.301Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -2106,13 +2107,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 279.99,
         "saleprice": 249.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313224118965145824094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-white%2Fp%2F2YM-00BE-00014%3Fitem%3D9SIBWC8KCY3824",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313224118965145824094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-se-argb-radiator-size-360-mm-amd-intel-white%2Fp%2F2YM-00BE-00014%3Fitem%3D9SIBWC8KCY3824",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2502260LFT258B.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.489Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:55.542Z"
+        "refreshedAt": "2026-09-17T20:30:38.144Z"
       }
     },
     "additionalImages": [
@@ -2175,7 +2176,9 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-16T20:18:54.158Z",
-        "refreshMissStreak": 1
+        "refreshMissStreak": 2,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
+        "refreshMissReason": "variant_rejected"
       }
     },
     "discount": 31,
@@ -2427,7 +2430,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.544Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-17T10:06:56.320Z"
+        "refreshedAt": "2026-09-17T20:30:38.890Z"
       }
     },
     "additionalImages": [
@@ -2486,7 +2489,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:56.541Z",
+        "refreshedAt": "2026-09-17T20:30:39.076Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -2546,8 +2549,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -2614,9 +2617,11 @@ export default [
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
         "refreshedAt": "2026-09-11T19:56:57.333Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
-        "refreshMissReason": "no_results"
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-17T20:30:39.783Z",
+        "priceSuspectValue": 99.9,
+        "priceSuspectClass": "SUSPECT_PAIR",
+        "priceSuspectStreak": 1
       }
     },
     "additionalImages": [
@@ -2675,13 +2680,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 69.9,
         "saleprice": 65.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313030306394114655881&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-000Y-000K7%3Fitem%3D9SIBVHXK987012",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2407030G6KMOC1.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.085Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:06:57.767Z"
+        "refreshedAt": "2026-09-17T20:30:39.974Z"
       }
     },
     "additionalImages": [
@@ -2744,13 +2749,13 @@ export default [
         "itemNumber": "N82E16835146164",
         "sellerClass": "official",
         "price": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833576459522483564104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-360-series-radiator-size-402-mm%2Fp%2FN82E16835146164%3Fitem%3DN82E16835146164",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833576459522483564104&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-360-series-radiator-size-402-mm%2Fp%2FN82E16835146164%3Fitem%3DN82E16835146164",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-164-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.031Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:58.351Z"
+        "refreshedAt": "2026-09-17T20:30:40.557Z"
       }
     },
     "discount": 13,
@@ -2863,7 +2868,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.262Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-17T10:06:58.521Z"
+        "refreshedAt": "2026-09-17T20:30:40.786Z"
       }
     },
     "additionalImages": [
@@ -2921,13 +2926,13 @@ export default [
         "itemNumber": "9SIA4REK7M3121",
         "sellerClass": "marketplace",
         "price": 77.39,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314730255188469084924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2F13C-0005-00340%3Fitem%3D9SIA4REK7M3121",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314730255188469084924&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2F13C-0005-00340%3Fitem%3D9SIA4REK7M3121",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KKSBQF7.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.447Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:06:58.678Z"
+        "refreshedAt": "2026-09-17T20:30:40.969Z"
       }
     },
     "additionalImages": [
@@ -2978,13 +2983,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 89.9,
         "saleprice": 85.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832443305015796527693&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-007N-00037%3Fitem%3D9SIBVHXKW52676",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832443305015796527693&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-007N-00037%3Fitem%3D9SIBVHXKW52676",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BVHXS2505280FVI5Y7C.jpg",
         "inStock": true,
         "matchedAt": "2026-07-22",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:58.863Z",
+        "refreshedAt": "2026-09-17T20:30:41.275Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -3281,13 +3286,13 @@ export default [
         "itemNumber": "9SIA4REJY32632",
         "sellerClass": "marketplace",
         "price": 64,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313180727252948906460&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIA4REJY32632",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313180727252948906460&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9x65%2Fp%2FN82E16835608071%3Fitem%3D9SIA4REJY32632",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-608-071-V02.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.355Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:59.036Z"
+        "refreshedAt": "2026-09-17T20:30:41.442Z"
       }
     },
     "additionalImages": [
@@ -3337,13 +3342,13 @@ export default [
         "itemNumber": "9SIAADYCB45974",
         "sellerClass": "marketplace",
         "price": 74.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831190354103940616445&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIAADYCB45974",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831190354103940616445&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u9s-ch-bk-92mm-intel-lga1851-lga1700-lga1200-lga1156-lga1155-lga1151-lga1150-and-amd-am5-am4%2Fp%2F13C-0005-00315%3Fitem%3D9SIAADYCB45974",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13C-0005-00315-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.672Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:59.181Z"
+        "refreshedAt": "2026-09-17T20:30:41.681Z"
       }
     },
     "additionalImages": [
@@ -3456,13 +3461,13 @@ export default [
         "itemNumber": "9SIA4REJVG0783",
         "sellerClass": "marketplace",
         "price": 73.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317300829246140972240&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12s-70mm-low-profile-cpu-cooler-with-quiet-120mm-pwm-fan%2Fp%2F13C-0005-00144%3Fitem%3D9SIA4REJVG0783",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317300829246140972240&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12s-70mm-low-profile-cpu-cooler-with-quiet-120mm-pwm-fan%2Fp%2F13C-0005-00144%3Fitem%3D9SIA4REJVG0783",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131504710147913939dt3BoXTedP.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.304Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:06:59.346Z"
+        "refreshedAt": "2026-09-17T20:30:41.868Z"
       }
     },
     "additionalImages": [
@@ -3520,7 +3525,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.672Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:45.741Z"
+        "refreshedAt": "2026-09-17T20:30:42.095Z"
       }
     },
     "additionalImages": [
@@ -3583,7 +3588,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.330Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:46.227Z"
+        "refreshedAt": "2026-09-17T20:30:42.279Z"
       }
     },
     "additionalImages": [
@@ -3690,7 +3695,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:46.891Z",
+        "refreshedAt": "2026-09-17T20:30:42.808Z",
         "priceLastMovedAt": "2026-09-14",
         "migratedAt": "2026-09-09T09:33:30.602Z",
         "migratedFrom": "N82E16835181474",
@@ -3751,13 +3756,13 @@ export default [
         "itemNumber": "9SIBZT7KJ95187",
         "sellerClass": "marketplace",
         "price": 98.79,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458318287779890278886719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIBZT7KJ95187",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318287779890278886719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002A0%3Fitem%3D9SIBZT7KJ95187",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS220404YHWSh.jpg",
         "inStock": true,
         "matchedAt": "2026-09-04T15:25:27.260Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:47.031Z",
+        "refreshedAt": "2026-09-17T20:30:42.993Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
@@ -3861,7 +3866,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:47.194Z"
+        "refreshedAt": "2026-09-17T20:30:43.282Z"
       }
     },
     "additionalImages": [
@@ -4032,8 +4037,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "weak_match_blocked"
       }
     },
@@ -4200,7 +4205,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:48.080Z"
+        "refreshedAt": "2026-09-17T10:07:48.080Z",
+        "refreshMissStreak": 1
       }
     },
     "discount": 7,
@@ -4321,8 +4327,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-15T20:27:53.907Z",
-        "refreshMissStreak": 3,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 4,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -4388,9 +4394,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-17"
       }
@@ -4448,13 +4454,13 @@ export default [
         "itemNumber": "9SIAADYK916921",
         "sellerClass": "marketplace",
         "price": 109.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317307517172578121862&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00348%3Fitem%3D9SIAADYK916921",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2402190G9CVACB.jpg",
         "inStock": true,
         "matchedAt": "2026-09-12T14:41:50.950Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:49.147Z",
+        "refreshedAt": "2026-09-17T20:30:46.004Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -4506,13 +4512,13 @@ export default [
         "itemNumber": "9SIAADYK958942",
         "sellerClass": "marketplace",
         "price": 79.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311406344733952731852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00349%3Fitem%3D9SIAADYK958942",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311406344733952731852&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00349%3Fitem%3D9SIAADYK958942",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2404090I2DYN41.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.765Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:49.314Z"
+        "refreshedAt": "2026-09-17T20:30:46.207Z"
       }
     },
     "additionalImages": [
@@ -4905,13 +4911,13 @@ export default [
         "sellerClass": "official",
         "price": 99.99,
         "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315448780282110771242&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146175%3Fitem%3DN82E16835146175",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315448780282110771242&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146175%3Fitem%3DN82E16835146175",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XRPZBC.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.041Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:49.460Z"
+        "refreshedAt": "2026-09-17T20:30:46.495Z"
       }
     },
     "discount": 10,
@@ -4968,13 +4974,13 @@ export default [
         "itemNumber": "9SIAFSTKK73806",
         "sellerClass": "marketplace",
         "price": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583186795642064681258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00055%3Fitem%3D9SIAFSTKK73806",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583186795642064681258&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-hydroshift-ii-lcd-s%2Fp%2F2YM-002Y-00055%3Fitem%3D9SIAFSTKK73806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS2511040LAK4Q13.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:31.352Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:49.836Z"
+        "refreshedAt": "2026-09-17T20:30:46.872Z"
       }
     },
     "additionalImages": [
@@ -5032,7 +5038,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:50.020Z",
+        "refreshedAt": "2026-09-17T20:30:47.057Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -5329,7 +5335,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:50.161Z"
+        "refreshedAt": "2026-09-17T20:30:47.213Z"
       }
     },
     "additionalImages": [
@@ -5386,7 +5392,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:50.622Z",
+        "refreshedAt": "2026-09-17T20:30:47.399Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -5494,7 +5500,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:51.765Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:51.054Z",
+        "refreshedAt": "2026-09-17T20:30:47.774Z",
         "priceLastMovedAt": "2026-08-28",
         "rematchedAt": "2026-08-28T17:04:29.580Z",
         "rematchedFrom": "445832451917023969528274"
@@ -5558,7 +5564,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.357Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:51.235Z"
+        "refreshedAt": "2026-09-17T20:30:47.961Z"
       }
     },
     "additionalImages": [
@@ -5666,13 +5672,13 @@ export default [
         "itemNumber": "9SIA4REJTB6664",
         "sellerClass": "marketplace",
         "price": 51.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313459757043342972855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIA4REJTB6664",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313459757043342972855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l9i-17xx-chromax-black%2Fp%2F13C-0005-001S8%3Fitem%3D9SIA4REJTB6664",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS211105B2TVD.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.175Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:51.448Z"
+        "refreshedAt": "2026-09-17T20:30:48.137Z"
       }
     },
     "additionalImages": [
@@ -5722,13 +5728,13 @@ export default [
         "itemNumber": "N82E16835101092",
         "sellerClass": "official",
         "price": 209.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832196926963516908867&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3DN82E16835101092",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832196926963516908867&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasusrog-ryuo-iii-360-argb-wht-399-mm-amd-am4-am5-tr4-intel-lga-1700-1200-115x-1366-2011-2011-3-2066%2Fp%2FN82E16835101092%3Fitem%3DN82E16835101092",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-101-092-01.png",
         "inStock": true,
         "matchedAt": "2026-09-12T14:40:51.309Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:51.869Z",
+        "refreshedAt": "2026-09-17T20:30:48.500Z",
         "migratedAt": "2026-09-17T10:07:51.869Z",
         "migratedFrom": "445839811036610137058647",
         "priceLastMovedAt": "2026-09-17"
@@ -5883,7 +5889,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:05.489Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:52.077Z"
+        "refreshedAt": "2026-09-17T20:30:48.681Z"
       }
     },
     "additionalImages": [
@@ -5988,13 +5994,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 359.99,
         "saleprice": 299.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312006717891136329671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2F2YM-00BE-00016%3Fitem%3D9SIBWC8KD89766",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312006717891136329671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2F2YM-00BE-00016%3Fitem%3D9SIBWC8KD89766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00016-12.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:05.490Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:52.270Z"
+        "refreshedAt": "2026-09-17T20:30:48.841Z"
       }
     },
     "additionalImages": [
@@ -6113,8 +6119,8 @@ export default [
         "matchMethod": "upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-11T19:57:49.921Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "weak_match_blocked"
       }
     },
@@ -6264,13 +6270,13 @@ export default [
         "itemNumber": "9SIAK91KBF4034",
         "sellerClass": "marketplace",
         "price": 89.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835821316816746160185&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-liquid-cooling-system-intel-lga115x-1200-1700-20xx-amd-am3-am4-am5-black%2Fp%2FN82E16835988002%3Fitem%3D9SIAK91KBF4034",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835821316816746160185&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmontech-liquid-cooling-system-intel-lga115x-1200-1700-20xx-amd-am3-am4-am5-black%2Fp%2FN82E16835988002%3Fitem%3D9SIAK91KBF4034",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-988-002-11.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:35.886Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:52.893Z"
+        "refreshedAt": "2026-09-17T20:30:49.742Z"
       }
     },
     "additionalImages": [
@@ -6511,13 +6517,13 @@ export default [
         "itemNumber": "9SIA4REK842810",
         "sellerClass": "marketplace",
         "price": 83.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834488846220905076850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIA4REK842810",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834488846220905076850&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d9l%2Fp%2F13C-0005-00341%3Fitem%3D9SIA4REK842810",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2310110KPGTU24.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:41.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:53.052Z"
+        "refreshedAt": "2026-09-17T20:30:49.980Z"
       }
     },
     "additionalImages": [
@@ -6720,7 +6726,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.411Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-17T10:07:53.206Z"
+        "refreshedAt": "2026-09-17T20:30:50.168Z"
       }
     },
     "additionalImages": [
@@ -6781,7 +6787,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:34.903Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.7142857142857143,
-        "refreshedAt": "2026-09-17T10:07:53.710Z",
+        "refreshedAt": "2026-09-17T20:30:50.738Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -6846,9 +6852,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-07",
         "priceConfirmedAt": "2026-09-17"
       }
@@ -6903,8 +6909,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-08T09:31:46.009Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -6957,13 +6963,13 @@ export default [
         "itemNumber": "13C-0133-00001",
         "sellerClass": "official",
         "price": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839468406431217367301&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-h-t620n-dm2m-g0k-turris-120mm-intel-lga1851-1700-amd-am5-am4%2Fp%2F13C-0133-00001%3Fitem%3D13C-0133-00001",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839468406431217367301&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-h-t620n-dm2m-g0k-turris-120mm-intel-lga1851-1700-amd-am5-am4%2Fp%2F13C-0133-00001%3Fitem%3D13C-0133-00001",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S26031604RQQLA1.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:30.065Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:54.420Z"
+        "refreshedAt": "2026-09-17T20:30:52.003Z"
       }
     },
     "additionalImages": [
@@ -7067,7 +7073,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:54.571Z",
+        "refreshedAt": "2026-09-17T20:30:52.164Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -7135,7 +7141,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:40.654Z",
         "matchMethod": "name",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-17T10:07:54.732Z",
+        "refreshedAt": "2026-09-17T20:30:52.381Z",
         "priceLastMovedAt": "2026-08-28",
         "migratedAt": "2026-08-28T17:04:42.686Z",
         "migratedFrom": "445832845816020324099725"
@@ -7286,7 +7292,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:54.921Z"
+        "refreshedAt": "2026-09-17T20:30:52.580Z"
       }
     },
     "additionalImages": [
@@ -7386,7 +7392,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.547Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:55.055Z"
+        "refreshedAt": "2026-09-17T20:30:52.877Z"
       }
     },
     "additionalImages": [
@@ -7612,13 +7618,13 @@ export default [
         "itemNumber": "9SIAADY5BC3600",
         "sellerClass": "marketplace",
         "price": 74.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310117642679278262636&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-se-am4%2Fp%2F13C-0005-00112%3Fitem%3D9SIAADY5BC3600",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310117642679278262636&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-u12s-se-am4%2Fp%2F13C-0005-00112%3Fitem%3D9SIAADY5BC3600",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2206300OIY6I5B.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.596Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:55.220Z"
+        "refreshedAt": "2026-09-17T20:30:53.073Z"
       }
     },
     "discount": 18,
@@ -7765,13 +7771,13 @@ export default [
         "itemNumber": "9SIAADY5BC1607",
         "sellerClass": "marketplace",
         "price": 129.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310074195816874490835&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-se-am4%2Fp%2F13C-0005-00111%3Fitem%3D9SIAADY5BC1607",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310074195816874490835&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-se-am4%2Fp%2F13C-0005-00111%3Fitem%3D9SIAADY5BC1607",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_131315373821117808bUOcz3drmV.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.596Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-17T10:07:55.366Z"
+        "refreshedAt": "2026-09-17T20:31:36.828Z"
       }
     },
     "discount": 15,
@@ -7820,15 +7826,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIA2W0KFB2645",
-        "price": 109.99,
+        "price": 99.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839746302777785884695&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Farctic-cooling-liquid-cooling-system-liquid-freezer-ii%2Fp%2F13C-000P-000R0%3Fitem%3D9SIA2W0KFB2645",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S2111100BP6M565.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:55.529Z",
-        "priceLastMovedAt": "2026-08-28"
+        "refreshedAt": "2026-09-17T20:31:37.024Z",
+        "priceLastMovedAt": "2026-09-17"
       }
     },
     "discount": 20,
@@ -7891,7 +7897,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:55.822Z",
+        "refreshedAt": "2026-09-17T20:31:37.534Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -7953,7 +7959,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:56.135Z",
+        "refreshedAt": "2026-09-17T20:31:37.961Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -8268,13 +8274,13 @@ export default [
         "itemNumber": "9SIAADYBGR5006",
         "sellerClass": "marketplace",
         "price": 74.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835618195475224562414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12-ghost-s1-edition%2Fp%2F13C-0005-001K0%3Fitem%3D9SIAADYBGR5006",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835618195475224562414&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-l12-ghost-s1-edition%2Fp%2F13C-0005-001K0%3Fitem%3D9SIAADYBGR5006",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS200622DKf1i.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.670Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:56.435Z"
+        "refreshedAt": "2026-09-17T20:31:38.343Z"
       }
     },
     "additionalImages": [
@@ -8771,8 +8777,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.88,
         "sellerClass": "other",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -8836,7 +8842,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "sellerClass": "other",
-        "refreshedAt": "2026-09-17T10:07:56.851Z",
+        "refreshedAt": "2026-09-17T20:31:38.902Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -8946,13 +8952,13 @@ export default [
         "sellerClass": "official",
         "price": 179.99,
         "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838505144744393167228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-radiator-size-281-x-120-x-27-mm-intel-socket-lga-1851-1700-1200-115x-amd-socket-am5-am4-black%2Fp%2FN82E16835146167%3Fitem%3DN82E16835146167",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838505144744393167228&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-aio-radiator-size-281-x-120-x-27-mm-intel-socket-lga-1851-1700-1200-115x-amd-socket-am5-am4-black%2Fp%2FN82E16835146167%3Fitem%3DN82E16835146167",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-167-03.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.033Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:57.300Z"
+        "refreshedAt": "2026-09-17T20:31:39.452Z"
       }
     },
     "discount": 33,
@@ -9162,8 +9168,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:37.136Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -9275,8 +9281,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.781Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -9342,8 +9348,8 @@ export default [
         "matchedAt": "2026-08-25T12:31:37.749Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -9393,15 +9399,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIAD6HKHX9678",
-        "price": 88.91,
+        "price": 87.94,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315426448500585337341&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-0004-000X4%3Fitem%3D9SIAD6HKHX9678",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A9H5D2506261C7F9QBA.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:07:59.364Z",
-        "priceLastMovedAt": "2026-09-16",
+        "refreshedAt": "2026-09-17T20:31:41.887Z",
+        "priceLastMovedAt": "2026-09-17",
         "rematchedAt": "2026-09-13T09:44:23.060Z",
         "rematchedFrom": "9SIAD6HKHX9690"
       }
@@ -9471,7 +9477,7 @@ export default [
         "matchedAt": "2026-08-31T18:38:16.552Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:45.828Z",
+        "refreshedAt": "2026-09-17T20:31:42.071Z",
         "priceLastMovedAt": "2026-09-09"
       }
     },
@@ -9536,8 +9542,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "refreshedAt": "2026-09-01T10:07:03.002Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -9603,10 +9609,10 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-17T10:08:46.459Z",
-        "priceSuspectValue": 211.3,
+        "priceSuspectAt": "2026-09-17T20:31:42.466Z",
+        "priceSuspectValue": 249.76,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 42
+        "priceSuspectStreak": 43
       }
     },
     "additionalImages": [
@@ -9856,8 +9862,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-11T19:58:00.188Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -10151,13 +10157,13 @@ export default [
         "itemNumber": "9SIAADYKB59099",
         "sellerClass": "marketplace",
         "price": 159.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834871204183147131830&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-00356%3Fitem%3D9SIAADYKB59099",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2407010J63FDFA.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.773Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:46.961Z"
+        "refreshedAt": "2026-09-17T20:31:42.825Z"
       }
     },
     "additionalImages": [
@@ -10669,7 +10675,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.279Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:08:47.100Z",
+        "refreshedAt": "2026-09-17T20:31:43.011Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -10780,7 +10786,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:05.092Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8461538461538461,
-        "refreshedAt": "2026-09-17T10:08:47.228Z"
+        "refreshedAt": "2026-09-17T20:31:43.191Z"
       }
     },
     "discount": 5,
@@ -10841,8 +10847,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:31.374Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -11458,7 +11464,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.57,
         "sellerClass": "other",
-        "refreshedAt": "2026-09-17T10:08:48.242Z",
+        "refreshedAt": "2026-09-17T20:31:44.826Z",
         "priceLastMovedAt": "2026-09-14",
         "saleprice": 164.99
       }
@@ -11562,15 +11568,15 @@ export default [
         "sku": "445831539943860035097788",
         "itemNumber": "9SIAD6HKKM2746",
         "sellerClass": "marketplace",
-        "price": 230.07,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
+        "price": 227.61,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831539943860035097788&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-sl-inf-360-radiator-size-397-5-x-119-2-x-27-mm%2Fp%2FN82E16835353019%3Fitem%3D9SIAD6HKKM2746",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713e0EMY.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:35.255Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:48.696Z",
-        "priceLastMovedAt": "2026-09-16"
+        "refreshedAt": "2026-09-17T20:31:45.456Z",
+        "priceLastMovedAt": "2026-09-17"
       }
     },
     "discount": 6,
@@ -11676,7 +11682,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:10.561Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:48.847Z"
+        "refreshedAt": "2026-09-17T20:31:45.684Z"
       }
     },
     "additionalImages": [
@@ -12059,7 +12065,7 @@ export default [
         "matchedAt": "2026-09-13T15:18:47.890Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:48.991Z",
+        "refreshedAt": "2026-09-17T20:31:45.863Z",
         "priceLastMovedAt": "2026-09-15",
         "rematchedAt": "2026-09-15T10:10:30.818Z",
         "rematchedFrom": "445831501802986156908340"
@@ -12122,9 +12128,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.122Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -12184,13 +12190,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 59.9,
         "saleprice": 49.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317625299521783861024&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermalright-peerless-assassin-120-se-v3-peerless-assassin-120mm-am5-am4-lga-1851-1700-115x-1200%2Fp%2F1YF-0038-000Z2%3Fitem%3D9SIBVHXM2R5799",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317625299521783861024&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermalright-peerless-assassin-120-se-v3-peerless-assassin-120mm-am5-am4-lga-1851-1700-115x-1200%2Fp%2F1YF-0038-000Z2%3Fitem%3D9SIBVHXM2R5799",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C3H4D2512100LRZ1O47.jpg",
         "inStock": true,
         "matchedAt": "2026-08-28T21:45:49.682Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-17T10:08:49.480Z",
+        "refreshedAt": "2026-09-17T20:31:46.389Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -12249,9 +12255,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.434Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -12308,13 +12314,13 @@ export default [
         "sellerClass": "marketplace",
         "price": 238.99,
         "saleprice": 199.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832912868951116858706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-dt-radiator-size-394-mm-intel-lga-1851-1700-1200-115x-amd-am5-am4-white%2Fp%2F2YM-00BC-00006%3Fitem%3D9SIAHCTKGH6535",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832912868951116858706&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fpccooler-liquid-cooling-system-dt-radiator-size-394-mm-intel-lga-1851-1700-1200-115x-amd-am5-am4-white%2Fp%2F2YM-00BC-00006%3Fitem%3D9SIAHCTKGH6535",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AHCTS26091603DOH045.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:27:05.111Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:50.567Z"
+        "refreshedAt": "2026-09-17T20:31:47.487Z"
       }
     },
     "discount": 30,
@@ -12475,9 +12481,9 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.845Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "weak_match_blocked",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-15",
         "priceConfirmedAt": "2026-09-17"
       }
@@ -12778,9 +12784,9 @@ export default [
         "matchedAt": "2026-08-27T21:32:09.479Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-17",
         "priceConfirmedAt": "2026-09-17"
       }
@@ -13020,7 +13026,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:05.110Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.7692307692307693,
-        "refreshedAt": "2026-09-17T10:08:52.241Z",
+        "refreshedAt": "2026-09-17T20:31:48.903Z",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -13126,8 +13132,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-15T10:10:33.445Z",
         "priceLastMovedAt": "2026-09-12",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -13187,7 +13193,7 @@ export default [
         "matchedAt": "2026-09-03T15:32:02.925Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:52.896Z",
+        "refreshedAt": "2026-09-17T20:31:49.781Z",
         "priceLastMovedAt": "2026-09-12",
         "migratedAt": "2026-09-03T20:03:33.253Z",
         "migratedFrom": "445838646692992724754079"
@@ -13430,13 +13436,13 @@ export default [
         "itemNumber": "9SIC35VKPJ7124",
         "sellerClass": "marketplace",
         "price": 33.9,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835889887673873066915&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00UE-00006%3Fitem%3D9SIC35VKPJ7124",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835889887673873066915&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-00UE-00006%3Fitem%3D9SIC35VKPJ7124",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C35VD2512160CSOEN96.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:31.363Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-17T10:08:53.061Z"
+        "refreshedAt": "2026-09-17T20:31:49.957Z"
       }
     },
     "additionalImages": [
@@ -13591,13 +13597,13 @@ export default [
         "sellerClass": "official",
         "price": 74.99,
         "saleprice": 59.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836195230420002548038&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835846077%3Fitem%3DN82E16835846077",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836195230420002548038&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16835846077%3Fitem%3DN82E16835846077",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-077-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.437Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:53.221Z"
+        "refreshedAt": "2026-09-17T20:31:50.206Z"
       }
     },
     "discount": 10,
@@ -13707,7 +13713,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:53.709Z",
+        "refreshedAt": "2026-09-17T20:31:50.769Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -13775,7 +13781,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:54.736Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-17T10:08:53.875Z"
+        "refreshedAt": "2026-09-17T20:31:50.968Z"
       }
     },
     "additionalImages": [
@@ -14036,15 +14042,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIAD6HK1Z5404",
-        "price": 264.08,
+        "price": 261.04,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836603686612780990849&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flian-li-liquid-cooling-system-galahad-ii-trinity-360%2Fp%2FN82E16835353016%3Fitem%3D9SIAD6HK1Z5404",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFSTS230713zSCOJ.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:54.296Z",
-        "priceLastMovedAt": "2026-09-16"
+        "refreshedAt": "2026-09-17T20:31:51.829Z",
+        "priceLastMovedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -14242,13 +14248,13 @@ export default [
         "itemNumber": "9SIA8EF5VJ0374",
         "sellerClass": "marketplace",
         "price": 29.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316016139715996759116&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-contac-silent-12-cl-p039-al12bl-a%2Fp%2FN82E16835106372%3Fitem%3D9SIA8EF5VJ0374",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316016139715996759116&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-contac-silent-12-cl-p039-al12bl-a%2Fp%2FN82E16835106372%3Fitem%3D9SIA8EF5VJ0374",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-372-Z01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:45.710Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:54.589Z"
+        "refreshedAt": "2026-09-17T20:31:52.220Z"
       }
     },
     "coolerType": "Air",
@@ -14292,13 +14298,13 @@ export default [
         "itemNumber": "N82E16835106666",
         "sellerClass": "official",
         "price": 59.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311130858640254898335&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-p075-al12bl-a%2Fp%2FN82E16835106666%3Fitem%3DN82E16835106666",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311130858640254898335&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-cl-p075-al12bl-a%2Fp%2FN82E16835106666%3Fitem%3DN82E16835106666",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-106-666-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.820Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:55.106Z"
+        "refreshedAt": "2026-09-17T20:31:52.892Z"
       }
     },
     "coolerType": "Air",
@@ -14347,7 +14353,7 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.827Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:55.524Z"
+        "refreshedAt": "2026-09-17T20:32:37.129Z"
       }
     },
     "coolerType": "Air",
@@ -14483,9 +14489,9 @@ export default [
         "matchedAt": "2026-08-18T14:15:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -14525,13 +14531,13 @@ export default [
         "itemNumber": "9SIA6KXK0Y3514",
         "sellerClass": "marketplace",
         "price": 189.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310512255067987617056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-315-mm-intel-socket-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-black%2Fp%2FN82E16835146119%3Fitem%3D9SIA6KXK0Y3514",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310512255067987617056&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-315-mm-intel-socket-lga-1700-1200-115x-amd-socket-am5-am4-strx4-tr4-black%2Fp%2FN82E16835146119%3Fitem%3D9SIA6KXK0Y3514",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-146-119-10.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:37.576Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:56.481Z",
+        "refreshedAt": "2026-09-17T20:32:38.360Z",
         "rematchedAt": "2026-09-12T09:20:18.071Z",
         "rematchedFrom": "4458314304829086519122432",
         "priceLastMovedAt": "2026-09-12"
@@ -14633,7 +14639,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:56.890Z",
+        "refreshedAt": "2026-09-17T20:32:38.920Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -14687,13 +14693,13 @@ export default [
         "sellerClass": "official",
         "price": 87.99,
         "saleprice": 82.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311921909743608757588&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th120-v2-argb-snow%2Fp%2FN82E16835106766%3Fitem%3DN82E16835106766",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311921909743608757588&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th120-v2-argb-snow%2Fp%2FN82E16835106766%3Fitem%3DN82E16835106766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2404150CIB3R2D.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:32:42.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:57.330Z"
+        "refreshedAt": "2026-09-17T20:32:39.484Z"
       }
     },
     "coolerType": "AIO",
@@ -14785,13 +14791,13 @@ export default [
         "sellerClass": "official",
         "price": 144.99,
         "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832564914943307493488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3DN82E16835106752",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832564914943307493488&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th420-v2-argb%2Fp%2FN82E16835106752%3Fitem%3DN82E16835106752",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A96G0F.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:57.855Z",
+        "refreshedAt": "2026-09-17T20:32:40.040Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -14849,8 +14855,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-10T09:37:36.473Z",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -14901,13 +14907,13 @@ export default [
         "sellerClass": "official",
         "price": 164.99,
         "saleprice": 119.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310427561789377507103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-ultra-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106753%3Fitem%3DN82E16835106753",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310427561789377507103&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-ultra-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106753%3Fitem%3DN82E16835106753",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A98C83.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:08:58.918Z"
+        "refreshedAt": "2026-09-17T20:32:41.315Z"
       }
     },
     "coolerType": "AIO",
@@ -14963,8 +14969,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.879Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -15015,13 +15021,13 @@ export default [
         "sellerClass": "official",
         "price": 99.99,
         "saleprice": 69.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314374061741250609711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106749%3Fitem%3DN82E16835106749",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314374061741250609711&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th240-v2-argb-radiator-size-276-x-120-x-27-mm%2Fp%2FN82E16835106749%3Fitem%3DN82E16835106749",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A6ZPD23091210A97CCA.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:46.482Z",
+        "refreshedAt": "2026-09-17T20:32:42.527Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -15204,8 +15210,8 @@ export default [
         "matchedAt": "2026-08-21T12:43:54.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -15259,8 +15265,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.089Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -15309,13 +15315,13 @@ export default [
         "itemNumber": "9SIC6EGM2W8803",
         "sellerClass": "marketplace",
         "price": 246.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314252156542432542317&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-radiator-size-396-x-120-x-27-mm-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181479%3Fitem%3D9SIC6EGM2W8803",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314252156542432542317&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-radiator-size-396-x-120-x-27-mm-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181479%3Fitem%3D9SIC6EGM2W8803",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-479-17.png",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:02.108Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:47.616Z",
+        "refreshedAt": "2026-09-17T20:32:43.687Z",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -15411,9 +15417,9 @@ export default [
         "matchedAt": "2026-08-18T14:14:29.484Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -15559,9 +15565,9 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-15T20:29:53.793Z",
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 3,
+        "refreshMissStreak": 4,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -15615,9 +15621,9 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
-        "refreshMissReason": "downgrade_blocked"
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
+        "refreshMissReason": "variant_rejected"
       }
     },
     "coolerType": "AIO",
@@ -15684,8 +15690,8 @@ export default [
         "matchedAt": "2026-08-18T14:16:18.804Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -15753,9 +15759,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-17"
       }
@@ -15812,9 +15818,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -15882,9 +15888,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:50.434Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 4,
+        "refreshMissStreak": 5,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -15982,8 +15988,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -16034,13 +16040,13 @@ export default [
         "sellerClass": "official",
         "price": 139.99,
         "saleprice": 99.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834252585428532743544&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181494%3Fitem%3DN82E16835181494",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834252585428532743544&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-aio-nautilus-240-lcd-amd-am5-am4-intel-1851-1700-black%2Fp%2FN82E16835181494%3Fitem%3DN82E16835181494",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-181-494-02.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.108Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:52.470Z",
+        "refreshedAt": "2026-09-17T20:32:49.146Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -16090,13 +16096,13 @@ export default [
         "sellerClass": "official",
         "price": 189.99,
         "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831320570467464369778&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-coreliquid-p13-series-radiator-size-394-x-119-6-x-27mm-lga-1700-1851-am5-am4-white%2Fp%2FN82E16835846074%3Fitem%3DN82E16835846074",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831320570467464369778&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-coreliquid-p13-series-radiator-size-394-x-119-6-x-27mm-lga-1700-1851-am5-am4-white%2Fp%2FN82E16835846074%3Fitem%3DN82E16835846074",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-074-01.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.437Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:52.779Z"
+        "refreshedAt": "2026-09-17T20:32:49.580Z"
       }
     },
     "coolerType": "AIO",
@@ -16160,8 +16166,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -16208,7 +16214,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.917Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:54.027Z",
+        "refreshedAt": "2026-09-17T20:32:51.328Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -16405,13 +16411,13 @@ export default [
         "sellerClass": "official",
         "price": 109.99,
         "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445838783684443768592965&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-360-mm-intel-socket-lga-1700-1851-amd-socket-am5-am4%2Fp%2FN82E16835846069%3Fitem%3DN82E16835846069",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838783684443768592965&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-aio-radiator-size-360-mm-intel-socket-lga-1700-1851-amd-socket-am5-am4%2Fp%2FN82E16835846069%3Fitem%3DN82E16835846069",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/35-846-069-03.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:50.429Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:54.544Z"
+        "refreshedAt": "2026-09-17T20:32:52.037Z"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -16840,7 +16846,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:54.734Z",
+        "refreshedAt": "2026-09-17T20:32:52.227Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -16866,17 +16872,18 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "445833795822587653180041",
-        "itemNumber": "9SIA2W0KP98954",
+        "sku": "9SIA2W0KHX4823",
+        "price": 98.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
         "sellerClass": "marketplace",
-        "price": 95.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-17T16:07:24.981Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.85,
-        "priceLastMovedAt": "2026-09-17"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-17T20:32:52.601Z",
+        "priceLastMovedAt": "2026-09-17",
+        "rematchedAt": "2026-09-17T20:32:52.601Z",
+        "rematchedFrom": "445833795822587653180041"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -16915,7 +16922,7 @@ export default [
         "matchedAt": "2026-07-28",
         "matchMethod": "name",
         "matchScore": 1,
-        "absentStreak": 41,
+        "absentStreak": 42,
         "staleSince": "2026-08-29T01:22:47.407Z"
       }
     },
@@ -17356,10 +17363,10 @@ export default [
         "rematchedAt": "2026-08-29T01:22:47.516Z",
         "rematchedFrom": "9SIC750KYH7789",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-17T10:09:55.639Z",
+        "priceSuspectAt": "2026-09-17T20:33:37.200Z",
         "priceSuspectValue": 14.99,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 35
+        "priceSuspectStreak": 36
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -18545,7 +18552,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:55.784Z",
+        "refreshedAt": "2026-09-17T20:33:37.377Z",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -18702,8 +18709,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:30.411Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -19597,8 +19604,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-13",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -20678,8 +20685,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.9,
         "sellerClass": "other",
-        "refreshMissStreak": 4,
-        "refreshMissedAt": "2026-09-17T09:05:41.516Z",
+        "refreshMissStreak": 5,
+        "refreshMissedAt": "2026-09-17T19:28:32.668Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -21292,7 +21299,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:56.964Z"
+        "refreshedAt": "2026-09-17T20:33:39.037Z"
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
@@ -21374,7 +21381,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.86,
-        "refreshedAt": "2026-09-17T10:09:57.268Z",
+        "refreshedAt": "2026-09-17T20:33:39.396Z",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -21446,13 +21453,13 @@ export default [
         "itemNumber": "9SIAADYGDF4010",
         "sellerClass": "marketplace",
         "price": 49.95,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314849336187211392578&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIAADYGDF4010",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314849336187211392578&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F13C-0005-002Z7%3Fitem%3D9SIAADYGDF4010",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADYS2304200R60SM67.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:15:54.695Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T10:09:57.443Z"
+        "refreshedAt": "2026-09-17T20:33:39.578Z"
       }
     },
     "addedAt": "2026-05-15T16:31:54.669Z",
