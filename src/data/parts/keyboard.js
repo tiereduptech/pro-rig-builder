@@ -494,7 +494,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "switches": "Hall Effect",

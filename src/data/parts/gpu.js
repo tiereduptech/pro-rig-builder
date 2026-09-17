@@ -988,7 +988,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.661Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "baseClock": 2400,
@@ -2256,24 +2256,11 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-17"
-      },
-      "newegg_openbox": {
-        "sku": "4458317309792815436892094",
-        "price": 999.99,
-        "saleprice": 872.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317309792815436892094&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Famd-100-300000006-radeon-pro-w7700-16gb-graphics-card%2Fp%2FN82E16814105118R%3Fitem%3DN82E16814105118R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-105-118-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T22:20:57.916Z",
-        "matchMethod": "phase2:name-match",
-        "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
       }
     },
     "upc": "00727419314992",
-    "mpn": "100-300000006"
+    "mpn": "100-300000006",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30064,
@@ -2559,7 +2546,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "cuda": 10752,
@@ -2652,7 +2639,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.446Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "cuda": 10752,
@@ -2832,7 +2819,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.326Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8333333333333334,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "cuda": 6144,
@@ -2885,7 +2872,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.456Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "cuda": 6144,
@@ -3599,7 +3586,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.392Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "sp": 3840,
@@ -3768,7 +3755,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.548Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "sp": 3456,
@@ -3890,7 +3877,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.397Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.75,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "sp": 2048,
@@ -4013,7 +4000,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -4085,7 +4072,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.472Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -4188,23 +4175,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-09",
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "44583700495907785926061",
-        "itemNumber": "N82E16814126817R",
-        "sellerClass": "official",
-        "price": 459.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583700495907785926061&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rx9060xt-16g-radeon-rx-9060-xt-16gb-graphics-card-double-fans%2Fp%2FN82E16814126817R%3Fitem%3DN82E16814126817R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-817-01.png",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.832Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "discount": 21,
@@ -4224,7 +4195,8 @@ export default [
     "length": 260,
     "bench": 53,
     "pcie": "5.0 x16",
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30111,
@@ -4317,7 +4289,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.325Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -4386,7 +4358,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.429Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "discount": 7,
@@ -4535,7 +4507,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.321Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -4589,22 +4561,6 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-17",
         "priceLastMovedAt": "2026-09-11"
-      },
-      "newegg_openbox": {
-        "sku": "4458310344946440845609119",
-        "itemNumber": "N82E16814932823R",
-        "sellerClass": "official",
-        "price": 749.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310344946440845609119&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r907xgamingocice-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932823R%3Fitem%3DN82E16814932823R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-823-18.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-08T15:47:32.513Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-12",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
       }
     },
     "additionalImages": [
@@ -4625,7 +4581,8 @@ export default [
     "baseClock": 2400,
     "boostClock": 2970,
     "pcie": "5.0 x16",
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30118,
@@ -4707,23 +4664,6 @@ export default [
         "priceConfirmedAt": "2026-09-17",
         "priceLastMovedAt": "2026-09-08"
       },
-      "newegg_openbox": {
-        "sku": "4458316281947149435764482",
-        "itemNumber": "N82E16814126742R",
-        "sellerClass": "official",
-        "price": 1849.99,
-        "saleprice": 1699.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316281947149435764482&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-astral-rog-astral-rtx5080-o16g-gaming-geforce-rtx-5080-16gb-graphics-card%2Fp%2FN82E16814126742R%3Fitem%3DN82E16814126742R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-742-04.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
-      },
       "newegg": {
         "sku": "4458316820163500009651326",
         "itemNumber": "N82E16814126837",
@@ -4737,7 +4677,7 @@ export default [
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -4754,7 +4694,8 @@ export default [
     "tdp": 360,
     "length": 310,
     "bench": 96,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30120,
@@ -4836,7 +4777,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -6981,7 +6922,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -7230,7 +7171,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.868Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8040,7 +7981,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.865Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8277,7 +8218,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.383Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8550,14 +8491,13 @@ export default [
         "sellerClass": "official",
         "price": 499.99,
         "saleprice": 489.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315676072985151681774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-gaming-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137971%3Fitem%3DN82E16814137971",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315676072985151681774&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5060-8g-gaming-oc-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814137971%3Fitem%3DN82E16814137971",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-971-06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8615,7 +8555,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8677,7 +8617,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -8931,7 +8871,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:07.198Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "additionalImages": [
@@ -9513,7 +9453,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.368Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 3050",
@@ -9566,15 +9506,15 @@ export default [
         "itemNumber": "N82E16814137877",
         "sellerClass": "official",
         "price": 299.99,
-        "saleprice": 279.97,
+        "saleprice": 279.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-877-01.png",
         "inStock": true,
         "matchedAt": "2026-08-23T12:27:09.616Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-16"
+        "priceLastMovedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 3050",
@@ -9706,7 +9646,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       },
       "newegg_openbox": {
         "sku": "4458313050412717135728143",
@@ -9719,7 +9659,7 @@ export default [
         "matchedAt": "2026-09-04T15:25:47.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9770,7 +9710,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       },
       "newegg_openbox": {
         "sku": "445839897402269222127529",
@@ -9783,7 +9723,10 @@ export default [
         "matchedAt": "2026-09-04T15:25:47.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-16",
+        "priceUnconfirmedAt": "2026-09-17",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9874,7 +9817,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9924,7 +9867,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -9974,7 +9917,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10024,7 +9967,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10061,20 +10004,6 @@ export default [
         "priceSource": "1p",
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-17"
-      },
-      "newegg_openbox": {
-        "sku": "4458313137355969489742434",
-        "price": 1059.99,
-        "saleprice": 919.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313137355969489742434&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-tuf-gaming-tuf-rtx5070ti-o16g-gaming-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126754R%3Fitem%3DN82E16814126754R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-754-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10088,7 +10017,8 @@ export default [
     "slots": "3-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30236,
@@ -10103,24 +10033,6 @@ export default [
     "upc": "197105878068",
     "mpn": "PRIME-RTX5070TI-16G",
     "deals": {
-      "newegg_openbox": {
-        "sku": "445835434376973822081397",
-        "itemNumber": "N82E16814126757R",
-        "sellerClass": "official",
-        "price": 989.99,
-        "saleprice": 939.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835434376973822081397&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5070ti-16g-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126757R%3Fitem%3DN82E16814126757R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-756-12.png",
-        "inStock": true,
-        "matchedAt": "2026-05-14T20:09:05.772Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceLastMovedAt": "2026-09-04",
-        "priceConfirmedAt": "2026-09-04",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
-      },
       "newegg": {
         "sku": "445836230308261329286521",
         "itemNumber": "N82E16814126757",
@@ -10133,7 +10045,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10148,7 +10060,8 @@ export default [
     "length": 305,
     "bench": 85,
     "memType": "GDDR7",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30237,
@@ -10185,7 +10098,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-03",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       },
       "newegg": {
         "sku": "445832601390906217617414",
@@ -10199,7 +10112,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.402Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10259,7 +10172,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.375Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10318,7 +10231,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.375Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10359,7 +10272,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.443Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 3050",
@@ -10401,7 +10314,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.445Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       },
       "newegg_openbox": {
         "sku": "4458310114770734036165146",
@@ -10414,7 +10327,10 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.937Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-16",
+        "priceUnconfirmedAt": "2026-09-17",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10546,23 +10462,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "4458314275765455361409906",
-        "itemNumber": "N82E16814930134R",
-        "sellerClass": "official",
-        "price": 239.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458314275765455361409906&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-challenger-b570-cl-12go-arc-b570-10gb-graphics-card-double-fans%2Fp%2FN82E16814930134R%3Fitem%3DN82E16814930134R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-930-134-03.png",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.916Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "Arc",
@@ -10576,7 +10476,8 @@ export default [
     "tdp": 150,
     "length": 270,
     "bench": 38,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30245,
@@ -10620,7 +10521,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-03",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10680,7 +10581,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-04",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10730,7 +10631,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.446Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       },
       "newegg_openbox": {
         "sku": "445831858529333268908454",
@@ -10744,7 +10645,7 @@ export default [
         "matchedAt": "2026-09-04T15:25:47.634Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10796,7 +10697,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-06",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10965,24 +10866,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "445832705556446260477952",
-        "itemNumber": "N82E16814932751R",
-        "sellerClass": "official",
-        "price": 749.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832705556446260477952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-r9070xtgaming-oc-16gd-radeon-rx-9070-xt-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932751R%3Fitem%3DN82E16814932751R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-751-07.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.632Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10996,7 +10880,8 @@ export default [
     "slots": "2.7-slot",
     "length": 290,
     "bench": 72,
-    "memType": "GDDR6"
+    "memType": "GDDR6",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30253,
@@ -11064,23 +10949,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.448Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "44583882574517666139894",
-        "itemNumber": "N82E16814932767R",
-        "sellerClass": "official",
-        "price": 979.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583882574517666139894&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507taero-oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932767R%3Fitem%3DN82E16814932767R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-767-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.634Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11094,7 +10963,8 @@ export default [
     "slots": "3.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30255,
@@ -11121,24 +10991,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.448Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "445838408800434259811770",
-        "itemNumber": "N82E16814932769R",
-        "sellerClass": "official",
-        "price": 1099.99,
-        "saleprice": 999.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838408800434259811770&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507teagleoc-ice-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932769R%3Fitem%3DN82E16814932769R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-769-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.634Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11153,7 +11006,8 @@ export default [
     "length": 305,
     "bench": 87,
     "memType": "GDDR7",
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30256,
@@ -11188,24 +11042,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "445836601102594679708566",
-        "itemNumber": "N82E16814932771R",
-        "sellerClass": "official",
-        "price": 1049.99,
-        "saleprice": 1029.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836601102594679708566&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-windforce-gv-n507twf3oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932771R%3Fitem%3DN82E16814932771R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-771-02.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.938Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11219,7 +11056,8 @@ export default [
     "slots": "2.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30257,
@@ -11254,23 +11092,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.448Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "445832331587950160391351",
-        "itemNumber": "N82E16814932768R",
-        "sellerClass": "official",
-        "price": 1019.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832331587950160391351&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n507tgaming-oc-16gd-geforce-rtx-5070-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814932768R%3Fitem%3DN82E16814932768R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-768-19.png",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.937Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11284,7 +11106,8 @@ export default [
     "slots": "3.5-slot",
     "length": 305,
     "bench": 87,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30258,
@@ -11323,14 +11146,15 @@ export default [
         "itemNumber": "N82E16814137938",
         "sellerClass": "official",
         "price": 899.99,
-        "saleprice": 849.99,
+        "saleprice": 869.99,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836664794761865727318&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-5070-12g-gaming-trio-oc-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814137938%3Fitem%3DN82E16814137938",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-938-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceLastMovedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11531,7 +11355,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.429Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11812,7 +11636,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11937,23 +11761,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.453Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "4458314848336246418583594",
-        "itemNumber": "N82E16814932774R",
-        "sellerClass": "official",
-        "price": 769.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314848336246418583594&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-gv-n5070gaming-oc-12gd-geforce-rtx-5070-12gb-graphics-card-triple-fans%2Fp%2FN82E16814932774R%3Fitem%3DN82E16814932774R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-932-774-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.638Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-05",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11967,7 +11775,8 @@ export default [
     "slots": "2.7-slot",
     "length": 290,
     "bench": 77,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30274,
@@ -12004,7 +11813,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -12095,7 +11904,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.405Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12146,23 +11955,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "4458313073196568497276463",
-        "itemNumber": "N82E16814126791R",
-        "sellerClass": "official",
-        "price": 720,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313073196568497276463&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5060ti-16g-geforce-rtx-5060-ti-16gb-graphics-card-triple-fans%2Fp%2FN82E16814126791R%3Fitem%3DN82E16814126791R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-791-01.png",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.824Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-03",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12176,7 +11969,8 @@ export default [
     "slots": "2.5-slot",
     "length": 260,
     "bench": 59,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30278,
@@ -12484,7 +12278,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.327Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12545,7 +12339,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-03",
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -12595,7 +12389,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.323Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12633,22 +12427,6 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-17",
         "priceLastMovedAt": "2026-09-07"
-      },
-      "newegg_openbox": {
-        "sku": "4458311756498303117075418",
-        "itemNumber": "N82E16814126802R",
-        "sellerClass": "official",
-        "price": 439.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311756498303117075418&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-rtx5060-8g-geforce-rtx-5060-8gb-graphics-card-triple-fans%2Fp%2FN82E16814126802R%3Fitem%3DN82E16814126802R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-801-12.png",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.520Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12662,7 +12440,8 @@ export default [
     "slots": "2.5-slot",
     "length": 250,
     "bench": 55,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30289,
@@ -12790,7 +12569,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12850,7 +12629,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:09.561Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12910,7 +12689,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.329Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12970,7 +12749,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -13218,23 +12997,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.325Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "445833941573381951555686",
-        "itemNumber": "N82E16814126807R",
-        "sellerClass": "official",
-        "price": 400,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445833941573381951555686&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rtx5060-o8g-geforce-rtx-5060-8gb-graphics-card-double-fans%2Fp%2FN82E16814126807R%3Fitem%3DN82E16814126807R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-807-10.png",
-        "inStock": true,
-        "matchedAt": "2026-09-03T15:31:59.829Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060",
@@ -13248,7 +13011,8 @@ export default [
     "slots": "2.5-slot",
     "length": 250,
     "bench": 56,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30301,
@@ -13336,7 +13100,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.379Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -13387,7 +13151,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:01.469Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -13448,7 +13212,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -13587,7 +13351,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.329Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -13630,7 +13394,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-09",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070",
@@ -13802,7 +13566,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-16"
+        "priceUnconfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13861,7 +13625,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.874Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13984,23 +13748,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.321Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
-      },
-      "newegg_openbox": {
-        "sku": "4458317412630847318105285",
-        "itemNumber": "N82E16814126798R",
-        "sellerClass": "official",
-        "price": 699.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458317412630847318105285&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-dual-rtx5060ti-o16g-geforce-rtx-5060-ti-16gb-graphics-card-double-fans%2Fp%2FN82E16814126798R%3Fitem%3DN82E16814126798R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-126-798-01.png",
-        "inStock": true,
-        "matchedAt": "2026-09-04T15:25:47.518Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceConfirmedAt": "2026-09-11",
-        "priceUnconfirmedAt": "2026-09-16",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -14014,7 +13762,8 @@ export default [
     "slots": "2.5-slot",
     "length": 260,
     "bench": 61,
-    "memType": "GDDR7"
+    "memType": "GDDR7",
+    "neweggOpenboxRemovedAbsent": "2026-09-17"
   },
   {
     "id": 30318,
@@ -14097,7 +13846,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -14344,7 +14093,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.877Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -14394,7 +14143,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.494Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-17"
       }
     },
     "model": "GeForce RTX 5070 Ti",
