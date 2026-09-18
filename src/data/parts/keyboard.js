@@ -487,14 +487,14 @@ export default [
         "sellerClass": "official",
         "price": 60.99,
         "saleprice": 58.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583693753007992457542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsteelseries-apex-3-64795-whisper-quiet-mechanical-keyboard%2Fp%2FN82E16823239056%3Fitem%3DN82E16823239056",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583693753007992457542&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fsteelseries-apex-3-64795-whisper-quiet-mechanical-keyboard%2Fp%2FN82E16823239056%3Fitem%3DN82E16823239056",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/23-239-056-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-19T12:28:15.711Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-17"
+        "priceConfirmedAt": "2026-09-18"
       }
     },
     "switches": "Hall Effect",

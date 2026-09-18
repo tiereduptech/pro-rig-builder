@@ -124,14 +124,14 @@ export default [
         "itemNumber": "9SIBZW0KFZ2184",
         "sellerClass": "marketplace",
         "price": 89.24,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458316252618423370881049&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-pro-webcam%2Fp%2F1EF-00BC-00001%3Fitem%3D9SIBZW0KFZ2184",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316252618423370881049&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Flogitech-pro-webcam%2Fp%2F1EF-00BC-00001%3Fitem%3D9SIBZW0KFZ2184",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AEYJ_131710214716614574993Y707PS2.jpg",
         "inStock": true,
         "matchedAt": "2026-09-11T15:30:08.844Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-17"
+        "priceConfirmedAt": "2026-09-18"
       }
     },
     "resolution": "1080p",
