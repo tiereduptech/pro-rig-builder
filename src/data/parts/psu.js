@@ -4111,12 +4111,12 @@ export default [
     "reviews": 327,
     "deals": {
       "amazon": {
-        "price": 161.97,
+        "price": 151.49,
         "url": "https://www.amazon.com/dp/B0F9YY3R57?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8949,11 +8949,11 @@ export default [
       "amazon": {
         "asin": "B0DJHCTJFC",
         "url": "https://www.amazon.com/dp/B0DJHCTJFC?tag=tiereduptech-20",
-        "price": 168.32,
+        "price": 153.06,
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "IPC-STORE✅",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -9031,7 +9031,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-18"
       }
     },
     "watts": 850,
@@ -9220,11 +9222,11 @@ export default [
       "amazon": {
         "asin": "B0CT41HW5J",
         "url": "https://www.amazon.com/dp/B0CT41HW5J?tag=tiereduptech-20",
-        "price": 139.99,
+        "price": 130.49,
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Yasin Retailers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

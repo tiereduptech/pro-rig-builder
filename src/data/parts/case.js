@@ -4763,7 +4763,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MOROVOL",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-18"
       }
     },
     "additionalImages": [
@@ -7240,7 +7242,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
-        "priceSeller": "Pro Gamersware",
+        "priceSeller": "Pro Gamersware USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -21250,11 +21252,13 @@ export default [
         "url": "https://www.amazon.com/dp/B0CX595GDJ?tag=tiereduptech-20",
         "price": 219.99,
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "Adorama",
         "priceConfirmedAt": "2026-09-18",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-18"
       },
       "newegg": {
         "sku": "445831543320867645904502",
@@ -21304,8 +21308,8 @@ export default [
         "price": 219.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
-        "priceSource": "3p",
-        "priceSeller": "Adorama",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -23074,8 +23078,10 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MOROVOL",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-18",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-18"
       }
     },
     "needsReview": false,
@@ -23832,7 +23838,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-12",
-        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-18"
       },
       "newegg": {

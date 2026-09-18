@@ -440,7 +440,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -9839,8 +9839,8 @@ export default [
         "price": 46.49,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Alakhras LLC",
         "priceConfirmedAt": "2026-09-18",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
@@ -12461,7 +12461,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
-        "priceSeller": "Triplenet Pricing INC",
+        "priceSeller": "QuickDealStore",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -16324,7 +16324,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-18"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -16606,7 +16608,10 @@ export default [
     ],
     "airflow": 86.3,
     "noise": 23.7,
-    "rpm": 1400
+    "rpm": 1400,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-18",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100363,
@@ -17973,7 +17978,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-18"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -19507,13 +19514,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0BNGVWL98?tag=tiereduptech-20",
         "price": 35.69,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "THERMALRIGHT.EUR",
-        "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-18",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "addedAt": "2026-05-15T14:34:31.794Z",
@@ -19947,7 +19952,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20019,13 +20024,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0FD3MRM1B?tag=tiereduptech-20",
         "price": 211.39,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-09-11",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-18",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "addedAt": "2026-05-15T14:34:31.798Z",
