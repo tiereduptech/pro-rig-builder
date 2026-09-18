@@ -44,7 +44,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:00.492Z",
+        "refreshedAt": "2026-09-18T18:50:02.838Z",
         "priceLastMovedAt": "2026-09-14",
         "saleprice": 569.99
       }
@@ -107,18 +107,19 @@ export default [
         "priceConfirmedAt": "2026-09-18"
       },
       "newegg": {
-        "sku": "445831510368650970144944",
-        "itemNumber": "N82E16813119755",
+        "sku": "N82E16813119682",
+        "price": 499.99,
+        "saleprice": 399.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310534690769170361383&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119682%3Fitem%3DN82E16813119682",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-682-16.jpg",
         "sellerClass": "official",
-        "price": 399.99,
-        "saleprice": 377.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831510368650970144944&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-x870e-h-gaming-wifi7-atx-motherboard-amd-x870e-am5%2Fp%2FN82E16813119755%3Fitem%3DN82E16813119755",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-755-02.png",
-        "inStock": true,
         "matchedAt": "2026-09-18T15:31:35.409Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "name",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-18"
+        "refreshedAt": "2026-09-18T18:50:03.025Z",
+        "priceLastMovedAt": "2026-09-18",
+        "migratedAt": "2026-09-18T18:50:03.025Z",
+        "migratedFrom": "445831510368650970144944"
       }
     },
     "value": 9,
@@ -211,7 +212,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:00.841Z",
+        "refreshedAt": "2026-09-18T18:50:03.178Z",
         "priceLastMovedAt": "2026-09-12",
         "saleprice": 258.99
       }
@@ -257,7 +258,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.140Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-18T08:42:00.987Z"
+        "refreshedAt": "2026-09-18T18:50:03.340Z"
       }
     },
     "value": 17,
@@ -337,15 +338,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC7PVM6D0413",
-        "price": 202.44,
+        "price": 197.44,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317889483859636365404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mag-b650m-mortar-wifi-micro-atx-motherboard-amd-b650-am5%2Fp%2FN82E16813144558%3Fitem%3D9SIC7PVM6D0413",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-558-09.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-29T15:58:37.274Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:01.431Z",
-        "priceLastMovedAt": "2026-09-17",
+        "refreshedAt": "2026-09-18T18:50:03.803Z",
+        "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-17T19:30:47.870Z",
         "rematchedFrom": "44583498671282949337832"
       }
@@ -445,9 +446,11 @@ export default [
         "matchScore": 0.9,
         "refreshedAt": "2026-09-13T08:44:20.707Z",
         "priceLastMovedAt": "2026-09-12",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "guard_rejected"
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-18T18:50:03.972Z",
+        "priceSuspectValue": 329.99,
+        "priceSuspectClass": "SUSPECT_PAIR",
+        "priceSuspectStreak": 1
       }
     },
     "value": 67,
@@ -498,7 +501,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.75,
-        "refreshedAt": "2026-09-18T08:42:02.025Z",
+        "refreshedAt": "2026-09-18T18:50:04.415Z",
         "priceLastMovedAt": "2026-09-08",
         "rematchedAt": "2026-09-07T08:51:46.459Z",
         "rematchedFrom": "9SIA2W0KJ71494"
@@ -593,7 +596,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:32.528Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:02.179Z",
+        "refreshedAt": "2026-09-18T18:50:04.553Z",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -648,7 +651,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.654Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:02.327Z"
+        "refreshedAt": "2026-09-18T18:50:04.735Z"
       }
     },
     "value": 61,
@@ -907,7 +910,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.128Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:02.471Z",
+        "refreshedAt": "2026-09-18T18:50:04.938Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -974,9 +977,9 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-14T20:08:49.037Z",
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       },
       "newegg_openbox": {
@@ -1035,18 +1038,19 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445838082438829531923635",
-        "itemNumber": "N82E16813145525",
+        "sku": "N82E16813145526",
+        "price": 289.99,
+        "saleprice": 249.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833999457754832239495&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-wf7-ice-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145526%3Fitem%3DN82E16813145526",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-526-05.jpg",
         "sellerClass": "official",
-        "price": 329.99,
-        "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838082438829531923635&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z890-aorus-elite-x-ice-atx-motherboards-intel-intel-z890-lga-1851%2Fp%2FN82E16813145525%3Fitem%3DN82E16813145525",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-525-05.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-18T15:31:35.596Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "name",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-18"
+        "refreshedAt": "2026-09-18T18:50:05.220Z",
+        "priceLastMovedAt": "2026-09-18",
+        "migratedAt": "2026-09-18T18:50:05.220Z",
+        "migratedFrom": "445838082438829531923635"
       }
     },
     "value": 22,
@@ -1188,8 +1192,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-05T08:01:05.594Z",
         "priceLastMovedAt": "2026-08-28",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -1245,7 +1249,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:50.975Z",
+        "refreshedAt": "2026-09-18T18:50:52.111Z",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -1297,7 +1301,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:37.447Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:51.230Z",
+        "refreshedAt": "2026-09-18T18:50:52.321Z",
         "priceLastMovedAt": "2026-09-17",
         "rematchedAt": "2026-08-28T16:22:28.168Z",
         "rematchedFrom": "445839687874364739217508"
@@ -1397,8 +1401,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.985Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.85,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -1585,8 +1589,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -1642,7 +1646,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.720Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:51.929Z",
+        "refreshedAt": "2026-09-18T18:50:53.024Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -1696,7 +1700,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:52.068Z"
+        "refreshedAt": "2026-09-18T18:50:53.250Z"
       }
     },
     "value": 17,
@@ -1739,18 +1743,19 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445839858375610514091719",
-        "itemNumber": "N82E16813162195",
+        "sku": "N82E16813162196",
+        "price": 159.99,
+        "saleprice": 139.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314944498871885550067&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-pro-rs-wifi-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162196%3Fitem%3DN82E16813162196",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-196-11.jpg",
         "sellerClass": "official",
-        "price": 149.99,
-        "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839858375610514091719&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850m-pro-rs-micro-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162195%3Fitem%3DN82E16813162195",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-195-11.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-18T15:31:35.713Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.8,
-        "priceLastMovedAt": "2026-09-18"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-18T18:50:53.413Z",
+        "priceLastMovedAt": "2026-09-18",
+        "migratedAt": "2026-09-18T18:50:53.413Z",
+        "migratedFrom": "445839858375610514091719"
       }
     },
     "value": 61,
@@ -1804,9 +1809,9 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.130Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceLastMovedAt": "2026-09-03",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -1945,10 +1950,10 @@ export default [
         "rematchedAt": "2026-08-28T16:22:34.065Z",
         "rematchedFrom": "9SIC4RPKRD3367",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:42:52.497Z",
+        "priceSuspectAt": "2026-09-18T18:50:53.706Z",
         "priceSuspectValue": 318.58,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 33
+        "priceSuspectStreak": 34
       }
     },
     "value": 40,
@@ -1992,15 +1997,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIBTK0KAU9685",
-        "price": 174.7,
+        "price": 169.45,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311114972006874991433&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-prime-b660m-a-d4-micro-atx-intel-motherboard-intel-b660-lga-1700-dedicated-lga1700-mounting-bracket-is-required%2Fp%2FN82E16813119541%3Fitem%3D9SIBTK0KAU9685",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-541-V01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-22T12:24:56.259Z",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:52.642Z",
-        "priceLastMovedAt": "2026-09-17",
+        "refreshedAt": "2026-09-18T18:50:53.868Z",
+        "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-17T19:31:36.397Z",
         "rematchedFrom": "9SIC7XKM1K2919"
       }
@@ -2055,7 +2060,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:46.341Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:52.783Z",
+        "refreshedAt": "2026-09-18T18:50:54.024Z",
         "priceLastMovedAt": "2026-09-17",
         "rematchedAt": "2026-09-14T09:31:05.422Z",
         "rematchedFrom": "9SIC6E1M4H6932"
@@ -2188,7 +2193,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:09.330Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:52.922Z",
+        "refreshedAt": "2026-09-18T18:50:54.214Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 79.99
       }
@@ -2285,8 +2290,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       },
       "newegg_openbox": {
@@ -2424,7 +2429,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.064Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:53.318Z"
+        "refreshedAt": "2026-09-18T18:50:54.824Z"
       }
     },
     "discount": 17,
@@ -2491,7 +2496,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:53.513Z",
+        "refreshedAt": "2026-09-18T18:50:54.988Z",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -2558,7 +2563,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.048Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:53.943Z"
+        "refreshedAt": "2026-09-18T18:50:55.430Z"
       }
     },
     "discount": 18,
@@ -2624,7 +2629,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.977Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:54.273Z"
+        "refreshedAt": "2026-09-18T18:50:55.760Z"
       }
     },
     "discount": 39,
@@ -2682,7 +2687,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.712Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:54.448Z",
+        "refreshedAt": "2026-09-18T18:50:55.914Z",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -2773,9 +2778,9 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.020Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -2850,8 +2855,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "guard_rejected"
       }
     },
@@ -2935,7 +2940,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:55.483Z"
+        "refreshedAt": "2026-09-18T18:50:57.333Z"
       }
     },
     "discount": 14,
@@ -3594,7 +3599,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.988Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:55.994Z"
+        "refreshedAt": "2026-09-18T08:42:55.994Z",
+        "refreshMissStreak": 1
       }
     },
     "discount": 30,
@@ -3710,7 +3716,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.657Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:56.294Z"
+        "refreshedAt": "2026-09-18T18:50:58.168Z"
       }
     },
     "discount": 20,
@@ -3783,8 +3789,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -3841,7 +3847,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.974Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:57.419Z"
+        "refreshedAt": "2026-09-18T18:50:59.461Z"
       }
     },
     "discount": 31,
@@ -3899,7 +3905,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:39.934Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:57.562Z",
+        "refreshedAt": "2026-09-18T18:50:59.613Z",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -3958,7 +3964,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.704Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:57.703Z"
+        "refreshedAt": "2026-09-18T18:50:59.776Z"
       }
     },
     "discount": 33,
@@ -4081,8 +4087,8 @@ export default [
         "matchedAt": "2026-08-18T14:21:01.337Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -4138,7 +4144,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:58.158Z",
+        "refreshedAt": "2026-09-18T18:51:00.342Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -4204,7 +4210,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.010Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:58.302Z"
+        "refreshedAt": "2026-09-18T18:51:00.483Z"
       }
     },
     "additionalImages": [
@@ -4269,7 +4275,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.873Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:58.708Z"
+        "refreshedAt": "2026-09-18T18:51:01.058Z"
       }
     },
     "additionalImages": [
@@ -4335,7 +4341,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:12.954Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:58.848Z",
+        "refreshedAt": "2026-09-18T18:51:01.188Z",
         "priceLastMovedAt": "2026-09-17",
         "saleprice": 245.99
       }
@@ -4395,7 +4401,7 @@ export default [
         "matchedAt": "2026-09-17T16:09:58.995Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:59.173Z",
+        "refreshedAt": "2026-09-18T18:51:01.491Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -4461,7 +4467,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.026Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:59.455Z"
+        "refreshedAt": "2026-09-18T18:51:01.819Z"
       }
     },
     "additionalImages": [
@@ -4519,7 +4525,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:42:59.630Z"
+        "refreshedAt": "2026-09-18T18:51:01.988Z"
       }
     },
     "discount": 9,
@@ -4587,13 +4593,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-17T09:08:52.630Z",
+        "priceSuspectAt": "2026-09-18T18:51:02.474Z",
         "priceSuspectValue": 145.48,
         "priceSuspectClass": "SUSPECT_HIGH",
-        "priceSuspectStreak": 7,
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "variant_rejected"
+        "priceSuspectStreak": 8
       }
     },
     "discount": 27,
@@ -4706,7 +4709,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.026Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:00.777Z"
+        "refreshedAt": "2026-09-18T18:51:02.757Z"
       }
     },
     "additionalImages": [
@@ -4775,7 +4778,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.048Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:01.043Z"
+        "refreshedAt": "2026-09-18T18:51:03.065Z"
       }
     },
     "discount": 10,
@@ -4830,18 +4833,19 @@ export default [
         "priceLastMovedAt": "2026-09-15"
       },
       "newegg": {
-        "sku": "4458313318296867444557295",
-        "itemNumber": "N82E16813145520",
+        "sku": "N82E16813145521",
+        "price": 254.99,
+        "saleprice": 247.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583863095522445777536&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870-eagle-wifi7-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813145521%3Fitem%3DN82E16813145521",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-521-06.jpg",
         "sellerClass": "official",
-        "price": 269.99,
-        "saleprice": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313318296867444557295&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-x870-gaming-x-wifi7-atx-motherboard-amd-x870-am5%2Fp%2FN82E16813145520%3Fitem%3DN82E16813145520",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-520-06.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-18T15:31:35.593Z",
-        "matchMethod": "sftp:brand+name",
-        "matchScore": 0.7,
-        "priceLastMovedAt": "2026-09-18"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-18T18:51:03.373Z",
+        "priceLastMovedAt": "2026-09-18",
+        "migratedAt": "2026-09-18T18:51:03.373Z",
+        "migratedFrom": "4458313318296867444557295"
       }
     },
     "discount": 33,
@@ -4908,7 +4912,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:01.602Z"
+        "refreshedAt": "2026-09-18T18:51:03.664Z"
       }
     },
     "additionalImages": [
@@ -4974,7 +4978,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.055Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:01.877Z"
+        "refreshedAt": "2026-09-18T18:51:03.982Z"
       }
     },
     "discount": 15,
@@ -5028,7 +5032,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:34.131Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:02.027Z"
+        "refreshedAt": "2026-09-18T18:51:04.116Z"
       }
     },
     "discount": 7,
@@ -5098,8 +5102,8 @@ export default [
         "priceSuspectValue": 188.96,
         "priceSuspectClass": "SUSPECT_HIGH",
         "priceSuspectStreak": 12,
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 3,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -5173,7 +5177,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.746Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:02.460Z",
+        "refreshedAt": "2026-09-18T18:51:04.625Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -5319,7 +5323,7 @@ export default [
         "matchedAt": "2026-08-29T15:58:47.599Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:02.916Z"
+        "refreshedAt": "2026-09-18T18:51:05.124Z"
       }
     },
     "additionalImages": [
@@ -5380,7 +5384,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:51.028Z",
+        "refreshedAt": "2026-09-18T18:51:52.221Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 89.99
       }
@@ -5440,7 +5444,7 @@ export default [
         "matchedAt": "2026-08-21T12:45:44.937Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:51.584Z",
+        "refreshedAt": "2026-09-18T18:51:52.803Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -5556,7 +5560,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:51.893Z"
+        "refreshedAt": "2026-09-18T18:51:53.114Z"
       }
     },
     "additionalImages": [
@@ -5610,8 +5614,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.015Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -5771,7 +5775,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:52.666Z",
+        "refreshedAt": "2026-09-18T18:51:53.891Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 169.99
       }
@@ -5831,7 +5835,12 @@ export default [
         "refreshedAt": "2026-09-18T08:43:52.924Z",
         "rematchedAt": "2026-09-15T09:11:25.367Z",
         "rematchedFrom": "445838628881093677498698",
-        "priceLastMovedAt": "2026-09-15"
+        "priceLastMovedAt": "2026-09-15",
+        "priceSuspect": true,
+        "priceSuspectAt": "2026-09-18T18:51:54.187Z",
+        "priceSuspectValue": 293.73,
+        "priceSuspectClass": "SUSPECT_PAIR",
+        "priceSuspectStreak": 1
       }
     },
     "discount": 18,
@@ -5892,8 +5901,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-08T08:33:39.976Z",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -5952,20 +5961,15 @@ export default [
       "newegg": {
         "sku": "N82E16813119702",
         "price": 303.99,
-        "saleprice": 284.99,
+        "saleprice": 281.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313626592664928627211&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-rog-strix-b850-f-gaming-wifi-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813119702%3Fitem%3DN82E16813119702",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-119-702-09.png",
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-15T19:29:48.607Z",
-        "priceLastMovedAt": "2026-09-12",
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:43:53.264Z",
-        "priceSuspectValue": 299.99,
-        "priceSuspectClass": "SUSPECT_HIGH",
-        "priceSuspectStreak": 5
+        "refreshedAt": "2026-09-18T18:51:54.636Z",
+        "priceLastMovedAt": "2026-09-18"
       }
     },
     "discount": 9,
@@ -6033,7 +6037,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.056Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:53.708Z"
+        "refreshedAt": "2026-09-18T18:51:55.168Z"
       }
     },
     "discount": 17,
@@ -6123,16 +6127,15 @@ export default [
       "newegg": {
         "sku": "N82E16813162201",
         "price": 209.99,
-        "saleprice": 179.99,
+        "saleprice": 159.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317782560185276275779&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850i-lightning-wifi-mini-itx-motherboard-amd-b850-am5%2Fp%2FN82E16813162201%3Fitem%3DN82E16813162201",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-201-11.jpg",
         "sellerClass": "official",
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "no_results"
+        "refreshedAt": "2026-09-18T18:51:55.575Z",
+        "priceLastMovedAt": "2026-09-18"
       }
     },
     "additionalImages": [
@@ -6198,7 +6201,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:54.761Z"
+        "refreshedAt": "2026-09-18T18:51:56.101Z"
       }
     },
     "discount": 8,
@@ -6262,7 +6265,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "name",
         "matchScore": 0.85,
-        "refreshedAt": "2026-09-18T08:43:55.045Z",
+        "refreshedAt": "2026-09-18T18:51:56.432Z",
         "priceLastMovedAt": "2026-09-04",
         "migratedAt": "2026-09-04T18:49:22.504Z",
         "migratedFrom": "N82E16813145525"
@@ -6320,7 +6323,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.717Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:55.200Z",
+        "refreshedAt": "2026-09-18T18:51:56.672Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -6378,7 +6381,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.177Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:55.658Z",
+        "refreshedAt": "2026-09-18T18:51:57.333Z",
         "priceLastMovedAt": "2026-09-08"
       },
       "newegg_openbox": {
@@ -6459,7 +6462,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:56.142Z"
+        "refreshedAt": "2026-09-18T18:51:57.829Z"
       }
     },
     "discount": 23,
@@ -6649,8 +6652,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-11T18:59:43.959Z",
         "priceLastMovedAt": "2026-09-07",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -6705,8 +6708,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:40.203Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -6760,7 +6763,7 @@ export default [
         "matchedAt": "2026-09-11T15:27:38.275Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:56.878Z",
+        "refreshedAt": "2026-09-18T18:51:58.643Z",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -6809,14 +6812,15 @@ export default [
         "itemNumber": "N82E16813157958",
         "sellerClass": "official",
         "price": 79.99,
-        "saleprice": 72.99,
+        "saleprice": 67.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839397639290498896952&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-a520m-hdv-micro-atx-amd-motherboard-amd-a520-am4%2Fp%2FN82E16813157958%3Fitem%3DN82E16813157958",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-157-958-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-20T12:42:08.177Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:57.305Z"
+        "refreshedAt": "2026-09-18T18:51:59.076Z",
+        "priceLastMovedAt": "2026-09-18"
       }
     },
     "additionalImages": [
@@ -6922,9 +6926,9 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-02T08:22:34.812Z",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "guard_rejected"
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
+        "refreshMissReason": "weak_match_blocked"
       }
     },
     "discount": 5,
@@ -7030,8 +7034,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -7220,7 +7224,7 @@ export default [
         "matchedAt": "2026-09-12T14:43:30.541Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:58.341Z",
+        "refreshedAt": "2026-09-18T18:52:00.404Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -7275,7 +7279,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:34.433Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:58.485Z",
+        "refreshedAt": "2026-09-18T18:52:00.558Z",
         "priceLastMovedAt": "2026-09-15",
         "migratedAt": "2026-09-15T09:11:30.849Z",
         "migratedFrom": "445831082726859289467846"
@@ -7400,7 +7404,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.661Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:58.622Z",
+        "refreshedAt": "2026-09-18T18:52:00.726Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -7479,7 +7483,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-18T08:43:59.086Z",
-        "priceLastMovedAt": "2026-09-04"
+        "priceLastMovedAt": "2026-09-04",
+        "refreshMissStreak": 1
       }
     },
     "discount": 6,
@@ -7544,7 +7549,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.025Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:59.346Z",
+        "refreshedAt": "2026-09-18T18:52:01.580Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -7795,13 +7800,10 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.94,
-        "refreshedAt": "2026-09-17T09:09:52.139Z",
+        "refreshedAt": "2026-09-18T18:52:01.922Z",
         "priceLastMovedAt": "2026-09-15",
         "migratedAt": "2026-09-03T19:05:28.549Z",
-        "migratedFrom": "N82E16813144688",
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "downgrade_blocked"
+        "migratedFrom": "N82E16813144688"
       }
     },
     "discount": 19,
@@ -7908,7 +7910,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:02.954Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:43:59.936Z"
+        "refreshedAt": "2026-09-18T18:52:02.221Z"
       }
     },
     "additionalImages": [
@@ -7977,8 +7979,8 @@ export default [
         "priceLastMovedAt": "2026-09-01",
         "migratedAt": "2026-08-28T16:23:36.859Z",
         "migratedFrom": "N82E16813144671",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -8036,7 +8038,7 @@ export default [
         "matchedAt": "2026-08-22T12:25:05.383Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:00.973Z"
+        "refreshedAt": "2026-09-18T18:52:02.851Z"
       }
     },
     "discount": 19,
@@ -8102,7 +8104,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:01.368Z",
+        "refreshedAt": "2026-09-18T18:52:03.278Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -8166,7 +8168,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:01.657Z",
+        "refreshedAt": "2026-09-18T18:52:03.620Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -8224,7 +8226,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.751Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:01.965Z"
+        "refreshedAt": "2026-09-18T18:52:03.936Z"
       }
     },
     "discount": 23,
@@ -8291,7 +8293,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.967Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-18T08:44:02.246Z"
+        "refreshedAt": "2026-09-18T18:52:04.252Z"
       }
     },
     "additionalImages": [
@@ -8346,7 +8348,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.717Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:02.388Z",
+        "refreshedAt": "2026-09-18T18:52:04.434Z",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -8424,9 +8426,9 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.120Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -8546,7 +8548,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.919Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:02.972Z"
+        "refreshedAt": "2026-09-18T18:52:05.065Z"
       },
       "newegg_openbox": {
         "sku": "445833139511408924854758",
@@ -8655,7 +8657,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.115Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:51.058Z"
+        "refreshedAt": "2026-09-18T18:52:05.519Z"
       }
     },
     "additionalImages": [
@@ -8729,10 +8731,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.924Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T09:10:42.850Z",
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "downgrade_blocked",
-        "refreshMissStreak": 2,
+        "refreshedAt": "2026-09-18T18:52:52.546Z",
         "priceLastMovedAt": "2026-09-15",
         "priceConfirmedAt": "2026-09-18"
       },
@@ -8913,7 +8912,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:42.164Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:51.943Z",
+        "refreshedAt": "2026-09-18T18:52:52.978Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -9044,7 +9043,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:52.140Z",
+        "refreshedAt": "2026-09-18T18:52:53.153Z",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -9102,7 +9101,7 @@ export default [
         "matchedAt": "2026-09-16T16:00:00.596Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:52.535Z",
+        "refreshedAt": "2026-09-18T18:52:53.622Z",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -9154,7 +9153,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:52.806Z",
+        "refreshedAt": "2026-09-18T18:52:53.944Z",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -9202,18 +9201,17 @@ export default [
       },
       "newegg": {
         "sku": "9SIC7VBM5T8901",
-        "price": 197.85,
+        "price": 195.35,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834286113423480255810&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-amd-am5%2Fp%2F2MG-000B-007F2%3Fitem%3D9SIC7VBM5T8901",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506190FFKCM74.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.92,
-        "refreshedAt": "2026-09-17T19:33:37.033Z",
-        "priceLastMovedAt": "2026-09-17",
+        "refreshedAt": "2026-09-18T18:52:54.284Z",
+        "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-13T18:33:15.404Z",
-        "rematchedFrom": "9SIB319M3Z6895",
-        "refreshMissStreak": 1
+        "rematchedFrom": "9SIB319M3Z6895"
       }
     },
     "additionalImages": [
@@ -9260,14 +9258,14 @@ export default [
       },
       "newegg": {
         "sku": "9SIC3DRKN59085",
-        "price": 266.31,
+        "price": 261.91,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835819572396910196517&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-z390-aorus-ultra-atx-intel-motherboard-intel-z390-lga-1151%2Fp%2FN82E16813145090%3Fitem%3D9SIC3DRKN59085",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-090-V01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-19T12:27:59.587Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:53.575Z",
+        "refreshedAt": "2026-09-18T18:52:54.906Z",
         "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-17T19:33:37.580Z",
         "rematchedFrom": "9SIC80CM2Y0694"
@@ -9402,7 +9400,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.971Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:54.006Z",
+        "refreshedAt": "2026-09-18T18:52:55.338Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -9463,7 +9461,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:54.489Z",
+        "refreshedAt": "2026-09-18T18:52:55.847Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 139.99
       }
@@ -9599,7 +9597,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:41.836Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:54.931Z",
+        "refreshedAt": "2026-09-18T18:52:56.297Z",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -9965,7 +9963,7 @@ export default [
         "matchedAt": "2026-08-22T12:24:56.741Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:55.069Z",
+        "refreshedAt": "2026-09-18T18:52:56.445Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -10138,7 +10136,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.869Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:55.564Z"
+        "refreshedAt": "2026-09-18T18:52:57.162Z"
       }
     },
     "additionalImages": [
@@ -10230,7 +10228,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:42.127Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:56.142Z",
+        "refreshedAt": "2026-09-18T18:52:57.641Z",
         "rematchedAt": "2026-09-17T19:33:41.176Z",
         "rematchedFrom": "445838456779807735835711"
       }
@@ -10286,9 +10284,9 @@ export default [
         "matchedAt": "2026-09-17T16:08:56.499Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 2,
+        "refreshMissStreak": 3,
         "priceLastMovedAt": "2026-09-18",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -10353,8 +10351,8 @@ export default [
         "priceSuspectValue": 575.3,
         "priceSuspectClass": "SUSPECT_PAIR",
         "priceSuspectStreak": 15,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -10446,15 +10444,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC7VBM4W2184",
-        "price": 108.35,
+        "price": 112.2,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315598859881955747160&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasus-motherboards-intel-lga-1700%2Fp%2F1JW-000C-01AD6%3Fitem%3D9SIC7VBM4W2184",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BP4YS2506260GWYY0F3.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-08-18T14:17:04.247Z",
         "matchMethod": "name",
         "matchScore": 0.93,
-        "refreshedAt": "2026-09-18T08:44:57.222Z",
-        "priceLastMovedAt": "2026-09-17",
+        "refreshedAt": "2026-09-18T18:52:59.010Z",
+        "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-04T18:50:24.563Z",
         "rematchedFrom": "9SIC6E1M4H6662"
       }
@@ -10514,10 +10512,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:44:57.352Z",
-        "priceSuspectValue": 400.61,
+        "priceSuspectAt": "2026-09-18T18:52:59.146Z",
+        "priceSuspectValue": 398.43,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 44
+        "priceSuspectStreak": 45
       }
     },
     "additionalImages": [
@@ -10665,16 +10663,18 @@ export default [
         "inStock": true
       },
       "newegg": {
-        "sku": "9SIAGBAKU16631",
-        "price": 223.9,
-        "saleprice": null,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313137543815993570612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1HD-0002-007A7%3Fitem%3D9SIAGBAKU16631",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S2511220MS79Y83.jpg",
+        "sku": "9SIC6E1M4J2076",
+        "price": 128.97,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832182985622657342823&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b760m-ds3h-ddr4-micro-atx-motherboard-intel-b760-lga-1700%2Fp%2FN82E16813145426%3Fitem%3D9SIC6E1M4J2076",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-426-01.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
-        "matchMethod": "name",
-        "matchScore": 0.76,
-        "refreshedAt": "2026-09-18T08:44:57.623Z"
+        "matchMethod": "upc",
+        "matchScore": 1,
+        "refreshedAt": "2026-09-18T18:52:59.828Z",
+        "priceLastMovedAt": "2026-09-18",
+        "rematchedAt": "2026-09-18T18:52:59.828Z",
+        "rematchedFrom": "9SIAGBAKU16631"
       }
     },
     "discount": 12,
@@ -10787,7 +10787,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.871Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:58.022Z"
+        "refreshedAt": "2026-09-18T18:53:00.288Z"
       }
     },
     "discount": 5,
@@ -10929,7 +10929,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.015Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:58.209Z"
+        "refreshedAt": "2026-09-18T18:53:00.462Z"
       }
     },
     "discount": 7,
@@ -10980,14 +10980,14 @@ export default [
         "sku": "445838461351614216990738",
         "itemNumber": "9SIC6E1M4J9429",
         "sellerClass": "marketplace",
-        "price": 228.13,
+        "price": 217.98,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838461351614216990738&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-b650i-edge-wifi-mini-itx-motherboard-amd-b650-am5%2Fp%2FN82E16813144556%3Fitem%3D9SIC6E1M4J9429",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-556-16.jpg",
         "inStock": true,
         "matchedAt": "2026-09-08T15:47:22.011Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:58.652Z",
+        "refreshedAt": "2026-09-18T18:53:00.934Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -11043,7 +11043,7 @@ export default [
         "matchedAt": "2026-09-16T16:05:36.736Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:59.063Z",
+        "refreshedAt": "2026-09-18T18:53:01.450Z",
         "rematchedAt": "2026-09-16T19:22:48.224Z",
         "rematchedFrom": "4458314796577573804426798",
         "priceLastMovedAt": "2026-09-18"
@@ -11171,7 +11171,7 @@ export default [
         "matchedAt": "2026-08-21T12:45:05.041Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:44:59.546Z"
+        "refreshedAt": "2026-09-18T18:53:01.888Z"
       }
     },
     "additionalImages": [
@@ -11227,9 +11227,9 @@ export default [
         "matchedAt": "2026-08-18T14:14:32.528Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceLastMovedAt": "2026-09-16",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -11286,7 +11286,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.197Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:00.633Z"
+        "refreshedAt": "2026-09-18T18:53:02.915Z"
       }
     },
     "discount": 5,
@@ -11387,9 +11387,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.177Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -11603,8 +11603,8 @@ export default [
         "matchScore": 0.77,
         "refreshedAt": "2026-09-17T09:10:53.911Z",
         "priceLastMovedAt": "2026-09-13",
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 3,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -11660,10 +11660,10 @@ export default [
         "refreshedAt": "2026-09-17T09:10:54.401Z",
         "priceLastMovedAt": "2026-09-17",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:45:01.996Z",
-        "priceSuspectValue": 186.79,
+        "priceSuspectAt": "2026-09-18T18:53:10.789Z",
+        "priceSuspectValue": 188.37,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 2
+        "priceSuspectStreak": 3
       }
     },
     "additionalImages": [
@@ -11719,7 +11719,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:41.834Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:02.423Z",
+        "refreshedAt": "2026-09-18T18:53:11.254Z",
         "rematchedAt": "2026-09-17T19:33:50.001Z",
         "rematchedFrom": "4458314189280477074003370"
       }
@@ -11820,7 +11820,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-18",
-        "refreshedAt": "2026-09-18T08:45:02.696Z"
+        "refreshedAt": "2026-09-18T08:45:02.696Z",
+        "refreshMissStreak": 1
       }
     },
     "discount": 37,
@@ -11875,7 +11876,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:03.145Z",
+        "refreshedAt": "2026-09-18T18:53:12.140Z",
         "priceLastMovedAt": "2026-09-17",
         "rematchedAt": "2026-09-15T09:12:34.996Z",
         "rematchedFrom": "9SIC6E1M4K7610"
@@ -11935,7 +11936,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.179Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:51.311Z",
+        "refreshedAt": "2026-09-18T18:53:52.412Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
@@ -11990,7 +11991,7 @@ export default [
         "matchedAt": "2026-08-23T12:30:17.832Z",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:51.850Z",
+        "refreshedAt": "2026-09-18T18:53:53.159Z",
         "priceLastMovedAt": "2026-09-17",
         "rematchedAt": "2026-09-02T21:04:25.085Z",
         "rematchedFrom": "4458314050656686274579309"
@@ -12276,7 +12277,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:51.987Z",
+        "refreshedAt": "2026-09-18T18:53:53.316Z",
         "saleprice": 383.99,
         "priceLastMovedAt": "2026-09-05"
       }
@@ -12335,7 +12336,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:52.437Z"
+        "refreshedAt": "2026-09-18T18:53:53.803Z"
       }
     },
     "additionalImages": [
@@ -12534,13 +12535,13 @@ export default [
         "sellerClass": "official",
         "price": 179.99,
         "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445835789308591228861855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850-pro-rs-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162189%3Fitem%3DN82E16813162189",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835789308591228861855&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-b850-pro-rs-atx-motherboard-amd-b850-am5%2Fp%2FN82E16813162189%3Fitem%3DN82E16813162189",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-189-23.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.200Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:52.840Z"
+        "refreshedAt": "2026-09-18T18:53:54.256Z"
       }
     },
     "discount": 7,
@@ -12752,8 +12753,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-10T08:40:28.826Z",
         "priceLastMovedAt": "2026-09-08",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -12900,8 +12901,8 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.583Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -12999,7 +13000,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.977Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:54.161Z"
+        "refreshedAt": "2026-09-18T18:53:55.681Z"
       }
     },
     "discount": 8,
@@ -13053,7 +13054,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:54.375Z",
+        "refreshedAt": "2026-09-18T18:53:55.883Z",
         "priceLastMovedAt": "2026-09-02",
         "rematchedAt": "2026-09-02T21:04:28.401Z",
         "rematchedFrom": "9SIAK14KZP8023"
@@ -13152,7 +13153,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.400Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:54.784Z",
+        "refreshedAt": "2026-09-18T18:53:56.424Z",
         "priceLastMovedAt": "2026-09-09"
       }
     },
@@ -13294,8 +13295,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -13403,7 +13404,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:55.576Z",
+        "refreshedAt": "2026-09-18T18:53:57.382Z",
         "priceLastMovedAt": "2026-09-03"
       }
     },
@@ -13618,7 +13619,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:55.897Z",
+        "refreshedAt": "2026-09-18T18:53:57.684Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -13687,7 +13688,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.900Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:56.306Z"
+        "refreshedAt": "2026-09-18T18:53:58.045Z"
       }
     },
     "discount": 12,
@@ -13743,8 +13744,8 @@ export default [
         "matchedAt": "2026-08-26T12:35:52.461Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -14086,9 +14087,9 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.458Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -14231,7 +14232,7 @@ export default [
         "matchedAt": "2026-08-31T18:43:38.422Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:57.133Z"
+        "refreshedAt": "2026-09-18T18:53:59.041Z"
       }
     },
     "discount": 23,
@@ -14295,7 +14296,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:57.549Z",
+        "refreshedAt": "2026-09-18T18:53:59.515Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
@@ -14416,7 +14417,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:57.824Z",
+        "refreshedAt": "2026-09-18T18:53:59.980Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -14530,7 +14531,7 @@ export default [
         "matchedAt": "2026-09-12T14:40:40.426Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:58.099Z",
+        "refreshedAt": "2026-09-18T18:54:00.285Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -14637,7 +14638,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:58.521Z",
+        "refreshedAt": "2026-09-18T18:54:00.816Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -14709,7 +14710,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:58.795Z"
+        "refreshedAt": "2026-09-18T18:54:01.149Z"
       },
       "newegg_openbox": {
         "sku": "445831767894507938716429",
@@ -14777,7 +14778,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.042Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:59.262Z",
+        "refreshedAt": "2026-09-18T18:54:01.634Z",
         "priceLastMovedAt": "2026-09-05"
       }
     },
@@ -14879,7 +14880,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:59.398Z",
+        "refreshedAt": "2026-09-18T18:54:01.799Z",
         "priceLastMovedAt": "2026-09-02"
       }
     },
@@ -14976,7 +14977,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:59.549Z",
+        "refreshedAt": "2026-09-18T18:54:01.939Z",
         "priceLastMovedAt": "2026-09-17",
         "migratedAt": "2026-09-02T21:04:34.659Z",
         "migratedFrom": "9SIAFVFKKG8380"
@@ -15067,7 +15068,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:41.467Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:45:59.978Z"
+        "refreshedAt": "2026-09-18T18:54:02.397Z"
       }
     },
     "additionalImages": [
@@ -15121,8 +15122,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-14T09:34:16.820Z",
         "priceLastMovedAt": "2026-09-05",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -15279,7 +15280,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.885Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:01.176Z"
+        "refreshedAt": "2026-09-18T18:54:03.420Z"
       }
     },
     "additionalImages": [
@@ -15335,7 +15336,8 @@ export default [
         "matchedAt": "2026-09-18T15:31:28.555Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.7142857142857143,
-        "priceLastMovedAt": "2026-09-18"
+        "priceLastMovedAt": "2026-09-18",
+        "refreshedAt": "2026-09-18T18:54:10.694Z"
       }
     },
     "additionalImages": [
@@ -15398,7 +15400,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.900Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:02.155Z"
+        "refreshedAt": "2026-09-18T18:54:11.253Z"
       }
     },
     "discount": 24,
@@ -15488,10 +15490,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:46:02.290Z",
-        "priceSuspectValue": 289.99,
+        "priceSuspectAt": "2026-09-18T18:54:11.466Z",
+        "priceSuspectValue": 289.95,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 28
+        "priceSuspectStreak": 29
       }
     },
     "discount": 5,
@@ -15651,7 +15653,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:36.217Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:02.560Z"
+        "refreshedAt": "2026-09-18T18:54:11.805Z"
       }
     },
     "additionalImages": [
@@ -15750,7 +15752,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:32.477Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:02.702Z"
+        "refreshedAt": "2026-09-18T18:54:11.979Z"
       }
     },
     "additionalImages": [
@@ -15959,7 +15961,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.681Z",
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
-        "refreshedAt": "2026-09-18T08:46:02.978Z",
+        "refreshedAt": "2026-09-18T18:54:12.275Z",
         "priceLastMovedAt": "2026-09-04"
       }
     },
@@ -16033,8 +16035,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -16091,7 +16093,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:01.128Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:51.859Z",
+        "refreshedAt": "2026-09-18T18:54:53.153Z",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -16191,8 +16193,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-11T19:02:40.460Z",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -16249,8 +16251,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-11T19:02:40.614Z",
         "priceLastMovedAt": "2026-08-29",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -16329,7 +16331,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:52.465Z"
+        "refreshedAt": "2026-09-18T18:54:53.809Z"
       }
     },
     "discount": 16,
@@ -16437,7 +16439,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-18T08:46:52.892Z",
-        "priceConfirmedAt": "2026-09-17"
+        "priceConfirmedAt": "2026-09-17",
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -16581,7 +16584,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:53.184Z",
+        "refreshedAt": "2026-09-18T18:54:54.608Z",
         "priceLastMovedAt": "2026-09-01",
         "saleprice": 79.99
       }
@@ -16835,7 +16838,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.063Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:53.289Z"
+        "refreshedAt": "2026-09-18T18:54:54.759Z"
       }
     },
     "discount": 9,
@@ -16890,9 +16893,9 @@ export default [
         "matchedAt": "2026-09-12T14:42:23.915Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceLastMovedAt": "2026-09-18",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -16982,10 +16985,10 @@ export default [
         "rematchedAt": "2026-08-30T09:46:35.855Z",
         "rematchedFrom": "9SIC6E1M4H5827",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:46:54.186Z",
+        "priceSuspectAt": "2026-09-18T18:54:55.749Z",
         "priceSuspectValue": 229.88,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 6
+        "priceSuspectStreak": 7
       }
     },
     "additionalImages": [
@@ -17082,7 +17085,7 @@ export default [
         "matchedAt": "2026-08-22T12:25:05.436Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:54.383Z"
+        "refreshedAt": "2026-09-18T18:54:55.896Z"
       }
     },
     "additionalImages": [
@@ -17134,7 +17137,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.251Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:54.524Z"
+        "refreshedAt": "2026-09-18T18:54:56.055Z"
       }
     },
     "discount": 6,
@@ -17232,10 +17235,10 @@ export default [
         "rematchedAt": "2026-08-31T21:22:53.433Z",
         "rematchedFrom": "44583475603051404815479",
         "priceSuspect": true,
-        "priceSuspectAt": "2026-09-18T08:46:54.957Z",
+        "priceSuspectAt": "2026-09-18T18:54:56.576Z",
         "priceSuspectValue": 244.96,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 31
+        "priceSuspectStreak": 32
       }
     },
     "mpn": "B550M PRO SE",
@@ -17285,7 +17288,7 @@ export default [
         "matchedAt": "2026-09-11T15:30:26.665Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:55.097Z",
+        "refreshedAt": "2026-09-18T18:54:56.835Z",
         "migratedAt": "2026-09-11T19:02:44.230Z",
         "migratedFrom": "44583848416670250185249",
         "priceLastMovedAt": "2026-09-11"
@@ -17374,7 +17377,8 @@ export default [
         "priceSuspectAt": "2026-09-18T08:46:55.456Z",
         "priceSuspectValue": 349,
         "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 16
+        "priceSuspectStreak": 16,
+        "refreshMissStreak": 1
       }
     },
     "additionalImages": [
@@ -17434,7 +17438,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.056Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:55.593Z",
+        "refreshedAt": "2026-09-18T18:54:57.678Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -17483,7 +17487,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:55.937Z",
+        "refreshedAt": "2026-09-18T18:54:58.059Z",
         "priceLastMovedAt": "2026-09-02",
         "migratedAt": "2026-09-02T08:25:33.803Z",
         "migratedFrom": "N82E16813145558"
@@ -17541,7 +17545,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:19.152Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:56.341Z",
+        "refreshedAt": "2026-09-18T18:54:58.399Z",
         "rematchedAt": "2026-09-04T08:31:11.504Z",
         "rematchedFrom": "4458314282437739883596043",
         "priceLastMovedAt": "2026-09-04"
@@ -17597,7 +17601,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 0.75,
-        "refreshedAt": "2026-09-18T08:46:56.609Z",
+        "refreshedAt": "2026-09-18T18:54:58.711Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -17718,7 +17722,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.036Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:56.879Z"
+        "refreshedAt": "2026-09-18T18:54:59.048Z"
       }
     },
     "discount": 29,
@@ -17927,8 +17931,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-10",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match"
       }
     },
@@ -17988,9 +17992,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.186Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       },
       "newegg_openbox": {
@@ -18108,7 +18112,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.895Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:57.970Z"
+        "refreshedAt": "2026-09-18T18:55:00.453Z"
       }
     },
     "discount": 16,
@@ -18253,7 +18257,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:58.448Z"
+        "refreshedAt": "2026-09-18T18:55:01.021Z"
       }
     },
     "additionalImages": [
@@ -18306,16 +18310,13 @@ export default [
         "itemNumber": "N82E16813162237",
         "sellerClass": "official",
         "price": 319.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445839558651754436587836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870-taichi-creator-motherboard-amd-x870-am5%2Fp%2FN82E16813162237%3Fitem%3DN82E16813162237",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839558651754436587836&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-x870-taichi-creator-motherboard-amd-x870-am5%2Fp%2FN82E16813162237%3Fitem%3DN82E16813162237",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-162-237-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:46.236Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-17T09:12:51.482Z",
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshedAt": "2026-09-18T18:55:01.501Z"
       }
     },
     "additionalImages": [
@@ -18367,7 +18368,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:59.133Z",
+        "refreshedAt": "2026-09-18T18:55:01.776Z",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -18469,9 +18470,9 @@ export default [
         "matchedAt": "2026-09-01T15:53:22.804Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceLastMovedAt": "2026-09-14",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -18517,17 +18518,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458312005663396699316191",
-        "itemNumber": "9SIBP4YM084830",
+        "sku": "9SIC7VBM5T7373",
+        "price": 273.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836472836434268347392&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-pro-b860-p-wifi-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813144694%3Fitem%3D9SIC7VBM5T7373",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-694-12.png",
         "sellerClass": "marketplace",
-        "price": 339.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312005663396699316191&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-001M-00NZ4%3Fitem%3D9SIBP4YM084830",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AET8D2605071EG3P4D3.jpg",
-        "inStock": true,
         "matchedAt": "2026-09-18T15:30:53.634Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "name",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-18"
+        "refreshedAt": "2026-09-18T18:55:02.434Z",
+        "priceLastMovedAt": "2026-09-18",
+        "rematchedAt": "2026-09-18T18:55:02.434Z",
+        "rematchedFrom": "4458312005663396699316191"
       }
     },
     "additionalImages": [
@@ -18581,7 +18583,7 @@ export default [
         "matchedAt": "2026-09-17T16:09:19.430Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:46:59.868Z",
+        "refreshedAt": "2026-09-18T18:55:02.626Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -18637,7 +18639,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.767Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:00.070Z"
+        "refreshedAt": "2026-09-18T18:55:03.014Z"
       }
     },
     "additionalImages": [
@@ -18699,8 +18701,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -18850,7 +18852,7 @@ export default [
         "matchedAt": "2026-08-26T12:35:52.231Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:01.148Z"
+        "refreshedAt": "2026-09-18T18:55:03.793Z"
       }
     },
     "discount": 6,
@@ -18906,7 +18908,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.725Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:01.346Z"
+        "refreshedAt": "2026-09-18T18:55:03.984Z"
       }
     },
     "additionalImages": [
@@ -18960,8 +18962,8 @@ export default [
         "matchMethod": "name",
         "matchScore": 1,
         "refreshedAt": "2026-09-08T08:36:55.550Z",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -19061,7 +19063,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.179Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:02.044Z",
+        "refreshedAt": "2026-09-18T18:55:11.539Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -19249,7 +19251,8 @@ export default [
         "matchedAt": "2026-09-18T15:31:35.501Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-18"
+        "priceLastMovedAt": "2026-09-18",
+        "refreshedAt": "2026-09-18T18:55:11.863Z"
       }
     },
     "additionalImages": [
@@ -19354,7 +19357,8 @@ export default [
         "matchedAt": "2026-09-18T15:31:35.521Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-18"
+        "priceLastMovedAt": "2026-09-18",
+        "refreshedAt": "2026-09-18T18:55:12.301Z"
       }
     },
     "discount": 16,
@@ -19449,8 +19453,8 @@ export default [
         "matchedAt": "2026-08-23T12:30:17.396Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -19498,18 +19502,18 @@ export default [
         "priceUnconfirmedAt": "2026-09-18"
       },
       "newegg": {
-        "sku": "445833731904793729309928",
-        "itemNumber": "9SIC6E1M4J1409",
-        "sellerClass": "marketplace",
-        "price": 170.06,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833731904793729309928&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860m-gaming-x-wifi6e-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145559%3Fitem%3D9SIC6E1M4J1409",
+        "sku": "9SIC7VBM160033",
+        "price": 206.77,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458316791617924526188503&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigabyte-b860m-gaming-x-wifi6e-micro-atx-motherboard-intel-b860-lga-1851%2Fp%2FN82E16813145559%3Fitem%3D9SIC7VBM160033",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-145-559-01.jpg",
-        "inStock": true,
+        "sellerClass": "marketplace",
         "matchedAt": "2026-09-17T16:13:03.820Z",
-        "matchMethod": "sftp:upc",
+        "matchMethod": "upc",
         "matchScore": 1,
+        "refreshedAt": "2026-09-18T18:55:52.964Z",
         "priceLastMovedAt": "2026-09-18",
-        "refreshedAt": "2026-09-18T08:47:51.474Z"
+        "rematchedAt": "2026-09-18T18:55:52.964Z",
+        "rematchedFrom": "445833731904793729309928"
       }
     },
     "discount": 6,
@@ -19564,8 +19568,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -19632,9 +19636,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.010Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -19689,9 +19693,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.731Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       },
       "newegg_openbox": {
@@ -19838,7 +19842,7 @@ export default [
         "matchedAt": "2026-08-24T12:32:45.998Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:53.487Z",
+        "refreshedAt": "2026-09-18T18:55:55.268Z",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -19990,7 +19994,7 @@ export default [
         "matchedAt": "2026-09-07T16:54:41.506Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:53.759Z",
+        "refreshedAt": "2026-09-18T18:55:55.643Z",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -20092,7 +20096,7 @@ export default [
         "matchedAt": "2026-08-29T15:56:30.980Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:54.216Z",
+        "refreshedAt": "2026-09-18T18:55:56.123Z",
         "rematchedAt": "2026-09-17T19:36:38.715Z",
         "rematchedFrom": "445834294210325360635717",
         "priceLastMovedAt": "2026-09-17"
@@ -20149,8 +20153,8 @@ export default [
         "matchedAt": "2026-08-18T14:16:19.099Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match"
       }
     },
@@ -20247,8 +20251,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-12T08:25:15.546Z",
         "priceLastMovedAt": "2026-09-09",
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_results"
       }
     },
@@ -20305,9 +20309,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.186Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -20362,7 +20366,7 @@ export default [
         "matchedAt": "2026-08-18T14:16:19.156Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:56.360Z",
+        "refreshedAt": "2026-09-18T18:55:58.401Z",
         "rematchedAt": "2026-09-04T08:32:11.473Z",
         "rematchedFrom": "4458316797500646996234023",
         "priceLastMovedAt": "2026-09-04"
@@ -20410,15 +20414,15 @@ export default [
       },
       "newegg": {
         "sku": "9SIC7VBM5B1931",
-        "price": 99.8,
+        "price": 97.87,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314044774484286297302&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1JW-000J-00EP1%3Fitem%3D9SIC7VBM5B1931",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A1K6S25080215MWNAD7.jpg",
         "sellerClass": "marketplace",
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:56.636Z",
-        "priceLastMovedAt": "2026-09-17",
+        "refreshedAt": "2026-09-18T18:55:58.715Z",
+        "priceLastMovedAt": "2026-09-18",
         "rematchedAt": "2026-09-15T19:33:52.755Z",
         "rematchedFrom": "9SIC6E1M518920"
       }
@@ -20509,9 +20513,9 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-07T08:57:41.786Z",
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-17"
       }
     },
@@ -20624,7 +20628,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.928Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:57.347Z"
+        "refreshedAt": "2026-09-18T18:55:59.578Z"
       },
       "newegg_openbox": {
         "sku": "4458310803938235110206714",
@@ -20709,8 +20713,8 @@ export default [
         "matchScore": 1,
         "refreshedAt": "2026-09-17T09:13:49.913Z",
         "priceLastMovedAt": "2026-09-01",
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 3,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match"
       }
     },
@@ -20807,7 +20811,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:58.125Z"
+        "refreshedAt": "2026-09-18T18:56:00.677Z"
       }
     },
     "additionalImages": [
@@ -20906,8 +20910,8 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       },
       "newegg_openbox": {
@@ -20975,7 +20979,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:08.926Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:58.895Z"
+        "refreshedAt": "2026-09-18T18:56:01.515Z"
       }
     },
     "additionalImages": [
@@ -21070,7 +21074,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.115Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:59.324Z"
+        "refreshedAt": "2026-09-18T18:56:01.998Z"
       }
     },
     "additionalImages": [
@@ -21125,7 +21129,7 @@ export default [
         "matchedAt": "2026-08-28T21:46:29.298Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:47:59.573Z"
+        "refreshedAt": "2026-09-18T18:56:02.293Z"
       }
     },
     "additionalImages": [
@@ -21311,8 +21315,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:38.227Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -21467,8 +21471,8 @@ export default [
         "priceSuspectValue": 212.09,
         "priceSuspectClass": "SUSPECT_VS_LIST",
         "priceSuspectStreak": 10,
-        "refreshMissStreak": 6,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 7,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "variant_rejected"
       }
     },
@@ -21505,14 +21509,14 @@ export default [
         "sku": "445832930489900786619153",
         "itemNumber": "9SIC6E1M4J2049",
         "sellerClass": "marketplace",
-        "price": 587.01,
+        "price": 576.86,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832930489900786619153&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-mpg-x670e-carbon-wifi-atx-motherboards-amd-amd-x670e-am5%2Fp%2FN82E16813144550%3Fitem%3D9SIC6E1M4J2049",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/13-144-550-09.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:33.963Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:01.185Z",
+        "refreshedAt": "2026-09-18T18:56:03.813Z",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -21587,8 +21591,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-17T09:13:54.171Z",
-        "refreshMissStreak": 2,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissStreak": 3,
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked"
       }
     },
@@ -21673,7 +21677,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.982Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:01.791Z"
+        "refreshedAt": "2026-09-18T18:56:10.920Z"
       }
     },
     "socket": "LGA1700",
@@ -21722,7 +21726,7 @@ export default [
         "matchedAt": "2026-08-23T12:30:32.569Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:02.075Z",
+        "refreshedAt": "2026-09-18T18:56:11.804Z",
         "priceLastMovedAt": "2026-09-09"
       }
     },
@@ -21772,7 +21776,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:39.939Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:02.351Z"
+        "refreshedAt": "2026-09-18T18:56:12.128Z"
       }
     },
     "socket": "LGA1851",
@@ -21811,7 +21815,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.696Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:02.650Z",
+        "refreshedAt": "2026-09-18T18:56:12.704Z",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -21977,9 +21981,9 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.885Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "downgrade_blocked",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-18"
       }
@@ -22077,7 +22081,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:03.243Z"
+        "refreshedAt": "2026-09-18T18:56:52.530Z"
       }
     },
     "socket": "AM5",
@@ -22136,7 +22140,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.901Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:51.279Z"
+        "refreshedAt": "2026-09-18T18:56:52.880Z"
       }
     },
     "socket": "AM5",
@@ -22195,10 +22199,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.868Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-16T09:08:30.164Z",
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
-        "refreshMissReason": "downgrade_blocked",
-        "refreshMissStreak": 4,
+        "refreshedAt": "2026-09-18T18:56:53.240Z",
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -22382,9 +22383,9 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.274Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-18T08:39:49.950Z",
+        "refreshMissedAt": "2026-09-18T18:47:51.205Z",
         "refreshMissReason": "no_match",
-        "refreshMissStreak": 6,
+        "refreshMissStreak": 7,
         "priceConfirmedAt": "2026-09-18"
       }
     },
@@ -22432,7 +22433,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.084Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:52.384Z",
+        "refreshedAt": "2026-09-18T18:56:54.053Z",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -22491,7 +22492,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.916Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:52.682Z"
+        "refreshedAt": "2026-09-18T18:56:54.568Z"
       }
     },
     "socket": "AM5",
@@ -22549,7 +22550,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.895Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:52.938Z"
+        "refreshedAt": "2026-09-18T18:56:54.925Z"
       }
     },
     "socket": "LGA1851",
@@ -22602,7 +22603,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.738Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:53.251Z",
+        "refreshedAt": "2026-09-18T18:56:55.261Z",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -22680,7 +22681,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.733Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:53.493Z"
+        "refreshedAt": "2026-09-18T18:56:55.582Z"
       },
       "newegg_openbox": {
         "sku": "4458311166770362855035680",
@@ -22732,7 +22733,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.123Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:53.772Z"
+        "refreshedAt": "2026-09-18T18:56:55.943Z"
       }
     },
     "socket": "AM5",
@@ -22789,7 +22790,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.932Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:54.136Z",
+        "refreshedAt": "2026-09-18T18:56:56.279Z",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -22938,7 +22939,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.932Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:54.440Z"
+        "refreshedAt": "2026-09-18T18:56:56.560Z"
       }
     },
     "socket": "AM5",
@@ -23759,7 +23760,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:45.762Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:54.561Z"
+        "refreshedAt": "2026-09-18T08:48:54.561Z",
+        "refreshMissStreak": 1
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
@@ -24132,7 +24134,7 @@ export default [
         "matchedAt": "2026-07-22",
         "matchMethod": "name",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:54.729Z",
+        "refreshedAt": "2026-09-18T18:56:56.890Z",
         "priceLastMovedAt": "2026-09-05"
       }
     },
@@ -24403,7 +24405,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.424Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-18T08:48:54.869Z"
+        "refreshedAt": "2026-09-18T18:56:57.038Z"
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",
