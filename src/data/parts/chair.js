@@ -90,13 +90,11 @@ export default [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0GFPWZ82H?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-18",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-17"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     }
   },
@@ -119,7 +117,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "SIHOO",
-        "priceConfirmedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-18",
         "priceResolvedVia": "dataforseo"
       }
     }
@@ -142,7 +140,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Holludle",
-        "priceConfirmedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-18",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -192,8 +190,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CQD3K8PJ?tag=tiereduptech-20",
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "TRALT",
-        "priceConfirmedAt": "2026-09-17",
+        "priceSeller": "TRALT-US",
+        "priceConfirmedAt": "2026-09-18",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -221,7 +219,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-17"
+        "priceUnconfirmedAt": "2026-09-18"
       }
     }
   },
@@ -242,7 +240,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09D33BXHL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-18",
         "priceSource": "3p",
         "priceSeller": "XISHE CHAIR",
         "priceResolvedVia": "dataforseo"
@@ -267,7 +265,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-18",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -295,7 +293,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-17"
+        "priceUnconfirmedAt": "2026-09-18"
       }
     }
   }
