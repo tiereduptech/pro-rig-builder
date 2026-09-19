@@ -145,7 +145,7 @@ export default [
         "sku": "6619462",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "baseClock": 2295,
@@ -4059,7 +4059,7 @@ export default [
         "sku": "6671699",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-16"
       },
       "newegg": {
@@ -4228,7 +4228,7 @@ export default [
         "sku": "6629367",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -4346,7 +4346,7 @@ export default [
         "sku": "6617114",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458312483729121480322576",
@@ -4410,7 +4410,7 @@ export default [
         "sku": "6615831",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "additionalImages": [
@@ -4560,7 +4560,7 @@ export default [
         "sku": "6671698",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -4667,7 +4667,7 @@ export default [
         "sku": "6613334",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-08"
       },
       "newegg": {
@@ -4951,7 +4951,7 @@ export default [
         "sku": "6672757",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-13"
       },
       "msi": {
@@ -7154,7 +7154,7 @@ export default [
         "sku": "6631088",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 789.99,
@@ -7877,7 +7877,7 @@ export default [
         "sku": "6630571",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-08-30"
       }
     },
@@ -7963,7 +7963,7 @@ export default [
         "sku": "6615233",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1649.99,
@@ -8479,7 +8479,7 @@ export default [
         "sku": "6632718",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 489.99,
@@ -9279,7 +9279,7 @@ export default [
         "sku": "6468931",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 3060",
@@ -9438,7 +9438,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceLastMovedAt": "2026-08-29",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 359.99,
@@ -9499,7 +9499,7 @@ export default [
         "sku": "6588302",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 279.99,
@@ -9560,7 +9560,7 @@ export default [
         "sku": "6597530",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -9641,7 +9641,7 @@ export default [
         "sku": "6613333",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-15"
       },
       "newegg": {
@@ -9705,7 +9705,7 @@ export default [
         "sku": "6613335",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-08-30"
       },
       "newegg": {
@@ -9772,7 +9772,7 @@ export default [
         "sku": "6614119",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9813,7 +9813,7 @@ export default [
         "sku": "6614120",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458315646197290777529105",
@@ -9863,7 +9863,7 @@ export default [
         "sku": "6614740",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458310896375190425372521",
@@ -9913,7 +9913,7 @@ export default [
         "sku": "6614741",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458311361946608670386200",
@@ -9964,7 +9964,7 @@ export default [
         "sku": "6614742",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458316526184115046836758",
@@ -10014,7 +10014,7 @@ export default [
         "sku": "6614743",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10094,7 +10094,7 @@ export default [
         "sku": "6614787",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-08-30"
       },
       "newegg_openbox": {
@@ -10159,7 +10159,7 @@ export default [
         "sku": "6615227",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1799.99,
@@ -10219,7 +10219,7 @@ export default [
         "sku": "6615239",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1549.99,
@@ -10379,7 +10379,7 @@ export default [
         "sku": "6615929",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10420,7 +10420,7 @@ export default [
         "sku": "6615930",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10511,7 +10511,7 @@ export default [
         "sku": "6616090",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 4238.99,
@@ -10569,7 +10569,7 @@ export default [
         "sku": "6616095",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 4599.99,
@@ -10629,7 +10629,7 @@ export default [
         "sku": "6616100",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458316670186518050524674",
@@ -10693,7 +10693,7 @@ export default [
         "sku": "6616102",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-17"
       },
       "newegg": {
@@ -10745,7 +10745,7 @@ export default [
         "sku": "6616903",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10821,7 +10821,7 @@ export default [
         "sku": "6617487",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10862,7 +10862,7 @@ export default [
         "sku": "6617866",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-07"
       },
       "newegg": {
@@ -10947,7 +10947,7 @@ export default [
         "sku": "6618880",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458312199583266327364218",
@@ -11041,7 +11041,7 @@ export default [
         "sku": "6618883",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445838282168201662500127",
@@ -11091,7 +11091,7 @@ export default [
         "sku": "6618884",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445837104039445414289179",
@@ -11141,7 +11141,7 @@ export default [
         "sku": "6619436",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 849.99,
@@ -11234,7 +11234,7 @@ export default [
         "sku": "6620352",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11270,7 +11270,7 @@ export default [
         "sku": "6620354",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11311,7 +11311,7 @@ export default [
         "sku": "6620367",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11346,14 +11346,14 @@ export default [
     "mpn": "VCG5070T16TFXXPB1-O",
     "deals": {
       "bestbuy": {
-        "price": 1349.99,
+        "price": 1249.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620368&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fpny-geforce-rtx-5070-ti-16gb-argb-oc-gddr7-pci-express-5-0-graphics-card-with-triple-fan-black%2FJXF2C464GZ&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6620368",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
-        "priceLastMovedAt": "2026-09-15"
+        "priceConfirmedAt": "2026-09-19",
+        "priceLastMovedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458310552061468811885112",
@@ -11403,7 +11403,7 @@ export default [
         "sku": "6620452",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11444,7 +11444,7 @@ export default [
         "sku": "6620453",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -11476,11 +11476,11 @@ export default [
       "bestbuy": {
         "price": 849.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6620455&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6620455.p%3FskuId%3D6620455",
-        "inStock": false,
+        "inStock": true,
         "sku": "6620455",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11516,7 +11516,7 @@ export default [
         "sku": "6620456",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11552,7 +11552,7 @@ export default [
         "sku": "6620457",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -11588,7 +11588,7 @@ export default [
         "sku": "6620458",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11624,7 +11624,7 @@ export default [
         "sku": "6620605",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1169.99,
@@ -11724,7 +11724,7 @@ export default [
         "sku": "6621080",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11760,7 +11760,7 @@ export default [
         "sku": "6621261",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458313406832514703100995",
@@ -11811,7 +11811,7 @@ export default [
         "sku": "6621265",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458318276972651160204151",
@@ -11862,7 +11862,7 @@ export default [
         "sku": "6621982",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11903,7 +11903,7 @@ export default [
         "sku": "6628261",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445838335532347964154996",
@@ -11953,7 +11953,7 @@ export default [
         "sku": "6628262",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -12037,7 +12037,7 @@ export default [
         "sku": "6629359",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -12079,7 +12079,7 @@ export default [
         "sku": "6629363",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -12121,7 +12121,7 @@ export default [
         "sku": "6629368",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-01"
       }
     },
@@ -12195,7 +12195,7 @@ export default [
         "sku": "6630575",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12231,7 +12231,7 @@ export default [
         "sku": "6630626",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12267,7 +12267,7 @@ export default [
         "sku": "6631084",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 799.99,
@@ -12327,7 +12327,7 @@ export default [
         "sku": "6631085",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1249.99,
@@ -12388,7 +12388,7 @@ export default [
         "sku": "6632191",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "4458311169568038019010817",
@@ -12438,7 +12438,7 @@ export default [
         "sku": "6632193",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-07"
       }
     },
@@ -12476,7 +12476,7 @@ export default [
         "sku": "6632704",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12557,7 +12557,7 @@ export default [
         "sku": "6632713",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-14"
       },
       "msi": {
@@ -12619,7 +12619,7 @@ export default [
         "sku": "6632715",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 459.99,
@@ -12679,7 +12679,7 @@ export default [
         "sku": "6632716",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 459.99,
@@ -12739,7 +12739,7 @@ export default [
         "sku": "6632720",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 459.99,
@@ -12841,7 +12841,7 @@ export default [
         "sku": "6632944",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12877,7 +12877,7 @@ export default [
         "sku": "6632945",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -12919,7 +12919,7 @@ export default [
         "sku": "6632946",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -12956,7 +12956,7 @@ export default [
         "sku": "6632948",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -12997,7 +12997,7 @@ export default [
         "sku": "6632993",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445831465555682926391145",
@@ -13048,7 +13048,7 @@ export default [
         "sku": "6633162",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-05"
       }
     },
@@ -13090,7 +13090,7 @@ export default [
         "sku": "6633165",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 519.99,
@@ -13150,7 +13150,7 @@ export default [
         "sku": "6633167",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-05"
       },
       "newegg": {
@@ -13201,7 +13201,7 @@ export default [
         "sku": "6634557",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 839.99,
@@ -13303,7 +13303,7 @@ export default [
         "sku": "6634566",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 799.99,
@@ -13508,7 +13508,7 @@ export default [
         "sku": "6638591",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 409.99,
@@ -13554,7 +13554,7 @@ export default [
         "sku": "6638592",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 429.99,
@@ -13615,7 +13615,7 @@ export default [
         "sku": "6638594",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 399.99,
@@ -13674,7 +13674,7 @@ export default [
         "sku": "6638643",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13710,7 +13710,7 @@ export default [
         "sku": "6638853",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13746,7 +13746,7 @@ export default [
         "sku": "6644034",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-04"
       },
       "newegg": {
@@ -13798,7 +13798,7 @@ export default [
         "sku": "6647992",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -13834,7 +13834,7 @@ export default [
         "sku": "6665010",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceLastMovedAt": "2026-09-17"
       },
       "msi": {
@@ -13890,11 +13890,11 @@ export default [
       "bestbuy": {
         "price": 739.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6671162&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fasrock-challenger-radeon-rx-9070-xt-16gb-gddr6-pci-express-5-0-graphics-card%2FC34FQFQ6VV&intsrc=APIG_28060",
-        "inStock": false,
+        "inStock": true,
         "sku": "6671162",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -13929,7 +13929,7 @@ export default [
         "sku": "6671163",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070",
@@ -13964,7 +13964,7 @@ export default [
         "sku": "6671164",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -14000,7 +14000,7 @@ export default [
         "sku": "6672758",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -14041,7 +14041,7 @@ export default [
         "sku": "6676832",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "model": "GeForce RTX 5070",
@@ -14082,7 +14082,7 @@ export default [
         "sku": "6676833",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1199.99,
@@ -14142,7 +14142,7 @@ export default [
         "sku": "6676835",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445839046081871202297170",
@@ -14192,7 +14192,7 @@ export default [
         "sku": "6676839",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-18"
+        "priceConfirmedAt": "2026-09-19"
       },
       "msi": {
         "price": 1699.99,
