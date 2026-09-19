@@ -2351,7 +2351,7 @@ export default [
     "reviews": 2719,
     "deals": {
       "amazon": {
-        "price": 51.99,
+        "price": 46.99,
         "url": "https://www.amazon.com/dp/B0B4MVDRX4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
@@ -4599,7 +4599,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "JiangYaLong658",
+        "priceSeller": "MARU3-SHOP",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5182,7 +5182,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "JiangYaLong658",
+        "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

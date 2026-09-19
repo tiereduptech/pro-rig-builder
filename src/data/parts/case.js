@@ -11512,7 +11512,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "445831664814297187919542",
@@ -20810,11 +20812,11 @@ export default [
       "amazon": {
         "asin": "B0CS3T8BVF",
         "url": "https://www.amazon.com/dp/B0CS3T8BVF?tag=tiereduptech-20",
-        "price": 184.99,
+        "price": 197.7,
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -23415,15 +23417,13 @@ export default [
       "amazon": {
         "asin": "B0D92C2F6K",
         "url": "https://www.amazon.com/dp/B0D92C2F6K?tag=tiereduptech-20",
-        "price": 39.99,
+        "price": 59.99,
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Hashtag PC Gear",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-12",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-19"
       }
     },
     "needsReview": false,

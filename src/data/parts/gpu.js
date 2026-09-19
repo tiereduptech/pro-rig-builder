@@ -371,13 +371,11 @@ export default [
         "price": 1639.95,
         "url": "https://www.amazon.com/dp/B0BMZ9TGH1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
         "priceSeller": "TekDepo(We Record SN#)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceConfidence": "confirmed"
       }
     },
     "baseClock": 2205,
@@ -898,12 +896,12 @@ export default [
     "bench": 45,
     "deals": {
       "amazon": {
-        "price": 422.25,
+        "price": 479.99,
         "url": "https://www.amazon.com/dp/B08WPRMVWB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "LAVATRONS",
+        "priceSeller": "CR Distributors (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4047,7 +4045,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-19"
       },
       "bestbuy": {
@@ -4273,7 +4271,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "IPC-STORE✅",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-19"
       },
       "newegg": {
         "sku": "44583510508037670625616",
@@ -4329,8 +4329,8 @@ export default [
         "price": 1649.99,
         "url": "https://www.amazon.com/dp/B0DTJDR3V9?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Fast and Precise by Staples",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
         "priceConfirmedAt": "2026-09-19"
@@ -4647,13 +4647,11 @@ export default [
         "price": 2005.99,
         "url": "https://www.amazon.com/dp/B0DQSD7YQC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 2099.99,
@@ -5838,7 +5836,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "DEVECHO INC",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-19"
       }
     },
     "additionalImages": [
@@ -6257,7 +6257,10 @@ export default [
     "boostClock": 2520,
     "pcie": "4.0 x16",
     "slots": 3,
-    "memType": "GDDR6X"
+    "memType": "GDDR6X",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-19",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 30154,
@@ -16761,7 +16764,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-19"
       }
     },
     "vram": 16,
@@ -17039,13 +17044,11 @@ export default [
         "url": "https://www.amazon.com/dp/B08VHWFWSD?tag=tiereduptech-20",
         "price": 109.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-16",
+        "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
         "priceSeller": "MAXSUN official",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceConfidence": "confirmed"
       }
     },
     "vram": 4,
@@ -17537,7 +17540,7 @@ export default [
       "amazon": {
         "asin": "B0CTJZCJH1",
         "url": "https://www.amazon.com/dp/B0CTJZCJH1?tag=tiereduptech-20",
-        "price": 219.99,
+        "price": 243.99,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "1p",
@@ -18606,7 +18609,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "OfficeNation, Inc.",
+        "priceSeller": "SpaceBound",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

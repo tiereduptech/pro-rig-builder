@@ -85,8 +85,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FPBQCLFQ?tag=tiereduptech-20",
         "price": 210.17,
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-19",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
@@ -159,7 +159,9 @@ export default [
         "priceSeller": "Byte-TechDirect",
         "priceConfirmedAt": "2026-09-19",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-19"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -2723,16 +2725,14 @@ export default [
     "reviews": 427,
     "deals": {
       "amazon": {
-        "price": 279.99,
+        "price": 299.99,
         "url": "https://www.amazon.com/dp/B0D9GV78D8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-14",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceConfirmedAt": "2026-09-19",
+        "priceSource": "3p",
+        "priceSeller": "SPICY BOMB💣",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 299.99,
@@ -9866,8 +9866,8 @@ export default [
         "price": 46.49,
         "url": "https://www.amazon.com/dp/B0C6YQ8DPQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceSource": "3p",
-        "priceSeller": "Alakhras LLC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-19",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
@@ -11577,7 +11577,7 @@ export default [
     "reviews": 47,
     "deals": {
       "amazon": {
-        "price": 227.76,
+        "price": 249.96,
         "url": "https://www.amazon.com/dp/B0CD759GSY?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -16347,13 +16347,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0F5SCG6QC?tag=tiereduptech-20",
         "price": 149.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-19",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",
@@ -18002,8 +18000,8 @@ export default [
         "price": 136.49,
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "OneDealOutlet Online",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -19979,7 +19977,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "Northwind Studio",
+        "priceSeller": "UnrealDeals (SERIAL NUMBERS RECORDED)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20861,7 +20859,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-19",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
