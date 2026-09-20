@@ -234,13 +234,11 @@ export default [
         "price": 476.99,
         "url": "https://www.amazon.com/dp/B0CDY46PFK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 499.99,
@@ -378,13 +376,11 @@ export default [
         "price": 285.99,
         "url": "https://www.amazon.com/dp/B0D2P1CVQD?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-16",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 294.99,
@@ -820,7 +816,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "Fomaso905ics (S/N recorded; Ban freight forwarder)",
+        "priceSeller": "RapidShip (S/N Recorder)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1077,12 +1073,12 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 79,
+        "price": 74.99,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "DiscTech (USA)",
+        "priceSeller": "Cyterus",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1427,7 +1423,7 @@ export default [
     "reviews": 450,
     "deals": {
       "amazon": {
-        "price": 305.3,
+        "price": 349,
         "url": "https://www.amazon.com/dp/B09T97ZSVB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
@@ -2764,12 +2760,12 @@ export default [
     "reviews": 11553,
     "deals": {
       "amazon": {
-        "price": 302.03,
+        "price": 437.17,
         "url": "https://www.amazon.com/dp/B082DGZJ9C?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Sanaa Direct (Serial Number Recorded)",
         "priceConfirmedAt": "2026-09-20",
         "priceResolvedVia": "dataforseo"
       }
@@ -10136,11 +10132,11 @@ export default [
       "amazon": {
         "asin": "B08C4LXXCJ",
         "url": "https://www.amazon.com/dp/B08C4LXXCJ?tag=tiereduptech-20",
-        "price": 255,
+        "price": 234.09,
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "DEVECHO INC",
+        "priceSeller": "Blue Orbit Commerce Group",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -10857,7 +10853,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "TheTechGroup",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

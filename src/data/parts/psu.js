@@ -9346,8 +9346,8 @@ export default [
         "price": 139.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Platinum Micro, Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10079,7 +10079,10 @@ export default [
     "eff": "80+ Platinum",
     "modular": "Full",
     "addedAt": "2026-05-15T13:17:14.417Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-20",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100488,
@@ -11792,8 +11795,8 @@ export default [
         "price": 184.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
-        "priceSource": "3p",
-        "priceSeller": "Square Four (SN recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

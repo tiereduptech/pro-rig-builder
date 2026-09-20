@@ -159,7 +159,9 @@ export default [
         "priceSeller": "Byte-TechDirect",
         "priceConfirmedAt": "2026-09-20",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "addedAt": "2026-05-15T16:31:54.664Z",
@@ -2730,7 +2732,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Provantage LLC",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-20"
       },
       "bestbuy": {
         "price": 299.99,
@@ -5629,9 +5633,11 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-20",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       },
       "bestbuy": {
         "price": 24.99,
@@ -18943,7 +18949,10 @@ export default [
       "AM4"
     ],
     "noise": 31.4,
-    "rpm": 1500
+    "rpm": 1500,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-20",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100950,
@@ -19911,7 +19920,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "Woot",
+        "priceSeller": "Smoove Sales LLC (Serial Numbers Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -19984,7 +19993,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "UnrealDeals (SERIAL NUMBERS RECORDED)",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20532,8 +20541,8 @@ export default [
         "price": 60.94,
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "IHTP",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20866,7 +20875,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "Byte-TechDirect",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

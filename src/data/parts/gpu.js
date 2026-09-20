@@ -375,7 +375,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "TekDepo(We Record SN#)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "baseClock": 2205,
@@ -1305,7 +1307,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "baseClock": 1700,
@@ -1343,7 +1347,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "baseClock": 1980,
@@ -1563,7 +1569,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "baseClock": 2150,
@@ -3704,7 +3712,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "sp": 3840,
@@ -6858,7 +6868,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "Everlast Computers",
+        "priceSeller": "Wholesale Haven",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -16763,13 +16773,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0FSSYTD49?tag=tiereduptech-20",
         "price": 799,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceConfidence": "confirmed"
       }
     },
     "vram": 16,
@@ -17546,8 +17554,8 @@ export default [
         "price": 273.9,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "3p",
-        "priceSeller": "Gear(4)Less",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-20",
         "priceResolvedVia": "dataforseo"
       }
@@ -17771,11 +17779,13 @@ export default [
         "url": "https://www.amazon.com/dp/B081SPGMBD?tag=tiereduptech-20",
         "price": 229.22,
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "New Cycle Electronics",
         "priceConfirmedAt": "2026-09-20",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "addedAt": "2026-05-15T14:34:31.773Z",

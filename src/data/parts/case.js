@@ -486,7 +486,7 @@ export default [
     "tg": true,
     "deals": {
       "amazon": {
-        "price": 574.51,
+        "price": 609.99,
         "url": "https://www.amazon.com/dp/B09TL7Z2DZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
@@ -2360,7 +2360,7 @@ export default [
     "reviews": 743,
     "deals": {
       "amazon": {
-        "price": 49.99,
+        "price": 54.99,
         "url": "https://www.amazon.com/dp/B00J0NZ3Q4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
@@ -2746,7 +2746,10 @@ export default [
       280,
       240
     ],
-    "bench": 76
+    "bench": 76,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-20",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 70048,
@@ -5934,12 +5937,12 @@ export default [
     "reviews": 739,
     "deals": {
       "amazon": {
-        "price": 99.97,
+        "price": 109.99,
         "url": "https://www.amazon.com/dp/B0CWSV3JQR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
-        "priceSource": "3p",
-        "priceSeller": "FlashDeal Store",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -7241,7 +7244,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "Pro Gamersware",
+        "priceSeller": "Pro Gamersware USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20809,11 +20812,11 @@ export default [
       "amazon": {
         "asin": "B0CS3T8BVF",
         "url": "https://www.amazon.com/dp/B0CS3T8BVF?tag=tiereduptech-20",
-        "price": 184.99,
+        "price": 197.7,
         "inStock": true,
         "priceConfirmedAt": "2026-09-20",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -22689,11 +22692,9 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Vetroo",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-12",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-20"
       }
     },
     "needsReview": false,
@@ -23420,8 +23421,10 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Hashtag PC Gear",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-20",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-20"
       }
     },
     "needsReview": false,
