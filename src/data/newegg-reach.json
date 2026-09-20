@@ -6,11 +6,11 @@
   "observedAt": "2026-09-09T09:42:25.889Z",
   "run": "34329635541",
   "last": {
-    "reach": 0.6675,
-    "stamped": 2096,
-    "lookupable": 3140,
-    "observedAt": "2026-09-20T10:10:33.568Z",
-    "run": "35501004254"
+    "reach": 0.6568,
+    "stamped": 2063,
+    "lookupable": 3141,
+    "observedAt": "2026-09-20T19:37:53.007Z",
+    "run": "35529007781"
   },
   "history": [
     {
@@ -82,6 +82,13 @@
       "lookupable": 3140,
       "observedAt": "2026-09-20T10:10:33.568Z",
       "run": "35501004254"
+    },
+    {
+      "reach": 0.6568,
+      "stamped": 2063,
+      "lookupable": 3141,
+      "observedAt": "2026-09-20T19:37:53.007Z",
+      "run": "35529007781"
     }
   ]
 }
