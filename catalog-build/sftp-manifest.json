@@ -1,25 +1,25 @@
 {
   "files": {
     "/44583_4681679_mp.txt.gz": {
-      "size": 159929104,
-      "mtime": 1789817076000,
+      "size": 159490861,
+      "mtime": 1789903838000,
       "mid": "44583",
       "localPath": "/home/runner/work/pro-rig-builder/pro-rig-builder/catalog-build/feeds/44583/44583_4681679_mp.txt.gz",
-      "downloadedAt": "2026-09-19T15:03:38.710Z"
+      "downloadedAt": "2026-09-20T15:03:58.875Z"
     },
     "/44583_4681679_mp_delta.txt.gz": {
-      "size": 2355853,
-      "mtime": 1789829567000,
+      "size": 1492684,
+      "mtime": 1789916070000,
       "mid": "44583",
       "localPath": "/home/runner/work/pro-rig-builder/pro-rig-builder/catalog-build/feeds/44583/44583_4681679_mp_delta.txt.gz",
-      "downloadedAt": "2026-09-19T15:03:44.459Z"
+      "downloadedAt": "2026-09-20T15:04:00.955Z"
     },
     "/44583_4681679_mp_deltatemplate.txt.gz": {
-      "size": 2341413,
-      "mtime": 1789829568000,
+      "size": 1482881,
+      "mtime": 1789916071000,
       "mid": "44583",
       "localPath": "/home/runner/work/pro-rig-builder/pro-rig-builder/catalog-build/feeds/44583/44583_4681679_mp_deltatemplate.txt.gz",
-      "downloadedAt": "2026-09-19T15:03:51.021Z"
+      "downloadedAt": "2026-09-20T15:04:03.110Z"
     }
   }
 }

@@ -492,7 +492,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-19"
+        "priceConfirmedAt": "2026-09-20"
       }
     },
     "switches": "Hall Effect",
