@@ -47,7 +47,7 @@ export default [
         "price": 28.99,
         "url": "https://www.amazon.com/dp/B0G8ZGCYRT?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "AmiCool",
         "priceResolvedVia": "dataforseo",
@@ -73,7 +73,7 @@ export default [
         "price": 29.99,
         "url": "https://www.amazon.com/dp/B09BC44T8K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "ORIGBELIE Direct - US",
         "priceResolvedVia": "dataforseo",
@@ -96,12 +96,12 @@ export default [
     "connection": "USB-A",
     "deals": {
       "amazon": {
-        "price": 25.64,
+        "price": 29.99,
         "url": "https://www.amazon.com/dp/B0C394HFCF?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
-        "priceSeller": "bdzhuoyue",
+        "priceSeller": "xrtjxry",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -183,7 +183,7 @@ export default [
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B076CM5SZN?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -215,7 +215,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceUnconfirmedAt": "2026-09-20"
       }
     }
   },
@@ -237,7 +237,7 @@ export default [
         "price": 39.99,
         "url": "https://www.amazon.com/dp/B0B6D8XB74?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",

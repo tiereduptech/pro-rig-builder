@@ -123,7 +123,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "HONGXINBAORUI",
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceResolvedVia": "dataforseo"
       }
     }
@@ -155,7 +155,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceUnconfirmedAt": "2026-09-20"
       }
     }
   },
@@ -186,7 +186,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceUnconfirmedAt": "2026-09-20"
       }
     }
   },
@@ -217,7 +217,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceUnconfirmedAt": "2026-09-20"
       }
     }
   },
@@ -242,13 +242,11 @@ export default [
         "price": 70,
         "url": "https://www.amazon.com/dp/B0BJ9MQVBG?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "WOWNOVA",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-19"
+        "priceResolvedVia": "dataforseo"
       }
     }
   },
@@ -337,7 +335,7 @@ export default [
         "price": 30,
         "url": "https://www.amazon.com/dp/B0989WQCW8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "dataforseo",
@@ -399,7 +397,7 @@ export default [
         "price": 100,
         "url": "https://www.amazon.com/dp/B0D3CW311P?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-19",
+        "priceConfirmedAt": "2026-09-20",
         "priceSource": "3p",
         "priceSeller": "HAGIBIS",
         "priceResolvedVia": "dataforseo",
