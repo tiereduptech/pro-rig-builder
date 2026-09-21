@@ -2223,7 +2223,7 @@ export default [
     "reviews": 1657,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 134.99,
         "url": "https://www.amazon.com/dp/B0C89F1V5S?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -2361,7 +2361,7 @@ export default [
     "reviews": 743,
     "deals": {
       "amazon": {
-        "price": 54.99,
+        "price": 49.99,
         "url": "https://www.amazon.com/dp/B00J0NZ3Q4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -7254,7 +7254,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Pro Gamersware",
+        "priceSeller": "Pro Gamersware USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -13737,12 +13737,12 @@ export default [
     "reviews": 29,
     "deals": {
       "amazon": {
-        "price": 99.99,
+        "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DRS2DXHR?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "3p",
-        "priceSeller": "Hestia Delight",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20831,11 +20831,11 @@ export default [
       "amazon": {
         "asin": "B0CS3T8BVF",
         "url": "https://www.amazon.com/dp/B0CS3T8BVF?tag=tiereduptech-20",
-        "price": 184.99,
+        "price": 197.7,
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -21386,7 +21386,10 @@ export default [
       "ATX"
     ],
     "tg": true,
-    "rgb": true
+    "rgb": true,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-21",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100887,
@@ -22712,8 +22715,10 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-21",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-21"
       }
     },
     "needsReview": false,

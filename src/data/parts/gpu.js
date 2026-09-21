@@ -306,7 +306,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Grandis Goods",
+        "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1113,7 +1113,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-19",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-21"
       }
     }
@@ -1460,7 +1460,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Safety Logistics (Serial # Recorded)",
+        "priceSeller": "Techno Sphere",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1874,7 +1874,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "TELeasy",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2092,7 +2092,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "BestBuyBay",
+        "priceSeller": "IT Electronix",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -3978,7 +3978,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "ebid-dealz",
+        "priceSeller": "CorteseInc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4734,12 +4734,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 2199,
+        "price": 1999.99,
         "url": "https://www.amazon.com/dp/B0DYVCGVK4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "CorteseInc",
+        "priceSeller": "Custom Hardware",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5559,7 +5559,7 @@ export default [
     "reviews": 358,
     "deals": {
       "amazon": {
-        "price": 1875,
+        "price": 1975,
         "url": "https://www.amazon.com/dp/B0CQTPCQD2?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -5601,7 +5601,7 @@ export default [
     "reviews": 358,
     "deals": {
       "amazon": {
-        "price": 1779,
+        "price": 1879,
         "url": "https://www.amazon.com/dp/B0CQTP6J3Z?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -5807,12 +5807,12 @@ export default [
     "reviews": 253,
     "deals": {
       "amazon": {
-        "price": 1689,
+        "price": 1499.95,
         "url": "https://www.amazon.com/dp/B0BL668N1X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Techno Sphere",
+        "priceSeller": "TekDepo(We Record SN#)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -6397,7 +6397,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Techno Sphere",
+        "priceSeller": "Nobersell (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -6878,7 +6878,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Wholesale Haven",
+        "priceSeller": "Everlast Computers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -7419,7 +7419,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "ARF Tech",
+        "priceSeller": "Empowered PC",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8099,7 +8099,7 @@ export default [
         "priceSeller": "Micom Pro",
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-21"
       }
     },
@@ -8755,16 +8755,14 @@ export default [
     "reviews": 9,
     "deals": {
       "amazon": {
-        "price": 1888,
+        "price": 2099.99,
         "url": "https://www.amazon.com/dp/B0CVNM2LBK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "IT Electronix",
+        "priceSeller": "Grandis Goods",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -16124,7 +16122,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "BBDW",
+        "priceSeller": "QyTech",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -16434,9 +16432,11 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "prime bay",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-09-21"
+        "priceConfirmedAt": "2026-09-21",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-21"
       }
     },
     "vram": 8,
@@ -19239,7 +19239,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "TekDepo(We Record SN#)",
+        "priceSeller": "Grandis Goods",
         "priceResolvedVia": "dataforseo"
       }
     },

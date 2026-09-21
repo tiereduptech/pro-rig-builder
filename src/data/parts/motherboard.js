@@ -638,8 +638,8 @@ export default [
         "url": "https://www.amazon.com/dp/B09GP7P1XS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "PNR Sales",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -901,8 +901,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DJPTRP57?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Prime Merchant LLC (SN Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -965,11 +965,13 @@ export default [
         "price": 260,
         "url": "https://www.amazon.com/dp/B0DH6SF5LB?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
         "priceSeller": "Rally Bargains Inc",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-21"
       },
       "msi": {
         "price": 259.99,
@@ -1100,7 +1102,7 @@ export default [
     "audio": "Realtek ALC4080",
     "deals": {
       "amazon": {
-        "price": 259.99,
+        "price": 246.9,
         "url": "https://www.amazon.com/dp/B0DGWNVCHL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -4404,7 +4406,7 @@ export default [
         "priceSeller": "CoverZip | Same Day Shipping",
         "priceConfirmedAt": "2026-09-14",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-21"
       },
       "newegg": {
@@ -4459,7 +4461,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Choice Electronics(Serial Numbers Recorded)",
+        "priceSeller": "WeShipTech (SN# Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -4784,7 +4786,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSeller": "Northwind Studio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -5570,8 +5572,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DGVBSLLP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "3p",
-        "priceSeller": "San Antonio Inventory",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6205,7 +6207,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceSeller": "Square Four (SN recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -7054,12 +7056,12 @@ export default [
     "reviews": 335,
     "deals": {
       "amazon": {
-        "price": 177.5,
+        "price": 215,
         "url": "https://www.amazon.com/dp/B0BHBP8CS2?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "North To South (Serial Number Recorded)",
+        "priceSeller": "Flywing Corp",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -9948,12 +9950,12 @@ export default [
     "reviews": 550,
     "deals": {
       "amazon": {
-        "price": 165.75,
+        "price": 155,
         "url": "https://www.amazon.com/dp/B0BYBHW4SH?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Lake Shore Sells",
+        "priceSeller": "Prime Picks (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11072,7 +11074,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Sanaa Direct (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "445838461351614216990738",
@@ -18103,13 +18107,11 @@ export default [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0DJQ38QP1?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
-        "priceConfirmedAt": "2026-09-20",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfirmedAt": "2026-09-21",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "4458313251843153885872831",
@@ -18809,8 +18811,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQB8VZ2R?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "BBDW",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -19356,7 +19358,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "TELeasy",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -25028,7 +25030,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "North To South (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-21"
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",

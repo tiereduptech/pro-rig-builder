@@ -340,7 +340,7 @@ export default [
     "depth": 180,
     "deals": {
       "amazon": {
-        "price": 229.9,
+        "price": 212.37,
         "url": "https://www.amazon.com/dp/B0BV6CWS2Z?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -1346,7 +1346,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "TELeasy",
+        "priceSeller": "BeachAudio",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8939,8 +8939,8 @@ export default [
         "price": 153.89,
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
-        "priceSource": "3p",
-        "priceSeller": "CE Showroom",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11784,7 +11784,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Square Four (SN recorded)",
+        "priceSeller": "WeShipTech (SN# Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -12038,11 +12038,11 @@ export default [
       "amazon": {
         "asin": "B0BV6FSFL9",
         "url": "https://www.amazon.com/dp/B0BV6FSFL9?tag=tiereduptech-20",
-        "price": 205.49,
+        "price": 169.9,
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Neobits_",
+        "priceSeller": "be-quiet-official",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

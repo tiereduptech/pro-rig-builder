@@ -383,7 +383,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-21"
       },
       "bestbuy": {
         "price": 294.99,
@@ -1186,7 +1188,7 @@ export default [
     "reviews": 1147,
     "deals": {
       "amazon": {
-        "price": 467.99,
+        "price": 499.99,
         "url": "https://www.amazon.com/dp/B0BFGB2D2Z?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
@@ -2212,7 +2214,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "Stokvane (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -2496,13 +2498,11 @@ export default [
         "price": 639.95,
         "url": "https://www.amazon.com/dp/B0CYHC58P6?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-15",
+        "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "STOCKYFY",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458313340891654871444043",
@@ -4355,13 +4355,11 @@ export default [
         "price": 264.99,
         "url": "https://www.amazon.com/dp/B091FKD2N3?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
         "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -4695,13 +4693,11 @@ export default [
         "price": 239.99,
         "url": "https://www.amazon.com/dp/B07Z86WC1Z?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-06",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfirmedAt": "2026-09-21",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "additionalImages": [
@@ -5445,13 +5441,11 @@ export default [
         "price": 627.64,
         "url": "https://www.amazon.com/dp/B0CYM3WSHX?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-08-17",
+        "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "KART IT",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-21"
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 17,
@@ -10568,7 +10562,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Comp Depot",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -10860,7 +10854,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11769,7 +11763,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "A-Tech Components",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
