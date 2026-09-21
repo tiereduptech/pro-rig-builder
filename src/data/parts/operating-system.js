@@ -23,7 +23,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceUnconfirmedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "44583520120264484301200",
