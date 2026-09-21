@@ -241,14 +241,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 499.99,
+        "price": 529.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562319&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562319.p%3FskuId%3D6562319",
         "inStock": true,
         "sku": "6562319",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "4458316594714719994191893",
@@ -389,7 +389,7 @@ export default [
         "sku": "6669244",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-12"
       },
       "newegg": {
@@ -460,14 +460,14 @@ export default [
         "priceUnconfirmedAt": "2026-09-20"
       },
       "bestbuy": {
-        "price": 489.99,
+        "price": 524.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669242&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669242.p%3FskuId%3D6669242",
         "inStock": true,
         "sku": "6669242",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "4458317951181358741495957",
@@ -1781,7 +1781,7 @@ export default [
         "sku": "6457798",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-14"
       },
       "newegg": {
@@ -2610,13 +2610,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "bestbuy": {
-        "price": 459.99,
+        "price": 535.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6669246&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6669246.p%3FskuId%3D6669246",
         "inStock": false,
         "sku": "6669246",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       }
     },
     "additionalImages": [
@@ -2890,7 +2891,7 @@ export default [
         "sku": "6637757",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
@@ -3062,7 +3063,7 @@ export default [
         "sku": "6496083",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
@@ -3137,7 +3138,7 @@ export default [
         "sku": "6637756",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -6173,7 +6174,7 @@ export default [
         "sku": "6645751",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -8641,13 +8642,14 @@ export default [
     "mpn": "CMK32GX4M2E3200C16",
     "deals": {
       "bestbuy": {
-        "price": 249.99,
+        "price": 259.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6448611&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6448611.p%3FskuId%3D6448611",
         "inStock": true,
         "sku": "6448611",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "445838924976332608996715",
@@ -8702,7 +8704,7 @@ export default [
         "sku": "6449223",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -8757,7 +8759,7 @@ export default [
         "sku": "6470356",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-13"
       },
       "newegg": {
@@ -8857,7 +8859,7 @@ export default [
         "sku": "6542590",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
@@ -8958,7 +8960,7 @@ export default [
         "sku": "6554930",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-10"
       },
       "newegg": {
@@ -9009,14 +9011,14 @@ export default [
     "mpn": "CMK32GX5M2E6000C36",
     "deals": {
       "bestbuy": {
-        "price": 489.99,
+        "price": 519.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6562317&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6562317.p%3FskuId%3D6562317",
         "inStock": true,
         "sku": "6562317",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "4458311545893267756925853",
@@ -9072,7 +9074,7 @@ export default [
         "sku": "6576369",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
@@ -9121,14 +9123,14 @@ export default [
     "mpn": "CMH32GX5M2E6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 499.99,
+        "price": 529.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6580806&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6580806.p%3FskuId%3D6580806",
         "inStock": true,
         "sku": "6580806",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-08-31"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "4458312119486581860848701",
@@ -9184,7 +9186,7 @@ export default [
         "sku": "6580809",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-14"
       },
       "newegg": {
@@ -9241,7 +9243,7 @@ export default [
         "sku": "6602236",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-08-31"
       },
       "newegg": {
@@ -9298,7 +9300,7 @@ export default [
         "sku": "6602237",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-12"
       },
       "newegg": {
@@ -9409,7 +9411,7 @@ export default [
         "sku": "6608563",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "4458315372908030123033447",
@@ -9459,13 +9461,14 @@ export default [
     "mpn": "CMK32GX5M2B6400Z36",
     "deals": {
       "bestbuy": {
-        "price": 439.99,
+        "price": 549.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6608564&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6608564.p%3FskuId%3D6608564",
         "inStock": true,
         "sku": "6608564",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "445837384151701501811720",
@@ -9515,14 +9518,14 @@ export default [
     "mpn": "CMK32GX5M2Y6000Z30",
     "deals": {
       "bestbuy": {
-        "price": 539.99,
+        "price": 559.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6621674&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-vengeance-32gb-2x16gb-ddr5-6000mhz-z30-amd-expo-intel-xmp-udimm-desktop-memory-black%2FJ39TSCPW2G&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6621674",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-09-09"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       }
     },
     "cap": 32,
@@ -9560,7 +9563,7 @@ export default [
         "sku": "6637048",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21"
       }
     },
     "cap": 128,
@@ -9675,7 +9678,7 @@ export default [
         "sku": "6645747",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -9719,7 +9722,7 @@ export default [
         "sku": "6645748",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-12"
       }
     },
@@ -9813,7 +9816,7 @@ export default [
         "sku": "6645752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-11"
       },
       "newegg": {
@@ -9867,7 +9870,7 @@ export default [
         "sku": "6645754",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21"
       },
       "newegg": {
         "sku": "445832156532174368504792",
@@ -9977,7 +9980,7 @@ export default [
         "sku": "6669179",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceLastMovedAt": "2026-09-12"
       },
       "newegg": {
@@ -10025,14 +10028,14 @@ export default [
     "mpn": "CMK16GX5M2Y6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 274.99,
+        "price": 301.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672866&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672866.p%3FskuId%3D6672866",
         "inStock": true,
         "sku": "6672866",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       }
     },
     "cap": 16,
@@ -10064,14 +10067,14 @@ export default [
     "mpn": "CMH16GX5M2Y6000Z36",
     "deals": {
       "bestbuy": {
-        "price": 284.99,
+        "price": 308.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6672867&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6672867.p%3FskuId%3D6672867",
         "inStock": true,
         "sku": "6672867",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceLastMovedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-21",
+        "priceLastMovedAt": "2026-09-21"
       }
     },
     "cap": 16,
