@@ -96,7 +96,7 @@ export default [
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceUnconfirmedAt": "2026-09-21"
       }
     }
   },
@@ -119,7 +119,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "SIHOO",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceResolvedVia": "dataforseo"
       }
     }
@@ -142,7 +142,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Holludle",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -193,7 +193,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "TRALT",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -221,7 +221,7 @@ export default [
         "priceResolvedVia": "paapi",
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceUnconfirmedAt": "2026-09-21"
       }
     }
   },
@@ -242,7 +242,7 @@ export default [
         "url": "https://www.amazon.com/dp/B09D33BXHL?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceSource": "3p",
         "priceSeller": "XISHE CHAIR",
         "priceResolvedVia": "dataforseo"
@@ -267,7 +267,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-21",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -295,7 +295,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-20"
+        "priceUnconfirmedAt": "2026-09-21"
       }
     }
   }
