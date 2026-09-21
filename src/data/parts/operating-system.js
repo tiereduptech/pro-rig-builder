@@ -29,14 +29,15 @@ export default [
         "sku": "44583520120264484301200",
         "itemNumber": "N82E16832351749",
         "sellerClass": "official",
-        "price": 198.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583520120264484301200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-pro-usb%2Fp%2FN82E16832351749%3Fitem%3DN82E16832351749",
+        "price": 199.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.44583520120264484301200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-pro-usb%2Fp%2FN82E16832351749%3Fitem%3DN82E16832351749",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-749-V06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-20"
+        "priceLastMovedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-21"
       }
     },
     "upc": "00889842966169"
@@ -73,13 +74,13 @@ export default [
         "sellerClass": "official",
         "price": 139,
         "saleprice": 128.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312977573271908579071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-home-usb%2Fp%2FN82E16832351748%3Fitem%3DN82E16832351748",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458312977573271908579071&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-home-usb%2Fp%2FN82E16832351748%3Fitem%3DN82E16832351748",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-748-V01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-20"
+        "priceConfirmedAt": "2026-09-21"
       }
     },
     "upc": "00889842966640"
