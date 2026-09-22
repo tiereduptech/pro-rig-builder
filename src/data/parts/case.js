@@ -780,7 +780,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-22"
       }
     },
     "tower": "Mini",
@@ -6120,13 +6122,11 @@ export default [
         "price": 77.41,
         "url": "https://www.amazon.com/dp/B0DFHQ5HVL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-13",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-22",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceResolvedVia": "dataforseo"
       }
     },
     "additionalImages": [
@@ -7778,7 +7778,7 @@ export default [
     "reviews": 79,
     "deals": {
       "amazon": {
-        "price": 57.99,
+        "price": 62.99,
         "url": "https://www.amazon.com/dp/B0DMPFLHJZ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-22",
@@ -9776,7 +9776,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-22",
         "priceSource": "3p",
-        "priceSeller": "Adorama",
+        "priceSeller": "RGDEALS",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -13732,7 +13732,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-22"
       }
     },
     "additionalImages": [
@@ -22731,10 +22733,8 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Vetroo",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-21",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-22"
       }
     },
     "needsReview": false,
@@ -23529,10 +23529,8 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MUSETEX",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-20",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-22"
       }
     },
     "needsReview": false,

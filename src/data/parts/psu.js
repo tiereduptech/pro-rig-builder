@@ -1346,7 +1346,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-22",
         "priceSource": "3p",
-        "priceSeller": "BeachAudio",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8940,8 +8940,8 @@ export default [
         "price": 153.89,
         "inStock": true,
         "priceConfirmedAt": "2026-09-22",
-        "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -9467,8 +9467,8 @@ export default [
         "price": 159.9,
         "inStock": true,
         "priceConfirmedAt": "2026-09-22",
-        "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
