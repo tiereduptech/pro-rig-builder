@@ -4908,7 +4908,7 @@ export default [
         "itemId": "2977",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -4978,7 +4978,7 @@ export default [
         "itemId": "2722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -6313,7 +6313,7 @@ export default [
         "itemId": "2572",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -7181,7 +7181,7 @@ export default [
         "itemId": "2625",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -7993,7 +7993,7 @@ export default [
         "itemId": "2523",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8509,11 +8509,11 @@ export default [
       "msi": {
         "price": 489.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2678&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-GAMING-OC&intsrc=APIG_16410",
-        "inStock": true,
+        "inStock": false,
         "itemId": "2678",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -9039,7 +9039,7 @@ export default [
         "itemId": "2482",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -9472,7 +9472,7 @@ export default [
         "itemId": "2856",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -9533,7 +9533,7 @@ export default [
         "itemId": "2140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10192,7 +10192,7 @@ export default [
         "itemId": "2480",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10252,7 +10252,7 @@ export default [
         "itemId": "2485",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10586,7 +10586,7 @@ export default [
         "itemId": "2469",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -11161,7 +11161,7 @@ export default [
         "itemId": "2573",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -11645,7 +11645,7 @@ export default [
         "itemId": "2547",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12283,11 +12283,11 @@ export default [
       "msi": {
         "price": 799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2626&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-TI-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
-        "inStock": true,
+        "inStock": false,
         "itemId": "2626",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12347,7 +12347,7 @@ export default [
         "itemId": "2583",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12578,7 +12578,7 @@ export default [
         "itemId": "2680",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12639,7 +12639,7 @@ export default [
         "itemId": "2682",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12699,7 +12699,7 @@ export default [
         "itemId": "2681",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12759,7 +12759,7 @@ export default [
         "itemId": "2683",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13110,7 +13110,7 @@ export default [
         "itemId": "2643",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13221,7 +13221,7 @@ export default [
         "itemId": "2577",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13323,7 +13323,7 @@ export default [
         "itemId": "2579",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -13360,7 +13360,7 @@ export default [
         "itemId": "2646",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13528,7 +13528,7 @@ export default [
         "itemId": "2720",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -13574,7 +13574,7 @@ export default [
         "itemId": "2718",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13635,7 +13635,7 @@ export default [
         "itemId": "2721",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13855,7 +13855,7 @@ export default [
         "itemId": "2714",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14102,7 +14102,7 @@ export default [
         "itemId": "2855",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14212,7 +14212,7 @@ export default [
         "itemId": "2940",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-22",
         "priceLastMovedAt": "2026-08-28"
       }
     },
