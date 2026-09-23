@@ -4034,11 +4034,13 @@ export default [
         "price": 167.33,
         "url": "https://www.amazon.com/dp/B0FGDMTHY4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-23",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-23"
       },
       "bestbuy": {
         "price": 159.99,
@@ -12150,8 +12152,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FND8XGV1?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "FlashDeal Store",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -18029,7 +18031,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "OneDealOutlet Online",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T14:34:31.791Z",
@@ -20251,13 +20255,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0FQC7XT4M?tag=tiereduptech-20",
         "price": 81.59,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
-        "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-23",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "addedAt": "2026-05-15T16:31:54.667Z",
@@ -20883,7 +20885,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

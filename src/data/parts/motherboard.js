@@ -86,8 +86,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DDZNZF76?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "Ironleaf Partners",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -2555,8 +2555,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DQLHVQSF?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "North To South (Serial Number Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -3892,7 +3892,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
-        "priceSeller": "PriceWhack",
+        "priceSeller": "HighlandRe",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -3949,12 +3949,12 @@ export default [
     "reviews": 477,
     "deals": {
       "amazon": {
-        "price": 222.99,
+        "price": 235.59,
         "url": "https://www.amazon.com/dp/B0DGB8Q19Y?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "Prime Merchant LLC (SN Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -4928,8 +4928,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DGVBM73J?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6206,12 +6206,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 148.96,
+        "price": 159.99,
         "url": "https://www.amazon.com/dp/B0FFQM1JXG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "CoverZip | Same Day Shipping",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6273,12 +6273,12 @@ export default [
     "reviews": 76,
     "deals": {
       "amazon": {
-        "price": 244.95,
+        "price": 264.95,
         "url": "https://www.amazon.com/dp/B0DJP95MGB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
-        "priceSeller": "LAVATRONS",
+        "priceSeller": "GH Electronics (We Record SN#)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10085,12 +10085,12 @@ export default [
     "reviews": 446,
     "deals": {
       "amazon": {
-        "price": 109.99,
+        "price": 118.8,
         "url": "https://www.amazon.com/dp/B0BMM7M56F?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Yasin Retailers",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -14869,8 +14869,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DN6PTRQS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "3p",
-        "priceSeller": "Prime Picks (S/N Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -16975,12 +16975,12 @@ export default [
     "reviews": 18,
     "deals": {
       "amazon": {
-        "price": 237.95,
+        "price": 250,
         "url": "https://www.amazon.com/dp/B0DJHLSY68?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "SPICY BOMB💣",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -18925,7 +18925,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-23"
       },
       "newegg": {
         "sku": "4458313324008114755693902",
@@ -23928,7 +23930,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Alakhras LLC",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T13:17:14.411Z",
@@ -24354,15 +24358,13 @@ export default [
       "amazon": {
         "asin": "B08DQB2GDN",
         "url": "https://www.amazon.com/dp/B08DQB2GDN?tag=tiereduptech-20",
-        "price": 105.1,
+        "price": 96.6,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
         "priceSeller": "Triplenet Pricing INC",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.776Z",

@@ -1341,12 +1341,12 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 86.06,
+        "price": 66.84,
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4623,13 +4623,11 @@ export default [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B07N4QD7RM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458317030905002238415229",
@@ -11309,8 +11307,8 @@ export default [
         "price": 124.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-23",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "QuickDealStore",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
