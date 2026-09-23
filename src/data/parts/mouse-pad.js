@@ -17,7 +17,7 @@ export default [
         "price": 77,
         "url": "https://www.amazon.com/dp/B07F61BYQP?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
         "priceSeller": "Japan Depot",
         "priceResolvedVia": "dataforseo",
@@ -102,7 +102,7 @@ export default [
         "url": "https://www.amazon.com/SteelSeries-QcK-Cloth-Gaming-Mouse/dp/B000UVRU6G/ref=sr_1_4?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-4&tag=tiereduptech-20",
         "price": 24.9,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -127,7 +127,7 @@ export default [
         "url": "https://www.amazon.com/SteelSeries-QcK-Gaming-Mouse-Pad-PC/dp/B0D1T1HZCC/ref=sr_1_5?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-5&tag=tiereduptech-20",
         "price": 29.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -152,7 +152,7 @@ export default [
         "url": "https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Optimized/dp/B000UEZ36W/ref=sr_1_8?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-8&tag=tiereduptech-20",
         "price": 11.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -186,7 +186,10 @@ export default [
     },
     "surface": "Cloth",
     "padSize": "XXL",
-    "bench": 75
+    "bench": 75,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-23",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 100100,
@@ -208,7 +211,7 @@ export default [
         "priceConfirmedAt": "2026-09-12",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "surface": "Hard",
@@ -231,7 +234,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Ktrio.LLC",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -256,7 +259,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -281,7 +284,7 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Cmhoous",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -399,7 +402,7 @@ export default [
         "url": "https://www.amazon.com/RGB-Mousepad-Led-Mouse-Large/dp/B08QFB5KVS/ref=sr_1_29?crid=YG5JGY1U2YU1&dib=eyJ2IjoiMSJ9.PvPy3MhFE1iyLH-MTZfpCPG6mgOjiybXvkUPDF7E4COycqC6QnXoaGlUZq79OOKJZNhPbXiPToMKO76g8YL0qgwwixJ1fKjmg2ud_Zl0Q7cjlaYFiHEjcqtMKkXLwrRQ4IFoUWtqhTY6t1evFKKbB9AYigRNPek-fTP2vpp7IiHiVedD2uD8eOPoGXcFKRHodZHP3qEwpzWxF1PxdaXUtGLd4mc4Xltc2fHM_nJ-jV0xQfuHMEKo9ii-Sk3eTK2eM_BSLW61mfJJvbQmf_snuhGB-GWNSgakQ0mDd5vumus.E2C8LcOE4j5kEF74Pgf4v_wg27Q2MFdXdDQNE3Rocmo&dib_tag=se&keywords=HyperX+Fury+mousepad&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=HyperX%2BFury%2Bmousepad%2Caps%2C110&sr=8-29&tag=tiereduptech-20",
         "price": 12.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
         "priceSeller": "R-Qin",
         "priceResolvedVia": "dataforseo",
@@ -451,7 +454,7 @@ export default [
         "url": "https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Micro-Textured/dp/B07DG64YL9/ref=sr_1_2?crid=AE8OEQG4B6YA&dib=eyJ2IjoiMSJ9.zjAgFycW02ZIcvmii1yJk3D0qSwNGtz3K4lhUp_Dv4gLuzaPZiPzdSeBxd7Eu6iE7TZ_dJXHnk55no2gaoZOJBMCWme0ZUY8sMeJ6U87S8i1N9XbBHQvXqn0mIX2tXF6yRNR5gQOEP2cjO1VLtYKAQWibJQczHiV28-mJ52u9RNxAipfhV5VqsZOE1iGIWt86ialqG5erRQ3ycfer5L4LbURowX8o60hOyFdNgYq-kM.a65vdOAcw8NzasR7e_PLV-_vxm_HLRyZ60aMVj1P_RI&dib_tag=se&keywords=Razer+Goliathus+Extended&qid=1777130817&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Razer%2BGoliathus%2BExtended%2Caps%2C285&sr=8-2&tag=tiereduptech-20",
         "price": 57.69,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -482,15 +485,13 @@ export default [
     "deals": {
       "amazon": {
         "url": "https://www.amazon.com/AmazonBasics-Large-Extended-Gaming-Computer/dp/B06X19FLTC/ref=sr_1_33?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-33&tag=tiereduptech-20",
-        "price": 13.59,
+        "price": 11.55,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "padSize": "XXL",
@@ -511,7 +512,7 @@ export default [
         "url": "https://www.amazon.com/SteelSeries-QcK-Gaming-Surface-Optimized/dp/B08BJDVWZ6/ref=sr_1_6?crid=0A983AQ8MDHC&dib=eyJ2IjoiMSJ9.oVqO6q8WNbpz_n9ytBDRHpkLNIy7YAqzI3_ecP5SaAwhjPoKJNXAlS0_X7Z7ifuQhpVzO2DzGhC8C30YZwo6FlA4BpCizKcQSCaPpbVKuRdXd6ITmF9Y_T29EbQQ-7xtF1dLJzvUp-hFxfawthhVtJOUZhaaUAlJxsMa-J1wyKWaHLB6Lwaeg0gV37dpQkpjVA5xp8_i_3NTRCITV9OG6-3V3hj280ZOQ3EZBi0UaoyqoB14-TK8zV5qHR-S2r3a_vpuew98mbkyp4aCIMezQkvu8OpGb4Z6jVIXsHx13Ag.Zbn_jD7k3vwdqR1gS9Sk_9NCkmvtfGHAsVm7-PZHhhQ&dib_tag=se&keywords=Glorious+3XL+mousepad&qid=1777130818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=Glorious%2B3XL%2Bmousepad%2Caps%2C247&sr=8-6&tag=tiereduptech-20",
         "price": 63.65,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -563,7 +564,7 @@ export default [
         "url": "https://www.amazon.com/Gaming-Mouse-Protector-Waterproof-Accessories/dp/B0CKMFL9CC/ref=sr_1_28?crid=KQDLJ9BDNTG8&dib=eyJ2IjoiMSJ9.RPajjEDW5WQ1_RKETkkiH8rxdiQknrxVAZAFks-5WBWM_Tg_w9rPwuB0sgsPiqKCAoq_iqni0B3CaAziGN1n5_TGYZ2aN6td-FfA_fnIsLaOTxv5xNVUAFUeMS7Dfx0ktBXcJ_jckh-EBUyl1K_6FLr6BWfmD4GDENLP14ifkkh_cWCcvLkC_arHvtIJjpozaIpJrTZPUbFtHclYGNiaEGB5x7rt6900Z_5BmD_DsgQv0eTssGbQdH6b-jZKcUtWOOOsOvdNvmKgO_7f7adb9AgPz2ZqH4qe9VNK0CZeZpE.Xa3P6q1V1p1-FR9EZQnE6aTdmAOjWIHrJlHmatcTpBE&dib_tag=se&keywords=large+gaming+mousepad&qid=1777130819&sprefix=large%2Bgaming%2Bmousepad%2Caps%2C152&sr=8-28&tag=tiereduptech-20",
         "price": 9.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
         "priceSeller": "CAIUS",
         "priceResolvedVia": "dataforseo",
@@ -1024,15 +1025,13 @@ export default [
       "amazon": {
         "asin": "B08JH8C5T5",
         "url": "https://www.amazon.com/dp/B08JH8C5T5?tag=tiereduptech-20",
-        "price": 29.99,
+        "price": 39,
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T16:31:54.652Z",
@@ -1055,7 +1054,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1080,7 +1079,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1109,7 +1108,7 @@ export default [
         "priceSeller": "Dogaintek",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T16:31:54.654Z",
@@ -1146,7 +1145,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CLHLLQ6P?tag=tiereduptech-20",
         "price": 93.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1173,7 +1172,7 @@ export default [
         "inStock": true,
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1198,7 +1197,7 @@ export default [
         "inStock": true,
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T16:31:54.657Z",
@@ -1235,7 +1234,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BHMN52LY?tag=tiereduptech-20",
         "price": 37.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1264,7 +1263,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-09-22"
+        "priceConfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T17:05:43.656Z",
@@ -1288,7 +1287,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0DZ1QYD97?tag=tiereduptech-20",
         "price": 49.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1313,7 +1312,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BHMMH9KM?tag=tiereduptech-20",
         "price": 34.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1338,7 +1337,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CVN5MQ6P?tag=tiereduptech-20",
         "price": 49.77,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1363,7 +1362,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0CY6RJRBR?tag=tiereduptech-20",
         "price": 99.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1404,7 +1403,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0B75YMDMC?tag=tiereduptech-20",
         "price": 129.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1429,7 +1428,7 @@ export default [
         "url": "https://www.amazon.com/dp/B07ZDWHL4M?tag=tiereduptech-20",
         "price": 42.5,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1469,7 +1468,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BHMKVF1P?tag=tiereduptech-20",
         "price": 28.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1502,7 +1501,10 @@ export default [
       }
     },
     "addedAt": "2026-05-15T17:05:43.659Z",
-    "source": "amazon-discovery"
+    "source": "amazon-discovery",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-23",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 101858,
@@ -1519,7 +1521,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BHMK6B2X?tag=tiereduptech-20",
         "price": 15.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1544,7 +1546,7 @@ export default [
         "url": "https://www.amazon.com/dp/B01DKTP3PY?tag=tiereduptech-20",
         "price": 32,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "3p",
         "priceSeller": "Rejoice Seller",
         "priceResolvedVia": "dataforseo",
@@ -1602,7 +1604,7 @@ export default [
         "priceSeller": "RCHFLI",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T17:05:43.659Z",
@@ -1626,7 +1628,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo"
       }
     },
@@ -1729,7 +1731,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0GSF4JYY1?tag=tiereduptech-20",
         "price": 39.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1754,7 +1756,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0GVQ6YF5Q?tag=tiereduptech-20",
         "price": 129.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1779,7 +1781,7 @@ export default [
         "url": "https://www.amazon.com/dp/B0BWLZ65D7?tag=tiereduptech-20",
         "price": 99.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
@@ -1805,7 +1807,7 @@ export default [
         "price": 30.72,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-23",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo"
@@ -1833,7 +1835,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceConfidence": "confirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-09-22"
+        "priceConfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
@@ -1875,7 +1877,7 @@ export default [
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-22"
+        "priceUnconfirmedAt": "2026-09-23"
       }
     },
     "addedAt": "2026-05-15T17:05:43.662Z",
