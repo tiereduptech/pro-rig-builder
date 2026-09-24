@@ -85,7 +85,7 @@ export default [
         "priceSeller": "Amazon.com Services LLC",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceUnconfirmedAt": "2026-09-24"
       }
     }
   },
@@ -171,7 +171,7 @@ export default [
         "priceSeller": "Amazon.com Services LLC",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceUnconfirmedAt": "2026-09-24"
       }
     }
   },
@@ -227,7 +227,7 @@ export default [
         "priceSeller": "Bitdefender",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-23"
+        "priceUnconfirmedAt": "2026-09-24"
       }
     }
   },
