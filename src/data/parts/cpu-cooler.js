@@ -2286,7 +2286,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Jungle Leopard",
+        "priceSeller": "KuFengKeJi store",
         "priceConfirmedAt": "2026-09-24",
         "priceResolvedVia": "dataforseo"
       }
@@ -2736,13 +2736,11 @@ export default [
         "price": 299.99,
         "url": "https://www.amazon.com/dp/B0D9GV78D8?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-20",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Provantage LLC",
+        "priceSeller": "SPICY BOMB💣",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 299.99,
@@ -4927,7 +4925,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       },
       "bestbuy": {
         "price": 89.99,
@@ -6543,8 +6543,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0CKVYP3PJ?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "3p",
-        "priceSeller": "Noctua Cooling Solutions",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -11317,13 +11317,11 @@ export default [
         "price": 176,
         "url": "https://www.amazon.com/dp/B0CBV7474S?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-23",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
         "priceSeller": "trippodoshop",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -12929,11 +12927,13 @@ export default [
         "price": 118.9,
         "url": "https://www.amazon.com/dp/B0FHGSM9NK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "Thermalright Direct 2",
         "priceConfirmedAt": "2026-09-24",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-24"
       }
     },
     "additionalImages": [
@@ -13927,13 +13927,11 @@ export default [
         "price": 193.47,
         "url": "https://www.amazon.com/dp/B0DYJMJTY4?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-23",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
         "priceSeller": "MemoryC",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -19033,7 +19031,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Amazon Global Store UK",
+        "priceSeller": "Gear(4)Less",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20022,7 +20020,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Northwind Studio",
+        "priceSeller": "RhodyRetail",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -20901,7 +20899,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
+        "priceSeller": "Byte-TechDirect",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

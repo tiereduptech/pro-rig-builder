@@ -436,7 +436,10 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Gray",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-24",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 40044,
@@ -819,7 +822,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "kooldeal68",
+        "priceSeller": "RapidShip (S/N Recorder)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1302,7 +1305,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "electrolert",
+        "priceSeller": "Assurant Technologies",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -2209,12 +2212,12 @@ export default [
     "reviews": 880,
     "deals": {
       "amazon": {
-        "price": 341.32,
+        "price": 358.95,
         "url": "https://www.amazon.com/dp/B0C79S2CHW?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Blue Orbit Commerce Group",
+        "priceSeller": "STOCKYFY",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -3051,16 +3054,14 @@ export default [
     "reviews": 3930,
     "deals": {
       "amazon": {
-        "price": 1024.84,
+        "price": 749.67,
         "url": "https://www.amazon.com/dp/B09R7S7PXC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-11",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Newegg Business",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceSeller": "Ironleaf Partners",
+        "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
         "price": 993.99,
@@ -3323,13 +3324,11 @@ export default [
         "price": 535.65,
         "url": "https://www.amazon.com/dp/B0C3RYHZJQ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458313259524782540986056",
@@ -3927,7 +3926,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Blue Orbit Commerce Group",
+        "priceSeller": "MobileMonster",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -4745,7 +4744,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-24"
       }
     },
     "additionalImages": [
@@ -8072,7 +8073,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "Micom Pro",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11015,13 +11016,11 @@ export default [
         "url": "https://www.amazon.com/dp/B0GQC6MV6C?tag=tiereduptech-20",
         "price": 285.99,
         "inStock": true,
-        "priceConfirmedAt": "2026-09-14",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "speed": 6000,
@@ -11085,7 +11084,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Blue Orbit Commerce Group",
+        "priceSeller": "eStarDeals",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11165,7 +11164,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "DEVECHO INC",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -11594,7 +11593,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Platinum Micro, Inc.",
+        "priceSeller": "STOCKYFY",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11773,7 +11772,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Vaya Electronics",
+        "priceSeller": "A-Tech Components",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -12201,15 +12200,13 @@ export default [
       "amazon": {
         "asin": "B0C3WBCLTM",
         "url": "https://www.amazon.com/dp/B0C3WBCLTM?tag=tiereduptech-20",
-        "price": 499.99,
+        "price": 1062.24,
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Official Patriot Memory Store",
-        "priceConfirmedAt": "2026-09-22",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceSeller": "MemoryC",
+        "priceConfirmedAt": "2026-09-24",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "addedAt": "2026-05-15T14:34:31.779Z",

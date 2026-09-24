@@ -267,7 +267,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "CompuCell-tech",
+        "priceSeller": "electrolert",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -834,7 +834,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Grandis Goods",
+        "priceSeller": "IT Electronix",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1114,7 +1114,10 @@ export default [
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-24"
       }
-    }
+    },
+    "needsReview": true,
+    "quarantinedAt": "2026-09-24",
+    "quarantineReason": "price_3p_flagged"
   },
   {
     "id": 30032,
@@ -4352,9 +4355,11 @@ export default [
         "inStock": true,
         "priceSource": "3p",
         "priceSeller": "Fast and Precise by Staples",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceResolvedVia": "dataforseo",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       },
       "bestbuy": {
         "price": 1799.99,
@@ -4672,7 +4677,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       },
       "bestbuy": {
         "price": 2099.99,
@@ -4736,7 +4743,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Custom Hardware",
+        "priceSeller": "BestBuyBay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5422,7 +5429,7 @@ export default [
     "reviews": 413,
     "deals": {
       "amazon": {
-        "price": 879,
+        "price": 999.23,
         "url": "https://www.amazon.com/dp/B0CGHQ32S2?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
@@ -5734,7 +5741,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Computer Nation Store",
+        "priceSeller": "MrReliable-USA",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5995,16 +6002,14 @@ export default [
     "reviews": 204,
     "deals": {
       "amazon": {
-        "price": 609.87,
+        "price": 659.98,
         "url": "https://www.amazon.com/dp/B0BRYMYSMZ?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-23",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
         "priceSeller": "S & L Business (We record S/N)",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -6394,7 +6399,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Techno Sphere",
+        "priceSeller": "Nobersell (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -15686,13 +15691,11 @@ export default [
         "price": 369.99,
         "url": "https://www.amazon.com/dp/B0DNMH4KQM?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-23",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "tdp": 190,
@@ -15810,13 +15813,11 @@ export default [
         "price": 169.99,
         "url": "https://www.amazon.com/dp/B0C74RQV9K?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-23",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "tdp": 75,
@@ -17568,7 +17569,7 @@ export default [
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "Provantage LLC",
+        "priceSeller": "PCNation",
         "priceConfirmedAt": "2026-09-24",
         "priceResolvedVia": "dataforseo"
       }
@@ -18637,7 +18638,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "SpaceBound",
+        "priceSeller": "VisionTek Products",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -19382,12 +19383,10 @@ export default [
         "price": 1749,
         "inStock": true,
         "priceSource": "3p",
-        "priceSeller": "Everlast Computers",
-        "priceConfirmedAt": "2026-09-12",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceSeller": "IT Electronix",
+        "priceConfirmedAt": "2026-09-24",
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "addedAt": "2026-05-15T14:34:31.775Z",

@@ -198,8 +198,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DG3HK897?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Depot Warehouse ( S/N recorded )",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -634,12 +634,12 @@ export default [
     "audio": "ROG SupremeFX",
     "deals": {
       "amazon": {
-        "price": 174.99,
+        "price": 137,
         "url": "https://www.amazon.com/dp/B09GP7P1XS?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "BT Supply Co",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -901,8 +901,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0DJPTRP57?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "3p",
-        "priceSeller": "Prime Merchant LLC (SN Recorded)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -3894,7 +3894,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "HighlandRe",
+        "priceSeller": "PriceWhack",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -4405,13 +4405,11 @@ export default [
         "price": 75,
         "url": "https://www.amazon.com/dp/B07MWGKHR9?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
+        "priceConfidence": "confirmed",
         "priceSource": "3p",
         "priceSeller": "CoverZip | Same Day Shipping",
-        "priceConfirmedAt": "2026-09-14",
-        "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-24",
+        "priceResolvedVia": "dataforseo"
       },
       "newegg": {
         "sku": "445838156805265236903315",
@@ -5574,7 +5572,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "TheTechGroup",
+        "priceSeller": "San Antonio Inventory",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -6203,12 +6201,12 @@ export default [
     "reviews": 89,
     "deals": {
       "amazon": {
-        "price": 159.99,
+        "price": 148.96,
         "url": "https://www.amazon.com/dp/B0FFQM1JXG?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "Square Four (SN recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8144,8 +8142,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0FDL6182M?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "3p",
-        "priceSeller": "HighlandRe",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8276,7 +8274,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Prime Merchant LLC (SN Recorded)",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -8337,7 +8335,7 @@ export default [
         "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-24"
       },
       "msi": {
@@ -10284,12 +10282,12 @@ export default [
     "reviews": 365,
     "deals": {
       "amazon": {
-        "price": 248.05,
+        "price": 277.4,
         "url": "https://www.amazon.com/dp/B0CRF81BBC?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "AztekC",
         "priceConfirmedAt": "2026-09-24",
         "priceResolvedVia": "dataforseo"
       },
@@ -11778,7 +11776,7 @@ export default [
     "reviews": 157,
     "deals": {
       "amazon": {
-        "price": 445,
+        "price": 404.58,
         "url": "https://www.amazon.com/dp/B09KKJG58P?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
@@ -13440,12 +13438,12 @@ export default [
     "reviews": 62,
     "deals": {
       "amazon": {
-        "price": 104.86,
+        "price": 94.86,
         "url": "https://www.amazon.com/dp/B0BG5Z7PPP?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "ARFA7",
+        "priceSeller": "MemoryC",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -15156,12 +15154,12 @@ export default [
     "reviews": 31,
     "deals": {
       "amazon": {
-        "price": 121.26,
+        "price": 148.15,
         "url": "https://www.amazon.com/dp/B0C9R3VLW4?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Triplenet Pricing INC",
+        "priceSeller": "prime bay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

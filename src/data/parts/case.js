@@ -809,7 +809,10 @@ export default [
       240
     ],
     "color": "Black",
-    "bench": 68
+    "bench": 68,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-24",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 70016,
@@ -3986,7 +3989,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       }
     },
     "discount": 14,
@@ -4772,13 +4777,11 @@ export default [
         "price": 42.99,
         "url": "https://www.amazon.com/dp/B0CPYK98HL?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-18",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
         "priceSeller": "MOROVOL",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -5189,13 +5192,11 @@ export default [
         "price": 71.24,
         "url": "https://www.amazon.com/dp/B0G65G7GNB?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
         "priceSeller": "SAIANSHOP",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       }
     },
     "discount": 5,
@@ -5365,12 +5366,12 @@ export default [
     "reviews": 30,
     "deals": {
       "amazon": {
-        "price": 222.82,
+        "price": 234.99,
         "url": "https://www.amazon.com/dp/B0G32FHG85?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "3p",
-        "priceSeller": "Aww Esales, LLC",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10266,7 +10267,7 @@ export default [
     "reviews": 169,
     "deals": {
       "amazon": {
-        "price": 200.99,
+        "price": 184.99,
         "url": "https://www.amazon.com/dp/B08KTNHR27?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -13014,7 +13015,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "Adorama",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       },
       "newegg": {
         "sku": "445833741643365353343492",
@@ -13730,13 +13733,11 @@ export default [
         "price": 119.99,
         "url": "https://www.amazon.com/dp/B0DRS2DXHR?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-22",
+        "priceConfirmedAt": "2026-09-24",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-24"
+        "priceConfidence": "confirmed"
       }
     },
     "additionalImages": [
@@ -22143,7 +22144,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "Adorama",
+        "priceSeller": "SPICY BOMB💣",
         "priceResolvedVia": "dataforseo"
       }
     },

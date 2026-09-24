@@ -1341,12 +1341,12 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 86.06,
+        "price": 66.84,
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8939,8 +8939,8 @@ export default [
         "price": 153.89,
         "inStock": true,
         "priceConfirmedAt": "2026-09-24",
-        "priceSource": "1p",
-        "priceSeller": "Amazon.com",
+        "priceSource": "3p",
+        "priceSeller": "IPC-STORE✅",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11301,7 +11301,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "QuickDealStore",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-24"
       }
     },
     "addedAt": "2026-05-15T14:34:31.768Z",
