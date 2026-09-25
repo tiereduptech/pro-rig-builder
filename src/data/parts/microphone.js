@@ -467,7 +467,7 @@ export default [
         "sku": "6361715",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "micType": "USB",
@@ -493,7 +493,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceLastMovedAt": "2026-09-14",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "pattern": "Dynamic",
@@ -517,8 +517,9 @@ export default [
         "inStock": true,
         "sku": "6483375",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-27"
       }
     },
     "micType": "XLR",
@@ -543,7 +544,7 @@ export default [
         "sku": "6547472",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -569,7 +570,7 @@ export default [
         "sku": "6556755",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -595,7 +596,7 @@ export default [
         "sku": "6570531",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -620,8 +621,9 @@ export default [
         "inStock": true,
         "sku": "6576377",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-27"
       }
     },
     "micType": "USB",
@@ -645,8 +647,9 @@ export default [
         "inStock": true,
         "sku": "6601728",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-27"
       }
     },
     "micType": "USB",
@@ -671,7 +674,7 @@ export default [
         "sku": "6601911",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -697,7 +700,7 @@ export default [
         "sku": "6622725",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -718,13 +721,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=4758301&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F4758301.p%3FskuId%3D4758301",
-        "price": 116.99,
+        "price": 112.99,
         "inStock": true,
         "sku": "4758301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
-        "priceLastMovedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25",
+        "priceLastMovedAt": "2026-09-25"
       }
     },
     "micType": "USB",
@@ -749,7 +752,7 @@ export default [
         "sku": "6277346",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -809,7 +812,7 @@ export default [
         "sku": "6530807",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "micType": "USB",
@@ -834,7 +837,7 @@ export default [
         "sku": "6540970",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -860,7 +863,7 @@ export default [
         "sku": "6556752",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-08-31"
       }
     },
@@ -881,13 +884,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6573619&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6573619.p%3FskuId%3D6573619",
-        "price": 48.99,
+        "price": 53.99,
         "inStock": true,
         "sku": "6573619",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
-        "priceLastMovedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25",
+        "priceLastMovedAt": "2026-09-25"
       }
     },
     "micType": "USB",
@@ -912,7 +915,7 @@ export default [
         "sku": "6618286",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -938,7 +941,7 @@ export default [
         "sku": "6601910",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-08-29"
       }
     },
@@ -964,7 +967,7 @@ export default [
         "sku": "6622722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "micType": "USB",
@@ -989,7 +992,7 @@ export default [
         "sku": "6642761",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -1014,8 +1017,9 @@ export default [
         "inStock": true,
         "sku": "9135241",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-27"
       }
     },
     "micType": "XLR",

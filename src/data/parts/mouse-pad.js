@@ -46,7 +46,7 @@ export default [
         "sku": "6671122",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "surface": "Cloth",
@@ -593,7 +593,7 @@ export default [
         "sku": "2822575",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "surface": "Cloth",
@@ -617,7 +617,7 @@ export default [
         "sku": "4384400",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -647,7 +647,7 @@ export default [
         "sku": "5869549",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "surface": "Cloth",
@@ -671,7 +671,7 @@ export default [
         "sku": "6285961",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "surface": "Cloth",
@@ -695,7 +695,7 @@ export default [
         "sku": "6428299",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -720,7 +720,7 @@ export default [
         "sku": "6428301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -744,8 +744,9 @@ export default [
         "inStock": true,
         "sku": "6476680",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-24",
+        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-06-27"
       }
     },
     "surface": "Hard",
@@ -794,7 +795,7 @@ export default [
         "sku": "6499566",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -849,7 +850,7 @@ export default [
         "sku": "6514577",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -874,7 +875,7 @@ export default [
         "sku": "6514578",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -899,7 +900,7 @@ export default [
         "sku": "6578719",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -957,7 +958,7 @@ export default [
         "sku": "6614722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "padSize": "XXL",
@@ -981,7 +982,7 @@ export default [
         "sku": "6484056",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-25"
       }
     },
     "padSize": "Medium",
@@ -1005,7 +1006,7 @@ export default [
         "sku": "6484067",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceLastMovedAt": "2026-09-24"
       }
     },
