@@ -819,12 +819,12 @@ export default [
     "reviews": 484,
     "deals": {
       "amazon": {
-        "price": 509.99,
+        "price": 482.99,
         "url": "https://www.amazon.com/dp/B0FQNB9WBD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "RapidShip (S/N Recorder)",
+        "priceSeller": "QyTech",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1081,12 +1081,12 @@ export default [
     "reviews": 5776,
     "deals": {
       "amazon": {
-        "price": 74.99,
+        "price": 97.83,
         "url": "https://www.amazon.com/dp/B097K5J1SB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Cyterus",
+        "priceSeller": "prime bay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1307,7 +1307,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "electrolert",
+        "priceSeller": "35 Crscn",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1435,8 +1435,8 @@ export default [
         "url": "https://www.amazon.com/dp/B09T97ZSVB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
-        "priceSource": "3p",
-        "priceSeller": "MobileMonster",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -2774,11 +2774,13 @@ export default [
         "price": 437.17,
         "url": "https://www.amazon.com/dp/B082DGZJ9C?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "3p",
         "priceSeller": "Sanaa Direct (Serial Number Recorded)",
         "priceConfirmedAt": "2026-09-25",
-        "priceResolvedVia": "dataforseo"
+        "priceResolvedVia": "dataforseo",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-25"
       }
     },
     "additionalImages": [
@@ -3056,7 +3058,7 @@ export default [
     "reviews": 3930,
     "deals": {
       "amazon": {
-        "price": 749.67,
+        "price": 993.99,
         "url": "https://www.amazon.com/dp/B09R7S7PXC?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -4842,13 +4844,11 @@ export default [
         "price": 238.99,
         "url": "https://www.amazon.com/dp/B08175L812?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
         "priceSeller": "RACERSPEED INC.",
-        "priceResolvedVia": "paapi",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-25"
+        "priceResolvedVia": "dataforseo",
+        "priceConfidence": "confirmed"
       },
       "newegg": {
         "sku": "4458311220951053116857630",
@@ -5575,7 +5575,10 @@ export default [
     "height": 32,
     "form": "DIMM",
     "color": "Black",
-    "ecc": false
+    "ecc": false,
+    "needsReview": true,
+    "quarantinedAt": "2026-09-25",
+    "quarantineReason": "price_3p_flagged"
   },
   {
     "id": 40165,
@@ -8263,7 +8266,7 @@ export default [
     "reviews": 16,
     "deals": {
       "amazon": {
-        "price": 521.17,
+        "price": 567.99,
         "url": "https://www.amazon.com/dp/B0FV3JQB3H?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
@@ -10876,7 +10879,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "TheTechGroup",
+        "priceSeller": "Ironleaf Partners",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -11173,7 +11176,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "CalvinNHobbs",
+        "priceSeller": "MemoryMasters",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },

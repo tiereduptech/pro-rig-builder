@@ -266,8 +266,8 @@ export default [
         "url": "https://www.amazon.com/dp/B0F8LDHQ7Y?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
-        "priceSource": "3p",
-        "priceSeller": "electrolert",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -301,12 +301,12 @@ export default [
     "bench": 100,
     "deals": {
       "amazon": {
-        "price": 4999.99,
+        "price": 4550,
         "url": "https://www.amazon.com/dp/B0BJFRT43X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "BestBuyBay",
+        "priceSeller": "DG's Vault",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -375,7 +375,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "BestBuyBay",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-25"
       }
     },
     "baseClock": 2205,
@@ -829,7 +831,7 @@ export default [
     "bench": 58,
     "deals": {
       "amazon": {
-        "price": 499,
+        "price": 473.57,
         "url": "https://www.amazon.com/dp/B08MYCN952?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
@@ -901,7 +903,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "CR Distributors (S/N Recorded)",
+        "priceSeller": "Bonbon YM Distributor (S/N Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -1461,7 +1463,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Techno Sphere",
+        "priceSeller": "Safety Logistics (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -2020,7 +2022,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Everlast Computers",
+        "priceSeller": "THE DOTZ COMPANY",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4675,13 +4677,11 @@ export default [
         "price": 2005.99,
         "url": "https://www.amazon.com/dp/B0DQSD7YQC?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-24",
+        "priceConfirmedAt": "2026-09-25",
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-25"
+        "priceConfidence": "confirmed"
       },
       "bestbuy": {
         "price": 2099.99,
@@ -4745,7 +4745,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Custom Hardware",
+        "priceSeller": "BestBuyBay",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5276,7 +5276,10 @@ export default [
     "boostClock": 2475,
     "pcie": "4.0 x16",
     "slots": 2.5,
-    "memType": "GDDR6X"
+    "memType": "GDDR6X",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-25",
+    "quarantineReason": "no_new_offer"
   },
   {
     "id": 30131,
@@ -5477,12 +5480,12 @@ export default [
     "reviews": 413,
     "deals": {
       "amazon": {
-        "price": 1145,
+        "price": 849.99,
         "url": "https://www.amazon.com/dp/B0BQCVTSR3?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
-        "priceSource": "3p",
-        "priceSeller": "GH Electronics (We Record SN#)",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -5811,12 +5814,12 @@ export default [
     "reviews": 253,
     "deals": {
       "amazon": {
-        "price": 1499.95,
+        "price": 1689,
         "url": "https://www.amazon.com/dp/B0BL668N1X?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "TekDepo(We Record SN#)",
+        "priceSeller": "Techno Sphere",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -6361,7 +6364,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Yasin Retailers",
+        "priceSeller": "Nobersell (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -6401,7 +6404,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Techno Sphere",
+        "priceSeller": "Nobersell (Serial # Recorded)",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -16299,7 +16302,7 @@ export default [
         "priceSeller": "Technology Traders",
         "priceConfirmedAt": "2026-09-23",
         "priceResolvedVia": "dataforseo",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-25"
       }
     },
@@ -17566,11 +17569,11 @@ export default [
       "amazon": {
         "asin": "B0CTJZCJH1",
         "url": "https://www.amazon.com/dp/B0CTJZCJH1?tag=tiereduptech-20",
-        "price": 256.97,
+        "price": 279.99,
         "inStock": true,
         "priceConfidence": "confirmed",
-        "priceSource": "3p",
-        "priceSeller": "TELeasy",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceConfirmedAt": "2026-09-25",
         "priceResolvedVia": "dataforseo"
       }
@@ -17984,11 +17987,11 @@ export default [
       "amazon": {
         "asin": "B0C59RVD98",
         "url": "https://www.amazon.com/dp/B0C59RVD98?tag=tiereduptech-20",
-        "price": 329.99,
+        "price": 349.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "prime bay",
+        "priceSeller": "Fennec, Inc",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -18639,7 +18642,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "SpaceBound",
+        "priceSeller": "VisionTek Products",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -19234,12 +19237,12 @@ export default [
       "amazon": {
         "asin": "B0CQPZTRL3",
         "url": "https://www.amazon.com/dp/B0CQPZTRL3?tag=tiereduptech-20",
-        "price": 1899.99,
+        "price": 1799.95,
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "Grandis Goods",
+        "priceSeller": "TekDepo(We Record SN#)",
         "priceResolvedVia": "dataforseo"
       }
     },
@@ -19326,7 +19329,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "NextGen PC",
+        "priceSeller": "TekDepo(We Record SN#)",
         "priceResolvedVia": "dataforseo"
       }
     },

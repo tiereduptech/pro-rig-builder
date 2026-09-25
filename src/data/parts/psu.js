@@ -1341,12 +1341,12 @@ export default [
     "depth": 150,
     "deals": {
       "amazon": {
-        "price": 86.06,
+        "price": 66.84,
         "url": "https://www.amazon.com/dp/B0CCV79718?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSeller": "TELeasy",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -4581,7 +4581,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "MARU3-SHOP",
+        "priceSeller": "ganzhouyifenhangliangyoumaoyiyouxiangongsi",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -8937,8 +8937,8 @@ export default [
         "price": 153.89,
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
-        "priceSource": "3p",
-        "priceSeller": "IPC-STORE✅",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
@@ -9554,7 +9554,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-25",
         "priceSource": "3p",
-        "priceSeller": "ASRock USA",
+        "priceSeller": "Newegg Business",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }
