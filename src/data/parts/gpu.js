@@ -4914,7 +4914,7 @@ export default [
         "itemId": "2977",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -4978,14 +4978,14 @@ export default [
         "priceLastMovedAt": "2026-09-13"
       },
       "msi": {
-        "price": 779.99,
+        "price": 829.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2722&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-SHADOW-2X-OC-PLUS&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2722",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       }
     },
     "discount": 17,
@@ -6314,14 +6314,14 @@ export default [
         "priceConfidence": "confirmed"
       },
       "msi": {
-        "price": 789.99,
+        "price": 829.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2572&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-SHADOW-2X-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2572",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -7180,14 +7180,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 789.99,
+        "price": 839.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2625&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-Ti-16G-GAMING-OC&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2625",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "44583832789843850201287",
@@ -7996,7 +7996,7 @@ export default [
         "itemId": "2523",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -8510,14 +8510,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 489.99,
+        "price": 509.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2678&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-GAMING-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2678",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "4458315676072985151681774",
@@ -9036,14 +9036,14 @@ export default [
         "priceUnconfirmedAt": "2026-09-25"
       },
       "msi": {
-        "price": 1599.99,
+        "price": 1699.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2482&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-VENTUS-3X-OC&intsrc=APIG_16410",
-        "inStock": false,
+        "inStock": true,
         "itemId": "2482",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       }
     },
     "discount": 6,
@@ -9475,7 +9475,7 @@ export default [
         "itemId": "2856",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-09-02"
       },
       "newegg": {
@@ -9536,7 +9536,7 @@ export default [
         "itemId": "2140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10183,7 +10183,7 @@ export default [
         "itemId": "2480",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -10237,14 +10237,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 1549.99,
+        "price": 1659.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2485&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-SHADOW-3X-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2485",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "445838781364168467156249",
@@ -10572,14 +10572,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 4599.99,
+        "price": 5299.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2469&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX%205090-32G-SUPRIM-LIQUID-SOC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2469",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "4458310185341873142672706",
@@ -11130,14 +11130,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 849.99,
+        "price": 879.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2573&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-GAMING-TRIO-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2573",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "445836664794761865727318",
@@ -11629,11 +11629,11 @@ export default [
       "msi": {
         "price": 1169.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2547&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-Ti-16G-SHADOW-3X-OC&intsrc=APIG_16410",
-        "inStock": true,
+        "inStock": false,
         "itemId": "2547",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12271,14 +12271,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 799.99,
+        "price": 859.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2626&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-TI-16G-GAMING-TRIO-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2626",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "4458313303885419681273768",
@@ -12337,7 +12337,7 @@ export default [
         "itemId": "2583",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -12562,14 +12562,14 @@ export default [
         "priceLastMovedAt": "2026-09-14"
       },
       "msi": {
-        "price": 469.99,
+        "price": 504.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2680&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-3X-OC&intsrc=APIG_16410",
         "inStock": true,
         "itemId": "2680",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "445833245035966210020533",
@@ -12623,14 +12623,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 459.99,
+        "price": 499.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2682&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-2X-OC-WHITE&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2682",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "445831257091890062833074",
@@ -12683,14 +12683,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 459.99,
+        "price": 499.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2681&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5060-8G-VENTUS-2X-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2681",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "4458311699325815335381725",
@@ -12749,7 +12749,7 @@ export default [
         "itemId": "2683",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13100,7 +13100,7 @@ export default [
         "itemId": "2643",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13205,14 +13205,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 839.99,
+        "price": 859.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2577&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-VENTUS-3X-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2577",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "4458310923867219901708438",
@@ -13308,14 +13308,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 799.99,
+        "price": 839.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2579&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5070-12G-VENTUS-2X-OC&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2579",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       }
     },
     "model": "GeForce RTX 5070",
@@ -13351,7 +13351,7 @@ export default [
         "itemId": "2646",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13519,7 +13519,7 @@ export default [
         "itemId": "2720",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       }
     },
@@ -13565,7 +13565,7 @@ export default [
         "itemId": "2718",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13626,7 +13626,7 @@ export default [
         "itemId": "2721",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -13846,7 +13846,7 @@ export default [
         "itemId": "2714",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14093,7 +14093,7 @@ export default [
         "itemId": "2855",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
+        "priceConfirmedAt": "2026-09-26",
         "priceLastMovedAt": "2026-08-28"
       },
       "newegg": {
@@ -14197,14 +14197,14 @@ export default [
         "priceConfirmedAt": "2026-09-26"
       },
       "msi": {
-        "price": 1699.99,
+        "price": 1799.99,
         "url": "https://msi.pxf.io/c/7109270/1986809/23099?prodsku=2940&u=https%3A%2F%2Fus-store.msi.com%2FGraphics-Cards%2FNVIDIA-GPU%2FGeForce-RTX-5080-16G-INSPIRE-3X-OC-BLACK&intsrc=APIG_16410",
         "inStock": false,
         "itemId": "2940",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-25",
-        "priceLastMovedAt": "2026-08-28"
+        "priceConfirmedAt": "2026-09-26",
+        "priceLastMovedAt": "2026-09-26"
       }
     },
     "model": "GeForce RTX 5080",
