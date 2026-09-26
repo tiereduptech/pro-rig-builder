@@ -1322,9 +1322,11 @@ export default [
         "price": 141.59,
         "url": "https://www.amazon.com/dp/B08C2XKPNK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-26",
+        "priceSource": "3p",
+        "priceSeller": "UnbeatableSale Local",
+        "priceResolvedVia": "dataforseo"
       }
     },
     "tower": "Mid",
@@ -1830,7 +1832,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MUSETEX",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -3674,7 +3678,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-26"
       },
       "bestbuy": {
         "price": 109.99,
@@ -4789,7 +4795,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "MOROVOL",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -5195,7 +5203,7 @@ export default [
     "reviews": 105,
     "deals": {
       "amazon": {
-        "price": 71.24,
+        "price": 74.99,
         "url": "https://www.amazon.com/dp/B0G65G7GNB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
@@ -10151,7 +10159,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "WAN HENG",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "unlabeled_buybox",
+        "priceUnconfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [

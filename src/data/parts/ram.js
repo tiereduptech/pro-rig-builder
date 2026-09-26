@@ -819,12 +819,12 @@ export default [
     "reviews": 484,
     "deals": {
       "amazon": {
-        "price": 482.99,
+        "price": 519.95,
         "url": "https://www.amazon.com/dp/B0FQNB9WBD?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
         "priceSource": "3p",
-        "priceSeller": "QyTech",
+        "priceSeller": "Assurant Technologies",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1307,7 +1307,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
         "priceSource": "3p",
-        "priceSeller": "35 Crscn",
+        "priceSeller": "Assurant Technologies",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -1502,7 +1502,9 @@ export default [
         "priceSource": "1p",
         "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-26"
       },
       "newegg": {
         "sku": "44583723411550403212580",
@@ -3939,12 +3941,12 @@ export default [
     "reviews": 716,
     "deals": {
       "amazon": {
-        "price": 578.55,
+        "price": 656.99,
         "url": "https://www.amazon.com/dp/B09KCLP63B?tag=tiereduptech-20",
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
-        "priceSource": "3p",
-        "priceSeller": "MobileMonster",
+        "priceSource": "1p",
+        "priceSeller": "Amazon.com",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       },
@@ -10392,7 +10394,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
         "priceSource": "3p",
-        "priceSeller": "Giz-Promo",
+        "priceSeller": "TEAMGROUP Inc.",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

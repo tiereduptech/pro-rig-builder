@@ -11489,12 +11489,12 @@ export default [
     "reviews": 49,
     "deals": {
       "amazon": {
-        "price": 141.62,
+        "price": 150.65,
         "url": "https://www.amazon.com/dp/B0DYZLRXSB?tag=tiereduptech-20",
         "inStock": true,
         "priceConfidence": "confirmed",
         "priceSource": "3p",
-        "priceSeller": "vCloudTech",
+        "priceSeller": "TELeasy",
         "priceConfirmedAt": "2026-09-26",
         "priceResolvedVia": "dataforseo"
       },
@@ -20004,7 +20004,7 @@ export default [
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
         "priceSource": "3p",
-        "priceSeller": "RhodyRetail",
+        "priceSeller": "CST  Group",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
       }

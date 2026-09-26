@@ -9564,7 +9564,9 @@ export default [
         "priceSource": "3p",
         "priceSeller": "ASRock USA",
         "priceResolvedVia": "dataforseo",
-        "priceConfidence": "confirmed"
+        "priceConfidence": "unconfirmed",
+        "priceUnconfirmedReason": "no_buybox_but_new_offer_exists",
+        "priceUnconfirmedAt": "2026-09-26"
       }
     },
     "watts": 1200,
@@ -9897,7 +9899,7 @@ export default [
       "amazon": {
         "asin": "B0CPR1FR7H",
         "url": "https://www.amazon.com/dp/B0CPR1FR7H?tag=tiereduptech-20",
-        "price": 99.99,
+        "price": 107.99,
         "inStock": true,
         "priceConfirmedAt": "2026-09-26",
         "priceSource": "1p",
