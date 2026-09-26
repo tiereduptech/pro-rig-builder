@@ -190,7 +190,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -268,7 +268,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -492,7 +492,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 5,
@@ -645,7 +645,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -700,8 +700,8 @@ export default [
         "itemNumber": "N82E16820331616",
         "sellerClass": "official",
         "price": 159.99,
-        "saleprice": 149.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311755567346921749343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331616%3Fitem%3DN82E16820331616",
+        "saleprice": 129.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311755567346921749343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331616%3Fitem%3DN82E16820331616",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-616-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
@@ -710,8 +710,8 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 7,
@@ -778,7 +778,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -1104,7 +1104,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -1378,8 +1378,8 @@ export default [
         "sku": "445832835364458301054022",
         "itemNumber": "N82E16820374457",
         "sellerClass": "official",
-        "price": 639.99,
-        "saleprice": 629.99,
+        "price": 679.99,
+        "saleprice": 659.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832835364458301054022&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-32gb-ddr5-6000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820374457%3Fitem%3DN82E16820374457",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-457-06.png",
         "inStock": true,
@@ -1389,8 +1389,8 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 22,
-        "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -1444,7 +1444,7 @@ export default [
         "sku": "4458312929893280091739819",
         "itemNumber": "9SIAD6HJT13926",
         "sellerClass": "marketplace",
-        "price": 428.87,
+        "price": 463.7,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312929893280091739819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-kf552c40bbk2-16-16gb-ddr5-5200-cas-latency-cl40-memory-black%2Fp%2F0RN-001J-013N0%3Fitem%3D9SIAD6HJT13926",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2301280VXVWN65.jpg",
         "inStock": true,
@@ -1454,8 +1454,8 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -1520,7 +1520,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 9,
@@ -1634,7 +1634,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -1869,7 +1869,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2136,7 +2136,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 6,
@@ -2227,7 +2227,7 @@ export default [
         "sku": "4458310143348309199958167",
         "itemNumber": "9SIC6E1M4N1992",
         "sellerClass": "marketplace",
-        "price": 262.41,
+        "price": 261.79,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310143348309199958167&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-ddr5-classic-16gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820156355%3Fitem%3D9SIC6E1M4N1992",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-288-V01.jpg",
         "inStock": true,
@@ -2237,8 +2237,8 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2362,7 +2362,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2527,7 +2527,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2719,20 +2719,18 @@ export default [
         "priceUnconfirmedAt": "2026-09-26"
       },
       "newegg": {
-        "sku": "44583142255459532483160",
-        "itemNumber": "9SIC6TRKZS9451",
+        "sku": "4458313099312967110113274",
+        "itemNumber": "9SIC1WRKPX0294",
         "sellerClass": "marketplace",
-        "price": 96,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583142255459532483160&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0RM-00H2-00002%3Fitem%3D9SIC6TRKZS9451",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C6TRS260620000E7568.jpg",
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313099312967110113274&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fdato-16gb-3200-mhz-cas-latency-cl22-memory-desktop-memory-%2Fp%2F0RN-016S-00011%3Fitem%3D9SIC1WRKPX0294",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C1WRD25121808R1R592.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-28T21:46:21.142Z",
-        "matchMethod": "sftp:sku",
-        "matchScore": 0.9,
-        "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "weak_match_blocked",
-        "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "matchedAt": "2026-09-26T15:21:06.811Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7,
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2845,7 +2843,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -2923,7 +2921,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -3093,7 +3091,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -3350,7 +3348,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -3687,7 +3685,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 13,
@@ -3737,6 +3735,20 @@ export default [
         "priceSeller": "IHDesigns",
         "priceResolvedVia": "dataforseo",
         "priceConfidence": "confirmed"
+      },
+      "newegg": {
+        "sku": "4458313926665752236850292",
+        "itemNumber": "N82E16820331743",
+        "sellerClass": "official",
+        "price": 569.99,
+        "saleprice": 549.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313926665752236850292&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-delta-rgb-32gb-ddr5-6400-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820331743%3Fitem%3DN82E16820331743",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-810-07.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-26T15:21:24.277Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -5069,7 +5081,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 15,
@@ -5325,7 +5337,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -5712,7 +5724,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 6,
@@ -5778,7 +5790,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 7,
@@ -5878,7 +5890,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 22,
@@ -6345,7 +6357,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -6585,7 +6597,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -7253,7 +7265,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "discount": 7,
@@ -8287,7 +8299,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "upc": "840440419402",
@@ -8542,7 +8554,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "additionalImages": [
@@ -8678,7 +8690,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -8924,18 +8936,15 @@ export default [
         "sku": "445839793294290713234027",
         "itemNumber": "9SIBZW0KPR4224",
         "sellerClass": "marketplace",
-        "price": 531.95,
+        "price": 505.3,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839793294290713234027&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-pro-32gb-ddr5-5600-cas-latency-cl46-desktop-memory-black%2Fp%2FN82E16820156328%3Fitem%3D9SIBZW0KPR4224",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-328-17.png",
         "inStock": true,
-        "matchedAt": "2026-09-20T15:06:42.402Z",
+        "matchedAt": "2026-09-26T15:21:05.040Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "no_results",
-        "refreshMissStreak": 12,
-        "priceLastMovedAt": "2026-09-20",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9050,7 +9059,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9162,7 +9171,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9219,7 +9228,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9276,7 +9285,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9333,7 +9342,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9443,7 +9452,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "cap": 32,
@@ -9895,7 +9904,7 @@ export default [
         "sellerClass": "official",
         "price": 1010,
         "saleprice": 989.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832156532174368504792&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982288%3Fitem%3DN82E16820982288",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832156532174368504792&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-64gb-2-x-32gb-ddr5-6000-pc5-48000-cas-latency-cl40-desktop-memory-gray%2Fp%2FN82E16820982288%3Fitem%3DN82E16820982288",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-288-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.230Z",
@@ -11190,7 +11199,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",
@@ -12815,9 +12824,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-24T20:18:22.003Z",
-        "refreshMissStreak": 3,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "no_results"
+        "refreshMissReason": "no_results",
+        "refreshMissStreak": 3,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -13103,6 +13113,20 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T09:34:27.824Z"
+      },
+      "newegg_openbox": {
+        "sku": "4458311309341200141875243",
+        "itemNumber": "0RN-001J-014J1R",
+        "sellerClass": "official",
+        "price": 379.99,
+        "saleprice": 323.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311309341200141875243&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-fury-beast-16gb-2-x-8gb-ddr5-6000-pc5-48000-cas-latency-cl36-memory-desktop-memory-black%2Fp%2F0RN-001J-014J1R%3Fitem%3D0RN-001J-014J1R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0RN-001J-014J1-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-26T15:18:33.401Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -13561,7 +13585,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -13765,7 +13789,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -13808,7 +13832,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -13842,7 +13866,7 @@ export default [
         "sellerClass": "official",
         "price": 249.99,
         "saleprice": 229.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313265527690693357136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigastone-corporation-gst-game-pro-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-00YA-00022%3Fitem%3D0RN-00YA-00022",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313265527690693357136&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fgigastone-corporation-gst-game-pro-32gb-ddr4-3200-cas-latency-cl16-memory-black%2Fp%2F0RN-00YA-00022%3Fitem%3D0RN-00YA-00022",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AGDFS23110706AXCG9D.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:14:29.877Z",
@@ -13931,7 +13955,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -15389,6 +15413,20 @@ export default [
         "matchScore": 0.95,
         "refreshedAt": "2026-09-26T09:36:15.126Z",
         "priceLastMovedAt": "2026-09-12"
+      },
+      "newegg_openbox": {
+        "sku": "445832067941818524164539",
+        "itemNumber": "N82E16820101113R",
+        "sellerClass": "official",
+        "price": 499.99,
+        "saleprice": 439.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832067941818524164539&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fklevv-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-desktop-memory-black%2Fp%2FN82E16820101113R%3Fitem%3DN82E16820101113R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-101-113-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-26T15:21:23.747Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -15480,7 +15518,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:41.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -17544,8 +17582,8 @@ export default [
         "sku": "445839704448527068280573",
         "itemNumber": "N82E16820236826",
         "sellerClass": "official",
-        "price": 470,
-        "saleprice": 439.99,
+        "price": 520,
+        "saleprice": 499.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839704448527068280573&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-vengeance-32gb-ddr5-4800-cas-latency-cl40-desktop-memory-black%2Fp%2FN82E16820236826%3Fitem%3DN82E16820236826",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-236-826-V01.jpg",
         "inStock": true,
@@ -17556,7 +17594,8 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 21,
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -17683,7 +17722,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -17893,7 +17932,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -17934,10 +17973,11 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-24T20:21:15.770Z",
-        "priceLastMovedAt": "2026-09-09",
-        "refreshMissStreak": 3,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 3,
+        "priceLastMovedAt": "2026-09-09",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -18065,7 +18105,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -18147,10 +18187,11 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-25T09:54:22.581Z",
-        "priceLastMovedAt": "2026-09-10",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 2,
+        "priceLastMovedAt": "2026-09-10",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -18358,7 +18399,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20044,10 +20085,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-24T09:34:43.143Z",
-        "priceConfirmedAt": "2026-09-23",
-        "refreshMissStreak": 4,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "downgrade_blocked"
+        "refreshMissReason": "downgrade_blocked",
+        "refreshMissStreak": 4,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20339,7 +20380,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20380,10 +20421,11 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-23T09:38:37.993Z",
-        "priceLastMovedAt": "2026-09-12",
-        "refreshMissStreak": 6,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 6,
+        "priceLastMovedAt": "2026-09-12",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20426,7 +20468,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20469,7 +20511,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20555,7 +20597,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20599,7 +20641,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20722,8 +20764,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T09:38:20.873Z",
-        "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-16"
       }
     },
     "needsReview": false,
@@ -20848,7 +20889,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20892,7 +20933,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -20937,7 +20978,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-18",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -21019,11 +21060,11 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-25T09:55:26.000Z",
-        "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 2,
+        "priceLastMovedAt": "2026-09-17",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -21067,7 +21108,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -21524,7 +21565,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -22079,7 +22120,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -22617,7 +22658,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -24046,7 +24087,7 @@ export default [
         "sellerClass": "official",
         "price": 549.99,
         "saleprice": 539.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310901913873384992612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374806%3Fitem%3DN82E16820374806",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458310901913873384992612&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl36-desktop-memory-black%2Fp%2FN82E16820374806%3Fitem%3DN82E16820374806",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-806-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.055Z",
@@ -24737,7 +24778,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -25738,7 +25779,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -25904,8 +25945,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T09:41:16.165Z",
-        "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -26078,7 +26118,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -26204,7 +26244,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -26499,7 +26539,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -26955,7 +26995,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 18,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -27123,7 +27163,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -27752,10 +27792,11 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-24T20:25:21.315Z",
-        "priceLastMovedAt": "2026-09-21",
-        "refreshMissStreak": 3,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 3,
+        "priceLastMovedAt": "2026-09-21",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -27926,7 +27967,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 21,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28052,7 +28093,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28137,7 +28178,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28181,7 +28222,7 @@ export default [
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 18,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28225,7 +28266,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28714,9 +28755,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-23T09:42:36.781Z",
-        "refreshMissStreak": 6,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 6,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,
@@ -28882,9 +28924,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-22T20:12:03.634Z",
-        "refreshMissStreak": 7,
         "refreshMissedAt": "2026-09-26T08:59:05.563Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 7,
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "needsReview": false,

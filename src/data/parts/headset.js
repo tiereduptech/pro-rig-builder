@@ -629,7 +629,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:39.667Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "hsType": "Wired",
@@ -837,14 +837,15 @@ export default [
         "sku": "445838227136963703888298",
         "itemNumber": "9SIABMTKJH9236",
         "sellerClass": "marketplace",
-        "price": 89.95,
+        "price": 90.95,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838227136963703888298&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0TH-0045-008Y4%3Fitem%3D9SIABMTKJH9236",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/ABMTD250726029E2I8F.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:16:15.097Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-23"
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-26"
       }
     },
     "hsType": "Wired",
