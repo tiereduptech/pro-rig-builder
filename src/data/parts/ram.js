@@ -190,7 +190,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -266,7 +266,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -490,7 +490,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 5,
@@ -643,7 +643,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -699,7 +699,7 @@ export default [
         "sellerClass": "official",
         "price": 159.99,
         "saleprice": 129.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311755567346921749343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331616%3Fitem%3DN82E16820331616",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311755567346921749343&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-t-force-vulcan-z-16gb-ddr4-3200-cas-latency-cl16-desktop-memory-gray%2Fp%2FN82E16820331616%3Fitem%3DN82E16820331616",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-616-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.773Z",
@@ -709,7 +709,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 7,
@@ -776,7 +776,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -1102,7 +1102,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -1388,7 +1388,7 @@ export default [
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -1442,7 +1442,7 @@ export default [
         "sku": "4458312929893280091739819",
         "itemNumber": "9SIAD6HJT13926",
         "sellerClass": "marketplace",
-        "price": 463.7,
+        "price": 466.93,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312929893280091739819&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-technology-corp-kf552c40bbk2-16-16gb-ddr5-5200-cas-latency-cl40-memory-black%2Fp%2F0RN-001J-013N0%3Fitem%3D9SIAD6HJT13926",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AFYUD2301280VXVWN65.jpg",
         "inStock": true,
@@ -1452,8 +1452,8 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -1520,7 +1520,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 9,
@@ -1634,7 +1634,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -1869,7 +1869,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -2136,7 +2136,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 6,
@@ -2238,7 +2238,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -2362,7 +2362,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -2527,7 +2527,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -2727,13 +2727,13 @@ export default [
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/C1WRD25121808R1R592.jpg",
         "inStock": true,
         "matchedAt": "2026-09-26T15:21:06.811Z",
-        "matchMethod": "sftp:name",
-        "matchScore": 0.7,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26",
-        "refreshMissStreak": 2,
+        "matchMethod": "sftp:sku",
+        "matchScore": 0.9,
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
-        "refreshMissReason": "weak_match_blocked"
+        "refreshMissReason": "weak_match_blocked",
+        "refreshMissStreak": 2,
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -2846,7 +2846,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -3094,7 +3094,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -3351,7 +3351,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -3688,7 +3688,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 13,
@@ -3751,10 +3751,10 @@ export default [
         "matchedAt": "2026-09-26T15:21:24.277Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
-        "refreshMissReason": "no_results"
+        "refreshMissReason": "no_results",
+        "refreshMissStreak": 2,
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -5085,7 +5085,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 15,
@@ -5341,7 +5341,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -5728,7 +5728,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 6,
@@ -5794,7 +5794,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 7,
@@ -5894,7 +5894,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 22,
@@ -6361,7 +6361,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -6601,7 +6601,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -7269,7 +7269,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "discount": 7,
@@ -8303,7 +8303,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "upc": "840440419402",
@@ -8558,7 +8558,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -8694,7 +8694,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -8947,11 +8947,11 @@ export default [
         "matchedAt": "2026-09-26T15:21:05.040Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
-        "refreshMissReason": "no_results"
+        "refreshMissReason": "no_results",
+        "refreshMissStreak": 2,
+        "priceLastMovedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9066,7 +9066,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9178,7 +9178,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9235,7 +9235,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9292,7 +9292,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9349,7 +9349,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -9459,7 +9459,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "cap": 32,
@@ -11208,7 +11208,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "addedAt": "2026-05-15T14:34:31.777Z",
@@ -12836,7 +12836,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 5,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -13135,7 +13135,7 @@ export default [
         "matchedAt": "2026-09-26T15:18:33.401Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -13594,7 +13594,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -13798,7 +13798,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -13841,7 +13841,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -13964,7 +13964,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -14311,15 +14311,15 @@ export default [
         "itemNumber": "N82E16820014145",
         "sellerClass": "official",
         "price": 140.99,
-        "saleprice": 139.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313594947652515963132&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014145%3Fitem%3DN82E16820014145",
+        "saleprice": 138.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313594947652515963132&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-16gb-288-pin-ddr4-sdram%2Fp%2FN82E16820014145%3Fitem%3DN82E16820014145",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-145-S01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.044Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-27T10:19:38.918Z",
-        "priceLastMovedAt": "2026-09-12"
+        "priceLastMovedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -15012,15 +15012,15 @@ export default [
         "itemNumber": "N82E16820014246",
         "sellerClass": "official",
         "price": 142.99,
-        "saleprice": 137.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313410785012956522901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014246%3Fitem%3DN82E16820014246",
+        "saleprice": 138.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458313410785012956522901&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fblack-diamond-memory-8gb%2Fp%2FN82E16820014246%3Fitem%3DN82E16820014246",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-014-246-01.png",
         "inStock": true,
         "matchedAt": "2026-08-26T12:36:02.158Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-27T10:20:34.272Z",
-        "priceLastMovedAt": "2026-09-10"
+        "priceLastMovedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -15435,7 +15435,7 @@ export default [
         "matchedAt": "2026-09-26T15:21:23.747Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -15527,7 +15527,7 @@ export default [
         "matchedAt": "2026-08-27T21:32:41.024Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -17604,7 +17604,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 23,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -17731,7 +17731,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -17941,7 +17941,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -17982,8 +17982,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-27T10:21:36.283Z",
-        "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -18111,7 +18110,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -18193,8 +18192,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-27T10:21:36.857Z",
-        "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-10"
       }
     },
     "needsReview": false,
@@ -18276,8 +18274,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T19:33:23.964Z",
-        "priceLastMovedAt": "2026-09-09",
-        "refreshMissStreak": 1
+        "refreshMissStreak": 1,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -18403,7 +18401,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20093,7 +20091,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 6,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20385,7 +20383,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20426,8 +20424,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-27T10:22:36.998Z",
-        "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-12"
       }
     },
     "needsReview": false,
@@ -20470,7 +20467,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20513,7 +20510,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20601,7 +20598,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20645,7 +20642,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20893,7 +20890,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20937,7 +20934,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -20982,7 +20979,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-18",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -21068,7 +21065,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 4,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -21112,7 +21109,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -21569,7 +21566,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -22124,7 +22121,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -22662,7 +22659,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -22865,9 +22862,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T09:39:24.830Z",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
-        "refreshMissReason": "variant_rejected"
+        "refreshMissReason": "variant_rejected",
+        "refreshMissStreak": 2,
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -23104,7 +23102,7 @@ export default [
         "sellerClass": "official",
         "price": 1099.99,
         "saleprice": 1079.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445836435360635677673424&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374657%3Fitem%3DN82E16820374657",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445836435360635677673424&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fg-skill-flare-x5-64gb-ddr5-6000-cas-latency-cl36-desktop-memory-white%2Fp%2FN82E16820374657%3Fitem%3DN82E16820374657",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-374-657-04.png",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.925Z",
@@ -24660,8 +24658,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T19:36:29.907Z",
-        "priceLastMovedAt": "2026-09-09",
-        "refreshMissStreak": 1
+        "refreshMissStreak": 1,
+        "priceLastMovedAt": "2026-09-09"
       }
     },
     "needsReview": false,
@@ -24789,7 +24787,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -25790,7 +25788,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -26129,7 +26127,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -26255,7 +26253,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -26550,7 +26548,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -27006,7 +27004,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 20,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -27174,7 +27172,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -27801,9 +27799,8 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-26T19:37:29.493Z",
-        "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-26",
-        "refreshMissStreak": 1
+        "refreshMissStreak": 1,
+        "priceLastMovedAt": "2026-09-21"
       }
     },
     "needsReview": false,
@@ -27974,7 +27971,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 23,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28100,7 +28097,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28185,7 +28182,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28229,7 +28226,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 20,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28273,7 +28270,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 24,
         "priceLastMovedAt": "2026-09-16",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28765,7 +28762,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 8,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,
@@ -28934,7 +28931,7 @@ export default [
         "refreshMissedAt": "2026-09-27T09:43:30.581Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 9,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "needsReview": false,

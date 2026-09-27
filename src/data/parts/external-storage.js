@@ -36,7 +36,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.182Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -341,7 +341,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -394,7 +394,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.627Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -527,15 +527,15 @@ export default [
         "sku": "4458310086512752069796021",
         "itemNumber": "9SIAD6HKHA3761",
         "sellerClass": "marketplace",
-        "price": 224.11,
+        "price": 225.67,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310086512752069796021&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-model-stlx2000402-2tb-usb-3-2-gen-1%2Fp%2FN82E16822185089%3Fitem%3D9SIAD6HKHA3761",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-089-04.jpg",
         "inStock": true,
         "matchedAt": "2026-08-27T21:31:35.069Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -589,7 +589,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
         "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -646,7 +646,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.463Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "additionalImages": [
@@ -699,7 +699,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     },
     "cap": 2000,
@@ -774,7 +774,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     },
     "cap": 4000,
@@ -819,7 +819,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     },
     "cap": 2000,
@@ -923,7 +923,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.73,
         "sellerClass": "other",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
