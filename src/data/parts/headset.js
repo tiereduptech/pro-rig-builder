@@ -499,7 +499,7 @@ export default [
         "sku": "6577935",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -777,7 +777,7 @@ export default [
         "sku": "6420856",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -1038,7 +1038,7 @@ export default [
         "sku": "6320789",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -1159,7 +1159,7 @@ export default [
         "sku": "6577966",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -1347,7 +1347,7 @@ export default [
         "sku": "6583838",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -1516,7 +1516,7 @@ export default [
         "sku": "6423471",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -1543,7 +1543,7 @@ export default [
         "sku": "6498042",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-26"
       }
     },
@@ -1570,7 +1570,7 @@ export default [
         "sku": "6557061",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26"
+        "priceConfirmedAt": "2026-09-27"
       }
     },
     "hsType": "Wired",
@@ -1653,7 +1653,7 @@ export default [
         "sku": "6641078",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -1680,7 +1680,7 @@ export default [
         "sku": "6572603",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -1707,7 +1707,7 @@ export default [
         "sku": "6641635",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-19"
       }
     },
@@ -1734,7 +1734,7 @@ export default [
         "sku": "6320787",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -1791,7 +1791,7 @@ export default [
         "sku": "6644061",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-22"
       }
     },
@@ -1818,7 +1818,7 @@ export default [
         "sku": "6506968",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -1845,7 +1845,7 @@ export default [
         "sku": "6502762",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-13"
       }
     },
@@ -1872,7 +1872,7 @@ export default [
         "sku": "6510363",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -1899,7 +1899,7 @@ export default [
         "sku": "6510365",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -1953,7 +1953,7 @@ export default [
         "sku": "6544740",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -1980,7 +1980,7 @@ export default [
         "sku": "6562123",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-10"
       }
     },
@@ -2007,7 +2007,7 @@ export default [
         "sku": "6562124",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -2034,7 +2034,7 @@ export default [
         "sku": "6562867",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-15"
       }
     },
@@ -2056,13 +2056,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6581760&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6581760.p%3FskuId%3D6581760",
-        "price": 24.99,
+        "price": 15.99,
         "inStock": true,
         "sku": "6581760",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
-        "priceLastMovedAt": "2026-09-16"
+        "priceConfirmedAt": "2026-09-27",
+        "priceLastMovedAt": "2026-09-27"
       }
     },
     "hsType": "Wired",
@@ -2093,7 +2093,7 @@ export default [
         "sku": "6635946",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-17"
       }
     },
@@ -2235,7 +2235,7 @@ export default [
         "sku": "6594136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -2262,7 +2262,7 @@ export default [
         "sku": "6594142",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -2289,7 +2289,7 @@ export default [
         "sku": "6595014",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -2348,7 +2348,7 @@ export default [
         "sku": "6616893",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-08"
       }
     },
@@ -2375,7 +2375,7 @@ export default [
         "sku": "6618285",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -2402,7 +2402,7 @@ export default [
         "sku": "6629016",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -2429,7 +2429,7 @@ export default [
         "sku": "6632890",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -2456,7 +2456,7 @@ export default [
         "sku": "6641368",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -2483,7 +2483,7 @@ export default [
         "sku": "6642553",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-18"
       }
     },
@@ -2510,7 +2510,7 @@ export default [
         "sku": "6642944",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceLastMovedAt": "2026-09-13"
       }
     },
