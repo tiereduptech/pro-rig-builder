@@ -111,7 +111,7 @@ export default [
         "priceSeller": "EPFamily Direct",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     }
   },
@@ -131,7 +131,7 @@ export default [
         "price": 151.99,
         "url": "https://www.amazon.com/dp/B0BR3NXTKK?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfirmedAt": "2026-09-26",
+        "priceConfirmedAt": "2026-09-27",
         "priceSource": "3p",
         "priceSeller": "Tribesigns-Way to Origin",
         "priceResolvedVia": "dataforseo",
@@ -155,13 +155,11 @@ export default [
         "price": 190,
         "url": "https://www.amazon.com/dp/B0BJNNF81W?tag=tiereduptech-20",
         "inStock": true,
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-09-12",
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-27",
         "priceSource": "3p",
         "priceSeller": "EPFamily Direct",
-        "priceResolvedVia": "paapi",
-        "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceResolvedVia": "dataforseo"
       }
     }
   },
@@ -187,7 +185,7 @@ export default [
         "priceSeller": "EPFamily Direct",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     }
   },
@@ -300,7 +298,7 @@ export default [
         "priceSeller": "LVB Furniture",
         "priceResolvedVia": "paapi",
         "priceUnconfirmedReason": "unlabeled_buybox",
-        "priceUnconfirmedAt": "2026-09-26"
+        "priceUnconfirmedAt": "2026-09-27"
       }
     }
   }
