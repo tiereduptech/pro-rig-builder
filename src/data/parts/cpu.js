@@ -5599,7 +5599,7 @@ export default [
         "sku": "6560420",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "amazon": {
         "price": 549.99,
@@ -5697,13 +5697,14 @@ export default [
     "mpn": "100-100001582BOX",
     "deals": {
       "bestbuy": {
-        "price": 239,
+        "price": 249,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589129&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-7-5800xt-8-core-16-thread-3-8-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH586J&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6589129",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458316089146151768131296",
@@ -5748,14 +5749,14 @@ export default [
     "mpn": "100-100001581WOF",
     "deals": {
       "bestbuy": {
-        "price": 311,
+        "price": 349,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589133&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Famd-ryzen-9-5900xt-16-core-32-thread-3-3-ghz-4-8-ghz-max-boost-socket-am4-pci-express-4-0-unlocked-desktop-processor-silver%2FJXKQHH589C&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6589133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "445839475304564512464244",
@@ -5799,14 +5800,14 @@ export default [
     "mpn": "100-100001277WOF",
     "deals": {
       "bestbuy": {
-        "price": 549,
+        "price": 649,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589134&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589134.p%3FskuId%3D6589134",
         "inStock": true,
         "sku": "6589134",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458317919762205493445447",
@@ -5855,14 +5856,14 @@ export default [
     "mpn": "100-100000662WOF",
     "deals": {
       "bestbuy": {
-        "price": 439.99,
+        "price": 499.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589135&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589135.p%3FskuId%3D6589135",
         "inStock": true,
         "sku": "6589135",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458313764603694254374003",
@@ -5908,14 +5909,14 @@ export default [
     "mpn": "100-100001404WOF",
     "deals": {
       "bestbuy": {
-        "price": 339,
+        "price": 359,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589136&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589136.p%3FskuId%3D6589136",
         "inStock": true,
         "sku": "6589136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-01"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "44583877074514623128348",
@@ -5960,13 +5961,14 @@ export default [
     "mpn": "100-100001405WOF",
     "deals": {
       "bestbuy": {
-        "price": 220,
+        "price": 279,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6589140&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6589140.p%3FskuId%3D6589140",
         "inStock": true,
         "sku": "6589140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "cores": 6,
@@ -6421,7 +6423,7 @@ export default [
         "sku": "6644817",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "cores": 64,

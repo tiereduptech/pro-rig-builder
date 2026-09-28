@@ -1495,14 +1495,14 @@ export default [
         "priceResolvedVia": "dataforseo"
       },
       "bestbuy": {
-        "price": 99.99,
+        "price": 129.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604875&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604875.p%3FskuId%3D6604875",
         "inStock": true,
         "sku": "6604875",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-22"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458314985996934103841889",
@@ -2746,7 +2746,7 @@ export default [
         "sku": "6597523",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-16"
       },
       "newegg": {
@@ -3983,7 +3983,7 @@ export default [
         "sku": "6597526",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -4046,7 +4046,7 @@ export default [
         "sku": "6642459",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "N82E16835181496",
@@ -4339,7 +4339,7 @@ export default [
         "sku": "6597519",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
@@ -4935,7 +4935,7 @@ export default [
         "sku": "6646438",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "N82E16835146175",
@@ -5658,7 +5658,7 @@ export default [
         "sku": "6541734",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 22,
@@ -6143,8 +6143,9 @@ export default [
         "inStock": false,
         "sku": "6642462",
         "priceSource": "1p",
-        "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfidence": "unconfirmed",
+        "priceConfirmedAt": "2026-09-27",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-high"
       },
       "newegg": {
         "sku": "N82E16835181493",
@@ -6371,7 +6372,7 @@ export default [
         "sku": "6630941",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 23,
@@ -7165,7 +7166,7 @@ export default [
         "sku": "6675642",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-25"
       },
       "newegg": {
@@ -7483,9 +7484,10 @@ export default [
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587609&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6587609.p%3FskuId%3D6587609",
         "inStock": true,
         "sku": "6587609",
-        "priceConfidence": "confirmed",
+        "priceConfidence": "unconfirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-27",
+        "priceUnconfirmedReason": "bestbuy:sanity-suspect-pair"
       }
     },
     "discount": 50,
@@ -7540,14 +7542,14 @@ export default [
         "priceUnconfirmedAt": "2026-08-25"
       },
       "bestbuy": {
-        "price": 199.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6587610&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-icue-link-titan-240-rx-lcd-liquid-cpu-cooler-black%2FJ39TSCQ5TV&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6587610",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "additionalImages": [
@@ -8984,7 +8986,7 @@ export default [
         "sku": "6630946",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       },
       "newegg": {
@@ -14438,14 +14440,14 @@ export default [
     "mpn": "MAYT2HP217PAR1",
     "deals": {
       "bestbuy": {
-        "price": 29.99,
+        "price": 27.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6675645&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcooler-master-hyper-212-3dhp-black-argb-cpu-air-cooler-black-and-argb%2FJ3K4GJSYZH&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6675645",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-22"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "coolerType": "Air",
@@ -14483,7 +14485,7 @@ export default [
         "sku": "6486421",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -14632,7 +14634,7 @@ export default [
         "sku": "6553301",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -14676,7 +14678,7 @@ export default [
         "sku": "6566249",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-04"
       },
       "newegg": {
@@ -14790,7 +14792,7 @@ export default [
         "sku": "6566257",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-14"
       }
     },
@@ -14833,7 +14835,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceLastMovedAt": "2026-09-14",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "445832564914943307493488",
@@ -14889,7 +14891,7 @@ export default [
         "sku": "6566260",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-04"
       },
       "newegg": {
@@ -14945,7 +14947,7 @@ export default [
         "sku": "6569204",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-04"
       },
       "newegg": {
@@ -15001,7 +15003,7 @@ export default [
         "sku": "6569205",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-04"
       },
       "newegg": {
@@ -15060,7 +15062,7 @@ export default [
         "priceConfidence": "confirmed",
         "priceLastMovedAt": "2026-09-04",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458314374061741250609711",
@@ -15246,7 +15248,7 @@ export default [
         "sku": "6587606",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458316520423169428724710",
@@ -15358,7 +15360,7 @@ export default [
         "sku": "6587617",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458314252156542432542317",
@@ -15413,7 +15415,7 @@ export default [
         "sku": "6587618",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -15454,7 +15456,7 @@ export default [
         "sku": "6587621",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "445836226817927527122057",
@@ -15511,7 +15513,7 @@ export default [
         "sku": "6597520",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -15555,7 +15557,7 @@ export default [
         "sku": "6597521",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -15601,7 +15603,7 @@ export default [
         "sku": "6597524",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "445839407014954044059943",
@@ -15657,7 +15659,7 @@ export default [
         "sku": "6597527",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "N82E16835146162",
@@ -15714,7 +15716,7 @@ export default [
         "sku": "6601462",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-02"
       },
       "msi": {
@@ -15783,7 +15785,7 @@ export default [
         "sku": "6629569",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-15"
       },
       "msi": {
@@ -15911,7 +15913,7 @@ export default [
         "sku": "6629580",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-01"
       },
       "msi": {
@@ -16073,14 +16075,14 @@ export default [
     "mpn": "CW-9061032-WW",
     "deals": {
       "bestbuy": {
-        "price": 99.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6642711&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fcorsair-nautilus-240-rs-lcd-liquid-cpu-cooler-white%2FJ39TSCPQ6V&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6642711",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-22"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "445834252585428532743544",
@@ -16191,7 +16193,7 @@ export default [
         "sku": "6649238",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-25"
       },
       "msi": {

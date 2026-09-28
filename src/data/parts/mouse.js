@@ -453,13 +453,13 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6214343&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6214343.p%3FskuId%3D6214343",
-        "price": 29.99,
+        "price": 49.99,
         "inStock": true,
         "sku": "6214343",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-17"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "dpi": 12000,
@@ -526,7 +526,7 @@ export default [
         "sku": "6420867",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -670,7 +670,7 @@ export default [
         "sku": "6476689",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -916,13 +916,13 @@ export default [
       },
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333840&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333840.p%3FskuId%3D6333840",
-        "price": 68.99,
+        "price": 89.99,
         "inStock": true,
         "sku": "6333840",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-17"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Hero 25K",
@@ -1109,7 +1109,7 @@ export default [
         "sku": "6460407",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -1490,7 +1490,7 @@ export default [
         "sku": "6316173",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -1517,7 +1517,7 @@ export default [
         "sku": "6333838",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458310538121367208229815",
@@ -1554,13 +1554,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6333839&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6333839.p%3FskuId%3D6333839",
-        "price": 124.99,
+        "price": 139.99,
         "inStock": true,
         "sku": "6333839",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-12"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -1586,7 +1586,7 @@ export default [
         "sku": "6337071",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-27"
       }
     },
@@ -1698,7 +1698,7 @@ export default [
         "sku": "6393997",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -1725,7 +1725,7 @@ export default [
         "sku": "6394002",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-16"
       }
     },
@@ -1782,7 +1782,7 @@ export default [
         "sku": "6459644",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -1804,13 +1804,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6485231&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6485231.p%3FskuId%3D6485231",
-        "price": 61.99,
+        "price": 69.99,
         "inStock": true,
         "sku": "6485231",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-23"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -1836,7 +1836,7 @@ export default [
         "sku": "6485744",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -1863,7 +1863,7 @@ export default [
         "sku": "6501463",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -1952,7 +1952,7 @@ export default [
         "sku": "6519203",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -1984,7 +1984,7 @@ export default [
         "sku": "6521085",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-27"
       }
     },
@@ -2011,7 +2011,7 @@ export default [
         "sku": "6529371",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-03"
       }
     },
@@ -2038,7 +2038,7 @@ export default [
         "sku": "6537579",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-22"
       }
     },
@@ -2092,13 +2092,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6548181&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6548181.p%3FskuId%3D6548181",
-        "price": 29.99,
+        "price": 39.99,
         "inStock": true,
         "sku": "6548181",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -2124,7 +2124,7 @@ export default [
         "sku": "6548182",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },
@@ -2156,7 +2156,7 @@ export default [
         "sku": "6556754",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "sensor": "HERO 2",
@@ -2177,13 +2177,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6558788&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6558788.p%3FskuId%3D6558788",
-        "price": 29.99,
+        "price": 24.99,
         "inStock": true,
         "sku": "6558788",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-12"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -2241,7 +2241,7 @@ export default [
         "sku": "6578712",
         "priceConfidence": "confirmed",
         "priceSource": "1p",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -2263,13 +2263,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6586068&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6586068.p%3FskuId%3D6586068",
-        "price": 71.99,
+        "price": 89.99,
         "inStock": true,
         "sku": "6586068",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "HERO 25K",
@@ -2295,7 +2295,7 @@ export default [
         "sku": "6595182",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "sensor": "HERO 2",
@@ -2316,13 +2316,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6595185&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6595185.p%3FskuId%3D6595185",
-        "price": 129,
+        "price": 149.99,
         "inStock": true,
         "sku": "6595185",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "HERO 44K",
@@ -2343,13 +2343,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6604495&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6604495.p%3FskuId%3D6604495",
-        "price": 39.99,
+        "price": 49.99,
         "inStock": true,
         "sku": "6604495",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-21"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -2375,7 +2375,7 @@ export default [
         "sku": "6621764",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -2397,13 +2397,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6622827&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6622827.p%3FskuId%3D6622827",
-        "price": 119.99,
+        "price": 112.99,
         "inStock": true,
         "sku": "6622827",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-24"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -2429,7 +2429,7 @@ export default [
         "sku": "6623863",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-19"
       }
     },
@@ -2456,7 +2456,7 @@ export default [
         "sku": "6636035",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -2483,7 +2483,7 @@ export default [
         "sku": "6636038",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-21"
       }
     },
@@ -2510,7 +2510,7 @@ export default [
         "sku": "6637500",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-24"
       }
     },
@@ -2537,7 +2537,7 @@ export default [
         "sku": "6642549",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "sensor": "HERO 2",
@@ -2558,13 +2558,13 @@ export default [
     "deals": {
       "bestbuy": {
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6666378&u=https%3A%2F%2Fwww.bestbuy.com%2Fsite%2F-%2F6666378.p%3FskuId%3D6666378",
-        "price": 89.99,
+        "price": 69.99,
         "inStock": true,
         "sku": "6666378",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
-        "priceLastMovedAt": "2026-09-14"
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "sensor": "Optical",
@@ -2912,7 +2912,7 @@ export default [
         "sku": "6491145",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-27",
+        "priceConfirmedAt": "2026-09-28",
         "priceLastMovedAt": "2026-09-11"
       }
     },

@@ -59,14 +59,14 @@ export default [
     "licenseType": "Retail",
     "deals": {
       "bestbuy": {
-        "price": 134.99,
+        "price": 139.99,
         "url": "https://bestbuycreators.7tiv.net/c/7109270/3337161/28102?prodsku=6499300&u=https%3A%2F%2Fwww.bestbuy.com%2Fproduct%2Fmicrosoft-windows-11-home-usb-flash-drive-physical-english%2FJ3ZKK5V4QQ&intsrc=APIG_28060",
         "inStock": true,
         "sku": "6499300",
         "priceSource": "1p",
-        "priceConfidence": "unconfirmed",
-        "priceConfirmedAt": "2026-08-24",
-        "priceUnconfirmedReason": "bestbuy:price-stamp-2026-05-26"
+        "priceConfidence": "confirmed",
+        "priceConfirmedAt": "2026-09-28",
+        "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
         "sku": "4458312977573271908579071",
