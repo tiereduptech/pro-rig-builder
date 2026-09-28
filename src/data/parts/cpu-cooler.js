@@ -515,7 +515,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "fans_inc": 1,
@@ -1871,18 +1871,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAZTUK937606",
-        "price": 179.8,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835132121409274655910&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnoctua-nh-d15-chromax-black%2Fp%2F13C-0005-001H5%3Fitem%3D9SIAZTUK937606",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AADY_1321448318623154024hVzlOURbe.jpg",
+        "sku": "4458315887140650144449529",
+        "itemNumber": "9SIB5YAKWT3179",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-27T16:01:53.616Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-28T11:26:49.269Z",
-        "priceLastMovedAt": "2026-09-27",
-        "rematchedAt": "2026-09-27T20:30:00.017Z",
-        "rematchedFrom": "4458315887140650144449529"
+        "price": 99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315887140650144449529&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F1YF-01RU-00001%3Fitem%3D9SIB5YAKWT3179",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B5YAS2605150G2AZSAA.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-28T19:00:34.419Z",
+        "matchMethod": "sftp:name",
+        "matchScore": 0.7,
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "additionalImages": [
@@ -4425,7 +4424,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 26,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 11,
@@ -4937,19 +4936,18 @@ export default [
         "priceConfirmedAt": "2026-09-28"
       },
       "newegg": {
-        "sku": "N82E16835146175",
-        "price": 99.99,
-        "saleprice": 89.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315448780282110771242&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146175%3Fitem%3DN82E16835146175",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XRPZBC.jpg",
+        "sku": "4458310506736549065031454",
+        "itemNumber": "N82E16835146176",
         "sellerClass": "official",
-        "matchedAt": "2026-09-27T16:02:44.354Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-28T11:26:58.117Z",
-        "priceLastMovedAt": "2026-09-27",
-        "migratedAt": "2026-09-27T20:30:14.191Z",
-        "migratedFrom": "4458310506736549065031454"
+        "price": 129.99,
+        "saleprice": 79.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310506736549065031454&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fnzxt-liquid-cooling-system-black%2Fp%2FN82E16835146176%3Fitem%3DN82E16835146176",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AG1PD25100307XIB1B4.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-28T19:01:25.598Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "discount": 10,
@@ -6026,17 +6024,16 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458312006717891136329671",
-        "itemNumber": "9SIBWC8KD89766",
+        "sku": "4458314584948448521345146",
+        "itemNumber": "9SIBWC8KA85061",
         "sellerClass": "marketplace",
-        "price": 359.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458312006717891136329671&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-radiator-size-400-mm-amd-socket-am4-amd-socket-am5-intel-lga-1150-intel-lga-1151-intel-lga-1155-intel-lga-1156-intel-lga-1200-intel-lga-1700-intel-lga-1851-white%2Fp%2F2YM-00BE-00016%3Fitem%3D9SIBWC8KD89766",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/2YM-00BE-00016-12.jpg",
+        "price": 309.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314584948448521345146&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Ftryx-aio-panorama-argb-radiator-size-360-mm-amd-intel-white%2Fp%2F2YM-00BE-00006%3Fitem%3D9SIBWC8KA85061",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BWC8S2412040RI23J18.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-22T16:01:47.922Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-28T11:27:00.322Z",
+        "matchedAt": "2026-09-28T19:00:43.610Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.8125,
         "priceLastMovedAt": "2026-09-28"
       }
     },
@@ -6894,7 +6891,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 26,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 10,
@@ -12179,7 +12176,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "additionalImages": [
@@ -12306,7 +12303,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 30,
@@ -12533,7 +12530,7 @@ export default [
         "refreshMissReason": "weak_match_blocked",
         "refreshMissStreak": 26,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "discount": 15,
@@ -12836,7 +12833,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 26,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "additionalImages": [
@@ -14545,7 +14542,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -14743,6 +14740,7 @@ export default [
         "itemNumber": "N82E16835106766",
         "sellerClass": "official",
         "price": 87.99,
+        "saleprice": 82.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311921909743608757588&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fthermaltake-liquid-cooling-system-th120-v2-argb-snow%2Fp%2FN82E16835106766%3Fitem%3DN82E16835106766",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A24GD2404150CIB3R2D.jpg",
         "inStock": true,
@@ -14750,7 +14748,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-28T11:28:52.267Z",
-        "priceLastMovedAt": "2026-09-25"
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -15811,7 +15809,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 26,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -15869,7 +15867,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -15939,7 +15937,7 @@ export default [
         "refreshMissedAt": "2026-09-28T10:23:42.240Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 26,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "coolerType": "AIO",
@@ -16929,18 +16927,17 @@ export default [
     "img": "https://m.media-amazon.com/images/I/618JegaRw5L._AC_UY218_.jpg",
     "deals": {
       "newegg": {
-        "sku": "9SIA2W0KHX4823",
-        "price": 98.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445838677264603766181997&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00088%3Fitem%3D9SIA2W0KHX4823",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25072401DOR67A.jpg",
+        "sku": "445833795822587653180041",
+        "itemNumber": "9SIA2W0KP98954",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-27T15:59:52.452Z",
-        "matchMethod": "upc",
-        "matchScore": 1,
-        "refreshedAt": "2026-09-28T11:29:49.515Z",
-        "priceLastMovedAt": "2026-09-27",
-        "rematchedAt": "2026-09-27T20:33:00.089Z",
-        "rematchedFrom": "445833795822587653180041"
+        "price": 95.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445833795822587653180041&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F2YM-004H-00090%3Fitem%3D9SIA2W0KP98954",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/A2W0S25110702UM0N16.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-28T18:58:31.368Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.85,
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "addedAt": "2026-05-15T13:17:14.410Z",

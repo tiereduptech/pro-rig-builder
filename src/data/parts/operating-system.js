@@ -29,15 +29,15 @@ export default [
         "sku": "44583520120264484301200",
         "itemNumber": "N82E16832351749",
         "sellerClass": "official",
-        "price": 199.99,
+        "price": 198.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583520120264484301200&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmicrosoft-windows-11-pro-usb%2Fp%2FN82E16832351749%3Fitem%3DN82E16832351749",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/32-351-749-V06.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-27"
+        "priceLastMovedAt": "2026-09-28",
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "upc": "00889842966169"
@@ -80,7 +80,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:49.663Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-27"
+        "priceConfirmedAt": "2026-09-28"
       }
     },
     "upc": "00889842966640"
