@@ -36,7 +36,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:31.182Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -341,7 +341,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -394,7 +394,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.627Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -535,7 +535,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-27",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -589,7 +589,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-08",
         "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -646,7 +646,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.463Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -699,7 +699,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -774,7 +774,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cap": 4000,
@@ -819,7 +819,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:48.549Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -923,7 +923,7 @@ export default [
         "matchMethod": "name",
         "matchScore": 0.73,
         "sellerClass": "other",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",

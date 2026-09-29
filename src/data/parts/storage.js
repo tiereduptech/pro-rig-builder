@@ -84,21 +84,18 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445834247248827551876453",
-        "itemNumber": "9SIC7XKM1R5382",
+        "sku": "4458313616839381121011296",
+        "itemNumber": "9SIBZW0KWM4218",
         "sellerClass": "marketplace",
-        "price": 266.72,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834247248827551876453&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t700-nvme-2-0%2Fp%2FN82E16820156329%3Fitem%3D9SIC7XKM1R5382",
+        "price": 265.34,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458313616839381121011296&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-t700-nvme-2-0%2Fp%2FN82E16820156329%3Fitem%3D9SIBZW0KWM4218",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-329-19.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-23T15:48:38.458Z",
+        "matchedAt": "2026-09-29T17:17:39.430Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-29T10:19:03.881Z",
-        "refreshMissReason": "variant_rejected",
-        "refreshMissStreak": 12,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "pcie": 5,
@@ -555,18 +552,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "445837015302326071601049",
-        "itemNumber": "9SIC7XKM1R3966",
+        "sku": "4458317261188923780464692",
+        "itemNumber": "9SIBZW0KWN9587",
         "sellerClass": "marketplace",
-        "price": 416.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837015302326071601049&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t500-nvme%2Fp%2FN82E16820156389%3Fitem%3D9SIC7XKM1R3966",
+        "price": 404.44,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317261188923780464692&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t500-nvme%2Fp%2FN82E16820156389%3Fitem%3D9SIBZW0KWN9587",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-387-01.png",
         "inStock": true,
-        "matchedAt": "2026-09-28T19:01:15.332Z",
+        "matchedAt": "2026-09-29T17:17:39.435Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-29",
-        "refreshedAt": "2026-09-29T11:02:21.351Z"
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "pcie": 4,
@@ -660,20 +656,15 @@ export default [
         "sku": "445834780697566974683014",
         "itemNumber": "9SIC6E1M4N2606",
         "sellerClass": "marketplace",
-        "price": 134.09,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445834780697566974683014&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250254%3Fitem%3D9SIC6E1M4N2606",
+        "price": 159.33,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445834780697566974683014&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-1tb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250254%3Fitem%3D9SIC6E1M4N2606",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-254-01.jpg",
         "inStock": true,
         "matchedAt": "2026-09-16T16:02:35.563Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-28T22:14:44.217Z",
-        "priceLastMovedAt": "2026-09-28",
-        "priceSuspect": true,
-        "priceSuspectAt": "2026-09-29T11:03:06.873Z",
-        "priceSuspectValue": 130.94,
-        "priceSuspectClass": "SUSPECT_PAIR",
-        "priceSuspectStreak": 1
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "pcie": 4,
@@ -1832,8 +1823,8 @@ export default [
         "sku": "4458311736338035541332954",
         "itemNumber": "9SIC7VBM5K4466",
         "sellerClass": "marketplace",
-        "price": 72.95,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311736338035541332954&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-bx500-240gb%2Fp%2FN82E16820156187%3Fitem%3D9SIC7VBM5K4466",
+        "price": 72.85,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311736338035541332954&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-bx500-240gb%2Fp%2FN82E16820156187%3Fitem%3D9SIC7VBM5K4466",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/B6S0S211223072MZV45.jpg",
         "inStock": true,
         "matchedAt": "2026-09-23T15:48:37.346Z",
@@ -2386,7 +2377,6 @@ export default [
         "matchedAt": "2026-08-18T14:17:47.317Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28",
         "refreshedAt": "2026-09-29T11:03:16.395Z"
       }
     },
@@ -2630,7 +2620,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -3261,7 +3251,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -3366,7 +3356,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4074,7 +4064,7 @@ export default [
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 5,
         "priceLastMovedAt": "2026-09-19",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 61,
@@ -4138,7 +4128,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -5255,7 +5245,7 @@ export default [
         "sellerClass": "official",
         "price": 99.99,
         "saleprice": 93.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315939339291975966921&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-512gb-mp33-nvme-1-3%2Fp%2FN82E16820331416%3Fitem%3DN82E16820331416",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315939339291975966921&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-512gb-mp33-nvme-1-3%2Fp%2FN82E16820331416%3Fitem%3DN82E16820331416",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-331-416-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:47.765Z",
@@ -5264,7 +5254,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-21"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -5368,8 +5358,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-29T11:04:17.271Z",
-        "priceLastMovedAt": "2026-09-03",
-        "priceConfirmedAt": "2026-09-28"
+        "priceLastMovedAt": "2026-09-03"
       }
     },
     "discount": 8,
@@ -5590,8 +5579,8 @@ export default [
         "matchedAt": "2026-09-28T19:01:16.584Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-29",
-        "refreshedAt": "2026-09-29T11:04:17.919Z"
+        "refreshedAt": "2026-09-29T11:04:17.919Z",
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -6626,7 +6615,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -6675,8 +6664,8 @@ export default [
         "sku": "445831365153501684041817",
         "itemNumber": "9SIC7VBM5K4840",
         "sellerClass": "marketplace",
-        "price": 113.25,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831365153501684041817&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-500gb-bx500%2Fp%2F0D9-000E-002R8%3Fitem%3D9SIC7VBM5K4840",
+        "price": 120.95,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445831365153501684041817&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-500gb-bx500%2Fp%2F0D9-000E-002R8%3Fitem%3D9SIC7VBM5K4840",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/0D9-000E-002R8-01.jpg",
         "inStock": true,
         "matchedAt": "2026-09-23T15:48:37.355Z",
@@ -7312,7 +7301,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 8,
@@ -7907,7 +7896,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8306,6 +8295,20 @@ export default [
         "refreshMissStreak": 28,
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked"
+      },
+      "newegg_openbox": {
+        "sku": "44583410857826451709523",
+        "itemNumber": "N82E16820156413R",
+        "sellerClass": "official",
+        "price": 319.99,
+        "saleprice": 299.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583410857826451709523&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-p310-nvme-2-0%2Fp%2FN82E16820156413R%3Fitem%3DN82E16820156413R",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-411-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-29T17:17:51.372Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8543,7 +8546,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8786,7 +8789,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -9071,7 +9074,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -9809,7 +9812,7 @@ export default [
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -10104,7 +10107,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 5,
@@ -10402,7 +10405,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -10513,7 +10516,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -10574,7 +10577,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-13",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -11020,7 +11023,7 @@ export default [
         "refreshMissReason": "weak_match_blocked",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -11285,7 +11288,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -11687,7 +11690,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -12403,14 +12406,15 @@ export default [
         "sku": "445832175779082903938290",
         "itemNumber": "9SIC0X3KUB9545",
         "sellerClass": "marketplace",
-        "price": 518,
+        "price": 589,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832175779082903938290&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingston-kc600-4tb%2Fp%2F2U3-000C-00017%3Fitem%3D9SIC0X3KUB9545",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BEC2D2603100FPH6U0B.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:29.460Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "refreshedAt": "2026-09-29T11:06:18.164Z"
+        "refreshedAt": "2026-09-29T11:06:18.164Z",
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -12472,7 +12476,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -12532,9 +12536,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-28T11:10:53.093Z",
-        "refreshMissStreak": 2,
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
-        "refreshMissReason": "guard_rejected"
+        "refreshMissReason": "guard_rejected",
+        "refreshMissStreak": 2,
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -12583,7 +12588,7 @@ export default [
         "sku": "4458311549518164024223059",
         "itemNumber": "9SIC6E1M4N2587",
         "sellerClass": "marketplace",
-        "price": 274.49,
+        "price": 267.49,
         "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458311549518164024223059&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-2tb-wd-blue-sn580-nvme-1-4%2Fp%2FN82E16820250253%3Fitem%3D9SIC6E1M4N2587",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-253-04.jpg",
         "inStock": true,
@@ -12593,8 +12598,8 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 20,
-        "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceLastMovedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -13311,18 +13316,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIC7XHM1T0991",
-        "price": 569.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458317319164430891427519&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st8000ne001-8tb%2Fp%2FN82E16822184795%3Fitem%3D9SIC7XHM1T0991",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-184-795-01.jpg",
+        "sku": "4458315041582717989752174",
+        "itemNumber": "9SIAS03M6P7056",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-28T19:00:28.127Z",
-        "matchMethod": "name",
-        "matchScore": 0.76,
-        "refreshedAt": "2026-09-29T11:06:20.628Z",
-        "priceLastMovedAt": "2026-09-28",
-        "rematchedAt": "2026-09-28T22:18:04.446Z",
-        "rematchedFrom": "4458315041582717989752174"
+        "price": 475.99,
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.4458315041582717989752174&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st8000nt001-8tb-enterprise-nas-hard-drives-7200-rpm%2Fp%2FN82E16822185077%3Fitem%3D9SIAS03M6P7056",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-077-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-29T17:17:18.270Z",
+        "matchMethod": "sftp:brand+name",
+        "matchScore": 0.7857142857142857,
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -13603,18 +13607,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "4458315191700488105779179",
-        "itemNumber": "9SIBGH6KF97781",
+        "sku": "4458310600852265016493980",
+        "itemNumber": "9SIBFJRKFD5594",
         "sellerClass": "marketplace",
-        "price": 441.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458315191700488105779179&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00CW7%3Fitem%3D9SIBGH6KF97781",
+        "price": 441.95,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458310600852265016493980&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0009-00CW7%3Fitem%3D9SIBFJRKFD5594",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/BGH6S2502030H2OYI3B.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-26T15:20:40.879Z",
+        "matchedAt": "2026-09-29T17:17:24.086Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-29T11:06:21.920Z",
-        "priceLastMovedAt": "2026-09-26"
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "mpn": "MZ-V9S2T0BW",
@@ -13798,7 +13801,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -14674,7 +14677,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-06",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -14776,24 +14779,6 @@ export default [
         "matchScore": 0.92,
         "refreshedAt": "2026-09-29T11:07:16.296Z",
         "priceLastMovedAt": "2026-09-28"
-      },
-      "newegg_openbox": {
-        "sku": "445837784503699675759299",
-        "itemNumber": "N82E16820156456R",
-        "sellerClass": "official",
-        "price": 209.99,
-        "saleprice": 159.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837784503699675759299&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156456R%3Fitem%3DN82E16820156456R",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-456-01.jpg",
-        "inStock": true,
-        "matchedAt": "2026-09-23T15:48:46.113Z",
-        "matchMethod": "sftp:upc",
-        "matchScore": 1,
-        "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-26",
-        "priceUnconfirmedAt": "2026-09-28",
-        "feedAbsentStreak": 2,
-        "feedAbsentLastAt": "2026-09-28"
       }
     },
     "additionalImages": [
@@ -14816,7 +14801,8 @@ export default [
     "dram": false,
     "value": 85,
     "pcieGen": 5,
-    "bestbuyRemovedDead": "2026-08-18"
+    "bestbuyRemovedDead": "2026-08-18",
+    "neweggOpenboxRemovedAbsent": "2026-09-29"
   },
   {
     "id": 50303,
@@ -15219,7 +15205,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -15478,7 +15464,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 22,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 41,
@@ -16295,7 +16281,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -16359,7 +16345,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -17038,6 +17024,20 @@ export default [
         "priceConfidence": "unconfirmed",
         "priceUnconfirmedReason": "buybox_not_new_but_new_offer_exists",
         "priceUnconfirmedAt": "2026-09-27"
+      },
+      "newegg": {
+        "sku": "445831745968620922771311",
+        "itemNumber": "N82E16820982118",
+        "sellerClass": "official",
+        "price": 499.99,
+        "saleprice": 474.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445831745968620922771311&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcorsair-2tb-mp700-pro-nvme-2-0%2Fp%2FN82E16820982118%3Fitem%3DN82E16820982118",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-982-117-01.png",
+        "inStock": true,
+        "matchedAt": "2026-09-29T17:17:51.962Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -17707,7 +17707,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -17801,7 +17801,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-15",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -17865,7 +17865,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -18020,7 +18020,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -19308,7 +19308,7 @@ export default [
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       },
       "newegg_openbox": {
         "sku": "445835862227209552867166",
@@ -19322,7 +19322,7 @@ export default [
         "matchedAt": "2026-09-22T16:02:27.580Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -20838,7 +20838,10 @@ export default [
     "value": 0,
     "bench": 45,
     "pcieGen": 4,
-    "formFactor": "M.2"
+    "formFactor": "M.2",
+    "needsReview": true,
+    "quarantinedAt": "2026-09-29",
+    "quarantineReason": "newegg_price_attach_flagged"
   },
   {
     "id": 50428,
@@ -21215,18 +21218,17 @@ export default [
         "priceConfidence": "confirmed"
       },
       "newegg": {
-        "sku": "9SIAG98KK92971",
-        "price": 535,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839817604039366982224&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2F0D9-0032-00323%3Fitem%3D9SIAG98KK92971",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/AX4NS24011911LG0W89.jpg",
+        "sku": "4458311565758051650274139",
+        "itemNumber": "9SIC7XHM1M8579",
         "sellerClass": "marketplace",
-        "matchedAt": "2026-09-28T19:01:14.494Z",
-        "matchMethod": "name",
-        "matchScore": 0.7,
-        "refreshedAt": "2026-09-29T11:08:20.060Z",
-        "priceLastMovedAt": "2026-09-28",
-        "rematchedAt": "2026-09-28T22:20:03.635Z",
-        "rematchedFrom": "4458311565758051650274139"
+        "price": 639.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458311565758051650274139&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fseagate-ironwolf-pro-st14000nt001-14tb%2Fp%2FN82E16822185074%3Fitem%3D9SIC7XHM1M8579",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-185-074-01.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-29T17:17:46.310Z",
+        "matchMethod": "sftp:mpn",
+        "matchScore": 0.95,
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -21690,7 +21692,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -23306,7 +23308,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 4000,
@@ -23475,7 +23477,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -24529,17 +24531,16 @@ export default [
     "mpn": "CT1000P510SSD8",
     "deals": {
       "newegg": {
-        "sku": "4458318347950779971189654",
-        "itemNumber": "9SIC7XKM3V8674",
+        "sku": "445835023748235953089877",
+        "itemNumber": "9SIBZW0KWM3608",
         "sellerClass": "marketplace",
-        "price": 205.61,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458318347950779971189654&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156427%3Fitem%3D9SIC7XKM3V8674",
+        "price": 199.44,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835023748235953089877&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-1tb-p510-nvme-2-0%2Fp%2FN82E16820156427%3Fitem%3D9SIBZW0KWM3608",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-427-08.jpg",
         "inStock": true,
-        "matchedAt": "2026-09-27T16:02:34.308Z",
+        "matchedAt": "2026-09-29T17:17:39.427Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshedAt": "2026-09-29T11:09:16.580Z",
         "priceLastMovedAt": "2026-09-29"
       }
     },
@@ -24595,7 +24596,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 8,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 1000,
@@ -24639,7 +24640,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -24873,20 +24874,18 @@ export default [
         "priceUnconfirmedReason": "bestbuy:price-stamp-2026-02-01"
       },
       "newegg": {
-        "sku": "445839817327201610141404",
-        "itemNumber": "9SIC7XKM1G0629",
+        "sku": "44583720454137137590288",
+        "itemNumber": "9SIC89BM7J9014",
         "sellerClass": "marketplace",
-        "price": 400,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445839817327201610141404&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t710-nvme%2Fp%2FN82E16820156444%3Fitem%3D9SIC7XKM1G0629",
+        "price": 399,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583720454137137590288&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fcrucial-2tb-t710-nvme%2Fp%2FN82E16820156444%3Fitem%3D9SIC89BM7J9014",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-156-443-01.jpg",
         "inStock": true,
-        "matchedAt": "2026-08-18T14:17:41.319Z",
+        "matchedAt": "2026-09-29T17:17:47.503Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "refreshMissedAt": "2026-09-29T10:19:03.881Z",
-        "refreshMissReason": "guard_rejected",
-        "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceLastMovedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -24931,7 +24930,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 4,
         "priceLastMovedAt": "2026-09-27",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 4000,
@@ -24976,7 +24975,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -25709,18 +25708,17 @@ export default [
     "mpn": "WD20SPZX",
     "deals": {
       "newegg": {
-        "sku": "N82E16822234394",
-        "price": 169.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.4458314602967031647822518&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmodel-wdbyvg0020bbl-wesn-2tb-usb-3-2-gen-1%2Fp%2FN82E16822234394%3Fitem%3DN82E16822234394",
-        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-394-V05.jpg",
+        "sku": "445835478611202325681777",
+        "itemNumber": "N82E16822234339",
         "sellerClass": "official",
-        "matchedAt": "2026-09-28T19:01:24.322Z",
-        "matchMethod": "name",
-        "matchScore": 0.78,
-        "refreshedAt": "2026-09-29T11:09:20.872Z",
-        "priceLastMovedAt": "2026-09-29",
-        "migratedAt": "2026-09-29T11:09:20.872Z",
-        "migratedFrom": "445835478611202325681777"
+        "price": 194.99,
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445835478611202325681777&type=15&murl=https%3A%2F%2Fwww.newegg.com%2F2tb-wd20spzx-blue-sata-6-0gb-s%2Fp%2FN82E16822234339%3Fitem%3DN82E16822234339",
+        "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/22-234-339-V05.jpg",
+        "inStock": true,
+        "matchedAt": "2026-09-29T17:17:52.091Z",
+        "matchMethod": "sftp:upc",
+        "matchScore": 1,
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -25960,7 +25958,7 @@ export default [
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 8000,
@@ -25998,8 +25996,8 @@ export default [
         "matchedAt": "2026-09-28T19:01:17.258Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceLastMovedAt": "2026-09-28",
-        "refreshedAt": "2026-09-29T11:10:07.204Z"
+        "refreshedAt": "2026-09-29T11:10:07.204Z",
+        "priceLastMovedAt": "2026-09-28"
       }
     },
     "cap": 6000,
@@ -26040,7 +26038,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "downgrade_blocked",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 8000,
@@ -26225,7 +26223,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 20,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 2000,
@@ -26322,7 +26320,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 8000,
@@ -26539,7 +26537,7 @@ export default [
         "refreshMissReason": "weak_match_blocked",
         "refreshMissStreak": 12,
         "priceLastMovedAt": "2026-09-23",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 1000,
@@ -26856,7 +26854,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 8000,
@@ -27112,7 +27110,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cap": 8000,
@@ -28381,7 +28379,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -28649,7 +28647,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -28753,7 +28751,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 4,
         "priceLastMovedAt": "2026-09-27",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "addedAt": "2026-05-15T14:34:31.782Z",
@@ -29221,7 +29219,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "addedAt": "2026-05-15T14:34:31.783Z",
@@ -30217,7 +30215,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-28",
+        "priceUnconfirmedAt": "2026-09-29",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -30493,7 +30494,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -31097,7 +31098,7 @@ export default [
         "matchedAt": "2026-09-23T15:48:45.666Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -31135,7 +31136,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-21",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -31172,7 +31173,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -31519,7 +31520,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -31557,7 +31558,7 @@ export default [
         "refreshMissReason": "variant_rejected",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -32188,7 +32189,7 @@ export default [
         "refreshMissReason": "guard_rejected",
         "refreshMissStreak": 22,
         "priceLastMovedAt": "2026-09-08",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -33298,7 +33299,10 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-28",
+        "priceUnconfirmedAt": "2026-09-29",
+        "feedAbsentStreak": 1,
+        "feedAbsentLastAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -33361,6 +33365,7 @@ export default [
         "itemNumber": "N82E16820250272",
         "sellerClass": "official",
         "price": 1699.99,
+        "saleprice": 1659.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837649669311045399472&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fwestern-digital-8tb-black%2Fp%2FN82E16820250272%3Fitem%3DN82E16820250272",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-250-272-05.jpg",
         "inStock": true,
@@ -33368,8 +33373,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-29T11:12:22.049Z",
-        "priceLastMovedAt": "2026-09-29",
-        "saleprice": 1659.99
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -33924,7 +33928,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -33999,7 +34003,7 @@ export default [
         "refreshMissedAt": "2026-09-29T10:19:03.881Z",
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -34194,6 +34198,7 @@ export default [
         "itemNumber": "N82E16820971002",
         "sellerClass": "official",
         "price": 176.99,
+        "saleprice": 169.99,
         "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.44583492857355925728144&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fkingspec-1tb-oneboom-nvme-1-4%2Fp%2FN82E16820971002%3Fitem%3DN82E16820971002",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-971-002-06.jpg",
         "inStock": true,
@@ -34201,8 +34206,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "refreshedAt": "2026-09-29T11:13:17.896Z",
-        "priceLastMovedAt": "2026-09-29",
-        "saleprice": 169.99
+        "priceLastMovedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35282,7 +35286,7 @@ export default [
         "sellerClass": "official",
         "price": 109.99,
         "saleprice": 96.99,
-        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445832881829488918418248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-500gb-nv5000-nvme%2Fp%2FN82E16820985376%3Fitem%3DN82E16820985376",
+        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445832881829488918418248&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fteam-group-500gb-nv5000-nvme%2Fp%2FN82E16820985376%3Fitem%3DN82E16820985376",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/20-985-376-01.jpg",
         "inStock": true,
         "matchedAt": "2026-08-18T14:17:48.343Z",
@@ -35326,7 +35330,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35363,7 +35367,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35400,7 +35404,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35438,7 +35442,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35476,7 +35480,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-19",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,
@@ -35513,7 +35517,7 @@ export default [
         "refreshMissReason": "no_results",
         "refreshMissStreak": 28,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "needsReview": false,

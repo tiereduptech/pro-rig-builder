@@ -988,7 +988,7 @@ export default [
         "matchedAt": "2026-08-18T14:14:30.661Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "baseClock": 2400,
@@ -2566,7 +2566,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cuda": 10752,
@@ -2659,7 +2659,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.446Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "cuda": 10752,
@@ -2839,7 +2839,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.326Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8333333333333334,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cuda": 6144,
@@ -2892,7 +2892,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.456Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "cuda": 6144,
@@ -3606,7 +3606,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.392Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "sp": 3840,
@@ -3780,7 +3780,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.548Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.8,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "sp": 3456,
@@ -3902,7 +3902,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.397Z",
         "matchMethod": "sftp:brand+name",
         "matchScore": 0.75,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "sp": 2048,
@@ -4025,7 +4025,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4095,7 +4095,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.472Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4197,7 +4197,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-09",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 21,
@@ -4311,7 +4311,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.325Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4380,7 +4380,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.429Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "discount": 7,
@@ -4527,7 +4527,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.321Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4700,7 +4700,7 @@ export default [
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
         "priceLastMovedAt": "2026-09-14",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -4800,7 +4800,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -6945,7 +6945,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -7194,7 +7194,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.868Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8003,7 +8003,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.865Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8240,7 +8240,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.383Z",
         "matchMethod": "sftp:mpn",
         "matchScore": 0.95,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8523,7 +8523,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-19",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8581,7 +8581,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-10",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8643,7 +8643,7 @@ export default [
         "matchedAt": "2026-08-19T12:28:13.493Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -8898,7 +8898,7 @@ export default [
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "additionalImages": [
@@ -9485,7 +9485,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-19",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 3050",
@@ -9539,14 +9539,14 @@ export default [
         "sellerClass": "official",
         "price": 299.99,
         "saleprice": 279.99,
-        "linkurl": "https://click.linksynergy.com/link?id=<LSN EID>&offerid=<LSN OID>.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
+        "linkurl": "https://click.linksynergy.com/link?id=1o8iJ9l0HXw&offerid=1786142.445837625594496544515917&type=15&murl=https%3A%2F%2Fwww.newegg.com%2Fmsi-rtx-3050-gaming-x-6g-geforce-rtx-3050-6gb-graphics-card-double-fans%2Fp%2FN82E16814137877%3Fitem%3DN82E16814137877",
         "imageurl": "https://c1.neweggimages.com/ProductImageCompressAll640/14-137-877-01.png",
         "inStock": true,
         "matchedAt": "2026-08-23T12:27:09.616Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-27",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 3050",
@@ -9683,7 +9683,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       },
       "newegg_openbox": {
         "sku": "4458313050412717135728143",
@@ -9696,7 +9696,7 @@ export default [
         "matchedAt": "2026-09-04T15:25:47.507Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9747,7 +9747,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.315Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -9839,7 +9839,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5090",
@@ -9889,7 +9889,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -9939,7 +9939,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -9989,7 +9989,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10068,7 +10068,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10122,7 +10122,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-21",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -10183,7 +10183,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.375Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10243,7 +10243,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10284,7 +10284,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.443Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 3050",
@@ -10327,7 +10327,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-22",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10460,7 +10460,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.423Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "Arc",
@@ -10519,7 +10519,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-03",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10579,7 +10579,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-04",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5090",
@@ -10629,7 +10629,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.446Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10682,7 +10682,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-22",
         "priceConfirmedAt": "2026-09-23",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5080",
@@ -10851,7 +10851,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-10",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -10934,7 +10934,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.448Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -10977,7 +10977,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-26",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11028,7 +11028,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.450Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11078,7 +11078,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.448Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11140,7 +11140,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-17",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11342,7 +11342,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-20",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11579,7 +11579,7 @@ export default [
         "matchMethod": "sftp:sku",
         "matchScore": 0.9,
         "priceLastMovedAt": "2026-09-28",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "Radeon RX 9070 XT",
@@ -11639,7 +11639,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.377Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -11765,7 +11765,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-21",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11817,7 +11817,7 @@ export default [
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-12",
         "priceConfirmedAt": "2026-09-13",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -11909,7 +11909,7 @@ export default [
         "matchedAt": "2026-08-25T12:31:35.405Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -11960,7 +11960,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.319Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12283,7 +12283,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.327Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -12344,7 +12344,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceLastMovedAt": "2026-09-03",
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -12394,7 +12394,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.323Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12575,7 +12575,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-17",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12635,7 +12635,7 @@ export default [
         "matchedAt": "2026-08-18T14:21:09.561Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12695,7 +12695,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.329Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -12755,7 +12755,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -13005,7 +13005,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.325Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060",
@@ -13108,7 +13108,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.379Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -13159,7 +13159,7 @@ export default [
         "matchedAt": "2026-08-26T12:36:01.469Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "Radeon RX 9060 XT",
@@ -13220,7 +13220,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-22",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -13359,7 +13359,7 @@ export default [
         "matchedAt": "2026-08-20T12:42:08.329Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -13402,7 +13402,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-09",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070",
@@ -13574,7 +13574,7 @@ export default [
         "matchMethod": "sftp:upc",
         "matchScore": 1,
         "priceConfirmedAt": "2026-09-08",
-        "priceUnconfirmedAt": "2026-09-28"
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13633,7 +13633,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.874Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5050",
@@ -13757,7 +13757,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.321Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -13856,7 +13856,8 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.381Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-28",
+        "priceUnconfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5060 Ti",
@@ -14103,7 +14104,7 @@ export default [
         "matchedAt": "2026-09-03T15:31:59.877Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
@@ -14153,7 +14154,7 @@ export default [
         "matchedAt": "2026-08-18T14:17:46.494Z",
         "matchMethod": "sftp:upc",
         "matchScore": 1,
-        "priceConfirmedAt": "2026-09-28"
+        "priceConfirmedAt": "2026-09-29"
       }
     },
     "model": "GeForce RTX 5070 Ti",
