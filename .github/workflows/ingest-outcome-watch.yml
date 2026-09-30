@@ -55,11 +55,15 @@ name: Ingest outcome watch (read-only)
 # =============================================================================
 
 on:
-  schedule:
-    # Daily, a few hours after the 12:00 UTC ingest — late enough that a healthy
-    # run has finished and committed, early enough that a bad day is reported
-    # the same day rather than the next.
-    - cron: "0 18 * * *"
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   # Daily, a few hours after the 12:00 UTC ingest — late enough that a healthy
+  #   # run has finished and committed, early enough that a bad day is reported
+  #   # the same day rather than the next.
+  #   - cron: "0 18 * * *"
   workflow_dispatch:
     inputs:
       stale_days:

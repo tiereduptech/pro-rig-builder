@@ -2,8 +2,12 @@ name: Prerender SEO pages
 
 on:
   # Nightly at 06:00 UTC (01:00 CT). Adjust if you want a different time.
-  schedule:
-    - cron: '0 6 * * *'
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   - cron: '0 6 * * *'
   # Also run when the catalog changes on main (manual product edits + the daily
   # ingest and refresh commits).
   #

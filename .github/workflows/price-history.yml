@@ -1,10 +1,14 @@
 name: Price History Snapshot
 
 on:
-  schedule:
-    # Daily at 07:00 UTC — before the catalog verifier (08:00) so it
-    # records the prices that were live for the full preceding day.
-    - cron: '0 7 * * *'
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   # Daily at 07:00 UTC — before the catalog verifier (08:00) so it
+  #   # records the prices that were live for the full preceding day.
+  #   - cron: '0 7 * * *'
   workflow_dispatch:
 
 # Repo-wide lock shared by every workflow that pushes to main.

@@ -714,15 +714,36 @@ test("the gate watches exactly the workflows CADENCE cites", () => {
   }
 });
 
-test("the cron survives as the absence backstop", () => {
+test("the cron is PAUSED, not lost — the absence backstop can be put back", () => {
   // workflow_run cannot fire when NO writer runs, and that is the exact failure
   // this gate was written for: Best Buy froze for four months and every derived
   // artifact stayed healthy. Losing the cron would blind the gate to the one
   // case it cannot afford to miss.
+  //
+  // ── PAUSED 2026-09-30 ──────────────────────────────────────────────────────
+  // The owner paused the whole project: every `schedule:` in .github/workflows
+  // is commented out, this gate's backstop included. So the assertion is
+  // INVERTED rather than deleted, because the risk changes shape while paused.
+  // Live, the risk is someone quietly removing the cron. Paused, the risk is
+  // that it is never put back — and a deleted test would be the thing that let
+  // that happen silently.
+  //
+  // So this still fails if the cron is DELETED; it just now requires it to be
+  // present-and-commented instead of present-and-live. It also fails the moment
+  // the schedule goes live again, which is the point: resuming the project
+  // means flipping this test back to the live form below IN THE SAME COMMIT, so
+  // the two can never disagree about whether this gate is running.
+  //
+  //   live form:  assert.match(wf, /^\s+schedule:$/m);
+  //               assert.match(wf, /^\s+- cron: '[^']+'$/m);
   const wf = fs.readFileSync(
     path.join(gate.DEFAULT_WF_DIR, "retailer-freshness.yml"), "utf8");
-  assert.match(wf, /^\s+schedule:$/m);
-  assert.match(wf, /^\s+- cron: '[^']+'$/m);
+  assert.doesNotMatch(wf, /^\s+schedule:$/m,
+    "the schedule is live again — restore the live form of this test alongside it");
+  assert.match(wf, /^\s+# schedule:$/m,
+    "the paused schedule: key was deleted rather than commented out");
+  assert.match(wf, /^\s+#\s+- cron: '[^']+'$/m,
+    "the paused backstop cron was deleted rather than commented out");
 });
 
 // =============================================================================

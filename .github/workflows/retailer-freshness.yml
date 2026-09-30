@@ -106,11 +106,15 @@ name: Retailer freshness gate
 #  already applies to everything except itself.
 # =============================================================================
 on:
-  schedule:
-    # BACKSTOP ONLY. Not an ordering claim — see above. Its job is to fire on a
-    # day when no writer runs, which is precisely the failure this gate exists
-    # for and the one workflow_run cannot see.
-    - cron: '0 13 * * *'
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   # BACKSTOP ONLY. Not an ordering claim — see above. Its job is to fire on a
+  #   # day when no writer runs, which is precisely the failure this gate exists
+  #   # for and the one workflow_run cannot see.
+  #   - cron: '0 13 * * *'
   workflow_run:
     # Every workflow named in the CADENCE table, asserted by the test suite.
     workflows:
