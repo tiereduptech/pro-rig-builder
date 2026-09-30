@@ -5606,7 +5606,7 @@ export default [
         "sku": "6560420",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29"
+        "priceConfirmedAt": "2026-09-30"
       },
       "amazon": {
         "price": 549.99,
@@ -5710,7 +5710,7 @@ export default [
         "sku": "6589129",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
@@ -5762,7 +5762,7 @@ export default [
         "sku": "6589133",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
@@ -5813,7 +5813,7 @@ export default [
         "sku": "6589134",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
@@ -5869,7 +5869,7 @@ export default [
         "sku": "6589135",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
@@ -5922,7 +5922,7 @@ export default [
         "sku": "6589136",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       },
       "newegg": {
@@ -5974,7 +5974,7 @@ export default [
         "sku": "6589140",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29",
+        "priceConfirmedAt": "2026-09-30",
         "priceLastMovedAt": "2026-09-28"
       }
     },
@@ -6430,7 +6430,7 @@ export default [
         "sku": "6644817",
         "priceSource": "1p",
         "priceConfidence": "confirmed",
-        "priceConfirmedAt": "2026-09-29"
+        "priceConfirmedAt": "2026-09-30"
       }
     },
     "cores": 64,
