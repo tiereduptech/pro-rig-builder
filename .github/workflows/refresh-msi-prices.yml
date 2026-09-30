@@ -93,8 +93,12 @@ name: Refresh MSI Prices
 # =============================================================================
 
 on:
-  schedule:
-    - cron: '0 2 * * *'   # daily, 02:00 UTC — after Best Buy finishes, before prerender
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   - cron: '0 2 * * *'   # daily, 02:00 UTC — after Best Buy finishes, before prerender
   workflow_dispatch:
     inputs:
       dry_run:

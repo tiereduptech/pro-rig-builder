@@ -30,8 +30,12 @@ name: ASIN Identity Audit
 #   verify-catalog.yml so a collision degrades to a retry rather than a clobber.
 
 on:
-  schedule:
-    - cron: '0 3 * * *'
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       apply:

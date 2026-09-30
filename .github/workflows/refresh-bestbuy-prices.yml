@@ -88,8 +88,12 @@ name: Refresh Best Buy Prices
 # =============================================================================
 
 on:
-  schedule:
-    - cron: '0 1 * * *'   # daily, 01:00 UTC — just after Best Buy's 00:xx batch
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   - cron: '0 1 * * *'   # daily, 01:00 UTC — just after Best Buy's 00:xx batch
   workflow_dispatch:
     inputs:
       dry_run:

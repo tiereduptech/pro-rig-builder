@@ -29,11 +29,15 @@ name: Newegg feed watch (stat only)
 # =============================================================================
 
 on:
-  schedule:
-    # Every 30 minutes. The mp feed regenerates daily, so this is not about
-    # catching it fast — it is about there being no window in which a publish
-    # can pass unnoticed, and about the quiet alarm having a heartbeat.
-    - cron: '7,37 * * * *'
+  # ── PAUSED 2026-09-30 ────────────────────────────────────────────────────
+  # Project paused by the owner: every `schedule:` in this repo is commented
+  # out so nothing runs on its own. Nothing was deleted, and workflow_dispatch
+  # is untouched — run this by hand from the Actions tab. Uncomment to resume.
+  # schedule:
+  #   # Every 30 minutes. The mp feed regenerates daily, so this is not about
+  #   # catching it fast — it is about there being no window in which a publish
+  #   # can pass unnoticed, and about the quiet alarm having a heartbeat.
+  #   - cron: '7,37 * * * *'
   workflow_dispatch:
     inputs:
       dry_run:
